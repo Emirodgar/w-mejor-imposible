@@ -108,7 +108,7 @@ const ventasGlobalesChart = new Chart(ctx1, {
 </script>
 
 
-{% raw %}
+{% endraw %}
 
 
 ## Análisis por modelos: líderes y tendencias
