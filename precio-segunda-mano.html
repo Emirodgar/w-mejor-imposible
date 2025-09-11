@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <title>Porsche - Depreciación de precio</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .chart-section { grid-column: span 12; }
+        .table-section { grid-column: span 12; }
+
+        .table-container { max-height: 600px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        thead { position: sticky; top: 0; z-index: 10; }
+        .theme-light thead { background-color: var(--light-card-bg); }
+        .theme-dark thead { background-color: var(--dark-card-bg); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        #price-table-body tr { cursor: pointer; transition: background-color 0.2s; }
+        .theme-light #price-table-body tr:hover { background-color: #f0f0f0; }
+        .theme-dark #price-table-body tr:hover { background-color: #3a3f47; }
+        .price-up { color: #28a745; font-weight: bold; }
+        .price-down { color: #dc3545; font-weight: bold; }
+        .price-stable { color: var(--porsche-gold); }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Análisis de Precios y Depreciación</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card chart-section">
+                <h2 class="card-title">Curvas de Valor de Mercado (Segunda Mano )</h2>
+                <div style="height: 450px;"><canvas id="priceChart"></canvas></div>
+            </section>
+
+            <section class="card table-section">
+                <h2 class="card-title">Análisis Detallado de Precios por Modelo</h2>
+                <div class="table-container">
+                    <table id="price-table">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Generación</th>
+                                <th>Año de Lanzamiento</th>
+                                <th>Precio Lanzamiento (€)</th>
+                                <th>Precio 2021 (€)</th>
+                                <th>Precio 2023 (€)</th>
+                                <th>Precio 2025 (€)</th>
+                                <th>Veredicto de Inversión</th>
+                            </tr>
+                        </thead>
+                        <tbody id="price-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    const priceData = [
+        { id: '911-g', model: '911 (Classic)', generation: 'G-Model', launchYear: 1974, msrp: 25000, prices: { 2021: 55000, 2023: 65000, 2025: 75000 }, verdict: 'Apreciación constante. Inversión sólida.' },
+        { id: '993', model: '911 (Classic)', generation: '993', launchYear: 1994, msrp: 70000, prices: { 2021: 80000, 2023: 100000, 2025: 120000 }, verdict: 'Fuerte apreciación. El último "air-cooled".' },
+        { id: '911-996', model: '911', generation: '996', launchYear: 1998, msrp: 85000, prices: { 2021: 22000, 2023: 28000, 2025: 35000 }, verdict: 'Tocó fondo. Ahora en fase de apreciación.' },
+        { id: '911-997-2', model: '911', generation: '997.2', launchYear: 2009, msrp: 105000, prices: { 2021: 65000, 2023: 70000, 2025: 72000 }, verdict: 'Muy estable. Retiene valor excepcionalmente bien.' },
+        { id: '911-991', model: '911', generation: '991.1', launchYear: 2012, msrp: 120000, prices: { 2021: 90000, 2023: 85000, 2025: 82000 }, verdict: 'Depreciación suave. Valor muy sólido.' },
+        { id: 'boxster-986', model: 'Boxster', generation: '986', launchYear: 1996, msrp: 50000, prices: { 2021: 10000, 2023: 12000, 2025: 14000 }, verdict: 'Asequible y empezando a subir. Punto de entrada.' },
+        { id: 'cayman-987-2', model: 'Cayman', generation: '987.2', launchYear: 2009, msrp: 65000, prices: { 2021: 40000, 2023: 45000, 2025: 48000 }, verdict: 'Muy buscado por su fiabilidad. Se aprecia lentamente.' },
+        { id: 'cayenne-955', model: 'Cayenne', generation: '955/957', launchYear: 2003, msrp: 75000, prices: { 2021: 8000, 2023: 6500, 2025: 5000 }, verdict: 'Depreciación muy fuerte. Coste de compra bajo, mantenimiento alto.' },
+        { id: 'macan-95b', model: 'Macan', generation: '95B.1', launchYear: 2014, msrp: 68000, prices: { 2021: 45000, 2023: 38000, 2025: 32000 }, verdict: 'Depreciación estándar para un SUV premium.' },
+        { id: 'panamera-970', model: 'Panamera', generation: '970', launchYear: 2010, msrp: 110000, prices: { 2021: 35000, 2023: 28000, 2025: 24000 }, verdict: 'Depreciación significativa. Lujo asequible en el mercado de ocasión.' },
+        { id: 'taycan-j1', model: 'Taycan', generation: 'J1', launchYear: 2020, msrp: 115000, prices: { 2021: 95000, 2023: 80000, 2025: 70000 }, verdict: 'Depreciación inicial fuerte, típica de los EVs de lujo.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let priceChartInstance;
+
+        function initializePage() {
+            renderPriceTable(priceData);
+            renderPriceChart();
+            setupEventListeners();
+        }
+
+        function renderPriceTable(data) {
+            const tableBody = document.getElementById('price-table-body');
+            tableBody.innerHTML = data.map(item => {
+                const trend = item.prices[2025] > item.prices[2023] ? 'price-up' : (item.prices[2025] < item.prices[2023] ? 'price-down' : 'price-stable');
+                const trendSymbol = trend === 'price-up' ? '▲' : (trend === 'price-down' ? '▼' : '▬');
+
+                return `
+                    <tr data-id="${item.id}">
+                        <td>${item.model}</td>
+                        <td>${item.generation}</td>
+                        <td>${item.launchYear}</td>
+                        <td>${item.msrp.toLocaleString('es-ES')}</td>
+                        <td>${item.prices[2021].toLocaleString('es-ES')}</td>
+                        <td>${item.prices[2023].toLocaleString('es-ES')}</td>
+                        <td class="${trend}">${item.prices[2025].toLocaleString('es-ES')} ${trendSymbol}</td>
+                        <td>${item.verdict}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function renderPriceChart() {
+            const ctx = document.getElementById('priceChart').getContext('2d');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? 'white' : 'black';
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+            const datasets = priceData.map((item, index) => {
+                const colors = ['#B12B28', '#E3AB37', '#464C47', '#8B0000', '#FFD700', '#696969', '#FF4500', '#2E8B57', '#4682B4', '#D2691E', '#9ACD32'];
+                return {
+                    label: `${item.model} ${item.generation}`,
+                    data: Object.keys(item.prices).map(year => ({ x: parseInt(year), y: item.prices[year] })),
+                    borderColor: colors[index % colors.length],
+                    backgroundColor: colors[index % colors.length] + '33',
+                    tension: 0.1,
+                    borderWidth: 2,
+                };
+            });
+
+            if (priceChartInstance) priceChartInstance.destroy();
+            priceChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: { datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: textColor, boxWidth: 15, padding: 15 } },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            callbacks: {
+                                label: (context) => `${context.dataset.label}: ${context.parsed.y.toLocaleString('es-ES')} €`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            title: { display: true, text: 'Año', color: textColor },
+                            ticks: { color: textColor, stepSize: 1 },
+                            grid: { color: gridColor }
+                        },
+                        y: {
+                            title: { display: true, text: 'Precio Medio de Mercado (€)', color: textColor },
+                            ticks: {
+                                color: textColor,
+                                callback: (value) => `${(value / 1000).toLocaleString('es-ES')}k`
+                            },
+                            grid: { color: gridColor }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderPriceChart();
+            });
+
+            document.getElementById('price-table-body').addEventListener('click', (e) => {
+                const row = e.target.closest('tr');
+                if (!row) return;
+
+                const id = row.dataset.id;
+                const datasetIndex = priceData.findIndex(item => item.id === id);
+                
+                if (datasetIndex > -1) {
+                    priceChartInstance.data.datasets.forEach((dataset, index) => {
+                        dataset.borderWidth = (index === datasetIndex) ? 5 : 2;
+                    });
+                    priceChartInstance.update();
+                }
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

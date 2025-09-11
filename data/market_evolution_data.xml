@@ -1,0 +1,31 @@
+<market_evolution_data>
+    <year value="2023">
+        <month name="Enero" porsche_sales="150" total_market_sales="8000"/>
+        <month name="Febrero" porsche_sales="160" total_market_sales="8200"/>
+        <month name="Marzo" porsche_sales="170" total_market_sales="8500"/>
+        <month name="Abril" porsche_sales="155" total_market_sales="7900"/>
+        <month name="Mayo" porsche_sales="165" total_market_sales="8300"/>
+        <month name="Junio" porsche_sales="175" total_market_sales="8600"/>
+        <month name="Julio" porsche_sales="180" total_market_sales="8700"/>
+        <month name="Agosto" porsche_sales="170" total_market_sales="8100"/>
+        <month name="Septiembre" porsche_sales="190" total_market_sales="8900"/>
+        <month name="Octubre" porsche_sales="200" total_market_sales="9100"/>
+        <month name="Noviembre" porsche_sales="195" total_market_sales="9000"/>
+        <month name="Diciembre" porsche_sales="210" total_market_sales="9300"/>
+    </year>
+    <year value="2024">
+        <month name="Enero" porsche_sales="160" total_market_sales="8300"/>
+        <month name="Febrero" porsche_sales="170" total_market_sales="8500"/>
+        <month name="Marzo" porsche_sales="180" total_market_sales="8800"/>
+        <month name="Abril" porsche_sales="165" total_market_sales="8200"/>
+        <month name="Mayo" porsche_sales="175" total_market_sales="8600"/>
+        <month name="Junio" porsche_sales="185" total_market_sales="8900"/>
+        <month name="Julio" porsche_sales="190" total_market_sales="9000"/>
+        <month name="Agosto" porsche_sales="180" total_market_sales="8400"/>
+        <month name="Septiembre" porsche_sales="200" total_market_sales="9200"/>
+        <month name="Octubre" porsche_sales="210" total_market_sales="9400"/>
+        <month name="Noviembre" porsche_sales="205" total_market_sales="9300"/>
+        <month name="Diciembre" porsche_sales="220" total_market_sales="9600"/>
+    </year>
+</market_evolution_data>
+

@@ -1,0 +1,311 @@
+<sales_data>
+    <brand name="Porsche">
+        <model name="Cayenne">
+            <year value="2023">
+                <month name="Enero" sales="150"/>
+                <month name="Febrero" sales="160"/>
+                <month name="Marzo" sales="170"/>
+                <month name="Abril" sales="155"/>
+                <month name="Mayo" sales="165"/>
+                <month name="Junio" sales="175"/>
+                <month name="Julio" sales="180"/>
+                <month name="Agosto" sales="170"/>
+                <month name="Septiembre" sales="190"/>
+                <month name="Octubre" sales="200"/>
+                <month name="Noviembre" sales="195"/>
+                <month name="Diciembre" sales="210"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="160"/>
+                <month name="Febrero" sales="170"/>
+                <month name="Marzo" sales="180"/>
+                <month name="Abril" sales="165"/>
+                <month name="Mayo" sales="175"/>
+                <month name="Junio" sales="185"/>
+                <month name="Julio" sales="190"/>
+                <month name="Agosto" sales="180"/>
+                <month name="Septiembre" sales="200"/>
+                <month name="Octubre" sales="210"/>
+                <month name="Noviembre" sales="205"/>
+                <month name="Diciembre" sales="220"/>
+            </year>
+        </model>
+        <model name="Panamera">
+            <year value="2023">
+                <month name="Enero" sales="80"/>
+                <month name="Febrero" sales="85"/>
+                <month name="Marzo" sales="90"/>
+                <month name="Abril" sales="82"/>
+                <month name="Mayo" sales="88"/>
+                <month name="Junio" sales="92"/>
+                <month name="Julio" sales="95"/>
+                <month name="Agosto" sales="90"/>
+                <month name="Septiembre" sales="100"/>
+                <month name="Octubre" sales="105"/>
+                <month name="Noviembre" sales="102"/>
+                <month name="Diciembre" sales="110"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="85"/>
+                <month name="Febrero" sales="90"/>
+                <month name="Marzo" sales="95"/>
+                <month name="Abril" sales="87"/>
+                <month name="Mayo" sales="93"/>
+                <month name="Junio" sales="97"/>
+                <month name="Julio" sales="100"/>
+                <month name="Agosto" sales="95"/>
+                <month name="Septiembre" sales="105"/>
+                <month name="Octubre" sales="110"/>
+                <month name="Noviembre" sales="107"/>
+                <month name="Diciembre" sales="115"/>
+            </year>
+        </model>
+        <model name="Macan">
+            <year value="2023">
+                <month name="Enero" sales="120"/>
+                <month name="Febrero" sales="125"/>
+                <month name="Marzo" sales="130"/>
+                <month name="Abril" sales="122"/>
+                <month name="Mayo" sales="128"/>
+                <month name="Junio" sales="132"/>
+                <month name="Julio" sales="135"/>
+                <month name="Agosto" sales="130"/>
+                <month name="Septiembre" sales="140"/>
+                <month name="Octubre" sales="145"/>
+                <month name="Noviembre" sales="142"/>
+                <month name="Diciembre" sales="150"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="125"/>
+                <month name="Febrero" sales="130"/>
+                <month name="Marzo" sales="135"/>
+                <month name="Abril" sales="127"/>
+                <month name="Mayo" sales="133"/>
+                <month name="Junio" sales="137"/>
+                <month name="Julio" sales="140"/>
+                <month name="Agosto" sales="135"/>
+                <month name="Septiembre" sales="145"/>
+                <month name="Octubre" sales="150"/>
+                <month name="Noviembre" sales="147"/>
+                <month name="Diciembre" sales="155"/>
+            </year>
+        </model>
+        <model name="911">
+            <year value="2023">
+                <month name="Enero" sales="70"/>
+                <month name="Febrero" sales="72"/>
+                <month name="Marzo" sales="75"/>
+                <month name="Abril" sales="70"/>
+                <month name="Mayo" sales="73"/>
+                <month name="Junio" sales="76"/>
+                <month name="Julio" sales="78"/>
+                <month name="Agosto" sales="75"/>
+                <month name="Septiembre" sales="80"/>
+                <month name="Octubre" sales="82"/>
+                <month name="Noviembre" sales="80"/>
+                <month name="Diciembre" sales="85"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="75"/>
+                <month name="Febrero" sales="77"/>
+                <month name="Marzo" sales="80"/>
+                <month name="Abril" sales="75"/>
+                <month name="Mayo" sales="78"/>
+                <month name="Junio" sales="81"/>
+                <month name="Julio" sales="83"/>
+                <month name="Agosto" sales="80"/>
+                <month name="Septiembre" sales="85"/>
+                <month name="Octubre" sales="87"/>
+                <month name="Noviembre" sales="85"/>
+                <month name="Diciembre" sales="90"/>
+            </year>
+        </model>
+    </brand>
+    <brand name="BMW">
+        <model name="Serie 3">
+            <year value="2023">
+                <month name="Enero" sales="300"/>
+                <month name="Febrero" sales="310"/>
+                <month name="Marzo" sales="320"/>
+                <month name="Abril" sales="305"/>
+                <month name="Mayo" sales="315"/>
+                <month name="Junio" sales="325"/>
+                <month name="Julio" sales="330"/>
+                <month name="Agosto" sales="320"/>
+                <month name="Septiembre" sales="340"/>
+                <month name="Octubre" sales="350"/>
+                <month name="Noviembre" sales="345"/>
+                <month name="Diciembre" sales="360"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="310"/>
+                <month name="Febrero" sales="320"/>
+                <month name="Marzo" sales="330"/>
+                <month name="Abril" sales="315"/>
+                <month name="Mayo" sales="325"/>
+                <month name="Junio" sales="335"/>
+                <month name="Julio" sales="340"/>
+                <month name="Agosto" sales="330"/>
+                <month name="Septiembre" sales="350"/>
+                <month name="Octubre" sales="360"/>
+                <month name="Noviembre" sales="355"/>
+                <month name="Diciembre" sales="370"/>
+            </year>
+        </model>
+        <model name="X5">
+            <year value="2023">
+                <month name="Enero" sales="200"/>
+                <month name="Febrero" sales="210"/>
+                <month name="Marzo" sales="220"/>
+                <month name="Abril" sales="205"/>
+                <month name="Mayo" sales="215"/>
+                <month name="Junio" sales="225"/>
+                <month name="Julio" sales="230"/>
+                <month name="Agosto" sales="220"/>
+                <month name="Septiembre" sales="240"/>
+                <month name="Octubre" sales="250"/>
+                <month name="Noviembre" sales="245"/>
+                <month name="Diciembre" sales="260"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="210"/>
+                <month name="Febrero" sales="220"/>
+                <month name="Marzo" sales="230"/>
+                <month name="Abril" sales="215"/>
+                <month name="Mayo" sales="225"/>
+                <month name="Junio" sales="235"/>
+                <month name="Julio" sales="240"/>
+                <month name="Agosto" sales="230"/>
+                <month name="Septiembre" sales="250"/>
+                <month name="Octubre" sales="260"/>
+                <month name="Noviembre" sales="255"/>
+                <month name="Diciembre" sales="270"/>
+            </year>
+        </model>
+    </brand>
+    <brand name="Audi">
+        <model name="A4">
+            <year value="2023">
+                <month name="Enero" sales="280"/>
+                <month name="Febrero" sales="290"/>
+                <month name="Marzo" sales="300"/>
+                <month name="Abril" sales="285"/>
+                <month name="Mayo" sales="295"/>
+                <month name="Junio" sales="305"/>
+                <month name="Julio" sales="310"/>
+                <month name="Agosto" sales="300"/>
+                <month name="Septiembre" sales="320"/>
+                <month name="Octubre" sales="330"/>
+                <month name="Noviembre" sales="325"/>
+                <month name="Diciembre" sales="340"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="290"/>
+                <month name="Febrero" sales="300"/>
+                <month name="Marzo" sales="310"/>
+                <month name="Abril" sales="295"/>
+                <month name="Mayo" sales="305"/>
+                <month name="Junio" sales="315"/>
+                <month name="Julio" sales="320"/>
+                <month name="Agosto" sales="310"/>
+                <month name="Septiembre" sales="330"/>
+                <month name="Octubre" sales="340"/>
+                <month name="Noviembre" sales="335"/>
+                <month name="Diciembre" sales="350"/>
+            </year>
+        </model>
+        <model name="Q5">
+            <year value="2023">
+                <month name="Enero" sales="190"/>
+                <month name="Febrero" sales="200"/>
+                <month name="Marzo" sales="210"/>
+                <month name="Abril" sales="195"/>
+                <month name="Mayo" sales="205"/>
+                <month name="Junio" sales="215"/>
+                <month name="Julio" sales="220"/>
+                <month name="Agosto" sales="210"/>
+                <month name="Septiembre" sales="230"/>
+                <month name="Octubre" sales="240"/>
+                <month name="Noviembre" sales="235"/>
+                <month name="Diciembre" sales="250"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="200"/>
+                <month name="Febrero" sales="210"/>
+                <month name="Marzo" sales="220"/>
+                <month name="Abril" sales="205"/>
+                <month name="Mayo" sales="215"/>
+                <month name="Junio" sales="225"/>
+                <month name="Julio" sales="230"/>
+                <month name="Agosto" sales="220"/>
+                <month name="Septiembre" sales="240"/>
+                <month name="Octubre" sales="250"/>
+                <month name="Noviembre" sales="245"/>
+                <month name="Diciembre" sales="260"/>
+            </year>
+        </model>
+    </brand>
+    <brand name="Mercedes-Benz">
+        <model name="Clase C">
+            <year value="2023">
+                <month name="Enero" sales="290"/>
+                <month name="Febrero" sales="300"/>
+                <month name="Marzo" sales="310"/>
+                <month name="Abril" sales="295"/>
+                <month name="Mayo" sales="305"/>
+                <month name="Junio" sales="315"/>
+                <month name="Julio" sales="320"/>
+                <month name="Agosto" sales="310"/>
+                <month name="Septiembre" sales="330"/>
+                <month name="Octubre" sales="340"/>
+                <month name="Noviembre" sales="335"/>
+                <month name="Diciembre" sales="350"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="300"/>
+                <month name="Febrero" sales="310"/>
+                <month name="Marzo" sales="320"/>
+                <month name="Abril" sales="305"/>
+                <month name="Mayo" sales="315"/>
+                <month name="Junio" sales="325"/>
+                <month name="Julio" sales="330"/>
+                <month name="Agosto" sales="320"/>
+                <month name="Septiembre" sales="340"/>
+                <month name="Octubre" sales="350"/>
+                <month name="Noviembre" sales="345"/>
+                <month name="Diciembre" sales="360"/>
+            </year>
+        </model>
+        <model name="GLC">
+            <year value="2023">
+                <month name="Enero" sales="210"/>
+                <month name="Febrero" sales="220"/>
+                <month name="Marzo" sales="230"/>
+                <month name="Abril" sales="215"/>
+                <month name="Mayo" sales="225"/>
+                <month name="Junio" sales="235"/>
+                <month name="Julio" sales="240"/>
+                <month name="Agosto" sales="230"/>
+                <month name="Septiembre" sales="250"/>
+                <month name="Octubre" sales="260"/>
+                <month name="Noviembre" sales="255"/>
+                <month name="Diciembre" sales="270"/>
+            </year>
+            <year value="2024">
+                <month name="Enero" sales="220"/>
+                <month name="Febrero" sales="230"/>
+                <month name="Marzo" sales="240"/>
+                <month name="Abril" sales="225"/>
+                <month name="Mayo" sales="235"/>
+                <month name="Junio" sales="245"/>
+                <month name="Julio" sales="250"/>
+                <month name="Agosto" sales="240"/>
+                <month name="Septiembre" sales="260"/>
+                <month name="Octubre" sales="270"/>
+                <month name="Noviembre" sales="265"/>
+                <month name="Diciembre" sales="280"/>
+            </year>
+        </model>
+    </brand>
+</sales_data>
+

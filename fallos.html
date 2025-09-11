@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Análisis y fiabilidad de producto</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --trend-up: #28a745; --trend-down: #dc3545;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .reliability-section { grid-column: span 6; }
+        .maintenance-section { grid-column: span 6; }
+        .reliability-trend-section { grid-column: span 12; }
+        .fault-table-section { grid-column: span 12; }
+
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        #faults-table-body tr { cursor: pointer; transition: background-color 0.2s; }
+        .theme-light #faults-table-body tr:hover { background-color: #f0f0f0; }
+        .theme-dark #faults-table-body tr:hover { background-color: #3a3f47; }
+        .reliability-low { color: var(--trend-down); font-weight: bold; }
+        .reliability-medium { color: var(--porsche-gold); font-weight: bold; }
+        .reliability-high { color: var(--trend-up); font-weight: bold; }
+        
+        .filter-controls { margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .filter-controls input { padding: 8px 12px; border-radius: 6px; border: 1px solid var(--porsche-grey); background: inherit; color: inherit; }
+
+        /* Modal Styles */
+        .modal-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 100; display: none; align-items: center; justify-content: center; }
+        .modal-content { position: relative; padding: 30px; border-radius: 8px; max-width: 600px; width: 90%; }
+        .theme-light .modal-content { background: var(--light-card-bg); }
+        .theme-dark .modal-content { background: var(--dark-card-bg); }
+        .modal-close { position: absolute; top: 15px; right: 15px; font-size: 24px; font-weight: bold; cursor: pointer; border: none; background: none; color: inherit; }
+        .modal-title { font-size: 22px; font-weight: 600; margin-top: 0; }
+        .modal-img { width: 100%; height: 250px; object-fit: cover; border-radius: 6px; margin-bottom: 20px; }
+        .modal-details p { margin: 10px 0; line-height: 1.6; }
+        .modal-details strong { opacity: 0.8; }
+        .modal-links a { display: inline-block; margin-top: 15px; margin-right: 10px; text-decoration: none; padding: 8px 12px; border-radius: 6px; background-color: var(--porsche-red); color: white; font-weight: 500; }
+
+        @media (max-width: 1200px) {
+            .reliability-section, .maintenance-section { grid-column: span 12; }
+        }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Análisis de Producto y Fiabilidad</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card reliability-section">
+                <h2 class="card-title">Análisis de Fiabilidad: Modelo vs. Año</h2>
+                <div style="height: 300px;"><canvas id="reliabilityChart"></canvas></div>
+            </section>
+
+            <section class="card maintenance-section">
+                <h2 class="card-title">Coste de Mantenimiento (Estimado a 5 años )</h2>
+                <div style="height: 300px;"><canvas id="maintenanceChart"></canvas></div>
+            </section>
+            
+            <section class="card reliability-trend-section">
+                <h2 class="card-title">Evolución del Índice de Fiabilidad Promedio de la Marca</h2>
+                <div style="height: 250px;"><canvas id="reliabilityTrendChart"></canvas></div>
+            </section>
+
+            <section class="card fault-table-section">
+                <div class="filter-controls">
+                    <h2 class="card-title" style="display: inline-block; margin-bottom: 0;">Base de Conocimiento de Fallos</h2>
+                    <input type="text" id="search-input" placeholder="Buscar por modelo, fallo, etc.">
+                </div>
+                <div class="table-container">
+                    <table id="faults-table">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Generación (Años)</th>
+                                <th>Índice Fiabilidad</th>
+                                <th>Fallo Común</th>
+                                <th>Criticidad</th>
+                                <th>Coste Estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="faults-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="details-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close">&times;</button>
+            <h2 id="modal-title" class="modal-title"></h2>
+            <img id="modal-img" src="" alt="Imagen del modelo" class="modal-img">
+            <div id="modal-details" class="modal-details"></div>
+            <div id="modal-links" class="modal-links"></div>
+        </div>
+    </div>
+
+    <script>
+    const productData = {
+        faults: [
+            { id: '911-g', model: '911', generation: 'G-Model (1974-1989)', year: 1982, reliabilityIndex: 75, issue: 'Fugas de aceite (Motor y Caja)', criticality: 'Media', cost: '500 - 3,000', description: 'Con la edad, los sellos y juntas se degradan. Las fugas son comunes pero manejables. Busque goteos debajo del motor y la transmisión.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Porsche_911_Carrera_3.2_Targa_%281984%29_-_2015-08-07_-_PC.jpg/1280px-Porsche_911_Carrera_3.2_Targa_%281984%29_-_2015-08-07_-_PC.jpg', links: { rennlist: 'https://rennlist.com/forums/911-forum-112/', planet9: '' } },
+            { id: '911-g-tensioners', model: '911', generation: 'G-Model (pre-1984)', year: 1980, reliabilityIndex: 70, issue: 'Tensores de cadena de distribución', criticality: 'Alta', cost: '1,500 - 2,500 (actualización)', description: 'Los tensores originales fallan, pudiendo causar daños graves al motor. La mayoría han sido actualizados a los tensores alimentados por presión de aceite del Carrera 3.2.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Porsche_911_Carrera_3.2_Targa_%281984%29_-_2015-08-07_-_PC.jpg/1280px-Porsche_911_Carrera_3.2_Targa_%281984%29_-_2015-08-07_-_PC.jpg', links: { rennlist: 'https://rennlist.com/forums/911-forum-112/', planet9: '' } },
+            { id: '964-leaks', model: '911', generation: '964 (1989-1994)', year: 1991, reliabilityIndex: 65, issue: 'Fugas de aceite severas (Motor)', criticality: 'Alta', cost: '3,000 - 8,000 (re-sellado)', description: 'El diseño sin juntas de culata los hace propensos a fugas importantes que requieren desmontar el motor para un re-sellado completo.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Porsche_964_Carrera_4_on_display_at_the_Sinsheim_Auto_%26_Technik_Museum.jpg/1280px-Porsche_964_Carrera_4_on_display_at_the_Sinsheim_Auto_%26_Technik_Museum.jpg', links: { rennlist: 'https://rennlist.com/forums/964-forum-113/', planet9: '' } },
+            { id: '993-sai', model: '911', generation: '993 (1995-1998)', year: 1996, reliabilityIndex: 88, issue: 'Obstrucción de pasos de aire secundario (SAI)', criticality: 'Media-Baja', cost: '800 - 2,000', description: 'Acumulación de carbonilla en los puertos SAI, que enciende la luz de "Check Engine". No afecta al rendimiento pero es costoso de limpiar.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Porsche_993_Carrera_4S.jpg/1280px-Porsche_993_Carrera_4S.jpg', links: { rennlist: 'https://rennlist.com/forums/993-forum-114/', planet9: '' } },
+            { id: '911-996', model: '911', generation: '996 (1998-2004)', year: 2002, reliabilityIndex: 48, issue: 'Fallo del rodamiento IMS', criticality: 'Crítica', cost: '2,000 - 20,000+', description: 'El rodamiento del eje intermedio puede fallar de forma catastrófica. Es crucial una revisión o cambio preventivo a una solución aftermarket.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Porsche_996_C4S_front.jpg/1280px-Porsche_996_C4S_front.jpg', links: { rennlist: 'https://rennlist.com/forums/996-forum-70/', planet9: '' } },
+            { id: '911-997', model: '911', generation: '997.1 (2005-2008)', year: 2006, reliabilityIndex: 55, issue: 'Rayado de cilindros (Bore Scoring)', criticality: 'Crítica', cost: '>18,000', description: 'Desgaste prematuro de las paredes de los cilindros, especialmente en climas fríos. Causa alto consumo de aceite y requiere reconstrucción del motor.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Porsche_911_Carrera_4S_%28997%29_2008_PCD_2012_01.jpg/1280px-Porsche_911_Carrera_4S_%28997%29_2008_PCD_2012_01.jpg', links: { rennlist: 'https://rennlist.com/forums/997-forum-132/', planet9: '' } },
+            { id: '911-997-2', model: '911', generation: '997.2 (2009-2012)', year: 2010, reliabilityIndex: 92, issue: 'Fallo de bomba de alta presión de combustible (DFI)', criticality: 'Alta', cost: '1,000 - 1,800', description: 'La bomba de combustible de inyección directa puede fallar, causando pérdida de potencia y dificultades de arranque. Es un fallo conocido en los primeros motores DFI.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Porsche_997_Carrera_4S_Mk_II_at_Goodwood_Festival_of_Speed_2009.jpg/1280px-Porsche_997_Carrera_4S_Mk_II_at_Goodwood_Festival_of_Speed_2009.jpg', links: { rennlist: 'https://rennlist.com/forums/997-forum-132/', planet9: '' } },
+            { id: '911-991', model: '911', generation: '991.1 (2012-2015)', year: 2014, reliabilityIndex: 85, issue: 'Fallos en válvulas de cambio (PDK)', criticality: 'Alta', cost: '1,500 - 12,000', description: 'Las primeras cajas PDK pueden sufrir fallos en solenoides o sensores. A menudo se soluciona sin cambiar la caja completa.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Porsche_911_Carrera_S_%28991%29_%E2%80%93_Frontansicht%2C_10._August_2014%2C_D%C3%BCsseldorf.jpg/1280px-Porsche_911_Carrera_S_%28991%29_%E2%80%93_Frontansicht%2C_10._August_2014%2C_D%C3%BCsseldorf.jpg', links: { rennlist: 'https://rennlist.com/forums/991-231/', planet9: '' } },
+            { id: '911-992', model: '911', generation: '992 (2019-Hoy)', year: 2021, reliabilityIndex: 96, issue: 'Errores menores de software (PCM)', criticality: 'Baja', cost: 'Garantía', description: 'Problemas esporádicos con el sistema de infoentretenimiento o conectividad, generalmente solucionados con actualizaciones de software en el concesionario.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Porsche_911_Carrera_S_%28992%29_IMG_2565.jpg/1280px-Porsche_911_Carrera_S_%28992%29_IMG_2565.jpg', links: { rennlist: 'https://rennlist.com/forums/992-259/', planet9: '' } },
+            { id: 'boxster-986', model: 'Boxster/Cayman', generation: '986 (1997-2004 )', year: 2001, reliabilityIndex: 52, issue: 'Fallo del rodamiento IMS', criticality: 'Crítica', cost: '2,000 - 15,000+', description: 'Similar al 996, el fallo del IMS es el talón de Aquiles de este modelo. La inspección y el reemplazo preventivo son casi obligatorios.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/2001_Porsche_Boxster_S_in_Zanzibar_Red_Front.jpg/1280px-2001_Porsche_Boxster_S_in_Zanzibar_Red_Front.jpg', links: { rennlist: '', planet9: 'https://www.planet-9.com/forums/986-boxster-problems-and-complaints.24/' } },
+            { id: 'boxster-987', model: 'Boxster/Cayman', generation: '987.1 (2005-2008 )', year: 2007, reliabilityIndex: 58, issue: 'IMS / Bore Scoring', criticality: 'Crítica', cost: '>15,000', description: 'Comparte la arquitectura de motor del 997.1 y sus mismos problemas potenciales. Es vital una inspección pre-compra exhaustiva.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Porsche_Cayman_S_-_Flickr_-_The_Car_Spy_%281%29.jpg/1280px-Porsche_Cayman_S_-_Flickr_-_The_Car_Spy_%281%29.jpg', links: { rennlist: '', planet9: 'https://www.planet-9.com/forums/987-cayman-and-boxster-problems-and-complaints.25/' } },
+            { id: 'boxster-987-2', model: 'Boxster/Cayman', generation: '987.2 (2009-2012 )', year: 2011, reliabilityIndex: 94, issue: 'Motor 9A1 muy fiable', criticality: 'Baja', cost: 'N/A', description: 'Considerado uno de los Porsche modernos más fiables. El motor 9A1 eliminó el IMS y redujo drásticamente los problemas de bore scoring.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Porsche_Cayman_S_Black_Edition_-_Flickr_-_The_Car_Spy.jpg/1280px-Porsche_Cayman_S_Black_Edition_-_Flickr_-_The_Car_Spy.jpg', links: { rennlist: '', planet9: 'https://www.planet-9.com/forums/987-cayman-and-boxster-chat.11/' } },
+            { id: 'boxster-718', model: 'Boxster/Cayman', generation: '718 (982 ) (2017-Hoy)', year: 2019, reliabilityIndex: 97, issue: 'Acumulación de carbonilla en válvulas', criticality: 'Media-Baja', cost: '500 - 900 (limpieza)', description: 'Como muchos motores de inyección directa, puede acumular carbonilla en las válvulas de admisión, requiriendo una limpieza cada 80-100k km.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2018_Porsche_718_Cayman_GTS_2.5.jpg/1280px-2018_Porsche_718_Cayman_GTS_2.5.jpg', links: { rennlist: '', planet9: 'https://www.planet-9.com/forums/718-cayman-boxster-problems-and-complaints.241/' } },
+            { id: 'cayenne-955', model: 'Cayenne', generation: 'Cayenne 955/957 (2003-2010 )', year: 2008, reliabilityIndex: 68, issue: 'Rotura de tuberías de refrigerante', criticality: 'Alta', cost: '800 - 1,500', description: 'Las tuberías de plástico originales se vuelven quebradizas y fallan. Se recomienda una actualización preventiva a tuberías de aluminio.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/2008-Porsche-Cayenne-S.jpg/1280px-2008-Porsche-Cayenne-S.jpg', links: { rennlist: 'https://rennlist.com/forums/cayenne-955-957-forum-139/', planet9: '' } },
+            { id: 'cayenne-958', model: 'Cayenne', generation: 'Cayenne 958 (2011-2017 )', year: 2015, reliabilityIndex: 88, issue: 'Fallo del motor de la caja transfer', criticality: 'Media', cost: '600 - 1,200', description: 'El motor que controla la caja de transferencia (tracción total) puede fallar, causando tirones y errores en el sistema de tracción. Un cambio de aceite preventivo ayuda.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/2012_Porsche_Cayenne_Turbo_%28958%29_wagon_%282015-07-24%29_01.jpg/1280px-2012_Porsche_Cayenne_Turbo_%28958%29_wagon_%282015-07-24%29_01.jpg', links: { rennlist: 'https://rennlist.com/forums/cayenne-958-2011-2018-189/', planet9: '' } },
+            { id: 'macan-95b', model: 'Macan', generation: 'Macan (2014-2018 )', year: 2016, reliabilityIndex: 82, issue: 'Fuga de aceite en tapa de distribución', criticality: 'Media', cost: '1,500 - 2,500', description: 'Fuga de aceite común debido a un mal sellado. La reparación es costosa por la mano de obra necesaria para acceder a la zona.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/2017_Porsche_Macan_GTS_3.0_Front.jpg/1280px-2017_Porsche_Macan_GTS_3.0_Front.jpg', links: { rennlist: 'https://rennlist.com/forums/macan-232/', planet9: '' } },
+            { id: 'panamera-970', model: 'Panamera', generation: 'Panamera 970 (2010-2016 )', year: 2012, reliabilityIndex: 75, issue: 'Fallos en la suspensión neumática', criticality: 'Alta', cost: '1,000 - 2,000 / eje', description: 'Fugas en los amortiguadores o fallos en el compresor, haciendo que el coche no mantenga la altura correcta. Un fallo común en coches grandes con esta tecnología.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Porsche_Panamera_4S_-_Flickr_-_The_Car_Spy_%2810%29.jpg/1280px-Porsche_Panamera_4S_-_Flickr_-_The_Car_Spy_%2810%29.jpg', links: { rennlist: 'https://rennlist.com/forums/panamera-179/', planet9: '' } },
+            { id: 'taycan-j1', model: 'Taycan', generation: 'Taycan (2020-2023 )', year: 2022, reliabilityIndex: 92, issue: 'Problemas con batería de 12V y software', criticality: 'Media-Baja', cost: 'Garantía', description: 'La batería auxiliar de 12V puede descargarse, inmovilizando el coche. Solucionado en gran medida con campañas de software y hardware.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Porsche_Taycan_4S_-_GIMS_2022_01.jpg/1280px-Porsche_Taycan_4S_-_GIMS_2022_01.jpg', links: { rennlist: 'https://rennlist.com/forums/taycan-272/', planet9: '' } },
+            { id: '944', model: 'Transaxle', generation: '944 (1982-1991 )', year: 1987, reliabilityIndex: 80, issue: 'Mantenimiento de correas y bomba de agua', criticality: 'Crítica', cost: '800 - 1,500 (preventivo)', description: 'El cambio de la correa de distribución y la correa de balance es un mantenimiento CRÍTICO por intervalo, no por kilometraje. Si falla, el motor se destruye.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Porsche_944_S2_front_20080213.jpg/1280px-Porsche_944_S2_front_20080213.jpg', links: { rennlist: 'https://rennlist.com/forums/924-931-944-951-968-forum-70/', planet9: '' } },
+            { id: '928', model: 'Transaxle', generation: '928 (1978-1995 )', year: 1989, reliabilityIndex: 70, issue: 'Complejidad eléctrica', criticality: 'Alta', cost: 'Variable (muy alto)', description: 'Conocido por sus complejos sistemas eléctricos que se vuelven frágiles con el tiempo. Diagnosticar problemas puede ser una pesadilla de tiempo y dinero.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Porsche_928_S4_-_Flickr_-_The_Car_Spy.jpg/1280px-Porsche_928_S4_-_Flickr_-_The_Car_Spy.jpg', links: { rennlist: 'https://rennlist.com/forums/928-forum-112/', planet9: '' } },
+            { id: '968', model: 'Transaxle', generation: '968 (1992-1995 )', year: 1993, reliabilityIndex: 85, issue: 'Fallo del sistema Variocam', criticality: 'Alta', cost: '1,500 - 2,500', description: 'Los patines de plástico de la cadena del Variocam se desgastan y pueden romperse, causando problemas de sincronización y daños potenciales.', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Porsche_968_CS_LHD.jpg/1280px-Porsche_968_CS_LHD.jpg', links: { rennlist: 'https://rennlist.com/forums/924-931-944-951-968-forum-70/', planet9: '' } }
+        ],
+        maintenanceCosts: { labels: ['911 (992)', 'Cayenne', 'Macan', 'Taycan', 'Boxster/Cayman'], costs: [4500, 3800, 3200, 1500, 3900] }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let charts = {}; // Objeto para almacenar instancias de gráficos
+        
+        function initializeDashboard() {
+            renderFaultsTable(productData.faults);
+            renderAllCharts();
+            setupEventListeners();
+        }
+
+        function renderAllCharts() {
+            renderReliabilityChart();
+            renderMaintenanceChart();
+            renderReliabilityTrendChart();
+        }
+
+        function renderFaultsTable(data) {
+            const tableBody = document.getElementById('faults-table-body');
+            tableBody.innerHTML = data.map(item => `
+                <tr data-id="${item.id}">
+                    <td>${item.model}</td>
+                    <td>${item.generation}</td>
+                    <td class="${getReliabilityClass(item.reliabilityIndex)}">${item.reliabilityIndex}/100</td>
+                    <td>${item.issue}</td>
+                    <td>${item.criticality}</td>
+                    <td>${item.cost}</td>
+                </tr>
+            `).join('');
+            // Añadir listeners a las nuevas filas
+            document.querySelectorAll('#faults-table-body tr').forEach(row => {
+                row.addEventListener('click', () => openDetailsModal(row.dataset.id));
+            });
+        }
+
+        function renderReliabilityChart() {
+            const ctx = document.getElementById('reliabilityChart').getContext('2d');
+            if (charts.reliability) charts.reliability.destroy();
+            charts.reliability = new Chart(ctx, { /* ... Configuración del gráfico de burbujas ... */ 
+                type: 'bubble',
+                data: {
+                    datasets: productData.faults.map(fault => ({
+                        label: `${fault.model} (${fault.generation})`,
+                        data: [{ x: fault.year, y: getModelYAxis(fault.model), r: (100 - fault.reliabilityIndex) / 2, id: fault.id }],
+                        backgroundColor: getReliabilityColor(fault.reliabilityIndex),
+                    }))
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { title: { display: true, text: 'Año', color: getTextColor() }, ticks: { color: getTextColor() } },
+                        y: { ticks: { color: getTextColor(), callback: (value) => ['Boxster/Cayman', 'Taycan', 'Macan', 'Cayenne', '911','Panamera', 'Transaxle'][value] }, min: -1, max: 5 }
+                    }
+                }
+            });
+        }
+
+        function renderMaintenanceChart() {
+            const ctx = document.getElementById('maintenanceChart').getContext('2d');
+            if (charts.maintenance) charts.maintenance.destroy();
+            charts.maintenance = new Chart(ctx, { /* ... Configuración del gráfico de barras ... */ 
+                type: 'bar',
+                data: {
+                    labels: productData.maintenanceCosts.labels,
+                    datasets: [{
+                        label: 'Coste en €',
+                        data: productData.maintenanceCosts.costs,
+                        backgroundColor: productData.maintenanceCosts.labels.map(l => l === 'Taycan' ? 'var(--porsche-gold)' : 'var(--porsche-red)')
+                    }]
+                },
+                options: {
+                    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { title: { display: true, text: 'Euros (€)', color: getTextColor() }, ticks: { color: getTextColor() } },
+                        y: { ticks: { color: getTextColor() } }
+                    }
+                }
+            });
+        }
+
+        function renderReliabilityTrendChart() {
+            const ctx = document.getElementById('reliabilityTrendChart').getContext('2d');
+            const trendData = productData.faults
+                .sort((a, b) => a.year - b.year)
+                .map(fault => ({ x: fault.year, y: fault.reliabilityIndex }));
+
+            if (charts.trend) charts.trend.destroy();
+            charts.trend = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Índice de Fiabilidad',
+                        data: trendData,
+                        borderColor: 'var(--porsche-red)',
+                        backgroundColor: 'rgba(177, 43, 40, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { type: 'linear', title: { display: true, text: 'Año', color: getTextColor() }, ticks: { color: getTextColor(), stepSize: 2 } },
+                        y: { title: { display: true, text: 'Índice (0-100)', color: getTextColor() }, ticks: { color: getTextColor() }, min: 40, max: 100 }
+                    }
+                }
+            });
+        }
+
+        function openDetailsModal(id) {
+            const item = productData.faults.find(f => f.id === id);
+            if (!item) return;
+
+            document.getElementById('modal-title').textContent = `${item.model} ${item.generation}`;
+            document.getElementById('modal-img').src = item.image;
+            document.getElementById('modal-details').innerHTML = `
+                <p><strong>Fallo Común:</strong> ${item.issue}</p>
+                <p><strong>Descripción:</strong> ${item.description}</p>
+                <p><strong>Índice Fiabilidad:</strong> <span class="${getReliabilityClass(item.reliabilityIndex)}">${item.reliabilityIndex}/100</span></p>
+                <p><strong>Coste Estimado:</strong> ${item.cost}</p>
+            `;
+            const linksContainer = document.getElementById('modal-links');
+            linksContainer.innerHTML = '';
+            if (item.links.rennlist) linksContainer.innerHTML += `<a href="${item.links.rennlist}" target="_blank">Ver en Rennlist</a>`;
+            if (item.links.planet9) linksContainer.innerHTML += `<a href="${item.links.planet9}" target="_blank">Ver en Planet-9</a>`;
+            
+            document.getElementById('details-modal').style.display = 'flex';
+        }
+
+        function setupEventListeners() {
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filteredData = productData.faults.filter(item => 
+                    Object.values(item).some(val => 
+                        String(val).toLowerCase().includes(searchTerm)
+                    )
+                );
+                renderFaultsTable(filteredData);
+            });
+
+            const modal = document.getElementById('details-modal');
+            document.getElementById('modal-close-btn').addEventListener('click', () => modal.style.display = 'none');
+            modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderAllCharts();
+            });
+        }
+
+        // --- Funciones de Utilidad ---
+        const getTextColor = () => document.body.classList.contains('theme-dark') ? 'white' : 'black';
+        const getReliabilityClass = (index) => (index < 60) ? 'reliability-low' : (index < 85) ? 'reliability-medium' : 'reliability-high';
+        const getReliabilityColor = (index) => (index < 60) ? 'rgba(220, 53, 69, 0.7)' : (index < 85) ? 'rgba(227, 171, 55, 0.7)' : 'rgba(40, 167, 69, 0.7)';
+        const getModelYAxis = (model) => ['Boxster/Cayman', 'Taycan', 'Macan', 'Cayenne', '911', 'Panamera', 'Transaxle'].indexOf(model);
+
+        initializeDashboard();
+    });
+    </script>
+</body>
+</html>

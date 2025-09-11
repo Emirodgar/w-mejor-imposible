@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Análisis de compra</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .chart-section { grid-column: span 12; }
+        .table-section { grid-column: span 12; }
+
+        .table-container { max-height: 600px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        thead { position: sticky; top: 0; z-index: 10; }
+        .theme-light thead { background-color: var(--light-card-bg); }
+        .theme-dark thead { background-color: var(--dark-card-bg); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        
+        .verdict-essential { color: #28a745; font-weight: bold; }
+        .verdict-recommended { color: #E3AB37; font-weight: bold; }
+        .verdict-personal { color: #4682B4; }
+        .verdict-avoid { color: #dc3545; }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Análisis de Opciones Imprescindibles y su Coste</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card chart-section">
+                <h2 class="card-title">Análisis de Valor: Coste de la Opción vs. Valor Añadido en Reventa</h2>
+                <div style="height: 450px;"><canvas id="optionsValueChart"></canvas></div>
+            </section>
+
+            <section class="card table-section">
+                <h2 class="card-title">Guía Detallada de Opciones Populares</h2>
+                <div class="table-container">
+                    <table id="options-table">
+                        <thead>
+                            <tr>
+                                <th>Opción</th>
+                                <th>Veredicto</th>
+                                <th>Descripción y Justificación</th>
+                                <th>Recomendación Específica</th>
+                            </tr>
+                        </thead>
+                        <tbody id="options-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    const optionsData = [
+        { option: 'Paquete Sport Chrono', cost: 2400, resaleValue: 2000, verdict: 'Imprescindible', description: 'Añade modos de conducción, Launch Control y un reloj. Transforma el carácter del coche.', recommendation: 'No comprar un deportivo Porsche sin él. Es el extra #1 en valor de reventa.' },
+        { option: 'Sistema de Escape Deportivo (PSE )', cost: 2600, resaleValue: 2200, verdict: 'Imprescindible', description: 'Mejora drásticamente la experiencia auditiva con solo pulsar un botón.', recommendation: 'Especialmente crítico en los 718 de 4 cilindros y en los modelos con filtro de partículas (GPF).' },
+        { option: 'Asientos Deportivos Plus (18 pos.)', cost: 3500, resaleValue: 1500, verdict: 'Muy Recomendable', description: 'Ofrecen una sujeción y un rango de ajuste muy superiores a los de serie.', recommendation: 'Aumentan mucho el confort y la sensación premium. Los asientos base devalúan el coche.' },
+        { option: 'Sistema de Elevación del Eje Delantero (LIFT)', cost: 2500, resaleValue: 1800, verdict: 'Muy Recomendable', description: 'Eleva el morro del coche para superar rampas y badenes sin rozar.', recommendation: 'Esencial en modelos GT (GT3, GT4) y Turbos. En un Carrera, es una gran comodidad.' },
+        { option: 'Eje Trasero Direccional', cost: 2300, resaleValue: 1000, verdict: 'Recomendable', description: 'Mejora la agilidad a baja velocidad y la estabilidad a alta velocidad.', recommendation: 'Muy efectivo en los 911. Menos necesario en los 718, que ya son muy ágiles.' },
+        { option: 'Frenos Cerámicos (PCCB)', cost: 10500, resaleValue: 3500, verdict: 'Personal / Evitar', description: 'Rendimiento de frenada superior y sin polvo de freno, pero el coste de reemplazo es astronómico.', recommendation: 'Solo para uso intensivo en circuito. Para calle, los frenos de acero son excelentes y más económicos.' },
+        { option: 'Faros LED Matriciales (PDLS+)', cost: 2100, resaleValue: 800, verdict: 'Recomendable', description: 'Iluminación adaptativa muy superior, mejora la seguridad y la estética.', recommendation: 'Un extra de calidad de vida y seguridad que se valora en el mercado de ocasión.' },
+        { option: 'Techo Solar de Cristal', cost: 2300, resaleValue: 500, verdict: 'Personal', description: 'Aporta luminosidad al habitáculo, pero añade peso en el punto más alto del coche.', recommendation: 'Totalmente subjetivo. Los puristas lo evitan, otros lo consideran imprescindible.' },
+        { option: 'Color Especial (Paint to Sample)', cost: 11000, resaleValue: 8000, verdict: 'Personal', description: 'Permite elegir un color único de la paleta histórica de Porsche.', recommendation: 'Añade mucha exclusividad y se valora bien en modelos especiales (GT), pero es una gran inversión inicial.' }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let optionsChartInstance;
+
+        function initializePage() {
+            renderOptionsTable();
+            renderOptionsChart();
+            setupEventListeners();
+        }
+
+        function renderOptionsTable() {
+            const tableBody = document.getElementById('options-table-body');
+            const verdictClasses = {
+                'Imprescindible': 'verdict-essential',
+                'Muy Recomendable': 'verdict-recommended',
+                'Recomendable': 'verdict-recommended',
+                'Personal': 'verdict-personal',
+                'Personal / Evitar': 'verdict-avoid',
+            };
+            tableBody.innerHTML = optionsData.map(item => `
+                <tr>
+                    <td>${item.option}</td>
+                    <td class="${verdictClasses[item.verdict] || ''}">${item.verdict}</td>
+                    <td>${item.description}</td>
+                    <td>${item.recommendation}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderOptionsChart() {
+            const ctx = document.getElementById('optionsValueChart').getContext('2d');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? 'white' : 'black';
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+            const labels = optionsData.map(item => item.option);
+            const costs = optionsData.map(item => item.cost);
+            const resaleValues = optionsData.map(item => item.resaleValue);
+
+            if (optionsChartInstance) optionsChartInstance.destroy();
+            optionsChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Coste Original (€)',
+                            data: costs,
+                            backgroundColor: 'rgba(70, 76, 71, 0.7)', // Porsche Grey
+                            borderColor: 'rgba(70, 76, 71, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Valor Añadido en Reventa (€)',
+                            data: resaleValues,
+                            backgroundColor: 'rgba(177, 43, 40, 0.7)', // Porsche Red
+                            borderColor: 'rgba(177, 43, 40, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { color: textColor } },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `${context.dataset.label}: ${context.parsed.y.toLocaleString('es-ES')} €`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: textColor, autoSkip: false, maxRotation: 90, minRotation: 30 },
+                            grid: { display: false }
+                        },
+                        y: {
+                            title: { display: true, text: 'Coste / Valor (€)', color: textColor },
+                            ticks: {
+                                color: textColor,
+                                callback: (value) => `${(value / 1000).toLocaleString('es-ES')}k`
+                            },
+                            grid: { color: gridColor }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderOptionsChart();
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

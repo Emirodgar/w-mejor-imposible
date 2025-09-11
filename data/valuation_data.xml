@@ -1,0 +1,21 @@
+<valuation_data>
+    <brand name="Porsche">
+        <model name="Cayenne" rating="4.5" reviews="1200"/>
+        <model name="Panamera" rating="4.3" reviews="850"/>
+        <model name="Macan" rating="4.6" reviews="1500"/>
+        <model name="911" rating="4.8" reviews="2000"/>
+    </brand>
+    <brand name="BMW">
+        <model name="Serie 3" rating="4.2" reviews="3000"/>
+        <model name="X5" rating="4.4" reviews="2500"/>
+    </brand>
+    <brand name="Audi">
+        <model name="A4" rating="4.1" reviews="2800"/>
+        <model name="Q5" rating="4.3" reviews="2200"/>
+    </brand>
+    <brand name="Mercedes-Benz">
+        <model name="Clase C" rating="4.3" reviews="3100"/>
+        <model name="GLC" rating="4.5" reviews="2600"/>
+    </brand>
+</valuation_data>
+

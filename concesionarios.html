@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Directorio de Centros Oficiales</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1400px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; margin-bottom: 20px; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
+        
+        .directory-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        .map-container {
+            position: relative;
+            height: 600px;
+            background-image: url('https://i.imgur.com/gYf20aT.png' ); /* Imagen de mapa de España */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .dealer-list-container {
+            height: 600px;
+            overflow-y: auto;
+        }
+        .dealer-card {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            border: 1px solid;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .theme-light .dealer-card { border-color: #e0e0e0; }
+        .theme-dark .dealer-card { border-color: #444; }
+
+        .dealer-card h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--porsche-red); }
+        .dealer-card p { margin: 2px 0; font-size: 14px; }
+        .dealer-rating { display: flex; align-items: center; margin-top: 10px; }
+        .dealer-rating .stars { color: var(--porsche-gold); font-size: 20px; }
+        .dealer-rating .score { margin-left: 10px; font-weight: bold; }
+        .dealer-actions { margin-top: 15px; }
+        .dealer-actions a { text-decoration: none; color: inherit; padding: 8px 15px; border-radius: 6px; border: 1px solid var(--porsche-grey); margin-right: 10px; font-size: 14px; }
+        .dealer-actions a:hover { background-color: var(--porsche-grey); color: white; }
+
+        @media (max-width: 992px) {
+            .directory-layout { grid-template-columns: 1fr; }
+            .map-container { height: 300px; }
+        }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Directorio de Centros Porsche Oficiales en España</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="directory-layout">
+                    <div class="map-container">
+                        <!-- Mapa estático como fondo -->
+                    </div>
+                    <div id="dealer-list" class="dealer-list-container">
+                        <!-- Las tarjetas de los concesionarios se generarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    const dealerData = [
+        { name: 'Centro Porsche Madrid Norte', address: 'C. de Sor Ángela de la Cruz, 24, 28020 Madrid', rating: 4.5, phone: '914535300' },
+        { name: 'Centro Porsche Madrid Oeste', address: 'Carr. de La Coruña, Km 17, 28231 Las Rozas, Madrid', rating: 4.6, phone: '916405800' },
+        { name: 'Centro Porsche Barcelona', address: 'C/ Botànica, 89, 08908 L\'Hospitalet de Llobregat, Barcelona', rating: 4.4, phone: '932896800' },
+        { name: 'Centro Porsche Valencia', address: 'Carrer del Batedor, 2, 46980 Paterna, Valencia', rating: 4.7, phone: '963168100' },
+        { name: 'Centro Porsche Sevilla', address: 'Av. de la Prensa, 43, 41007 Sevilla', rating: 4.8, phone: '954999449' },
+        { name: 'Centro Porsche Marbella', address: 'C. Pirita, 10, 29603 Marbella, Málaga', rating: 4.6, phone: '952776171' },
+        { name: 'Centro Porsche Bilbao', address: 'Polígono Industrial, Erletxe, Plataforma A, Parcela 2, 48960 Galdakao, Bizkaia', rating: 4.7, phone: '944570101' },
+        { name: 'Centro Porsche Zaragoza', address: 'Carr. de Logroño, km 8, 50011 Zaragoza', rating: 4.9, phone: '976324110' },
+        { name: 'Centro Porsche A Coruña', address: 'N-VI, km 589, 15176 Perillo, A Coruña', rating: 4.8, phone: '981637111' },
+        { name: 'Centro Porsche Baleares', address: 'Gran Via Asima, 2, 07009 Palma, Illes Balears', rating: 4.5, phone: '971432222' },
+        { name: 'Centro Porsche Murcia', address: 'Av. del Progreso, 153, 30012 Murcia', rating: 4.7, phone: '968307799' },
+        { name: 'Centro Porsche Alicante', address: 'Ctra. de Ocaña, 50, 03006 Alicante', rating: 4.6, phone: '965100155' }
+    ];
+
+    document.addEventListener('DOMContentLoaded', ( ) => {
+        
+        function initializePage() {
+            renderDealerList();
+            setupEventListeners();
+        }
+
+        function renderDealerList() {
+            const listContainer = document.getElementById('dealer-list');
+            listContainer.innerHTML = dealerData.sort((a, b) => b.rating - a.rating).map(dealer => {
+                const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dealer.address )}`;
+                const phoneUrl = `tel:${dealer.phone}`;
+                
+                let stars = '';
+                const fullStars = Math.floor(dealer.rating);
+                const halfStar = dealer.rating % 1 >= 0.5;
+                for(let i = 0; i < fullStars; i++) stars += '★';
+                if(halfStar) stars += '½';
+                const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+                for(let i = 0; i < emptyStars; i++) stars += '☆';
+
+                return `
+                    <div class="dealer-card">
+                        <h3>${dealer.name}</h3>
+                        <p>${dealer.address}</p>
+                        <div class="dealer-rating">
+                            <span class="stars">${stars}</span>
+                            <span class="score">${dealer.rating.toFixed(1)}</span>
+                        </div>
+                        <div class="dealer-actions">
+                            <a href="${googleMapsUrl}" target="_blank">Ver en Mapa</a>
+                            <a href="${phoneUrl}">Llamar</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

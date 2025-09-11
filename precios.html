@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <title>Porsche - Análisis de evolución de precios</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .chart-section { grid-column: span 12; }
+        .table-section { grid-column: span 12; }
+
+        .table-container { max-height: 600px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        thead { position: sticky; top: 0; z-index: 10; }
+        .theme-light thead { background-color: var(--light-card-bg); }
+        .theme-dark thead { background-color: var(--dark-card-bg); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        .price-increase { color: #dc3545; font-weight: bold; }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Análisis de Evolución de Precios de Lanzamiento (PVP )</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card chart-section">
+                <h2 class="card-title">Evolución del Precio de Lanzamiento por Generación</h2>
+                <div style="height: 450px;"><canvas id="launchPriceChart"></canvas></div>
+            </section>
+
+            <section class="card table-section">
+                <h2 class="card-title">Análisis Detallado del Aumento de Precios</h2>
+                <div class="table-container">
+                    <table id="price-table">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Generación / Versión</th>
+                                <th>Año Lanzamiento</th>
+                                <th>Precio Lanzamiento (€)</th>
+                                <th>Cambio vs. Anterior</th>
+                                <th>Justificación del Aumento</th>
+                            </tr>
+                        </thead>
+                        <tbody id="price-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    const launchPriceData = [
+        { model: '911 Carrera', generation: '991.1', year: 2012, price: 104300, change: null, reason: 'Generación completamente nueva.' },
+        { model: '911 Carrera', generation: '991.2', year: 2016, price: 110800, change: 6.2, reason: 'Motores turbo, nuevo PCM, +30cv.' },
+        { model: '911 Carrera', generation: '992', year: 2019, price: 120450, change: 8.7, reason: 'Nueva plataforma, interior digital, +20cv, más ancho.' },
+        { model: '911 Carrera', generation: '992.2', year: 2024, price: 148500, change: 23.3, reason: 'Primer 911 Híbrido (T-Hybrid), cuadro digital completo, inflación.' },
+        
+        { model: '718 Cayman', generation: '981', year: 2013, price: 57500, change: null, reason: 'Nuevo chasis, más ligero y rígido.' },
+        { model: '718 Cayman', generation: '718 (4-Cil)', year: 2017, price: 60500, change: 5.2, reason: 'Cambio a motores 4-cilindros turbo, más par motor.' },
+        { model: '718 Cayman Style', generation: '718 (Actual)', year: 2023, price: 77850, change: 28.7, reason: 'Reposicionamiento de gama, más equipamiento de serie, inflación.' },
+
+        { model: 'Cayenne', generation: '958.2 (S E-Hybrid)', year: 2014, price: 85100, change: null, reason: 'Primer híbrido enchufable de la marca.' },
+        { model: 'Cayenne', generation: 'E-Hybrid (E3)', year: 2018, price: 93400, change: 9.8, reason: 'Plataforma MLB, interior digital, más autonomía eléctrica.' },
+        { model: 'Cayenne', generation: 'E-Hybrid (E3.2)', year: 2023, price: 107300, change: 14.9, reason: 'Restyling profundo, nuevo interior (similar a Taycan), más potencia.' },
+
+        { model: 'Macan', generation: 'Base', year: 2016, price: 63100, change: null, reason: 'Versión de acceso con motor 4 cilindros.' },
+        { model: 'Macan', generation: 'Restyling', year: 2019, price: 66500, change: 5.4, reason: 'Nuevo diseño trasero (banda LED), pantalla PCM más grande.' },
+        { model: 'Macan T', generation: 'Actual', year: 2022, price: 79600, change: 19.7, reason: 'Versión T con enfoque deportivo, más equipamiento, inflación.' },
+        { model: 'Macan Eléctrico', generation: 'PPE', year: 2024, price: 85300, change: 7.2, reason: 'Plataforma 100% eléctrica (PPE), arquitectura de 800V.' },
+
+        { model: 'Panamera', generation: '971 (4 E-Hybrid)', year: 2017, price: 110900, change: null, reason: 'Generación completamente nueva, diseño mejorado.' },
+        { model: 'Panamera', generation: '971.2 (4 E-Hybrid)', year: 2021, price: 116500, change: 5.1, reason: 'Batería más grande, más autonomía eléctrica.' },
+        { model: 'Panamera', generation: '972 (4 E-Hybrid)', year: 2024, price: 127800, change: 9.7, reason: 'Nuevo interior digital, suspensión Active Ride opcional.' },
+        
+        { model: 'Taycan', generation: '4S', year: 2020, price: 108000, change: null, reason: 'Primer coche 100% eléctrico de Porsche.' },
+        { model: 'Taycan', generation: 'Restyling', year: 2024, price: 121000, change: 12.0, reason: 'Mayor autonomía, carga más rápida, más potencia.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let launchPriceChartInstance;
+
+        function initializePage() {
+            renderPriceTable(launchPriceData);
+            renderLaunchPriceChart();
+            setupEventListeners();
+        }
+
+        function renderPriceTable(data) {
+            const tableBody = document.getElementById('price-table-body');
+            tableBody.innerHTML = data.map(item => `
+                <tr>
+                    <td>${item.model}</td>
+                    <td>${item.generation}</td>
+                    <td>${item.year}</td>
+                    <td>${item.price.toLocaleString('es-ES')}</td>
+                    <td class="${item.change ? 'price-increase' : ''}">${item.change ? `+${item.change.toFixed(1)}%` : 'N/A'}</td>
+                    <td>${item.reason}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderLaunchPriceChart() {
+            const ctx = document.getElementById('launchPriceChart').getContext('2d');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? 'white' : 'black';
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+            const labels = launchPriceData.map(item => `${item.model} (${item.generation})`);
+            const prices = launchPriceData.map(item => item.price);
+            
+            const modelColors = {
+                '911 Carrera': '#B12B28',
+                '718 Cayman': '#E3AB37',
+                'Cayenne': '#464C47',
+                'Macan': '#8B0000',
+                'Panamera': '#696969',
+                'Taycan': '#4682B4'
+            };
+            const backgroundColors = launchPriceData.map(item => modelColors[item.model] || '#cccccc');
+
+            if (launchPriceChartInstance) launchPriceChartInstance.destroy();
+            launchPriceChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Precio de Lanzamiento (€)',
+                        data: prices,
+                        backgroundColor: backgroundColors,
+                        borderColor: backgroundColors.map(color => color + 'FF'),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `PVP: ${context.parsed.y.toLocaleString('es-ES')} €`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: { color: textColor, autoSkip: false, maxRotation: 90, minRotation: 45 },
+                            grid: { display: false }
+                        },
+                        y: {
+                            title: { display: true, text: 'Precio de Lanzamiento (€)', color: textColor },
+                            ticks: {
+                                color: textColor,
+                                callback: (value) => `${(value / 1000).toLocaleString('es-ES')}k`
+                            },
+                            grid: { color: gridColor }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderLaunchPriceChart();
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

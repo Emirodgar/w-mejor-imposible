@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Guía de inspección de coche de segunda mano</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; margin-bottom: 20px; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
+        
+        .selector-container { display: flex; gap: 20px; margin-bottom: 20px; }
+        .selector-container .control-group { flex: 1; }
+        .selector-container label { display: block; margin-bottom: 5px; font-size: 14px; }
+        .selector-container select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--porsche-grey); background: inherit; color: inherit; font-size: 16px; }
+
+        .checklist ul { list-style-type: none; padding: 0; }
+        .checklist li { display: flex; align-items: center; padding: 12px 5px; border-bottom: 1px solid; transition: background-color 0.2s; }
+        .theme-light .checklist li { border-color: #e0e0e0; }
+        .theme-dark .checklist li { border-color: #444; }
+        .checklist li:last-child { border-bottom: none; }
+        .checklist input[type="checkbox"] { width: 20px; height: 20px; margin-right: 15px; accent-color: var(--porsche-red); }
+        .checklist label { font-size: 16px; }
+        .checklist li.done { text-decoration: line-through; opacity: 0.6; }
+        .checklist .category-title { font-size: 16px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; color: var(--porsche-gold); }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Guía de Inspección de Segunda Mano</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2 class="card-title">1. Selecciona el Vehículo a Inspeccionar</h2>
+                <div class="selector-container">
+                    <div class="control-group">
+                        <label for="model-select">Modelo</label>
+                        <select id="model-select"></select>
+                    </div>
+                    <div class="control-group">
+                        <label for="generation-select">Generación</label>
+                        <select id="generation-select"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">2. Checklist de Inspección Personalizada</h2>
+                <div id="checklist-container" class="checklist">
+                    <!-- La checklist se generará aquí -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    const inspectionData = {
+        '911': {
+            '996 (1998-2004 )': {
+                critical: [
+                    "Preguntar y pedir facturas sobre el cambio preventivo del rodamiento IMS. Si no hay pruebas, asumir que hay que hacerlo (coste ~€2.500).",
+                    "Revisar si hay fugas de aceite en el retén del cigüeñal (RMS). Mancha de aceite entre motor y caja de cambios."
+                ],
+                common: [
+                    "Comprobar si el tanque de expansión del refrigerante tiene fisuras o está amarillento.",
+                    "Verificar que la pantalla del climatizador y del ordenador de a bordo no haya perdido píxeles.",
+                    "Asegurarse de que los faros no estén empañados o amarillentos (muy común)."
+                ]
+            },
+            '997.1 (2005-2008)': {
+                critical: [
+                    "¡IMPRESCINDIBLE! Pedir una inspección con boroscopio para detectar 'Bore Scoring' (rayado de cilindros). Buscar humo azulado en el escape al arrancar en frío.",
+                    "Aunque menos probable que en el 996, verificar el estado del rodamiento IMS (solo en modelos hasta 2006)."
+                ],
+                common: [
+                    "Revisar el desgaste de los botones del climatizador y la radio (se pelan con facilidad).",
+                    "Comprobar si hay fugas en los amortiguadores (especialmente si tiene PASM).",
+                    "Escuchar si la bomba de la dirección asistida hace ruidos extraños."
+                ]
+            },
+            '991.1 (2012-2015)': {
+                critical: [
+                    "En coches con PDK, probar cambios de marcha bruscos (en modo Sport Plus) para detectar tirones o fallos en la mecatrónica."
+                ],
+                common: [
+                    "Verificar el correcto funcionamiento de las válvulas de cambio del escape deportivo (PSE), a veces se atascan.",
+                    "Comprobar si los soportes dinámicos del motor (si los equipa) presentan fugas.",
+                    "Revisar el sistema de elevación del eje delantero (LIFT) si lo tiene, es propenso a fallos."
+                ]
+            }
+        },
+        'Cayman/Boxster': {
+            '987.1 (2005-2008)': {
+                critical: [
+                    "Mismos puntos críticos que el 997.1: Inspección con boroscopio para 'Bore Scoring' es OBLIGATORIA.",
+                    "Verificar historial del IMS en modelos hasta 2006."
+                ],
+                common: [
+                    "Comprobar el estado de los cables de la palanca de cambios (pueden romperse).",
+                    "En Boxster, revisar el estado de la capota y los desagües para evitar inundaciones en la centralita (debajo del asiento)."
+                ]
+            },
+            '718 (2017-Hoy)': {
+                critical: [],
+                common: [
+                    "Preguntar por el historial de cambios de aceite; los motores turbo son más sensibles.",
+                    "Escuchar si hay ruidos o silbidos anómalos del turbo.",
+                    "Verificar el estado de la bomba de agua, algunos fallos prematuros reportados."
+                ]
+            }
+        },
+        'Cayenne': {
+            '955/957 (2003-2010)': {
+                critical: [
+                    "¡MUY IMPORTANTE! Verificar si las tuberías de refrigerante de plástico han sido reemplazadas por las de aluminio. Si no, es una reparación inminente y necesaria.",
+                    "En modelos Turbo/S, buscar síntomas de 'Bore Scoring' (similar al 997.1)."
+                ],
+                common: [
+                    "Comprobar si hay vibraciones en la transmisión alrededor de 40-60 km/h (indica fallo del cardán).",
+                    "Verificar el funcionamiento de la suspensión neumática; que suba, baje y mantenga la altura sin problemas."
+                ]
+            }
+        }
+    };
+
+    const generalChecklist = {
+        docs: [
+            "Libro de mantenimiento sellado y al día.",
+            "Facturas de reparaciones importantes (IMS, embrague, etc.).",
+            "Informe de la DGT para verificar dueños y cargas.",
+            "ITV en vigor y reportes de inspecciones pasadas."
+        ],
+        exterior: [
+            "Inspeccionar la pintura en busca de diferencias de tono (posible golpe).",
+            "Revisar el estado de los neumáticos (desgaste uniforme, fecha de fabricación).",
+            "Comprobar el estado de los discos y pastillas de freno.",
+            "Verificar que todos los cristales sean originales (mismo logo y fecha)."
+        ],
+        interior: [
+            "Probar TODOS los botones, luces y funciones eléctricas.",
+            "Revisar el desgaste del asiento del conductor, volante y pomo.",
+            "Comprobar el funcionamiento del aire acondicionado (que enfríe de verdad).",
+            "Buscar olores a humedad o moho."
+        ]
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const modelSelect = document.getElementById('model-select');
+        const generationSelect = document.getElementById('generation-select');
+        const checklistContainer = document.getElementById('checklist-container');
+
+        function initializePage() {
+            populateModelSelect();
+            setupEventListeners();
+            modelSelect.dispatchEvent(new Event('change')); // Trigger initial population
+        }
+
+        function populateModelSelect() {
+            Object.keys(inspectionData).forEach(model => {
+                const option = document.createElement('option');
+                option.value = model;
+                option.textContent = model;
+                modelSelect.appendChild(option);
+            });
+        }
+
+        function populateGenerationSelect() {
+            const selectedModel = modelSelect.value;
+            generationSelect.innerHTML = ''; // Clear previous options
+            Object.keys(inspectionData[selectedModel]).forEach(gen => {
+                const option = document.createElement('option');
+                option.value = gen;
+                option.textContent = gen;
+                generationSelect.appendChild(option);
+            });
+        }
+
+        function generateChecklist() {
+            const model = modelSelect.value;
+            const generation = generationSelect.value;
+            const data = inspectionData[model][generation];
+            
+            let html = '';
+
+            if (data.critical && data.critical.length > 0) {
+                html += '<h3 class="category-title">🚨 Puntos Críticos Específicos</h3><ul>';
+                data.critical.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
+                html += '</ul>';
+            }
+
+            if (data.common && data.common.length > 0) {
+                html += '<h3 class="category-title">🔧 Problemas Comunes Conocidos</h3><ul>';
+                data.common.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
+                html += '</ul>';
+            }
+
+            html += '<h3 class="category-title">📄 Documentación Esencial</h3><ul>';
+            generalChecklist.docs.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
+            html += '</ul>';
+
+            html += '<h3 class="category-title">✅ Inspección General del Vehículo</h3><ul>';
+            generalChecklist.exterior.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
+            generalChecklist.interior.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
+            html += '</ul>';
+
+            checklistContainer.innerHTML = html;
+            
+            // Add event listeners to new checkboxes
+            checklistContainer.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', (e) => {
+                    e.target.closest('li').classList.toggle('done', e.target.checked);
+                });
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+            });
+
+            modelSelect.addEventListener('change', () => {
+                populateGenerationSelect();
+                generateChecklist();
+            });
+
+            generationSelect.addEventListener('change', generateChecklist);
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

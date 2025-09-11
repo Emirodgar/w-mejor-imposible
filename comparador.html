@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <title>Porsche - Comparardor de rendimiento y ventas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .chart-section { grid-column: span 8; }
+        .selector-section { grid-column: span 4; }
+        .table-section { grid-column: span 12; }
+
+        .selector-section .control-group { margin-bottom: 15px; }
+        .selector-section label { display: block; margin-bottom: 5px; font-size: 14px; }
+        .selector-section select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--porsche-grey); background: inherit; color: inherit; font-size: 16px; }
+
+        .table-container { max-height: 600px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        thead { position: sticky; top: 0; z-index: 10; }
+        .theme-light thead { background-color: var(--light-card-bg); }
+        .theme-dark thead { background-color: var(--dark-card-bg); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        
+        @media (max-width: 1200px) {
+            .chart-section, .selector-section { grid-column: span 12; }
+        }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Comparador de Prestaciones y Sensaciones</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card chart-section">
+                <h2 class="card-title">Gráfico de Personalidad del Modelo</h2>
+                <div style="height: 500px;"><canvas id="personalityChart"></canvas></div>
+            </section>
+
+            <section class="card selector-section">
+                <h2 class="card-title">Selecciona Modelos a Comparar</h2>
+                <div class="control-group">
+                    <label for="model1">Modelo 1 (Rojo )</label>
+                    <select id="model1"></select>
+                </div>
+                <div class="control-group">
+                    <label for="model2">Modelo 2 (Dorado)</label>
+                    <select id="model2"></select>
+                </div>
+                <div class="control-group">
+                    <label for="model3">Modelo 3 (Gris)</label>
+                    <select id="model3"></select>
+                </div>
+            </section>
+
+            <section class="card table-section">
+                <h2 class="card-title">Tabla Comparativa de Ficha Técnica</h2>
+                <div class="table-container">
+                    <table id="specs-table">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Potencia (CV)</th>
+                                <th>Par (Nm)</th>
+                                <th>0-100 km/h (s)</th>
+                                <th>Peso (kg)</th>
+                                <th>Motor</th>
+                                <th>Tracción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="specs-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    const personalityData = {
+        labels: ["Uso en Circuito", "Comodidad en Viajes", "Practicidad Diaria", "Factor Diversión", "Exclusividad", "Tecnología a Bordo"],
+        models: {
+            '911_carrera_t': { name: '911 Carrera T (992)', scores: [7, 7, 6, 9, 6, 8], specs: { cv: 385, nm: 450, sprint: 4.0, weight: 1470, engine: 'Turbo', drive: 'Trasera' } },
+            '911_gt3_rs': { name: '911 GT3 RS (992)', scores: [10, 2, 1, 10, 9, 7], specs: { cv: 525, nm: 465, sprint: 3.2, weight: 1450, engine: 'Atmosférico', drive: 'Trasera' } },
+            '718_gt4_rs': { name: '718 Cayman GT4 RS', scores: [10, 3, 2, 10, 10, 6], specs: { cv: 500, nm: 450, sprint: 3.4, weight: 1415, engine: 'Atmosférico', drive: 'Trasera' } },
+            '718_cayman_s': { name: '718 Cayman S (4-Cil)', scores: [8, 6, 7, 7, 5, 8], specs: { cv: 350, nm: 420, sprint: 4.2, weight: 1385, engine: 'Turbo', drive: 'Trasera' } },
+            'taycan_turbo_s': { name: 'Taycan Turbo S', scores: [6, 9, 8, 7, 7, 10], specs: { cv: 761, nm: 1050, sprint: 2.8, weight: 2295, engine: 'Eléctrico', drive: 'Total' } },
+            'cayenne_turbo_gt': { name: 'Cayenne Turbo GT', scores: [8, 7, 9, 8, 8, 9], specs: { cv: 640, nm: 850, sprint: 3.3, weight: 2220, engine: 'Turbo', drive: 'Total' } },
+            'macan_gts': { name: 'Macan GTS', scores: [6, 8, 9, 7, 6, 9], specs: { cv: 440, nm: 550, sprint: 4.3, weight: 1960, engine: 'Turbo', drive: 'Total' } },
+            'panamera_turbo_s': { name: 'Panamera Turbo S', scores: [5, 10, 9, 6, 7, 10], specs: { cv: 630, nm: 820, sprint: 3.1, weight: 2080, engine: 'Turbo', drive: 'Total' } }
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let personalityChartInstance;
+        const selectors = [document.getElementById('model1'), document.getElementById('model2'), document.getElementById('model3')];
+
+        function initializePage() {
+            populateSelectors();
+            renderSpecsTable();
+            renderPersonalityChart();
+            setupEventListeners();
+        }
+
+        function populateSelectors() {
+            const modelKeys = Object.keys(personalityData.models);
+            selectors.forEach(selector => {
+                selector.innerHTML = '<option value="">-- Ninguno --</option>'; // Add a none option
+                modelKeys.forEach(key => {
+                    const option = document.createElement('option');
+                    option.value = key;
+                    option.textContent = personalityData.models[key].name;
+                    selector.appendChild(option);
+                });
+            });
+            // Set default comparison
+            selectors[0].value = '911_carrera_t';
+            selectors[1].value = '718_gt4_rs';
+            selectors[2].value = 'taycan_turbo_s';
+        }
+
+        function renderSpecsTable() {
+            const tableBody = document.getElementById('specs-table-body');
+            tableBody.innerHTML = Object.values(personalityData.models).map(model => `
+                <tr>
+                    <td>${model.name}</td>
+                    <td>${model.specs.cv}</td>
+                    <td>${model.specs.nm}</td>
+                    <td>${model.specs.sprint}</td>
+                    <td>${model.specs.weight}</td>
+                    <td>${model.specs.engine}</td>
+                    <td>${model.specs.drive}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderPersonalityChart() {
+            const ctx = document.getElementById('personalityChart').getContext('2d');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? 'white' : 'black';
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0, 0, 0, 0.1)';
+            
+            const selectedKeys = selectors.map(s => s.value).filter(v => v);
+            const colors = ['#B12B28', '#E3AB37', '#999999'];
+
+            const datasets = selectedKeys.map((key, index) => ({
+                label: personalityData.models[key].name,
+                data: personalityData.models[key].scores,
+                borderColor: colors[index],
+                backgroundColor: colors[index] + '40', // Alpha transparency
+                pointBackgroundColor: colors[index],
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: colors[index]
+            }));
+
+            if (personalityChartInstance) personalityChartInstance.destroy();
+            personalityChartInstance = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: personalityData.labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    elements: { line: { borderWidth: 3 } },
+                    plugins: {
+                        legend: { position: 'top', labels: { color: textColor, font: { size: 14 } } }
+                    },
+                    scales: {
+                        r: {
+                            angleLines: { color: gridColor },
+                            grid: { color: gridColor },
+                            pointLabels: { color: textColor, font: { size: 12 } },
+                            ticks: {
+                                color: textColor,
+                                backdropColor: isDark ? '#1d2125' : '#ffffff',
+                                stepSize: 2
+                            },
+                            min: 0,
+                            max: 10
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderPersonalityChart();
+            });
+
+            selectors.forEach(selector => {
+                selector.addEventListener('change', renderPersonalityChart);
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

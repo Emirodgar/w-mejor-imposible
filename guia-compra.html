@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Costes y gastos de tener un Porsche</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+            /* TCO Colors */
+            --color-depreciation: #B12B28;
+            --color-maintenance: #E3AB37;
+            --color-fuel: #464C47;
+            --color-insurance: #696969;
+            --color-consumables: #8B0000;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .chart-section { grid-column: span 12; }
+        .table-section { grid-column: span 12; }
+
+        .table-container { max-height: 600px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        thead { position: sticky; top: 0; z-index: 10; }
+        .theme-light thead { background-color: var(--light-card-bg); }
+        .theme-dark thead { background-color: var(--dark-card-bg); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        td.total-cost { font-weight: bold; color: var(--porsche-red); }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Análisis del Coste Real de Propiedad (TCO a 5 Años )</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card chart-section">
+                <h2 class="card-title">Desglose del Coste Total de Propiedad Estimado a 5 Años</h2>
+                <div style="height: 450px;"><canvas id="tcoChart"></canvas></div>
+            </section>
+
+            <section class="card table-section">
+                <h2 class="card-title">Tabla de Desglose del TCO (Estimación a 5 años)</h2>
+                <div class="table-container">
+                    <table id="tco-table">
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Depreciación</th>
+                                <th>Mantenimiento</th>
+                                <th>Combustible / Electricidad</th>
+                                <th>Seguro</th>
+                                <th>Consumibles</th>
+                                <th>COSTE TOTAL (5 AÑOS)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tco-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    const tcoData = [
+        // (Depreciación = Compra - Venta)
+        { model: '911 Carrera (992)', depreciation: 45000, maintenance: 4500, fuel: 12000, insurance: 9000, consumables: 4000 },
+        { model: '718 Cayman S', depreciation: 30000, maintenance: 3900, fuel: 11000, insurance: 7500, consumables: 3500 },
+        { model: 'Taycan 4S', depreciation: 50000, maintenance: 1500, fuel: 3500, insurance: 10000, consumables: 4500 },
+        { model: 'Cayenne E-Hybrid', depreciation: 48000, maintenance: 4200, fuel: 8000, insurance: 8500, consumables: 5000 },
+        { model: 'Macan S', depreciation: 35000, maintenance: 3500, fuel: 13000, insurance: 7000, consumables: 4000 },
+        { model: 'Panamera 4', depreciation: 55000, maintenance: 4800, fuel: 12500, insurance: 9500, consumables: 4500 },
+        { model: '911 GT3 (992)', depreciation: -20000, maintenance: 6000, fuel: 18000, insurance: 15000, consumables: 8000 }, // Apreciación
+        { model: 'Cayman GT4 RS', depreciation: -50000, maintenance: 5500, fuel: 17000, insurance: 14000, consumables: 7000 }  // Apreciación fuerte
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let tcoChartInstance;
+
+        function initializePage() {
+            renderTcoTable();
+            renderTcoChart();
+            setupEventListeners();
+        }
+
+        function renderTcoTable() {
+            const tableBody = document.getElementById('tco-table-body');
+            tableBody.innerHTML = tcoData.map(item => {
+                const totalCost = item.depreciation + item.maintenance + item.fuel + item.insurance + item.consumables;
+                return `
+                    <tr>
+                        <td>${item.model}</td>
+                        <td>${item.depreciation.toLocaleString('es-ES')} €</td>
+                        <td>${item.maintenance.toLocaleString('es-ES')} €</td>
+                        <td>${item.fuel.toLocaleString('es-ES')} €</td>
+                        <td>${item.insurance.toLocaleString('es-ES')} €</td>
+                        <td>${item.consumables.toLocaleString('es-ES')} €</td>
+                        <td class="total-cost">${totalCost.toLocaleString('es-ES')} €</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function renderTcoChart() {
+            const ctx = document.getElementById('tcoChart').getContext('2d');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? 'white' : 'black';
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+            const labels = tcoData.map(item => item.model);
+            
+            const datasets = [
+                { label: 'Depreciación', data: tcoData.map(item => item.depreciation), backgroundColor: 'var(--color-depreciation)' },
+                { label: 'Mantenimiento', data: tcoData.map(item => item.maintenance), backgroundColor: 'var(--color-maintenance)' },
+                { label: 'Combustible / Electricidad', data: tcoData.map(item => item.fuel), backgroundColor: 'var(--color-fuel)' },
+                { label: 'Seguro', data: tcoData.map(item => item.insurance), backgroundColor: 'var(--color-insurance)' },
+                { label: 'Consumibles', data: tcoData.map(item => item.consumables), backgroundColor: 'var(--color-consumables)' }
+            ];
+
+            if (tcoChartInstance) tcoChartInstance.destroy();
+            tcoChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'top', labels: { color: textColor } },
+                        tooltip: {
+                            mode: 'index',
+                            callbacks: {
+                                label: (context) => `${context.dataset.label}: ${context.raw.toLocaleString('es-ES')} €`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            ticks: { color: textColor },
+                            grid: { display: false }
+                        },
+                        y: {
+                            stacked: true,
+                            title: { display: true, text: 'Coste Total en Euros (€)', color: textColor },
+                            ticks: {
+                                color: textColor,
+                                callback: (value) => `${(value / 1000).toLocaleString('es-ES')}k`
+                            },
+                            grid: { color: gridColor }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderTcoChart();
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <title>Porsche - Menciones sociales</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@4.4.0/dist/chartjs-chart-wordcloud.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+            --sentiment-positive: #28a745; --sentiment-negative: #dc3545; --sentiment-neutral: #6c757d;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        
+        .kpi-section { grid-column: span 12; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .sentiment-chart-section { grid-column: span 4; }
+        .channel-chart-section { grid-column: span 8; }
+        .mentions-feed-section { grid-column: span 7; }
+        .wordcloud-section { grid-column: span 5; }
+
+        .kpi-card .value { font-size: 32px; font-weight: 700; }
+        .kpi-card .trend { font-size: 14px; font-weight: 600; margin-top: 5px; }
+        .trend-up { color: var(--sentiment-positive); }
+        .trend-down { color: var(--sentiment-negative); }
+
+        .mentions-feed { height: 400px; overflow-y: auto; }
+        .mention-card { border-bottom: 1px solid; padding: 15px 5px; }
+        .theme-light .mention-card { border-color: #e0e0e0; }
+        .theme-dark .mention-card { border-color: #444; }
+        .mention-card:last-child { border-bottom: none; }
+        .mention-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .mention-author { font-weight: bold; }
+        .mention-sentiment { padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; color: white; }
+        .sentiment-pos { background-color: var(--sentiment-positive); }
+        .sentiment-neg { background-color: var(--sentiment-negative); }
+        .mention-text { font-size: 14px; line-height: 1.5; }
+        .mention-source { font-size: 12px; opacity: 0.7; margin-top: 8px; }
+
+        @media (max-width: 1200px) {
+            .sentiment-chart-section, .channel-chart-section, .mentions-feed-section, .wordcloud-section { grid-column: span 12; }
+        }
+        @media (max-width: 768px) { .kpi-section { grid-template-columns: repeat(2, 1fr); } }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="img/logo.png" alt="Porsche Crest">
+                <span>Dashboard de Monitorización de Redes Sociales</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="kpi-section">
+                <div class="card kpi-card"><div class="card-title">Menciones Totales (24h )</div><div class="value">11,4K</div><div class="trend trend-up">▲ 8%</div></div>
+                <div class="card kpi-card"><div class="card-title">Alcance Potencial</div><div class="value">25.2M</div><div class="trend trend-up">▲ 5%</div></div>
+                <div class="card kpi-card"><div class="card-title">Interacciones</div><div class="value">1.8M</div><div class="trend trend-up">▲ 11%</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento Neto</div><div class="value">+71%</div><div class="trend trend-down">▼ 2%</div></div>
+            </section>
+
+            <section class="card sentiment-chart-section">
+                <h2 class="card-title">Distribución de Sentimiento</h2>
+                <div style="height: 250px;"><canvas id="sentimentChart"></canvas></div>
+            </section>
+
+            <section class="card channel-chart-section">
+                <h2 class="card-title">Volumen de Menciones por Canal</h2>
+                <div style="height: 250px;"><canvas id="channelChart"></canvas></div>
+            </section>
+
+            <section class="card mentions-feed-section">
+                <h2 class="card-title">Últimas Menciones Relevantes</h2>
+                <div id="mentions-feed" class="mentions-feed"></div>
+            </section>
+
+            <section class="card wordcloud-section">
+                <h2 class="card-title">Temas de Conversación Populares</h2>
+                <div style="height: 400px;"><canvas id="wordCloudChart"></canvas></div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    const socialData = {
+        sentiment: { positive: 78, negative: 7, neutral: 15 },
+        channels: { 'Instagram': 45, 'Twitter/X': 25, 'YouTube': 15, 'Foros': 10, 'Noticias': 5 },
+        mentions: [
+            { author: '@SupercarBlondie', text: 'Driving the new 911 GT3 RS is an out of this world experience! The aero is just insane. #Porsche #GT3RS', source: 'Instagram', sentiment: 'positive' },
+            { author: 'UsuarioForo911', text: '¿Alguien más con problemas en el PCM del Taycan? Se me reinicia constantemente desde la última actualización.', source: 'Foro Rennlist', sentiment: 'negative' },
+            { author: '@EV_Fanatic', text: 'La nueva autonomía del Taycan 2024 es un verdadero game-changer. Ahora sí compite de tú a tú con Tesla.', source: 'Twitter/X', sentiment: 'positive' },
+            { author: 'MotorTrend', text: 'Porsche lo ha vuelto a hacer. El 911 S/T es la carta de amor definitiva a la conducción pura. Una obra maestra.', source: 'Noticias', sentiment: 'positive' },
+            { author: 'Gamer_Pro', text: 'El nuevo Porsche Vision GT en Gran Turismo 7 es una pasada. ¡Qué diseño!', source: 'Twitter/X', sentiment: 'positive' },
+            { author: 'Juan Pérez', text: 'Los costes de mantenimiento de mi Cayenne son más altos de lo que esperaba. La revisión de los 60.000km me ha costado un ojo de la cara.', source: 'Facebook', sentiment: 'negative' },
+            { author: 'CarVlogger', text: 'Review del Macan Eléctrico: Silencioso, brutalmente rápido y con un interior de 10. ¿El mejor SUV eléctrico?', source: 'YouTube', sentiment: 'positive' },
+            { author: 'Ana G.', text: 'Soñando con el día que pueda comprarme un 718 Spyder. Para mí, el coche perfecto.', source: 'Instagram', sentiment: 'positive' },
+        ],
+        wordCloud: [
+            {key: '911', value: 100}, {key: 'GT3 RS', value: 85}, {key: 'Taycan', value: 75},
+            {key: 'eléctrico', value: 60}, {key: 'diseño', value: 55}, {key: 'precio', value: 40},
+            {key: 'motor', value: 65}, {key: 'experiencia', value: 50}, {key: 'nuevo', value: 70},
+            {key: 'increíble', value: 68}, {key: 'problema', value: 35}, {key: 'autonomía', value: 45},
+            {key: 'Macan', value: 48}, {key: 'sonido', value: 52}, {key: 'circuito', value: 42}
+        ]
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let charts = {};
+
+        function initializePage() {
+            renderMentionsFeed();
+            renderAllCharts();
+            setupEventListeners();
+        }
+
+        function renderMentionsFeed() {
+            const feedContainer = document.getElementById('mentions-feed');
+            feedContainer.innerHTML = socialData.mentions.map(mention => `
+                <div class="mention-card">
+                    <div class="mention-header">
+                        <span class="mention-author">${mention.author}</span>
+                        <span class="mention-sentiment ${mention.sentiment === 'positive' ? 'sentiment-pos' : 'sentiment-neg'}">${mention.sentiment === 'positive' ? 'Positivo' : 'Negativo'}</span>
+                    </div>
+                    <p class="mention-text">${mention.text}</p>
+                    <div class="mention-source">${mention.source}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderAllCharts() {
+            renderSentimentChart();
+            renderChannelChart();
+            renderWordCloudChart();
+        }
+
+        function renderSentimentChart() {
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            if (charts.sentiment) charts.sentiment.destroy();
+            charts.sentiment = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Positivo', 'Negativo', 'Neutro'],
+                    datasets: [{
+                        data: [socialData.sentiment.positive, socialData.sentiment.negative, socialData.sentiment.neutral],
+                        backgroundColor: ['var(--sentiment-positive)', 'var(--sentiment-negative)', 'var(--sentiment-neutral)'],
+                        borderColor: document.body.classList.contains('theme-dark') ? '#282c34' : '#ffffff',
+                        borderWidth: 4
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, cutout: '70%', plugins: { legend: { position: 'bottom', labels: { color: getTextColor() } } } }
+            });
+        }
+
+        function renderChannelChart() {
+            const ctx = document.getElementById('channelChart').getContext('2d');
+            if (charts.channel) charts.channel.destroy();
+            charts.channel = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(socialData.channels),
+                    datasets: [{
+                        label: 'Menciones',
+                        data: Object.values(socialData.channels),
+                        backgroundColor: 'var(--porsche-red)'
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { ticks: { color: getTextColor() }, grid: { color: getGridColor() } },
+                        y: { ticks: { color: getTextColor() }, grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function renderWordCloudChart() {
+            const ctx = document.getElementById('wordCloudChart').getContext('2d');
+            if (charts.wordCloud) charts.wordCloud.destroy();
+            charts.wordCloud = new Chart(ctx, {
+                type: WordCloudController.type,
+                data: {
+                    labels: socialData.wordCloud.map(d => d.key),
+                    datasets: [{
+                        label: '',
+                        data: socialData.wordCloud.map(d => d.value)
+                    }]
+                },
+                options: {
+                    plugins: { legend: { display: false } },
+                    elements: {
+                        word: {
+                            color: (context) => {
+                                const value = context.raw;
+                                if (value > 80) return '#B12B28';
+                                if (value > 60) return '#E3AB37';
+                                return getTextColor();
+                            },
+                            font: { family: 'Arial', size: (c) => 12 + c.raw / 3, weight: 'bold' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                renderAllCharts();
+            });
+        }
+        
+        const getTextColor = () => document.body.classList.contains('theme-dark') ? 'white' : 'black';
+        const getGridColor = () => document.body.classList.contains('theme-dark') ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

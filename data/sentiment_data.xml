@@ -1,0 +1,123 @@
+<sentiment_data>
+    <brand name="Porsche">
+        <year value="2023">
+            <month name="Enero" score="7.5"/>
+            <month name="Febrero" score="7.8"/>
+            <month name="Marzo" score="8.0"/>
+            <month name="Abril" score="7.7"/>
+            <month name="Mayo" score="7.9"/>
+            <month name="Junio" score="8.1"/>
+            <month name="Julio" score="8.2"/>
+            <month name="Agosto" score="8.0"/>
+            <month name="Septiembre" score="8.3"/>
+            <month name="Octubre" score="8.5"/>
+            <month name="Noviembre" score="8.4"/>
+            <month name="Diciembre" score="8.6"/>
+        </year>
+        <year value="2024">
+            <month name="Enero" score="7.8"/>
+            <month name="Febrero" score="8.0"/>
+            <month name="Marzo" score="8.2"/>
+            <month name="Abril" score="7.9"/>
+            <month name="Mayo" score="8.1"/>
+            <month name="Junio" score="8.3"/>
+            <month name="Julio" score="8.4"/>
+            <month name="Agosto" score="8.2"/>
+            <month name="Septiembre" score="8.5"/>
+            <month name="Octubre" score="8.7"/>
+            <month name="Noviembre" score="8.6"/>
+            <month name="Diciembre" score="8.8"/>
+        </year>
+    </brand>
+    <brand name="BMW">
+        <year value="2023">
+            <month name="Enero" score="7.0"/>
+            <month name="Febrero" score="7.2"/>
+            <month name="Marzo" score="7.5"/>
+            <month name="Abril" score="7.1"/>
+            <month name="Mayo" score="7.3"/>
+            <month name="Junio" score="7.6"/>
+            <month name="Julio" score="7.7"/>
+            <month name="Agosto" score="7.5"/>
+            <month name="Septiembre" score="7.8"/>
+            <month name="Octubre" score="8.0"/>
+            <month name="Noviembre" score="7.9"/>
+            <month name="Diciembre" score="8.1"/>
+        </year>
+        <year value="2024">
+            <month name="Enero" score="7.3"/>
+            <month name="Febrero" score="7.5"/>
+            <month name="Marzo" score="7.8"/>
+            <month name="Abril" score="7.4"/>
+            <month name="Mayo" score="7.6"/>
+            <month name="Junio" score="7.9"/>
+            <month name="Julio" score="8.0"/>
+            <month name="Agosto" score="7.8"/>
+            <month name="Septiembre" score="8.1"/>
+            <month name="Octubre" score="8.3"/>
+            <month name="Noviembre" score="8.2"/>
+            <month name="Diciembre" score="8.4"/>
+        </year>
+    </brand>
+    <brand name="Audi">
+        <year value="2023">
+            <month name="Enero" score="6.8"/>
+            <month name="Febrero" score="7.0"/>
+            <month name="Marzo" score="7.3"/>
+            <month name="Abril" score="6.9"/>
+            <month name="Mayo" score="7.1"/>
+            <month name="Junio" score="7.4"/>
+            <month name="Julio" score="7.5"/>
+            <month name="Agosto" score="7.3"/>
+            <month name="Septiembre" score="7.6"/>
+            <month name="Octubre" score="7.8"/>
+            <month name="Noviembre" score="7.7"/>
+            <month name="Diciembre" score="7.9"/>
+        </year>
+        <year value="2024">
+            <month name="Enero" score="7.1"/>
+            <month name="Febrero" score="7.3"/>
+            <month name="Marzo" score="7.6"/>
+            <month name="Abril" score="7.2"/>
+            <month name="Mayo" score="7.4"/>
+            <month name="Junio" score="7.7"/>
+            <month name="Julio" score="7.8"/>
+            <month name="Agosto" score="7.6"/>
+            <month name="Septiembre" score="7.9"/>
+            <month name="Octubre" score="8.1"/>
+            <month name="Noviembre" score="8.0"/>
+            <month name="Diciembre" score="8.2"/>
+        </year>
+    </brand>
+    <brand name="Mercedes-Benz">
+        <year value="2023">
+            <month name="Enero" score="7.2"/>
+            <month name="Febrero" score="7.4"/>
+            <month name="Marzo" score="7.7"/>
+            <month name="Abril" score="7.3"/>
+            <month name="Mayo" score="7.5"/>
+            <month name="Junio" score="7.8"/>
+            <month name="Julio" score="7.9"/>
+            <month name="Agosto" score="7.7"/>
+            <month name="Septiembre" score="8.0"/>
+            <month name="Octubre" score="8.2"/>
+            <month name="Noviembre" score="8.1"/>
+            <month name="Diciembre" score="8.3"/>
+        </year>
+        <year value="2024">
+            <month name="Enero" score="7.5"/>
+            <month name="Febrero" score="7.7"/>
+            <month name="Marzo" score="8.0"/>
+            <month name="Abril" score="7.6"/>
+            <month name="Mayo" score="7.8"/>
+            <month name="Junio" score="8.1"/>
+            <month name="Julio" score="8.2"/>
+            <month name="Agosto" score="8.0"/>
+            <month name="Septiembre" score="8.3"/>
+            <month name="Octubre" score="8.5"/>
+            <month name="Noviembre" score="8.4"/>
+            <month name="Diciembre" score="8.6"/>
+        </year>
+    </brand>
+</sentiment_data>
+

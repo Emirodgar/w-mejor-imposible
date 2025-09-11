@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Social Media Trends Collage</title>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1800px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        
+        .filter-container { margin-bottom: 25px; text-align: center; }
+        .filter-btn { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 14px; margin: 0 5px; transition: background-color 0.2s; }
+        .filter-btn.active { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
+
+        .masonry-grid {
+            column-count: 4;
+            column-gap: 15px;
+        }
+        .grid-item {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .grid-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            color: white;
+            padding: 30px 15px 15px 15px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .grid-item:hover .overlay { opacity: 1; }
+        .overlay .author { font-weight: bold; }
+        .overlay .source { font-size: 12px; }
+        .overlay .likes { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 12px; font-size: 12px; }
+        .video-indicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: rgba(255,255,255,0.8);
+            pointer-events: none;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-content {
+            max-width: 90vw;
+            max-height: 80vh;
+        }
+        .lightbox-caption {
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1200px) { .masonry-grid { column-count: 3; } }
+        @media (max-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (max-width: 480px) { .masonry-grid { column-count: 1; } }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Porsche_Crest.svg/1024px-Porsche_Crest.svg.png" alt="Porsche Crest">
+                <span>Collage Social de Tendencias</span>
+            </div>
+        </header>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="image">Imágenes</button>
+            <button class="filter-btn" data-filter="video">Vídeos</button>
+            <button class="filter-btn" data-filter="911">911</button>
+            <button class="filter-btn" data-filter="taycan">Taycan</button>
+            <button class="filter-btn" data-filter="classic">Classic</button>
+        </div>
+
+        <main id="masonry-grid" class="masonry-grid"></main>
+
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script>
+    const mediaData = [
+        { id: 1, type: 'image', tags: ['911', 'gt3rs'], src: 'https://i.imgur.com/kY8mZ2L.jpeg', author: '@porsche.universe', source: 'Instagram', likes: '15.2k', caption: 'El nuevo 911 GT3 RS en un espectacular color verde. ¡La aerodinámica es de otro planeta!' },
+        { id: 2, type: 'video', tags: ['taycan'], src: 'https://i.imgur.com/3g7v7X0.jpeg', author: 'EV Drive', source: 'YouTube', likes: '110k', caption: 'Aceleración brutal del Taycan Turbo S. El silencio nunca fue tan rápido.' },
+        { id: 3, type: 'image', tags: ['classic', '911'], src: 'https://i.imgur.com/aP8E8vD.jpeg', author: 'Luftgekühlt', source: 'Instagram', likes: '8.9k', caption: 'Un 911 clásico perfectamente restaurado en el último evento de Luftgekühlt.' },
+        { id: 4, type: 'image', tags: ['cayman', 'gt4'], src: 'https://i.imgur.com/sC0eJ9W.jpeg', author: '@trackday_addict', source: 'Instagram', likes: '5.1k', caption: 'Día de circuito con el 718 Cayman GT4. ¡Qué máquina de precisión!' },
+        { id: 5, type: 'image', tags: ['taycan'], src: 'https://i.imgur.com/rX5fH3G.jpeg', author: 'Porsche AG', source: 'Official', likes: '25.4k', caption: 'El Taycan Cross Turismo explorando paisajes helados. Aventura eléctrica.' },
+        { id: 6, type: 'video', tags: ['911', 'st'], src: 'https://i.imgur.com/Jz7K8L5.jpeg', author: 'Top Gear', source: 'YouTube', likes: '250k', caption: 'Chris Harris al volante del purista 911 S/T. ¿El mejor 911 de la historia?' },
+        { id: 7, type: 'image', tags: ['macan'], src: 'https://i.imgur.com/O6t4r8d.jpeg', author: 'CityLifeStyle', source: 'Pinterest', likes: '3.2k', caption: 'El Macan, el SUV perfecto para el día a día en la ciudad con un toque deportivo.' },
+        { id: 8, type: 'image', tags: ['classic', '356'], src: 'https://i.imgur.com/T9y8g7E.jpeg', author: 'Vintage Cars', source: 'Facebook', likes: '7.8k', caption: 'La elegancia atemporal del Porsche 356 Speedster.' },
+        { id: 9, type: 'image', tags: ['911', 'turbo'], src: 'https://i.imgur.com/qL6fX9C.jpeg', author: '@carspotter', source: 'Instagram', likes: '12.1k', caption: 'Un 911 Turbo S "cazado" en las calles de Mónaco. Potencia y lujo.' },
+        { id: 10, type: 'video', tags: ['cayenne'], src: 'https://i.imgur.com/dFv4g6B.jpeg', author: 'Off-Road Kings', source: 'YouTube', likes: '45k', caption: 'Poniendo a prueba las capacidades todoterreno del Cayenne. ¡Sorprendente!' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', ( ) => {
+        const grid = document.getElementById('masonry-grid');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        function renderGrid(filter = 'all') {
+            grid.innerHTML = '';
+            const filteredData = mediaData.filter(item => {
+                if (filter === 'all') return true;
+                if (filter === 'image' || filter === 'video') return item.type === filter;
+                return item.tags.includes(filter);
+            });
+
+            filteredData.forEach(item => {
+                const gridItem = document.createElement('div');
+                gridItem.className = 'grid-item';
+                gridItem.innerHTML = `
+                    <img src="${item.src}" alt="${item.caption}">
+                    ${item.type === 'video' ? '<div class="video-indicator">▶</div>' : ''}
+                    <div class="overlay">
+                        <div class="author">@${item.author}</div>
+                        <div class="source">${item.source}</div>
+                        <div class="likes">❤️ ${item.likes}</div>
+                    </div>
+                `;
+                gridItem.addEventListener('click', () => openLightbox(item));
+                grid.appendChild(gridItem);
+            });
+        }
+
+        function openLightbox(item) {
+            lightboxImg.src = item.src;
+            lightboxCaption.textContent = item.caption;
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderGrid(btn.dataset.filter);
+            });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        renderGrid(); // Initial render
+    });
+    </script>
+</body>
+</html>
