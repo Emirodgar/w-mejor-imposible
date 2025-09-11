@@ -216,5 +216,28 @@
 	
 	-->
 	
+	    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let blogChartInstance;
+
+        function initializePage() {
+            renderBlogChart();
+            setupEventListeners();
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                // Volver a renderizar el gráfico para que los colores del texto se actualicen
+                renderBlogChart();
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+	
 </body>
 </html>
