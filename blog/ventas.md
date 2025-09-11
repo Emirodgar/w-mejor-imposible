@@ -331,6 +331,108 @@ const ventasModeloChart = new Chart(ctx2, {
 
 ## Análisis geográfico: mercados en transformación
 
+{% raw %}
+
+<!-- Gráfico 4: Ventas por País/Región -->
+<div style="width: 800px; height: 500px; margin: 20px 0;">
+    <canvas id="paisesChart"></canvas>
+</div>
+
+<script>
+const ctx4 = document.getElementById('paisesChart').getContext('2d');
+const paisesChart = new Chart(ctx4, {
+    type: 'bar',
+    data: {
+        labels: ['Norteamérica', 'Estados Unidos', 'Europa (excl. Alemania)', 'China', 'Otros Mercados', 'Alemania'],
+        datasets: [{
+            label: 'Unidades Vendidas',
+            data: [86541, 76167, 75899, 56887, 55533, 35858],
+            backgroundColor: [
+                '#D5001C',
+                '#FF6B35', 
+                '#F7931E',
+                '#FFD100',
+                '#8BC34A',
+                '#2196F3'
+            ],
+            borderColor: [
+                '#B8001A',
+                '#E55A2B',
+                '#E08419',
+                '#E6BC00',
+                '#7CB342',
+                '#1976D2'
+            ],
+            borderWidth: 2,
+            borderRadius: 8
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Ventas de Porsche por País/Región - 2024',
+                font: {
+                    size: 18,
+                    weight: 'bold'
+                },
+                padding: 20
+            },
+            legend: {
+                display: false
+            },
+            datalabels: {
+                display: true,
+                anchor: 'end',
+                align: 'right',
+                formatter: function(value) {
+                    return value.toLocaleString('es-ES');
+                },
+                font: {
+                    weight: 'bold',
+                    size: 11
+                },
+                color: '#333'
+            }
+        },
+        scales: {
+            x: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Unidades Vendidas',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                },
+                ticks: {
+                    callback: function(value) {
+                        return value.toLocaleString('es-ES');
+                    }
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'País/Región',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                }
+            }
+        }
+    }
+});
+</script>
+
+
+{% endraw %}
+
 ### Norteamérica: El mercado estrella
 
 **Estados Unidos se consolida como el mercado más importante** para Porsche, alcanzando un récord histórico de 76,167 unidades en 2024 (+1% vs 2023). Norteamérica en conjunto representa el 27.9% de las ventas globales con 86,541 unidades.
@@ -387,6 +489,120 @@ Las **proyecciones para 2025 anticipan entre 33-35% de vehículos electrificados
 - **Consolidar su liderazgo en SUV premium**
 - **Expandir la gama híbrida** en todos los modelos
 - **Mantener la relevancia del 911** como ícono de la marca
+
+
+<!-- Gráfico 5: Evolución Principales Modelos -->
+<div style="width: 800px; height: 400px; margin: 20px 0;">
+    <canvas id="evolucionModelosChart"></canvas>
+</div>
+
+<script>
+const ctx5 = document.getElementById('evolucionModelosChart').getContext('2d');
+const evolucionModelosChart = new Chart(ctx5, {
+    type: 'line',
+    data: {
+        labels: ['2019', '2023', '2024'],
+        datasets: [{
+            label: 'Cayenne',
+            data: [92055, 87553, 102889],
+            borderColor: '#D5001C',
+            backgroundColor: 'rgba(213, 0, 28, 0.1)',
+            borderWidth: 3,
+            pointBackgroundColor: '#D5001C',
+            pointBorderColor: '#ffffff',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            tension: 0.4
+        }, {
+            label: 'Macan',
+            data: [99944, 87355, 82795],
+            borderColor: '#FF6B35',
+            backgroundColor: 'rgba(255, 107, 53, 0.1)',
+            borderWidth: 3,
+            pointBackgroundColor: '#FF6B35',
+            pointBorderColor: '#ffffff',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            tension: 0.4
+        }, {
+            label: '911',
+            data: [35429, 50146, 50941],
+            borderColor: '#F7931E',
+            backgroundColor: 'rgba(247, 147, 30, 0.1)',
+            borderWidth: 3,
+            pointBackgroundColor: '#F7931E',
+            pointBorderColor: '#ffffff',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            tension: 0.4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Evolución de los Principales Modelos de Porsche (2019-2024)',
+                font: {
+                    size: 18,
+                    weight: 'bold'
+                },
+                padding: 20
+            },
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    padding: 20,
+                    font: {
+                        size: 12,
+                        weight: 'bold'
+                    }
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: false,
+                title: {
+                    display: true,
+                    text: 'Unidades Vendidas',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                },
+                ticks: {
+                    callback: function(value) {
+                        return value.toLocaleString('es-ES');
+                    }
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Año',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                }
+            }
+        },
+        elements: {
+            point: {
+                hoverRadius: 8
+            }
+        },
+        interaction: {
+            intersect: false,
+            mode: 'index'
+        }
+    }
+});
+</script>
+
 
 
 ## Conclusiones estratégicas
