@@ -25,6 +25,92 @@ La trayectoria de crecimiento se puede dividir en cuatro períodos claramente di
 | 2015-2019 | 1,246,329 unidades | **Expansión acelerada** |
 | 2020-2024 | 1,514,900 unidades | Consolidación y récords |
 
+{% raw %}
+
+<!-- Gráfico 1: Evolución Ventas Globales -->
+<div style="width: 800px; height: 400px; margin: 20px 0;">
+    <canvas id="ventasGlobalesChart"></canvas>
+</div>
+
+<script>
+const ctx1 = document.getElementById('ventasGlobalesChart').getContext('2d');
+const ventasGlobalesChart = new Chart(ctx1, {
+    type: 'line',
+    data: {
+        labels: ['2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+        datasets: [{
+            label: 'Unidades Vendidas',
+            data: [76600, 88400, 96794, 98652, 75238, 75238, 81850, 116978, 143096, 162145, 189849, 225121, 237778, 246375, 256255, 280800, 272162, 301915, 309884, 320221, 310718],
+            borderColor: '#D5001C',
+            backgroundColor: 'rgba(213, 0, 28, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4,
+            pointBackgroundColor: '#D5001C',
+            pointBorderColor: '#ffffff',
+            pointBorderWidth: 2,
+            pointRadius: 4
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Evolución de Ventas Globales de Porsche (2004-2024)',
+                font: {
+                    size: 18,
+                    weight: 'bold'
+                },
+                padding: 20
+            },
+            legend: {
+                display: true,
+                position: 'top'
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: false,
+                title: {
+                    display: true,
+                    text: 'Unidades Vendidas',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                },
+                ticks: {
+                    callback: function(value) {
+                        return value.toLocaleString('es-ES');
+                    }
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Año',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                }
+            }
+        },
+        elements: {
+            point: {
+                hoverRadius: 8
+            }
+        }
+    }
+});
+</script>
+
+
+{% raw %}
+
+
 ## Análisis por modelos: líderes y tendencias
 
 ### Dominio de los SUV
