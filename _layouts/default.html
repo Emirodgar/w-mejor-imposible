@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+            /* Chart Colors */
+            --color-1: #B12B28; --color-2: #E3AB37; --color-3: #464C47; 
+            --color-4: #696969; --color-5: #36454F;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+        
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        
+        .card { 
+            border-radius: 8px; padding: 25px 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+            transition: background-color 0.3s, color 0.3s; margin-bottom: 20px;
+        }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        
+        /* --- Estilos específicos del Blog --- */
+        .blog-article h1 { font-size: 2.2em; margin-bottom: 10px; color: var(--porsche-red); }
+        .blog-article .post-meta { font-size: 0.9em; color: var(--porsche-grey); margin-bottom: 30px; }
+        .blog-article p { font-size: 1.1em; line-height: 1.7; margin-bottom: 20px; }
+        .blog-article h2 { font-size: 1.6em; margin-top: 40px; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-gold); padding-bottom: 10px; }
+        .blog-article blockquote {
+            border-left: 4px solid var(--porsche-red);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            color: var(--porsche-grey);
+        }
+        .theme-dark .blog-article blockquote { color: #aaa; }
+
+        /* --- Estilos para la tabla y el gráfico --- */
+        .section-title { font-size: 1.5em; font-weight: 600; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        thead { position: sticky; top: 0; z-index: 10; }
+        .theme-light thead { background-color: var(--light-card-bg); }
+        .theme-dark thead { background-color: var(--dark-card-bg); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; }
+        td.highlight { font-weight: bold; color: var(--porsche-gold); }
+    </style>
+</head>
+<body class="theme-dark">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
+                <span>Nuestro Blog</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
+            </div>
+        </header>
+
+        <main>
+            <article class="card blog-article">
+                <h1>{{ title }}</h1>
+				
+				{{ content }}
+                
+				<!--
+				<p class="post-meta">Por [Nombre del Autor] | Publicado el 11 de septiembre de 2025</p>
+
+                <p>La llegada del Porsche Taycan no fue un punto final, sino el punto de partida de una revolución eléctrica en Stuttgart. La marca que durante décadas ha sido sinónimo del motor de combustión de seis cilindros bóxer, ahora lidera la carga en el segmento de los vehículos eléctricos de alto rendimiento. Este artículo explora qué podemos esperar en los próximos años.</p>
+                
+                <h2>El Macan Eléctrico: La Prueba de Fuego</h2>
+                <p>El próximo gran lanzamiento será, sin duda, la versión 100% eléctrica del Macan. Construido sobre la nueva plataforma PPE (Premium Platform Electric), desarrollada junto a Audi, este SUV no solo promete el rendimiento que se espera de un Porsche, sino también una autonomía y eficiencia que lo colocarán en la cima de su categoría. La tecnología de 800 voltios, heredada del Taycan, permitirá cargas ultrarrápidas, eliminando una de las principales barreras para la adopción del vehículo eléctrico.</p>
+                
+                <blockquote>"No estamos construyendo coches eléctricos por seguir una tendencia. Estamos construyendo un Porsche que, casualmente, es eléctrico."</blockquote>
+
+                <p>Esta filosofía es clave. La dinámica de conducción, la respuesta del acelerador, la frenada y, en definitiva, el "alma" del coche deben sentirse inequívocamente como un Porsche. Los ingenieros han trabajado incansablemente para lograr un centro de gravedad bajo y una distribución de peso perfecta, incluso con el desafío que suponen las baterías.</p> -->
+            </article>
+
+            <!--
+			<section class="card table-section">
+                <h2 class="section-title">Comparativa de Plataformas Eléctricas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Plataforma</th>
+                            <th>Modelo Principal</th>
+                            <th>Voltaje</th>
+                            <th>Potencia Máx. (Aprox.)</th>
+                            <th>Característica Clave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>J1</td>
+                            <td>Porsche Taycan</td>
+                            <td>800V</td>
+                            <td>761 CV (Turbo S)</td>
+                            <td>Rendimiento ultra-alto, caja de 2 velocidades</td>
+                        </tr>
+                        <tr>
+                            <td>PPE</td>
+                            <td>Porsche Macan EV</td>
+                            <td>800V</td>
+                            <td>612 CV</td>
+                            <td>Eficiencia, escalabilidad para SUVs y sedanes</td>
+                        </tr>
+                        <tr>
+                            <td>SPE</td>
+                            <td>Futuro 718 Eléctrico</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="highlight">Diseño específico para deportivos de motor central</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section> -->
+            
+			<!--
+			
+            <section class="card chart-section">
+                <h2 class="section-title">Proyección de Ventas Porsche (2027)</h2>
+                <div style="height: 400px; position: relative;"><canvas id="blogChart"></canvas></div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let blogChartInstance;
+
+        function initializePage() {
+            renderBlogChart();
+            setupEventListeners();
+        }
+
+        function renderBlogChart() {
+            const ctx = document.getElementById('blogChart').getContext('2d');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? 'white' : 'black';
+
+            const data = {
+                labels: ['Eléctricos (BEV)', 'Híbridos (PHEV)', 'Combustión (ICE)'],
+                datasets: [{
+                    label: 'Proyección de Ventas',
+                    data: [55, 25, 20], // Datos de ejemplo en porcentaje
+                    backgroundColor: [
+                        'var(--color-1)',
+                        'var(--color-2)',
+                        'var(--color-3)'
+                    ],
+                    borderColor: isDark ? 'var(--dark-card-bg)' : 'var(--light-card-bg)',
+                    borderWidth: 4
+                }]
+            };
+
+            if (blogChartInstance) {
+                blogChartInstance.destroy();
+            }
+
+            blogChartInstance = new Chart(ctx, {
+                type: 'doughnut', // Gráfico de tipo "Dona"
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                color: textColor,
+                                font: { size: 14 }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `${context.label}: ${context.raw}%`
+                            }
+                        }
+                    },
+                    cutout: '60%' // Controla el grosor del anillo
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                // Volver a renderizar el gráfico para que los colores del texto se actualicen
+                renderBlogChart();
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+	
+	-->
+	
+</body>
+</html>
