@@ -28,7 +28,7 @@ La trayectoria de crecimiento se puede dividir en cuatro períodos claramente di
 {% raw %}
 
 <!-- Gráfico 1: Evolución Ventas Globales -->
-<div style="width: 800px; height: 400px; margin: 20px 0;">
+<div style="width: 100%; height: 400px; margin: 20px 0;">
     <canvas id="ventasGlobalesChart"></canvas>
 </div>
 
@@ -143,9 +143,191 @@ La estrategia de electrificación de Porsche muestra resultados contundentes. En
 | 2023 | 23.5% | 12.7% | 10.8% |
 | 2024 | **27.0%** | 12.7% | **14.3%** |
 
+
+{% raw %}
+
+<!-- Gráfico 3: Distribución por Tipo de Combustible -->
+<div style="width: 600px; height: 400px; margin: 20px 0;">
+    <canvas id="combustibleChart"></canvas>
+</div>
+
+<script>
+const ctx3 = document.getElementById('combustibleChart').getContext('2d');
+const combustibleChart = new Chart(ctx3, {
+    type: 'pie',
+    data: {
+        labels: ['Motor Combustión Interna', 'Híbrido Enchufable (PHEV)', 'Eléctrico (BEV)'],
+        datasets: [{
+            data: [226624, 44633, 39461],
+            backgroundColor: [
+                '#D5001C',
+                '#FF9800',
+                '#4CAF50'
+            ],
+            borderColor: '#ffffff',
+            borderWidth: 3,
+            hoverBorderWidth: 5
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Distribución de Ventas por Tipo de Combustible - 2024',
+                font: {
+                    size: 18,
+                    weight: 'bold'
+                },
+                padding: 20
+            },
+            legend: {
+                display: true,
+                position: 'bottom',
+                labels: {
+                    padding: 20,
+                    font: {
+                        size: 12
+                    }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                        const percentage = ((context.parsed / total) * 100).toFixed(1);
+                        return context.label + ': ' + context.parsed.toLocaleString('es-ES') + ' (' + percentage + '%)';
+                    }
+                }
+            },
+            datalabels: {
+                display: true,
+                formatter: function(value, context) {
+                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                    const percentage = ((value / total) * 100).toFixed(1);
+                    return percentage + '%';
+                },
+                color: '#ffffff',
+                font: {
+                    weight: 'bold',
+                    size: 14
+                }
+            }
+        }
+    }
+});
+</script>
+
+
+{% endraw %}
+
 ### Desafíos del taycan
 
 El **Taycan**, flagship eléctrico de Porsche, enfrenta dificultades significativas con una caída del 49% en ventas durante 2024, entregando solo 20,836 unidades. Esta contracción refleja los desafíos de posicionamiento en un mercado EV cada vez más competitivo y la espera de consumidores por el facelift del modelo.
+
+
+{% raw %}
+
+<!-- Gráfico 2: Ventas por Modelo 2024 -->
+<div style="width: 800px; height: 400px; margin: 20px 0;">
+    <canvas id="ventasModeloChart"></canvas>
+</div>
+
+<script>
+const ctx2 = document.getElementById('ventasModeloChart').getContext('2d');
+const ventasModeloChart = new Chart(ctx2, {
+    type: 'bar',
+    data: {
+        labels: ['Cayenne', 'Macan', '911', 'Panamera', '718', 'Taycan'],
+        datasets: [{
+            label: 'Unidades Vendidas',
+            data: [102889, 82795, 50941, 29587, 23670, 20836],
+            backgroundColor: [
+                '#D5001C',
+                '#FF6B35',
+                '#F7931E',
+                '#FFD100',
+                '#8BC34A',
+                '#2196F3'
+            ],
+            borderColor: [
+                '#B8001A',
+                '#E55A2B',
+                '#E08419',
+                '#E6BC00',
+                '#7CB342',
+                '#1976D2'
+            ],
+            borderWidth: 2,
+            borderRadius: 8,
+            borderSkipped: false
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Ventas de Porsche por Modelo - 2024',
+                font: {
+                    size: 18,
+                    weight: 'bold'
+                },
+                padding: 20
+            },
+            legend: {
+                display: false
+            },
+            datalabels: {
+                display: true,
+                anchor: 'end',
+                align: 'top',
+                formatter: function(value) {
+                    return value.toLocaleString('es-ES');
+                },
+                font: {
+                    weight: 'bold',
+                    size: 12
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Unidades Vendidas',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                },
+                ticks: {
+                    callback: function(value) {
+                        return value.toLocaleString('es-ES');
+                    }
+                }
+            },
+            x: {
+                title: {
+                    display: true,
+                    text: 'Modelos',
+                    font: {
+                        size: 14,
+                        weight: 'bold'
+                    }
+                }
+            }
+        }
+    }
+});
+</script>
+
+
+(%endraw %)
+
 
 ## Análisis geográfico: mercados en transformación
 
