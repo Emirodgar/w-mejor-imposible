@@ -48,16 +48,16 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Guía de Inspección de Segunda Mano</span>
+                <span>Guía de inspección de segunda mano</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
         <main>
             <div class="card">
-                <h2 class="card-title">1. Selecciona el Vehículo a Inspeccionar</h2>
+                <h2 class="card-title">1. Selecciona el vehículo a inspeccionar</h2>
                 <div class="selector-container">
                     <div class="control-group">
                         <label for="model-select">Modelo</label>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="card">
-                <h2 class="card-title">2. Checklist de Inspección Personalizada</h2>
+                <h2 class="card-title">2. Checklist de inspección personalizada</h2>
                 <div id="checklist-container" class="checklist">
                     <!-- La checklist se generará aquí -->
                 </div>
@@ -243,7 +243,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
             });
 
             modelSelect.addEventListener('change', () => {
