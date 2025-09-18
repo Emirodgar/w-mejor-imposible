@@ -163,7 +163,7 @@
                     labels: ['Positivo', 'Negativo', 'Neutro'],
                     datasets: [{
                         data: [socialData.sentiment.positive, socialData.sentiment.negative, socialData.sentiment.neutral],
-                        backgroundColor: ['var(--sentiment-positive)', 'var(--sentiment-negative)', 'var(--sentiment-neutral)'],
+                        backgroundColor: ['#28a745', '#dc3545', '#6c757d'],
                         borderColor: document.body.classList.contains('theme-dark') ? '#282c34' : '#ffffff',
                         borderWidth: 4
                     }]
@@ -182,7 +182,7 @@
                     datasets: [{
                         label: 'Menciones',
                         data: Object.values(socialData.channels),
-                        backgroundColor: 'var(--porsche-red)'
+                        backgroundColor: '#B12B28'
                     }]
                 },
                 options: {
