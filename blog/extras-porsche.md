@@ -11,7 +11,7 @@ folder: estrategicos
 permalink: extras-porsche
 ---
 
-# Guía definitiva de opciones Porsche: un análisis experto para su configuración perfecta
+# Guía definitiva de opciones Porsche: un análisis experto para la configuración perfecta
 
 ## I. Introducción: la filosofía de la personalización Porsche
 
@@ -34,6 +34,8 @@ Cada extra analizado en este informe ha sido evaluado bajo cinco veredictos defi
 **Personal**: Una categoría reservada para las opciones cuya idoneidad es completamente subjetiva. La elección de estos extras depende enteramente del gusto, el estilo de vida o las preferencias estéticas del comprador, y no se puede recomendar ni desaconsejar de forma general.
 
 Este marco de evaluación permite un análisis estructurado y objetivo, proporcionando la información necesaria para que cada comprador tome una decisión informada que resuene con sus propias prioridades.
+
+> Utiliza nuestra [herramienta de análisis de opciones y su coste](https://mejorimposible.es/analisis-compra) para identificar cuáles son las más idóneas.
 
 ## II. Porsche 911 (992): el icono reinventado
 
