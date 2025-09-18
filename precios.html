@@ -48,10 +48,10 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Análisis de Evolución de Precios de Lanzamiento (PVP )</span>
+                <span>Análisis de evolución de precios de lanzamiento (PVP)</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
@@ -62,7 +62,7 @@
             </section>
 
             <section class="card table-section">
-                <h2 class="card-title">Análisis Detallado del Aumento de Precios</h2>
+                <h2 class="card-title">Análisis detallado del aumento de precios</h2>
                 <div class="table-container">
                     <table id="price-table">
                         <thead>
@@ -198,7 +198,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
                 renderLaunchPriceChart();
             });
         }
