@@ -65,38 +65,38 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Dashboard de Monitorización de Redes Sociales</span>
+                <span>Dashboard de monitorización de redes sociales</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
         <main class="grid-layout">
             <section class="kpi-section">
-                <div class="card kpi-card"><div class="card-title">Menciones Totales (24h )</div><div class="value">11,4K</div><div class="trend trend-up">▲ 8%</div></div>
-                <div class="card kpi-card"><div class="card-title">Alcance Potencial</div><div class="value">25.2M</div><div class="trend trend-up">▲ 5%</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones totales (24h )</div><div class="value">11,4K</div><div class="trend trend-up">▲ 8%</div></div>
+                <div class="card kpi-card"><div class="card-title">Alcance potencial</div><div class="value">25.2M</div><div class="trend trend-up">▲ 5%</div></div>
                 <div class="card kpi-card"><div class="card-title">Interacciones</div><div class="value">1.8M</div><div class="trend trend-up">▲ 11%</div></div>
-                <div class="card kpi-card"><div class="card-title">Sentimiento Neto</div><div class="value">+71%</div><div class="trend trend-down">▼ 2%</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+71%</div><div class="trend trend-down">▼ 2%</div></div>
             </section>
 
             <section class="card sentiment-chart-section">
-                <h2 class="card-title">Distribución de Sentimiento</h2>
+                <h2 class="card-title">Distribución de sentimiento</h2>
                 <div style="height: 250px;"><canvas id="sentimentChart"></canvas></div>
             </section>
 
             <section class="card channel-chart-section">
-                <h2 class="card-title">Volumen de Menciones por Canal</h2>
+                <h2 class="card-title">Volumen de menciones por canal</h2>
                 <div style="height: 250px;"><canvas id="channelChart"></canvas></div>
             </section>
 
             <section class="card mentions-feed-section">
-                <h2 class="card-title">Últimas Menciones Relevantes</h2>
+                <h2 class="card-title">Últimas menciones relevantes</h2>
                 <div id="mentions-feed" class="mentions-feed"></div>
             </section>
 
             <section class="card wordcloud-section">
-                <h2 class="card-title">Temas de Conversación Populares</h2>
+                <h2 class="card-title">Temas de conversación populares</h2>
                 <div style="height: 400px;"><canvas id="wordCloudChart"></canvas></div>
             </section>
         </main>
@@ -229,7 +229,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
                 renderAllCharts();
             });
         }
