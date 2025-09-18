@@ -200,14 +200,14 @@
             const ctx = document.getElementById('wordCloudChart').getContext('2d');
             if (charts.wordCloud) charts.wordCloud.destroy();
             charts.wordCloud = new Chart(ctx, {
-                type: WordCloudController.type,
-                data: {
-                    labels: socialData.wordCloud.map(d => d.key),
-                    datasets: [{
-                        label: '',
-                        data: socialData.wordCloud.map(d => d.value)
-                    }]
-                },
+			    type: WordCloudController.type,
+			    data: {
+			        labels: socialData.wordCloud.map(d => d.key),
+			        datasets: [{
+			            label: '',
+			            data: socialData.wordCloud.map(d => d.value)
+			        }]
+			    },
                 options: {
                     plugins: { legend: { display: false } },
                     elements: {
