@@ -202,7 +202,7 @@
             const ctx = document.getElementById('wordCloudChart').getContext('2d');
             if (charts.wordCloud) charts.wordCloud.destroy();
             charts.wordCloud = new Chart(ctx, {
-                type: wordCloud,
+                type: WordCloudController.type,
                 data: {
                     labels: socialData.wordCloud.map(d => d.key),
                     datasets: [{
