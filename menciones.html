@@ -200,6 +200,7 @@
 
         function renderWordCloudChart() {
             const ctx = document.getElementById('wordCloudChart').getContext('2d');
+			Chart.register(WordCloudController, WordElement);
             if (charts.wordCloud) charts.wordCloud.destroy();
             charts.wordCloud = new Chart(ctx, {
                 type: WordCloudController.type,
