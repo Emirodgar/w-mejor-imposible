@@ -7,7 +7,6 @@
     <title>Porsche - Menciones sociales</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@4.4.0/dist/chartjs-chart-wordcloud.js"></script>
-
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
@@ -66,76 +65,67 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Dashboard de monitorización de redes sociales</span>
+                <span>Dashboard de Monitorización de Redes Sociales</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a tema claro</button>
+                <button id="theme-toggle">Cambiar a Tema Claro</button>
             </div>
         </header>
 
         <main class="grid-layout">
             <section class="kpi-section">
-                <div class="card kpi-card"><div class="card-title">Menciones totales (24h)</div><div class="value">11,4K</div><div class="trend trend-up">▲ 8%</div></div>
-                <div class="card kpi-card"><div class="card-title">Alcance potencial</div><div class="value">25.2M</div><div class="trend trend-up">▲ 5%</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones Totales (24h )</div><div class="value">11,4K</div><div class="trend trend-up">▲ 8%</div></div>
+                <div class="card kpi-card"><div class="card-title">Alcance Potencial</div><div class="value">25.2M</div><div class="trend trend-up">▲ 5%</div></div>
                 <div class="card kpi-card"><div class="card-title">Interacciones</div><div class="value">1.8M</div><div class="trend trend-up">▲ 11%</div></div>
-                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+71%</div><div class="trend trend-down">▼ 2%</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento Neto</div><div class="value">+71%</div><div class="trend trend-down">▼ 2%</div></div>
             </section>
 
             <section class="card sentiment-chart-section">
-                <h2 class="card-title">Distribución de sentimiento</h2>
+                <h2 class="card-title">Distribución de Sentimiento</h2>
                 <div style="height: 250px;"><canvas id="sentimentChart"></canvas></div>
             </section>
 
             <section class="card channel-chart-section">
-                <h2 class="card-title">Volumen de menciones por canal</h2>
+                <h2 class="card-title">Volumen de Menciones por Canal</h2>
                 <div style="height: 250px;"><canvas id="channelChart"></canvas></div>
             </section>
 
             <section class="card mentions-feed-section">
-                <h2 class="card-title">Últimas menciones relevantes</h2>
+                <h2 class="card-title">Últimas Menciones Relevantes</h2>
                 <div id="mentions-feed" class="mentions-feed"></div>
             </section>
 
             <section class="card wordcloud-section">
-                <h2 class="card-title">Temas de conversación populares</h2>
+                <h2 class="card-title">Temas de Conversación Populares</h2>
                 <div style="height: 400px;"><canvas id="wordCloudChart"></canvas></div>
             </section>
         </main>
     </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // CORRECCIÓN 1: Registrar el plugin aquí, después de que se carguen las librerías.
-        Chart.register(ChartWordCloud.WordCloudController, ChartWordCloud.WordElement);
-        
-        const socialData = {
-            sentiment: { positive: 78, negative: 7, neutral: 15 },
-            channels: { 'Instagram': 45, 'Twitter/X': 25, 'YouTube': 15, 'Foros': 10, 'Noticias': 5 },
-            mentions: [
-                { author: '@TopGear', text: 'Probamos el nuevo Porsche Macan eléctrico: potencia bruta y diseño refinado. Un paso firme hacia el futuro.', source: 'Twitter/X', sentiment: 'positive' },
-                { author: 'AutoBild España', text: 'El Cayenne híbrido enchufable sorprende con autonomía eléctrica real superior a lo esperado.', source: 'Noticias', sentiment: 'positive' },
-                { author: 'ForeroGT3', text: 'El sistema de infoentretenimiento del 911 sigue sin convencerme, poco intuitivo y lento.', source: 'Foro Coches.net', sentiment: 'negative' },
-                { author: '@LuxuryCars', text: 'El interior del Panamera 2024 redefine el concepto de lujo en un deportivo.', source: 'Instagram', sentiment: 'positive' },
-                { author: 'María L.', text: 'Vi un Taycan Turbo S en directo, simplemente impresionante. Mi coche soñado.', source: 'Facebook', sentiment: 'positive' },
-                { author: '@EVReview', text: 'Carga ultrarrápida del Taycan: de 10% a 80% en menos de 20 minutos. Porsche lo está haciendo muy bien.', source: 'Twitter/X', sentiment: 'positive' },
-                { author: '@SupercarBlondie', text: 'Driving the new 911 GT3 RS is an out of this world experience! The aero is just insane. #Porsche #GT3RS', source: 'Instagram', sentiment: 'positive' },
-                { author: 'UsuarioForo911', text: '¿Alguien más con problemas en el PCM del Taycan? Se me reinicia constantemente desde la última actualización.', source: 'Foro Rennlist', sentiment: 'negative' },
-                { author: '@EV_Fanatic', text: 'La nueva autonomía del Taycan 2024 es un verdadero game-changer. Ahora sí compite de tú a tú con Tesla.', source: 'Twitter/X', sentiment: 'positive' },
-                { author: 'MotorTrend', text: 'Porsche lo ha vuelto a hacer. El 911 S/T es la carta de amor definitiva a la conducción pura. Una obra maestra.', source: 'Noticias', sentiment: 'positive' },
-                { author: 'Gamer_Pro', text: 'El nuevo Porsche Vision GT en Gran Turismo 7 es una pasada. ¡Qué diseño!', source: 'Twitter/X', sentiment: 'positive' },
-                { author: 'Juan Pérez', text: 'Los costes de mantenimiento de mi Cayenne son más altos de lo que esperaba. La revisión de los 60.000km me ha costado un ojo de la cara.', source: 'Facebook', sentiment: 'negative' },
-                { author: 'CarVlogger', text: 'Review del Macan Eléctrico: Silencioso, brutalmente rápido y con un interior de 10. ¿El mejor SUV eléctrico?', source: 'YouTube', sentiment: 'positive' },
-                { author: 'Ana G.', text: 'Soñando con el día que pueda comprarme un 718 Spyder. Para mí, el coche perfecto.', source: 'Instagram', sentiment: 'positive' },
-            ],
-            wordCloud: [
-                {key: '911', value: 100}, {key: 'GT3 RS', value: 85}, {key: 'Taycan', value: 75},
-                {key: 'eléctrico', value: 60}, {key: 'diseño', value: 55}, {key: 'precio', value: 40},
-                {key: 'motor', value: 65}, {key: 'experiencia', value: 50}, {key: 'nuevo', value: 70},
-                {key: 'increíble', value: 68}, {key: 'problema', value: 35}, {key: 'autonomía', value: 45},
-                {key: 'Macan', value: 48}, {key: 'sonido', value: 52}, {key: 'circuito', value: 42}
-            ]
-        };
+    const socialData = {
+        sentiment: { positive: 78, negative: 7, neutral: 15 },
+        channels: { 'Instagram': 45, 'Twitter/X': 25, 'YouTube': 15, 'Foros': 10, 'Noticias': 5 },
+        mentions: [
+            { author: '@SupercarBlondie', text: 'Driving the new 911 GT3 RS is an out of this world experience! The aero is just insane. #Porsche #GT3RS', source: 'Instagram', sentiment: 'positive' },
+            { author: 'UsuarioForo911', text: '¿Alguien más con problemas en el PCM del Taycan? Se me reinicia constantemente desde la última actualización.', source: 'Foro Rennlist', sentiment: 'negative' },
+            { author: '@EV_Fanatic', text: 'La nueva autonomía del Taycan 2024 es un verdadero game-changer. Ahora sí compite de tú a tú con Tesla.', source: 'Twitter/X', sentiment: 'positive' },
+            { author: 'MotorTrend', text: 'Porsche lo ha vuelto a hacer. El 911 S/T es la carta de amor definitiva a la conducción pura. Una obra maestra.', source: 'Noticias', sentiment: 'positive' },
+            { author: 'Gamer_Pro', text: 'El nuevo Porsche Vision GT en Gran Turismo 7 es una pasada. ¡Qué diseño!', source: 'Twitter/X', sentiment: 'positive' },
+            { author: 'Juan Pérez', text: 'Los costes de mantenimiento de mi Cayenne son más altos de lo que esperaba. La revisión de los 60.000km me ha costado un ojo de la cara.', source: 'Facebook', sentiment: 'negative' },
+            { author: 'CarVlogger', text: 'Review del Macan Eléctrico: Silencioso, brutalmente rápido y con un interior de 10. ¿El mejor SUV eléctrico?', source: 'YouTube', sentiment: 'positive' },
+            { author: 'Ana G.', text: 'Soñando con el día que pueda comprarme un 718 Spyder. Para mí, el coche perfecto.', source: 'Instagram', sentiment: 'positive' },
+        ],
+        wordCloud: [
+            {key: '911', value: 100}, {key: 'GT3 RS', value: 85}, {key: 'Taycan', value: 75},
+            {key: 'eléctrico', value: 60}, {key: 'diseño', value: 55}, {key: 'precio', value: 40},
+            {key: 'motor', value: 65}, {key: 'experiencia', value: 50}, {key: 'nuevo', value: 70},
+            {key: 'increíble', value: 68}, {key: 'problema', value: 35}, {key: 'autonomía', value: 45},
+            {key: 'Macan', value: 48}, {key: 'sonido', value: 52}, {key: 'circuito', value: 42}
+        ]
+    };
 
+    document.addEventListener('DOMContentLoaded', () => {
         let charts = {};
 
         function initializePage() {
@@ -207,12 +197,10 @@
         }
 
         function renderWordCloudChart() {
-            // CORRECCIÓN 2: Definir la variable 'ctx' para el canvas del WordCloud.
             const ctx = document.getElementById('wordCloudChart').getContext('2d');
             if (charts.wordCloud) charts.wordCloud.destroy();
-
             charts.wordCloud = new Chart(ctx, {
-                type: 'wordCloud',
+                type: WordCloudController.type,
                 data: {
                     labels: socialData.wordCloud.map(d => d.key),
                     datasets: [{
@@ -241,7 +229,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
                 renderAllCharts();
             });
         }
