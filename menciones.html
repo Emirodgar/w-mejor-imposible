@@ -7,6 +7,10 @@
     <title>Porsche - Menciones sociales</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@4.4.0/dist/chartjs-chart-wordcloud.js"></script>
+	<script>
+       	Chart.register(ChartWordCloud.WordCloudController, ChartWordCloud.WordElement);
+	</script>
+
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
@@ -203,33 +207,34 @@
         }
 
        function renderWordCloudChart() {
-		    const ctx = document.getElementById('wordCloudChart').getContext('2d');
-		    if (charts.wordCloud) charts.wordCloud.destroy();
 		    charts.wordCloud = new Chart(ctx, {
-		        type: 'wordCloud',
-		        data: {
-		            labels: socialData.wordCloud.map(d => d.key),
-		            datasets: [{
-		                label: '',
-		                data: socialData.wordCloud.map(d => d.value)
-		            }]
-		        },
-		        options: {
-		            plugins: { legend: { display: false } },
-		            elements: {
-		                word: {
-		                    color: (context) => {
-		                        const value = context.raw;
-		                        if (value > 80) return '#B12B28';
-		                        if (value > 60) return '#E3AB37';
-		                        return getTextColor();
-		                    },
-		                    font: { family: 'Arial', size: (c) => 12 + c.raw / 3, weight: 'bold' }
-		                }
-		            }
-		        }
-		    });
+    type: 'wordCloud',
+    data: {
+        labels: socialData.wordCloud.map(d => d.key),
+        datasets: [{
+            label: '',
+            data: socialData.wordCloud.map(d => d.value)
+        }]
+    },
+    options: {
+        plugins: { legend: { display: false } },
+        elements: {
+            word: {
+                color: (context) => {
+                    const value = context.raw;
+                    if (value > 80) return '#B12B28';
+                    if (value > 60) return '#E3AB37';
+                    return getTextColor();
+                },
+                font: { family: 'Arial', size: (c) => 12 + c.raw / 3, weight: 'bold' }
+            }
+        }
+    }
+});
+
 		}
+
+		
 
 
         function setupEventListeners() {
