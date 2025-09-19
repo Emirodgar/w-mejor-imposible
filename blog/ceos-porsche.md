@@ -11,7 +11,7 @@ folder: estrategicos
 permalink: ceos-porsche
 ---
 
-# Evolución, rendimiento y ventas de los CEO de Porsche en España: un análisis histórico completo
+# Evolución, rendimiento y ventas de los CEO de Porsche en España
 
 La historia de Porsche en España ha estado marcada por el liderazgo de diversos directores generales que han guiado la marca a través de diferentes etapas de crecimiento y transformación. Desde la fundación de Porsche España en 1984 hasta la actualidad como Porsche Ibérica, cada CEO ha dejado su huella particular en el desarrollo de la marca en el mercado ibérico.
 
@@ -23,11 +23,11 @@ La historia de Porsche en España ha estado marcada por el liderazgo de diversos
 
 **Logros y desafíos iniciales:**
 
-- En **1985, primer año completo de operaciones, Porsche España vendió 252 unidades**[^1_4][^1_5]
-- Más de la mitad (57%) eran modelos transaxle de cuatro cilindros: el 924 y el 944[^1_4]
-- Se vendieron **12 unidades del mítico Porsche 959**[^1_5][^1_4]
-- La plantilla creció de 15 a 32 personas durante el primer año[^1_2]
-- Establecimiento de una red inicial de 10 concesionarios[^1_2]
+- En **1985, primer año completo de operaciones, Porsche España vendió 252 unidades**
+- Más de la mitad (57%) eran modelos transaxle de cuatro cilindros: el 924 y el 944
+- Se vendieron **12 unidades del mítico Porsche 959**
+- La plantilla creció de 15 a 32 personas durante el primer año
+- Establecimiento de una red inicial de 10 concesionarios
 
 Heyl enfrentó enormes desafíos económicos, incluyendo un **impuesto de lujo del 33% más aranceles**, y la fortaleza del marco alemán que había aumentado casi un 50% entre 1980 y 1984. Un Porsche 911 Carrera 3.2 costaba aproximadamente 40.000 euros en 1984, equivalentes a 162.000 euros actuales.[^1_1][^1_5]
 
@@ -85,6 +85,7 @@ Lamla demostró una **notable capacidad de gestión durante crisis**, navegando 
 
 <canvas id="porscheChart" width="400" height="200"></canvas>
 
+<script>
 const config = {
     type: 'line',
     data: {
@@ -133,6 +134,7 @@ const config = {
 
 const ctx = document.getElementById('porscheChart').getContext('2d');
 const porscheChart = new Chart(ctx, config);
+</script>
 
 {% endraw %}
 
