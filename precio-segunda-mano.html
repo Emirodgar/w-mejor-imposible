@@ -53,21 +53,21 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Análisis de Precios y Depreciación</span>
+                <span>Análisis de precios y depreciación</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
         <main class="grid-layout">
             <section class="card chart-section">
-                <h2 class="card-title">Curvas de Valor de Mercado (Segunda Mano )</h2>
+                <h2 class="card-title">Curvas de valor de mercado (segunda mano )</h2>
                 <div style="height: 450px;"><canvas id="priceChart"></canvas></div>
             </section>
 
             <section class="card table-section">
-                <h2 class="card-title">Análisis Detallado de Precios por Modelo</h2>
+                <h2 class="card-title">Análisis detallado de precios por modelo</h2>
                 <div class="table-container">
                     <table id="price-table">
                         <thead>
@@ -193,7 +193,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
                 renderPriceChart();
             });
 

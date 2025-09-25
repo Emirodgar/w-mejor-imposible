@@ -6,7 +6,9 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <title>Porsche - Menciones sociales</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@4.4.0/dist/chartjs-chart-wordcloud.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-wordcloud@4.4.4/build/index.umd.min.js"></script>
+	
+    
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
@@ -65,10 +67,10 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Dashboard de Monitorización de Redes Sociales</span>
+                <span>Dashboard de monitorización de redes sociales</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
@@ -81,22 +83,22 @@
             </section>
 
             <section class="card sentiment-chart-section">
-                <h2 class="card-title">Distribución de Sentimiento</h2>
+                <h2 class="card-title">Distribución de sentimiento</h2>
                 <div style="height: 250px;"><canvas id="sentimentChart"></canvas></div>
             </section>
 
             <section class="card channel-chart-section">
-                <h2 class="card-title">Volumen de Menciones por Canal</h2>
+                <h2 class="card-title">Volumen de menciones por canal</h2>
                 <div style="height: 250px;"><canvas id="channelChart"></canvas></div>
             </section>
 
             <section class="card mentions-feed-section">
-                <h2 class="card-title">Últimas Menciones Relevantes</h2>
+                <h2 class="card-title">Últimas menciones relevantes</h2>
                 <div id="mentions-feed" class="mentions-feed"></div>
             </section>
 
             <section class="card wordcloud-section">
-                <h2 class="card-title">Temas de Conversación Populares</h2>
+                <h2 class="card-title">Temas de conversación populares</h2>
                 <div style="height: 400px;"><canvas id="wordCloudChart"></canvas></div>
             </section>
         </main>
@@ -151,7 +153,7 @@
         function renderAllCharts() {
             renderSentimentChart();
             renderChannelChart();
-            renderWordCloudChart();
+            //renderWordCloudChart();
         }
 
         function renderSentimentChart() {
@@ -163,7 +165,7 @@
                     labels: ['Positivo', 'Negativo', 'Neutro'],
                     datasets: [{
                         data: [socialData.sentiment.positive, socialData.sentiment.negative, socialData.sentiment.neutral],
-                        backgroundColor: ['var(--sentiment-positive)', 'var(--sentiment-negative)', 'var(--sentiment-neutral)'],
+                        backgroundColor: ['#28a745', '#dc3545', '#6c757d'],
                         borderColor: document.body.classList.contains('theme-dark') ? '#282c34' : '#ffffff',
                         borderWidth: 4
                     }]
@@ -182,7 +184,7 @@
                     datasets: [{
                         label: 'Menciones',
                         data: Object.values(socialData.channels),
-                        backgroundColor: 'var(--porsche-red)'
+                        backgroundColor: '#B12B28'
                     }]
                 },
                 options: {
@@ -198,6 +200,7 @@
 
         function renderWordCloudChart() {
             const ctx = document.getElementById('wordCloudChart').getContext('2d');
+			Chart.register(WordCloudController, WordElement);
             if (charts.wordCloud) charts.wordCloud.destroy();
             charts.wordCloud = new Chart(ctx, {
                 type: WordCloudController.type,

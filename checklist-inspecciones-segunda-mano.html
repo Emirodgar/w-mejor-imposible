@@ -48,16 +48,16 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Guía de Inspección de Segunda Mano</span>
+                <span>Guía de inspección de segunda mano</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
         <main>
             <div class="card">
-                <h2 class="card-title">1. Selecciona el Vehículo a Inspeccionar</h2>
+                <h2 class="card-title">1. Selecciona el vehículo a inspeccionar</h2>
                 <div class="selector-container">
                     <div class="control-group">
                         <label for="model-select">Modelo</label>
@@ -71,7 +71,7 @@
             </div>
 
             <div class="card">
-                <h2 class="card-title">2. Checklist de Inspección Personalizada</h2>
+                <h2 class="card-title">2. Checklist de inspección personalizada</h2>
                 <div id="checklist-container" class="checklist">
                     <!-- La checklist se generará aquí -->
                 </div>
@@ -146,7 +146,57 @@
                     "Verificar el funcionamiento de la suspensión neumática; que suba, baje y mantenga la altura sin problemas."
                 ]
             }
+        },
+		'Panamera': {
+        	'970 (2009-2016)': {
+	            critical: [
+	                "Revisar funcionamiento de la suspensión neumática (costosa de reparar).",
+	                "En motores V8 gasolina, preguntar por historial de consumo de aceite excesivo.",
+	                "En híbridos, comprobar estado de batería de alto voltaje y su autonomía real."
+	            ],
+	            common: [
+	                "Verificar desgaste prematuro en discos y pastillas de freno (vehículo pesado).",
+	                "Revisar que las pantallas interiores funcionen correctamente, algunas pierden píxeles.",
+	                "Escuchar ruidos en la caja de cambios PDK a baja velocidad."
+	            ]
+        },
+        '971 (2017-Hoy)': {
+            critical: [
+                "Comprobar historial de revisiones en concesionario oficial (software y actualizaciones son clave)."
+            ],
+            common: [
+                "Verificar el buen funcionamiento de los sensores de asistencia (radares, cámaras).",
+                "Comprobar que el sistema multimedia PCM responda sin bloqueos.",
+                "En híbridos, revisar capacidad real de la batería y tiempos de carga."
+            ]
         }
+    },
+    'Macan': {
+        '95B (2014-Hoy)': {
+            critical: [
+                "Verificar posibles fugas de aceite en motores 2.0 y V6 de primeras unidades.",
+                "Revisar funcionamiento del cambio PDK, especialmente en reducciones bruscas."
+            ],
+            common: [
+                "Comprobar el estado de la suspensión (los silentblocks se desgastan prematuramente).",
+                "Escuchar ruidos en la dirección asistida.",
+                "Verificar desgaste irregular de neumáticos por desalineación frecuente."
+            ]
+        }
+    },
+    'Taycan': {
+        'J1 (2020-Hoy)': {
+            critical: [
+                "Revisar estado de la batería de alto voltaje y preguntar por degradación (% de salud).",
+                "Comprobar historial de cargas rápidas (demasiadas pueden acelerar la degradación)."
+            ],
+            common: [
+                "Verificar correcto funcionamiento del sistema eléctrico general (software puede dar fallos).",
+                "Comprobar que las actualizaciones OTA estén instaladas.",
+                "Revisar el estado de los cargadores de a bordo (algunos fallos reportados en trifásicos)."
+            ]
+        }
+    }
     };
 
     const generalChecklist = {
@@ -243,7 +293,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
             });
 
             modelSelect.addEventListener('change', () => {

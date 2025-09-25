@@ -11,7 +11,7 @@ folder: estrategicos
 permalink: ventas-porsche
 ---
 
-# Análisis de Ventas de Porsche (2004-2024)
+# Análisis de ventas de Porsche (2004-2024)
 
 Las ventas globales de Porsche han experimentado un **crecimiento extraordinario** durante los últimos 20 años, multiplicándose por más de **cuatro veces** desde 2004. El fabricante alemán pasó de vender 76,600 unidades en 2004 a alcanzar su pico histórico de 320,221 vehículos en 2023, aunque experimentó una ligera contracción del 3% en 2024 con "sólo" 310,718 unidades entregadas.
 
@@ -326,7 +326,7 @@ const ventasModeloChart = new Chart(ctx2, {
 </script>
 
 
-(%endraw %)
+(% endraw %)
 
 
 ## Análisis geográfico: mercados en transformación

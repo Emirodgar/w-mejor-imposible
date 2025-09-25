@@ -54,21 +54,21 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Análisis del Coste Real de Propiedad (TCO a 5 Años )</span>
+                <span>Análisis del coste real de propiedad (TCO a 5 Años )</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
         <main class="grid-layout">
             <section class="card chart-section">
-                <h2 class="card-title">Desglose del Coste Total de Propiedad Estimado a 5 Años</h2>
+                <h2 class="card-title">Desglose del coste total de propiedad estimado a 5 Años</h2>
                 <div style="height: 450px;"><canvas id="tcoChart"></canvas></div>
             </section>
 
             <section class="card table-section">
-                <h2 class="card-title">Tabla de Desglose del TCO (Estimación a 5 años)</h2>
+                <h2 class="card-title">Tabla de desglose del TCO (estimación a 5 años)</h2>
                 <div class="table-container">
                     <table id="tco-table">
                         <thead>
@@ -138,11 +138,11 @@
             const labels = tcoData.map(item => item.model);
             
             const datasets = [
-                { label: 'Depreciación', data: tcoData.map(item => item.depreciation), backgroundColor: 'var(--color-depreciation)' },
-                { label: 'Mantenimiento', data: tcoData.map(item => item.maintenance), backgroundColor: 'var(--color-maintenance)' },
-                { label: 'Combustible / Electricidad', data: tcoData.map(item => item.fuel), backgroundColor: 'var(--color-fuel)' },
-                { label: 'Seguro', data: tcoData.map(item => item.insurance), backgroundColor: 'var(--color-insurance)' },
-                { label: 'Consumibles', data: tcoData.map(item => item.consumables), backgroundColor: 'var(--color-consumables)' }
+                { label: 'Depreciación', data: tcoData.map(item => item.depreciation), backgroundColor: '#B12B28' },
+                { label: 'Mantenimiento', data: tcoData.map(item => item.maintenance), backgroundColor: '#E3AB37' },
+                { label: 'Combustible / Electricidad', data: tcoData.map(item => item.fuel), backgroundColor: '#464C47' },
+                { label: 'Seguro', data: tcoData.map(item => item.insurance), backgroundColor: '#696969' },
+                { label: 'Consumibles', data: tcoData.map(item => item.consumables), backgroundColor: '#8B0000' }
             ];
 
             if (tcoChartInstance) tcoChartInstance.destroy();
@@ -188,7 +188,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
                 renderTcoChart();
             });
         }

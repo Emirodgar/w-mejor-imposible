@@ -56,21 +56,21 @@
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Comparador de Prestaciones y Sensaciones</span>
+                <span>Comparador de prestaciones y sensaciones</span>
             </div>
             <div class="header-controls">
-                <button id="theme-toggle">Cambiar a Tema Claro</button>
+                <button id="theme-toggle">Cambiar a tema claro</button>
             </div>
         </header>
 
         <main class="grid-layout">
             <section class="card chart-section">
-                <h2 class="card-title">Gráfico de Personalidad del Modelo</h2>
+                <h2 class="card-title">Gráfico de personalidad del modelo</h2>
                 <div style="height: 500px;"><canvas id="personalityChart"></canvas></div>
             </section>
 
             <section class="card selector-section">
-                <h2 class="card-title">Selecciona Modelos a Comparar</h2>
+                <h2 class="card-title">Selecciona modelos a comparar</h2>
                 <div class="control-group">
                     <label for="model1">Modelo 1 (Rojo )</label>
                     <select id="model1"></select>
@@ -86,7 +86,7 @@
             </section>
 
             <section class="card table-section">
-                <h2 class="card-title">Tabla Comparativa de Ficha Técnica</h2>
+                <h2 class="card-title">Tabla comparativa de ficha técnica</h2>
                 <div class="table-container">
                     <table id="specs-table">
                         <thead>
@@ -221,7 +221,7 @@
             document.getElementById('theme-toggle').addEventListener('click', () => {
                 document.body.classList.toggle('theme-light');
                 document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a Tema Claro' : 'Cambiar a Tema Oscuro';
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
                 renderPersonalityChart();
             });
 
