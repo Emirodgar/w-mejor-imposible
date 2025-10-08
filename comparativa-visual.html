@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Comparador Visual de Dimensiones</title>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --dark-bg: #1d2125; --dark-card-bg: #282c34; --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--dark-bg); color: var(--dark-text); }
+        .container { max-width: 1400px; margin: auto; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .card { background-color: var(--dark-card-bg); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .card-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
+
+        .selector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .selector-column label { display: block; margin-bottom: 5px; font-size: 14px; font-weight: bold; }
+        .selector-column select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--porsche-grey); background-color: var(--dark-bg); color: inherit; font-size: 16px; }
+        .selector-column .legend { display: flex; align-items: center; margin-top: 10px; }
+        .selector-column .legend-box { width: 20px; height: 20px; margin-right: 10px; border-radius: 4px; }
+        #legend-a { background-color: var(--porsche-grey); }
+        #legend-b { background-color: rgba(177, 43, 40, 0.7); }
+
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .visual-container { position: relative; height: 300px; }
+        .visual-container img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; max-height: 100%; transition: opacity 0.3s; }
+        .visual-container .car-b { opacity: 0.7; }
+
+        .data-table table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .data-table th, .data-table td { padding: 12px; text-align: center; border-bottom: 1px solid var(--porsche-grey); }
+        .data-table th { font-weight: bold; color: var(--porsche-gold); }
+        .data-table .diff-pos { color: #28a745; font-weight: bold; }
+        .data-table .diff-neg { color: #dc3545; font-weight: bold; }
+
+        @media (max-width: 992px) {
+            .comparison-grid { grid-template-columns: 1fr; }
+            .selector-grid { grid-template-columns: 1fr; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-title">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Porsche_Crest.svg/1024px-Porsche_Crest.svg.png" alt="Porsche Crest">
+                <span>Comparador Visual de Dimensiones</span>
+            </div>
+        </header>
+
+        <div class="card">
+            <h2 class="card-title">1. Selecciona los modelos a comparar</h2>
+            <div class="selector-grid">
+                <div class="selector-column">
+                    <label for="car-a-select">Coche A (Base )</label>
+                    <select id="car-a-select"></select>
+                    <div class="legend"><div id="legend-a" class="legend-box"></div><span>Silueta base</span></div>
+                </div>
+                <div class="selector-column">
+                    <label for="car-b-select">Coche B (Superpuesto)</label>
+                    <select id="car-b-select"></select>
+                    <div class="legend"><div id="legend-b" class="legend-box"></div><span>Silueta superpuesta</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">2. Comparación Visual</h2>
+            <div class="comparison-grid">
+                <div class="visual-container">
+                    <h3 style="text-align: center;">Vista Lateral</h3>
+                    <img id="side-view-a" src="" alt="Coche A - Vista Lateral">
+                    <img id="side-view-b" class="car-b" src="" alt="Coche B - Vista Lateral">
+                </div>
+                <div class="visual-container">
+                    <h3 style="text-align: center;">Vista Frontal</h3>
+                    <img id="front-view-a" src="" alt="Coche A - Vista Frontal">
+                    <img id="front-view-b" class="car-b" src="" alt="Coche B - Vista Frontal">
+                </div>
+            </div>
+        </div>
+
+        <div class="card data-table">
+            <h2 class="card-title">3. Tabla de Dimensiones y Diferencias</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dimensión</th>
+                        <th id="header-a">Coche A</th>
+                        <th id="header-b">Coche B</th>
+                        <th>Diferencia (B vs A)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Longitud</td>
+                        <td id="length-a"></td>
+                        <td id="length-b"></td>
+                        <td id="length-diff"></td>
+                    </tr>
+                    <tr>
+                        <td>Anchura</td>
+                        <td id="width-a"></td>
+                        <td id="width-b"></td>
+                        <td id="width-diff"></td>
+                    </tr>
+                    <tr>
+                        <td>Altura</td>
+                        <td id="height-a"></td>
+                        <td id="height-b"></td>
+                        <td id="height-diff"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+    const carData = {
+        '911_992': {
+            name: '911 Carrera (992)',
+            dims: { length: 4519, width: 1852, height: 1298 },
+            img: { side: 'img/modelos/911992-lateral.png', front: 'img/modelos/911992-frontal.png' }
+        },
+        '911_997': {
+            name: '911 Carrera (997 )',
+            dims: { length: 4427, width: 1808, height: 1310 },
+            img: { side: 'img/modelos/911997-lateral.png', front: 'img/modelos/911997-frontal.png' }
+        },
+        '911_G': {
+            name: '911 Clásico (G-Model )',
+            dims: { length: 4291, width: 1652, height: 1310 },
+            img: { side: 'img/modelos/gmodel-lateral.png', front: 'img/modelos/gmodel-frontal.png' }
+        },
+        '718_cayman': {
+            name: '718 Cayman (982 )',
+            dims: { length: 4379, width: 1801, height: 1295 },
+            img: { side: 'img/modelos/cayman-lateral.png', front: 'img/modelos/cayman-frontal.png' }
+        },
+        'taycan': {
+            name: 'Taycan',
+            dims: { length: 4963, width: 1966, height: 1381 },
+            img: { side: 'img/modelos/taycan-lateral.png', front: 'img/modelos/taycan-frontal.png' }
+        },
+        'panamera': {
+            name: 'Panamera (G2 )',
+            dims: { length: 5049, width: 1937, height: 1423 },
+            img: { side: 'img/modelos/panamera-lateral.png', front: 'img/modelos/panamera-frontal.png' }
+        },
+        'macan': {
+            name: 'Macan',
+            dims: { length: 4726, width: 1922, height: 1621 },
+            img: { side: 'img/modelos/macan-lateral.png', front: 'img/modelos/macan-frontal.png' }
+        },
+        'cayenne': {
+            name: 'Cayenne',
+            dims: { length: 4930, width: 1983, height: 1698 },
+            img: { side: 'img/modelos/cayenne-lateral.png', front: 'img/modelos/cayenne-frontal.png' }
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', ( ) => {
+        const selectA = document.getElementById('car-a-select');
+        const selectB = document.getElementById('car-b-select');
+
+        function populateSelectors() {
+            Object.keys(carData).forEach(key => {
+                const optionA = new Option(carData[key].name, key);
+                const optionB = new Option(carData[key].name, key);
+                selectA.add(optionA);
+                selectB.add(optionB);
+            });
+            selectA.value = '911_992';
+            selectB.value = '718_cayman';
+        }
+
+        function updateComparison() {
+            const carA = carData[selectA.value];
+            const carB = carData[selectB.value];
+
+            // Update images
+            document.getElementById('side-view-a').src = carA.img.side;
+            document.getElementById('side-view-b').src = carB.img.side;
+            document.getElementById('front-view-a').src = carA.img.front;
+            document.getElementById('front-view-b').src = carB.img.front;
+
+            // Update table headers
+            document.getElementById('header-a').textContent = carA.name;
+            document.getElementById('header-b').textContent = carB.name;
+
+            // Update dimensions
+            document.getElementById('length-a').textContent = `${(carA.dims.length / 1000).toFixed(2)} m`;
+            document.getElementById('width-a').textContent = `${(carA.dims.width / 1000).toFixed(2)} m`;
+            document.getElementById('height-a').textContent = `${(carA.dims.height / 1000).toFixed(2)} m`;
+
+            document.getElementById('length-b').textContent = `${(carB.dims.length / 1000).toFixed(2)} m`;
+            document.getElementById('width-b').textContent = `${(carB.dims.width / 1000).toFixed(2)} m`;
+            document.getElementById('height-b').textContent = `${(carB.dims.height / 1000).toFixed(2)} m`;
+
+            // Update differences
+            updateDiff('length', carB.dims.length - carA.dims.length);
+            updateDiff('width', carB.dims.width - carA.dims.width);
+            updateDiff('height', carB.dims.height - carA.dims.height);
+        }
+
+        function updateDiff(dimension, diff) {
+            const diffElem = document.getElementById(`${dimension}-diff`);
+            const diffCm = diff / 10;
+            diffElem.textContent = `${diffCm >= 0 ? '+' : ''}${diffCm.toFixed(1)} cm`;
+            diffElem.className = diffCm >= 0 ? 'diff-pos' : 'diff-neg';
+        }
+
+        selectA.addEventListener('change', updateComparison);
+        selectB.addEventListener('change', updateComparison);
+
+        populateSelectors();
+        updateComparison();
+    });
+    </script>
+</body>
+</html>
