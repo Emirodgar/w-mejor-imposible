@@ -89,6 +89,21 @@
             <button class="filter-btn" data-filter="competicion">Competición</button>
             <button class="filter-btn" data-filter="electrico">Eléctricos</button>
         </div>
+		
+		{% for page in site.pages %}
+			{% if page.title != null  %}		  
+				  {
+					id: blog-{{ forloop.index }},
+					category: 'blog',
+					source: 'Mejor imposible',
+					title: '{{page.title}}',
+					excerpt: '{{page.description}}',
+					date: '{{page.date}}',
+					link: 'https://mejorimposible.es/{{page.url}}'.
+				},
+				  
+			{% endif %}
+		{% endfor %}
 
         <main id="news-container">
             </main>
@@ -96,22 +111,6 @@
 
     <script>
     const newsData = [
-        
-		{% for page in site.pages %}
-			{% if page.title != null  %}		  
-				  {
-					id: 33,
-					category: 'blog',
-					source: 'Mejor imposible',
-					title: '{{page.title}}',
-					excerpt: '{{page.description}}',
-					date: '{{page.date}}',
-					link: 'https://mejorimposible/{{page.url}}'.
-				},
-				  
-			{% endif %}
-		{% endfor %}
-		
 		{
         id: 32,
         featured: true, // Nueva noticia destacada
