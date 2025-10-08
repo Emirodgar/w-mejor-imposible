@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu guía definitiva para comprar un Porsche - Mejor Imposible</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --dark-bg: #1d2125; --dark-text: #e1e1e1;
+            --card-bg: #282c34;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+        .container {
+            max-width: 1600px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header --- */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: absolute;
+            width: calc(100% - 40px);
+            z-index: 10;
+        }
+        .logo { font-size: 24px; font-weight: bold; }
+        .logo span { color: var(--porsche-red); }
+        .main-nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 500; }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://a.storyblok.com/f/338913/760x1350/d3f592836f/kw15-ww-there-is-no-substitue-mobile.jpg/m/759x0/filters:format(webp ):quality(85)' );
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            margin: 10px 0 30px 0;
+            opacity: 0.9;
+        }
+        .cta-button {
+            background-color: var(--porsche-red);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover { transform: scale(1.05); }
+
+        /* --- Intro Section --- */
+        .intro-section {
+            padding: 100px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+        .intro-section h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .intro-section p { font-size: 1.2rem; line-height: 1.7; opacity: 0.8; }
+
+        /* --- General Sections --- */
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+        
+        /* --- Tools Section --- */
+        .tools-section { padding: 50px 0; }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .tool-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: var(--dark-text);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .tool-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .tool-card img { width: 100%; height: 200px; object-fit: cover; }
+        .tool-card-content { padding: 20px; flex-grow: 1; }
+        .tool-card-content h3 { margin: 0 0 10px 0; font-size: 1.4rem; color: var(--porsche-gold); }
+        .tool-card-content p { margin: 0; line-height: 1.5; opacity: 0.8; }
+
+        /* --- News Section (NUEVO) --- */
+        .news-section { padding: 50px 0; background-color: var(--card-bg); }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .news-card-home {
+            background-color: var(--dark-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: var(--dark-text);
+            display: flex;
+            flex-direction: column;
+        }
+        .news-card-home .source { font-size: 12px; font-weight: bold; color: var(--porsche-gold); margin: 20px 20px 10px 20px; }
+        .news-card-home h3 { font-size: 1.2rem; margin: 0 20px 15px 20px; flex-grow: 1; }
+        .news-card-home .meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; opacity: 0.6; padding: 15px 20px; border-top: 1px solid var(--porsche-grey); }
+        .news-card-home .read-more-link { color: var(--porsche-red); font-weight: bold; }
+        .news-section .view-all-container { text-align: center; margin-top: 40px; }
+
+        /* --- Philosophy Section --- */
+        .philosophy-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+            padding: 100px 20px;
+        }
+        .philosophy-section img { width: 100%; border-radius: 8px; }
+        .philosophy-text blockquote {
+            font-size: 2rem;
+            border-left: 4px solid var(--porsche-red);
+            padding-left: 30px;
+            margin: 0;
+            font-style: italic;
+        }
+        .philosophy-text cite { display: block; margin-top: 20px; font-size: 1.2rem; text-align: right; }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--porsche-grey);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content p { font-size: 1.2rem; }
+            .philosophy-section { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">mejor<span>imposible</span>.es</div>
+        <nav class="main-nav">
+            <a href="#tools">Herramientas</a>
+            <a href="#news">Noticias</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>El corazón sigue al coche. </h1>
+            <p>Hay coches que te llevan. Un Porsche te transforma.</p>
+            <a href="#intro" class="cta-button">Descubre cómo elegir el tuyo</a>
+        </div>
+    </section>
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <h2>No compres un Porsche. Invierte en uno.</h2>
+            <p>Conducir un Porsche es una experiencia que redefine la conexión entre el hombre y la máquina. Pero elegir el modelo correcto es un arte que requiere conocimiento. En <strong>mejorimposible.es</strong> te ofrecemos la información más completa y las herramientas más potentes para que tu decisión no sea solo pasional, sino también la más inteligente. Aquí empieza tu viaje hacia el Porsche perfecto.</p>
+        </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Tus herramientas de análisis</h2>
+            <div class="tools-grid">
+                <a href="/fallos" class="tool-card"><img src="img/fiabilidad.png" alt="Análisis de Fiabilidad"><div class="tool-card-content"><h3>Análisis de fiabilidad</h3><p>Descubre los fallos comunes, costes de reparación y el índice de fiabilidad de cada modelo y generación.</p></div></a>
+                <a href="/precios" class="tool-card"><img src="img/depreciacion.png" alt="Análisis de Precios y Depreciación"><div class="tool-card-content"><h3>Precios y depreciación</h3><p>Analiza la evolución de precios de segunda mano y descubre qué modelos son la mejor inversión.</p></div></a>
+                <a href="/comparador" class="tool-card"><img src="img/sensaciones.png" alt="Comparador de Prestaciones"><div class="tool-card-content"><h3>Comparador de sensaciones</h3><p>¿Circuito, viaje o día a día? Encuentra el Porsche con la personalidad que encaja contigo.</p></div></a>
+                <a href="/analisis-compra" class="tool-card"><img src="img/opciones.png" alt="Análisis de Opciones"><div class="tool-card-content"><h3>Guía de opciones</h3><p>Aprende qué extras son imprescindibles para el disfrute y el valor de reventa, y cuáles evitar.</p></div></a>
+                <a href="/coste-real" class="tool-card"><img src="img/coste.png" alt="Coste Real de Propiedad"><div class="tool-card-content"><h3>Coste real de propiedad</h3><p>Calcula el gasto total a 5 años: depreciación, mantenimiento, seguro y más. Sin sorpresas.</p></div></a>
+                <a href="/checklist-inspecciones-segunda-mano" class="tool-card"><img src="img/inspeccion.png" alt="Guía de Inspección"><div class="tool-card-content"><h3>Guía de inspección</h3><p>Tu checklist interactiva para inspeccionar un Porsche de segunda mano como un profesional.</p></div></a>
+                <a href="/menciones" class="tool-card"><img src="img/pulso.png" alt="Dashboard Social"><div class="tool-card-content"><h3>Pulso de la marca</h3><p>Monitoriza en tiempo real lo que se dice de Porsche en redes sociales. Sentimiento y tendencias.</p></div></a>
+                <a href="/tendencias" class="tool-card"><img src="img/tendencias.png" alt="Collage de Tendencias"><div class="tool-card-content"><h3>Tendencias</h3><p>Una galería visual inmersiva con las mejores fotos y vídeos de Porsche en redes sociales.</p></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- === SECCIÓN DE NOTICIAS NUEVA === -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <div id="news-grid-home" class="news-grid">
+                <!-- Las tarjetas de noticias se insertarán aquí con JavaScript -->
+            </div>
+            <div class="view-all-container">
+                <a href="/noticias" class="cta-button" style="background-color: var(--porsche-grey);">Ver todas las noticias</a>
+            </div>
+        </div>
+    </section>
+    <!-- === FIN DE LA SECCIÓN DE NOTICIAS === -->
+
+    <section id="philosophy" class="philosophy-section">
+        <div class="container" style="display: contents;">
+            <div class="philosophy-text">
+                <blockquote>"Al principio miré a mi alrededor y no encontré el coche de mis sueños, así que decidí construirlo yo mismo."</blockquote>
+                <cite>– Ferry Porsche</cite>
+            </div>
+            <img src="img/ferry.png" alt="Porsche 356 Clásico">
+        </div>
+    </section>
+
+    <section class="cta-final" style="padding:80px 20px; text-align:center; background-color:var(--porsche-grey); color:white;">
+        <div class="container">
+            <h2 style="font-size:2.2rem; padding-bottom:20px;">Si quieres comprar tu Porsche, es el momento</h2>
+            <a href="/concesionarios" target="_blank" class="cta-button">Centros oficiales</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+            <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        </div>
+    </footer>
+
+    <!-- === SCRIPT PARA LA SECCIÓN DE NOTICIAS === -->
+    <script>
+        const latestNewsData = [
+            {
+                id: 32,
+                category: 'lanzamientos',
+                source: 'Motor Pasión',
+                title: 'Filtrado el Porsche 911 GT2 RS (992.2): Más de 750 CV híbridos y aerodinámica radical',
+                date: '07 de Octubre, 2025',
+                link: '#' // Deberías poner aquí el enlace a la noticia completa
+            },
+            {
+                id: 33,
+                category: 'pruebas',
+                source: 'Diariomotor',
+                title: 'A prueba el nuevo Porsche 911 Carrera GTS T-Hybrid: ¿El equilibrio perfecto?',
+                date: '05 de Octubre, 2025',
+                link: '#'
+            },
+            {
+                id: 34,
+                category: 'electrico',
+                source: 'Híbridos y Eléctricos',
+                title: 'Porsche confirma que el 718 Boxster EV tendrá una "banda sonora" artificial',
+                date: '02 de Octubre, 2025',
+                link: '#'
+            },
+            {
+                id: 35,
+                category: 'competicion',
+                source: 'Motorsport.com',
+                title: 'Porsche se enfrenta a una difícil decisión para su alineación de Le Mans 2026',
+                date: '30 de Septiembre, 2025',
+                link: '#'
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const newsGridHome = document.getElementById('news-grid-home');
+            let html = '';
+            latestNewsData.forEach(item => {
+                html += `
+                    <a href="${item.link}" target="_blank" class="news-card-home">
+                        <div class="source">${item.source}</div>
+                        <h3>${item.title}</h3>
+                        <div class="meta">
+                            <span>${item.date}</span>
+                            <span class="read-more-link">Leer más &rarr;</span>
+                        </div>
+                    </a>
+                `;
+            });
+            newsGridHome.innerHTML = html;
+        });
+    </script>
+
+</body>
+</html>
