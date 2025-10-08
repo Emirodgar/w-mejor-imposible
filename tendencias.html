@@ -89,18 +89,7 @@
             <button class="filter-btn" data-filter="competicion">Competición</button>
             <button class="filter-btn" data-filter="electrico">Eléctricos</button>
         </div>
-		
-		<div>
-			{% for page in site.pages %}
-    {% if page.title != null and page.folder == "Demografia" %}
-        <div class="dataset-card">
-            <h4 class="dataset-title"><a href="{{ page.url }}">{{ page.title }}</a></h4>
-            <p class="dataset-description">{{ page.description }}</p>
-        </div>
-    {% endif %}
-{% endfor %}
-		</div>
-		
+				
         <main id="news-container">
 		
             </main>
