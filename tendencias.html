@@ -92,10 +92,6 @@
             <button class="filter-btn" data-filter="electrico">Eléctricos</button>
         </div>
 		
-		<div>
-			{% include posts.html %}
-		</div>
-		
         <main id="news-container">
 		
             </main>
@@ -103,6 +99,7 @@
 
     <script>
     const newsData = [
+		{% include posts.html %}
 		{
         id: 32,
         featured: true, // Nueva noticia destacada
