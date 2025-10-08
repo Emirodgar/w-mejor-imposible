@@ -1,5 +1,5 @@
 ---
-title: Cómo adaptar la IA en un entorno profesional
+title: Análisis de ventas de Porsche
 description: 
 image: https://emirodgar.com/cdn/images/og/estrategia-seo.png
 author: Emirodgar
