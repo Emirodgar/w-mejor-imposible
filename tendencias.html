@@ -91,7 +91,14 @@
         </div>
 		
 		<div>
-			{% include posts.html %}
+			{% for page in site.pages %}
+    {% if page.title != null and page.folder == "Demografia" %}
+        <div class="dataset-card">
+            <h4 class="dataset-title"><a href="{{ page.url }}">{{ page.title }}</a></h4>
+            <p class="dataset-description">{{ page.description }}</p>
+        </div>
+    {% endif %}
+{% endfor %}
 		</div>
 		
         <main id="news-container">
