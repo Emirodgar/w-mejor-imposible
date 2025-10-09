@@ -188,5 +188,43 @@
         renderNews(); // Initial render
     });
     </script>
+	
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    // Selecciona todos los botones de filtro y las tarjetas de publicaciones
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const newsCards = document.querySelectorAll('.news-card');
+
+    // Añade un evento de clic a cada botón
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Obtiene el valor del filtro del botón pulsado (ej: 'estrategicos')
+            const filterValue = this.getAttribute('data-filter');
+
+            // --- Gestión de la clase activa en los botones ---
+            // 1. Elimina la clase 'active' de todos los botones
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // 2. Añade la clase 'active' solo al botón que ha sido pulsado
+            this.classList.add('active');
+
+
+            // --- Lógica para mostrar/ocultar las tarjetas ---
+            newsCards.forEach(card => {
+                // Encuentra el div 'source' dentro de cada tarjeta y obtiene su texto
+                const cardSource = card.querySelector('.source').textContent.trim();
+
+                // Comprueba si la tarjeta debe mostrarse
+                if (filterValue === 'all' || cardSource === filterValue) {
+                    card.style.display = 'block'; // Muestra la tarjeta
+                } else {
+                    card.style.display = 'none'; // Oculta la tarjeta
+                }
+            });
+        });
+    });
+});
+
+</script>
+	
 </body>
 </html>
