@@ -1,5 +1,4 @@
 ---
-
 title: ¿Podrá Porsche esquivar la tormenta del mercado automovilístico europeo?
 description: Entre la electrificación y la presión de las marcas chinas, la industria del motor atraviesa un momento delicado. Analizamos cómo podría afectar este escenario a Porsche y su estrategia de futuro.
 image:
