@@ -61,12 +61,37 @@
         th { font-weight: 600; }
         td.highlight { font-weight: bold; color: var(--porsche-gold); }
 		.blog-article img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Ayuda a controlar el espaciado */
-    margin: 30px auto; /* Centra la imagen y le da espacio vertical */
-    border-radius: 8px; /* Opcional: añade bordes redondeados para un look más moderno */
-}
+		    max-width: 100%;
+		    height: auto;
+		    display: block; /* Ayuda a controlar el espaciado */
+		    margin: 30px auto; /* Centra la imagen y le da espacio vertical */
+		    border-radius: 8px; /* Opcional: añade bordes redondeados para un look más moderno */
+		}
+		.blog-article a {
+            color: var(--porsche-gold);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--porsche-gold);
+            transition: color 0.2s, border-bottom-color 0.2s;
+        }
+        .blog-article a:hover {
+            color: var(--porsche-red);
+            border-bottom-color: var(--porsche-red);
+        }
+		/* --- Breadcrumb (NUEVO) --- */
+        .breadcrumb {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            color: var(--porsche-grey);
+        }
+        .breadcrumb a {
+            color: var(--porsche-grey);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .breadcrumb a:hover {
+            color: var(--porsche-red);
+        }
     </style>
 </head>
 <body class="theme-light">
@@ -82,6 +107,9 @@
             </div>
         </header>
 
+		<div class="breadcrumb">
+            <a href="https://mejorimposible.es/tendencias">&larr; Ver todas las publicaciones</a>
+        </div>
         <main>
             <article class="card blog-article">
                 <h1>{{ title }}</h1>
