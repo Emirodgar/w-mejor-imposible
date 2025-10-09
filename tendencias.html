@@ -119,74 +119,6 @@
     }
     ];
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const newsContainer = document.getElementById('news-container');
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const themeToggleBtn = document.getElementById('theme-toggle');
-
-        function renderNews(filter = 'all') {
-            //newsContainer.innerHTML = '';
-            
-            const filteredData = newsData.filter(item => filter === 'all' || item.category === filter);
-            const featured = filteredData.find(item => item.featured && (filter === 'all' || item.category === filter));
-            const others = filteredData.filter(item => !item.featured || item.id !== (featured ? featured.id : -1));
-
-            let html = '';
-
-            // Render Featured News
-            if (featured) {
-                html += `
-                    <div class="featured-news">
-                        <img src="${featured.image}" alt="${featured.title}">
-                        <div class="featured-content">
-                            <div class="source">${featured.source}</div>
-                            <h2>${featured.title}</h2>
-                            <p>${featured.excerpt}</p>
-                            <a href="${featured.link}" target="_blank" class="read-more-btn">Leer artículo completo</a>
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Render News Grid
-            if (others.length > 0) {
-                html += '<div class="news-grid">';
-                others.forEach(item => {
-                    html += `
-                        <div class="news-card">
-                            <div>
-                                <div class="source">${item.source}</div>
-                                <h3>${item.title}</h3>
-                                <p class="excerpt">${item.excerpt}</p>
-                            </div>
-                            <div class="meta">
-                                <span>${item.date}</span>
-                                <a href="${item.link}" target="_blank" class="read-more-link">Leer más &rarr;</a>
-                            </div>
-                        </div>
-                    `;
-                });
-                html += '</div>';
-            }
-            
-            newsContainer.innerHTML = html;
-        }
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                renderNews(btn.dataset.filter);
-            });
-        });
-
-        themeToggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('theme-light');
-            document.body.classList.toggle('theme-dark');
-        });
-
-        renderNews(); // Initial render
-    });
     </script>
 	
 	<script>
@@ -194,6 +126,12 @@
     // Selecciona todos los botones de filtro y las tarjetas de publicaciones
     const filterButtons = document.querySelectorAll('.filter-btn');
     const newsCards = document.querySelectorAll('.news-card');
+	
+	
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('theme-light');
+            document.body.classList.toggle('theme-dark');
+        });
 
     // Añade un evento de clic a cada botón
     filterButtons.forEach(button => {
