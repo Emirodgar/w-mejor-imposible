@@ -51,7 +51,5 @@ Durante años, modelos como el [Macan](https://mejorimposible.es/porsche-macan) 
 
 No es solo el siguiente capítulo de la marca: es **el coche total**. Un Porsche pensado no para imaginar el futuro, sino para vivirlo desde el primer kilómetro.
 
----
-
-**En resumen:** el nuevo **Cayenne Electric** redefine lo que significa conducir un Porsche.
+El nuevo **Cayenne Electric** redefine lo que significa conducir un Porsche.
 No es una promesa lejana ni un concepto de salón. Es una realidad que llegará pronto y que nos recuerda por qué seguimos enamorados de esta marca: porque cuando Porsche mira al futuro, no se queda en los bocetos, **lo pone en la carretera**.
