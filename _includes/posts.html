@@ -1,6 +1,9 @@
 
 <div class="news-grid">
 
+{% for page in site.pages %}
+			{% if page.title != null  %}		  
+				  {
 
 	<div class="news-card">
 		<div>
@@ -12,6 +15,10 @@
 			<span>${item.date}</span>
 			<a href="https://mejorimposible.es{{page.url}}" class="read-more-link">Leer más &rarr;</a>
 		</div>
-	</div>
+	</div>				  
+			{% endif %}
+		{% endfor %}
+		
+		
 		
 	</div>
