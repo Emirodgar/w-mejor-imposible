@@ -7,7 +7,7 @@ lang: es_ES
 sitemap: 1
 feed: 1
 date: 
-folder: estrategicos
+folder: Guías
 permalink: extras-porsche
 ---
 
