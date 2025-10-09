@@ -9,7 +9,7 @@ sitemap: 1
 feed: 1
 date: 09-10-2025
 folder: Análisis
-permalink: /porsche-transformacion-digital
+permalink: porsche-transformacion-digital
 
 ---
 
