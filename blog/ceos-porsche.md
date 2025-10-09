@@ -1,6 +1,6 @@
 ---
 title: Evolución y ventas de los CEO de Porsche Ibérica
-description: 
+description: Descubre la historia de Porsche en España a través de sus CEO. Analizamos 40 años de evolución, ventas y liderazgo, desde su fundación hasta la actual era eléctrica.
 image: 
 author: Emirodgar
 lang: es_ES

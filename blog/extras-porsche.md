@@ -1,6 +1,6 @@
 ---
 title: Guía de extras para Porsche
-description: 
+description: Descubre las opciones imprescindibles para tu Porsche. Nuestra guía experta analiza qué extras añaden valor y mejoran la conducción en cada modelo, ayudándote a lograr la configuración perfecta.
 image: 
 author: Emirodgar
 lang: es_ES

@@ -1,6 +1,6 @@
 ---
 title: Análisis de ventas de Porsche
-description: 
+description: Analizamos la evolución de las ventas globales de Porsche (2004-2024). Descubre el dominio de los SUV, el renacer del 911 y los desafíos de la electrificación en mercados clave.
 image: https://emirodgar.com/cdn/images/og/estrategia-seo.png
 author: Emirodgar
 lang: es_ES
