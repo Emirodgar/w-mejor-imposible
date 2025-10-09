@@ -90,7 +90,7 @@
             <button class="filter-btn" data-filter="pruebas">Pruebas</button>
             <button class="filter-btn" data-filter="competicion">Competición</button>
             <button class="filter-btn" data-filter="electrico">Eléctricos</button>
-			<button class="filter-btn" data-filter="electrico">Guías</button>
+			<button class="filter-btn" data-filter="estrategicos">Guías</button>
         </div>
 		
         <main id="news-container">
@@ -120,7 +120,7 @@
     ];
 
     document.addEventListener('DOMContentLoaded', () => {
-        const newsContainer = document.getElementById('publicaciones');
+        const newsContainer = document.getElementById('news-container');
         const filterBtns = document.querySelectorAll('.filter-btn');
         const themeToggleBtn = document.getElementById('theme-toggle');
 
