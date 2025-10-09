@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,7 +24,6 @@
         .filter-btn { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 14px; margin: 0 5px; transition: background-color 0.2s; }
         .filter-btn.active { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
 
-        /* Estilos para las tarjetas de noticias que vienen del include */
         #publicaciones {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -38,10 +35,26 @@
             border-radius: 8px;
             display: flex;
             flex-direction: column;
-            /* Añadimos una transición para que el filtrado sea más suave */
-            transition: opacity 0.3s, transform 0.3s;
+            transition: transform 0.3s, opacity 0.4s; /* Transición suave */
+            opacity: 1; /* Visible por defecto */
+            transform: scale(1);
         }
         .theme-light .news-card { background-color: var(--light-card-bg); }
+        
+        /* --- NUEVA CLASE PARA OCULTAR CORRECTAMENTE --- */
+        .news-card.hidden {
+            opacity: 0;
+            transform: scale(0.8);
+            /* Hacemos que no ocupe espacio en el grid */
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            /* Esto es importante para que la transición no se vea afectada por el 'gap' del grid */
+            border: none; 
+        }
+
         .news-card .source { font-size: 12px; font-weight: bold; color: var(--porsche-gold); margin-bottom: 10px; }
         .news-card h3 { font-size: 1.3rem; margin: 0 0 10px 0; flex-grow: 1; }
         .news-card .excerpt { font-size: 0.9rem; line-height: 1.5; opacity: 0.7; margin-bottom: 15px; }
@@ -68,36 +81,15 @@
 
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all">Todo</button>
-            <!-- IMPORTANTE: El valor de data-filter debe coincidir EXACTAMENTE con el texto del div.source -->
             <button class="filter-btn" data-filter="Motor Pasión">Motor Pasión</button>
             <button class="filter-btn" data-filter="Diariomotor">Diariomotor</button>
             <button class="filter-btn" data-filter="Porsche Newsroom">Porsche Newsroom</button>
             <button class="filter-btn" data-filter="AS.com">AS.com</button>
         </div>
 		
-        <!-- El contenido se imprimirá aquí por tu sistema (Jekyll, etc.) -->
 		<main id="publicaciones">
 			{% include posts.html %}
-            <!-- Ejemplo de cómo se vería el HTML generado para que el script funcione -->
-            <!-- 
-            <div class="news-card">
-                <div>
-                    <div class="source">Motor Pasión</div>
-                    <h3>Filtrado el Porsche 911 GT2 RS (992.2)</h3>
-                    <p class="excerpt">...</p>
-                </div>
-                <div class="meta">...</div>
-            </div>
-            <div class="news-card">
-                <div>
-                    <div class="source">Diariomotor</div>
-                    <h3>A prueba el nuevo Porsche 911 Carrera GTS T-Hybrid</h3>
-                    <p class="excerpt">...</p>
-                </div>
-                <div class="meta">...</div>
-            </div>
-            -->
-        </main>
+		</main>
 		
     </div>
 
@@ -105,44 +97,36 @@
     document.addEventListener('DOMContentLoaded', () => {
         const filterBtns = document.querySelectorAll('.filter-btn');
         const themeToggleBtn = document.getElementById('theme-toggle');
-        // Seleccionamos el contenedor de las publicaciones
         const publicationsContainer = document.getElementById('publicaciones');
-        // Seleccionamos todas las tarjetas de noticias que están dentro
-        const allNewsCards = publicationsContainer.querySelectorAll('.news-card'); // ¡IMPORTANTE! Asegúrate de que tus posts se rendericen con la clase "news-card"
+        const allNewsCards = publicationsContainer.querySelectorAll('.news-card');
 
-        // Lógica para los botones de filtro
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Actualiza el botón activo
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
                 const filterValue = btn.dataset.filter;
 
-                // Recorre cada tarjeta de noticia para decidir si mostrarla u ocultarla
                 allNewsCards.forEach(card => {
-                    // Busca el div.source dentro de la tarjeta actual
                     const sourceElement = card.querySelector('.source');
                     
-                    // Si la tarjeta no tiene un div.source, la ocultamos por seguridad
                     if (!sourceElement) {
-                        card.style.display = 'none';
+                        card.classList.add('hidden'); // Oculta si no tiene fuente
                         return;
                     }
 
                     const sourceText = sourceElement.textContent.trim();
 
-                    // Comprueba si el filtro es "all" o si el texto de la fuente coincide con el filtro
+                    // --- LÓGICA DE FILTRADO MODIFICADA ---
                     if (filterValue === 'all' || sourceText === filterValue) {
-                        card.style.display = 'flex'; // O 'block', dependiendo de tu CSS
+                        card.classList.remove('hidden'); // Muestra la tarjeta
                     } else {
-                        card.style.display = 'none';
+                        card.classList.add('hidden'); // Oculta la tarjeta
                     }
                 });
             });
         });
 
-        // Lógica para el botón de cambiar tema
         themeToggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('theme-light');
             document.body.classList.toggle('theme-dark');
