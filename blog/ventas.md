@@ -1,6 +1,6 @@
 ---
 title: Análisis de ventas de Porsche
-description: Descubre la historia de Porsche en España a través de sus CEO. Analizamos 40 años de evolución, ventas y liderazgo, desde su fundación hasta la actual era eléctrica.
+description: Analizamos la evolución de las ventas globales de Porsche (2004-2024). Descubre el dominio de los SUV, el renacer del 911 y los desafíos de la electrificación en mercados clave.
 image: https://emirodgar.com/cdn/images/og/estrategia-seo.png
 author: Emirodgar
 lang: es_ES
