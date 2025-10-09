@@ -6,7 +6,7 @@ author: Emirodgar
 lang: es_ES
 sitemap: 1
 feed: 1
-date: 
+date: 07/10/2025
 folder: Guías
 permalink: extras-porsche
 ---
