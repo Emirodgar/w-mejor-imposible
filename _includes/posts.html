@@ -1,17 +1,17 @@
 
-		{% for page in site.pages %}
-			{% if page.title != null  %}		  
-				  {
-					id: {{ forloop.index }},
-					category: 'blog',
-					source: 'Mejor imposible',
-					title: '{{page.title}}',
-					excerpt: '{{page.description}}',
-					date: '{{page.date}}',
-					link: 'https://mejorimposible.es{{page.url}}'
-				},
-				  
-			{% endif %}
-		{% endfor %}
+<div class="news-grid">
+
+
+	<div class="news-card">
+		<div>
+			<div class="source">{{page.folder}}</div>
+			<h3>{{page.title}}</h3>
+			<p class="excerpt">{{page.description}}</p>
+		</div>
+		<div class="meta">
+			<span>${item.date}</span>
+			<a href="https://mejorimposible.es{{page.url}}" class="read-more-link">Leer más &rarr;</a>
+		</div>
+	</div>
 		
-		
+	</div>
