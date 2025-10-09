@@ -37,27 +37,25 @@
             border-radius: 8px;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s, opacity 0.4s; /* Transición suave */
-            opacity: 1; /* Visible por defecto */
+            transition: transform 0.3s, opacity 0.4s;
+            opacity: 1;
             transform: scale(1);
         }
         .theme-light .news-card { background-color: var(--light-card-bg); }
         
-        /* --- NUEVA CLASE PARA OCULTAR CORRECTAMENTE --- */
         .news-card.hidden {
             opacity: 0;
             transform: scale(0.8);
-            /* Hacemos que no ocupe espacio en el grid */
             width: 0;
             height: 0;
             padding: 0;
             margin: 0;
             overflow: hidden;
-            /* Esto es importante para que la transición no se vea afectada por el 'gap' del grid */
             border: none; 
         }
 
-        .news-card .source { font-size: 12px; font-weight: bold; color: var(--porsche-gold); margin-bottom: 10px; }
+        /* La clase para la categoría debe ser 'category' */
+        .news-card .category { font-size: 12px; font-weight: bold; color: var(--porsche-gold); margin-bottom: 10px; }
         .news-card h3 { font-size: 1.3rem; margin: 0 0 10px 0; flex-grow: 1; }
         .news-card .excerpt { font-size: 0.9rem; line-height: 1.5; opacity: 0.7; margin-bottom: 15px; }
         .news-card .meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; opacity: 0.6; }
@@ -83,14 +81,32 @@
 
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all">Todo</button>
-            <button class="filter-btn" data-filter="Motor Pasión">Motor Pasión</button>
-            <button class="filter-btn" data-filter="Diariomotor">Diariomotor</button>
-            <button class="filter-btn" data-filter="Porsche Newsroom">Porsche Newsroom</button>
-            <button class="filter-btn" data-filter="AS.com">AS.com</button>
+            <!-- Asegúrate de que estos data-filter coincidan con tus categorías -->
+            <button class="filter-btn" data-filter="estrategicos">Estrategicos</button>
+            <button class="filter-btn" data-filter="pruebas">Pruebas</button>
+            <button class="filter-btn" data-filter="lanzamientos">Lanzamientos</button>
+            <button class="filter-btn" data-filter="competicion">Competición</button>
         </div>
 		
 		<main id="publicaciones">
 			{% include posts.html %}
+            <!-- Ejemplo de cómo se vería el HTML generado para que el script funcione -->
+            <!-- 
+            <div class="news-card">
+                <div>
+                    <div class="category">estrategicos</div>
+                    <h3>Evolución y ventas de los CEO de Porsche Ibérica</h3>
+                    ...
+                </div>
+            </div>
+            <div class="news-card">
+                <div>
+                    <div class="category">pruebas</div>
+                    <h3>Prueba del 911 GT3 RS</h3>
+                    ...
+                </div>
+            </div>
+            -->
 		</main>
 		
     </div>
@@ -110,20 +126,22 @@
                 const filterValue = btn.dataset.filter;
 
                 allNewsCards.forEach(card => {
-                    const sourceElement = card.querySelector('.source');
+                    // Busca el elemento de la categoría dentro de la tarjeta
+                    const categoryElement = card.querySelector('.category'); // CAMBIO CLAVE: Buscamos por clase 'category'
                     
-                    if (!sourceElement) {
-                        card.classList.add('hidden'); // Oculta si no tiene fuente
+                    if (!categoryElement) {
+                        card.classList.add('hidden');
                         return;
                     }
 
-                    const sourceText = sourceElement.textContent.trim();
+                    // Obtenemos el texto de la categoría y lo pasamos a minúsculas para una comparación segura
+                    const cardCategory = categoryElement.textContent.trim().toLowerCase();
 
-                    // --- LÓGICA DE FILTRADO MODIFICADA ---
-                    if (filterValue === 'all' || sourceText === filterValue) {
-                        card.classList.remove('hidden'); // Muestra la tarjeta
+                    // Comparamos con el valor del filtro (también en minúsculas)
+                    if (filterValue === 'all' || cardCategory === filterValue.toLowerCase()) {
+                        card.classList.remove('hidden');
                     } else {
-                        card.classList.add('hidden'); // Oculta la tarjeta
+                        card.classList.add('hidden');
                     }
                 });
             });
