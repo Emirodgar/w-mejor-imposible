@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Últimas noticias y tendencias</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .container { max-width: 1400px; margin: auto; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        
+        .filter-container { margin-bottom: 25px; text-align: center; }
+        .filter-btn { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 10px 20px; border-radius: 20px; cursor: pointer; font-size: 14px; margin: 0 5px; transition: background-color 0.2s; }
+        .filter-btn.active { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
+
+        /* Estilos para las tarjetas de noticias que vienen del include */
+        #publicaciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .news-card {
+            background-color: var(--dark-card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            /* Añadimos una transición para que el filtrado sea más suave */
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .theme-light .news-card { background-color: var(--light-card-bg); }
+        .news-card .source { font-size: 12px; font-weight: bold; color: var(--porsche-gold); margin-bottom: 10px; }
+        .news-card h3 { font-size: 1.3rem; margin: 0 0 10px 0; flex-grow: 1; }
+        .news-card .excerpt { font-size: 0.9rem; line-height: 1.5; opacity: 0.7; margin-bottom: 15px; }
+        .news-card .meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; opacity: 0.6; }
+        .news-card .read-more-link { color: var(--porsche-red); text-decoration: none; font-weight: bold; }
+
+        @media (max-width: 992px) {
+            #publicaciones { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="theme-light">
+
+    <div class="container">
+        <header class="header">
+            <div class="header-title">
+                <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
+                <span>Últimas noticias y tendencias</span>
+            </div>
+            <div class="header-controls">
+				<button id="theme-toggle" style="background: none; border: 1px solid var(--porsche-grey  ); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px;">Cambiar tema</button>
+            </div>
+        </header>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <!-- IMPORTANTE: El valor de data-filter debe coincidir EXACTAMENTE con el texto del div.source -->
+            <button class="filter-btn" data-filter="Motor Pasión">Motor Pasión</button>
+            <button class="filter-btn" data-filter="Diariomotor">Diariomotor</button>
+            <button class="filter-btn" data-filter="Porsche Newsroom">Porsche Newsroom</button>
+            <button class="filter-btn" data-filter="AS.com">AS.com</button>
+        </div>
+		
+        <!-- El contenido se imprimirá aquí por tu sistema (Jekyll, etc.) -->
+		<main id="publicaciones">
+			{% include posts.html %}
+            <!-- Ejemplo de cómo se vería el HTML generado para que el script funcione -->
+            <!-- 
+            <div class="news-card">
+                <div>
+                    <div class="source">Motor Pasión</div>
+                    <h3>Filtrado el Porsche 911 GT2 RS (992.2)</h3>
+                    <p class="excerpt">...</p>
+                </div>
+                <div class="meta">...</div>
+            </div>
+            <div class="news-card">
+                <div>
+                    <div class="source">Diariomotor</div>
+                    <h3>A prueba el nuevo Porsche 911 Carrera GTS T-Hybrid</h3>
+                    <p class="excerpt">...</p>
+                </div>
+                <div class="meta">...</div>
+            </div>
+            -->
+        </main>
+		
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        // Seleccionamos el contenedor de las publicaciones
+        const publicationsContainer = document.getElementById('publicaciones');
+        // Seleccionamos todas las tarjetas de noticias que están dentro
+        const allNewsCards = publicationsContainer.querySelectorAll('.news-card'); // ¡IMPORTANTE! Asegúrate de que tus posts se rendericen con la clase "news-card"
+
+        // Lógica para los botones de filtro
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Actualiza el botón activo
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.dataset.filter;
+
+                // Recorre cada tarjeta de noticia para decidir si mostrarla u ocultarla
+                allNewsCards.forEach(card => {
+                    // Busca el div.source dentro de la tarjeta actual
+                    const sourceElement = card.querySelector('.source');
+                    
+                    // Si la tarjeta no tiene un div.source, la ocultamos por seguridad
+                    if (!sourceElement) {
+                        card.style.display = 'none';
+                        return;
+                    }
+
+                    const sourceText = sourceElement.textContent.trim();
+
+                    // Comprueba si el filtro es "all" o si el texto de la fuente coincide con el filtro
+                    if (filterValue === 'all' || sourceText === filterValue) {
+                        card.style.display = 'flex'; // O 'block', dependiendo de tu CSS
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lógica para el botón de cambiar tema
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('theme-light');
+            document.body.classList.toggle('theme-dark');
+        });
+    });
+    </script>
+</body>
+</html>
