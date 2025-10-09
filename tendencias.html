@@ -125,7 +125,7 @@
         const themeToggleBtn = document.getElementById('theme-toggle');
 
         function renderNews(filter = 'all') {
-            newsContainer.innerHTML = '';
+            //newsContainer.innerHTML = '';
             
             const filteredData = newsData.filter(item => filter === 'all' || item.category === filter);
             const featured = filteredData.find(item => item.featured && (filter === 'all' || item.category === filter));
