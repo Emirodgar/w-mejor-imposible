@@ -1,6 +1,6 @@
 ---
 title: Porsche Macan
-description: 
+description: Guía de compra Porsche Macan 2025. Analizamos fiabilidad, costes reales, problemas y qué versión comprar. Todo lo que necesitas saber antes de decidir.
 image: 
 author: Emirodgar
 lang: es_ES
