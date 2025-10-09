@@ -1,6 +1,6 @@
 ---
 title: Análisis de ventas de Porsche
-description: 
+description: Descubre la historia de Porsche en España a través de sus CEO. Analizamos 40 años de evolución, ventas y liderazgo, desde su fundación hasta la actual era eléctrica.
 image: https://emirodgar.com/cdn/images/og/estrategia-seo.png
 author: Emirodgar
 lang: es_ES
