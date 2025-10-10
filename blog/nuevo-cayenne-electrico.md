@@ -19,12 +19,12 @@ Esa es la mejor manera de resumir lo que representa el **nuevo Cayenne Electric*
 
 Este modelo no solo será el primer **Cayenne completamente eléctrico**, sino también uno de los más avanzados en términos de **interacción entre conductor y máquina**. Porsche promete llevar esa conexión a un nivel nunca visto, y lo hará con la **mayor superficie digital jamás instalada en un coche de la marca**.
 
-<img width="1920" class="img-responsive" alt="Interior del Cayenne Electric" src="https://github.com/user-attachments/assets/b9626c20-fad7-483a-b4cc-099a87d998dd" />
-
-
 ## ¿Qué encontraremos al entrar en el Cayenne Electric?
 
 Entrar en el habitáculo del nuevo Cayenne Electric será como asomarse al futuro del automóvil. La experiencia comienza con una **pantalla curva Flow Display con tecnología OLED**, perfectamente integrada en el salpicadero y diseñada para envolver al conductor en una atmósfera digital y elegante.
+
+<img width="711" class="img-responsive" alt="interior Porsche Cayenne eléctrico" src="https://github.com/user-attachments/assets/c6086283-10c6-4cdd-bcc8-96738755dbc5" />
+
 
 El siguiente paso lo marca el **head-up display con realidad aumentada**, capaz de proyectar la información de navegación y guía de carril directamente sobre la carretera. Una forma de conducir más segura, intuitiva y, sobre todo, más inmersiva.
 
@@ -36,6 +36,8 @@ Porsche ha llevado la **personalización** a otro nivel. El Cayenne Electric inc
 El ambiente interior se podrá configurar al detalle, y el **techo solar de cristal con control de opacidad variable** —el más grande jamás montado en un Porsche— permitirá ajustar la luz del habitáculo a gusto del conductor y los pasajeros.
 
 Para quienes disfrutan de **[personalizar su coche](https://mejorimposible.es/extras-porsche)** al máximo, este modelo promete una experiencia más completa que nunca.
+
+<img width="1920" class="img-responsive" alt="Interior del Cayenne Electric" src="https://github.com/user-attachments/assets/b9626c20-fad7-483a-b4cc-099a87d998dd" />
 
 ## ¿Puede un coche eléctrico ser realmente Porsche?
 
