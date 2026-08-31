@@ -28,11 +28,18 @@
         .theme-light .card { background-color: var(--light-card-bg); }
         .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
         
-        .filter-container { margin-bottom: 20px; }
+        .filter-container { margin-bottom: 10px; position: relative; }
         #search-filter {
-            width: 100%; padding: 12px; border-radius: 6px; border: 1px solid var(--porsche-grey);
+            width: 100%; padding: 12px 40px 12px 12px; border-radius: 6px; border: 1px solid var(--porsche-grey);
             background-color: inherit; color: inherit; font-size: 16px; box-sizing: border-box;
         }
+        #search-clear {
+            display: none; position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+            background: none; border: none; cursor: pointer; font-size: 18px; line-height: 1;
+            color: inherit; opacity: 0.6; padding: 4px;
+        }
+        #search-clear:hover { opacity: 1; }
+        .results-count { font-size: 13px; opacity: 0.7; margin: 0 0 20px 2px; }
         .directory-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
         
         #map { height: 600px; border-radius: 8px; }
@@ -40,7 +47,7 @@
 
         .dealer-card {
             display: flex; flex-direction: column; padding: 15px;
-            border: 1px solid; border-radius: 8px; margin-bottom: 15px;
+            border: 1px solid; border-radius: 8px; margin-bottom: 15px; cursor: pointer;
             transition: background-color 0.3s ease-out, transform 0.2s ease;
         }
         .theme-light .dealer-card { border-color: #e0e0e0; }
@@ -66,6 +73,10 @@
             border-radius: 6px; border: 1px solid var(--porsche-grey); margin-right: 10px; font-size: 14px;
         }
         .dealer-actions a:hover { background-color: var(--porsche-grey); color: white; }
+        .dealer-actions a.detail-link {
+            background-color: var(--porsche-red); border-color: var(--porsche-red); color: white;
+        }
+        .dealer-actions a.detail-link:hover { background-color: var(--porsche-black); border-color: var(--porsche-black); }
 
         @media (max-width: 992px) {
             .directory-layout { grid-template-columns: 1fr; }
@@ -89,8 +100,10 @@
         <main>
             <div class="card">
                 <div class="filter-container">
-                    <input type="text" id="search-filter" placeholder="🔎 Buscar por nombre, ciudad o dirección...">
+                    <input type="text" id="search-filter" placeholder="🔎 Buscar por nombre, ciudad o dirección..." aria-label="Buscar concesionario">
+                    <button id="search-clear" type="button" aria-label="Borrar búsqueda">&times;</button>
                 </div>
+                <p id="results-count" class="results-count"></p>
                 <div class="directory-layout">
                     <div id="map" class="map-container">
                         </div>
@@ -109,7 +122,7 @@
         { id: 'valencia', name: 'Centro Porsche Valencia', address: 'Avda. Comarques Del País Valencià, 4-6. 46930, Quart De Poblet (Valencia)', rating: 4.7, phone: '963168100', lat: 39.4851, lng: -0.4578 },
         { id: 'bilbao', name: 'Centro Porsche Bilbao', address: 'Carretera Bilbao-San Sebastián. 48960, Galdakao (Vizcaya)', rating: 4.7, phone: '944570101', lat: 43.2519, lng: -2.8524 },
         { id: 'murcia', name: 'Centro Porsche Murcia', address: 'Ctra. de Alicante, 168. 30007, Murcia', rating: 4.7, phone: '968307799', lat: 38.0068, lng: -1.1095 },
-        { id: 'valladolid', name: 'Centro Porsche Valladolid', address: 'Avda. de Burgos, 54. 47009, Valladolid', rating: 4.7, phone: '983048080', lat: 41.6601, lng: -4.7161 },
+        { id: 'valladolid', name: 'Centro Porsche Valladolid', address: 'Avda. de Burgos, 54. 47009, Valladolid', rating: 4.7, phone: '983048080', lat: 41.6601, lng: -4.7161, detailSlug: 'centro-porsche-valladolid' },
         { id: 'madrid-oeste', name: 'Centro Porsche Madrid Oeste', address: 'C/ Ciruela, 5. 28222, Majadahonda (Madrid)', rating: 4.6, phone: '916405800', lat: 40.4735, lng: -3.8550 },
         { id: 'marbella', name: 'Centro Porsche Marbella', address: 'C/ Pirita, s/n, esq. C/ Níquel. Polígono Industrial Las Albarizas. 29603, Marbella (Málaga)', rating: 4.6, phone: '952776171', lat: 36.5126, lng: -4.9015 },
         { id: 'alicante', name: 'Centro Porsche Alicante', address: 'Ctra. de Ocaña, 52. 03007, Alicante', rating: 4.6, phone: '965100155', lat: 38.3582, lng: -0.5098 },
@@ -128,6 +141,7 @@
 
     document.addEventListener('DOMContentLoaded', ( ) => {
         let map;
+        const markersById = {};
 
         function initializePage() {
             initializeMap();
@@ -141,7 +155,7 @@
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
-            
+
             // --- NUEVO: Definición del icono rojo ---
             const redIcon = new L.Icon({
                 iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
@@ -156,46 +170,65 @@
                 // --- MODIFICADO: Añadimos la opción 'icon' al crear el marcador ---
                 const marker = L.marker([dealer.lat, dealer.lng], { icon: redIcon }).addTo(map);
                 marker.bindTooltip(dealer.name);
+                marker.bindPopup(`<strong>${dealer.name}</strong><br>${dealer.address}`);
+                markersById[dealer.id] = marker;
 
-                marker.on('click', () => {
-                    const cardElement = document.getElementById(`dealer-${dealer.id}`);
-                    if (cardElement) {
-                        const listContainer = document.getElementById('dealer-list');
-                        listContainer.scrollTo({
-                            top: cardElement.offsetTop - listContainer.offsetTop,
-                            behavior: 'smooth'
-                        });
-
-                        document.querySelectorAll('.dealer-card.highlight').forEach(el => el.classList.remove('highlight'));
-                        
-                        cardElement.classList.add('highlight');
-                        setTimeout(() => {
-                            cardElement.classList.remove('highlight');
-                        }, 2500);
-                    }
-                });
+                marker.on('click', () => highlightDealer(dealer.id, { panMap: false }));
             });
+        }
+
+        // Sincroniza mapa y lista en ambos sentidos: centra/abre el marcador y resalta la tarjeta
+        function highlightDealer(dealerId, { panMap = true } = {}) {
+            const dealer = dealerData.find(d => d.id === dealerId);
+            const marker = markersById[dealerId];
+            if (!dealer || !marker) return;
+
+            if (panMap) {
+                map.flyTo([dealer.lat, dealer.lng], Math.max(map.getZoom(), 12));
+            }
+            marker.openPopup();
+
+            const cardElement = document.getElementById(`dealer-${dealerId}`);
+            if (cardElement) {
+                const listContainer = document.getElementById('dealer-list');
+                listContainer.scrollTo({
+                    top: cardElement.offsetTop - listContainer.offsetTop,
+                    behavior: 'smooth'
+                });
+
+                document.querySelectorAll('.dealer-card.highlight').forEach(el => el.classList.remove('highlight'));
+                cardElement.classList.add('highlight');
+                setTimeout(() => cardElement.classList.remove('highlight'), 2500);
+            }
         }
 
         function renderDealerList(dealersToRender) {
             const listContainer = document.getElementById('dealer-list');
-            
+            const resultsCount = document.getElementById('results-count');
+            resultsCount.textContent = dealersToRender.length === dealerData.length
+                ? `${dealerData.length} concesionarios oficiales`
+                : `${dealersToRender.length} de ${dealerData.length} concesionarios`;
+
             if (dealersToRender.length === 0) {
                 listContainer.innerHTML = `<p style="text-align:center; padding: 20px;">No se encontraron concesionarios.</p>`;
                 return;
             }
-            
+
             listContainer.innerHTML = dealersToRender.sort((a, b) => b.rating - a.rating).map(dealer => {
                 // --- MODIFICADO: La URL ahora busca el nombre del negocio ---
                 const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dealer.name + ', ' + dealer.address)}`;
                 const phoneUrl = `tel:${dealer.phone}`;
-                
+
                 let stars = '★'.repeat(Math.floor(dealer.rating));
                 if (dealer.rating % 1 >= 0.5) stars += '½';
                 stars += '☆'.repeat(5 - stars.length);
 
+                const detailButton = dealer.detailSlug
+                    ? `<a href="/concesionarios/${dealer.detailSlug}" class="detail-link">Ver ficha completa</a>`
+                    : '';
+
                 return `
-                    <div class="dealer-card" id="dealer-${dealer.id}">
+                    <div class="dealer-card" id="dealer-${dealer.id}" data-dealer-id="${dealer.id}">
                         <h3>${dealer.name}</h3>
                         <p>${dealer.address}</p>
                         <div class="dealer-rating">
@@ -203,12 +236,21 @@
                             <span class="score">${dealer.rating.toFixed(1)}</span>
                         </div>
                         <div class="dealer-actions">
+                            ${detailButton}
                             <a href="${googleMapsUrl}" target="_blank">Ver en Mapa</a>
                             <a href="${phoneUrl}">Llamar</a>
                         </div>
                     </div>
                 `;
             }).join('');
+
+            // Al hacer clic en cualquier parte de la tarjeta (salvo los enlaces de acción), centra el mapa en ese concesionario
+            listContainer.querySelectorAll('.dealer-card').forEach(card => {
+                card.addEventListener('click', (event) => {
+                    if (event.target.closest('a')) return;
+                    highlightDealer(card.dataset.dealerId);
+                });
+            });
         }
 
         function setupEventListeners() {
@@ -217,15 +259,25 @@
                 document.body.classList.toggle('theme-dark');
                 document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
             });
-            
+
             const searchInput = document.getElementById('search-filter');
-            searchInput.addEventListener('input', (event) => {
-                const searchTerm = event.target.value.toLowerCase().trim();
-                const filteredDealers = dealerData.filter(dealer => 
-                    dealer.name.toLowerCase().includes(searchTerm) || 
+            const clearButton = document.getElementById('search-clear');
+
+            function applySearch(term) {
+                const searchTerm = term.toLowerCase().trim();
+                clearButton.style.display = searchTerm ? 'block' : 'none';
+                const filteredDealers = dealerData.filter(dealer =>
+                    dealer.name.toLowerCase().includes(searchTerm) ||
                     dealer.address.toLowerCase().includes(searchTerm)
                 );
                 renderDealerList(filteredDealers);
+            }
+
+            searchInput.addEventListener('input', (event) => applySearch(event.target.value));
+            clearButton.addEventListener('click', () => {
+                searchInput.value = '';
+                searchInput.focus();
+                applySearch('');
             });
         }
 

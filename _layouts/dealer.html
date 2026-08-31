@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.name }} | Mejor Imposible</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 900px; margin: auto; }
+
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 8px; padding: 25px 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: background-color 0.3s, color 0.3s; margin-bottom: 20px;
+        }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+
+        .dealer-hero h1 { margin: 0 0 10px 0; font-size: 2em; color: var(--porsche-red); }
+        .dealer-rating { display: flex; align-items: center; margin-bottom: 15px; }
+        .dealer-rating .stars { color: var(--porsche-gold); font-size: 22px; }
+        .dealer-rating .score { margin-left: 10px; font-weight: bold; }
+        .dealer-address { font-size: 1.05em; opacity: 0.85; margin-bottom: 20px; }
+
+        .dealer-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+        .dealer-actions a {
+            text-decoration: none; padding: 12px 20px; border-radius: 6px; font-weight: 600; font-size: 14px;
+            border: 1px solid var(--porsche-grey); color: inherit;
+        }
+        .dealer-actions a.primary { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
+        .dealer-actions a.primary:hover { background-color: var(--porsche-black); border-color: var(--porsche-black); }
+        .dealer-actions a:not(.primary):hover { background-color: var(--porsche-grey); color: white; }
+
+        .about-content p { font-size: 1.05em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content p:last-child { margin-bottom: 0; }
+
+        #dealer-map { height: 350px; border-radius: 8px; }
+
+        .social-links { display: flex; flex-wrap: wrap; gap: 10px; }
+        .social-links a {
+            text-decoration: none; color: inherit; padding: 10px 18px; border-radius: 6px;
+            border: 1px solid var(--porsche-grey); font-size: 14px; font-weight: 600;
+        }
+        .social-links a:hover { background-color: var(--porsche-grey); color: white; }
+        .social-note { font-size: 0.85em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+    </style>
+</head>
+<body class="theme-light" data-dealer-name="{{ page.name }}" data-dealer-address="{{ page.address }}">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <a href="https://mejorimposible.es"><img src="/img/logo.png" alt="Porsche"></a>
+                <span>Centros oficiales</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Tema oscuro</button>
+            </div>
+        </header>
+
+        <div class="breadcrumb">
+            <a href="https://mejorimposible.es/concesionarios">&larr; Ver todos los centros</a>
+        </div>
+
+        <main>
+            <section class="card dealer-hero">
+                <h1>{{ page.name }}</h1>
+                <div class="dealer-rating">
+                    <span id="dealer-stars" class="stars"></span>
+                    <span class="score">{{ page.rating }}</span>
+                </div>
+                <p class="dealer-address">📍 {{ page.address }}</p>
+                <div class="dealer-actions">
+                    <a href="tel:{{ page.phone }}" class="primary">📞 Llamar</a>
+                    <a id="directions-link" href="#" target="_blank">🧭 Cómo llegar</a>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Sobre el centro</h2>
+                <div class="about-content">
+                    {{ content }}
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ubicación</h2>
+                <div id="dealer-map"></div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Redes sociales</h2>
+                <div id="social-links" class="social-links"></div>
+                <p class="social-note">Buscamos los perfiles oficiales del centro en cada red social.</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const dealer = {
+            name: document.body.dataset.dealerName,
+            address: document.body.dataset.dealerAddress,
+            rating: {{ page.rating }},
+            lat: {{ page.lat }},
+            lng: {{ page.lng }}
+        };
+
+        function renderStars() {
+            let stars = '★'.repeat(Math.floor(dealer.rating));
+            if (dealer.rating % 1 >= 0.5) stars += '½';
+            stars += '☆'.repeat(5 - stars.length);
+            document.getElementById('dealer-stars').textContent = stars;
+        }
+
+        function renderDirectionsLink() {
+            const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dealer.name + ', ' + dealer.address)}`;
+            document.getElementById('directions-link').href = url;
+        }
+
+        function renderMap() {
+            const map = L.map('dealer-map').setView([dealer.lat, dealer.lng], 15);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            const redIcon = new L.Icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
+            });
+            L.marker([dealer.lat, dealer.lng], { icon: redIcon }).addTo(map).bindPopup(dealer.name).openPopup();
+        }
+
+        // No publicamos perfiles de redes sociales sin verificar que son los reales del centro:
+        // en su lugar, enlazamos a una búsqueda para que el usuario llegue al perfil oficial.
+        function renderSocialLinks() {
+            const platforms = [
+                { label: 'Instagram', query: 'instagram' },
+                { label: 'Facebook', query: 'facebook' },
+                { label: 'X / Twitter', query: 'twitter' }
+            ];
+            const container = document.getElementById('social-links');
+            container.innerHTML = platforms.map(platform => {
+                const url = `https://www.google.com/search?q=${encodeURIComponent(dealer.name + ' ' + platform.query)}`;
+                return `<a href="${url}" target="_blank" rel="noopener">${platform.label}</a>`;
+            }).join('');
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+            });
+        }
+
+        renderStars();
+        renderDirectionsLink();
+        renderMap();
+        renderSocialLinks();
+        setupEventListeners();
+    });
+    </script>
+</body>
+</html>
