@@ -6,7 +6,7 @@ author: Emirodgar
 lang: es_ES
 sitemap: 1
 feed: 1
-date: 02/10/2025
+date: 2025-10-02
 folder: Modelos
 permalink: porsche-macan
 ---

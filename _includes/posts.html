@@ -1,24 +1,18 @@
-
 <div class="news-grid">
 
-{% for page in site.pages %}
-			{% if page.title != null  %}		  
-				  
-
+{% assign published_pages = site.pages | where_exp: "page", "page.title != nil" | sort: "date" | reverse %}
+{% for page in published_pages %}
 	<div class="news-card">
 		<div>
-			<div class="source">{{page.folder}}</div>
-			<h3>{{page.title}}</h3>
-			<p class="excerpt">{{page.description}}</p>
+			<div class="source">{{ page.folder }}</div>
+			<h3>{{ page.title }}</h3>
+			<p class="excerpt">{{ page.description }}</p>
 		</div>
 		<div class="meta">
-			<span>{{page.date}}</span>
-			<a href="https://mejorimposible.es{{page.url}}" class="read-more-link">Leer más &rarr;</a>
+			<span>{{ page.date | date: "%d/%m/%Y" }}</span>
+			<a href="https://mejorimposible.es{{ page.url }}" class="read-more-link">Leer más &rarr;</a>
 		</div>
-	</div>				  
-			{% endif %}
-		{% endfor %}
-		
-		
-		
 	</div>
+{% endfor %}
+
+</div>

@@ -6,7 +6,7 @@ author: Emirodgar
 lang: es_ES
 sitemap: 1
 feed: 1
-date: 09-10-2025
+date: 2025-10-09
 folder: Análisis
 permalink: podra-porsche-esquivar-la-tormenta-del-mercado-automovilistico-europeo
 ---

@@ -6,7 +6,7 @@ author: Emirodgar
 lang: es_ES
 sitemap: 1
 feed: 1
-date: 15/09/2025
+date: 2025-09-15
 folder: Análisis
 permalink: ventas-porsche
 ---
@@ -326,7 +326,7 @@ const ventasModeloChart = new Chart(ctx2, {
 </script>
 
 
-(% endraw %)
+{% endraw %}
 
 
 ## Análisis geográfico: mercados en transformación
