@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - ¿Qué Porsche es para mí?</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 900px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+
+        /* --- Progreso --- */
+        .progress-track { height: 6px; border-radius: 3px; background-color: var(--porsche-grey); opacity: 0.3; margin-bottom: 30px; overflow: hidden; }
+        .progress-fill { height: 100%; background-color: var(--porsche-red); transition: width 0.3s ease; width: 20%; }
+
+        /* --- Preguntas --- */
+        .step { display: none; }
+        .step.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .step h2 { font-size: 1.5em; margin: 0 0 8px 0; }
+        .step .step-count { font-size: 13px; opacity: 0.6; margin-bottom: 20px; }
+
+        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        @media (max-width: 600px) { .options-grid { grid-template-columns: 1fr; } }
+        .option-card {
+            display: block; padding: 16px 18px; border-radius: 8px; border: 2px solid var(--porsche-grey);
+            cursor: pointer; font-size: 15px; font-weight: 500; transition: border-color 0.2s, background-color 0.2s;
+        }
+        .theme-light .option-card:hover { background-color: #f4f5f7; }
+        .theme-dark .option-card:hover { background-color: #333; }
+        .option-card.selected { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.08); }
+        .option-card input { display: none; }
+
+        .step-nav { display: flex; justify-content: space-between; margin-top: 30px; }
+        .step-nav button {
+            padding: 12px 24px; border-radius: 6px; font-weight: 600; font-size: 14px; cursor: pointer; border: 1px solid var(--porsche-grey);
+            background: none; color: inherit;
+        }
+        .step-nav button.primary { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
+        .step-nav button.primary:disabled { opacity: 0.4; cursor: not-allowed; }
+        .step-nav button.back { visibility: hidden; }
+        .step-nav button.back.visible { visibility: visible; }
+
+        /* --- Resultados --- */
+        #results-step .result-card {
+            border: 1px solid var(--porsche-grey); border-radius: 8px; padding: 20px; margin-bottom: 18px;
+        }
+        .result-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .result-header h3 { margin: 0; font-size: 1.3em; color: var(--porsche-red); }
+        .match-badge { background-color: var(--porsche-gold); color: var(--porsche-black); font-weight: 700; padding: 4px 12px; border-radius: 20px; font-size: 13px; white-space: nowrap; }
+        .result-blurb { opacity: 0.85; line-height: 1.5; margin-bottom: 12px; }
+        .result-reasons { list-style: none; padding: 0; margin: 0 0 15px 0; font-size: 14px; }
+        .result-reasons li { padding: 3px 0; }
+        .result-reasons li::before { content: "✓ "; color: var(--porsche-gold); font-weight: bold; }
+        .result-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+        .result-actions a {
+            text-decoration: none; color: inherit; padding: 8px 14px; border-radius: 6px;
+            border: 1px solid var(--porsche-grey); font-size: 13px; font-weight: 600;
+        }
+        .result-actions a:hover { background-color: var(--porsche-grey); color: white; }
+        .result-actions a.primary { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
+        .result-actions a.primary:hover { background-color: var(--porsche-black); border-color: var(--porsche-black); }
+
+        .restart-link { display: block; text-align: center; margin-top: 20px; font-size: 14px; opacity: 0.7; cursor: pointer; text-decoration: underline; }
+        .disclaimer { font-size: 12px; opacity: 0.6; margin-top: 25px; line-height: 1.5; text-align: center; }
+    </style>
+</head>
+<body class="theme-light">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
+                <span>¿Qué Porsche es para mí?</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Tema oscuro</button>
+            </div>
+        </header>
+
+        <div class="card">
+            <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+
+            <form id="wizard-form">
+                <div class="step active" data-step="0">
+                    <div class="step-count">Pregunta 1 de 5</div>
+                    <h2>¿Cuál es tu presupuesto aproximado?</h2>
+                    <div class="options-grid" data-question="budget">
+                        <label class="option-card"><input type="radio" name="budget" value="50000"> Hasta 70.000 €</label>
+                        <label class="option-card"><input type="radio" name="budget" value="85000"> 70.000 - 100.000 €</label>
+                        <label class="option-card"><input type="radio" name="budget" value="125000"> 100.000 - 150.000 €</label>
+                        <label class="option-card"><input type="radio" name="budget" value="200000"> 150.000 - 250.000 €</label>
+                        <label class="option-card"><input type="radio" name="budget" value="300000"> Más de 250.000 €</label>
+                    </div>
+                </div>
+
+                <div class="step" data-step="1">
+                    <div class="step-count">Pregunta 2 de 5</div>
+                    <h2>¿Para qué lo quieres, sobre todo?</h2>
+                    <div class="options-grid" data-question="usage">
+                        <label class="option-card"><input type="radio" name="usage" value="circuito"> Circuito y sensaciones puras</label>
+                        <label class="option-card"><input type="radio" name="usage" value="viajes"> Viajes largos por carretera</label>
+                        <label class="option-card"><input type="radio" name="usage" value="dia_a_dia"> Uso diario, ciudad incluida</label>
+                        <label class="option-card"><input type="radio" name="usage" value="familia"> Familia: espacio y maletero</label>
+                    </div>
+                </div>
+
+                <div class="step" data-step="2">
+                    <div class="step-count">Pregunta 3 de 5</div>
+                    <h2>¿Nuevo o de segunda mano?</h2>
+                    <div class="options-grid" data-question="condition">
+                        <label class="option-card"><input type="radio" name="condition" value="nuevo"> Nuevo, a estrenar</label>
+                        <label class="option-card"><input type="radio" name="condition" value="segunda_mano"> De segunda mano</label>
+                        <label class="option-card"><input type="radio" name="condition" value="no_decidido"> Aún no lo sé</label>
+                    </div>
+                </div>
+
+                <div class="step" data-step="3">
+                    <div class="step-count">Pregunta 4 de 5</div>
+                    <h2>¿Prefieres combustión, híbrido o eléctrico?</h2>
+                    <div class="options-grid" data-question="engine">
+                        <label class="option-card"><input type="radio" name="engine" value="combustion"> Combustión pura</label>
+                        <label class="option-card"><input type="radio" name="engine" value="hibrido_electrico"> Híbrido o eléctrico</label>
+                        <label class="option-card"><input type="radio" name="engine" value="sin_preferencia"> Sin preferencia</label>
+                    </div>
+                </div>
+
+                <div class="step" data-step="4">
+                    <div class="step-count">Pregunta 5 de 5</div>
+                    <h2>¿Cuántas plazas necesitas?</h2>
+                    <div class="options-grid" data-question="seats">
+                        <label class="option-card"><input type="radio" name="seats" value="2"> Solo yo (o yo y mi acompañante)</label>
+                        <label class="option-card"><input type="radio" name="seats" value="4"> A veces llevo a alguien más atrás</label>
+                        <label class="option-card"><input type="radio" name="seats" value="5"> Necesito 5 plazas reales</label>
+                    </div>
+                </div>
+
+                <div class="step-nav">
+                    <button type="button" id="back-btn" class="back">&larr; Atrás</button>
+                    <button type="button" id="next-btn" class="primary" disabled>Siguiente &rarr;</button>
+                </div>
+            </form>
+
+            <div id="results-step" style="display: none;">
+                <h2 style="margin-top:0;">Tus Porsche recomendados</h2>
+                <p style="opacity:0.75; margin-bottom: 25px;">Según tus respuestas, estos son los modelos que mejor encajan contigo:</p>
+                <div id="results-container"></div>
+                <span class="restart-link" id="restart-link">&larr; Volver a empezar el cuestionario</span>
+            </div>
+
+            <p class="disclaimer">Recomendación orientativa basada en características generales de cada gama. No sustituye una prueba de conducción ni el asesoramiento de un concesionario oficial.</p>
+        </div>
+    </div>
+
+    <script>
+    // Modelos y su encaje con cada dimensión (0-10). Los rangos de precio son orientativos.
+    const models = [
+        {
+            id: '718', name: '718 Cayman / Boxster', comparadorKey: '718_cayman_s',
+            seats: 2, engines: ['combustion'],
+            newRange: [57000, 90000], usedRange: [14000, 55000],
+            scores: { circuito: 9, viajes: 4, dia_a_dia: 6, familia: 1 },
+            blurb: 'El más puro y ágil de la gama, pensado para disfrutar de la carretera y el circuito por encima de todo.'
+        },
+        {
+            id: '911', name: '911', comparadorKey: '911_carrera_t',
+            seats: 4, engines: ['combustion'],
+            newRange: [104000, 300000], usedRange: [22000, 250000],
+            scores: { circuito: 8, viajes: 6, dia_a_dia: 7, familia: 2 },
+            blurb: 'El icono de la marca: deportivo de referencia y, aun así, perfectamente utilizable en el día a día.'
+        },
+        {
+            id: 'macan', name: 'Macan', comparadorKey: 'macan_gts',
+            seats: 5, engines: ['combustion', 'electrico'],
+            newRange: [63000, 100000], usedRange: [20000, 55000],
+            scores: { circuito: 5, viajes: 6, dia_a_dia: 8, familia: 7 },
+            blurb: 'El SUV compacto de la gama: deportivo, práctico y ya disponible también en versión 100% eléctrica.'
+        },
+        {
+            id: 'cayenne', name: 'Cayenne', comparadorKey: 'cayenne_turbo_gt',
+            seats: 5, engines: ['combustion', 'hibrido_electrico'],
+            newRange: [85000, 160000], usedRange: [5000, 90000],
+            scores: { circuito: 5, viajes: 8, dia_a_dia: 8, familia: 9 },
+            blurb: 'El SUV insignia de Porsche: espacio de sobra para toda la familia sin renunciar a las sensaciones de la marca.'
+        },
+        {
+            id: 'panamera', name: 'Panamera', comparadorKey: 'panamera_turbo_s',
+            seats: 5, engines: ['combustion', 'hibrido_electrico'],
+            newRange: [110000, 200000], usedRange: [20000, 90000],
+            scores: { circuito: 4, viajes: 9, dia_a_dia: 7, familia: 8 },
+            blurb: 'La berlina de lujo de la gama: máximo confort en viajes largos con cinco plazas reales.'
+        },
+        {
+            id: 'taycan', name: 'Taycan', comparadorKey: 'taycan_turbo_s',
+            seats: 4, engines: ['electrico'],
+            newRange: [90000, 190000], usedRange: [60000, 95000],
+            scores: { circuito: 6, viajes: 7, dia_a_dia: 8, familia: 6 },
+            blurb: 'El eléctrico de Porsche: aceleración brutal y cero emisiones locales, con el ADN de la marca intacto.'
+        }
+    ];
+
+    const usageLabels = {
+        circuito: 'circuito y sensaciones puras',
+        viajes: 'viajes largos por carretera',
+        dia_a_dia: 'el uso diario en ciudad',
+        familia: 'llevar a toda la familia'
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const steps = Array.from(document.querySelectorAll('.step'));
+        const totalSteps = steps.length;
+        let currentStep = 0;
+        const answers = {};
+
+        function initializePage() {
+            setupOptionCards();
+            setupNavButtons();
+            setupThemeToggle();
+            setupRestart();
+            updateProgress();
+        }
+
+        function setupOptionCards() {
+            document.querySelectorAll('.options-grid').forEach(grid => {
+                const question = grid.dataset.question;
+                grid.querySelectorAll('input[type="radio"]').forEach(input => {
+                    input.addEventListener('change', () => {
+                        grid.querySelectorAll('.option-card').forEach(card => card.classList.remove('selected'));
+                        input.closest('.option-card').classList.add('selected');
+                        answers[question] = input.value;
+                        document.getElementById('next-btn').disabled = false;
+                    });
+                });
+            });
+        }
+
+        function setupNavButtons() {
+            document.getElementById('next-btn').addEventListener('click', () => {
+                if (currentStep < totalSteps - 1) {
+                    goToStep(currentStep + 1);
+                } else {
+                    showResults();
+                }
+            });
+            document.getElementById('back-btn').addEventListener('click', () => {
+                if (currentStep > 0) goToStep(currentStep - 1);
+            });
+        }
+
+        function goToStep(index) {
+            steps[currentStep].classList.remove('active');
+            currentStep = index;
+            steps[currentStep].classList.add('active');
+            updateProgress();
+
+            const currentQuestion = steps[currentStep].querySelector('.options-grid').dataset.question;
+            document.getElementById('next-btn').disabled = !answers[currentQuestion];
+            document.getElementById('next-btn').textContent = currentStep === totalSteps - 1 ? 'Ver mis recomendaciones' : 'Siguiente →';
+            document.getElementById('back-btn').classList.toggle('visible', currentStep > 0);
+        }
+
+        function updateProgress() {
+            const pct = ((currentStep + 1) / totalSteps) * 100;
+            document.getElementById('progress-fill').style.width = `${pct}%`;
+        }
+
+        function scoreModel(model) {
+            const range = answers.condition === 'nuevo' ? model.newRange
+                : answers.condition === 'segunda_mano' ? model.usedRange
+                : [Math.min(model.usedRange[0], model.newRange[0]), Math.max(model.usedRange[1], model.newRange[1])];
+
+            const budget = parseFloat(answers.budget);
+            let budgetFit;
+            if (budget >= range[0] && budget <= range[1]) {
+                budgetFit = 10;
+            } else {
+                const distance = budget < range[0] ? range[0] - budget : budget - range[1];
+                const span = Math.max(range[1] - range[0], 1);
+                budgetFit = Math.max(0, 10 - (distance / span) * 10);
+            }
+
+            const useCaseFit = model.scores[answers.usage] ?? 5;
+
+            const neededSeats = parseInt(answers.seats, 10);
+            const seatsFit = model.seats >= neededSeats ? 10 : 2;
+
+            let engineFit = 7;
+            if (answers.engine !== 'sin_preferencia') {
+                engineFit = model.engines.includes(answers.engine) ? 10 : 3;
+            }
+
+            const total = (budgetFit * 3 + useCaseFit * 3 + seatsFit * 2 + engineFit * 1) / 9;
+            return { total, budgetFit, useCaseFit, seatsFit, engineFit };
+        }
+
+        function buildReasons(model, score) {
+            const reasons = [];
+            if (score.budgetFit >= 8) reasons.push('Encaja bien con el presupuesto que has indicado.');
+            if (score.useCaseFit >= 7) reasons.push(`Muy recomendable para ${usageLabels[answers.usage]}.`);
+            if (score.seatsFit >= 10 && parseInt(answers.seats, 10) >= 4) reasons.push('Tiene plazas de sobra para lo que necesitas.');
+            if (score.engineFit >= 10 && answers.engine !== 'sin_preferencia') reasons.push('Disponible con la motorización que prefieres.');
+            if (reasons.length === 0) reasons.push('Buen equilibrio general entre tus respuestas.');
+            return reasons;
+        }
+
+        function showResults() {
+            document.getElementById('wizard-form').style.display = 'none';
+            document.getElementById('progress-fill').parentElement.style.display = 'none';
+
+            const ranked = models
+                .map(model => ({ model, score: scoreModel(model) }))
+                .sort((a, b) => b.score.total - a.score.total)
+                .slice(0, 3);
+
+            const container = document.getElementById('results-container');
+            container.innerHTML = ranked.map(({ model, score }) => {
+                const matchPct = Math.round(score.total * 10);
+                const priceLink = answers.condition === 'segunda_mano' ? '/precio-segunda-mano' : '/precios';
+                const refPrice = answers.condition === 'segunda_mano'
+                    ? Math.round((model.usedRange[0] + model.usedRange[1]) / 2)
+                    : model.newRange[0];
+                const comparadorKeys = ranked.map(r => r.model.comparadorKey).slice(0, 3);
+                const comparadorUrl = `/comparador?m1=${comparadorKeys[0] || ''}&m2=${comparadorKeys[1] || ''}&m3=${comparadorKeys[2] || ''}`;
+
+                return `
+                    <div class="result-card">
+                        <div class="result-header">
+                            <h3>${model.name}</h3>
+                            <span class="match-badge">${matchPct}% de coincidencia</span>
+                        </div>
+                        <p class="result-blurb">${model.blurb}</p>
+                        <ul class="result-reasons">
+                            ${buildReasons(model, score).map(r => `<li>${r}</li>`).join('')}
+                        </ul>
+                        <div class="result-actions">
+                            <a href="/fallos" class="primary">Ver fiabilidad</a>
+                            <a href="${priceLink}">Ver precios</a>
+                            <a href="/financiacion?precio=${refPrice}">Simular financiación</a>
+                            <a href="${comparadorUrl}">Comparar en detalle</a>
+                            <a href="/concesionarios">Buscar concesionario</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('results-step').style.display = 'block';
+        }
+
+        function setupThemeToggle() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+            });
+        }
+
+        function setupRestart() {
+            document.getElementById('restart-link').addEventListener('click', () => {
+                Object.keys(answers).forEach(key => delete answers[key]);
+                document.querySelectorAll('input[type="radio"]').forEach(input => { input.checked = false; });
+                document.querySelectorAll('.option-card').forEach(card => card.classList.remove('selected'));
+                document.getElementById('results-step').style.display = 'none';
+                document.getElementById('wizard-form').style.display = 'block';
+                document.getElementById('progress-fill').parentElement.style.display = 'block';
+                goToStep(0);
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>

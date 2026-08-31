@@ -144,10 +144,15 @@
                     selector.appendChild(option);
                 });
             });
-            // Set default comparison
-            selectors[0].value = '911_carrera_t';
-            selectors[1].value = '718_gt4_rs';
-            selectors[2].value = 'taycan_turbo_s';
+            // Set default comparison (o los indicados por la URL, p. ej. desde el asistente "¿Qué Porsche es para mí?")
+            const params = new URLSearchParams(window.location.search);
+            const modelKeySet = new Set(modelKeys);
+            const fromUrl = ['m1', 'm2', 'm3'].map(p => params.get(p)).filter(v => v && modelKeySet.has(v));
+
+            const defaults = ['911_carrera_t', '718_gt4_rs', 'taycan_turbo_s'];
+            selectors.forEach((selector, index) => {
+                selector.value = fromUrl[index] || defaults[index];
+            });
         }
 
         function renderSpecsTable() {
