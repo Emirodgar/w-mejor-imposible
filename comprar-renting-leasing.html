@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar, financiar, renting o leasing un Porsche: comparativa y calculadora | Mejor Imposible</title>
+    <meta name="description" content="Compara comprar al contado, financiar, renting o leasing para tu Porsche: propiedad, IVA deducible, mantenimiento y kilometraje. Simulador con tus propios números y preguntas frecuentes.">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
+        .header-title img { height: 40px; margin-right: 15px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 25px 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; margin-bottom: 20px; }
+        .theme-light .card { background-color: var(--light-card-bg); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 1.2em; font-weight: 600; margin: 0 0 20px 0; }
+
+        .intro-block { max-width: 800px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        /* --- Tabla comparativa --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; vertical-align: top; }
+        .theme-light th, .theme-light td { border-color: #e0e0e0; }
+        .theme-dark th, .theme-dark td { border-color: #444; }
+        th { font-weight: 600; color: var(--porsche-red); }
+        td:first-child, th:first-child { font-weight: 600; white-space: nowrap; }
+
+        /* --- Formulario del simulador --- */
+        .grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+        @media (max-width: 900px) { .grid-layout { grid-template-columns: 1fr; } }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; }
+        .form-group .hint { font-size: 12px; opacity: 0.65; margin-top: 4px; }
+        .form-group input, .form-group select {
+            width: 100%; padding: 10px 12px; border-radius: 6px; border: 1px solid var(--porsche-grey);
+            background-color: inherit; color: inherit; font-size: 15px; box-sizing: border-box;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .checkbox-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+        .checkbox-row input { width: auto; }
+        fieldset { border: 1px solid var(--porsche-grey); border-radius: 8px; padding: 15px 18px; margin: 0 0 18px 0; }
+        legend { font-weight: 600; padding: 0 8px; }
+
+        /* --- Resultados --- */
+        .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 20px; }
+        @media (max-width: 500px) { .results-grid { grid-template-columns: 1fr; } }
+        .result-box { text-align: center; padding: 15px; border-radius: 8px; background-color: var(--porsche-grey); color: white; position: relative; }
+        .result-box.winner { background-color: var(--porsche-red); }
+        .result-box .value { font-size: 1.4em; font-weight: 700; }
+        .result-box .label { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+        .result-box .winner-badge { position: absolute; top: -10px; right: 10px; background: var(--porsche-gold); color: var(--porsche-black); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
+
+        .disclaimer { font-size: 12px; opacity: 0.6; margin-top: 15px; line-height: 1.5; }
+
+        /* --- Contenido y FAQ --- */
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+    </style>
+</head>
+<body class="theme-light">
+
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-title">
+                <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
+                <span>Comprar, renting o leasing</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Tema oscuro</button>
+            </div>
+        </header>
+
+        <div class="intro-block">
+            <h1>Comprar, financiar, renting o leasing: ¿qué te conviene para tu Porsche?</h1>
+            <p>No hay una respuesta única: depende de si quieres ser propietario del coche, de tu situación fiscal, y de cuánto valoras no preocuparte del mantenimiento. Aquí tienes las diferencias clave y un simulador para comparar tu caso concreto con números reales.</p>
+        </div>
+
+        <section class="card">
+            <h2 class="card-title">Comparativa rápida</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Comprar (contado o financiado)</th>
+                            <th>Renting</th>
+                            <th>Leasing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>¿Eres el propietario?</td>
+                            <td>Sí, desde el primer día (con reserva de dominio si está financiado)</td>
+                            <td>No, nunca. El coche es de la empresa de renting</td>
+                            <td>No durante el contrato; puedes pasar a serlo si ejerces la opción de compra final</td>
+                        </tr>
+                        <tr>
+                            <td>Mantenimiento y seguro</td>
+                            <td>Los gestionas y pagas tú aparte</td>
+                            <td>Normalmente incluidos en la cuota</td>
+                            <td>Normalmente NO incluidos, van aparte</td>
+                        </tr>
+                        <tr>
+                            <td>Límite de kilometraje</td>
+                            <td>No hay límite</td>
+                            <td>Sí, pactado en el contrato (penalización si te pasas)</td>
+                            <td>Puede haberlo si afecta al valor residual pactado</td>
+                        </tr>
+                        <tr>
+                            <td>IVA deducible (autónomos/empresas)</td>
+                            <td>Parcial, según % de uso profesional</td>
+                            <td>Habitualmente deducible en gran parte de la cuota</td>
+                            <td>Habitualmente deducible en gran parte de la cuota</td>
+                        </tr>
+                        <tr>
+                            <td>Al terminar el contrato</td>
+                            <td>El coche es tuyo, lo vendes cuando quieras</td>
+                            <td>Devuelves el coche (algunos rentings ofrecen opción de compra)</td>
+                            <td>Devuelves el coche o pagas la opción de compra final y te lo quedas</td>
+                        </tr>
+                        <tr>
+                            <td>Ideal para</td>
+                            <td>Quien quiere ser propietario y conservar el coche a largo plazo</td>
+                            <td>Autónomos y empresas que priorizan no preocuparse de nada y renovar cada pocos años</td>
+                            <td>Quien quiere cuotas bajas con la puerta abierta a quedarse el coche al final</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <main class="grid-layout">
+            <section class="card">
+                <h2 class="card-title">Simula tu caso</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="price-input">Precio del vehículo (€)</label>
+                        <input type="number" id="price-input" min="0" step="500" value="90000">
+                    </div>
+                    <div class="form-group">
+                        <label for="term-select">Periodo a comparar</label>
+                        <select id="term-select">
+                            <option value="24">24 meses</option>
+                            <option value="36">36 meses</option>
+                            <option value="48" selected>48 meses</option>
+                            <option value="60">60 meses</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="resale-input">Valor de reventa estimado al final (€, si compras o financias)</label>
+                    <input type="number" id="resale-input" min="0" step="500" value="45000">
+                    <p class="hint">Se resta del coste de comprar y de financiar, porque en ambos casos te quedas con un coche que vale dinero al final del periodo.</p>
+                </div>
+
+                <fieldset>
+                    <legend>Financiación</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="downpayment-input">Entrada (€)</label>
+                            <input type="number" id="downpayment-input" min="0" step="500" value="20000">
+                        </div>
+                        <div class="form-group">
+                            <label for="tin-input">TIN estimado (% anual)</label>
+                            <input type="number" id="tin-input" min="0" step="0.1" value="7.5">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Renting</legend>
+                    <div class="form-group">
+                        <label for="renting-input">Cuota mensual que te han ofrecido (€)</label>
+                        <input type="number" id="renting-input" min="0" step="10" value="1500">
+                        <p class="hint">Sustituye este valor por la cuota real de la oferta que te hayan presentado.</p>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Leasing</legend>
+                    <div class="form-group">
+                        <label for="leasing-input">Cuota mensual que te han ofrecido (€)</label>
+                        <input type="number" id="leasing-input" min="0" step="10" value="1300">
+                    </div>
+                    <div class="form-group">
+                        <label for="leasing-balloon-input">Opción de compra final (€)</label>
+                        <input type="number" id="leasing-balloon-input" min="0" step="500" value="35000">
+                    </div>
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="leasing-buy-checkbox">
+                        <label for="leasing-buy-checkbox" style="margin:0;">Voy a ejercer la opción de compra al final</label>
+                    </div>
+                </fieldset>
+
+                <p class="disclaimer">Cálculo orientativo. Las cuotas de renting y leasing dependen de la oferta real de cada empresa: usa aquí las que te hayan facilitado para comparar con tus propios números.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Coste total en el periodo elegido</h2>
+                <div class="results-grid">
+                    <div class="result-box" id="box-contado">
+                        <div id="result-contado" class="value">-</div>
+                        <div class="label">Comprar al contado</div>
+                    </div>
+                    <div class="result-box" id="box-financiacion">
+                        <div id="result-financiacion" class="value">-</div>
+                        <div class="label">Financiación</div>
+                    </div>
+                    <div class="result-box" id="box-renting">
+                        <div id="result-renting" class="value">-</div>
+                        <div class="label">Renting</div>
+                    </div>
+                    <div class="result-box" id="box-leasing">
+                        <div id="result-leasing" class="value">-</div>
+                        <div class="label">Leasing</div>
+                    </div>
+                </div>
+                <div style="height: 260px; position: relative;"><canvas id="comparison-chart"></canvas></div>
+                <p class="disclaimer">"Comprar" y "Financiación" restan el valor de reventa estimado, porque son las dos únicas opciones en las que te quedas con el coche. Renting y leasing (si no ejerces la opción de compra) no incluyen ningún activo al final.</p>
+            </section>
+        </main>
+
+        <section class="card content-section">
+            <h2>Preguntas frecuentes</h2>
+            <details class="faq-item" open>
+                <summary>¿Cuál es la diferencia entre renting y leasing?</summary>
+                <p>El renting es un alquiler a largo plazo que suele incluir mantenimiento, seguro y a veces neumáticos, y nunca serás propietario del coche. El leasing es un arrendamiento financiero pensado sobre todo para empresas y autónomos: no suele incluir servicios adicionales, pero al final del contrato tienes la opción de comprar el vehículo pagando su valor residual.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿El renting incluye mantenimiento y seguro?</summary>
+                <p>En la gran mayoría de contratos de renting sí, y es una de sus principales ventajas: una única cuota mensual sin sorpresas de talleres, seguro o neumáticos. Conviene revisar cada contrato para confirmar exactamente qué queda cubierto.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Puedo comprar el coche al final de un contrato de renting?</summary>
+                <p>Depende del contrato: algunos rentings incluyen una opción de compra al final, pero no es lo habitual. El leasing, en cambio, está pensado precisamente para eso.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿El leasing tiene ventajas fiscales para autónomos y empresas?</summary>
+                <p>En general sí: tanto el renting como el leasing permiten deducir una parte importante del IVA y del gasto como autónomo o empresa, algo que en una compra particular solo aplica de forma parcial y según el porcentaje de uso profesional del vehículo. Consulta siempre con tu asesor fiscal tu caso concreto.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué pasa si supero el kilometraje contratado en un renting?</summary>
+                <p>Se aplica una penalización por kilómetro extra, especificada en el contrato. Por eso es importante estimar bien tu uso anual antes de firmar: es más barato contratar de partida un kilometraje algo más alto que pagar el exceso al final.</p>
+            </details>
+
+            <p style="margin-top: 25px;">¿Ya tienes claro que quieres financiar? Usa nuestra <a href="/financiacion">calculadora de financiación</a> para ver la cuota mensual al detalle, o vuelve al <a href="/asistente">asistente "¿Qué Porsche es para mí?"</a> si aún estás decidiendo el modelo.</p>
+        </section>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuál es la diferencia entre renting y leasing?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El renting es un alquiler a largo plazo que suele incluir mantenimiento, seguro y a veces neumáticos, y nunca serás propietario del coche. El leasing es un arrendamiento financiero pensado sobre todo para empresas y autónomos: no suele incluir servicios adicionales, pero al final del contrato tienes la opción de comprar el vehículo pagando su valor residual."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El renting incluye mantenimiento y seguro?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En la gran mayoría de contratos de renting sí: una única cuota mensual sin sorpresas de talleres, seguro o neumáticos. Conviene revisar cada contrato para confirmar exactamente qué queda cubierto."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo comprar el coche al final de un contrato de renting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende del contrato: algunos rentings incluyen una opción de compra al final, pero no es lo habitual. El leasing, en cambio, está pensado precisamente para eso."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El leasing tiene ventajas fiscales para autónomos y empresas?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En general sí: tanto el renting como el leasing permiten deducir una parte importante del IVA y del gasto como autónomo o empresa, algo que en una compra particular solo aplica de forma parcial y según el porcentaje de uso profesional del vehículo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué pasa si supero el kilometraje contratado en un renting?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Se aplica una penalización por kilómetro extra, especificada en el contrato. Es más barato contratar de partida un kilometraje algo más alto que pagar el exceso al final."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let comparisonChart;
+        const fieldIds = [
+            'price-input', 'term-select', 'resale-input',
+            'downpayment-input', 'tin-input',
+            'renting-input', 'leasing-input', 'leasing-balloon-input', 'leasing-buy-checkbox'
+        ];
+
+        function initializePage() {
+            setupEventListeners();
+            calculate();
+        }
+
+        function amortizedPayment(principal, monthlyRate, months) {
+            if (months <= 0) return 0;
+            if (monthlyRate === 0) return principal / months;
+            const annuityFactor = (1 - Math.pow(1 + monthlyRate, -months)) / monthlyRate;
+            return principal / annuityFactor;
+        }
+
+        function calculate() {
+            const price = parseFloat(document.getElementById('price-input').value) || 0;
+            const months = parseInt(document.getElementById('term-select').value, 10);
+            const resale = Math.max(0, parseFloat(document.getElementById('resale-input').value) || 0);
+
+            const downpayment = Math.min(parseFloat(document.getElementById('downpayment-input').value) || 0, price);
+            const tin = parseFloat(document.getElementById('tin-input').value) || 0;
+
+            const rentingFee = parseFloat(document.getElementById('renting-input').value) || 0;
+            const leasingFee = parseFloat(document.getElementById('leasing-input').value) || 0;
+            const leasingBalloon = parseFloat(document.getElementById('leasing-balloon-input').value) || 0;
+            const willBuyLeasing = document.getElementById('leasing-buy-checkbox').checked;
+
+            // Comprar al contado
+            const costeContado = Math.max(0, price - resale);
+
+            // Financiación
+            const principal = Math.max(0, price - downpayment);
+            const monthlyRate = (tin / 100) / 12;
+            const monthlyPayment = amortizedPayment(principal, monthlyRate, months);
+            const costeFinanciacion = Math.max(0, (downpayment + monthlyPayment * months) - resale);
+
+            // Renting (sin activo al final)
+            const costeRenting = rentingFee * months;
+
+            // Leasing (con o sin opción de compra ejercida)
+            const costeLeasing = (leasingFee * months) + (willBuyLeasing ? leasingBalloon : 0);
+
+            renderResults({ costeContado, costeFinanciacion, costeRenting, costeLeasing, months });
+        }
+
+        function renderResults(costs) {
+            const values = {
+                contado: costs.costeContado,
+                financiacion: costs.costeFinanciacion,
+                renting: costs.costeRenting,
+                leasing: costs.costeLeasing
+            };
+
+            document.getElementById('result-contado').textContent = `${values.contado.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('result-financiacion').textContent = `${values.financiacion.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('result-renting').textContent = `${values.renting.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('result-leasing').textContent = `${values.leasing.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+
+            const winnerKey = Object.keys(values).reduce((a, b) => values[a] <= values[b] ? a : b);
+            ['contado', 'financiacion', 'renting', 'leasing'].forEach(key => {
+                const box = document.getElementById(`box-${key}`);
+                box.classList.toggle('winner', key === winnerKey);
+                const existingBadge = box.querySelector('.winner-badge');
+                if (existingBadge) existingBadge.remove();
+                if (key === winnerKey) {
+                    const badge = document.createElement('span');
+                    badge.className = 'winner-badge';
+                    badge.textContent = 'Más económico';
+                    box.appendChild(badge);
+                }
+            });
+
+            renderChart(values);
+        }
+
+        function renderChart(values) {
+            const ctx = document.getElementById('comparison-chart');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? '#e1e1e1' : '#172b4d';
+
+            if (comparisonChart) comparisonChart.destroy();
+            comparisonChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Comprar al contado', 'Financiación', 'Renting', 'Leasing'],
+                    datasets: [{
+                        label: 'Coste total en el periodo',
+                        data: [values.contado, values.financiacion, values.renting, values.leasing],
+                        backgroundColor: ['#464C47', '#B12B28', '#E3AB37', '#696969']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `${context.raw.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { ticks: { color: textColor }, grid: { display: false } },
+                        y: {
+                            ticks: { color: textColor, callback: (value) => `${(value / 1000).toLocaleString('es-ES')}k` },
+                            grid: { color: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('theme-light');
+                document.body.classList.toggle('theme-dark');
+                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+                calculate();
+            });
+
+            fieldIds.forEach(id => {
+                const el = document.getElementById(id);
+                el.addEventListener('input', calculate);
+                el.addEventListener('change', calculate);
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>
