@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <title>Porsche - Comparador de rendimiento y ventas</title>
+    <title>¿Cuál es el Porsche más rápido y más potente? Comparador de prestaciones | Mejor Imposible</title>
+    <meta name="description" content="Compara la potencia, el 0-100 km/h y la personalidad de cada Porsche: descubre cuál es el modelo más rápido, el más potente y cuál encaja mejor con tu forma de conducir, circuito, viaje o día a día.">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
@@ -48,7 +49,80 @@
         @media (max-width: 1200px) {
             .chart-section, .selector-section { grid-column: span 12; }
         }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el Porsche más rápido?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En aceleración de 0 a 100 km/h, el Taycan Turbo S es el más rápido de la gama comparada aquí, con solo 2,8 segundos gracias al par instantáneo de sus motores eléctricos (761 CV). Le siguen muy de cerca el Panamera Turbo S (3,1 s) y el 911 GT3 RS (3,2 s). En circuito, sin embargo, el GT3 RS suele ser más rápido en vuelta que el Taycan pese a su aceleración algo menor."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el Porsche más potente?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Taycan Turbo S, con 761 CV, es el modelo más potente de la comparativa, muy por encima del Cayenne Turbo GT (640 CV) o el Panamera Turbo S (630 CV). Entre los modelos de motor atmosférico, el 911 GT3 RS lidera con 525 CV."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el Porsche más rápido en circuito?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 GT3 RS y el 718 Cayman GT4 RS son los referentes en circuito, con la puntuación máxima en uso circuito de nuestro comparador. A diferencia de la aceleración en línea recta, el rendimiento en pista depende más del peso, la aerodinámica activa y el equilibrio del coche que de la potencia bruta, por eso estos modelos atmosféricos y ligeros superan a otros con más CV en el cronómetro de una vuelta."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el mejor Porsche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No hay un único 'mejor Porsche': depende de si buscas uso en circuito, comodidad para viajar, practicidad en el día a día o exclusividad. Usa el comparador de esta página para ver la personalidad de cada modelo lado a lado, o responde el cuestionario de nuestro asistente de recomendación para encontrar el que mejor encaja contigo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es más rápido un Porsche normal o un GT3 RS?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El GT3 RS es la variante de altas prestaciones del 911, así que sí: es notablemente más rápido que un 911 Carrera o Carrera T tanto en aceleración como, sobre todo, en circuito, gracias a su motor atmosférico de altas revoluciones, su aerodinámica activa y su peso reducido."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
 
@@ -62,6 +136,11 @@
                 <button id="theme-toggle">Tema oscuro</button>
             </div>
         </header>
+
+        <div class="intro-block">
+            <h1>¿Cuál es el Porsche más rápido y más potente?</h1>
+            <p>En línea recta, el eléctrico Taycan Turbo S manda con 2,8 segundos de 0 a 100 km/h y 761 CV. En circuito, la corona es de los modelos atmosféricos y ligeros: el 911 GT3 RS y el 718 Cayman GT4 RS. Compara potencia, peso, 0-100 km/h y personalidad de cada modelo con el selector de abajo.</p>
+        </div>
 
         <main class="grid-layout">
             <section class="card chart-section">
@@ -105,6 +184,34 @@
                 </div>
             </section>
         </main>
+
+        <section class="card content-section" style="margin-top: 20px;">
+            <h2>Preguntas frecuentes sobre rendimiento Porsche</h2>
+            <details class="faq-item" open>
+                <summary>¿Cuál es el Porsche más rápido?</summary>
+                <p>En aceleración de 0 a 100 km/h, el Taycan Turbo S es el más rápido de la gama comparada aquí, con solo 2,8 segundos gracias al par instantáneo de sus motores eléctricos (761 CV). Le siguen muy de cerca el Panamera Turbo S (3,1 s) y el 911 GT3 RS (3,2 s). En circuito, sin embargo, el GT3 RS suele ser más rápido en vuelta que el Taycan pese a su aceleración algo menor.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuál es el Porsche más potente?</summary>
+                <p>El Taycan Turbo S, con 761 CV, es el modelo más potente de la comparativa, muy por encima del Cayenne Turbo GT (640 CV) o el Panamera Turbo S (630 CV). Entre los modelos de motor atmosférico, el 911 GT3 RS lidera con 525 CV.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuál es el Porsche más rápido en circuito?</summary>
+                <p>El 911 GT3 RS y el 718 Cayman GT4 RS son los referentes en circuito, con la puntuación máxima en uso circuito de nuestro comparador. El rendimiento en pista depende más del peso, la aerodinámica activa y el equilibrio del coche que de la potencia bruta, por eso estos modelos atmosféricos y ligeros superan a otros con más CV en el cronómetro de una vuelta.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuál es el mejor Porsche?</summary>
+                <p>No hay un único "mejor Porsche": depende de si buscas uso en circuito, comodidad para viajar, practicidad en el día a día o exclusividad. Usa el comparador de arriba para ver la personalidad de cada modelo lado a lado, o responde el cuestionario de nuestro <a href="/asistente">asistente de recomendación</a> para encontrar el que mejor encaja contigo.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es más rápido un Porsche normal o un GT3 RS?</summary>
+                <p>El GT3 RS es la variante de altas prestaciones del 911, así que sí: es notablemente más rápido que un 911 Carrera o Carrera T tanto en aceleración como, sobre todo, en circuito, gracias a su motor atmosférico de altas revoluciones, su aerodinámica activa y su peso reducido.</p>
+            </details>
+
+            <div class="cross-link-box">
+                <strong>¿Quieres ver el precio de estos modelos?</strong> Consulta la <a href="/precios">evolución de precios de lanzamiento</a> de cada generación o descubre <a href="/fallos">la fiabilidad de cada uno</a> antes de decidirte.
+            </div>
+        </section>
     </div>
 
     <script>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <title>Porsche - Depreciación de precio</title>
+    <title>¿Cuánto vale un Porsche de segunda mano? Precios y depreciación | Mejor Imposible</title>
+    <meta name="description" content="Cuánto vale un Porsche de segunda mano por modelo y generación: evolución de precio de mercado del 911, Cayenne, Macan, Panamera, Boxster, Cayman y Taycan, y qué modelos se deprecian más o mejor mantienen su valor.">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
@@ -45,7 +46,88 @@
         .price-up { color: #28a745; font-weight: bold; }
         .price-down { color: #dc3545; font-weight: bold; }
         .price-stable { color: var(--porsche-gold); }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuánto vale un Porsche de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Varía enormemente según modelo, generación y estado: desde unos 5.000 € en un Cayenne de primera generación con mucho uso, hasta más de 120.000 € en un 911 clásico refrigerado por aire en buen estado, como el 993. Los modelos deportivos (911, Cayman, Boxster) suelen retener mejor su valor que los SUV y berlinas (Cayenne, Panamera)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto vale un Porsche Cayenne de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La primera generación (955/957) se encuentra hoy desde unos 5.000 €, con una depreciación muy fuerte. Es un coche barato de comprar pero con un coste de mantenimiento alto, por lo que conviene revisar bien su estado antes de comprarlo. Generaciones más recientes (958) mantienen bastante más su valor."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto vale un Porsche 911 de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende mucho de la generación: un 996 (1998-2004) puede encontrarse desde unos 35.000 €, un 997.2 (2009-2012) ronda los 72.000 € por su gran fiabilidad, y un 993 refrigerado por aire (1995-1998) supera los 120.000 € al ser una pieza muy buscada por coleccionistas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto vale un Porsche Panamera de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La primera generación (970, 2010-2016) se deprecia con fuerza y hoy se encuentra desde unos 24.000 €, lo que la convierte en una de las formas más asequibles de acceder a un Porsche de cuatro puertas con mucho equipamiento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto vale un Porsche Macan de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La primera generación (95B.1, 2014-2018) ronda los 32.000 € en el mercado de ocasión, con una depreciación estándar para un SUV premium de este segmento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué Porsche de segunda mano deprecia menos o es mejor inversión?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Los 911 refrigerados por aire (G-Model, 993) y el 997.2 son los que mejor mantienen o incluso incrementan su valor con el tiempo. En el extremo contrario, el Cayenne y el Panamera de primeras generaciones son los que más se deprecian, aunque eso los convierte en la entrada más barata a la marca."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
 
@@ -59,6 +141,11 @@
                 <button id="theme-toggle">Tema oscuro</button>
             </div>
         </header>
+
+        <div class="intro-block">
+            <h1>¿Cuánto vale un Porsche de segunda mano?</h1>
+            <p>El precio de un Porsche de ocasión depende sobre todo del modelo y la generación: un Cayenne de primera generación puede costar desde 5.000 €, mientras que un 911 clásico bien conservado supera los 120.000 €. Aquí tienes la evolución de precio de mercado de cada modelo, para saber cuáles se deprecian rápido y cuáles son una inversión sólida.</p>
+        </div>
 
         <main class="grid-layout">
             <section class="card chart-section">
@@ -87,6 +174,38 @@
                 </div>
             </section>
         </main>
+
+        <section class="card content-section" style="margin-top: 20px;">
+            <h2>Preguntas frecuentes sobre precios de Porsche de segunda mano</h2>
+            <details class="faq-item" open>
+                <summary>¿Cuánto vale un Porsche de segunda mano?</summary>
+                <p>Varía enormemente según modelo, generación y estado: desde unos 5.000 € en un Cayenne de primera generación con mucho uso, hasta más de 120.000 € en un 911 clásico refrigerado por aire en buen estado, como el 993. Los modelos deportivos (911, Cayman, Boxster) suelen retener mejor su valor que los SUV y berlinas (Cayenne, Panamera).</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto vale un Porsche Cayenne de segunda mano?</summary>
+                <p>La primera generación (955/957) se encuentra hoy desde unos 5.000 €, con una depreciación muy fuerte. Es barato de comprar pero con un coste de mantenimiento alto, así que conviene revisar bien su estado antes de comprarlo. Generaciones más recientes (958) mantienen bastante más su valor.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto vale un Porsche 911 de segunda mano?</summary>
+                <p>Depende mucho de la generación: un 996 (1998-2004) puede encontrarse desde unos 35.000 €, un 997.2 (2009-2012) ronda los 72.000 € por su gran fiabilidad, y un 993 refrigerado por aire (1995-1998) supera los 120.000 € al ser muy buscado por coleccionistas.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto vale un Porsche Panamera de segunda mano?</summary>
+                <p>La primera generación (970, 2010-2016) se deprecia con fuerza y hoy se encuentra desde unos 24.000 €, lo que la convierte en una de las formas más asequibles de acceder a un Porsche de cuatro puertas con mucho equipamiento.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto vale un Porsche Macan de segunda mano?</summary>
+                <p>La primera generación (95B.1, 2014-2018) ronda los 32.000 € en el mercado de ocasión, con una depreciación estándar para un SUV premium de este segmento.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué Porsche de segunda mano deprecia menos o es mejor inversión?</summary>
+                <p>Los 911 refrigerados por aire (G-Model, 993) y el 997.2 son los que mejor mantienen o incluso incrementan su valor con el tiempo. En el extremo contrario, el Cayenne y el Panamera de primeras generaciones son los que más se deprecian, aunque eso los convierte en la entrada más barata a la marca.</p>
+            </details>
+
+            <div class="cross-link-box">
+                <strong>¿Vas a comprar de segunda mano?</strong> No te la juegues: usa nuestra <a href="/checklist-inspecciones-segunda-mano">guía de inspección de Porsche de segunda mano</a> antes de firmar, y revisa los <a href="/fallos">fallos comunes por modelo y generación</a>.
+            </div>
+        </section>
     </div>
 
     <script>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porsche - Análisis y fiabilidad de producto</title>
+    <title>¿Es fiable un Porsche? Fallos comunes y coste de mantenimiento | Mejor Imposible</title>
+    <meta name="description" content="Índice de fiabilidad, fallos comunes y coste de reparación de cada modelo y generación de Porsche: 911, Cayenne, Macan, Panamera, Boxster y Cayman. Descubre si es caro mantener un Porsche antes de comprarlo.">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -63,7 +64,88 @@
         @media (max-width: 1200px) {
             .reliability-section, .maintenance-section { grid-column: span 12; }
         }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es fiable un Porsche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En general sí, sobre todo en las generaciones más recientes: el 911 (992) y el 718 (982) rondan un índice de fiabilidad de 96-97 sobre 100 en nuestra base de datos. El punto débil histórico de la marca se concentra en generaciones concretas, como el rodamiento IMS del 911 996 y el Boxster/Cayman 986-987.1, o el rayado de cilindros del 997.1."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es caro mantener un Porsche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, el mantenimiento de un Porsche suele costar más que el de una marca generalista, aunque varía mucho por modelo: el coste estimado a 5 años ronda los 4.500 € en un 911 (992), 3.800 € en un Cayenne, 3.200 € en un Macan y solo 1.500 € en un Taycan, al no tener motor de combustión. La pieza más cara suele ser la mano de obra en concesionario oficial, más que las piezas en sí."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es fiable el Porsche Cayenne?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La primera generación (955/957) tiene un índice de fiabilidad más bajo (68/100) por la rotura de tuberías de refrigerante de plástico, un fallo conocido que conviene revisar o sustituir preventivamente. La segunda generación (958) mejora bastante, con un índice de 88/100."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es caro el mantenimiento de un Porsche Cayenne?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El coste estimado a 5 años ronda los 3.800 €, algo por debajo del 911. El fallo más habitual en la primera generación, las tuberías de refrigerante, cuesta entre 800 y 1.500 € solucionarlo si no se ha hecho de forma preventiva."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuáles son los fallos más comunes de un Porsche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende del modelo y la generación, pero los más conocidos son: el fallo del rodamiento IMS en el 911 996 y el Boxster/Cayman 986-987.1, el rayado de cilindros (bore scoring) en el 911 997.1, fugas en la suspensión neumática del Panamera 970, y la rotura de tuberías de refrigerante en el Cayenne 955/957. Nuestra base de conocimiento de fallos detalla el coste de reparación de cada uno."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el Porsche más fiable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Según nuestro índice de fiabilidad, el 718 (982, 2017-hoy) y el 911 (992, 2019-hoy) son los modelos modernos más fiables, ambos por encima de 96/100. Entre los clásicos, el 997.2 (2009-2012) destaca por resolver los problemas de sus predecesores."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
 
@@ -77,6 +159,11 @@
                 <button id="theme-toggle">Tema oscuro</button>
             </div>
         </header>
+
+        <div class="intro-block">
+            <h1>¿Es fiable un Porsche? Fallos comunes y coste de mantenimiento</h1>
+            <p>La fiabilidad de un Porsche varía mucho según el modelo y, sobre todo, la generación: hay motores casi indestructibles (997.2, 992, 718 982) y otros con fallos conocidos que conviene vigilar antes de comprar, como el IMS del 996 o el bore scoring del 997.1. Aquí tienes el índice de fiabilidad, los fallos más comunes y el coste estimado de mantenimiento de cada modelo.</p>
+        </div>
 
         <main class="grid-layout">
             <section class="card reliability-section">
@@ -116,6 +203,38 @@
                 </div>
             </section>
         </main>
+
+        <section class="card content-section" style="margin-top: 20px;">
+            <h2>Preguntas frecuentes sobre fiabilidad y mantenimiento de Porsche</h2>
+            <details class="faq-item" open>
+                <summary>¿Es fiable un Porsche?</summary>
+                <p>En general sí, sobre todo en las generaciones más recientes: el 911 (992) y el 718 (982) rondan un índice de fiabilidad de 96-97 sobre 100 en nuestra base de datos. El punto débil histórico de la marca se concentra en generaciones concretas, como el rodamiento IMS del 911 996 y el Boxster/Cayman 986-987.1, o el rayado de cilindros del 997.1.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es caro mantener un Porsche?</summary>
+                <p>Sí, el mantenimiento de un Porsche suele costar más que el de una marca generalista, aunque varía mucho por modelo: el coste estimado a 5 años ronda los 4.500 € en un 911 (992), 3.800 € en un Cayenne, 3.200 € en un Macan y solo 1.500 € en un Taycan, al no tener motor de combustión. La mano de obra en concesionario oficial suele pesar más que las piezas en sí.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es fiable el Porsche Cayenne?</summary>
+                <p>La primera generación (955/957) tiene un índice de fiabilidad más bajo (68/100) por la rotura de tuberías de refrigerante de plástico, un fallo conocido que conviene revisar o sustituir preventivamente. La segunda generación (958) mejora bastante, con un índice de 88/100.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es caro el mantenimiento de un Porsche Cayenne?</summary>
+                <p>El coste estimado a 5 años ronda los 3.800 €, algo por debajo del 911. El fallo más habitual en la primera generación, las tuberías de refrigerante, cuesta entre 800 y 1.500 € solucionarlo si no se ha hecho de forma preventiva.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuáles son los fallos más comunes de un Porsche?</summary>
+                <p>Depende del modelo y la generación, pero los más conocidos son: el fallo del rodamiento IMS en el 911 996 y el Boxster/Cayman 986-987.1, el rayado de cilindros (bore scoring) en el 911 997.1, fugas en la suspensión neumática del Panamera 970, y la rotura de tuberías de refrigerante en el Cayenne 955/957. Consulta la tabla de arriba, filtrable por modelo, para ver el coste de reparación de cada uno.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuál es el Porsche más fiable?</summary>
+                <p>Según nuestro índice de fiabilidad, el 718 (982, 2017-hoy) y el 911 (992, 2019-hoy) son los modelos modernos más fiables, ambos por encima de 96/100. Entre los clásicos, el 997.2 (2009-2012) destaca por resolver los problemas de sus predecesores.</p>
+            </details>
+
+            <div class="cross-link-box">
+                <strong>¿Quieres saber el gasto total?</strong> Consulta el <a href="/coste-real">coste real de propiedad a 5 años</a> (depreciación, mantenimiento, seguro y consumibles incluidos) o la <a href="/checklist-inspecciones-segunda-mano">guía de inspección</a> antes de comprar uno de segunda mano.
+            </div>
+        </section>
     </div>
 
     <!-- Modal Structure -->

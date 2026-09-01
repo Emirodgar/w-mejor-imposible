@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <title>Porsche - Análisis de evolución de precios</title>
+    <title>¿Cuánto cuesta un Porsche? Precios por modelo 2026 | Mejor Imposible</title>
+    <meta name="description" content="Cuánto cuesta un Porsche nuevo en 2026: precios oficiales de lanzamiento del 911, Cayenne, Macan, Panamera, Taycan y 718 Cayman, con la evolución de precio de cada generación y el modelo más barato y más caro de la gama.">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
@@ -40,7 +41,109 @@
         .theme-dark th, .theme-dark td { border-color: #444; }
         th { font-weight: 600; }
         .price-increase { color: #dc3545; font-weight: bold; }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0 0 12px 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .price-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0; }
+        .price-summary-item { border-radius: 8px; padding: 14px 16px; background-color: var(--porsche-grey); color: white; }
+        .price-summary-item .model-name { font-size: 0.85em; opacity: 0.85; }
+        .price-summary-item .model-price { font-size: 1.25em; font-weight: 700; margin-top: 4px; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta un Porsche nuevo?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende mucho del modelo: el Porsche nuevo más asequible es el 718 Cayman, desde unos 77.850 € de PVP de lanzamiento, mientras que el 911 Carrera parte de unos 148.500 € en su generación actual (992.2). Entre medias se sitúan el Macan, el Cayenne, el Panamera y el Taycan, todos por encima de los 85.000 €. Los precios finales suben bastante con opciones y personalización."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el Porsche más barato?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 718 Cayman es el Porsche de acceso a la gama, con un precio de lanzamiento desde unos 77.850 €. Es la puerta de entrada más habitual para quien quiere un Porsche de conducción deportiva por primera vez, por delante incluso del Macan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es el Porsche más caro?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dentro de la gama de calle, las variantes GT (como el 911 GT3 RS o el 911 Turbo S) son las más caras, con precios que superan con facilidad los 230.000 € antes de opciones. Si se cuentan modelos históricos y de coleccionista como el Carrera GT o el 918 Spyder, las cifras de mercado se disparan muy por encima de esa cifra."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta un Porsche Cayenne?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Porsche Cayenne actual (E-Hybrid, generación E3.2) tiene un precio de lanzamiento desde unos 107.300 €. Es uno de los modelos con más variantes de motorización, por lo que el precio final varía bastante según la versión y el equipamiento elegido."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta un Porsche 911?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 Carrera de la generación actual (992.2) parte de unos 148.500 € de PVP de lanzamiento. Las variantes más deportivas, como el GT3 o el Turbo S, superan ampliamente los 200.000 €."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta un Porsche Panamera?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Porsche Panamera (generación 972, 4 E-Hybrid) tiene un precio de lanzamiento desde unos 127.800 €, aunque las versiones Turbo y Turbo S E-Hybrid elevan bastante esa cifra."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta un Porsche Macan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El nuevo Macan Eléctrico (plataforma PPE) parte de unos 85.300 €. Es, junto al 718 Cayman, una de las puertas de entrada más asequibles a la marca."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta un Porsche Taycan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Porsche Taycan, en su versión 4S tras el restyling, tiene un precio de lanzamiento desde unos 121.000 €. Fue el primer modelo 100% eléctrico de la marca."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
 
@@ -54,6 +157,19 @@
                 <button id="theme-toggle">Tema oscuro</button>
             </div>
         </header>
+
+        <div class="intro-block">
+            <h1>¿Cuánto cuesta un Porsche nuevo?</h1>
+            <p>El precio de un Porsche 0km va desde los 77.850 € del 718 Cayman hasta los más de 200.000 € de las variantes GT del 911. A continuación tienes el precio de lanzamiento (PVP) desde el que parte cada modelo actual, y más abajo la evolución de precio de cada generación desde 2012.</p>
+            <div class="price-summary-grid">
+                <div class="price-summary-item"><div class="model-name">718 Cayman</div><div class="model-price">Desde 77.850 €</div></div>
+                <div class="price-summary-item"><div class="model-name">Macan Eléctrico</div><div class="model-price">Desde 85.300 €</div></div>
+                <div class="price-summary-item"><div class="model-name">Cayenne</div><div class="model-price">Desde 107.300 €</div></div>
+                <div class="price-summary-item"><div class="model-name">Taycan</div><div class="model-price">Desde 121.000 €</div></div>
+                <div class="price-summary-item"><div class="model-name">Panamera</div><div class="model-price">Desde 127.800 €</div></div>
+                <div class="price-summary-item"><div class="model-name">911 Carrera</div><div class="model-price">Desde 148.500 €</div></div>
+            </div>
+        </div>
 
         <main class="grid-layout">
             <section class="card chart-section">
@@ -80,6 +196,59 @@
                 </div>
             </section>
         </main>
+
+        <section class="card content-section" style="margin-top: 20px;">
+            <h2>Precio de los modelos con más demanda</h2>
+
+            <h3>¿Cuánto cuesta un Porsche Cayenne?</h3>
+            <p>El Cayenne es el SUV de la marca y uno de los modelos más buscados. Su precio de lanzamiento ha subido con fuerza en cada generación: el primer híbrido enchufable de la marca (958.2 S E-Hybrid, 2014) partía de 85.100 €; la generación E-Hybrid (E3, 2018) subió a 93.400 € (+9,8%) al incorporar la plataforma MLB y más autonomía eléctrica; y la generación actual (E-Hybrid E3.2, 2023) ronda los 107.300 € (+14,9%) tras un restyling profundo con interior similar al del Taycan. Esa es la puerta de entrada: las versiones Turbo y Turbo GT de gama alta superan con facilidad los 190.000 €. Si buscas uno de segunda mano, en <a href="/precio-segunda-mano">precios y depreciación</a> verás que la primera generación (955/957) se deprecia mucho más rápido que las posteriores.</p>
+
+            <h3>¿Cuánto cuesta un Porsche 911?</h3>
+            <p>El 911 Carrera es el modelo insignia y el que marca el resto de la gama. Su evolución de precio de lanzamiento: 991.1 (2012) 104.300 € → 991.2 (2016) 110.800 € (+6,2%, motores turbo) → 992 (2019) 120.450 € (+8,7%, nueva plataforma) → 992.2 (2024) 148.500 € (+23,3%, primer 911 híbrido T-Hybrid). Esa cifra corresponde a la versión Carrera de acceso: las variantes GT3, GT3 RS y Turbo S, orientadas al circuito y a las máximas prestaciones, superan los 200.000-230.000 € antes de opciones.</p>
+
+            <h3>¿Cuánto cuesta un Porsche Panamera?</h3>
+            <p>El Panamera es la berlina de cuatro puertas de la marca. Precio de lanzamiento por generación: 971 4 E-Hybrid (2017) 110.900 € → 971.2 (2021) 116.500 € (+5,1%, batería más grande) → 972 (2024) 127.800 € (+9,7%, nuevo interior digital y suspensión Active Ride opcional). Las versiones Turbo y Turbo S E-Hybrid, con más potencia y equipamiento, elevan bastante esa cifra de partida.</p>
+        </section>
+
+        <section class="card content-section" style="margin-top: 20px;">
+            <h2>Preguntas frecuentes sobre el precio de un Porsche</h2>
+            <details class="faq-item" open>
+                <summary>¿Cuánto cuesta un Porsche nuevo?</summary>
+                <p>Depende mucho del modelo: el Porsche nuevo más asequible es el 718 Cayman, desde unos 77.850 € de PVP de lanzamiento, mientras que el 911 Carrera parte de unos 148.500 € en su generación actual (992.2). Entre medias se sitúan el Macan, el Cayenne, el Panamera y el Taycan. Los precios finales suben bastante con opciones y personalización.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuál es el Porsche más barato?</summary>
+                <p>El 718 Cayman es el Porsche de acceso a la gama, con un precio de lanzamiento desde unos 77.850 €. Es la puerta de entrada más habitual para quien quiere un Porsche de conducción deportiva por primera vez.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuál es el Porsche más caro?</summary>
+                <p>Dentro de la gama de calle, las variantes GT (como el 911 GT3 RS o el 911 Turbo S) son las más caras, con precios que superan con facilidad los 230.000 € antes de opciones. Si se cuentan modelos de coleccionista como el Carrera GT o el 918 Spyder, las cifras de mercado se disparan muy por encima.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta un Porsche Cayenne?</summary>
+                <p>El Cayenne actual (E-Hybrid, generación E3.2) tiene un precio de lanzamiento desde unos 107.300 €. Es uno de los modelos con más variantes de motorización de la gama, así que el precio final varía bastante según la versión.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta un Porsche 911?</summary>
+                <p>El 911 Carrera de la generación actual (992.2) parte de unos 148.500 €. Las variantes más deportivas, como el GT3 o el Turbo S, superan ampliamente los 200.000 €.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta un Porsche Panamera?</summary>
+                <p>El Panamera (generación 972, 4 E-Hybrid) tiene un precio de lanzamiento desde unos 127.800 €, aunque las versiones Turbo y Turbo S E-Hybrid elevan bastante esa cifra.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta un Porsche Macan?</summary>
+                <p>El nuevo Macan Eléctrico (plataforma PPE) parte de unos 85.300 €. Es, junto al 718 Cayman, una de las puertas de entrada más asequibles a la marca.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto cuesta un Porsche Taycan?</summary>
+                <p>El Taycan, en su versión 4S tras el restyling, tiene un precio de lanzamiento desde unos 121.000 €. Fue el primer modelo 100% eléctrico de la marca.</p>
+            </details>
+
+            <div class="cross-link-box">
+                <strong>¿Buscas precios de segunda mano?</strong> Consulta nuestro <a href="/precio-segunda-mano">análisis de precios y depreciación de Porsche de ocasión</a>, o calcula tu cuota mensual con la <a href="/financiacion">calculadora de financiación</a>.
+            </div>
+        </section>
     </div>
 
     <script>
