@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>¿Cuál es el Porsche más rápido y más potente? Comparador de prestaciones | Mejor Imposible</title>
     <meta name="description" content="Compara la potencia, el 0-100 km/h y la personalidad de cada Porsche: descubre cuál es el modelo más rápido, el más potente y cuál encaja mejor con tu forma de conducir, circuito, viaje o día a día.">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
-            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
-            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
-            --dark-text: #e1e1e1;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --hairline: #e5e5e5;
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
         .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
         .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
         .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
@@ -22,8 +25,23 @@
         .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
         .header-title img { height: 40px; margin-right: 15px; }
         .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
-        .card { border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); transition: background-color 0.3s, color 0.3s; }
-        .theme-light .card { background-color: var(--light-card-bg); }
+        .site-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .card { border-radius: 4px; padding: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); border: 1px solid var(--hairline); }
         .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
         .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
         .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
@@ -126,17 +144,19 @@
 </head>
 <body class="theme-light">
 
-    <div class="dashboard-container">
-        <header class="header">
-            <div class="header-title">
-                <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Comparador de prestaciones y sensaciones</span>
-            </div>
-            <div class="header-controls">
-                <button id="theme-toggle">Tema oscuro</button>
-            </div>
-        </header>
+    <header class="site-header">
+        <a href="/" class="site-logo">
+            <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+            <span class="site-logo-text">mejor <span>imposible</span></span>
+        </a>
+        <nav class="site-nav">
+            <a href="/#tools">Herramientas</a>
+            <a href="/#philosophy">Filosofía</a>
+            <a href="/concesionarios">Concesionarios</a>
+        </nav>
+    </header>
 
+    <div class="dashboard-container">
         <div class="intro-block">
             <h1>¿Cuál es el Porsche más rápido y más potente?</h1>
             <p>En línea recta, el eléctrico Taycan Turbo S manda con 2,8 segundos de 0 a 100 km/h y 761 CV. En circuito, la corona es de los modelos atmosféricos y ligeros: el 911 GT3 RS y el 718 Cayman GT4 RS. Compara potencia, peso, 0-100 km/h y personalidad de cada modelo con el selector de abajo.</p>
@@ -213,6 +233,12 @@
             </div>
         </section>
     </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
     <script>
     const personalityData = {
@@ -330,13 +356,6 @@
         }
 
         function setupEventListeners() {
-            document.getElementById('theme-toggle').addEventListener('click', () => {
-                document.body.classList.toggle('theme-light');
-                document.body.classList.toggle('theme-dark');
-                document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
-                renderPersonalityChart();
-            });
-
             selectors.forEach(selector => {
                 selector.addEventListener('change', renderPersonalityChart);
             });

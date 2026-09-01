@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Porsche - Comparador Visual de Dimensiones</title>
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
-            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
-            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
-            --dark-text: #e1e1e1;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --hairline: #e5e5e5;
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
         .theme-light { background-color: var(--light-bg); color: var(--light-text); }
         .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
         .container { max-width: 1400px; margin: auto; padding: 20px; }
@@ -20,8 +23,23 @@
         .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
         .header-title img { height: 40px; margin-right: 15px; }
         .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
-        .card { border-radius: 8px; padding: 20px; margin-bottom: 20px; transition: background-color 0.3s, color 0.3s; }
-        .theme-light .card { background-color: var(--light-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
+        .site-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100;
+        }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .card { border-radius: 4px; padding: 20px; margin-bottom: 20px; transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); border: 1px solid var(--hairline); }
         .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
         .card-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
 
@@ -51,17 +69,19 @@
     </style>
 </head>
 <body class="theme-light">
-    <div class="container">
-        <header class="header">
-            <div class="header-title">
-                <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
-                <span>Comparador Visual de Dimensiones</span>
-            </div>
-            <div class="header-controls">
-                <button id="theme-toggle">Tema oscuro</button>
-            </div>
-        </header>
+    <header class="site-header">
+        <a href="/" class="site-logo">
+            <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+            <span class="site-logo-text">mejor <span>imposible</span></span>
+        </a>
+        <nav class="site-nav">
+            <a href="/#tools">Herramientas</a>
+            <a href="/#philosophy">Filosofía</a>
+            <a href="/concesionarios">Concesionarios</a>
+        </nav>
+    </header>
 
+    <div class="container">
         <div class="card">
             <h2 class="card-title">1. Selecciona los modelos a comparar</h2>
             <div class="selector-grid">
@@ -128,6 +148,12 @@
             </table>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
     <script>
     const carData = {
@@ -226,12 +252,6 @@
 
         selectA.addEventListener('change', updateComparison);
         selectB.addEventListener('change', updateComparison);
-
-        document.getElementById('theme-toggle').addEventListener('click', () => {
-            document.body.classList.toggle('theme-light');
-            document.body.classList.toggle('theme-dark');
-            document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
-        });
 
         populateSelectors();
         updateComparison();
