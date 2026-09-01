@@ -25,9 +25,12 @@
         .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
         .header-title img { height: 40px; margin-right: 15px; }
         .site-header {
-            display: flex; justify-content: space-between; align-items: center;
             padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
-            position: sticky; top: 0; z-index: 100;
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1400px; margin: 0 auto;
         }
         .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
         .site-logo-mark { height: 26px; width: auto; display: block; }
@@ -86,20 +89,42 @@
             .featured-news { grid-template-columns: 1fr; }
             .featured-news h2 { font-size: 1.5rem; }
         }
+
+        /* Weekly summary (auto-generated from RSS) */
+        .weekly-summary {
+            background-color: var(--light-card-bg);
+            border: 1px solid var(--hairline);
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+        }
+        .theme-dark .weekly-summary { background-color: var(--dark-card-bg); }
+        .weekly-summary .eyebrow {
+            display: block; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+            font-weight: 600; color: var(--porsche-red); margin-bottom: 10px;
+        }
+        .weekly-summary h2 { margin: 0 0 12px 0; font-size: 1.5rem; }
+        .weekly-summary p { margin: 0 0 15px 0; line-height: 1.6; opacity: 0.85; }
+        .weekly-summary ul { margin: 0; padding-left: 20px; }
+        .weekly-summary li { margin-bottom: 8px; line-height: 1.5; }
+        .weekly-summary li a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .weekly-summary li a:hover { text-decoration: underline; }
     </style>
 </head>
 <body class="theme-light">
 
     <header class="site-header">
-        <a href="/" class="site-logo">
-            <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-            <span class="site-logo-text">mejor <span>imposible</span></span>
-        </a>
-        <nav class="site-nav">
-            <a href="/#tools">Herramientas</a>
-            <a href="/#philosophy">Filosofía</a>
-            <a href="/concesionarios">Concesionarios</a>
-        </nav>
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/#philosophy">Filosofía</a>
+                <a href="/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
@@ -113,7 +138,12 @@
         </div>
 		
         <main id="news-container">
-			
+            <!-- RSS-SUMMARY:START -->
+            <!-- RSS-SUMMARY:END -->
+            <div class="news-grid">
+                <!-- RSS-NEWS-CARDS:START -->
+                <!-- RSS-NEWS-CARDS:END -->
+            </div>
         </main>
 		
 		<main id="publicaciones">
@@ -167,11 +197,10 @@
 
             // --- Lógica para mostrar/ocultar las tarjetas ---
             newsCards.forEach(card => {
-                // Encuentra el div 'source' dentro de cada tarjeta y obtiene su texto
-                const cardSource = card.querySelector('.source').textContent.trim();
+                const cardCategory = card.dataset.category || '';
 
                 // Comprueba si la tarjeta debe mostrarse
-                if (filterValue === 'all' || cardSource === filterValue) {
+                if (filterValue === 'all' || cardCategory === filterValue) {
                     card.style.display = 'block'; // Muestra la tarjeta
                 } else {
                     card.style.display = 'none'; // Oculta la tarjeta

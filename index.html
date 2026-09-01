@@ -32,16 +32,21 @@
 
         /* --- Header --- */
         .main-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 26px 32px;
             position: fixed;
             top: 0; left: 0;
             width: 100%;
             z-index: 100;
             color: #fff;
+            box-sizing: border-box;
             transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1440px;
+            margin: 0 auto;
         }
         .main-header.is-scrolled {
             background-color: rgba(255,255,255,0.96);
@@ -304,16 +309,19 @@
 <body>
 
     <header class="main-header" id="site-header">
-        <a href="/" class="logo">
-            <img src="img/logo_mi_inverso_transparent.png" alt="" class="logo-mark" id="logo-mark">
-            <span class="logo-text">mejor <span>imposible</span></span>
-        </a>
-        <nav class="main-nav">
-            <a href="#tools">Herramientas</a>
-            <a href="#philosophy">Filosofía</a>
-            <a href="/concesionarios">Concesionarios</a>
-        </nav>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="img/logo_mi_inverso_transparent.png" alt="" class="logo-mark" id="logo-mark">
+                <span class="logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="main-nav">
+                <a href="#tools">Herramientas</a>
+                <a href="#philosophy">Filosofía</a>
+                <a href="/tendencias">Tendencias</a>
+                <a href="/concesionarios">Concesionarios</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+        </div>
     </header>
 
     <section class="hero-section">

@@ -30,9 +30,12 @@
         .header-title img { height: 40px; margin-right: 15px; }
         .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
         .site-header {
-            display: flex; justify-content: space-between; align-items: center;
             padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
-            position: sticky; top: 0; z-index: 100;
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1200px; margin: 0 auto;
         }
         .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
         .site-logo-mark { height: 26px; width: auto; display: block; }
@@ -115,15 +118,17 @@
 <body class="theme-light">
 
     <header class="site-header">
-        <a href="/" class="site-logo">
-            <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-            <span class="site-logo-text">mejor <span>imposible</span></span>
-        </a>
-        <nav class="site-nav">
-            <a href="/#tools">Herramientas</a>
-            <a href="/#philosophy">Filosofía</a>
-            <a href="/concesionarios">Concesionarios</a>
-        </nav>
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/#philosophy">Filosofía</a>
+                <a href="/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
     </header>
 
     <div class="dashboard-container">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.name }} | Mejor Imposible</title>
+    <title>{{ page.dealer_name }} | Mejor Imposible</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +29,12 @@
         .header-title img { height: 40px; margin-right: 15px; }
         .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
         .site-header {
-            display: flex; justify-content: space-between; align-items: center;
             padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
-            position: sticky; top: 0; z-index: 100;
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 900px; margin: 0 auto;
         }
         .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
         .site-logo-mark { height: 26px; width: auto; display: block; }
@@ -85,18 +88,20 @@
         .social-note { font-size: 0.85em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
     </style>
 </head>
-<body class="theme-light" data-dealer-name="{{ page.name }}" data-dealer-address="{{ page.address }}">
+<body class="theme-light" data-dealer-name="{{ page.dealer_name }}" data-dealer-address="{{ page.address }}">
 
     <header class="site-header">
-        <a href="/" class="site-logo">
-            <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-            <span class="site-logo-text">mejor <span>imposible</span></span>
-        </a>
-        <nav class="site-nav">
-            <a href="/#tools">Herramientas</a>
-            <a href="/#philosophy">Filosofía</a>
-            <a href="/concesionarios">Concesionarios</a>
-        </nav>
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/#philosophy">Filosofía</a>
+                <a href="/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
     </header>
 
     <div class="dashboard-container">
@@ -106,7 +111,7 @@
 
         <main>
             <section class="card dealer-hero">
-                <h1>{{ page.name }}</h1>
+                <h1>{{ page.dealer_name }}</h1>
                 <div class="dealer-rating">
                     <span id="dealer-stars" class="stars"></span>
                     <span class="score">{{ page.rating }}</span>
