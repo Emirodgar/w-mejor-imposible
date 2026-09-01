@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche - Directorio de centros oficiales</title>
+    <meta name="description" content="Dónde comprar un Porsche en España: directorio con mapa y buscador de los 21 concesionarios oficiales, y respuestas a las dudas más habituales sobre la compra en la red oficial.">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +101,104 @@
             .directory-layout { grid-template-columns: 1fr; }
             #map { height: 400px; }
         }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuántos concesionarios oficiales de Porsche hay en España?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Actualmente hay 21 centros oficiales repartidos por todas las comunidades autónomas, desde Madrid y Barcelona hasta Canarias y Baleares. Puedes localizar el más cercano a ti con el buscador y el mapa de esta página."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es lo mismo comprar en un concesionario oficial que en un vendedor multimarca o un particular?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Solo el concesionario oficial ofrece garantía de fábrica completa, historial de mantenimiento verificado en los sistemas de Porsche y, en el caso de segunda mano, la certificación Porsche Approved (inspección de 111 puntos y garantía adicional). Comprar a un particular o a un multimarca puede salir más barato, pero sin esas garantías."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo configurar y comprar un Porsche online y recogerlo en el concesionario?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. El configurador oficial de Porsche permite personalizar el coche al detalle y solicitar una oferta, pero la compra, la financiación y la entrega siempre se formalizan a través de un concesionario oficial, que también gestiona la matriculación y el IVA."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Varían los precios de un Porsche entre concesionarios?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El PVP recomendado es el mismo en toda España, pero el precio final puede variar según los descuentos, las campañas de financiación o el valor que ofrezcan por tu coche de entrada en cada centro. Merece la pena pedir presupuesto en más de un concesionario si tienes varios cerca."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo comprar en un concesionario de otra provincia o comunidad autónoma?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, la red es nacional y no hay ninguna restricción territorial: puedes comprar en cualquier concesionario oficial español, aunque no sea el más cercano a tu domicilio, y después matricularlo en tu provincia."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es más barato comprar un Porsche en Alemania y traerlo a España?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A veces sí, sobre todo en modelos con alta demanda en España, pero hay que sumar el transporte, la homologación y la matriculación aquí, además de no contar con la red de garantía local durante el proceso de importación. Esto reduce bastante el ahorro real frente a comprarlo en un concesionario español."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué es Porsche Approved y en qué concesionarios se puede comprar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es el programa oficial de vehículos de ocasión certificada de Porsche: cada coche pasa una inspección de 111 puntos y suma una garantía adicional a su historial ya verificado. Se vende exclusivamente en la red de concesionarios oficiales, no en el mercado de segunda mano general."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Necesito cita previa para visitar un concesionario Porsche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No es obligatorio para pasar a ver el showroom, pero si quieres hacer una prueba de conducción o que te atienda un asesor con calma (financiación, extras, valoración de tu coche de entrada), es recomendable pedir cita a través del propio concesionario."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
 
@@ -117,6 +215,11 @@
     </header>
 
     <div class="dashboard-container">
+        <div class="intro-block">
+            <h1>¿Dónde comprar un Porsche en España? Directorio de concesionarios oficiales</h1>
+            <p>Un Porsche nuevo, o de ocasión certificada Porsche Approved, solo puede comprarse a través de la red oficial: 21 centros repartidos por toda España, cada uno con showroom, taller especializado y servicio de venta y postventa. Busca el más cercano a ti en el mapa y resuelve las dudas más habituales sobre cómo funciona la compra en la red oficial.</p>
+        </div>
+
         <main>
             <div class="card">
                 <div class="filter-container">
@@ -132,6 +235,55 @@
                 </div>
             </div>
         </main>
+
+        <section class="card content-section" style="margin-top: 20px;">
+            <h2>¿Dónde comprar un Porsche en España?</h2>
+            <p>En España, un Porsche nuevo solo se vende a través de la red de concesionarios oficiales de la marca. Es también el único canal donde encontrarás vehículos de ocasión certificados Porsche Approved, con inspección de 111 puntos y garantía adicional. El resto del mercado de segunda mano (multimarcas, particulares) puede ofrecer precios más bajos, pero sin esas garantías ni el historial de mantenimiento verificado por Porsche.</p>
+
+            <h3>Concesionario oficial vs. multimarca o particular</h3>
+            <p>Comprar en un concesionario oficial te da garantía de fábrica, financiación propia de Porsche Financial Services y un historial de revisiones registrado en los sistemas de la marca, algo que ni un multimarca ni un particular pueden ofrecer. A cambio, es habitual encontrar precios algo más ajustados fuera de la red oficial, sobre todo en coches con más años.</p>
+
+            <h3>¿Y si no tengo un concesionario cerca?</h3>
+            <p>La red oficial es nacional: puedes comprar en cualquiera de los 21 centros de este directorio, no solo en el más próximo a tu domicilio, y matricular después el coche en tu provincia. Muchos compradores piden presupuesto en dos o tres centros distintos antes de decidir.</p>
+
+            <h2 style="margin-top: 30px;">Preguntas frecuentes sobre dónde comprar un Porsche</h2>
+            <details class="faq-item" open>
+                <summary>¿Cuántos concesionarios oficiales de Porsche hay en España?</summary>
+                <p>Actualmente hay 21 centros oficiales repartidos por todas las comunidades autónomas, desde Madrid y Barcelona hasta Canarias y Baleares. Puedes localizar el más cercano a ti con el buscador y el mapa de esta página.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es lo mismo comprar en un concesionario oficial que en un vendedor multimarca o un particular?</summary>
+                <p>No. Solo el concesionario oficial ofrece garantía de fábrica completa, historial de mantenimiento verificado en los sistemas de Porsche y, en el caso de segunda mano, la certificación Porsche Approved (inspección de 111 puntos y garantía adicional). Comprar a un particular o a un multimarca puede salir más barato, pero sin esas garantías.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Puedo configurar y comprar un Porsche online y recogerlo en el concesionario?</summary>
+                <p>Sí. El configurador oficial de Porsche permite personalizar el coche al detalle y solicitar una oferta, pero la compra, la financiación y la entrega siempre se formalizan a través de un concesionario oficial, que también gestiona la matriculación y el IVA.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Varían los precios de un Porsche entre concesionarios?</summary>
+                <p>El PVP recomendado es el mismo en toda España, pero el precio final puede variar según los descuentos, las campañas de financiación o el valor que ofrezcan por tu coche de entrada en cada centro. Merece la pena pedir presupuesto en más de un concesionario si tienes varios cerca.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Puedo comprar en un concesionario de otra provincia o comunidad autónoma?</summary>
+                <p>Sí, la red es nacional y no hay ninguna restricción territorial: puedes comprar en cualquier concesionario oficial español, aunque no sea el más cercano a tu domicilio, y después matricularlo en tu provincia.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es más barato comprar un Porsche en Alemania y traerlo a España?</summary>
+                <p>A veces sí, sobre todo en modelos con alta demanda en España, pero hay que sumar el transporte, la homologación y la matriculación aquí, además de no contar con la red de garantía local durante el proceso de importación. Esto reduce bastante el ahorro real frente a comprarlo en un concesionario español.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué es Porsche Approved y en qué concesionarios se puede comprar?</summary>
+                <p>Es el programa oficial de vehículos de ocasión certificada de Porsche: cada coche pasa una inspección de 111 puntos y suma una garantía adicional a su historial ya verificado. Se vende exclusivamente en la red de concesionarios oficiales, no en el mercado de segunda mano general.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Necesito cita previa para visitar un concesionario Porsche?</summary>
+                <p>No es obligatorio para pasar a ver el showroom, pero si quieres hacer una prueba de conducción o que te atienda un asesor con calma (financiación, extras, valoración de tu coche de entrada), es recomendable pedir cita a través del propio concesionario.</p>
+            </details>
+
+            <div class="cross-link-box">
+                <strong>¿Aún no sabes qué Porsche comprar?</strong> Prueba el <a href="/asistente">asistente de recomendación</a>, calcula tu cuota con la <a href="/financiacion">calculadora de financiación</a> o compara <a href="/comprar-renting-leasing">comprar, renting o leasing</a> antes de visitar el concesionario.
+            </div>
+        </section>
     </div>
 
     <footer class="site-footer">
