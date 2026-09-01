@@ -8,19 +8,26 @@
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
-            --porsche-grey: #464C47; --dark-bg: #1d2125; --dark-card-bg: #282c34; --dark-text: #e1e1e1;
+            --porsche-grey: #464C47; --light-bg: #f4f5f7; --light-card-bg: #ffffff;
+            --light-text: #172b4d; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1;
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--dark-bg); color: var(--dark-text); }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
         .container { max-width: 1400px; margin: auto; padding: 20px; }
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
         .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
         .header-title img { height: 40px; margin-right: 15px; }
-        .card { background-color: var(--dark-card-bg); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .card { border-radius: 8px; padding: 20px; margin-bottom: 20px; transition: background-color 0.3s, color 0.3s; }
+        .theme-light .card { background-color: var(--light-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
         .card-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
 
         .selector-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
         .selector-column label { display: block; margin-bottom: 5px; font-size: 14px; font-weight: bold; }
-        .selector-column select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--porsche-grey); background-color: var(--dark-bg); color: inherit; font-size: 16px; }
+        .selector-column select { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--porsche-grey); background-color: inherit; color: inherit; font-size: 16px; }
         .selector-column .legend { display: flex; align-items: center; margin-top: 10px; }
         .selector-column .legend-box { width: 20px; height: 20px; margin-right: 10px; border-radius: 4px; }
         #legend-a { background-color: var(--porsche-grey); }
@@ -43,12 +50,15 @@
         }
     </style>
 </head>
-<body>
+<body class="theme-light">
     <div class="container">
         <header class="header">
             <div class="header-title">
                 <a href="https://mejorimposible.es"><img src="img/logo.png" alt="Porsche"></a>
                 <span>Comparador Visual de Dimensiones</span>
+            </div>
+            <div class="header-controls">
+                <button id="theme-toggle">Tema oscuro</button>
             </div>
         </header>
 
@@ -216,6 +226,12 @@
 
         selectA.addEventListener('change', updateComparison);
         selectB.addEventListener('change', updateComparison);
+
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('theme-light');
+            document.body.classList.toggle('theme-dark');
+            document.getElementById('theme-toggle').textContent = document.body.classList.contains('theme-dark') ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro';
+        });
 
         populateSelectors();
         updateComparison();
