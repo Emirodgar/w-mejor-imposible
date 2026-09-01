@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu guía definitiva para comprar un Porsche - Mejor Imposible</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
-            --porsche-grey: #464C47; --dark-bg: #1d2125; --dark-text: #e1e1e1;
-            --card-bg: #282c34;
+            --porsche-grey: #6e6e6e; --ink: #1a1a1a; --hairline: #e5e5e5;
+            --bg: #ffffff; --bg-alt: #f6f6f6;
         }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            background-color: var(--dark-bg);
-            color: var(--dark-text);
+            background-color: var(--bg);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
         }
+        a { color: inherit; }
         .container {
-            max-width: 1600px;
+            max-width: 1440px;
             margin: auto;
-            padding: 0 20px;
+            padding: 0 32px;
         }
 
         /* --- Header --- */
@@ -28,140 +35,302 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            position: absolute;
-            width: calc(100% - 40px);
-            z-index: 10;
+            padding: 26px 32px;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            z-index: 100;
+            color: #fff;
+            transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
         }
-        .logo { font-size: 24px; font-weight: bold; }
-        .logo span { color: var(--porsche-red); }
-        .main-nav a { color: white; text-decoration: none; margin-left: 25px; font-weight: 500; }
+        .main-header.is-scrolled {
+            background-color: rgba(255,255,255,0.96);
+            color: var(--ink);
+            padding: 16px 32px;
+            box-shadow: 0 1px 0 var(--hairline);
+            backdrop-filter: saturate(180%) blur(8px);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .main-header.is-scrolled .logo { opacity: 1; pointer-events: auto; }
+        .logo-text span { color: var(--porsche-red); }
+        .logo-mark {
+            height: 30px;
+            width: 30px;
+            object-fit: contain;
+        }
+        .main-nav { display: flex; align-items: center; gap: 36px; }
+        .main-nav a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, opacity 0.2s ease;
+            white-space: nowrap;
+        }
+        .main-nav a:hover { border-bottom-color: currentColor; }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid currentColor;
+            color: inherit;
+            width: 38px; height: 38px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+        }
 
         /* --- Hero Section --- */
         .hero-section {
             height: 100vh;
-            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://a.storyblok.com/f/338913/760x1350/d3f592836f/kw15-ww-there-is-no-substitue-mobile.jpg/m/759x0/filters:format(webp):quality(85)' );
+            min-height: 560px;
+            background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.55)), url('img/porschefondo.png');
             background-size: cover;
-            background-position: center;
+            background-position: center 60%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-align: left;
             color: white;
+        }
+        .hero-content { max-width: 720px; padding: 0 32px 110px; }
+        .hero-logo-link { display: inline-block; margin-bottom: 36px; }
+        .hero-logo { display: block; height: 130px; width: auto; }
+        .hero-kicker {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--porsche-gold);
+            margin-bottom: 18px;
         }
         .hero-content h1 {
-            font-size: 4rem;
+            font-size: 3.6rem;
             margin: 0;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-weight: 300;
+            letter-spacing: 0.2px;
+            line-height: 1.1;
         }
         .hero-content p {
-            font-size: 1.5rem;
-            margin: 10px 0 30px 0;
-            opacity: 0.9;
+            font-size: 1.15rem;
+            font-weight: 300;
+            margin: 20px 0 36px 0;
+            opacity: 0.92;
+            max-width: 520px;
         }
         .cta-button {
-            background-color: var(--porsche-red);
+            display: inline-block;
+            background-color: transparent;
             color: white;
-            padding: 15px 35px;
+            border: 1px solid rgba(255,255,255,0.75);
+            padding: 14px 30px;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: transform 0.2s;
+            border-radius: 2px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
         }
-        .cta-button:hover { transform: scale(1.05); }
+        .cta-button:hover { background-color: #fff; color: var(--ink); border-color: #fff; }
+        .cta-button.solid {
+            background-color: var(--ink);
+            border-color: var(--ink);
+            color: #fff;
+        }
+        .cta-button.solid:hover { background-color: var(--porsche-red); border-color: var(--porsche-red); color: #fff; }
 
         /* --- Intro Section --- */
         .intro-section {
-            padding: 100px 20px;
+            padding: 130px 20px 110px;
             text-align: center;
-            max-width: 900px;
+            max-width: 780px;
             margin: auto;
         }
-        .intro-section h2 { font-size: 2.5rem; margin-bottom: 20px; }
-        .intro-section p { font-size: 1.2rem; line-height: 1.7; opacity: 0.8; }
+        .intro-section .eyebrow {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--porsche-red);
+            margin-bottom: 18px;
+        }
+        .intro-section h2 { font-size: 2.4rem; font-weight: 300; margin: 0 0 24px 0; line-height: 1.25; }
+        .intro-section p { font-size: 1.1rem; line-height: 1.8; color: var(--porsche-grey); font-weight: 400; }
 
         /* --- Tools Section --- */
-        .tools-section { padding: 50px 0; }
-        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+        .tools-section { padding: 40px 0 130px; background-color: var(--bg-alt); padding-top: 90px; }
+        .section-title-wrap { text-align: center; margin-bottom: 56px; }
+        .section-title-wrap .eyebrow {
+            display: block; font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+            font-weight: 600; color: var(--porsche-red); margin-bottom: 14px;
+        }
+        .section-title { font-size: 2.2rem; font-weight: 300; margin: 0; }
+
+        .segment-nav {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+            margin: 0 0 70px;
+        }
+        .segment-nav a {
+            font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+            text-decoration: none; color: var(--ink); background-color: #fff;
+            border: 1px solid var(--hairline); border-radius: 30px; padding: 11px 20px;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+        .segment-nav a:hover { border-color: var(--ink); }
+
+        .tool-group { margin-bottom: 68px; scroll-margin-top: 100px; }
+        .tool-group:last-child { margin-bottom: 0; }
+        .tool-group-header { margin-bottom: 28px; border-bottom: 1px solid var(--hairline); padding-bottom: 18px; }
+        .tool-group-header h3 { font-size: 1.4rem; font-weight: 600; margin: 0 0 6px; }
+        .tool-group-header p { margin: 0; color: var(--porsche-grey); font-size: 0.95rem; }
+
         .tools-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
         }
         .tool-card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
+            background-color: #fff;
+            border: 1px solid var(--hairline);
+            border-radius: 3px;
             overflow: hidden;
             text-decoration: none;
-            color: var(--dark-text);
+            color: var(--ink);
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
-        .tool-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
-        .tool-card img { width: 100%; height: 200px; object-fit: cover; }
-        .tool-card-content { padding: 20px; flex-grow: 1; }
-        .tool-card-content h3 { margin: 0 0 10px 0; font-size: 1.4rem; color: var(--porsche-gold); }
-        .tool-card-content p { margin: 0; line-height: 1.5; opacity: 0.8; }
+        .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: transparent; }
+        .tool-card .tool-card-media { position: relative; overflow: hidden; }
+        .tool-card img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+        .tool-card:hover img { transform: scale(1.05); }
+        .tool-card-content { padding: 26px 26px 28px; flex-grow: 1; display: flex; flex-direction: column; }
+        .tool-card-content h3 { margin: 0 0 10px 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.2px; }
+        .tool-card-content p { margin: 0 0 18px 0; line-height: 1.6; color: var(--porsche-grey); font-size: 0.95rem; flex-grow: 1; }
+        .tool-card-arrow {
+            font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+            color: var(--ink); display: inline-flex; align-items: center; gap: 8px;
+        }
+        .tool-card-arrow span { transition: transform 0.25s ease; }
+        .tool-card:hover .tool-card-arrow span { transform: translateX(5px); }
 
         /* --- Philosophy Section --- */
         .philosophy-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            gap: 50px;
-            padding: 100px 20px;
-            background-color: var(--card-bg);
+            padding: 100px 32px;
+            background-color: var(--bg);
+            border-top: 1px solid var(--hairline);
+            border-bottom: 1px solid var(--hairline);
         }
-        .philosophy-section img { width: 100%; border-radius: 8px; }
+        .philosophy-section .container {
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+        }
+        .philosophy-section .eyebrow {
+            display: block; font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+            font-weight: 600; color: var(--porsche-red); margin-bottom: 28px;
+        }
+        .philosophy-media { margin-bottom: 32px; }
+        .philosophy-media img {
+            width: 140px; height: 140px; object-fit: cover; border-radius: 50%;
+            border: 1px solid var(--hairline); padding: 6px;
+        }
+        .philosophy-text { max-width: 680px; }
         .philosophy-text blockquote {
-            font-size: 2rem;
-            border-left: 4px solid var(--porsche-red);
-            padding-left: 30px;
+            font-size: 1.6rem;
+            font-weight: 300;
             margin: 0;
-            font-style: italic;
+            line-height: 1.5;
+            color: var(--ink);
         }
-        .philosophy-text cite { display: block; margin-top: 20px; font-size: 1.2rem; text-align: right; }
+        .philosophy-text cite {
+            display: block; margin-top: 20px; font-size: 0.9rem;
+            font-style: normal; color: var(--porsche-grey); letter-spacing: 0.5px;
+        }
+
+        /* --- CTA Final Section --- */
+        .cta-final {
+            padding: 110px 20px;
+            text-align: center;
+            background-color: var(--ink);
+            color: white;
+        }
+        .cta-final h2 { font-size: 2rem; font-weight: 300; padding-bottom: 32px; margin: 0; }
 
         /* --- Footer --- */
         .main-footer {
             text-align: center;
-            padding: 40px 20px;
-            border-top: 1px solid var(--porsche-grey);
-            font-size: 0.9rem;
-            opacity: 0.7;
+            padding: 50px 20px;
+            border-top: 1px solid var(--hairline);
+            font-size: 0.85rem;
+            color: var(--porsche-grey);
+            background-color: var(--bg);
         }
+        .main-footer p { margin: 6px 0; }
 
+        @media (max-width: 900px) {
+            .philosophy-section { padding: 80px 24px; }
+        }
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.5rem; }
-            .hero-content p { font-size: 1.2rem; }
-            .philosophy-section { grid-template-columns: 1fr; }
+            .main-nav { display: none; }
+            .nav-toggle { display: flex; }
+            .hero-content h1 { font-size: 2.4rem; }
+            .hero-content p { font-size: 1.05rem; }
+            .hero-content { padding-bottom: 70px; }
+            .hero-logo { height: 90px; }
+            .hero-logo-link { margin-bottom: 24px; }
+            .intro-section { padding: 90px 20px 70px; }
+            .intro-section h2 { font-size: 1.9rem; }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="logo">mejor<span>imposible</span>.es</div>
+    <header class="main-header" id="site-header">
+        <a href="/" class="logo">
+            <img src="img/logo_mi_inverso_transparent.png" alt="" class="logo-mark" id="logo-mark">
+            <span class="logo-text">mejor <span>imposible</span></span>
+        </a>
         <nav class="main-nav">
-            <!-- Enlaces a las secciones de la página -->
             <a href="#tools">Herramientas</a>
-            <!--<a href="#philosophy">Filosofía</a>-->
+            <a href="#philosophy">Filosofía</a>
+            <a href="/concesionarios">Concesionarios</a>
         </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">&#9776;</button>
     </header>
 
     <section class="hero-section">
         <div class="hero-content">
-            <h1>El corazón sigue al coche. </h1>
-            <p>Hay coches que te llevan. Un Porsche te transforma.</p>
+            <a href="/" class="hero-logo-link" aria-label="mejor imposible.es">
+                <img src="img/logo_mi_inverso_transparent.png" alt="mejor imposible.es" class="hero-logo">
+            </a>
+            <span class="hero-kicker">Guía Porsche</span>
+            <h1>El corazón sigue al coche.</h1>
+            <p>Hay coches que te llevan. Un Porsche te transforma. Descubre cuál es el tuyo con datos, no solo con pasión.</p>
             <a href="#intro" class="cta-button">Descubre cómo elegir el tuyo</a>
         </div>
     </section>
 
     <section id="intro" class="intro-section">
         <div class="container">
+            <span class="eyebrow">Nuestra misión</span>
             <h2>No compres un Porsche. Invierte en uno.</h2>
             <p>Conducir un Porsche es una experiencia que redefine la conexión entre el hombre y la máquina. Pero elegir el modelo correcto es un arte que requiere conocimiento. En <strong>mejorimposible.es</strong> te ofrecemos la información más completa y las herramientas más potentes para que tu decisión no sea solo pasional, sino también la más inteligente. Aquí empieza tu viaje hacia el Porsche perfecto.</p>
         </div>
@@ -169,127 +338,214 @@
 
     <section id="tools" class="tools-section">
         <div class="container">
-            <h2 class="section-title">Tus herramientas de análisis</h2>
-            <div class="tools-grid">
-                <!-- Enlaces a las páginas que hemos creado -->
-                <a href="/asistente" class="tool-card">
-                    <img src="img/para-mi.jpg" alt="Asistente de recomendación">
-                    <div class="tool-card-content">
-                        <h3>¿Qué Porsche es para mí?</h3>
-                        <p>Responde 5 preguntas sobre tu presupuesto y tu forma de conducir y descubre tus modelos recomendados.</p>
-                    </div>
-                </a>
-                <a href="/fallos" class="tool-card">
-                    <img src="img/fiabilidad.png" alt="Análisis de Fiabilidad">
-                    <div class="tool-card-content">
-                        <h3>Análisis de fiabilidad</h3>
-                        <p>Descubre los fallos comunes, costes de reparación y el índice de fiabilidad de cada modelo y generación.</p>
-                    </div>
-                </a>
-                <a href="/precios" class="tool-card">
-                    <img src="img/concesionario.png" alt="Evolución de Precios de Lanzamiento">
-                    <div class="tool-card-content">
-                        <h3>Precios de lanzamiento (PVP)</h3>
-                        <p>Sigue la evolución del precio oficial de cada generación y descubre cuánto ha subido cada modelo con los años.</p>
-                    </div>
-                </a>
-                <a href="/precio-segunda-mano" class="tool-card">
-                    <img src="img/depreciacion.png" alt="Análisis de Precios y Depreciación">
-                    <div class="tool-card-content">
-                        <h3>Precios y depreciación</h3>
-                        <p>Analiza la evolución de precios de segunda mano y descubre qué modelos son la mejor inversión.</p>
-                    </div>
-                </a>
-                <a href="/comparativa-visual" class="tool-card">
-                    <img src="img/porschefondo.png" alt="Comparador Visual de Dimensiones">
-                    <div class="tool-card-content">
-                        <h3>Comparador visual de dimensiones</h3>
-                        <p>Compara la silueta, las medidas y las diferencias exactas entre dos modelos, lado a lado.</p>
-                    </div>
-                </a>
-                <a href="/comparador" class="tool-card">
-                    <img src="img/sensaciones.png" alt="Comparador de Prestaciones">
-                    <div class="tool-card-content">
-                        <h3>Comparador de sensaciones</h3>
-                        <p>¿Circuito, viaje o día a día? Encuentra el Porsche con la personalidad que encaja contigo.</p>
-                    </div>
-                </a>
-                <a href="/analisis-compra" class="tool-card">
-                    <img src="img/opciones.png" alt="Análisis de Opciones">
-                    <div class="tool-card-content">
-                        <h3>Guía de opciones</h3>
-                        <p>Aprende qué extras son imprescindibles para el disfrute y el valor de reventa, y cuáles evitar.</p>
-                    </div>
-                </a>
-                <a href="/coste-real" class="tool-card">
-                    <img src="img/coste.png" alt="Coste Real de Propiedad">
-                    <div class="tool-card-content">
-                        <h3>Coste real de propiedad</h3>
-                        <p>Calcula el gasto total a 5 años: depreciación, mantenimiento, seguro y más. Sin sorpresas.</p>
-                    </div>
-                </a>
-                <a href="/financiacion" class="tool-card">
-                    <img src="img/financiacion.jpg" alt="Calculadora de financiación">
-                    <div class="tool-card-content">
-                        <h3>Calculadora de financiación</h3>
-                        <p>Simula tu cuota mensual, los intereses totales y compara financiar frente a pagar al contado.</p>
-                    </div>
-                </a>
-                <a href="/comprar-renting-leasing" class="tool-card">
-                    <img src="img/concesionario.png" alt="Comparativa comprar, renting o leasing">
-                    <div class="tool-card-content">
-                        <h3>¿Comprar, renting o leasing?</h3>
-                        <p>Compara la propiedad, la fiscalidad y el coste total de cada opción con un simulador y tus propios números.</p>
-                    </div>
-                </a>
-                <a href="/checklist-inspecciones-segunda-mano" class="tool-card">
-                    <img src="img/inspeccion.png" alt="Guía de Inspección">
-                    <div class="tool-card-content">
-                        <h3>Guía de inspección</h3>
-                        <p>Tu checklist interactiva para inspeccionar un Porsche de segunda mano como un profesional.</p>
-                    </div>
-                </a>
-                 <a href="/menciones" class="tool-card">
-                    <img src="img/pulso.png" alt="Dashboard Social">
-                    <div class="tool-card-content">
-                        <h3>Pulso de la marca</h3>
-                        <p>Monitoriza en tiempo real lo que se dice de Porsche en redes sociales. Sentimiento y tendencias.</p>
-                    </div>
-                </a>
-                 <a href="/tendencias" class="tool-card">
-                    <img src="img/tendencias.png" alt="Collage de Tendencias">
-                    <div class="tool-card-content">
-                        <h3>Tendencias</h3>
-                        <p>Una galería visual inmersiva con las mejores fotos y vídeos de Porsche en redes sociales.</p>
-                    </div>
-                </a>
+            <div class="section-title-wrap">
+                <span class="eyebrow">Herramientas</span>
+                <h2 class="section-title">Tus herramientas de análisis</h2>
+            </div>
+
+            <nav class="segment-nav" aria-label="Categorías de herramientas">
+                <a href="#elige">Elige tu Porsche</a>
+                <a href="#analiza">Precio y coste</a>
+                <a href="#antes-de-comprar">Antes de comprar</a>
+                <a href="#comunidad">Comunidad y tendencias</a>
+            </nav>
+
+            <div id="elige" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Elige tu Porsche</h3>
+                    <p>Descubre qué modelo encaja contigo antes de mirar precios.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/asistente" class="tool-card">
+                        <div class="tool-card-media"><img src="img/para-mi.jpg" alt="Asistente de recomendación" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>¿Qué Porsche es para mí?</h3>
+                            <p>Responde 5 preguntas sobre tu presupuesto y tu forma de conducir y descubre tus modelos recomendados.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/comparador" class="tool-card">
+                        <div class="tool-card-media"><img src="img/sensaciones.png" alt="Comparador de Prestaciones" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Comparador de sensaciones</h3>
+                            <p>¿Circuito, viaje o día a día? Encuentra el Porsche con la personalidad que encaja contigo.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/comparativa-visual" class="tool-card">
+                        <div class="tool-card-media"><img src="img/porschefondo.png" alt="Comparador Visual de Dimensiones" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Comparador visual de dimensiones</h3>
+                            <p>Compara la silueta, las medidas y las diferencias exactas entre dos modelos, lado a lado.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/analisis-compra" class="tool-card">
+                        <div class="tool-card-media"><img src="img/opciones.png" alt="Análisis de Opciones" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Guía de opciones</h3>
+                            <p>Aprende qué extras son imprescindibles para el disfrute y el valor de reventa, y cuáles evitar.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="analiza" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Precio y coste</h3>
+                    <p>La parte numérica: lanzamiento, reventa, financiación y coste total de propiedad.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/precios" class="tool-card">
+                        <div class="tool-card-media"><img src="img/concesionario.png" alt="Evolución de Precios de Lanzamiento" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Precios de lanzamiento (PVP)</h3>
+                            <p>Sigue la evolución del precio oficial de cada generación y descubre cuánto ha subido cada modelo con los años.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/precio-segunda-mano" class="tool-card">
+                        <div class="tool-card-media"><img src="img/depreciacion.png" alt="Análisis de Precios y Depreciación" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Precios y depreciación</h3>
+                            <p>Analiza la evolución de precios de segunda mano y descubre qué modelos son la mejor inversión.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/coste-real" class="tool-card">
+                        <div class="tool-card-media"><img src="img/coste.png" alt="Coste Real de Propiedad" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Coste real de propiedad</h3>
+                            <p>Calcula el gasto total a 5 años: depreciación, mantenimiento, seguro y más. Sin sorpresas.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/financiacion" class="tool-card">
+                        <div class="tool-card-media"><img src="img/financiacion.jpg" alt="Calculadora de financiación" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Calculadora de financiación</h3>
+                            <p>Simula tu cuota mensual, los intereses totales y compara financiar frente a pagar al contado.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/comprar-renting-leasing" class="tool-card">
+                        <div class="tool-card-media"><img src="img/concesionario.png" alt="Comparativa comprar, renting o leasing" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>¿Comprar, renting o leasing?</h3>
+                            <p>Compara la propiedad, la fiscalidad y el coste total de cada opción con un simulador y tus propios números.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="antes-de-comprar" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Antes de comprar</h3>
+                    <p>Fiabilidad y checklist de inspección para no llevarte sorpresas.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/fallos" class="tool-card">
+                        <div class="tool-card-media"><img src="img/fiabilidad.png" alt="Análisis de Fiabilidad" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Análisis de fiabilidad</h3>
+                            <p>Descubre los fallos comunes, costes de reparación y el índice de fiabilidad de cada modelo y generación.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/checklist-inspecciones-segunda-mano" class="tool-card">
+                        <div class="tool-card-media"><img src="img/inspeccion.png" alt="Guía de Inspección" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Guía de inspección</h3>
+                            <p>Tu checklist interactiva para inspeccionar un Porsche de segunda mano como un profesional.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="comunidad" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Comunidad y tendencias</h3>
+                    <p>Lo que se dice y se comparte sobre Porsche ahora mismo.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/menciones" class="tool-card">
+                        <div class="tool-card-media"><img src="img/pulso.png" alt="Dashboard Social" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Pulso de la marca</h3>
+                            <p>Monitoriza en tiempo real lo que se dice de Porsche en redes sociales. Sentimiento y tendencias.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/tendencias" class="tool-card">
+                        <div class="tool-card-media"><img src="img/tendencias.png" alt="Collage de Tendencias" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Tendencias</h3>
+                            <p>Una galería visual inmersiva con las mejores fotos y vídeos de Porsche en redes sociales.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="philosophy" class="philosophy-section">
-        <div class="container" style="display: contents;">
+        <div class="container">
+            <span class="eyebrow">Nuestra filosofía</span>
+            <div class="philosophy-media">
+                <img src="img/ferry.png" alt="Porsche 356 Clásico">
+            </div>
             <div class="philosophy-text">
                 <blockquote>"Al principio miré a mi alrededor y no encontré el coche de mis sueños, así que decidí construirlo yo mismo."</blockquote>
-                <cite>– Ferry Porsche</cite>
+                <cite>— Ferry Porsche</cite>
             </div>
-            <img src="img/ferry.png" alt="Porsche 356 Clásico">
         </div>
     </section>
 
- <section class="cta-final" style="padding:80px 20px; text-align:center; background-color:var(--porsche-grey); color:white;">
+    <section class="cta-final">
         <div class="container">
-            <h2 style="font-size:2.2rem; padding-bottom:20px;">Si quieres comprar tu Porsche, es el momento</h2>
-            <a href="/concesionarios" class="cta-button">Centros oficiales</a>
+            <h2>Si quieres comprar tu Porsche, es el momento</h2>
+            <a href="/concesionarios" class="cta-button solid">Centros oficiales</a>
         </div>
     </section>
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+            <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
             <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const header = document.getElementById('site-header');
+        const logoMark = document.getElementById('logo-mark');
+        const onScroll = () => {
+            const scrolled = window.scrollY > 40;
+            header.classList.toggle('is-scrolled', scrolled);
+            logoMark.src = scrolled ? 'img/logo_mi_transparent.png' : 'img/logo_mi_inverso_transparent.png';
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        const navToggle = document.getElementById('nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        navToggle.addEventListener('click', () => {
+            const open = mainNav.style.display === 'flex';
+            mainNav.style.cssText = open ? '' : 'display:flex; position:absolute; top:100%; left:0; width:100%; flex-direction:column; align-items:flex-start; gap:0; background:#fff; padding:10px 32px 20px;';
+            if (!open) {
+                mainNav.querySelectorAll('a').forEach(a => a.style.cssText = 'color:#1a1a1a; padding:12px 0; width:100%; border-bottom:1px solid #e5e5e5;');
+                header.classList.add('is-scrolled');
+                logoMark.src = 'img/logo_mi_transparent.png';
+            } else {
+                onScroll();
+            }
+        });
+    </script>
 
 </body>
 </html>
