@@ -59,6 +59,9 @@
         .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
         .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
 
+        .dealer-hero { padding: 0; overflow: hidden; }
+        .dealer-hero .hero-body { padding: 25px 30px; }
+        .dealer-cover { width: 100%; height: 260px; object-fit: cover; display: block; }
         .dealer-hero h1 { margin: 0 0 10px 0; font-size: 2em; color: var(--porsche-red); }
         .dealer-rating { display: flex; align-items: center; margin-bottom: 15px; }
         .dealer-rating .stars { color: var(--porsche-gold); font-size: 22px; }
@@ -73,6 +76,8 @@
         .reviews-positive h3 { color: #28a745; }
         .reviews-negative h3 { color: var(--porsche-red); }
         .reviews-note { font-size: 0.85em; opacity: 0.6; margin: 15px 0 0 0; }
+        .reviews-link { display: inline-block; margin-top: 10px; color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 0.95em; }
+        .reviews-link:hover { text-decoration: underline; }
         @media (max-width: 600px) { .reviews-summary { grid-template-columns: 1fr; } }
 
         .dealer-actions { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -120,16 +125,19 @@
 
         <main>
             <section class="card dealer-hero">
-                <h1>{{ page.dealer_name }}</h1>
-                <div class="dealer-rating">
-                    <span id="dealer-stars" class="stars"></span>
-                    <span class="score">{{ page.rating }}</span>
-                    {% if page.review_count %}<span class="review-count">({{ page.review_count }} reseñas en Google)</span>{% endif %}
-                </div>
-                <p class="dealer-address">📍 {{ page.address }}</p>
-                <div class="dealer-actions">
-                    <a href="tel:{{ page.phone }}" class="primary">📞 Llamar</a>
-                    <a id="directions-link" href="#" target="_blank">🧭 Cómo llegar</a>
+                {% if page.cover_image %}<img src="{{ page.cover_image }}" alt="{{ page.dealer_name }}" class="dealer-cover">{% endif %}
+                <div class="hero-body">
+                    <h1>{{ page.dealer_name }}</h1>
+                    <div class="dealer-rating">
+                        <span id="dealer-stars" class="stars"></span>
+                        <span class="score">{{ page.rating }}</span>
+                        {% if page.review_count %}<span class="review-count">({{ page.review_count }} reseñas en Google)</span>{% endif %}
+                    </div>
+                    <p class="dealer-address">📍 {{ page.address }}</p>
+                    <div class="dealer-actions">
+                        <a href="tel:{{ page.phone }}" class="primary">📞 Llamar</a>
+                        <a id="directions-link" href="#" target="_blank">🧭 Cómo llegar</a>
+                    </div>
                 </div>
             </section>
 
@@ -162,6 +170,7 @@
                     {% endif %}
                 </div>
                 <p class="reviews-note">Resumen elaborado a partir de una muestra de reseñas públicas en Google. No sustituye la lectura de las reseñas originales.</p>
+                {% if page.google_profile_url %}<a href="{{ page.google_profile_url }}" target="_blank" rel="noopener" class="reviews-link">Ver todas las reseñas en Google →</a>{% endif %}
             </section>
             {% endif %}
 
