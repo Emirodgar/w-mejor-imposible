@@ -26,7 +26,7 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 4. **Filtra por relevancia editorial** (usa tu criterio, no hay lista cerrada de reglas). Quédate solo con noticias que aporten valor real a alguien que se está informando para comprar un Porsche: lanzamientos y novedades de producto, cambios de gama o de precios, análisis o comparativas, movimientos de mercado o de la marca, tecnología, tendencias de compra o de segunda mano.
 
-   Descarta explícitamente: cotilleos de famosos/influencers comprando o recibiendo un Porsche de regalo, resultados o crónicas de motorsport que solo mencionan "Porsche" de pasada, contenido de foros o redes de baja calidad, vídeos sin sustancia informativa más allá del titular, y cualquier entrada duplicada o casi idéntica a otra que ya hayas elegido esta misma semana.
+   Descarta explícitamente: cotilleos de famosos/influencers comprando o recibiendo un Porsche de regalo, resultados o crónicas de motorsport que solo mencionan "Porsche" de pasada, contenido de foros o redes de baja calidad, vídeos sin sustancia informativa más allá del titular, anuncios/inauguraciones/eventos locales de concesionarios o centros Porsche concretos (ese contenido pertenece a la sección de concesionarios del sitio, no a tendencias), clasificados de coches de segunda mano individuales, y cualquier entrada duplicada o casi idéntica a otra que ya hayas elegido esta misma semana.
 
    Es normal y esperado descartar la mayoría de las entradas del feed — suele venir con mucho ruido.
 
