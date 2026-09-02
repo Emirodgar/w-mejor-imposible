@@ -63,7 +63,17 @@
         .dealer-rating { display: flex; align-items: center; margin-bottom: 15px; }
         .dealer-rating .stars { color: var(--porsche-gold); font-size: 22px; }
         .dealer-rating .score { margin-left: 10px; font-weight: bold; }
+        .dealer-rating .review-count { margin-left: 6px; opacity: 0.65; font-size: 0.95em; }
         .dealer-address { font-size: 1.05em; opacity: 0.85; margin-bottom: 20px; }
+
+        .reviews-summary { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .reviews-summary h3 { font-size: 1em; margin: 0 0 10px 0; }
+        .reviews-summary ul { margin: 0; padding-left: 20px; }
+        .reviews-summary li { margin-bottom: 8px; line-height: 1.5; font-size: 0.95em; }
+        .reviews-positive h3 { color: #28a745; }
+        .reviews-negative h3 { color: var(--porsche-red); }
+        .reviews-note { font-size: 0.85em; opacity: 0.6; margin: 15px 0 0 0; }
+        @media (max-width: 600px) { .reviews-summary { grid-template-columns: 1fr; } }
 
         .dealer-actions { display: flex; flex-wrap: wrap; gap: 10px; }
         .dealer-actions a {
@@ -114,6 +124,7 @@
                 <div class="dealer-rating">
                     <span id="dealer-stars" class="stars"></span>
                     <span class="score">{{ page.rating }}</span>
+                    {% if page.review_count %}<span class="review-count">({{ page.review_count }} reseñas en Google)</span>{% endif %}
                 </div>
                 <p class="dealer-address">📍 {{ page.address }}</p>
                 <div class="dealer-actions">
@@ -128,6 +139,31 @@
                     {{ content }}
                 </div>
             </section>
+
+            {% if page.reviews_positive or page.reviews_negative %}
+            <section class="card">
+                <h2 class="card-title">Opiniones de los clientes en Google</h2>
+                <div class="reviews-summary">
+                    {% if page.reviews_positive %}
+                    <div class="reviews-positive">
+                        <h3>Lo más valorado</h3>
+                        <ul>
+                            {% for item in page.reviews_positive %}<li>{{ item }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% if page.reviews_negative %}
+                    <div class="reviews-negative">
+                        <h3>Quejas más comunes</h3>
+                        <ul>
+                            {% for item in page.reviews_negative %}<li>{{ item }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </div>
+                <p class="reviews-note">Resumen elaborado a partir de una muestra de reseñas públicas en Google. No sustituye la lectura de las reseñas originales.</p>
+            </section>
+            {% endif %}
 
             <section class="card">
                 <h2 class="card-title">Ubicación</h2>
