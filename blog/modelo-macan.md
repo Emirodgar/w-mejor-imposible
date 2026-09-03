@@ -8,7 +8,7 @@ sitemap: 1
 feed: 1
 date: 2025-10-02
 folder: Modelos
-permalink: porsche-macan
+permalink: porsche/porsche-macan
 ---
 
 # Porsche Macan: guía completa de compra 2025

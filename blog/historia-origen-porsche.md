@@ -8,7 +8,7 @@ sitemap: 1
 feed: 1
 date: 2026-08-30
 folder: Guías
-permalink: historia-origen-porsche
+permalink: porsche/historia-origen-porsche
 ---
 
 # ¿De dónde es Porsche? Historia, origen, dueño y curiosidades de la marca

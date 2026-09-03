@@ -1,13 +1,13 @@
 ---
 name: actualizar-tendencias-rss
-description: Actualiza semanalmente la página /tendencias de mejorimposible.es con noticias de Porsche extraídas de un feed de Google Alerts (traducidas al español, filtradas por relevancia, con un bloque de resumen semanal), y publica el cambio con commit + push. Úsala para la actualización semanal programada de tendencias, o si el usuario pide "actualiza tendencias", "corre la skill de RSS" o similar.
+description: Actualiza semanalmente la página /porsche/tendencias de mejorimposible.es con noticias de Porsche extraídas de un feed de Google Alerts (traducidas al español, filtradas por relevancia, con un bloque de resumen semanal), y publica el cambio con commit + push. Úsala para la actualización semanal programada de tendencias, o si el usuario pide "actualiza tendencias", "corre la skill de RSS" o similar.
 ---
 
-# Actualizar /tendencias con el feed de Google Alerts
+# Actualizar /porsche/tendencias con el feed de Google Alerts
 
 ## Contexto
 
-Este repo es el sitio estático de mejorimposible.es (GitHub Pages, rama `main`). El archivo `tendencias.html` tiene una zona de contenido generada automáticamente por esta skill, delimitada por comentarios marcadores. No toques nada fuera de esas zonas marcadas (cabecera, footer, filtros, el array `newsData` dentro de `<script>`, etc.).
+Este repo es el sitio estático de mejorimposible.es (GitHub Pages, rama `main`). El archivo `porsche/tendencias.html` tiene una zona de contenido generada automáticamente por esta skill, delimitada por comentarios marcadores. No toques nada fuera de esas zonas marcadas (cabecera, footer, filtros, el array `newsData` dentro de `<script>`, etc.).
 
 Fuente del feed (Atom de Google Alerts para "Porsche"):
 `https://www.google.es/alerts/feeds/05845247816632936990/7384118912035573051`
@@ -38,7 +38,7 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 8. **Genera el bloque "Resumen de la semana"**: un párrafo corto (2-3 frases) que sintetice lo más destacado de las noticias elegidas esta semana, más una lista de 3-5 highlights, cada uno enlazando a la noticia correspondiente. Este bloque se **sustituye entero** cada semana (no se acumula con el de semanas anteriores).
 
-9. **Edita `tendencias.html`**:
+9. **Edita `porsche/tendencias.html`**:
 
    - Sustituye TODO el contenido entre `<!-- RSS-SUMMARY:START -->` y `<!-- RSS-SUMMARY:END -->` por el nuevo resumen semanal, con esta estructura:
      ```html
@@ -72,7 +72,7 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 11. **Publica el cambio**:
     ```
-    git add tendencias.html .claude/state/tendencias-rss-seen.json
+    git add porsche/tendencias.html .claude/state/tendencias-rss-seen.json
     git commit -m "Actualiza tendencias con noticias de la semana (RSS)"
     git push
     ```
@@ -82,5 +82,6 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 - Esta skill está pensada para ejecutarse automáticamente cada semana vía una tarea programada, sin supervisión humana en el momento de ejecutarse. También se puede invocar a mano.
 - Si el feed no responde, da error, o su formato ha cambiado de forma irreconocible, no toques la página: informa del fallo con el detalle del error y termina sin hacer commit.
+- Los enlaces internos a posts del blog dentro de las tarjetas o el resumen deben usar el prefijo `/porsche/` (p. ej. `https://mejorimposible.es/porsche/nombre-del-post`), igual que el resto de URLs internas del sitio tras la migración a esa subcarpeta.
 - Idioma de salida: siempre español, sin excepciones, aunque la fuente original esté en otro idioma.
 - El tono debe ser coherente con el resto del sitio: directo, informativo, sin relleno artificial.

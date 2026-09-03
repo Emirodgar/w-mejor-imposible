@@ -8,7 +8,7 @@ sitemap: 1
 feed: 1
 date: 2025-10-05
 folder: Análisis
-permalink: ceos-porsche
+permalink: porsche/ceos-porsche
 ---
 
 # Evolución, rendimiento y ventas de los CEO de Porsche en España
@@ -153,7 +153,7 @@ Evolución de matriculaciones de Porsche en España durante el mandato de Tomás
 - Los 24 Centros Porsche son **referencia en valoración de clientes**
 - Red de concesionarios calificada como **"la más profesional y eficiente"**
 
-Porsche ha conseguido una gran valoración en los [índices de satisfacción de cliente y ventas](https://mejorimposible.es/satisfaccion-porsche). 
+Porsche ha conseguido una gran valoración en los [índices de satisfacción de cliente y ventas](https://mejorimposible.es/porsche/satisfaccion-porsche). 
 
 **Innovación y sostenibilidad:**
 

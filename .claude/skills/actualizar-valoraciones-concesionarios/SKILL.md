@@ -1,6 +1,6 @@
 ---
 name: actualizar-valoraciones-concesionarios
-description: Actualiza la puntuación de Google, el número de reseñas y un resumen de opiniones (lo más valorado / quejas más comunes) de cada Centro Porsche oficial en mejorimposible.es, tanto en el listado /concesionarios como en cada ficha individual. Requiere navegador (Google Maps en vivo). Úsala solo bajo demanda, cuando el usuario pida explícitamente actualizar valoraciones/reseñas de concesionarios — no está pensada para ejecución desatendida.
+description: Actualiza la puntuación de Google, el número de reseñas y un resumen de opiniones (lo más valorado / quejas más comunes) de cada Centro Porsche oficial en mejorimposible.es, tanto en el listado /porsche/concesionarios como en cada ficha individual. Requiere navegador (Google Maps en vivo). Úsala solo bajo demanda, cuando el usuario pida explícitamente actualizar valoraciones/reseñas de concesionarios — no está pensada para ejecución desatendida.
 ---
 
 # Actualizar valoraciones y reseñas de los Centros Porsche
@@ -8,8 +8,8 @@ description: Actualiza la puntuación de Google, el número de reseñas y un res
 ## Contexto
 
 Este repo es el sitio estático de mejorimposible.es (GitHub Pages, rama `main`). Cada centro oficial tiene:
-- Una entrada en el array `dealerData` dentro de `concesionarios.html` (campos `rating` y, opcionalmente, `reviewCount`).
-- Una ficha individual en `concesionarios/<slug>.html`, con front matter YAML (`rating`, `review_count`, `reviews_positive`, `reviews_negative`, `google_profile_url`, `cover_image`) que alimenta el layout `_layouts/dealer.html`.
+- Una entrada en el array `dealerData` dentro de `porsche/concesionarios.html` (campos `rating` y, opcionalmente, `reviewCount`).
+- Una ficha individual en `porsche/concesionarios/<slug>.html`, con front matter YAML (`rating`, `review_count`, `reviews_positive`, `reviews_negative`, `google_profile_url`, `cover_image`) que alimenta el layout `_layouts/dealer.html`.
 
 Esta skill usa el **navegador** (herramientas `mcp__Claude_Browser__*`) para consultar el perfil de Google Business/Maps real de cada centro y extraer: la puntuación media, el número de reseñas, y una lectura de una muestra de reseñas para resumir qué se valora y de qué se quejan los clientes. No hay API key de Google configurada — todo se hace leyendo la página de Maps como lo haría una persona.
 
@@ -17,7 +17,7 @@ Está pensada para ejecutarse **a mano, cuando el usuario lo pida explícitament
 
 ## Listado completo de centros (slug, nombre, enlace de Google Maps)
 
-| Slug (`concesionarios/<slug>.html`) | Nombre exacto | Enlace de búsqueda en Google Maps |
+| Slug (`porsche/concesionarios/<slug>.html`) | Nombre exacto | Enlace de búsqueda en Google Maps |
 | --- | --- | --- |
 | centro-porsche-a-coruna | Centro Porsche A Coruña | https://www.google.com/maps/search/?api=1&query=Centro+Porsche+A+Coru%C3%B1a |
 | centro-porsche-alicante | Centro Porsche Alicante | https://www.google.com/maps/search/?api=1&query=Centro+Porsche+Alicante |
@@ -63,7 +63,7 @@ Repite esto para cada centro de la tabla (puedes trabajar en lotes dentro de la 
    - `reviews_positive`: 2-4 puntos cortos sobre lo que los clientes valoran más (ej. trato del personal, rapidez, calidad del servicio de taller, proceso de compra, etc.), como frases hechas a partir de patrones reales de la muestra, no traducciones literales de una sola reseña.
    - `reviews_negative`: 2-4 puntos cortos sobre las quejas más repetidas y su motivo (ej. "tiempos de espera largos en el taller", "dificultad para conseguir cita", "diferencia de trato según el vendedor"). Si la muestra es abrumadoramente positiva y no hay quejas repetidas, usa un único punto honesto como "Sin quejas destacables en la muestra revisada" en vez de inventar problemas.
 
-8. **Actualiza la ficha individual** `concesionarios/<slug>.html`: en el front matter YAML, actualiza `rating:` con el valor numérico (ej. `4.4`), añade o actualiza `review_count:` (número entero), `google_profile_url:` (la URL canónica del paso 4), `cover_image:` (la URL de la foto en tamaño grande del paso 5, si se encontró), y `reviews_positive:` / `reviews_negative:` como listas YAML, por ejemplo:
+8. **Actualiza la ficha individual** `porsche/concesionarios/<slug>.html`: en el front matter YAML, actualiza `rating:` con el valor numérico (ej. `4.4`), añade o actualiza `review_count:` (número entero), `google_profile_url:` (la URL canónica del paso 4), `cover_image:` (la URL de la foto en tamaño grande del paso 5, si se encontró), y `reviews_positive:` / `reviews_negative:` como listas YAML, por ejemplo:
    ```yaml
    review_count: 190
    google_profile_url: "https://www.google.com/maps/place/..."
@@ -76,13 +76,13 @@ Repite esto para cada centro de la tabla (puedes trabajar en lotes dentro de la 
    ```
    No toques el resto del front matter (`title`, `dealer_name`, `address`, `phone`, `lat`, `lng`) ni el contenido markdown del cuerpo de la página — **ni siquiera si la dirección o coordenadas que ves en Google no coinciden con las que ya hay en el archivo**. Eso es una discusión aparte (el centro pudo cambiar de dirección, o el dato original podía estar desactualizado) que no corresponde a esta skill; señálalo en el resumen final si lo detectas, pero no lo corrijas tú mismo.
 
-9. **Actualiza `concesionarios.html`**: en el array `dealerData`, localiza la entrada cuyo `detailSlug` coincida con el slug del centro, y actualiza su `rating` y añade/actualiza un campo `reviewCount` (número entero) en ese mismo objeto. No toques ningún otro campo de esa entrada ni la estructura del array.
+9. **Actualiza `porsche/concesionarios.html`**: en el array `dealerData`, localiza la entrada cuyo `detailSlug` coincida con el slug del centro, y actualiza su `rating` y añade/actualiza un campo `reviewCount` (número entero) en ese mismo objeto. No toques ningún otro campo de esa entrada ni la estructura del array.
 
 ## Al terminar todos los centros
 
 10. **Publica el cambio**:
    ```
-   git add concesionarios.html concesionarios/*.html
+   git add porsche/concesionarios.html porsche/concesionarios/*.html
    git commit -m "Actualiza valoraciones y reseñas de los Centros Porsche (Google)"
    git push
    ```

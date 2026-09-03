@@ -8,7 +8,7 @@ sitemap: 1
 feed: 1
 date: 2025-10-07
 folder: Guías
-permalink: extras-porsche
+permalink: porsche/extras-porsche
 ---
 
 # Guía definitiva de opciones Porsche: un análisis experto para la configuración perfecta
@@ -35,7 +35,7 @@ Cada extra analizado en este informe ha sido evaluado bajo cinco veredictos defi
 
 Este marco de evaluación permite un análisis estructurado y objetivo, proporcionando la información necesaria para que cada comprador tome una decisión informada que resuene con sus propias prioridades.
 
-> Utiliza nuestra [herramienta de análisis de opciones y su coste](https://mejorimposible.es/analisis-compra) para identificar cuáles son las más idóneas.
+> Utiliza nuestra [herramienta de análisis de opciones y su coste](https://mejorimposible.es/porsche/analisis-compra) para identificar cuáles son las más idóneas.
 
 ## II. Porsche 911 (992): el icono reinventado
 

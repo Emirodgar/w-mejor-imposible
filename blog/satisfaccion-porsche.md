@@ -8,7 +8,7 @@ sitemap: 1
 feed: 1
 date: 2025-09-05
 folder: Análisis
-permalink: satisfaccion-porsche
+permalink: porsche/satisfaccion-porsche
 ---
 
 

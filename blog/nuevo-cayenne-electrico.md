@@ -9,7 +9,7 @@ sitemap: 1
 feed: 1
 date: 2025-10-09
 folder: Lanzamientos
-permalink: el-futuro-ya-esta-aqui-con-el-nuevo-porsche-cayenne-electric
+permalink: porsche/el-futuro-ya-esta-aqui-con-el-nuevo-porsche-cayenne-electric
 ---
 
 ## ¿Cómo será el futuro de Porsche?
@@ -35,7 +35,7 @@ Además, el nuevo **asistente de voz con inteligencia artificial** no solo entie
 Porsche ha llevado la **personalización** a otro nivel. El Cayenne Electric incluirá **modos de confort personalizables**, que adaptan desde la iluminación ambiental inteligente hasta la **calefacción de superficies**.
 El ambiente interior se podrá configurar al detalle, y el **techo solar de cristal con control de opacidad variable** —el más grande jamás montado en un Porsche— permitirá ajustar la luz del habitáculo a gusto del conductor y los pasajeros.
 
-Para quienes disfrutan de **[personalizar su coche](https://mejorimposible.es/extras-porsche)** al máximo, este modelo promete una experiencia más completa que nunca.
+Para quienes disfrutan de **[personalizar su coche](https://mejorimposible.es/porsche/extras-porsche)** al máximo, este modelo promete una experiencia más completa que nunca.
 
 <img width="1920" class="img-responsive" alt="Interior del Cayenne Electric" src="https://github.com/user-attachments/assets/b9626c20-fad7-483a-b4cc-099a87d998dd" />
 
@@ -49,7 +49,7 @@ Además, el compromiso con la **sostenibilidad** no se queda en el sistema eléc
 ## ¿Por qué este modelo es tan importante?
 
 El Cayenne Electric representa el punto de unión entre el pasado y el futuro de Porsche.
-Durante años, modelos como el [Macan](https://mejorimposible.es/porsche-macan) han demostrado que un SUV puede ser emocionante. Ahora, el nuevo Cayenne da un paso más, combinando **tecnología, emociones, deportividad y sostenibilidad** en un solo vehículo.
+Durante años, modelos como el [Macan](https://mejorimposible.es/porsche/porsche-macan) han demostrado que un SUV puede ser emocionante. Ahora, el nuevo Cayenne da un paso más, combinando **tecnología, emociones, deportividad y sostenibilidad** en un solo vehículo.
 
 No es solo el siguiente capítulo de la marca: es **el coche total**. Un Porsche pensado no para imaginar el futuro, sino para vivirlo desde el primer kilómetro.
 

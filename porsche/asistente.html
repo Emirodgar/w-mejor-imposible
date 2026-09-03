@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche - ¿Qué Porsche es para mí?</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -111,7 +111,7 @@
             </a>
             <nav class="site-nav">
                 <a href="/#tools">Herramientas</a>
-                <a href="/concesionarios">Concesionarios</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
             </nav>
         </div>
     </header>
@@ -377,11 +377,11 @@
                             ${buildReasons(model, score).map(r => `<li>${r}</li>`).join('')}
                         </ul>
                         <div class="result-actions">
-                            <a href="/fallos" class="primary">Ver fiabilidad</a>
+                            <a href="/porsche/fallos" class="primary">Ver fiabilidad</a>
                             <a href="${priceLink}">Ver precios</a>
-                            <a href="/financiacion?precio=${refPrice}">Simular financiación</a>
+                            <a href="/porsche/financiacion?precio=${refPrice}">Simular financiación</a>
                             <a href="${comparadorUrl}">Comparar en detalle</a>
-                            <a href="/concesionarios">Buscar concesionario</a>
+                            <a href="/porsche/concesionarios">Buscar concesionario</a>
                         </div>
                     </div>
                 `;

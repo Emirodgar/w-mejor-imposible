@@ -8,7 +8,7 @@ sitemap: 1
 feed: 1
 date: 2025-09-15
 folder: Análisis
-permalink: ventas-porsche
+permalink: porsche/ventas-porsche
 ---
 
 # Análisis de ventas de Porsche (2004-2024)
