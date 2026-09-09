@@ -73,8 +73,12 @@
         .mention-sentiment { padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; color: white; }
         .sentiment-pos { background-color: var(--sentiment-positive); }
         .sentiment-neg { background-color: var(--sentiment-negative); }
+        .sentiment-neu { background-color: var(--sentiment-neutral); }
         .mention-text { font-size: 14px; line-height: 1.5; }
         .mention-source { font-size: 12px; opacity: 0.7; margin-top: 8px; }
+        .mention-source a { color: inherit; }
+        .page-meta { font-size: 13px; opacity: 0.65; margin: -10px 0 20px; }
+        .trend-flat { color: var(--porsche-grey); }
 
         @media (max-width: 1200px) {
             .sentiment-chart-section, .channel-chart-section, .mentions-feed-section, .wordcloud-section { grid-column: span 12; }
@@ -98,12 +102,17 @@
     </header>
 
     <div class="dashboard-container">
+        <!-- MENCIONES-META:START -->
+        <p class="page-meta">Sin datos todavía: esta sección se rellena con la primera ejecución de la skill de actualización de menciones (prensa especializada y, cuando hay navegador disponible, Reddit).</p>
+        <!-- MENCIONES-META:END -->
         <main class="grid-layout">
             <section class="kpi-section">
-                <div class="card kpi-card"><div class="card-title">Menciones Totales (24h )</div><div class="value">11,4K</div><div class="trend trend-up">▲ 8%</div></div>
-                <div class="card kpi-card"><div class="card-title">Alcance Potencial</div><div class="value">25.2M</div><div class="trend trend-up">▲ 5%</div></div>
-                <div class="card kpi-card"><div class="card-title">Interacciones</div><div class="value">1.8M</div><div class="trend trend-up">▲ 11%</div></div>
-                <div class="card kpi-card"><div class="card-title">Sentimiento Neto</div><div class="value">+71%</div><div class="trend trend-down">▼ 2%</div></div>
+                <!-- MENCIONES-KPI:START -->
+                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">—</div><div class="trend trend-flat">→ Sin datos aún</div></div>
+                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">—</div><div class="trend trend-flat">→ Sin datos aún</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">—</div><div class="trend trend-flat">→ Sin datos aún</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">—</div><div class="trend trend-flat">→ Sin datos aún</div></div>
+                <!-- MENCIONES-KPI:END -->
             </section>
 
             <section class="card sentiment-chart-section">
@@ -112,7 +121,7 @@
             </section>
 
             <section class="card channel-chart-section">
-                <h2 class="card-title">Volumen de menciones por canal</h2>
+                <h2 class="card-title">Volumen de menciones por fuente</h2>
                 <div style="height: 250px;"><canvas id="channelChart"></canvas></div>
             </section>
 
@@ -135,27 +144,16 @@
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
     <script>
+    // MENCIONES-DATA:START
+    // Bloque generado por la skill actualizar-menciones-sociales. Se sustituye entero en cada ejecución.
+    // Vacío hasta la primera ejecución real: no se muestran datos inventados.
     const socialData = {
-        sentiment: { positive: 78, negative: 7, neutral: 15 },
-        channels: { 'Instagram': 45, 'Twitter/X': 25, 'YouTube': 15, 'Foros': 10, 'Noticias': 5 },
-        mentions: [
-            { author: '@SupercarBlondie', text: 'Driving the new 911 GT3 RS is an out of this world experience! The aero is just insane. #Porsche #GT3RS', source: 'Instagram', sentiment: 'positive' },
-            { author: 'UsuarioForo911', text: '¿Alguien más con problemas en el PCM del Taycan? Se me reinicia constantemente desde la última actualización.', source: 'Foro Rennlist', sentiment: 'negative' },
-            { author: '@EV_Fanatic', text: 'La nueva autonomía del Taycan 2024 es un verdadero game-changer. Ahora sí compite de tú a tú con Tesla.', source: 'Twitter/X', sentiment: 'positive' },
-            { author: 'MotorTrend', text: 'Porsche lo ha vuelto a hacer. El 911 S/T es la carta de amor definitiva a la conducción pura. Una obra maestra.', source: 'Noticias', sentiment: 'positive' },
-            { author: 'Gamer_Pro', text: 'El nuevo Porsche Vision GT en Gran Turismo 7 es una pasada. ¡Qué diseño!', source: 'Twitter/X', sentiment: 'positive' },
-            { author: 'Juan Pérez', text: 'Los costes de mantenimiento de mi Cayenne son más altos de lo que esperaba. La revisión de los 60.000km me ha costado un ojo de la cara.', source: 'Facebook', sentiment: 'negative' },
-            { author: 'CarVlogger', text: 'Review del Macan Eléctrico: Silencioso, brutalmente rápido y con un interior de 10. ¿El mejor SUV eléctrico?', source: 'YouTube', sentiment: 'positive' },
-            { author: 'Ana G.', text: 'Soñando con el día que pueda comprarme un 718 Spyder. Para mí, el coche perfecto.', source: 'Instagram', sentiment: 'positive' },
-        ],
-        wordCloud: [
-            {key: '911', value: 100}, {key: 'GT3 RS', value: 85}, {key: 'Taycan', value: 75},
-            {key: 'eléctrico', value: 60}, {key: 'diseño', value: 55}, {key: 'precio', value: 40},
-            {key: 'motor', value: 65}, {key: 'experiencia', value: 50}, {key: 'nuevo', value: 70},
-            {key: 'increíble', value: 68}, {key: 'problema', value: 35}, {key: 'autonomía', value: 45},
-            {key: 'Macan', value: 48}, {key: 'sonido', value: 52}, {key: 'circuito', value: 42}
-        ]
+        sentiment: { positive: 0, negative: 0, neutral: 0 },
+        channels: {},
+        mentions: [],
+        wordCloud: []
     };
+    // MENCIONES-DATA:END
 
     document.addEventListener('DOMContentLoaded', () => {
         let charts = {};
@@ -166,18 +164,41 @@
             setupEventListeners();
         }
 
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str == null ? '' : String(str);
+            return div.innerHTML;
+        }
+
+        const SENTIMENT_META = {
+            positive: { cls: 'sentiment-pos', label: 'Positivo' },
+            negative: { cls: 'sentiment-neg', label: 'Negativo' },
+            neutral: { cls: 'sentiment-neu', label: 'Neutro' }
+        };
+
         function renderMentionsFeed() {
             const feedContainer = document.getElementById('mentions-feed');
-            feedContainer.innerHTML = socialData.mentions.map(mention => `
+            if (!socialData.mentions.length) {
+                feedContainer.innerHTML = '<p style="opacity:0.6;">Todavía no se han recopilado menciones.</p>';
+                return;
+            }
+            feedContainer.innerHTML = socialData.mentions.map(mention => {
+                const meta = SENTIMENT_META[mention.sentiment] || SENTIMENT_META.neutral;
+                const sourceLabel = escapeHtml(mention.source);
+                const sourceHtml = mention.url
+                    ? `<a href="${escapeHtml(mention.url)}" target="_blank" rel="noopener">${sourceLabel}</a>`
+                    : sourceLabel;
+                return `
                 <div class="mention-card">
                     <div class="mention-header">
-                        <span class="mention-author">${mention.author}</span>
-                        <span class="mention-sentiment ${mention.sentiment === 'positive' ? 'sentiment-pos' : 'sentiment-neg'}">${mention.sentiment === 'positive' ? 'Positivo' : 'Negativo'}</span>
+                        <span class="mention-author">${escapeHtml(mention.author)}</span>
+                        <span class="mention-sentiment ${meta.cls}">${meta.label}</span>
                     </div>
-                    <p class="mention-text">${mention.text}</p>
-                    <div class="mention-source">${mention.source}</div>
+                    <p class="mention-text">${escapeHtml(mention.text)}</p>
+                    <div class="mention-source">${sourceHtml}</div>
                 </div>
-            `).join('');
+            `;
+            }).join('');
         }
 
         function renderAllCharts() {
@@ -186,8 +207,32 @@
             renderWordCloudChart();
         }
 
+        function clearEmptyChart(canvasId) {
+            const canvas = document.getElementById(canvasId);
+            canvas.style.display = '';
+            const existing = canvas.parentElement.querySelector('.chart-empty');
+            if (existing) existing.remove();
+        }
+
+        function showEmptyChart(canvasId, message) {
+            const canvas = document.getElementById(canvasId);
+            canvas.style.display = 'none';
+            const wrapper = canvas.parentElement;
+            if (!wrapper.querySelector('.chart-empty')) {
+                const p = document.createElement('p');
+                p.className = 'chart-empty';
+                p.style.opacity = '0.6';
+                p.textContent = message;
+                wrapper.appendChild(p);
+            }
+        }
+
         function renderSentimentChart() {
-            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            const canvas = document.getElementById('sentimentChart');
+            clearEmptyChart('sentimentChart');
+            const total = socialData.sentiment.positive + socialData.sentiment.negative + socialData.sentiment.neutral;
+            if (!total) { showEmptyChart('sentimentChart', 'Todavía no hay sentimiento clasificado.'); return; }
+            const ctx = canvas.getContext('2d');
             if (charts.sentiment) charts.sentiment.destroy();
             charts.sentiment = new Chart(ctx, {
                 type: 'doughnut',
@@ -205,7 +250,10 @@
         }
 
         function renderChannelChart() {
-            const ctx = document.getElementById('channelChart').getContext('2d');
+            const canvas = document.getElementById('channelChart');
+            clearEmptyChart('channelChart');
+            if (!Object.keys(socialData.channels).length) { showEmptyChart('channelChart', 'Todavía no hay menciones agrupadas por fuente.'); return; }
+            const ctx = canvas.getContext('2d');
             if (charts.channel) charts.channel.destroy();
             charts.channel = new Chart(ctx, {
                 type: 'bar',
@@ -229,7 +277,10 @@
         }
 
         function renderWordCloudChart() {
-            const ctx = document.getElementById('wordCloudChart').getContext('2d');
+            const canvas = document.getElementById('wordCloudChart');
+            clearEmptyChart('wordCloudChart');
+            if (!socialData.wordCloud.length) { showEmptyChart('wordCloudChart', 'Todavía no hay temas suficientes para la nube de palabras.'); return; }
+            const ctx = canvas.getContext('2d');
             Chart.register(ChartWordCloud.WordCloudController, ChartWordCloud.WordElement);
             if (charts.wordCloud) charts.wordCloud.destroy();
             charts.wordCloud = new Chart(ctx, {
