@@ -50,4 +50,4 @@ Quien pregunta dónde está la fábrica o el museo de Porsche puede encontrar am
 
 ---
 
-Si lo que buscas ahora es información más práctica sobre cómo comprar el tuyo, en mejorimposible.es tienes herramientas para consultar el [precio de cada modelo actual](/precios), la [fiabilidad y los fallos comunes](/fallos) por generación, o descubrir con nuestro [asistente de recomendación](/asistente) qué Porsche encaja mejor contigo.
+Si lo que buscas ahora es información más práctica sobre cómo comprar el tuyo, en mejorimposible.es tienes herramientas para consultar el [precio de cada modelo actual](/porsche/precios), la [fiabilidad y los fallos comunes](/porsche/fallos) por generación, o descubrir con nuestro [asistente de recomendación](/porsche/asistente) qué Porsche encaja mejor contigo.

@@ -88,13 +88,27 @@
         .tco-callout a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
         .tco-callout a:hover { text-decoration: underline; }
 
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
         .about-content p { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
         .about-content p:last-child { margin-bottom: 0; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
 
         .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+
+        /* --- Actualidad y tendencias --- */
+        .news-item { padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+        .news-item:last-child { border-bottom: none; }
+        .news-item .news-source { font-size: 0.78em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--porsche-gold); margin-bottom: 4px; }
+        .news-item h4 { margin: 0 0 6px 0; font-size: 1.02em; }
+        .news-item p { margin: 0; font-size: 0.92em; opacity: 0.8; line-height: 1.5; }
+        .news-empty { font-size: 0.95em; opacity: 0.7; margin: 0 0 15px 0; }
+        .news-cta { display: inline-block; margin-top: 15px; color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 0.95em; }
+        .news-cta:hover { text-decoration: underline; }
     </style>
 </head>
-<body>
+<body data-news-keywords="{{ page.news_keywords | join: ',' }}">
 
     <header class="site-header">
         <div class="site-header-inner">
@@ -236,6 +250,12 @@
                 </div>
             </section>
             {% endif %}
+
+            <section class="card">
+                <h2 class="card-title">Actualidad y tendencias sobre el {{ page.model_name }}</h2>
+                <div id="model-news-list"></div>
+                <a href="/porsche/tendencias" class="news-cta">Ver todas las tendencias →</a>
+            </section>
         </main>
     </div>
 
@@ -244,5 +264,61 @@
         <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
     </footer>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+
+    <script>
+    // Reutiliza las noticias ya publicadas en /porsche/tendencias (se actualizan semanalmente),
+    // filtrando por las palabras clave del modelo. Así el bloque nunca queda desactualizado
+    // ni requiere mantenimiento manual en cada ficha.
+    document.addEventListener('DOMContentLoaded', async () => {
+        const keywords = (document.body.dataset.newsKeywords || '')
+            .split(',')
+            .map(k => k.trim().toLowerCase())
+            .filter(Boolean);
+        const container = document.getElementById('model-news-list');
+        if (!container) return;
+
+        function showEmpty() {
+            container.innerHTML = '<p class="news-empty">Esta semana no hay noticias específicas sobre este modelo en nuestro radar de tendencias.</p>';
+        }
+
+        if (keywords.length === 0) {
+            showEmpty();
+            return;
+        }
+
+        try {
+            const response = await fetch('/porsche/tendencias');
+            if (!response.ok) throw new Error('No se pudo cargar tendencias');
+            const html = await response.text();
+            const doc = new DOMParser().parseFromString(html, 'text/html');
+            const cards = Array.from(doc.querySelectorAll('.news-card'));
+
+            const matches = cards.filter(card => {
+                const text = card.textContent.toLowerCase();
+                return keywords.some(keyword => text.includes(keyword));
+            }).slice(0, 3);
+
+            if (matches.length === 0) {
+                showEmpty();
+                return;
+            }
+
+            container.innerHTML = matches.map(card => {
+                const source = card.querySelector('.source')?.textContent || '';
+                const title = card.querySelector('h3')?.textContent || '';
+                const excerpt = card.querySelector('.excerpt')?.textContent || '';
+                return `
+                    <div class="news-item">
+                        ${source ? `<div class="news-source">${source}</div>` : ''}
+                        <h4>${title}</h4>
+                        <p>${excerpt}</p>
+                    </div>
+                `;
+            }).join('');
+        } catch (error) {
+            showEmpty();
+        }
+    });
+    </script>
 </body>
 </html>
