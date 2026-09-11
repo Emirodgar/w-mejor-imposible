@@ -111,6 +111,7 @@
             </a>
             <nav class="site-nav">
                 <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
                 <a href="/porsche/concesionarios">Concesionarios</a>
             </nav>
         </div>
@@ -208,7 +209,7 @@
             blurb: 'El más puro y ágil de la gama, pensado para disfrutar de la carretera y el circuito por encima de todo.'
         },
         {
-            id: '911', name: '911', comparadorKey: '911_carrera_t',
+            id: '911', name: '911', comparadorKey: '911_carrera_t', modeloSlug: '911',
             seats: 4, engines: ['combustion'],
             newRange: [104000, 300000], usedRange: [22000, 250000],
             scores: { circuito: 8, viajes: 6, dia_a_dia: 7, familia: 2 },
@@ -359,12 +360,15 @@
             const container = document.getElementById('results-container');
             container.innerHTML = ranked.map(({ model, score }) => {
                 const matchPct = Math.round(score.total * 10);
-                const priceLink = answers.condition === 'segunda_mano' ? '/precio-segunda-mano' : '/precios';
+                const priceLink = answers.condition === 'segunda_mano' ? '/porsche/precio-segunda-mano' : '/porsche/precios';
                 const refPrice = answers.condition === 'segunda_mano'
                     ? Math.round((model.usedRange[0] + model.usedRange[1]) / 2)
                     : model.newRange[0];
                 const comparadorKeys = ranked.map(r => r.model.comparadorKey).slice(0, 3);
-                const comparadorUrl = `/comparador?m1=${comparadorKeys[0] || ''}&m2=${comparadorKeys[1] || ''}&m3=${comparadorKeys[2] || ''}`;
+                const comparadorUrl = `/porsche/comparador?m1=${comparadorKeys[0] || ''}&m2=${comparadorKeys[1] || ''}&m3=${comparadorKeys[2] || ''}`;
+                const fichaButton = model.modeloSlug
+                    ? `<a href="/porsche/modelos/${model.modeloSlug}" class="primary">Ver ficha completa</a>`
+                    : '';
 
                 return `
                     <div class="result-card">
@@ -377,7 +381,8 @@
                             ${buildReasons(model, score).map(r => `<li>${r}</li>`).join('')}
                         </ul>
                         <div class="result-actions">
-                            <a href="/porsche/fallos" class="primary">Ver fiabilidad</a>
+                            ${fichaButton}
+                            <a href="/porsche/fallos"${fichaButton ? '' : ' class="primary"'}>Ver fiabilidad</a>
                             <a href="${priceLink}">Ver precios</a>
                             <a href="/porsche/financiacion?precio=${refPrice}">Simular financiación</a>
                             <a href="${comparadorUrl}">Comparar en detalle</a>

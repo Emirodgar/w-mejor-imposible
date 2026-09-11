@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas técnicas Porsche: fiabilidad, coste y precio por modelo | Mejor Imposible</title>
+    <meta name="description" content="Fichas técnicas de cada modelo Porsche centradas en fiabilidad por generación, coste real de propiedad y evolución de precio de lanzamiento y reventa.">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .intro-block { max-width: 800px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .models-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .model-card {
+            display: flex; flex-direction: column; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit;
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .model-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+        .model-card img { width: 100%; height: 170px; object-fit: contain; background-color: #eee; padding: 10px; box-sizing: border-box; }
+        .model-card-body { padding: 18px 20px 22px; flex-grow: 1; display: flex; flex-direction: column; }
+        .model-card-body h3 { margin: 0 0 8px 0; font-size: 1.15em; color: var(--porsche-red); }
+        .model-card-body p { margin: 0 0 14px 0; font-size: 0.92em; line-height: 1.5; opacity: 0.8; flex-grow: 1; }
+        .model-card-stats { display: flex; gap: 14px; font-size: 0.82em; opacity: 0.75; }
+        .model-card-stats strong { color: var(--porsche-black); }
+
+        .models-note { font-size: 0.85em; opacity: 0.6; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="intro-block">
+            <h1>Fichas técnicas por modelo</h1>
+            <p>Fiabilidad por generación, coste real de propiedad y evolución de precio de cada Porsche, todo en una sola ficha. Empezamos por el 911 e iremos añadiendo el resto de la gama.</p>
+        </div>
+
+        <main>
+            <div class="models-grid">
+                <a href="/porsche/modelos/911" class="model-card">
+                    <img src="/img/Modelos/911992-lateral.png" alt="Porsche 911">
+                    <div class="model-card-body">
+                        <h3>Porsche 911</h3>
+                        <p>De la G-Model a la 992: qué generación es más fiable, cuál conviene evitar y cómo ha evolucionado su precio.</p>
+                        <div class="model-card-stats">
+                            <span>Fiabilidad actual: <strong>96/100</strong></span>
+                            <span>Mantenimiento: <strong>4.500 €/5a</strong></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <p class="models-note">¿Buscas otro modelo? De momento tenemos la ficha completa del 911; el resto de la gama (718, Macan, Cayenne, Panamera, Taycan) llegará próximamente. Mientras tanto, consulta la <a href="/porsche/fallos" style="color:var(--porsche-red); font-weight:600; text-decoration:none;">base de fallos</a> y los <a href="/porsche/precios" style="color:var(--porsche-red); font-weight:600; text-decoration:none;">precios de lanzamiento</a> de todos los modelos.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

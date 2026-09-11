@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 900px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px;
+        }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+
+        /* --- Hero --- */
+        .model-hero { padding: 0; overflow: hidden; }
+        .model-hero-images { display: grid; grid-template-columns: 1fr 1fr; background-color: #eee; }
+        .model-hero-images img { width: 100%; height: 220px; object-fit: contain; display: block; padding: 10px; box-sizing: border-box; }
+        .model-hero-body { padding: 25px 30px 30px; }
+        .model-hero h1 { margin: 0 0 6px 0; font-size: 2em; color: var(--porsche-red); }
+        .model-tagline { font-size: 1.1em; opacity: 0.8; margin: 0 0 20px 0; }
+        .model-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+        @media (max-width: 600px) { .model-stats { grid-template-columns: 1fr; } .model-hero-images { grid-template-columns: 1fr; } }
+        .stat-box { text-align: center; padding: 14px; border-radius: 8px; background-color: var(--porsche-grey); color: white; }
+        .stat-box .value { font-size: 1.4em; font-weight: 700; }
+        .stat-box .label { font-size: 11px; opacity: 0.85; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .model-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+        .model-actions a {
+            text-decoration: none; padding: 12px 20px; border-radius: 6px; font-weight: 600; font-size: 14px;
+            border: 1px solid var(--porsche-grey); color: inherit;
+        }
+        .model-actions a.primary { background-color: var(--porsche-red); border-color: var(--porsche-red); color: white; }
+        .model-actions a.primary:hover { background-color: var(--porsche-black); border-color: var(--porsche-black); }
+        .model-actions a:not(.primary):hover { background-color: var(--porsche-grey); color: white; }
+
+        /* --- Tablas --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.3px; }
+        .reliability-low { color: var(--trend-down); font-weight: 700; }
+        .reliability-medium { color: var(--porsche-gold); font-weight: 700; }
+        .reliability-high { color: var(--trend-up); font-weight: 700; }
+        .price-up { color: var(--trend-up); font-weight: 600; }
+        .price-down { color: var(--trend-down); font-weight: 600; }
+
+        .tco-callout {
+            padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6;
+        }
+        .tco-callout a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .tco-callout a:hover { text-decoration: underline; }
+
+        .about-content p { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content p:last-child { margin-bottom: 0; }
+
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="https://mejorimposible.es/porsche/modelos">&larr; Ver todas las fichas de modelo</a>
+        </div>
+
+        <main>
+            <section class="card model-hero">
+                {% if page.hero_image_front or page.hero_image_side %}
+                <div class="model-hero-images">
+                    {% if page.hero_image_side %}<img src="{{ page.hero_image_side }}" alt="{{ page.model_name }} - vista lateral">{% endif %}
+                    {% if page.hero_image_front %}<img src="{{ page.hero_image_front }}" alt="{{ page.model_name }} - vista frontal">{% endif %}
+                </div>
+                {% endif %}
+                <div class="model-hero-body">
+                    <h1>{{ page.model_name }}</h1>
+                    {% if page.tagline %}<p class="model-tagline">{{ page.tagline }}</p>{% endif %}
+
+                    <div class="model-stats">
+                        {% if page.reliability_current %}
+                        <div class="stat-box">
+                            <div class="value">{{ page.reliability_current }}/100</div>
+                            <div class="label">Fiabilidad ({{ page.reliability_current_label }})</div>
+                        </div>
+                        {% endif %}
+                        {% if page.maintenance_cost_5y %}
+                        <div class="stat-box">
+                            <div class="value">{{ page.maintenance_cost_5y }} €</div>
+                            <div class="label">Mantenimiento / 5 años</div>
+                        </div>
+                        {% endif %}
+                        {% if page.price_from %}
+                        <div class="stat-box">
+                            <div class="value">{{ page.price_from }} €</div>
+                            <div class="label">Desde ({{ page.price_from_label }})</div>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="model-actions">
+                        {% if page.comparador_key %}<a href="/porsche/comparador?m1={{ page.comparador_key }}" class="primary">Comparar este modelo</a>{% endif %}
+                        {% if page.finance_reference_price %}<a href="/porsche/financiacion?precio={{ page.finance_reference_price }}">Simular financiación</a>{% endif %}
+                        <a href="/porsche/checklist-inspecciones-segunda-mano">Checklist de inspección</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Fiabilidad por generación</h2>
+                <p class="card-subtitle">Índice de fiabilidad, fallo más común y coste de reparación estimado de cada generación.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Generación</th>
+                                <th>Fiabilidad</th>
+                                <th>Fallo común</th>
+                                <th>Criticidad</th>
+                                <th>Coste estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for gen in page.generations %}
+                            {% if gen.reliability_index %}
+                            {% assign idx = gen.reliability_index %}
+                            {% assign rel_class = 'reliability-high' %}
+                            {% if idx < 60 %}{% assign rel_class = 'reliability-low' %}{% elsif idx < 85 %}{% assign rel_class = 'reliability-medium' %}{% endif %}
+                            <tr>
+                                <td>{{ gen.name }}</td>
+                                <td class="{{ rel_class }}">{{ gen.reliability_index }}/100</td>
+                                <td>{{ gen.common_issue }}</td>
+                                <td>{{ gen.criticality }}</td>
+                                <td>{{ gen.repair_cost }}</td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Datos de la <a href="/porsche/fallos" style="color:var(--porsche-red); font-weight:600;">base de fallos completa</a>, con todos los modelos y generaciones.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Precio y depreciación por generación</h2>
+                <p class="card-subtitle">Precio de lanzamiento (PVP) y valor de mercado estimado en 2025 de segunda mano.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Generación</th>
+                                <th>Precio de lanzamiento</th>
+                                <th>Valor 2025 (segunda mano)</th>
+                                <th>Veredicto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for gen in page.generations %}
+                            {% if gen.launch_price or gen.used_price_2025 %}
+                            <tr>
+                                <td>{{ gen.name }}</td>
+                                <td>{% if gen.launch_price %}{{ gen.launch_price }} €{% else %}—{% endif %}</td>
+                                <td>{% if gen.used_price_2025 %}{{ gen.used_price_2025 }} €{% else %}—{% endif %}</td>
+                                <td>{{ gen.price_verdict }}</td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Más detalle en <a href="/porsche/precios" style="color:var(--porsche-red); font-weight:600;">precios de lanzamiento</a> y <a href="/porsche/precio-segunda-mano" style="color:var(--porsche-red); font-weight:600;">precios de segunda mano</a>.</p>
+            </section>
+
+            {% if page.tco_example %}
+            <section class="card">
+                <h2 class="card-title">Coste real de propiedad</h2>
+                <p class="tco-callout">{{ page.tco_example }} Calcula el desglose completo (depreciación, mantenimiento, seguro y combustible) en la <a href="/porsche/coste-real">calculadora de coste real de propiedad</a>.</p>
+            </section>
+            {% endif %}
+
+            {% if content and content != "" %}
+            <section class="card">
+                <h2 class="card-title">Sobre el {{ page.model_name }}</h2>
+                <div class="about-content">
+                    {{ content }}
+                </div>
+            </section>
+            {% endif %}
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
