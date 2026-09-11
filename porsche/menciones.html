@@ -104,15 +104,15 @@
 
     <div class="dashboard-container">
         <!-- MENCIONES-META:START -->
-        <p class="page-meta">Datos de prensa especializada de los últimos 7 días · Sentimiento clasificado automáticamente · Actualizado el 9 de septiembre de 2026.</p>
+        <p class="page-meta">Datos de prensa especializada de los últimos 7 días · Sentimiento clasificado automáticamente · Actualizado el 11 de septiembre de 2026.</p>
         <!-- MENCIONES-META:END -->
         <main class="grid-layout">
             <section class="kpi-section">
                 <!-- MENCIONES-KPI:START -->
-                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">10</div><div class="trend trend-flat">→ Primera medición</div></div>
-                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">9</div><div class="trend trend-flat">→ Primera medición</div></div>
-                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+40%</div><div class="trend trend-flat">→ Primera medición</div></div>
-                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">2</div><div class="trend trend-flat">→ Primera medición</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">4</div><div class="trend trend-down">▼60%</div></div>
+                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">4</div><div class="trend trend-down">▼5</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+25%</div><div class="trend trend-down">▼15 pts</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">1</div><div class="trend trend-up">▼1</div></div>
                 <!-- MENCIONES-KPI:END -->
             </section>
 
@@ -148,23 +148,19 @@
     // MENCIONES-DATA:START
     // Bloque generado por la skill actualizar-menciones-sociales. Se sustituye entero en cada ejecución.
     const socialData = {
-        sentiment: { positive: 6, negative: 2, neutral: 2 },
-        channels: { "Jalopnik": 1, "Motor1.com": 1, "InsideEVs": 1, "Yahoo Autos": 1, "SpeedMe.ru": 1, "autotest.com.ar": 2, "Merca2.es": 1, "thetruthaboutcars.com": 1, "CarExpert": 1 },
+        sentiment: { positive: 2, negative: 1, neutral: 1 },
+        channels: { "The Drive": 1, "Drive.com.au": 1, "SMH.com.au": 1, "Autonoción": 1 },
         mentions: [
-            { author: "Jalopnik", text: "El nuevo Cayenne Turbo Electric convence tanto a la prensa que, pese a rozar los 200.000 dólares, se percibe casi como una ganga por lo que ofrece.", source: "Jalopnik", url: "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS2tIWE1XT3VNd09WWnVqMjNLSWs3RjhhQXh5anRyNHBtcWtMdXVjY3pFazhoTmlFbFF4NzFxT0FINFJ0WWMwUWFBd1JCR2VLN21lYkd0NS1yU1UtLXkxd2NpQnpUdUxEOFo1bmlWaVZLWWhYTHhhMHd6VUdGY0VLcFR0dFdRZFZ3QWZwcWpKSk5wQQ?oc=5", sentiment: "positive" },
-            { author: "Yahoo Autos", text: "Hay una edición especial del 911 que despierta mucho interés en Estados Unidos, pero Porsche no la está trayendo a ese mercado, para frustración de los aficionados.", source: "Yahoo Autos", url: "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMnZ5ZW0yeGhoanRCYTRORGVtaTYzMHIxd3ZPU1RfTURNa1FjcnR6RHJyeW4tMi1qbmR2RGkzRFNlNS1nZm1RVFRtakM0TTMxd0xmbVppRzhMMUtpUWI4QkFqWHdaWm0ySjJwZWkxOExNMVMyVWVTeWJtS09KeWV5RHNNN3Q4REFuY255WUJ5ZmFuUE84Sjl6emY0SXotUzdodWs5d3NMWnFlajFYY1lN?oc=5", sentiment: "negative" },
-            { author: "Motor1.com", text: "Un periodista que probó el 911 Cup en circuito asegura que el coche mejora en cada vuelta, una experiencia que describe como cada vez más adictiva.", source: "Motor1.com", url: "https://news.google.com/rss/articles/CBMia0FVX3lxTFA2c252V3E4NllBNzEwU0J1N1ZxLTU3aXNVUlhyX19fQmFtUHhxOU1VOXdBUHRvdDNIRUNIMEhLT0RsNU0wZGl3UUtTSmRVdmhnUnBkSFZERUlxMWFyak5yXzB4c0xUZTVJcGJV?oc=5", sentiment: "positive" },
-            { author: "CarExpert", text: "El 911 Challenge, una versión de competición basada en el GT3, no llegará a Australia, lo que ha generado quejas entre los aficionados de ese mercado.", source: "CarExpert", url: "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcXNqVlZ6WGFkQ0hsVkctTjA1LXBoRlZjcml2SGx6UzJ1OXZFLUdnZGlucTRMMkp4OGJjdFVVZ2dsSG9kWEtZVDJJMVV5ZV85SFEtNTFqcFUwMjVSRXdzY0NxOVVISnBoSlZtX3BXLUI2OEhMcFgzWGFYbE1vMDBXZTNmSGFmRUxUYXpHQmRYb3RaaVhRb1lJN1k5MHp5eEhhSkloM1N0R1BXWGNDTE42X2Vva0pCYkRRcnlYRzJR?oc=5", sentiment: "negative" },
-            { author: "InsideEVs", text: "La pantalla curva integrada de Porsche se lleva elogios como ejemplo de cómo debería hacerse una pantalla táctil en un coche, frente a otras soluciones del sector.", source: "InsideEVs", url: "https://news.google.com/rss/articles/CBMifEFVX3lxTFBrdnFtSDdpbV9CSThqOTFhdjF4U0tMV1EyZDl6YUk1X09nZjBhWFhUbTVheHNfTzkyS1ZBbGtiLUJnU3B5cWRCYUo4dDRTRXo0dXpHUlNuaDlONjFoQzFYekxNcllGSnpHajdPQTRGaHdPaXhaZWZSUEpkc2E?oc=5", sentiment: "positive" },
-            { author: "autotest.com.ar", text: "El chino Denza Z9 GT, con 2.000 CV, se presenta como un rival directo que busca arrebatarle al Taycan su referencia de vuelta en Nürburgring.", source: "autotest.com.ar", url: "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMERXSklOakRPVmJudjJVeHFsWVRPcGN4Z1Ytby1WdjFvWDJ6ZzA3WmtoZnpEc3Jwb1F3cGtpVDdhOVp1SmVnYThVSnZrUC1NZmVhS3NOaEYzckk2NXo0cXk2VXVIcXFYYzJPUy1zeHNsWk1ONGJIaWIxNjFTd3o4UHUyWFktSGRBVkd6RVBCMHdFOFdJRlliR3JkY0Y3RVEwNE1pMlBvM25ENzdhaDVRQ3hyUENkbDVBYzN2dGFBaw?oc=5", sentiment: "neutral" },
-            { author: "thetruthaboutcars.com", text: "Un análisis se pregunta si la generación 992.1 del 911 GT3 es la mejor hasta la fecha, comparándola con generaciones anteriores sin decantarse con claridad.", source: "thetruthaboutcars.com", url: "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeHVzWFZKaUh0SzRvUzliLTk0c0tFVXVPZEtqZDVKMnlNLXlab180OHQ3VU9uRVhmblV0UkhVMkJUcG1vc2NQUWNiNlozR2ppTFJzbFZoc0ZTeUV5alpkZUw0NmN5TzhYYXZwRHRVamZoUDltQUZnZWJTQmlXakpZVG1SRHNSdGRhUnM1bWFBVTA3bGRsMW9ETEpTS3N1MXZ2alpNMHBFNTk4Nm8?oc=5", sentiment: "neutral" },
-            { author: "autotest.com.ar", text: "La versión Manthey del Taycan Turbo GT, probada en pista, se describe como la más extrema y capaz del Taycan hasta la fecha.", source: "autotest.com.ar", url: "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdnVoOC1qdEFDWkx6THZpZ21vVVJJZDZXVDdTWmZHSkhQd0h3bkhNX0VWbDdYTzJNaUNWakVTZ2lVcl9TenlFblluZGZ6cHdiRFVRcjJ4QXlRRXVNT1dCMkgxSHltM3N4ajRJSGI2MFc2T3docVlOM0lMdHdZbFJhWGRrY1ZQbUxlOHN2Yy00bm5qY1g3S3dybw?oc=5", sentiment: "positive" }
+            { author: "The Drive", text: "Tras una semana con el nuevo 911 Turbo S Cabrio, el autor lo describe como el primer coche de gasolina en años que le hizo olvidarse de los eléctricos: violento en la aceleración pero sorprendentemente cómodo en el día a día. Le da un 9,5/10, aunque avisa de que el asiento trasero no es apto para un tercer pasajero.", source: "The Drive", url: "https://www.thedrive.com/car-reviews/2026-porsche-911-turbo-s-review", sentiment: "positive" },
+            { author: "Evan (propietario)", text: "Este propietario de un Cayenne diésel de 2015 reconoce que el carácter y la dinámica del coche le enamoran, pero es igual de claro con lo malo: compara mantenerlo con jugar al \"whack-a-mole\" con la factura del mecánico, y puntúa la tecnología a bordo con solo un 3 sobre 10.", source: "Drive.com.au", url: "https://www.drive.com.au/reviews/2015-porsche-cayenne-diesel-owner-review/", sentiment: "negative" },
+            { author: "Susannah Guthrie", text: "Reportaje sobre el Zeekr 7X, el SUV eléctrico chino que se ha colado entre los más vendidos de Australia por parecerse a un Porsche Macan a mitad de precio. Los propios propietarios reconocen problemas de software y una entrega caótica, pero muchos volverían a comprarlo.", source: "SMH.com.au", url: "https://www.smh.com.au/lifestyle/life-and-relationships/looks-like-a-porsche-and-priced-like-a-kia-this-may-be-the-most-talked-about-new-car-in-australia-20260908-p60vjb.html", sentiment: "neutral" },
+            { author: "Luis Reyes", text: "Autonoción caza casi sin camuflaje el Cayenne Turbo GT con el paquete Weissach rodando en Nürburgring, y apunta a que podría no ser un simple lavado de cara sino una generación completamente nueva, con el frontal ya prácticamente definitivo y la zaga todavía guardando secretos.", source: "Autonoción", url: "https://www.autonocion.com/cayenne-turbo-gt-weissach-nurburgring/", sentiment: "positive" }
         ],
         wordCloud: [
-            {key: "911", value: 100}, {key: "GT3", value: 90}, {key: "eléctrico", value: 75},
-            {key: "Cayenne", value: 70}, {key: "Taycan", value: 65}, {key: "exclusividad", value: 50},
-            {key: "precio", value: 45}, {key: "Manthey", value: 40}, {key: "revalorización", value: 35},
-            {key: "Nürburgring", value: 35}, {key: "pantalla curva", value: 30}, {key: "rival", value: 28}
+            {key: "911 Turbo S", value: 100}, {key: "Cayenne", value: 80}, {key: "fiabilidad", value: 60},
+            {key: "Nürburgring", value: 55}, {key: "diseño", value: 55}, {key: "tecnología", value: 50},
+            {key: "precio", value: 50}, {key: "Weissach", value: 45}, {key: "eléctrico", value: 40},
+            {key: "potencia", value: 40}, {key: "diésel", value: 35}, {key: "Zeekr", value: 28}
         ]
     };
     // MENCIONES-DATA:END
