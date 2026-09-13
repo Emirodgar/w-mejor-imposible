@@ -68,6 +68,14 @@
         .price-down { color: #dc3545; font-weight: bold; }
         .price-stable { color: var(--porsche-gold); }
 
+        .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .filter-chip {
+            border: 1px solid var(--porsche-grey); background: none; color: inherit;
+            padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 500;
+            cursor: pointer; transition: all 0.2s;
+        }
+        .filter-chip.active { background-color: var(--porsche-red); border-color: var(--porsche-red); color: #fff; }
+
         /* --- Contenido introductorio y de apoyo (SEO) --- */
         .intro-block { max-width: 900px; margin: 0 0 25px 0; }
         .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
@@ -119,7 +127,7 @@
                 "name": "¿Cuánto vale un Porsche 911 de segunda mano?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Depende mucho de la generación: un 996 (1998-2004) puede encontrarse desde unos 35.000 €, un 997.2 (2009-2012) ronda los 72.000 € por su gran fiabilidad, y un 993 refrigerado por aire (1995-1998) supera los 120.000 € al ser una pieza muy buscada por coleccionistas."
+                    "text": "Depende mucho de la generación: un 996 (1998-2004) puede encontrarse desde unos 35.000 €, un 997.2 (2009-2012) ronda los 72.000 € por su gran fiabilidad, y un 993 refrigerado por aire (1995-1998) supera los 120.000 € al ser una pieza muy buscada por coleccionistas. El 992 actual (2019-Hoy), con una depreciación muy suave hasta la fecha, se mueve alrededor de los 108.000 €."
                 }
             },
             {
@@ -175,6 +183,7 @@
         <main class="grid-layout">
             <section class="card chart-section">
                 <h2 class="card-title">Curvas de valor de mercado (segunda mano )</h2>
+                <div class="filter-bar" id="price-filter-bar"></div>
                 <div style="height: 450px;"><canvas id="priceChart"></canvas></div>
             </section>
 
@@ -245,22 +254,62 @@
         { id: '993', model: '911 (Classic)', generation: '993', launchYear: 1994, msrp: 70000, prices: { 2021: 80000, 2023: 100000, 2025: 120000 }, verdict: 'Fuerte apreciación. El último "air-cooled".' },
         { id: '911-996', model: '911', generation: '996', launchYear: 1998, msrp: 85000, prices: { 2021: 22000, 2023: 28000, 2025: 35000 }, verdict: 'Tocó fondo. Ahora en fase de apreciación.' },
         { id: '911-997-2', model: '911', generation: '997.2', launchYear: 2009, msrp: 105000, prices: { 2021: 65000, 2023: 70000, 2025: 72000 }, verdict: 'Muy estable. Retiene valor excepcionalmente bien.' },
-        { id: '911-991', model: '911', generation: '991.1', launchYear: 2012, msrp: 120000, prices: { 2021: 90000, 2023: 85000, 2025: 82000 }, verdict: 'Depreciación suave. Valor muy sólido.' },
-        { id: 'boxster-986', model: 'Boxster', generation: '986', launchYear: 1996, msrp: 50000, prices: { 2021: 10000, 2023: 12000, 2025: 14000 }, verdict: 'Asequible y empezando a subir. Punto de entrada.' },
-        { id: 'cayman-987-2', model: 'Cayman', generation: '987.2', launchYear: 2009, msrp: 65000, prices: { 2021: 40000, 2023: 45000, 2025: 48000 }, verdict: 'Muy buscado por su fiabilidad. Se aprecia lentamente.' },
+        { id: '911-991', model: '911', generation: '991.1', launchYear: 2012, msrp: 104300, prices: { 2021: 90000, 2023: 85000, 2025: 82000 }, verdict: 'Depreciación suave. Valor muy sólido.' },
+        { id: 'boxster-986', model: 'Cayman/Boxster', generation: '986', launchYear: 1996, msrp: 50000, prices: { 2021: 10000, 2023: 12000, 2025: 14000 }, verdict: 'Asequible y empezando a subir. Punto de entrada.' },
+        { id: 'cayman-987-2', model: 'Cayman/Boxster', generation: '987.2', launchYear: 2009, msrp: 65000, prices: { 2021: 40000, 2023: 45000, 2025: 48000 }, verdict: 'Muy buscado por su fiabilidad. Se aprecia lentamente.' },
         { id: 'cayenne-955', model: 'Cayenne', generation: '955/957', launchYear: 2003, msrp: 75000, prices: { 2021: 8000, 2023: 6500, 2025: 5000 }, verdict: 'Depreciación muy fuerte. Coste de compra bajo, mantenimiento alto.' },
-        { id: 'macan-95b', model: 'Macan', generation: '95B.1', launchYear: 2014, msrp: 68000, prices: { 2021: 45000, 2023: 38000, 2025: 32000 }, verdict: 'Depreciación estándar para un SUV premium.' },
+        { id: 'macan-95b', model: 'Macan', generation: '95B.1', launchYear: 2014, msrp: 63100, prices: { 2021: 45000, 2023: 38000, 2025: 32000 }, verdict: 'Depreciación estándar para un SUV premium.' },
         { id: 'panamera-970', model: 'Panamera', generation: '970', launchYear: 2010, msrp: 110000, prices: { 2021: 35000, 2023: 28000, 2025: 24000 }, verdict: 'Depreciación significativa. Lujo asequible en el mercado de ocasión.' },
-        { id: 'taycan-j1', model: 'Taycan', generation: 'J1', launchYear: 2020, msrp: 115000, prices: { 2021: 95000, 2023: 80000, 2025: 70000 }, verdict: 'Depreciación inicial fuerte, típica de los EVs de lujo.' },
+        { id: 'taycan-j1', model: 'Taycan', generation: 'J1', launchYear: 2020, msrp: 108000, prices: { 2021: 95000, 2023: 80000, 2025: 70000 }, verdict: 'Depreciación inicial fuerte, típica de los EVs de lujo.' },
+
+        { id: '911-964', model: '911 (Classic)', generation: '964', launchYear: 1989, msrp: 62000, prices: { 2021: 70000, 2023: 82000, 2025: 95000 }, verdict: 'Fuerte apreciación; el último 911 clásico que ya montaba dirección asistida y ABS de serie.' },
+        { id: '911-997-1', model: '911', generation: '997.1', launchYear: 2005, msrp: 95000, prices: { 2021: 48000, 2023: 52000, 2025: 58000 }, verdict: 'Precio de compra atractivo, pero exige presupuestar una inspección de bore scoring antes de comprar.' },
+        { id: '911-991-2', model: '911', generation: '991.2', launchYear: 2016, msrp: 110800, prices: { 2021: 98000, 2023: 94000, 2025: 90000 }, verdict: 'Depreciación suave; los motores turbo de esta generación dan más potencia sin penalizar mucho la reventa.' },
+        { id: '911-992', model: '911', generation: '992', launchYear: 2019, msrp: 120450, prices: { 2021: 115000, 2023: 112000, 2025: 108000 }, verdict: 'Depreciación muy suave; el 992.2 híbrido (2024) mantiene firme la demanda del 992.1 de combustión entre los puristas.' },
+        { id: 'cayman-987-1', model: 'Cayman/Boxster', generation: '987.1', launchYear: 2005, msrp: 55000, prices: { 2021: 24000, 2023: 21000, 2025: 19000 }, verdict: 'El más económico de entrada, pero el riesgo real de IMS y bore scoring justifica el descuento frente al 987.2.' },
+        { id: 'cayman-981', model: 'Cayman/Boxster', generation: '981', launchYear: 2013, msrp: 57500, prices: { 2021: 50000, 2023: 46000, 2025: 42000 }, verdict: 'Buena relación prestaciones/precio si se descarta el bore scoring con un análisis de aceite o boroscopia previa.' },
+        { id: 'cayman-718', model: 'Cayman/Boxster', generation: '718, 4 Cil.', launchYear: 2017, msrp: 60500, prices: { 2021: 56000, 2023: 54000, 2025: 52000 }, verdict: 'El motor de 4 cilindros turbo divide opiniones frente al 6 cilindros clásico, lo que frena algo su revalorización.' },
+        { id: 'cayenne-958', model: 'Cayenne', generation: '958', launchYear: 2011, msrp: 85100, prices: { 2021: 45000, 2023: 38000, 2025: 33000 }, verdict: 'El usado más recomendable de la gama Cayenne: fiabilidad notable a un precio ya muy accesible.' },
+        { id: 'panamera-971', model: 'Panamera', generation: '971', launchYear: 2017, msrp: 110900, prices: { 2021: 70000, 2023: 60000, 2025: 52000 }, verdict: 'Depreciación fuerte, típica de las berlinas de lujo; forma asequible de acceder a un Porsche con mucho equipamiento.' },
+        { id: 'macan-restyling', model: 'Macan', generation: 'Restyling', launchYear: 2019, msrp: 66500, prices: { 2021: 58000, 2023: 50000, 2025: 42000 }, verdict: 'Depreciación estándar de SUV premium; el diseño trasero con banda LED es el cambio más visible.' },
     ];
+
+    const priceModelCategories = ['Todas', '911', 'Cayman/Boxster', 'Cayenne', 'Macan', 'Panamera', 'Taycan'];
+    let activePriceFilter = 'Todas';
+
+    function matchesPriceFilter(item) {
+        if (activePriceFilter === 'Todas') return true;
+        if (activePriceFilter === '911') return item.model === '911' || item.model === '911 (Classic)';
+        return item.model === activePriceFilter;
+    }
 
     document.addEventListener('DOMContentLoaded', () => {
         let priceChartInstance;
 
         function initializePage() {
-            renderPriceTable(priceData);
+            renderFilterBar();
+            renderPriceTable(getFilteredData());
             renderPriceChart();
             setupEventListeners();
+        }
+
+        function getFilteredData() {
+            return priceData.filter(matchesPriceFilter);
+        }
+
+        function renderFilterBar() {
+            const bar = document.getElementById('price-filter-bar');
+            bar.innerHTML = priceModelCategories.map(cat => `
+                <button class="filter-chip ${cat === activePriceFilter ? 'active' : ''}" data-category="${cat}">${cat === 'Todas' ? 'Todos los modelos' : cat}</button>
+            `).join('');
+            bar.querySelectorAll('.filter-chip').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    activePriceFilter = btn.getAttribute('data-category');
+                    renderFilterBar();
+                    renderPriceTable(getFilteredData());
+                    renderPriceChart();
+                });
+            });
         }
 
         function renderPriceTable(data) {
@@ -290,8 +339,8 @@
             const textColor = isDark ? 'white' : 'black';
             const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
 
-            const datasets = priceData.map((item, index) => {
-                const colors = ['#B12B28', '#E3AB37', '#464C47', '#8B0000', '#FFD700', '#696969', '#FF4500', '#2E8B57', '#4682B4', '#D2691E', '#9ACD32'];
+            const datasets = getFilteredData().map((item, index) => {
+                const colors = ['#B12B28', '#E3AB37', '#464C47', '#8B0000', '#FFD700', '#696969', '#FF4500', '#2E8B57', '#4682B4', '#D2691E', '#9ACD32', '#800080', '#00CED1', '#FF69B4', '#556B2F', '#1E90FF', '#A0522D', '#20B2AA', '#DAA520', '#C71585', '#008080'];
                 return {
                     label: `${item.model} ${item.generation}`,
                     data: Object.keys(item.prices).map(year => ({ x: parseInt(year), y: item.prices[year] })),
@@ -345,7 +394,7 @@
                 if (!row) return;
 
                 const id = row.dataset.id;
-                const datasetIndex = priceData.findIndex(item => item.id === id);
+                const datasetIndex = getFilteredData().findIndex(item => item.id === id);
                 
                 if (datasetIndex > -1) {
                     priceChartInstance.data.datasets.forEach((dataset, index) => {
