@@ -17,7 +17,9 @@ La página tiene zonas marcadas con comentarios que delimitan lo que esta skill 
 
 - `<!-- MENCIONES-META:START -->` ... `<!-- MENCIONES-META:END -->` — línea de metodología/fecha, justo debajo de la cabecera.
 - `<!-- MENCIONES-KPI:START -->` ... `<!-- MENCIONES-KPI:END -->` — las 4 tarjetas KPI.
-- `// MENCIONES-DATA:START` ... `// MENCIONES-DATA:END` — el objeto `const socialData = {...}` dentro del `<script>` final (comentarios de JS, no de HTML, porque están dentro de un `<script>`).
+- `// MENCIONES-DATA:START` ... `// MENCIONES-DATA:END` — el objeto `const socialData = {...}` dentro del `<script>` final (comentarios de JS, no de HTML, porque están dentro de un `<script>`). Este bloque se sustituye entero y solo refleja los últimos 7 días.
+
+Además, la página tiene una sección "Histórico de menciones analizadas" que no se edita en el HTML: carga en el navegador el fichero público `porsche/menciones-historico.json` mediante `fetch()`. Ese fichero SÍ lo actualiza esta skill en cada ejecución (ver paso 12b), acumulando entre ejecuciones en vez de sustituirse entero.
 
 ## Fuentes
 
@@ -124,17 +126,25 @@ Y opcionalmente 2-3 subreddits más específicos si hay actividad reciente relev
 
 12. **Actualiza `.claude/state/menciones-seen.json`**: añade los identificadores usados en esta ejecución (los descartados por poco relevantes no hace falta guardarlos). Si el array supera 500 elementos, elimina los más antiguos del principio.
 
+12b. **Actualiza `porsche/menciones-historico.json`** (fichero público, servido directamente por el sitio y consumido por `fetch()` desde la sección "Histórico de menciones analizadas" de `porsche/menciones.html`): es un array de menciones, más antigua primero, que se **acumula** entre ejecuciones (a diferencia del bloque `socialData`, que se sustituye entero). Si el fichero no existe, trátalo como `[]`.
+
+    Añade al final **todas** las menciones que sobrevivieron el filtro editorial en esta ejecución (todas las que cuentan en `totalMentions`, no solo las 6-8 destacadas para el feed de "últimas menciones"), con este formato exacto por entrada:
+    ```json
+    { "date": "AAAA-MM-DD", "author": "Nombre o medio", "text": "Texto en español, sin HTML.", "source": "Nombre de la fuente", "url": "https://enlace-real", "sentiment": "positive" }
+    ```
+    `date` es la fecha de esta ejecución (la misma que va en `MENCIONES-META`). Si el array supera 500 elementos tras añadir los nuevos, elimina los más antiguos del principio para dejarlo en 500 (igual criterio que `menciones-seen.json`).
+
 13. **Actualiza `.claude/state/menciones-history.json`**: añade al final un objeto con `{ "date": "AAAA-MM-DD", "totalMentions": N, "distinctSources": N, "sentimentNet": N, "negativeCount": N }` correspondiente a esta ejecución. Si el array supera 20 entradas, elimina las más antiguas del principio.
 
 14. **Publica el cambio**:
     ```
-    git add porsche/menciones.html .claude/state/menciones-seen.json .claude/state/menciones-history.json
+    git add porsche/menciones.html porsche/menciones-historico.json .claude/state/menciones-seen.json .claude/state/menciones-history.json
     git commit -m "Actualiza menciones sociales de Porsche"
     git push
     ```
     Si `git push` falla, deja el commit local hecho, no lo fuerces, e informa del problema.
 
-15. **Resumen final**: indica cuántas menciones se han incorporado, de qué fuentes (y si Reddit estuvo disponible o no esta vez), el sentimiento neto resultante y su tendencia, y si algún centro/fuente destacó por tener menciones negativas relevantes que merezcan atención.
+15. **Resumen final**: indica cuántas menciones se han incorporado, de qué fuentes (y si Reddit estuvo disponible o no esta vez), el sentimiento neto resultante y su tendencia, cuántas menciones acumula ya el histórico (`porsche/menciones-historico.json`), y si algún centro/fuente destacó por tener menciones negativas relevantes que merezcan atención.
 
 ## Notas
 

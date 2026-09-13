@@ -57,6 +57,7 @@
         .channel-chart-section { grid-column: span 8; }
         .mentions-feed-section { grid-column: span 7; }
         .wordcloud-section { grid-column: span 5; }
+        .historico-section { grid-column: span 12; }
 
         .kpi-card .value { font-size: 32px; font-weight: 700; }
         .kpi-card .trend { font-size: 14px; font-weight: 600; margin-top: 5px; }
@@ -79,6 +80,23 @@
         .mention-source a { color: inherit; }
         .page-meta { font-size: 13px; opacity: 0.65; margin: -10px 0 20px; }
         .trend-flat { color: var(--porsche-grey); }
+
+        .historico-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
+        .historico-header h2 { margin: 0; }
+        .historico-summary { font-size: 13px; opacity: 0.7; margin: 0; }
+        .historico-controls { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
+        .historico-controls input, .historico-controls select {
+            padding: 8px 12px; border-radius: 6px; border: 1px solid var(--porsche-grey);
+            background: transparent; color: inherit; font-family: inherit; font-size: 13px;
+        }
+        .historico-controls input { flex: 1; min-width: 200px; }
+        .historico-date { opacity: 0.7; }
+        .historico-pagination { display: flex; justify-content: center; align-items: center; gap: 14px; margin-top: 15px; font-size: 13px; }
+        .historico-pagination button {
+            background: none; border: 1px solid var(--porsche-grey); color: inherit;
+            padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px;
+        }
+        .historico-pagination button:disabled { opacity: 0.35; cursor: default; }
 
         @media (max-width: 1200px) {
             .sentiment-chart-section, .channel-chart-section, .mentions-feed-section, .wordcloud-section { grid-column: span 12; }
@@ -135,6 +153,24 @@
                 <h2 class="card-title">Temas de conversación populares</h2>
                 <div style="height: 400px;"><canvas id="wordCloudChart"></canvas></div>
             </section>
+
+            <section class="card historico-section">
+                <div class="historico-header">
+                    <h2 class="card-title">Histórico de menciones analizadas</h2>
+                    <p class="historico-summary" id="historico-summary"></p>
+                </div>
+                <div class="historico-controls">
+                    <input type="search" id="historico-search" placeholder="Buscar por texto, autor o fuente...">
+                    <select id="historico-sentiment-filter">
+                        <option value="">Todos los sentimientos</option>
+                        <option value="positive">Positivo</option>
+                        <option value="negative">Negativo</option>
+                        <option value="neutral">Neutro</option>
+                    </select>
+                </div>
+                <div id="historico-list" class="mentions-feed" style="height: auto;"></div>
+                <div class="historico-pagination" id="historico-pagination"></div>
+            </section>
         </main>
     </div>
 
@@ -168,10 +204,13 @@
     document.addEventListener('DOMContentLoaded', () => {
         let charts = {};
 
+        const historicoState = { data: [], filtered: [], page: 1, pageSize: 15 };
+
         function initializePage() {
             renderMentionsFeed();
             renderAllCharts();
             setupEventListeners();
+            loadHistorico();
         }
 
         function escapeHtml(str) {
@@ -319,9 +358,109 @@
             });
         }
 
-        function setupEventListeners() {
+        function formatDateEs(dateStr) {
+            const d = new Date(dateStr + 'T00:00:00');
+            if (isNaN(d.getTime())) return dateStr;
+            return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
         }
-        
+
+        async function loadHistorico() {
+            const listEl = document.getElementById('historico-list');
+            const summaryEl = document.getElementById('historico-summary');
+            try {
+                const res = await fetch('menciones-historico.json', { cache: 'no-store' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const data = await res.json();
+                historicoState.data = Array.isArray(data) ? data.slice().reverse() : [];
+            } catch (err) {
+                historicoState.data = [];
+                listEl.innerHTML = '<p style="opacity:0.6;">No se ha podido cargar el histórico de menciones.</p>';
+                summaryEl.textContent = '';
+                document.getElementById('historico-pagination').innerHTML = '';
+                return;
+            }
+            applyHistoricoFilters();
+        }
+
+        function applyHistoricoFilters() {
+            const search = document.getElementById('historico-search').value.trim().toLowerCase();
+            const sentiment = document.getElementById('historico-sentiment-filter').value;
+            historicoState.filtered = historicoState.data.filter(m => {
+                if (sentiment && m.sentiment !== sentiment) return false;
+                if (search) {
+                    const haystack = `${m.author || ''} ${m.text || ''} ${m.source || ''}`.toLowerCase();
+                    if (!haystack.includes(search)) return false;
+                }
+                return true;
+            });
+            historicoState.page = 1;
+            renderHistoricoPage();
+        }
+
+        function renderHistoricoPage() {
+            const { data, filtered, pageSize } = historicoState;
+            const summaryEl = document.getElementById('historico-summary');
+            const listEl = document.getElementById('historico-list');
+            const pagEl = document.getElementById('historico-pagination');
+
+            if (!data.length) {
+                summaryEl.textContent = 'Todavía no hay histórico acumulado.';
+                listEl.innerHTML = '<p style="opacity:0.6;">Todavía no hay menciones en el histórico.</p>';
+                pagEl.innerHTML = '';
+                return;
+            }
+
+            summaryEl.textContent = filtered.length === data.length
+                ? `${data.length} menciones analizadas en el histórico`
+                : `${filtered.length} de ${data.length} menciones coinciden con el filtro`;
+
+            if (!filtered.length) {
+                listEl.innerHTML = '<p style="opacity:0.6;">No hay menciones que coincidan con el filtro.</p>';
+                pagEl.innerHTML = '';
+                return;
+            }
+
+            const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+            const current = Math.min(historicoState.page, totalPages);
+            historicoState.page = current;
+            const start = (current - 1) * pageSize;
+            const pageItems = filtered.slice(start, start + pageSize);
+
+            listEl.innerHTML = pageItems.map(mention => {
+                const meta = SENTIMENT_META[mention.sentiment] || SENTIMENT_META.neutral;
+                const sourceLabel = escapeHtml(mention.source);
+                const sourceHtml = mention.url
+                    ? `<a href="${escapeHtml(mention.url)}" target="_blank" rel="noopener">${sourceLabel}</a>`
+                    : sourceLabel;
+                const dateHtml = mention.date ? ` · <span class="historico-date">${escapeHtml(formatDateEs(mention.date))}</span>` : '';
+                return `
+                <div class="mention-card">
+                    <div class="mention-header">
+                        <span class="mention-author">${escapeHtml(mention.author)}</span>
+                        <span class="mention-sentiment ${meta.cls}">${meta.label}</span>
+                    </div>
+                    <p class="mention-text">${escapeHtml(mention.text)}</p>
+                    <div class="mention-source">${sourceHtml}${dateHtml}</div>
+                </div>
+            `;
+            }).join('');
+
+            pagEl.innerHTML = `
+                <button id="historico-prev" ${current === 1 ? 'disabled' : ''}>&lsaquo; Anterior</button>
+                <span>Página ${current} de ${totalPages}</span>
+                <button id="historico-next" ${current === totalPages ? 'disabled' : ''}>Siguiente &rsaquo;</button>
+            `;
+            const prevBtn = document.getElementById('historico-prev');
+            const nextBtn = document.getElementById('historico-next');
+            if (prevBtn) prevBtn.addEventListener('click', () => { historicoState.page--; renderHistoricoPage(); });
+            if (nextBtn) nextBtn.addEventListener('click', () => { historicoState.page++; renderHistoricoPage(); });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('historico-search').addEventListener('input', applyHistoricoFilters);
+            document.getElementById('historico-sentiment-filter').addEventListener('change', applyHistoricoFilters);
+        }
+
         const getTextColor = () => document.body.classList.contains('theme-dark') ? 'white' : 'black';
         const getGridColor = () => document.body.classList.contains('theme-dark') ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
 
