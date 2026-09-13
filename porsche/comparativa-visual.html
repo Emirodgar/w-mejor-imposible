@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador visual de Porsche: siluetas y dimensiones modelo a modelo | Mejor Imposible</title>
+    <meta name="description" content="Compara la silueta, la longitud, la anchura, la altura, la distancia entre ejes, el peso y el maletero de los principales Porsche: 911 (992, 997 y clásico G-Model), 718 Cayman, Taycan, Panamera, Macan y Cayenne.">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Porsche - Comparador Visual de Dimensiones</title>
     <style>
         :root {
             --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
@@ -69,7 +70,80 @@
             .comparison-grid { grid-template-columns: 1fr; }
             .selector-grid { grid-template-columns: 1fr; gap: 20px; }
         }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Qué Porsche es el más compacto para aparcar en ciudad?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 clásico (G-Model) es el más compacto de todos, con solo 4,29 m de longitud y 1,65 m de anchura. Entre los modelos actuales, el 718 Cayman y el 911 (992) son los más manejables en ciudad; los SUV (Cayenne, Macan) y el Panamera son sensiblemente más largos y anchos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto ha crecido el Porsche 911 con los años?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bastante: el 911 clásico (G-Model, 1975-1989) medía 4,29 m de largo y 1,65 m de ancho, mientras que el 992 actual llega a 4,52 m de largo y 1,85 m de ancho, unos 23 cm más de longitud y 20 cm más de anchura. El coche ha crecido en cada generación por seguridad, aerodinámica y equipamiento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué Porsche de la comparativa tiene más maletero?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne, con unos 772 litros con los asientos traseros en su posición. El Taycan, pese a ser una berlina eléctrica, también ofrece un total competitivo sumando el maletero trasero y el frunk delantero. Los deportivos (911, 718) se quedan muy por detrás al no tener maletero trasero utilizable."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Pesa mucho más un Taycan que un 911 o un Cayman?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, y de forma notable: un Taycan ronda los 2.300 kg frente a los 1.400-1.500 kg de un 911 o un 718 Cayman, una diferencia de más de 800 kg debido al peso de la batería. Ese sobrepeso se nota en el consumo y en la dinámica, aunque Porsche lo compensa con un centro de gravedad muy bajo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué modelo elegir si necesito espacio para la familia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cayenne, Macan y Panamera son las opciones pensadas para uso familiar, con plazas traseras reales y maleteros de 488 a 772 litros. El 911 y el 718 Cayman tienen plazas traseras simbólicas o inexistentes y están pensados para dos ocupantes."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
     <header class="site-header">
@@ -87,6 +161,11 @@
     </header>
 
     <div class="container">
+        <div class="intro-block">
+            <h1>Comparador visual de Porsche: siluetas y dimensiones modelo a modelo</h1>
+            <p>Superpón las siluetas de dos Porsche cualesquiera y compara al detalle su longitud, anchura, altura, distancia entre ejes, peso y capacidad de maletero. Útil para saber si un modelo entra en tu garaje, si ha crecido respecto a la generación anterior, o cuánto más pesa un eléctrico frente a un deportivo de combustión.</p>
+        </div>
+
         <div class="card">
             <h2 class="card-title">1. Selecciona los modelos a comparar</h2>
             <div class="selector-grid">
@@ -149,9 +228,66 @@
                         <td id="height-b"></td>
                         <td id="height-diff"></td>
                     </tr>
+                    <tr>
+                        <td>Distancia entre ejes</td>
+                        <td id="wheelbase-a"></td>
+                        <td id="wheelbase-b"></td>
+                        <td id="wheelbase-diff"></td>
+                    </tr>
+                    <tr>
+                        <td>Peso (aprox.)</td>
+                        <td id="weight-a"></td>
+                        <td id="weight-b"></td>
+                        <td id="weight-diff"></td>
+                    </tr>
+                    <tr>
+                        <td>Maletero (aprox.)</td>
+                        <td id="boot-a"></td>
+                        <td id="boot-b"></td>
+                        <td id="boot-diff"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
+
+        <section class="card content-section">
+            <h2>¿Por qué importan las dimensiones a la hora de elegir un Porsche?</h2>
+            <p>El tamaño y el peso no son solo un dato curioso: condicionan si el coche entra en tu garaje o plaza de aparcamiento, cómo se comporta en carreteras estrechas y cuánto espacio real tienes para pasajeros y equipaje.</p>
+            <ul>
+                <li><strong>Ciudad y garaje.</strong> El 911 clásico y el 718 Cayman son los más fáciles de aparcar y guardar; Cayenne y Panamera necesitan bastante más plaza, tanto en largo como en ancho.</li>
+                <li><strong>Peso y dinámica.</strong> El Taycan pesa unos 800-900 kg más que un 911 o un Cayman por la batería, lo que se nota en el consumo y en la sensación de agilidad, aunque su centro de gravedad muy bajo compensa parte de ese sobrepeso.</li>
+                <li><strong>Distancia entre ejes.</strong> Cuanto mayor es, más estable resulta el coche a alta velocidad y más espacio hay en el habitáculo, pero también se resta agilidad en curvas cerradas: por eso el Cayman y el 911 la mantienen corta.</li>
+                <li><strong>Maletero real.</strong> Si necesitas cargar equipaje familiar, Cayenne, Macan y Panamera ofrecen entre 488 y 772 litros; el 911 y el 718 dependen del maletero delantero (frunk) y de poco más.</li>
+            </ul>
+
+            <div class="cross-link-box">
+                <strong>¿Quieres comparar precios y equipamiento, no solo tamaño?</strong> Consulta el <a href="/porsche/comparador">comparador de modelos</a>, la <a href="/porsche/modelos">ficha de cada modelo</a> o los <a href="/porsche/precios">precios actualizados</a> de toda la gama.
+            </div>
+        </section>
+
+        <section class="card content-section">
+            <h2>Preguntas frecuentes sobre las dimensiones de los Porsche</h2>
+            <details class="faq-item" open>
+                <summary>¿Qué Porsche es el más compacto para aparcar en ciudad?</summary>
+                <p>El 911 clásico (G-Model) es el más compacto de todos, con solo 4,29 m de longitud y 1,65 m de anchura. Entre los modelos actuales, el 718 Cayman y el 911 (992) son los más manejables en ciudad; los SUV (Cayenne, Macan) y el Panamera son sensiblemente más largos y anchos.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cuánto ha crecido el Porsche 911 con los años?</summary>
+                <p>Bastante: el 911 clásico (G-Model, 1975-1989) medía 4,29 m de largo y 1,65 m de ancho, mientras que el 992 actual llega a 4,52 m de largo y 1,85 m de ancho, unos 23 cm más de longitud y 20 cm más de anchura. El coche ha crecido en cada generación por seguridad, aerodinámica y equipamiento.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué Porsche de la comparativa tiene más maletero?</summary>
+                <p>El Cayenne, con unos 772 litros con los asientos traseros en su posición. El Taycan, pese a ser una berlina eléctrica, también ofrece un total competitivo sumando el maletero trasero y el frunk delantero. Los deportivos (911, 718) se quedan muy por detrás al no tener maletero trasero utilizable.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Pesa mucho más un Taycan que un 911 o un Cayman?</summary>
+                <p>Sí, y de forma notable: un Taycan ronda los 2.300 kg frente a los 1.400-1.500 kg de un 911 o un 718 Cayman, una diferencia de más de 800 kg debido al peso de la batería. Ese sobrepeso se nota en el consumo y en la dinámica, aunque Porsche lo compensa con un centro de gravedad muy bajo.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué modelo elegir si necesito espacio para la familia?</summary>
+                <p>Cayenne, Macan y Panamera son las opciones pensadas para uso familiar, con plazas traseras reales y maleteros de 488 a 772 litros. El 911 y el 718 Cayman tienen plazas traseras simbólicas o inexistentes y están pensados para dos ocupantes.</p>
+            </details>
+        </section>
     </div>
 
     <footer class="site-footer">
@@ -164,43 +300,43 @@
     const carData = {
         '911_992': {
             name: '911 Carrera (992)',
-            dims: { length: 4519, width: 1852, height: 1298 },
-            img: { side: 'img/Modelos/911992-lateral.png', front: 'img/Modelos/911992-frontal.png' }
+            dims: { length: 4519, width: 1852, height: 1298, wheelbase: 2450, weight: 1505, boot: 132 },
+            img: { side: '/img/Modelos/911992-lateral.png', front: '/img/Modelos/911992-frontal.png' }
         },
         '911_997': {
             name: '911 Carrera (997 )',
-            dims: { length: 4427, width: 1808, height: 1310 },
-            img: { side: 'img/Modelos/911997-lateral.png', front: 'img/Modelos/911997-frontal.png' }
+            dims: { length: 4427, width: 1808, height: 1310, wheelbase: 2350, weight: 1425, boot: 135 },
+            img: { side: '/img/Modelos/911997-lateral.png', front: '/img/Modelos/911997-frontal.png' }
         },
         '911_G': {
             name: '911 Clásico (G-Model )',
-            dims: { length: 4291, width: 1652, height: 1310 },
-            img: { side: 'img/Modelos/gmodel-lateral.png', front: 'img/Modelos/gmodel-frontal.png' }
+            dims: { length: 4291, width: 1652, height: 1310, wheelbase: 2272, weight: 1160, boot: 115 },
+            img: { side: '/img/Modelos/gmodel-lateral.png', front: '/img/Modelos/gmodel-frontal.png' }
         },
         '718_cayman': {
             name: '718 Cayman (982 )',
-            dims: { length: 4379, width: 1801, height: 1295 },
-            img: { side: 'img/Modelos/cayman-lateral.png', front: 'img/Modelos/cayman-frontal.png' }
+            dims: { length: 4379, width: 1801, height: 1295, wheelbase: 2475, weight: 1420, boot: 275 },
+            img: { side: '/img/Modelos/cayman-lateral.png', front: '/img/Modelos/cayman-frontal.png' }
         },
         'taycan': {
             name: 'Taycan',
-            dims: { length: 4963, width: 1966, height: 1381 },
-            img: { side: 'img/Modelos/taycan-lateral.png', front: 'img/Modelos/taycan-frontal.png' }
+            dims: { length: 4963, width: 1966, height: 1381, wheelbase: 2900, weight: 2295, boot: 488 },
+            img: { side: '/img/Modelos/taycan-lateral.png', front: '/img/Modelos/taycan-frontal.png' }
         },
         'panamera': {
             name: 'Panamera (G2 )',
-            dims: { length: 5049, width: 1937, height: 1423 },
-            img: { side: 'img/Modelos/panamera-lateral.png', front: 'img/Modelos/panamera-frontal.png' }
+            dims: { length: 5049, width: 1937, height: 1423, wheelbase: 2950, weight: 1995, boot: 494 },
+            img: { side: '/img/Modelos/panamera-lateral.png', front: '/img/Modelos/panamera-frontal.png' }
         },
         'macan': {
             name: 'Macan',
-            dims: { length: 4726, width: 1922, height: 1621 },
-            img: { side: 'img/Modelos/macan-lateral.png', front: 'img/Modelos/macan-frontal.png' }
+            dims: { length: 4726, width: 1922, height: 1621, wheelbase: 2807, weight: 1795, boot: 488 },
+            img: { side: '/img/Modelos/macan-lateral.png', front: '/img/Modelos/macan-frontal.png' }
         },
         'cayenne': {
             name: 'Cayenne',
-            dims: { length: 4930, width: 1983, height: 1698 },
-            img: { side: 'img/Modelos/cayenne-lateral.png', front: 'img/Modelos/cayenne-frontal.png' }
+            dims: { length: 4930, width: 1983, height: 1698, wheelbase: 2895, weight: 2135, boot: 772 },
+            img: { side: '/img/Modelos/cayenne-lateral.png', front: '/img/Modelos/cayenne-frontal.png' }
         }
     };
 
@@ -237,22 +373,37 @@
             document.getElementById('length-a').textContent = `${(carA.dims.length / 1000).toFixed(2)} m`;
             document.getElementById('width-a').textContent = `${(carA.dims.width / 1000).toFixed(2)} m`;
             document.getElementById('height-a').textContent = `${(carA.dims.height / 1000).toFixed(2)} m`;
+            document.getElementById('wheelbase-a').textContent = `${(carA.dims.wheelbase / 1000).toFixed(2)} m`;
+            document.getElementById('weight-a').textContent = `${carA.dims.weight.toLocaleString('es-ES')} kg`;
+            document.getElementById('boot-a').textContent = `${carA.dims.boot.toLocaleString('es-ES')} L`;
 
             document.getElementById('length-b').textContent = `${(carB.dims.length / 1000).toFixed(2)} m`;
             document.getElementById('width-b').textContent = `${(carB.dims.width / 1000).toFixed(2)} m`;
             document.getElementById('height-b').textContent = `${(carB.dims.height / 1000).toFixed(2)} m`;
+            document.getElementById('wheelbase-b').textContent = `${(carB.dims.wheelbase / 1000).toFixed(2)} m`;
+            document.getElementById('weight-b').textContent = `${carB.dims.weight.toLocaleString('es-ES')} kg`;
+            document.getElementById('boot-b').textContent = `${carB.dims.boot.toLocaleString('es-ES')} L`;
 
             // Update differences
-            updateDiff('length', carB.dims.length - carA.dims.length);
-            updateDiff('width', carB.dims.width - carA.dims.width);
-            updateDiff('height', carB.dims.height - carA.dims.height);
+            updateDiffCm('length', carB.dims.length - carA.dims.length);
+            updateDiffCm('width', carB.dims.width - carA.dims.width);
+            updateDiffCm('height', carB.dims.height - carA.dims.height);
+            updateDiffCm('wheelbase', carB.dims.wheelbase - carA.dims.wheelbase);
+            updateDiffUnit('weight', carB.dims.weight - carA.dims.weight, 'kg');
+            updateDiffUnit('boot', carB.dims.boot - carA.dims.boot, 'L');
         }
 
-        function updateDiff(dimension, diff) {
+        function updateDiffCm(dimension, diff) {
             const diffElem = document.getElementById(`${dimension}-diff`);
             const diffCm = diff / 10;
             diffElem.textContent = `${diffCm >= 0 ? '+' : ''}${diffCm.toFixed(1)} cm`;
             diffElem.className = diffCm >= 0 ? 'diff-pos' : 'diff-neg';
+        }
+
+        function updateDiffUnit(dimension, diff, unit) {
+            const diffElem = document.getElementById(`${dimension}-diff`);
+            diffElem.textContent = `${diff >= 0 ? '+' : ''}${diff.toLocaleString('es-ES')} ${unit}`;
+            diffElem.className = diff >= 0 ? 'diff-pos' : 'diff-neg';
         }
 
         selectA.addEventListener('change', updateComparison);
