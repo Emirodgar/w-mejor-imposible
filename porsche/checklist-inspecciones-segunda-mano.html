@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porsche - Guía de inspección de coche de segunda mano</title>
+    <title>Checklist de inspección de un Porsche de segunda mano por modelo | Mejor Imposible</title>
+    <meta name="description" content="Checklist de inspección gratuita y personalizada por modelo y generación de Porsche (911, 718, Cayenne, Macan, Panamera, Taycan y clásicos Transaxle): puntos críticos, fallos comunes y documentación a revisar antes de comprar de segunda mano. Guarda tu progreso automáticamente.">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +47,7 @@
         .theme-light .card { background-color: var(--light-card-bg); border: 1px solid var(--hairline); }
         .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
         .card-title { font-size: 18px; font-weight: 600; margin-bottom: 20px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
-        
+
         .selector-container { display: flex; gap: 20px; margin-bottom: 20px; }
         .selector-container .control-group { flex: 1; }
         .selector-container label { display: block; margin-bottom: 5px; font-size: 14px; }
@@ -57,11 +58,91 @@
         .theme-light .checklist li { border-color: #e0e0e0; }
         .theme-dark .checklist li { border-color: #444; }
         .checklist li:last-child { border-bottom: none; }
-        .checklist input[type="checkbox"] { width: 20px; height: 20px; margin-right: 15px; accent-color: var(--porsche-red); }
+        .checklist input[type="checkbox"] { width: 20px; height: 20px; margin-right: 15px; accent-color: var(--porsche-red); flex-shrink: 0; }
         .checklist label { font-size: 16px; }
         .checklist li.done { text-decoration: line-through; opacity: 0.6; }
         .checklist .category-title { font-size: 16px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; color: var(--porsche-gold); }
+
+        .progress-header { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 10px; flex-wrap: wrap; }
+        .progress-count { font-size: 14px; font-weight: 600; opacity: 0.8; white-space: nowrap; }
+        .progress-bar-track { flex: 1; height: 8px; border-radius: 4px; background: rgba(70, 76, 71, 0.15); overflow: hidden; min-width: 120px; }
+        .progress-bar-fill { height: 100%; background: var(--porsche-red); border-radius: 4px; transition: width 0.25s; width: 0%; }
+        .reset-btn { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+        .reset-btn:hover { border-color: var(--porsche-red); color: var(--porsche-red); }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Qué es lo primero que hay que revisar en un Porsche de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Antes de mirar el coche, revisa la documentación: libro de mantenimiento sellado, facturas de reparaciones importantes (IMS, embrague, bore scoring, etc.) e informe de la DGT. Un historial completo en concesionario oficial o especialista de confianza vale más que cualquier detalle estético."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es necesario un boroscopio para comprar un 911 o un Cayman/Boxster de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es muy recomendable en los motores más expuestos al rayado de cilindros (bore scoring): 997.1, 987.1 y, en menor medida, 981 y 991.1. Un inspector Porsche independiente puede hacer esta prueba en menos de una hora y detecta un problema que puede costar más de 15.000 € reparar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué es el fallo del rodamiento IMS y a qué modelos afecta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El IMS (Intermediate Shaft) es un rodamiento que puede fallar de forma catastrófica en los motores M96/M97 del 911 996, el 911 997.1 (hasta 2006) y el Boxster/Cayman 986 y 987.1 (hasta 2006). Si no hay factura de un cambio preventivo a una solución reforzada, hay que asumir el coste en el precio de compra."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué se debe comprobar en un Porsche eléctrico o híbrido de segunda mano?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En el Taycan, pide un informe del estado de salud (%SoH) de la batería de alto voltaje y el historial de cargas rápidas. En los híbridos enchufables (Cayenne E-Hybrid, Panamera E-Hybrid), revisa la autonomía eléctrica real y el estado de la batería de tracción, que se degrada con el tiempo igual que en un eléctrico puro."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Merece la pena pagar por una inspección previa a la compra (PPI) independiente?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, casi siempre. Una inspección previa a la compra (PPI) con un especialista Porsche independiente cuesta entre 150 y 300 €, muy poco comparado con el riesgo de comprar un coche con un fallo de motor, caja o suspensión no detectado que puede costar miles de euros reparar."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="theme-light">
 
@@ -80,6 +161,11 @@
     </header>
 
     <div class="dashboard-container">
+        <div class="intro-block">
+            <h1>Checklist de inspección de un Porsche de segunda mano: qué revisar según el modelo</h1>
+            <p>Cada Porsche tiene sus propios puntos débiles según el modelo y la generación: el IMS del 996, el bore scoring del 997.1, la suspensión neumática del Cayenne o el estado de la batería del Taycan. Selecciona el modelo y la generación que vas a inspeccionar para generar una checklist a medida, con puntos críticos específicos, fallos comunes y documentación esencial. Tu progreso se guarda automáticamente en este navegador.</p>
+        </div>
+
         <main>
             <div class="card">
                 <h2 class="card-title">1. Selecciona el vehículo a inspeccionar</h2>
@@ -97,11 +183,55 @@
 
             <div class="card">
                 <h2 class="card-title">2. Checklist de inspección personalizada</h2>
+                <div class="progress-header">
+                    <span class="progress-count" id="progress-count">0 / 0 completado</span>
+                    <div class="progress-bar-track"><div class="progress-bar-fill" id="progress-bar-fill"></div></div>
+                    <button type="button" class="reset-btn" id="reset-btn">Reiniciar checklist</button>
+                </div>
                 <div id="checklist-container" class="checklist">
                     <!-- La checklist se generará aquí -->
                 </div>
             </div>
         </main>
+
+        <section class="card content-section">
+            <h2>Consejos generales antes de la inspección</h2>
+            <ul>
+                <li><strong>Lleva un lector OBD-II.</strong> Puede desvelar códigos de avería borrados justo antes de la visita o fallos intermitentes que no encienden ninguna luz en el cuadro.</li>
+                <li><strong>Pide arrancarlo en frío.</strong> Muchos fallos de motor (bore scoring, desgaste de válvulas) se notan mejor con el motor completamente frío, con el vendedor sin haberlo puesto en marcha antes de tu llegada.</li>
+                <li><strong>Desconfía de los extras "resueltos por el vendedor".</strong> Pide siempre la factura del taller, no solo la palabra del vendedor, especialmente en reparaciones críticas como el IMS o la suspensión neumática.</li>
+                <li><strong>Un coche muy modificado vale menos, no más.</strong> Las modificaciones no homologadas (escapes, suspensión, ECU) complican el mantenimiento y penalizan la reventa futura.</li>
+                <li><strong>Contrata una inspección previa a la compra (PPI).</strong> Un especialista Porsche independiente con elevador y boroscopio detecta en una hora lo que a un comprador particular le puede llevar semanas descubrir por las malas.</li>
+            </ul>
+
+            <div class="cross-link-box">
+                <strong>¿Quieres profundizar en los fallos de cada generación?</strong> Consulta la <a href="/porsche/fallos">base de conocimiento de fallos y fiabilidad</a>, calcula un precio justo con la <a href="/porsche/precio-segunda-mano">calculadora de precio de segunda mano</a>, o revisa qué extras merecen la pena en el <a href="/porsche/analisis-compra">análisis de opciones</a>.
+            </div>
+        </section>
+
+        <section class="card content-section">
+            <h2>Preguntas frecuentes sobre la inspección de un Porsche de segunda mano</h2>
+            <details class="faq-item" open>
+                <summary>¿Qué es lo primero que hay que revisar en un Porsche de segunda mano?</summary>
+                <p>Antes de mirar el coche, revisa la documentación: libro de mantenimiento sellado, facturas de reparaciones importantes (IMS, embrague, bore scoring, etc.) e informe de la DGT. Un historial completo en concesionario oficial o especialista de confianza vale más que cualquier detalle estético.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es necesario un boroscopio para comprar un 911 o un Cayman/Boxster de segunda mano?</summary>
+                <p>Es muy recomendable en los motores más expuestos al rayado de cilindros (bore scoring): 997.1, 987.1 y, en menor medida, 981 y 991.1. Un inspector Porsche independiente puede hacer esta prueba en menos de una hora y detecta un problema que puede costar más de 15.000 € reparar.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué es el fallo del rodamiento IMS y a qué modelos afecta?</summary>
+                <p>El IMS (Intermediate Shaft) es un rodamiento que puede fallar de forma catastrófica en los motores M96/M97 del 911 996, el 911 997.1 (hasta 2006) y el Boxster/Cayman 986 y 987.1 (hasta 2006). Si no hay factura de un cambio preventivo a una solución reforzada, hay que asumir el coste en el precio de compra.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué se debe comprobar en un Porsche eléctrico o híbrido de segunda mano?</summary>
+                <p>En el Taycan, pide un informe del estado de salud (%SoH) de la batería de alto voltaje y el historial de cargas rápidas. En los híbridos enchufables (Cayenne E-Hybrid, Panamera E-Hybrid), revisa la autonomía eléctrica real y el estado de la batería de tracción, que se degrada con el tiempo igual que en un eléctrico puro.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Merece la pena pagar por una inspección previa a la compra (PPI) independiente?</summary>
+                <p>Sí, casi siempre. Una inspección previa a la compra (PPI) con un especialista Porsche independiente cuesta entre 150 y 300 €, muy poco comparado con el riesgo de comprar un coche con un fallo de motor, caja o suspensión no detectado que puede costar miles de euros reparar.</p>
+            </details>
+        </section>
     </div>
 
     <footer class="site-footer">
@@ -113,6 +243,25 @@
     <script>
     const inspectionData = {
         '911': {
+            '964 (1989-1994)': {
+                critical: [
+                    "Revisar fugas de aceite en motor y culata; el diseño sin juntas de este motor hace casi inevitable alguna fuga leve, pero un goteo activo indica que hace falta un re-sellado completo (3.000-8.000 €).",
+                    "Comprobar el estado de los brazos de suspensión, propensos a agrietarse con la edad."
+                ],
+                common: [
+                    "Verificar el funcionamiento del aire acondicionado, poco efectivo incluso de serie.",
+                    "Revisar bajos y pasos de rueda en busca de óxido si el coche no ha estado en garaje."
+                ]
+            },
+            '993 (1995-1998)': {
+                critical: [
+                    "Comprobar si se enciende la luz de Check Engine por acumulación de carbonilla en los conductos de aire secundario (SAI); no es grave pero la limpieza es cara (800-2.000 €)."
+                ],
+                common: [
+                    "Revisar el estado de la carrocería galvanizada (muy resistente, pero comprobar zonas con impactos o repintados).",
+                    "Comprobar el funcionamiento del techo en versiones Targa o Cabriolet."
+                ]
+            },
             '996 (1998-2004 )': {
                 critical: [
                     "Preguntar y pedir facturas sobre el cambio preventivo del rodamiento IMS. Si no hay pruebas, asumir que hay que hacerlo (coste ~€2.500).",
@@ -135,18 +284,54 @@
                     "Escuchar si la bomba de la dirección asistida hace ruidos extraños."
                 ]
             },
+            '997.2 (2009-2012)': {
+                critical: [
+                    "Preguntar por el historial de la bomba de combustible de alta presión (DFI); es un fallo conocido de los primeros motores de inyección directa (1.000-1.800 € reparar)."
+                ],
+                common: [
+                    "Motor 9A1 mucho más fiable que el 997.1; céntrate en el desgaste normal de embrague, frenos y neumáticos.",
+                    "Comprobar el funcionamiento de la caja PDK si la lleva."
+                ]
+            },
             '991.1 (2012-2015)': {
                 critical: [
-                    "En coches con PDK, probar cambios de marcha bruscos (en modo Sport Plus) para detectar tirones o fallos en la mecatrónica."
+                    "En coches con PDK, probar cambios de marcha bruscos (en modo Sport Plus) para detectar tirones o fallos en la mecatrónica.",
+                    "Pedir análisis de aceite o boroscopia para descartar rayado de cilindros en motores 3.4L/3.8L; menos frecuente que en el 997.1 pero real, y Porsche amplió la garantía del motor para los casos identificados."
                 ],
                 common: [
                     "Verificar el correcto funcionamiento de las válvulas de cambio del escape deportivo (PSE), a veces se atascan.",
                     "Comprobar si los soportes dinámicos del motor (si los equipa) presentan fugas.",
                     "Revisar el sistema de elevación del eje delantero (LIFT) si lo tiene, es propenso a fallos."
                 ]
+            },
+            '991.2 (2016-2019)': {
+                critical: [
+                    "Revisar el funcionamiento del turbo (motores turboalimentados de serie desde esta generación); vigilar humos, silbidos o pérdida de potencia progresiva."
+                ],
+                common: [
+                    "Comprobar que el software del sistema PCM esté actualizado.",
+                    "Verificar el estado de los intercoolers y sus conductos, más numerosos que en generaciones atmosféricas."
+                ]
+            },
+            '992 (2019-Hoy)': {
+                critical: [],
+                common: [
+                    "Revisar que el software del sistema PCM (infoentretenimiento) esté en su última versión.",
+                    "Comprobar el funcionamiento de las ayudas a la conducción (Lane Keep, crucero adaptativo) si las lleva.",
+                    "Verificar que la garantía de fábrica o extendida siga vigente; a esta edad suele ser el caso."
+                ]
             }
         },
         'Cayman/Boxster': {
+            '986 (1997-2004)': {
+                critical: [
+                    "Igual que el 996: pedir historial o presupuestar el cambio preventivo del rodamiento IMS (~2.000-2.500 €) en modelos hasta 2006."
+                ],
+                common: [
+                    "Revisar la capota y sus desagües para evitar filtraciones que dañen la centralita, situada bajo el asiento.",
+                    "Comprobar el estado de los faros (empañamiento habitual)."
+                ]
+            },
             '987.1 (2005-2008)': {
                 critical: [
                     "Mismos puntos críticos que el 997.1: Inspección con boroscopio para 'Bore Scoring' es OBLIGATORIA.",
@@ -155,6 +340,22 @@
                 common: [
                     "Comprobar el estado de los cables de la palanca de cambios (pueden romperse).",
                     "En Boxster, revisar el estado de la capota y los desagües para evitar inundaciones en la centralita (debajo del asiento)."
+                ]
+            },
+            '987.2 (2009-2012)': {
+                critical: [],
+                common: [
+                    "Motor 9A1 mucho más fiable que el 987.1 (sin IMS y con mucho menos riesgo de bore scoring); céntrate en el desgaste general y el historial de mantenimiento.",
+                    "Revisar la capota en las versiones Boxster."
+                ]
+            },
+            '981 (2012-2016)': {
+                critical: [
+                    "Pedir análisis de aceite o boroscopia para descartar rayado de cilindros en los motores 3.4L, que comparten arquitectura con el 991.1; menos frecuente que en el 987.1 pero conviene descartarlo."
+                ],
+                common: [
+                    "Verificar el funcionamiento del techo eléctrico.",
+                    "Comprobar el estado de los amortiguadores PASM si los lleva."
                 ]
             },
             '718 (2017-Hoy)': {
@@ -176,64 +377,120 @@
                     "Comprobar si hay vibraciones en la transmisión alrededor de 40-60 km/h (indica fallo del cardán).",
                     "Verificar el funcionamiento de la suspensión neumática; que suba, baje y mantenga la altura sin problemas."
                 ]
+            },
+            '958 (2011-2017)': {
+                critical: [
+                    "Comprobar el funcionamiento de la caja de transferencia (tracción total); el motor que la controla puede fallar y provocar tirones (600-1.200 € reparar)."
+                ],
+                common: [
+                    "Revisar la suspensión neumática en busca de fugas en los fuelles.",
+                    "Verificar el estado de discos y pastillas de freno; vehículo pesado con desgaste elevado."
+                ]
+            },
+            '9Y0 / E3 (2018-Hoy)': {
+                critical: [
+                    "Revisar historial de actualizaciones de software y campañas de recall en el concesionario."
+                ],
+                common: [
+                    "Comprobar el funcionamiento de la suspensión neumática y del sistema de tracción integral.",
+                    "En versiones E-Hybrid, verificar el estado de salud de la batería de alto voltaje y la autonomía eléctrica real."
+                ]
             }
         },
-		'Panamera': {
-        	'970 (2009-2016)': {
-	            critical: [
-	                "Revisar funcionamiento de la suspensión neumática (costosa de reparar).",
-	                "En motores V8 gasolina, preguntar por historial de consumo de aceite excesivo.",
-	                "En híbridos, comprobar estado de batería de alto voltaje y su autonomía real."
-	            ],
-	            common: [
-	                "Verificar desgaste prematuro en discos y pastillas de freno (vehículo pesado).",
-	                "Revisar que las pantallas interiores funcionen correctamente, algunas pierden píxeles.",
-	                "Escuchar ruidos en la caja de cambios PDK a baja velocidad."
-	            ]
+        'Panamera': {
+            '970 (2009-2016)': {
+                critical: [
+                    "Revisar funcionamiento de la suspensión neumática (costosa de reparar).",
+                    "En motores V8 gasolina, preguntar por historial de consumo de aceite excesivo.",
+                    "En híbridos, comprobar estado de batería de alto voltaje y su autonomía real."
+                ],
+                common: [
+                    "Verificar desgaste prematuro en discos y pastillas de freno (vehículo pesado).",
+                    "Revisar que las pantallas interiores funcionen correctamente, algunas pierden píxeles.",
+                    "Escuchar ruidos en la caja de cambios PDK a baja velocidad."
+                ]
+            },
+            '971 (2017-Hoy)': {
+                critical: [
+                    "Comprobar historial de revisiones en concesionario oficial (software y actualizaciones son clave).",
+                    "Revisar los fuelles de la suspensión neumática en busca de fugas o grietas; si no se atajan a tiempo terminan quemando el compresor."
+                ],
+                common: [
+                    "Verificar el buen funcionamiento de los sensores de asistencia (radares, cámaras).",
+                    "Comprobar que el sistema multimedia PCM responda sin bloqueos.",
+                    "En híbridos, revisar capacidad real de la batería y tiempos de carga."
+                ]
+            }
         },
-        '971 (2017-Hoy)': {
-            critical: [
-                "Comprobar historial de revisiones en concesionario oficial (software y actualizaciones son clave)."
-            ],
-            common: [
-                "Verificar el buen funcionamiento de los sensores de asistencia (radares, cámaras).",
-                "Comprobar que el sistema multimedia PCM responda sin bloqueos.",
-                "En híbridos, revisar capacidad real de la batería y tiempos de carga."
-            ]
+        'Macan': {
+            '95B (2014-2018)': {
+                critical: [
+                    "Verificar posibles fugas de aceite en la tapa de distribución (fallo conocido de estas primeras unidades, 1.500-2.500 € reparar).",
+                    "Revisar funcionamiento del cambio PDK, especialmente en reducciones bruscas."
+                ],
+                common: [
+                    "Comprobar el estado de la suspensión (los silentblocks se desgastan prematuramente).",
+                    "Escuchar ruidos en la dirección asistida.",
+                    "Verificar desgaste irregular de neumáticos por desalineación frecuente."
+                ]
+            },
+            '95B Facelift / II (2019-2023)': {
+                critical: [
+                    "Si lleva suspensión neumática opcional, comprobar fugas en los fuelles y el funcionamiento del compresor; es un punto débil habitual a partir de los 40.000-60.000 km."
+                ],
+                common: [
+                    "Revisar el estado de la dirección asistida.",
+                    "Comprobar que el software de infoentretenimiento (PCM) esté actualizado."
+                ]
+            }
+        },
+        'Taycan': {
+            'J1 (2020-2023)': {
+                critical: [
+                    "Revisar estado de la batería de alto voltaje y preguntar por degradación (% de salud).",
+                    "Comprobar historial de cargas rápidas (demasiadas pueden acelerar la degradación)."
+                ],
+                common: [
+                    "Verificar correcto funcionamiento del sistema eléctrico general (software puede dar fallos).",
+                    "Comprobar que las actualizaciones OTA estén instaladas.",
+                    "Revisar el estado de los cargadores de a bordo (algunos fallos reportados en trifásicos)."
+                ]
+            },
+            'J1 Facelift (2024-Hoy)': {
+                critical: [],
+                common: [
+                    "Modelo muy reciente: céntrate en el historial de actualizaciones OTA y en que la garantía de la batería (8 años/160.000 km) siga vigente.",
+                    "Comprobar el estado de salud (%SoH) de la batería aunque sea un coche joven, para tener una referencia de partida."
+                ]
+            }
+        },
+        'Transaxle (924/944/968)': {
+            '924 / 944 (1976-1991)': {
+                critical: [
+                    "OBLIGATORIO: revisar a fondo bajos, subchasis y pasos de rueda en busca de corrosión; el 924 es especialmente propenso.",
+                    "En el 944, verificar el historial de cambio de la correa de distribución y de la correa de balance por intervalo de tiempo, no solo de kilometraje; si falla, el motor se destruye."
+                ],
+                common: [
+                    "Comprobar el estado del embrague y del tubo transaxle (conecta el motor delantero con la caja trasera).",
+                    "Revisar el funcionamiento de los elevalunas y el techo solar si lo lleva."
+                ]
+            },
+            '968 (1992-1995)': {
+                critical: [
+                    "Revisar el sistema Variocam: los patines de plástico de la cadena se desgastan y pueden romperse, causando problemas de sincronización (1.500-2.500 € reparar)."
+                ],
+                common: [
+                    "Comprobar el historial de mantenimiento del motor M44, muy similar al del 944 S2.",
+                    "Revisar bajos y subchasis en busca de corrosión, igual que en el 924/944."
+                ]
+            }
         }
-    },
-    'Macan': {
-        '95B (2014-Hoy)': {
-            critical: [
-                "Verificar posibles fugas de aceite en motores 2.0 y V6 de primeras unidades.",
-                "Revisar funcionamiento del cambio PDK, especialmente en reducciones bruscas."
-            ],
-            common: [
-                "Comprobar el estado de la suspensión (los silentblocks se desgastan prematuramente).",
-                "Escuchar ruidos en la dirección asistida.",
-                "Verificar desgaste irregular de neumáticos por desalineación frecuente."
-            ]
-        }
-    },
-    'Taycan': {
-        'J1 (2020-Hoy)': {
-            critical: [
-                "Revisar estado de la batería de alto voltaje y preguntar por degradación (% de salud).",
-                "Comprobar historial de cargas rápidas (demasiadas pueden acelerar la degradación)."
-            ],
-            common: [
-                "Verificar correcto funcionamiento del sistema eléctrico general (software puede dar fallos).",
-                "Comprobar que las actualizaciones OTA estén instaladas.",
-                "Revisar el estado de los cargadores de a bordo (algunos fallos reportados en trifásicos)."
-            ]
-        }
-    }
     };
 
     const generalChecklist = {
         docs: [
             "Libro de mantenimiento sellado y al día.",
-            "Facturas de reparaciones importantes (IMS, embrague, etc.).",
+            "Facturas de reparaciones importantes (IMS, embrague, bore scoring, suspensión neumática, etc.).",
             "Informe de la DGT para verificar dueños y cargas.",
             "ITV en vigor y reportes de inspecciones pasadas."
         ],
@@ -248,6 +505,13 @@
             "Revisar el desgaste del asiento del conductor, volante y pomo.",
             "Comprobar el funcionamiento del aire acondicionado (que enfríe de verdad).",
             "Buscar olores a humedad o moho."
+        ],
+        roadtest: [
+            "Arrancar el motor en frío (sin que el vendedor lo haya puesto en marcha antes) y escuchar ruidos anómalos.",
+            "Probar todos los modos de conducción y, si tiene cambio manual, todas las marchas incluida la reversa.",
+            "Frenar con firmeza en línea recta: el coche no debe tirar hacia ningún lado.",
+            "Circular sobre baches o adoquinado para detectar ruidos en la suspensión o la dirección.",
+            "Verificar que no vibre el volante ni la carrocería a partir de 100-120 km/h."
         ]
     };
 
@@ -255,6 +519,9 @@
         const modelSelect = document.getElementById('model-select');
         const generationSelect = document.getElementById('generation-select');
         const checklistContainer = document.getElementById('checklist-container');
+        const progressCount = document.getElementById('progress-count');
+        const progressBarFill = document.getElementById('progress-bar-fill');
+        const resetBtn = document.getElementById('reset-btn');
 
         function initializePage() {
             populateModelSelect();
@@ -282,42 +549,75 @@
             });
         }
 
+        function storageKey() {
+            return `porsche-checklist:${modelSelect.value}:${generationSelect.value}`;
+        }
+
+        function loadCheckedState() {
+            try {
+                const raw = localStorage.getItem(storageKey());
+                return raw ? new Set(JSON.parse(raw)) : new Set();
+            } catch (e) {
+                return new Set();
+            }
+        }
+
+        function saveCheckedState() {
+            const checkedTexts = Array.from(checklistContainer.querySelectorAll('input[type="checkbox"]:checked'))
+                .map(cb => cb.dataset.itemKey);
+            try {
+                localStorage.setItem(storageKey(), JSON.stringify(checkedTexts));
+            } catch (e) { /* localStorage no disponible: se ignora silenciosamente */ }
+        }
+
+        function updateProgress() {
+            const boxes = checklistContainer.querySelectorAll('input[type="checkbox"]');
+            const total = boxes.length;
+            const done = checklistContainer.querySelectorAll('input[type="checkbox"]:checked').length;
+            progressCount.textContent = `${done} / ${total} completado`;
+            progressBarFill.style.width = total > 0 ? `${(done / total) * 100}%` : '0%';
+        }
+
         function generateChecklist() {
             const model = modelSelect.value;
             const generation = generationSelect.value;
             const data = inspectionData[model][generation];
-            
+
             let html = '';
+            let itemIndex = 0;
 
-            if (data.critical && data.critical.length > 0) {
-                html += '<h3 class="category-title">🚨 Puntos Críticos Específicos</h3><ul>';
-                data.critical.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
-                html += '</ul>';
-            }
+            const renderGroup = (title, items) => {
+                if (!items || items.length === 0) return '';
+                let groupHtml = `<h3 class="category-title">${title}</h3><ul>`;
+                items.forEach(item => {
+                    groupHtml += `<li><input type="checkbox" data-item-key="${itemIndex++}"><label>${item}</label></li>`;
+                });
+                groupHtml += '</ul>';
+                return groupHtml;
+            };
 
-            if (data.common && data.common.length > 0) {
-                html += '<h3 class="category-title">🔧 Problemas Comunes Conocidos</h3><ul>';
-                data.common.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
-                html += '</ul>';
-            }
-
-            html += '<h3 class="category-title">📄 Documentación Esencial</h3><ul>';
-            generalChecklist.docs.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
-            html += '</ul>';
-
-            html += '<h3 class="category-title">✅ Inspección General del Vehículo</h3><ul>';
-            generalChecklist.exterior.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
-            generalChecklist.interior.forEach(item => { html += `<li><input type="checkbox"><label>${item}</label></li>`; });
-            html += '</ul>';
+            html += renderGroup('🚨 Puntos Críticos Específicos', data.critical);
+            html += renderGroup('🔧 Problemas Comunes Conocidos', data.common);
+            html += renderGroup('📄 Documentación Esencial', generalChecklist.docs);
+            html += renderGroup('✅ Inspección General del Vehículo', [...generalChecklist.exterior, ...generalChecklist.interior]);
+            html += renderGroup('🛣️ Prueba de Carretera', generalChecklist.roadtest);
 
             checklistContainer.innerHTML = html;
-            
-            // Add event listeners to new checkboxes
+
+            const savedState = loadCheckedState();
             checklistContainer.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                if (savedState.has(checkbox.dataset.itemKey)) {
+                    checkbox.checked = true;
+                    checkbox.closest('li').classList.add('done');
+                }
                 checkbox.addEventListener('change', (e) => {
                     e.target.closest('li').classList.toggle('done', e.target.checked);
+                    saveCheckedState();
+                    updateProgress();
                 });
             });
+
+            updateProgress();
         }
 
         function setupEventListeners() {
@@ -327,6 +627,11 @@
             });
 
             generationSelect.addEventListener('change', generateChecklist);
+
+            resetBtn.addEventListener('click', () => {
+                try { localStorage.removeItem(storageKey()); } catch (e) { /* no-op */ }
+                generateChecklist();
+            });
         }
 
         initializePage();
