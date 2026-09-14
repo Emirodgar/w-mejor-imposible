@@ -35,7 +35,7 @@ Cada extra analizado en este informe ha sido evaluado bajo cinco veredictos defi
 
 Este marco de evaluación permite un análisis estructurado y objetivo, proporcionando la información necesaria para que cada comprador tome una decisión informada que resuene con sus propias prioridades.
 
-> Utiliza nuestra [herramienta de análisis de opciones y su coste](https://mejorimposible.es/porsche/analisis-compra) para identificar cuáles son las más idóneas.
+> Utiliza nuestra [herramienta de análisis de opciones y su coste](https://mejorimposible.es/porsche/analisis-compra) para identificar cuáles son las más idóneas. Si alguna de las siglas que aparecen a continuación (RAS, PASM, PDCC, PCCB...) no te suena, tenemos una [guía de siglas y tecnologías Porsche explicadas](https://mejorimposible.es/porsche/siglas-tecnologias-porsche) que las repasa todas.
 
 ## II. Porsche 911 (992): el icono reinventado
 

@@ -25,7 +25,7 @@ La compañía nace en **1931**, cuando el ingeniero **Ferdinand Porsche** funda 
 
 El primer coche que llevó el nombre Porsche fue el **Porsche 64** (1939), construido sobre mecánica del Beetle para participar en una carrera Berlín-Roma que nunca llegó a disputarse por el estallido de la Segunda Guerra Mundial. El verdadero punto de partida de Porsche como fabricante de coches de producción fue el **Porsche 356**, presentado en 1948 y desarrollado por **Ferry Porsche**, hijo del fundador. Su célebre frase, que hoy sigue guiando la filosofía de la marca, resume el porqué de todo: *"Al principio miré a mi alrededor y no encontré el coche de mis sueños, así que decidí construirlo yo mismo."*
 
-El icónico **911** llegaría después, en 1963, como evolución natural del 356, y desde entonces no ha dejado de fabricarse.
+El icónico **911** llegaría después, en 1963, como evolución natural del 356, y desde entonces no ha dejado de fabricarse. Esa herencia directa del Beetle explica también uno de sus rasgos más comentados: [por qué el 911 lleva el motor en la parte trasera](/porsche/por-que-motor-911-esta-detras).
 
 ## ¿A qué grupo pertenece Porsche? ¿Quién es su dueño?
 
