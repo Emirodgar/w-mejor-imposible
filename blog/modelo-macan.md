@@ -52,6 +52,8 @@ Un dato sorprendente es que en 2025, el **57% de las ventas globales del Macan c
 
 ## Análisis de fiabilidad
 
+*Consulta también nuestra [base de fallos y fiabilidad por generación](/porsche/fallos) de todos los modelos Porsche.*
+
 ### Calificaciones Actuales
 
 El Macan ha mostrado una fiabilidad sólida, especialmente en los modelos más recientes:
@@ -75,7 +77,7 @@ Los **modelos de 2017 en adelante han demostrado ser más fiables**, mientras qu
 
 **Problemas generales**:
 
-- **Fugas de tuberías de refrigerante**: Afecta motores con más de 60,000 millas
+- **Fugas de tuberías de refrigerante**: Afecta motores con más de 100.000 km
 - **Desgaste excesivo de frenos**: Muchos propietarios reportan desgaste prematuro de pastillas y rotores
 - **Acumulación de carbón**: En motores de inyección directa, causando ralentí irregular
 - **Fallas en el infoentretenimiento**: Congelamiento o respuestas lentas del sistema PCM
@@ -85,10 +87,10 @@ Los **modelos de 2017 en adelante han demostrado ser más fiables**, mientras qu
 
 | Problema | Años afectados | Coste estimado |
 | :-- | :-- | :-- |
-| Reemplazo caja de transferencia | 2015-2018 | \$2,500-\$4,000 |
-| Servicio transmisión PDK | Todos | \$1,000-\$1,500 |
-| Pastillas/rotores (4 ruedas) | Todos | \$1,200-\$2,000 |
-| Reemplazo de neumáticos (4) | Todos | \$1,000-\$1,500 |
+| Reemplazo caja de transferencia | 2015-2018 | 2.500-4.000 € |
+| Servicio transmisión PDK | Todos | 1.000-1.500 € |
+| Pastillas/rotores (4 ruedas) | Todos | 1.200-2.000 € |
+| Reemplazo de neumáticos (4) | Todos | 1.000-1.500 € |
 
 ## Costes de mantenimiento
 
@@ -100,11 +102,11 @@ El mantenimiento anual del Macan oscila entre **1.200€ y 2.000€**. Se recomi
 
 | Servicio | coste aproximado |
 | :-- | :-- |
-| Cambio de aceite sintético | \300-\500 |
-| Servicio 20,000 millas | \425 |
-| Servicio 40,000 millas | \525 |
-| Cambio aceite PDK | \375 |
-| Cambio líquido frenos | \95 |
+| Cambio de aceite sintético | 300-500 € |
+| Servicio a los 30.000 km | 425 € |
+| Servicio a los 60.000 km | 525 € |
+| Cambio aceite PDK | 375 € |
+| Cambio líquido de frenos | 95 € |
 
 ### Intervalos de servicio
 
@@ -127,7 +129,7 @@ El **Macan emergió como el modelo con la depreciación más lenta**, perdiendo 
 ### Rendimiento excepcional
 
 - **Manejo deportivo**: Considerado uno de los SUVs más emocionantes de conducir, con manejo casi de auto deportivo
-- **Aceleración**: El Macan base acelera 0-60 km/h en 5.8 segundos, mientras que el Turbo lo hace en 4.1 segundos
+- **Aceleración**: El Macan base acelera de 0 a 60 mph (unos 97 km/h) en 5,8 segundos, mientras que el Turbo lo hace en 4,1 segundos; consulta la [ficha del modelo](/porsche/modelos/macan) para los datos de 0-100 km/h homologados en Europa de cada versión
 - **Transmisión PDK**: Sistema de doble embrague de 7 velocidades más responsivo que transmisiones automáticas convencionales
 
 
@@ -158,7 +160,7 @@ El **Macan emergió como el modelo con la depreciación más lenta**, perdiendo 
 
 - **Espacio trasero reducido**: Menos espacio para piernas que competidores como Audi Q5
 - **Almacenamiento interior**: Compartimientos de almacenamiento limitados
-- **Consumo de combustible**: Economía de combustible inferior a competidores (19/25 mpg vs 27/33 del BMW X3)
+- **Consumo de combustible**: Economía de combustible inferior a competidores según cifras EPA de Estados Unidos (19/25 mpg vs 27/33 del BMW X3); las cifras WLTP europeas varían por motorización
 
 
 ### Aspectos técnicos
@@ -167,6 +169,8 @@ El **Macan emergió como el modelo con la depreciación más lenta**, perdiendo 
 - **Potencia base limitada**: El motor base de 261 HP puede resultar insuficiente para algunos usuarios
 
 ## Análisis competitivo
+
+*Precios de referencia orientativos; para el PVP actualizado del Macan en España, consulta nuestra [evolución de precios de lanzamiento](/porsche/precios).*
 
 ### BMW X3
 
@@ -223,16 +227,18 @@ Porsche ofrece dos planes de Protección de Servicio Vehicular:
 ### Factores críticos al comprar usado
 
 - **Historial de servicio completo**: Absolutamente esencial
-- **Inspección pre-compra**: Fundamental para detectar problemas conocidos
+- **Inspección pre-compra**: Fundamental para detectar problemas conocidos; sigue nuestra [checklist de inspección](/porsche/checklist-inspecciones-segunda-mano) antes de firmar
 - **Verificar recalls**: Especialmente caja de transferencia en modelos tempranos
 - **Considerar garantía extendida**: Para protección contra reparaciones costosas
+
+Si buscas uno de segunda mano, compara la [evolución de precios y depreciación del Macan](/porsche/precio-segunda-mano) o utiliza el [comparador de modelos](/porsche/comparador) para verlo junto a otras opciones de la gama.
 
 
 ## Perspectiva futura
 
 ### Transición eléctrica
 
-La nueva generación completamente eléctrica representa un cambio radical, con precios iniciales desde 78.800 en EE.UU. y similares en Europa. La versión eléctrica ofrece:
+La nueva generación completamente eléctrica representa un cambio radical: en España, el Macan Eléctrico parte de unos [85.300 €](/porsche/precios) de PVP. La versión eléctrica ofrece:
 
 - **Potencia superior**: Hasta 630 HP en versión Turbo
 - **Autonomía**: Hasta 654 km (406 millas)

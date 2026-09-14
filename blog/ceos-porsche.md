@@ -29,7 +29,7 @@ La historia de Porsche en España ha estado marcada por el liderazgo de diversos
 - La plantilla creció de 15 a 32 personas durante el primer año
 - Establecimiento de una red inicial de 10 concesionarios
 
-Heyl enfrentó enormes desafíos económicos, incluyendo un **impuesto de lujo del 33% más aranceles**, y la fortaleza del marco alemán que había aumentado casi un 50% entre 1980 y 1984. Un Porsche 911 Carrera 3.2 costaba aproximadamente 40.000 euros en 1984, equivalentes a 162.000 euros actuales.[^1_1][^1_5]
+Heyl enfrentó enormes desafíos económicos, incluyendo un **impuesto de lujo del 33% más aranceles**, y la fortaleza del marco alemán que había aumentado casi un 50% entre 1980 y 1984. Un Porsche 911 Carrera 3.2 costaba aproximadamente 40.000 euros en 1984, equivalentes a unos 162.000 euros actuales ajustando por inflación —muy por encima del [precio de lanzamiento del 911 actual](/porsche/precios), lo que da una idea de cuánto ha bajado el coste relativo de acceder a un 911 nuevo en términos reales—.
 
 ## **La Era de expansión y modernización (1997-2010)**
 
@@ -150,7 +150,7 @@ Evolución de matriculaciones de Porsche en España durante el mandato de Tomás
 **Excelencia en satisfacción del cliente:**
 
 - **Puntuación de 9,7-9,8 sobre 10 en satisfacción del cliente**
-- Los 24 Centros Porsche son **referencia en valoración de clientes**
+- Los [24 Centros Porsche](/porsche/concesionarios) son **referencia en valoración de clientes**
 - Red de concesionarios calificada como **"la más profesional y eficiente"**
 
 Porsche ha conseguido una gran valoración en los [índices de satisfacción de cliente y ventas](https://mejorimposible.es/porsche/satisfaccion-porsche). 

@@ -117,13 +117,13 @@ const ventasGlobalesChart = new Chart(ctx1, {
 
 Los **SUV representan el 60% del total de ventas** de Porsche en 2024, consolidando la transformación estratégica de la marca hacia vehículos de mayor practicidad sin sacrificar el ADN deportivo.
 
-- **Cayenne**: Se mantiene como el **modelo más vendido** con 102,889 unidades en 2024, experimentando un crecimiento del 18% respecto al año anterior y del 11.8% comparado con 2019. Su éxito radica en la combinación exitosa de lujo, prestaciones deportivas y versatilidad familiar.
+- **[Cayenne](/porsche/modelos/cayenne)**: Se mantiene como el **modelo más vendido** con 102,889 unidades en 2024, experimentando un crecimiento del 18% respecto al año anterior y del 11.8% comparado con 2019. Su éxito radica en la combinación exitosa de lujo, prestaciones deportivas y versatilidad familiar.
 
-- **Macan**: A pesar de registrar 82,795 ventas en 2024, muestra una tendencia decreciente (-17.2% vs 2019), principalmente debido a la **transición hacia la electrificación**. Sin embargo, la versión eléctrica del Macan representa el 57% de las ventas totales del modelo, con 25,884 unidades eléctricas versus 19,253 de combustión.
+- **[Macan](/porsche/modelos/macan)**: A pesar de registrar 82,795 ventas en 2024, muestra una tendencia decreciente (-17.2% vs 2019), principalmente debido a la **transición hacia la electrificación**. Sin embargo, la versión eléctrica del Macan representa el 57% de las ventas totales del modelo, con 25,884 unidades eléctricas versus 19,253 de combustión. Puedes leer más en nuestra [guía completa de compra del Macan](/porsche/porsche-macan).
 
 ### Renacimiento del 911
 
-El icónico **Porsche 911** experimenta su mejor momento en décadas, con **50,941 unidades vendidas en 2024** (+43.8% vs 2019). Este crecimiento del 2% respecto a 2023 demuestra que el 911 mantiene su relevancia y deseo entre los entusiastas, especialmente en mercados como Estados Unidos donde alcanzó un récord de 14,128 unidades.
+El icónico **[Porsche 911](/porsche/modelos/911)** experimenta su mejor momento en décadas, con **50,941 unidades vendidas en 2024** (+43.8% vs 2019). Este crecimiento del 2% respecto a 2023 demuestra que el 911 mantiene su relevancia y deseo entre los entusiastas, especialmente en mercados como Estados Unidos donde alcanzó un récord de 14,128 unidades.
 
 ## Distribución por tipo de combustible: La era de la electrificación
 
@@ -224,7 +224,7 @@ const combustibleChart = new Chart(ctx3, {
 
 ### Desafíos del taycan
 
-El **Taycan**, flagship eléctrico de Porsche, enfrenta dificultades significativas con una caída del 49% en ventas durante 2024, entregando solo 20,836 unidades. Esta contracción refleja los desafíos de posicionamiento en un mercado EV cada vez más competitivo y la espera de consumidores por el facelift del modelo.
+El **[Taycan](/porsche/modelos/taycan)**, flagship eléctrico de Porsche, enfrenta dificultades significativas con una caída del 49% en ventas durante 2024, entregando solo 20,836 unidades. Esta contracción refleja los desafíos de posicionamiento en un mercado EV cada vez más competitivo y la espera de consumidores por el facelift del modelo.
 
 
 {% raw %}
@@ -610,4 +610,6 @@ const evolucionModelosChart = new Chart(ctx5, {
 El análisis de 20 años de ventas revela una **Porsche en plena transformación exitosa**, habiendo cuadruplicado sus ventas mientras mantiene su posicionamiento premium. Los **SUV han redefinido la marca** sin comprometer su esencia deportiva, mientras que la **electrificación avanza de manera medida y estratégica**.
 
 Los principales retos incluyen la **recuperación del mercado chino**, la **gestión de la transición eléctrica del Taycan**, y el mantenimiento del **momentum en Norteamérica**. Sin embargo, la diversificación geográfica, la fortaleza de modelos icónicos como el 911, y la flexibilidad estratégica posicionan a Porsche favorablemente para los próximos años.
+
+Si te interesa cómo se traduce este crecimiento en el mercado español, consulta la [evolución de precios de lanzamiento](/porsche/precios) de cada modelo o compara sus fichas técnicas completas en nuestro [directorio de modelos](/porsche/modelos).
 	

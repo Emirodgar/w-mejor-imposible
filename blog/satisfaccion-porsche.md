@@ -65,13 +65,13 @@ La satisfacción general de los usuarios de Porsche es muy alta según diversas 
 ## Opiniones de propietarios y pruebas de satisfacción
 
 - Encuestas a propietarios de vehículos nuevos muestran que Porsche logra posiciones de honor (top 5) en satisfacción, con una puntuación general del 89.16 % en una de las encuestas más recientes, sólo por detrás de Subaru, Tesla y KIA.
-- Los clientes destacan como positivos la calidad dinámica, la fiabilidad mecánica y la atención personalizada en los concesionarios, siendo el Porsche 911, Macan y Boxster algunos de los modelos más apreciados.
+- Los clientes destacan como positivos la calidad dinámica, la fiabilidad mecánica y la atención personalizada en los [concesionarios](/porsche/concesionarios), siendo el [911](/porsche/modelos/911), el [Macan](/porsche/modelos/macan) y el Boxster/[718](/porsche/modelos/718) algunos de los modelos más apreciados.
 - La mayoría de los usuarios afirma que volvería a comprar un Porsche y muestra altos índices de fidelidad hacia la marca.
 
 
 ## Detalles de experiencia y áreas de mejora
 
 - Las áreas mejor valoradas son la calidad percibida, el confort de conducción y la deportividad de los vehículos, así como el nivel de equipamiento y diseño.
-- Entre las críticas o sugerencias de mejora, se mencionan el alto coste de mantenimiento y algunos problemas específicos de servicio postventa en situaciones concretas, aunque suelen ser la excepción más que la norma.
+- Entre las críticas o sugerencias de mejora, se mencionan el [alto coste de mantenimiento](/porsche/coste-real) y algunos problemas específicos de servicio postventa en situaciones concretas, aunque suelen ser la excepción más que la norma —consulta también nuestra [base de fallos y fiabilidad por generación](/porsche/fallos) para ver qué modelos y años concentran más incidencias—.
 
 La satisfacción general de los clientes de Porsche es una de las más altas de la industria automovilística, tanto en producto como en experiencia postventa, según datos recientes de estudios y encuestas internacionales.
