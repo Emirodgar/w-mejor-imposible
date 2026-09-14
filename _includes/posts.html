@@ -2,7 +2,7 @@
 
 {% assign published_pages = site.pages | where_exp: "page", "page.feed == 1" | sort: "date" | reverse %}
 {% for page in published_pages %}
-	<div class="news-card">
+	<div class="news-card" data-category="{{ page.folder }}">
 		<div>
 			<div class="source">{{ page.folder }}</div>
 			<h3>{{ page.title }}</h3>
