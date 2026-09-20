@@ -56,6 +56,7 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
    - Dentro de `<!-- RSS-NEWS-CARDS:START -->` ... `<!-- RSS-NEWS-CARDS:END -->`, **añade** (no borres las que ya había) una tarjeta por cada noticia elegida esta semana, insertándolas justo después del marcador de inicio (las más nuevas siempre arriba). Plantilla exacta de cada tarjeta:
      ```html
      <div class="news-card" data-category="CATEGORIA">
+         <div class="news-thumb"><img src="/img/Modelos/IMAGEN-frontal.png" alt="" loading="lazy"></div>
          <div class="source">FUENTE</div>
          <h3>TITULAR EN ESPAÑOL</h3>
          <p class="excerpt">EXTRACTO EN ESPAÑOL</p>
@@ -65,6 +66,11 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
          </div>
      </div>
      ```
+   - **Miniatura de cada tarjeta** (`.news-thumb`): el sitio tiene una librería de ilustraciones propias por modelo en `img/Modelos/` (estilo silueta plana, sin fotografía de terceros, cero riesgo de derechos): `911992-frontal.png` (911 actual, también válido para GT3/Turbo/Targa/Carrera modernos), `911997-frontal.png` (911 generación anterior), `gmodel-frontal.png` (911 clásico/histórico — úsalo para modelos vintage sin ilustración propia: 356, 550, 930, 935, 959, etc.), `cayenne-frontal.png`, `cayman-frontal.png` (también para Boxster/718), `macan-frontal.png`, `panamera-frontal.png`, `taycan-frontal.png`. Elige la imagen según el modelo protagonista del titular (si se nombra más de uno, usa el más relevante para la noticia). Si la noticia no gira en torno a un modelo concreto (corporativo, financiero, tecnología general, merchandising, etc.) o no hay ninguna ilustración que encaje razonablemente, usa el marcador de posición en vez de forzar una imagen que no pega:
+     ```html
+     <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
+     ```
+     Nunca hotlinkees ni descargues imágenes de las webs de origen de las noticias (riesgo de derechos y de enlaces rotos) — la miniatura sale siempre de `img/Modelos/` o es el marcador de posición.
    - Si después de añadir las nuevas tarjetas hay más de 30 en total dentro de esa zona, elimina las más antiguas (las del final) hasta dejar como máximo 30.
    - No toques nada fuera de esas dos zonas marcadas.
 
