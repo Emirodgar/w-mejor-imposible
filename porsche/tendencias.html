@@ -80,19 +80,6 @@
             flex-direction: column;
         }
         .theme-light .news-card { background-color: var(--light-card-bg); }
-        .news-card .news-thumb {
-            width: calc(100% + 40px); margin: -20px -20px 15px -20px; aspect-ratio: 16 / 9;
-            overflow: hidden; border-radius: 8px 8px 0 0; background-color: #3a3a3a;
-        }
-        .news-card .news-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .news-card .news-thumb.placeholder {
-            display: flex; align-items: center; justify-content: center;
-            background: linear-gradient(135deg, #2a2a2a, #121212);
-        }
-        .news-card .news-thumb.placeholder .thumb-badge {
-            font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.32);
-        }
         .news-card .source { font-size: 12px; font-weight: bold; color: var(--porsche-gold); margin-bottom: 10px; }
         .news-card h3 { font-size: 1.3rem; margin: 0 0 10px 0; flex-grow: 1; }
         .news-card .excerpt { font-size: 0.9rem; line-height: 1.5; opacity: 0.7; margin-bottom: 15px; }
@@ -168,7 +155,6 @@
             <div class="news-grid">
                 <!-- RSS-NEWS-CARDS:START -->
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Yahoo Finance</div>
                     <h3>Porsche podría recortar 4.100 empleos más en plena crisis de beneficios</h3>
                     <p class="excerpt">El fabricante de Stuttgart afronta un agujero de 700 millones de euros, agravado por una caída del 26,3% en ventas en China y un giro de 3.900 millones para dar marcha atrás en su apuesta por el todo eléctrico. Los nuevos recortes se suman al plan de Volkswagen de eliminar 50.000 empleos para 2030 y podrían dejar a Porsche con 13.100 despidos totales, cerca de uno de cada cinco puestos, de aquí a 2035. Volkswagen ya ha registrado una provisión de 6.000 millones de euros sobre su participación en la marca.</p>
@@ -178,7 +164,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb"><img src="/img/Modelos/911992-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">The Supercar Blog</div>
                     <h3>Porsche entrega su coche número un millón en China</h3>
                     <p class="excerpt">El hito llega 25 años después de que la marca abriera su primer concesionario en Pekín, y el vehículo elegido para la ocasión fue un 911 GT3 Touring. La entrega se produce en plena etapa de dificultades para la marca en el mercado chino, con caídas de ventas y ajustes internos de por medio.</p>
@@ -188,7 +173,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Lanzamientos">
-                    <div class="news-thumb"><img src="/img/Modelos/911992-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Times Brasil</div>
                     <h3>Porsche presenta el 911 GT3 S/C, su primer GT3 descapotable</h3>
                     <p class="excerpt">Mantiene el bóxer atmosférico de 4.0 litros y 502 CV con caja manual de seis velocidades del cupé, y suma una capota eléctrica retráctil que se abre en solo 12 segundos. Pese a añadir componentes como frenos de carbono-cerámica y llantas de magnesio, el sobrepeso frente al cupé es de apenas 36 kg. Arranca la producción en 2026 con un precio base de 273.000 dólares.</p>
@@ -198,7 +182,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Guías">
-                    <div class="news-thumb"><img src="/img/Modelos/gmodel-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Jalopnik</div>
                     <h3>¿Cuánto ha subido realmente el precio de un Porsche desde 1976?</h3>
                     <p class="excerpt">Comparando el 912E de 1976 (10.845 dólares, unos 65.339 dólares ajustados a 2026) con el Macan más asequible de hoy (67.750 dólares), el precio real apenas se ha movido. La sorpresa está en el poder adquisitivo: según el análisis, acceder a un Porsche deportivo no era más fácil en los setenta pese al precio similar, porque salarios y coste de vida jugaban entonces mucho más a favor del comprador.</p>
@@ -208,7 +191,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Automovilismo Canario</div>
                     <h3>Hedley Studios reinterpreta el Porsche 550 Spyder en clave eléctrica y con licencia oficial</h3>
                     <p class="excerpt">El 550 J es una versión al 80% del tamaño original, con motor eléctrico de 48 voltios, fabricación artesanal en Reino Unido y una tirada limitada a 250 unidades. Porsche ha dado acceso a Hedley Studios a su archivo histórico y ha asesorado el proyecto de principio a fin.</p>
@@ -218,7 +200,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Lanzamientos">
-                    <div class="news-thumb"><img src="/img/Modelos/cayenne-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Motor1.com</div>
                     <h3>El Porsche Cayenne Electric 2026 estrena puertas automáticas, masaje y carga inalámbrica</h3>
                     <p class="excerpt">La actualización suma hasta 92 nuevas opciones de personalización, incluida la paleta Paint to Sample, además de un asistente de puertas eléctricas y una función de masaje en los asientos. El cargador inalámbrico, ya a la venta en Alemania por 6.961 euros, ofrece 11 kW y hasta un 90% de eficiencia para cargar de un tirón la batería de 113 kWh durante la noche.</p>
@@ -228,7 +209,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Porsche Newsroom</div>
                     <h3>Porsche fabrica sus primeras celdas de batería con cátodo 100% reciclado</h3>
                     <p class="excerpt">En colaboración con la alemana cylib, Porsche ha producido como proyecto piloto celdas cuyo material activo del cátodo procede íntegramente de materias primas recicladas, un paso que sienta las bases para reducir la dependencia de fuentes globales en sus futuras baterías de alto voltaje.</p>
@@ -238,7 +218,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">The Autopian</div>
                     <h3>La crítica: los objetos con la marca Porsche menos inspirados que puedes comprar</h3>
                     <p class="excerpt">El autor carga contra la colaboración de Porsche con Smeg para frigoríficos, tostadoras y cafeteras: funcionan igual que los modelos económicos y su único gesto de diseño es pegar el logo, muy lejos de otras colaboraciones de Smeg con más personalidad, como la firmada con Dolce & Gabbana.</p>
@@ -248,7 +227,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb"><img src="/img/Modelos/taycan-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Yahoo Vida y Estilo</div>
                     <h3>Porsche se hunde un 14,7% en ventas en EE.UU. y algunos concesionarios presionan con el Taycan</h3>
                     <p class="excerpt">El Taycan se desploma un 48,2% mientras el 911 crece un 56,3%, y varios concesionarios estadounidenses condicionan la asignación de los codiciados GT3 y GT3 RS a la compra previa de un Taycan, usando la escasez como palanca de negociación.</p>
@@ -258,7 +236,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Lanzamientos">
-                    <div class="news-thumb"><img src="/img/Modelos/cayman-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">WhichCar</div>
                     <h3>El Boxster eléctrico resucita: lo cazan a pleno rendimiento en Nürburgring</h3>
                     <p class="excerpt">Pese a los rumores de que Porsche iba a cancelar el 718 eléctrico, un prototipo con los frenos al rojo vivo demuestra que el proyecto sigue adelante, con una batería de en torno a 82 kWh, más de 480 km de autonomía y arquitectura de 800 voltios. Podría desvelarse en el Capital Markets Day del 7 de octubre.</p>
@@ -268,7 +245,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/cayenne-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Yahoo Vida y Estilo</div>
                     <h3>El Porsche Cayenne eléctrico ya está a la venta en España</h3>
                     <p class="excerpt">La gama arranca con 442 CV y 643 km de autonomía WLTP, sube hasta los 666 CV en el S Electric y culmina en el Turbo Electric con 1.156 CV y 0 a 100 km/h en 2,5 segundos, todo ello con un interior dominado por pantallas de alta tecnología.</p>
@@ -278,7 +254,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Cinco Días</div>
                     <h3>Porsche gana menos que Skoda dentro del Grupo Volkswagen este semestre</h3>
                     <p class="excerpt">La marca checa, vista tradicionalmente como la hermana modesta del grupo, supera en beneficio operativo semestral a Porsche, justo cuando Volkswagen anuncia un plan de ajuste para ganar competitividad frente a los fabricantes chinos.</p>
@@ -288,7 +263,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Motor16</div>
                     <h3>Porsche vende su participación en Bugatti Rimac por 1.000 millones de euros</h3>
                     <p class="excerpt">La marca se deshace de su 45% en Bugatti Rimac y su 20,6% en Rimac Group a favor de un consorcio liderado por HOF Capital. Bugatti abandona así el Grupo Volkswagen tras casi tres décadas, en una operación que prioriza liquidez frente a apuestas tecnológicas a largo plazo.</p>
@@ -298,7 +272,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Lanzamientos">
-                    <div class="news-thumb"><img src="/img/Modelos/cayman-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">evo</div>
                     <h3>El Boxster eléctrico está en camino, pero las versiones de gasolina seguirán vivas</h3>
                     <p class="excerpt">Porsche confirma que su próximo deportivo de dos plazas llegará también en versión 100% eléctrica, sin renunciar al motor de combustión en las variantes de gama alta, en línea con su giro hacia una electrificación menos radical.</p>
@@ -308,7 +281,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/911992-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Autojosh</div>
                     <h3>Porsche presenta el 911 GT3 100 Jahre Nürburgring, edición limitada a 100 unidades</h3>
                     <p class="excerpt">Con detalles en verde inspirados en el apodo "Infierno Verde" del circuito alemán, este GT3 conmemorativo mantiene el seis cilindros de 4.0 litros aspirado y admite el kit Manthey. Solo se venderá en Alemania, con entregas previstas para 2027.</p>
@@ -318,7 +290,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/911992-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Driving.ca</div>
                     <h3>A prueba el Porsche 911 Targa 4S 2026: elegante, vistoso y algo diva</h3>
                     <p class="excerpt">El probador destaca el carácter especial de la carrocería descapotable con arco fijo, aunque advierte de que puede resultar temperamental en el día a día. Con todo, reconoce que es un Targa que le encantaría tener en el garaje.</p>
@@ -328,7 +299,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/gmodel-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Motorpasión</div>
                     <h3>El día más turbio de Porsche en Le Mans: cuando dos narcotraficantes ganaron con un 935 privado</h3>
                     <p class="excerpt">En 1979, los hermanos Whittington compraron un Porsche 935 K3 por 200.000 dólares en efectivo minutos antes de la carrera y se llevaron la victoria absoluta. Años después se destapó que financiaban sus equipos con dinero del narcotráfico, y ambos acabaron condenados.</p>
@@ -338,7 +308,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb"><img src="/img/Modelos/taycan-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Carsales.com.au</div>
                     <h3>Porsche fuerza a un fabricante chino a retirar el nombre "Taikon 5" por su parecido con Taycan</h3>
                     <p class="excerpt">Porsche y Volkswagen han llevado a los tribunales a la china Forthing, que ha optado por congelar el nombre en Australia mientras se resuelve el litigio iniciado en Nueva Zelanda por la confusión con el Taycan y el Tayron.</p>
@@ -348,7 +317,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Lanzamientos">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">De Cero a 100</div>
                     <h3>Porsche prepara el sucesor del 918 Spyder junto a Audi y Lamborghini</h3>
                     <p class="excerpt">El proyecto, conocido como Mission X, compartiría plataforma con el Audi Nuvolari y el Lamborghini Temerario, y podría virar de la propulsión eléctrica pura hacia un esquema de combustión más rentable.</p>
@@ -358,7 +326,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/gmodel-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Motorpasión</div>
                     <h3>El Porsche 959 que Bill Gates tuvo 13 años secuestrado en la aduana de EE.UU.</h3>
                     <p class="excerpt">Gates importó su 959 a finales de los 80 y pagó 28 dólares diarios de depósito para evitar que lo destruyeran, hasta que su batalla legal empujó la "Show and Display Law" que en 2001 le permitió recuperarlo.</p>
@@ -368,7 +335,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Lanzamientos">
-                    <div class="news-thumb"><img src="/img/Modelos/cayenne-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">ChileAutos</div>
                     <h3>Presentado el nuevo Porsche Cayenne Electric: el Porsche de serie más potente de la historia</h3>
                     <p class="excerpt">La cuarta generación del Cayenne se electrifica por completo y llega con 1.156 CV, la cifra más alta jamás ofrecida en un Porsche de producción.</p>
@@ -378,7 +344,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/911992-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Gear Patrol</div>
                     <h3>Porsche presenta el 911 GT3 Bergsport, una edición inspirada en la montaña</h3>
                     <p class="excerpt">Con un color Valleygreen exclusivo y un planteamiento más puro, esta variante especial del GT3 rinde homenaje a la tradición alpina de la marca.</p>
@@ -388,7 +353,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Modelos">
-                    <div class="news-thumb"><img src="/img/Modelos/911992-frontal.png" alt="" loading="lazy"></div>
                     <div class="source">Motor1.com</div>
                     <h3>El Porsche 911 Slantnose, una pieza única que podría anticipar el diseño de futuros 911</h3>
                     <p class="excerpt">Este ejemplar de Sonderwunsch con morro inclinado sirve de banco de pruebas para posibles opciones estéticas en próximas generaciones del 911.</p>
@@ -398,7 +362,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">TorqueCafe</div>
                     <h3>El próximo superdeportivo de Porsche podría compartir base técnica con Lamborghini y Audi</h3>
                     <p class="excerpt">Según un informe, el futuro buque insignia de la marca usaría la misma plataforma que el Lamborghini Temerario y el Audi Nuvolari.</p>
@@ -408,7 +371,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Yahoo Noticias</div>
                     <h3>Porsche traspasa su filial tecnológica a Tata Consultancy Services e integra IA en sus procesos</h3>
                     <p class="excerpt">El acuerdo estratégico a cinco años con TCS busca acelerar la digitalización y la inteligencia artificial en la fabricación y los servicios de la marca.</p>
@@ -418,7 +380,6 @@
                     </div>
                 </div>
                 <div class="news-card" data-category="Análisis">
-                    <div class="news-thumb placeholder"><span class="thumb-badge">Porsche</span></div>
                     <div class="source">Motor16</div>
                     <h3>Porsche se alía con Xpeng para esquivar las multas de CO2 de la Unión Europea</h3>
                     <p class="excerpt">El acuerdo, que arranca en 2026, permite a Porsche sumarse al pool de emisiones de Xpeng y cumplir con los objetivos medioambientales europeos.</p>
