@@ -90,10 +90,10 @@
         .dealer-card.highlight .stars { color: var(--porsche-red); }
         .dealer-rating .score { margin-left: 10px; font-weight: bold; }
         .dealer-rating .review-count { margin-left: 6px; opacity: 0.65; font-size: 0.85em; }
-        .dealer-actions { margin-top: 15px; }
+        .dealer-actions { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 10px; }
         .dealer-actions a {
-            text-decoration: none; color: inherit; padding: 8px 15px;
-            border-radius: 6px; border: 1px solid var(--porsche-grey); margin-right: 10px; font-size: 14px;
+            display: inline-block; text-decoration: none; color: inherit; padding: 8px 15px;
+            border-radius: 6px; border: 1px solid var(--porsche-grey); font-size: 14px; box-sizing: border-box;
         }
         .dealer-actions a:hover { background-color: var(--porsche-grey); color: white; }
         .dealer-actions a.detail-link {

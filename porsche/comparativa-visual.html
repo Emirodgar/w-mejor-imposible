@@ -60,7 +60,8 @@
         .visual-container img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; max-height: 100%; transition: opacity 0.3s; }
         .visual-container .car-b { opacity: 0.7; }
 
-        .data-table table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .data-table .table-container { overflow-x: auto; margin-top: 20px; }
+        .data-table table { width: 100%; min-width: 500px; border-collapse: collapse; }
         .data-table th, .data-table td { padding: 12px; text-align: center; border-bottom: 1px solid var(--porsche-grey); }
         .data-table th { font-weight: bold; color: var(--porsche-gold); }
         .data-table .diff-pos { color: #28a745; font-weight: bold; }
@@ -200,6 +201,7 @@
 
         <div class="card data-table">
             <h2 class="card-title">3. Tabla de Dimensiones y Diferencias</h2>
+            <div class="table-container">
             <table>
                 <thead>
                     <tr>
@@ -248,6 +250,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
 
         <section class="card content-section">
