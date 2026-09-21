@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de importación de un Porsche desde Alemania: impuesto de matriculación y costes | Mejor Imposible</title>
+    <meta name="description" content="Calcula el coste real de traer un Porsche de Alemania a España: impuesto de matriculación (IEDMT) según las emisiones de CO2, IVA, trámites y comparación con el precio oficial en España.">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --hairline: #e5e5e5;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1200px; margin: 0 auto;
+        }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); transition: background-color 0.3s, color 0.3s; margin-bottom: 20px; }
+        .theme-light .card { background-color: var(--light-card-bg); border: 1px solid var(--hairline); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 1.2em; font-weight: 600; margin: 0 0 20px 0; }
+
+        .grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; min-width: 0; }
+        .grid-layout > .card { min-width: 0; }
+        @media (max-width: 900px) { .grid-layout { grid-template-columns: 1fr; } }
+
+        .form-group { margin-bottom: 18px; min-width: 0; }
+        .form-group label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; }
+        .form-group .hint { font-size: 12px; opacity: 0.65; margin-top: 4px; }
+        .form-group input, .form-group select {
+            width: 100%; min-width: 0; padding: 10px 12px; border-radius: 6px; border: 1px solid var(--porsche-grey);
+            background-color: inherit; color: inherit; font-size: 15px; box-sizing: border-box;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; min-width: 0; }
+        .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; min-width: 0; }
+        @media (max-width: 600px) { .form-row-3 { grid-template-columns: 1fr; } }
+
+        .checkbox-group { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px; }
+        .checkbox-group input { width: auto; margin-top: 3px; }
+        .checkbox-group label { font-size: 14px; font-weight: 500; }
+
+        .section-divider { border: none; border-top: 1px dashed var(--porsche-grey); opacity: 0.3; margin: 22px 0; }
+        .subsection-title { font-size: 0.8em; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin: 0 0 15px 0; }
+
+        .results-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 15px; }
+        @media (max-width: 600px) { .results-grid { grid-template-columns: 1fr; } }
+        .result-box { text-align: center; padding: 15px; border-radius: 8px; background-color: var(--porsche-grey); color: white; }
+        .result-box.highlight { background-color: var(--porsche-red); grid-column: span 2; }
+        @media (max-width: 600px) { .result-box.highlight { grid-column: span 1; } }
+        .result-box .value { font-size: 1.6em; font-weight: 700; }
+        .result-box .label { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+
+        .bracket-note { font-size: 14px; padding: 12px 15px; border-radius: 6px; background-color: rgba(227, 171, 55, 0.15); border: 1px solid var(--porsche-gold); margin-bottom: 20px; }
+        .warning-note { font-size: 14px; padding: 12px 15px; border-radius: 6px; background-color: rgba(177, 43, 40, 0.1); border: 1px solid var(--porsche-red); margin-bottom: 20px; display: none; }
+        .savings-note { font-size: 14px; padding: 12px 15px; border-radius: 6px; background-color: rgba(227, 171, 55, 0.15); border: 1px solid var(--porsche-gold); margin-bottom: 20px; }
+
+        .breakdown-list { list-style: none; padding: 0; margin: 0 0 20px 0; font-size: 14px; }
+        .breakdown-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--hairline); }
+        .theme-dark .breakdown-list li { border-bottom-color: #3a3f45; }
+        .breakdown-list li:last-child { border-bottom: none; }
+        .breakdown-list .item-label { opacity: 0.75; }
+        .breakdown-list .item-value { font-weight: 600; }
+
+        .disclaimer { font-size: 12px; opacity: 0.6; margin-top: 15px; line-height: 1.5; }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 800px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul, .content-section ol { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .steps-list { counter-reset: step; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step; position: relative; padding: 0 0 18px 42px; margin-bottom: 4px; }
+        .steps-list li::before {
+            content: counter(step); position: absolute; left: 0; top: 0; width: 28px; height: 28px;
+            border-radius: 50%; background-color: var(--porsche-red); color: #fff; font-weight: 700;
+            font-size: 13px; display: flex; align-items: center; justify-content: center;
+        }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es legal importar un Porsche de Alemania a España?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. Al ser ambos países de la Unión Europea, comprar un vehículo en Alemania y traerlo a España es un trámite administrativo habitual, no una importación extracomunitaria. Necesitarás pasar la ITV de importación, liquidar el impuesto de matriculación si corresponde y matricularlo en la DGT."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Se paga IVA al traer un coche de Alemania?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si compras a un particular alemán un coche que ya no es nuevo a efectos fiscales (más de 6 meses de matriculación y más de 6.000 km), no se vuelve a pagar IVA en España. Si el vehículo se considera nuevo (menos de 6 meses o menos de 6.000 km) o lo compras a un concesionario que no aplica el régimen de bienes usados, sí tendrás que liquidar el IVA español."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Por qué muchos Porsche pagan el tramo máximo del impuesto de matriculación?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El impuesto de matriculación (IEDMT) depende de las emisiones oficiales de CO2. Los Porsche de gasolina sin hibridación enchufable (911 Carrera, 718, Cayenne o Panamera en sus versiones de combustión) suelen superar los 200 g/km y caen en el tramo del 14,75%, el mismo que pagarían matriculados nuevos en España. Este impuesto no es un coste exclusivo de la importación, así que no cambia la comparación de precios entre Alemania y España."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo ahorrarme el impuesto de matriculación con un Porsche híbrido enchufable o eléctrico?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es muy probable. Los Porsche eléctricos (Taycan, Macan Eléctrico) tienen 0 g/km de CO2 y los E-Hybrid enchufables (Cayenne E-Hybrid, Panamera E-Hybrid) suelen homologar cifras de CO2 muy bajas en el ciclo WLTP por su autonomía eléctrica, lo que en muchos casos los sitúa en el tramo exento del impuesto de matriculación."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué riesgo tiene comprar un Porsche en Alemania sin el Certificado de Conformidad (COC)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sin el COC, o si el coche tiene equipamiento de un mercado no europeo (versión US, ciertos paquetes de circuito), la ITV española puede no dar por válida la ficha técnica y exigir una homologación individual. Ese trámite suele costar entre 1.500 y 3.500 euros adicionales, más las posibles reformas necesarias para adaptar el vehículo, así que conviene confirmarlo antes de pagar una señal."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Puedo importar un 718 Cayman o Boxster nuevo de Alemania?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Porsche cerró los pedidos del 718 Cayman y Boxster de gasolina en toda la Unión Europea, así que un concesionario alemán ya no puede encargarte uno nuevo. Solo es posible comprar una unidad que ya esté en stock en un concesionario, o de segunda mano."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="theme-light">
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="intro-block">
+            <h1>Calculadora de importación de un Porsche desde Alemania</h1>
+            <p>Comprar un Porsche en Alemania puede salir más barato, pero el precio del anuncio no es lo que vas a pagar. Introduce el precio que has encontrado y esta calculadora estima el impuesto de matriculación (IEDMT) según las emisiones de CO2 del modelo, el IVA si aplica, y los trámites, para que compares el coste real frente a comprarlo en España.</p>
+        </div>
+
+        <main class="grid-layout">
+            <section class="card">
+                <h2 class="card-title">Tus datos</h2>
+
+                <div class="form-group">
+                    <label for="model-select">Modelo de referencia</label>
+                    <select id="model-select"></select>
+                    <p class="hint">Rellena las emisiones de CO2 orientativas y el precio oficial en España para comparar. Ajusta lo que necesites.</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="price-input">Precio de compra en Alemania (€)</label>
+                        <input type="number" id="price-input" min="0" step="500" value="140000">
+                    </div>
+                    <div class="form-group">
+                        <label for="co2-input">Emisiones de CO2 (g/km, WLTP)</label>
+                        <input type="number" id="co2-input" min="0" step="1" value="230">
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="iva-check">
+                    <label for="iva-check">El coche es "nuevo" a efectos fiscales (menos de 6 meses de matriculación o menos de 6.000 km) → se liquida IVA español</label>
+                </div>
+
+                <hr class="section-divider">
+                <p class="subsection-title">Trámites y gastos</p>
+
+                <div class="form-row-3">
+                    <div class="form-group">
+                        <label for="transport-input">Transporte (€)</label>
+                        <input type="number" id="transport-input" min="0" step="50" value="600">
+                    </div>
+                    <div class="form-group">
+                        <label for="itv-input">ITV importación (€)</label>
+                        <input type="number" id="itv-input" min="0" step="10" value="110">
+                    </div>
+                    <div class="form-group">
+                        <label for="dgt-input">Tasas DGT + placas (€)</label>
+                        <input type="number" id="dgt-input" min="0" step="10" value="130">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="gestoria-input">Gestoría (opcional, €)</label>
+                    <input type="number" id="gestoria-input" min="0" step="50" value="300">
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="homologacion-check">
+                    <label for="homologacion-check">No tengo el Certificado de Conformidad (COC) o el coche tiene equipamiento de un mercado no europeo</label>
+                </div>
+
+                <p class="disclaimer">Cálculo orientativo con los tramos vigentes del Impuesto de Matriculación (IEDMT) en Península y Baleares. No sustituye una liquidación oficial ante la Agencia Tributaria ni un presupuesto de gestoría. Canarias, Ceuta y Melilla tienen tipos reducidos no incluidos aquí.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Coste estimado en España</h2>
+
+                <p id="bracket-note" class="bracket-note"></p>
+
+                <div class="results-grid">
+                    <div class="result-box highlight">
+                        <div id="result-total" class="value">-</div>
+                        <div class="label">Coste total puesto en España</div>
+                    </div>
+                    <div class="result-box">
+                        <div id="result-iedmt" class="value">-</div>
+                        <div class="label">Impuesto de matriculación</div>
+                    </div>
+                    <div class="result-box">
+                        <div id="result-tramites" class="value">-</div>
+                        <div class="label">IVA + trámites</div>
+                    </div>
+                </div>
+
+                <ul class="breakdown-list">
+                    <li><span class="item-label">Precio de compra</span><span id="line-price" class="item-value">-</span></li>
+                    <li><span class="item-label">Impuesto de matriculación (IEDMT)</span><span id="line-iedmt" class="item-value">-</span></li>
+                    <li><span class="item-label">IVA</span><span id="line-iva" class="item-value">-</span></li>
+                    <li><span class="item-label">Transporte, ITV, DGT y gestoría</span><span id="line-tramites" class="item-value">-</span></li>
+                </ul>
+
+                <p id="warning-note" class="warning-note">⚠ Sin COC o con especificación no europea, cuenta con una horquilla adicional de <strong>1.500 € a 3.500 €</strong> de homologación individual, más posibles reformas (1.000 € - 2.000 €). Confírmalo con un experto antes de pagar una señal.</p>
+
+                <p id="savings-note" class="savings-note"></p>
+
+                <div style="height: 220px; position: relative;"><canvas id="breakdown-chart"></canvas></div>
+            </section>
+        </main>
+
+        <section class="card content-section">
+            <h2>Cómo importar un Porsche de Alemania a España, paso a paso</h2>
+            <ol class="steps-list">
+                <li><strong>Verifica la documentación antes de comprar.</strong> Pide el Zulassungsbescheinigung Teil I y Teil II (permiso de circulación alemán) y, sobre todo, el <strong>Certificado de Conformidad (COC)</strong>. Sin COC, o si el coche tiene una especificación de mercado no europeo, la homologación puede complicarse y encarecerse mucho.</li>
+                <li><strong>Transporte a España.</strong> En coche propio (con seguro y ATC de tránsito) o con una empresa de transporte especializada en vehículos.</li>
+                <li><strong>ITV de importación.</strong> En cualquier estación ITV española. Con COC válido es un trámite de verificación, no un examen de ingeniería.</li>
+                <li><strong>Liquidación del Impuesto de Matriculación (IEDMT).</strong> Modelo 576 en la Agencia Tributaria, calculado según las emisiones de CO2 oficiales del vehículo.</li>
+                <li><strong>Matriculación en la DGT.</strong> Con el informe de la ITV y el justificante del IEDMT pagado, obtienes la matrícula española definitiva.</li>
+            </ol>
+
+            <h2 style="margin-top: 35px;">Por qué el impuesto de matriculación no siempre "penaliza" importar</h2>
+            <p>Es un error habitual pensar que el IEDMT es un coste exclusivo de traer el coche de fuera. No lo es: se paga exactamente igual si matriculas el mismo Porsche nuevo en un concesionario español. La diferencia real entre importar y comprar en España está en el <strong>precio base del vehículo</strong> en cada mercado, no en el impuesto.</p>
+            <p>Lo que sí cambia mucho el resultado es la motorización. La mayoría de los Porsche de gasolina sin hibridación enchufable (911 Carrera, 718, o las versiones de combustión de Cayenne y Panamera) superan los 200 g/km de CO2 y caen en el <strong>tramo máximo del 14,75%</strong>. En cambio, los modelos <strong>E-Hybrid enchufables</strong> (Cayenne E-Hybrid, Panamera E-Hybrid) suelen homologar cifras de CO2 muy bajas en el ciclo WLTP gracias a su autonomía eléctrica, y los <strong>100% eléctricos</strong> (Taycan, Macan Eléctrico) tienen 0 g/km — ambos casos suelen quedar exentos del impuesto.</p>
+
+            <h3>Tramos del Impuesto de Matriculación (IEDMT) vigentes</h3>
+            <ul>
+                <li><strong>Hasta 120 g/km de CO2 (y eléctricos):</strong> 0% — exento.</li>
+                <li><strong>De 120 a 160 g/km:</strong> 4,75%.</li>
+                <li><strong>De 160 a 200 g/km:</strong> 9,75%.</li>
+                <li><strong>Más de 200 g/km:</strong> 14,75%.</li>
+            </ul>
+
+            <div class="cross-link-box">
+                <strong>Antes de decidirte, mira los números completos.</strong> El precio de comparación de esta calculadora es el PVP actual en España (IVA e IEDMT ya incluidos). Si quieres ver cómo ha evolucionado ese precio en cada generación, consulta el <a href="/porsche/precios">histórico de precios de lanzamiento</a>, y si el coche es de segunda mano, nuestro análisis de <a href="/porsche/precio-segunda-mano">precios y depreciación</a>. Sea cual sea el origen del coche, pasa por la <a href="/porsche/checklist-inspecciones-segunda-mano">checklist de inspección</a> antes de cerrar la compra.
+            </div>
+
+            <h2 style="margin-top: 35px;">Preguntas frecuentes sobre importar un Porsche de Alemania</h2>
+            <details class="faq-item" open>
+                <summary>¿Es legal importar un Porsche de Alemania a España?</summary>
+                <p>Sí. Al ser ambos países de la Unión Europea, comprar un vehículo en Alemania y traerlo a España es un trámite administrativo habitual, no una importación extracomunitaria. Necesitarás pasar la ITV de importación, liquidar el impuesto de matriculación si corresponde y matricularlo en la DGT.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Se paga IVA al traer un coche de Alemania?</summary>
+                <p>Si compras a un particular alemán un coche que ya no es nuevo a efectos fiscales (más de 6 meses de matriculación y más de 6.000 km), no se vuelve a pagar IVA en España. Si el vehículo se considera nuevo, o lo compras a un profesional que no aplica el régimen especial de bienes usados, sí tendrás que liquidar el IVA español.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Por qué muchos Porsche pagan el tramo máximo del impuesto de matriculación?</summary>
+                <p>El IEDMT depende de las emisiones oficiales de CO2. Los Porsche de gasolina sin hibridación enchufable suelen superar los 200 g/km y caen en el tramo del 14,75%, el mismo que pagarían matriculados nuevos en España. No es un coste exclusivo de la importación, así que no cambia la comparación de precios entre Alemania y España.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Puedo ahorrarme el impuesto de matriculación con un Porsche híbrido enchufable o eléctrico?</summary>
+                <p>Es muy probable. Los Porsche eléctricos tienen 0 g/km de CO2 y los E-Hybrid enchufables suelen homologar cifras de CO2 muy bajas en el ciclo WLTP por su autonomía eléctrica, lo que en muchos casos los sitúa en el tramo exento del impuesto.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué riesgo tiene comprar un Porsche en Alemania sin el Certificado de Conformidad (COC)?</summary>
+                <p>Sin el COC, o si el coche tiene equipamiento de un mercado no europeo, la ITV española puede no dar por válida la ficha técnica y exigir una homologación individual, que suele costar entre 1.500 y 3.500 euros adicionales, más posibles reformas. Confírmalo antes de pagar una señal.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Puedo importar un 718 Cayman o Boxster nuevo de Alemania?</summary>
+                <p>Porsche cerró los pedidos del 718 Cayman y Boxster de gasolina en toda la Unión Europea (por no adaptarse a la nueva normativa de ciberseguridad GSR2), así que un concesionario alemán ya no puede encargarte uno nuevo. Solo es posible comprar una unidad que ya esté en stock en un concesionario, o de segunda mano.</p>
+            </details>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+
+    <script>
+    // Emisiones WLTP y PVP actual (IVA e IEDMT ya incluidos) verificados en el configurador oficial
+    // de Porsche España (configurator.porsche.com / models.porsche.com, es-ES). El PVP aquí es el precio
+    // actual "llave en mano" de cada versión de acceso, distinto del PVP de lanzamiento histórico que
+    // se usa en /precios para el gráfico de evolución. El usuario puede ajustar ambos valores.
+    const referenceModels = [
+        { label: '911 Carrera (992.2, gasolina)', co2: 230, spainPrice: 159511 },
+        { label: '718 Cayman (gasolina, solo stock)', co2: 210, spainPrice: 74755 },
+        { label: 'Cayenne (gasolina, sin hibridar)', co2: 254, spainPrice: 119405 },
+        { label: 'Cayenne E-Hybrid', co2: 95, spainPrice: 121497 },
+        { label: 'Panamera (gasolina, sin hibridar)', co2: 227, spainPrice: 137547 },
+        { label: 'Panamera 4 E-Hybrid', co2: 77, spainPrice: 137578 },
+        { label: 'Taycan (eléctrico)', co2: 0, spainPrice: 106252 },
+        { label: 'Macan Eléctrico', co2: 0, spainPrice: 83296 }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let breakdownChart;
+        let lastSelectedSpainPrice = null;
+
+        function initializePage() {
+            populateModelSelect();
+            setupEventListeners();
+            calculate();
+        }
+
+        function populateModelSelect() {
+            const select = document.getElementById('model-select');
+            select.innerHTML = '<option value="">-- Introduce tus propios datos --</option>' +
+                referenceModels.map((m, i) => `<option value="${i}">${m.label}</option>`).join('');
+        }
+
+        function iedmtRate(co2) {
+            if (co2 <= 120) return 0;
+            if (co2 <= 160) return 0.0475;
+            if (co2 <= 200) return 0.0975;
+            return 0.1475;
+        }
+
+        function bracketLabel(co2) {
+            if (co2 <= 120) return { pct: '0%', text: 'Hasta 120 g/km: exento de impuesto de matriculación.' };
+            if (co2 <= 160) return { pct: '4,75%', text: 'Entre 120 y 160 g/km: tramo del 4,75%.' };
+            if (co2 <= 200) return { pct: '9,75%', text: 'Entre 160 y 200 g/km: tramo del 9,75%.' };
+            return { pct: '14,75%', text: 'Más de 200 g/km: tramo máximo del 14,75%. Este impuesto se paga igual si matriculas el coche nuevo en España, así que no penaliza especialmente a la importación.' };
+        }
+
+        function calculate() {
+            const price = parseFloat(document.getElementById('price-input').value) || 0;
+            const co2 = Math.max(0, parseFloat(document.getElementById('co2-input').value) || 0);
+            const chargeIva = document.getElementById('iva-check').checked;
+            const transport = parseFloat(document.getElementById('transport-input').value) || 0;
+            const itv = parseFloat(document.getElementById('itv-input').value) || 0;
+            const dgt = parseFloat(document.getElementById('dgt-input').value) || 0;
+            const gestoria = parseFloat(document.getElementById('gestoria-input').value) || 0;
+            const homologacionRisk = document.getElementById('homologacion-check').checked;
+
+            const rate = iedmtRate(co2);
+            const iedmt = price * rate;
+            const iva = chargeIva ? price * 0.21 : 0;
+            const tramites = transport + itv + dgt + gestoria;
+            const total = price + iedmt + iva + tramites;
+
+            const bracket = bracketLabel(co2);
+            document.getElementById('bracket-note').textContent = `Tramo aplicable: ${bracket.pct}. ${bracket.text}`;
+
+            document.getElementById('result-total').textContent = `${total.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('result-iedmt').textContent = `${iedmt.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('result-tramites').textContent = `${(iva + tramites).toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+
+            document.getElementById('line-price').textContent = `${price.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('line-iedmt').textContent = `${iedmt.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+            document.getElementById('line-iva').textContent = chargeIva ? `${iva.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €` : 'No aplica';
+            document.getElementById('line-tramites').textContent = `${tramites.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`;
+
+            document.getElementById('warning-note').style.display = homologacionRisk ? 'block' : 'none';
+
+            const savingsNote = document.getElementById('savings-note');
+            if (lastSelectedSpainPrice) {
+                const diff = lastSelectedSpainPrice - total;
+                savingsNote.style.display = 'block';
+                if (diff > 0) {
+                    savingsNote.textContent = `Frente al precio oficial en España (${lastSelectedSpainPrice.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €), te ahorrarías aproximadamente ${diff.toLocaleString('es-ES', { maximumFractionDigits: 0 })} € importando, sin contar el riesgo de homologación ni tu tiempo.`;
+                } else {
+                    savingsNote.textContent = `Con estos datos, el coste puesto en España (${total.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €) queda por encima del precio oficial en España (${lastSelectedSpainPrice.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €): en este caso no compensa importar.`;
+                }
+            } else {
+                savingsNote.style.display = 'none';
+            }
+
+            renderChart(price, iedmt, iva, tramites);
+        }
+
+        function renderChart(price, iedmt, iva, tramites) {
+            const ctx = document.getElementById('breakdown-chart');
+            const isDark = document.body.classList.contains('theme-dark');
+            const textColor = isDark ? '#e1e1e1' : '#172b4d';
+
+            if (breakdownChart) breakdownChart.destroy();
+            breakdownChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Precio de compra', 'Impuesto de matriculación', 'IVA + trámites'],
+                    datasets: [{
+                        data: [price, iedmt, iva + tramites],
+                        backgroundColor: ['#464C47', '#B12B28', '#E3AB37'],
+                        borderColor: isDark ? '#282c34' : '#ffffff',
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: textColor } },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => `${context.label}: ${context.raw.toLocaleString('es-ES', { maximumFractionDigits: 0 })} €`
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('model-select').addEventListener('change', (event) => {
+                if (event.target.value === '') {
+                    lastSelectedSpainPrice = null;
+                    calculate();
+                    return;
+                }
+                const m = referenceModels[parseInt(event.target.value, 10)];
+                document.getElementById('co2-input').value = m.co2;
+                lastSelectedSpainPrice = m.spainPrice;
+                calculate();
+            });
+
+            ['price-input', 'co2-input', 'transport-input', 'itv-input', 'dgt-input', 'gestoria-input'].forEach(id => {
+                document.getElementById(id).addEventListener('input', calculate);
+            });
+            ['iva-check', 'homologacion-check'].forEach(id => {
+                document.getElementById(id).addEventListener('change', calculate);
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>
