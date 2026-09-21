@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche Panamera vs Taycan: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche Panamera y el Porsche Taycan: precio, potencia, autonomía, maletero, fiabilidad y coste de mantenimiento. Combustión/E-Hybrid contra eléctrico puro, cara a cara.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #E3AB37;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px;
+        }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        /* --- Veredicto rápido --- */
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.panamera { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(227, 171, 55, 0.08); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.panamera h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: #8a6a10; }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+
+        /* --- Tabla comparativa --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: #8a6a10; }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+
+        /* --- Pros y contras --- */
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.panamera h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: #8a6a10; }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+
+        .cross-link-box {
+            margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6;
+        }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Qué es mejor, el Porsche Panamera o el Taycan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende del tipo de propulsión que busques: son el mismo tipo de berlina deportiva de cuatro puertas, pero el Panamera combina motores de combustión con versiones E-Hybrid enchufables, mientras el Taycan es 100% eléctrico. El Taycan tiene un coste de mantenimiento mucho más bajo (1.500 € frente a 4.800 € a 5 años) y mejor fiabilidad documentada (92/100 frente a 75/100), pero el Panamera no depende de la red de carga para viajes largos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más rápido, el Panamera o el Taycan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "En el escalón de acceso el Panamera es algo más rápido (4,1 s el 4 E-Hybrid frente a 4,8 s del Taycan base), pero en el tope de gama el Taycan es más rápido: el Turbo S hace el 0-100 km/h en 2,8 s, frente a los 3,3 s del Panamera Turbo S E-Hybrid."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más barato de mantener, el Panamera o el Taycan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Taycan, con diferencia: su coste de mantenimiento a 5 años se estima en 1.500 €, el más bajo de toda la gama Porsche al no tener motor de combustión, frente a los 4.800 € del Panamera."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Tiene el Panamera una versión 100% eléctrica?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. El Panamera combina motores de gasolina V6 y V8 con versiones E-Hybrid (híbrido enchufable, hasta 96 km de autonomía eléctrica), pero no existe una versión 100% eléctrica: ese papel lo cumple el Taycan dentro de la gama Porsche."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál tiene menor coste total de propiedad, el Panamera o el Taycan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Según los cálculos de Mejor Imposible, el Panamera 4 tiene un coste real de propiedad a 5 años de unos 86.300 €, el más alto de toda la gama Porsche por su fuerte depreciación. El Taycan 4S se sitúa en unos 69.500 €: el mantenimiento es mucho más bajo, aunque su depreciación inicial también es elevada."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/panamera">&larr; Volver a la ficha del Porsche Panamera</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche Panamera vs Taycan: ¿cuál elegir?</h1>
+            <p>El Panamera y el Taycan son las dos berlinas deportivas de cuatro puertas de Porsche, y comparten tamaño, posicionamiento y buena parte de su público. La diferencia está en la propulsión: el Panamera combina motores de gasolina V6/V8 con versiones E-Hybrid enchufables, mientras el Taycan es 100% eléctrico desde su lanzamiento. Comparamos precio, potencia, autonomía, espacio, fiabilidad y coste de mantenimiento para ayudarte a decidir entre los dos.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card panamera">
+                        <h3>Elige el Porsche Panamera si...</h3>
+                        <ul>
+                            <li>Prefieres un motor de combustión o híbrido enchufable, sin depender de la carga</li>
+                            <li>Haces viajes largos con frecuencia y quieres repostar sin límites</li>
+                            <li>Valoras el sonido y el tacto de un V6 o V8 tradicional</li>
+                            <li>Quieres la mejor aceleración posible en el escalón de acceso</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Porsche Taycan si...</h3>
+                        <ul>
+                            <li>Puedes cargar en casa o en el trabajo con regularidad</li>
+                            <li>Quieres el coste de mantenimiento más bajo de toda la gama Porsche</li>
+                            <li>Buscas la aceleración más brutal posible en el tope de gama</li>
+                            <li>Priorizas la mejor fiabilidad documentada de los dos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El Panamera de referencia es la versión 4 E-Hybrid (470 CV combinados); el Taycan, la versión base de tracción trasera (408 CV), con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche Panamera</th>
+                                <th class="col-rival">Porsche Taycan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>127.800 € (gama hasta más de 250.000 € en el Turbo S E-Hybrid)</td>
+                                <td>121.000 € (gama hasta unos 217.000-247.000 € en el Turbo S)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>Gasolina V6/V8, con versiones E-Hybrid enchufables; sin versión 100% eléctrica</td>
+                                <td>100% eléctrico (baterías de 89 o 105 kWh)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>470 CV (4 E-Hybrid) – 782 CV (Turbo S E-Hybrid)</td>
+                                <td>408 CV (base) – 952 CV (Turbo S)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,1 s (4 E-Hybrid) – 3,3 s (Turbo S E-Hybrid)</td>
+                                <td>4,8 s (base) – 2,8 s (Turbo S)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Autonomía</td>
+                                <td>Hasta 96 km WLTP en modo eléctrico (E-Hybrid); sin límite en modo combustión</td>
+                                <td>431-484 km WLTP (base) – 558-634 km WLTP (Turbo S)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Carga / repostaje</td>
+                                <td>Repostaje convencional; E-Hybrid con carga AC hasta 11 kW (2h 39min)</td>
+                                <td>800V, carga rápida hasta 320 kW en versiones con batería Performance Plus</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Dimensiones (L x An x Al)</td>
+                                <td>5,05 x 1,94 x 1,42 m</td>
+                                <td>4,96 x 1,97 x 1,38 m</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>494 L (430 L en E-Hybrid); hasta 1.263 L con asientos abatidos</td>
+                                <td>84 L (frunk) + 407 L (trasero) = 491 L total</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.960 - 2.435 kg</td>
+                                <td>~2.165 - 2.245 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.800 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>1.500 € (el más bajo de la gama Porsche, sin motor de combustión)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>75/100, generación 970 (2010-2016), único dato documentado</td>
+                                <td>92/100, generación J1 (2020-2023)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche España, 2026. La gama de ambos modelos incluye más versiones intermedias (Panamera 4S, GTS, Sport Turismo del Taycan, etc.); consulta la <a href="/porsche/modelos/panamera" style="color:var(--porsche-red); font-weight:600;">ficha completa del Panamera</a> y la <a href="/porsche/modelos/taycan" style="color:var(--porsche-red); font-weight:600;">del Taycan</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col panamera">
+                        <h3>Porsche Panamera</h3>
+                        <ul>
+                            <li class="pro">No depende de la red de carga: repostaje convencional para viajes largos sin paradas</li>
+                            <li class="pro">Sonido y tacto de un motor de combustión V6/V8 tradicional</li>
+                            <li class="pro">Más rápido en el escalón de acceso (4,1 s frente a 4,8 s del Taycan base)</li>
+                            <li class="pro">Maletero de serie algo mayor en versiones de combustión pura</li>
+                            <li class="con">Precio de entrada más alto (+6.800 € frente al Taycan)</li>
+                            <li class="con">Coste de mantenimiento notablemente superior (4.800 € frente a 1.500 €)</li>
+                            <li class="con">En el tope de gama, el Taycan Turbo S es más rápido (2,8 s frente a 3,3 s)</li>
+                            <li class="con">Fiabilidad documentada más baja (75/100 frente a 92/100)</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Porsche Taycan</h3>
+                        <ul>
+                            <li class="pro">Coste de mantenimiento drásticamente inferior (1.500 € frente a 4.800 €)</li>
+                            <li class="pro">Mejor fiabilidad documentada (92/100 frente a 75/100)</li>
+                            <li class="pro">Precio de entrada más bajo</li>
+                            <li class="pro">El Turbo S es el más rápido de los dos en el tope de gama (2,8 s)</li>
+                            <li class="con">Depende de la red de carga para viajes largos, con autonomía limitada frente al repostaje del Panamera</li>
+                            <li class="con">Sin motor de combustión: no ofrece el sonido y el tacto tradicionales de un Porsche</li>
+                            <li class="con">Maletero total algo menor y repartido en dos compartimentos</li>
+                            <li class="con">En el escalón de acceso es más lento que el Panamera 4 E-Hybrid</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>Panamera y Taycan son, en la práctica, la misma propuesta con dos filosofías de propulsión distintas: una berlina deportiva de cuatro puertas, con plazas traseras reales y un maletero utilizable, pensada para quien quiere el ADN Porsche en el día a día. La decisión entre ambos no depende tanto de las prestaciones (ambos son extremadamente rápidos en su gama alta) como de si tu vida se adapta bien a la carga eléctrica o prefieres la flexibilidad de repostar en cualquier sitio.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si puedes cargar con regularidad y quieres el coste de mantenimiento más bajo posible dentro de la gama Porsche, el Taycan es la opción más lógica, con mejor fiabilidad documentada y una aceleración de infarto en sus versiones más potentes. Si en cambio haces muchos kilómetros de viaje largo, prefieres no depender de la red de carga o simplemente disfrutas del sonido de un motor de combustión, el Panamera sigue siendo una opción muy sólida, aunque con un coste de mantenimiento notablemente más alto a largo plazo.</p>
+                    <p>Si prefieres comparar el Panamera con rivales de otras marcas, consulta también <a href="/porsche/comparativas/panamera-vs-bmw-serie-8-gran-coupe">Panamera vs BMW Serie 8 Gran Coupé</a>, <a href="/porsche/comparativas/panamera-vs-audi-rs7">Panamera vs Audi RS7</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Qué es mejor, el Porsche Panamera o el Taycan?</summary>
+                    <p>Depende del tipo de propulsión que busques: son el mismo tipo de berlina deportiva de cuatro puertas, pero el Panamera combina motores de combustión con versiones E-Hybrid enchufables, mientras el Taycan es 100% eléctrico. El Taycan tiene un coste de mantenimiento mucho más bajo (1.500 € frente a 4.800 € a 5 años) y mejor fiabilidad documentada (92/100 frente a 75/100), pero el Panamera no depende de la red de carga para viajes largos.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más rápido, el Panamera o el Taycan?</summary>
+                    <p>En el escalón de acceso el Panamera es algo más rápido (4,1 s el 4 E-Hybrid frente a 4,8 s del Taycan base), pero en el tope de gama el Taycan es más rápido: el Turbo S hace el 0-100 km/h en 2,8 s, frente a los 3,3 s del Panamera Turbo S E-Hybrid.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más barato de mantener, el Panamera o el Taycan?</summary>
+                    <p>El Taycan, con diferencia: su coste de mantenimiento a 5 años se estima en 1.500 €, el más bajo de toda la gama Porsche al no tener motor de combustión, frente a los 4.800 € del Panamera.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Tiene el Panamera una versión 100% eléctrica?</summary>
+                    <p>No. El Panamera combina motores de gasolina V6 y V8 con versiones E-Hybrid (híbrido enchufable, hasta 96 km de autonomía eléctrica), pero no existe una versión 100% eléctrica: ese papel lo cumple el Taycan dentro de la gama Porsche.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál tiene menor coste total de propiedad, el Panamera o el Taycan?</summary>
+                    <p>Según los cálculos de Mejor Imposible, el Panamera 4 tiene un coste real de propiedad a 5 años de unos 86.300 €, el más alto de toda la gama Porsche por su fuerte depreciación. El Taycan 4S se sitúa en unos 69.500 €: el mantenimiento es mucho más bajo, aunque su depreciación inicial también es elevada.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos de ambos modelos?</strong> Consulta la <a href="/porsche/modelos/panamera">ficha técnica del Panamera</a>, la <a href="/porsche/modelos/taycan">ficha técnica del Taycan</a> o el <a href="/porsche/coste-real">coste real de propiedad</a> de cada uno.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica recopilados de Porsche España y prensa especializada del sector, correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
