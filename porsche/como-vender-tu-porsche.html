@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo y cuándo vender tu Porsche: canales, trámites y cómo maximizar el precio | Mejor Imposible</title>
+    <meta name="description" content="Cuándo conviene vender tu Porsche según su curva de depreciación, qué canal de venta te da más dinero (concesionario, compra profesional o particular), y los trámites legales en España: notificación a la DGT e ITP.">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --hairline: #e5e5e5; --ok-green: #2e7d4f;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1200px; margin: 0 auto;
+        }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); transition: background-color 0.3s, color 0.3s; margin-bottom: 20px; }
+        .theme-light .card { background-color: var(--light-card-bg); border: 1px solid var(--hairline); }
+        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
+        .card-title { font-size: 1.2em; font-weight: 600; margin: 0 0 20px 0; }
+
+        .grid-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; min-width: 0; }
+        .grid-layout > .card { min-width: 0; }
+        @media (max-width: 900px) { .grid-layout { grid-template-columns: 1fr; } }
+
+        .form-group { margin-bottom: 18px; min-width: 0; }
+        .form-group label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; }
+        .form-group .hint { font-size: 12px; opacity: 0.65; margin-top: 4px; }
+        .form-group select {
+            width: 100%; min-width: 0; padding: 10px 12px; border-radius: 6px; border: 1px solid var(--porsche-grey);
+            background-color: inherit; color: inherit; font-size: 15px; box-sizing: border-box;
+        }
+
+        .trend-box { border-radius: 8px; padding: 20px; color: #fff; margin-bottom: 18px; text-align: center; background-color: var(--porsche-grey); }
+        .trend-box.up { background-color: var(--ok-green); }
+        .trend-box.stable { background-color: var(--porsche-gold); color: #1a1a1a; }
+        .trend-box.down { background-color: var(--porsche-red); }
+        .trend-box .trend-title { font-size: 1.15em; font-weight: 700; margin-bottom: 4px; }
+        .trend-box .trend-detail { font-size: 0.9em; opacity: 0.92; }
+
+        .breakdown-list { list-style: none; padding: 0; margin: 0 0 10px 0; font-size: 14px; }
+        .breakdown-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--hairline); }
+        .theme-dark .breakdown-list li { border-bottom-color: #3a3f45; }
+        .breakdown-list li:last-child { border-bottom: none; }
+        .breakdown-list .item-label { opacity: 0.75; }
+        .breakdown-list .item-value { font-weight: 600; }
+
+        .verdict-note { font-size: 14px; padding: 12px 15px; border-radius: 6px; background-color: rgba(227, 171, 55, 0.15); border: 1px solid var(--porsche-gold); }
+
+        .disclaimer { font-size: 12px; opacity: 0.6; margin-top: 15px; line-height: 1.5; }
+
+        /* --- Contenido introductorio y de apoyo (SEO) --- */
+        .intro-block { max-width: 800px; margin: 0 0 25px 0; }
+        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
+        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
+        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
+        .content-section ul, .content-section ol { padding-left: 20px; }
+        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        .channel-table { width: 100%; border-collapse: collapse; font-size: 0.92em; margin: 15px 0 20px 0; }
+        .channel-table th, .channel-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        .theme-dark .channel-table th, .theme-dark .channel-table td { border-bottom-color: #3a3f45; }
+        .channel-table th { font-weight: 700; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.7; }
+
+        .steps-list { counter-reset: step; list-style: none; padding: 0; }
+        .steps-list li { counter-increment: step; position: relative; padding: 0 0 18px 42px; margin-bottom: 4px; }
+        .steps-list li::before {
+            content: counter(step); position: absolute; left: 0; top: 0; width: 28px; height: 28px;
+            border-radius: 50%; background-color: var(--porsche-red); color: #fff; font-weight: 700;
+            font-size: 13px; display: flex; align-items: center; justify-content: center;
+        }
+
+        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; }
+
+        .cross-link-box {
+            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1);
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuándo es el mejor momento para vender un Porsche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de la curva de depreciación de tu modelo y generación concretos. Los 911 clásicos (G-Model, 993, 964) y el 997.2 se revalorizan o se mantienen muy estables, así que no hay prisa. Los SUV y berlinas de primeras generaciones (Cayenne 955/957, Panamera 970) se deprecian con fuerza los primeros años y luego se estabilizan, así que cuanto antes se vendan dentro de ese tramo, menos valor se pierde esperando."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es mejor vender mi Porsche a un concesionario o a un particular?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un particular suele pagar entre un 10% y un 20% más que un concesionario o una compra profesional, porque estos últimos necesitan dejarse margen para revenderlo. A cambio, vender a un concesionario es más rápido, más cómodo y con menos riesgo de impago o de gestionar visitas y negociaciones."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué trámite tengo que hacer al vender mi coche en España?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Como vendedor, debes notificar la venta a la DGT en un plazo máximo de 10 días desde la firma del contrato de compraventa. Este trámite te protege: a partir de ese momento, dejas de ser responsable de multas, del impuesto de circulación o de la ITV del vehículo, aunque el comprador todavía no haya hecho el cambio de titularidad."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Quién paga el impuesto al vender un coche de segunda mano en España?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Impuesto de Transmisiones Patrimoniales (ITP) lo paga siempre el comprador, no el vendedor, con independencia de lo que se acuerde entre las partes. El tipo varía por comunidad autónoma, normalmente entre el 4% y el 8% sobre el valor fiscal del vehículo, y hay 30 días hábiles desde el contrato para autoliquidarlo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo puedo vender mi Porsche más caro?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mantén la Garantía Porsche Approved vigente si la tiene (es transferible y da confianza al comprador), reúne todo el historial de mantenimiento y facturas, pasa la ITV antes de anunciarlo, y considera pagar una inspección independiente para anticiparte a lo que el comprador va a encontrar. Cuanta menos incertidumbre, mejor precio y venta más rápida."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body class="theme-light">
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="intro-block">
+            <h1>Cómo y cuándo vender tu Porsche</h1>
+            <p>Vender bien un Porsche no es solo cuestión de precio de salida: depende de en qué punto de su curva de depreciación esté tu modelo, de a quién se lo vendas y de hacer bien un par de trámites legales. Elige tu modelo para ver su tendencia de valor, y sigue leyendo para el resto.</p>
+        </div>
+
+        <main class="grid-layout">
+            <section class="card">
+                <h2 class="card-title">¿Cómo se está moviendo el valor de tu Porsche?</h2>
+
+                <div class="form-group">
+                    <label for="model-select">Modelo y generación</label>
+                    <select id="model-select"></select>
+                    <p class="hint">Basado en la misma curva de valor de mercado de nuestro <a href="/porsche/precio-segunda-mano">análisis de precios y depreciación</a>.</p>
+                </div>
+
+                <p class="disclaimer">Estimación orientativa a partir de precios medios de mercado 2021-2025. El precio real de tu unidad depende de su estado, kilometraje, historial y equipamiento concreto.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Tendencia y recomendación</h2>
+                <div id="trend-box" class="trend-box">
+                    <div id="trend-title" class="trend-title">-</div>
+                    <div id="trend-detail" class="trend-detail">-</div>
+                </div>
+
+                <ul class="breakdown-list">
+                    <li><span class="item-label">Precio de mercado 2023</span><span id="line-2023" class="item-value">-</span></li>
+                    <li><span class="item-label">Precio de mercado 2025</span><span id="line-2025" class="item-value">-</span></li>
+                    <li><span class="item-label">Variación (2 años)</span><span id="line-change" class="item-value">-</span></li>
+                </ul>
+
+                <p id="verdict-note" class="verdict-note"></p>
+            </section>
+        </main>
+
+        <section class="card content-section">
+            <h2>Los 3 canales para vender tu Porsche</h2>
+            <p>No hay un canal "mejor" en absoluto: hay un cambio claro entre precio y comodidad. La diferencia habitual entre vender a un concesionario/comprador profesional y vender a un particular es de un <strong>10% a un 20% más</strong> a favor del particular, a cambio de más tiempo y más gestión por tu parte.</p>
+
+            <table class="channel-table">
+                <thead>
+                    <tr>
+                        <th>Canal</th>
+                        <th>Precio esperado</th>
+                        <th>Rapidez</th>
+                        <th>Papeleo y riesgo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Concesionario Porsche (trade-in)</strong></td>
+                        <td>El más bajo, pero puede compensar con descuento en tu próximo Porsche</td>
+                        <td>Inmediata: tasación y pago en la misma visita</td>
+                        <td>Mínimo: el concesionario gestiona casi todo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compra profesional ("compro tu coche")</strong></td>
+                        <td>Similar o algo superior al concesionario</td>
+                        <td>Muy rápida: tasación online + recogida en días</td>
+                        <td>Bajo: contrato estandarizado, cobro garantizado</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Venta a particular</strong></td>
+                        <td>El más alto (+10-20%)</td>
+                        <td>Semanas o meses: depende de la demanda del modelo</td>
+                        <td>Mayor: tú gestionas el contrato, el cobro y el riesgo de impago o estafa</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 style="margin-top: 35px;">Cómo vender tu Porsche más caro</h2>
+            <ul>
+                <li><strong>Mantén viva la Garantía Porsche Approved.</strong> Es <a href="/porsche/garantia-porsche-approved">transferible al comprador</a> y reduce mucho su incertidumbre sobre el estado mecánico, lo que se traduce en mejor precio y venta más rápida.</li>
+                <li><strong>Reúne todo el historial.</strong> Facturas de mantenimiento, libro de revisiones y, si lo tienes, el informe de la última ITV. Un Porsche con papeles completos se vende mejor que uno "de confianza".</li>
+                <li><strong>Pasa la ITV antes de anunciarlo.</strong> Un coche con la ITV en vigor genera confianza inmediata y evita preguntas incómodas durante la negociación.</li>
+                <li><strong>Considera una inspección independiente previa.</strong> La misma lógica que nuestra <a href="/porsche/checklist-inspecciones-segunda-mano">checklist de inspección para compradores</a>, pero hecha por ti antes de vender: te anticipas a lo que el comprador (o su mecánico de confianza) va a encontrar, y puedes fijar un precio realista o arreglar lo que compense arreglar.</li>
+                <li><strong>Fotos y anuncio honestos.</strong> Muestra el estado real, incluidos los defectos. Genera más confianza que un anuncio con solo fotos favorecedoras y evita pérdidas de tiempo con visitas que no llegan a nada.</li>
+            </ul>
+
+            <h2 style="margin-top: 35px;">Los trámites legales de vender un coche en España</h2>
+            <ol class="steps-list">
+                <li><strong>Contrato de compraventa.</strong> Por escrito, con los datos de ambas partes, el vehículo (matrícula, bastidor), el precio y la fecha. Firmado por duplicado.</li>
+                <li><strong>Cobro seguro.</strong> La forma más segura es una transferencia bancaria confirmada antes de entregar el coche y la documentación; desconfía de cheques o pagos que no puedas verificar en el acto.</li>
+                <li><strong>Notificación de venta a la DGT.</strong> Es responsabilidad del <strong>vendedor</strong> y hay un plazo máximo de <strong>10 días</strong> desde la firma del contrato. A partir de ese momento dejas de ser responsable de multas, del impuesto de circulación o de la ITV del vehículo, aunque el comprador tarde en hacer el cambio de titularidad.</li>
+                <li><strong>Cambio de titularidad.</strong> Lo tramita el comprador (directamente o a través de una gestoría), normalmente junto con el pago del Impuesto de Transmisiones Patrimoniales.</li>
+            </ol>
+            <p>Un matiz importante: el <strong>Impuesto de Transmisiones Patrimoniales (ITP)</strong> de una compraventa entre particulares lo paga siempre el <strong>comprador</strong>, nunca el vendedor, con independencia de lo que se pacte entre las partes. El tipo varía por comunidad autónoma (normalmente entre el 4% y el 8% sobre el valor fiscal del vehículo), y el comprador tiene 30 días hábiles para autoliquidarlo. Si vendes a un concesionario o a una compra profesional, la operación suele tributar por IVA y no por ITP, y es la empresa quien se ocupa de todo el papeleo.</p>
+
+            <div class="cross-link-box">
+                <strong>Antes de fijar el precio de salida</strong>, contrasta la curva completa en nuestro <a href="/porsche/precio-segunda-mano">análisis de precios y depreciación</a>, y si vas a comprar el siguiente con lo que saques de la venta, echa cuentas con la <a href="/porsche/financiacion">calculadora de financiación</a> o compara con <a href="/porsche/comprar-renting-leasing">renting y leasing</a>.
+            </div>
+
+            <h2 style="margin-top: 35px;">Preguntas frecuentes sobre vender un Porsche</h2>
+            <details class="faq-item" open>
+                <summary>¿Cuándo es el mejor momento para vender un Porsche?</summary>
+                <p>Depende de la curva de depreciación de tu modelo y generación concretos. Los 911 clásicos (G-Model, 993, 964) y el 997.2 se revalorizan o se mantienen muy estables, así que no hay prisa. Los SUV y berlinas de primeras generaciones (Cayenne 955/957, Panamera 970) se deprecian con fuerza los primeros años y luego se estabilizan, así que cuanto antes se vendan dentro de ese tramo, menos valor se pierde esperando.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Es mejor vender mi Porsche a un concesionario o a un particular?</summary>
+                <p>Un particular suele pagar entre un 10% y un 20% más que un concesionario o una compra profesional, porque estos últimos necesitan dejarse margen para revenderlo. A cambio, vender a un concesionario es más rápido, más cómodo y con menos riesgo de impago o de gestionar visitas y negociaciones.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Qué trámite tengo que hacer al vender mi coche en España?</summary>
+                <p>Como vendedor, debes notificar la venta a la DGT en un plazo máximo de 10 días desde la firma del contrato de compraventa. Este trámite te protege: a partir de ese momento, dejas de ser responsable de multas, del impuesto de circulación o de la ITV del vehículo, aunque el comprador todavía no haya hecho el cambio de titularidad.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Quién paga el impuesto al vender un coche de segunda mano en España?</summary>
+                <p>El Impuesto de Transmisiones Patrimoniales (ITP) lo paga siempre el comprador, no el vendedor, con independencia de lo que se acuerde entre las partes. El tipo varía por comunidad autónoma, normalmente entre el 4% y el 8% sobre el valor fiscal del vehículo, y hay 30 días hábiles desde el contrato para autoliquidarlo.</p>
+            </details>
+            <details class="faq-item">
+                <summary>¿Cómo puedo vender mi Porsche más caro?</summary>
+                <p>Mantén la Garantía Porsche Approved vigente si la tiene (es transferible y da confianza al comprador), reúne todo el historial de mantenimiento y facturas, pasa la ITV antes de anunciarlo, y considera pagar una inspección independiente para anticiparte a lo que el comprador va a encontrar. Cuanta menos incertidumbre, mejor precio y venta más rápida.</p>
+            </details>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+
+    <script>
+    // Misma curva de valor de mercado que /precio-segunda-mano (2021-2025), reutilizada aquí
+    // para razonar sobre el momento de venta en lugar de sobre el precio de compra.
+    const priceData = [
+        { model: '911 (Classic)', generation: 'G-Model', prices: { 2023: 65000, 2025: 75000 }, verdict: 'Apreciación constante. Inversión sólida: no hay prisa por vender.' },
+        { model: '911 (Classic)', generation: '993', prices: { 2023: 100000, 2025: 120000 }, verdict: 'Fuerte apreciación. El último "air-cooled": cuanto más esperes, mejor, si el estado se mantiene.' },
+        { model: '911 (Classic)', generation: '964', prices: { 2023: 82000, 2025: 95000 }, verdict: 'Fuerte apreciación; no hay urgencia por vender.' },
+        { model: '911', generation: '996', prices: { 2023: 28000, 2025: 35000 }, verdict: 'Tocó fondo y ahora se aprecia. Buen momento para mantener, no para malvender.' },
+        { model: '911', generation: '997.1', prices: { 2023: 52000, 2025: 58000 }, verdict: 'En apreciación, aunque conviene documentar bien el estado del motor (bore scoring) para vender con confianza.' },
+        { model: '911', generation: '997.2', prices: { 2023: 70000, 2025: 72000 }, verdict: 'Muy estable. Puedes esperar al mejor comprador sin miedo a perder valor.' },
+        { model: '911', generation: '991.1', prices: { 2023: 85000, 2025: 82000 }, verdict: 'Depreciación suave. No hay prisa, pero tampoco ventaja clara en esperar mucho más.' },
+        { model: '911', generation: '991.2', prices: { 2023: 94000, 2025: 90000 }, verdict: 'Depreciación suave y constante. Buen momento para vender si ya no lo disfrutas.' },
+        { model: '911', generation: '992', prices: { 2023: 112000, 2025: 108000 }, verdict: 'Depreciación muy suave gracias a la demanda sostenida. Sin prisa por vender.' },
+        { model: 'Cayman/Boxster', generation: '986', prices: { 2023: 12000, 2025: 14000 }, verdict: 'Empezando a apreciarse desde un suelo muy bajo. No hay prisa.' },
+        { model: 'Cayman/Boxster', generation: '987.1', prices: { 2023: 21000, 2025: 19000 }, verdict: 'Sigue bajando ligeramente. Si vendes, hazlo con un informe de aceite/boroscopia que despeje dudas sobre bore scoring.' },
+        { model: 'Cayman/Boxster', generation: '987.2', prices: { 2023: 45000, 2025: 48000 }, verdict: 'En apreciación por su fiabilidad. Sin prisa por vender.' },
+        { model: 'Cayman/Boxster', generation: '981', prices: { 2023: 46000, 2025: 42000 }, verdict: 'Depreciación moderada. Un buen momento para vender si el motor tiene su salud documentada.' },
+        { model: 'Cayman/Boxster', generation: '718, 4 Cil.', prices: { 2023: 54000, 2025: 52000 }, verdict: 'Depreciación suave. Sin urgencia, el 4 cilindros divide algo la demanda frente al 6.' },
+        { model: 'Cayenne', generation: '955/957', prices: { 2023: 6500, 2025: 5000 }, verdict: 'Depreciación muy fuerte y ya cerca de suelo. Si vas a vender, cuanto antes, mejor.' },
+        { model: 'Cayenne', generation: '958', prices: { 2023: 38000, 2025: 33000 }, verdict: 'Depreciación notable pero ya moderándose. No conviene demorar mucho la venta.' },
+        { model: 'Macan', generation: '95B.1', prices: { 2023: 38000, 2025: 32000 }, verdict: 'Depreciación estándar de SUV premium. Vende cuanto antes si no vas a seguir usándolo.' },
+        { model: 'Macan', generation: 'Restyling', prices: { 2023: 50000, 2025: 42000 }, verdict: 'Depreciación fuerte todavía en curso. Prioriza vender pronto si no es tu coche del día a día.' },
+        { model: 'Panamera', generation: '970', prices: { 2023: 28000, 2025: 24000 }, verdict: 'Depreciación significativa aunque ya suave. Buen momento para vender si el mantenimiento pesa más que el valor del coche.' },
+        { model: 'Panamera', generation: '971', prices: { 2023: 60000, 2025: 52000 }, verdict: 'Depreciación fuerte todavía en curso. No conviene esperar mucho más para vender.' },
+        { model: 'Taycan', generation: 'J1', prices: { 2023: 80000, 2025: 70000 }, verdict: 'Depreciación inicial fuerte, típica de los EV de lujo. Si vas a vender, antes que después.' },
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+        function initializePage() {
+            populateModelSelect();
+            setupEventListeners();
+            updateTrend(0);
+        }
+
+        function populateModelSelect() {
+            const select = document.getElementById('model-select');
+            select.innerHTML = priceData.map((m, i) => `<option value="${i}">${m.model} ${m.generation}</option>`).join('');
+        }
+
+        function updateTrend(index) {
+            const item = priceData[index];
+            const change = item.prices[2025] - item.prices[2023];
+            const pct = (change / item.prices[2023]) * 100;
+
+            const box = document.getElementById('trend-box');
+            const title = document.getElementById('trend-title');
+            const detail = document.getElementById('trend-detail');
+
+            box.classList.remove('up', 'stable', 'down');
+            if (pct >= 2) {
+                box.classList.add('up');
+                title.textContent = 'En apreciación';
+                detail.textContent = 'Su valor está subiendo. No hay prisa por vender solo por miedo a perder valor.';
+            } else if (pct >= -5) {
+                box.classList.add('stable');
+                title.textContent = 'Valor estable';
+                detail.textContent = 'Apenas pierde valor de un año a otro: puedes elegir con calma el mejor momento y comprador.';
+            } else {
+                box.classList.add('down');
+                title.textContent = 'En depreciación';
+                detail.textContent = 'Pierde valor de forma notable. Cuanto más esperes sin usarlo a diario, más valor se deja por el camino.';
+            }
+
+            document.getElementById('line-2023').textContent = `${item.prices[2023].toLocaleString('es-ES')} €`;
+            document.getElementById('line-2025').textContent = `${item.prices[2025].toLocaleString('es-ES')} €`;
+            document.getElementById('line-change').textContent = `${change > 0 ? '+' : ''}${change.toLocaleString('es-ES')} € (${pct > 0 ? '+' : ''}${pct.toFixed(1)}%)`;
+
+            document.getElementById('verdict-note').textContent = item.verdict;
+        }
+
+        function setupEventListeners() {
+            document.getElementById('model-select').addEventListener('change', (event) => {
+                updateTrend(parseInt(event.target.value, 10));
+            });
+        }
+
+        initializePage();
+    });
+    </script>
+</body>
+</html>
