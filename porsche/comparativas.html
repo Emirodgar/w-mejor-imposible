@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Comparativas: Porsche frente a la competencia | Mejor Imposible</title>
+    <meta name="description" content="Porsche Macan, Cayenne, Panamera, 911 y 718 comparados cara a cara con sus rivales directos: Audi, BMW, Mercedes, Chevrolet, Toyota y Alpine. Precio, potencia, fiabilidad y coste de mantenimiento.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1200px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .intro-block { max-width: 800px; margin: 30px 0 35px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        .family-block { margin-bottom: 40px; }
+        .family-header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; border-bottom: 2px solid var(--porsche-red); padding-bottom: 10px; }
+        .family-header h2 { margin: 0; font-size: 1.4em; }
+        .family-header a { font-size: 0.85em; font-weight: 600; color: var(--porsche-red); text-decoration: none; white-space: nowrap; }
+        .family-header a:hover { text-decoration: underline; }
+
+        .comparativas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+        .comparativa-card {
+            display: block; padding: 20px 22px; border-radius: 8px; text-decoration: none; color: inherit;
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .comparativa-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+        .comparativa-card h3 { margin: 0 0 8px 0; font-size: 1.05em; color: var(--porsche-red); }
+        .comparativa-card p { margin: 0; font-size: 0.9em; line-height: 1.5; opacity: 0.8; }
+
+        .models-note { font-size: 0.85em; opacity: 0.6; margin-top: 10px; }
+        .models-note a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="intro-block">
+            <h1>Comparativas: Porsche frente a la competencia</h1>
+            <p>Cada modelo de la gama Porsche frente a sus tres rivales directos: precio, motorizaciones, potencia, autonomía, maletero, fiabilidad y coste de mantenimiento, con pros y contras claros para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <div class="family-block">
+                <div class="family-header">
+                    <h2>Porsche Macan</h2>
+                    <a href="/porsche/modelos/macan">Ver ficha completa del Macan &rarr;</a>
+                </div>
+                <div class="comparativas-grid">
+                    <a href="/porsche/comparativas/macan-vs-audi-q5" class="comparativa-card">
+                        <h3>Macan vs Audi Q5</h3>
+                        <p>Electrificación total del Macan contra el motor de combustión, diésel e híbrido enchufable del Q5.</p>
+                    </a>
+                    <a href="/porsche/comparativas/macan-vs-mercedes-glc" class="comparativa-card">
+                        <h3>Macan vs Mercedes GLC</h3>
+                        <p>El SUV compacto más deportivo frente a la gama de motorizaciones más completa del segmento.</p>
+                    </a>
+                    <a href="/porsche/comparativas/macan-vs-bmw-x3" class="comparativa-card">
+                        <h3>Macan vs BMW X3</h3>
+                        <p>Prestaciones y fiabilidad del Macan contra el precio de entrada más bajo del trío.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="family-block">
+                <div class="family-header">
+                    <h2>Porsche Cayenne</h2>
+                    <a href="/porsche/modelos/cayenne">Ver ficha completa del Cayenne &rarr;</a>
+                </div>
+                <div class="comparativas-grid">
+                    <a href="/porsche/comparativas/cayenne-vs-bmw-x5" class="comparativa-card">
+                        <h3>Cayenne vs BMW X5</h3>
+                        <p>Dinámica de conducción del Cayenne frente al precio de entrada y el diésel del X5.</p>
+                    </a>
+                    <a href="/porsche/comparativas/cayenne-vs-mercedes-gle" class="comparativa-card">
+                        <h3>Cayenne vs Mercedes GLE</h3>
+                        <p>Comportamiento deportivo contra confort, espacio y una buena nota de fiabilidad TÜV.</p>
+                    </a>
+                    <a href="/porsche/comparativas/cayenne-vs-audi-q7" class="comparativa-card">
+                        <h3>Cayenne vs Audi Q7</h3>
+                        <p>Nacieron sobre la misma plataforma: hoy el Q7 es más barato y ofrece 7 plazas, algo que el Cayenne no tiene.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="family-block">
+                <div class="family-header">
+                    <h2>Porsche Panamera</h2>
+                    <a href="/porsche/modelos/panamera">Ver ficha completa del Panamera &rarr;</a>
+                </div>
+                <div class="comparativas-grid">
+                    <a href="/porsche/comparativas/panamera-vs-taycan" class="comparativa-card">
+                        <h3>Panamera vs Taycan</h3>
+                        <p>Combustión y E-Hybrid contra 100% eléctrico: la disyuntiva dentro de la propia gama Porsche.</p>
+                    </a>
+                    <a href="/porsche/comparativas/panamera-vs-bmw-serie-8-gran-coupe" class="comparativa-card">
+                        <h3>Panamera vs BMW Serie 8 Gran Coupé</h3>
+                        <p>Tracción integral e híbrido enchufable de serie contra un chasis bastante más ligero.</p>
+                    </a>
+                    <a href="/porsche/comparativas/panamera-vs-audi-rs7" class="comparativa-card">
+                        <h3>Panamera vs Audi RS7</h3>
+                        <p>El RS7 ya es la única variante superviviente del A7: hoy el Panamera de entrada es más barato.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="family-block">
+                <div class="family-header">
+                    <h2>Porsche 911</h2>
+                    <a href="/porsche/modelos/911">Ver ficha completa del 911 &rarr;</a>
+                </div>
+                <div class="comparativas-grid">
+                    <a href="/porsche/comparativas/911-vs-corvette" class="comparativa-card">
+                        <h3>911 vs Chevrolet Corvette</h3>
+                        <p>Motor trasero contra motor central: dos filosofías de deportivo enfrentadas.</p>
+                    </a>
+                    <a href="/porsche/comparativas/911-vs-mercedes-amg-gt" class="comparativa-card">
+                        <h3>911 vs Mercedes-AMG GT</h3>
+                        <p>Gama amplia y tradición contra tracción integral de serie y hasta 805 CV.</p>
+                    </a>
+                    <a href="/porsche/comparativas/911-vs-bmw-m4" class="comparativa-card">
+                        <h3>911 vs BMW M4</h3>
+                        <p>El cross-shopping más habitual del segmento, con precios de entrada casi calcados.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="family-block">
+                <div class="family-header">
+                    <h2>Porsche 718 (Boxster / Cayman)</h2>
+                    <a href="/porsche/modelos/718">Ver ficha completa del 718 &rarr;</a>
+                </div>
+                <div class="comparativas-grid">
+                    <a href="/porsche/comparativas/718-vs-bmw-z4" class="comparativa-card">
+                        <h3>718 vs BMW Z4</h3>
+                        <p>El Z4 termina su producción en 2026 sin sucesor: última oportunidad de comprarlo nuevo.</p>
+                    </a>
+                    <a href="/porsche/comparativas/718-vs-toyota-gr-supra" class="comparativa-card">
+                        <h3>718 vs Toyota GR Supra</h3>
+                        <p>Precio de entrada casi idéntico, pero mecánica compartida con BMW frente al motor central Porsche.</p>
+                    </a>
+                    <a href="/porsche/comparativas/718-vs-alpine-a110" class="comparativa-card">
+                        <h3>718 vs Alpine A110</h3>
+                        <p>Potencia contra peso ligero, con la A110 de combustión despidiéndose también en 2026.</p>
+                    </a>
+                </div>
+            </div>
+
+            <p class="models-note">¿No sabes por dónde empezar? Responde el <a href="/porsche/asistente">asistente de recomendación</a> o consulta las <a href="/porsche/modelos">fichas técnicas por modelo</a> con fiabilidad, coste y precio de cada generación.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
