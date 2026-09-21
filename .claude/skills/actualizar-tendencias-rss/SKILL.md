@@ -70,9 +70,11 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 10. **Actualiza `.claude/state/tendencias-rss-seen.json`**: añade los `id` de las entradas del feed que hayas usado esta semana (las descartadas por poco relevantes NO hace falta guardarlas, así se pueden reconsiderar si el feed vuelve a traerlas más adelante con más contexto). Si el array supera 300 elementos, elimina los más antiguos del principio.
 
-11. **Publica el cambio**:
+11. **Actualiza la fecha de modificación en `sitemap.xml`**: busca el bloque `<url>` cuyo `<loc>` sea `https://mejorimposible.es/porsche/tendencias` y pon (o si ya existe, sustituye) su `<lastmod>` por la fecha de hoy en formato `AAAA-MM-DD`, justo después de la etiqueta `<loc>`. No toques ningún otro `<url>` del sitemap. (El workflow de "última hora" también actualiza este mismo `<lastmod>` cada 5 horas; tu cambio semanal simplemente lo deja también al día en el momento de tu actualización.)
+
+12. **Publica el cambio**:
     ```
-    git add porsche/tendencias.html .claude/state/tendencias-rss-seen.json
+    git add porsche/tendencias.html sitemap.xml .claude/state/tendencias-rss-seen.json
     git commit -m "Actualiza tendencias con noticias de la semana (RSS)"
     git push
     ```
