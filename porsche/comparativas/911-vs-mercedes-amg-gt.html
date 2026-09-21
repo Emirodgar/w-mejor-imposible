@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche 911 vs Mercedes-AMG GT: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche 911 y el Mercedes-AMG GT: precio, potencia, tracción, maletero, fiabilidad y coste de mantenimiento. Pros y contras de cada uno para ayudarte a elegir.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #1a3c6e;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+        .site-header { padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px; }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.model911 { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(26, 60, 110, 0.05); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.model911 h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.model911 h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+        .cross-link-box { margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold); background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6; }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche 911 o el Mercedes-AMG GT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 tiene un precio de entrada más bajo (148.500 € frente a 143.270 €... en realidad muy parejo), mejor fiabilidad documentada y una gama mucho más amplia de versiones. El AMG GT ofrece tracción integral 4MATIC+ de serie en toda la gama y una potencia máxima muy superior en el GT63 S E Performance (805 CV, híbrido enchufable), aunque a un precio bastante más alto en ese escalón."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto cuesta el Mercedes-AMG GT comparado con el 911?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El AMG GT parte de 143.270 €, un precio muy similar al 911 Carrera de acceso (148.500 €). La diferencia se dispara en la gama alta: el AMG GT63 S E Performance (805 CV) puede superar los 257.000 €, muy por encima de la mayoría de versiones del 911 salvo el Turbo S bien equipado."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Tiene tracción integral el Mercedes-AMG GT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, toda la gama del nuevo AMG GT monta tracción integral 4MATIC+ de serie, algo que en el 911 solo está disponible en las variantes 4 y 4S (Carrera y Turbo), no en las versiones de acceso ni en los GT3."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué maletero tiene el 911 comparado con el AMG GT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Los dos son limitados, pero el AMG GT tiene algo más de capacidad: unos 320 litros repartidos entre el maletero delantero y trasero, frente a los 132 litros del 911, que solo cuenta con el frunk delantero."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más fiable, el 911 o el Mercedes-AMG GT?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 actual (992) tiene el mejor índice de fiabilidad documentado de la gama Porsche, 96/100. El motor V8 M178 del AMG GT tiene fama de ser robusto y relativamente duradero, con quejas menores como algún relleno ocasional de líquido refrigerante o fallos puntuales en las válvulas de escape, sin problemas mecánicos graves documentados de forma generalizada."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/911">&larr; Volver a la ficha del Porsche 911</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche 911 vs Mercedes-AMG GT: ¿cuál elegir?</h1>
+            <p>El 911 y el AMG GT son dos deportivos de motor delantero-central/trasero con un público muy similar, pero con planteamientos distintos: el 911 mantiene su motor bóxer trasero y una gama enorme de versiones, mientras el nuevo AMG GT apuesta por tracción integral de serie en toda la gama y potencias que llegan hasta los 805 CV en su versión híbrida enchufable. Comparamos precio, potencia, tracción, maletero, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card model911">
+                        <h3>Elige el Porsche 911 si...</h3>
+                        <ul>
+                            <li>Quieres la gama más amplia de versiones y personalidades</li>
+                            <li>Valoras la mejor fiabilidad documentada del segmento</li>
+                            <li>Prefieres el carácter del motor bóxer trasero</li>
+                            <li>Buscas el mejor precio de entrada al segmento</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Mercedes-AMG GT si...</h3>
+                        <ul>
+                            <li>Quieres tracción integral de serie en toda la gama</li>
+                            <li>Buscas la máxima potencia posible (hasta 805 CV híbrido)</li>
+                            <li>Prefieres un maletero algo más práctico</li>
+                            <li>Te interesa la opción híbrida enchufable de altas prestaciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El 911 de referencia es el Carrera T (385 CV); el AMG GT, la versión de acceso GT43 (416 CV), con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche 911</th>
+                                <th class="col-rival">Mercedes-AMG GT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>148.500 € (gama hasta más de 250.000 € en el Turbo S)</td>
+                                <td>143.270 € (gama hasta 257.626 € en el GT63 S E Performance)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>Bóxer turbo (Carrera, Turbo) y atmosférico (GT3); sin electrificación ni híbrido en la mayoría de la gama</td>
+                                <td>4 cilindros turbo (GT43), V8 biturbo (GT55/63/63 Pro) e híbrido enchufable (GT63 S E Performance)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>385 CV (Carrera T) – 525 CV+ (GT3 RS)</td>
+                                <td>416 CV (GT43) – 805 CV (GT63 S E Performance)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,0 s (Carrera T) – 3,2 s (GT3 RS)</td>
+                                <td>4,6 s (GT43) – por debajo de 3,0 s (GT63 S E Performance)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Trasera en la mayoría de versiones; integral en variantes 4/4S</td>
+                                <td>4MATIC+ (integral) de serie en toda la gama</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>132 L (solo frunk delantero)</td>
+                                <td>~320 L repartidos en maletero delantero y trasero</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.450 - 1.470 kg</td>
+                                <td>~1.970 kg (GT55)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.500 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 6.500 - 9.000 € (motor V8 de altas prestaciones)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>96/100, generación 992 actual, la mejor documentada de la gama Porsche</td>
+                                <td>Motor V8 M178 considerado robusto; quejas menores de refrigerante y válvulas de escape</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Mercedes-AMG España, 2026. La gama del 911 incluye muchas más versiones (Carrera, S, GTS, Turbo, GT3...); consulta la <a href="/porsche/modelos/911" style="color:var(--porsche-red); font-weight:600;">ficha completa del 911</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col model911">
+                        <h3>Porsche 911</h3>
+                        <ul>
+                            <li class="pro">Gama mucho más amplia, con personalidades muy distintas entre versiones</li>
+                            <li class="pro">Mejor fiabilidad documentada (96/100)</li>
+                            <li class="pro">Coste de mantenimiento estimado inferior (4.500 € frente a 6.500-9.000 €)</li>
+                            <li class="pro">Precio de entrada muy competitivo dentro del segmento</li>
+                            <li class="con">Maletero mucho más pequeño (132 L frente a ~320 L)</li>
+                            <li class="con">Tracción integral solo disponible en versiones 4/4S, no de serie</li>
+                            <li class="con">No ofrece una versión híbrida enchufable de altas prestaciones</li>
+                            <li class="con">Sobreprecio habitual sobre el PVP en las versiones más deseadas</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Mercedes-AMG GT</h3>
+                        <ul>
+                            <li class="pro">Tracción integral 4MATIC+ de serie en toda la gama</li>
+                            <li class="pro">Potencia máxima muy superior (805 CV en el GT63 S E Performance)</li>
+                            <li class="pro">Maletero más práctico, repartido en dos compartimentos</li>
+                            <li class="pro">Motor V8 M178 con buena reputación de robustez</li>
+                            <li class="con">Coste de mantenimiento estimado más alto</li>
+                            <li class="con">Gama de versiones más reducida que la del 911</li>
+                            <li class="con">Precio se dispara mucho en la gama alta (hasta 257.626 €)</li>
+                            <li class="con">Menor histórico y tradición como deportivo puro frente al 911</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El 911 y el AMG GT compiten por el mismo tipo de comprador: alguien que busca un deportivo de calle con prestaciones serias y sello de marca premium alemana. El nuevo AMG GT, renovado con tracción integral de serie y una variante híbrida enchufable de 805 CV, ha subido claramente la apuesta en potencia bruta, mientras el 911 sigue apoyándose en la amplitud de su gama y en décadas de desarrollo del motor bóxer trasero.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si quieres la gama más completa, la mejor fiabilidad documentada y un coste de mantenimiento algo más predecible, el 911 sigue siendo la opción más segura. Si en cambio buscas la máxima potencia posible, tracción integral de serie en toda la gama o un maletero algo más práctico, el AMG GT es una alternativa muy seria, especialmente en sus versiones más potentes.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/911-vs-corvette">911 vs Chevrolet Corvette</a>, <a href="/porsche/comparativas/911-vs-bmw-m4">911 vs BMW M4</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche 911 o el Mercedes-AMG GT?</summary>
+                    <p>El 911 tiene un precio de entrada muy similar (148.500 € frente a 143.270 €), mejor fiabilidad documentada y una gama mucho más amplia de versiones. El AMG GT ofrece tracción integral 4MATIC+ de serie en toda la gama y una potencia máxima muy superior en el GT63 S E Performance (805 CV, híbrido enchufable), aunque a un precio bastante más alto en ese escalón.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto cuesta el Mercedes-AMG GT comparado con el 911?</summary>
+                    <p>El AMG GT parte de 143.270 €, un precio muy similar al 911 Carrera de acceso (148.500 €). La diferencia se dispara en la gama alta: el AMG GT63 S E Performance (805 CV) puede superar los 257.000 €, muy por encima de la mayoría de versiones del 911 salvo el Turbo S bien equipado.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Tiene tracción integral el Mercedes-AMG GT?</summary>
+                    <p>Sí, toda la gama del nuevo AMG GT monta tracción integral 4MATIC+ de serie, algo que en el 911 solo está disponible en las variantes 4 y 4S (Carrera y Turbo), no en las versiones de acceso ni en los GT3.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué maletero tiene el 911 comparado con el AMG GT?</summary>
+                    <p>Los dos son limitados, pero el AMG GT tiene algo más de capacidad: unos 320 litros repartidos entre el maletero delantero y trasero, frente a los 132 litros del 911, que solo cuenta con el frunk delantero.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más fiable, el 911 o el Mercedes-AMG GT?</summary>
+                    <p>El 911 actual (992) tiene el mejor índice de fiabilidad documentado de la gama Porsche, 96/100. El motor V8 M178 del AMG GT tiene fama de ser robusto y relativamente duradero, con quejas menores como algún relleno ocasional de líquido refrigerante o fallos puntuales en las válvulas de escape, sin problemas mecánicos graves documentados de forma generalizada.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del 911?</strong> Consulta su <a href="/porsche/modelos/911">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Mercedes-AMG GT recopilados de fuentes públicas (Mercedes-Benz España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Mercedes-Benz.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche 911 vs Chevrolet Corvette: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche 911 y el Chevrolet Corvette C8: precio, potencia, arquitectura de motor, maletero, fiabilidad y coste de mantenimiento. Motor trasero contra motor central, cara a cara.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #B8860B;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+        .site-header { padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px; }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.model911 { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(184, 134, 11, 0.08); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.model911 h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: #7a5c09; }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: #7a5c09; }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.model911 h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: #7a5c09; }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+        .cross-link-box { margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold); background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6; }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche 911 o el Chevrolet Corvette?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende del tipo de deportivo que busques: el 911 mantiene su icónico motor bóxer trasero y una gama muy amplia (desde 385 hasta más de 525 CV), con mejor fiabilidad documentada y una red de concesionarios mucho más extensa en España. El Corvette C8 tiene motor central-trasero (más equilibrado en curva), un precio de entrada más bajo (121.000 € frente a 148.500 €) y una potencia bruta superior en el Z06, pero solo cuenta con un concesionario oficial en España."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más barato es el Corvette que el 911?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Corvette Stingray parte de 121.000 €, unos 27.500 € menos que el 911 Carrera de acceso (148.500 €). En la gama alta, el Corvette Z06 (670 CV) parte de unos 207.000 €, similar al precio de un 911 GT3 o Turbo S bien equipado."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué diferencia hay entre el motor central del Corvette y el motor trasero del 911?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Corvette sitúa el motor V8 justo detrás de los ocupantes (motor central-trasero), lo que reparte mejor el peso entre los ejes y suele traducirse en un comportamiento más neutro y previsible al límite. El 911 mantiene su histórico motor bóxer detrás del eje trasero, una configuración que carga más peso sobre las ruedas motrices (mejor tracción en la salida de curva) a cambio de un comportamiento más particular que exige más adaptación del piloto."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Se puede comprar un Corvette nuevo en España?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, aunque con una red muy limitada: actualmente hay un único concesionario oficial en España, en Sevilla, con garantía de fábrica y servicio técnico oficial. Es un punto a tener en cuenta frente a la amplia red de Centros Porsche repartidos por todo el país."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más fiable, el 911 o el Corvette?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 actual (992) tiene el mejor índice de fiabilidad documentado de toda la gama Porsche, 96/100. El Corvette C8 tiene una reputación media-alta, aunque con algunos problemas conocidos: rotura de muelles de válvula en motores LT2 de 2020-2021, el frunk que puede abrirse en marcha (ya corregido por recall) y cierta tendencia al sobrecalentamiento en conducción agresiva o atascos."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/911">&larr; Volver a la ficha del Porsche 911</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche 911 vs Chevrolet Corvette: ¿cuál elegir?</h1>
+            <p>El 911 y el Corvette son dos de los deportivos más longevos e icónicos del mundo, pero con una diferencia de arquitectura fundamental: el 911 mantiene su histórico motor bóxer trasero, mientras el Corvette C8 pasó en 2020 a motor central-trasero por primera vez en su historia. Comparamos precio, potencia, comportamiento, maletero, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card model911">
+                        <h3>Elige el Porsche 911 si...</h3>
+                        <ul>
+                            <li>Quieres la gama más amplia de versiones y personalidades</li>
+                            <li>Valoras la mejor fiabilidad documentada del segmento</li>
+                            <li>Necesitas una red de concesionarios y talleres amplia en España</li>
+                            <li>Prefieres el carácter particular del motor bóxer trasero</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Chevrolet Corvette si...</h3>
+                        <ul>
+                            <li>Priorizas un precio de entrada más bajo</li>
+                            <li>Prefieres el reparto de pesos de un motor central</li>
+                            <li>Quieres el mayor maletero de los dos</li>
+                            <li>No te importa una red de posventa muy reducida en España</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El 911 de referencia es el Carrera T (385 CV); el Corvette, la versión Stingray, con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche 911</th>
+                                <th class="col-rival">Chevrolet Corvette</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>148.500 € (gama hasta más de 250.000 € en el Turbo S)</td>
+                                <td>121.000 € (gama: 121.000 € – 207.000 € en el Z06)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Arquitectura de motor</td>
+                                <td>Motor bóxer trasero (detrás del eje trasero)</td>
+                                <td>Motor V8 central-trasero (delante del eje trasero)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>385 CV (Carrera T) – 525 CV+ (GT3 RS)</td>
+                                <td>490+ CV (Stingray) – 670 CV (Z06)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,0 s (Carrera T) – 3,2 s (GT3 RS)</td>
+                                <td>&lt;4,0 s (Stingray) – ~2,8-3,0 s (Z06)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Trasera en la mayoría de versiones; integral en variantes 4/4S</td>
+                                <td>Trasera en toda la gama</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>132 L (solo frunk delantero, sin maletero trasero utilizable)</td>
+                                <td>~320 L repartidos en frunk delantero y compartimento trasero</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.450 - 1.470 kg</td>
+                                <td>~1.600 - 1.738 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Red oficial en España</td>
+                                <td>Amplia red de Centros Porsche por todo el país</td>
+                                <td>Un único concesionario oficial (Sevilla)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.500 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Sin dato oficial consolidado en España por su red reducida</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>96/100, generación 992 actual, la mejor documentada de la gama Porsche</td>
+                                <td>Reputación media-alta; muelles de válvula (LT2, 2020-2021), frunk y sobrecalentamiento en uso agresivo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Chevrolet España, 2026. La gama del 911 incluye muchas más versiones (Carrera, S, GTS, Turbo, GT3...); consulta la <a href="/porsche/modelos/911" style="color:var(--porsche-red); font-weight:600;">ficha completa del 911</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col model911">
+                        <h3>Porsche 911</h3>
+                        <ul>
+                            <li class="pro">Gama muchísimo más amplia, de 385 a más de 525 CV, con personalidades muy distintas</li>
+                            <li class="pro">Mejor fiabilidad documentada del segmento (96/100)</li>
+                            <li class="pro">Red de concesionarios y talleres oficiales muy amplia en España</li>
+                            <li class="pro">Carácter único del motor bóxer trasero, con más de 60 años de desarrollo</li>
+                            <li class="con">Precio de entrada más alto: +27.500 € frente al Corvette Stingray</li>
+                            <li class="con">Maletero mucho más pequeño y menos práctico (132 L frente a ~320 L)</li>
+                            <li class="con">El motor trasero exige más adaptación al límite que un motor central</li>
+                            <li class="con">Las versiones más deseadas suelen tener sobreprecio sobre el PVP oficial</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Chevrolet Corvette</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada notablemente más bajo</li>
+                            <li class="pro">Reparto de pesos de motor central, comportamiento más neutro al límite</li>
+                            <li class="pro">Maletero mucho más práctico, repartido en dos compartimentos</li>
+                            <li class="pro">El Z06 (670 CV) es una de las mejores relaciones potencia-precio del segmento</li>
+                            <li class="con">Red oficial en España muy reducida: un único concesionario (Sevilla)</li>
+                            <li class="con">Menos gama de versiones y personalidades que el 911</li>
+                            <li class="con">Problemas documentados de muelles de válvula en motores LT2 de 2020-2021</li>
+                            <li class="con">Menor exclusividad de marca en el segmento premium europeo</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El 911 y el Corvette llevan compitiendo por el corazón de los aficionados a los deportivos desde los años 60, cada uno defendiendo una filosofía de ingeniería distinta. El salto del Corvette a motor central en 2020 (generación C8) acercó por primera vez su arquitectura a la de los superdeportivos europeos, invitando a una comparación con el 911 que antes no tenía tanto sentido técnico. Hoy ambos representan dos maneras distintas de entender el deportivo de motor trasero o central: tradición y gama amplia en el caso de Porsche, relación prestaciones-precio y una arquitectura más moderna en el caso de Chevrolet.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si quieres la gama más completa, la mejor fiabilidad documentada y una red de posventa que te resuelva cualquier duda cerca de casa, el 911 es la opción más segura. Si en cambio buscas la mejor relación prestaciones-precio, un maletero realmente práctico y no te importa depender de un único concesionario en toda España, el Corvette es una alternativa muy seria, sobre todo en su versión Z06.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/911-vs-mercedes-amg-gt">911 vs Mercedes-AMG GT</a>, <a href="/porsche/comparativas/911-vs-bmw-m4">911 vs BMW M4</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche 911 o el Chevrolet Corvette?</summary>
+                    <p>Depende del tipo de deportivo que busques: el 911 mantiene su icónico motor bóxer trasero y una gama muy amplia (desde 385 hasta más de 525 CV), con mejor fiabilidad documentada y una red de concesionarios mucho más extensa en España. El Corvette C8 tiene motor central-trasero (más equilibrado en curva), un precio de entrada más bajo (121.000 € frente a 148.500 €) y una potencia bruta superior en el Z06, pero solo cuenta con un concesionario oficial en España.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más barato es el Corvette que el 911?</summary>
+                    <p>El Corvette Stingray parte de 121.000 €, unos 27.500 € menos que el 911 Carrera de acceso (148.500 €). En la gama alta, el Corvette Z06 (670 CV) parte de unos 207.000 €, similar al precio de un 911 GT3 o Turbo S bien equipado.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué diferencia hay entre el motor central del Corvette y el motor trasero del 911?</summary>
+                    <p>El Corvette sitúa el motor V8 justo detrás de los ocupantes (motor central-trasero), lo que reparte mejor el peso entre los ejes y suele traducirse en un comportamiento más neutro y previsible al límite. El 911 mantiene su histórico motor bóxer detrás del eje trasero, una configuración que carga más peso sobre las ruedas motrices (mejor tracción en la salida de curva) a cambio de un comportamiento más particular que exige más adaptación del piloto.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Se puede comprar un Corvette nuevo en España?</summary>
+                    <p>Sí, aunque con una red muy limitada: actualmente hay un único concesionario oficial en España, en Sevilla, con garantía de fábrica y servicio técnico oficial. Es un punto a tener en cuenta frente a la amplia red de Centros Porsche repartidos por todo el país.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más fiable, el 911 o el Corvette?</summary>
+                    <p>El 911 actual (992) tiene el mejor índice de fiabilidad documentado de toda la gama Porsche, 96/100. El Corvette C8 tiene una reputación media-alta, aunque con algunos problemas conocidos: rotura de muelles de válvula en motores LT2 de 2020-2021, el frunk que puede abrirse en marcha (ya corregido por recall) y cierta tendencia al sobrecalentamiento en conducción agresiva o atascos.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del 911?</strong> Consulta su <a href="/porsche/modelos/911">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Chevrolet Corvette recopilados de fuentes públicas (Chevrolet España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Chevrolet.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche 718 vs Toyota GR Supra: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche 718 (Boxster/Cayman) y el Toyota GR Supra: precio, potencia, maletero, fiabilidad y coste de mantenimiento. Motor central contra motor delantero compartido con BMW.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #E85D04;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+        .site-header { padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px; }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.model718 { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(232, 93, 4, 0.06); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.model718 h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.model718 h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+        .cross-link-box { margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold); background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6; }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche 718 o el Toyota GR Supra?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 718 (Boxster/Cayman) tiene motor central, mejor reparto de pesos y mejor fiabilidad documentada (97/100). El GR Supra tiene un precio de entrada mucho más bajo (desde 78.720 €) y una reputación de fiabilidad muy sólida gracias a la ingeniería de Toyota, aunque su motor y plataforma son en gran parte de BMW."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El Toyota GR Supra usa piezas de BMW?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí. El GR Supra actual se desarrolló conjuntamente con BMW y comparte plataforma, motores (el 6 cilindros turbo B58) y buena parte de la electrónica con el BMW Z4. Toyota se encargó del ajuste de suspensión, dirección y del propio diseño de la carrocería, pero la base mecánica es común."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más barato es el Toyota GR Supra que el 718?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El GR Supra 3.0 parte de 78.720 €, un precio muy similar al 718 de acceso (77.850 €), prácticamente empatados. La diferencia real está en las versiones más potentes, donde el 718 GTS y GT4 escalan bastante más en precio y en carácter atmosférico que la gama Supra."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué maletero tiene el 718 comparado con el GR Supra?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Son muy similares: 275 litros (repartidos en dos compartimentos) en el 718 Cayman frente a 290 litros en el GR Supra, que al tener motor delantero concentra toda la capacidad en un único maletero trasero."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más fiable, el 718 o el Toyota GR Supra?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 718 actual tiene un índice de fiabilidad de 97/100, de los mejores de la gama Porsche. El GR Supra, pese a compartir mecánica con el BMW Z4, tiene fama de ser un deportivo robusto y duradero, gracias en parte a la reputación de ingeniería de Toyota; algunas unidades 2020-2021 compartieron con el Z4 un fallo de software que podía desactivar la asistencia de frenado, ya corregido."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/718">&larr; Volver a la ficha del Porsche 718</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche 718 vs Toyota GR Supra: ¿cuál elegir?</h1>
+            <p>El 718 y el GR Supra son dos de los deportivos accesibles más queridos por los aficionados, aunque parten de planteamientos muy distintos: el 718 mantiene el motor central que define a Porsche desde el Boxster original, mientras el Supra actual nació de una colaboración con BMW y comparte plataforma, motores y buena parte de la ingeniería con el Z4. Comparamos precio, potencia, maletero, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card model718">
+                        <h3>Elige el Porsche 718 si...</h3>
+                        <ul>
+                            <li>Quieres el reparto de pesos de un motor central</li>
+                            <li>Valoras la mejor fiabilidad documentada del segmento</li>
+                            <li>Buscas versiones atmosféricas de 6 cilindros (GTS, GT4, GT4 RS)</li>
+                            <li>Prefieres el prestigio de marca Porsche</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Toyota GR Supra si...</h3>
+                        <ul>
+                            <li>Buscas un precio de entrada muy similar con la garantía de Toyota</li>
+                            <li>Prefieres la caja manual de 6 velocidades, muy valorada por los puristas</li>
+                            <li>Quieres una reputación de fiabilidad excelente en el día a día</li>
+                            <li>Te da igual que comparta mecánica con un BMW</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El 718 de referencia es el Cayman S (350 CV); el GR Supra, la versión 3.0 (335-340 CV), con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche 718</th>
+                                <th class="col-rival">Toyota GR Supra</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>77.850 € (gama hasta más de 110.000 € en el GT4 RS)</td>
+                                <td>78.720 € (3.0 manual; hasta 441 CV en la A90 Final Edition)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Arquitectura de motor</td>
+                                <td>Motor central (bóxer 4 cilindros turbo o 6 cilindros atmosférico)</td>
+                                <td>Motor delantero (4 cilindros o 6 cilindros turbo, compartido con BMW)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>350 CV (Cayman S) – 500 CV (GT4 RS)</td>
+                                <td>258 CV (2.0) – 382 CV (3.0 más potente)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,2 s (Cayman S) – 3,4 s (GT4 RS)</td>
+                                <td>4,6 s (acceso) – 3,7-3,9 s (3.0)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Trasera en toda la gama</td>
+                                <td>Trasera en toda la gama</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Transmisión</td>
+                                <td>PDK automática o manual según versión</td>
+                                <td>Manual de 6 velocidades o automática ZF de 8</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>275 L (repartido en dos compartimentos)</td>
+                                <td>290 L (maletero trasero único)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.385 - 1.420 kg</td>
+                                <td>~1.410 - 1.520 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>3.900 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 4.000 - 6.000 € (red Toyota, mecánica compartida con BMW)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>97/100, generación 718 (982) actual, de las mejores de la gama Porsche</td>
+                                <td>Buena reputación general; software compartido con el Z4 (2020-2021) ya corregido</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Toyota España, 2026. La gama del 718 incluye más versiones (Boxster, GTS 4.0, Spyder); consulta la <a href="/porsche/modelos/718" style="color:var(--porsche-red); font-weight:600;">ficha completa del 718</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col model718">
+                        <h3>Porsche 718</h3>
+                        <ul>
+                            <li class="pro">Motor central: mejor reparto de pesos y reputación de manejo superior</li>
+                            <li class="pro">Mejor fiabilidad documentada (97/100)</li>
+                            <li class="pro">Gama atmosférica de 6 cilindros (GTS, GT4, GT4 RS) sin equivalente en el Supra</li>
+                            <li class="pro">Prestigio de marca Porsche y mayor recorrido de personalización</li>
+                            <li class="con">Precio muy similar al del Supra pese a ofrecer menos potencia de acceso</li>
+                            <li class="con">Solo tracción trasera, sin variantes especiales tan asequibles</li>
+                            <li class="con">Red de concesionarios Porsche más reducida en España</li>
+                            <li class="con">Coste de mantenimiento algo inferior, pero diferencia menor que frente a otros rivales</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Toyota GR Supra</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada prácticamente igual al 718, con más potencia de base</li>
+                            <li class="pro">Caja manual de 6 velocidades disponible, muy valorada por los puristas</li>
+                            <li class="pro">Reputación de fiabilidad excelente gracias a la ingeniería de Toyota</li>
+                            <li class="pro">Maletero algo mayor y más sencillo (un único compartimento trasero)</li>
+                            <li class="con">Motor delantero: reparto de pesos menos favorable que el 718</li>
+                            <li class="con">Comparte mecánica con BMW, con menos identidad propia de marca</li>
+                            <li class="con">Sin una variante atmosférica de altas revoluciones equivalente al GT4</li>
+                            <li class="con">Menor prestigio de marca en el segmento deportivo premium</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El 718 y el GR Supra compiten por el mismo comprador de deportivo accesible y "puro", pero llegan desde caminos muy distintos: el 718 es la evolución directa del Boxster original de 1996 y su motor central, mientras el Supra actual resucitó en 2019 gracias a una colaboración técnica con BMW que le dio plataforma, motores y buena parte de la electrónica del Z4. El resultado son dos filosofías de ingeniería distintas a un precio de entrada casi idéntico.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si buscas el reparto de pesos de un motor central, la mejor fiabilidad documentada y el prestigio de la marca Porsche, el 718 sigue siendo la referencia. Si en cambio quieres un precio de entrada muy similar con más potencia de base, la opción de caja manual y una reputación de fiabilidad excelente, el GR Supra es una alternativa extremadamente sólida.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/718-vs-bmw-z4">718 vs BMW Z4</a>, <a href="/porsche/comparativas/718-vs-alpine-a110">718 vs Alpine A110</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche 718 o el Toyota GR Supra?</summary>
+                    <p>El 718 (Boxster/Cayman) tiene motor central, mejor reparto de pesos y mejor fiabilidad documentada (97/100). El GR Supra tiene un precio de entrada muy similar (desde 78.720 €) y una reputación de fiabilidad muy sólida gracias a la ingeniería de Toyota, aunque su motor y plataforma son en gran parte de BMW.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿El Toyota GR Supra usa piezas de BMW?</summary>
+                    <p>Sí. El GR Supra actual se desarrolló conjuntamente con BMW y comparte plataforma, motores (el 6 cilindros turbo B58) y buena parte de la electrónica con el BMW Z4. Toyota se encargó del ajuste de suspensión, dirección y del propio diseño de la carrocería, pero la base mecánica es común.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más barato es el Toyota GR Supra que el 718?</summary>
+                    <p>El GR Supra 3.0 parte de 78.720 €, un precio muy similar al 718 de acceso (77.850 €), prácticamente empatados. La diferencia real está en las versiones más potentes, donde el 718 GTS y GT4 escalan bastante más en precio y en carácter atmosférico que la gama Supra.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué maletero tiene el 718 comparado con el GR Supra?</summary>
+                    <p>Son muy similares: 275 litros (repartidos en dos compartimentos) en el 718 Cayman frente a 290 litros en el GR Supra, que al tener motor delantero concentra toda la capacidad en un único maletero trasero.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más fiable, el 718 o el Toyota GR Supra?</summary>
+                    <p>El 718 actual tiene un índice de fiabilidad de 97/100, de los mejores de la gama Porsche. El GR Supra, pese a compartir mecánica con el BMW Z4, tiene fama de ser un deportivo robusto y duradero, gracias en parte a la reputación de ingeniería de Toyota; algunas unidades 2020-2021 compartieron con el Z4 un fallo de software que podía desactivar la asistencia de frenado, ya corregido.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del 718?</strong> Consulta su <a href="/porsche/modelos/718">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Toyota GR Supra recopilados de fuentes públicas (Toyota España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Toyota.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

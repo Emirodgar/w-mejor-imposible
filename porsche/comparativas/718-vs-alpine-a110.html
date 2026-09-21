@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche 718 vs Alpine A110: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche 718 (Boxster/Cayman) y el Alpine A110: precio, potencia, peso, maletero, fiabilidad y coste de mantenimiento. La actual A110 termina su producción en 2026: te contamos qué significa.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #0090D4;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+        .site-header { padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px; }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.model718 { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(0, 144, 212, 0.06); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.model718 h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.model718 h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+        .cross-link-box { margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold); background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6; }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche 718 o el Alpine A110?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de la filosofía que busques: el A110 apuesta por el peso ligero (1.103 kg, unos 300 kg menos que el 718) con motores de menor cilindrada, mientras el 718 ofrece más potencia, una gama más amplia (incluidas versiones atmosféricas de 6 cilindros) y mejor fiabilidad documentada. El A110 tiene un precio de entrada más bajo, pero su generación actual termina producción en verano de 2026."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Sigue fabricándose el Alpine A110?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La generación actual termina su producción en verano de 2026, con solo 1.750 unidades en su última tanda de fabricación en la planta de Dieppe. Alpine ya ha confirmado que el sucesor será un modelo completamente eléctrico sobre la nueva plataforma APP, así que 2026 es la última oportunidad de comprar un A110 de combustión."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto pesa menos el Alpine A110 que el 718?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bastante: el A110 ronda los 1.103 kg frente a los 1.385-1.420 kg del 718, una diferencia de unos 300 kg gracias a su construcción en aluminio y a un motor de solo 4 cilindros y 1.8 litros. Es el pilar de la filosofía Alpine: menos peso en vez de más potencia bruta."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más barato es el Alpine A110 que el 718?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El A110 de acceso parte de 67.800 €, unos 10.000 € menos que el 718 (77.850 €). La versión GTS, con 300 CV, ronda los 83.400 €, ya en la zona de precios del 718 Cayman S."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más fiable, el 718 o el Alpine A110?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 718 actual tiene un índice de fiabilidad de 97/100, de los mejores de la gama Porsche. El A110 tiene buena reputación mecánica gracias a su simplicidad relativa, aunque los propietarios reportan una red de concesionarios Alpine con experiencia más limitada en la marca y tiempos de espera más largos para recambios."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/718">&larr; Volver a la ficha del Porsche 718</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche 718 vs Alpine A110: ¿cuál elegir?</h1>
+            <p>El 718 y el A110 comparten arquitectura de motor central, pero defienden filosofías opuestas: Porsche añade potencia en cada escalón de gama, mientras Alpine ha construido toda su identidad en torno al peso ligero (apenas 1.103 kg) antes que a la potencia bruta. Además, esta comparativa tiene fecha límite: la actual A110 de combustión termina su producción en verano de 2026. Comparamos precio, potencia, peso, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card model718">
+                        <h3>Elige el Porsche 718 si...</h3>
+                        <ul>
+                            <li>Quieres más potencia y una gama más amplia de versiones</li>
+                            <li>Valoras la mejor fiabilidad documentada del segmento</li>
+                            <li>Buscas un modelo activo sin fecha de fin de producción</li>
+                            <li>Prefieres una red de concesionarios más amplia y experimentada</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Alpine A110 si...</h3>
+                        <ul>
+                            <li>Priorizas el peso ligero sobre la potencia bruta</li>
+                            <li>Buscas un precio de entrada más bajo</li>
+                            <li>Quieres algo genuinamente diferente y exclusivo</li>
+                            <li>Te atrae hacerte con una de las últimas unidades de combustión</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El 718 de referencia es el Cayman S (350 CV); el A110, la versión de acceso (252 CV), con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche 718</th>
+                                <th class="col-rival">Alpine A110</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>77.850 € (gama hasta más de 110.000 € en el GT4 RS)</td>
+                                <td>67.800 € (gama hasta 125.200 € en las versiones más radicales)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Arquitectura de motor</td>
+                                <td>Motor central (bóxer 4 cilindros turbo o 6 cilindros atmosférico)</td>
+                                <td>Motor central (4 cilindros turbo 1.8L)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>350 CV (Cayman S) – 500 CV (GT4 RS)</td>
+                                <td>252 CV (acceso) – 300 CV (GTS / R)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,2 s (Cayman S) – 3,4 s (GT4 RS)</td>
+                                <td>~4,5 s (acceso) – ~4,0 s (GTS / R)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Trasera en toda la gama</td>
+                                <td>Trasera en toda la gama</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.385 - 1.420 kg</td>
+                                <td>~1.103 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>275 L (repartido en dos compartimentos)</td>
+                                <td>~195 L (repartido en frunk delantero y trasero)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Producción</td>
+                                <td>Modelo activo, sin fecha de fin anunciada</td>
+                                <td>La generación actual termina en verano de 2026; el sucesor será eléctrico</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>3.900 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 4.500 - 6.500 € (red de concesionarios más reducida)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>97/100, generación 718 (982) actual, de las mejores de la gama Porsche</td>
+                                <td>Buena reputación mecánica por su simplicidad; red de posventa menos experimentada</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Alpine España, 2026. La gama del 718 incluye más versiones (Boxster, GTS 4.0, Spyder); consulta la <a href="/porsche/modelos/718" style="color:var(--porsche-red); font-weight:600;">ficha completa del 718</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col model718">
+                        <h3>Porsche 718</h3>
+                        <ul>
+                            <li class="pro">Más potencia en toda la gama, con versiones atmosféricas de 6 cilindros</li>
+                            <li class="pro">Mejor fiabilidad documentada (97/100)</li>
+                            <li class="pro">Modelo activo, sin fecha de fin de producción anunciada</li>
+                            <li class="pro">Red de concesionarios Porsche más amplia y experimentada</li>
+                            <li class="con">Precio de entrada más alto: +10.000 € frente al A110</li>
+                            <li class="con">Bastante más pesado (unos 300 kg más)</li>
+                            <li class="con">Maletero algo mayor pero con menos exclusividad que el planteamiento del A110</li>
+                            <li class="con">Menos diferenciado frente al resto de deportivos alemanes del segmento</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Alpine A110</h3>
+                        <ul>
+                            <li class="pro">Mucho más ligero (unos 300 kg menos), fiel a su filosofía de peso ligero</li>
+                            <li class="pro">Precio de entrada más bajo</li>
+                            <li class="pro">Propuesta genuinamente distinta y exclusiva en el segmento</li>
+                            <li class="pro">Buena reputación mecánica por su relativa simplicidad</li>
+                            <li class="con">La generación actual de combustión termina en verano de 2026</li>
+                            <li class="con">Gama de potencias más corta (252-300 CV frente a 350-500 CV del 718)</li>
+                            <li class="con">Red de concesionarios más reducida y menos experimentada en la marca</li>
+                            <li class="con">Maletero más pequeño que el del 718</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El 718 y el A110 son, junto al Lotus Emira, de los pocos deportivos de motor central que quedan en el mercado europeo a un precio relativamente accesible. Comparten planteamiento técnico pero no filosofía: Porsche ha ido añadiendo potencia y tecnología en cada generación, mientras Alpine ha mantenido el peso ligero como su seña de identidad desde el relanzamiento del A110 en 2017. El final de la producción de la actual A110 en 2026, sin sucesor de combustión, añade una capa extra de interés a esta comparación.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si buscas más potencia, la gama más amplia y la mejor fiabilidad documentada, el 718 es la opción más completa y con más recorrido a largo plazo. Si en cambio te atrae la filosofía de peso ligero, un precio de entrada más bajo o simplemente quieres algo genuinamente distinto antes de que la actual A110 de combustión desaparezca, esta es una compra con mucho sentido en 2026.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/718-vs-bmw-z4">718 vs BMW Z4</a>, <a href="/porsche/comparativas/718-vs-toyota-gr-supra">718 vs Toyota GR Supra</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche 718 o el Alpine A110?</summary>
+                    <p>Depende de la filosofía que busques: el A110 apuesta por el peso ligero (1.103 kg, unos 300 kg menos que el 718) con motores de menor cilindrada, mientras el 718 ofrece más potencia, una gama más amplia (incluidas versiones atmosféricas de 6 cilindros) y mejor fiabilidad documentada. El A110 tiene un precio de entrada más bajo, pero su generación actual termina producción en verano de 2026.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Sigue fabricándose el Alpine A110?</summary>
+                    <p>La generación actual termina su producción en verano de 2026, con solo 1.750 unidades en su última tanda de fabricación en la planta de Dieppe. Alpine ya ha confirmado que el sucesor será un modelo completamente eléctrico sobre la nueva plataforma APP, así que 2026 es la última oportunidad de comprar un A110 de combustión.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto pesa menos el Alpine A110 que el 718?</summary>
+                    <p>Bastante: el A110 ronda los 1.103 kg frente a los 1.385-1.420 kg del 718, una diferencia de unos 300 kg gracias a su construcción en aluminio y a un motor de solo 4 cilindros y 1.8 litros. Es el pilar de la filosofía Alpine: menos peso en vez de más potencia bruta.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más barato es el Alpine A110 que el 718?</summary>
+                    <p>El A110 de acceso parte de 67.800 €, unos 10.000 € menos que el 718 (77.850 €). La versión GTS, con 300 CV, ronda los 83.400 €, ya en la zona de precios del 718 Cayman S.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más fiable, el 718 o el Alpine A110?</summary>
+                    <p>El 718 actual tiene un índice de fiabilidad de 97/100, de los mejores de la gama Porsche. El A110 tiene buena reputación mecánica gracias a su simplicidad relativa, aunque los propietarios reportan una red de concesionarios Alpine con experiencia más limitada en la marca y tiempos de espera más largos para recambios.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del 718?</strong> Consulta su <a href="/porsche/modelos/718">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Alpine A110 recopilados de fuentes públicas (Alpine España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y disponibilidad de existencias mientras dure la producción. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Alpine.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

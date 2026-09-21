@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche 911 vs BMW M4: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche 911 y el BMW M4 Competition: precio, potencia, maletero, fiabilidad y coste de mantenimiento. Pros y contras de cada uno para ayudarte a elegir.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #1c69d4;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+        .site-header { padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+        .card { border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px; }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.model911 { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(28, 105, 212, 0.05); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.model911 h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.model911 h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+        .cross-link-box { margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold); background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6; }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche 911 o el BMW M4?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El 911 tiene un escalón de precio propio (desde 148.500 €), mejor fiabilidad documentada y más exclusividad de marca. El M4 Competition, desde 130.400 €, es notablemente más barato, tiene un maletero mucho más práctico (440 L frente a 132 L) y una aceleración muy similar (3,5 s con xDrive), aunque no alcanza el prestigio ni la amplitud de gama del 911."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más barato es el BMW M4 que el 911?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El M4 Competition parte de 130.400 €, unos 18.100 € menos que el 911 Carrera de acceso (148.500 €). Es habitual cross-shopping entre ambos porque, bien equipados, sus precios finales pueden acercarse bastante."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué maletero tiene el 911 comparado con el BMW M4?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El M4 es mucho más práctico: 440 litros de maletero frente a los 132 litros del 911 (solo el frunk delantero, sin maletero trasero utilizable). Es una de las diferencias más prácticas del día a día entre ambos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más rápido, el 911 o el M4 Competition?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Están muy igualados en el escalón intermedio: el M4 Competition xDrive hace el 0-100 km/h en 3,5 s con 530 CV, una cifra similar a la de un 911 Carrera S o GTS. En el tope de gama, el 911 GT3 RS (3,2 s) y el Turbo S siguen por delante del M4."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es fiable el motor S58 del BMW M4?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El motor S58 del M4 actual (G82) corrigió varios de los puntos débiles de su predecesor (el S55), con un bloque de camisa cerrada más robusto. No hay un histórico de fallos graves y generalizados documentado todavía para esta generación, aunque las versiones anteriores del M3/M4 sí tuvieron problemas conocidos de tuberías de carga y juntas de la tapa de balancines."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/911">&larr; Volver a la ficha del Porsche 911</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche 911 vs BMW M4: ¿cuál elegir?</h1>
+            <p>El 911 y el M4 Competition son, probablemente, el cross-shopping más habitual del segmento: dos coupés deportivos de tracción trasera (o integral opcional), con prestaciones muy similares en su escalón intermedio y un precio bien equipado que a veces se solapa. La diferencia está en el estatus de marca, la amplitud de gama y, sobre todo, la practicidad del maletero. Comparamos precio, potencia, espacio, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card model911">
+                        <h3>Elige el Porsche 911 si...</h3>
+                        <ul>
+                            <li>Quieres la gama más amplia de versiones y personalidades</li>
+                            <li>Valoras la mejor fiabilidad documentada y la exclusividad de marca</li>
+                            <li>Buscas el mejor comportamiento en circuito de la gama alta (GT3, GT3 RS)</li>
+                            <li>El precio de entrada no es tu principal limitación</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el BMW M4 si...</h3>
+                        <ul>
+                            <li>Priorizas un precio de entrada bastante más bajo</li>
+                            <li>Quieres un maletero realmente práctico para el día a día</li>
+                            <li>Buscas prestaciones muy similares en el escalón intermedio</li>
+                            <li>Prefieres la opción de tracción trasera pura (sin xDrive)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El 911 de referencia es el Carrera T (385 CV); el M4, la versión Competition (530 CV).</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche 911</th>
+                                <th class="col-rival">BMW M4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>148.500 € (gama hasta más de 250.000 € en el Turbo S)</td>
+                                <td>130.400 € (M4 Competition)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>Bóxer turbo (Carrera, Turbo) y atmosférico (GT3)</td>
+                                <td>6 cilindros turbo 3.0 (S58); sin versión electrificada</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>385 CV (Carrera T) – 525 CV+ (GT3 RS)</td>
+                                <td>530 CV (Competition, única versión)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,0 s (Carrera T) – 3,2 s (GT3 RS)</td>
+                                <td>3,5 s (Competition xDrive)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Trasera en la mayoría de versiones; integral en variantes 4/4S</td>
+                                <td>Trasera (Competition) o integral (Competition xDrive)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>132 L (solo frunk delantero)</td>
+                                <td>440 L</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.450 - 1.470 kg</td>
+                                <td>~1.805 kg (Competition xDrive)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.500 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 5.500 - 8.000 € (motor de altas prestaciones M)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>96/100, generación 992 actual, la mejor documentada de la gama Porsche</td>
+                                <td>Motor S58 mejorado frente al S55 anterior; sin histórico de fallos graves documentado todavía</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y BMW España, 2026. La gama del 911 incluye muchas más versiones (Carrera, S, GTS, Turbo, GT3...); consulta la <a href="/porsche/modelos/911" style="color:var(--porsche-red); font-weight:600;">ficha completa del 911</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col model911">
+                        <h3>Porsche 911</h3>
+                        <ul>
+                            <li class="pro">Gama muchísimo más amplia, de 385 CV a más de 525 CV atmosféricos</li>
+                            <li class="pro">Mejor fiabilidad documentada (96/100) y menor coste de mantenimiento estimado</li>
+                            <li class="pro">Mayor exclusividad y prestigio de marca en el segmento premium</li>
+                            <li class="pro">Referencia en circuito en sus versiones GT3 y GT3 RS</li>
+                            <li class="con">Precio de entrada bastante más alto (+18.100 € frente al M4)</li>
+                            <li class="con">Maletero mucho más pequeño (132 L frente a 440 L)</li>
+                            <li class="con">En el escalón intermedio, prestaciones muy similares a un M4 mucho más barato</li>
+                            <li class="con">Sobreprecio habitual sobre el PVP en las versiones más deseadas</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>BMW M4</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada bastante más bajo</li>
+                            <li class="pro">Maletero mucho más práctico (440 L)</li>
+                            <li class="pro">Prestaciones muy similares al 911 en su escalón intermedio (3,5 s)</li>
+                            <li class="pro">Red de concesionarios y talleres BMW muy amplia en España</li>
+                            <li class="con">Solo una versión de potencia (530 CV), sin la amplitud de gama del 911</li>
+                            <li class="con">Menor exclusividad y prestigio de marca en este segmento concreto</li>
+                            <li class="con">Coste de mantenimiento estimado algo más alto</li>
+                            <li class="con">Sin un equivalente directo al 911 GT3/GT3 RS orientado a circuito</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El 911 y el M4 Competition se cruzan constantemente en la decisión de compra de quien busca un deportivo de calle serio: prestaciones parecidas, tracción trasera o integral opcional, y un precio final que, bien equipado, puede solaparse. La diferencia no está tanto en el papel como en la percepción de marca, la amplitud de la gama Porsche y, en el día a día, el maletero, donde el M4 tiene una ventaja clara y práctica.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si quieres la gama más amplia, la mejor fiabilidad documentada y el prestigio de marca que da un 911, esa sigue siendo la opción de referencia del segmento. Si en cambio priorizas el precio de entrada, un maletero realmente práctico para el día a día y unas prestaciones muy similares en el escalón intermedio, el M4 Competition es una alternativa extremadamente competitiva.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/911-vs-corvette">911 vs Chevrolet Corvette</a>, <a href="/porsche/comparativas/911-vs-mercedes-amg-gt">911 vs Mercedes-AMG GT</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche 911 o el BMW M4?</summary>
+                    <p>El 911 tiene un escalón de precio propio (desde 148.500 €), mejor fiabilidad documentada y más exclusividad de marca. El M4 Competition, desde 130.400 €, es notablemente más barato, tiene un maletero mucho más práctico (440 L frente a 132 L) y una aceleración muy similar (3,5 s con xDrive), aunque no alcanza el prestigio ni la amplitud de gama del 911.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más barato es el BMW M4 que el 911?</summary>
+                    <p>El M4 Competition parte de 130.400 €, unos 18.100 € menos que el 911 Carrera de acceso (148.500 €). Es habitual cross-shopping entre ambos porque, bien equipados, sus precios finales pueden acercarse bastante.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué maletero tiene el 911 comparado con el BMW M4?</summary>
+                    <p>El M4 es mucho más práctico: 440 litros de maletero frente a los 132 litros del 911 (solo el frunk delantero, sin maletero trasero utilizable). Es una de las diferencias más prácticas del día a día entre ambos.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más rápido, el 911 o el M4 Competition?</summary>
+                    <p>Están muy igualados en el escalón intermedio: el M4 Competition xDrive hace el 0-100 km/h en 3,5 s con 530 CV, una cifra similar a la de un 911 Carrera S o GTS. En el tope de gama, el 911 GT3 RS (3,2 s) y el Turbo S siguen por delante del M4.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Es fiable el motor S58 del BMW M4?</summary>
+                    <p>El motor S58 del M4 actual (G82) corrigió varios de los puntos débiles de su predecesor (el S55), con un bloque de camisa cerrada más robusto. No hay un histórico de fallos graves y generalizados documentado todavía para esta generación, aunque las versiones anteriores del M3/M4 sí tuvieron problemas conocidos de tuberías de carga y juntas de la tapa de balancines.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del 911?</strong> Consulta su <a href="/porsche/modelos/911">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del BMW M4 recopilados de fuentes públicas (BMW España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a BMW.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
