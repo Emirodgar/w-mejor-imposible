@@ -1,6 +1,82 @@
 [
-  { "date": "2026-09-11", "author": "The Drive", "text": "Tras una semana con el nuevo 911 Turbo S Cabrio, el autor lo describe como el primer coche de gasolina en años que le hizo olvidarse de los eléctricos: violento en la aceleración pero sorprendentemente cómodo en el día a día. Le da un 9,5/10, aunque avisa de que el asiento trasero no es apto para un tercer pasajero.", "source": "The Drive", "url": "https://www.thedrive.com/car-reviews/2026-porsche-911-turbo-s-review", "sentiment": "positive" },
-  { "date": "2026-09-11", "author": "Evan (propietario)", "text": "Este propietario de un Cayenne diésel de 2015 reconoce que el carácter y la dinámica del coche le enamoran, pero es igual de claro con lo malo: compara mantenerlo con jugar al \"whack-a-mole\" con la factura del mecánico, y puntúa la tecnología a bordo con solo un 3 sobre 10.", "source": "Drive.com.au", "url": "https://www.drive.com.au/reviews/2015-porsche-cayenne-diesel-owner-review/", "sentiment": "negative" },
-  { "date": "2026-09-11", "author": "Susannah Guthrie", "text": "Reportaje sobre el Zeekr 7X, el SUV eléctrico chino que se ha colado entre los más vendidos de Australia por parecerse a un Porsche Macan a mitad de precio. Los propios propietarios reconocen problemas de software y una entrega caótica, pero muchos volverían a comprarlo.", "source": "SMH.com.au", "url": "https://www.smh.com.au/lifestyle/life-and-relationships/looks-like-a-porsche-and-priced-like-a-kia-this-may-be-the-most-talked-about-new-car-in-australia-20260908-p60vjb.html", "sentiment": "neutral" },
-  { "date": "2026-09-11", "author": "Luis Reyes", "text": "Autonoción caza casi sin camuflaje el Cayenne Turbo GT con el paquete Weissach rodando en Nürburgring, y apunta a que podría no ser un simple lavado de cara sino una generación completamente nueva, con el frontal ya prácticamente definitivo y la zaga todavía guardando secretos.", "source": "Autonoción", "url": "https://www.autonocion.com/cayenne-turbo-gt-weissach-nurburgring/", "sentiment": "positive" }
+  {
+    "date": "2026-09-11",
+    "author": "The Drive",
+    "text": "Tras una semana con el nuevo 911 Turbo S Cabrio, el autor lo describe como el primer coche de gasolina en años que le hizo olvidarse de los eléctricos: violento en la aceleración pero sorprendentemente cómodo en el día a día. Le da un 9,5/10, aunque avisa de que el asiento trasero no es apto para un tercer pasajero.",
+    "source": "The Drive",
+    "url": "https://www.thedrive.com/car-reviews/2026-porsche-911-turbo-s-review",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-11",
+    "author": "Evan (propietario)",
+    "text": "Este propietario de un Cayenne diésel de 2015 reconoce que el carácter y la dinámica del coche le enamoran, pero es igual de claro con lo malo: compara mantenerlo con jugar al \"whack-a-mole\" con la factura del mecánico, y puntúa la tecnología a bordo con solo un 3 sobre 10.",
+    "source": "Drive.com.au",
+    "url": "https://www.drive.com.au/reviews/2015-porsche-cayenne-diesel-owner-review/",
+    "sentiment": "negative"
+  },
+  {
+    "date": "2026-09-11",
+    "author": "Susannah Guthrie",
+    "text": "Reportaje sobre el Zeekr 7X, el SUV eléctrico chino que se ha colado entre los más vendidos de Australia por parecerse a un Porsche Macan a mitad de precio. Los propios propietarios reconocen problemas de software y una entrega caótica, pero muchos volverían a comprarlo.",
+    "source": "SMH.com.au",
+    "url": "https://www.smh.com.au/lifestyle/life-and-relationships/looks-like-a-porsche-and-priced-like-a-kia-this-may-be-the-most-talked-about-new-car-in-australia-20260908-p60vjb.html",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-09-11",
+    "author": "Luis Reyes",
+    "text": "Autonoción caza casi sin camuflaje el Cayenne Turbo GT con el paquete Weissach rodando en Nürburgring, y apunta a que podría no ser un simple lavado de cara sino una generación completamente nueva, con el frontal ya prácticamente definitivo y la zaga todavía guardando secretos.",
+    "source": "Autonoción",
+    "url": "https://www.autonocion.com/cayenne-turbo-gt-weissach-nurburgring/",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-21",
+    "author": "Antonio Medina",
+    "text": "Compara el Alpine A390 GTS con el Porsche Macan GTS en pista: el Porsche gana por poco más de un segundo y sigue siendo la referencia en autonomía, recarga y calidad interior, pero el Alpine se va con los honores al ofrecer casi la misma experiencia por 50.700 euros menos.",
+    "source": "Motor16",
+    "url": "https://www.motor16.com/las-ultimas-noticias/alpine-a390-gts-porsche-macan-gts/",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-09-21",
+    "author": "Chema Bonilla Díaz",
+    "text": "Analiza el Porsche 550 J de Hedley Studios y no queda convencido: solo 11 CV de serie (16 CV con el paquete RS), tope de 80 km/h y sin homologación para circular por carretera abierta. Su conclusión: \"yo me quedo con un Boxster de segunda mano, al menos de momento\".",
+    "source": "Autonoción",
+    "url": "https://www.autonocion.com/porsche-550-j-spyder/",
+    "sentiment": "negative"
+  },
+  {
+    "date": "2026-09-21",
+    "author": "John Velasco",
+    "text": "Tras una semana con el Macan Turbo Electric ($149.610 en la unidad probada), lo describe como uno de los eléctricos más emocionantes que ha probado: 630 CV, 0-100 en 3,1 s y un manejo que no delata su carrocería de SUV. Su única pega seria es lo brusco del cambio de carril automático.",
+    "source": "Tom's Guide",
+    "url": "https://www.tomsguide.com/vehicle-tech/evs/2026-porsche-macan-turbo-electric-review",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-21",
+    "author": "Yousuf Ashraf",
+    "text": "Prueba el Gunther Werks Turbo, un restomod de 1,25 millones de libras sobre base de 911 993 con 840 CV: lo describe como \"tan salvaje como se ponen los 911 turbo\", con un pequeño reproche a su estrecha ventana de manejo en el límite.",
+    "source": "evo.co.uk",
+    "url": "https://www.evo.co.uk/porsche/911-turbo/209114/gunther-werks-turbo-review-part-porsche-911-turbo-part-hypercar",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-21",
+    "author": "Gerhard Horn",
+    "text": "Analiza cómo la depreciación ha llevado al Cayenne 2019 a precios de un Honda CR-V nuevo, con muy buena fiabilidad (79/100 en JD Power, solo 33 quejas ante la NHTSA), aunque avisa de mayores costes de mantenimiento, combustible y seguro frente al Honda.",
+    "source": "CarBuzz",
+    "url": "https://carbuzz.com/most-reliable-cayenne-price-new-honda-cr-v-comparison-2026/",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-09-21",
+    "author": "Alex Schultz",
+    "text": "Guía de compra del Macan 2014-2024 con los fallos típicos a vigilar (caja de transferencia en los 2015-2018, muelles corroídos en importaciones del Reino Unido, acumulación de carbono en los V6). Su recomendación: un S de 2019-2021 es \"el punto dulce\" y sigue siendo \"uno de los SUV de segunda mano más gratificantes\".",
+    "source": "Auto Trader NZ",
+    "url": "https://autotrader.co.nz/car-reviews/2014-2024-porsche-macan-review",
+    "sentiment": "positive"
+  }
 ]
