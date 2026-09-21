@@ -65,19 +65,26 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
          </div>
      </div>
      ```
-   - **Miniatura opcional** (`.news-thumb`): el sitio tiene dos carpetas de fotos reales reutilizables, sin problema de derechos porque son del propio sitio:
-     - `img/tendencias/` — fotos de ambiente/escena (no genéricas por modelo): `circuito.jfif` (curva de circuito tipo Spa vista desde un coche en marcha), `competicion.jfif` (911 GT3 RS verde en pista mojada), `concesionario.png` (showroom con varios Porsche expuestos), `deportivo.png` (911 GT3 plateado en puerto de montaña), `descapotable-amarillo.jfif` (718 Boxster amarillo en carretera costera), `fabrica.jfif` (línea de montaje/fábrica), `interior.png` (volante y cuadro de instrumentos), `motor.png` (motor en un taller), `noche.jfif` (Panamera de noche en ciudad asiática), `viaje-911.jfif` (911 azul en carretera de montaña), `viaje-taycan.jfif` (Taycan negro en autopista al atardecer).
+   - Si después de añadir las nuevas tarjetas hay más de 30 en total dentro de esa zona, elimina las más antiguas (las del final) hasta dejar como máximo 30.
+
+   - **Patrón fijo de miniaturas (`.news-thumb`)**: en el grid de escritorio (3 columnas) la página debe mostrar imagen únicamente en la fila 1 y la fila 3 — es decir, en las posiciones **1ª, 2ª, 3ª, 7ª, 8ª y 9ª** de la lista completa de tarjetas, contando desde la más nueva (arriba) hacia abajo. El resto de posiciones (4ª-6ª, 10ª en adelante) van siempre sin imagen. Este patrón debe mantenerse siempre igual, así que después de insertar las tarjetas nuevas y recortar a 30 (paso anterior), **repasa la lista completa resultante de arriba abajo, tarjeta por tarjeta, y corrígela**:
+     - Posiciones 1, 2, 3, 7, 8 y 9 → si la tarjeta no tiene `.news-thumb`, añádesela (elige la imagen que mejor encaje del catálogo de abajo; si ninguna encaja de verdad, usa la menos mala en vez de dejarla sin imagen — en estas seis posiciones el patrón exige que haya foto).
+     - Cualquier otra posición → si la tarjeta tiene `.news-thumb`, quítasela (que quede solo con texto).
+
+     Es normal y esperado que semana a semana varias tarjetas ganen o pierdan su miniatura solo porque cambian de posición al insertarse tarjetas nuevas arriba — no es un error, es el patrón haciendo su trabajo. Dado que esto implica revisar hasta 30 tarjetas con precisión posicional, es preferible que escribas un pequeño script (p. ej. Python) que parsee la zona `RSS-NEWS-CARDS`, imponga la regla y reescriba el archivo, en vez de editar cada tarjeta a mano una por una — así evitas contar mal la posición.
+
+     Catálogo de imágenes disponibles (dos carpetas, ambas del propio sitio, sin problema de derechos):
+     - `img/tendencias/` — fotos de ambiente/escena (no genéricas por modelo): `circuito.jfif` (curva de circuito tipo Spa vista desde un coche en marcha), `competicion.jfif` (911 GT3 RS verde en pista mojada), `concesionario.png` (showroom con varios Porsche expuestos), `deportivo.png` (911 GT3 plateado en puerto de montaña), `descapotable-amarillo.jfif` (718 Boxster amarillo en carretera costera), `fabrica.jfif` (línea de montaje/fábrica), `interior.png` (volante y cuadro de instrumentos), `motor.png` (motor en un taller), `noche.jfif` (Panamera de noche en ciudad asiática), `viaje-911.jfif` (911 azul en carretera de montaña), `viaje-taycan.jfif` (Taycan negro en autopista al atardecer), `cayenne-electrico.jfif` (tres Cayenne Electric en fila, azul/rojo/amarillo), `porsche-clasico.jfif` (dos 550 Spyder plateados clásicos), `racing-competicion.jfif` (911 GT3 Cup rosa con librea BWT en boxes), `indianapolis-competicion.jpg` (963 LMDh de Penske en pista).
      - `img/modelo/` — fotos de estudio (fondo neutro), 3 variantes por modelo: `911.jfif`/`9112.jfif`/`9113.jfif`, `718.jfif`/`7182.jfif`/`7183.jfif`, `cayenne.jfif`/`cayenne2.jfif`/`cayenne3.jfif`, `macan.jfif`/`macan2.jfif`/`macan3.jfif`, `panamera.jfif`/`panamera2.jfif`/`panamera3.jfif`, `taycan.jfif`/`taycan2.jfif`/`taycan3.jfif`.
-     
-     **Úsalo con moderación, no en todas las tarjetas** — solo cuando una de estas fotos encaje de verdad con la noticia (un modelo concreto, una escena de fábrica/concesionario/interior que pegue con el tema). Si ninguna encaja bien, no añadas `.news-thumb` a esa tarjeta — así se evita repetir siempre las mismas fotos o forzar una que no tenga sentido. Cuando sí encaje, insértala como primer hijo de la tarjeta:
+
+     Estructura exacta de la miniatura, como primer hijo de la tarjeta:
      ```html
      <div class="news-card" data-category="CATEGORIA">
          <div class="news-thumb"><img src="/img/tendencias/ARCHIVO" alt="" loading="lazy"></div>
          <div class="source">FUENTE</div>
          ...
      ```
-     Nunca reutilices la misma foto en dos tarjetas activas a la vez, y nunca hotlinkees ni descargues imágenes de las webs de origen de las noticias (riesgo de derechos y de enlaces rotos) — la miniatura sale siempre de `img/tendencias/` o `img/modelo/`.
-   - Si después de añadir las nuevas tarjetas hay más de 30 en total dentro de esa zona, elimina las más antiguas (las del final) hasta dejar como máximo 30.
+     Entre las 6 tarjetas con imagen en un momento dado, nunca repitas la misma foto en dos a la vez. Nunca hotlinkees ni descargues imágenes de las webs de origen de las noticias (riesgo de derechos y de enlaces rotos) — la miniatura sale siempre de `img/tendencias/` o `img/modelo/`.
    - No toques nada fuera de esas dos zonas marcadas.
 
 10. **Actualiza `.claude/state/tendencias-rss-seen.json`**: añade los `id` de las entradas del feed que hayas usado esta semana (las descartadas por poco relevantes NO hace falta guardarlas, así se pueden reconsiderar si el feed vuelve a traerlas más adelante con más contexto). Si el array supera 300 elementos, elimina los más antiguos del principio.
