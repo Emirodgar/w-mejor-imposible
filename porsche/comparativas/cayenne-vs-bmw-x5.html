@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche Cayenne vs BMW X5: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche Cayenne y el BMW X5: precio, motorizaciones, potencia, autonomía eléctrica, maletero, fiabilidad y coste de mantenimiento. Pros y contras de cada uno para ayudarte a elegir.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #1c69d4;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px;
+        }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        /* --- Veredicto rápido --- */
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.cayenne { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(28, 105, 212, 0.05); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.cayenne h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+
+        /* --- Tabla comparativa --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+
+        /* --- Pros y contras --- */
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.cayenne h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+
+        .cross-link-box {
+            margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6;
+        }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche Cayenne o el BMW X5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne ofrece mejor comportamiento dinámico, un coste de mantenimiento estimado más bajo (4.200 € frente a 6.000-9.000 € a 5 años) y una reputación de fiabilidad algo más sólida, pero parte de 107.300 €. El X5 tiene un precio de entrada más bajo (desde 97.200 €), ofrece diésel y más autonomía eléctrica en su híbrido enchufable (105 km frente a 90 km), aunque su suspensión neumática y sistema de refrigeración generan más quejas en foros de propietarios."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más caro es el Cayenne que el BMW X5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne parte de 107.300 € (E-Hybrid E3.2), unos 10.100 € más que la versión de acceso del X5 (97.200 €, X5 40d xDrive diésel de 313 CV). En la gama alta, el X5 M60i (530 CV) parte de 128.110 €, bastante por debajo del Cayenne Turbo E-Hybrid (739 CV), cuyo precio supera los 190.000 €."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué maletero tiene el Cayenne comparado con el X5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne tiene más capacidad de serie: 772 litros frente a los 650 litros del X5 en versiones de combustión (500 litros en el X5 50e híbrido enchufable). Con los asientos traseros abatidos, el X5 amplía hasta 1.870 litros; Porsche no publica una cifra equivalente para el Cayenne."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es fiable el BMW X5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tiene puntos débiles conocidos: la suspensión neumática es la queja más repetida, con síntomas a partir de los 60.000 km en la generación actual (G05), junto a problemas de sobrecalentamiento por termostatos defectuosos y un consumo de aceite elevado en los motores de mayor cilindrada. No son fallos universales, pero sí las incidencias más citadas en talleres especializados."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más barato de mantener, el Cayenne o el X5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Según los datos disponibles, el Cayenne sale más económico: su coste de mantenimiento a 5 años se estima en 4.200 €, frente a un rango de 6.000-9.000 € para el X5, que aparece entre los SUV premium más caros de mantener en varios rankings de coste de propiedad en España."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/cayenne">&larr; Volver a la ficha del Porsche Cayenne</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche Cayenne vs BMW X5: ¿cuál elegir?</h1>
+            <p>El Cayenne y el X5 son dos de los SUV premium de tamaño grande más establecidos del mercado, y comparten un planteamiento similar: gasolina y versiones híbridas enchufables en toda la gama, sin electrificación total (a diferencia de lo que ha hecho Porsche con el Macan). La diferencia está en el enfoque: el Cayenne prioriza la dinámica de conducción, el X5 ofrece diésel y un precio de entrada más bajo. Comparamos precio, potencia, autonomía eléctrica, espacio, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card cayenne">
+                        <h3>Elige el Porsche Cayenne si...</h3>
+                        <ul>
+                            <li>Quieres el SUV grande más dinámico y preciso de conducir del segmento</li>
+                            <li>Valoras un coste de mantenimiento estimado más bajo a largo plazo</li>
+                            <li>Prefieres una reputación de fiabilidad algo más sólida</li>
+                            <li>El precio de entrada no es tu principal limitación</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el BMW X5 si...</h3>
+                        <ul>
+                            <li>Priorizas un precio de entrada más asequible</li>
+                            <li>Necesitas diésel para muchos kilómetros al año</li>
+                            <li>Quieres más autonomía eléctrica en el híbrido enchufable</li>
+                            <li>Buscas el máximo maletero con los asientos abatidos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El Cayenne de referencia es la versión E-Hybrid E3.2 (470 CV combinados); el X5, la versión de acceso 40d xDrive diésel de 313 CV, con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche Cayenne</th>
+                                <th class="col-rival">BMW X5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>107.300 € (gama hasta más de 190.000 € en el Turbo E-Hybrid)</td>
+                                <td>97.200 € (gama: 97.200 € – 128.110 € en el M60i)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>Gasolina V6/V8 biturbo, todas con versión E-Hybrid enchufable; sin diésel</td>
+                                <td>Diésel mild-hybrid, gasolina mild-hybrid, híbrido enchufable (50e) y M60i (V8)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>470 CV (E-Hybrid) – 739 CV (Turbo E-Hybrid)</td>
+                                <td>313 CV (40d) – 530 CV (M60i)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,8 s (E-Hybrid) – 3,6 s (Turbo E-Hybrid)</td>
+                                <td>6,1 s (40d) – 4,3 s (M60i)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Integral de serie en toda la gama</td>
+                                <td>xDrive (integral) de serie en toda la gama</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Autonomía eléctrica (PHEV)</td>
+                                <td>Hasta 90 km WLTP (E-Hybrid, batería 25,9 kWh)</td>
+                                <td>Hasta 105 km WLTP (50e xDrive)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Dimensiones (L x An x Al)</td>
+                                <td>4,93 x 1,98 x 1,70 m</td>
+                                <td>4,94 x 2,01 x 1,78 m</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>772 L</td>
+                                <td>650 L (500 L en el PHEV); hasta 1.870 L con asientos abatidos</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~2.135 - 2.220 kg</td>
+                                <td>~2.430 - 2.495 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.200 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 6.000 - 9.000 € (uno de los SUV premium más caros de mantener según varios rankings)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>88/100, generación 958 (2011-2017), la más reciente con dato completo</td>
+                                <td>Quejas repetidas de suspensión neumática, sobrecalentamiento y consumo de aceite en motores grandes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y BMW España, 2026. La gama de ambos modelos incluye más versiones intermedias; consulta la <a href="/porsche/modelos/cayenne" style="color:var(--porsche-red); font-weight:600;">ficha completa del Cayenne</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col cayenne">
+                        <h3>Porsche Cayenne</h3>
+                        <ul>
+                            <li class="pro">Comportamiento dinámico y chasis de referencia en el segmento SUV grande</li>
+                            <li class="pro">Coste de mantenimiento estimado notablemente inferior (4.200 € frente a 6.000-9.000 €)</li>
+                            <li class="pro">Reputación de fiabilidad algo más sólida (88/100 en su última generación documentada)</li>
+                            <li class="pro">Maletero de serie mayor (772 L frente a 650 L)</li>
+                            <li class="con">Precio de entrada más alto: +10.100 € frente al X5 de acceso</li>
+                            <li class="con">Sin diésel: toda la gama es gasolina o E-Hybrid</li>
+                            <li class="con">Menos autonomía eléctrica en el PHEV (90 km frente a 105 km)</li>
+                            <li class="con">Red de concesionarios y talleres oficiales más reducida en España</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>BMW X5</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada más bajo, con diésel disponible para grandes distancias</li>
+                            <li class="pro">Más autonomía eléctrica en el híbrido enchufable (105 km)</li>
+                            <li class="pro">Maletero ampliable hasta 1.870 L con los asientos abatidos</li>
+                            <li class="pro">Red de posventa BMW muy amplia en España</li>
+                            <li class="con">Reputación de fiabilidad más floja (suspensión neumática, refrigeración, consumo de aceite)</li>
+                            <li class="con">Menos dinámico y preciso que el Cayenne según la crítica especializada</li>
+                            <li class="con">Maletero de serie menor (650 L frente a 772 L)</li>
+                            <li class="con">Coste de mantenimiento estimado más alto a largo plazo</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El Cayenne y el X5 llevan más de dos décadas compitiendo por el mismo comprador de SUV premium de tamaño grande, y ambos han evolucionado de forma parecida: ninguno se ha electrificado por completo (a diferencia del Macan de Porsche o el iX3/iX5 de BMW), y los dos ofrecen su potencia máxima a través de versiones híbridas enchufables de altas prestaciones en vez de eléctricos puros. La diferencia real está en el carácter: Porsche prioriza la dinámica de conducción por encima de todo, mientras BMW mantiene el diésel y un precio de acceso más bajo como argumentos de peso.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si buscas el SUV grande más preciso y divertido de conducir, y no te importa pagar la prima de marca ni asumir un coste de mantenimiento algo más predecible a largo plazo, el Cayenne es la opción más completa. Si en cambio priorizas el precio de entrada, necesitas diésel para muchos kilómetros al año o quieres exprimir al máximo la autonomía eléctrica de un híbrido enchufable, el X5 sigue siendo una alternativa muy sólida, aunque con una reputación de fiabilidad algo por detrás.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/cayenne-vs-mercedes-gle">Cayenne vs Mercedes GLE</a>, <a href="/porsche/comparativas/cayenne-vs-audi-q7">Cayenne vs Audi Q7</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche Cayenne o el BMW X5?</summary>
+                    <p>El Cayenne ofrece mejor comportamiento dinámico, un coste de mantenimiento estimado más bajo (4.200 € frente a 6.000-9.000 € a 5 años) y una reputación de fiabilidad algo más sólida, pero parte de 107.300 €. El X5 tiene un precio de entrada más bajo (desde 97.200 €), ofrece diésel y más autonomía eléctrica en su híbrido enchufable (105 km frente a 90 km), aunque su suspensión neumática y sistema de refrigeración generan más quejas en foros de propietarios.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más caro es el Cayenne que el BMW X5?</summary>
+                    <p>El Cayenne parte de 107.300 € (E-Hybrid E3.2), unos 10.100 € más que la versión de acceso del X5 (97.200 €, X5 40d xDrive diésel de 313 CV). En la gama alta, el X5 M60i (530 CV) parte de 128.110 €, bastante por debajo del Cayenne Turbo E-Hybrid (739 CV), cuyo precio supera los 190.000 €.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué maletero tiene el Cayenne comparado con el X5?</summary>
+                    <p>El Cayenne tiene más capacidad de serie: 772 litros frente a los 650 litros del X5 en versiones de combustión (500 litros en el X5 50e híbrido enchufable). Con los asientos traseros abatidos, el X5 amplía hasta 1.870 litros; Porsche no publica una cifra equivalente para el Cayenne.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Es fiable el BMW X5?</summary>
+                    <p>Tiene puntos débiles conocidos: la suspensión neumática es la queja más repetida, con síntomas a partir de los 60.000 km en la generación actual (G05), junto a problemas de sobrecalentamiento por termostatos defectuosos y un consumo de aceite elevado en los motores de mayor cilindrada. No son fallos universales, pero sí las incidencias más citadas en talleres especializados.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más barato de mantener, el Cayenne o el X5?</summary>
+                    <p>Según los datos disponibles, el Cayenne sale más económico: su coste de mantenimiento a 5 años se estima en 4.200 €, frente a un rango de 6.000-9.000 € para el X5, que aparece entre los SUV premium más caros de mantener en varios rankings de coste de propiedad en España.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del Cayenne?</strong> Consulta su <a href="/porsche/modelos/cayenne">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del BMW X5 recopilados de fuentes públicas (BMW España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a BMW.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche Cayenne vs Audi Q7: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche Cayenne y el Audi Q7: precio, motorizaciones, potencia, autonomía eléctrica, plazas, maletero, fiabilidad y coste de mantenimiento. Pros y contras de cada uno para ayudarte a elegir.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #00308f;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px;
+        }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        /* --- Veredicto rápido --- */
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.cayenne { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(0, 48, 143, 0.05); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.cayenne h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+
+        /* --- Tabla comparativa --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+
+        /* --- Pros y contras --- */
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.cayenne h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+
+        .cross-link-box {
+            margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6;
+        }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche Cayenne o el Audi Q7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne ofrece mejor comportamiento dinámico, mejor reputación de fiabilidad y un coste de mantenimiento estimado más bajo, pero parte de 107.300 € y solo tiene 5 plazas. El Q7 tiene un precio de entrada mucho más bajo (desde 86.940 €), ofrece diésel y, sobre todo, una configuración de hasta 7 plazas que el Cayenne no ofrece, aunque su reputación de fiabilidad es la más floja de los tres rivales alemanes del segmento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más caro es el Cayenne que el Audi Q7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne parte de 107.300 € (E-Hybrid E3.2), unos 20.360 € más que la versión de acceso del Q7 (86.940 €, Q7 45 TDI diésel de 231 CV). Es la mayor diferencia de precio de entrada de los tres rivales alemanes del Cayenne. En la gama alta, el SQ7 (507 CV) parte de unos 131.000 €, muy por debajo del Cayenne Turbo E-Hybrid (739 CV), que supera los 190.000 €."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El Audi Q7 tiene más plazas que el Cayenne?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, y es una de las diferencias más importantes entre ambos: el Q7 puede configurarse con una tercera fila de asientos para un total de 7 plazas, algo que Porsche no ofrece en el Cayenne, limitado a 5 plazas. Si necesitas llevar más de 5 ocupantes con regularidad, el Q7 es la única opción de las dos."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es fiable el Audi Q7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Su reputación de fiabilidad es más floja que la de otros SUV premium grandes: la suspensión neumática es el punto débil más citado, con signos de desgaste a partir de los 80.000 km, junto a fallos del compresor de aire acondicionado (80.000-100.000 km), problemas de cableado eléctrico y ocasionales incidencias en la caja de cambios."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más barato de mantener, el Cayenne o el Q7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Cayenne sale más económico según los datos disponibles: su coste de mantenimiento a 5 años se estima en 4.200 €, frente a un rango de 6.500-9.500 € para el Q7, que en varios rankings de coste de propiedad en España aparece como uno de los SUV premium más caros de mantener, con revisiones completas que pueden superar los 700 €."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/cayenne">&larr; Volver a la ficha del Porsche Cayenne</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche Cayenne vs Audi Q7: ¿cuál elegir?</h1>
+            <p>El Cayenne y el Q7 comparten algo más que segmento: nacieron literalmente juntos, desarrollados sobre la misma plataforma a principios de los 2000. Más de veinte años después, sus caminos se han separado: el Cayenne se ha quedado con la personalidad más deportiva y un precio más alto, mientras el Q7 ofrece un precio de entrada mucho más bajo y una baza que el Cayenne no tiene, la posibilidad de configurarlo con 7 plazas. Comparamos precio, potencia, autonomía eléctrica, espacio, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card cayenne">
+                        <h3>Elige el Porsche Cayenne si...</h3>
+                        <ul>
+                            <li>Quieres el SUV grande más dinámico y preciso de conducir del segmento</li>
+                            <li>Prefieres una reputación de fiabilidad más sólida</li>
+                            <li>Valoras un coste de mantenimiento estimado más bajo a largo plazo</li>
+                            <li>No necesitas una tercera fila de asientos</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Audi Q7 si...</h3>
+                        <ul>
+                            <li>Necesitas 7 plazas para llevar más de 5 ocupantes con regularidad</li>
+                            <li>Priorizas un precio de entrada mucho más asequible</li>
+                            <li>Necesitas diésel para muchos kilómetros al año</li>
+                            <li>Buscas la mayor autonomía posible con un depósito de combustible</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El Cayenne de referencia es la versión E-Hybrid E3.2 (470 CV combinados); el Q7, la versión de acceso 45 TDI diésel de 231 CV, con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche Cayenne</th>
+                                <th class="col-rival">Audi Q7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>107.300 € (gama hasta más de 190.000 € en el Turbo E-Hybrid)</td>
+                                <td>86.940 € (gama: 86.940 € – 131.000 € en el SQ7)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>Gasolina V6/V8 biturbo, todas con versión E-Hybrid enchufable; sin diésel</td>
+                                <td>Diésel mild-hybrid, híbrido enchufable TFSIe y SQ7 (V8 biturbo)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Plazas</td>
+                                <td>5 plazas (no disponible con tercera fila)</td>
+                                <td>5 o 7 plazas, a elegir según versión</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>470 CV (E-Hybrid) – 739 CV (Turbo E-Hybrid)</td>
+                                <td>231 CV (45 TDI) – 507 CV (SQ7)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,8 s (E-Hybrid) – 3,6 s (Turbo E-Hybrid)</td>
+                                <td>7,1 s (45 TDI) – 4,1 s (SQ7)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Integral de serie en toda la gama</td>
+                                <td>Quattro (integral) de serie en toda la gama</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Autonomía eléctrica (PHEV)</td>
+                                <td>Hasta 90 km WLTP (E-Hybrid, batería 25,9 kWh)</td>
+                                <td>Hasta 84 km WLTP (TFSIe)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Dimensiones (L x An x Al)</td>
+                                <td>4,93 x 1,98 x 1,70 m</td>
+                                <td>5,07 x 1,97 x 1,74 m</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>772 L</td>
+                                <td>670 L (887 L en el TFSIe, a 5 plazas)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~2.135 - 2.220 kg</td>
+                                <td>~2.100 - 2.484 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.200 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 6.500 - 9.500 € (revisiones completas que pueden superar los 700 €)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>88/100, generación 958 (2011-2017), la más reciente con dato completo</td>
+                                <td>Reputación floja; suspensión neumática, aire acondicionado, sistema eléctrico y caja de cambios entre las quejas más repetidas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Audi España, 2026. La gama de ambos modelos incluye más versiones intermedias; consulta la <a href="/porsche/modelos/cayenne" style="color:var(--porsche-red); font-weight:600;">ficha completa del Cayenne</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col cayenne">
+                        <h3>Porsche Cayenne</h3>
+                        <ul>
+                            <li class="pro">Comportamiento dinámico y chasis de referencia en el segmento SUV grande</li>
+                            <li class="pro">Mejor reputación de fiabilidad (88/100 frente a un Q7 señalado como poco fiable)</li>
+                            <li class="pro">Coste de mantenimiento estimado notablemente inferior (4.200 € frente a 6.500-9.500 €)</li>
+                            <li class="pro">Más autonomía eléctrica en el PHEV (90 km frente a 84 km)</li>
+                            <li class="con">Precio de entrada mucho más alto: +20.360 € frente al Q7 de acceso</li>
+                            <li class="con">No se puede configurar con 7 plazas, solo 5</li>
+                            <li class="con">Sin diésel: toda la gama es gasolina o E-Hybrid</li>
+                            <li class="con">Red de concesionarios y talleres oficiales más reducida en España</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Audi Q7</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada mucho más bajo, la mayor diferencia de los tres rivales del Cayenne</li>
+                            <li class="pro">Disponible con 7 plazas, algo que el Cayenne no ofrece</li>
+                            <li class="pro">Diésel disponible para grandes distancias</li>
+                            <li class="pro">Maletero mayor en la versión TFSIe (887 L)</li>
+                            <li class="con">Reputación de fiabilidad más floja del trío: suspensión neumática, aire acondicionado y sistema eléctrico</li>
+                            <li class="con">Menos dinámico que el Cayenne según la crítica especializada</li>
+                            <li class="con">Menos autonomía eléctrica en el PHEV (84 km frente a 90 km)</li>
+                            <li class="con">Coste de mantenimiento estimado más alto de los tres rivales alemanes</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El Cayenne y el Q7 tienen un origen común poco habitual: Porsche desarrolló el primer Cayenne junto al Volkswagen Touareg y el propio Audi Q7 sobre una plataforma compartida del Grupo Volkswagen, presentada a principios de los 2000. Más de dos décadas después, cada uno ha seguido su propio camino: el Cayenne se ha consolidado como el SUV más deportivo de los dos, mientras el Q7 se ha mantenido como una opción más familiar y accesible, con la posibilidad de 7 plazas que Porsche nunca ha ofrecido en el Cayenne.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si buscas el SUV grande más preciso y divertido de conducir, con mejor reputación de fiabilidad y un coste de mantenimiento más predecible, el Cayenne es la opción más completa, siempre que 5 plazas te resulten suficientes. Si en cambio necesitas espacio para más de 5 ocupantes, priorizas un precio de entrada mucho más bajo o quieres diésel para grandes distancias, el Q7 es la alternativa más lógica, aunque con una reputación de fiabilidad notablemente por detrás.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/cayenne-vs-bmw-x5">Cayenne vs BMW X5</a>, <a href="/porsche/comparativas/cayenne-vs-mercedes-gle">Cayenne vs Mercedes GLE</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche Cayenne o el Audi Q7?</summary>
+                    <p>El Cayenne ofrece mejor comportamiento dinámico, mejor reputación de fiabilidad y un coste de mantenimiento estimado más bajo, pero parte de 107.300 € y solo tiene 5 plazas. El Q7 tiene un precio de entrada mucho más bajo (desde 86.940 €), ofrece diésel y, sobre todo, una configuración de hasta 7 plazas que el Cayenne no ofrece, aunque su reputación de fiabilidad es la más floja de los tres rivales alemanes del segmento.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más caro es el Cayenne que el Audi Q7?</summary>
+                    <p>El Cayenne parte de 107.300 € (E-Hybrid E3.2), unos 20.360 € más que la versión de acceso del Q7 (86.940 €, Q7 45 TDI diésel de 231 CV). Es la mayor diferencia de precio de entrada de los tres rivales alemanes del Cayenne. En la gama alta, el SQ7 (507 CV) parte de unos 131.000 €, muy por debajo del Cayenne Turbo E-Hybrid (739 CV), que supera los 190.000 €.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿El Audi Q7 tiene más plazas que el Cayenne?</summary>
+                    <p>Sí, y es una de las diferencias más importantes entre ambos: el Q7 puede configurarse con una tercera fila de asientos para un total de 7 plazas, algo que Porsche no ofrece en el Cayenne, limitado a 5 plazas. Si necesitas llevar más de 5 ocupantes con regularidad, el Q7 es la única opción de las dos.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Es fiable el Audi Q7?</summary>
+                    <p>Su reputación de fiabilidad es más floja que la de otros SUV premium grandes: la suspensión neumática es el punto débil más citado, con signos de desgaste a partir de los 80.000 km, junto a fallos del compresor de aire acondicionado (80.000-100.000 km), problemas de cableado eléctrico y ocasionales incidencias en la caja de cambios.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más barato de mantener, el Cayenne o el Q7?</summary>
+                    <p>El Cayenne sale más económico según los datos disponibles: su coste de mantenimiento a 5 años se estima en 4.200 €, frente a un rango de 6.500-9.500 € para el Q7, que en varios rankings de coste de propiedad en España aparece como uno de los SUV premium más caros de mantener, con revisiones completas que pueden superar los 700 €.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del Cayenne?</strong> Consulta su <a href="/porsche/modelos/cayenne">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Audi Q7 recopilados de fuentes públicas (Audi España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Audi.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
