@@ -110,6 +110,29 @@
         .weekly-summary li { margin-bottom: 8px; line-height: 1.5; }
         .weekly-summary li a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
         .weekly-summary li a:hover { text-decoration: underline; }
+
+        /* Latest news list (auto-generated from RSS every 5h) */
+        .latest-news {
+            background-color: var(--light-card-bg);
+            border: 1px solid var(--hairline);
+            border-radius: 8px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+        }
+        .theme-dark .latest-news { background-color: var(--dark-card-bg); }
+        .latest-news .eyebrow {
+            display: block; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+            font-weight: 600; color: var(--porsche-red); margin-bottom: 10px;
+        }
+        .latest-news h2 { margin: 0 0 6px 0; font-size: 1.5rem; }
+        .latest-news-updated { margin: 0 0 15px 0; font-size: 0.8rem; opacity: 0.6; }
+        .latest-news-list { margin: 0; padding: 0; list-style: none; }
+        .latest-news-list li { padding: 14px 0; border-top: 1px solid var(--hairline); }
+        .latest-news-list li:first-child { border-top: none; padding-top: 0; }
+        .latest-news-list li a { color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+        .latest-news-list li a:hover { text-decoration: underline; }
+        .latest-news-meta { display: block; font-size: 0.75rem; opacity: 0.6; margin: 4px 0 6px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .latest-news-list li p { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
     </style>
 </head>
 <body class="theme-light">
@@ -391,7 +414,21 @@
                 <!-- RSS-NEWS-CARDS:END -->
             </div>
         </main>
-		
+
+        <section class="latest-news">
+            <span class="eyebrow">Última hora</span>
+            <h2>Noticias de última hora</h2>
+            <p class="latest-news-updated">Actualizado: <!-- LATEST-NEWS-UPDATED:START -->—<!-- LATEST-NEWS-UPDATED:END --></p>
+            <ul class="latest-news-list">
+                <!-- LATEST-NEWS-ITEMS:START -->
+                <li>
+                    <a href="#" target="_blank" rel="noopener">Aún no hay noticias de última hora</a>
+                    <p>Este bloque se actualiza automáticamente cada 5 horas desde el feed de Google Alerts.</p>
+                </li>
+                <!-- LATEST-NEWS-ITEMS:END -->
+            </ul>
+        </section>
+
 		<main id="publicaciones">
 			{% include posts.html %}
         </main>
