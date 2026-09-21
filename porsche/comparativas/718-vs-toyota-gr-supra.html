@@ -30,7 +30,22 @@
         .site-nav a:hover { color: var(--porsche-red); }
         .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
         .site-footer p { margin: 6px 0; }
-        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+        .nav-toggle {
+            display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit;
+            width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px;
+            align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        @media (max-width: 600px) {
+            .site-logo-text { display: none; }
+            .site-nav { display: none; }
+            .nav-toggle { display: flex; }
+            .site-nav.is-open {
+                display: flex; flex-direction: column; align-items: flex-start; gap: 0;
+                position: absolute; top: 100%; left: 0; width: 100%; background: #fff;
+                padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline);
+            }
+            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+        }
         .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
         .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
         .breadcrumb a:hover { color: var(--porsche-red); }
@@ -145,6 +160,7 @@
                 <a href="/porsche/modelos">Modelos</a>
                 <a href="/porsche/concesionarios">Concesionarios</a>
             </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
         </div>
     </header>
 
@@ -331,5 +347,16 @@
         <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
     </footer>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script>
+        (function () {
+            var toggle = document.getElementById('nav-toggle');
+            var nav = document.querySelector('.site-nav');
+            if (toggle && nav) {
+                toggle.addEventListener('click', function () {
+                    nav.classList.toggle('is-open');
+                });
+            }
+        })();
+    </script>
 </body>
 </html>
