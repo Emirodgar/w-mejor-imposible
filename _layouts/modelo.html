@@ -70,6 +70,14 @@
         .model-actions a.primary:hover { background-color: var(--porsche-black); border-color: var(--porsche-black); }
         .model-actions a:not(.primary):hover { background-color: var(--porsche-grey); color: white; }
 
+        /* --- Comparativas vs. otras marcas --- */
+        .comparisons-list { display: flex; flex-wrap: wrap; gap: 10px; }
+        .comparisons-list a {
+            text-decoration: none; padding: 12px 20px; border-radius: 6px; font-weight: 600; font-size: 14px;
+            border: 1px solid var(--porsche-red); color: var(--porsche-red);
+        }
+        .comparisons-list a:hover { background-color: var(--porsche-red); color: white; }
+
         /* --- Tablas --- */
         .table-container { overflow-x: auto; }
         table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
@@ -169,6 +177,18 @@
                     </div>
                 </div>
             </section>
+
+            {% if page.comparisons %}
+            <section class="card">
+                <h2 class="card-title">Compara el {{ page.model_name }} con su competencia</h2>
+                <p class="card-subtitle">Precio, potencia, autonomía y fiabilidad frente a sus rivales directos del segmento.</p>
+                <div class="comparisons-list">
+                    {% for c in page.comparisons %}
+                    <a href="{{ c.url }}">{{ page.model_name }} vs {{ c.rival }} &rarr;</a>
+                    {% endfor %}
+                </div>
+            </section>
+            {% endif %}
 
             <section class="card">
                 <h2 class="card-title">Fiabilidad por generación</h2>

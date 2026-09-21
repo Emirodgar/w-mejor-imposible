@@ -74,6 +74,26 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Comparativas vs. otras marcas -->
+  <url>
+    <loc>https://mejorimposible.es/porsche/comparativas/macan-vs-audi-q5</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/porsche/comparativas/macan-vs-mercedes-glc</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/porsche/comparativas/macan-vs-bmw-x3</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Concesionarios -->
   <url>
     <loc>https://mejorimposible.es/porsche/concesionarios</loc>

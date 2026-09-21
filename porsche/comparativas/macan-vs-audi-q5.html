@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche Macan vs Audi Q5: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche Macan eléctrico y el Audi Q5: precio, motorizaciones, potencia, autonomía, maletero, fiabilidad y coste de mantenimiento. Pros y contras de cada uno para ayudarte a elegir.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --audi-blue: #00308f;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px;
+        }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        /* --- Veredicto rápido --- */
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.macan { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.q5 { border-color: var(--audi-blue); background-color: rgba(0, 48, 143, 0.05); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.macan h3 { color: var(--porsche-red); }
+        .verdict-card.q5 h3 { color: var(--audi-blue); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+
+        /* --- Tabla comparativa --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-q5 { color: var(--audi-blue); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+
+        /* --- Pros y contras --- */
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.macan h3 { color: var(--porsche-red); }
+        .proscons-col.q5 h3 { color: var(--audi-blue); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+
+        .cross-link-box {
+            margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6;
+        }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche Macan o el Audi Q5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Depende de la prioridad: el Macan, ahora 100% eléctrico, es más rápido, tiene mejor dinámica y carga a 270 kW, pero parte de 85.300 €. El Q5 ofrece motor de gasolina, diésel o híbrido enchufable a elegir, tracción quattro de serie y un precio de entrada mucho más bajo, desde 58.288 €. No hay un 'mejor' absoluto: el Macan gana en prestaciones y exclusividad, el Q5 en precio y flexibilidad de uso."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más caro es el Macan que el Audi Q5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Macan parte de 85.300 €, unos 27.000 € más que la versión de acceso del Q5 (58.288 €, motor 2.0 TFSI o TDI de 204 CV). Si se compara con el Q5 e-hybrid (híbrido enchufable, desde unos 60.210 €) o el SQ5 de 367 CV (hasta 97.888 €), la diferencia se reduce, pero el Macan sigue siendo la opción más cara de entrada."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿El Porsche Macan sigue teniendo versión de gasolina o diésel?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Desde 2024 el Macan a la venta en España es exclusivamente eléctrico (plataforma PPE, 800V). Si necesitas diésel o gasolina por autonomía, remolque frecuente o falta de punto de carga, el Audi Q5 sí mantiene esas opciones."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué maletero tiene el Macan comparado con el Q5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Macan eléctrico ofrece 540 litros en el maletero trasero más 84 litros adicionales en el frunk delantero (624 litros en total), frente a los 520 litros del Q5 en sus versiones de combustión o mild-hybrid (438 litros en la variante e-hybrid, por el hueco que ocupa la batería)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuál es más barato de mantener, el Macan o el Q5?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Q5 suele salir más económico de mantener: la red de talleres Audi es mucho más amplia y las revisiones rondan los 250-350 € anuales. El Macan, al ser eléctrico, no tiene los costes de aceite y filtros de un motor de combustión, pero la red de servicio oficial Porsche es más reducida y su mano de obra suele ser más cara."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/macan">&larr; Volver a la ficha del Porsche Macan</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche Macan vs Audi Q5: ¿cuál elegir?</h1>
+            <p>El Macan, ahora 100% eléctrico, y el Q5 comparten segmento (SUV premium compacto) e incluso plataforma técnica de origen, pero han tomado caminos distintos: el Macan apuesta todo a la electrificación y las prestaciones, mientras el Q5 sigue ofreciendo gasolina, diésel e híbrido enchufable a un precio de entrada muy inferior. Comparamos precio, potencia, autonomía, espacio, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card macan">
+                        <h3>Elige el Porsche Macan si...</h3>
+                        <ul>
+                            <li>Quieres el SUV compacto más rápido y deportivo del segmento</li>
+                            <li>Puedes cargar en casa o en el trabajo con regularidad</li>
+                            <li>Valoras la exclusividad y la calidad percibida de la marca</li>
+                            <li>El precio de entrada no es tu principal limitación</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card q5">
+                        <h3>Elige el Audi Q5 si...</h3>
+                        <ul>
+                            <li>Priorizas un precio de entrada mucho más asequible</li>
+                            <li>Necesitas diésel, gasolina o un híbrido enchufable flexible</li>
+                            <li>Haces trayectos largos o remolcas sin depender de la carga</li>
+                            <li>Buscas mantenimiento y posventa más económicos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El Macan de referencia es la versión Macan 4 (tracción total); el Q5, la versión de acceso 2.0 TFSI/TDI de 204 CV, con el rango completo de la gama entre paréntesis.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche Macan</th>
+                                <th class="col-q5">Audi Q5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>85.300 € (gama: 82.310 € – 117.426 €)</td>
+                                <td>58.288 € (gama: 58.288 € – 97.888 €)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>100% eléctrico (batería 100 kWh)</td>
+                                <td>Gasolina 2.0 TFSI, diésel 2.0 TDI, híbrido enchufable TFSIe, SQ5 V6</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>360 CV – 639 CV (Turbo)</td>
+                                <td>204 CV – 367 CV (SQ5)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>5,2 s (Macan 4) – 3,3 s (Turbo)</td>
+                                <td>8,6 s (204 CV) – 4,5 s (SQ5)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Trasera (versión base) o integral</td>
+                                <td>Quattro de serie (tracción delantera solo en el TFSI de acceso)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Autonomía / depósito</td>
+                                <td>Hasta 641 km WLTP (100% eléctrico)</td>
+                                <td>Diésel/gasolina sin límite de autonomía eléctrica; e-hybrid con 40-60 km en modo eléctrico</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Carga / repostaje</td>
+                                <td>Hasta 270 kW en DC; 10-80% en 21 min</td>
+                                <td>Repostaje convencional; e-hybrid hasta 7,4 kW en AC (~2,5 h)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Dimensiones (L x An x Al)</td>
+                                <td>4,78 x 1,94 x 1,62 m</td>
+                                <td>4,72 x 1,90 x 1,65 m</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>540 L + 84 L frunk (624 L total)</td>
+                                <td>520 L (438 L en e-hybrid)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~2.400 - 2.480 kg</td>
+                                <td>~1.900 - 2.115 kg (SQ5)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>Sin dato específico del eléctrico; el Macan de combustión anterior rondaba 3.500 €</td>
+                                <td>Aprox. 2.000 - 2.300 € (revisiones ~250-350 €/año)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>82/100, solo documentado en la generación 2014-2018 de combustión</td>
+                                <td>Correcta pero no excepcional: suspensión neumática, consumo de aceite en TFSI y S tronic con tirones en frío son las quejas más repetidas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Audi España, 2026. La gama de ambos modelos incluye más versiones intermedias; consulta la <a href="/porsche/modelos/macan" style="color:var(--porsche-red); font-weight:600;">ficha completa del Macan</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col macan">
+                        <h3>Porsche Macan</h3>
+                        <ul>
+                            <li class="pro">El SUV compacto más rápido y dinámico del segmento (3,3 s en el Turbo)</li>
+                            <li class="pro">800V y carga a 270 kW: de las cargas más rápidas de cualquier eléctrico premium</li>
+                            <li class="pro">Autonomía WLTP de hasta 641 km, muy competitiva para un eléctrico de su tamaño</li>
+                            <li class="pro">Calidad percibida, exclusividad de marca y mejor comportamiento dinámico</li>
+                            <li class="con">Precio de entrada muy superior: +27.000 € frente al Q5 de acceso</li>
+                            <li class="con">Ya no hay versión de gasolina, diésel ni híbrida: solo eléctrico</li>
+                            <li class="con">Red de concesionarios y talleres oficiales más reducida en España</li>
+                            <li class="con">Peso elevado (2,4 t o más) por la batería, sin histórico de fiabilidad propio</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col q5">
+                        <h3>Audi Q5</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada mucho más bajo, con recorrido amplio de versiones</li>
+                            <li class="pro">Motor a elegir: gasolina, diésel o híbrido enchufable según tu uso</li>
+                            <li class="pro">Quattro de serie casi en toda la gama, ideal para viajes largos sin depender de la carga</li>
+                            <li class="pro">Red de posventa Audi mucho más amplia y mantenimiento más económico</li>
+                            <li class="con">Menos exclusivo: es uno de los SUV premium más vendidos, mucho más habitual en la calle</li>
+                            <li class="con">La versión de acceso (204 CV, 8,6 s) se queda justa frente al Macan</li>
+                            <li class="con">Quejas recurrentes de suspensión neumática, consumo de aceite y caja S tronic en frío</li>
+                            <li class="con">Autonomía eléctrica limitada en el e-hybrid (40-60 km reales) si buscas ir sin motor térmico</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>El Macan y el Q5 no solo compiten en el mismo segmento: la primera generación del Macan (2014-2018) se construyó sobre la misma plataforma MLB que el Q5 de su época, así que la comparación tiene sentido también "de fábrica". Lo que ha cambiado es la estrategia: Porsche ha llevado el Macan al 100% eléctrico con la plataforma PPE compartida con el Audi Q6 e-tron, mientras que Audi mantiene el Q5 como una gama multi-energía (gasolina, diésel e híbrido enchufable) pensada para cubrir a todo tipo de comprador.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si tu prioridad es la experiencia de conducción, la tecnología de carga rápida y no te importa pagar la prima de marca y de electrificación, el Macan es la opción más completa del segmento ahora mismo. Si en cambio necesitas flexibilidad de motorización, un precio de entrada realista o simplemente todavía no tienes forma de cargar en casa o en el trabajo, el Q5 sigue siendo una alternativa muy sólida, con mucho más recorrido de versiones y un coste total de propiedad más predecible.</p>
+                    <p>Si dudas entre quedarte en la gama Porsche, compara también el Macan con el <a href="/porsche/modelos/cayenne">Cayenne</a> (un peldaño por encima en tamaño y precio) o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche Macan o el Audi Q5?</summary>
+                    <p>Depende de la prioridad: el Macan, ahora 100% eléctrico, es más rápido, tiene mejor dinámica y carga a 270 kW, pero parte de 85.300 €. El Q5 ofrece motor de gasolina, diésel o híbrido enchufable a elegir, tracción quattro de serie y un precio de entrada mucho más bajo, desde 58.288 €. No hay un "mejor" absoluto: el Macan gana en prestaciones y exclusividad, el Q5 en precio y flexibilidad de uso.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más caro es el Macan que el Audi Q5?</summary>
+                    <p>El Macan parte de 85.300 €, unos 27.000 € más que la versión de acceso del Q5 (58.288 €, motor 2.0 TFSI o TDI de 204 CV). Si se compara con el Q5 e-hybrid (híbrido enchufable, desde unos 60.210 €) o el SQ5 de 367 CV (hasta 97.888 €), la diferencia se reduce, pero el Macan sigue siendo la opción más cara de entrada.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿El Porsche Macan sigue teniendo versión de gasolina o diésel?</summary>
+                    <p>No. Desde 2024 el Macan a la venta en España es exclusivamente eléctrico (plataforma PPE, 800V). Si necesitas diésel o gasolina por autonomía, remolque frecuente o falta de punto de carga, el Audi Q5 sí mantiene esas opciones.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué maletero tiene el Macan comparado con el Q5?</summary>
+                    <p>El Macan eléctrico ofrece 540 litros en el maletero trasero más 84 litros adicionales en el frunk delantero (624 litros en total), frente a los 520 litros del Q5 en sus versiones de combustión o mild-hybrid (438 litros en la variante e-hybrid, por el hueco que ocupa la batería).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuál es más barato de mantener, el Macan o el Q5?</summary>
+                    <p>El Q5 suele salir más económico de mantener: la red de talleres Audi es mucho más amplia y las revisiones rondan los 250-350 € anuales. El Macan, al ser eléctrico, no tiene los costes de aceite y filtros de un motor de combustión, pero la red de servicio oficial Porsche es más reducida y su mano de obra suele ser más cara.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del Macan?</strong> Consulta su <a href="/porsche/modelos/macan">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Audi Q5 recopilados de fuentes públicas (Audi España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Audi.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
