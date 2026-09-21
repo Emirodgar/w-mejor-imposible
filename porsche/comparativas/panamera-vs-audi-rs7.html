@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Porsche Panamera vs Audi RS7: ¿Cuál Comprar? | Mejor Imposible</title>
+    <meta name="description" content="Comparamos el Porsche Panamera y el Audi RS7: precio, motorizaciones, potencia, maletero, fiabilidad y coste de mantenimiento. Pros y contras de cada uno para ayudarte a elegir, ahora que Audi ha descatalogado el A7.">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --hairline: #e5e5e5;
+            --trend-up: #28a745; --trend-down: #dc3545;
+            --rival-accent: #00308f;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .dashboard-container { padding: 20px; max-width: 1000px; margin: auto; }
+
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        @media (max-width: 600px) { .site-logo-text { display: none; } .site-nav { gap: 14px; } }
+
+        .breadcrumb { font-size: 0.9em; margin-bottom: 20px; color: var(--porsche-grey); }
+        .breadcrumb a { color: var(--porsche-grey); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--porsche-red); }
+
+        .card {
+            border-radius: 4px; padding: 25px 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline); margin-bottom: 20px;
+        }
+        .card-title { font-size: 1.3em; font-weight: 600; margin: 0 0 15px 0; }
+        .card-subtitle { font-size: 0.9em; opacity: 0.65; margin: -10px 0 20px 0; }
+
+        .intro-block { max-width: 900px; margin: 30px 0 25px 0; }
+        .intro-block h1 { font-size: 1.9em; margin: 0 0 10px 0; }
+        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0; }
+
+        /* --- Veredicto rápido --- */
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .verdict-card { border-radius: 8px; padding: 20px 22px; border: 2px solid; }
+        .verdict-card.panamera { border-color: var(--porsche-red); background-color: rgba(177, 43, 40, 0.05); }
+        .verdict-card.rival { border-color: var(--rival-accent); background-color: rgba(0, 48, 143, 0.05); }
+        .verdict-card h3 { margin: 0 0 12px 0; font-size: 1.05em; }
+        .verdict-card.panamera h3 { color: var(--porsche-red); }
+        .verdict-card.rival h3 { color: var(--rival-accent); }
+        .verdict-card ul { margin: 0; padding-left: 20px; }
+        .verdict-card li { font-size: 0.95em; line-height: 1.6; margin-bottom: 6px; }
+        @media (max-width: 700px) { .verdict-grid { grid-template-columns: 1fr; } }
+
+        /* --- Tabla comparativa --- */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+        th, td { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+        th { font-weight: 600; color: var(--porsche-red); font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.3px; }
+        th.col-rival { color: var(--rival-accent); }
+        td.spec-label { font-weight: 600; opacity: 0.75; font-size: 0.9em; }
+        .table-note { font-size: 0.82em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
+
+        /* --- Pros y contras --- */
+        .proscons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .proscons-col h3 { font-size: 1.05em; margin: 0 0 12px 0; }
+        .proscons-col.panamera h3 { color: var(--porsche-red); }
+        .proscons-col.rival h3 { color: var(--rival-accent); }
+        .proscons-col ul { list-style: none; margin: 0 0 18px 0; padding: 0; }
+        .proscons-col li { font-size: 0.95em; line-height: 1.55; margin-bottom: 9px; padding-left: 22px; position: relative; }
+        .proscons-col li.pro::before { content: "✓"; color: var(--trend-up); font-weight: 700; position: absolute; left: 0; }
+        .proscons-col li.con::before { content: "✕"; color: var(--trend-down); font-weight: 700; position: absolute; left: 0; }
+        @media (max-width: 700px) { .proscons-grid { grid-template-columns: 1fr; } }
+
+        .about-content h3 { font-size: 1.1em; margin: 24px 0 8px 0; }
+        .about-content h3:first-child { margin-top: 0; }
+        .about-content p, .about-content li { font-size: 1.02em; line-height: 1.7; margin: 0 0 16px 0; }
+        .about-content ul { padding-left: 20px; }
+        .about-content a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .about-content a:hover { text-decoration: underline; }
+
+        .faq-item { border-bottom: 1px solid var(--hairline); padding: 15px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.02em; list-style: none; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
+        .faq-item[open] summary::before { content: "– "; }
+        .faq-item p { margin: 10px 0 0 0; line-height: 1.6; }
+
+        .cross-link-box {
+            margin-top: 5px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
+            background-color: rgba(227, 171, 55, 0.1); font-size: 0.98em; line-height: 1.6;
+        }
+        .cross-link-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross-link-box a:hover { text-decoration: underline; }
+
+        .sources-note { font-size: 0.8em; opacity: 0.55; line-height: 1.6; margin-top: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Es mejor el Porsche Panamera o el Audi RS7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Panamera tiene un precio de entrada más bajo (127.800 € frente a 161.950 €) y una gama mucho más amplia, con opciones desde 470 hasta 782 CV y una versión E-Hybrid enchufable. El RS7 es hoy la única variante superviviente del Audi A7 tras la desaparición de las versiones más accesibles, con 630 CV, un maletero algo mayor y una aceleración de 3,4 s, muy cerca del Panamera Turbo S E-Hybrid (3,3 s)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Sigue vendiéndose el Audi A7 normal, sin ser RS7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No en Europa: Audi ha descatalogado el A7 y el S7, dejando el RS7 Performance como la única variante superviviente de la gama, sin un escalón de acceso más asequible. Es un dato importante a la hora de comparar precios: hoy el Panamera de entrada es más barato que el rival más económico de Audi en este segmento."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuánto más caro es el Audi RS7 que el Panamera?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El RS7 parte de unos 161.950 €, unos 34.150 € más que la versión de acceso del Panamera (127.800 €, 4 E-Hybrid). Es la única de las tres comparativas del Panamera en la que el rival es más caro en su versión de entrada, precisamente porque el RS7 ya no tiene un escalón de acceso más económico."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Qué maletero tiene el Panamera comparado con el Audi RS7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El RS7 tiene algo más de capacidad: 535 litros (hasta 1.390 litros con los asientos abatidos) frente a los 494 litros del Panamera (hasta 1.263 litros abatido)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Es fiable el Audi RS7?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Su motor V8 biturbo, compartido con el RS6, tiene fama de ser relativamente duradero si se respetan los cambios de aceite frecuentes, aunque hay reportes de fugas, fallos de encendido, problemas con la bomba de agua y, en menor medida, la cadena de distribución, además de ruidos en la suspensión. No es un modelo especialmente problemático dentro de la gama de altas prestaciones de Audi."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="breadcrumb">
+            <a href="/porsche/modelos/panamera">&larr; Volver a la ficha del Porsche Panamera</a>
+        </div>
+
+        <div class="intro-block">
+            <h1>Porsche Panamera vs Audi RS7: ¿cuál elegir?</h1>
+            <p>Esta comparativa tiene una particularidad: Audi descatalogó el A7 y el S7 en Europa, así que el RS7 Performance ya no es la variante más potente de una gama amplia, sino la única superviviente. Eso cambia por completo la comparación con el Panamera, que sí mantiene una gama extensa desde 470 hasta 782 CV. Comparamos precio, potencia, maletero, fiabilidad y coste de mantenimiento para ayudarte a decidir.</p>
+        </div>
+
+        <main>
+            <section class="card">
+                <h2 class="card-title">Veredicto rápido</h2>
+                <div class="verdict-grid">
+                    <div class="verdict-card panamera">
+                        <h3>Elige el Porsche Panamera si...</h3>
+                        <ul>
+                            <li>Quieres un precio de entrada más bajo dentro de este segmento</li>
+                            <li>Te interesa la flexibilidad de una gama amplia de potencias</li>
+                            <li>Quieres la opción de conducir en modo eléctrico (E-Hybrid)</li>
+                            <li>Prefieres el interior más moderno y la suspensión activa opcional</li>
+                        </ul>
+                    </div>
+                    <div class="verdict-card rival">
+                        <h3>Elige el Audi RS7 si...</h3>
+                        <ul>
+                            <li>Buscas la máxima aceleración posible sin llegar al tope de gama del Panamera</li>
+                            <li>Quieres el mayor maletero de los dos</li>
+                            <li>Prefieres el V8 biturbo probado del grupo Volkswagen</li>
+                            <li>No te importa que sea la única variante disponible del A7</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Ficha comparativa</h2>
+                <p class="card-subtitle">Precios y datos de la gama actual en España (2026). El Panamera de referencia es la versión 4 E-Hybrid (470 CV combinados); el Audi RS7 es una variante única (630 CV), ya que Audi descatalogó el resto de la gama A7/S7.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Especificación</th>
+                                <th>Porsche Panamera</th>
+                                <th class="col-rival">Audi RS7</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="spec-label">Precio desde</td>
+                                <td>127.800 € (gama hasta más de 250.000 € en el Turbo S E-Hybrid)</td>
+                                <td>161.950 € (variante única, sin escalón de acceso más económico)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Motorizaciones</td>
+                                <td>Gasolina V6/V8, con versiones E-Hybrid enchufables; gama de 470 a 782 CV</td>
+                                <td>V8 biturbo TFSI (630 CV); variante única, sin versión electrificada</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Potencia</td>
+                                <td>470 CV (4 E-Hybrid) – 782 CV (Turbo S E-Hybrid)</td>
+                                <td>630 CV (única versión)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">0-100 km/h</td>
+                                <td>4,1 s (4 E-Hybrid) – 3,3 s (Turbo S E-Hybrid)</td>
+                                <td>3,4 s</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Tracción</td>
+                                <td>Integral de serie en toda la gama</td>
+                                <td>Quattro (integral) de serie</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Autonomía eléctrica (PHEV)</td>
+                                <td>Hasta 96 km WLTP (E-Hybrid, batería 25,9 kWh)</td>
+                                <td>No disponible; sin versión electrificada</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Dimensiones (L x An x Al)</td>
+                                <td>5,05 x 1,94 x 1,42 m</td>
+                                <td>5,01 x 1,95 x 1,42 m</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Maletero</td>
+                                <td>494 L (430 L en E-Hybrid); hasta 1.263 L con asientos abatidos</td>
+                                <td>535 L; hasta 1.390 L con asientos abatidos</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Peso</td>
+                                <td>~1.960 - 2.435 kg</td>
+                                <td>~2.150 kg</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Mantenimiento estimado (5 años)</td>
+                                <td>4.800 € (dato propio, ficha de fiabilidad de Mejor Imposible)</td>
+                                <td>Aprox. 6.500 - 9.000 € (motor V8 de altas prestaciones)</td>
+                            </tr>
+                            <tr>
+                                <td class="spec-label">Fiabilidad</td>
+                                <td>75/100, generación 970 (2010-2016), único dato documentado</td>
+                                <td>Motor V8 relativamente duradero con mantenimiento correcto; reportes de fugas, bomba de agua y ruidos de suspensión</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">Precios y potencias oficiales de Porsche y Audi España, 2026. La gama del Panamera incluye más versiones intermedias (4S, GTS); consulta la <a href="/porsche/modelos/panamera" style="color:var(--porsche-red); font-weight:600;">ficha completa del Panamera</a> para el resto de datos.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Pros y contras</h2>
+                <div class="proscons-grid">
+                    <div class="proscons-col panamera">
+                        <h3>Porsche Panamera</h3>
+                        <ul>
+                            <li class="pro">Precio de entrada bastante más bajo (127.800 € frente a 161.950 € del RS7)</li>
+                            <li class="pro">Gama mucho más amplia de motorizaciones y potencias (470-782 CV frente a una única variante)</li>
+                            <li class="pro">Única opción con autonomía eléctrica (E-Hybrid, hasta 96 km)</li>
+                            <li class="pro">Interior más moderno (972) y suspensión activa Porsche Active Ride opcional</li>
+                            <li class="con">En el escalón de acceso es más lento que el RS7 (4,1 s frente a 3,4 s)</li>
+                            <li class="con">Maletero de serie algo menor (494 L frente a 535 L)</li>
+                            <li class="con">Coste de mantenimiento estimado algo inferior, pero con más complejidad tecnológica (E-Hybrid)</li>
+                            <li class="con">Red de concesionarios Porsche más reducida en España</li>
+                        </ul>
+                    </div>
+                    <div class="proscons-col rival">
+                        <h3>Audi RS7</h3>
+                        <ul>
+                            <li class="pro">Aceleración muy próxima al tope de gama del Panamera (3,4 s con una única versión)</li>
+                            <li class="pro">Maletero de serie mayor (535 L, hasta 1.390 L con asientos abatidos)</li>
+                            <li class="pro">Motor V8 biturbo probado y relativamente duradero con mantenimiento correcto</li>
+                            <li class="pro">Diseño Sportback tipo fastback y quattro de serie</li>
+                            <li class="con">Precio de entrada más alto que el del Panamera (+34.150 €), sin versión más económica disponible</li>
+                            <li class="con">Sin opción electrificada: consumo medio de 9,8 l/100 km sin autonomía eléctrica</li>
+                            <li class="con">Gama reducida a una sola variante, sin la flexibilidad de potencias del Panamera</li>
+                            <li class="con">Coste de mantenimiento estimado más alto (motor V8 de altas prestaciones)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="about-content">
+                    <h3>¿Por qué comparar precisamente estos dos modelos?</h3>
+                    <p>Panamera y RS7 han competido durante más de una década por el mismo tipo de comprador: una berlina de cuatro puertas con aspiraciones deportivas y mucha potencia. Lo que ha cambiado recientemente es el contexto: Audi ha ido reduciendo la gama A7 hasta dejar solo el RS7 Performance, mientras Porsche mantiene y amplía la gama Panamera con más escalones de potencia y la opción E-Hybrid. El resultado es una comparación asimétrica, pero real: hoy el Panamera de entrada es más barato que el único Audi de este segmento.</p>
+                    <h3>¿Cuál elegir según tu perfil?</h3>
+                    <p>Si quieres flexibilidad de potencias, un precio de entrada más accesible o la opción de circular en modo eléctrico en trayectos cortos, el Panamera es la opción más completa. Si en cambio buscas la máxima aceleración posible sin llegar a los escalones más caros del Panamera, prefieres un maletero algo mayor o el V8 biturbo del grupo Volkswagen, el RS7 sigue siendo una opción muy sólida, aunque hoy sea la única disponible de su gama.</p>
+                    <p>Si dudas entre otros rivales del segmento, consulta también <a href="/porsche/comparativas/panamera-vs-taycan">Panamera vs Taycan</a>, <a href="/porsche/comparativas/panamera-vs-bmw-serie-8-gran-coupe">Panamera vs BMW Serie 8 Gran Coupé</a> o resuelve tus dudas con el <a href="/porsche/asistente">asistente de recomendación</a>.</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title">Preguntas frecuentes</h2>
+                <details class="faq-item" open>
+                    <summary>¿Es mejor el Porsche Panamera o el Audi RS7?</summary>
+                    <p>El Panamera tiene un precio de entrada más bajo (127.800 € frente a 161.950 €) y una gama mucho más amplia, con opciones desde 470 hasta 782 CV y una versión E-Hybrid enchufable. El RS7 es hoy la única variante superviviente del Audi A7 tras la desaparición de las versiones más accesibles, con 630 CV, un maletero algo mayor y una aceleración de 3,4 s, muy cerca del Panamera Turbo S E-Hybrid (3,3 s).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Sigue vendiéndose el Audi A7 normal, sin ser RS7?</summary>
+                    <p>No en Europa: Audi ha descatalogado el A7 y el S7, dejando el RS7 Performance como la única variante superviviente de la gama, sin un escalón de acceso más asequible. Es un dato importante a la hora de comparar precios: hoy el Panamera de entrada es más barato que el rival más económico de Audi en este segmento.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Cuánto más caro es el Audi RS7 que el Panamera?</summary>
+                    <p>El RS7 parte de unos 161.950 €, unos 34.150 € más que la versión de acceso del Panamera (127.800 €, 4 E-Hybrid). Es la única de las tres comparativas del Panamera en la que el rival es más caro en su versión de entrada, precisamente porque el RS7 ya no tiene un escalón de acceso más económico.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Qué maletero tiene el Panamera comparado con el Audi RS7?</summary>
+                    <p>El RS7 tiene algo más de capacidad: 535 litros (hasta 1.390 litros con los asientos abatidos) frente a los 494 litros del Panamera (hasta 1.263 litros abatido).</p>
+                </details>
+                <details class="faq-item">
+                    <summary>¿Es fiable el Audi RS7?</summary>
+                    <p>Su motor V8 biturbo, compartido con el RS6, tiene fama de ser relativamente duradero si se respetan los cambios de aceite frecuentes, aunque hay reportes de fugas, fallos de encendido, problemas con la bomba de agua y, en menor medida, la cadena de distribución, además de ruidos en la suspensión. No es un modelo especialmente problemático dentro de la gama de altas prestaciones de Audi.</p>
+                </details>
+
+                <div class="cross-link-box">
+                    <strong>¿Quieres más datos del Panamera?</strong> Consulta su <a href="/porsche/modelos/panamera">ficha técnica completa</a>, su <a href="/porsche/coste-real">coste real de propiedad</a> o simula la <a href="/porsche/financiacion">financiación</a> con el precio de partida.
+                </div>
+            </section>
+
+            <p class="sources-note">Datos de precios y ficha técnica del Audi RS7 recopilados de fuentes públicas (Audi España y prensa especializada del sector), correctos en la fecha de publicación y orientativos: pueden variar por versión, opcionales y actualizaciones de gama. Mejor Imposible es un sitio independiente no afiliado a Porsche ni a Audi.</p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
