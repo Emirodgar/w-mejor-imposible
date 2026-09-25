@@ -1,0 +1,62 @@
+name: Actualiza tendencias de noticias (RSS Porsche)
+
+on:
+  schedule:
+    # Viernes 22:00 hora de España. GitHub Actions solo admite cron en UTC,
+    # y Madrid cambia entre CET (UTC+1) y CEST (UTC+2) según la época del año,
+    # así que se programan las dos franjas posibles y el primer paso del job
+    # descarta la que no corresponda de verdad a las 22:00 en Madrid.
+    - cron: '0 21 * * 5' # 22:00 CET (horario de invierno)
+    - cron: '0 20 * * 5' # 22:00 CEST (horario de verano)
+  workflow_dispatch: {} # permite ejecutarla a mano en cualquier momento
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualiza-tendencias-rss
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Comprobar que son las 22:00 en España
+        id: hora
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            HORA_MADRID=$(TZ="Europe/Madrid" date +%H)
+            echo "Hora actual en España: $HORA_MADRID"
+            if [ "$HORA_MADRID" != "22" ]; then
+              echo "No son las 22:00 en España (era el disparo de la otra franja horaria por el cambio de hora). Se omite esta ejecución."
+              echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
+          echo "ejecutar=true" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout
+        if: steps.hora.outputs.ejecutar == 'true'
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Configurar identidad de git
+        if: steps.hora.outputs.ejecutar == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Ejecutar skill actualizar-tendencias-rss
+        if: steps.hora.outputs.ejecutar == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: "/actualizar-tendencias-rss"
+          claude_args: |
+            --allowedTools "Bash,Read,Edit,Write"
+            --permission-mode acceptEdits
+            --permission-prompts none
+            --max-turns 60
