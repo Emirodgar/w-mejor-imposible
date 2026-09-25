@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas las noticias de Porsche | Mejor Imposible</title>
+    <meta name="description" content="Archivo completo de noticias de Porsche recopiladas automáticamente: lanzamientos, análisis, novedades de modelos y más, con buscador en tiempo real.">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
+            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
+            --dark-text: #e1e1e1; --hairline: #e5e5e5;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
+        .theme-light { background-color: var(--light-bg); color: var(--light-text); }
+        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .site-header {
+            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
+            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
+        }
+        .site-header-inner {
+            display: flex; justify-content: space-between; align-items: center;
+            max-width: 1400px; margin: 0 auto;
+        }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        .nav-toggle {
+            display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit;
+            width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px;
+            align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        @media (max-width: 600px) {
+            .site-logo-text { display: none; }
+            .site-nav { display: none; }
+            .nav-toggle { display: flex; }
+            .site-nav.is-open {
+                display: flex; flex-direction: column; align-items: flex-start; gap: 0;
+                position: absolute; top: 100%; left: 0; width: 100%; background: #fff;
+                padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline);
+            }
+            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+        }
+
+        .page-back { display: inline-block; margin-bottom: 18px; font-size: 0.85rem; color: var(--porsche-red); text-decoration: none; font-weight: 600; }
+        .page-back:hover { text-decoration: underline; }
+        .page-title { margin: 0 0 6px 0; font-size: 1.8rem; }
+        .page-subtitle { margin: 0 0 25px 0; opacity: 0.7; font-size: 0.95rem; }
+
+        .search-box {
+            position: sticky; top: 78px; z-index: 90;
+            background-color: var(--light-bg); padding: 10px 0 18px 0;
+        }
+        .theme-dark .search-box { background-color: var(--dark-bg); }
+        .search-box input {
+            width: 100%; box-sizing: border-box; padding: 14px 18px; border-radius: 8px;
+            border: 1px solid var(--porsche-grey); background: var(--light-card-bg); color: inherit;
+            font-family: inherit; font-size: 1rem;
+        }
+        .theme-dark .search-box input { background: var(--dark-card-bg); }
+        .search-box input:focus { outline: 2px solid var(--porsche-red); outline-offset: 1px; }
+
+        .results-count { margin: 0 0 18px 0; font-size: 0.85rem; opacity: 0.65; }
+
+        .noticias-list { list-style: none; margin: 0; padding: 0; }
+        .noticias-list li {
+            background-color: var(--light-card-bg); border: 1px solid var(--hairline);
+            border-radius: 8px; padding: 18px 22px; margin-bottom: 14px;
+        }
+        .theme-dark .noticias-list li { background-color: var(--dark-card-bg); border-color: rgba(255,255,255,0.08); }
+        .noticias-list a.noticia-title { color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 1.05rem; }
+        .noticias-list a.noticia-title:hover { text-decoration: underline; }
+        .noticia-meta { display: block; font-size: 0.75rem; opacity: 0.6; margin: 4px 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px; }
+        .noticias-list p { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
+        .empty-state, .loading-state { text-align: center; opacity: 0.65; padding: 40px 0; }
+    </style>
+</head>
+<body class="theme-light">
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a class="page-back" href="/porsche/tendencias">&larr; Volver a tendencias</a>
+        <h1 class="page-title">Todas las noticias de Porsche</h1>
+        <p class="page-subtitle">Archivo completo de noticias recopiladas automáticamente. Escribe para filtrar por título, fuente o contenido.</p>
+
+        <div class="search-box">
+            <input type="search" id="noticias-search" placeholder="Buscar noticias... (ej. Cayenne, GT3, Volkswagen)" autocomplete="off">
+        </div>
+
+        <p class="results-count" id="results-count"></p>
+        <ul class="noticias-list" id="noticias-list">
+            <li class="loading-state">Cargando noticias...</li>
+        </ul>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const listEl = document.getElementById('noticias-list');
+        const countEl = document.getElementById('results-count');
+        const searchEl = document.getElementById('noticias-search');
+        let allNoticias = [];
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str == null ? '' : String(str);
+            return div.innerHTML;
+        }
+
+        function formatDateEs(iso) {
+            if (!iso) return '';
+            const d = new Date(iso);
+            if (isNaN(d.getTime())) return '';
+            return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' });
+        }
+
+        function render(items) {
+            if (!items.length) {
+                listEl.innerHTML = '<li class="empty-state">No hay noticias que coincidan con la búsqueda.</li>';
+                return;
+            }
+            listEl.innerHTML = items.map(n => {
+                const metaParts = [n.source, formatDateEs(n.published)].filter(Boolean);
+                const meta = metaParts.length
+                    ? `<span class="noticia-meta">${escapeHtml(metaParts.join(' · '))}</span>`
+                    : '';
+                return `
+                <li>
+                    <a class="noticia-title" href="${escapeHtml(n.url)}" target="_blank" rel="noopener">${escapeHtml(n.title)}</a>
+                    ${meta}
+                    <p>${escapeHtml(n.description)}</p>
+                </li>`;
+            }).join('');
+        }
+
+        function applyFilter() {
+            const q = searchEl.value.trim().toLowerCase();
+            const filtered = !q ? allNoticias : allNoticias.filter(n => {
+                const haystack = `${n.title || ''} ${n.description || ''} ${n.source || ''}`.toLowerCase();
+                return haystack.includes(q);
+            });
+            countEl.textContent = q
+                ? `${filtered.length} de ${allNoticias.length} noticias coinciden con "${searchEl.value.trim()}"`
+                : `${allNoticias.length} noticias en el archivo`;
+            render(filtered);
+        }
+
+        async function load() {
+            try {
+                const res = await fetch('noticias-historico.json', { cache: 'no-store' });
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const data = await res.json();
+                allNoticias = Array.isArray(data) ? data : [];
+            } catch (err) {
+                listEl.innerHTML = '<li class="empty-state">No se ha podido cargar el archivo de noticias.</li>';
+                countEl.textContent = '';
+                return;
+            }
+            applyFilter();
+        }
+
+        searchEl.addEventListener('input', applyFilter);
+        load();
+    });
+    </script>
+    <script>
+        (function () {
+            var toggle = document.getElementById('nav-toggle');
+            var nav = document.querySelector('.site-nav');
+            if (toggle && nav) {
+                toggle.addEventListener('click', function () {
+                    nav.classList.toggle('is-open');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

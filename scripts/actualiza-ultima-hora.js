@@ -1,15 +1,18 @@
 #!/usr/bin/env node
 // Actualiza el bloque "Noticias de última hora" de porsche/tendencias.html
-// a partir del feed Atom de Google Alerts. Pensado para correr sin
-// supervisión (GitHub Actions), cada 5 horas.
+// y el archivo histórico completo (porsche/noticias-historico.json) que
+// alimenta porsche/noticias.html, a partir del feed Atom de Google Alerts.
+// Pensado para correr sin supervisión (GitHub Actions), cada 5 horas.
 
 const fs = require('fs');
 const path = require('path');
 
 const FEED_URL = 'https://www.google.es/alerts/feeds/05845247816632936990/13600355039029436216';
 const TENDENCIAS_PATH = path.join(__dirname, '..', 'porsche', 'tendencias.html');
+const ARCHIVE_PATH = path.join(__dirname, '..', 'porsche', 'noticias-historico.json');
 const SITEMAP_PATH = path.join(__dirname, '..', 'sitemap.xml');
-const SITEMAP_LOC = 'https://mejorimposible.es/porsche/tendencias';
+const SITEMAP_LOC_TENDENCIAS = 'https://mejorimposible.es/porsche/tendencias';
+const SITEMAP_LOC_NOTICIAS = 'https://mejorimposible.es/porsche/noticias';
 const MAX_ITEMS = 10;
 
 function decodeEntities(str) {
@@ -109,6 +112,42 @@ function replaceBetweenMarkers(html, startMarker, endMarker, replacement, { inli
     return html.replace(re, wrapped);
 }
 
+function loadArchive() {
+    if (!fs.existsSync(ARCHIVE_PATH)) return [];
+    try {
+        const data = JSON.parse(fs.readFileSync(ARCHIVE_PATH, 'utf8'));
+        return Array.isArray(data) ? data : [];
+    } catch {
+        return [];
+    }
+}
+
+function toIsoOrNow(dateStr, nowIso) {
+    if (!dateStr) return nowIso;
+    const d = new Date(dateStr);
+    return Number.isNaN(d.getTime()) ? nowIso : d.toISOString();
+}
+
+function mergeIntoArchive(archive, entries, nowIso) {
+    const byUrl = new Map(archive.map(item => [item.url, item]));
+    let added = 0;
+    for (const e of entries) {
+        if (byUrl.has(e.url)) continue;
+        byUrl.set(e.url, {
+            title: e.title,
+            source: e.source,
+            description: e.description,
+            url: e.url,
+            published: toIsoOrNow(e.published, nowIso),
+            addedAt: nowIso
+        });
+        added++;
+    }
+    const merged = Array.from(byUrl.values());
+    merged.sort((a, b) => new Date(b.published) - new Date(a.published));
+    return { merged, added };
+}
+
 function updateSitemapLastmod(sitemap, loc, isoDate) {
     const locEscaped = loc.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const blockRe = new RegExp(`(<url>\\s*<loc>${locEscaped}</loc>)([\\s\\S]*?)(</url>)`);
@@ -126,21 +165,27 @@ async function main() {
     }
     const xml = await res.text();
 
-    const entries = parseEntries(xml)
-        .filter(mentionsPorsche)
-        .slice(0, MAX_ITEMS);
+    const entries = parseEntries(xml).filter(mentionsPorsche);
 
     if (entries.length === 0) {
         console.log('El feed no trajo noticias relevantes de Porsche esta vez; no se modifica la página.');
         return;
     }
 
+    const now = new Date();
+    const nowIso = now.toISOString();
+
+    const archive = loadArchive();
+    const { merged, added } = mergeIntoArchive(archive, entries, nowIso);
+    fs.writeFileSync(ARCHIVE_PATH, JSON.stringify(merged, null, 2) + '\n', 'utf8');
+
+    const latestItems = merged.slice(0, MAX_ITEMS);
+
     let html = fs.readFileSync(TENDENCIAS_PATH, 'utf8');
 
-    const itemsHtml = buildItemsHtml(entries);
+    const itemsHtml = buildItemsHtml(latestItems);
     html = replaceBetweenMarkers(html, '<!-- LATEST-NEWS-ITEMS:START -->', '<!-- LATEST-NEWS-ITEMS:END -->', itemsHtml);
 
-    const now = new Date();
     const updatedLabel = now.toLocaleString('es-ES', {
         timeZone: 'Europe/Madrid',
         day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit'
@@ -149,12 +194,15 @@ async function main() {
 
     fs.writeFileSync(TENDENCIAS_PATH, html, 'utf8');
 
-    const isoDate = now.toISOString().slice(0, 10);
+    const isoDate = nowIso.slice(0, 10);
     let sitemap = fs.readFileSync(SITEMAP_PATH, 'utf8');
-    sitemap = updateSitemapLastmod(sitemap, SITEMAP_LOC, isoDate);
+    sitemap = updateSitemapLastmod(sitemap, SITEMAP_LOC_TENDENCIAS, isoDate);
+    if (added > 0) {
+        sitemap = updateSitemapLastmod(sitemap, SITEMAP_LOC_NOTICIAS, isoDate);
+    }
     fs.writeFileSync(SITEMAP_PATH, sitemap, 'utf8');
 
-    console.log(`Actualizadas ${entries.length} noticias de última hora (${updatedLabel}).`);
+    console.log(`Archivo histórico: ${merged.length} noticias (${added} nuevas). Última hora actualizada con ${latestItems.length} noticias (${updatedLabel}).`);
 }
 
 main().catch(err => {

@@ -161,6 +161,13 @@
         .latest-news-list li a:hover { text-decoration: underline; }
         .latest-news-meta { display: block; font-size: 0.75rem; opacity: 0.6; margin: 4px 0 6px 0; text-transform: uppercase; letter-spacing: 0.5px; }
         .latest-news-list li p { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
+        .latest-news-more { text-align: center; margin-top: 20px; }
+        .latest-news-more a {
+            display: inline-block; border: 1px solid var(--porsche-red); color: var(--porsche-red);
+            padding: 10px 22px; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 0.85rem;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .latest-news-more a:hover { background-color: var(--porsche-red); color: #fff; }
     </style>
 </head>
 <body class="theme-light">
@@ -214,6 +221,9 @@
                 </li>
                 <!-- LATEST-NEWS-ITEMS:END -->
                 </ul>
+                <div class="latest-news-more">
+                    <a href="/porsche/noticias">Ver más noticias →</a>
+                </div>
             </section>
 
             <div class="filter-container">
