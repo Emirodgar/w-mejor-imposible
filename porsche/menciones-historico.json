@@ -78,5 +78,45 @@
     "source": "Auto Trader NZ",
     "url": "https://autotrader.co.nz/car-reviews/2014-2024-porsche-macan-review",
     "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-28",
+    "author": "El Desmarque",
+    "text": "Reivindica el 901/911 original de 1963 como el Porsche más atractivo de la historia de la marca: sin alerones ni tomas de aire excesivas, solo dos faros redondos, un techo curvo y una silueta que sesenta años después sigue definiendo al 911.",
+    "source": "El Desmarque",
+    "url": "https://www.eldesmarque.com/coches-y-motos/20260923/porsche-atractivo-historia-marca_18_020231208.html",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-28",
+    "author": "Martí Muñoz",
+    "text": "Prueba el GWM Ora 5, el primer modelo chino que Great Wall Motor vende en España desde 19.950 euros, y señala que su silueta recuerda a la de un Porsche. Destaca la calidad percibida para su precio, aunque el sistema multimedia propio de la marca todavía da algún quebradero de cabeza.",
+    "source": "SoyMotor.com",
+    "url": "https://soymotor.com/coches/gwm/primera-prueba-gwm-ora-5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-09-28",
+    "author": "Ethan Jupp / James Taylor",
+    "text": "evo prueba el 911 Carrera T de cambio manual y lo describe como \"el 911 más puro e interactivo a este lado de un GT3\": un motor con mucho carácter pese a ser un turbo de 389 CV, y una caja manual que transforma por completo cómo se conduce el coche.",
+    "source": "evo.co.uk",
+    "url": "https://www.evo.co.uk/porsche/911/209120/porsche-911-carrera-t-review-the-ultimate-all-round-sports-car",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-09-28",
+    "author": "James Wong",
+    "text": "Porsche Australia confirma que no somete sus modelos a las pruebas de choque de ANCAP pese a que sus coches sacan cinco estrellas en Euro NCAP, sin dar una razón clara. El propio ANCAP dice que le faltan los datos técnicos de Porsche para poder publicar una calificación local.",
+    "source": "CarExpert",
+    "url": "https://www.carexpert.com.au/car-news/porsche-rules-out-ancap-safety-ratings-for-its-models",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-09-28",
+    "author": "Michael Harley",
+    "text": "Prueba el nuevo 911 Targa 4 GTS, el primer Targa con tecnología híbrida T-Hybrid: 532 CV, menos de 3 segundos de 0 a 96 km/h y 203.300 dólares de precio base. Nota los 107 kilos extra frente al Carrera GTS en carretera de montaña, aunque sin que afecten demasiado al ritmo, y echa en falta algo de sonido de escape con el techo abierto.",
+    "source": "Forbes Argentina",
+    "url": "https://www.forbesargentina.com/lifestyle/porsche-convirtio-hibrido-uno-sus-deportivos-mas-emblematicos-n98867",
+    "sentiment": "positive"
   }
 ]

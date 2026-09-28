@@ -139,15 +139,15 @@
 
     <div class="dashboard-container">
         <!-- MENCIONES-META:START -->
-        <p class="page-meta">Datos de prensa especializada de los últimos 7 días · Sentimiento clasificado automáticamente · Actualizado el 21 de septiembre de 2026.</p>
+        <p class="page-meta">Datos de prensa especializada de los últimos 7 días · Sentimiento clasificado automáticamente · Actualizado el 28 de septiembre de 2026.</p>
         <!-- MENCIONES-META:END -->
         <main class="grid-layout">
             <section class="kpi-section">
                 <!-- MENCIONES-KPI:START -->
-                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">6</div><div class="trend trend-up">▲50%</div></div>
-                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">6</div><div class="trend trend-up">▲2</div></div>
-                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+33%</div><div class="trend trend-up">▲8 pts</div></div>
-                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">1</div><div class="trend trend-flat">→ Igual</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">5</div><div class="trend trend-down">▼17%</div></div>
+                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">5</div><div class="trend trend-down">▼1</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+60%</div><div class="trend trend-up">▲27 pts</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">0</div><div class="trend trend-up">▼1</div></div>
                 <!-- MENCIONES-KPI:END -->
             </section>
 
@@ -201,21 +201,20 @@
     // MENCIONES-DATA:START
     // Bloque generado por la skill actualizar-menciones-sociales. Se sustituye entero en cada ejecución.
     const socialData = {
-        sentiment: { positive: 3, negative: 1, neutral: 2 },
-        channels: { "Motor16": 1, "Autonoción": 1, "Tom's Guide": 1, "evo.co.uk": 1, "CarBuzz": 1, "Auto Trader NZ": 1 },
+        sentiment: { positive: 3, negative: 0, neutral: 2 },
+        channels: { "El Desmarque": 1, "SoyMotor.com": 1, "evo.co.uk": 1, "CarExpert": 1, "Forbes Argentina": 1 },
         mentions: [
-            { author: "Antonio Medina", text: "Compara el Alpine A390 GTS con el Porsche Macan GTS en pista: el Porsche gana por poco más de un segundo y sigue siendo la referencia en autonomía, recarga y calidad interior, pero el Alpine se va con los honores al ofrecer casi la misma experiencia por 50.700 euros menos.", source: "Motor16", url: "https://www.motor16.com/las-ultimas-noticias/alpine-a390-gts-porsche-macan-gts/", sentiment: "neutral" },
-            { author: "Chema Bonilla Díaz", text: "Analiza el Porsche 550 J de Hedley Studios y no queda convencido: solo 11 CV de serie (16 CV con el paquete RS), tope de 80 km/h y sin homologación para circular por carretera abierta. Su conclusión: \"yo me quedo con un Boxster de segunda mano, al menos de momento\".", source: "Autonoción", url: "https://www.autonocion.com/porsche-550-j-spyder/", sentiment: "negative" },
-            { author: "John Velasco", text: "Tras una semana con el Macan Turbo Electric ($149.610 en la unidad probada), lo describe como uno de los eléctricos más emocionantes que ha probado: 630 CV, 0-100 en 3,1 s y un manejo que no delata su carrocería de SUV. Su única pega seria es lo brusco del cambio de carril automático.", source: "Tom's Guide", url: "https://www.tomsguide.com/vehicle-tech/evs/2026-porsche-macan-turbo-electric-review", sentiment: "positive" },
-            { author: "Yousuf Ashraf", text: "Prueba el Gunther Werks Turbo, un restomod de 1,25 millones de libras sobre base de 911 993 con 840 CV: lo describe como \"tan salvaje como se ponen los 911 turbo\", con un pequeño reproche a su estrecha ventana de manejo en el límite.", source: "evo.co.uk", url: "https://www.evo.co.uk/porsche/911-turbo/209114/gunther-werks-turbo-review-part-porsche-911-turbo-part-hypercar", sentiment: "positive" },
-            { author: "Gerhard Horn", text: "Analiza cómo la depreciación ha llevado al Cayenne 2019 a precios de un Honda CR-V nuevo, con muy buena fiabilidad (79/100 en JD Power, solo 33 quejas ante la NHTSA), aunque avisa de mayores costes de mantenimiento, combustible y seguro frente al Honda.", source: "CarBuzz", url: "https://carbuzz.com/most-reliable-cayenne-price-new-honda-cr-v-comparison-2026/", sentiment: "neutral" },
-            { author: "Alex Schultz", text: "Guía de compra del Macan 2014-2024 con los fallos típicos a vigilar (caja de transferencia en los 2015-2018, muelles corroídos en importaciones del Reino Unido, acumulación de carbono en los V6). Su recomendación: un S de 2019-2021 es \"el punto dulce\" y sigue siendo \"uno de los SUV de segunda mano más gratificantes\".", source: "Auto Trader NZ", url: "https://autotrader.co.nz/car-reviews/2014-2024-porsche-macan-review", sentiment: "positive" }
+            { author: "El Desmarque", text: "Reivindica el 901/911 original de 1963 como el Porsche más atractivo de la historia de la marca: sin alerones ni tomas de aire excesivas, solo dos faros redondos, un techo curvo y una silueta que sesenta años después sigue definiendo al 911.", source: "El Desmarque", url: "https://www.eldesmarque.com/coches-y-motos/20260923/porsche-atractivo-historia-marca_18_020231208.html", sentiment: "positive" },
+            { author: "Martí Muñoz", text: "Prueba el GWM Ora 5, el primer modelo chino que Great Wall Motor vende en España desde 19.950 euros, y señala que su silueta recuerda a la de un Porsche. Destaca la calidad percibida para su precio, aunque el sistema multimedia propio de la marca todavía da algún quebradero de cabeza.", source: "SoyMotor.com", url: "https://soymotor.com/coches/gwm/primera-prueba-gwm-ora-5", sentiment: "neutral" },
+            { author: "Ethan Jupp / James Taylor", text: "evo prueba el 911 Carrera T de cambio manual y lo describe como \"el 911 más puro e interactivo a este lado de un GT3\": un motor con mucho carácter pese a ser un turbo de 389 CV, y una caja manual que transforma por completo cómo se conduce el coche.", source: "evo.co.uk", url: "https://www.evo.co.uk/porsche/911/209120/porsche-911-carrera-t-review-the-ultimate-all-round-sports-car", sentiment: "positive" },
+            { author: "James Wong", text: "Porsche Australia confirma que no somete sus modelos a las pruebas de choque de ANCAP pese a que sus coches sacan cinco estrellas en Euro NCAP, sin dar una razón clara. El propio ANCAP dice que le faltan los datos técnicos de Porsche para poder publicar una calificación local.", source: "CarExpert", url: "https://www.carexpert.com.au/car-news/porsche-rules-out-ancap-safety-ratings-for-its-models", sentiment: "neutral" },
+            { author: "Michael Harley", text: "Prueba el nuevo 911 Targa 4 GTS, el primer Targa con tecnología híbrida T-Hybrid: 532 CV, menos de 3 segundos de 0 a 96 km/h y 203.300 dólares de precio base. Nota los 107 kilos extra frente al Carrera GTS en carretera de montaña, aunque sin que afecten demasiado al ritmo, y echa en falta algo de sonido de escape con el techo abierto.", source: "Forbes Argentina", url: "https://www.forbesargentina.com/lifestyle/porsche-convirtio-hibrido-uno-sus-deportivos-mas-emblematicos-n98867", sentiment: "positive" }
         ],
         wordCloud: [
-            {key: "Macan", value: 100}, {key: "GTS", value: 60}, {key: "fiabilidad", value: 58},
-            {key: "eléctrico", value: 55}, {key: "911 Turbo", value: 50}, {key: "restomod", value: 48},
-            {key: "precio", value: 45}, {key: "550 Spyder", value: 42}, {key: "Cayenne", value: 38},
-            {key: "comparativa", value: 38}, {key: "segunda mano", value: 35}, {key: "potencia", value: 30}
+            {key: "911", value: 100}, {key: "Targa", value: 65}, {key: "manual", value: 60},
+            {key: "híbrido", value: 55}, {key: "diseño", value: 55}, {key: "1963", value: 45},
+            {key: "GTS", value: 45}, {key: "Carrera T", value: 40}, {key: "seguridad", value: 40},
+            {key: "T-Hybrid", value: 38}, {key: "ANCAP", value: 35}, {key: "imitación", value: 32}
         ]
     };
     // MENCIONES-DATA:END
