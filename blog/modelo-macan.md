@@ -1,19 +1,21 @@
 ---
-title: Porsche Macan
-description: Guía de compra del Porsche Macan. Analizamos fiabilidad, costes reales, problemas y qué versión comprar. Todo lo que necesitas saber antes de decidir.
+title: "Porsche Macan: guía de compra, versiones, precio y fiabilidad (2026)"
+description: Guía del Porsche Macan en España: versiones (Macan, 4, 4S, GTS, Turbo, S), precio, fiabilidad, problemas conocidos, costes de mantenimiento y qué año o versión comprar.
 image: 
 author: Emirodgar
 lang: es_ES
 sitemap: 1
 feed: 1
-date: 2025-10-02
+date: 2026-09-29
 folder: Modelos
 permalink: porsche/porsche-macan
 ---
 
 # Porsche Macan: guía completa de compra
 
-El **Porsche Macan** se ha consolidado como uno de los SUVs deportivos más deseados del mercado premium, combinando la deportividad característica de Porsche con la practicidad de un vehículo familiar. Esta guía completa te proporcionará toda la información esencial para tomar una decisión informada.
+El **Porsche Macan** se ha consolidado como uno de los SUVs deportivos más deseados del mercado premium, combinando la deportividad característica de Porsche con la practicidad de un vehículo familiar. Esta guía reúne lo esencial para decidir: **versiones, precio, fiabilidad, costes y qué Macan comprar** (nuevo o de segunda mano).
+
+**En resumen:** el Macan eléctrico actual parte de unos 82.000-85.000 € en España y sube hasta unos 117.000 € en la versión Turbo; el Macan de combustión (2014-2024) se encuentra de segunda mano y es más fiable a partir de 2017-2019. Más abajo tienes las versiones, el precio, la fiabilidad y las recomendaciones de compra.
 
 ## Historia y evolución
 
@@ -34,6 +36,40 @@ El Macan está construido sobre la plataforma MLB del Grupo Volkswagen, comparti
 - **95B.3 (2022-2024)**: Versión más avanzada con interiores actualizados y controles táctiles hápticos
 
 **Segunda generación (2024-presente)**: Completamente eléctrica, basada en la plataforma PPE desarrollada conjuntamente con Audi.
+
+## Versiones del Porsche Macan
+
+El nombre de cada versión cambió con la llegada del Macan eléctrico, y eso genera confusión: **no existe un "Macan 5"**. Lo que se busca con ese nombre suele ser el Macan actual (segunda generación, eléctrica) o el **Macan 4**, la versión eléctrica con tracción integral.
+
+### Macan eléctrico (2024-actualidad)
+
+| Versión | Potencia | Autonomía WLTP | PVP orientativo en España |
+| :-- | :-- | :-- | :-- |
+| Macan (tracción trasera) | 359 CV | hasta 641 km | desde unos 82.300 € |
+| Macan 4 | 408 CV | hasta 613 km | desde unos 85.400 € |
+| Macan 4S | 516 CV | hasta 608 km | desde unos 92.500 € |
+| Macan GTS | 571 CV | — | desde unos 106.500 € |
+| Macan Turbo | 640 CV | hasta 591 km | desde unos 117.000 € |
+
+Todas comparten la plataforma PPE de 800 voltios, batería de 100 kWh brutos (95 kWh útiles) y carga rápida de hasta 270 kW. Las cifras son de tarifa y varían un poco según la fuente y las opciones: confirma siempre en el configurador o en un [Centro Porsche](/porsche/concesionarios).
+
+### Macan de combustión (2014-2024)
+
+- **Macan / Macan T**: la versión de acceso, con motor de cuatro cilindros. La T añade un enfoque más deportivo y equipamiento.
+- **Macan S**: seis cilindros y el mejor equilibrio entre rendimiento y precio de ocasión.
+- **Macan GTS**: 440 CV, la más deportiva de la generación de combustión.
+
+Para ver cuál encaja contigo, compara sus prestaciones en el [comparador de modelos](/porsche/comparador) o en la [ficha del Macan](/porsche/modelos/macan).
+
+## Precio del Porsche Macan en España
+
+El precio depende sobre todo de si buscas un Macan **nuevo eléctrico** o uno **de combustión de segunda mano**:
+
+- **Nuevo (eléctrico)**: entre unos 82.000 € y 117.000 € de tarifa, antes de opciones. Nuestra referencia del [PVP actualizado](/porsche/precios) del Macan eléctrico es de 85.300 €.
+- **Evolución del precio de lanzamiento**: 63.100 € (base, 2016), 66.500 € (restyling, 2019), 79.600 € (Macan T, 2022) y 85.300 € (eléctrico, 2024).
+- **Segunda mano**: el Macan de primera generación ronda los 32.000 € (2014-2018), unos 42.000 € (restyling 2019-2021) y unos 68.000 € (Macan T, 2022-2024). Consulta la [evolución de precios y depreciación](/porsche/precio-segunda-mano).
+
+Para calcular la cuota mensual, usa la [calculadora de financiación](/porsche/financiacion); para el coste total a cinco años, el [coste real de propiedad](/porsche/coste-real).
 
 ## Cifras de ventas y popularidad
 
@@ -200,6 +236,8 @@ Porsche ofrece dos planes de Protección de Servicio Vehicular:
 
 ## Recomendaciones de compra
 
+**¿Macan de segunda mano?** Estos son los puntos clave; abajo tienes el detalle por año, variante y comprobaciones.
+
 ### Mejores años para comprar
 
 - **Óptimo**: Modelos 2019 o más recientes para máxima fiabilidad
@@ -210,7 +248,7 @@ Porsche ofrece dos planes de Protección de Servicio Vehicular:
 ### Variantes recomendadas
 
 - **Macan S**: Mejor equilibrio entre rendimiento y precio
-- **Macan GTS**: Para máximo rendimiento (descontinuado en nueva generación)
+- **Macan GTS**: Para máximo rendimiento (440 CV en combustión; existe también una versión GTS eléctrica de 571 CV)
 - **Evitar**: Macan base si buscas experiencia deportiva completa
 
 
@@ -230,8 +268,8 @@ Si buscas uno de segunda mano, compara la [evolución de precios y depreciación
 
 La nueva generación completamente eléctrica representa un cambio radical: en España, el Macan Eléctrico parte de unos [85.300 €](/porsche/precios) de PVP. La versión eléctrica ofrece:
 
-- **Potencia superior**: Hasta 630 HP en versión Turbo
-- **Autonomía**: Hasta 654 km (406 millas)
+- **Potencia superior**: Hasta 640 CV en versión Turbo
+- **Autonomía**: Hasta 641 km WLTP (versión de tracción trasera)
 - **Carga rápida**: 10-80% en 21 minutos
 
 
@@ -240,3 +278,39 @@ La nueva generación completamente eléctrica representa un cambio radical: en E
 El Macan eléctrico representa una inversión significativamente mayor que los modelos de combustión, pero ofrece tecnología de vanguardia y rendimiento superior. Para compradores que buscan un SUV deportivo de lujo con tecnología de última generación, el nuevo Macan eléctrico es una opción excepcional, aunque a un precio premium considerable.
 
 El Porsche Macan sigue siendo una elección sobresaliente para quienes priorizan la experiencia de conducción deportiva en un SUV compacto premium, siempre que estén dispuestos a pagar el precio premium tanto en la compra inicial como en el mantenimiento a largo plazo.
+
+## Preguntas frecuentes sobre el Porsche Macan
+
+### ¿Cuánto cuesta un Porsche Macan?
+
+El Macan eléctrico nuevo parte de unos 82.000-85.000 € en España y llega a unos 117.000 € en la versión Turbo. De segunda mano, un Macan de combustión cuesta desde unos 32.000 € (2014-2018).
+
+### ¿Qué versiones tiene el Porsche Macan?
+
+El Macan eléctrico se ofrece en versiones Macan, 4, 4S, GTS y Turbo. El Macan de combustión anterior tuvo las versiones base, T, S y GTS.
+
+### ¿Existe el Porsche Macan 5?
+
+No. Porsche no vende un modelo llamado Macan 5. Quien lo busca suele referirse al Macan eléctrico actual o al Macan 4.
+
+### ¿Es fiable el Porsche Macan?
+
+Sí, en general. J.D. Power 2025 le da 84/100 en calidad y fiabilidad. Los primeros años (2015-2016) dieron más problemas en la caja de transferencia y el sistema de infoentretenimiento.
+
+### ¿Cuánto cuesta mantener un Porsche Macan?
+
+Entre 1.200 € y 2.000 € al año en mantenimiento de rutina, según el uso y la versión.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Cuánto cuesta un Porsche Macan?", "acceptedAnswer": {"@type": "Answer", "text": "El Macan eléctrico nuevo parte de unos 82.000-85.000 € en España y llega a unos 117.000 € en la versión Turbo. De segunda mano, un Macan de combustión cuesta desde unos 32.000 € (2014-2018)."}},
+    {"@type": "Question", "name": "¿Qué versiones tiene el Porsche Macan?", "acceptedAnswer": {"@type": "Answer", "text": "El Macan eléctrico se ofrece en versiones Macan, 4, 4S, GTS y Turbo. El Macan de combustión anterior tuvo las versiones base, T, S y GTS."}},
+    {"@type": "Question", "name": "¿Existe el Porsche Macan 5?", "acceptedAnswer": {"@type": "Answer", "text": "No. Porsche no vende un modelo llamado Macan 5. Quien lo busca suele referirse al Macan eléctrico actual o al Macan 4."}},
+    {"@type": "Question", "name": "¿Es fiable el Porsche Macan?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, en general. J.D. Power 2025 le da 84/100 en calidad y fiabilidad. Los primeros años (2015-2016) dieron más problemas en la caja de transferencia y el sistema de infoentretenimiento."}},
+    {"@type": "Question", "name": "¿Cuánto cuesta mantener un Porsche Macan?", "acceptedAnswer": {"@type": "Answer", "text": "Entre 1.200 € y 2.000 € al año en mantenimiento de rutina, según el uso y la versión."}}
+  ]
+}
+</script>
