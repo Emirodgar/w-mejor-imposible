@@ -160,15 +160,25 @@ function updateSitemapLastmod(sitemap, loc, isoDate) {
 
 async function main() {
     const res = await fetch(FEED_URL);
+    const contentType = res.headers.get('content-type') || '';
+    console.log(`Feed: HTTP ${res.status}, content-type "${contentType}", URL final ${res.url}`);
     if (!res.ok) {
         throw new Error(`No se pudo descargar el feed (HTTP ${res.status})`);
     }
     const xml = await res.text();
 
-    const entries = parseEntries(xml).filter(mentionsPorsche);
+    const allEntries = parseEntries(xml);
+    const entries = allEntries.filter(mentionsPorsche);
+    const newest = allEntries.map(e => e.published).filter(Boolean).sort().pop() || 'n/d';
+    console.log(`Feed: ${xml.length} bytes, ${allEntries.length} entradas, ${entries.length} mencionan Porsche, más reciente: ${newest}`);
+
+    if (allEntries.length === 0) {
+        console.error(`El feed no contiene ninguna <entry> (¿página de consentimiento o feed vacío?). Inicio de la respuesta: ${xml.slice(0, 300).replace(/\s+/g, ' ')}`);
+        throw new Error('Feed sin entradas: se aborta para que el fallo sea visible.');
+    }
 
     if (entries.length === 0) {
-        console.log('El feed no trajo noticias relevantes de Porsche esta vez; no se modifica la página.');
+        console.log('El feed trajo entradas pero ninguna menciona Porsche; no se modifica la página.');
         return;
     }
 
