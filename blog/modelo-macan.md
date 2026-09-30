@@ -259,7 +259,7 @@ Porsche ofrece dos planes de Protección de Servicio Vehicular:
 - **Verificar recalls**: Especialmente caja de transferencia en modelos tempranos
 - **Considerar garantía extendida**: Para protección contra reparaciones costosas
 
-Si buscas uno de segunda mano, compara la [evolución de precios y depreciación del Macan](/porsche/precio-segunda-mano) o utiliza el [comparador de modelos](/porsche/comparador) para verlo junto a otras opciones de la gama.
+Si buscas uno de segunda mano, lee la [guía del Macan de segunda mano](/porsche/porsche-macan-segunda-mano), compara la [evolución de precios y depreciación del Macan](/porsche/precio-segunda-mano) o utiliza el [comparador de modelos](/porsche/comparador) para verlo junto a otras opciones de la gama.
 
 
 ## Perspectiva futura
