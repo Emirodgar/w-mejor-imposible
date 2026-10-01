@@ -26,5 +26,12 @@
     "distinctSources": 5,
     "sentimentNet": 60,
     "negativeCount": 0
+  },
+  {
+    "date": "2026-10-01",
+    "totalMentions": 9,
+    "distinctSources": 9,
+    "sentimentNet": 22,
+    "negativeCount": 0
   }
 ]

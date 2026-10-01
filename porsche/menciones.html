@@ -139,15 +139,15 @@
 
     <div class="dashboard-container">
         <!-- MENCIONES-META:START -->
-        <p class="page-meta">Datos de prensa especializada de los últimos 7 días · Sentimiento clasificado automáticamente · Actualizado el 28 de septiembre de 2026.</p>
+        <p class="page-meta">Datos de prensa especializada de los últimos 7 días · Sentimiento clasificado automáticamente · Actualizado el 1 de octubre de 2026.</p>
         <!-- MENCIONES-META:END -->
         <main class="grid-layout">
             <section class="kpi-section">
                 <!-- MENCIONES-KPI:START -->
-                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">5</div><div class="trend trend-down">▼17%</div></div>
-                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">5</div><div class="trend trend-down">▼1</div></div>
-                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+60%</div><div class="trend trend-up">▲27 pts</div></div>
-                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">0</div><div class="trend trend-up">▼1</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones analizadas (7 días)</div><div class="value">9</div><div class="trend trend-up">▲80%</div></div>
+                <div class="card kpi-card"><div class="card-title">Fuentes distintas</div><div class="value">9</div><div class="trend trend-up">▲4</div></div>
+                <div class="card kpi-card"><div class="card-title">Sentimiento neto</div><div class="value">+22%</div><div class="trend trend-down">▼38 pts</div></div>
+                <div class="card kpi-card"><div class="card-title">Menciones negativas a vigilar</div><div class="value">0</div><div class="trend trend-flat">→ Igual</div></div>
                 <!-- MENCIONES-KPI:END -->
             </section>
 
@@ -201,20 +201,20 @@
     // MENCIONES-DATA:START
     // Bloque generado por la skill actualizar-menciones-sociales. Se sustituye entero en cada ejecución.
     const socialData = {
-        sentiment: { positive: 3, negative: 0, neutral: 2 },
-        channels: { "El Desmarque": 1, "SoyMotor.com": 1, "evo.co.uk": 1, "CarExpert": 1, "Forbes Argentina": 1 },
+        sentiment: { positive: 2, negative: 0, neutral: 7 },
+        channels: { "Car and Driver": 1, "Motor1.com": 1, "driving.ca": 1, "Arabian Business": 1, "Híbridos y Eléctricos": 1, "autosphere.ca": 1, "Carsales": 1, "My NRMA": 1, "The Car Connection": 1 },
         mentions: [
-            { author: "El Desmarque", text: "Reivindica el 901/911 original de 1963 como el Porsche más atractivo de la historia de la marca: sin alerones ni tomas de aire excesivas, solo dos faros redondos, un techo curvo y una silueta que sesenta años después sigue definiendo al 911.", source: "El Desmarque", url: "https://www.eldesmarque.com/coches-y-motos/20260923/porsche-atractivo-historia-marca_18_020231208.html", sentiment: "positive" },
-            { author: "Martí Muñoz", text: "Prueba el GWM Ora 5, el primer modelo chino que Great Wall Motor vende en España desde 19.950 euros, y señala que su silueta recuerda a la de un Porsche. Destaca la calidad percibida para su precio, aunque el sistema multimedia propio de la marca todavía da algún quebradero de cabeza.", source: "SoyMotor.com", url: "https://soymotor.com/coches/gwm/primera-prueba-gwm-ora-5", sentiment: "neutral" },
-            { author: "Ethan Jupp / James Taylor", text: "evo prueba el 911 Carrera T de cambio manual y lo describe como \"el 911 más puro e interactivo a este lado de un GT3\": un motor con mucho carácter pese a ser un turbo de 389 CV, y una caja manual que transforma por completo cómo se conduce el coche.", source: "evo.co.uk", url: "https://www.evo.co.uk/porsche/911/209120/porsche-911-carrera-t-review-the-ultimate-all-round-sports-car", sentiment: "positive" },
-            { author: "James Wong", text: "Porsche Australia confirma que no somete sus modelos a las pruebas de choque de ANCAP pese a que sus coches sacan cinco estrellas en Euro NCAP, sin dar una razón clara. El propio ANCAP dice que le faltan los datos técnicos de Porsche para poder publicar una calificación local.", source: "CarExpert", url: "https://www.carexpert.com.au/car-news/porsche-rules-out-ancap-safety-ratings-for-its-models", sentiment: "neutral" },
-            { author: "Michael Harley", text: "Prueba el nuevo 911 Targa 4 GTS, el primer Targa con tecnología híbrida T-Hybrid: 532 CV, menos de 3 segundos de 0 a 96 km/h y 203.300 dólares de precio base. Nota los 107 kilos extra frente al Carrera GTS en carretera de montaña, aunque sin que afecten demasiado al ritmo, y echa en falta algo de sonido de escape con el techo abierto.", source: "Forbes Argentina", url: "https://www.forbesargentina.com/lifestyle/porsche-convirtio-hibrido-uno-sus-deportivos-mas-emblematicos-n98867", sentiment: "positive" }
+            { author: "Car and Driver", text: "Enfrenta el Porsche 911 Turbo S con el Honda Prelude en una comparativa planteada como un «David contra Goliat».", source: "Car and Driver", url: "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVGFKMEt0MGd3TVhVbWpUZVVaSVJIOEFqMHVrV2M3dGlQS2J3c0V3cEo0RkFlNm9NdU9SYW9OWUx0eWFTWlFwd2VuUFQ4aFpCMjUteG56UU0xbTRJMjA1M0FZQ05TVDhGTnQxQUtRYmk5aUVZWGhxMEtYWWxwbHY0eWtoSlhIMmxoaVVnUXpDZkdXRkZSWVJ3TTBoZHJvZU4zZ1dFeEtR?oc=5", sentiment: "neutral" },
+            { author: "Motor1.com", text: "Lleva el Taycan Manthey a Nürburgring y lo describe como «un animal diferente» respecto al Taycan convencional.", source: "Motor1.com", url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNlRtRjdid3FrRHVsQktkWjBaemtJUmNOT21BODNyTjZrek0yM1hFNTIwTmF6am1oVzZvQU1WTUN0akUyZldTWGttR1U1UVFFVzNreXoyZEE0WHBTLXZQVlpFNmU2T3hFb0RnSFFwc0EzanZvRWhYUW9ud3hsVll2LTQwQ3lQUTZqN1dV?oc=5", sentiment: "positive" },
+            { author: "driving.ca", text: "Publica su análisis del Cayenne Turbo Electric 2026 dentro de su sección de pruebas de eléctricos de lujo.", source: "driving.ca", url: "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeWxfdzVic2FPbHh0WUFockl2Y0czcFFiS240MjY4aV9Uemd5NmRvUmsxRVgzcWU0TDl6OVZnbWEwOXNpaE1TNlVkQlFBNDJwdmVNRkk1bXota0FBeE5NZ2s0TDJ6WHRrUzZWWnVSTk9WeUR2RThjZjRiYmNnWi1qQ1VqRjFlQQ?oc=5", sentiment: "neutral" },
+            { author: "Arabian Business", text: "Su prueba del 911 Carrera GTS lo presenta como «el deportivo que conduciría todos los días».", source: "Arabian Business", url: "https://news.google.com/rss/articles/CBMidkFVX3lxTFBRNURKb3hSbENKam1wTkpWWlJhYmRSazBjVFZ6dGs2Y0dfUl9hcDAxSE1oZG1wYi1pdFdpVFZpbVVIN1kxVmh5bWJ0aHRKTXdUa0ljbHBpQkNudG9aMThLbHlLMFVkd3UzYVdsSDZJWEVjV0lubnc?oc=5", sentiment: "positive" },
+            { author: "Híbridos y Eléctricos", text: "Recoge unas declaraciones del CEO de Porsche que frenan el ritmo de los eléctricos: todavía hay mucho interés por la gasolina.", source: "Híbridos y Eléctricos", url: "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYXdHeEhpUUx5SkZSMllscm9ramluT3lnWnQyWmgza0xKcE1sOWRJU2pqZW9GNTlOWDhXdkVIZ1JicG0xN0ExUlBWdDJ2dEdIMExyQy1oQmptZ180UWRjUVRONkJ5LUh1UWctVHNkMXFTRVF5Q1AxZUJLNE5VUEY2S2g2QldsQW9wUGp2ZGttVnNPbmt0RThVUy1Ia1M0S3BpbGhhV3c5aXpzTjdNclMtX3RKc0tFLVdL?oc=5", sentiment: "neutral" },
+            { author: "autosphere.ca", text: "Informa de que Porsche apuesta por mantener el 911 con cambio manual.", source: "autosphere.ca", url: "https://news.google.com/rss/articles/CBMifEFVX3lxTFBJaWU2S0h5QjlWa292Mkw2dU15cnhRNGE1MXNYbUNoRmxuWXlMRUM5dG1uaHpJeHFYRE4ycktGakpXeWYxVFJLR3M1Zlh1eEtiOTExUURoSFVfbFpIRUdHUWZuWmRNeTdIc1VaN0VqNnJtSHp2Q1lQNUlJYVY?oc=5", sentiment: "neutral" },
+            { author: "Carsales", text: "Publica la prueba del Porsche Macan GTS 2026.", source: "Carsales", url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN1hyd3U4UWJPdTNfeEQzT0RjZE56LW9vRjkzUEFscDktUTRYaFZsRi02MjhmZzJVZUVmUjhlVmRRNHZfNFN3cHMxYXVGXzF6bmdTRW5PVWVydlRkN0ZmY3FWbEZtblU1Q1RES2g4UXBCZi1JWUcxSndXQjQ2Wk53T3ZSWUhsVGhWVHI4?oc=5", sentiment: "neutral" },
+            { author: "My NRMA", text: "Publica su prueba del Cayenne Electric 2026.", source: "My NRMA", url: "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDNGX2FyTmpYdFNSMHlLTEZDdUZ6UHBkNWtZbVA3MTdFWllBcWQ1UkNZLVE1R0ZxbjBtb0VTS3VQRFhLZFBVaUZwUlBsYTlrRk1CeW0xNXYxY3Fhc2VQMnBwMi1pMU0wSHBiTTRwc1pKYjdYS2dhVVRaM1ZSbmxCVUxaM2lmSHQzRmhlSG93?oc=5", sentiment: "neutral" }
         ],
         wordCloud: [
-            {key: "911", value: 100}, {key: "Targa", value: 65}, {key: "manual", value: 60},
-            {key: "híbrido", value: 55}, {key: "diseño", value: 55}, {key: "1963", value: 45},
-            {key: "GTS", value: 45}, {key: "Carrera T", value: 40}, {key: "seguridad", value: 40},
-            {key: "T-Hybrid", value: 38}, {key: "ANCAP", value: 35}, {key: "imitación", value: 32}
+            {key: "911", value: 100}, {key: "Cayenne eléctrico", value: 80}, {key: "Macan", value: 65}, {key: "Taycan Manthey", value: 60}, {key: "Nürburgring", value: 50}, {key: "GTS", value: 55}, {key: "manual", value: 50}, {key: "eléctricos", value: 48}, {key: "gasolina", value: 42}, {key: "comparativa", value: 38}, {key: "Turbo S", value: 36}, {key: "prueba", value: 34}
         ]
     };
     // MENCIONES-DATA:END

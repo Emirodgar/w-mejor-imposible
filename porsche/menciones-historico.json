@@ -118,5 +118,77 @@
     "source": "Forbes Argentina",
     "url": "https://www.forbesargentina.com/lifestyle/porsche-convirtio-hibrido-uno-sus-deportivos-mas-emblematicos-n98867",
     "sentiment": "positive"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "Car and Driver",
+    "text": "Enfrenta el Porsche 911 Turbo S con el Honda Prelude en una comparativa planteada como un «David contra Goliat».",
+    "source": "Car and Driver",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVGFKMEt0MGd3TVhVbWpUZVVaSVJIOEFqMHVrV2M3dGlQS2J3c0V3cEo0RkFlNm9NdU9SYW9OWUx0eWFTWlFwd2VuUFQ4aFpCMjUteG56UU0xbTRJMjA1M0FZQ05TVDhGTnQxQUtRYmk5aUVZWGhxMEtYWWxwbHY0eWtoSlhIMmxoaVVnUXpDZkdXRkZSWVJ3TTBoZHJvZU4zZ1dFeEtR?oc=5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "Motor1.com",
+    "text": "Lleva el Taycan Manthey a Nürburgring y lo describe como «un animal diferente» respecto al Taycan convencional.",
+    "source": "Motor1.com",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNlRtRjdid3FrRHVsQktkWjBaemtJUmNOT21BODNyTjZrek0yM1hFNTIwTmF6am1oVzZvQU1WTUN0akUyZldTWGttR1U1UVFFVzNreXoyZEE0WHBTLXZQVlpFNmU2T3hFb0RnSFFwc0EzanZvRWhYUW9ud3hsVll2LTQwQ3lQUTZqN1dV?oc=5",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "driving.ca",
+    "text": "Publica su análisis del Cayenne Turbo Electric 2026 dentro de su sección de pruebas de eléctricos de lujo.",
+    "source": "driving.ca",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeWxfdzVic2FPbHh0WUFockl2Y0czcFFiS240MjY4aV9Uemd5NmRvUmsxRVgzcWU0TDl6OVZnbWEwOXNpaE1TNlVkQlFBNDJwdmVNRkk1bXota0FBeE5NZ2s0TDJ6WHRrUzZWWnVSTk9WeUR2RThjZjRiYmNnWi1qQ1VqRjFlQQ?oc=5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "Arabian Business",
+    "text": "Su prueba del 911 Carrera GTS lo presenta como «el deportivo que conduciría todos los días».",
+    "source": "Arabian Business",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBRNURKb3hSbENKam1wTkpWWlJhYmRSazBjVFZ6dGs2Y0dfUl9hcDAxSE1oZG1wYi1pdFdpVFZpbVVIN1kxVmh5bWJ0aHRKTXdUa0ljbHBpQkNudG9aMThLbHlLMFVkd3UzYVdsSDZJWEVjV0lubnc?oc=5",
+    "sentiment": "positive"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "Híbridos y Eléctricos",
+    "text": "Recoge unas declaraciones del CEO de Porsche que frenan el ritmo de los eléctricos: todavía hay mucho interés por la gasolina.",
+    "source": "Híbridos y Eléctricos",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQYXdHeEhpUUx5SkZSMllscm9ramluT3lnWnQyWmgza0xKcE1sOWRJU2pqZW9GNTlOWDhXdkVIZ1JicG0xN0ExUlBWdDJ2dEdIMExyQy1oQmptZ180UWRjUVRONkJ5LUh1UWctVHNkMXFTRVF5Q1AxZUJLNE5VUEY2S2g2QldsQW9wUGp2ZGttVnNPbmt0RThVUy1Ia1M0S3BpbGhhV3c5aXpzTjdNclMtX3RKc0tFLVdL?oc=5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "autosphere.ca",
+    "text": "Informa de que Porsche apuesta por mantener el 911 con cambio manual.",
+    "source": "autosphere.ca",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBJaWU2S0h5QjlWa292Mkw2dU15cnhRNGE1MXNYbUNoRmxuWXlMRUM5dG1uaHpJeHFYRE4ycktGakpXeWYxVFJLR3M1Zlh1eEtiOTExUURoSFVfbFpIRUdHUWZuWmRNeTdIc1VaN0VqNnJtSHp2Q1lQNUlJYVY?oc=5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "Carsales",
+    "text": "Publica la prueba del Porsche Macan GTS 2026.",
+    "source": "Carsales",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN1hyd3U4UWJPdTNfeEQzT0RjZE56LW9vRjkzUEFscDktUTRYaFZsRi02MjhmZzJVZUVmUjhlVmRRNHZfNFN3cHMxYXVGXzF6bmdTRW5PVWVydlRkN0ZmY3FWbEZtblU1Q1RES2g4UXBCZi1JWUcxSndXQjQ2Wk53T3ZSWUhsVGhWVHI4?oc=5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "My NRMA",
+    "text": "Publica su prueba del Cayenne Electric 2026.",
+    "source": "My NRMA",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDNGX2FyTmpYdFNSMHlLTEZDdUZ6UHBkNWtZbVA3MTdFWllBcWQ1UkNZLVE1R0ZxbjBtb0VTS3VQRFhLZFBVaUZwUlBsYTlrRk1CeW0xNXYxY3Fhc2VQMnBwMi1pMU0wSHBiTTRwc1pKYjdYS2dhVVRaM1ZSbmxCVUxaM2lmSHQzRmhlSG93?oc=5",
+    "sentiment": "neutral"
+  },
+  {
+    "date": "2026-10-01",
+    "author": "The Car Connection",
+    "text": "Actualiza su ficha de análisis del Macan 2026 con precios, especificaciones y fotos.",
+    "source": "The Car Connection",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40OTF2UDYwNG5BS0F2NHFTRnlFTVp0T3VMakZMUGNaR1NKTlFiZ0MzOGNpODUwLTBSbzRDVmxRU1l1akNSYlZlYlhZd3FKQk1INXN5TzUzZnZVZmtQODN0Uw?oc=5",
+    "sentiment": "neutral"
   }
 ]
