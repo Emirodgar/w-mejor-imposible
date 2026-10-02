@@ -541,7 +541,10 @@
                     'Mediana de los precios de anuncio de coches usados, no de venta. ' + (j.fuente ? 'Fuente: ' + j.fuente + '. ' : '') +
                     (j.actualizado ? 'Última recogida: ' + j.actualizado + '.' : '');
                 document.getElementById('anuncios-section').hidden = false;
+                var pedida = new URLSearchParams(location.search).get('serie');
+                if (pedida && ids.indexOf(pedida) !== -1) sel.value = pedida;
                 pinta();
+                if (location.hash === '#anuncios-section') document.getElementById('anuncios-section').scrollIntoView();
             })
             .catch(function () { /* sin datos: la sección sigue oculta */ });
     })();
