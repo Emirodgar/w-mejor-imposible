@@ -73,6 +73,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mejorimposible.es/porsche/panamera-segunda-mano</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mejorimposible.es/porsche/comparativa-visual</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
