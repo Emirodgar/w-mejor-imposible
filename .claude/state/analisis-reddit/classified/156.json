@@ -1,0 +1,8 @@
+[
+  {"id":"p19zgec","models":["911-991"],"sentiment":"pos","basis":"none","aspects":[{"a":"valor","p":"pos"}],"resumen_es":"Aconseja no cambiar un 911 991.1 GTS por un Cayenne: el 911 es especial y el Cayenne se ve en cada esquina."},
+  {"id":"p1a3cmj","models":["cayenne-9pa"],"sentiment":"pos","basis":"none","aspects":[{"a":"diseno","p":"pos"}],"resumen_es":"Le encanta el Cayenne de primera generación, que considera el segundo coche más bonito después del 911, aunque admite que un 911 no tiene rival."},
+  {"id":"p1a4lzw","models":["cayenne-po536"],"sentiment":"pos","basis":"none","aspects":[{"a":"conduccion","p":"pos"},{"a":"diseno","p":"pos"}],"resumen_es":"Defiende que el Cayenne GTS Coupé no es tan común y es de los coches familiares más bonitos y rápidos."},
+  {"id":"p1a02kl","models":["cayenne-po536"],"sentiment":"neu","basis":"none","aspects":[{"a":"conduccion","p":"pos"}],"resumen_es":"El Cayenne GTS es un SUV ruidoso y divertido que se maneja lo bastante bien, aunque no iguala a un 911; recomienda dirección trasera y PDCC."},
+  {"id":"p1a02kl#2","models":["911-991"],"sentiment":"pos","basis":"none","aspects":[{"a":"conduccion","p":"pos"}],"resumen_es":"Cree que el 911 GTS tiene más presencia y se maneja mucho mejor que un Cayenne GTS, por lo que aconseja conservarlo."},
+  {"id":"p1a32hq","models":["cayenne-9pa","cayenne-92a","cayenne-po536"],"sentiment":"pos","basis":"owner","aspects":[{"a":"uso_diario","p":"pos"}],"resumen_es":"Ha tenido un par de Cayenne y está muy contento: carga lo que un 911 no puede, no frena en cada badén y conserva la sensación especial de Porsche."}
+]

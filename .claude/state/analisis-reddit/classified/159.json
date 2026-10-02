@@ -1,0 +1,47 @@
+[
+ {
+  "id": "nhz3oml",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Cayenne S Coupé de 2025: cada revisión Porsche, incluso la rutinaria, suele costar cuatro cifras."
+ },
+ {
+  "id": "ni9ixmk",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el Cayenne un SUV normalito, el Porsche más básico y vendido, y no cree que deba preocupar tanto perder valor."
+ },
+ {
+  "id": "nib59uk",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que el Cayenne no conserva el valor como un 911, aunque el resale Porsche depende mucho de pintura original y ausencia de accidentes."
+ }
+]

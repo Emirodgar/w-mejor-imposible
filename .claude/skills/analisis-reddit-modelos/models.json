@@ -2,7 +2,7 @@
   "_nota": "Taxonomia de modelos. 'id' es la clave estable que usa la clasificacion. 'patterns' se usa solo para descubrir hilos y para dar pistas; la atribucion final la decide Claude leyendo el comentario. Si un usuario no precisa la generacion, se asignan varios ids y su voto se reparte entre ellos.",
   "subreddits": {
     "generales": ["Porsche", "cars", "AskCarOwners", "whatcarshouldIbuy"],
-    "por_modelo": ["911", "Porsche911", "Cayman", "PorscheCayman", "Boxster", "Cayenne", "macan", "Panamera", "Taycan", "PorscheTaycan"]
+    "por_modelo": ["911", "Porsche911", "Cayman", "PorscheCayman", "Boxster", "Cayenne", "PorscheCayenne", "macan", "Panamera", "Taycan", "PorscheTaycan"]
   },
   "models": [
     {"id": "911-992",  "family": "911", "label": "911 (992, 2019-hoy)", "patterns": ["992"]},

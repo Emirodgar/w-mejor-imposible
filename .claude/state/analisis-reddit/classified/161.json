@@ -1,0 +1,835 @@
+[
+ {
+  "id": "ox1wo36",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo un Macan GTS hasta 267 km/h y comenta que aún no había llegado a su límite."
+ },
+ {
+  "id": "p3te35i",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de su segundo Cayenne (GTS): remolca un coche de competición de 7.700 lb con más comodidad que con una pickup diésel; la suspensión neumática es clave."
+ },
+ {
+  "id": "p3tl3go",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene Cayman, Cayenne y Panamera: el Cayenne usado compensa, se deprecia poco, es muy fiable y su mantenimiento es normal si es sencillo (V6, sin neumática)."
+ },
+ {
+  "id": "p3yq0p2",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un 996 muy poco tiempo y no le gustó; prefiere cómo se conduce un Cayman."
+ },
+ {
+  "id": "p3yq0p2#2",
+  "models": [
+   "cayman-981",
+   "cayman-987",
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que el Cayman maneja mejor que el 911, aunque Porsche le limita la potencia para no restar ventas al 911."
+ },
+ {
+  "id": "p3tugx9",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Con un Boxster y un Cayenne, y tras tener un X5, dice que el Cayenne está en otro nivel."
+ },
+ {
+  "id": "p40s8mp",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que un Cayenne GTS supera a un X5 M60i en dinámica y dirección, aunque la diferencia no es enorme."
+ },
+ {
+  "id": "p42g6fr",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha tenido ambos: el Cayenne conduce mejor, pero el X5 es más barato de mantener, con recambios más baratos y más espacio."
+ },
+ {
+  "id": "p3u1lvj",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le parece el 981 S con escape deportivo un coche mejor que el 992 S."
+ },
+ {
+  "id": "p3u3x70",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende que Porsche hace el V8 biturbo más fiable y recomienda un 958.2 de pocos km; no volvería a un V8 de BMW."
+ },
+ {
+  "id": "p3vcft3",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un 986, un 997 C2S y un Cayenne Turbo 958.2, considera el Cayenne el mejor Porsche global: sirve para familia y conducción deportiva."
+ },
+ {
+  "id": "p3vtow8",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne fue el mejor coche que han tenido: muy bien hecho, divertido y excelente en viajes largos; hizo 180.000 millas y lo echa de menos."
+ },
+ {
+  "id": "p3wxz5a",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que el Cayenne compensa por calidad, espacio interior (mejor que el X5) y comportamiento, y que Porsche certifica unidades con muchos kilómetros."
+ },
+ {
+  "id": "p3x5wyh",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Frente al X5 considera que el Cayenne no compensa; preferiría ahorrar 100.000 dólares con un X5 M."
+ },
+ {
+  "id": "p3xy8by",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene Cayenne y deportivos: el Cayenne es fantástico cuando no quieres un coche pequeño, aunque no es un 911; recomienda GTS o Turbo GT."
+ },
+ {
+  "id": "p3yxq8w",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo 958.1 con casi 140.000 millas como coche diario: lo hace todo bien; hay que prever arreglos de suspensión neumática hacia las 100.000."
+ },
+ {
+  "id": "p3zv4vk",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Con un Cayenne GTS 2026 junto a varios 911, lo ve gran coche pero sin destacar en nada; para uso familiar usan antes un Tesla."
+ },
+ {
+  "id": "p3zvk1u",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "La diferencia entre un Cayenne base (blando, como un yate) y un GTS es enorme; el GTS se siente casi deportivo, aunque lejos de un 911."
+ },
+ {
+  "id": "p409rmc",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras leer opiniones, decide comprar un Cayenne GTS 958.1 de menos de 60.000 millas: depreciación ya asumida y supuestamente a prueba de bombas."
+ },
+ {
+  "id": "nemwq6q",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó el Macan EV: aunque algo más grande, le resultó estrecho para su altura de 1,83 m."
+ },
+ {
+  "id": "nemwq6q#2",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó el Panamera: más espacioso, pero demasiado bajo y con asientos envolventes difíciles para entrar y salir."
+ },
+ {
+  "id": "nemwq6q#3",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró el Cayenne E-Hybrid y está muy satisfecho: espacio para piernas y brazos, buena postura y buena visibilidad."
+ },
+ {
+  "id": "nen0e6e",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con el Cayenne E-Hybrid ahorra gasolina, con un consumo equivalente a 28-38 mpg según el viaje."
+ },
+ {
+  "id": "nendtqs",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Cayenne de gasolina e híbrido enchufable es claramente más amplio que el Macan en plazas delanteras, traseras y maletero."
+ },
+ {
+  "id": "nenkobb",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Muy satisfecho con su Cayenne: cómodo y seguro, aunque el PCM a veces se bloquea y se arregla reconectando el móvil."
+ },
+ {
+  "id": "olv4yo8",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró un Cayenne S 2022 CPO con garantía extendida; la revisión de los 40.000 millas costó algo más de 2.000 dólares."
+ },
+ {
+  "id": "olv5i4j",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne CPO necesitó en la primera semana un faro activo de 4.500 dólares; lo cubrió la garantía, si no habría sido una pesadilla."
+ },
+ {
+  "id": "olvyfsp",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un Cayenne nuevo y avisa de que no admite el bricolaje de un coche antiguo; Porsche no lo diseña para hacerlo uno mismo."
+ },
+ {
+  "id": "olv5xus",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Cayenne S 2021 durante cinco años gasta menos de 1.000 dólares anuales, salvo unos frenos de unos 3.500."
+ },
+ {
+  "id": "olvjajj",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Cayenne S 2021 tras cinco años, las revisiones grandes en el concesionario son caras (3.380 dólares); él las hace por menos de 500."
+ },
+ {
+  "id": "olv72nn",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Cayenne 2014 impecable: unos 1.000 dólares de mantenimiento en seis meses, y espera pocos gastos aparte de lo rutinario."
+ },
+ {
+  "id": "olv7ded",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne GTS configurado de 158.000 dólares acabó costando unos 205.000 con extras, seguros y mantenimiento prepagado."
+ },
+ {
+  "id": "olv7wtz",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Advierte de que los Cayenne tienen un mantenimiento alto frente a marcas generalistas, pero que dan placer al conducirlos."
+ },
+ {
+  "id": "om1x6z8",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Con un 718 y un Cayenne, dice que ama el Cayenne, que usa para tareas reales y por eso no le pone protección de pintura."
+ },
+ {
+  "id": "om2xq4u",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Solo ha tenido Cayenne diésel y los ve muy fiables: pasados los 160.000 km, solo falló el retén principal trasero."
+ },
+ {
+  "id": "olv8dp8",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne 2017 con 105.000 millas sigue como nuevo y, haciendo él el mantenimiento, gasta menos de 500 dólares al año."
+ },
+ {
+  "id": "olv93pu",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras comprar un Cayenne 2021 CPO tuvo varias averías (aceite, aire acondicionado dos veces, bomba de agua, batería, cuadro); sin garantía habrían sido más de 20.000 dólares."
+ },
+ {
+  "id": "olvbggh",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con dos Cayenne y un 911, dice que son muy fiables y que el mantenimiento solo es caro si se hace en el concesionario."
+ },
+ {
+  "id": "olve5bv",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Reconoce que el mantenimiento es caro: un cambio de aceite ronda los 500 y un piloto trasero costó 1.800 en Europa."
+ },
+ {
+  "id": "olvh3df",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Cayenne S 2011 y solo mantenimiento habitual (unos 4.000 dólares en dos años), está encantado."
+ },
+ {
+  "id": "olvi58a",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne híbrido de 2026: lo adora como coche diario y es divertido, con algunos fallos eléctricos cubiertos por garantía y frenada regenerativa extraña."
+ },
+ {
+  "id": "olvpj37",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Cayenne híbrido 2021 que encendía constantemente testigos de avería y no lo querría fuera de garantía."
+ },
+ {
+  "id": "olvpj37#2",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su actual Cayenne 958 diésel es quizá el Porsche más sólido que ha tenido."
+ },
+ {
+  "id": "olwjh67",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne S E-Hybrid 2018 lleva 78.000 millas sin problemas más allá de dos pequeñas reparaciones en garantía."
+ },
+ {
+  "id": "olxv43b",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un ex empleado de concesionarios afirma que el Cayenne 958 híbrido es tan barato por algo, aludiendo a su mala fiabilidad."
+ },
+ {
+  "id": "olz5as2",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne Turbo 958 sigue fuerte con 148.000 millas."
+ },
+ {
+  "id": "om0swr0",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne diésel solo necesitó cambios de aceite en 80.000 millas, salvo una fuga del enfriador de aceite."
+ },
+ {
+  "id": "olve1zg",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras comparar con el Audi Q7, dice que el Cayenne tiene mejor control de carrocería y se siente más ágil y compacto."
+ }
+]

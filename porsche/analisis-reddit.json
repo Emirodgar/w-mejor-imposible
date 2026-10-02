@@ -1,12 +1,12 @@
 {
  "generated": "2026-10-02",
  "stats": {
-  "threads": 58,
-  "comments_fetched": 5404,
-  "comments_classified": 1275,
-  "comments_counted": 1009,
-  "users_counted": 696,
-  "period_from": "2025-10-22",
+  "threads": 83,
+  "comments_fetched": 6447,
+  "comments_classified": 1545,
+  "comments_counted": 1208,
+  "users_counted": 822,
+  "period_from": "2025-05-02",
   "period_to": "2026-09-27"
  },
  "aspects_es": {
@@ -23,24 +23,24 @@
   {
    "id": "718",
    "label": "718",
-   "users": 145,
-   "votes_effective": 143.5,
-   "pos": 126.5,
+   "users": 152,
+   "votes_effective": 150.5,
+   "pos": 133.5,
    "neg": 5.0,
    "neu": 12.0,
-   "net": 121.5,
+   "net": 128.5,
    "pct_positive": 96,
-   "wilson": 0.914,
-   "rank_score": 6.341,
+   "wilson": 0.918,
+   "rank_score": 6.443,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 86.0
+     "users": 92.0
     },
     {
      "aspect": "valor",
-     "users": 30.5
+     "users": 31.5
     },
     {
      "aspect": "fiabilidad",
@@ -105,38 +105,38 @@
   {
    "id": "911",
    "label": "911",
-   "users": 273,
-   "votes_effective": 271.5,
-   "pos": 185.5,
-   "neg": 36.0,
-   "neu": 50.0,
-   "net": 149.5,
+   "users": 285,
+   "votes_effective": 283.5,
+   "pos": 195.5,
+   "neg": 37.0,
+   "neu": 51.0,
+   "net": 158.5,
    "pct_positive": 84,
-   "wilson": 0.783,
-   "rank_score": 5.665,
+   "wilson": 0.788,
+   "rank_score": 5.769,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 110.0
+     "users": 118.0
     },
     {
      "aspect": "uso_diario",
-     "users": 35.0
+     "users": 37.0
     },
     {
      "aspect": "valor",
-     "users": 32.5
+     "users": 33.5
     }
    ],
    "cons": [
     {
      "aspect": "conduccion",
-     "users": 27.0
+     "users": 28.0
     },
     {
      "aspect": "uso_diario",
-     "users": 24.0
+     "users": 25.0
     },
     {
      "aspect": "costes",
@@ -144,6 +144,12 @@
     }
    ],
    "quotes_pos": [
+    {
+     "text": "Vendió su 911 C2S de 2005 por un Range Rover y se arrepiente 15 años después; ahora tiene un 997.2 C4 y nada iguala conducir un 911.",
+     "url": "https://www.reddit.com/comments/1vdlzyr/_/p1a7kvn/",
+     "score": 61,
+     "basis": "owner"
+    },
     {
      "text": "Cambió su GT3 por un Z06, lo considera una decisión terrible y ahora tiene un 992 GT3.",
      "url": "https://www.reddit.com/comments/1udq0r6/_/otdu4zq/",
@@ -154,12 +160,6 @@
      "text": "Compró un 911 hace poco y cuenta que las dudas sobre la configuración durante la espera desaparecieron cuando llegó el coche.",
      "url": "https://www.reddit.com/comments/1sq5s4y/_/oh5jqzg/",
      "score": 13,
-     "basis": "owner"
-    },
-    {
-     "text": "Aunque nadie de su entorno comparte la afición, al volante se siente como un niño en Disney World; lo lleva con PPF por tranquilidad.",
-     "url": "https://www.reddit.com/comments/1w3kvt9/_/p71engc/",
-     "score": 11,
      "basis": "owner"
     }
    ],
@@ -185,13 +185,95 @@
    ]
   },
   {
+   "id": "Cayenne",
+   "label": "Cayenne",
+   "users": 131,
+   "votes_effective": 131.0,
+   "pos": 97.0,
+   "neg": 16.0,
+   "neu": 18.0,
+   "net": 81.0,
+   "pct_positive": 86,
+   "wilson": 0.782,
+   "rank_score": 4.974,
+   "confidence": "alta",
+   "pros": [
+    {
+     "aspect": "conduccion",
+     "users": 53.0
+    },
+    {
+     "aspect": "uso_diario",
+     "users": 47.0
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 13.0
+    }
+   ],
+   "cons": [
+    {
+     "aspect": "costes",
+     "users": 20.0
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 11.0
+    },
+    {
+     "aspect": "conduccion",
+     "users": 7.0
+    }
+   ],
+   "quotes_pos": [
+    {
+     "text": "Probó el Cayenne Turbo GT, un cohete deportivo con forma de SUV, pero acabó con un GTS de 2025 por el maletero más pequeño del coupé.",
+     "url": "https://www.reddit.com/comments/1m5wkar/_/n4f7htk/",
+     "score": 15,
+     "basis": "driven"
+    },
+    {
+     "text": "Cambió el Boxster por un Cayenne S de diario: el V8 biturbo es especial y no se arrepiente.",
+     "url": "https://www.reddit.com/comments/1vgtpwb/_/p1zyx9y/",
+     "score": 10,
+     "basis": "owner"
+    },
+    {
+     "text": "Vendió su Cayenne con unas 225.000 millas y le costó separarse de él.",
+     "url": "https://www.reddit.com/comments/1lc7bz6/_/mxy8tp7/",
+     "score": 10,
+     "basis": "owner"
+    }
+   ],
+   "quotes_neg": [
+    {
+     "text": "Tuvo un Cayenne híbrido 2021 que encendía constantemente testigos de avería y no lo querría fuera de garantía.",
+     "url": "https://www.reddit.com/comments/1tdgdwv/_/olvpj37/",
+     "score": 21,
+     "basis": "owner"
+    },
+    {
+     "text": "Su Cayenne CPO necesitó en la primera semana un faro activo de 4.500 dólares; lo cubrió la garantía, si no habría sido una pesadilla.",
+     "url": "https://www.reddit.com/comments/1tdgdwv/_/olv5i4j/",
+     "score": 7,
+     "basis": "owner"
+    },
+    {
+     "text": "Tras comprar un Cayenne 2021 CPO tuvo varias averías (aceite, aire acondicionado dos veces, bomba de agua, batería, cuadro); sin garantía habrían sido más de 20.000 dólares.",
+     "url": "https://www.reddit.com/comments/1tdgdwv/_/olv93pu/",
+     "score": 6,
+     "basis": "owner"
+    }
+   ]
+  },
+  {
    "id": "Panamera",
    "label": "Panamera",
-   "users": 88,
-   "votes_effective": 88.0,
+   "users": 89,
+   "votes_effective": 89.0,
    "pos": 67.0,
    "neg": 12.0,
-   "neu": 9.0,
+   "neu": 10.0,
    "net": 55.0,
    "pct_positive": 85,
    "wilson": 0.753,
@@ -222,7 +304,7 @@
     },
     {
      "aspect": "uso_diario",
-     "users": 5.0
+     "users": 6.0
     }
    ],
    "quotes_pos": [
@@ -269,20 +351,20 @@
   {
    "id": "Taycan",
    "label": "Taycan",
-   "users": 203,
-   "votes_effective": 203.0,
-   "pos": 113.0,
-   "neg": 53.0,
+   "users": 206,
+   "votes_effective": 206.0,
+   "pos": 115.0,
+   "neg": 54.0,
    "neu": 37.0,
-   "net": 60.0,
+   "net": 61.0,
    "pct_positive": 68,
-   "wilson": 0.606,
-   "rank_score": 3.596,
+   "wilson": 0.607,
+   "rank_score": 3.613,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 72.0
+     "users": 74.0
     },
     {
      "aspect": "tecnologia",
@@ -296,14 +378,14 @@
    "cons": [
     {
      "aspect": "fiabilidad",
-     "users": 35.0
+     "users": 36.0
     },
     {
      "aspect": "tecnologia",
      "users": 28.0
     },
     {
-     "aspect": "uso_diario",
+     "aspect": "costes",
      "users": 24.0
     }
    ],
@@ -351,24 +433,24 @@
   {
    "id": "Macan",
    "label": "Macan",
-   "users": 63,
-   "votes_effective": 63.0,
-   "pos": 36.0,
-   "neg": 17.0,
-   "neu": 10.0,
-   "net": 19.0,
-   "pct_positive": 68,
-   "wilson": 0.545,
-   "rank_score": 2.356,
+   "users": 93,
+   "votes_effective": 93.0,
+   "pos": 55.0,
+   "neg": 24.0,
+   "neu": 14.0,
+   "net": 31.0,
+   "pct_positive": 70,
+   "wilson": 0.588,
+   "rank_score": 2.938,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 14.0
+     "users": 33.0
     },
     {
      "aspect": "uso_diario",
-     "users": 14.0
+     "users": 17.0
     },
     {
      "aspect": "calidad",
@@ -377,16 +459,16 @@
    ],
    "cons": [
     {
-     "aspect": "costes",
-     "users": 7.0
-    },
-    {
-     "aspect": "calidad",
-     "users": 6.0
+     "aspect": "uso_diario",
+     "users": 14.0
     },
     {
      "aspect": "conduccion",
-     "users": 6.0
+     "users": 9.0
+    },
+    {
+     "aspect": "costes",
+     "users": 7.0
     }
    ],
    "quotes_pos": [
@@ -429,108 +511,103 @@
      "basis": "owner"
     }
    ]
-  },
+  }
+ ],
+ "models": [
   {
-   "id": "Cayenne",
-   "label": "Cayenne",
-   "users": 21,
-   "votes_effective": 21.0,
-   "pos": 13.0,
-   "neg": 7.0,
+   "id": "718-982",
+   "label": "718 Cayman / Boxster (982)",
+   "users": 64,
+   "votes_effective": 50.2,
+   "pos": 46.8,
+   "neg": 2.5,
    "neu": 1.0,
-   "net": 6.0,
-   "pct_positive": 65,
-   "wilson": 0.433,
-   "rank_score": 1.215,
-   "confidence": "media",
+   "net": 44.2,
+   "pct_positive": 95,
+   "wilson": 0.849,
+   "rank_score": 4.671,
+   "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 7.0
+     "users": 36.7
     },
     {
-     "aspect": "uso_diario",
-     "users": 4.0
+     "aspect": "valor",
+     "users": 9.2
     },
     {
-     "aspect": "tecnologia",
-     "users": 1.0
+     "aspect": "diseno",
+     "users": 6.5
     }
    ],
    "cons": [
     {
-     "aspect": "costes",
-     "users": 4.0
-    },
-    {
-     "aspect": "fiabilidad",
-     "users": 4.0
-    },
-    {
-     "aspect": "calidad",
+     "aspect": "valor",
      "users": 3.0
+    },
+    {
+     "aspect": "conduccion",
+     "users": 2.0
+    },
+    {
+     "aspect": "costes",
+     "users": 1.3
     }
    ],
    "quotes_pos": [
     {
-     "text": "Dueño de un Cayenne junto a un 911: sin visitas al taller y todo funciona perfectamente.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orcxzca/",
-     "score": 5,
+     "text": "Encargó un Boxster GTS 4.0 y le encantó, pero con tres hijos casi no lo usaba y lo vendió con poca depreciación.",
+     "url": "https://www.reddit.com/comments/1vgtpwb/_/p1zyx9y/",
+     "score": 10,
      "basis": "owner"
     },
     {
-     "text": "Propietario de un Cayenne S 2016: SUV pequeño, rápido, muy plantado y agradable de conducir.",
-     "url": "https://www.reddit.com/comments/1taek5s/_/olheqju/",
-     "score": 3,
+     "text": "Su 718 Spyder es el único de sus Porsche que recibe miradas.",
+     "url": "https://www.reddit.com/comments/1udq0r6/_/ote4o8n/",
+     "score": 9,
      "basis": "owner"
     },
     {
-     "text": "Entre sus Porsche, el Cayenne es un gran coche pero menos especial que el 911.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orckviu/",
-     "score": 3,
+     "text": "Propietario de un 718 GTS 4.0 manual: lo considera de lo mejor que puede ser un deportivo de combustión nuevo hoy.",
+     "url": "https://www.reddit.com/comments/1vh7hfp/_/p25x56f/",
+     "score": 8,
      "basis": "owner"
     }
    ],
    "quotes_neg": [
     {
-     "text": "Probó un Cayenne Coupé de 117.000 dólares como coche de cortesía: se va en el carril, mucho ruido de viento y sensación de camioneta barata.",
-     "url": "https://www.reddit.com/comments/1taek5s/_/ole6suv/",
-     "score": 4,
+     "text": "La revisión del segundo año de su GT4 RS con bujías costó 3.500 dólares australianos en el concesionario oficial.",
+     "url": "https://www.reddit.com/comments/1w2wffk/_/p735u4u/",
+     "score": 2,
+     "basis": "owner"
+    },
+    {
+     "text": "Pruebas breves de un 718 base y un 718 S en carreteras locales le resultaron muy decepcionantes.",
+     "url": "https://www.reddit.com/comments/1u4eqtt/_/orct8h3/",
+     "score": -3,
      "basis": "driven"
-    },
-    {
-     "text": "Cayenne GTS coupé de 2021 con fallos eléctricos, aviso del TPS y reinicios de CarPlay; pesado y sin la emoción de un Boxster.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orequ09/",
-     "score": 2,
-     "basis": "owner"
-    },
-    {
-     "text": "Tuvo un Cayenne: bueno pero no excelente, con muchos problemas, mantenimiento caro y depreciación brutal.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orh18tl/",
-     "score": 2,
-     "basis": "owner"
     }
-   ]
-  }
- ],
- "models": [
+   ],
+   "family": "718"
+  },
   {
    "id": "cayman-986",
    "label": "Boxster (986)",
-   "users": 65,
-   "votes_effective": 52.8,
-   "pos": 42.8,
+   "users": 68,
+   "votes_effective": 53.5,
+   "pos": 43.5,
    "neg": 2.0,
    "neu": 8.0,
-   "net": 40.8,
+   "net": 41.5,
    "pct_positive": 96,
-   "wilson": 0.851,
-   "rank_score": 4.581,
+   "wilson": 0.853,
+   "rank_score": 4.615,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 26.7
+     "users": 27.5
     },
     {
      "aspect": "valor",
@@ -598,99 +675,252 @@
    "family": "718"
   },
   {
-   "id": "718-982",
-   "label": "718 Cayman / Boxster (982)",
-   "users": 59,
-   "votes_effective": 47.5,
-   "pos": 44.0,
-   "neg": 2.5,
-   "neu": 1.0,
-   "net": 41.5,
-   "pct_positive": 95,
-   "wilson": 0.841,
-   "rank_score": 4.55,
+   "id": "cayenne-92a",
+   "label": "Cayenne (958, 2010-2017)",
+   "users": 69,
+   "votes_effective": 40.8,
+   "pos": 34.7,
+   "neg": 2.2,
+   "neu": 4.0,
+   "net": 32.5,
+   "pct_positive": 94,
+   "wilson": 0.816,
+   "rank_score": 4.134,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 33.9
+     "users": 17.0
     },
     {
-     "aspect": "valor",
-     "users": 8.2
+     "aspect": "uso_diario",
+     "users": 13.0
     },
     {
-     "aspect": "diseno",
-     "users": 6.5
+     "aspect": "fiabilidad",
+     "users": 6.7
     }
    ],
    "cons": [
     {
-     "aspect": "valor",
-     "users": 3.0
+     "aspect": "costes",
+     "users": 2.2
     },
     {
      "aspect": "conduccion",
      "users": 2.0
     },
     {
-     "aspect": "costes",
+     "aspect": "fiabilidad",
      "users": 1.3
     }
    ],
    "quotes_pos": [
     {
-     "text": "Su 718 Spyder es el único de sus Porsche que recibe miradas.",
-     "url": "https://www.reddit.com/comments/1udq0r6/_/ote4o8n/",
+     "text": "Su actual Cayenne 958 diésel es quizá el Porsche más sólido que ha tenido.",
+     "url": "https://www.reddit.com/comments/1tdgdwv/_/olvpj37/",
+     "score": 21,
+     "basis": "owner"
+    },
+    {
+     "text": "Dueño de un Cayenne de 2016 que le gusta, pese a que su profusión de botones llama la atención.",
+     "url": "https://www.reddit.com/comments/1oys5w8/_/np73r1w/",
      "score": 9,
      "basis": "owner"
     },
     {
-     "text": "Propietario de un 718 GTS 4.0 manual: lo considera de lo mejor que puede ser un deportivo de combustión nuevo hoy.",
-     "url": "https://www.reddit.com/comments/1vh7hfp/_/p25x56f/",
+     "text": "Con un Turbo de 2012 llegó a unas 140 mph con margen de sobra.",
+     "url": "https://www.reddit.com/comments/1usf640/_/ownkd0f/",
+     "score": 6,
+     "basis": "driven"
+    }
+   ],
+   "quotes_neg": [],
+   "family": "Cayenne"
+  },
+  {
+   "id": "cayenne-po536",
+   "label": "Cayenne (PO536 / E3, 2018-hoy)",
+   "users": 101,
+   "votes_effective": 74.8,
+   "pos": 53.7,
+   "neg": 9.2,
+   "neu": 12.0,
+   "net": 44.5,
+   "pct_positive": 85,
+   "wilson": 0.747,
+   "rank_score": 4.112,
+   "confidence": "alta",
+   "pros": [
+    {
+     "aspect": "conduccion",
+     "users": 31.0
+    },
+    {
+     "aspect": "uso_diario",
+     "users": 27.7
+    },
+    {
+     "aspect": "diseno",
+     "users": 5.0
+    }
+   ],
+   "cons": [
+    {
+     "aspect": "costes",
+     "users": 10.2
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 6.3
+    },
+    {
+     "aspect": "conduccion",
+     "users": 4.0
+    }
+   ],
+   "quotes_pos": [
+    {
+     "text": "Probó el Cayenne Turbo GT, un cohete deportivo con forma de SUV, pero acabó con un GTS de 2025 por el maletero más pequeño del coupé.",
+     "url": "https://www.reddit.com/comments/1m5wkar/_/n4f7htk/",
+     "score": 15,
+     "basis": "driven"
+    },
+    {
+     "text": "Cambió el Boxster por un Cayenne S de diario: el V8 biturbo es especial y no se arrepiente.",
+     "url": "https://www.reddit.com/comments/1vgtpwb/_/p1zyx9y/",
+     "score": 10,
+     "basis": "owner"
+    },
+    {
+     "text": "Compraron un Cayenne S 2025 y un Macan S negros; ambos fantásticos y la elección depende del espacio.",
+     "url": "https://www.reddit.com/comments/1v98wep/_/p0enbae/",
+     "score": 9,
+     "basis": "owner"
+    }
+   ],
+   "quotes_neg": [
+    {
+     "text": "Tuvo un Cayenne híbrido 2021 que encendía constantemente testigos de avería y no lo querría fuera de garantía.",
+     "url": "https://www.reddit.com/comments/1tdgdwv/_/olvpj37/",
+     "score": 21,
+     "basis": "owner"
+    },
+    {
+     "text": "Tras comprar un Cayenne 2021 CPO tuvo varias averías (aceite, aire acondicionado dos veces, bomba de agua, batería, cuadro); sin garantía habrían sido más de 20.000 dólares.",
+     "url": "https://www.reddit.com/comments/1tdgdwv/_/olv93pu/",
+     "score": 6,
+     "basis": "owner"
+    },
+    {
+     "text": "Probó un Cayenne Coupé de 117.000 dólares como coche de cortesía: se va en el carril, mucho ruido de viento y sensación de camioneta barata.",
+     "url": "https://www.reddit.com/comments/1taek5s/_/ole6suv/",
+     "score": 4,
+     "basis": "driven"
+    }
+   ],
+   "family": "Cayenne"
+  },
+  {
+   "id": "911-991",
+   "label": "911 (991, 2012-2019)",
+   "users": 106,
+   "votes_effective": 68.4,
+   "pos": 47.6,
+   "neg": 7.1,
+   "neu": 13.7,
+   "net": 40.6,
+   "pct_positive": 87,
+   "wilson": 0.757,
+   "rank_score": 4.07,
+   "confidence": "alta",
+   "pros": [
+    {
+     "aspect": "conduccion",
+     "users": 29.0
+    },
+    {
+     "aspect": "uso_diario",
+     "users": 10.9
+    },
+    {
+     "aspect": "valor",
+     "users": 8.9
+    }
+   ],
+   "cons": [
+    {
+     "aspect": "conduccion",
+     "users": 8.1
+    },
+    {
+     "aspect": "costes",
+     "users": 5.0
+    },
+    {
+     "aspect": "uso_diario",
+     "users": 4.1
+    }
+   ],
+   "quotes_pos": [
+    {
+     "text": "Cambió su 911 cabrio de 2013 por un Range Rover, echó de menos el 911 y acabó comprando otro.",
+     "url": "https://www.reddit.com/comments/1vdlzyr/_/p1bgtns/",
      "score": 8,
      "basis": "owner"
     },
     {
-     "text": "Compró un 718 Boxster S nuevo tras probar un 911 Carrera Cabrio: lo encontró mejor equilibrado y casi igual de divertido; lo recomienda mucho.",
-     "url": "https://www.reddit.com/comments/1u15cyz/_/oqn4yai/",
+     "text": "Pasó de un M4 a un 991.1 C4S: se siente mucho más especial, más bonito y casi 900 kg más ligero; le encanta.",
+     "url": "https://www.reddit.com/comments/1uui02p/_/ox5e4sc/",
+     "score": 7,
+     "basis": "owner"
+    },
+    {
+     "text": "Propietario de un 991.2: conduce y rinde de maravilla, sin arrepentimientos y con baja depreciación.",
+     "url": "https://www.reddit.com/comments/1u4eqtt/_/orczkeh/",
      "score": 6,
      "basis": "owner"
     }
    ],
    "quotes_neg": [
     {
-     "text": "La revisión del segundo año de su GT4 RS con bujías costó 3.500 dólares australianos en el concesionario oficial.",
-     "url": "https://www.reddit.com/comments/1w2wffk/_/p735u4u/",
+     "text": "Vendió su 991 Carrera S por considerar que los 911 son un compromiso: los verdaderos deportivos puros no tienen asientos traseros.",
+     "url": "https://www.reddit.com/comments/1u15cyz/_/oqou9eh/",
+     "score": 5,
+     "basis": "owner"
+    },
+    {
+     "text": "Su 991.2 recibió presupuestos de 6.000 y 4.000 dólares en concesionarios por bujías, correa y filtros; un especialista independiente lo hizo por 1.900.",
+     "url": "https://www.reddit.com/comments/1w2wffk/_/p71325f/",
      "score": 2,
      "basis": "owner"
     },
     {
-     "text": "Pruebas breves de un 718 base y un 718 S en carreteras locales le resultaron muy decepcionantes.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orct8h3/",
-     "score": -3,
-     "basis": "driven"
+     "text": "Tuvo un 991.1 Turbo: el Porsche más aburrido que ha tenido, rápido pero sin diversión, sin manual y de sonido pobre.",
+     "url": "https://www.reddit.com/comments/1t74yzu/_/oktkby2/",
+     "score": 2,
+     "basis": "owner"
     }
    ],
-   "family": "718"
+   "family": "911"
   },
   {
    "id": "cayman-987",
    "label": "Cayman / Boxster (987)",
-   "users": 37,
-   "votes_effective": 23.3,
-   "pos": 23.0,
+   "users": 40,
+   "votes_effective": 24.1,
+   "pos": 23.8,
    "neg": 0.0,
    "neu": 0.3,
-   "net": 23.0,
+   "net": 23.8,
    "pct_positive": 100,
-   "wilson": 0.857,
-   "rank_score": 3.929,
+   "wilson": 0.861,
+   "rank_score": 3.985,
    "confidence": "media",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 14.9
+     "users": 15.7
     },
     {
      "aspect": "valor",
@@ -739,96 +969,160 @@
    "family": "718"
   },
   {
-   "id": "911-991",
-   "label": "911 (991, 2012-2019)",
-   "users": 101,
-   "votes_effective": 63.4,
-   "pos": 43.6,
-   "neg": 7.1,
-   "neu": 12.7,
-   "net": 36.6,
-   "pct_positive": 86,
-   "wilson": 0.74,
-   "rank_score": 3.869,
+   "id": "911-992",
+   "label": "911 (992, 2019-hoy)",
+   "users": 153,
+   "votes_effective": 122.7,
+   "pos": 75.3,
+   "neg": 22.8,
+   "neu": 24.7,
+   "net": 52.5,
+   "pct_positive": 77,
+   "wilson": 0.675,
+   "rank_score": 3.876,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 25.0
+     "users": 42.9
     },
     {
      "aspect": "uso_diario",
-     "users": 9.9
+     "users": 17.4
     },
     {
      "aspect": "valor",
-     "users": 8.9
+     "users": 11.4
     }
    ],
    "cons": [
     {
      "aspect": "conduccion",
-     "users": 8.1
-    },
-    {
-     "aspect": "costes",
-     "users": 5.0
+     "users": 20.1
     },
     {
      "aspect": "uso_diario",
-     "users": 3.1
+     "users": 15.1
+    },
+    {
+     "aspect": "costes",
+     "users": 6.0
     }
    ],
    "quotes_pos": [
     {
-     "text": "Pasó de un M4 a un 991.1 C4S: se siente mucho más especial, más bonito y casi 900 kg más ligero; le encanta.",
-     "url": "https://www.reddit.com/comments/1uui02p/_/ox5e4sc/",
+     "text": "Compró un 911 hace poco y cuenta que las dudas sobre la configuración durante la espera desaparecieron cuando llegó el coche.",
+     "url": "https://www.reddit.com/comments/1sq5s4y/_/oh5jqzg/",
+     "score": 13,
+     "basis": "owner"
+    },
+    {
+     "text": "Aunque nadie de su entorno comparte la afición, al volante se siente como un niño en Disney World; lo lleva con PPF por tranquilidad.",
+     "url": "https://www.reddit.com/comments/1w3kvt9/_/p71engc/",
+     "score": 11,
+     "basis": "owner"
+    },
+    {
+     "text": "Con su 911 T disfruta mucho más que con el M2 que tuvo seis años; se controla fácil al derrapar y los 911 le parecen más fiables que otros deportivos.",
+     "url": "https://www.reddit.com/comments/1uui02p/_/ox3j2t4/",
      "score": 7,
-     "basis": "owner"
-    },
-    {
-     "text": "Propietario de un 991.2: conduce y rinde de maravilla, sin arrepentimientos y con baja depreciación.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orczkeh/",
-     "score": 6,
-     "basis": "owner"
-    },
-    {
-     "text": "Tuvo un 991.2 GTS que le gustó, pero se enamoró de un 991.1 S Cabrio y lo cambió; muy feliz con el S descapotable.",
-     "url": "https://www.reddit.com/comments/1w3kvt9/_/p72jili/",
-     "score": 5,
      "basis": "owner"
     }
    ],
    "quotes_neg": [
     {
-     "text": "Vendió su 991 Carrera S por considerar que los 911 son un compromiso: los verdaderos deportivos puros no tienen asientos traseros.",
-     "url": "https://www.reddit.com/comments/1u15cyz/_/oqou9eh/",
-     "score": 5,
+     "text": "Compró un Turbo S en 2025, hizo más de 24.000 km y al entregarlo al concesionario le pagaron unos 30.000 dólares menos de lo que costó.",
+     "url": "https://www.reddit.com/comments/1umeq1g/_/ovc1ep8/",
+     "score": 16,
      "basis": "owner"
     },
     {
-     "text": "Su 991.2 recibió presupuestos de 6.000 y 4.000 dólares en concesionarios por bujías, correa y filtros; un especialista independiente lo hizo por 1.900.",
-     "url": "https://www.reddit.com/comments/1w2wffk/_/p71325f/",
-     "score": 2,
-     "basis": "owner"
+     "text": "Probó un Carrera S y lo encontró soso para su precio; opina que un BMW M2 nuevo rinde igual por la mitad.",
+     "url": "https://www.reddit.com/comments/1umeq1g/_/ovdjq60/",
+     "score": 9,
+     "basis": "driven"
     },
     {
-     "text": "Tuvo un 991.1 Turbo: el Porsche más aburrido que ha tenido, rápido pero sin diversión, sin manual y de sonido pobre.",
-     "url": "https://www.reddit.com/comments/1t74yzu/_/oktkby2/",
-     "score": 2,
+     "text": "Su mujer odia ir en el GTS por lo bajo que es, con un hijo de dos años; ni con tres sillas distintas logra que sea cómodo.",
+     "url": "https://www.reddit.com/comments/1w3kvt9/_/p7128ux/",
+     "score": 4,
      "basis": "owner"
     }
    ],
    "family": "911"
   },
   {
+   "id": "cayman-981",
+   "label": "Cayman / Boxster (981)",
+   "users": 45,
+   "votes_effective": 28.3,
+   "pos": 24.5,
+   "neg": 0.5,
+   "neu": 3.3,
+   "net": 24.0,
+   "pct_positive": 98,
+   "wilson": 0.834,
+   "rank_score": 3.874,
+   "confidence": "media",
+   "pros": [
+    {
+     "aspect": "conduccion",
+     "users": 14.4
+    },
+    {
+     "aspect": "valor",
+     "users": 5.8
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 4.3
+    }
+   ],
+   "cons": [
+    {
+     "aspect": "costes",
+     "users": 1.3
+    },
+    {
+     "aspect": "conduccion",
+     "users": 1.0
+    },
+    {
+     "aspect": "valor",
+     "users": 1.0
+    }
+   ],
+   "quotes_pos": [
+    {
+     "text": "Con su mujer tiene un Cayman S 981 y un Boxster 981; ambos son geniales y ofrecen experiencias distintas.",
+     "url": "https://www.reddit.com/comments/1u15cyz/_/oqn4vsf/",
+     "score": 5,
+     "basis": "owner"
+    },
+    {
+     "text": "Vendió su 991 Carrera S por un Boxster Spyder 981, mucho más divertido y atractivo en conducción.",
+     "url": "https://www.reddit.com/comments/1u15cyz/_/oqou9eh/",
+     "score": 5,
+     "basis": "owner"
+    },
+    {
+     "text": "Feliz con su Boxster 981; incluso lo considera mejor compra que la mayoría de 911 actuales.",
+     "url": "https://www.reddit.com/comments/1u15cyz/_/oqqipxr/",
+     "score": 4,
+     "basis": "owner"
+    }
+   ],
+   "quotes_neg": [],
+   "family": "718"
+  },
+  {
    "id": "panamera-971",
    "label": "Panamera (971, 2016-2023)",
-   "users": 50,
-   "votes_effective": 35.7,
+   "users": 51,
+   "votes_effective": 36.2,
    "pos": 30.2,
    "neg": 2.7,
-   "neu": 2.8,
+   "neu": 3.3,
    "net": 27.5,
    "pct_positive": 92,
    "wilson": 0.776,
@@ -899,105 +1193,22 @@
    "family": "Panamera"
   },
   {
-   "id": "911-992",
-   "label": "911 (992, 2019-hoy)",
-   "users": 149,
-   "votes_effective": 118.7,
-   "pos": 71.3,
-   "neg": 22.8,
-   "neu": 24.7,
-   "net": 48.5,
-   "pct_positive": 76,
-   "wilson": 0.662,
-   "rank_score": 3.729,
-   "confidence": "alta",
-   "pros": [
-    {
-     "aspect": "conduccion",
-     "users": 40.9
-    },
-    {
-     "aspect": "uso_diario",
-     "users": 16.4
-    },
-    {
-     "aspect": "valor",
-     "users": 11.4
-    }
-   ],
-   "cons": [
-    {
-     "aspect": "conduccion",
-     "users": 20.1
-    },
-    {
-     "aspect": "uso_diario",
-     "users": 15.1
-    },
-    {
-     "aspect": "costes",
-     "users": 6.0
-    }
-   ],
-   "quotes_pos": [
-    {
-     "text": "Compró un 911 hace poco y cuenta que las dudas sobre la configuración durante la espera desaparecieron cuando llegó el coche.",
-     "url": "https://www.reddit.com/comments/1sq5s4y/_/oh5jqzg/",
-     "score": 13,
-     "basis": "owner"
-    },
-    {
-     "text": "Aunque nadie de su entorno comparte la afición, al volante se siente como un niño en Disney World; lo lleva con PPF por tranquilidad.",
-     "url": "https://www.reddit.com/comments/1w3kvt9/_/p71engc/",
-     "score": 11,
-     "basis": "owner"
-    },
-    {
-     "text": "Con su 911 T disfruta mucho más que con el M2 que tuvo seis años; se controla fácil al derrapar y los 911 le parecen más fiables que otros deportivos.",
-     "url": "https://www.reddit.com/comments/1uui02p/_/ox3j2t4/",
-     "score": 7,
-     "basis": "owner"
-    }
-   ],
-   "quotes_neg": [
-    {
-     "text": "Compró un Turbo S en 2025, hizo más de 24.000 km y al entregarlo al concesionario le pagaron unos 30.000 dólares menos de lo que costó.",
-     "url": "https://www.reddit.com/comments/1umeq1g/_/ovc1ep8/",
-     "score": 16,
-     "basis": "owner"
-    },
-    {
-     "text": "Probó un Carrera S y lo encontró soso para su precio; opina que un BMW M2 nuevo rinde igual por la mitad.",
-     "url": "https://www.reddit.com/comments/1umeq1g/_/ovdjq60/",
-     "score": 9,
-     "basis": "driven"
-    },
-    {
-     "text": "Su mujer odia ir en el GTS por lo bajo que es, con un hijo de dos años; ni con tres sillas distintas logra que sea cómodo.",
-     "url": "https://www.reddit.com/comments/1w3kvt9/_/p7128ux/",
-     "score": 4,
-     "basis": "owner"
-    }
-   ],
-   "family": "911"
-  },
-  {
    "id": "taycan",
    "label": "Taycan",
-   "users": 203,
-   "votes_effective": 203.0,
-   "pos": 113.0,
-   "neg": 53.0,
+   "users": 206,
+   "votes_effective": 206.0,
+   "pos": 115.0,
+   "neg": 54.0,
    "neu": 37.0,
-   "net": 60.0,
+   "net": 61.0,
    "pct_positive": 68,
-   "wilson": 0.606,
-   "rank_score": 3.596,
+   "wilson": 0.607,
+   "rank_score": 3.613,
    "confidence": "alta",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 72.0
+     "users": 74.0
     },
     {
      "aspect": "tecnologia",
@@ -1011,14 +1222,14 @@
    "cons": [
     {
      "aspect": "fiabilidad",
-     "users": 35.0
+     "users": 36.0
     },
     {
      "aspect": "tecnologia",
      "users": 28.0
     },
     {
-     "aspect": "uso_diario",
+     "aspect": "costes",
      "users": 24.0
     }
    ],
@@ -1065,94 +1276,30 @@
    "family": "Taycan"
   },
   {
-   "id": "cayman-981",
-   "label": "Cayman / Boxster (981)",
-   "users": 40,
-   "votes_effective": 24.8,
-   "pos": 21.0,
-   "neg": 0.5,
-   "neu": 3.3,
-   "net": 20.5,
-   "pct_positive": 98,
-   "wilson": 0.811,
-   "rank_score": 3.591,
-   "confidence": "media",
-   "pros": [
-    {
-     "aspect": "conduccion",
-     "users": 11.9
-    },
-    {
-     "aspect": "valor",
-     "users": 5.8
-    },
-    {
-     "aspect": "fiabilidad",
-     "users": 4.3
-    }
-   ],
-   "cons": [
-    {
-     "aspect": "costes",
-     "users": 1.3
-    },
-    {
-     "aspect": "conduccion",
-     "users": 1.0
-    },
-    {
-     "aspect": "valor",
-     "users": 1.0
-    }
-   ],
-   "quotes_pos": [
-    {
-     "text": "Con su mujer tiene un Cayman S 981 y un Boxster 981; ambos son geniales y ofrecen experiencias distintas.",
-     "url": "https://www.reddit.com/comments/1u15cyz/_/oqn4vsf/",
-     "score": 5,
-     "basis": "owner"
-    },
-    {
-     "text": "Vendió su 991 Carrera S por un Boxster Spyder 981, mucho más divertido y atractivo en conducción.",
-     "url": "https://www.reddit.com/comments/1u15cyz/_/oqou9eh/",
-     "score": 5,
-     "basis": "owner"
-    },
-    {
-     "text": "Feliz con su Boxster 981; incluso lo considera mejor compra que la mayoría de 911 actuales.",
-     "url": "https://www.reddit.com/comments/1u15cyz/_/oqqipxr/",
-     "score": 4,
-     "basis": "owner"
-    }
-   ],
-   "quotes_neg": [],
-   "family": "718"
-  },
-  {
    "id": "911-997",
    "label": "911 (997, 2004-2012)",
-   "users": 61,
-   "votes_effective": 34.5,
-   "pos": 25.8,
+   "users": 63,
+   "votes_effective": 36.5,
+   "pos": 27.8,
    "neg": 3.1,
    "neu": 5.7,
-   "net": 22.7,
-   "pct_positive": 89,
-   "wilson": 0.732,
-   "rank_score": 3.343,
+   "net": 24.7,
+   "pct_positive": 90,
+   "wilson": 0.747,
+   "rank_score": 3.5,
    "confidence": "media",
    "pros": [
     {
      "aspect": "conduccion",
-     "users": 12.0
+     "users": 14.0
     },
     {
      "aspect": "uso_diario",
      "users": 4.7
     },
     {
-     "aspect": "fiabilidad",
-     "users": 3.8
+     "aspect": "valor",
+     "users": 4.4
     }
    ],
    "cons": [
@@ -1171,6 +1318,12 @@
    ],
    "quotes_pos": [
     {
+     "text": "Vendió su 911 C2S de 2005 por un Range Rover y se arrepiente 15 años después; ahora tiene un 997.2 C4 y nada iguala conducir un 911.",
+     "url": "https://www.reddit.com/comments/1vdlzyr/_/p1a7kvn/",
+     "score": 61,
+     "basis": "owner"
+    },
+    {
      "text": "Su 911 Turbo de 2010 con más de 90k millas es su favorito, un juguete que también sirve como coche diario.",
      "url": "https://www.reddit.com/comments/1u4eqtt/_/orfk795/",
      "score": 6,
@@ -1180,12 +1333,6 @@
      "text": "Su primer 911, un 997.1 C4S de 2007, le cambió todo y ha comprado dos más.",
      "url": "https://www.reddit.com/comments/1u4eqtt/_/ork4vb4/",
      "score": 4,
-     "basis": "owner"
-    },
-    {
-     "text": "Acaba de vender su 997 Turbo manual en verde oliva: le encantaba, pero no soportaba la envidia de la gente.",
-     "url": "https://www.reddit.com/comments/1w3kvt9/_/p70wsqz/",
-     "score": 3,
      "basis": "owner"
     }
    ],
@@ -1200,77 +1347,6 @@
      "text": "Tras años con un 997 Turbo, dice que era más pesado que los 911 sin turbo y poco ágil.",
      "url": "https://www.reddit.com/comments/1uui02p/_/ox4963i/",
      "score": 1,
-     "basis": "owner"
-    }
-   ],
-   "family": "911"
-  },
-  {
-   "id": "911-996",
-   "label": "911 (996, 1998-2004)",
-   "users": 47,
-   "votes_effective": 23.3,
-   "pos": 20.2,
-   "neg": 1.4,
-   "neu": 1.6,
-   "net": 18.8,
-   "pct_positive": 93,
-   "wilson": 0.753,
-   "rank_score": 3.244,
-   "confidence": "media",
-   "pros": [
-    {
-     "aspect": "conduccion",
-     "users": 10.7
-    },
-    {
-     "aspect": "uso_diario",
-     "users": 4.7
-    },
-    {
-     "aspect": "valor",
-     "users": 3.9
-    }
-   ],
-   "cons": [
-    {
-     "aspect": "costes",
-     "users": 2.0
-    },
-    {
-     "aspect": "conduccion",
-     "users": 1.2
-    },
-    {
-     "aspect": "fiabilidad",
-     "users": 1.0
-    }
-   ],
-   "quotes_pos": [
-    {
-     "text": "Dueño de un 996.2 muy usado que valora cada día más frente a los costes de mantenimiento de los modelos nuevos.",
-     "url": "https://www.reddit.com/comments/1w2wffk/_/p700bvx/",
-     "score": 5,
-     "basis": "owner"
-    },
-    {
-     "text": "Compró un 996 recientemente, coche con el que cumple su sueño: es el más feliz del mundo conduciéndolo e incluso solo mirándolo.",
-     "url": "https://www.reddit.com/comments/1w3kvt9/_/p719bxu/",
-     "score": 4,
-     "basis": "owner"
-    },
-    {
-     "text": "Disfruta de su 911 Turbo de 2003 más de lo razonable, es distinto a cualquier otro coche.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orcod0x/",
-     "score": 4,
-     "basis": "owner"
-    }
-   ],
-   "quotes_neg": [
-    {
-     "text": "Su motor 996 se destruyó por el fallo del IMS y la reparación costó unos 40.000.",
-     "url": "https://www.reddit.com/comments/1udq0r6/_/otpl7gw/",
-     "score": 5,
      "basis": "owner"
     }
    ],
@@ -1334,6 +1410,83 @@
      "text": "Tuvo un Targa de 1987 y asegura que los coches antiguos exigen mucho más mantenimiento que los modernos.",
      "url": "https://www.reddit.com/comments/1w2wffk/_/p6zclf6/",
      "score": 2,
+     "basis": "owner"
+    }
+   ],
+   "family": "911"
+  },
+  {
+   "id": "911-996",
+   "label": "911 (996, 1998-2004)",
+   "users": 48,
+   "votes_effective": 24.3,
+   "pos": 20.2,
+   "neg": 2.4,
+   "neu": 1.6,
+   "net": 17.8,
+   "pct_positive": 89,
+   "wilson": 0.706,
+   "rank_score": 2.987,
+   "confidence": "media",
+   "pros": [
+    {
+     "aspect": "conduccion",
+     "users": 10.7
+    },
+    {
+     "aspect": "uso_diario",
+     "users": 4.7
+    },
+    {
+     "aspect": "valor",
+     "users": 3.9
+    }
+   ],
+   "cons": [
+    {
+     "aspect": "conduccion",
+     "users": 2.2
+    },
+    {
+     "aspect": "costes",
+     "users": 2.0
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 1.0
+    }
+   ],
+   "quotes_pos": [
+    {
+     "text": "Dueño de un 996.2 muy usado que valora cada día más frente a los costes de mantenimiento de los modelos nuevos.",
+     "url": "https://www.reddit.com/comments/1w2wffk/_/p700bvx/",
+     "score": 5,
+     "basis": "owner"
+    },
+    {
+     "text": "Compró un 996 recientemente, coche con el que cumple su sueño: es el más feliz del mundo conduciéndolo e incluso solo mirándolo.",
+     "url": "https://www.reddit.com/comments/1w3kvt9/_/p719bxu/",
+     "score": 4,
+     "basis": "owner"
+    },
+    {
+     "text": "Disfruta de su 911 Turbo de 2003 más de lo razonable, es distinto a cualquier otro coche.",
+     "url": "https://www.reddit.com/comments/1u4eqtt/_/orcod0x/",
+     "score": 4,
+     "basis": "owner"
+    }
+   ],
+   "quotes_neg": [
+    {
+     "text": "Su motor 996 se destruyó por el fallo del IMS y la reparación costó unos 40.000.",
+     "url": "https://www.reddit.com/comments/1udq0r6/_/otpl7gw/",
+     "score": 5,
+     "basis": "owner"
+    },
+    {
+     "text": "Tuvo un 996 muy poco tiempo y no le gustó; prefiere cómo se conduce un Cayman.",
+     "url": "https://www.reddit.com/comments/1vowvfi/_/p3yq0p2/",
+     "score": 1,
      "basis": "owner"
     }
    ],
@@ -1506,13 +1659,96 @@
    "family": "Panamera"
   },
   {
+   "id": "macan-ice",
+   "label": "Macan (gasolina, 95B)",
+   "users": 59,
+   "votes_effective": 55.0,
+   "pos": 34.5,
+   "neg": 13.5,
+   "neu": 7.0,
+   "net": 21.0,
+   "pct_positive": 72,
+   "wilson": 0.579,
+   "rank_score": 2.582,
+   "confidence": "alta",
+   "pros": [
+    {
+     "aspect": "conduccion",
+     "users": 21.5
+    },
+    {
+     "aspect": "uso_diario",
+     "users": 5.0
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 3.0
+    }
+   ],
+   "cons": [
+    {
+     "aspect": "uso_diario",
+     "users": 10.0
+    },
+    {
+     "aspect": "costes",
+     "users": 7.0
+    },
+    {
+     "aspect": "conduccion",
+     "users": 5.5
+    }
+   ],
+   "quotes_pos": [
+    {
+     "text": "Tras tres meses con un Macan base de cortesía, al principio lo veía lento pero acabó gustándole.",
+     "url": "https://www.reddit.com/comments/1ookryo/_/nn4xs9f/",
+     "score": 10,
+     "basis": "driven"
+    },
+    {
+     "text": "Con un Macan base 2025 de cortesía: maneja de forma asombrosa, pero casi sin espacio para las piernas detrás.",
+     "url": "https://www.reddit.com/comments/1narvka/_/ncxrcvj/",
+     "score": 6,
+     "basis": "driven"
+    },
+    {
+     "text": "Su Macan de uso diario va firme, silencioso y se conduce como un hot hatch grande.",
+     "url": "https://www.reddit.com/comments/1taek5s/_/ole6suv/",
+     "score": 4,
+     "basis": "owner"
+    }
+   ],
+   "quotes_neg": [
+    {
+     "text": "Le dieron un Macan base de cortesía y lo odió.",
+     "url": "https://www.reddit.com/comments/1ookryo/_/nn4uvk2/",
+     "score": 44,
+     "basis": "driven"
+    },
+    {
+     "text": "Propietario de un Macan: el concesionario le cobraba unos 3.000 dólares al año y el coche ya casi no vale nada.",
+     "url": "https://www.reddit.com/comments/1w2wffk/_/p6w16lf/",
+     "score": 4,
+     "basis": "owner"
+    },
+    {
+     "text": "Vendió el Macan T 2023 de su mujer con 33.000 millas tras recibir un presupuesto de 9.300 dólares por neumáticos, frenos y revisión; abandona Porsche.",
+     "url": "https://www.reddit.com/comments/1w2wffk/_/p6yxjko/",
+     "score": 3,
+     "basis": "owner"
+    }
+   ],
+   "family": "Macan"
+  },
+  {
    "id": "panamera-972",
    "label": "Panamera (972, 2024-hoy)",
-   "users": 24,
-   "votes_effective": 12.7,
+   "users": 25,
+   "votes_effective": 13.2,
    "pos": 10.7,
    "neg": 1.7,
-   "neu": 0.3,
+   "neu": 0.8,
    "net": 9.0,
    "pct_positive": 86,
    "wilson": 0.59,
@@ -1533,6 +1769,10 @@
     }
    ],
    "cons": [
+    {
+     "aspect": "uso_diario",
+     "users": 1.3
+    },
     {
      "aspect": "tecnologia",
      "users": 1.0
@@ -1569,109 +1809,109 @@
    "family": "Panamera"
   },
   {
-   "id": "macan-ice",
-   "label": "Macan (gasolina, 95B)",
-   "users": 32,
-   "votes_effective": 32.0,
-   "pos": 20.0,
-   "neg": 9.0,
-   "neu": 3.0,
-   "net": 11.0,
-   "pct_positive": 69,
-   "wilson": 0.508,
-   "rank_score": 1.82,
+   "id": "cayenne-9pa",
+   "label": "Cayenne (955/957, 2002-2010)",
+   "users": 46,
+   "votes_effective": 21.8,
+   "pos": 15.2,
+   "neg": 5.7,
+   "neu": 1.0,
+   "net": 9.5,
+   "pct_positive": 73,
+   "wilson": 0.513,
+   "rank_score": 1.742,
    "confidence": "media",
    "pros": [
     {
+     "aspect": "uso_diario",
+     "users": 7.0
+    },
+    {
      "aspect": "conduccion",
-     "users": 6.0
+     "users": 6.3
     },
     {
      "aspect": "fiabilidad",
-     "users": 3.0
-    },
-    {
-     "aspect": "uso_diario",
-     "users": 3.0
+     "users": 3.2
     }
    ],
    "cons": [
     {
      "aspect": "costes",
-     "users": 7.0
+     "users": 7.7
+    },
+    {
+     "aspect": "fiabilidad",
+     "users": 4.3
     },
     {
      "aspect": "conduccion",
-     "users": 3.0
-    },
-    {
-     "aspect": "valor",
-     "users": 2.0
+     "users": 1.0
     }
    ],
    "quotes_pos": [
     {
-     "text": "Tras tres meses con un Macan base de cortesía, al principio lo veía lento pero acabó gustándole.",
-     "url": "https://www.reddit.com/comments/1ookryo/_/nn4xs9f/",
+     "text": "Vendió su Cayenne con unas 225.000 millas y le costó separarse de él.",
+     "url": "https://www.reddit.com/comments/1lc7bz6/_/mxy8tp7/",
      "score": 10,
-     "basis": "driven"
-    },
-    {
-     "text": "Su Macan de uso diario va firme, silencioso y se conduce como un hot hatch grande.",
-     "url": "https://www.reddit.com/comments/1taek5s/_/ole6suv/",
-     "score": 4,
      "basis": "owner"
     },
     {
-     "text": "Entre sus Porsche, el Macan es un gran coche pero menos especial que el 911.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orckviu/",
-     "score": 3,
+     "text": "Dueño de un Cayenne Turbo S 2009: monstruoso y ágil, casi tan divertido a diario como un M5, aunque exige mantenimiento y repuestos caros.",
+     "url": "https://www.reddit.com/comments/1lc7bz6/_/mxzsn48/",
+     "score": 5,
+     "basis": "owner"
+    },
+    {
+     "text": "Dueño de un Cayenne S V8 antiguo: potencia y lujo, con maletero útil para el día a día.",
+     "url": "https://www.reddit.com/comments/1u4eqtt/_/orgtfkf/",
+     "score": 1,
      "basis": "owner"
     }
    ],
    "quotes_neg": [
     {
-     "text": "Le dieron un Macan base de cortesía y lo odió.",
-     "url": "https://www.reddit.com/comments/1ookryo/_/nn4uvk2/",
-     "score": 44,
-     "basis": "driven"
-    },
-    {
-     "text": "Propietario de un Macan: el concesionario le cobraba unos 3.000 dólares al año y el coche ya casi no vale nada.",
-     "url": "https://www.reddit.com/comments/1w2wffk/_/p6w16lf/",
-     "score": 4,
+     "text": "Lista las muchas reparaciones hechas por él mismo a su Cayenne GTS de 2009: servos, soportes del motor, juntas, techo, cuadro.",
+     "url": "https://www.reddit.com/comments/1lc7bz6/_/mxymt9n/",
+     "score": 5,
      "basis": "owner"
     },
     {
-     "text": "Vendió el Macan T 2023 de su mujer con 33.000 millas tras recibir un presupuesto de 9.300 dólares por neumáticos, frenos y revisión; abandona Porsche.",
-     "url": "https://www.reddit.com/comments/1w2wffk/_/p6yxjko/",
-     "score": 3,
+     "text": "Su Cayenne S de 2008 con 280.000 km ha necesitado cambiar casi todo salvo motor y caja; costoso de mantener y exige un buen taller independiente.",
+     "url": "https://www.reddit.com/comments/1u4eqtt/_/osdg838/",
+     "score": 2,
+     "basis": "owner"
+    },
+    {
+     "text": "Su Cayenne S de 2006 tiene rayado de cilindros a 181.000 millas y va a montar motor nuevo; desaconseja comprarlo salvo para manitas.",
+     "url": "https://www.reddit.com/comments/1lc7bz6/_/mxzccv3/",
+     "score": 2,
      "basis": "owner"
     }
    ],
-   "family": "Macan"
+   "family": "Cayenne"
   },
   {
    "id": "macan-ev",
    "label": "Macan Electric",
-   "users": 33,
-   "votes_effective": 33.0,
-   "pos": 18.0,
-   "neg": 10.0,
+   "users": 44,
+   "votes_effective": 40.0,
+   "pos": 22.5,
+   "neg": 12.5,
    "neu": 5.0,
-   "net": 8.0,
+   "net": 10.0,
    "pct_positive": 64,
-   "wilson": 0.458,
-   "rank_score": 1.453,
-   "confidence": "media",
+   "wilson": 0.477,
+   "rank_score": 1.651,
+   "confidence": "alta",
    "pros": [
     {
      "aspect": "uso_diario",
-     "users": 11.0
+     "users": 12.0
     },
     {
      "aspect": "conduccion",
-     "users": 8.0
+     "users": 11.5
     },
     {
      "aspect": "tecnologia",
@@ -1684,12 +1924,12 @@
      "users": 5.0
     },
     {
-     "aspect": "conduccion",
-     "users": 3.0
+     "aspect": "uso_diario",
+     "users": 4.0
     },
     {
-     "aspect": "tecnologia",
-     "users": 3.0
+     "aspect": "conduccion",
+     "users": 3.5
     }
    ],
    "quotes_pos": [
@@ -1733,169 +1973,6 @@
     }
    ],
    "family": "Macan"
-  },
-  {
-   "id": "cayenne-92a",
-   "label": "Cayenne (958, 2010-2017)",
-   "users": 13,
-   "votes_effective": 5.7,
-   "pos": 4.5,
-   "neg": 1.2,
-   "neu": 0.0,
-   "net": 3.3,
-   "pct_positive": 79,
-   "wilson": 0.392,
-   "rank_score": 0.83,
-   "confidence": "baja",
-   "pros": [
-    {
-     "aspect": "conduccion",
-     "users": 2.5
-    },
-    {
-     "aspect": "uso_diario",
-     "users": 1.0
-    }
-   ],
-   "cons": [],
-   "quotes_pos": [
-    {
-     "text": "Propietario de un Cayenne S 2016: SUV pequeño, rápido, muy plantado y agradable de conducir.",
-     "url": "https://www.reddit.com/comments/1taek5s/_/olheqju/",
-     "score": 3,
-     "basis": "owner"
-    }
-   ],
-   "quotes_neg": [],
-   "family": "Cayenne"
-  },
-  {
-   "id": "cayenne-9pa",
-   "label": "Cayenne (955/957, 2002-2010)",
-   "users": 12,
-   "votes_effective": 5.7,
-   "pos": 4.0,
-   "neg": 1.7,
-   "neu": 0.0,
-   "net": 2.3,
-   "pct_positive": 71,
-   "wilson": 0.321,
-   "rank_score": 0.558,
-   "confidence": "baja",
-   "pros": [
-    {
-     "aspect": "uso_diario",
-     "users": 2.0
-    },
-    {
-     "aspect": "conduccion",
-     "users": 2.0
-    }
-   ],
-   "cons": [
-    {
-     "aspect": "costes",
-     "users": 1.7
-    },
-    {
-     "aspect": "fiabilidad",
-     "users": 1.3
-    }
-   ],
-   "quotes_pos": [
-    {
-     "text": "Dueño de un Cayenne S V8 antiguo: potencia y lujo, con maletero útil para el día a día.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orgtfkf/",
-     "score": 1,
-     "basis": "owner"
-    }
-   ],
-   "quotes_neg": [
-    {
-     "text": "Su Cayenne S de 2008 con 280.000 km ha necesitado cambiar casi todo salvo motor y caja; costoso de mantener y exige un buen taller independiente.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/osdg838/",
-     "score": 2,
-     "basis": "owner"
-    }
-   ],
-   "family": "Cayenne"
-  },
-  {
-   "id": "cayenne-po536",
-   "label": "Cayenne (PO536 / E3, 2018-hoy)",
-   "users": 16,
-   "votes_effective": 9.7,
-   "pos": 4.5,
-   "neg": 4.2,
-   "neu": 1.0,
-   "net": 0.3,
-   "pct_positive": 52,
-   "wilson": 0.236,
-   "rank_score": 0.098,
-   "confidence": "baja",
-   "pros": [
-    {
-     "aspect": "conduccion",
-     "users": 2.5
-    },
-    {
-     "aspect": "tecnologia",
-     "users": 1.0
-    },
-    {
-     "aspect": "uso_diario",
-     "users": 1.0
-    }
-   ],
-   "cons": [
-    {
-     "aspect": "calidad",
-     "users": 2.3
-    },
-    {
-     "aspect": "fiabilidad",
-     "users": 2.3
-    },
-    {
-     "aspect": "costes",
-     "users": 1.7
-    }
-   ],
-   "quotes_pos": [
-    {
-     "text": "Dueño de un Cayenne Coupé 2025: lo prefiere con niños por espacio y confort de marcha, aunque el Panamera es más divertido.",
-     "url": "https://www.reddit.com/comments/1taek5s/_/olvpi36/",
-     "score": 1,
-     "basis": "owner"
-    },
-    {
-     "text": "Probo el nuevo Cayenne Electric en circuito, con derrapes y conduccion al limite, sin que nadie revisara danos al devolverlo.",
-     "url": "https://www.reddit.com/comments/1whxv3l/_/pa5zadv/",
-     "score": -1,
-     "basis": "driven"
-    }
-   ],
-   "quotes_neg": [
-    {
-     "text": "Probó un Cayenne Coupé de 117.000 dólares como coche de cortesía: se va en el carril, mucho ruido de viento y sensación de camioneta barata.",
-     "url": "https://www.reddit.com/comments/1taek5s/_/ole6suv/",
-     "score": 4,
-     "basis": "driven"
-    },
-    {
-     "text": "Cayenne GTS coupé de 2021 con fallos eléctricos, aviso del TPS y reinicios de CarPlay; pesado y sin la emoción de un Boxster.",
-     "url": "https://www.reddit.com/comments/1u4eqtt/_/orequ09/",
-     "score": 2,
-     "basis": "owner"
-    },
-    {
-     "text": "Su Cayenne de 2023 ha necesitado cinco veces la garantía, con problemas del motor incluidos; no lo conservaría fuera de garantía.",
-     "url": "https://www.reddit.com/comments/1vt4gg3/_/p4qr7b8/",
-     "score": 2,
-     "basis": "owner"
-    }
-   ],
-   "family": "Cayenne"
   }
  ],
  "threads": [
@@ -1972,16 +2049,46 @@
    "comments": 245
   },
   {
+   "title": "Porsche's 1139-HP Cayenne EV Weighs Nearly Three Tons but Hits 60 MPH Quicker Than a Corvette ZR1",
+   "sub": "cars",
+   "url": "https://www.reddit.com/r/cars/comments/1vbtejk/porsches_1139hp_cayenne_ev_weighs_nearly_three/",
+   "comments": 190
+  },
+  {
    "title": "Honestly at my breaking point. Over a FULL YEAR in the shop, 11+ battery modules swapped, and our Taycan just died for the 4th time. Porsche still refuses to replace the pack.",
    "sub": "Taycan",
    "url": "https://www.reddit.com/r/Taycan/comments/1wegbbr/honestly_at_my_breaking_point_over_a_full_year_in/",
    "comments": 168
   },
   {
+   "title": "Which One Are You Driving This Morning?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1vx6jzc/which_one_are_you_driving_this_morning/",
+   "comments": 155
+  },
+  {
+   "title": "Accident at Dealership Service - What Should I Do? (2025 Cayenne S Coupe, 3 Months Old)",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1nype63/accident_at_dealership_service_what_should_i_do/",
+   "comments": 152
+  },
+  {
    "title": "Can’t make up my mind before my build gets frozen, PTS Problems.",
    "sub": "porsche911",
    "url": "https://www.reddit.com/r/porsche911/comments/1wifmqq/cant_make_up_my_mind_before_my_build_gets_frozen/",
    "comments": 151
+  },
+  {
+   "title": "Cayenne Electric leaked! What do you think?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1p13flz/cayenne_electric_leaked_what_do_you_think/",
+   "comments": 144
+  },
+  {
+   "title": "What's the max speed someone has gone in one of these?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1usf640/whats_the_max_speed_someone_has_gone_in_one_of/",
+   "comments": 135
   },
   {
    "title": "The Taycan (24 4S CT) is my favorite vehicle I have ever owned (by a mile). It is also hilariously bad at many things.",
@@ -1996,15 +2103,33 @@
    "comments": 128
   },
   {
+   "title": "I am far from wealthy",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1tdgdwv/i_am_far_from_wealthy/",
+   "comments": 128
+  },
+  {
    "title": "Opinions on the new EV Ferrari?",
    "sub": "Taycan",
    "url": "https://www.reddit.com/r/Taycan/comments/1tpl2tw/opinions_on_the_new_ev_ferrari/",
    "comments": 126
   },
   {
+   "title": "Got dumped, bought my first Porsche",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1ko67rb/got_dumped_bought_my_first_porsche/",
+   "comments": 126
+  },
+  {
    "title": "Thinking of getting rid of my Taycan",
    "sub": "Taycan",
    "url": "https://www.reddit.com/r/Taycan/comments/1rhti9q/thinking_of_getting_rid_of_my_taycan/",
+   "comments": 121
+  },
+  {
+   "title": "Cayenne Electric interior photos!",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1oys5w8/cayenne_electric_interior_photos/",
    "comments": 121
   },
   {
@@ -2017,6 +2142,12 @@
    "title": "Thoughts on Ice Grey Metalic",
    "sub": "porsche911",
    "url": "https://www.reddit.com/r/porsche911/comments/1wqxi9z/thoughts_on_ice_grey_metalic/",
+   "comments": 116
+  },
+  {
+   "title": "Will I regret it: swap 991.1 GTS for GTS Coupe",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1vdlzyr/will_i_regret_it_swap_9911_gts_for_gts_coupe/",
    "comments": 116
   },
   {
@@ -2188,6 +2319,12 @@
    "comments": 43
   },
   {
+   "title": "Porsche Cayenne versus Macan",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1v98wep/porsche_cayenne_versus_macan/",
+   "comments": 41
+  },
+  {
    "title": "I built a privacy-first analytics dashboard for Porsche Taycan/Macan EV trip data",
    "sub": "Taycan",
    "url": "https://www.reddit.com/r/Taycan/comments/1qr6ohq/i_built_a_privacyfirst_analytics_dashboard_for/",
@@ -2200,10 +2337,52 @@
    "comments": 33
   },
   {
+   "title": "Cayman GTS 4.0 to Cayenne GTS?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1vgtpwb/cayman_gts_40_to_cayenne_gts/",
+   "comments": 33
+  },
+  {
+   "title": "Should I buy 2009 Porsche cayenne turbo s with 183k miles for 12k?? What to look for? Life expectancy?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1lc7bz6/should_i_buy_2009_porsche_cayenne_turbo_s_with/",
+   "comments": 32
+  },
+  {
+   "title": "911 Geländewagen",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1tbe9dg/911_geländewagen/",
+   "comments": 31
+  },
+  {
    "title": "At $88,795, a brand-new 2026 Macan 4-cylinder Base costs more than a brand-new 2026 6-cylinder S",
    "sub": "whatcarshouldIbuy",
    "url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1wroarr/at_88795_a_brandnew_2026_macan_4cylinder_base/",
    "comments": 30
+  },
+  {
+   "title": "Bye 911 - Hello Turbo GT",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1m5wkar/bye_911_hello_turbo_gt/",
+   "comments": 30
+  },
+  {
+   "title": "Cayman/911 owners: Is cayenne worth it?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1vowvfi/cayman911_owners_is_cayenne_worth_it/",
+   "comments": 29
+  },
+  {
+   "title": "I’m new to the sub but here’s my baby, she’s a 2005 955 V8 twin turbo S in matte pearl white with blue pearl in the matting agent, third stage turbos and a 2008 GTS body kit, carbon fibre accents inside and out anywhere they fit. Her name is Rocket.",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1vnyp8a/im_new_to_the_sub_but_heres_my_baby_shes_a_2005/",
+   "comments": 28
+  },
+  {
+   "title": "GTS or Turbo S / E Hybrid",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1txtt4w/gts_or_turbo_s_e_hybrid/",
+   "comments": 26
   },
   {
    "title": "Porsche owners, do you think 2012-2015 Panamera or Cayenne is good first car?",
@@ -2212,10 +2391,22 @@
    "comments": 25
   },
   {
+   "title": "Going from Macan S to Cayenne Coupe",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1narvka/going_from_macan_s_to_cayenne_coupe/",
+   "comments": 25
+  },
+  {
    "title": "Carerra 4s vs Cayenne Turbo GT",
    "sub": "Porsche",
    "url": "https://www.reddit.com/r/Porsche/comments/1wrjssa/carerra_4s_vs_cayenne_turbo_gt/",
    "comments": 18
+  },
+  {
+   "title": "the interior is pretty nice on the Panamera 4",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1op06ml/the_interior_is_pretty_nice_on_the_panamera_4/",
+   "comments": 16
   },
   {
    "title": "Taycan vs. new Macan – what would you choose",
@@ -2227,6 +2418,12 @@
    "title": "Considering buying a CPO Cayenne S 2024 but engine got replaced under warranty",
    "sub": "Porsche",
    "url": "https://www.reddit.com/r/Porsche/comments/1wiqeiu/considering_buying_a_cpo_cayenne_s_2024_but/",
+   "comments": 14
+  },
+  {
+   "title": "2021 Macan vs. 2019 Cayenne – Which One Should I Choose?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1kcqs3f/2021_macan_vs_2019_cayenne_which_one_should_i/",
    "comments": 14
   },
   {
@@ -2246,6 +2443,36 @@
    "sub": "Porsche",
    "url": "https://www.reddit.com/r/Porsche/comments/1vyk0ob/if_i_recently_bought_a_used_car_a_one_owner_2017/",
    "comments": 12
+  },
+  {
+   "title": "Replaced my Taycan :)",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1pc0c90/replaced_my_taycan/",
+   "comments": 10
+  },
+  {
+   "title": "2015 Porsche Macan S VS 2015 Porsche Cayenne?",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1lf0fe1/2015_porsche_macan_s_vs_2015_porsche_cayenne/",
+   "comments": 10
+  },
+  {
+   "title": "Curious about Cayenne EV ingress egress and frost seat vs Macan EV",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1nizube/curious_about_cayenne_ev_ingress_egress_and_frost/",
+   "comments": 9
+  },
+  {
+   "title": "Coupe S verse macan turbo",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1u8w0zo/coupe_s_verse_macan_turbo/",
+   "comments": 8
+  },
+  {
+   "title": "2025 Cayenne S CPO or Macan 4S EV (New)",
+   "sub": "PorscheCayenne",
+   "url": "https://www.reddit.com/r/PorscheCayenne/comments/1n60x39/2025_cayenne_s_cpo_or_macan_4s_ev_new/",
+   "comments": 8
   }
  ]
 }

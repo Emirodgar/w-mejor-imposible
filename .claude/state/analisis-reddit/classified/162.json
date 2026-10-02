@@ -1,0 +1,601 @@
+[
+ {
+  "id": "osl7szk",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que el Macan se conduce como un hot hatch, aunque tiene poco espacio trasero, menos capacidad de remolque y asientos menos cómodos que el Cayenne."
+ },
+ {
+  "id": "osl7szk#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera al Cayenne mucho más espacioso, cómodo y con más capacidad de remolque que el Macan, pero menos ágil de conducir."
+ },
+ {
+  "id": "osmwrc3",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encanta cómo conduce el Macan, parecido a un turismo, y señala que se deprecia mejor que el Cayenne por su menor precio."
+ },
+ {
+  "id": "mso352m",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Ha tenido tres Cayenne seguidos y los considera coches muy difíciles de superar."
+ },
+ {
+  "id": "msqnebt",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Cayenne Turbo de 2020: caro de mantener (frenos y servicio oficial) y gastón, pero mereció la pena por lo bueno que era."
+ },
+ {
+  "id": "msqw223",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Añora el sonido y la presencia de su último Cayenne S Coupé de 2024."
+ },
+ {
+  "id": "mt71r3c",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Cayenne 958 Turbo: opina que un taller independiente evita los precios del concesionario y no debería frenar la compra de un Cayenne usado."
+ },
+ {
+  "id": "mt2zfu2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su mujer usa un Cayenne base certificado: mucho más barato de mantener que sus antiguos Suburban, más divertido y fácil de aparcar."
+ },
+ {
+  "id": "msoloit",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Comprado un Cayenne diésel de 2016 con 40.000 km como complemento a su 911 GT4; los llama motores encantadores."
+ },
+ {
+  "id": "msoloit#2",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un 981 GT4 que compró tras su ruptura; lo considera un coche encantador."
+ },
+ {
+  "id": "mspqi0d",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pensaba que el Cayenne era un Touareg maquillado, pero una conducción le hizo cambiar de opinión y ya ha tenido cinco."
+ },
+ {
+  "id": "msuj5iu",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende que el Cayenne no es un 911 pero es un vehículo deportivo, solo unos segundos más lento que un Taycan."
+ },
+ {
+  "id": "msra571",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne es su único coche: lo usa para remolcar y llevar gente y le sorprende que no se sienta como un SUV al volante."
+ },
+ {
+  "id": "mt1pjsx",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su primer coche de lujo: sólido, interior agradable, sistema de sonido Bose mejor de lo que dicen y muy bueno en el día a día."
+ },
+ {
+  "id": "mt12slq",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un Macan S de 2018 tras una ruptura y está contento con él."
+ },
+ {
+  "id": "opzkxjn",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS: comparte motor con el Turbo y su PDK aguanta el par con gasolina normal, aunque tuneado a etanol llega al límite."
+ },
+ {
+  "id": "opygzv7",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda el Cayenne GTS como punto dulce, ruidoso y divertido, y desaconseja el E-Hybrid por complejidad y peso extra."
+ },
+ {
+  "id": "opyki34",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Cayenne Coupé E-Hybrid de 2026 y le pareció normal, sin nada especial."
+ },
+ {
+  "id": "opypg8b",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido GTS, Turbo y Turbo S E-Hybrid: el híbrido es genial pero con avisos constantes de motor, no merece el problema."
+ },
+ {
+  "id": "opz9h18",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró hace un mes un Cayenne Turbo E-Hybrid tras meses de investigación y no se arrepiente nada."
+ },
+ {
+  "id": "oq0u7ik",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su Cayenne híbrido de primera generación (y un diésel de 2015) valora el par del híbrido, ideal si el trayecto diario es corto."
+ },
+ {
+  "id": "oq3c44b",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Un año con un Cayenne Turbo S E-Hybrid de 2022 sin problemas: respuesta instantánea y modo eléctrico en trayectos cortos."
+ },
+ {
+  "id": "oq5a8g4",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Cayenne E-Hybrid de 2022 lo describe como dos coches en uno: ciudad en eléctrico y adelantamientos brutales."
+ },
+ {
+  "id": "osfi9rj",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo S E-Hybrid de 2023: no nota el peso, va fenomenal y el modo eléctrico es muy práctico."
+ },
+ {
+  "id": "nbwo7u1",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Condujo un Macan de cortesía y lo odió: asiento incómodo y habitáculo estrecho para su estatura."
+ },
+ {
+  "id": "nbwo7u1#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Cayenne E-Hybrid de 2024 y prefiere claramente un Cayenne S antes que un Macan."
+ },
+ {
+  "id": "nbwpn6l",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Macan de gasolina a un Cayenne GTS y no miró atrás."
+ },
+ {
+  "id": "nbwpn6l#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tuvo un Macan de gasolina antes de pasar al Cayenne GTS."
+ },
+ {
+  "id": "nbwpn6l#3",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el Macan eléctrico caro para su diferencia de precio con el Cayenne y teme su depreciación."
+ },
+ {
+  "id": "nc817ap",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ve el Macan 4S eléctrico como casi el coche de diario perfecto: potencia inmediata, cómodo y sin gasolineras, aunque algo aburrido."
+ },
+ {
+  "id": "nc817ap#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que un Cayenne S es lento y se nota su peso, y que con opciones el GTS resulta mejor y más barato."
+ },
+ {
+  "id": "np73r1w",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Cayenne de 2016 que le gusta, pese a que su profusión de botones llama la atención."
+ },
+ {
+  "id": "np7i1tj",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le gustaban los muchos interruptores físicos de su Cayenne, aunque usaba pocos."
+ },
+ {
+  "id": "np6xvoc",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Macan eléctrico: al principio le sobraban pantallas, pero se acostumbró y acabó disfrutándolo."
+ },
+ {
+  "id": "npcqtj9",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un Macan eléctrico y echa de menos la pantalla inferior de climatización y carga que sí lleva el Taycan."
+ },
+ {
+  "id": "npcqtj9#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: valora su pantalla central inferior para clima y carga."
+ },
+ {
+  "id": "npwaix5",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar toda la gama de 2024, el Macan eléctrico es su favorito: lo prefiere al Macan GTS de gasolina y lo ve mejor que el Taycan."
+ }
+]

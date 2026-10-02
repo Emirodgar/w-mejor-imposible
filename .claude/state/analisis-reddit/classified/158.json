@@ -1,0 +1,616 @@
+[
+ {
+  "id": "p5q95wb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Opina que los Taycan son geniales, sin aportar experiencia propia."
+ },
+ {
+  "id": "p5vht5v",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Taycan tres años: muy divertido, con solo un asiento que crujía, un recall del cargador y algún neumático reventado."
+ },
+ {
+  "id": "p5vht5v#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo problemas del primer año de producción con su Macan S de 2015."
+ },
+ {
+  "id": "p5vqdfs",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: sufrió reventones por golpes menores en llantas de perfil bajo, pero el mantenimiento le salió más barato."
+ },
+ {
+  "id": "p64veu0",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan 4S le ha resultado menos fiable, más caro de mantener y menos agradable de conducir que su Range Rover."
+ },
+ {
+  "id": "p65186x",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En su Taycan ha necesitado unas diez reparaciones, frente a una sola del Range Rover en 78.000 millas."
+ },
+ {
+  "id": "p5oq0gs",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Taycan que solo cambiaría por el Cayenne Turbo eléctrico; lo usa a diario."
+ },
+ {
+  "id": "p6836m8",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 992.1 4S Cabrio: agarra muy bien, gira con eje trasero direccional y es cómodo como coche diario."
+ },
+ {
+  "id": "mxy8tp7",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Vendió su Cayenne con unas 225.000 millas y le costó separarse de él."
+ },
+ {
+  "id": "mxyqlqm",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Cayenne de 2004 con 197.000 millas cuyo único fallo son las compuertas del climatizador, y otro de 2009 con motor 3.6."
+ },
+ {
+  "id": "mxymt9n",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lista las muchas reparaciones hechas por él mismo a su Cayenne GTS de 2009: servos, soportes del motor, juntas, techo, cuadro."
+ },
+ {
+  "id": "mxzccv3",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne S de 2006 tiene rayado de cilindros a 181.000 millas y va a montar motor nuevo; desaconseja comprarlo salvo para manitas."
+ },
+ {
+  "id": "mxzsn48",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo S 2009: monstruoso y ágil, casi tan divertido a diario como un M5, aunque exige mantenimiento y repuestos caros."
+ },
+ {
+  "id": "my02lyo",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que un Cayenne barato de 12.000 dólares cuesta de mantener como uno de 120.000: sellado de tapa de distribución, neumáticos y frenos."
+ },
+ {
+  "id": "my2x3z9",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne Turbo S 955 requirió unos 5.000 dólares en arreglos tras la compra; avisa del riesgo de rayado de cilindros en el 957."
+ },
+ {
+  "id": "my7133f",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo S de 2009 y de otros dos con muchos kilómetros: gran coche, aguantan rodando aunque conviene reparar uno mismo."
+ },
+ {
+  "id": "ncwagdf",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Jaguar F-Pace a un Cayenne S: más espacio, plazas traseras más cómodas y más maletero."
+ },
+ {
+  "id": "ncwd0fw",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su segundo Cayenne GTS conserva el coche sobre todo por su capacidad de remolque."
+ },
+ {
+  "id": "ncwet9b",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan GTS de 2017 y lo recuerda más ágil que el Cayenne por simple física."
+ },
+ {
+  "id": "ncwet9b#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Su mujer tiene un Cayenne Coupé base de 2021: cómodo, buen coche familiar, aunque con motor base justo y menos ágil que el Macan."
+ },
+ {
+  "id": "ncwfacv",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Macan Turbo a un Cayenne GTS de 2021: más habitable, sin sentirse mucho más grande, y con maletero útil; tamaño perfecto."
+ },
+ {
+  "id": "ncxga7x",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Macan S de 2018 es mucho más contundente y deportivo que el Cayenne base de su mujer."
+ },
+ {
+  "id": "ncxga7x#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neu"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Cayenne base de 2020 de su mujer es cómodo pero no deportivo como el Macan S."
+ },
+ {
+  "id": "ncxh7zv",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido un Macan S y un GTS y los adora: más ágil y con más tacto de carretera que el Cayenne."
+ },
+ {
+  "id": "ncxh7zv#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Con un Cayenne E-Hybrid Coupé: más gran turismo, menos ágil y con menos tacto, pero suave, con buena altura y espacio."
+ },
+ {
+  "id": "ncxnbnh",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne Coupé base de 2021 le pareció, al probarlo contra el Macan, una conducción más contundente, suave y rápida."
+ },
+ {
+  "id": "ncxnqwq",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Macan S a un Cayenne y le gusta el espacio extra y ir algo más alto."
+ },
+ {
+  "id": "ncxrcvj",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Macan base 2025 de cortesía: maneja de forma asombrosa, pero casi sin espacio para las piernas detrás."
+ },
+ {
+  "id": "ncxrcvj#2",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neu"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo: claramente menos ágil que el Macan, pero ideal para viajar con cuatro adultos."
+ },
+ {
+  "id": "nd033km",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió su Macan GTS por un Cayenne GTS; su mujer tiene un S Coupé, menos ágil pero más lujoso y mejor construido."
+ },
+ {
+  "id": "nd0ba5x",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el Cayenne Coupé no queda bien y que la moda de SUV tipo coupé durará poco."
+ },
+ {
+  "id": "nd69vlt",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera raro el aspecto del Cayenne Coupé y prefiere un coupé de verdad."
+ },
+ {
+  "id": "ncyaxs6",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Macan S a un Cayenne GTS de 2021: lo adora, más espacio para los niños y un sonido que le conquistó."
+ },
+ {
+  "id": "ncyaxs6#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Echa de menos la agilidad y el tono más deportivo de su Macan S de 2018 en el tráfico."
+ },
+ {
+  "id": "nd0i3vl",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne Turbo, con PTV y dirección trasera, maneja muy bien, contra lo que dicen otros."
+ },
+ {
+  "id": "nd0i3vl#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha probado como coches de cortesía varios Macan y los considera pequeños divertidos en modo Sport."
+ },
+ {
+  "id": "nd1vhnp",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne grande: ágil para esquivar tráfico; probó un Macan S de cortesía y echaba de menos su Cayenne."
+ }
+]

@@ -1,0 +1,1511 @@
+[
+ {
+  "id": "p1a5ycd",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 991.1 GTS: lo usa con normalidad para el día a día familiar y lo considera una máquina fantástica."
+ },
+ {
+  "id": "p1a3gc2",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1 GTS con PDK que adora; es el único coche que ha querido conservar para siempre."
+ },
+ {
+  "id": "p1a23pj",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS Coupé: suena mucho mejor que un 911 y maneja increíblemente bien para su tamaño."
+ },
+ {
+  "id": "p1a2e3e",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS Coupé 2023: gran SUV deportivo, aunque no lo compara con un Porsche de dos puertas."
+ },
+ {
+  "id": "p1a7kvn",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Vendió su 911 C2S de 2005 por un Range Rover y se arrepiente 15 años después; ahora tiene un 997.2 C4 y nada iguala conducir un 911."
+ },
+ {
+  "id": "p1bgtns",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió su 911 cabrio de 2013 por un Range Rover, echó de menos el 911 y acabó comprando otro."
+ },
+ {
+  "id": "p1ac045",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un 992.2 Targa 4S que no vendería; recomienda quedarse el 911 y buscar otro coche para diario."
+ },
+ {
+  "id": "p1aj112",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 992 y un Cayenne actual y no cambiaría el 992 por el Cayenne."
+ },
+ {
+  "id": "p1aj5tg",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1 S: le cuesta cada vez más entrar y salir por la edad, pero no lo dejará hasta que no pueda."
+ },
+ {
+  "id": "p1artin",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne: muy versátil, rápido y deportivo para ser SUV, aunque no un deportivo puro."
+ },
+ {
+  "id": "p1b2q3f",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que los Cayenne de la generación actual solo dan problemas y recomienda un 958 más barato."
+ },
+ {
+  "id": "p1bdhn2",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que los Cayenne 9PA estaban sobredimensionados y son bastante fiables, con fallos conocidos (caja de transferencia, bombas, fugas)."
+ },
+ {
+  "id": "p1bdhn2#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que el Cayenne actual tiene fallos eléctricos, drenaje de batería caro y motores más difíciles de reparar y menos fiables."
+ },
+ {
+  "id": "p1b83b8",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Para quien valore agilidad, el Cayenne se siente como un barco, aunque Porsche saque lo máximo de él."
+ },
+ {
+  "id": "p1bc3rn",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica la calidad del Cayenne: cruje mucho, es un coche de piezas VW/Audi y el interior es soso."
+ },
+ {
+  "id": "p1brfjy",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un Cayenne de diez años aguanta muy bien y parece nuevo; prefiere asumir el mantenimiento antes que la depreciación."
+ },
+ {
+  "id": "p1btf2k",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un 991.1 S a un Macan S porque su mujer no podía entrar y salir del 911; se arrepiente, ningún SUV se le acerca."
+ },
+ {
+  "id": "p1btf2k#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras cambiar su 911 por un Macan S piensa que debió quedarse el 911; ningún SUV está ni cerca."
+ },
+ {
+  "id": "p1bzmhu",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne S tuneado con más potencia, pero admite que el Cayman de un amigo es mucho más divertido de conducir."
+ },
+ {
+  "id": "p1bzmhu#2",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987",
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Cayman de un amigo y se quedó celoso por lo bien que conduce gracias al motor central."
+ },
+ {
+  "id": "p1c2ndq",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió su 911 4S cabrio de 2025 por un Cayenne GTS 2026 bien equipado y está encantado."
+ },
+ {
+  "id": "p1c2ndq#2",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido cuatro 911 y lo considera un automóvil especial y elegante; volverá a por otro."
+ },
+ {
+  "id": "p1cn8e1",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Cayenne GTS 2021 y es probablemente su mejor coche de diario, por encima de otros que ha tenido."
+ },
+ {
+  "id": "p1d7p3a",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un Cayenne Turbo por necesidad de espacio; en Sport+ todavía le hace sonreír."
+ },
+ {
+  "id": "p1dfber",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce a diario un 991.1 C2S y no lo cambiaría por un Cayenne."
+ },
+ {
+  "id": "p1dfber#2",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Cayenne Turbo S 2014 de su mujer es ridículamente rápido, pero se siente grande y pesado, como un cerdo con un cohete."
+ },
+ {
+  "id": "p1esmik",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Coupé que le gusta."
+ },
+ {
+  "id": "p1fq870",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo: mucho más rápido en recta, pero sin comparación con el Boxster en manejo."
+ },
+ {
+  "id": "p1fq870#2",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987",
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Boxster: su manejo es superior al del Cayenne Turbo."
+ },
+ {
+  "id": "p1teubv",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un Taycan y lo encontró muy cercano a su 911 en ciudad: conduce y dirige como un Porsche."
+ },
+ {
+  "id": "p1teubv#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ve el Cayenne como un coche muy grande y pesado, menos cercano a un 911 que un Taycan."
+ },
+ {
+  "id": "p1teubv#3",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Condujo un Macan GTS y le pareció muy grande y como un tanque comparado con su 911."
+ },
+ {
+  "id": "p1h5pg6",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS Coupé 2023 configurado a su gusto; le encanta y se adapta a su altura."
+ },
+ {
+  "id": "p1iftsk",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan GTS: fantástico y con ADN Porsche, aunque no sustituye a un 981."
+ },
+ {
+  "id": "p1iftsk#2",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 981 GTS: fantástico con ADN Porsche muy marcado, que el Macan solo puede complementar."
+ },
+ {
+  "id": "p1j0za0",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne Coupé es el mejor coche de diario que ha tenido: ingeniería notable y conducción excelente."
+ },
+ {
+  "id": "p1rpuca",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Terminó el leasing de un Cayenne Coupé e-hybrid 2023 y se alegra: es bonito pero no le enamoró."
+ },
+ {
+  "id": "p35wgfa",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Cayenne al que quiere, aunque cambiar un 911 por uno le parece una locura."
+ },
+ {
+  "id": "p5l9bmc",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el 991 probablemente el último gran 911 y aconseja conservar el GTS."
+ },
+ {
+  "id": "p5mysdn",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Turbo 2020: rápido, maneja muy bien, V8 espectacular y fiable como un Lexus."
+ },
+ {
+  "id": "p0c3tv3",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne: se siente más pesado y turístico que un Macan, más pequeño y ágil."
+ },
+ {
+  "id": "p0lrw73",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le prestaron un Macan y le pareció muy estrecho comparado con el Cayenne."
+ },
+ {
+  "id": "p0dtobw",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Afirma que el Macan GTS tiene una conducción más Porsche que casi todas las versiones del Cayenne."
+ },
+ {
+  "id": "p0cnoa5",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un Macan y le encantan su rapidez, facilidad y confort; duda con el Cayenne híbrido que ha tenido años."
+ },
+ {
+  "id": "p0cnoa5#2",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño durante años de un Cayenne híbrido; valora su amplitud."
+ },
+ {
+  "id": "p0ct3t7",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le gusta el exterior del Macan pero el interior le parece anticuado y el panel de climatización trasero barato."
+ },
+ {
+  "id": "p0e887c",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Macan muestra su edad por dentro: un cuadro de instrumentos de 2013 en un modelo de 2026."
+ },
+ {
+  "id": "p0d8l82",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Macan maneja como un turismo pero casi no tiene espacio trasero ni gran capacidad de remolque."
+ },
+ {
+  "id": "p0d8l82#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Cayenne maneja peor pero ofrece mucho espacio trasero y buena capacidad de remolque."
+ },
+ {
+  "id": "p0dmhwc",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne para remolcar: práctico, bueno fuera de asfalto y con mejor interior que el Macan."
+ },
+ {
+  "id": "p0enbae",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compraron un Cayenne S 2025 y un Macan S negros; ambos fantásticos y la elección depende del espacio."
+ },
+ {
+  "id": "p0enbae#2",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compraron un Macan S 2025 junto a un Cayenne S; lo consideran fantástico."
+ },
+ {
+  "id": "p0m77uc",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne con escape deportivo con un sonido profundo."
+ },
+ {
+  "id": "p0m77uc#2",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan: maneja sorprendentemente bien para un SUV pequeño."
+ },
+ {
+  "id": "p0f8mpj",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Sentarse horas en la parte trasera del Macan le parece terriblemente estrecho."
+ },
+ {
+  "id": "p0g1fg6",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su primer Porsche fue un Macan Turbo 2016: divertido y vivo, pero pequeño para viajes y cargas grandes."
+ },
+ {
+  "id": "p0g1fg6#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne GTS le resulta perfecto para viajes y carga; espera conservarlo mucho tiempo."
+ },
+ {
+  "id": "p0g24n0",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En su segundo Cayenne: se parece más a un Audi Q8 que a un Porsche en conducción, sin que sea malo."
+ },
+ {
+  "id": "p0gijml",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Con un Macan GTS viajaron con dos niños en sillas y un perro: bien, aunque se llena rápido con equipaje."
+ },
+ {
+  "id": "p0jpg6u",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Cayenne Turbo 2019 a un Macan GTS 2024 y disfruta mucho más conduciendo en carreteras secundarias."
+ },
+ {
+  "id": "p0jpg6u#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el Cayenne Turbo 2019 posiblemente el mejor coche, muy cómodo y lujoso aunque menos emocional."
+ },
+ {
+  "id": "p0mh0hm",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan GTS: tras un tiempo olvidó el V8, el V6 del Macan tiene un sonido con carácter."
+ },
+ {
+  "id": "p0miqwo",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan GTS: le gustaba más por fuera pero era demasiado pequeño para él."
+ },
+ {
+  "id": "p0miqwo#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Cayenne básico, elegido por tamaño y capacidad off-road."
+ },
+ {
+  "id": "p0qd0v7",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tras probar el Macan de su mujer lo cambió por un Cayenne; va por el tercero y no quiere otra cosa."
+ },
+ {
+  "id": "p0vs8ou",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan como vehículo de empresa y le encantó."
+ },
+ {
+  "id": "p0vs8ou#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne le gusta aún más: maneja de maravilla, tiene espacio y remolque."
+ },
+ {
+  "id": "p1zyxfw",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el GTS 4.0 el santo grial del 718."
+ },
+ {
+  "id": "p21vqy5",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987",
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayman usado en circuito que prefiere por conducción, aunque se quedaría con el 911 por las plazas."
+ },
+ {
+  "id": "p1zyx9y",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Encargó un Boxster GTS 4.0 y le encantó, pero con tres hijos casi no lo usaba y lo vendió con poca depreciación."
+ },
+ {
+  "id": "p1zyx9y#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió el Boxster por un Cayenne S de diario: el V8 biturbo es especial y no se arrepiente."
+ },
+ {
+  "id": "p20o487",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Vendió su 997.2 manual y es uno de los mayores arrepentimientos de su vida; los 911 mantienen bien el valor."
+ },
+ {
+  "id": "p213boj",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un 718 y destaca que es una gran plataforma que apenas se deprecia."
+ },
+ {
+  "id": "p213boj#2",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Tiene un Cayenne Turbo 958.2 para moverse; se consigue barato si se vigila el mantenimiento."
+ },
+ {
+  "id": "p2163se",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Macan GTS para uso familiar: disfruta mucho cómo conduce y cuatro personas caben bien."
+ },
+ {
+  "id": "p217jh2",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda un Cayenne 958.2 barato: buen rendimiento y un interior mejor que el actual."
+ },
+ {
+  "id": "p266c6g",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conducen un Cayenne GTS 958.1 con su hijo: silencioso y cómodo o deportivo con el escape abierto."
+ },
+ {
+  "id": "p237hup",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Cayenne GTS y lo recuerda como muy divertido, con un sonido de motor espectacular."
+ },
+ {
+  "id": "p24wsd5",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Cayenne Coupé S con un V8 muy divertido y no se arrepiente."
+ },
+ {
+  "id": "p254ups",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS: probablemente el mejor SUV de su tamaño en prestaciones."
+ },
+ {
+  "id": "p25ookb",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS Coupé 2025: una bestia que maneja mejor de lo esperado con PDCC y V8 con gran sonido."
+ },
+ {
+  "id": "p273wvt",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS Coupé 2023: gran coche, con una combinación de color perfecta."
+ },
+ {
+  "id": "nn7y508",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le gusta todo del Panamera salvo el tamaño."
+ },
+ {
+  "id": "nn8im2k",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que las pantallas del interior son feas y se ven baratas."
+ },
+ {
+  "id": "nn96q5u",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "No le gusta el interior por exceso de pantallas táctiles frente a controles físicos."
+ },
+ {
+  "id": "nnddp94",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica la consola central: plásticos que se rayan en pocas semanas."
+ },
+ {
+  "id": "nnxjovi",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el interior se ha echado a perder con pantallas por todas partes y que la generación perderá valor."
+ },
+ {
+  "id": "ns0qlmc",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne híbrido enchufable es mucho más suave y cómodo que su Taycan GTS anterior, con escape deportivo."
+ },
+ {
+  "id": "nskszpa",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan con llantas 21 y suspensión neumática va menos duro que su Range Rover."
+ },
+ {
+  "id": "ns94p98",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "En su tercer Cayenne S: equilibrio perfecto entre deportividad y capacidad off-road."
+ },
+ {
+  "id": "p5mehnr",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne tiene un ruido molesto en el habitáculo."
+ }
+]

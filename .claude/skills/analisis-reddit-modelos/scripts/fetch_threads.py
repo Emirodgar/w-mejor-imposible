@@ -46,12 +46,16 @@ def load_models():
         return json.load(f)
 
 
-def discover(cfg, days, min_comments, pages_per_sub, title_regex=None):
-    fam = re.compile("|".join(p for ps in cfg["family_patterns"].values() for p in ps), re.I)
+def discover(cfg, days, min_comments, pages_per_sub, title_regex=None, family=None):
+    pats = cfg["family_patterns"][family] if family else [p for ps in cfg["family_patterns"].values() for p in ps]
+    fam = re.compile("|".join(pats), re.I)
     opin = re.compile(title_regex or cfg["opinion_title_regex"], re.I)
     since = int(time.time()) - days * 86400
     found = {}
     subs = [(s, True) for s in cfg["subreddits"]["por_modelo"]] + [(s, False) for s in cfg["subreddits"]["generales"]]
+    if family:  # solo los subreddits cuyo nombre encaja con la familia + los generales
+        rx = re.compile("|".join(pats), re.I)
+        subs = [(s, m) for s, m in subs if not m or rx.search(s)]
     for sub, model_sub in subs:
         before, n_pages = None, 0
         print(f"[descubrir] r/{sub}", file=sys.stderr)
@@ -128,6 +132,7 @@ def main():
     ap.add_argument("--batch-size", type=int, default=150)
     ap.add_argument("--min-chars", type=int, default=80, help="descarta comentarios mas cortos (casi nunca aportan experiencia)")
     ap.add_argument("--title-regex", help="sustituye opinion_title_regex de models.json (p. ej. solo hilos de problemas)")
+    ap.add_argument("--family", choices=["911", "718", "Macan", "Cayenne", "Panamera", "Taycan"], help="centra el descubrimiento en una familia (huecos de cobertura)")
     ap.add_argument("--skip-discovery", action="store_true")
     a = ap.parse_args()
 
@@ -136,7 +141,7 @@ def main():
     seen_path = os.path.join(STATE, "threads-done.json")
     done = set(json.load(open(seen_path, encoding="utf-8"))) if os.path.exists(seen_path) else set()
 
-    found = {} if a.skip_discovery else discover(cfg, a.days, a.min_comments, a.pages_per_sub, a.title_regex)
+    found = {} if a.skip_discovery else discover(cfg, a.days, a.min_comments, a.pages_per_sub, a.title_regex, a.family)
     if a.urls:
         for u in json.load(open(a.urls, encoding="utf-8")):
             m = re.search(r"comments/([a-z0-9]+)", u) or re.match(r"^([a-z0-9]+)$", u)
