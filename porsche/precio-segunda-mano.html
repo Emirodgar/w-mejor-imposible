@@ -83,6 +83,22 @@
         .price-down { color: #dc3545; font-weight: bold; }
         .price-stable { color: var(--porsche-gold); }
 
+        .anuncios-label { font-size: 14px; align-self: center; }
+        #anuncios-modelo { font: inherit; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--hairline); background: #fff; color: inherit; max-width: 100%; }
+        .anuncios-kpi { margin-left: auto; text-align: right; }
+        .anuncios-kpi b { font-size: 26px; font-weight: 700; }
+        .anuncios-kpi span { display: block; font-size: 12px; color: var(--porsche-grey); }
+        .anuncios-leyenda { font-size: 12px; color: var(--porsche-grey); margin: 10px 0 16px; }
+        .anuncios-leyenda i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin: 0 5px 0 12px; vertical-align: -1px; }
+        .anuncios-leyenda i:first-child { margin-left: 0; }
+        .anuncios-leyenda i.up { background: #2e7d4f; } .anuncios-leyenda i.down { background: #B12B28; }
+        .anuncios-prog { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
+        .anuncios-prog div { border: 1px solid var(--hairline); border-radius: 8px; text-align: center; padding: 10px 6px; }
+        .anuncios-prog small { display: block; font-size: 12px; color: var(--porsche-grey); }
+        .anuncios-prog strong { display: block; font-size: 19px; margin: 4px 0 2px; }
+        .anuncios-prog em { font-style: normal; font-size: 12px; color: var(--porsche-grey); }
+        .anuncios-prog .up { color: #2e7d4f; } .anuncios-prog .down { color: #B12B28; }
+        .anuncios-nota { font-size: 12px; color: var(--porsche-grey); margin: 14px 0 0; }
         .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
         .filter-chip {
             border: 1px solid var(--porsche-grey); background: none; color: inherit;
@@ -202,6 +218,19 @@
                 <h2 class="card-title">Curvas de valor de mercado (segunda mano )</h2>
                 <div class="filter-bar" id="price-filter-bar"></div>
                 <div style="height: 450px;"><canvas id="priceChart"></canvas></div>
+            </section>
+
+            <section class="card chart-section" id="anuncios-section" hidden>
+                <h2 class="card-title">Evolución mensual del precio en anuncios (España)</h2>
+                <div class="filter-bar">
+                    <label for="anuncios-modelo" class="anuncios-label">Generación</label>
+                    <select id="anuncios-modelo"></select>
+                    <div class="anuncios-kpi"><b id="anuncios-precio"></b><span id="anuncios-fecha"></span></div>
+                </div>
+                <div style="height: 320px;"><canvas id="anuncios-chart" role="img" aria-label="Evolución mensual del precio medio de anuncio"></canvas></div>
+                <p class="anuncios-leyenda"><i class="up"></i>Tramo al alza <i class="down"></i>Tramo a la baja <span id="anuncios-muestra"></span></p>
+                <div class="anuncios-prog" id="anuncios-prog"></div>
+                <p class="anuncios-nota" id="anuncios-nota"></p>
             </section>
 
             <section class="card table-section">
@@ -424,6 +453,97 @@
 
         initializePage();
     });
+    </script>
+    <script>
+    /* Evolución mensual en anuncios. Lee /porsche/precios-anuncios.json:
+       { "actualizado": "AAAA-MM-DD", "fuente": "...", "series": { "<id de priceData>": [{ "mes": "AAAA-MM", "precio": 0, "n": 0 }, ...] } }
+       Sin series, la sección permanece oculta. */
+    (function () {
+        var MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+        var eur = function (v) { return v.toLocaleString('es-ES', { maximumFractionDigits: 0 }) + ' €'; };
+        var etiqueta = function (ym) { var p = ym.split('-'); return MESES[+p[1] - 1] + ' ' + p[0].slice(2); };
+        var MIN_N = 5; // meses con menos anuncios se avisan como muestra pequeña
+        var chart = null, series = {}, meta = {};
+
+        function nombre(id) {
+            var m = (typeof priceData !== 'undefined' ? priceData : []).find(function (d) { return d.id === id; });
+            return m ? m.model + ' ' + m.generation : id;
+        }
+
+        function pinta() {
+            var datos = series[document.getElementById('anuncios-modelo').value];
+            if (!datos || !datos.length) return;
+            var ultimo = datos[datos.length - 1];
+            document.getElementById('anuncios-precio').textContent = eur(ultimo.precio);
+            document.getElementById('anuncios-fecha').textContent = 'Precio medio en ' + etiqueta(ultimo.mes);
+            var pocos = datos.filter(function (d) { return d.n < MIN_N; }).length;
+            document.getElementById('anuncios-muestra').textContent = ' · Anuncios en el último mes: ' + ultimo.n +
+                (pocos ? ' · ' + pocos + ' meses con muestra pequeña (puntos huecos)' : '');
+
+            var sube = function (c) { return c.p1.parsed.y >= c.p0.parsed.y; };
+            if (chart) chart.destroy();
+            chart = new Chart(document.getElementById('anuncios-chart'), {
+                type: 'line',
+                data: {
+                    labels: datos.map(function (d) { return etiqueta(d.mes); }),
+                    datasets: [{
+                        data: datos.map(function (d) { return d.precio; }),
+                        fill: 'origin', tension: 0.25, borderWidth: 2.2,
+                        pointRadius: datos.map(function (d) { return d.n < MIN_N ? 3 : 0; }),
+                        pointBackgroundColor: '#fff', pointBorderColor: '#8a8a8a', pointHoverRadius: 5,
+                        segment: {
+                            borderColor: function (c) { return sube(c) ? '#2e7d4f' : '#B12B28'; },
+                            backgroundColor: function (c) { return sube(c) ? 'rgba(46,125,79,.14)' : 'rgba(177,43,40,.14)'; }
+                        }
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false, interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: {
+                            label: function (c) { return eur(c.parsed.y); },
+                            afterLabel: function (c) { return 'Anuncios: ' + datos[c.dataIndex].n; }
+                        } }
+                    },
+                    scales: {
+                        y: { beginAtZero: false, ticks: { callback: function (v) { return eur(v); } } },
+                        x: { ticks: { maxTicksLimit: 8 }, grid: { display: false } }
+                    }
+                }
+            });
+
+            var cont = document.getElementById('anuncios-prog');
+            cont.innerHTML = '';
+            [['5 años', 60], ['3 años', 36], ['2 años', 24], ['1 año', 12], ['6 meses', 6], ['3 meses', 3]].forEach(function (p) {
+                if (datos.length <= p[1]) return;
+                var ref = datos[datos.length - 1 - p[1]].precio;
+                var pct = (ultimo.precio / ref - 1) * 100;
+                var d = document.createElement('div');
+                d.innerHTML = '<small>Hace ' + p[0] + '</small><strong class="' + (pct >= 0 ? 'up' : 'down') + '">' +
+                    (pct >= 0 ? '+' : '') + pct.toFixed(1).replace('.', ',') + '%</strong><em>' + eur(ref) + '</em>';
+                cont.appendChild(d);
+            });
+        }
+
+        fetch('/porsche/precios-anuncios.json', { cache: 'no-cache' })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (j) {
+                if (!j || !j.series) return;
+                var ids = Object.keys(j.series).filter(function (k) { return j.series[k] && j.series[k].length; });
+                if (!ids.length) return;
+                series = j.series; meta = j;
+                var sel = document.getElementById('anuncios-modelo');
+                ids.forEach(function (id) { sel.add(new Option(nombre(id), id)); });
+                sel.addEventListener('change', pinta);
+                document.getElementById('anuncios-nota').textContent =
+                    'Precios de anuncio, no de venta. ' + (j.fuente ? 'Fuente: ' + j.fuente + '. ' : '') +
+                    (j.actualizado ? 'Última recogida: ' + j.actualizado + '.' : '');
+                document.getElementById('anuncios-section').hidden = false;
+                pinta();
+            })
+            .catch(function () { /* sin datos: la sección sigue oculta */ });
+    })();
     </script>
     <script>
         (function () {
