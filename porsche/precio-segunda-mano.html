@@ -264,7 +264,7 @@
             </details>
             <details class="faq-item">
                 <summary>¿Cuánto vale un Porsche Cayenne de segunda mano?</summary>
-                <p>La primera generación (955/957) se encuentra hoy desde unos 5.000 €, con una depreciación muy fuerte. Es barato de comprar pero con un coste de mantenimiento alto, así que conviene revisar bien su estado antes de comprarlo. Generaciones más recientes (958) mantienen bastante más su valor.</p>
+                <p>La primera generación (955/957) se encuentra hoy desde unos 5.000 €, con una depreciación muy fuerte. Es barato de comprar pero con un coste de mantenimiento alto, así que conviene revisar bien su estado antes de comprarlo. Generaciones más recientes (958) mantienen bastante más su valor. Consulta la <a href="/porsche/cayenne-segunda-mano">guía para comprar un Cayenne de segunda mano</a> con precios por kilometraje.</p>
             </details>
             <details class="faq-item">
                 <summary>¿Cuánto vale un Porsche 911 de segunda mano?</summary>
@@ -469,7 +469,8 @@
 
         function nombre(id) {
             var m = (typeof priceData !== 'undefined' ? priceData : []).find(function (d) { return d.id === id; });
-            return m ? m.model + ' ' + m.generation : id;
+            var extra = { 'cayenne-e3': 'Cayenne E3 (2018-2022)', 'cayenne-e3-2': 'Cayenne E3.2 (2023-hoy)' };
+            return m ? m.model + ' ' + m.generation : (extra[id] || id);
         }
 
         function pinta() {

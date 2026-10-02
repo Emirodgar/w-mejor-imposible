@@ -15,6 +15,8 @@
   {"id": "cayman-718",     "modelo": "718-cayman", "desde": 2016, "hasta": 2026},
   {"id": "cayenne-955",    "modelo": "cayenne",    "desde": 2003, "hasta": 2010},
   {"id": "cayenne-958",    "modelo": "cayenne",    "desde": 2010, "hasta": 2017},
+  {"id": "cayenne-e3",     "modelo": "cayenne",    "desde": 2018, "hasta": 2022},
+  {"id": "cayenne-e3-2",   "modelo": "cayenne",    "desde": 2023, "hasta": 2026},
   {"id": "macan-95b",      "modelo": "macan",      "desde": 2014, "hasta": 2018},
   {"id": "macan-restyling","modelo": "macan",      "desde": 2019, "hasta": 2023},
   {"id": "panamera-970",   "modelo": "panamera",   "desde": 2010, "hasta": 2016},
