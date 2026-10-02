@@ -1,5 +1,5 @@
 ---
-title: Porsche 911
+title: "Porsche 911: guía de compra por generación, fiabilidad y precios"
 description: Guía completa de compra del Porsche 911 por generación (2026) — fiabilidad, coste real de mantenimiento, precios de mercado y qué generación conviene según tu presupuesto.
 image: 
 author: Emirodgar
@@ -45,8 +45,8 @@ El 911 Carrera (992) actual tiene un coste real de propiedad estimado de unos **
 
 El comportamiento del 911 en el mercado de segunda mano es de los más peculiares del sector del automóvil: mientras la mayoría de coches solo pierden valor, varias generaciones del 911 llevan años subiendo de precio.
 
-- **G-Model y 993** (refrigeradas por aire): apreciación constante y fuerte. Un 993 en buen estado ronda hoy los 120.000 €, muy por encima de su precio de lanzamiento.
-- **996**: tocó fondo hace años y ahora empieza a apreciarse, aunque sigue siendo la puerta de entrada más barata a un 911 (desde unos 35.000 €).
+- **G-Model y 993** (refrigeradas por aire): apreciación constante y fuerte. Nuestra ficha sitúa un 993 en buen estado en torno a los 120.000 €, muy por encima de su precio de lanzamiento; en los anuncios de octubre de 2026 solo hay 4 ejemplares, de 30.000 a 115.000 €, así que los precios varían mucho según estado y originalidad.
+- **996**: tocó fondo hace años y ahora empieza a apreciarse, aunque sigue siendo la puerta de entrada más barata a un 911 (mediana de unos 45.000 € en los anuncios de octubre de 2026, con ejemplares desde unos 28.000 €).
 - **997.2**: muy estable, retiene su valor excepcionalmente bien gracias a su fiabilidad.
 - **991.1 y 992**: depreciación muy suave, casi anecdótica en el caso del 992.1 tras el lanzamiento del 992.2 híbrido, que ha mantenido firme la demanda de la versión de combustión pura entre los puristas.
 
@@ -69,7 +69,7 @@ Si quieres comparar prestaciones y personalidad de conducción entre variantes c
 
 ## ¿Qué generación comprar según tu presupuesto?
 
-- **Menos de 40.000 €**: un 996 con el IMS ya sustituido y buen historial, o un G-Model/964 que necesite algo de cariño.
+- **Menos de 40.000 €**: un 996 con el IMS ya sustituido y buen historial (más de un tercio de los 996 anunciados están en este rango); los G-Model y 964 se anuncian por encima de los 50.000 €.
 - **40.000-80.000 €**: la zona del 997.1 (con boroscopio ya hecho) o un 997.2 ya en la parte alta, la generación más fiable de precio accesible.
 - **80.000-120.000 €**: 991.1 o 991.2 bien equipados, con depreciación ya muy suave.
 - **Más de 120.000 €**: 992 actual, nuevo o de las primeras unidades de segunda mano.

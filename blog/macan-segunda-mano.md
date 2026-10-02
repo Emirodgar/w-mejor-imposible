@@ -19,7 +19,7 @@ Esta guía te ayuda a comprar un Macan usado con criterio: cuánto cuesta según
 
 **En resumen:**
 
-- Un Macan de primera generación (2014-2018) se encuentra desde unos 32.000-35.000 €. Un restyling (2019-2021) ronda los 42.000 € y un Macan T (2022-2024), los 68.000 €.
+- Un Macan de primera generación (2014-2018) se encuentra desde unos 32.000-35.000 €. Un restyling (2019-2021) ronda los 54.000 € y un Macan T (2022-2024), los 68.000 €.
 - Los años más seguros son **2019 en adelante**. Entre 2017 y 2018 puede ser buena compra si el precio es bueno y el historial está completo.
 - Evita 2015-2016 salvo que la caja de transferencia haya sido revisada y esté documentado.
 - La versión con mejor equilibrio es el **Macan S**. El GTS es para quien busca prestaciones y acepta un consumo y un precio mucho más altos.
@@ -27,15 +27,15 @@ Esta guía te ayuda a comprar un Macan usado con criterio: cuánto cuesta según
 
 ## Cuánto cuesta un Macan de segunda mano
 
-Los precios varían mucho con el kilometraje, la versión y las opciones. Como referencia orientativa, con los datos de nuestro [análisis de precios de segunda mano](/porsche/precio-segunda-mano) y los anuncios habituales en España:
+Los precios varían mucho con el kilometraje, la versión y las opciones. Como referencia orientativa, con los datos de nuestro [análisis de precios de segunda mano](/porsche/precio-segunda-mano) y los anuncios de coches usados en España de octubre de 2026:
 
 | Generación | Años | Precio de ocasión orientativo |
 | :-- | :-- | :-- |
 | Macan (95B.1) | 2014-2018 | desde unos 32.000-35.000 € |
-| Restyling (95B.2) | 2019-2021 | unos 42.000 € y más según versión |
-| Macan T (95B.3) | 2022-2024 | unos 68.000 € |
+| Restyling (95B.2) | 2019-2021 | unos 54.000 € de mediana, más según versión |
+| Macan T | 2022-2024 | unos 68.000 € |
 
-Dentro de cada año, un **Macan S** suele partir de unos 50.000 € en los anuncios actuales, y las versiones **GTS** y **Turbo** superan con facilidad los 70.000 €. Los eléctricos (2024 en adelante) son otro mercado: mira la [guía de versiones y precios del Macan](/porsche/porsche-macan) para verlos.
+Dentro de cada generación, el **Macan S** y las versiones **GTS** y **Turbo** cuestan más que el Macan básico; en las generaciones más recientes, las GTS y Turbo superan con facilidad los 70.000 €, mientras que en la primera generación suelen costar bastante menos. Los eléctricos (2024 en adelante) son otro mercado: mira la [guía de versiones y precios del Macan](/porsche/porsche-macan) para verlos.
 
 El precio de lanzamiento de cada generación te da una idea de lo que has pagado de más o de menos: 63.100 € (2016), 66.500 € (2019) y 79.600 € (Macan T, 2022). El Macan de primera generación ha perdido en torno a la mitad de ese valor.
 
@@ -108,9 +108,9 @@ Para calcular el total, usa la [calculadora de coste real de propiedad](/porsche
 
 ## Preguntas frecuentes
 
-### ¿Cuánto cuesta un Porsche Macan de segunda mano?
+### ¿Cuánto dinero conviene reservar para imprevistos al comprar un Macan usado?
 
-Depende de la generación: desde unos 32.000-35.000 € para un Macan de 2014-2018, unos 42.000 € para un restyling de 2019-2021 y unos 68.000 € para un Macan T de 2022-2024. Un Macan S parte de unos 50.000 € y un GTS o Turbo supera los 70.000 €.
+Si tu presupuesto es ajustado (menos de 40.000 €), reserva unos 3.000 € sobre el precio de compra. Las averías más caras del Macan son la caja de transferencia (2.500-4.000 €), la fuga de aceite de la tapa de distribución (1.500-2.500 €) y la suspensión neumática (700-1.500 €), además de frenos y neumáticos si están al límite. Para los precios por generación, consulta nuestros datos de precio del Macan de segunda mano.
 
 ### ¿Qué año del Porsche Macan es mejor comprar?
 
@@ -133,7 +133,7 @@ Entre 1.200 € y 2.000 € al año. Un servicio de 30.000 km ronda los 425 € 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "¿Cuánto cuesta un Porsche Macan de segunda mano?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de la generación: desde unos 32.000-35.000 € para un Macan de 2014-2018, unos 42.000 € para un restyling de 2019-2021 y unos 68.000 € para un Macan T de 2022-2024. Un Macan S parte de unos 50.000 € y un GTS o Turbo supera los 70.000 €."}},
+    {"@type": "Question", "name": "¿Cuánto dinero conviene reservar para imprevistos al comprar un Macan usado?", "acceptedAnswer": {"@type": "Answer", "text": "Si tu presupuesto es ajustado (menos de 40.000 €), reserva unos 3.000 € sobre el precio de compra. Las averías más caras del Macan son la caja de transferencia (2.500-4.000 €), la fuga de aceite de la tapa de distribución (1.500-2.500 €) y la suspensión neumática (700-1.500 €), además de frenos y neumáticos si están al límite. Para los precios por generación, consulta nuestros datos de precio del Macan de segunda mano."}},
     {"@type": "Question", "name": "¿Qué año del Porsche Macan es mejor comprar?", "acceptedAnswer": {"@type": "Answer", "text": "De 2019 en adelante es la opción más fiable. Los años 2017-2018 pueden ser buena compra con historial completo. Conviene evitar 2015-2016 por los problemas de la caja de transferencia."}},
     {"@type": "Question", "name": "¿Es fiable un Macan de segunda mano?", "acceptedAnswer": {"@type": "Answer", "text": "En general sí, sobre todo desde 2017. J.D. Power 2025 le da 84/100 en calidad y fiabilidad. Los puntos débiles conocidos son la caja de transferencia, la suspensión neumática y las fugas de aceite y refrigerante."}},
     {"@type": "Question", "name": "¿Cuál es el mejor Macan de segunda mano?", "acceptedAnswer": {"@type": "Answer", "text": "El Macan S ofrece el mejor equilibrio entre prestaciones y precio. Si buscas máxima seguridad de compra, un Porsche Approved con garantía de 2019 en adelante."}},
