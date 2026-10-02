@@ -469,8 +469,8 @@
 
         function nombre(id) {
             var m = (typeof priceData !== 'undefined' ? priceData : []).find(function (d) { return d.id === id; });
-            var extra = { 'cayenne-e3': 'Cayenne E3 (2018-2022)', 'cayenne-e3-2': 'Cayenne E3.2 (2023-hoy)', 'macan-ev': 'Macan Eléctrico (2024-hoy)' };
-            return m ? m.model + ' ' + m.generation : (extra[id] || id);
+            var extra = { 'cayenne-e3': 'Cayenne E3 (2018-2022)', 'cayenne-e3-2': 'Cayenne E3.2 (2023-hoy)', 'macan-ev': 'Macan Eléctrico (2024-hoy)', 'taycan-j1': 'Taycan (todas las versiones, 2020-hoy)' };
+            return extra[id] || (m ? m.model + ' ' + m.generation : id);
         }
 
         function pinta() {
