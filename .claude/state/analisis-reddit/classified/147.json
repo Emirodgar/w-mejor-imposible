@@ -1,0 +1,252 @@
+[
+ {
+  "id": "p6yrp1x",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991: cambió él mismo la correa en pocos minutos quitando el paragolpes y el alerón, tarea sencilla."
+ },
+ {
+  "id": "p6ssvw",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Hizo cambiar las correas de su Cayman y le pareció un trabajo laborioso que justifica cobrar bastante."
+ },
+ {
+  "id": "p6w55cd",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Carrera del 87 y un Turbo del 88: se podían mantener por muy poco dinero, incluso en un taller rápido."
+ },
+ {
+  "id": "p6wmldy",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un 992 GT3 que espera con resignación y humor su primera factura de mantenimiento, que prevé alta."
+ },
+ {
+  "id": "p6y67km",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "La revisión de 4 años (24.000 km) de su 992 GT3 le costó 3.545 euros en Francia."
+ },
+ {
+  "id": "p6x49il",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su 992.1 el concesionario le dijo que hay que quitar el paragolpes trasero para los filtros de aire, y ahí se va el coste de mano de obra."
+ },
+ {
+  "id": "p6zclf6",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Targa de 1987 y asegura que los coches antiguos exigen mucho más mantenimiento que los modernos."
+ },
+ {
+  "id": "paz2x72",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su 911 de 1987 pagó en el concesionario unos 1.600 dólares por el embrague y 1.500 por la cremallera de dirección, precios razonables."
+ },
+ {
+  "id": "p6yxjko",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Vendió el Macan T 2023 de su mujer con 33.000 millas tras recibir un presupuesto de 9.300 dólares por neumáticos, frenos y revisión; abandona Porsche."
+ },
+ {
+  "id": "p6z97bk",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró un Macan S usado y tras 20.000 millas la factura de la revisión igualaba el valor del coche."
+ },
+ {
+  "id": "p6zclyx",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 911 de 2008 desde 2010: con un taller independiente el mantenimiento ha sido muy razonable y aún lleva los frenos traseros originales."
+ },
+ {
+  "id": "p700bvx",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 996.2 muy usado que valora cada día más frente a los costes de mantenimiento de los modelos nuevos."
+ },
+ {
+  "id": "p71325f",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su 991.2 recibió presupuestos de 6.000 y 4.000 dólares en concesionarios por bujías, correa y filtros; un especialista independiente lo hizo por 1.900."
+ },
+ {
+  "id": "p715w02",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un 996 que costó 18.500 dólares y lo mantiene con mecánico independiente y bricolaje, con gastos bajos."
+ },
+ {
+  "id": "p6xw8xk",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "La revisión de 4 años de su 992.1 GTS costó 2.600 libras en Londres, aun así más barata que Aston o McLaren."
+ },
+ {
+  "id": "p735u4u",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "La revisión del segundo año de su GT4 RS con bujías costó 3.500 dólares australianos en el concesionario oficial."
+ }
+]

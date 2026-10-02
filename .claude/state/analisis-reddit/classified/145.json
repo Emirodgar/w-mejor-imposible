@@ -1,0 +1,734 @@
+[
+ {
+  "id": "nvih8ql",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario: el infotainment salta solo de USB a radio con distinto volumen y los botones de asientos calefactados ignoran pulsaciones rápidas; UX de ingenieros."
+ },
+ {
+  "id": "nvm2nrd",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: en su Taycan la música siempre arranca en menos de 30 segundos, sin el problema que otros describen."
+ },
+ {
+  "id": "nvg2hmi",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario (autor del hilo): la programación de la carga nocturna es confusa y el coche precalienta la batería sin que se lo pidan."
+ },
+ {
+  "id": "nvft35d",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: el retardo al acelerar en modo normal es de la caja de dos marchas; en Sport desaparece y prefiere la dirección más pesada."
+ },
+ {
+  "id": "nvfu7ui",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 4S: la aceleración le parece justa frente a su Rivian, aunque la respuesta del acelerador es muy buena."
+ },
+ {
+  "id": "nvju9wr",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 4S: es rápido pero mucho menos que sus Rivian, y a veces desearía haber comprado el Turbo."
+ },
+ {
+  "id": "nvfusgn",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario: sin dashcam integrada, CarPlay que se desconecta, carga inalámbrica inútil con funda y una regeneración pésima."
+ },
+ {
+  "id": "nvfzugr",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario (autor del hilo): critica la cámara, la carga inalámbrica del móvil y otros detalles de usabilidad, aunque el coche le encanta."
+ },
+ {
+  "id": "nvg0m2c",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario: la tapa del reposabrazos central es incómoda de sostener, un fallo de ergonomía absurdo."
+ },
+ {
+  "id": "nvgkwtc",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario: usar el USB con la tapa de la consola levantada le resulta desesperante y echa en falta una bisagra mejor."
+ },
+ {
+  "id": "nvhibq4",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que la regeneración y el frenado combinado del Taycan son fenomenales y se sienten como un freno tradicional."
+ },
+ {
+  "id": "nvjb613",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras cientos de miles de millas en Tesla y Rivian, el Taycan le resulta desagradable: debe activar la regeneración y no hay conducción con un pedal."
+ },
+ {
+  "id": "nvjdobb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende el sistema de regeneración y frenado combinado del Taycan: lo prefiere al de Tesla, que le parece brusco."
+ },
+ {
+  "id": "nvk4ky4",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Vendió su Taycan por el software deficiente, las constantes revisiones, la falta de conducción con un pedal y un frenado poco consistente."
+ },
+ {
+  "id": "nwgzkzn",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: el frenado y la marcha en inercia son de lo mejor del Taycan y base de su eficiencia; casi nunca activa la regeneración."
+ },
+ {
+  "id": "nzyhl8v",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: defiende que el Taycan está diseñado para conducirse con su regeneración por defecto y que así funciona perfecto."
+ },
+ {
+  "id": "nvfwav2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica que Porsche haga la aceleración y el pedal parecidos a un coche de combustión y que el velocímetro se actualice solo una vez por segundo."
+ },
+ {
+  "id": "nvfworq",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: la llave conecta la mitad de las veces y CarPlay falla, pero compraría la próxima generación y no nota retardo."
+ },
+ {
+  "id": "nvfxcim",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: el retardo solo ocurre en modo normal; en Sport es instantáneo y acelera mucho mejor que su Mach-E."
+ },
+ {
+  "id": "nvfxrzb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 4S 2024: el retardo del cambio en modo normal molesta y en Sport suena la transmisión; viniendo de Tesla le parece innecesaria."
+ },
+ {
+  "id": "nvg0it3",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Turbo S 2022: hace que un Tesla S parezca muy lento y avisa de que el modo normal es más suave a propósito."
+ },
+ {
+  "id": "nviy8kt",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario en clima de -40 °C: su Taycan se calentaba muy rápido, una de sus mejores cualidades."
+ },
+ {
+  "id": "nvp4gs1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene Model Y y Taycan: como coche el Porsche es muy superior, pero el software queda lejos del de Tesla pese a su precio."
+ },
+ {
+  "id": "nvgd49p",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 4S de marzo: la autonomía en invierno es pésima y sería un problema sin carga en casa."
+ },
+ {
+  "id": "nvghjud",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: su coche favorito por mucho, aunque con muchas decisiones extrañas de diseño."
+ },
+ {
+  "id": "nvgqwn2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan Turbo: la autonomía es mala, igual que apuntaba el autor del hilo."
+ },
+ {
+  "id": "nvgtmc0",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: la tecnología es floja, pero lo compró para conducir y la dirección es insuperable de fábrica."
+ },
+ {
+  "id": "nvh20ll",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario con casi dos años: el software le desquicia, pero le compensa su zaga."
+ },
+ {
+  "id": "nvi1lgi",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario: el maletero es ridículamente pequeño para su tamaño, ni cabe una bici, aunque lo adora."
+ },
+ {
+  "id": "nvi5gl1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario enamorado: conduce como nada, es rápido y precioso desde cualquier ángulo, aunque carece de funciones tipo app."
+ },
+ {
+  "id": "nvku251",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 4S CPO de hace dos semanas: no ha visto ninguno de los fallos citados y disfruta de la experiencia eléctrica."
+ },
+ {
+  "id": "nvk8wk0",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "La app Porsche Connect es mala y pagarla mensualmente lo empeora; la de su Ioniq 5 N era mejor."
+ },
+ {
+  "id": "nvlxcbj",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario: precioso y de gran manejo, pero usarlo a diario con tantos fallos exige acostumbrarse."
+ },
+ {
+  "id": "nw4iho6",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Taycan no S en Monterey y le pareció decepcionante frente al Turbo de su amigo."
+ },
+ {
+  "id": "nw2fxgl",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica las continuas llamadas a revisión, las actualizaciones solo en concesionario y las celdas defectuosas."
+ },
+ {
+  "id": "o1kcl95",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: obtiene 150-180 de autonomía en clima frío y considera el Turbo S una bestia casi excesiva."
+ },
+ {
+  "id": "ozc5kl6",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que el GT4 RS deja atrás a un GT3 sin RS, salvo que se quiera manual."
+ },
+ {
+  "id": "ozc5kl6#2",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que un GT3 sin RS queda por debajo del GT4 RS, salvo que se quiera manual."
+ },
+ {
+  "id": "ozdyh2s",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un GT4 RS: tras comparar con un GT3 casi 200.000 dólares más caro, prefiere la visceralidad del RS con suspensión mejorada."
+ },
+ {
+  "id": "ozdz486",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que el GT4 RS conservará mucho mejor el valor que un GT3 normal y es un coche más especial."
+ },
+ {
+  "id": "ozogxo1",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que cambiar un GT4 RS por un GT3 992.2 es un paso atrás en experiencia y espectáculo."
+ },
+ {
+  "id": "p02nb06",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un GT4 RS: cree que será recordado como uno de los mejores Porsche modernos y el último RS analógico."
+ },
+ {
+  "id": "p02nb06#2",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha conducido un GT3 .1 y no cree que su sobrecoste se justifique frente al GT4 RS."
+ },
+ {
+  "id": "ozlk9lu",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el 718 el deportivo perfecto por unos 100.000 euros y lamenta que Porsche lo sustituya por un eléctrico."
+ }
+]

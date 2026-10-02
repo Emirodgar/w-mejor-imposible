@@ -1,0 +1,883 @@
+[
+  {
+    "id": "ox4go86",
+    "models": [
+      "911-992",
+      "911-991",
+      "911-997",
+      "911-996",
+      "911-air"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Propietario de un 911: a su hija pequeña le encantaba ir atrás, aunque admite que para la mayoría de niños no es la mejor opción."
+  },
+  {
+    "id": "ox4farc",
+    "models": [
+      "911-992",
+      "911-991"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neg"
+      },
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Dueño de un 911 reciente: lo ve preciso y práctico pero casi aburrido lejos del límite; a sus hijos les encanta ir en las plazas traseras."
+  },
+  {
+    "id": "ox4j1s7",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Dueño de un 992.1 Targa GTS: muy capaz y excelente como diario de lujo, pero con poco teatro y sensación de ocasión; empieza a querer algo más visceral."
+  },
+  {
+    "id": "ox4j1up",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [
+      {
+        "a": "valor",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "El 992.2 le deja con ganas de más y critica el trato de Porsche a los clientes para conseguir asignaciones."
+  },
+  {
+    "id": "ox4jmyc",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Con su antiguo 992.1 S de suspensión blanda comparó el confort con un M3: el BMW era más suave, pero el Porsche cumplía."
+  },
+  {
+    "id": "ox4mdqa",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      },
+      {
+        "a": "calidad",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Dueño de un 992.1 T: rodadura ruidosa y dura, con menos aislamiento acústico por el cristal fino y el menor insonorizado."
+  },
+  {
+    "id": "ox4odqh",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      },
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Usa su 992.2 a diario y en algún track day; tras 13.000 km es una elección perfecta y los niños duermen atrás en viajes."
+  },
+  {
+    "id": "ox4tjfe",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "hearsay",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Por lo que ha visto online, el 992.1 T es más bajo y duro que el 992.2, lo que explicaría la dureza en carreteras malas."
+  },
+  {
+    "id": "oxeafsl",
+    "models": [
+      "911-996"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "valor",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Compró un Turbo de 2003 por 55.000 hace 13 años y hoy se venden unidades similares por más; los Turbo nuevos se le han ido de precio."
+  },
+  {
+    "id": "ox50pdz",
+    "models": [
+      "911-gt",
+      "911-992"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Propietario de un 992 GT3 y un Carrera S tras varios M3: no hay comparación con Porsche, el hype es real."
+  },
+  {
+    "id": "oxh3o5l",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Su 992 Carrera S sigue siendo especial y rinde cerca de un 991 GT3 que tuvo antes."
+  },
+  {
+    "id": "ox5by8h",
+    "models": [
+      "718-982"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "valor",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Resolvió el dilema con un 718 GTS 4.0 manual más un RS3: deportivo cuando quiere, buen sonido y apto para circuito, por menos que un 911 T."
+  },
+  {
+    "id": "ox5e4sc",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "diseno",
+        "p": "pos"
+      },
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Pasó de un M4 a un 991.1 C4S: se siente mucho más especial, más bonito y casi 900 kg más ligero; le encanta."
+  },
+  {
+    "id": "ox8bycf",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Cambió su M3 por un 991.1 C2S manual: el doble de diversión a la mitad de velocidad y supera al E92 M3 salvo en plazas y maletero."
+  },
+  {
+    "id": "ox5gts2",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neg"
+      },
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      },
+      {
+        "a": "tecnologia",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Tuvo un 992.2 Turbo S: rapidísimo pero soso, de marcha dura, con respuesta perezosa y dirección eléctrica poco comunicativa; lo vendió a los seis meses."
+  },
+  {
+    "id": "ox5ld8e",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      },
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Probó el 992.2 coupé y cabrio: dirección buena, pero marcha ruidosa y dura y no le hizo sentir especial; se fue decepcionado."
+  },
+  {
+    "id": "ox6e40b",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [
+      {
+        "a": "valor",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Considera el 911 T un mal valor a 170-200.000 dólares, cuando era interesante por debajo de 120.000."
+  },
+  {
+    "id": "ox6azrs",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Vendió su Corvette por un 991.1 Turbo S, casi el coche perfecto para él; no nota dureza y prefirió el 991 al 992."
+  },
+  {
+    "id": "ox5zkec",
+    "models": [
+      "cayenne-9pa",
+      "cayenne-92a"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Ha tenido Porsche de uso diario y familiar durante años; su favorito fue un Cayenne diésel."
+  },
+  {
+    "id": "ox5zkec#2",
+    "models": [
+      "panamera-971"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Su coche diario actual es un Panamera 971 Turbo muy equipado, uno de sus Porsche favoritos para la familia."
+  },
+  {
+    "id": "ox6mid1",
+    "models": [
+      "911-gt"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neu"
+      }
+    ],
+    "resumen_es": "Dueño de un 992.1 GT3; tras conducir el 992.2 no notó diferencia en calle salvo las marchas más cortas, y no pagaría por eso."
+  },
+  {
+    "id": "ox64ccl",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Sexta temporada con un 911: su 992.2 Targa GTS le fascina por el híbrido, pero duda del formato Targa y de si realmente lo ama."
+  },
+  {
+    "id": "ox68oaa",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "driven",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Alquiló un 992 T con PDK por carreteras malas: ruido y vibraciones le fatigaron y los asientos de 4 posiciones no le encajaron."
+  },
+  {
+    "id": "ox6frai",
+    "models": [
+      "911-997"
+    ],
+    "sentiment": "neu",
+    "basis": "driven",
+    "aspects": [],
+    "resumen_es": "Condujo brevemente el 997 Turbo de un amigo y le pareció demasiado blando."
+  },
+  {
+    "id": "ox6cryp",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neg"
+      },
+      {
+        "a": "costes",
+        "p": "neg"
+      },
+      {
+        "a": "tecnologia",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Tuvo cuatro 911 (992 4S, 992 T 2024, 991.2): el 992 no conectó con él, demasiado rápido y ruidoso, caro y con mantenimiento carísimo; tecnología peor que BMW."
+  },
+  {
+    "id": "ox6cryp#2",
+    "models": [
+      "718-982",
+      "cayman-981",
+      "cayman-987",
+      "cayman-986"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Disfrutó mucho más sus dos Boxster y su Cayman que los 911 posteriores y volvería a un Cayman GTS 4.0."
+  },
+  {
+    "id": "ox6encu",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Pasó de un E46 M3 manual a un 991.1 C4 GTS con PDK; tardó unos seis meses en amar el coche, pero ahora le gusta."
+  },
+  {
+    "id": "ox6vk5q",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      },
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Dueño de un 991.1: ruidoso y duro, lo lamentó en un viaje largo; mejor para salidas en pareja que como coche familiar."
+  },
+  {
+    "id": "ox9z18y",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Ha conducido mucho el 992.2 T manual de un amigo: divertidísimo incluso a baja velocidad y con uno de los mejores manuales; asientos traseros decorativos."
+  },
+  {
+    "id": "ox77qyn",
+    "models": [
+      "718-982"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Tras probar varios 911 eligió un GTS 4.0 como diario: increíble en curva, potencia lineal suficiente y modos de conducción que lo hacen llevadero."
+  },
+  {
+    "id": "ox7lf3e",
+    "models": [
+      "911-992",
+      "911-991"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "fiabilidad",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      },
+      {
+        "a": "tecnologia",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Con cuatro 911 en casa, muy fiables y divertidos, pero con marcha castigadora, interior espartano e infotainment anticuado frente a la competencia."
+  },
+  {
+    "id": "ox84hwy",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "fiabilidad",
+        "p": "pos"
+      },
+      {
+        "a": "costes",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Eligió un 991.1 en vez del 992: moderno, divertido y sólido, con casi nada de mantenimiento."
+  },
+  {
+    "id": "ox87dm4",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Opina que las llantas traseras de 21 pulgadas no ayudaron al confort del 992, frente al 991 que ofrecía 19."
+  },
+  {
+    "id": "ox8nrxh",
+    "models": [
+      "911-996"
+    ],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [],
+    "resumen_es": "Tras 25 años con BMW probó un 911 996 y no conectó con él; acabó eligiendo Ferrari."
+  },
+  {
+    "id": "ox8nrxh#2",
+    "models": [
+      "panamera-970",
+      "panamera-971"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [],
+    "resumen_es": "Su paso por un Panamera fue lo que puso fin a 25 años de propiedad BMW."
+  },
+  {
+    "id": "ox8uquw",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "driven",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neu"
+      }
+    ],
+    "resumen_es": "Probó un 992.1 T automático y salió decepcionado; con manual y asientos bacquet fue noche y día en implicación."
+  },
+  {
+    "id": "oxa2nkd",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Cinco años con un 992.1 S: asientos traseros inútiles y potencia justa de serie, resuelta con una puesta a punto; no se arrepiente."
+  },
+  {
+    "id": "oxbr2t8",
+    "models": [
+      "911-992",
+      "911-991",
+      "911-997",
+      "911-996"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "valor",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Compró un 911 C4 y está encantado; cree que un 911 normal es el mejor equilibrio de valor para la mayoría."
+  },
+  {
+    "id": "oxg0284",
+    "models": [
+      "911-992",
+      "911-991",
+      "911-997"
+    ],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Se deshizo de su Carrera S tras sentirse igual de decepcionado que el autor: a quien viene de un M3 le falta potencia."
+  },
+  {
+    "id": "oxgl1pe",
+    "models": [
+      "911-992",
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Tras 25 años con BMW compró un Targa GTS y lo adora; a sus hijos les encanta, pero las plazas traseras y el maletero son poco prácticos."
+  },
+  {
+    "id": "oxhib0c",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Pasó de un M3 automático a un 992.2 T manual como coche divertido: una gozada y sus hijos van contentos en alzadores."
+  },
+  {
+    "id": "oxhp17l",
+    "models": [
+      "911-gt"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "valor",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Con un 991.2 GT3 no puede desprenderse de él; el 992 GT3 equivalente cuesta 100.000 más."
+  },
+  {
+    "id": "oxlk3je",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Conservó el BMW y sumó un 991 manual atmosférico: experiencias distintas y una buena forma de tener ambos."
+  },
+  {
+    "id": "oxmaovt",
+    "models": [
+      "cayman-981"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Recuerda con cariño su Boxster 981, que 'gritaba' cuando se le pedía."
+  },
+  {
+    "id": "oxqko0b",
+    "models": [
+      "718-982",
+      "cayman-981"
+    ],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Cambió un M2 Competition por un GT4 y le pareció un error: poco emocionante en comparación."
+  },
+  {
+    "id": "oxqko0b#2",
+    "models": [
+      "911-991"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Su 991.2 GTS le decepcionó, pero el 991.2 Turbo le pareció espectacular; solo ve emocionantes los 911 Turbo o GT3."
+  },
+  {
+    "id": "oxv4tdx",
+    "models": [
+      "cayman-981",
+      "718-982"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Su GT4 era visceral en tacto y sonido, sobre todo el 981, pero demasiado dócil y con poco par para divertir como un M2C."
+  },
+  {
+    "id": "oxt4ze9",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Con un 992.1 Turbo y un 992.1 T: el Turbo es pesado y casi incómodamente rápido; el T es ligero, ágil, ruidoso y divertido."
+  },
+  {
+    "id": "oy067hn",
+    "models": [
+      "911-992"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Tras pasar de un M2 a un 992.1 T se sintió poco impresionado hasta cambiar catalizadores, remapear y llevarlo a circuito: ahora una bestia."
+  },
+  {
+    "id": "oyz66xk",
+    "models": [
+      "911-992",
+      "911-991",
+      "911-997",
+      "911-996"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      },
+      {
+        "a": "uso_diario",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Viniendo de BMW M, el 911 es menos cómodo y rápido en recta pero muy superior en curvas y circuito."
+  },
+  {
+    "id": "oafz2mu",
+    "models": [
+      "cayman-986"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "fiabilidad",
+        "p": "neu"
+      }
+    ],
+    "resumen_es": "Dueño de un Boxster S 986 con 60.000 km: prefiere cambiar el IMS de forma preventiva y confía más en coches de alto kilometraje."
+  },
+  {
+    "id": "odhpb6f",
+    "models": [
+      "cayman-986",
+      "911-996"
+    ],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "fiabilidad",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Su coche de 2000 conserva el IMS original a 162.000 millas desde que lo compró a 75.000."
+  }
+]

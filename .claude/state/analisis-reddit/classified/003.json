@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pahpmaz",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de un 992 en azul Gentian: elegiría un color más claro porque realza mejor la forma ancha y musculosa del coche, que le parece preciosa."
+  },
+  {
+    "id": "pc7zz8g",
+    "models": ["911-gt"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "uso_diario", "p": "neg"}, {"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Opina que los GT no son cómodos en viajes largos pese al equipamiento de confort, porque se notan todas las irregularidades; los define como un GT con pijama."
+  }
+]

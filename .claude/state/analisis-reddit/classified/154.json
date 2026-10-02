@@ -1,0 +1,192 @@
+[
+ {
+  "id": "ow3radt",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Recomienda un Boxster 987 base, del que fue propietario y al que tenía cariño, aunque avisa de evitar los motores 3.4 por el problema de bore scoring."
+ },
+ {
+  "id": "ow3v4lj",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Antiguo dueño de un 986: nunca le dejó tirado, pero mantenerlo bien exige mucho trabajo y no lo recomienda como coche de diario."
+ },
+ {
+  "id": "ow2q0fw",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Boxster de 2004 con unos 80k millas por 9.000 dólares; aconseja revisión previa porque los primeros años dieron más problemas."
+ },
+ {
+  "id": "owbtcja",
+  "models": [
+   "cayman-986",
+   "cayman-987",
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Boxster base manual con 135k km, solo cambió amortiguadores y radio; las prestaciones le encantan y piensa volver a tener otro."
+ },
+ {
+  "id": "ojl0d5n",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Exdueño de un Panamera Sport Turismo: coche fantástico, cabina envolvente y mucho maletero; solo la plaza trasera quedaba justa y el concesionario fue lo peor."
+ },
+ {
+  "id": "ojol8xh",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras años con su Panamera no tuvo problemas reales, solo un techo solar que chirriaba bastante."
+ },
+ {
+  "id": "oy2v15a",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras cinco años con el Panamera, asegura que con su postura de conducción no cabía nadie detrás."
+ },
+ {
+  "id": "ojn041m",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el Panamera Sport Turismo el mejor familiar deportivo jamás fabricado y le parece un error cambiarlo por un SUV."
+ },
+ {
+  "id": "p5y7cyz",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que el Macan S rueda muy bien: suave en modo Normal y deportivo en Sport y Sport+."
+ },
+ {
+  "id": "p6jekmv",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan S 2017 que lo nota menos rápido y menos ágil que sus berlinas anteriores, aunque admite que quizá necesita más tiempo para acostumbrarse."
+ },
+ {
+  "id": "oplyh4q",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Propietario de un 992 Turbo S en rojo Carmine que lo describe como lo mejor que se ha comprado nunca."
+ }
+]

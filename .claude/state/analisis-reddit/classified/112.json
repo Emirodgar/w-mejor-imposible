@@ -1,0 +1,901 @@
+[
+ {
+  "id": "ole6suv",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Cayenne Coupé de 117.000 dólares como coche de cortesía: se va en el carril, mucho ruido de viento y sensación de camioneta barata."
+ },
+ {
+  "id": "ole6suv#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Macan de uso diario va firme, silencioso y se conduce como un hot hatch grande."
+ },
+ {
+  "id": "ole6suv#3",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha conducido el Panamera y lo considera claramente mejor que el Cayenne Coupé y el Macan."
+ },
+ {
+  "id": "olheqju",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Cayenne S 2016: SUV pequeño, rápido, muy plantado y agradable de conducir."
+ },
+ {
+  "id": "olheqju#2",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera GTS 2016: un deportivo de verdad, muy capaz, dinámico y rápido, a otro nivel que el Cayenne."
+ },
+ {
+  "id": "olvpi36",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne Coupé 2025: lo prefiere con niños por espacio y confort de marcha, aunque el Panamera es más divertido."
+ },
+ {
+  "id": "olvpi36#2",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Panamera de cortesía: muy divertido y rápido, precioso, aunque va demasiado bajo."
+ },
+ {
+  "id": "olysqnc",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "En un Panamera prestado no notó ruido de viento y la suspensión no resultaba dura en autopista ni en badenes."
+ },
+ {
+  "id": "pc5c7si",
+  "models": [
+   "cayman-981",
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda un Cayman S o GT4 usado de las dos últimas generaciones, por su calidad y fiabilidad."
+ },
+ {
+  "id": "pc551rp",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un Macan 2020 seminuevo con 9.000 millas al contado y está muy contenta con la compra."
+ },
+ {
+  "id": "pc5mlvc",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Cayman S 2025: no le pareció que mereciera el precio por conducción, pero sí por fiabilidad, lujo y calidad."
+ },
+ {
+  "id": "pc5uotx",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Cayman y otro Porsche: avisa de que el mantenimiento barato no es lo suyo, aunque el coche le encanta."
+ },
+ {
+  "id": "pc65d8g",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cuenta que a su hermana se le averió la transmisión del Macan y costó 34.000 dólares."
+ },
+ {
+  "id": "pc6tdlg",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Cayman S de 2006 cinco años y lo vendió por solo 1.000 dólares menos de lo que pagó."
+ },
+ {
+  "id": "pc6yxqz",
+  "models": [
+   "718-982",
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Defiende los Cayman recientes: muy cuidados, rinden extraordinariamente y los prefiere a los 911, con algo más de coste de mantenimiento."
+ },
+ {
+  "id": "pcaqpqi",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietaria de un Macan: ha sido fiable, pero los cambios de aceite en el concesionario salen muy caros."
+ },
+ {
+  "id": "pcgz8qu",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Sugiere un Cayman usado a mitad de precio: igual de divertido que uno nuevo y un coche estupendo."
+ },
+ {
+  "id": "orck3m9",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 991.2 T que usa a diario: aunque no es el más rápido, le encanta y cree que merece el dinero."
+ },
+ {
+  "id": "orchzth",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Aconseja un 996 manual en buen estado: puede que no haga falta ningún cambio a algo mejor."
+ },
+ {
+  "id": "orck0bz",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha intentado sustituir su 996 manual por todo tipo de coches y siempre acaba conservándolo."
+ },
+ {
+  "id": "orcmq4w",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Boxster S 986 fue su Porsche de entrada hace 20 años; lo vendió hace cinco y lo recuerda como muy divertido."
+ },
+ {
+  "id": "os2wdg4",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Boxster S 986 manual de 2001 como primer Porsche hasta que lo siniestraron."
+ },
+ {
+  "id": "os2wdg4#2",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lleva 11 años con un 996 descapotable y lo considera el mejor coche familiar accidental."
+ },
+ {
+  "id": "os369zt",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 991.1 4S hace cinco años y lo usa como coche familiar con su hija pequeña."
+ },
+ {
+  "id": "orcj1t9",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "No se arrepiente de su Porsche y dice que un 996 se siente muy parecido a cualquier 911 más nuevo."
+ },
+ {
+  "id": "orcjta0",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 997.1 desde hace seis años: sigue sintiéndolo especial y no se arrepiente."
+ },
+ {
+  "id": "orckimk",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró su 911 el día que se jubiló hace seis años, ha merecido la pena y piensa quedárselo siempre."
+ },
+ {
+  "id": "orcknt0",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 997.1 manual de 56.000 millas por 40.000 dólares y es su mejor regalo de cumpleaños."
+ },
+ {
+  "id": "orckviu",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido Macan, Taycan, Cayenne, Panamera y 911: solo el 911 le pareció de otro nivel."
+ },
+ {
+  "id": "orckviu#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Entre sus Porsche, el Macan es un gran coche pero menos especial que el 911."
+ },
+ {
+  "id": "orckviu#3",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Entre sus Porsche, el Taycan es un gran coche pero menos especial que el 911."
+ },
+ {
+  "id": "orckviu#4",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Entre sus Porsche, el Cayenne es un gran coche pero menos especial que el 911."
+ },
+ {
+  "id": "orckviu#5",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Entre sus Porsche, el Panamera es un gran coche pero menos especial que el 911."
+ },
+ {
+  "id": "orehjya",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un GT3 al que adora, tanto que cuesta cerrar el garaje."
+ },
+ {
+  "id": "orehjya#2",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Considera su Panamera el mejor coche que ha tenido."
+ },
+ {
+  "id": "orcm9xk",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.2: valora más la atención ajena que el coche en sí, y recomienda llegar a un punto donde el coste no importe."
+ },
+ {
+  "id": "orcmjef",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un 992 dos años, con 6 jornadas de circuito: lo encontró aburrido y lo vendió para volver a un M3."
+ },
+ {
+  "id": "oremx24",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un 997 de fin de semana; mejor en circuito, pero se cansó del coste de mantenimiento y prefirió un Miata."
+ },
+ {
+  "id": "orcnsjy",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 996 barato: mucho gasto de mantenimiento pero sigue siendo un 911 que se conduce como un coche de carreras."
+ },
+ {
+  "id": "orco8x8",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 718 S por impulso y le hizo ver lo especiales que son estos coches."
+ },
+ {
+  "id": "orco8x8#2",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tiene también un 992.1 C4S y le encanta."
+ },
+ {
+  "id": "orcqz9g",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un 718 GTS de cuatro cilindros: un pequeño cohete, mucho más compacto que el 911; lo echa de menos."
+ },
+ {
+  "id": "orcod0x",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Disfruta de su 911 Turbo de 2003 más de lo razonable, es distinto a cualquier otro coche."
+ },
+ {
+  "id": "orcq0eb",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 992.1 GTS manual y sigue gustándole, aunque habría elegido otro color."
+ },
+ {
+  "id": "orcsxn5",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [],
+  "resumen_es": "Un amigo compró un GT4 CPO de 2020 hace seis meses y no para de hablar bien de él."
+ },
+ {
+  "id": "orcr7q8",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 992.1 hace año y medio, hizo 20.000 millas y cada trayecto le sacaba una sonrisa."
+ },
+ {
+  "id": "orcrgoz",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 996 40 Aniversario de 2004 con 100.000 km: conduce como nada más y lo usa en jornadas de circuito."
+ },
+ {
+  "id": "orep9b2",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 991.2 Turbo S es el mejor Porsche que ha tenido: aún bastante analógico y válido para el día a día."
+ },
+ {
+  "id": "orcswm6",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 992.2 Carrera T es el mejor coche que ha conducido, por las sensaciones de un 911 manual."
+ },
+ {
+  "id": "orct8h3",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Pruebas breves de un 991.1 en carreteras locales le resultaron muy decepcionantes."
+ },
+ {
+  "id": "orct8h3#2",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Pruebas breves de un 718 base y un 718 S en carreteras locales le resultaron muy decepcionantes."
+ },
+ {
+  "id": "orcu3l3",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido un 996 C2S manual y le parece brillante; el manual le hizo entender el coche."
+ },
+ {
+  "id": "orcu3l3#2",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido un 997.2 C4S manual y lo considera un coche brillante."
+ },
+ {
+  "id": "orcz116",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recién comprado su 911: discreto, usable a diario y buen en curvas, pero no sobresale ni como deportivo puro ni como coche cómodo."
+ },
+ {
+  "id": "orctmzc",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su primer Porsche es un Spyder RS: una moto de cuatro ruedas, muy emocionante y que llama la atención."
+ },
+ {
+  "id": "orctxi4",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su 992.2 es especial: cada vez que lo ve en el garaje o lo conduce se siente como una ocasión."
+ },
+ {
+  "id": "orcuktj",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Conduce su 997.1 siempre que puede y lo prefiere a sus otros coches."
+ },
+ {
+  "id": "orcugy6",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Ha tenido Carrera GTS, GT3 y Carrera S, tres 911 a la vez; recomienda comprarlo."
+ }
+]

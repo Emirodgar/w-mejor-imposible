@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pabeudp",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [],
+    "resumen_es": "Propietario de un 992.2 Carrera S en azul Gentian: dice que le encanta su coche."
+  },
+  {
+    "id": "pahpbsq",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Dueño de un 992 en Gentian: sigue encantándole el azul, pero destaca que los colores claros realzan mejor la bonita y musculosa carrocería del 992."
+  }
+]

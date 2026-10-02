@@ -1,0 +1,1096 @@
+[
+ {
+  "id": "nmju6ag",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera Turbo de segunda generación: lo usa en invierno con nieve, muy rápido y práctico y buena compra de segunda mano; critica la pantalla y la posición baja."
+ },
+ {
+  "id": "nmk1jrq",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera 4 de 2023: encuentra feos los GTS por los limpiaparabrisas traseros, aunque acepta que es un Porsche."
+ },
+ {
+  "id": "nmk29tu",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha conducido mucho el Panamera Turbo de primera generación de su madre con reprogramación: muy rápido, cuatro plazas y maletero amplio; solo le fallan las levas."
+ },
+ {
+  "id": "nmk6eam",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera 4 de 2011 con 60.000 millas en dos años sin averías graves: lo adora como coche diario; su queja es el coste de mantenimiento."
+ },
+ {
+  "id": "nmkcnzj",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera de 2011 con 50.000 millas: cómodo, maletero amplio y mecánica sólida; solo tuvo que cambiar los actuadores de las manetas y echa en falta CarPlay."
+ },
+ {
+  "id": "nmke1o6",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Conduce un Macan por necesidad y lo encuentra pequeño para una familia: los asientos traseros son estrechos."
+ },
+ {
+  "id": "nmkjdak",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera GTS con V8: sonido y potencia increíbles y conducción de Porsche; su única pega era el tamaño, demasiado largo, y volvería a comprarlo."
+ },
+ {
+  "id": "nmkjwaw",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario un Panamera Turbo en Michigan, con sillas infantiles y compra en el maletero; lo describe como sublime."
+ },
+ {
+  "id": "nmkl72n",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó varios Panamera y le parecieron estupendos, aunque demasiado grandes."
+ },
+ {
+  "id": "nmkof3c",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende al Panamera 971 frente al 970 y lo califica de buenísimo, sobre todo el Turbo Sport Turismo."
+ },
+ {
+  "id": "nmksyc7",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Al principio no le gustaba el Panamera, pero tras conducir un 4S de 2014 acabó comprándolo."
+ },
+ {
+  "id": "nmkvds3",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Admite que el Panamera de primera generación puede ser el Porsche más feo, pero lo considera un coche increíble y nada malo."
+ },
+ {
+  "id": "nml0vy8",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Sin ser propietario, le gusta el diseño de todas las generaciones del Panamera salvo la última, y le encantaría una versión de dos puertas."
+ },
+ {
+  "id": "noj9cgw",
+  "models": [
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que la parrilla del último Panamera parece de SUV y que las generaciones anteriores eran más Porsche."
+ },
+ {
+  "id": "nml4sts",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario un Panamera 4S de primera generación con hijos; le encanta su carácter y cree que será un clásico apreciado."
+ },
+ {
+  "id": "nmld9at",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Adora su Panamera: experiencia Porsche en un coche grande utilizable a diario."
+ },
+ {
+  "id": "nmlekg2",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera Platinum Edition de 2022: le encantó el color pero odió el radio de giro, que lo hace sentir más grande de lo que es."
+ },
+ {
+  "id": "nmlhv85",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lo lleva a todas partes, incluso a esquiar: cabe todo y se maneja como sobre raíles."
+ },
+ {
+  "id": "nmm4ou2",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cuatro años y 160.000 km con su Panamera, el mejor coche diario que ha tenido; ha encargado otro nuevo."
+ },
+ {
+  "id": "nmn600k",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usó un Panamera como coche de demostración en Porsche y tuvo un GTS que adoraba; asegura que volverá a comprar otro."
+ },
+ {
+  "id": "nmpohd3",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera de segunda generación base: viajes largos cómodos, buen sonido y un PDK que rinde más de lo que sugieren las cifras."
+ },
+ {
+  "id": "nmq9u4n",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su primer Porsche fue un Panamera S E-Hybrid de 2014, fantástico de conducir y práctico; no merece ser considerado el peor Porsche."
+ },
+ {
+  "id": "nncbknp",
+  "models": [
+   "cayman-986",
+   "cayman-987",
+   "cayman-981",
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Elogia el Boxster como el deportivo más puro: motor central, tracción trasera y atmosférico."
+ },
+ {
+  "id": "nnge8cp",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Propietario desde 2016 de un Panamera Turbo de 2010: lo quiere como el primer día y no entiende las críticas."
+ },
+ {
+  "id": "nojb4hw",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Panamera 970.2 de 2016 sin quejas reales, ni siquiera por mantenimiento; solo la visibilidad trasera interior es pobre."
+ },
+ {
+  "id": "nphmcky",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recibe muchos más cumplidos con su Panamera 971 4S que con su 997.2 4S; en persona luce mejor que en fotos."
+ },
+ {
+  "id": "nqx33pa",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Macan Electric como coche de cortesía: muy suave, potente y se maneja muy bien, como un Taycan más alto."
+ },
+ {
+  "id": "nqx4a48",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que el Macan Electric no es inestable, pero se conduce como un SUV; para ser SUV maneja muy bien."
+ },
+ {
+  "id": "nqx3rfw",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Considera el Macan Electric una mejora significativa respecto a los Macan base antiguos."
+ },
+ {
+  "id": "nqy5qkv",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Macan eléctrico en leasing; Porsche le dio gratis el adaptador NACS, aunque prefiere no usar supercargadores Tesla por la menor potencia frente a su arquitectura de 800 V."
+ },
+ {
+  "id": "nqx5a7z",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido el Macan base y el eléctrico: el eléctrico es muy superior en conducción, interior y calidad, con buena autonomía e infotainment, aunque sigue sintiéndose como un SUV."
+ },
+ {
+  "id": "nr48ush",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Taycan a un Macan eléctrico por tener más maletero y mejor autonomía."
+ },
+ {
+  "id": "nqz3r5s",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Señala que el Macan eléctrico usa Android Automotive, mucho más moderno que el software del grupo VW."
+ },
+ {
+  "id": "nqx969d",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probado como coche de cortesía le sorprendió: muy suave, con suspensión neumática, HUD y asistentes que hacen el trayecto fácil; probablemente sea su próximo coche."
+ },
+ {
+  "id": "nqx9syj",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Macan eléctrico de cortesía le gustó la conducción y la comodidad, pero el infotainment se reiniciaba, se apagaba y CarPlay se desconectaba."
+ },
+ {
+  "id": "nqx9syj#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Comenta que en su Taycan no ha sufrido los fallos de infotainment que vio en el Macan eléctrico."
+ },
+ {
+  "id": "nqxawig",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Macan eléctrico tiene un molesto traqueteo y aún no ha ido al concesionario."
+ },
+ {
+  "id": "nqxc613",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En el Macan eléctrico de cortesía nota un ruido que parece venir del head-up display, algo que espera sea de fácil arreglo."
+ },
+ {
+  "id": "nqxgsqo",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo un Macan eléctrico Turbo como coche de cortesía: coche impresionante y muy rápido."
+ },
+ {
+  "id": "nr20roo",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar el Macan eléctrico, le impresionó su tecnología y lo sintió mucho más rápido que su GTS."
+ },
+ {
+  "id": "nqxnd8l",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo ambos: el Macan eléctrico es un gran coche diario con mucha más autonomía y utilidad que el Taycan."
+ },
+ {
+  "id": "nqxnd8l#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Prefiere cómo se conduce y cómo luce el Taycan frente al Macan eléctrico."
+ },
+ {
+  "id": "nqxu5g0",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el Macan base deprimente."
+ },
+ {
+  "id": "nqybzrl",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Odia que le den el Macan eléctrico de cortesía porque dice que se conduce muy mal."
+ },
+ {
+  "id": "nqzf5xt",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le parece que atrás hay más espacio que en el Macan de gasolina que recordaba y que luce más grande por fuera."
+ },
+ {
+  "id": "nqzh6oo",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En autopista el Macan eléctrico tiene dirección algo suelta y nerviosa y se siente como un SUV pesado, aunque mejor que el Macan base."
+ },
+ {
+  "id": "pacvcc2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Advierte de que el Cayenne se deprecia como casi todo lo que no es un 718 o un 911."
+ },
+ {
+  "id": "pacyvfz",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Estima que el Cayenne perderá el 50-60 % de su valor en cinco años."
+ },
+ {
+  "id": "pad5c72",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Recuerda que la depreciación del Cayenne es bastante alta."
+ },
+ {
+  "id": "p6wvdye",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que el 997.2 sube de valor porque su mantenimiento es fácil de realizar."
+ },
+ {
+  "id": "p6wvz4z",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 992: el mantenimiento es accesible, y por eso le molesta que el concesionario cobre 700 dólares por cambiar un filtro."
+ },
+ {
+  "id": "p73c4pc",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 997.2 C2S: los precios cerrados del concesionario son irrazonables; ahorró mucho comprando piezas y pagando solo la mano de obra."
+ },
+ {
+  "id": "p6vuqfm",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su revisión de 30.000 millas del 992 en un independiente costó unos 1.800 dólares."
+ },
+ {
+  "id": "p6yh1ld",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dudaba de su 992 tras dos años, pero hacer él mismo el mantenimiento y correr en autocross le hizo quererlo más."
+ },
+ {
+  "id": "p6vxi14",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo que cambiar el parabrisas por un problema conocido de juntas del 992 y ahora el soporte del retrovisor hace ruido."
+ },
+ {
+  "id": "p6vy5ug",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 991.2: el concesionario pide precios abusivos por filtros y bujías, así que hace el mantenimiento él mismo por mucho menos."
+ },
+ {
+  "id": "p6work8",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el 911 mejor coche en conjunto, pero el Corvette C8 Z06 más divertido."
+ },
+ {
+  "id": "p6wpovi",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su 992S, cree que un Z06 con V8 atmosférico tiene mucho más carácter."
+ },
+ {
+  "id": "p6w16lf",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Macan: el concesionario le cobraba unos 3.000 dólares al año y el coche ya casi no vale nada."
+ },
+ {
+  "id": "p6z9lks",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Piensa que 140.000 dólares por un 992.2 básico con PDK es una locura y que los interiores del 992 son de bajo coste."
+ },
+ {
+  "id": "p6zb7zl",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Posee un 911 y un Z06; se divierte igual con el Corvette y el Mustang GT350, que le parecen de más carácter."
+ },
+ {
+  "id": "p6w2hkp",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su 991.1 con 120.000 millas necesitaba cambiar el separador aire-aceite: un independiente pedía 6.300 dólares y el concesionario 1.800."
+ },
+ {
+  "id": "p6w4vya",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le pidieron 400-500 dólares por cada filtro del 992 más 300 de mano de obra, y 300 por cada filtro de habitáculo."
+ },
+ {
+  "id": "p6z7l0c",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende que su 911 apenas se ha depreciado."
+ }
+]

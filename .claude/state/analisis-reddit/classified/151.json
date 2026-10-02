@@ -1,0 +1,488 @@
+[
+ {
+  "id": "nkrg6m6",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le molestó el avance lento automático (creep) del Taycan, igual que le pasaba en otros eléctricos."
+ },
+ {
+  "id": "nkuldf5",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha conducido muchos Taycan durante el desarrollo con frenos de acero, PSCB y PCCB: todos se sienten naturales y no tiene problema para frenar suave."
+ },
+ {
+  "id": "nks3w74",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: dice que lo detiene con total suavidad y que el avance lento no es el problema, sino la técnica del conductor."
+ },
+ {
+  "id": "nkucc16",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera sólida la dinámica del Taycan y la calibración del tren motriz una referencia, aunque el software del PCM le parece flojo."
+ },
+ {
+  "id": "nkuh2q1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Motor y suspensión del Taycan le encantan, pero el software y los asistentes (freno de emergencia al aparcar, control de crucero) le irritan."
+ },
+ {
+  "id": "nkuiev7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan frena en seco al dar marcha atrás hacia su puerta eléctrica por un fallo del asistente, aunque el control de crucero adaptativo le funciona bien."
+ },
+ {
+  "id": "nks5bm7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan Turbo S con cerámicos: el ruido de pastillas tenía un boletín técnico y el pedal exige acostumbrarse, pero se frena suave."
+ },
+ {
+  "id": "nks20ui",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En el Taycan de prueba, pelear con el avance lento usando el freno resulta brusco en tráfico y las pastillas hacen ruido."
+ },
+ {
+  "id": "nks6gwy",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Taycan nuevo de acero: sus frenos son mucho mejores que los de la mayoría de eléctricos con frenada combinada, pero el aparcamiento automático no es suave."
+ },
+ {
+  "id": "nks6uvm",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Afirma que el Taycan imita un automático de convertidor con poca regeneración y que lo prefiere a la conducción con un solo pedal."
+ },
+ {
+  "id": "nktm9cv",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de dos eléctricos Porsche: prefiere cómo tiene Porsche configurado el avance lento frente al resto de eléctricos que ha probado."
+ },
+ {
+  "id": "nkta7pu",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El avance lento del Taycan le parece molesto e innecesario, pero no compensa las muchas cosas excelentes del coche."
+ },
+ {
+  "id": "nktd4o0",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un Taycan Turbo S en Hockenheim: sorprendentemente capaz, con buen manejo y muy buena suspensión."
+ },
+ {
+  "id": "nkulsxt",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le molesta tener que pisar muy a fondo el freno para activar el Hold en su Taycan."
+ },
+ {
+  "id": "nkuwecn",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En su Taycan el avance lento a veces es rápido y ruidoso con el freno pisado, lo que complica maniobrar en el garaje."
+ },
+ {
+  "id": "nkuo2yi",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que el Taycan se conduce mejor que la mayoría de eléctricos y sería una pena cambiarlo por otro."
+ },
+ {
+  "id": "nkwk299",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan de primera generación: no le molesta el avance lento y usa el empujón extra de freno para el Hold."
+ },
+ {
+  "id": "nllbtyy",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras un viaje de tres días con su Taycan coincide en que el avance lento debería poder desactivarse."
+ },
+ {
+  "id": "o9lx3j9",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Condujo un Cayenne híbrido de un amigo: demasiado par hacia delante al soltar el freno, imposible frenar suave los últimos centímetros."
+ },
+ {
+  "id": "nmps1z3",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró un Boxster 986 S y lo está disfrutando; la suspensión está cansada pero puede esperar uno o dos años."
+ },
+ {
+  "id": "nmnbhlh",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró con su hijo un Boxster 1998 con 157.000 millas por 5.300 dólares y lo considera lo más divertido por ese dinero."
+ },
+ {
+  "id": "nmo3w4k",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró un Boxster S 2003 en buen estado y gastó 16.000 dólares en cinco años para dejarlo al 100%."
+ },
+ {
+  "id": "nmo66sx",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Boxster por 8.000 dólares, invirtió 2.700 en ponerlo a punto y lo adora."
+ },
+ {
+  "id": "nmr5ls5",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Desglosa los gastos de puesta a punto de su Boxster, razonables, y está muy contento con el coche."
+ },
+ {
+  "id": "nmtfkkj",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Boxster en Arizona: más divertido e impresionante de lo esperado, con aire acondicionado que enfría muy bien."
+ },
+ {
+  "id": "nmtnkw4",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar un Boxster unos minutos, lo considera muy superior en sensaciones a su Volvo V60 Polestar."
+ },
+ {
+  "id": "nmul0un",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Aunque no es rápido, su Boxster es divertido de estirar y con la capota abierta resulta inigualable."
+ },
+ {
+  "id": "nmw1euj",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Boxster de 2000 con radio CarPlay instalada le parece más moderno que su Kia Sorento."
+ },
+ {
+  "id": "nmolbhf",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un Porsche oficial pedía 7.000 dólares por brazos y amortiguadores delanteros; él los cambió por 1.400 con piezas originales en ocho horas."
+ },
+ {
+  "id": "nmriaz5",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras renovar el tren delantero, el Boxster se siente sólido y el comportamiento es como de coche nuevo."
+ },
+ {
+  "id": "nmr3zyd",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un 986 de 5.000 dólares: conduce, cambia y suena bien sin fugas, aunque la capota no funciona, y lo ve como una ganga."
+ }
+]

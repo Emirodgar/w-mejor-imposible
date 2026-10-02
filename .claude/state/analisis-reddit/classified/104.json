@@ -1,0 +1,17 @@
+[
+  {
+    "id": "oxn2qea",
+    "models": [
+      "taycan"
+    ],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [
+      {
+        "a": "calidad",
+        "p": "neg"
+      }
+    ],
+    "resumen_es": "Propietario de un Taycan: prefería el interior de su anterior Genesis G80 al del Taycan."
+  }
+]

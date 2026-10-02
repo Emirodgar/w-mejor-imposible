@@ -1,0 +1,61 @@
+[
+ {
+  "id": "oh5jqzg",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 911 hace poco y cuenta que las dudas sobre la configuración durante la espera desaparecieron cuando llegó el coche."
+ },
+ {
+  "id": "oh5wo6m",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un 992 CPO con interior Burdeos completo: el salpicadero largo reflejaba el rojo en el parabrisas y resultaba excesivo; propone tintado y piezas negras."
+ },
+ {
+  "id": "oh64h2a",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El primer 911 que condujo tenía esta misma combinación de color y le confirmó que quería encargar el suyo."
+ },
+ {
+  "id": "oh67fvs",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Propietario de dos Taycan: acabó encantado con el azul frozen y el interior Burdeos que no le gustaban, y no tanto con el azul gentian que prefería en el configurador."
+ }
+]

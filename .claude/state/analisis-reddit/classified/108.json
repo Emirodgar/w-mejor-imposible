@@ -1,0 +1,667 @@
+[
+ {
+  "id": "p72e27q",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "No le gusta el frontal del 911 GTS y preferiría un Carrera 4S; opinión estética sin experiencia declarada."
+ },
+ {
+  "id": "p72fj8u",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 997.2 que adora y usa a diario por todas partes sin tratarlo como una pieza de museo."
+ },
+ {
+  "id": "p72g7gi",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tuvo un 992 GTS pedido de fábrica y acabó odiándolo, sobre todo por la actitud de la gente hacia el coche."
+ },
+ {
+  "id": "p72g7gi#2",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió el GTS por un Cayman GT4 981: atmosférico, ruidoso, rápido y genial en circuito, por la mitad de dinero."
+ },
+ {
+  "id": "p72jili",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un 991.2 GTS que le gustó, pero se enamoró de un 991.1 S Cabrio y lo cambió; muy feliz con el S descapotable."
+ },
+ {
+  "id": "p72o062",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su GT3 le parece aburrido en ciudad y poco vistoso, pero en carretera de montaña cobra vida."
+ },
+ {
+  "id": "p73h558",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que los 911 actuales son demasiado fuertes y electrónicos y que modelos de hace 15 años dan más diversión."
+ },
+ {
+  "id": "p73iwnk",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 991.1 4S con pocos km y preparación: lo describe como casi la máquina perfecta, rápida y cruda."
+ },
+ {
+  "id": "p73k4hf",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 992 Carrera S manual con tubos libres y tune: superó sus expectativas."
+ },
+ {
+  "id": "p741ebx",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Devolvió un 992.2 tras unos 130 km: poco inspirador y no le gusta el sistema híbrido."
+ },
+ {
+  "id": "p742pcx",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su GT3 manual preparado le enciende cada vez que se pone al volante."
+ },
+ {
+  "id": "p74x5ov",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 992.2 Carrera 4 GTS: le da una gran sonrisa incluso en atascos."
+ },
+ {
+  "id": "p746dxp",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su 992.1 GTS se aburre conduciendo normal al trabajo, pero disfruta mucho al exprimirlo en carreteras de montaña."
+ },
+ {
+  "id": "p74dhup",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Vendió su 991.1 GT3 por un Miata: considera los 911 casi perfectos y por eso algo aburridos."
+ },
+ {
+  "id": "p74kvud",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Sustituyó su 992.2 T por un Civic Type R y no se ha arrepentido de venderlo."
+ },
+ {
+  "id": "p74hwpm",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Cayman 987 que adora: bóxer seis cilindros, cambio manual y dirección hidráulica muy puros."
+ },
+ {
+  "id": "p74nkho",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 997.2 Turbo S fue un coche de ensueño por potencia, rareza y aspecto."
+ },
+ {
+  "id": "p74nkho#2",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 991.1 base le da más alegría de la esperada; valora la simplicidad."
+ },
+ {
+  "id": "p7510hz",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice tener el mismo coche (GTS) y sonríe cada vez que lo conduce; es de los que aparcas y admiras."
+ },
+ {
+  "id": "p75gnye",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo un Targa 4 GTS negro mate un fin de semana en Austin: se sintió genial y recibió gestos de aprobación."
+ },
+ {
+  "id": "p75vu9a",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró un 911 S de 2024 nuevo y no le encuentra emoción; su Hellcat le divierte mucho más."
+ },
+ {
+  "id": "p7602oy",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera los 992 algo mediocres y sin alma frente a un 911 de 2015-2016 atmosférico y manual."
+ },
+ {
+  "id": "p764gwk",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un C4S de 2020: lleno de alegría en cada salida."
+ },
+ {
+  "id": "p766rza",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que los 911 nuevos carecen de alma, son aburridos y están sobrevalorados por el marketing en redes."
+ },
+ {
+  "id": "p76ck8p",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 911 cabrio de 2019 certificado en 2021 y lo disfrutó mucho, aunque habría preferido un 993."
+ },
+ {
+  "id": "p76kxbj",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Define cualquier 992 como soso y prefiere un 997 Turbo o un 997 GT3."
+ },
+ {
+  "id": "p76u7de",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El 992 sirve como diario rápido y cómodo, pero lo ve demasiado aséptico."
+ },
+ {
+  "id": "p774haz",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha probado varios 992: los ve increíbles pero le falta el tacto analógico de los antiguos."
+ },
+ {
+  "id": "p774haz#2",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su favorito es un 997 Turbo manual con amortiguadores Öhlins; busca más 997 como el GT3 o GT2."
+ },
+ {
+  "id": "p78irok",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cuestiona que un 992 de 450 CV pueda considerarse aburrido."
+ },
+ {
+  "id": "p770oz1",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende que un coche de 550 CV y 1.600 kg no es aburrido y que es más aprovechable que los 911 antiguos."
+ },
+ {
+  "id": "p76xltm",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda el 718 GTS 4.0 manual: el placer de conducir es real y es más discreto."
+ },
+ {
+  "id": "p77041l",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 descapotable: acelera con contundencia, es quirúrgico en curva y sirve para todo, incluso la compra o el colegio."
+ },
+ {
+  "id": "p774j0k",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conducir el 992.2 GTS híbrido en circuito le parece una de las mejores experiencias."
+ },
+ {
+  "id": "p77m1tz",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Su 718 Cayman GTS es normal en tráfico pero una maravilla en carretera de montaña con el motor a tope."
+ },
+ {
+  "id": "p77ycg6",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Siente alegría en cada segundo con su 911, aunque su pareja odia los baches y la postura de entrada y salida."
+ },
+ {
+  "id": "p77yzlv",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Tuvo un 991 PDK precioso con gran motor, pero no lo amó por su valor, el cambio no manual y la energía negativa que generaba."
+ },
+ {
+  "id": "p785ohs",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tuvo un GTS 4 de 2026 antes de pasar a un Turbo S y lo califica de coche brutal."
+ },
+ {
+  "id": "p791zie",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan GTS: los neumáticos pegajosos recogen clavos y tornillos con frecuencia, casi una vez al mes."
+ },
+ {
+  "id": "p7bs62y",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que los Porsche conducen mal y solo pagas la marca, tras haber ido en varios 911 Turbo y GT3."
+ }
+]

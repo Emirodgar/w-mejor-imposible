@@ -1,0 +1,219 @@
+[
+ {
+  "id": "p7bfpql",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 911 GTS descapotable: el precio de Porsche le sigue escociendo, pero la versión abierta le da otro tipo de diversión y espera cada salida."
+ },
+ {
+  "id": "p7c5x1m",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 964 clásico, elegido frente a un 991 nuevo: le da mucha alegría, se siente auténtico y la gente se alegra de verlo."
+ },
+ {
+  "id": "p7d26aw",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo una vez un 718 Spyder y le encantó."
+ },
+ {
+  "id": "p7gm8s9",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su 991 a veces sentía que el coche conducía por él, y recomienda un 911 más antiguo."
+ },
+ {
+  "id": "p7u0k2q",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene varios Porsche antiguos y acaba de comprar un 993, que conserva el tacto analógico; opina que nada iguala la sensación de un 930 de los 80."
+ },
+ {
+  "id": "p7i0vgx",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un 992.2 en la Porsche Experience: más rápido en vuelta pero mucho más aséptico y menos divertido que su 991."
+ },
+ {
+  "id": "p7j786n",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un 991.2 GTS que cumplía en todo pero resultaba estéril; tras modificarlo (escape, ECU) cambió la experiencia. Cree que los Porsche están sobreingeniados."
+ },
+ {
+  "id": "p7qcafw",
+  "models": [
+   "911-gt",
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que solo el GT3 (RS) y el Turbo S dan satisfacción constante en la gama 911 y que el resto no merece la pena."
+ },
+ {
+  "id": "p7tgabm",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Carrera T 2026: llegó a domicilio rayado y con el paragolpes trasero a sustituir, y el concesionario no asumió el problema."
+ },
+ {
+  "id": "p24k9ii",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño desde nuevo de un 718 Spyder: uno de los mejores coches que ha tenido, con motor atmosférico, manual y alto de vueltas."
+ },
+ {
+  "id": "p2uf8v3",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su Boxster S 987 afirma que ningún eléctrico que ha conducido se acerca a su experiencia de conducción."
+ },
+ {
+  "id": "p2aa8ic",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 718 GTS 4.0: da casi el 90% de un Spyder/GT4 por el 70% del dinero y le costará encontrar un sustituto."
+ },
+ {
+  "id": "p2bphdb",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 718 GTS 4.0: solo ha hecho un cambio de aceite (unos 700) y neumáticos, sin averías hasta ahora."
+ }
+]

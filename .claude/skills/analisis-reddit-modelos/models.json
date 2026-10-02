@@ -1,0 +1,48 @@
+{
+  "_nota": "Taxonomia de modelos. 'id' es la clave estable que usa la clasificacion. 'patterns' se usa solo para descubrir hilos y para dar pistas; la atribucion final la decide Claude leyendo el comentario. Si un usuario no precisa la generacion, se asignan varios ids y su voto se reparte entre ellos.",
+  "subreddits": {
+    "generales": ["Porsche", "cars", "AskCarOwners", "whatcarshouldIbuy"],
+    "por_modelo": ["911", "Porsche911", "Cayman", "PorscheCayman", "Boxster", "Cayenne", "macan", "Panamera", "Taycan", "PorscheTaycan"]
+  },
+  "models": [
+    {"id": "911-992",  "family": "911", "label": "911 (992, 2019-hoy)", "patterns": ["992"]},
+    {"id": "911-991",  "family": "911", "label": "911 (991, 2012-2019)", "patterns": ["991"]},
+    {"id": "911-997",  "family": "911", "label": "911 (997, 2004-2012)", "patterns": ["997"]},
+    {"id": "911-996",  "family": "911", "label": "911 (996, 1998-2004)", "patterns": ["996"]},
+    {"id": "911-air",  "family": "911", "label": "911 refrigerado por aire (964/993)", "patterns": ["964", "993", "air-?cooled"]},
+    {"id": "911-gt",   "family": "911", "label": "911 GT3 / GT3 RS / GT2 RS", "patterns": ["gt3", "gt2"]},
+    {"id": "718-982",  "family": "718", "label": "718 Cayman / Boxster (982)", "patterns": ["718", "982"]},
+    {"id": "cayman-981","family": "718", "label": "Cayman / Boxster (981)", "patterns": ["981"]},
+    {"id": "cayman-987","family": "718", "label": "Cayman / Boxster (987)", "patterns": ["987"]},
+    {"id": "cayman-986","family": "718", "label": "Boxster (986)", "patterns": ["986"]},
+    {"id": "macan-ice","family": "Macan", "label": "Macan (gasolina, 95B)", "patterns": ["macan"]},
+    {"id": "macan-ev", "family": "Macan", "label": "Macan Electric", "patterns": ["macan ev", "macan electric"]},
+    {"id": "cayenne-9pa","family": "Cayenne", "label": "Cayenne (955/957, 2002-2010)", "patterns": ["955", "957", "9pa"]},
+    {"id": "cayenne-92a","family": "Cayenne", "label": "Cayenne (958, 2010-2017)", "patterns": ["958", "92a"]},
+    {"id": "cayenne-po536","family": "Cayenne", "label": "Cayenne (PO536 / E3, 2018-hoy)", "patterns": ["po536", "e3 cayenne"]},
+    {"id": "panamera-970","family": "Panamera", "label": "Panamera (970, 2009-2016)", "patterns": ["970"]},
+    {"id": "panamera-971","family": "Panamera", "label": "Panamera (971, 2016-2023)", "patterns": ["971"]},
+    {"id": "panamera-972","family": "Panamera", "label": "Panamera (972, 2024-hoy)", "patterns": ["972"]},
+    {"id": "taycan",   "family": "Taycan", "label": "Taycan", "patterns": ["taycan"]}
+  ],
+  "family_patterns": {
+    "911": ["911", "carrera", "targa", "turbo s", "gt3", "gt2", "992", "991", "997", "996", "993", "964"],
+    "718": ["718", "cayman", "boxster", "spyder rs", "gt4"],
+    "Macan": ["macan"],
+    "Cayenne": ["cayenne"],
+    "Panamera": ["panamera"],
+    "Taycan": ["taycan"]
+  },
+  "opinion_title_regex": "(reliab|problem|issue|worth|regret|should i|buy|bought|buying|purchase|owner|ownership|review|experience|vs\\.?|versus|compare|maintenance|cost|expens|repair|ims|rms|bore score|warranty|depreciat|first porsche|daily|upgrade|sell|selling|keep|opinion|advice|recommend|pros and cons|honest)",
+  "aspects": ["fiabilidad", "costes", "conduccion", "calidad", "valor", "tecnologia", "uso_diario", "diseno"],
+  "aspects_es": {
+    "fiabilidad": "Fiabilidad",
+    "costes": "Costes de mantenimiento",
+    "conduccion": "Conducción y prestaciones",
+    "calidad": "Calidad de construcción",
+    "valor": "Depreciación / valor",
+    "tecnologia": "Tecnología y software",
+    "uso_diario": "Uso diario y comodidad",
+    "diseno": "Diseño"
+  }
+}

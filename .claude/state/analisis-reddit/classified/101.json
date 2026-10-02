@@ -1,0 +1,6 @@
+[
+{"id":"p9dpzuk","models":["taycan"],"sentiment":"neg","basis":"owner","aspects":[{"a":"fiabilidad","p":"neg"}],"resumen_es":"Propietario de un Taycan 4S de 2021: un fallo de frenos a alta velocidad le dejó aterrado, y le molestó aún más que Porsche no se disculpara."},
+{"id":"p9fvju5","models":["taycan"],"sentiment":"neg","basis":"owner","aspects":[{"a":"fiabilidad","p":"neg"}],"resumen_es":"Propietario de un Taycan: tras perder los frenos en autopista solo pudo dejar que el coche se detuviera rodando; suerte de que no había tráfico."},
+{"id":"p9hdykf","models":["taycan"],"sentiment":"neg","basis":"owner","aspects":[{"a":"fiabilidad","p":"neg"}],"resumen_es":"Propietario de un Taycan: los frenos fallaron sin avisos en el cuadro y con el pedal a fondo, y no pensó en usar el freno de emergencia del botón de parking."},
+{"id":"p9f5jhz","models":["taycan"],"sentiment":"neg","basis":"owner","aspects":[{"a":"fiabilidad","p":"neg"}],"resumen_es":"Consiguió acogerse a la ley limón en California con su 4S de segunda mano por una campaña de revisión (recall)."}
+]

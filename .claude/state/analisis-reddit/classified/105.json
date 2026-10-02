@@ -1,0 +1,19 @@
+[
+  {
+    "id": "oxjgcd9",
+    "models": [
+      "cayenne-9pa",
+      "cayenne-92a",
+      "cayenne-po536"
+    ],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [
+      {
+        "a": "conduccion",
+        "p": "pos"
+      }
+    ],
+    "resumen_es": "Disfruta circulando en atascos con el Cayenne GTS de un amigo por el sonido grave del V8 al arrancar."
+  }
+]

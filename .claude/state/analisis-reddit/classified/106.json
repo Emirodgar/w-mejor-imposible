@@ -1,0 +1,9 @@
+[
+  {"id":"oxhod0k","models":["cayenne-po536"],"sentiment":"neu","basis":"owner","aspects":[{"a":"tecnologia","p":"pos"},{"a":"costes","p":"neg"}],"resumen_es":"Comprador de un Cayenne GTS 2026: confirma que lleva control de crucero adaptativo de serie y que InnoDrive costó unos 2.000 $ extra."},
+  {"id":"oxj4071","models":["718-982"],"sentiment":"neu","basis":"owner","aspects":[{"a":"valor","p":"neg"},{"a":"calidad","p":"pos"}],"resumen_es":"Propietario de un 718: le molestó pagar 2.000 $ por los asientos eléctricos, aunque reconoce que funcionan muy bien."},
+  {"id":"p70sl5u","models":["911-992","911-991","911-997"],"sentiment":"neg","basis":"owner","aspects":[],"resumen_es":"Dueña de un 911 GTS recién comprado: casi no siente alegría y la magia de Porsche que esperaba desde niña no aparece."},
+  {"id":"p70v164","models":["911-992","911-991","911-997"],"sentiment":"neg","basis":"owner","aspects":[],"resumen_es":"Propietaria de un 911 GTS: insiste en que simplemente está decepcionada con el coche y no encuentra apoyo ni en su marido."},
+  {"id":"p712s8q","models":["911-992"],"sentiment":"neg","basis":"none","aspects":[{"a":"conduccion","p":"neg"},{"a":"tecnologia","p":"neg"}],"resumen_es":"Opina que los 992 son demasiado digitales y potentes para uso urbano; un 911 debería seguir siendo analógico."},
+  {"id":"p712s8q#2","models":["911-991"],"sentiment":"pos","basis":"none","aspects":[{"a":"conduccion","p":"pos"}],"resumen_es":"Recomienda probar un 991.1 de pocos kilómetros, cambiando el PCM 3.1 por un PCM 4, que sería su único defecto."},
+  {"id":"p72fm6d","models":["911-991","911-992"],"sentiment":"neu","basis":"owner","aspects":[],"resumen_es":"Tiene un 991 y un 992 y opina que en la práctica son casi iguales, sin que el 991 se sienta como un clásico."}
+]

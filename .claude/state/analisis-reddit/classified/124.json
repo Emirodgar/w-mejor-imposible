@@ -1,0 +1,9 @@
+[
+  {"id": "oafzwn0", "models": ["cayman-986"], "sentiment": "pos", "basis": "owner", "aspects": [{"a": "fiabilidad", "p": "pos"}], "resumen_es": "Propietario de un Boxster 986 de 62k millas: el embrague original sigue con en torno a un 20% de vida tras 60k millas."},
+  {"id": "oa8z8bi", "models": ["cayman-986"], "sentiment": "neg", "basis": "owner", "aspects": [{"a": "fiabilidad", "p": "neg"}], "resumen_es": "Dueño de un 986 con 180k millas: teme que las guías de la cadena de distribución no aguanten tanto kilometraje."},
+  {"id": "oab59uh", "models": ["cayman-986"], "sentiment": "neu", "basis": "owner", "aspects": [{"a": "fiabilidad", "p": "neg"}], "resumen_es": "Dueño de un 986 de 1997 con 170k millas, sin historial de mantenimiento claro y con un motor remanufacturado por Porsche por garantía."},
+  {"id": "oa8yxvk", "models": ["cayman-986"], "sentiment": "neu", "basis": "owner", "aspects": [{"a": "fiabilidad", "p": "neg"}], "resumen_es": "Dueño de un Boxster de 2000 con 180k millas: IMS cambiado a las 120k y ahora el cojinete del embrague empieza a hacer ruido."},
+  {"id": "oasntkn", "models": ["cayman-986"], "sentiment": "pos", "basis": "owner", "aspects": [{"a": "fiabilidad", "p": "pos"}], "resumen_es": "Dueño de un Boxster de 2002 con 119k millas y embrague original; considera innecesario cambiar el IMS o el embrague tan pronto."},
+  {"id": "oa8zfcs", "models": ["cayman-986"], "sentiment": "pos", "basis": "none", "aspects": [{"a": "fiabilidad", "p": "pos"}, {"a": "costes", "p": "pos"}], "resumen_es": "Opina que el problema del IMS se ha exagerado muchísimo y que cambiarlo cada 25k millas es un gasto innecesario."},
+  {"id": "odk674r", "models": ["cayman-986"], "sentiment": "neg", "basis": "none", "aspects": [{"a": "costes", "p": "neg"}], "resumen_es": "Sustituir las guías de la cadena de levas exige bajar o sacar el motor y usar herramientas de calado, lo que complica la reparación."}
+]

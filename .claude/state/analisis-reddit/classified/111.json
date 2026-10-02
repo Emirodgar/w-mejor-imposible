@@ -1,0 +1,1227 @@
+[
+ {
+  "id": "od0433s",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan 4S Sport Turismo: lo recomienda como coche diario si se puede cargar en casa y lo considera precioso."
+ },
+ {
+  "id": "od0c58k",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Taycan de 2023 por precio y prefiere el frontal de la primera serie; no ve rentable pagar la diferencia por un 2025."
+ },
+ {
+  "id": "od0opyk",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan: hubo que cambiar la transmisión entera y varios módulos de la batería, todo cubierto por la garantía CPO."
+ },
+ {
+  "id": "od2sr19",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan le costó 11.000 dólares en cambiar el cuadro de instrumentos, por lo que piensa contratar garantía extendida."
+ },
+ {
+  "id": "od1zusb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo que pagar 11.000 dólares por sustituir el cuadro de instrumentos de su Taycan y no quiere circular sin garantía."
+ },
+ {
+  "id": "od09is2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar un Taycan 4 se quedó alucinado con las prestaciones y compró un Turbo S: lo describe como un avión con ruedas."
+ },
+ {
+  "id": "od09is2#2",
+  "models": [
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un Panamera GTS 2025 y lo ve muy elegante y estable, aunque el Taycan le impresionó más."
+ },
+ {
+  "id": "od0bja1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo Panamera e-hybrid y Taycan: recomienda el Taycan si se busca un coche deportivo y no se necesita tanto maletero."
+ },
+ {
+  "id": "od0bja1#2",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Panamera e-hybrid de segunda mano le dio muchos problemas y le pareció una barca de lujo que no gusta en curva."
+ },
+ {
+  "id": "od0lhiu",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan le ha dado menos problemas y mejor comportamiento dinámico que el Panamera anterior."
+ },
+ {
+  "id": "od3ljn0",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Panamera 4S Sport Turismo con PTV y PDCC iba muy rápido en curva, incluso con neumáticos gastados."
+ },
+ {
+  "id": "od3qe34",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Panamera balanceaba y no daba confianza en carreteras reviradas."
+ },
+ {
+  "id": "od3qe34#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras el Panamera, su Taycan le parece mucho más equilibrado y preciso en conducción dinámica."
+ },
+ {
+  "id": "od48reo",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan GTS que cargaba en casa; prefiere el Taycan a una berlina grande tipo Panamera."
+ },
+ {
+  "id": "od928o4",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera 4S de 2014 y lo encuentra enorme y pesado comparado con un Taycan."
+ },
+ {
+  "id": "od928o4#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Taycan y tras usar un Panamera de sustitución estaba deseando recuperarlo."
+ },
+ {
+  "id": "od0kjhw",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha tenido ambos: considera el Taycan mucho mejor salvo en viajes largos, donde la carga consume tiempo."
+ },
+ {
+  "id": "ode0die",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha tenido varios fallos puntuales en su Taycan que lo mantuvieron en el taller más tiempo del deseado."
+ },
+ {
+  "id": "od10czq",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan: lo ve más bonito que el Panamera, aunque con menos espacio trasero y maletero justo."
+ },
+ {
+  "id": "od29ysd",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Viniendo de un Stinger, su Taycan es sorprendentemente espacioso atrás y con un maletero equivalente."
+ },
+ {
+  "id": "od1mwld",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Taycan GTS CPO de 2023 a mitad del precio de lista y no podría estar más contento; lo ve la berlina más bonita."
+ },
+ {
+  "id": "od1nvw2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En dos años su Taycan CT 4S necesitó grúa dos veces y un fallo de batería de cuatro meses."
+ },
+ {
+  "id": "od1nvw2#2",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Panamera Turbo posterior no le ha dado problemas hasta ahora."
+ },
+ {
+  "id": "od2ac4k",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan GTS es el coche más deportivo que ha tenido: pegado al suelo, sin balanceo y aceleración brutal."
+ },
+ {
+  "id": "od1w709",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Panamera Turbo Sport Turismo 2019 le encantó: motor espectacular, interior lujoso, buen coche diario y de viaje."
+ },
+ {
+  "id": "od1w709#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Taycan GTS Sport Turismo 2023 disfruta del rendimiento y la postura baja, aunque su interior es más espartano que el del Panamera."
+ },
+ {
+  "id": "od3ngyr",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Panamera balanceaba y no inspiraba confianza en curvas."
+ },
+ {
+  "id": "od3ngyr#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Taycan le resulta mucho más equilibrado y preciso que el Panamera."
+ },
+ {
+  "id": "od4b4iq",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera 4S diésel 2017: lo disfrutó en viajes largos por Europa y repetiría."
+ },
+ {
+  "id": "od4b4iq#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan Turbo 2020 era brutal y especial, pero se volvió común y los viajes largos exigían planificar la carga."
+ },
+ {
+  "id": "od5asm5",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Usa el Taycan para divertirse y para ir al trabajo, aunque su autonomía limita los viajes largos."
+ },
+ {
+  "id": "od5asm5#2",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa el Panamera como berlina familiar para ir a la playa con el perro."
+ },
+ {
+  "id": "od5encs",
+  "models": [
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Panamera 4 híbrido 2025 tenía potencia suficiente pero la transición gasolina-eléctrico era torpe; lo vendió."
+ },
+ {
+  "id": "od5encs#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un Taycan Cross Turismo Turbo tras vender el Panamera y está encantado."
+ },
+ {
+  "id": "oft28e3",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su Taycan Turbo le parece mejor en todo que su anterior Panamera."
+ },
+ {
+  "id": "od95ijw",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Como propietario, asegura que no se echa de menos el sonido de un motor de gasolina en un Taycan."
+ },
+ {
+  "id": "odd1hvg",
+  "models": [
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Panamera E-Hybrid 2025 es deportivo, gasta unos 5 l/100 km y cabe familia, perro y palos de golf; el mejor coche que ha tenido."
+ },
+ {
+  "id": "odfevmb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el Taycan uno de los mejores coches diarios si se carga en casa: cómodo, divertido y barato de usar."
+ },
+ {
+  "id": "odx5xme",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con el Taycan Turbo S disfruta de la entrega de potencia, pero fuera de garantía no lo tocaría."
+ },
+ {
+  "id": "odx5xme#2",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su anterior Panamera GTS era más cómodo y con mejor interior, y se podía reparar en un garaje doméstico."
+ },
+ {
+  "id": "oel8xma",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un Taycan 4S 2022 como primer Porsche y no lo cambiaría por nada; le hace sonreír a diario."
+ },
+ {
+  "id": "p9119iv",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con Taycan 4S y Macan, defiende que el interior del Macan eléctrico no es peor que el de un Tesla."
+ },
+ {
+  "id": "p9c0qv8",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Macan eléctrico de sustitución y le decepcionó: no maneja como esperaba y no es comparable al Taycan."
+ },
+ {
+  "id": "p9c0qv8#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que el Macan de gasolina es mejor que el eléctrico pero tampoco es gran cosa y duda de que alguien lo compre."
+ },
+ {
+  "id": "p93kw46",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un Cayenne Coupe de sustitución con precio de 117.000 dólares le pareció el peor coche de más de 100.000 que ha conducido."
+ },
+ {
+  "id": "p90z4n2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Macan eléctrico le parece soso, incómodo para bajarse, con pantallas pequeñas y cámara pobre frente al Taycan."
+ },
+ {
+  "id": "p9103dz",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [],
+  "resumen_es": "El Macan eléctrico es competente pero no se siente especial, tras meses de uso junto a su Taycan."
+ },
+ {
+  "id": "p9103dz#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Menciona los numerosos problemas que ha tenido su Taycan."
+ },
+ {
+  "id": "p913w0r",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le sorprendió que su Macan eléctrico no tenga cierre suave de puertas ni como opción."
+ },
+ {
+  "id": "p91igut",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica la cámara del Macan eléctrico por pequeña, de baja resolución y con poca tasa de refresco."
+ },
+ {
+  "id": "p91bty2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Sintió lo mismo con el Macan eléctrico 2025, aunque ha leído que el GTS 2026 gusta."
+ },
+ {
+  "id": "p91ozir",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Macan GTS 2026 dice que no se compara con su anterior Taycan 4S, que echa de menos."
+ },
+ {
+  "id": "p91ozir#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Echa mucho de menos su antiguo Taycan 4S y quiere volver a tener uno."
+ },
+ {
+  "id": "p91pdv8",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan eléctrico de cortesía; le gusta la ubicación del cargador inalámbrico y coincide con las críticas."
+ },
+ {
+  "id": "p91qz9r",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras varias cesiones, el Macan eléctrico sigue sin parecerle un Porsche."
+ },
+ {
+  "id": "p91sw6x",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [],
+  "resumen_es": "Probó el Macan eléctrico y le gustó, aunque no lo compraría como sustituto de su Taycan."
+ },
+ {
+  "id": "p92l1fm",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encantó el Macan eléctrico de cortesía: divertido cuando se quiere y cómodo cuando hace falta."
+ },
+ {
+  "id": "p92mdeu",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de Taycan y Macan eléctrico: el Macan supera a un Tesla en interior, dinámica y confort."
+ },
+ {
+  "id": "p92mdeu#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "En su tercer Taycan, destaca su rendimiento de carga como referencia."
+ },
+ {
+  "id": "p93boes",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Macan 4S de cortesía le pareció claramente superior en calidad a un Model Y, aunque por debajo del Taycan."
+ },
+ {
+  "id": "p93fbgd",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Macan 4S 2025: algunos plásticos parecen baratos, pero no encuentra un sustituto con ese confort y manejo."
+ },
+ {
+  "id": "p93r6w6",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con cuero Club y cristal aislante el Macan eléctrico es premium y silencioso; el GTS conduce excepcionalmente y consume menos que el Taycan."
+ },
+ {
+  "id": "p93r6w6#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un Taycan sin cuero parece básico, es ruidoso con llantas de 21 pulgadas y los asientos deportivos son duros."
+ },
+ {
+  "id": "p954fn3",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha oído que las plazas traseras del Macan eléctrico tienen muy poco espacio para las piernas."
+ },
+ {
+  "id": "p96sv7d",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Por el precio esperaba algo extraordinario y le parece solo correcto."
+ },
+ {
+  "id": "p97g6bo",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le parece increíble el nuevo Macan eléctrico: estilo, conducción e interior, sin diferencias de materiales con su Cayenne."
+ },
+ {
+  "id": "p9e8mka",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Eligió el Macan eléctrico frente al Taycan CT: más moderno, mucho más espacioso y práctico."
+ },
+ {
+  "id": "pab7cv0",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Macan eléctrico no le decepcionó por el precio y, bien equipado, alcanza el nivel premium deseado."
+ },
+ {
+  "id": "pab7cv0#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su primera experiencia Porsche eléctrica fue el Taycan y esperaba bastante más por el precio."
+ },
+ {
+  "id": "p9ewlyp",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Macan de gasolina de cortesía conducía como un Kia, con paradas de motor molestas; lo considera el peor Porsche."
+ },
+ {
+  "id": "p9ewlyp#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [],
+  "resumen_es": "Su experiencia con el Macan eléctrico fue mejor que con el de gasolina."
+ },
+ {
+  "id": "ol8tume",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Viniendo de un M5 Competition, su Panamera Turbo S le resulta menos deportivo de lo que dicen las pruebas."
+ },
+ {
+  "id": "ol9vgdg",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende el Cayenne como el mejor SUV del mercado, ideal para carreteras malas frente al Panamera."
+ },
+ {
+  "id": "olalk6z",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el Cayenne es muy inferior al Panamera en conducción."
+ }
+]

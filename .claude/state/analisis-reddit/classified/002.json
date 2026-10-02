@@ -1,0 +1,236 @@
+[
+ {
+  "id": "p9ikope",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un comerciante que compró un Taycan Turbo S de 2021 con 65.000 km muy por debajo de su precio nuevo lo considera un mal coche que se deprecia muy deprisa."
+ },
+ {
+  "id": "p9j21c1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de su segundo Porsche que no tendrá un Porsche eléctrico por las historias de averías como la de este Taycan."
+ },
+ {
+  "id": "p9ja6wu",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan de 2021 con unos 48.000 km sin ningún problema de batería, cargando habitualmente al 70 % en corriente alterna."
+ },
+ {
+  "id": "p9jno6i",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan de 2022 que dice que le ha ido sólido hasta ahora."
+ },
+ {
+  "id": "p9ktnqd",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan Turbo S que nunca ha tenido problemas con sus baterías, cargando casi siempre en casa; sospecha que el fallo del hilo viene de la carga."
+ },
+ {
+  "id": "p9nisfe",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Comenta que la mala fiabilidad del Taycan no afecta a las ventas de los Porsche de combustión ni al elogio constante a su ingeniería."
+ },
+ {
+  "id": "p9nwqau",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Comprador potencial de eléctrico que descarta Porsche tras leer este caso de averías del Taycan."
+ },
+ {
+  "id": "p9pevic",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietarios que creían que el Taycan era un buen coche hasta que falló."
+ },
+ {
+  "id": "p9rhmbr",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Una vecina con un Porsche eléctrico lo vio remolcado hace poco y ahora mira con envidia un coche de gasolina."
+ },
+ {
+  "id": "p9sflil",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Iba a comprar un Taycan 4S 2025 pero los problemas que vio en foros le hicieron comprar un 911 en su lugar."
+ },
+ {
+  "id": "p9u4fi2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Se alegra de no haber comprado un Taycan a la vista de los problemas descritos."
+ },
+ {
+  "id": "pa7dz2b",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le gusta la idea del Taycan, pero cree que los usados son baratos precisamente por sus problemas."
+ },
+ {
+  "id": "p9xmmaf",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño desde nuevo de un 911 991.1 de 2013 con 120.000 millas que sigue perfecto y fuerte."
+ },
+ {
+  "id": "paawmt3",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987",
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Boxster S en azul oscuro metalizado y opina que es un color impresionante."
+ },
+ {
+  "id": "padqzcj",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera Turbo en azul Yachting que le parece precioso."
+ }
+]

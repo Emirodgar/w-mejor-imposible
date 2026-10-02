@@ -1,0 +1,1869 @@
+[
+ {
+  "id": "orcxavf",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario reciente de un 992.1 C4S: lo ve un coche de compromiso, con dirección mediocre y poca comunicación al límite, aunque muy capaz en curva."
+ },
+ {
+  "id": "orcxzca",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1 S: fiabilidad excelente, nunca ha pisado el taller con él."
+ },
+ {
+  "id": "orcxzca#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne junto a un 911: sin visitas al taller y todo funciona perfectamente."
+ },
+ {
+  "id": "orczkeh",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 991.2: conduce y rinde de maravilla, sin arrepentimientos y con baja depreciación."
+ },
+ {
+  "id": "orczl1a",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su primer Porsche es un 718 GTS 4.0 y lo repetiría sin dudar."
+ },
+ {
+  "id": "ord0s88",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El GT3 es todo lo que quería y conduce mejor que cualquier otro coche que haya tenido."
+ },
+ {
+  "id": "ord0voj",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un 997.2 Targa 4S desde 2013: se arrepiente, apenas ha revalorizado como inversión."
+ },
+ {
+  "id": "ord1ny4",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un 996 y compraría otro sin dudarlo por las miradas y curiosidad que despierta."
+ },
+ {
+  "id": "ord2y9d",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 964 Turbo: experiencia estupenda, 5/5 y lo conduce sin pensar en su valor."
+ },
+ {
+  "id": "ord3o4k",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras dos años con un 718 Boxster GTS 4.0 sigue disfrutando de cada segundo al volante."
+ },
+ {
+  "id": "ord8qqp",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air",
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido dos coupés, un Targa y un GT3 a lo largo de los años: todos grandes coches que valen lo que cuestan."
+ },
+ {
+  "id": "ord93k7",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Macan GTS: lo volvería a comprar sin dudarlo."
+ },
+ {
+  "id": "ord93k7#2",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un 911 T: lo volvería a comprar sin dudarlo."
+ },
+ {
+  "id": "ord9lad",
+  "models": [
+   "911-997",
+   "911-996",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras 15 años con su 911 lo repetiría: muy divertido, sólido y más práctico de lo que parece."
+ },
+ {
+  "id": "ord9wna",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Boxster 986 base con 185.000 millas: el coche más divertido y cómodo que ha tenido, y muy barato."
+ },
+ {
+  "id": "ordajwc",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el Boxster 986 una ganga de diversión: los 911 nuevos solo aportan velocidad y datos innecesarios."
+ },
+ {
+  "id": "ornsnq6",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un Boxster 986 en 2001 y fue la puerta de entrada a varios Porsche más."
+ },
+ {
+  "id": "ord9x1y",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lleva su 911 al circuito siempre que puede y también lo disfruta a diario: 100% vale la pena si te gusta conducir."
+ },
+ {
+  "id": "orda7mk",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El 911 Turbo S vale totalmente la pena para este propietario."
+ },
+ {
+  "id": "orda7mk#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne rinde bien, pero le faltan funciones y detesta el reposacabezas; lo cambia por un SUV de AMG."
+ },
+ {
+  "id": "ordanv3",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el 911 nuevo está sobrepreciado por encima de unos 180.000 dólares."
+ },
+ {
+  "id": "orprxvv",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 997.2 Turbo Cabrio: en Sport Plus te echa la cabeza hacia atrás y sigue haciendo reír."
+ },
+ {
+  "id": "ordgm4e",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Va por su tercer 911 y este se queda; con 30k millas lo ha usado como coche diario."
+ },
+ {
+  "id": "ordgm4e#2",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha conducido un GT3 RS y le parece excesivo para el uso diario."
+ },
+ {
+  "id": "ordip23",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró su 911 en 2015 y sigue sacándole una sonrisa cada vez que lo conduce."
+ },
+ {
+  "id": "ordv4ek",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Aunque admite que los coches son malas inversiones, siente su 911 como parte de sí mismo."
+ },
+ {
+  "id": "ore7ju9",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Ha tenido varios 911: uno de 35.000 millas fue costoso de mantener, otro casi nuevo ha salido barato."
+ },
+ {
+  "id": "oree8b0",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de varios 911: sale más barato que un BMW, Mercedes o Audi y se revende sin perder."
+ },
+ {
+  "id": "orefu3e",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su mujer tiene un 991.1 Turbo y le encanta usar sus prestaciones; la familia lo considera totalmente rentable."
+ },
+ {
+  "id": "orefu3e#2",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tiene un 911 cabrio de 1986 y lo describe como un cielo diario."
+ },
+ {
+  "id": "oreg0p7",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Empezó con un Cayenne y ahora tiene dos junto a un 911; los considera dignos de aspirar."
+ },
+ {
+  "id": "oregyi6",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 S de 2021: lo compensa cada día y se vendería casi por lo pagado."
+ },
+ {
+  "id": "orejmky",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Macan GTS: le hace sonreír cada vez que lo conduce."
+ },
+ {
+  "id": "orejmky#2",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Carrera T: le hace sonreír cada vez que lo conduce."
+ },
+ {
+  "id": "orem0ed",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido un Carrera de 2020 y un Carrera S de 2026: conducen de maravilla y conservan muy bien el valor."
+ },
+ {
+  "id": "orem63s",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 992.2 GT3 es una de sus mejores compras por las sonrisas obtenidas por libra."
+ },
+ {
+  "id": "orequ09",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido Boxster 986 manuales extremadamente fiables y cada salida es un evento."
+ },
+ {
+  "id": "orequ09#2",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 981 ha sido extremadamente fiable."
+ },
+ {
+  "id": "orequ09#3",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Macan GTS de su mujer fue muy fiable."
+ },
+ {
+  "id": "orequ09#4",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cayenne GTS coupé de 2021 con fallos eléctricos, aviso del TPS y reinicios de CarPlay; pesado y sin la emoción de un Boxster."
+ },
+ {
+  "id": "orertfj",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cuatro años con un Boxster GTS 981: residuales sólidos, sonido espectacular y costes de uso razonables."
+ },
+ {
+  "id": "oresf2d",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 992.1 S: lo llama terapia, bueno en tráfico y en carreteras reviradas, con manejo magnífico."
+ },
+ {
+  "id": "orewt6h",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1: en carreteras reviradas pide más y más, y llama más la atención que su Lexus RC F."
+ },
+ {
+  "id": "orewbl5",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 991.1 y destaca que su interior sencillo transmite calidad."
+ },
+ {
+  "id": "orewbl5#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Empezó con un Cayenne GTS y destaca su interior frente al Taycan."
+ },
+ {
+  "id": "orewbl5#3",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un 718 Cayman turbo de cuatro cilindros prestado y le pareció genial."
+ },
+ {
+  "id": "orewbl5#4",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le parece que el Taycan escatimó en el interior, que se siente barato junto al Cayenne."
+ },
+ {
+  "id": "orex6fx",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.2 Carrera S desde hace tres años: vale más de lo pagado y sin arrepentimientos."
+ },
+ {
+  "id": "org0qpz",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tiene dos 911 desde hace un año y sigue sintiendo la emoción cada vez que conduce."
+ },
+ {
+  "id": "orfy5r3",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha tenido 911 C2, GTS y Targa: se preocupa por aparcarlo o rozarlo y echa de menos un M3 más práctico."
+ },
+ {
+  "id": "orf0j53",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Con su 911 echa de menos conducirlo hasta que llega el viernes; sin arrepentimientos si no te supone esfuerzo financiero."
+ },
+ {
+  "id": "orf3frs",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su 911 vale la pena; lo recompró tras venderlo."
+ },
+ {
+  "id": "orf3frs#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el Cayenne un pozo de depreciación."
+ },
+ {
+  "id": "orf4of9",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Opina que el 911 sí vale la pena."
+ },
+ {
+  "id": "orf4of9#2",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Opina que el Macan no vale la pena."
+ },
+ {
+  "id": "orf4of9#3",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Opina que el Cayenne no vale la pena."
+ },
+ {
+  "id": "orf4of9#4",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Opina que el Taycan no vale la pena."
+ },
+ {
+  "id": "orfae3z",
+  "models": [
+   "cayman-987",
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encantó su Boxster S, que cambió tras cinco años por casi lo mismo."
+ },
+ {
+  "id": "orfae3z#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan S: fiable, divertido y útil como coche diario."
+ },
+ {
+  "id": "orfj6sd",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cuatro años con un Macan S de 2021 sin averías, solo aceite y neumáticos."
+ },
+ {
+  "id": "orfpjiy",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con varios Porsche y su segundo 3 RS, cree que por precio hay mejores coches y los interiores son funcionales, no lujosos."
+ },
+ {
+  "id": "orfwyjf",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Va por su cuarto Porsche, un 991.1 Turbo diario: destaca la solidez y no pierde valor."
+ },
+ {
+  "id": "orfc01z",
+  "models": [
+   "911-997",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su C2S Cabrio de 14 años es fiable, mejor que su BMW de 10 y deprecia menos que cualquier otro coche."
+ },
+ {
+  "id": "orfclce",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 981 Cayman S: sonríe y se enamora cada vez que lo conduce."
+ },
+ {
+  "id": "orfdvnj",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recién estrenado un 718 Cayman GT4 de 2023: cada trayecto, incluso al súper, es la mejor sensación."
+ },
+ {
+  "id": "orfji2w",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Cuatro años con un Macan GTS y sigue emocionado a diario."
+ },
+ {
+  "id": "orfk795",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 911 Turbo de 2010 con más de 90k millas es su favorito, un juguete que también sirve como coche diario."
+ },
+ {
+  "id": "orfkpur",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tras pasar por Audi RS7 volvió siempre a su Panamera Turbo de 2017."
+ },
+ {
+  "id": "orfkpur#2",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su 911 Turbo de 2015 le parece una conversación aparte."
+ },
+ {
+  "id": "orfndsw",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que un 992 no compensa."
+ },
+ {
+  "id": "orfndsw#2",
+  "models": [
+   "911-996",
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que un 996/997 sí vale la pena y es suficiente."
+ },
+ {
+  "id": "orfq1qa",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 992.1 4S usado: simplemente divertido de conducir y siempre emocionante."
+ },
+ {
+  "id": "orfqmei",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 911 C2S de 2021: sin arrepentimientos, su coche soñado."
+ },
+ {
+  "id": "orft5eb",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Para este dueño el 911 vale la pena y es único; forma parte de su personalidad."
+ },
+ {
+  "id": "orft5eb#2",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que el Cayman parece una versión de juguete del Porsche, aunque seguramente conduce muy bien."
+ },
+ {
+  "id": "orh8z12",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar dos 718 S, coincide en que conducen mejor que un 911."
+ },
+ {
+  "id": "orh8z12#2",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tras probarlo, compró al instante un 911 4S."
+ },
+ {
+  "id": "org038r",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 992.1 Targa 4 GTS: la mejor máquina de conducir del mercado."
+ },
+ {
+  "id": "org07zd",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce a diario un Macan S y lo encuentra divertido; vale la pena si tiene sentido para ti."
+ },
+ {
+  "id": "org1lp1",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [],
+  "resumen_es": "Condujo un 911 Carrera S nuevo con frenos cerámicos en un evento de Porsche y le pareció increíble."
+ },
+ {
+  "id": "p0ggnfr",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1 S que se ha revalorizado en tres años y es lo mejor que ha comprado."
+ },
+ {
+  "id": "orgrxh1",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un 911 C4S nuevo 18 meses: divertido pero con interior sencillo y sonido decepcionante."
+ },
+ {
+  "id": "orgtfkf",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne S V8 antiguo: potencia y lujo, con maletero útil para el día a día."
+ },
+ {
+  "id": "orguxc7",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 987.1 comprado por 6.500 libras: lo disfruta a diario y no ve motivo para pagar cinco veces más."
+ },
+ {
+  "id": "orgxjci",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.2: nunca lo dejó tirado, pero cuando falló fue catastrófico y caro; no se arrepiente."
+ },
+ {
+  "id": "orh18tl",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Cayenne: bueno pero no excelente, con muchos problemas, mantenimiento caro y depreciación brutal."
+ },
+ {
+  "id": "orh2ym1",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan GTS: vale la pena aunque el mantenimiento rutinario es caro."
+ },
+ {
+  "id": "orhabrj",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Lleva 13 años con un 911 Turbo de 2003 de 6 velocidades, el mejor coche que ha tenido."
+ },
+ {
+  "id": "orhblpf",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido dos Cayenne: mantenimiento caro, pero muy agradables de conducir, más que un Maserati Granturismo."
+ },
+ {
+  "id": "orhd2sj",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Boxster de 2001: manejo precioso, buen confort a alta velocidad y buen compañero de commute."
+ },
+ {
+  "id": "orhgvui",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Disfrutó su 997.2 pero tras venderlo prefiere un Miata."
+ },
+ {
+  "id": "orhvezo",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Ha tenido muchos 911 y ahora un Turbo S: vale totalmente la pena, sin arrepentimientos."
+ },
+ {
+  "id": "orhvezo#2",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un GT3 RS: le hace feliz cada vez que lo conduce."
+ },
+ {
+  "id": "orijh2m",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un Taycan: un timo en precio pero un coche diario fantástico."
+ },
+ {
+  "id": "oricose",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un 911 del 88: le trae una enorme sonrisa cada vez que lo conduce."
+ },
+ {
+  "id": "orip677",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1 4S: el mejor coche que ha tenido y podría venderlo casi por lo pagado."
+ },
+ {
+  "id": "orips27",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 911 Carrera de 2024 bien equipado y no le dice gran cosa comparado con su AMG E63 S."
+ },
+ {
+  "id": "oririwg",
+  "models": [
+   "911-996",
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que los 996 y 997 son deportivos de sonido, potencia y calidad que no cansan."
+ },
+ {
+  "id": "oririwg#2",
+  "models": [
+   "911-991",
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Opina que los 991 y 992 son grandes, cómodos y rápidos pero no tan atractivos."
+ },
+ {
+  "id": "orivsxo",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un Boxster S 981: el equilibrio ideal de diversión, potencia y precio con motor bóxer seis cilindros."
+ },
+ {
+  "id": "orivsxo#2",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo un 993 C4 y fue una experiencia extraordinaria."
+ },
+ {
+  "id": "oriwgns",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió su Macan S por un Audi RSQ8 que no justifica los 100.000 AUD extra."
+ },
+ {
+  "id": "orj5oh9",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 Cabrio, más barato que una terapia; lo repondrá por el mismo modelo."
+ },
+ {
+  "id": "orj5oh9#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su mujer conduce un Macan GTS y le encanta."
+ },
+ {
+  "id": "orjkyoq",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 992.2 4 GTS de 2026: su favorito, disfruta cada trayecto, el sonido y los modos de conducción."
+ },
+ {
+  "id": "ork4vb4",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su primer 911, un 997.1 C4S de 2007, le cambió todo y ha comprado dos más."
+ },
+ {
+  "id": "orl3jjx",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 987 S: calidad de construcción buena y vale la pena."
+ },
+ {
+  "id": "orl3jjx#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan S: calidad de construcción buena y vale la pena."
+ },
+ {
+  "id": "orlktmk",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo el 911 Cabriolet 95 de su padrastro y fue transformador; conducción y sonido increíbles."
+ },
+ {
+  "id": "orlywff",
+  "models": [
+   "911-996",
+   "911-997"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Advierte de riesgo de reparaciones carísimas en 911 sin garantía, como IMS o bore score."
+ },
+ {
+  "id": "ornpbhp",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su 911 lleva menos de 8.000 dólares de mantenimiento en 60k millas; los ejes fueron el mayor gasto."
+ },
+ {
+  "id": "orojaxy",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 991.1 con 85k millas: solo 3k en reparaciones en tres años; un deportivo en su propia liga."
+ },
+ {
+  "id": "orow8o7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: el mejor coche diario, con carga rápida de 300 kW y conducción soñada."
+ },
+ {
+  "id": "orp4xbr",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 981 de menos de 30.000: el mejor coche que ha conducido, tres años y no lo vende."
+ },
+ {
+  "id": "orpbo6g",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que el 996 Turbo es la mejor relación calidad-precio y será el próximo en superar los seis cifras."
+ },
+ {
+  "id": "orr8zep",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que los GT3 de Andreas Preuninger son geniales y valora la experiencia de conducción."
+ },
+ {
+  "id": "ortqi9b",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan GTS: lo mantiene impecable por miedo a dañarlo, pero lo considera 100% rentable."
+ },
+ {
+  "id": "oru2af2",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Lleva seis semanas con su primer 911: al principio sintió que era una responsabilidad, pero luego lo disfruta."
+ }
+]

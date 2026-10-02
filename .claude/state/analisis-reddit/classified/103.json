@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pai3hb0",
+    "models": ["taycan"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Opina que el Taycan, por su peso, desgasta más los neumáticos que un Porsche de combustión, sin aportar experiencia propia con el coche."
+  },
+  {
+    "id": "palwf2w",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Señala que el Taycan es muy pesado y potente, por lo que el rápido desgaste de neumáticos es esperable."
+  }
+]

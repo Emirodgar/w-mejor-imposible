@@ -1,0 +1,1069 @@
+[
+ {
+  "id": "o83aaij",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan desde hace años que nunca ha tenido ningún problema con él."
+ },
+ {
+  "id": "o865yhv",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario cuyo Taycan dio problemas desde el primer día y lleva más de un mes en el taller."
+ },
+ {
+  "id": "o88m78m",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Quería un Taycan, pero por lo que lee en el foro sobre su fiabilidad ha decidido que nunca lo tendrá."
+ },
+ {
+  "id": "o88ljij",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Sigue el foro desde hace tiempo y dice que se mencionan muchos problemas del Taycan."
+ },
+ {
+  "id": "o89b9m1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un Taycan TTS 2023: se siente grande y pesado, con suspensión más cómoda y mucho más rápido en autopista que un Ioniq 5 N."
+ },
+ {
+  "id": "o89j5s5",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "No compraría un Taycan hasta que resuelvan los fallos del ICCU, que según lee se repiten tras cada reparación."
+ },
+ {
+  "id": "o82kwbp",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que el software del Taycan tiene fallos y que hay llamadas a revisión que lo dejan semanas parado."
+ },
+ {
+  "id": "o81g3vp",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda el Panamera e-hybrid Sport Turismo por mejor interior, buenas prestaciones y menos problemas de fiabilidad que el Taycan."
+ },
+ {
+  "id": "o83y4jf",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un amigo compró un Panamera híbrido que estuvo seis semanas en taller por fallos del puerto de carga tras dos semanas de uso."
+ },
+ {
+  "id": "o8gdkfy",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera Turbo S e-Hybrid Sport Turismo 2018 con problemas encadenados desde las 25.000 millas; lo vendió antes de acabar la garantía."
+ },
+ {
+  "id": "o81vk8a",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan Cross Turismo: bonito y buen conducir, pero con tecnología anticuada frente a Tesla y no justifica su precio."
+ },
+ {
+  "id": "o81ytou",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan 4S Cross Turismo 2024: pese a la depreciación y los inconvenientes, le da mucha alegría cada día."
+ },
+ {
+  "id": "o821tvf",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 991.2 Turbo que usa a diario tres estaciones al año, con el doble de tiempo que el Taycan y sin incidencias."
+ },
+ {
+  "id": "o827rle",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Vendió su Taycan Cross Turismo por un Macan EV: mejor tecnología y la mitad de cuota mensual, sin arrepentirse."
+ },
+ {
+  "id": "o827rle#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Macan EV 4S tiene mejor tecnología, buen comportamiento, cuota mensual menor y ninguna visita al taller."
+ },
+ {
+  "id": "o82bcrh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras diez años con eléctricos no renuncia al par instantáneo y ve el Taycan como la mejor opción eléctrica disponible en EE. UU."
+ },
+ {
+  "id": "o873wch",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan 2021: la autonomía de los antiguos es justa, pero en conjunto considera que el coche es genial."
+ },
+ {
+  "id": "o90e62s",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan ha perdido autonomía (de 240 a 210) y pasa a menudo por el taller, hasta el punto de que el concesionario le regaló un extra."
+ },
+ {
+  "id": "o82i4x2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo Taycan y Macan GTS; echó mucho de menos el Taycan tras pasar a un GT3 y dice que lo habría conservado."
+ },
+ {
+  "id": "o82i4x2#2",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su GT3 991.1 le pareció un gran retroceso en interior y tecnología respecto al Taycan; lo vendió a los 23 meses."
+ },
+ {
+  "id": "o82x0lf",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera de primera generación constantemente en el taller, con unos 1.000 dólares por visita, y lo vendió al acabar la garantía."
+ },
+ {
+  "id": "o83cmth",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan fue su único sedán cómodo para diario, pero la autonomía le ha resultado un problema mayor de lo esperado y lo va a vender."
+ },
+ {
+  "id": "o83cox1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Taycan 2022 a punto de salir de garantía, lo vendería ya: considera que no son máquinas de fiabilidad probada."
+ },
+ {
+  "id": "o8409uf",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan en garantía CPO que está pensando en venderlo, sobre todo por la molesta batería de 12 V."
+ },
+ {
+  "id": "o8409uf#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un Macan S de cortesía y le encanta; cree que un GTS le haría olvidar el Taycan."
+ },
+ {
+  "id": "o84fwz4",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Taycan ha tenido problemas, pero Porsche los resuelve rápido; no lo vendería porque le encanta su aspecto."
+ },
+ {
+  "id": "o84jdgh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Vendió su querido Taycan base 2025 por un M4 descapotable; está contento pero lo sigue echando de menos."
+ },
+ {
+  "id": "o84pr20",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dejó su Taycan de 2020 y no se arrepiente."
+ },
+ {
+  "id": "o87zf7i",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda un Panamera 4S E-Hybrid Sport Turismo 2021-2023 como mejor coche que el Taycan, con mejor construcción y más fiable."
+ },
+ {
+  "id": "o88cqq1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con Plaid y Taycan: el Taycan gana en materiales y sensación de conducción, pero su tecnología va años por detrás de Tesla."
+ },
+ {
+  "id": "o8b3j64",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan Turbo S 2021 no ha dado problemas de materiales ni de taller, pero tiene más subviraje que un 911, peor interior que un Panamera y algún cierre del sistema."
+ },
+ {
+  "id": "o8b3j64#2",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Panamera de 2023 tenía mejor calidad interior y más espacio en las plazas traseras que el Taycan."
+ },
+ {
+  "id": "o8btyri",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan no le ha dado problemas y conduce bien, pero la tecnología le parece de la Edad de Piedra y se plantea volver a Tesla."
+ },
+ {
+  "id": "ofz8rwu",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Panamera Turbo S 2014 con 60.000 millas costó unos 25.000 dólares en reparaciones y mantenimiento en dos años."
+ },
+ {
+  "id": "ofzi49z",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Turbo 2012 con la suspensión neumática recién cambiada; avisa de que antes o después habrá que repararla y recomienda revisión previa."
+ },
+ {
+  "id": "ognf03b",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Aconseja no comprar un Panamera Turbo de segunda mano: la mitad de probabilidades de más de 10.000 dólares en reparaciones y poco valor residual."
+ },
+ {
+  "id": "og0fqqd",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Entre 60.000 y 80.000 millas toca un mantenimiento caro en el Panamera; el Turbo conserva mejor el valor."
+ },
+ {
+  "id": "ofzk27o",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Panamera S 2012 de 80.000 millas con el embrague del PDK patinando; un taller le desaconsejó esa generación pasadas las 70.000 millas."
+ },
+ {
+  "id": "ofzwrqu",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un Panamera de 15 años es una apuesta arriesgada en reparaciones y mantenimiento, sobre todo para una compra temporal."
+ },
+ {
+  "id": "og012ds",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Avisa de que el Panamera Turbo lleva suspensión neumática y, si falla, el coche queda inutilizable a ese precio."
+ },
+ {
+  "id": "og0z1zm",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que gomas y juntas de estos Panamera están acabadas; hay que invertir mucho y solo compensan a quien sepa trabajar en coches."
+ },
+ {
+  "id": "og5469i",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Comprar un Panamera de 15 años a corto plazo no tiene sentido; las reparaciones serán caras."
+ },
+ {
+  "id": "ohhu8fs",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Turbo 2013 con tuning: bastante fiable, pero mantenimiento, neumáticos, frenos y suspensión neumática son caros y gasta algo de aceite."
+ },
+ {
+  "id": "oiphok8",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Acaba de comprar un Panamera y quiere disfrutarlo; hace el mantenimiento básico en casa y asume que los recambios son caros."
+ },
+ {
+  "id": "oswd39w",
+  "models": [
+   "panamera-970",
+   "cayenne-92a"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Aunque se compre usado, el mantenimiento de un Panamera o Cayenne de 2012-2015 es el de un Porsche nuevo."
+ },
+ {
+  "id": "otdnnu5",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Los recambios del Panamera no cuestan como los de uno nuevo; los brazos de control valen unos 100 por lado y son fáciles de cambiar."
+ },
+ {
+  "id": "oswicj6",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera 2013: el concesionario pedía 5.500 dólares por el mantenimiento de las 80.000 millas."
+ },
+ {
+  "id": "oswt2zk",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Los Cayenne son robustos y fiables, con mantenimiento algo mayor pero asumible, como un SUV de Audi."
+ },
+ {
+  "id": "oswt2zk#2",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Panamera 970 es fiable, pero cuando falla lo hace de forma carísima; recomienda evitar los de suspensión neumática."
+ },
+ {
+  "id": "ot3zc6v",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera 4S 2012 en perfecto estado y el empleado que lo usa hoy a diario lo encuentra muy fiable."
+ },
+ {
+  "id": "osxoaah",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera 4S 2020: le encanta cómo conduce, aunque el catalizador falló al primer mes y avisa de reparaciones frecuentes."
+ },
+ {
+  "id": "otbd004",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recomienda un Cayenne de primera generación con motor V6 como Porsche muy fiable."
+ },
+ {
+  "id": "osz40om",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera 2015: la tecnología y la pantalla del habitáculo se ven anticuadas y habría preferido ahorrar para un 971."
+ },
+ {
+  "id": "ot9dka1",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera: los pasajeros elogian el interior, el sonido, el agarre en curva y la comodidad de los asientos."
+ },
+ {
+  "id": "ot0iede",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su hijo conduce su Panamera: seguro, fácil, cómodo y mejor en curva que el Cayenne; ve difícil encontrar algo mejor."
+ },
+ {
+  "id": "ot0iede#2",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne es muy seguro y fácil de conducir, aunque no toma las curvas como el Panamera."
+ },
+ {
+  "id": "ot31tjg",
+  "models": [
+   "panamera-970",
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que ambos son coches estupendos y prefiere el Panamera frente al SUV."
+ },
+ {
+  "id": "ot6bpk3",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera GTS a los 20: el mantenimiento es caro, aunque desaconseja uno tan joven por el riesgo de accidentes."
+ },
+ {
+  "id": "otdzfhk",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Acaba de comprar un Panamera Turbo 2010 y el taller estima más de 9.000 dólares entre servicios de 60.000 millas y extras."
+ },
+ {
+  "id": "ou807zx",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera Turbo 2013 con tuning: ha tenido menos problemas que con su Range Rover, pero el servicio es muy caro."
+ }
+]

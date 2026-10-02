@@ -1,0 +1,251 @@
+[
+ {
+  "id": "p24zrer",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Un Boxster 981 de 13 años cuesta en Reino Unido la mitad que nuevo; una depreciación del 50% tras más de diez años se considera excelente."
+ },
+ {
+  "id": "p24zrer#2",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El 718 (982) también se deprecia poco, en línea con el 981."
+ },
+ {
+  "id": "p25x56f",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 718 GTS 4.0 manual: lo considera de lo mejor que puede ser un deportivo de combustión nuevo hoy."
+ },
+ {
+  "id": "p23yhao",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el Taycan no convence como EV premium: plataforma poco fiable al lanzarse, interior pequeño para su tamaño y producto demasiado comprometido."
+ },
+ {
+  "id": "p27dtb7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que el Taycan se parece demasiado a otras berlinas eléctricas y se quedó corto en autonomía frente al Model S."
+ },
+ {
+  "id": "p23gqa7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Taycan tiene siete años, el mercado lo ha alcanzado en algunos aspectos y por menos dinero; duda de que su dinamismo justifique el sobreprecio."
+ },
+ {
+  "id": "p2558v7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que la depreciación del Taycan es la referencia a esperar en EV caros, porque rivales más baratos rinden casi igual."
+ },
+ {
+  "id": "p26dr8m",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cita el 'red ring of death' del Taycan como ejemplo de problemas de fiabilidad de plataformas eléctricas nuevas."
+ },
+ {
+  "id": "p27d5fh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Señala que el Taycan ya es conocido por su carga rápida en corriente continua muy potente."
+ },
+ {
+  "id": "oo9rjmk",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que Porsche acertó con el diseño de su EV, aunque a los Taycan J1 les habría venido bien algo más de autonomía."
+ },
+ {
+  "id": "ooj8svi",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de Taycan: estilo, proporciones, tacto de conducción e interior siguen destacando y el equilibrio por el precio le parece muy logrado."
+ },
+ {
+  "id": "ooewgwb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan Cross Turismo 4S: es el coche más bonito que se cruza en sus trayectos por la Bahía de San Francisco."
+ },
+ {
+  "id": "oo9ngsf",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que ver el Ferrari eléctrico le hace valorar más el Taycan, que luce bien desde todos los ángulos."
+ },
+ {
+  "id": "ooa4jzb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera que Porsche demostró con el Taycan que se puede hacer un EV deportivo bonito."
+ },
+ {
+  "id": "oodd2ly",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de Taycan: demuestra que un EV deportivo puede ser atractivo y, si lo cambia, será por otro Taycan más nuevo."
+ }
+]

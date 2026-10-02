@@ -1,0 +1,921 @@
+[
+ {
+  "id": "ooib0ns",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Boxster 986 por 5.400 dólares y lo usa a diario desde hace casi un año; experiencia analógica y poca depreciación."
+ },
+ {
+  "id": "ooj9ydo",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 718 Boxster T que disfruta por carreteras de curvas en Reino Unido y Europa, sin dudas ni arrepentimiento."
+ },
+ {
+  "id": "ookvrf3",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo dos años un Boxster S de 2005 manual: le sacaba una sonrisa cada vez, maneja muy bien y se pega a la carretera."
+ },
+ {
+  "id": "oh5xezw",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Propietario de un Taycan GTS: lo considera el mejor coche que ha tenido, por encima de su 911 y su AMG 63."
+ },
+ {
+  "id": "oha0i2w",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica los fallos de batería recurrentes del Taycan, incluso en versiones renovadas, aunque reconoce su belleza y prestaciones."
+ },
+ {
+  "id": "oh5zvut",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Buen coche de prestaciones, pero no el mejor eléctrico por su precio: tecnología, autonomía y espacio mediocres y depreciación fuerte."
+ },
+ {
+  "id": "oh62wtw",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan tras tres Tesla: la autonomía le parece fenomenal en el viaje Miami-Orlando, llega con un 30% y solo carga a la vuelta."
+ },
+ {
+  "id": "oh6200z",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Es el coche más bonito que ha tenido, pero ha pasado una cuarta parte del tiempo en el taller y le quedan meses sin él."
+ },
+ {
+  "id": "ohdjxy9",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan muestra por segunda vez el error eléctrico de anillo rojo; el concesionario tarda semanas en atenderlo y no hay coche de cortesía."
+ },
+ {
+  "id": "oh66p6c",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Mejor coche que ha tenido; ya van dos Taycan y el de más de cuatro años nunca ha dado una avería, con muchos elogios por la calle."
+ },
+ {
+  "id": "oh6hqbm",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño encantado con cómo conduce y se siente su Taycan; recibe cumplidos por el color y la autonomía le sirve para viajar."
+ },
+ {
+  "id": "oh6vkaw",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: en un evento de club llevó a escépticos de paseo y se callaron enseguida; defiende al Taycan frente a los puristas."
+ },
+ {
+  "id": "ohb2ndq",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan Turbo: tras unos meses dejó de usar el launch control y asegura que no necesita más potencia."
+ },
+ {
+  "id": "ohw06li",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Acaba de recoger un Taycan 2026 en leasing y está encantado, sobre todo con la suspensión activa."
+ },
+ {
+  "id": "oh6wdqx",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras probarlo, el Taycan conduce de maravilla pero sin dramatismo; por precio, depreciación y fiabilidad dudosa prefiere un M3."
+ },
+ {
+  "id": "oh7l2qn",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Sin tener uno, le echa para atrás ver a diario mensajes de Taycan en el taller, aunque le parecen preciosos."
+ },
+ {
+  "id": "oh7lmyq",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Brillante de conducir, pero autonomía corta y depreciación que lo hacen inviable para él."
+ },
+ {
+  "id": "oh7p8s7",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cross Turismo: sirve para llevar a los niños y es un cohete; asume que se deprecia."
+ },
+ {
+  "id": "oh7z60x",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Explica en francés que la fase 1 tuvo muchos problemas de fiabilidad que hundieron su valor; la fase 2 debería mejorar."
+ },
+ {
+  "id": "oh7zph8",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Fiabilidad decepcionante en la primera generación, reparaciones eléctricas largas y riesgo para el segundo dueño; la segunda mejora."
+ },
+ {
+  "id": "oh86gur",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan y de un Cooper Works: dice que ambos son geniales y divertidos en su segmento."
+ },
+ {
+  "id": "oh9slch",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Antiguo dueño de un Taycan Turbo S: tras ver coches eléctricos chinos considera el precio del Taycan abusivo."
+ },
+ {
+  "id": "ohf03p0",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lo ha conducido varias veces: muy buen coche pero caro para lo que ofrece y sin el factor Porsche; prefiere un Model S Plaid."
+ },
+ {
+  "id": "ohgmqvf",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan GTS con tuneo: no echa de menos su antiguo Stinger GT2 y defiende la eficiencia del eléctrico."
+ },
+ {
+  "id": "ohhhncn",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Taycan nueve meses y lo llevó 12 veces al concesionario; sin compensación de Porsche, no volverá a la marca."
+ },
+ {
+  "id": "ohqgbpu",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Dejando la depreciación aparte, lo considera un gran coche y su segundo Porsche favorito."
+ },
+ {
+  "id": "ohqgbpu#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Señala el Macan EV como su Porsche favorito."
+ },
+ {
+  "id": "oi17z2c",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan 2025: obtiene unas 360 millas reales y en sus viajes a Orlando llega con un 30% de batería."
+ },
+ {
+  "id": "oi3ivtf",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Lleva casi dos años con un Taycan 4S y es el mejor coche que ha tenido."
+ },
+ {
+  "id": "olxcv0i",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño: ninguna avería y autonomía fenomenal, cerca de 360 millas con carga completa."
+ },
+ {
+  "id": "on9l31t",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En un coche de 16 años la suspensión neumática puede fallar y repararla cuesta unos 4.000-5.000 dólares por esquina en concesionario."
+ },
+ {
+  "id": "onfs8wv",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Aconseja cambiar la suspensión neumática preventivamente hacia los 60.000 millas; según oye, cuesta 7.000-10.000 dólares."
+ },
+ {
+  "id": "ona4jvs",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que las cajas PDK son casi indestructibles siempre que se hagan los servicios recomendados."
+ },
+ {
+  "id": "onbj45q",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 970: divertido y suave, pero gasta aceite, la suspensión neumática se degrada y puede salir caro."
+ },
+ {
+  "id": "ong6yq5",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró hace seis meses un 4S de 2016 con 24.000 millas y disfruta cada trayecto, aunque presupuesta reparaciones sin garantía."
+ },
+ {
+  "id": "on9gwz6",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Panamera S 2016 con 70.000 millas, historial en Porsche y garantía; tras mes y medio está disfrutándolo."
+ },
+ {
+  "id": "on9sfl8",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cuatro años con un Panamera 4S 2010: muy fiable y bien construido, con alguna reparación cara como la bomba de combustible."
+ },
+ {
+  "id": "oncvh2w",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Propietario de un Panamera S 2016: el cambio completo de frenos le salió por unos 3.000 en taller independiente, o 1.200 en piezas haciéndolo él."
+ },
+ {
+  "id": "ona5d1c",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Panamera GTS 2013 que describe como un sueño en carretera y una amenaza en circuito; considera normal el consumo de aceite."
+ },
+ {
+  "id": "onauxab",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera 2015 y antes de un 2010: mantenimiento sencillo y máquinas increíbles, el 2010 algo más crudo."
+ },
+ {
+  "id": "oncch3d",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Panamera 2014 con 60.000 millas le costó casi 25.000 dólares en reparaciones y mantenimiento en dos años."
+ },
+ {
+  "id": "p9i482w",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Afirma que el Taycan conduce mucho mejor que el Macan y recomienda un CPO J1.2 en lugar de los antiguos."
+ },
+ {
+  "id": "p9i482w#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Según este usuario, el Macan conduce bastante peor que el Taycan."
+ },
+ {
+  "id": "p9i91xg",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan S EV de cortesía y su marcha le pareció estúpidamente dura; no lo compraría."
+ },
+ {
+  "id": "p9ivk9u",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Encantado con su Taycan, con el que hizo 10.000 millas por Estados Unidos."
+ },
+ {
+  "id": "paay4ay",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 4 Cross Turismo 2021: 20.000 millas de viajes largos, autocross y todo tipo de condiciones, siempre contento."
+ },
+ {
+  "id": "pahlzfa",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Confía al 100% en la autonomía de su Taycan: hace recargas rápidas y llega al siguiente cargador con un 5%."
+ },
+ {
+  "id": "p9k4b6t",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Eligió un Taycan 4S CPO 2023 tras probarlo; frente al Macan, lo ve de otra categoría."
+ },
+ {
+  "id": "p9k4b6t#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras probarlo, el Macan le pareció barato y ordinario comparado con el Taycan."
+ },
+ {
+  "id": "p9ou0fa",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con la batería normal de 200 millas le basta para sus 20 millas diarias y un viaje de 450 millas sin problemas de carga."
+ },
+ {
+  "id": "p9kmsyh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Cambió su Macan por un Taycan Sport Turismo 4S y no duda de que es mejor coche; lo echa de menos a diario."
+ },
+ {
+  "id": "p9mkhsp",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan 4S 2022 y un Macan 4 2025: el Taycan es su coche favorito para conducir de todos los que ha tenido."
+ },
+ {
+  "id": "p9mkhsp#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Macan 4 2025: lo considera excelente para lo que es, un SUV práctico."
+ },
+ {
+  "id": "p9ndsnm",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: calidad, confort y comportamiento de otro nivel frente al Macan, que probó como cortesía."
+ },
+ {
+  "id": "p9ndsnm#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Macan EV de cortesía: agradable y buena opción si se necesita un SUV, pero inferior al Taycan."
+ }
+]

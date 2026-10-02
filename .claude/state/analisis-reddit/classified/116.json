@@ -1,0 +1,510 @@
+[
+ {
+  "id": "paskneu",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que el cambio manual del 911 es probablemente el mejor que ha probado."
+ },
+ {
+  "id": "pavlzey",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras poseer y conducir muchos coches de la lista, considera al 997 el mejor todoterreno deportivo, el más equilibrado en conjunto."
+ },
+ {
+  "id": "otdpvv7",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera el 991.1 GT3 atemporal, un coche que no se vende nunca y se disfruta de por vida."
+ },
+ {
+  "id": "otdqqqm",
+  "models": [
+   "911-991",
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un 911 T en propiedad, dice que el paquete global del 911 es insuperable, incluso frente a un Corvette Z06."
+ },
+ {
+  "id": "otdqsgk",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que el GT3 es más raro que un C8 y que conservará mejor el valor que un Corvette."
+ },
+ {
+  "id": "otdrz5w",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El autor de un 991.1 GT3 con motor E1 dice que con el motor G6 no se plantearía vender; el E1 le preocupa."
+ },
+ {
+  "id": "otdrm4y",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que el GT3 seguirá revalorizándose pese a los problemas del motor y que no lo cambiaría por un Z06."
+ },
+ {
+  "id": "otdu4zq",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Cambió su GT3 por un Z06, lo considera una decisión terrible y ahora tiene un 992 GT3."
+ },
+ {
+  "id": "otduk3i",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [],
+  "resumen_es": "Cambiar el GT3 por un C8 sería un retroceso salvo por ser más nuevo."
+ },
+ {
+  "id": "otdvwsw",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de varios GT3: el Z06 es divertido y tiene más agarre y empuje, pero la dirección del GT3 es más comunicativa."
+ },
+ {
+  "id": "ote9kbi",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha conducido un GT3 RS y lo describe como glorioso."
+ },
+ {
+  "id": "otervlj",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende que el GT3 tiene un estatus enorme y un aspecto de 911 desatado; preferiría un 911 antes que un Corvette."
+ },
+ {
+  "id": "otdv03x",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Aconseja no deshacerse del GT3 por la diferencia de depreciación frente al Corvette."
+ },
+ {
+  "id": "otdwq6t",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que el 991 está en otra liga distinta al C8, aunque no necesariamente sea más rápido."
+ },
+ {
+  "id": "ote7yf2",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que el presupuesto de su concesionario Porsche para cambiar el motor fue de unos 75.000 dólares, probablemente más hoy."
+ },
+ {
+  "id": "ote88bz",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ve un 991.1 E1 como un pasivo de unos 75.000 dólares y cambiaría sin dudar por un Z06 con garantía."
+ },
+ {
+  "id": "otdz36b",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Carrera S 992.1 y asegura que era justo lo que buscaba; aconseja quedarse con Porsche frente al Z06."
+ },
+ {
+  "id": "ote2owr",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su 991.1 GT3 es una bestia rabiosa, de circuito y carreteras despejadas, nada apta para el uso diario."
+ },
+ {
+  "id": "ote4s0i",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Quiere vender su GT3 por la preocupación por la durabilidad del motor E1 y por quedarse sin garantía."
+ },
+ {
+  "id": "oteobr3",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Pagó 6.000 dólares por cuatro años de garantía del tren motriz de su GT3 y no quiere repetirlo cada cuatro años."
+ },
+ {
+  "id": "otetjzw",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Quiere salir de su GT3 para evitar el riesgo del motor E1 fuera de garantía."
+ },
+ {
+  "id": "ote71bf",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Comparte con un C8 E-Ray las tareas de coche diario su Taycan Cross Turismo."
+ },
+ {
+  "id": "otemhzo",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un C7 Z06 manual a un 992.1 T y valora que un coche lento a fondo resulta más divertido que uno rápido."
+ },
+ {
+  "id": "ote4o8n",
+  "models": [
+   "718-982"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 718 Spyder es el único de sus Porsche que recibe miradas."
+ },
+ {
+  "id": "ote46eu",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un 992.1 GT3 manual, dice que el GT3 es más ágil e inmersivo que un Z06, que se siente como operar una máquina."
+ },
+ {
+  "id": "ote4zxk",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 991.1 GT3 con motor G6 y 55.000 millas por 125.000 dólares, aún posible con efectivo y rapidez."
+ },
+ {
+  "id": "otf3ifa",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un 992.1 GT3 tras probar Z06 y E-Ray, prefiere el 911: más espacio para altos, cambio manual y mejor manejo en carreteras secundarias."
+ },
+ {
+  "id": "otf699s",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Estima que cambiar el motor de un 991.1 GT3 cuesta entre 70.000 y 100.000 dólares, mucho para un coche de 120.000."
+ },
+ {
+  "id": "otf84vt",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que el motor del 991.1 GT3 nunca quedó bien resuelto, aunque el coche sea solo PDK."
+ },
+ {
+  "id": "otfbr44",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el 991.1 GT3 con motor original una bomba de relojería."
+ },
+ {
+  "id": "otkssjj",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que el motor del 991.1 GT3 tiene un problema de balancines que casi garantiza que fallará."
+ },
+ {
+  "id": "otfm8zi",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un 991.1 GT3 y tiene un 992.1 GT3: el primero era más crudo y divertido, con problemas de motor asumidos."
+ },
+ {
+  "id": "otfsfm9",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que el GT3 está bastante mejor construido que el Corvette, aunque algo más lento."
+ }
+]

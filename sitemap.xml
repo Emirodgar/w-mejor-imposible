@@ -128,6 +128,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://mejorimposible.es/porsche/analisis</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mejorimposible.es/porsche/tendencias</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>

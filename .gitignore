@@ -1,0 +1,4 @@
+
+# Texto de comentarios de Reddit (analisis-reddit-modelos): solo en local. El indice sin texto (comments-index.jsonl) si se versiona.
+.claude/state/analisis-reddit/comments.jsonl
+.claude/state/analisis-reddit/batches/
