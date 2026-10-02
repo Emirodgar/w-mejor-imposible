@@ -15,7 +15,7 @@ permalink: porsche/porsche-macan-segunda-mano
 
 El Macan es la puerta de entrada más habitual a Porsche en el mercado de ocasión. Hay mucha oferta, es cómodo para el día a día y se deprecia de forma razonable. También es un coche donde una mala compra sale cara: una caja de transferencia o una suspensión neumática averiadas pueden costar varios miles de euros.
 
-Esta guía te ayuda a comprar un Macan usado con criterio: cuánto cuesta según el año, qué versión encaja contigo, qué se estropea y cómo comprobarlo antes de firmar. Si aún no conoces el modelo, empieza por la [guía completa del Porsche Macan](/porsche/porsche-macan).
+Esta guía te ayuda a comprar un Macan usado con criterio: cuánto cuesta según el año, qué versión encaja contigo, qué se estropea y cómo comprobarlo antes de firmar. Si aún no conoces el modelo, empieza por la [guía completa del Porsche Macan](/porsche/porsche-macan). Si lo que buscas son los precios reales de los anuncios por generación y kilometraje, con su evolución mensual, consulta los [datos de precio del Macan de segunda mano](/porsche/macan-segunda-mano).
 
 **En resumen:**
 

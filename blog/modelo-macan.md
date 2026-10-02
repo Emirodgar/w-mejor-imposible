@@ -67,7 +67,7 @@ El precio depende sobre todo de si buscas un Macan **nuevo eléctrico** o uno **
 
 - **Nuevo (eléctrico)**: entre unos 82.000 € y 117.000 € de tarifa, antes de opciones. Nuestra referencia del [PVP actualizado](/porsche/precios) del Macan eléctrico es de 85.300 €.
 - **Evolución del precio de lanzamiento**: 63.100 € (base, 2016), 66.500 € (restyling, 2019), 79.600 € (Macan T, 2022) y 85.300 € (eléctrico, 2024).
-- **Segunda mano**: el Macan de primera generación ronda los 32.000 € (2014-2018), unos 42.000 € (restyling 2019-2021) y unos 68.000 € (Macan T, 2022-2024). Consulta la [evolución de precios y depreciación](/porsche/precio-segunda-mano).
+- **Segunda mano**: el Macan de primera generación ronda los 32.000 € (2014-2018), unos 42.000 € (restyling 2019-2021) y unos 68.000 € (Macan T, 2022-2024). Consulta la [evolución de precios y depreciación](/porsche/precio-segunda-mano) y los [precios reales de anuncios del Macan de segunda mano](/porsche/macan-segunda-mano) por generación y kilometraje.
 
 Para calcular la cuota mensual, usa la [calculadora de financiación](/porsche/financiacion); para el coste total a cinco años, el [coste real de propiedad](/porsche/coste-real).
 

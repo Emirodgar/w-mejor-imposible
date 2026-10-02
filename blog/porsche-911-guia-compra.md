@@ -50,7 +50,7 @@ El comportamiento del 911 en el mercado de segunda mano es de los más peculiare
 - **997.2**: muy estable, retiene su valor excepcionalmente bien gracias a su fiabilidad.
 - **991.1 y 992**: depreciación muy suave, casi anecdótica en el caso del 992.1 tras el lanzamiento del 992.2 híbrido, que ha mantenido firme la demanda de la versión de combustión pura entre los puristas.
 
-El desglose completo, con la evolución de precio año a año de cada generación, está en la [calculadora de precio de segunda mano y depreciación](/porsche/precio-segunda-mano). Si lo que buscas es el precio de un 911 nuevo, la [evolución de precios de lanzamiento](/porsche/precios) tiene el histórico completo: el 911 Carrera actual (992.2) parte de unos 148.500 €.
+El desglose completo, con la evolución de precio año a año de cada generación, está en la [calculadora de precio de segunda mano y depreciación](/porsche/precio-segunda-mano); los precios reales de los anuncios por generación, del G al 992, están en nuestros [datos de precio del 911 de segunda mano](/porsche/911-segunda-mano). Si lo que buscas es el precio de un 911 nuevo, la [evolución de precios de lanzamiento](/porsche/precios) tiene el histórico completo: el 911 Carrera actual (992.2) parte de unos 148.500 €.
 
 ## Manual, PDK y la rareza que más renta
 
