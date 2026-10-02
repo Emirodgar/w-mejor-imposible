@@ -54,6 +54,8 @@ def descargar(url, intentos=3):
 def pagina(serie, n):
     qs = (f"cy=E&atype=C&ustate=U&damaged_listing=exclude&sort=standard&desc=0"
           f"&fregfrom={serie['desde']}&fregto={serie['hasta']}&page={n}")
+    if serie.get("extra"):  # filtro adicional opcional de AutoScout24, p. ej. fuel=E (eléctricos)
+        qs += "&" + serie["extra"]
     html = descargar(BASE.format(modelo=serie["modelo"]) + "?" + qs)
     m = NEXT_DATA.search(html)
     if not m:

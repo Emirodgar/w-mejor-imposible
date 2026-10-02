@@ -19,6 +19,7 @@
   {"id": "cayenne-e3-2",   "modelo": "cayenne",    "desde": 2023, "hasta": 2026},
   {"id": "macan-95b",      "modelo": "macan",      "desde": 2014, "hasta": 2018},
   {"id": "macan-restyling","modelo": "macan",      "desde": 2019, "hasta": 2023},
+  {"id": "macan-ev",       "modelo": "macan",      "desde": 2024, "hasta": 2026, "extra": "fuel=E"},
   {"id": "panamera-970",   "modelo": "panamera",   "desde": 2010, "hasta": 2016},
   {"id": "panamera-971",   "modelo": "panamera",   "desde": 2017, "hasta": 2023},
   {"id": "taycan-j1",      "modelo": "taycan",     "desde": 2020, "hasta": 2026}
