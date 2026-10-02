@@ -198,7 +198,8 @@
                     <div class="model-actions">
                         {% if page.comparador_key %}<a href="/porsche/comparador?m1={{ page.comparador_key }}" class="primary">Comparar este modelo</a>{% endif %}
                         {% if page.finance_reference_price %}<a href="/porsche/financiacion?precio={{ page.finance_reference_price }}">Simular financiación</a>{% endif %}
-                        {% if page.guia_segunda_mano %}<a href="{{ page.guia_segunda_mano }}">Comprar de segunda mano</a>{% endif %}
+                        {% if page.guia_segunda_mano %}<a href="{{ page.guia_segunda_mano }}">{{ page.guia_segunda_mano_label | default: "Comprar de segunda mano" }}</a>{% endif %}
+                        {% if page.guia_segunda_mano_2 %}<a href="{{ page.guia_segunda_mano_2 }}">{{ page.guia_segunda_mano_2_label | default: "Comprar de segunda mano" }}</a>{% endif %}
                         <a href="/porsche/analisis">Opiniones de propietarios</a>
                         <a href="/porsche/checklist-inspecciones-segunda-mano">Checklist de inspección</a>
                     </div>

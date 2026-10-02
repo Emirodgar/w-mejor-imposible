@@ -469,7 +469,7 @@
 
         function nombre(id) {
             var m = (typeof priceData !== 'undefined' ? priceData : []).find(function (d) { return d.id === id; });
-            var extra = { 'cayenne-e3': 'Cayenne E3 (2018-2022)', 'cayenne-e3-2': 'Cayenne E3.2 (2023-hoy)', 'macan-ev': 'Macan Eléctrico (2024-hoy)', 'taycan-j1': 'Taycan (todas las versiones, 2020-hoy)' };
+            var extra = { 'cayenne-e3': 'Cayenne E3 (2018-2022)', 'cayenne-e3-2': 'Cayenne E3.2 (2023-hoy)', 'macan-ev': 'Macan Eléctrico (2024-hoy)', 'taycan-j1': 'Taycan (todas las versiones, 2020-hoy)', 'boxster-986': 'Boxster 986 (1996-2004)', 'cayman-987-1': 'Cayman 987.1 (2005-2008)', 'cayman-987-2': 'Cayman 987.2 (2009-2012)', 'cayman-981': 'Cayman 981 (2013-2016)', 'cayman-718': 'Cayman 718 (2016-hoy)', 'boxster-987-1': 'Boxster 987.1 (2005-2008)', 'boxster-987-2': 'Boxster 987.2 (2009-2012)', 'boxster-981': 'Boxster 981 (2012-2016)', 'boxster-718': 'Boxster 718 (2017-hoy)' };
             return extra[id] || (m ? m.model + ' ' + m.generation : id);
         }
 
