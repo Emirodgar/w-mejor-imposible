@@ -6,7 +6,7 @@ Alimenta la sección «Evolución mensual del precio en anuncios» de `porsche/p
 - `series.json`: cada serie = id de `priceData` de la página + modelo de AutoScout24 + rango de años de primera matriculación. Los rangos aproximan las generaciones; Cayman/Boxster usan Boxster solo para el 986 y Cayman en el resto.
 - `snapshots/AAAA-MM.jsonl.gz`: instantánea anuncio a anuncio de cada ejecución (acumulativa, se versiona). Permite recalcular otras métricas sin volver a recoger.
 - Punto de la serie: `precio` = mediana, `n` = nº de anuncios, y además `media`, `p25`, `p75`. La página avisa de los meses con menos de 5 anuncios.
-- La sección de la página solo se muestra cuando alguna serie tiene 2 o más puntos.
+- La sección de la página se muestra desde el primer punto; con un solo punto enseña el dato y un aviso, y la curva aparece con 2 o más.
 
 Ejecución: workflow `.github/workflows/precios-anuncios.yml` (día 1 de cada mes, 06:15 UTC; también manual). En local: `python scripts/actualizar-precios-anuncios/recoger.py [--solo ID ...] [--dry-run] [--mes AAAA-MM]`.
 
