@@ -2,12 +2,14 @@ name: Actualiza tendencias de noticias (RSS Porsche)
 
 on:
   schedule:
-    # Viernes 22:00 hora de España. GitHub Actions solo admite cron en UTC,
-    # y Madrid cambia entre CET (UTC+1) y CEST (UTC+2) según la época del año,
-    # así que se programan las dos franjas posibles y el primer paso del job
-    # descarta la que no corresponda de verdad a las 22:00 en Madrid.
-    - cron: '0 21 * * 5' # 22:00 CET (horario de invierno)
-    - cron: '0 20 * * 5' # 22:00 CEST (horario de verano)
+    # Varios lanzadores al día (UTC). GitHub puede retrasar o saltarse disparos
+    # programados, así que se redundan; el primer paso del job solo deja
+    # continuar a uno: el primero que encuentre que han pasado 24 h o más
+    # desde el último commit de tendencias.
+    - cron: '17 4 * * *'
+    - cron: '17 10 * * *'
+    - cron: '17 16 * * *'
+    - cron: '17 21 * * *'
   workflow_dispatch: {} # permite ejecutarla a mano en cualquier momento
 
 permissions:
@@ -20,43 +22,55 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
-      - name: Comprobar que son las 22:00 en España
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Comprobar que han pasado 24 h desde la última actualización
         id: hora
         run: |
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            HORA_MADRID=$(TZ="Europe/Madrid" date +%H)
-            echo "Hora actual en España: $HORA_MADRID"
-            if [ "$HORA_MADRID" != "22" ]; then
-              echo "No son las 22:00 en España (era el disparo de la otra franja horaria por el cambio de hora). Se omite esta ejecución."
-              echo "ejecutar=false" >> "$GITHUB_OUTPUT"
-              exit 0
-            fi
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Ejecución manual: se ejecuta siempre."
+            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
-          echo "ejecutar=true" >> "$GITHUB_OUTPUT"
+          ULTIMO=$(git log -1 --format=%ct --grep="^Actualiza tendencias con noticias recientes" || true)
+          AHORA=$(date +%s)
+          if [ -n "$ULTIMO" ] && [ $((AHORA - ULTIMO)) -lt 86400 ]; then
+            echo "Última actualización hace $(( (AHORA - ULTIMO) / 3600 )) h (<24 h). Se omite."
+            echo "ejecutar=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Han pasado 24 h o más (o no hay commits previos). Se ejecuta."
+            echo "ejecutar=true" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Checkout
+      - name: Setup Node
         if: steps.hora.outputs.ejecutar == 'true'
-        uses: actions/checkout@v6
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 1
+          node-version: 20
 
-      - name: Configurar identidad de git
+      - name: Actualizar tendencias con Gemini
+        if: steps.hora.outputs.ejecutar == 'true'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/actualiza-tendencias-gemini.js
+
+      - name: Commit y push si hay cambios
         if: steps.hora.outputs.ejecutar == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Ejecutar skill actualizar-tendencias-rss
-        if: steps.hora.outputs.ejecutar == 'true'
-        uses: anthropics/claude-code-action@v1
-        with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          prompt: "/actualizar-tendencias-rss"
-          claude_args: |
-            --allowedTools "Bash,Read,Edit,Write"
-            --permission-mode acceptEdits
-            --permission-prompts none
-            --max-turns 60
+          git add porsche/tendencias.html sitemap.xml .claude/state/tendencias-rss-seen.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios, no se hace commit."
+          else
+            git commit -m "Actualiza tendencias con noticias recientes (RSS + Gemini)"
+            # El workflow de "última hora" también empuja a main y toca el mismo
+            # archivo: se rebasa antes de subir para evitar rechazos por adelantado.
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
