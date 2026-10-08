@@ -1,0 +1,17 @@
+[
+ {
+  "id": "pa5zadv",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probo el nuevo Cayenne Electric en circuito, con derrapes y conduccion al limite, sin que nadie revisara danos al devolverlo."
+ }
+]

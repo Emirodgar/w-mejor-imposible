@@ -1,0 +1,250 @@
+[
+  {
+    "id": "oayxymb",
+    "models": ["panamera-971"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "calidad", "p": "pos"}],
+    "resumen_es": "Probó un Panamera como loaner del taller y le gustó como equilibrio entre lujo y diversión."
+  },
+  {
+    "id": "oaz0dpz",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "calidad", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario de Cayenne: destaca la comodidad excepcional y facilidad para viajes largos."
+  },
+  {
+    "id": "oayfwpq",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Tuvo un Macan 26 como loaner: el modelo base es muy poco potente, le costó cambiar de conducción desde su Cayenne Turbo 21."
+  },
+  {
+    "id": "oaz0v0j",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}, {"a": "calidad", "p": "neg"}],
+    "resumen_es": "Loaner Macan base vs Cayenne Turbo 21 de su propiedad: diferencia de especies, el Cayenne es muy superior."
+  },
+  {
+    "id": "oaztlxk",
+    "models": ["cayenne-92a"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario Cayenne 958.2 S E-hybrid: tiene manejo ágil de deportivo en curvas y aceleración suficiente sin aire suspendido."
+  },
+  {
+    "id": "ob242st",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "calidad", "p": "neg"}],
+    "resumen_es": "Propietario Cayenne 21: cuero del tablero se ampolla, como en otros ejemplares de esa generación."
+  },
+  {
+    "id": "ob24iri",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "calidad", "p": "neg"}, {"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario Cayenne 21: tablero ondulado no reparable, sustitución 13k de los que la garantía cubre 80%."
+  },
+  {
+    "id": "ob1fn8e",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Loaner Macan vs Cayenne 21 Turbo propia: prefiere devolver el Macan lo antes posible, sin dudarlo."
+  },
+  {
+    "id": "oayg489",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "diseno", "p": "pos"}],
+    "resumen_es": "Probó Macan GTS y Cayenne GTS: el Macan se siente como vehículo deportivo, el Cayenne como más adulto y robusto."
+  },
+  {
+    "id": "oayjynj",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario Cayenne GTS: el Macan es para quién quiere deportividad en SUV, Cayenne para quién busca alto rendimiento y lujo."
+  },
+  {
+    "id": "oayqce3",
+    "models": ["macan-ice"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario Macan GTS: ideal para trabajar viajando, más pequeño que pickup pero más práctico que deportivo puro."
+  },
+  {
+    "id": "oaygmqf",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "calidad", "p": "pos"}],
+    "resumen_es": "Propietario Macan y Cayenne: el Macan maneja mejor pero el Cayenne es mucho más lujoso."
+  },
+  {
+    "id": "ob1vku3",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "uso_diario", "p": "neg"}],
+    "resumen_es": "Propietario Macan: golpearse la cabeza con la puerta trasera es un problema frecuente."
+  },
+  {
+    "id": "oayiix8",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "calidad", "p": "neg"}, {"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Loaner Macan: interior se siente barato en todas partes, desde palanca a interfaz, sin agarraderas."
+  },
+  {
+    "id": "oayknlg",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "calidad", "p": "neg"}, {"a": "uso_diario", "p": "neg"}],
+    "resumen_es": "Loaner Macan: espacio limitado, palanca de cambios torcida, mala colocación de teléfono."
+  },
+  {
+    "id": "oazokb6",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Macan T loaner: suspensión mejorada pero motor insuficiente para aprovecharla."
+  },
+  {
+    "id": "oaykztd",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "calidad", "p": "pos"}],
+    "resumen_es": "Loaner Macan base y Cayenne base: diferencia de noche y día, Cayenne adelante en manejo, confort y manejo diario."
+  },
+  {
+    "id": "oayllo9",
+    "models": ["cayenne-po536"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "tecnologia", "p": "neu"}],
+    "resumen_es": "Propietario Cayenne: presupuesto 1100 dólares para instalación dashcam, otro concesionario pedía 3000."
+  },
+  {
+    "id": "oaylza1",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}, {"a": "valor", "p": "neg"}],
+    "resumen_es": "Loaner Macan base: modelo tan poco potente que hace lucir mal a Porsche, suspensión sin suficiente potencia."
+  },
+  {
+    "id": "ob4c9ts",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Loaner Macan base: vehículo lento en ciudad, gearing pesado, sin la agilidad de un Miata."
+  },
+  {
+    "id": "oayonop",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario Macan GTS y Cayenne S: coches para usos distintos, Cayenne para viajes largos, Macan para ciudad."
+  },
+  {
+    "id": "ob5q73g",
+    "models": ["macan-ice", "cayenne-po536"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario Macan GTS y Cayenne S: el Macan exige usar palancas y conducción agresiva, Cayenne es relajado."
+  },
+  {
+    "id": "ob5sg46",
+    "models": ["macan-ice"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario Macan GTS: se disfruta más cuando se conduce activamente con paddles."
+  },
+  {
+    "id": "obfoftn",
+    "models": ["cayenne-po536", "macan-ice"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "calidad", "p": "pos"}],
+    "resumen_es": "Propietario Cayenne Turbo y Macan GTS 2026: el Macan es versátil pero requiere personalización extensiva para recuperar características del Cayenne."
+  },
+  {
+    "id": "oayox5l",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "calidad", "p": "neg"}, {"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Propietario Macan GTS: interior barato, consola pobre, falta de sonoridad, loaner base es aún peor."
+  },
+  {
+    "id": "oaysmg7",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "hearsay",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Macan Turbo descontinuado, motor de 2.0 es loaner problemático, motor Audi 2.9 superado por rivales."
+  },
+  {
+    "id": "oayujn9",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "hearsay",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Asesor de ventas: no recomienda la base Macan, la diferencia con la S es sustancial."
+  },
+  {
+    "id": "oaz1g0t",
+    "models": ["cayenne-po536", "macan-ice"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario Cayenne Turbo y Macan: el Macan es más ágil pero el motor 4-cil es muy endeble."
+  },
+  {
+    "id": "oazwtfw",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Propietario Macan GTS con 911 y Boxster: el Macan GTS es sorprendentemente lento."
+  },
+  {
+    "id": "oazxoq5",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Propietario Macan GTS, 911, Boxster: Macan GTS es más lento que un 330i, deception total."
+  },
+  {
+    "id": "obie95b",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "neg"}, {"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario Macan GTS: no se puede comprar sin tunéo, de otro modo mejor una S y ahorrar dinero."
+  }
+]

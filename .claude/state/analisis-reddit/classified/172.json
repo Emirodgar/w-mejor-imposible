@@ -1,0 +1,589 @@
+[
+ {
+  "id": "ovw4w6f",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario su 911 GTS manual para ir al trabajo y salir a la montaña; defiende disfrutarlo en vez de guardarlo en el garaje."
+ },
+ {
+  "id": "ohqp1cr",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Seis meses con un Cayenne de 2014 y sigue encantado: divertido y cómodo, aunque los neumáticos nuevos le duelen en el bolsillo."
+ },
+ {
+  "id": "ohqp2ht",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne S de 2019 con suspensión neumática: le parece uno de sus coches favoritos y sorprendentemente divertido para ser SUV."
+ },
+ {
+  "id": "ohqp6sl",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne Turbo de 2019 le sigue gustando como el primer día; hace cosas que ni su 911 puede hacer."
+ },
+ {
+  "id": "ohqsgfa",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras 13 años y más de 200.000 millas su Cayenne sigue siendo estupendo; volvería a comprar otro si pudiera."
+ },
+ {
+  "id": "ohqsys8",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Siete meses con un Cayenne Coupé híbrido de 2025 y lo adora; cada modo de conducción le parece como un coche distinto."
+ },
+ {
+  "id": "ohquens",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tres años con un Cayenne Coupé E-Hybrid de 2020 y lo sigue disfrutando; ahora lo combina con un 911 de fin de semana."
+ },
+ {
+  "id": "ohqv1pa",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne S de 2019 le sigue haciendo sonreír, pero en tráfico denso nota tirones en los cambios de 1ª a 3ª, algo conocido de esa generación."
+ },
+ {
+  "id": "ohqxywk",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Se arrepiente de su Cayenne base de 2022: pagó de más, lo encuentra lento y soso, y volvería a elegir cualquier otro coche."
+ },
+ {
+  "id": "ohqzitp",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Cayenne diésel de 2014 con 140.000 millas; va bien en viajes largos pero lo usa poco porque hay coches mejores."
+ },
+ {
+  "id": "ohr1kwq",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tres años con un Cayenne Turbo de 2014 sin que se apague la ilusión; solo quiere uno más nuevo para tener garantía."
+ },
+ {
+  "id": "ohr1sl0",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ocho años de Cayenne: para atascos continuos lo desaconseja por agotador, aunque en ciudad y periferia le parece muy bien."
+ },
+ {
+  "id": "ohr1wki",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su familia tiene un Cayenne GTS de 2013 al que adora y no cambiaría; los hijos lo consideran parte de la familia."
+ },
+ {
+  "id": "ohr1wki#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "La familia también tiene un Taycan Turbo S cuya aceleración hace chillar de emoción al hijo."
+ },
+ {
+  "id": "ohr35p3",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ocho meses con un GTS de 2026: cómodo con calma y, al apretar, cobra vida en carreteras de montaña con un sonido y manejo sobresalientes."
+ },
+ {
+  "id": "ohraci8",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conserva su Cayenne de 2011 y, aunque pasa meses parado, cada vez que lo conduce le recuerda cómo debería sentirse un coche."
+ },
+ {
+  "id": "ohrn6v9",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne S Coupé de 2021 supera a todo lo que ha tenido; sus líneas le hacen girarse al aparcar."
+ },
+ {
+  "id": "ohsna76",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Tuvo un Cayenne GTS Coupé cinco años, probó un Range Rover Sport seis meses y ahora quiere volver a un Cayenne."
+ },
+ {
+  "id": "ohsroxf",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne S de 2022 le impresiona cada vez que lo conduce, pero el stop-start le parece pésimo en atascos."
+ },
+ {
+  "id": "oht251l",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Recién comprado un Cayenne híbrido de 2023: conduce mucho mejor que su Q7 y la calidad es excelente, aunque la versión base carece de equipamiento."
+ },
+ {
+  "id": "ohu0swo",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Cayenne S de 2019 y llantas de 21 pulgadas no parece un SUV, maneja de maravilla y es el coche más sólido que ha tenido."
+ },
+ {
+  "id": "ohu272n",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras un mes con un Macan S nuevo de sustitución lo encuentra aburrido: rápido y de buen interior, pero un SUV pequeño más."
+ },
+ {
+  "id": "ohuckgp",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un Cayenne base de primera generación 957 y dice que se siente como un Porsche de verdad; lo considera un gran coche barato."
+ },
+ {
+  "id": "ohuevy7",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario un Cayenne S de 2016 en Chicago: cómodo y querido, pero el precio de la gasolina le va restando gusto."
+ },
+ {
+  "id": "ohums4x",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su primer Macan se averió, pero cuatro años después compró exactamente el mismo modelo y lo sigue queriendo."
+ },
+ {
+  "id": "ohyak4q",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Cayenne base de 2020 heredado de su mujer le ve algunas manías y prefiere el Q7 de ella, salvo en motorizaciones potentes."
+ },
+ {
+  "id": "oijn4kt",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cayenne S 4.8 atmosférico de 2014 con 110.000 millas, fiabilísimo y sin ruidos; lo usa a diario y no se ve con otra marca."
+ },
+ {
+  "id": "oilaeqg",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne diésel ha pasado las 100.000 millas con unos 40 mpg y repetiría otro Cayenne si le pasara algo."
+ },
+ {
+  "id": "omparf9",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Cayenne GTS de 2023 es agradable y versátil, con sonido y aceleración notables, aunque el BMW X6 de su mujer cuesta menos y trae más equipamiento."
+ },
+ {
+  "id": "oyaosj2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Del Q7 pasó a un Cayenne E-Hybrid de 2023: conducción y calidad de otro nivel, aunque el MMI de Audi era superior."
+ },
+ {
+  "id": "obgje91",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Aunque adora su Taycan, echa en falta poder activar la conducción con un pedal como opción para días tranquilos."
+ },
+ {
+  "id": "obgc7nl",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó unos minutos el Macan eléctrico y el modo de rodar en vacío sin regenerar le resultó muy desagradable."
+ },
+ {
+  "id": "obgc06o",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Hizo una prueba breve de un Macan y salió con mala experiencia por la falta de conducción con un pedal."
+ },
+ {
+  "id": "obgslo8",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Viniendo de ocho años de Tesla, en pruebas largas del Taycan no echó de menos el pedal único: la conducción le pareció más suave."
+ }
+]

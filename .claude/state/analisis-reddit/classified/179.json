@@ -1,0 +1,170 @@
+[
+  {
+    "id": "o7bluat",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "valor", "p": "pos"}],
+    "resumen_es": "Comprador de un 992.1 nuevo en efectivo con patrimonio neto de 11.6M; el vehículo es accesible para su situación financiera."
+  },
+  {
+    "id": "o7cbkgl",
+    "models": ["macan-ice"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un Macan GTS; valora los Porsche como vehículos muy satisfactorios para conducir."
+  },
+  {
+    "id": "o7cp2zy",
+    "models": ["911-996"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "valor", "p": "pos"}],
+    "resumen_es": "Propietario de un 996.2 C4S descapotable; disfrutó del coche y no perdió dinero, pero tuvo preocupaciones sobre la percepción social."
+  },
+  {
+    "id": "o7dbrjq",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "valor", "p": "pos"}, {"a": "fiabilidad", "p": "pos"}],
+    "resumen_es": "Propietario de 15 Porsches a lo largo de su vida; ha ganado dinero con cada 911, incluido un 992 GTS y un 991.1S."
+  },
+  {
+    "id": "o7e51fl",
+    "models": ["911-991"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 991.1 Turbo desde hace un año; disfruta cada segundo conduciendo el vehículo."
+  },
+  {
+    "id": "o7ect4a",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 992.1 Turbo S hecho a medida; comenta que ha sido una experiencia divertida."
+  },
+  {
+    "id": "o7g1226",
+    "models": ["911-992"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de un 2019 Carrera S; valora su conducción pero prefiere los pagos más bajos del Supra."
+  },
+  {
+    "id": "o7ge2sl",
+    "models": ["911-992", "911-996"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 992.1 Turbo recién entregado y un 2003 996 C2 manual en perfectas condiciones; compra lo que genuinamente disfruta."
+  },
+  {
+    "id": "o7hdl2f",
+    "models": ["911-996", "718-982"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de un 1999 C4 996 6 velocidades manual y un 2021 718 Spyder; describe ambos como coches de ensueño."
+  },
+  {
+    "id": "o7hpvcw",
+    "models": ["911-996"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Comprador de un 996 Turbo por 60k dólares a los 25 años; compra que refleja pasión por los coches de rendimiento."
+  },
+  {
+    "id": "o7i7d40",
+    "models": ["911-991"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 2016 911 C4S convertible con 22k millas; ama el coche después de solo dos días de posesión."
+  },
+  {
+    "id": "o7iz439",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 911 Carrera S financiado; valora la felicidad que le proporciona más que sus costes de financiación."
+  },
+  {
+    "id": "o7ml14l",
+    "models": ["911-996"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "valor", "p": "pos"}],
+    "resumen_es": "Propietario de un 996 con modificaciones que ha realizado múltiples eventos de pista PCA; retiene bien su valor."
+  },
+  {
+    "id": "o7ovu1k",
+    "models": ["911-991"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario a los 23 años de un 991.1 Carrera manual; los coches han sido su pasión desde los 8 años."
+  },
+  {
+    "id": "o7p1ald",
+    "models": ["911-991"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de un 911.1 Targa manual a los 60 años; es su coche de ensueño desde que comenzó su carrera."
+  },
+  {
+    "id": "o7pqh9a",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Médico que rentó un 911 en Alemania y alcanzó 202 mph; quedó inmediatamente enamorado del vehículo."
+  },
+  {
+    "id": "oj1ofh8",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "calidad", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario de un Cayenne sin suspensión neumática; comenta que la conducción es sorprendentemente suave y refinada para un SUV deportivo."
+  },
+  {
+    "id": "oj1oyrb",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario de un Cayenne base 3.0 que prefiere gasolina; rechaza híbridos porque teme problemas de confiabilidad."
+  },
+  {
+    "id": "oj1qc7f",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de un CPO Turbo 2022; lamenta no haber elegido el V6 de gasolina debido a impuestos."
+  },
+  {
+    "id": "oj564x7",
+    "models": ["cayenne-92a"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 958.2 GTS Stage 2; fue un regalo de cumpleaños y describe especificaciones impresionantes."
+  },
+  {
+    "id": "ojhxjlt",
+    "models": ["macan-ice"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario anterior de un Macan S que compró en su primer trabajo; amó intensamente el vehículo."
+  }
+]

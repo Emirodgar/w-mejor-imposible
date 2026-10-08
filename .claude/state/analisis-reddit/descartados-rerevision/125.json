@@ -1,0 +1,5 @@
+[
+  {"id": "p9enkqm", "models": ["taycan"], "sentiment": "neg", "basis": "hearsay", "aspects": [{"a": "fiabilidad", "p": "neg"}], "resumen_es": "Ante el hilo de un Taycan averiado, dice que ya suponía que sería un modelo de 2020, dando por hecho que las primeras unidades dan problemas."},
+  {"id": "p9mmo8h", "models": ["taycan"], "sentiment": "neg", "basis": "hearsay", "aspects": [{"a": "fiabilidad", "p": "neg"}], "resumen_es": "Opina que el Taycan de 2020 no estaba listo y que Porsche lo lanzó con prisa por cálculo financiero, a costa de la fiabilidad y la buena imagen."},
+  {"id": "p9kvize", "models": ["taycan"], "sentiment": "neu", "basis": "none", "aspects": [{"a": "fiabilidad", "p": "neg"}], "resumen_es": "Reconoce que el Taycan es un buen coche, pero no compraría un eléctrico o híbrido de Porsche y prefiere dejar los eléctricos a Tesla."}
+]

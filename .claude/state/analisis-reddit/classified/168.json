@@ -1,0 +1,427 @@
+﻿[
+    {
+        "id":  "oxqri54",
+        "models":  [
+                       "macan-ice"
+                   ],
+        "sentiment":  "neg",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "fiabilidad",
+                            "p":  "neg"
+                        },
+                        {
+                            "a":  "costes",
+                            "p":  "neg"
+                        }
+                    ],
+        "resumen_es":  "Propietario del Macan: transmisión y problemas en la caja de transferencia, mantenimiento muy costoso"
+    },
+    {
+        "id":  "oxqw684",
+        "models":  [
+                       "macan-ice"
+                   ],
+        "sentiment":  "neu",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "neu"
+                        }
+                    ],
+        "resumen_es":  "Vendió su 2017 a concesionario Kia por 24.000 dólares"
+    },
+    {
+        "id":  "oxru4n8",
+        "models":  [
+                       "macan-ice"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Concesionario Acura le ofreció 30.000 dólares por su Macan, buena relación calidad-precio"
+    },
+    {
+        "id":  "oxr7hmr",
+        "models":  [
+                       "macan-ice"
+                   ],
+        "sentiment":  "neu",
+        "basis":  "driven",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Compró un Macan GTS 2017 con 98.000 km en Cars\u0026Bids por 22.000 dólares, se vende rápido"
+    },
+    {
+        "id":  "oxu2sg6",
+        "models":  [
+                       "macan-ice"
+                   ],
+        "sentiment":  "neu",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "neu"
+                        }
+                    ],
+        "resumen_es":  "Compró Macan S 2016 por 18.000 dólares (negociado desde 21.000), alto kilometraje"
+    },
+    {
+        "id":  "oxyxhff",
+        "models":  [
+                       "macan-ice"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "fiabilidad",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario: pagó 20.000 por unidad con 100.000 km, vehículo fantástico"
+    },
+    {
+        "id":  "oeegbix",
+        "models":  [
+                       "911-992"
+                   ],
+        "sentiment":  "neg",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "costes",
+                            "p":  "neg"
+                        },
+                        {
+                            "a":  "valor",
+                            "p":  "neg"
+                        }
+                    ],
+        "resumen_es":  "Propietario: nuevos Porsche demasiado caros, antes justificaba GT3RS a 230k, ahora 440k es insostenible"
+    },
+    {
+        "id":  "oeekrx5",
+        "models":  [
+                       "911-996"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 996 con reconstrucción de motor: inversión importante pero proporciona satisfacción diaria"
+    },
+    {
+        "id":  "oef25bn",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+
+                    ],
+        "resumen_es":  "Jubilado, propietario de múltiples Porsches durante su vida, actualmente en su último 911"
+    },
+    {
+        "id":  "oef39y5",
+        "models":  [
+                       "911-992",
+                       "911-991"
+                   ],
+        "sentiment":  "neg",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "costes",
+                            "p":  "neg"
+                        }
+                    ],
+        "resumen_es":  "Redujo portafolios de 992.1 Turbo y M3 a M2 y Supra; nuevos Porsches demasiado caros"
+    },
+    {
+        "id":  "oefa9a9",
+        "models":  [
+                       "911-air",
+                       "911-997"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 993 Turbo construido ($400k) y 997 construido ($200k), autos únicos, apreciación similar a S\u0026P 500"
+    },
+    {
+        "id":  "oeflimc",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "none",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "El Turbo 993 es el mejor Porsche jamás hecho"
+    },
+    {
+        "id":  "oefmb2i",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "diseno",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Construcción 993 excepcional con modificaciones cuidadosas, resultado de diseño limpio"
+    },
+    {
+        "id":  "oegy9j1",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "diseno",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario europeo con 993 personalizado, excelente apariencia"
+    },
+    {
+        "id":  "oehh72j",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "calidad",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "diseno",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 993 azul medianoche: pintura de calidad superior a fábrica"
+    },
+    {
+        "id":  "oefp18q",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 993 Turbo construido: amigos ofrecen $400k, precio mínimo $500k"
+    },
+    {
+        "id":  "oeh4yuj",
+        "models":  [
+                       "911-air",
+                       "911-992"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario: 993 más rápido que 992.2 Turbo S en aceleración, mejor que el Volkswagen moderno"
+    },
+    {
+        "id":  "oehk0sa",
+        "models":  [
+                       "911-air"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 993 Turbo construido: referencias en Bring a Trailer confirman apreciación, rendimiento excepcional"
+    },
+    {
+        "id":  "oei9w6t",
+        "models":  [
+                       "911-992",
+                       "911-991",
+                       "911-air"
+                   ],
+        "sentiment":  "neg",
+        "basis":  "hearsay",
+        "aspects":  [
+                        {
+                            "a":  "fiabilidad",
+                            "p":  "neg"
+                        },
+                        {
+                            "a":  "tecnologia",
+                            "p":  "neg"
+                        }
+                    ],
+        "resumen_es":  "Porsche dejó de hacer turbos reales cuando finalizó el motor Mezger, los nuevos son Volkswagen"
+    },
+    {
+        "id":  "oefhddu",
+        "models":  [
+                       "911-996"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 996 Turbo convertible: inversión asequible, muy gratificante en uso"
+    },
+    {
+        "id":  "oefnlsn",
+        "models":  [
+                       "911-992"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario 992.2: decisión financiera discutible pero ofrece máxima diversión"
+    },
+    {
+        "id":  "oefnzai",
+        "models":  [
+                       "911-991"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "calidad",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Comprador primerizo de 991 GTS de bajo kilometraje en perfecta especificación, relación calidad-precio excelente"
+    },
+    {
+        "id":  "oeggnxs",
+        "models":  [
+                       "911-992"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "costes",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "valor",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 992.1 C2 2024 nuevo: satisfecho con relación valor-patrimonio"
+    },
+    {
+        "id":  "oeh7khe",
+        "models":  [
+                       "911-997"
+                   ],
+        "sentiment":  "neg",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "costes",
+                            "p":  "neg"
+                        },
+                        {
+                            "a":  "uso_diario",
+                            "p":  "neg"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 997.2 2011 Coupe PDK: incómodo con la inversión, está en venta por preocupación"
+    },
+    {
+        "id":  "oeibggo",
+        "models":  [
+                       "911-996"
+                   ],
+        "sentiment":  "pos",
+        "basis":  "owner",
+        "aspects":  [
+                        {
+                            "a":  "conduccion",
+                            "p":  "pos"
+                        },
+                        {
+                            "a":  "diseno",
+                            "p":  "pos"
+                        }
+                    ],
+        "resumen_es":  "Propietario de 996 Turbo 20% patrimonio: pasión por coches justifica inversión"
+    }
+]

@@ -1,0 +1,17 @@
+[
+ {
+  "id": "nx5kqyh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario su Taycan 4S Cross Turismo de 2022 y lo ama cada día, aunque admite que cambiarlo supone asumir otra pérdida de valor."
+ }
+]

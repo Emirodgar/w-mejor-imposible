@@ -1,0 +1,346 @@
+[
+ {
+  "id": "p70vqxa",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un 992 GTS en Londres: sintió lo mismo que el autor del hilo por la envidia ajena, pero recomienda ignorarla y disfrutar del coche."
+ },
+ {
+  "id": "p70z9c9",
+  "models": [
+   "911-991",
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que desde el 991 el 911 se ha vuelto un gran turismo muy capaz y que el seis cilindros del 718 se parece más al 911 con el que se soñaba."
+ },
+ {
+  "id": "p70yrbc",
+  "models": [
+   "911-991",
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que el 911, salvo las versiones GT, es ya un gran turismo capaz y no el coche del póster de la infancia; el 718 le recuerda más a aquel."
+ },
+ {
+  "id": "p71146w",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Empezó con un 996, el 911 menos querido, para ver si quería dar el salto a algo mayor; recomienda un 911 usado antes que un GTS nuevo de golpe."
+ },
+ {
+  "id": "p71decy",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 (junto a un BMW Serie 5): su hijo de 7 años adora el coche y disfruta mucho más en él que en el familiar."
+ },
+ {
+  "id": "p71dwdg",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lleva a dos niños en las plazas traseras de su 911 y les encanta; aclara que la gente no distingue entre Carrera, GTS o GT3."
+ },
+ {
+  "id": "p71a9fs",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 911 que no lo compró para compartirlo: lo que más disfruta son las salidas solitarias al atardecer."
+ },
+ {
+  "id": "p7191yi",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Sintió algo parecido al autor, pero ahora disfruta su 911 en solitario y le gusta aunque salga poco del garaje."
+ },
+ {
+  "id": "p71nsfp",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 992.1 GTS por amor al 911 pero no le gustó la atención que atraía; ahora pasa más desapercibido con su 993."
+ },
+ {
+  "id": "p71nsfp#2",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su 993 vuela bajo el radar y solo recibe saludos y pulgares de aficionados, que es justo lo que prefiere."
+ },
+ {
+  "id": "p71pzsn",
+  "models": [
+   "718-982",
+   "cayman-981",
+   "cayman-987",
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Prefiere un roadster como el Boxster: una fracción del precio y más divertido descapotable que cualquier coupé, salvo que mande la velocidad."
+ },
+ {
+  "id": "p71tlrk",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera que los 911 refrigerados por aire tienen algo especial, más ásperos y divertidos que el pulido de los modernos."
+ },
+ {
+  "id": "p71v43t",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar un S y un Turbo S, concluye que la respuesta es el GT3."
+ },
+ {
+  "id": "p71v43t#2",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Condujo un 911 S y no le pareció emocionante; ni siquiera a nivel Turbo S le convenció."
+ },
+ {
+  "id": "p725zyd",
+  "models": [
+   "911-991",
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Afirma que cualquier 911 posterior al 997 conduce como un coche moderno; para algo analógico hay que irse a generaciones anteriores."
+ },
+ {
+  "id": "p72gxob",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [],
+  "resumen_es": "Su mujer tiene un 911 Targa 4 GTS de 2026, es su 911 favorito y está encantada con él."
+ },
+ {
+  "id": "p72i3jp",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "No sentía el efecto wow con su Porsche, así que compró un Corvette C8 Z06 que le parece espectacular y más barato."
+ },
+ {
+  "id": "p72sajt",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996",
+   "911-air"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un 911 desde hace un par de años y disfruta menos de lo esperado: pocas carreteras buenas cerca, multas y trayectos cortos."
+ },
+ {
+  "id": "p72ye7e",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que el 911 es una máquina de conducir excelente, pero con pocos extras de lujo para su precio."
+ },
+ {
+  "id": "p73jhn6",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Sugiere un 997 como primer 911: se puede revender con muy poca depreciación al subir de modelo."
+ },
+ {
+  "id": "p74m80f",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Cambió su 991.2 por un Golf R, que también le parece muy divertido."
+ },
+ {
+  "id": "p74vi07",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le saca una sonrisa cada vez que lo conduce y recibe gestos amables y fotos de la gente, al contrario que el autor del hilo."
+ }
+]

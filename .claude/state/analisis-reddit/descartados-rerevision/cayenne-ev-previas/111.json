@@ -1,0 +1,36 @@
+[
+ {
+  "id": "p91pdv8",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan eléctrico de cortesía; le gusta la ubicación del cargador inalámbrico y coincide con las críticas."
+ },
+ {
+  "id": "p92l1fm",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encantó el Macan eléctrico de cortesía: divertido cuando se quiere y cómodo cuando hace falta."
+ }
+]

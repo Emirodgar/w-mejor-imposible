@@ -95,9 +95,26 @@ def main():
     comments = {c["id"]: c for c in load_jsonl(idx if os.path.exists(idx) else os.path.join(STATE, "comments.jsonl"))}
     threads = json.load(open(os.path.join(STATE, "threads.json"), encoding="utf-8"))
     cdir = os.path.join(STATE, "classified")
-    entries = []
-    for fn in sorted(os.listdir(cdir)) if os.path.isdir(cdir) else []:
-        entries += json.load(open(os.path.join(cdir, fn), encoding="utf-8"))
+    # Los ficheros de classified/ NUNCA se borran ni se editan: una re-revision es un fichero con numero mayor.
+    # Si varios ficheros tratan el mismo comentario, cuenta el del numero mas alto (el resto queda como historial).
+    def file_no(fn):
+        return (int(fn[:-5]) if fn[:-5].isdigit() else 10 ** 9, fn)
+    by_comment, n_superseded = {}, 0
+    for fn in sorted(os.listdir(cdir), key=file_no) if os.path.isdir(cdir) else []:
+        per = defaultdict(list)
+        for e in json.load(open(os.path.join(cdir, fn), encoding="utf-8-sig")):
+            per[e["id"].split("#")[0]].append(e)
+        # scope/NNN.json lista TODOS los comentarios que revisó ese lote, hayan dado entrada o no. Así una
+        # re-revision puede decidir "este comentario ya no cuenta" sin que haga falta borrar la entrada antigua.
+        sp = os.path.join(STATE, "scope", fn)
+        reviewed_here = set(json.load(open(sp, encoding="utf-8-sig"))) if os.path.exists(sp) else set()
+        for base in reviewed_here | set(per):
+            if base in by_comment:
+                n_superseded += 1
+                del by_comment[base]
+        for base, es in per.items():
+            by_comment[base] = es
+    entries = [e for es in by_comment.values() for e in es]
 
     mvotes, mdefault_asp, mquotes = defaultdict(list), defaultdict(list), defaultdict(list)
     fvotes, fasp, fquotes = defaultdict(list), defaultdict(list), defaultdict(list)
@@ -156,9 +173,36 @@ def main():
         "threads": sorted(({"title": t["title"], "sub": t["sub"], "url": t["url"], "comments": t["num_comments"]}
                            for t in threads if t.get("title")), key=lambda t: -t["comments"]),
     }
+    # Snapshot historico: cada puntuacion deja su copia completa; el JSON publico lleva un resumen de todos ellos.
+    sdir = os.path.join(STATE, "snapshots")
+    os.makedirs(sdir, exist_ok=True)
+    base = f"{out['generated']}_{out['stats']['threads']}hilos"
+    name, k = base + ".json", 2
+    existing = {}
+    for fn in os.listdir(sdir):
+        try:
+            existing[fn] = json.load(open(os.path.join(sdir, fn), encoding="utf-8"))
+        except Exception:
+            pass
+    same = [fn for fn, d in existing.items() if d.get("stats") == out["stats"] and d.get("models") == out["models"]]
+    if not same:  # solo se guarda si algo cambio respecto a un snapshot existente
+        while name in existing or os.path.exists(os.path.join(sdir, name)):
+            name, k = f"{base}-{k}.json", k + 1
+        json.dump(out, open(os.path.join(sdir, name), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        existing[name] = out
+    history = []
+    for fn in sorted(existing, key=lambda f: (existing[f]["generated"], existing[f]["stats"]["threads"], f)):
+        d = existing[fn]
+        history.append({
+            "date": d["generated"], "threads": d["stats"]["threads"], "users_counted": d["stats"]["users_counted"],
+            "comments_counted": d["stats"]["comments_counted"],
+            "families": {f["id"]: {"users": f["users"], "pct_positive": f["pct_positive"], "wilson": f["wilson"]} for f in d["families"]},
+        })
+    out["history"] = history
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"[score] {n_valid} comentarios validos ({n_skipped} descartados por base/modelo), {len(users_counted)} usuarios -> {OUT}")
+    print(f"[score] {n_valid} comentarios validos ({n_skipped} descartados por base/modelo, {n_superseded} comentarios con re-revision), {len(users_counted)} usuarios -> {OUT}")
+    print(f"[score] historico: {len(history)} snapshots en {sdir}")
     for r in by_family:
         print(f"  {r['label']:10} usuarios={r['users']:3} pos={r['pos']:5} neg={r['neg']:5} wilson={r['wilson']} rank={r['rank_score']} [{r['confidence']}]")
 

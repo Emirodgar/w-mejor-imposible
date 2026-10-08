@@ -1,0 +1,361 @@
+[
+ {
+  "id": "pdi5js7",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne GTS Coupé de 2022 sin dirección trasera ni PDCC: se conduce perfectamente así, aunque es el coche familiar sin uso en circuito."
+ },
+ {
+  "id": "pdiah7z",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne GTS con suspensión neumática y sin PDCC se comporta de maravilla incluso en curva, y le basta con menos complejidad."
+ },
+ {
+  "id": "pdiglb8",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario: el control de crucero adaptativo del Cayenne es excelente, muy superior al del Q7 de su mujer, y lo volvería a pedir."
+ },
+ {
+  "id": "pdicuis",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Recién estrenado un Cayenne GTS 2026, todo perfecto; solo cambiaría a asientos de 18 vías porque los de 14 no sujetan lo suficiente en curva."
+ },
+ {
+  "id": "pdj4fvz",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con el Burmester de su Cayenne GTS solo queda satisfecho a medias; el resto de equipamiento (RAS, PDCC, HUD) lo considera acertado y a su hijo le gusta la pantalla del copiloto."
+ },
+ {
+  "id": "pdjxj87",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "La dirección trasera de su Cayenne GTS le parece imprescindible: lo nota más ágil y manejable que su antiguo Macan GTS, aunque no sea un coche de circuito."
+ },
+ {
+  "id": "pdtz6ni",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne de 2023: el cierre automático de puertas le facilita mucho la vida, dado el peso y tamaño de las puertas."
+ },
+ {
+  "id": "nzjrwhx",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Taycan 2022 le cambiaron cinco módulos de batería; el coche estuvo mes y medio en el taller, aunque le dieron coche de cortesía."
+ },
+ {
+  "id": "nzqoc3e",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras seis semanas con un Macan básico de cortesía lo califica de mal coche para un aficionado: motor flojo, ayudas molestas y cambios raros."
+ },
+ {
+  "id": "nzrvqdj",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Coincide en que el Macan básico es muy pobre como Porsche; mejora algo en modo Sport, pero lo siente muy inferior a su Taycan."
+ },
+ {
+  "id": "nzgteuj",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo a la vez un Taycan y un e-tron GT: prefiere el Porsche por conducción y estética, pero ambos le dieron problemas eléctricos y de batería."
+ },
+ {
+  "id": "nzfr8v4",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan de 2020 le ha resultado sorprendentemente fiable hasta ahora."
+ },
+ {
+  "id": "nzftom5",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Taycan 2021 fuera de garantía (salvo batería): el más bonito que ha tenido, pero teme otros fallos y duda si cambiarlo."
+ },
+ {
+  "id": "nzi1emd",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Taycan sin garantía ha sufrido amortiguadores, batería de 12 V y cargador a bordo; en Porsche las piezas son carísimas, pero repara con talleres independientes."
+ },
+ {
+  "id": "nzfykp9",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su Taycan en leasing fue muchas veces al concesionario: buen trato, pero no quiso otro por los problemas constantes, aunque lo ve un gran coche."
+ },
+ {
+  "id": "nzg0kmd",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Taycan 4S de 2020 comprado CPO: seis meses en taller por batería y errores eléctricos; lo vendió por desconfianza, aunque es bonito y divertido."
+ },
+ {
+  "id": "nzg4081",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Se deshizo de su Taycan por las llamadas a revisión y el tiempo en taller; incluso se le paró en plena autopista."
+ },
+ {
+  "id": "nznfcwe",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Taycan 4S CPO de 2020 le sustituyeron la batería y luego un fallo eléctrico lo detuvo en marcha; lo cambió por un Audi."
+ },
+ {
+  "id": "nzgcbq3",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan 4S de 2020 tiene muchos problemas, incluida la batería, pero lo quiere tanto que no piensa venderlo."
+ },
+ {
+  "id": "nzi090o",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: se conduce como ningún otro y lo disfruta, aunque tiene averías y sin garantía resulta caro."
+ },
+ {
+  "id": "pdilimi",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con el Burmester de su Panamera 971 no queda contento: agudos sibilantes, voces hundidas y medios graves retumbantes, con un ecualizador muy limitado."
+ }
+]

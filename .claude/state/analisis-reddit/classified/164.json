@@ -1,0 +1,990 @@
+[
+ {
+  "id": "p0xl3dp",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "hearsay",
+  "aspects": [],
+  "resumen_es": "Defiende que el peso del Cayenne eléctrico (unos 2,7 t) no es peor que el de otros SUV de lujo muy queridos; opina sin tenerlo."
+ },
+ {
+  "id": "p1a9re6",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el Cayenne eléctrico un coche sin sentido que venderá poco, porque el comprador de un Cayenne GTS busca el sonido, no solo velocidad."
+ },
+ {
+  "id": "p1e8r7d",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica que el Cayenne eléctrico resuelva la autonomía con baterías enormes en vez de eficiencia y ligereza; pesa casi un 50 % más que un Model Y."
+ },
+ {
+  "id": "p1o0rve",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que el Cayenne eléctrico se conduce de forma muy distinta al normal y es ridículamente rápido, aunque pierde algo de altura interior."
+ },
+ {
+  "id": "p5n6yhw",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que la electrónica de alto voltaje del Cayenne eléctrico será menos fiable que un motor tradicional; es una suposición sin experiencia propia."
+ },
+ {
+  "id": "p5mhnm5",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario encantado con el Cayenne eléctrico: rápido, ágil y cómodo; supera a su Tesla en acabados y dinámica, pero pierde en software."
+ },
+ {
+  "id": "p5nz1p1",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Conduce ambos: el Cayenne eléctrico es más maduro y refinado que un Model Y Performance, aunque cuesta el doble."
+ },
+ {
+  "id": "p5y2gk2",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró el Cayenne S eléctrico y lo sitúa por encima del Tesla Model Y y del BMW iX: más especial y vale lo que cuesta."
+ },
+ {
+  "id": "p5mq03t",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Para uso diario ligero elegiría el Cayenne eléctrico, pero en viajes largos lo pensaría dos veces por la carga."
+ },
+ {
+  "id": "p5ql4lo",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Le encanta su Cayenne S eléctrico y lo recomienda sin reservas."
+ },
+ {
+  "id": "p5oq0gs",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [],
+  "resumen_es": "Siendo dueño de un Taycan, el Cayenne Turbo eléctrico es el único coche que se plantearía como sustituto diario."
+ },
+ {
+  "id": "npn8wm4",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Frente muy recargado; parece un coche eléctrico cualquiera, redondo y aburrido."
+ },
+ {
+  "id": "npodioe",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "No quiere una zaga como la del Cayenne eléctrico, que le parece fea para un SUV que debería ser cuadrado."
+ },
+ {
+  "id": "npnni6h",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que el diseño no envejecerá bien y se ve barato, sobre todo por el nombre iluminado en la zaga."
+ },
+ {
+  "id": "npnokvz",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lamenta que se venda aunque sea feo, lo que dará a Porsche carta blanca para más coches feos."
+ },
+ {
+  "id": "npnpu79",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le parece demasiado parecido al Macan y poco agresivo; se alegra de haber comprado un GTS de 2026."
+ },
+ {
+  "id": "npnsqzy",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le gusta la nueva dirección estética de Porsche y encuentra el Cayenne eléctrico atractivo, mejor que los Audi nuevos."
+ },
+ {
+  "id": "npnun31",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Le recuerda a un Mach-E desde ese ángulo; está dividido y espera ver más fotos antes de opinar."
+ },
+ {
+  "id": "npomnho",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el Cayenne eléctrico es una oportunidad perdida y que el Macan eléctrico encarna mejor el lenguaje de diseño Porsche."
+ },
+ {
+  "id": "nponjak",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Coincide en que el diseño tipo Macan funciona allí pero no en el Cayenne eléctrico."
+ },
+ {
+  "id": "npv3iz1",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el Cayenne eléctrico parece un Kia."
+ },
+ {
+  "id": "npo5jjn",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Sostiene que parece un Stellantis por detrás, chino por delante y Nissan por dentro, pero con precio Porsche."
+ },
+ {
+  "id": "npo8wru",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le parece un Hyundai Kona por delante y considera las pantallas una mala idea."
+ },
+ {
+  "id": "npot117",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lo ve como un SUV eléctrico barato más y cree que no es lo que quiere el público de Porsche."
+ },
+ {
+  "id": "npp68ae",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica faros y pilotos que recuerdan a Toyota; habría preferido el estilo del Cayenne actual con tren eléctrico."
+ },
+ {
+  "id": "nppr0a1",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera que el Cayenne anterior es más premium y que el nuevo parece un Kia sin carácter Porsche."
+ },
+ {
+  "id": "nppxqbj",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le parece un SUV eléctrico de Porsche correcto y no le molesta en absoluto."
+ },
+ {
+  "id": "npqdp3h",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que debieron diseñar un paragolpes delantero propio en lugar de parecerse a un Tesla."
+ },
+ {
+  "id": "npqnqm9",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lo ve sobrediseñado, con zaga de nave espacial o monovolumen y demasiado plástico negro barato."
+ },
+ {
+  "id": "npqq5fb",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le gustan el aspecto y el interior, pero critica que la pantalla del copiloto vaya en un paquete de 8.000 dólares."
+ },
+ {
+  "id": "nps7w45",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lo considera una maravilla de ingeniería y lamenta el odio ciego por el tipo de motor."
+ },
+ {
+  "id": "npziwvi",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Destaca como muy buena la carga por inducción del Cayenne eléctrico."
+ },
+ {
+  "id": "npwvyi2",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Decepcionado con la estética; se alegra de haber comprado el coupé de combustión y no soltarlo."
+ },
+ {
+  "id": "npwzk41",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que Porsche tiene problemas con los frontales y las proporciones del nuevo Cayenne."
+ },
+ {
+  "id": "nq9vdkk",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "No le gusta nada y cree que Porsche ha cambiado demasiado, dejando de ser su primera opción."
+ },
+ {
+  "id": "nwmrtcj",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le parece feo, demasiado futurista y con interior barato; prefiere el diseño de 2014."
+ },
+ {
+  "id": "npuclav",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ve el Cayenne eléctrico como un coche chino con pegatina Porsche pensado para recuperar cuota en China."
+ },
+ {
+  "id": "nprkk9l",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera que Porsche ha matado el coche que la salvó y se plantea un Genesis GV70 con más tecnología y la mitad de precio."
+ },
+ {
+  "id": "npr92c3",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lamenta que un Porsche de gasolina distinguido se convierta en un ordenador de cuatro ruedas."
+ },
+ {
+  "id": "np6wiy0",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Sin las insignias, el interior podría ser el de un Kia EV9."
+ },
+ {
+  "id": "npaczhv",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el interior se ve plano y sin la elegancia clásica de Porsche."
+ },
+ {
+  "id": "np76e77",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Demasiadas pantallas, aunque han corregido botones heredados de VW y el exceso de plástico."
+ },
+ {
+  "id": "np7hb51",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Sin la insignia, el interior podría ser de cualquier eléctrico chino."
+ },
+ {
+  "id": "npagxt9",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su pareja lo ve muy minimalista y poco de clase alta para ser un Porsche."
+ },
+ {
+  "id": "npbwn0k",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lamenta que Porsche pase de cockpits con botones físicos a llenar el salpicadero de pantallas."
+ },
+ {
+  "id": "npmfi0g",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ve raro el centro de pantalla hundido y no ve sentido a pagar la pantalla del copiloto."
+ },
+ {
+  "id": "npcqbg2",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le gusta la tecnología del interior y celebra que Porsche se ponga al día en equipamiento."
+ },
+ {
+  "id": "np6wq7b",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Aficionado a la tecnología: el interior del nuevo Cayenne le parece asombroso, con aire futurista."
+ },
+ {
+  "id": "npcqtj9",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan y un Macan EV, aplaude que el Cayenne eléctrico incorpore la pantalla inferior de climatización."
+ },
+ {
+  "id": "npomnho#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Considera que el Macan eléctrico luce mejor y representa mejor el diseño Porsche que el Cayenne eléctrico."
+ },
+ {
+  "id": "npcqtj9#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Macan EV: echa de menos la pantalla inferior de climatización y carga que sí tiene el Taycan."
+ },
+ {
+  "id": "nemwq6q",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró el Cayenne (en realidad E-Hybrid) y está muy satisfecho: espacio cómodo para su altura, buena postura y visibilidad."
+ },
+ {
+  "id": "nemwq6q#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó el Macan EV con 1,83 m de altura: le resultó estrecho y justo de espacio en el asiento del conductor."
+ },
+ {
+  "id": "nen0e6e",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario del Cayenne E-Hybrid: ahorra bastante gasolina, con unos 28-38 mpg según el viaje."
+ },
+ {
+  "id": "nendtqs",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Cayenne de gasolina y E-Hybrid es claramente más amplio que el Macan en plazas delanteras, traseras y maletero."
+ },
+ {
+  "id": "nenkobb",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Muy satisfecho con su Cayenne E-Hybrid: cómodo y seguro, con un PCM algo inestable que se arregla reconectando el móvil."
+ },
+ {
+  "id": "np73r1w",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Cayenne de 2016 al que aprecia, aunque reconoce que tiene muchísimos botones."
+ },
+ {
+  "id": "np7i1tj",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le gustaban los muchos interruptores de su Cayenne anterior; usaba poco más que temperatura, asientos y modos de conducción."
+ },
+ {
+  "id": "nppeopm",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Disfruta de su Cayenne Turbo de 2020 y no piensa cambiarlo al menos en tres años."
+ },
+ {
+  "id": "nppm6dv",
+  "models": [
+   "cayenne-9pa",
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne de gasolina: consumo medio decente y casi perfecto, salvo cambio de batería anticipado y retraso en CarPlay."
+ },
+ {
+  "id": "np6xvoc",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Macan EV: al principio le sobraban pantallas, pero se acostumbró y acabó disfrutándolo."
+ },
+ {
+  "id": "npwaix5",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras conducir toda la gama Porsche de 2024, el Macan EV es su eléctrico favorito, incluso por encima del Macan GTS y del Taycan."
+ }
+]

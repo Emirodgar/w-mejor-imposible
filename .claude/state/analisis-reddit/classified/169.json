@@ -1,0 +1,591 @@
+[
+ {
+  "id": "oen343s",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 996: prefiere seguir disfrutándolo y jubilarse pronto antes que trabajar para poder pagar un GT3."
+ },
+ {
+  "id": "oen8ahc",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Hizo con su 996, la familia y el perro un viaje de un par de cientos de millas por Semana Santa y lo disfrutó sin preocuparse del desgaste."
+ },
+ {
+  "id": "oenegxu",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 996 solo le ha dado alegrías y puede personalizarlo sin miedo al coste; aun así considera el 997 el mejor 911 de la historia."
+ },
+ {
+  "id": "p05mx7e",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neu"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Viene de Audi SQ5: admite que el Cayenne S es caro y conduce solo algo mejor, pero la satisfacción al usarlo compensa y lo compraría de nuevo."
+ },
+ {
+  "id": "p05pqbv",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras un BMW X3 y un 730i, pasar a un Cayenne GTS le parece un salto de nivel claro."
+ },
+ {
+  "id": "p05jl16",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un GTS: le encantan el tacto de carretera, la suspensión y el motor, cómodo sin ser blando; siente que vale lo que costó."
+ },
+ {
+  "id": "p05klv8",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Cayenne Turbo 2021 ha hecho 30.000 km en nueve meses, incluidos viajes de 2.500-3.000 km; curva muy bien y le parece muy superior a su antiguo CLS."
+ },
+ {
+  "id": "p05l7ze",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Cayenne Turbo GT y fue el mejor coche que ha tenido; lo describe como muy sólido."
+ },
+ {
+  "id": "p05ov6e",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que los 958 son una compra razonable si tienen poco kilometraje y historial; él está encantado con su Cayenne S de 2016."
+ },
+ {
+  "id": "p05s2lk",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Cayenne GTS y el BMW X5 M el mismo día: el Porsche, algo más lento, resulta mucho más vivo y deportivo."
+ },
+ {
+  "id": "p05sn6y",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Conduce el Cayenne de su mujer y no le convence: soso salvo a alta velocidad, ancho, difícil de aparcar, con mando de marchas y CarPlay engorrosos y mal en pistas bacheadas."
+ },
+ {
+  "id": "p05tgt9",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Va por su tercer Cayenne y el de 2019 sigue como nuevo con 52.000 millas, pero con los precios actuales no compraría otro."
+ },
+ {
+  "id": "p061e73",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Sin ningún arrepentimiento: materiales de alta gama, acabados muy cuidados y un coche muy divertido de conducir."
+ },
+ {
+  "id": "p0622ka",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Pasó de un X5 a un Cayenne S y luego a un X6, que prefiere porque el Cayenne tenía un retraso del turbo que le molestaba."
+ },
+ {
+  "id": "p062q2z",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un Cayenne S de cortesía descubrió un manejo, una aceleración y una calidad que no había visto en otros coches; le pareció inolvidable."
+ },
+ {
+  "id": "p067vnn",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conserva su GTS de 2013 desde casi nuevo como coche familiar; no piensa cambiarlo porque le ha dado muy buenos recuerdos."
+ },
+ {
+  "id": "p069tyx",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Cayenne Coupé GTS nuevo con un 10 % de descuento y por 140.000 dólares no le parece un precio disparatado."
+ },
+ {
+  "id": "p06jgei",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un GLE43 a un Cayenne Turbo y no volvería atrás; la dinámica mejora mucho y agradece los botones físicos del volante."
+ },
+ {
+  "id": "p06vsbh",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne base de 2011, ahora con elevación y neumáticos de barro, sigue conduciéndose mejor y siendo más divertido que su antiguo GLE; no piensa venderlo."
+ },
+ {
+  "id": "p06vsbh#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan GTS de 2015 y le encantó, aunque lo veía pequeño."
+ },
+ {
+  "id": "p07fh4r",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un X5 y un Cayenne: sobre el papel el BMW ofrece más por el dinero y mejor tecnología, pero el Cayenne se maneja claramente mejor."
+ },
+ {
+  "id": "p07shg7",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido un X5, un Cayenne de 2014 y un E-Hybrid de 2022; en su experiencia los Cayenne son más fiables que el BMW y el híbrido es muy rápido."
+ },
+ {
+  "id": "p07t1k2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Cayenne Turbo la conducción, el sonido y el espacio son una delicia; pero a su edad y kilometraje las averías y el tiempo en taller se vuelven un problema."
+ },
+ {
+  "id": "p07ua6s",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró hace dos meses un Cayenne de 2012 con 110.000 km sin baterías ni AdBlue y le parece tan bueno que los X5, Q7 y GLE le resultan de juguete."
+ },
+ {
+  "id": "p08acp2",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Soñó con un Porsche 40 años; tras un Cayenne diésel y uno de gasolina base dice que es el mejor coche que ha tenido y que es muy resistente."
+ },
+ {
+  "id": "p09bapj",
+  "models": [
+   "cayenne-9pa"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne Turbo S de 2009 llegó a 230.000 millas sin problemas reales."
+ },
+ {
+  "id": "p09bapj#2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Cayenne GTS de 2021 tras mirar todo lo demás y no se arrepiente; además sigue remolcando su remolque."
+ },
+ {
+  "id": "p09k1y8",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con el Cayenne E-Hybrid, más rápido que el S, hace más de 80 mpg cargando a diario; la suspensión neumática y el interior le convencieron frente a sus rivales."
+ },
+ {
+  "id": "p09mogh",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Asegura que su Cayenne E-Hybrid es muy sólido y combina buenas prestaciones con un consumo económico."
+ },
+ {
+  "id": "p0axig0",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Disfrutó cada momento al volante de su Cayenne Turbo aunque repostaba dos veces por semana; no es rentable, pero la felicidad que daba compensaba."
+ },
+ {
+  "id": "p0caheb",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Cayenne Turbo 2019 comprado usado le parece buena compra frente a un GLE 63, pero cree que su antiguo Clase S era mejor en lujo; el Porsche gana en sensaciones."
+ },
+ {
+  "id": "p0k1vo2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras X5, SQ8 y RSQ8, el X5 M60i es el mejor en relación calidad/utilidad, pero el Cayenne GTS Coupé de 2023 fue el más divertido de todos."
+ }
+]

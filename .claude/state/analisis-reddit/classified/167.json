@@ -1,0 +1,491 @@
+[
+ {
+  "id": "olrrwhb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan: le rebajaron el cargador a 11 kW y el taller perdió un juego completo de llantas de verano con neumáticos; costó mucho que lo reconocieran."
+ },
+ {
+  "id": "olr79vi",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan de 2021: salvo el fallo del cargador de 22 kW, sustituido por uno de 11 kW en garantía, ha ido sin averías y da gusto conducirlo."
+ },
+ {
+  "id": "olt9aln",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Taycan de 2021 comprado el año pasado: a los 4 meses se estropeó el cargador de 22 kW; después, fallos de software, navegación que se cuelga y pantalla PCM bloqueada."
+ },
+ {
+  "id": "olxdbcq",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan lleva meses con el PCM y la navegación fallando, con cortes cada pocos minutos y planificador de carga inservible; Porsche no logra resolverlo."
+ },
+ {
+  "id": "om5sl2p",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario con múltiples averías en su Taycan: trampilla de carga, calefacción, carga limitada a 60-70 kWh, PCM y ventanillas que no cierran del todo."
+ },
+ {
+  "id": "om9m8jw",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo 8 meses un Panamera E-Hybrid Sport Turismo: fallos constantes de potencia e híbrido, seis ingresos en taller (algunos de semanas) y avería recurrente."
+ },
+ {
+  "id": "om9m8jw#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su actual Taycan GTS es divertido de conducir y hasta ahora solo ha dado un fallo en la trampilla de carga izquierda."
+ },
+ {
+  "id": "ols24hg",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Macan eléctrico: cuenta una historia parecida a la del hilo, con muchas visitas al taller y numerosos coches de cortesía que también tenían problemas."
+ },
+ {
+  "id": "oluis0j",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Una semana con el Taycan le bastó para pedir al concesionario la recompra, que gestionaron bien."
+ },
+ {
+  "id": "olv8ebb",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Se deshizo de su Taycan: a ratos divertido, pero visitas al concesionario cada 6-8 semanas; jura no volver a comprar un Porsche."
+ },
+ {
+  "id": "olvzm21",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras tres años con Taycan, i7 e iX M60, solo el Taycan dio problemas: 13 visitas al concesionario, y su sistema de sonido Burmester le decepciona."
+ },
+ {
+  "id": "olwt0hs",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan de primera hornada (J1.1) no le ha dado problemas hasta ahora; cree que la versión J2.1 es mejor."
+ },
+ {
+  "id": "om5y42q",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "En 9 meses con su Taycan visitó el concesionario 12 veces; Porsche solo ofreció un vale de 500 euros y no piensa repetir marca."
+ },
+ {
+  "id": "omb05gx",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Taycan de 2023 de segunda mano: el único problema fue que las cámaras dejaron de funcionar un par de minutos."
+ },
+ {
+  "id": "omfygu5",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene dos Taycan de empresa, ambos llenos de fallos; una actualización limita la carga al 80 % mostrando 100 %, con lo que baja la autonomía."
+ },
+ {
+  "id": "paplu93",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan sigue acumulando visitas al taller: bomba de aceite de transmisión, ventanilla, unidades del PCM, aire acondicionado y cargador averiados."
+ },
+ {
+  "id": "on5h3xf",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Boxster 718 a un 992 Carrera Cabrio: se maneja mucho mejor, aunque se nota más el peso."
+ },
+ {
+  "id": "p2wmmvz",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera Turbo S: sin problemas fuera del mantenimiento y lo prefiere al Taycan, que sí gusta a su hija."
+ },
+ {
+  "id": "p2wpz9b",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó seguidos un Panamera GTS y un Taycan Turbo S: el Taycan se siente sólido y violentamente rápido; piensa comprarlo con garantía ampliada."
+ },
+ {
+  "id": "p2wx7fc",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo un Taycan 4S y lo prefirió: más deportivo, con centro de gravedad bajo."
+ },
+ {
+  "id": "p2wx7fc#2",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tras probar un Panamera Turbo, lo encontró más crucero que deportivo en comparación con el Taycan."
+ },
+ {
+  "id": "p2wxt57",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Es su segundo Panamera E-Hybrid; rechazó cambiar al Taycan por su fiabilidad y porque el Panamera tiene mejores materiales en el habitáculo."
+ },
+ {
+  "id": "p2wxt57#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Usó Taycan como coche de cortesía y le parecieron peores que su Panamera, con acabados interiores más pobres."
+ },
+ {
+  "id": "p2zfoqi",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un 971.1 y un 971.2 no ha tenido problemas de suspensión neumática, según su especialista un mal de los 970."
+ },
+ {
+  "id": "p322v2q",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Panamera 4S de 2018: muy rápido, cómodo de entrar y, según su mecánico, de los más fiables."
+ },
+ {
+  "id": "p2x8brh",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Panamera S de 2022 tras valorar el Taycan, que descartó por autonomía; lleva tiempo contento con él."
+ },
+ {
+  "id": "p2yl63m",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Panamera E-Hybrid de 2018 CPO desde 2021: casi 130.000 km sin incidencias aparte del mantenimiento normal."
+ },
+ {
+  "id": "p2znjca",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su 971 tuvo que cambiar dos compresores de suspensión neumática en tres años y conoce fallos de bomba de agua de 5-8k; plazas traseras más amplias que el Taycan."
+ },
+ {
+  "id": "p2wz1w2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Taycan CPO más nuevo y de poco kilometraje, por la garantía de la batería, y está encantado."
+ }
+]

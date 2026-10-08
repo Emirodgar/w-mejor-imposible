@@ -1,0 +1,9 @@
+[
+  {"id":"ovdj922","models":["911-992"],"sentiment":"pos","basis":"owner","aspects":[{"a":"fiabilidad","p":"pos"}],"resumen_es":"Propietario de un 911 GTS 2026: ningún problema con la batería híbrida aunque el coche pase varios días parado."},
+  {"id":"ovckmof","models":["911-992"],"sentiment":"neu","basis":"owner","aspects":[{"a":"valor","p":"neu"}],"resumen_es":"Dueño de un 992.2 Carrera T con pocas millas: ve la depreciación como algo normal y aconseja conducirlo y disfrutarlo."},
+  {"id":"ovcpr66","models":["911-992"],"sentiment":"pos","basis":"owner","aspects":[{"a":"uso_diario","p":"pos"}],"resumen_es":"Propietario de un 911 GTS de 2023 comprado de segunda mano que ha sumado 8.000 millas en un año y lo usa a fondo."},
+  {"id":"ovdfbk3","models":["911-992"],"sentiment":"neu","basis":"none","aspects":[{"a":"valor","p":"neu"}],"resumen_es":"Una caída de valor de en torno al 14% en un 992 es normal; históricamente solo las variantes GT han mantenido o revalorizado su precio."},
+  {"id":"ovtcfee","models":["911-992"],"sentiment":"neg","basis":"none","aspects":[{"a":"valor","p":"neg"}],"resumen_es":"Según este usuario, los únicos Carrera que conservan valor son los T; el resto se deprecian mucho."},
+  {"id":"ovdoa4o","models":["911-992"],"sentiment":"neg","basis":"none","aspects":[{"a":"valor","p":"neg"}],"resumen_es":"El Carrera S y las versiones cabrio o Targa parecen tener la curva de depreciación más pronunciada del 992."},
+  {"id":"oof2d69","models":["cayman-986"],"sentiment":"pos","basis":"owner","aspects":[{"a":"costes","p":"pos"},{"a":"fiabilidad","p":"neg"}],"resumen_es":"Dueño de un Boxster 986 S Special Edition: aparecen pequeños fallos, pero es fácil de reparar uno mismo y hay mucho apoyo en YouTube."}
+]

@@ -1,0 +1,281 @@
+[
+ {
+  "id": "p1ks4w7",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario un Macan GTS de 2026 en modo Sport y asegura que no le falta potencia; no tiene ninguna queja."
+ },
+ {
+  "id": "p1kb8j0",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Macan GTS de 2023 notaba retardo en el acelerador, que se corrigió por completo con un módulo de respuesta del pedal."
+ },
+ {
+  "id": "p1reqgi",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha conducido Macan base de cortesía en el taller: van cortos y sufren para acelerar; el GTS es el punto ideal y el Turbo no compensa su sobreprecio."
+ },
+ {
+  "id": "ovcdq92",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 992.1 GTS manual que le encanta; lo usa los días buenos y espera un GT3 Touring para salidas más cómodas con su mujer."
+ },
+ {
+  "id": "ovci2gk",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un GT3 Touring con equipamiento básico, asientos de tela de 4 vías y elevador de eje delantero, y disfrutó mucho del coche."
+ },
+ {
+  "id": "ovcjx4u",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 992.2 Touring: adora el cambio manual, los asientos baquet y los frenos cerámicos; lo considera un coche de conductor."
+ },
+ {
+  "id": "ovcx295",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su GT3 Touring lleva asientos de carbono y cambio manual; admite que es incómodo y que el PDK es más rápido, pero por pureza no lo cambiaría."
+ },
+ {
+  "id": "ovdmpv8",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con un 992.2 Touring manual lo usa a diario con sus tres hijas; tiene también un GT3 RS PDK y el manual del Touring le parece mucho más divertido."
+ },
+ {
+  "id": "oveahb3",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El manual del GT3 992.2 de su propiedad es suave y estupendo; lo usa en tráfico urbano a diario y no lo cambiaría."
+ },
+ {
+  "id": "ovf7yco",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Nunca se ha arrepentido de montar el manual en su GT3 992.2; lo disfruta tanto que lo conduce más que su C4S."
+ },
+ {
+  "id": "ovfses9",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su mayor arrepentimiento fue elegir el manual en el GT3: bien para fines de semana, pero molesto en el día a día."
+ },
+ {
+  "id": "ovgh33r",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su GT3 manual le resulta más divertido que cuando tenía PDK: exige atención en cada arranque y parada, y lo vive como un pequeño juego."
+ },
+ {
+  "id": "ovgtkd8",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su GT3 Touring con asientos deportivos y PDK le encanta por comodidad; duda si le habría gustado más el manual."
+ },
+ {
+  "id": "ovjoe27",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un GT3 con alerón y manual: es una gozada, pero para su próximo coche pensaría en PDK por ser más amable a diario."
+ },
+ {
+  "id": "ovw5obd",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el GT3 Touring de un amigo en un puerto de montaña y quedó obsesionado con el sonido de la zona alta de revoluciones."
+ },
+ {
+  "id": "ovx1jo5",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un Targa GTS híbrido: divertido por ser descapotable, pero el motor y la conducción le decepcionan frente a un GT3 Touring."
+ },
+ {
+  "id": "ovmexbt",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Orgulloso propietario de un 992 Turbo S; asegura que conduce como ningún otro coche."
+ }
+]

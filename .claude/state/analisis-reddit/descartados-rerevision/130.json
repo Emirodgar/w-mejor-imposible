@@ -1,0 +1,18 @@
+[
+  {
+    "id": "p70rwqd",
+    "models": ["911-992"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "uso_diario", "p": "neg"}, {"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 911 GTS: lo usa poco (1.000 millas al año) y duda si venderlo, aunque aún disfruta paseando con sus hijos o en carreteras abiertas por la mañana."
+  },
+  {
+    "id": "p70s7ch",
+    "models": ["911-997"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "valor", "p": "pos"}],
+    "resumen_es": "Recomienda un 997 Turbo, a ser posible manual y en gris, como alternativa más barata y discreta: lo considera un coche espectacular."
+  }
+]

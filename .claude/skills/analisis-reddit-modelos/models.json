@@ -20,6 +20,7 @@
     {"id": "cayenne-9pa","family": "Cayenne", "label": "Cayenne (955/957, 2002-2010)", "patterns": ["955", "957", "9pa"]},
     {"id": "cayenne-92a","family": "Cayenne", "label": "Cayenne (958, 2010-2017)", "patterns": ["958", "92a"]},
     {"id": "cayenne-po536","family": "Cayenne", "label": "Cayenne (PO536 / E3, 2018-hoy)", "patterns": ["po536", "e3 cayenne"]},
+    {"id": "cayenne-ev","family": "Cayenne", "label": "Cayenne Electric (2026-hoy)", "patterns": ["cayenne electric", "cayenne ev", "electric cayenne"]},
     {"id": "panamera-970","family": "Panamera", "label": "Panamera (970, 2009-2016)", "patterns": ["970"]},
     {"id": "panamera-971","family": "Panamera", "label": "Panamera (971, 2016-2023)", "patterns": ["971"]},
     {"id": "panamera-972","family": "Panamera", "label": "Panamera (972, 2024-hoy)", "patterns": ["972"]},

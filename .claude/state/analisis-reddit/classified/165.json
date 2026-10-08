@@ -1,0 +1,98 @@
+[
+  {
+    "id": "o44junj",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Todos los 911 son bonitos, sin importar el color elegido."
+  },
+  {
+    "id": "o46lesd",
+    "models": ["911-992"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "No le gustan los flaps del motor híbrido del 992, aunque considera que es una generación con buen diseño."
+  },
+  {
+    "id": "o47nxpv",
+    "models": ["911-992"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "La falta de transmisión manual es una mala elección en el 911."
+  },
+  {
+    "id": "o47v6rj",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "costes", "p": "pos"}],
+    "resumen_es": "El PDK automático del 992 cambia más rápido, consume menos y acelera mejor."
+  },
+  {
+    "id": "o47wq8x",
+    "models": ["911-992"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "La conducción manual del 911 es entretenida y desafiante; el automático es más rápido y eficiente."
+  },
+  {
+    "id": "o45ouow",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de un 992.2 GTS: los amantes del 911 disfrutan personalizando el coche con colores atrevidos."
+  },
+  {
+    "id": "o45pup9",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [],
+    "resumen_es": "Propietario de un 911: es el mejor coche del mundo."
+  },
+  {
+    "id": "o45kqam",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "uso_diario", "p": "pos"}, {"a": "calidad", "p": "pos"}],
+    "resumen_es": "Propietario de un 911 GTS: los interiores claros son cómodos en verano pero requieren más mantenimiento."
+  },
+  {
+    "id": "o459ezp",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de un 992 GTS: cada uno tiene sus preferencias de diseño, lo importante es disfrutar conduciendo."
+  },
+  {
+    "id": "o45c37k",
+    "models": ["911-992"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "La transmisión automática PDK del 992 no es la mejor opción."
+  },
+  {
+    "id": "o49a5u4",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de un 992.1 Targa GTS: prefiere la transmisión manual frente al automático."
+  },
+  {
+    "id": "o4co0e2",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario de un 911: lo conduce activamente como coche de fin de semana, con 3000 km en solo dos meses."
+  }
+]

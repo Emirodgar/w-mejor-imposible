@@ -1,0 +1,205 @@
+[
+ {
+  "id": "osxdmni",
+  "models": [
+   "cayenne-92a",
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Advierte de que si falla la suspensión neumática el coche no se puede usar y la reparación puede acabar en unos 10.000 $ tras cambiar piezas a prueba y error."
+ },
+ {
+  "id": "osy4zov",
+  "models": [
+   "cayenne-92a",
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que solo compensa si te gusta trabajar en coches: todo lo unido al motor hay que cambiarlo hacia las 100.000 millas, y bastante del propio motor."
+ },
+ {
+  "id": "ot2qu39",
+  "models": [
+   "cayenne-92a",
+   "panamera-970"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Desaconseja como primer coche: demasiado caro de mantener y con demasiada potencia para aprender a conducir."
+ },
+ {
+  "id": "otdqzsu",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras alquilar un C8 prefiere el 911; opina que el GT3 conservará mucho mejor su valor de reventa que el Corvette."
+ },
+ {
+  "id": "otdrdsn",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Bromea con conducir el GT3 991.1 hasta el límite de garantía para que le cambien el motor gratis, aludiendo a su fama de motor frágil."
+ },
+ {
+  "id": "otdqsfd",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Si no puedes pagar un motor nuevo del GT3 991.1 cuando acabe la garantía, mejor vender ya."
+ },
+ {
+  "id": "otexe7m",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera el GT3 991.1 fuera de garantía una responsabilidad de más de 60.000 $ por el riesgo del motor y aconseja cambiarlo."
+ },
+ {
+  "id": "otffz2v",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Comenta que sustituir el motor del GT3 cuesta unos 30.000 $ solo en mano de obra en Porsche, aunque haya motores usados más baratos."
+ },
+ {
+  "id": "otdrcl1",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que el miedo al motor al expirar la garantía le quitará el disfrute al GT3 991.1."
+ },
+ {
+  "id": "ote7i9z",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cambiaría un GT3 con motor E1 por un Z06 con garantía extendida sin dudarlo por el riesgo del motor."
+ },
+ {
+  "id": "otg3ghp",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cambió un Boxster GTS 4.0 por un Z06 sin arrepentirse, pero afirma que el GT3 está en otro nivel."
+ },
+ {
+  "id": "otgamzp",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Aconseja conservar el 911 y ahorrar para otro GT3, que considera de otro nivel frente al Corvette."
+ }
+]

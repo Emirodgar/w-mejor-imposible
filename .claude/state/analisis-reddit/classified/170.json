@@ -1,0 +1,275 @@
+[
+    {
+        "id": "p105hps",
+        "models": ["cayenne-92a"],
+        "sentiment": "neu",
+        "basis": "owner",
+        "aspects": [
+            {"a": "fiabilidad", "p": "neg"},
+            {"a": "costes", "p": "pos"},
+            {"a": "uso_diario", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne 958: la conduce a diario, tiene problemas mecánicos menores pero considera que vale la pena."
+    },
+    {
+        "id": "p12eblw",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "calidad", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne turbo coupe: alaba la capacidad de personalización, especificaciones y el motor V8."
+    },
+    {
+        "id": "p13wb4d",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne GTS 2021: lo considera superior a otros SUVs, aunque debe venderlo por necesidad de espacio."
+    },
+    {
+        "id": "p1ddx8e",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Anterior propietario de Cayenne S: lo prefería sobre otros SUVs de lujo como Mercedes y BMW."
+    },
+    {
+        "id": "p1kjyl5",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario que cambió de BMW X5 a Cayenne coupe: considera el cambio una mejora significativa."
+    },
+    {
+        "id": "p2srnxu",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "uso_diario", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne GTS 2023: lo encuentra más ágil y cómodo que competidores como GLE y X5."
+    },
+    {
+        "id": "p3jr3ve",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "costes", "p": "neg"},
+            {"a": "fiabilidad", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne turbo 2020: disfruta conducirlo a pesar de mantenimiento caro, lo recomendaría."
+    },
+    {
+        "id": "p3upvuy",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario satisfecho: pagó 185k por su Cayenne y reporta cero arrepentimientos."
+    },
+    {
+        "id": "p4c5g25",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "valor", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne GTS coupe CPO 2023: satisfecho con la compra usada certificada de bajo kilometraje."
+    },
+    {
+        "id": "p5n1t7t",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne Turbo GT V8: enfatiza que no hay SUV comparable en manejo."
+    },
+    {
+        "id": "p5njck0",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "driven",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Ha conducido Cayenne GTS: le gustó el manejo excepcional."
+    },
+    {
+        "id": "p3igwe1",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "driven",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "calidad", "p": "pos"}
+        ],
+        "resumen_es": "Ha probado Cayenne GTS: el manejo es un paso adelante respecto a GLE53, con buen acabado interior."
+    },
+    {
+        "id": "p3kgl3u",
+        "models": ["cayenne-po536"],
+        "sentiment": "neu",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "uso_diario", "p": "neg"}
+        ],
+        "resumen_es": "Propietario de Cayenne GTS: alaba el manejo pero busca mayor lujo y comodidad para viajes largos."
+    },
+    {
+        "id": "p90he9u",
+        "models": ["taycan"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "costes", "p": "pos"},
+            {"a": "uso_diario", "p": "neg"}
+        ],
+        "resumen_es": "Propietario de Taycan Turbo S: satisfecho pero poco conducción rápida por responsabilidades familiares."
+    },
+    {
+        "id": "p90m5u3",
+        "models": ["cayenne-ev"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "uso_diario", "p": "pos"}
+        ],
+        "resumen_es": "Propietario interesado en Cayenne Turbo EV: busca cuatro asientos y más espacio para familia."
+    },
+    {
+        "id": "p90rn69",
+        "models": ["718-982"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de 718 Cayman: satisfecho, consideraría versión EV con techo sólido."
+    },
+    {
+        "id": "p90uldx",
+        "models": ["cayenne-ev"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "uso_diario", "p": "pos"}
+        ],
+        "resumen_es": "Propietario que busca vehículo eléctrico: esposa rechazó ICE, considerando Cayenne EV."
+    },
+    {
+        "id": "p90vfuw",
+        "models": ["718-982"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Taycan considerando 718 EV como deportivo de dos plazas alternativo."
+    },
+    {
+        "id": "p90zfyt",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "uso_diario", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Cayenne: considera que merece la pena por conducción y lujo, sin preocuparse por practicidad."
+    },
+    {
+        "id": "p90oz6n",
+        "models": ["718-982"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario esperando 718 EV: quiere un deportivo de dos plazas con motor eléctrico."
+    },
+    {
+        "id": "p90iogk",
+        "models": ["cayenne-po536"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "uso_diario", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de 718 Cayman 4S: consideraría cambiar a Cayenne EV cuando los hijos crezcan."
+    },
+    {
+        "id": "p91qevm",
+        "models": ["taycan"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Taycan Turbo S: trabaja cerca de casa, espera poder disfrutar aceleraciones ocasionales."
+    },
+    {
+        "id": "p92vrh3",
+        "models": ["taycan"],
+        "sentiment": "pos",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "calidad", "p": "pos"}
+        ],
+        "resumen_es": "Propietario de Taycan 4S: satisfecho, considera tuning de terceros para igualar Turbo."
+    },
+    {
+        "id": "p921rse",
+        "models": ["718-982"],
+        "sentiment": "neu",
+        "basis": "owner",
+        "aspects": [
+            {"a": "diseno", "p": "neg"}
+        ],
+        "resumen_es": "Propietario de 718 Cayman: no es fan del diseño cupé, aunque disfruta la conducción."
+    },
+    {
+        "id": "p962oz4",
+        "models": ["718-982"],
+        "sentiment": "neu",
+        "basis": "owner",
+        "aspects": [
+            {"a": "diseno", "p": "neg"}
+        ],
+        "resumen_es": "Propietario de 718 Cayman: cuestiona el diseño de la versión EV, no es fan de cupés."
+    },
+    {
+        "id": "p97do2b",
+        "models": ["718-982"],
+        "sentiment": "neu",
+        "basis": "owner",
+        "aspects": [
+            {"a": "conduccion", "p": "pos"},
+            {"a": "diseno", "p": "neg"}
+        ],
+        "resumen_es": "Propietario de 718: considera posibles versiones futuras, no convencido del diseño actual."
+    }
+]

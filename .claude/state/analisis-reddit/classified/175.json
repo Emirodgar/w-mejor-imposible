@@ -1,0 +1,720 @@
+[
+ {
+  "id": "oazn2m0",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Cayenne diesel de 2014: cada Macan de cortesía le ha parecido tan flojo de prestaciones que el concesionario ya no se lo presta."
+ },
+ {
+  "id": "oazvpys",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Macan base de cortesía le resultó lento comparado con el Cayenne base de su mujer, por pasar de V6 a 4 cilindros; el Macan S y el GTS sí le parecen sólidos."
+ },
+ {
+  "id": "ob0br2v",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha tenido de cortesía un Macan T y un Macan eléctrico y concluye que el Cayenne es mucho mejor; no se plantea comprar un Macan."
+ },
+ {
+  "id": "ob0ezpy",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar un Cayenne híbrido coupé de cortesía acabó comprándose un Cayenne Turbo coupé; con un Macan de cortesía eso no habría pasado."
+ },
+ {
+  "id": "ob0lghl",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha conducido todas las versiones del Macan, por prueba o de cortesía, y todas le parecieron decepcionantes."
+ },
+ {
+  "id": "ob0tsqy",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Macan S le resulta más que rápido y el GTS le parece que maneja muy bien y tiene potencia de sobra."
+ },
+ {
+  "id": "ob216bg",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó el Macan y el Macan Turbo y no lo cambiaría por su X3; el Cayenne Turbo S, en cambio, le pareció otro nivel."
+ },
+ {
+  "id": "ob216bg#2",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó un Cayenne Turbo S y lo considera claramente superior al Macan en calidad y sensaciones."
+ },
+ {
+  "id": "ob2izva",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Cayenne 958 Turbo ha sido el mejor coche que ha tenido: estilo, potencia, confort y fiabilidad dejan el listón altísimo."
+ },
+ {
+  "id": "ob3oalt",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Cayenne Turbo de 2021, que pasó por un retiro y reparación de módulo, echó de menos el V8, la suspensión neumática y los frenos al conducir un Macan."
+ },
+ {
+  "id": "ob3oalt#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "El Macan base de cortesía le pareció un coche agradable que maneja muy bien para ser un SUV pequeño."
+ },
+ {
+  "id": "ob3tmji",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Al llevar su Cayenne Turbo al taller le dieron Macan base y le impresionaron: PDK ágil, motor animado, tracción trasera juguetona y suspensión cómoda."
+ },
+ {
+  "id": "ob4iq9a",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Segundo dueño de un Cayenne Turbo 2012 con 69.000 millas: tras cambiar la caja de transferencia, cero problemas; recomienda taller independiente, el concesionario pedía 18.000 $."
+ },
+ {
+  "id": "ob7frb6",
+  "models": [
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Con su Panamera base de 2025 en la primera revisión, al probar el Macan base de cortesía echó mucho de menos el V6 biturbo del Panamera."
+ },
+ {
+  "id": "ob7frb6#2",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Había tenido dos Macan base y estaba contento con ellos."
+ },
+ {
+  "id": "obov6oi",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "neg",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Un Macan base de 2026 de cortesía le pareció sorprendentemente malo para casi 70.000 $, peor que un BMW X3."
+ },
+ {
+  "id": "oi45nnh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan Turbo S y otros dos eléctricos: el Taycan es el único con averías, impropias de su precio."
+ },
+ {
+  "id": "oi3uh09",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dos años con su Taycan: dos fallos eléctricos y sustitución del 80 % de las celdas bajo garantía; es de lo mejor para diario, pero la depreciación y el coste le preocupan."
+ },
+ {
+  "id": "oi40rez",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Compró un Taycan Turbo 2020 con pocos km y en seis semanas ha pasado cuatro en el taller con retiros pendientes y fallos de pantallas."
+ },
+ {
+  "id": "oi46p2g",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha sufrido varias averías en su Taycan y considera la tecnología de la generación J1.1 floja, peor que la de Mercedes o BMW."
+ },
+ {
+  "id": "oic7ybh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Taycan 4S 2020 con 20.000 millas mostró el error rojo nada más volver de una reparación por retiro y pasa más tiempo en el taller que en la carretera."
+ },
+ {
+  "id": "oi49k9w",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dice que los primeros Taycan dan muchos problemas de batería; a él le están cambiando los módulos, con la ventaja de ganar autonomía."
+ },
+ {
+  "id": "oi4fng9",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con su Taycan y el Macan 4 EV de su mujer pasan demasiado por el concesionario: PCM que no arranca bien, ventanilla lenta."
+ },
+ {
+  "id": "oi4fng9#2",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "El Macan 4 EV de su mujer tuvo el aire acondicionado averiado a la semana y después falló todo el sistema de cámaras."
+ },
+ {
+  "id": "oi53hmh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan Cross Turismo 4S 2025 es mucho más fiable que su Macan 4S, que describe como lleno de fallos de software."
+ },
+ {
+  "id": "oi53hmh#2",
+  "models": [
+   "macan-ice",
+   "macan-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Macan 4S le da muchos fallos de software, mucho peor que el Taycan."
+ },
+ {
+  "id": "oi552ns",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dos veces el error eléctrico rojo en menos de un mes; lleva casi seis semanas en el concesionario sin coche de sustitución."
+ },
+ {
+  "id": "oi59o7f",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan Cross Turismo 2022 no le ha dado ningún problema, lo usa a diario y en viajes largos."
+ },
+ {
+  "id": "oi7kmfh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras tres años ha perdido 80.000 de valor y el infotainment le parece horrible, aunque conduce muy bien."
+ },
+ {
+  "id": "oi8k4fl",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan 2023 tuvo retiros constantes y una pantalla roja que lo dejó seis semanas en taller; el 2025 no le ha dado problemas y lo adora de diario."
+ },
+ {
+  "id": "oi95ur0",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su Taycan Turbo matrícula 71 lleva dos años sin un solo fallo."
+ },
+ {
+  "id": "oj2lh7j",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encantaba su Taycan y conduce muy bien, pero las averías interminables acabaron con la relación."
+ },
+ {
+  "id": "oj4gqk2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras varios Porsche, el Taycan ha sido su mayor decepción: bonito y divertido cuando funciona, pero poco fiable, con grúa y semanas de taller en cada avería."
+ },
+ {
+  "id": "p4phn2q",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usó un 987.2 S manual a diario un mes: con PASM normal la suspensión es firme pero buena; el embrague es algo pesado en atascos."
+ },
+ {
+  "id": "p4pnr53",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encanta su 987.1 S por el equilibrio entre carácter analógico y modernidad, sobre todo el cambio manual de 6 velocidades."
+ },
+ {
+  "id": "p4q1l98",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un 987 Cayman base y otro S; su Cayman 981 base actual es mucho mejor y más fiable."
+ },
+ {
+  "id": "p4q1l98#2",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Los 987 que tuvo le resultaron peores y menos fiables que su 981."
+ },
+ {
+  "id": "p4q4eq0",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Adora su Boxster RS60 987.1 de 2008 por su mezcla de analógico y digital; con 305 CV y el escape deportivo suena muy bien."
+ },
+ {
+  "id": "p4q4yas",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha conducido el 981 y un GT4 y aun así su 987.2 S es una alegría de conducir, con mucho tacto."
+ },
+ {
+  "id": "p4qv87j",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Adora su 987.2; echaría de menos la potencia del 981 S en circuito, pero su dirección compensa."
+ },
+ {
+  "id": "p4ruucm",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario su Boxster 987.2 de 2.9 L: lo valora por analógico, con dirección hidráulica y freno de mano real; menos potencia es más para diario."
+ }
+]

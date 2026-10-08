@@ -63,6 +63,17 @@ Los scripts usan solo la librería estándar. En Windows exporta `PYTHONUTF8=1` 
 
 7. **Resumen final** al usuario: hilos nuevos, comentarios leídos/contados, usuarios, los 3 primeros del ranking con su `confidence`, qué familias siguen con muestra insuficiente (y qué hilos curados ayudarían a cubrirlas), y cualquier incidencia con Arctic Shift.
 
+## Política de acumulación (leer antes de tocar `.claude/state/analisis-reddit/`)
+
+El estado de esta skill es un repositorio de datos que debe **crecer con cada actualización**. Lo ya recogido no se borra, no se edita y no se reemplaza: lo nuevo se incorpora al lado. Detalle y esquema en `.claude/state/analisis-reddit/README.md`.
+
+- **Nunca borres ni reescribas** ficheros de `classified/`, `snapshots/`, `scope/`, `threads.json` ni `comments-index.jsonl`. Si algo se ha clasificado mal, la corrección es un fichero nuevo en `classified/` con numeración mayor y su `scope/NNN.json`; `score.py` cuenta el de número más alto por comentario y conserva los anteriores como historial.
+- Lo que haya que apartar por erróneo se **mueve** (`snapshots/_pruebas/`, `descartados-rerevision/`), no se elimina.
+- Cada `score.py` guarda un snapshot completo en `snapshots/` y el JSON público lleva el resumen de todos en `history`: así se ve cómo evoluciona cada modelo en el tiempo.
+- Para una re-revisión (p. ej. tras añadir un modelo a `models.json`): crea los lotes a mano con los comentarios afectados (id, hilo, responde_a, texto), numerándolos a continuación del último de `classified/`, escribe sus `scope/NNN.json` y clasifícalos como cualquier otro lote. No toques las entradas antiguas.
+- `backfill_dates.py` rellena campos que falten (hoy, la fecha de cada comentario) sin quitar nada y con copia previa.
+- Tras cualquier cambio de scripts o taxonomía, comprueba que `score.py` reproduce el resultado anterior cuando no hay datos nuevos: si cambia sin motivo, se ha perdido información.
+
 ## Notas
 
 - Idioma de salida: español. Los resúmenes están reescritos, no son citas literales, y no llevan nombre de usuario. El JSON público tampoco los incluye.

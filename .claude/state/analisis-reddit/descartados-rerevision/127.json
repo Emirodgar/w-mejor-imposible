@@ -1,0 +1,18 @@
+[
+  {
+    "id": "pahzxxf",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "El propietario de un Taycan 2025 se muestra sorprendido por el pésimo estado de los neumáticos tras solo 12.000 millas."
+  },
+  {
+    "id": "paozz76",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario de un Taycan RS GT de 2021: unos 40.000 km con el primer juego de neumáticos pese a acelerar a fondo, y una dirección muy fina y equilibrada."
+  }
+]

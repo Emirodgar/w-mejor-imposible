@@ -1,0 +1,384 @@
+[
+ {
+  "id": "p91pdv8",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan EV de cortesía unos días y le gustó la ubicación del cargador inalámbrico, mejor resuelta que en su Taycan."
+ },
+ {
+  "id": "p91pdv8#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un Taycan: el cargador inalámbrico es incómodo de usar, aunque dice que el software de 2027 ya iguala al del Macan EV."
+ },
+ {
+  "id": "p92l1fm",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encantó el Macan EV de cortesía: divertido y ágil cuando se pedía, y cómodo el resto del tiempo."
+ },
+ {
+  "id": "p93b9z0",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le sorprendió el interior del Cayenne EV: mucho plástico para unos 143.000 dólares, con la pantalla curva y los asientos como lo mejor."
+ },
+ {
+  "id": "p6z67sr",
+  "models": [
+   "911-992"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el 992 es de los deportivos que peor mantienen su valor ahora mismo, salvo con cambio manual de seis marchas."
+ },
+ {
+  "id": "nx5kqyh",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce a diario su Taycan CT4S de 2022 y lo disfruta cada día, aunque asume la depreciación."
+ },
+ {
+  "id": "p0w7r29",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que, al ser un SUV, el Cayenne EV igualando al ZR1 en aceleración demuestra lo rápido que es."
+ },
+ {
+  "id": "p0w0j3m",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Lo que más le impresiona del Cayenne EV es la frenada, parando como un ZR1 siendo un SUV de 2,7 toneladas."
+ },
+ {
+  "id": "p0w22cq",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Muy impresionado con Porsche por conseguir que un EV tan pesado frene tan bien."
+ },
+ {
+  "id": "p0w7wr3",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Coincide en que frenar un EV con tanto peso es difícil y elogia el trabajo de Porsche."
+ },
+ {
+  "id": "p0wh7v4",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le impresionan la frenada y los 1,05 g en skidpad de un SUV tan alto, aunque admite que los neumáticos durarán poco."
+ },
+ {
+  "id": "p1hrn8g",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Destaca que el Cayenne EV iguala la frenada del Corvette y logra el mayor agarre lateral probado en un SUV."
+ },
+ {
+  "id": "p0wxqx1",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende que bajar de 2 segundos de 0 a 60 mph con un SUV grande es una hazaña notable."
+ },
+ {
+  "id": "p0w2n2v",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le parece absurda la rapidez del Cayenne EV frente al Purosangue y al Urus, según un vídeo comparativo."
+ },
+ {
+  "id": "p0xfj6h",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras ver el vídeo de la comparativa, dice que el Cayenne EV acelera en otra liga distinta a la de los Tesla Plaid."
+ },
+ {
+  "id": "p0w9hgi",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Condujo un Cayenne Turbo EV de preproducción: abusó de él durante unas tres horas y la batería solo bajó hasta cerca del 60 %."
+ },
+ {
+  "id": "p0wrodc",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Describe la aceleración con launch control como tan brutal que marea, con muchísimo agarre y prestaciones."
+ },
+ {
+  "id": "p0xc914",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Según los datos de Car and Driver, el Cayenne EV frena mejor que el Lucid Air Sapphire y el Model S Plaid pese a ser un SUV de 2,7 toneladas."
+ },
+ {
+  "id": "p121dpx",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Se plantea un Cayenne EV como próximo coche y le llama la atención que incluso el 4S lleve pinzas de diez pistones."
+ },
+ {
+  "id": "p0wa0um",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Critica el coste de unos 3.200 dólares por juego de neumáticos y que haya que cambiarlos cada 8.000-10.000 millas."
+ },
+ {
+  "id": "p0x1p2p",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que ese nivel de frenada supondrá una vida de neumáticos inferior a 10.000 millas, quizá la mitad."
+ },
+ {
+  "id": "p0w3aq5",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Augura que con dos vueltas a un circuito se agotaría la batería y se sobrecalentarían frenos y neumáticos."
+ },
+ {
+  "id": "p0wc750",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cree que sus cifras son un truco de salón casi inútil en carreteras saturadas y con radares."
+ },
+ {
+  "id": "p0yvj9i",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neg",
+  "basis": "hearsay",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Se pregunta qué sentido tiene un SUV de 2,7 toneladas con esas cifras y lo compara con beber un licor carísimo con embudo."
+ },
+ {
+  "id": "p0wp30o",
+  "models": [
+   "cayenne-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "hearsay",
+  "aspects": [],
+  "resumen_es": "Lo ve tan absurdo como un G-Wagon AMG o un Urus, con la ventaja de que es silencioso."
+ }
+]

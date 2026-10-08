@@ -1,0 +1,606 @@
+[
+ {
+  "id": "obgsv2a",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un Model Y y un Taycan: prefiere el Taycan, con mejor regeneración y térmica, dinámica de conducción líder y materiales superiores a los de Tesla."
+ },
+ {
+  "id": "obh20vv",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Admite que el Taycan tiene un PCM algo tosco, algún error de batería y mantenimiento exigido, pero asegura que su diseño y su alma al volante compensan con creces."
+ },
+ {
+  "id": "obh3vif",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dice que tras el Taycan ya solo quiere un eléctrico divertido de conducir y que el coche le ha malacostumbrado en el buen sentido."
+ },
+ {
+  "id": "obh32ei",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Con un Taycan y un Model 3, no echó de menos el modo de un solo pedal en el Porsche, aunque querría una regeneración más configurable."
+ },
+ {
+  "id": "obi1fcg",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras conducir un Taycan descubrió que rodar sin resistencia es más eficiente y que la regeneración con el freno da mucho control y recupera mucha energía."
+ },
+ {
+  "id": "obm2fh1",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [],
+  "resumen_es": "Usó un Macan eléctrico de cortesía durante un mes: agradable, pero menos deportivo y lujoso que el Taycan."
+ },
+ {
+  "id": "obm2fh1#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Comparando con el Macan eléctrico que usó un mes, considera que el Taycan se conduce más deportivo y resulta más lujoso."
+ },
+ {
+  "id": "odf6rll",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras tener Tesla con un solo pedal y luego un Taycan, afirma que rodar en inercia en el Taycan es muchísimo mejor."
+ },
+ {
+  "id": "pckmnig",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Propietario de un 986 que va a gastar 5-6 mil dólares en IMS, RMS y separador de aceite; con poco kilometraje anual lo ve como inversión para que dure toda la vida."
+ },
+ {
+  "id": "pcfq5zh",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Dice que le hicieron casi todo el mismo trabajo en el Boxster en tres años por unos 5.000 dólares y que el presupuesto de 8.000 le parece alto."
+ },
+ {
+  "id": "pcheg80",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró en Pelican aceite, kit de embrague, IMS y RMS para su Boxster S 986 por unos 2.400 dólares en piezas, haciéndolo él."
+ },
+ {
+  "id": "pcfx0vy",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Poseedor de un Boxster S 550 Aniversario numerado que nunca venderá."
+ },
+ {
+  "id": "pcfxou6",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un Boxster RS60 Spyder 987.1, se prepara para un coste elevado si el 3.4 sufre bore scoring, pero pagaría por conservarlo."
+ },
+ {
+  "id": "pcg39kh",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Cuatro años con un RS60 Spyder: lo describe como analógico y muy divertido, tras un viaje de 1.900 km se enamoró de nuevo; pagará por mantenerlo."
+ },
+ {
+  "id": "pcg0czn",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neu"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pagó unos 5.000 dólares por RMS, IMS LN, volante bimasa, embrague y más hace diez años; lo ve razonable y piensa que el S 550 es el 986 más deseable."
+ },
+ {
+  "id": "pcko7b4",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Su Boxster 550 fue su primer coche divertido tras años de monovolumen familiar y lo considera especial, aunque sepa que mantenerlo cuesta."
+ },
+ {
+  "id": "pcm5jg9",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un 550 Aniversario y avisa de que no es de los Porsche más deseados: no espera cobrar mucho por él ni recibir muchas ofertas."
+ },
+ {
+  "id": "pch31ca",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su Boxster S de 2000 con 160.000 millas necesitó unos 10.000 dólares de reparaciones; no cree haber hecho buen trato, pero le compensa conservarlo."
+ },
+ {
+  "id": "pd14qbf",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Gastó unos 10.000 dólares en su Boxster S de 2003 y aun así lo adora; asume que no recuperará lo invertido y no ha conducido nada mejor por ese dinero."
+ },
+ {
+  "id": "pdaqpa7",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Gastó unos 11.000 dólares para volver a poner en marcha su 987.2."
+ },
+ {
+  "id": "pecvtqg",
+  "models": [
+   "cayman-987"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "valor",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Lleva un mes con un 987.1: 9.000 dólares en reparaciones sobre un coche de 18.000, pero piensa invertir más y quedárselo para siempre."
+ },
+ {
+  "id": "obf46a3",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido varios Panamera y los considera claramente superiores al Cayenne; descartó el Taycan por no gustarle varias cosas."
+ },
+ {
+  "id": "obfrm37",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Panamera Turbo Executive: gran experiencia de conducción para quien tiene familia, con espacio para llevar a más gente."
+ },
+ {
+  "id": "ocepkwe",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neu"
+   }
+  ],
+  "resumen_es": "Le encanta su Panamera Turbo de 2015, aunque querría darle un aspecto más deportivo; cree que el modelo vendería más si fuera más deportivo."
+ },
+ {
+  "id": "ochdieu",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Está más que contento con las prestaciones de su Panamera y no necesita un interior deportivo; sí agradecería mejoras."
+ },
+ {
+  "id": "obmoo53",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "En su Panamera el reparto de par casi nunca envía fuerza al eje delantero salvo con lluvia o nieve; lo usa de familiar que maneja bien."
+ },
+ {
+  "id": "obfsy2o",
+  "models": [
+   "panamera-970"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Aficionado al Panamera 970 GTS: rendimiento espectacular, se revaloriza bien y cabe casi todo el mundo, incluso gente grande."
+ },
+ {
+  "id": "obgauo9",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tuvo un Taycan 2021: más bajo, difícil de entrar y salir y con menos maletero, pero con dinámica más atractiva que el Panamera."
+ },
+ {
+  "id": "obgauo9#2",
+  "models": [
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Conduce un Panamera 2025 en Japón: lo elige por tamaño y peso adecuados y por una calidad que sigue siendo consistente frente a rivales."
+ },
+ {
+  "id": "osrbpeo",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Describe el Taycan como un coche precioso de conducir que llama más la atención que su Panamera; avisa de cuidar el parking."
+ },
+ {
+  "id": "ow177b1",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras dos días con su nuevo Taycan, probó rampas de garaje empinadas sin problema y dice que le encanta."
+ },
+ {
+  "id": "obhecgu",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Dueño de un 971 Turbo: nada en el mercado iguala su uso diario y conducción deportiva; prefiere el interior del 971 al del modelo nuevo."
+ },
+ {
+  "id": "obnsy6u",
+  "models": [
+   "panamera-971"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neu"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Con un 971: mantenimiento normal salvo el motor del alerón trasero (cubierto por garantía); PDK, bujías y filtros piden revisiones frecuentes."
+ },
+ {
+  "id": "obns8n5",
+  "models": [
+   "panamera-970",
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "calidad",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Pasó de un Model S a un Panamera Turbo: cansado de ruidos y fallos de Tesla, prefiere el tacto y manejo del Porsche."
+ }
+]

@@ -1,0 +1,5 @@
+[
+  {"id": "p22z46w", "models": ["taycan"], "sentiment": "neg", "basis": "hearsay", "aspects": [{"a": "valor", "p": "neg"}], "resumen_es": "Comenta que los precios de reventa del Taycan son muy malos, por eso esperaría a comprar un deportivo eléctrico de segunda mano."},
+  {"id": "p230s2j", "models": ["taycan"], "sentiment": "neg", "basis": "hearsay", "aspects": [{"a": "valor", "p": "neg"}, {"a": "fiabilidad", "p": "neg"}], "resumen_es": "Dice que los eléctricos de Porsche se deprecian mucho y parecen tener problemas de juventud de fiabilidad, así que esperaría unos años antes de comprar."},
+  {"id": "p27esi5", "models": ["taycan"], "sentiment": "pos", "basis": "hearsay", "aspects": [{"a": "tecnologia", "p": "pos"}], "resumen_es": "Señala que el Taycan ya es conocido por su arquitectura de 800 V y su excelente curva de carga."}
+]

@@ -1,0 +1,418 @@
+[
+  {
+    "id": "ocv04d2",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "tecnologia", "p": "neg"}, {"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan: problemas ocasionales (bomba de calefacción), mantenimiento fuera de garantía muy caro; requiere cobertura."
+  },
+  {
+    "id": "ocv0dqy",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}],
+    "resumen_es": "Buena experiencia de conducción en Taycan comparado con Alfa Romeo: más confiable que otros vehículos eléctricos de alta gama."
+  },
+  {
+    "id": "ocvk05p",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario a 40k millas: neumaticos originales sin excesivo desgaste; coche divertido de conducir con capacidad de aceleración."
+  },
+  {
+    "id": "ocz6tgm",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan: afirmación de que las exageración sobre desgaste de neumaticos en EV es falsa; depende del uso, no es defecto del coche."
+  },
+  {
+    "id": "oczydzd",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}, {"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan: mantenimiento muy caro por ser Porsche, pero los costes operativos son bajos vs gasolina; frenos duran vida del coche."
+  },
+  {
+    "id": "od0iygk",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Persona considerando Taycan: la retroalimentación honesta sobre mantenimiento y confiabilidad cambió su opinión negativa inicial hacia el positivo."
+  },
+  {
+    "id": "odebgxy",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan rebajado: a 8k millas neumaticos en buen estado; desgaste depende de alineación y hábitos de conducción, no defecto del coche."
+  },
+  {
+    "id": "odf6v1f",
+    "models": ["taycan"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "calidad", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan: desalineación del coche es problema individual, no universal; calidad de suspensión y alineación depende del mantenimiento."
+  },
+  {
+    "id": "ocyxlu5",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Experto en Taycan: correción de idea falsa: mecánico independiente puede trabajar en Taycan; herramientas Piwis, pernos y suspensión son estándar."
+  },
+  {
+    "id": "od4qn12",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan en Canadá: mecánico privado rehúsa trabajar en el coche; dependencia de taller oficial para mantenimiento encarecido."
+  },
+  {
+    "id": "od50u5p",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan en Vancouver: especialistas de Porsche disponibles pero precios de concesionario muy elevados (3k por tareas simples)."
+  },
+  {
+    "id": "ocxdoox",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan 2020 4S: cuatro meses fuera de servicio por reemplazo de módulos de batería; varios recalls y problema de elemento calefactor."
+  },
+  {
+    "id": "od6xxxs",
+    "models": ["taycan", "macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "tecnologia", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan (id 1): servicio de reparación de 4 meses; loaner Macan básico sin Android Auto ni características modernas."
+  },
+  {
+    "id": "od6xxxs#2",
+    "models": ["macan-ice"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "tecnologia", "p": "neg"}],
+    "resumen_es": "Macan básico como loaner: carece de Android Auto y características de tecnología esperadas en vehículo moderno."
+  },
+  {
+    "id": "ocv4laq",
+    "models": ["taycan"],
+    "sentiment": "mixed",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}, {"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan: mantenimiento rutinario bajo o nulo; pero frecuencia de defectos y propuesta de valor vs otros EV discutible."
+  },
+  {
+    "id": "ocvqa1t",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan 2022 Cross Turismo con 24k millas: gran experiencia sin problemas durante primeras semanas."
+  },
+  {
+    "id": "ocxduvq",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan CPO 2021: servicio de dos años por 750€; cambios de filtros y software, todo lo demás en garantía."
+  },
+  {
+    "id": "ocxkjjj",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan: revisión de cuatro años a 1200 francos suizos; comparación desfavorable con presupuestos de otros centros europeos."
+  },
+  {
+    "id": "ocxnfgz",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "hearsay",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Observación: Porsche cobra el doble que Audi para servicios idénticos; Audi e-tron GT similar a 560€ vs 1890€ en Porsche."
+  },
+  {
+    "id": "od61dc8",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}, {"a": "valor", "p": "neg"}],
+    "resumen_es": "Propietario de EVs: preferencia por arrendamiento; depreciación terrible en Taycan y costes de reparación fuera de garantía impredecibles."
+  },
+  {
+    "id": "od07uyg",
+    "models": ["taycan", "macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan (id 1): irónico que el coche ideal es el Macan de loaner que pasas tiempo reparando el Taycan. Experiencia muy problemática."
+  },
+  {
+    "id": "od07uyg#2",
+    "models": ["macan-ice"],
+    "sentiment": "neu",
+    "basis": "driven",
+    "aspects": [],
+    "resumen_es": "Macan de loaner experimentado como vehículo de reemplazo durante reparaciones extensas de Taycan."
+  },
+  {
+    "id": "od1toz6",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Exdueño de Taycan 4S: diseño hermoso pero problemas persistentes obligaron a vender; envía a dueños con mejor suerte."
+  },
+  {
+    "id": "od1m4aj",
+    "models": ["taycan", "macan-ice"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [],
+    "resumen_es": "Vecino tiene loaner Macan por reparaciones del Taycan; mención del touring blanco del vecino."
+  },
+  {
+    "id": "od1m4aj#2",
+    "models": ["macan-ice"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Macan touring blanco admirado por su diseño."
+  },
+  {
+    "id": "odbojb7",
+    "models": ["taycan", "macan-ev"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [],
+    "resumen_es": "Propietario de Taycan (id 1): loaner Macan EV es mucho mejor que versión gasolina; preferencia clara por coche eléctrico."
+  },
+  {
+    "id": "odbojb7#2",
+    "models": ["macan-ev"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan en loaner Macan EV: rendimiento y facilidad de uso mucho mejor que Macan gasolina."
+  },
+  {
+    "id": "ocwhrjx",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario con experiencia en 911s: Taycan es mejor que 911; no es justo comparar como versión de 911."
+  },
+  {
+    "id": "ocxg3bq",
+    "models": ["taycan", "911-996"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan (id 1) y 911 996: el 911 superior en agilidad y posicionamiento en curvas; Taycan detrás excepto en línea recta."
+  },
+  {
+    "id": "ocxg3bq#2",
+    "models": ["911-996"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de 911 996: agilidad y posicionamiento superiores al Taycan en curvas; domina en maniobrabilidad."
+  },
+  {
+    "id": "oczazy6",
+    "models": ["taycan", "911-gt"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "neg"}, {"a": "diseno", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan (id 1) y 911 GT3: Taycan pesado sin emoción; GT3 muy superior en visceral, sonido y conexión emocional."
+  },
+  {
+    "id": "oczazy6#2",
+    "models": ["911-gt"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de 911 GT3: experiencia visceral, sonido y emoción muy superiores al Taycan."
+  },
+  {
+    "id": "ocwqo3j",
+    "models": ["macan-ice", "taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Conducción de Macan S: manejo mejor que Taycan para esta persona; precisión superior."
+  },
+  {
+    "id": "ocwqo3j#2",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Conducción de Taycan: percepción de peso excesivo; manejo menos preciso que Macan S."
+  },
+  {
+    "id": "ocx0pkm",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan Turbo S: manejo mucho mejor que Macan base; experiencia de conducción superior."
+  },
+  {
+    "id": "ocx2r0o",
+    "models": ["macan-ice", "taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Prueba de Macan S vs Taycan 4S: Macan precisión superior; Taycan vagas; peso del Taycan es desventaja."
+  },
+  {
+    "id": "ocx2r0o#2",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Prueba de Taycan 4S: dirección vaga; peso excesivo es problema de conducción."
+  },
+  {
+    "id": "ocx5k32",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Comparación Macan S vs Taycan 4S: Taycan peso muy malo; Macan tiene baja de gravedad pero mejor en curvas."
+  },
+  {
+    "id": "ocxfquu",
+    "models": ["macan-ice", "taycan"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "neg"}],
+    "resumen_es": "Macan S vs Taycan (id 1): Macan no maneja bien pero Taycan peso es desventaja importante."
+  },
+  {
+    "id": "ocxfquu#2",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Taycan: centro de gravedad bajo ventaja; manejo superior a Macan en curvas a pesar del peso."
+  },
+  {
+    "id": "ocyjr9g",
+    "models": ["panamera-970"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario de Panamera: prefiere práctica para diario vs 911; buena para gasolina y comodidad; mejor elección que deportivos puros."
+  },
+  {
+    "id": "ocveavi",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "hearsay",
+    "aspects": [{"a": "costes", "p": "neg"}, {"a": "valor", "p": "neg"}, {"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Consideración de Taycan vs Ioniq 6: rango bajo, carga lenta y reputación de problemas caros; relación costo-valor no favorece al Taycan."
+  },
+  {
+    "id": "ocvh6bh",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario nuevo de Taycan 2024 4S desde Tesla Model S Plaid: esperanza de mejor experiencia de conducción."
+  },
+  {
+    "id": "ocvvium",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Arrendatario de Taycan 2024 4S: emoción en conducción diaria; experiencia de manejo excelente."
+  },
+  {
+    "id": "ocyly1b",
+    "models": ["taycan"],
+    "sentiment": "mixed",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "valor", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan 4S: compra sin prueba previa (similar a BMW Z4); experiencia de conducción esperada superior."
+  },
+  {
+    "id": "ocz47o1",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Prueba de conducción Taycan 2025: calidad de marcha compuesta en carreteras irregulares; mejor que Tesla con aire."
+  },
+  {
+    "id": "ocz5fa1",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "driven",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario nuevo de Taycan 2024 4S desde Tesla: absorción de baches superior; plantado en carreteras ásperas."
+  },
+  {
+    "id": "ocxvyw3",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "diseno", "p": "pos"}, {"a": "tecnologia", "p": "neg"}],
+    "resumen_es": "Propietario de Taycan: de 996 a Panamera a Taycan; divertido, deportivo sin ser 911; diseño hermoso, PCM a veces glitchy."
+  },
+  {
+    "id": "ocxryn8",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan 2025 Turbo S: 4500 millas sin problemas; manejo ágil, velocidad extrema, rango adecuado en Florida."
+  },
+  {
+    "id": "ocy0pp9",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario de Taycan 4S: superior en curvas vs BMW i5 M60; Taycan mejor en manejo aunque BMW mejor en diario."
+  },
+  {
+    "id": "od1v990",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "hearsay",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "valor", "p": "neg"}],
+    "resumen_es": "Opinión fuerte: Taycan vehículo terrible con muchos problemas; peor depreciación de autos en historia."
+  },
+  {
+    "id": "odikpos",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "hearsay",
+    "aspects": [{"a": "uso_diario", "p": "pos"}],
+    "resumen_es": "Afirmación general: todos los EV mejores diarios que gasolina; Taycan es el mejor en categoría."
+  }
+]

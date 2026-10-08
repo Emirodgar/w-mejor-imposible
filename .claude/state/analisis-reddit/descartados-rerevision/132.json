@@ -1,0 +1,199 @@
+[
+ {
+  "id": "p75izuj",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 911 GTS que había deseado mucho; lo disfrutó un tiempo, pero concluyó que el sueño era más divertido que la realidad."
+ },
+ {
+  "id": "p75l75s",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Vendió su 911 porque en las carreteras del Reino Unido casi nunca puede disfrutarlo como debe y acababa siendo un coche de garaje."
+ },
+ {
+  "id": "p76jv4d",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un 996 que antes tuvo un Miata; cuenta cómo reaccionó su círculo de aficionados al comprarlo, sin juzgar el coche en sí."
+ },
+ {
+  "id": "p75yd61",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "calidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha rodado en circuito con un GT3 RS y dice respetar su buena ingeniería; nunca criticaría a quien tenga un 911."
+ },
+ {
+  "id": "p78hoo2",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Su padre tiene un 991.2 Turbo S y afirma que preferiría conducir su Range Rover de 2015: dice que se paga por la insignia."
+ },
+ {
+  "id": "p7b2xz3",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Ha tenido un 911 entre otros deportivos y disfrutó más con un Miata; con las rodillas mal, entrar y salir de coches bajos pesa."
+ },
+ {
+  "id": "p7brbzx",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Considera una aberración la especificación con tracción total en un coche de motor trasero como el 911 GTS."
+ },
+ {
+  "id": "p7hqcqv",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997",
+   "911-996"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Opina que el 911 no se compra por cómo conduce sino como accesorio de estatus para un hombre de mediana edad que busca atención."
+ },
+ {
+  "id": "p7tyztq",
+  "models": [
+   "911-air"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de dos 911 refrigerados por aire a los que llama sus bebés; los sigue disfrutando incluso teniendo un Tesla Model 3 Performance."
+ },
+ {
+  "id": "p7h81oe",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Vio un 911 GTS por la calle y le pareció un coche precioso que le emocionó como ningún otro."
+ },
+ {
+  "id": "p7bl6vn",
+  "models": [
+   "911-992",
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Defiende el 911 GTS como un coche con clase y objetivamente atractivo, frente al gusto por lo moderno de otros modelos."
+ },
+ {
+  "id": "p7xacbu",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Vendió su 911 GTS y compró un Ferrari F12 con escape y puesta a punto; con el Ferrari está plenamente contento."
+ },
+ {
+  "id": "p751vne",
+  "models": [
+   "911-992",
+   "911-991",
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Disfruta de las reducciones de marcha, el launch control y las curvas rápidas de su 911 GTS, y recomienda un día de circuito."
+ }
+]

@@ -1,0 +1,250 @@
+[
+ {
+  "id": "p4u3czj",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Boxster GTS 981 que ve el 981 como un gran salto en habitabilidad interior frente al 987.2; para uso diario lo prefiere sin dudar."
+ },
+ {
+  "id": "p95k1dh",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Probó un Panamera base y le pareció imbatible en dirección y tacto de conducción, aunque avisa de que hasta el mantenimiento rutinario sale caro."
+ },
+ {
+  "id": "p95tmlm",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Alguien que dice ser técnico de Porsche desaconseja un Panamera con V6 3.0T fuera de garantía: la bomba de agua falla y la reparación ronda los 6.000 dólares."
+ },
+ {
+  "id": "pab0cwq",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Vendió su 981 en BaT a muy buen precio; el modelo mantiene bien su valor en subastas."
+ },
+ {
+  "id": "pa9qy5j",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un Boxster 986 en Cars & Bids a buen precio y opina que en ese tramo de 10-50k hay muchas oportunidades."
+ },
+ {
+  "id": "paad79o",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró hace tres años un 997.2 Turbo con tuning y suspensión mejorada por 85.000 dólares y lo considera una ganga."
+ },
+ {
+  "id": "pap6vk7",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un 997.2 Turbo con PDK, no lamenta no haber elegido manual: el cambio le encaja en uso local y compró con gran descuento."
+ },
+ {
+  "id": "paaq4l1",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Pagó precio alto por un 997.2 Turbo manual que necesitó sacar el motor para repararlo; ya resuelto, dice que ahora es un gran coche."
+ },
+ {
+  "id": "pa92k87",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Vendió su 997.2 S con PDK y 122.000 millas; cree que aguanta otras 100.000 y define al 997.2 como un coche muy duradero."
+ },
+ {
+  "id": "paaq9oh",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   },
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un 911 C2S de 2005 con 115.000 millas, usado a diario durante siete años; le encanta y piensa conservarlo siempre."
+ },
+ {
+  "id": "pa8eimi",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Recién comprado un 981, asegura divertirse tanto como con un 911 de precio diez veces superior."
+ },
+ {
+  "id": "pa9btvr",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "neg"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "En su 997 Turbo S empezó a fallar la espuma de las compuertas del climatizador; la solución definitiva con espuma de celda cerrada no es muy cara."
+ },
+ {
+  "id": "pacrorx",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su 991.1 ronda las 96.000 millas y lo compró por algo más de 43.000 dólares; aconseja no temer los kilómetros en estos 911."
+ },
+ {
+  "id": "pacnngc",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 997.2 Turbo cabrio con 90.000 millas; aunque los precios suban, prefiere seguir conduciéndolo antes que venderlo."
+ }
+]

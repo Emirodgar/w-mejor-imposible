@@ -1,0 +1,586 @@
+[
+  {
+    "id": "o4atmwp",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Crítica a la combinación de colores: ruedas verdes, frenos azules y combinación de cuero blanco y negro no funcionan bien juntas."
+  },
+  {
+    "id": "o4bq179",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Opinión negativa sobre la dirección creativa: colores desconectados (verde, gris/blanco, azul) en un coche con buena base."
+  },
+  {
+    "id": "o4ccupw",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Crítica a los detalles azules (frenos, cinturones, cronógrafo) y ruedas verdes como elementos discordantes."
+  },
+  {
+    "id": "o4cjj8i",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Opinión de que la combinación de detalles azules y ruedas verdes parece un acto de provocación."
+  },
+  {
+    "id": "o4dtsow",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Aprecio por la personalización; sugiere que el cronógrafo azul debería coincidir con el color exterior y ruedas metallic en lugar de verdes."
+  },
+  {
+    "id": "o4exggr",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "No le agradan las ruedas verdes pero aprecia otros elementos; recomienda disfrutarlo sin importar las opiniones."
+  },
+  {
+    "id": "o4eyd4t",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}, {"a": "calidad", "p": "neg"}],
+    "resumen_es": "Crítica detallada: el verde exterior no combina bien con los frenos azules; el interior blanco/negro se siente genérico, y los acentos azules no mejoran la experiencia."
+  },
+  {
+    "id": "o4fqfmj",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}, {"a": "calidad", "p": "neg"}],
+    "resumen_es": "Parece modificación de BMW, no tan refinada como se espera de Porsche; reconoce que es cuestión de gusto personal."
+  },
+  {
+    "id": "o4fyzdt",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Ruedas verdes con frenos azules arruinan un color de pintura elegante; admite desventaja de no ser propietario de un 911."
+  },
+  {
+    "id": "o4gy1tg",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Aprecia el atrevimiento de ir con algo único; anima al propietario a disfrutarlo."
+  },
+  {
+    "id": "o4i17on",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Las ruedas verdes son feas; el resto de la especificación es buena."
+  },
+  {
+    "id": "o4itd99",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Demasiado verde; sugiere recubrimiento de ruedas para mejorar el aspecto."
+  },
+  {
+    "id": "o4j2mj8",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "diseno", "p": "neg"}],
+    "resumen_es": "Color de pintura verde es excelente pero las ruedas son difíciles de evaluar desde el ángulo; interior muy aburrido."
+  },
+  {
+    "id": "o4ja54j",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "La combinación verde y azul es una de las peores vistas en un 911, comparable a esquemas McDonald's; aunque el propietario disfrutará es la consideración principal."
+  },
+  {
+    "id": "o4knpmn",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Verde es excelente; aprecia los asientos escoceses, los acentos azules, aunque sugiere ruedas diferentes; solicita más fotos."
+  },
+  {
+    "id": "o4m0qc1",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Agradecimiento por traer color y individualidad en un mundo cada vez más monótono y estandarizado."
+  },
+  {
+    "id": "o4mbc5n",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Rana fea y enojada; preocupación de que Porsche construya cualquier cosa que se pida; configuración única pero será difícil cerca de otros Porsches."
+  },
+  {
+    "id": "o4okoqn",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Verde es color clásico de coches deportivos icónicos como Jaguar E-type; buena elección estética."
+  },
+  {
+    "id": "o4plmbx",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "driven",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "diseno", "p": "neg"}],
+    "resumen_es": "Color verde es hermoso pero las ruedas deberían ser bronce; acentos azules no funcionan; reconoce que en vivo se ve mejor que en fotos."
+  },
+  {
+    "id": "o4se9mh",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Dinero no es sinónimo de buen gusto; sugiere cuero marrón y ruedas metallic; considera que si el objetivo es provocar atención, lo logró."
+  },
+  {
+    "id": "o4si80f",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Crítica sobre los dientes del parachoques mal diseñados; broma sobre llevar el coche al dentista."
+  },
+  {
+    "id": "o4tsgnj",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "basis": "none",
+    "resumen_es": "Las ruedas verdes complementan el color del coche y el patrón de fibra de carbono es hermoso; se verían mejor en negro, plata o bronce."
+  },
+  {
+    "id": "o4u8do4",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Color de pintura verde es excelente; recomendación de usar ruedas doradas, plateadas o negras."
+  },
+  {
+    "id": "o4u9xxz",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Verde es color jefe ahora mismo; el propietario la está matando en todas partes."
+  },
+  {
+    "id": "o4wtga1",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "diseno", "p": "neg"}, {"a": "valor", "p": "neg"}],
+    "resumen_es": "Le gusta el verde exterior y cree que los cinturones azules reflejan personalidad; las ruedas no funcionan; preocupación sobre reventa no siendo realista."
+  },
+  {
+    "id": "o4y0vxg",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario: construyó el coche para reflejar gusto personal, no resale; intención fue algo audaz y diferente, disfruta viéndolo cada día."
+  },
+  {
+    "id": "o51k8eo",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [],
+    "resumen_es": "Lo importante es que el propietario lo ama; pidió opiniones honestas y las recibió, pero es su dinero gastado en su coche."
+  },
+  {
+    "id": "o507mid",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Pregunta por qué el dial azul en Sport Chrono en lugar de verde para coincidir con el color exterior."
+  },
+  {
+    "id": "o50krp8",
+    "models": ["911-992", "911-991"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "diseno", "p": "neg"}],
+    "resumen_es": "Hermoso en general; azul sobre todo no es del gusto del comentarista; aprecia la personalización y gusto."
+  },
+  {
+    "id": "o5b2hql",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "El azul no combina bien con el verde; sugiere rojo o amarillo para combinar con el logo de Porsche."
+  },
+  {
+    "id": "o7x6haf",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "driven",
+    "aspects": [{"a": "diseno", "p": "pos"}, {"a": "diseno", "p": "neg"}],
+    "resumen_es": "Posible avistamiento en Southern California: verde sobre verde se ve increíble; pero cambiar frenos azules a amarillo sería mucho mejor; sin embargo, no es propietario de un 911."
+  },
+  {
+    "id": "o9hdu54",
+    "models": ["911-992", "911-991"],
+    "sentiment": "neu",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "neg"}],
+    "resumen_es": "Sugiere interior marrón/bronceado que combina mejor con verde; cambiar frenos a rojo; ruedas diferentes."
+  },
+  {
+    "id": "pd4iqvg",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietaria de Cayenne 2021 de bajo kilometraje; preocupación sobre costes de mantenimiento de $34k."
+  },
+  {
+    "id": "pd4jkd8",
+    "models": ["cayenne-po536", "macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Pregunta si tal precio es razonable para frenos; compara con compra de Macan S de bajo kilometraje por precio similar."
+  },
+  {
+    "id": "pd4q8c4",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario Cayenne S 2020 con 70k millas: necesita montajes de motor, brazos de control, frenos y mantenimiento de 40k. Desgaste de plástico pero nada crítico."
+  },
+  {
+    "id": "pda082e",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Sugerencia de usar taller independiente en lugar de concesionario para ahorrar costes."
+  },
+  {
+    "id": "pdbnb6t",
+    "models": ["cayenne-po536"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario: necesitó montajes de motor hace 4 años con 60k millas; aún conduciendo sin reparar; 70k millas parece temprano para esos trabajos."
+  },
+  {
+    "id": "pd6ajpk",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Impuesto Porsche es loco; cambio de aceite en caja de transferencia fue €2500 en Porsche, €450 en Volvo."
+  },
+  {
+    "id": "pd6da34",
+    "models": ["cayenne-po536", "macan-ice"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario Macan GTS: post como este lo hace reconsiderar avance a Cayenne 2023 GTS por costes."
+  },
+  {
+    "id": "pd6efzi",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario: tras casi 20 años con concesionario, finalmente cambió a taller independiente; nunca miró atrás."
+  },
+  {
+    "id": "pd6gkw5",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Sugerencia de obtener presupuesto de taller de reparación independiente; presupuesto de concesionario es absurdo."
+  },
+  {
+    "id": "pd6xp9r",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario Cayenne Turbo 2016: realizó cambio de aceite DIY con coste mínimo en lugar de pagar $600 en concesionario."
+  },
+  {
+    "id": "pd7frin",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Porsche Exchange de Illinois cotizó $750 para cambio de aceite; rechazado y seguirá ignorando recordatorio de servicio."
+  },
+  {
+    "id": "pd71bfu",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Estrategia de concesionario: cobran mucho sabiendo que hay garantía, obligan a comprar coche nuevo cuando reparaciones superan anticipo."
+  },
+  {
+    "id": "pda1o8t",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}, {"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Presupuesto no es normal; o coche está destruido o concesionario estafa; recomienda taller independiente; es SUV de diario, no necesita perfección absoluta."
+  },
+  {
+    "id": "pda7k8f",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Recomendación de hacer inspección previa compra en taller independiente; concesionario intenta estafar."
+  },
+  {
+    "id": "pdadayn",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Presupuesto absurdo; taller parece estafa; sugiere publicar para advertir a otros clientes."
+  },
+  {
+    "id": "pdbrdz7",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario: realizó muchos trabajos similares por fracción del coste; frenos DIY con piezas FCP; suspensión completa por $4k con taller independiente."
+  },
+  {
+    "id": "pdc5nj2",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario: taller independiente europeo será aproximadamente la mitad del precio del concesionario."
+  },
+  {
+    "id": "pdc7wpv",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}, {"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario: gastó $6k y concesionario quiere $15-20k más para transmisión; concesionario rechaza responsabilidad por no cambiar fluido; buscando coche nuevo."
+  },
+  {
+    "id": "pdc7wpv#2",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Referencia a falla común en Cayenne: caja de transferencia debe cambiar fluido cada 10k km, no cada 160k km como sugiere Porsche."
+  },
+  {
+    "id": "pdd0lvv",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario reemplazó montajes de motor y frenos en Mercedes SL 63 por $6k; encuentra $33k de Porsche exorbitante."
+  },
+  {
+    "id": "pddm7tb",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario: problema común de caja de transferencia en Cayenne; cambios frecuentes de fluido (cada 100km) pueden resolver problema."
+  },
+  {
+    "id": "pdfybnd",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}, {"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario: no poseer garantía para Cayenne Turbo es riesgoso; mejor usar taller independiente para costes controlados."
+  },
+  {
+    "id": "pdg0xen",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario Cayenne GTS 2016: pagó $20k para reparaciones; uso taller independiente a $180/hora en lugar de concesionario."
+  },
+  {
+    "id": "pdkx92z",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Sorpresa de que Cayenne (esencialmente Audi) sea tan caro; taller independiente haría trabajo por menos de $5-7k."
+  },
+  {
+    "id": "pdlqtqt",
+    "models": ["cayenne-po536"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario: taller independiente Altered Components en Fredericksburg; transmisión y otros trabajos por $1k."
+  },
+  {
+    "id": "pdivm61",
+    "models": ["cayenne-po536"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "costes", "p": "neg"}],
+    "resumen_es": "Propietario Cayenne con garantía de terceros: rechazó reparaciones caras; solo cubiertos mantenimiento obligatorio y desgaste; garantía extendida esencial para autos alemanes."
+  },
+  {
+    "id": "olqsqh9",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "calidad", "p": "neg"}],
+    "resumen_es": "Propietario Taycan: experiencia vergonzosa para Porsche en esta categoría de precio; uno de los peores coches producidos."
+  },
+  {
+    "id": "olqtn5p",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "calidad", "p": "neg"}],
+    "resumen_es": "Propietario Taycan: coche brillante cuando funciona pero fallas constantes en esta categoría de precio; falta de soporte del fabricante."
+  },
+  {
+    "id": "olqvwwa",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario Taycan: modelo de concesionario es problemático; dueño queda con papas calientes sin apoyo."
+  },
+  {
+    "id": "olqvsot",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}],
+    "resumen_es": "Propietario Taycan 2020 Turbo: 30k millas en 1.5 años con solo regulador de ventana; coche más confiable jamás poseído."
+  },
+  {
+    "id": "olqvyw4",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "driven",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario Taycan 2023: en taller para recalls; loaner Macan nuevo con error de fallo de chasis crítico en 2 minutos."
+  },
+  {
+    "id": "olqw1d2",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "tecnologia", "p": "neg"}],
+    "resumen_es": "Propietario Taycan: experiencia EV alemana Premium; muchos propietarios con problemas similares; prácticamente todos Taycan han pasado 2-4 meses en recalls."
+  },
+  {
+    "id": "olr186v",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "tecnologia", "p": "neg"}],
+    "resumen_es": "Crítica: mayor fallo alemán en software; Volkswagen contrata desarrolladores baratos y se nota."
+  },
+  {
+    "id": "olro18k",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "calidad", "p": "neg"}],
+    "resumen_es": "Reflexión triste: Porsche construyó reputación en excelencia de ingeniería y confiabilidad; pero propietarios Taycan esperan ahora fallos en lugar de confianza."
+  },
+  {
+    "id": "ols180d",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "none",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Los EV de Volkswagen fallan especialmente mal comparado con chinos o americanos; Volkswagen parece usar consumidores para testing."
+  },
+  {
+    "id": "olqzk8d",
+    "models": ["taycan"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}, {"a": "costes", "p": "pos"}],
+    "resumen_es": "Propietario Taycan: soporte de concesionario es factor clave; buenos concesionarios (como Porsche Stockport) hacen diferencia masiva en experiencia."
+  },
+  {
+    "id": "olr0bbf",
+    "models": ["taycan"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "neg"}],
+    "resumen_es": "Propietario Taycan: recalls varios, cámara no funcionaba, actualizaciones de software para batería, llantas dañadas resueltas."
+  },
+  {
+    "id": "olr407l",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}, {"a": "conduccion", "p": "pos"}],
+    "resumen_es": "Propietario Tesla: Taycan es hermoso pero amigo rentó y volvió a Tesla; Porsche no está listo para EVs."
+  },
+  {
+    "id": "olr08lj",
+    "models": ["taycan"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}],
+    "resumen_es": "Propietario Tesla: modelos Tesla sólidos con casi 5 años sin problemas más allá de cosméticos; mejor que Taycan."
+  },
+  {
+    "id": "olrofrt",
+    "models": ["taycan"],
+    "sentiment": "neg",
+    "basis": "owner",
+    "aspects": [{"a": "conduccion", "p": "pos"}, {"a": "fiabilidad", "p": "neg"}, {"a": "tecnologia", "p": "neg"}],
+    "resumen_es": "Propietario Taycan: es probablemente mejor EV dinámico pero falla en estabilidad de software, confiabilidad de carga y calidad de componentes; Tesla entendió esto mejor."
+  },
+  {
+    "id": "om06rge",
+    "models": ["taycan"],
+    "sentiment": "neu",
+    "basis": "owner",
+    "aspects": [{"a": "fiabilidad", "p": "pos"}],
+    "resumen_es": "Propietario Taycan 2021 Turbo S: experiencia opuesta al OP; casi todos dicen mejor coche jamás poseído; posts más negativos consiguen más visibilidad."
+  }
+]

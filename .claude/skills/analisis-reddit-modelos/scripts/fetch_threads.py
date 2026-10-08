@@ -169,7 +169,7 @@ def main():
             parent = by_id.get(pid.split("_")[-1]) if pid.startswith("t1_") else None
             all_comments.append({
                 "id": c["id"], "thread": t["id"], "user": hashlib.sha1(au.encode()).hexdigest()[:10],
-                "score": c.get("score", 0), "body": body[:900],
+                "score": c.get("score", 0), "created": c.get("created_utc"), "body": body[:900],
                 "parent": ((parent or {}).get("body") or t["title"])[:160].replace("\n", " "),
             })
             kept += 1
@@ -189,7 +189,7 @@ def main():
             f.write(json.dumps(c, ensure_ascii=False) + "\n")
     with open(os.path.join(STATE, "comments-index.jsonl"), "a", encoding="utf-8") as f:  # version publica, sin texto
         for c in all_comments:
-            f.write(json.dumps({k: c[k] for k in ("id", "thread", "user", "score")}) + "\n")
+            f.write(json.dumps({k: c[k] for k in ("id", "thread", "user", "score", "created")}) + "\n")
     json.dump(sorted(done), open(seen_path, "w", encoding="utf-8"))
 
     # lotes pendientes de clasificar (los que aun no tienen resultado)
@@ -208,17 +208,26 @@ def main():
     rpath = os.path.join(STATE, "reviewed.json")
     reviewed = set(json.load(open(rpath, encoding="utf-8"))) if os.path.exists(rpath) else set()
     for fn in os.listdir(bdir):
-        if os.path.exists(os.path.join(cdir, fn)):
+        if fn.endswith(".json") and os.path.exists(os.path.join(cdir, fn)):
             reviewed.update(e["id"] for e in json.load(open(os.path.join(bdir, fn), encoding="utf-8")))
     json.dump(sorted(reviewed), open(rpath, "w"))
     pend = [c for c in (json.loads(l) for l in open(os.path.join(STATE, "comments.jsonl"), encoding="utf-8"))
             if c["id"] not in classified and c["id"] not in reviewed]
+    arch = os.path.join(bdir, "archivo")  # los lotes viejos se archivan, no se borran
+    os.makedirs(arch, exist_ok=True)
     for fn in os.listdir(bdir):
-        os.remove(os.path.join(bdir, fn))
+        if fn.endswith(".json"):
+            dst, k = os.path.join(arch, fn), 2
+            while os.path.exists(dst):
+                dst, k = os.path.join(arch, f"{fn[:-5]}-{k}.json"), k + 1
+            os.replace(os.path.join(bdir, fn), dst)
     for k in range(0, len(pend), a.batch_size):
         batch = [{"id": c["id"], "hilo": titles.get(c["thread"], ""), "responde_a": c["parent"], "texto": c["body"]}
                  for c in pend[k:k + a.batch_size]]
-        json.dump(batch, open(os.path.join(bdir, f"{first_no + k // a.batch_size:03d}.json"), "w", encoding="utf-8"), ensure_ascii=False)
+        no = f"{first_no + k // a.batch_size:03d}.json"
+        json.dump(batch, open(os.path.join(bdir, no), "w", encoding="utf-8"), ensure_ascii=False)
+        os.makedirs(os.path.join(STATE, "scope"), exist_ok=True)  # alcance del lote: ids revisados, den o no entrada
+        json.dump([c["id"] for c in batch], open(os.path.join(STATE, "scope", no), "w"))
     print(f"[lotes] {len(pend)} comentarios pendientes en {(len(pend) + a.batch_size - 1) // a.batch_size} lotes -> {bdir}", file=sys.stderr)
 
 

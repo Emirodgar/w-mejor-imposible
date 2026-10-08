@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pahoyhy",
+    "models": ["911-992"],
+    "sentiment": "pos",
+    "basis": "owner",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Propietario de un 992 en azul Gentian: aparcando junto a uno en Chalk comprobó que los colores claros realzan mejor la bonita silueta del 992."
+  },
+  {
+    "id": "pc87dn9",
+    "models": ["911-gt"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [{"a": "diseno", "p": "pos"}],
+    "resumen_es": "Elogia el aspecto del GT3 del autor del hilo y lo considera el mejor modelo de la gama 911."
+  },
+  {
+    "id": "pc88f3z",
+    "models": ["911-gt"],
+    "sentiment": "pos",
+    "basis": "none",
+    "aspects": [],
+    "resumen_es": "El autor, que espera su GT3, lo ve como la estrella de la gama actual y prefirió no un Turbo S por su batería y arranque eléctrico."
+  }
+]

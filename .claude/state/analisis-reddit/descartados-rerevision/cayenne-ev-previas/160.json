@@ -1,0 +1,117 @@
+[
+ {
+  "id": "npomnho",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Cree que el Macan eléctrico luce mejor y refleja mejor el lenguaje de diseño de Porsche que el Cayenne eléctrico."
+ },
+ {
+  "id": "nponjak",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Opina que el diseño frontal funcionó en el Macan eléctrico, no en el Cayenne."
+ },
+ {
+  "id": "nppeopm",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Disfruta de su Cayenne Turbo de 2020 y no tiene prisa por pasarse a un eléctrico."
+ },
+ {
+  "id": "nppm6dv",
+  "models": [
+   "cayenne-92a",
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   },
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Le encanta su Cayenne de gasolina, con unos 23 mpg de media; solo anota que la batería se cambió antes de lo esperado y que CarPlay va con retraso."
+ },
+ {
+  "id": "nppr0a1",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ve el Cayenne anterior mucho más premium y elegante que el nuevo eléctrico."
+ },
+ {
+  "id": "npwvyi2",
+  "models": [
+   "cayenne-po536"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró el año pasado un Cayenne coupé de combustión y no piensa venderlo, decepcionado con el diseño del eléctrico."
+ },
+ {
+  "id": "npog1xd",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Califica de muy atractivo el Taycan Cross Turismo."
+ },
+ {
+  "id": "nppv9mg",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "neg",
+  "basis": "none",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Para esta persona el Taycan Cross Turismo es de lo más feo que se ha hecho, aunque admite que es cuestión de gustos."
+ }
+]

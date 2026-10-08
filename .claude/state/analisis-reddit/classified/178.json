@@ -1,0 +1,330 @@
+[
+ {
+  "id": "ogzvszh",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño actual de un 996.1: siempre le han gustado los faros de huevo frito de esa generación, incluso siendo de la generación X."
+ },
+ {
+  "id": "ogz8vam",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Su primer coche y aún su diario es un Boxster 986 2.7, que le cambió por completo la opinión que tenía de los Boxster."
+ },
+ {
+  "id": "ogzb4ti",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tiene un 986.2 con intermitentes ámbar y le gustan ambos estilos de faros, en parte por cariño a lo que veía de niño."
+ },
+ {
+  "id": "oh0rzqs",
+  "models": [
+   "cayman-986"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Ha tenido un 986 y un 987; considera exagerada la polémica por los faros del 986 y prefiere algo el 986.2 al 986.1."
+ },
+ {
+  "id": "p8ho3zz",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le pareció escasa de potencia la Panamera base; probó la 4S y la compró en el acto."
+ },
+ {
+  "id": "p8i6xu3",
+  "models": [
+   "macan-ice"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Propietario de un Macan: disfruta cada vez que lo arranca, aunque cambiaría por una Panamera si su mujer no prefiriese SUV."
+ },
+ {
+  "id": "p8kkbwi",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "neg",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Lo que más le molesta de su Panamera a diario es la falta de huecos para dejar llaves, móvil y objetos."
+ },
+ {
+  "id": "p8j96rx",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Acaba de comprar una Panamera Sport Turismo 4S E-Hybrid y está encantado; se queda mirándola en el garaje."
+ },
+ {
+  "id": "p8knk0f",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Turbo, le pareció demasiado coche y caro; con la Panamera 4S nunca se queda corto de potencia."
+ },
+ {
+  "id": "p8uc96e",
+  "models": [
+   "panamera-971",
+   "panamera-972"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene una Panamera 4S híbrida y la adora, pero le han dado dos golpes en semáforos y las reparaciones tardan."
+ },
+ {
+  "id": "p926a1i",
+  "models": [
+   "cayman-981"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Conduce habitualmente un Boxster S 981 y le encanta, igual que el resto de Porsche de la familia."
+ },
+ {
+  "id": "p926a1i#2",
+  "models": [
+   "panamera-970",
+   "panamera-971"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Alterna su Panamera GTS con un Boxster y disfruta de los dos."
+ },
+ {
+  "id": "o79q05b",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "fiabilidad",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 997 Turbo con 107.000 millas, lo tuvo un año sin ningún problema y lo vendió por solo 5.000 dólares más de lo pagado."
+ },
+ {
+  "id": "o79qpmu",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dos años con un 991.1 GTS manual pagado al contado: una gozada, salvo en invierno con nieve y sal."
+ },
+ {
+  "id": "o79t7um",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un 991.2 Carrera S de pocos kilómetros al contado a los 37 y lo repetiría sin dudar."
+ },
+ {
+  "id": "o79sv5c",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 991.2 C4S por 100.000 dólares y está muy contento de poder usarlo mucho en vez de ahorrar ese dinero."
+ },
+ {
+  "id": "o79wtv5",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Pagó al contado un Carrera S 2018 CPO con 13.000 millas y está enamorado del coche."
+ },
+ {
+  "id": "o7aguma",
+  "models": [
+   "911-996",
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 911 en 2005 y comprobó enseguida que costaba de mantener lo mismo que un BMW Serie 5."
+ },
+ {
+  "id": "o7bekxl",
+  "models": [
+   "911-996"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "costes",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Compró un 996 C4S de 2003 por unos 25.000 dólares y, tras 3,5 años, lo cambió ganando dinero."
+ },
+ {
+  "id": "o7be4kd",
+  "models": [
+   "911-gt"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Compró un GT3 RS 2019 al contado y no se arrepiente en absoluto."
+ },
+ {
+  "id": "o7b9frv",
+  "models": [
+   "911-991"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "costes",
+    "p": "pos"
+   },
+   {
+    "a": "valor",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario un 991.1 S y dice que sus Porsche le salen baratos porque los vende por un precio parecido al de compra."
+ },
+ {
+  "id": "o7c7q4i",
+  "models": [
+   "911-997"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Usa a diario un 997 de 21 años, hace él mismo las reparaciones y lo disfruta cada minuto."
+ }
+]

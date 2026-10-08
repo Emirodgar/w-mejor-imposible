@@ -97,16 +97,6 @@
   "resumen_es": "En su Taycan ha necesitado unas diez reparaciones, frente a una sola del Range Rover en 78.000 millas."
  },
  {
-  "id": "p5oq0gs",
-  "models": [
-   "taycan"
-  ],
-  "sentiment": "pos",
-  "basis": "owner",
-  "aspects": [],
-  "resumen_es": "Dueño de un Taycan que solo cambiaría por el Cayenne Turbo eléctrico; lo usa a diario."
- },
- {
   "id": "p6836m8",
   "models": [
    "911-992"
@@ -612,5 +602,15 @@
    }
   ],
   "resumen_es": "Dueño de un Cayenne grande: ágil para esquivar tráfico; probó un Macan S de cortesía y echaba de menos su Cayenne."
+ },
+ {
+  "id": "p5oq0gs",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Taycan que solo cambiaría por el Cayenne Turbo eléctrico; lo usa a diario."
  }
 ]

@@ -1,0 +1,91 @@
+[
+ {
+  "id": "np73r1w",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [],
+  "resumen_es": "Dueño de un Cayenne de 2016 que le gusta, pese a que su profusión de botones llama la atención."
+ },
+ {
+  "id": "np7i1tj",
+  "models": [
+   "cayenne-92a"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "diseno",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le gustaban los muchos interruptores físicos de su Cayenne, aunque usaba pocos."
+ },
+ {
+  "id": "np6xvoc",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Probó el Macan eléctrico: al principio le sobraban pantallas, pero se acostumbró y acabó disfrutándolo."
+ },
+ {
+  "id": "npcqtj9",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "neg"
+   }
+  ],
+  "resumen_es": "Tiene un Macan eléctrico y echa de menos la pantalla inferior de climatización y carga que sí lleva el Taycan."
+ },
+ {
+  "id": "npcqtj9#2",
+  "models": [
+   "taycan"
+  ],
+  "sentiment": "pos",
+  "basis": "owner",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Dueño de un Taycan: valora su pantalla central inferior para clima y carga."
+ },
+ {
+  "id": "npwaix5",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tras probar toda la gama de 2024, el Macan eléctrico es su favorito: lo prefiere al Macan GTS de gasolina y lo ve mejor que el Taycan."
+ }
+]

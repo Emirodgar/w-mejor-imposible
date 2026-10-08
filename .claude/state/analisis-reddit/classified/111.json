@@ -870,21 +870,6 @@
   "resumen_es": "Echa mucho de menos su antiguo Taycan 4S y quiere volver a tener uno."
  },
  {
-  "id": "p91pdv8",
-  "models": [
-   "macan-ev"
-  ],
-  "sentiment": "neu",
-  "basis": "driven",
-  "aspects": [
-   {
-    "a": "tecnologia",
-    "p": "pos"
-   }
-  ],
-  "resumen_es": "Tuvo un Macan eléctrico de cortesía; le gusta la ubicación del cargador inalámbrico y coincide con las críticas."
- },
- {
   "id": "p91qz9r",
   "models": [
    "macan-ev"
@@ -908,25 +893,6 @@
   "basis": "driven",
   "aspects": [],
   "resumen_es": "Probó el Macan eléctrico y le gustó, aunque no lo compraría como sustituto de su Taycan."
- },
- {
-  "id": "p92l1fm",
-  "models": [
-   "macan-ev"
-  ],
-  "sentiment": "pos",
-  "basis": "driven",
-  "aspects": [
-   {
-    "a": "conduccion",
-    "p": "pos"
-   },
-   {
-    "a": "uso_diario",
-    "p": "pos"
-   }
-  ],
-  "resumen_es": "Le encantó el Macan eléctrico de cortesía: divertido cuando se quiere y cómodo cuando hace falta."
  },
  {
   "id": "p92mdeu",
@@ -1223,5 +1189,39 @@
    }
   ],
   "resumen_es": "Opina que el Cayenne es muy inferior al Panamera en conducción."
+ },
+ {
+  "id": "p91pdv8",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "neu",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "tecnologia",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Tuvo un Macan eléctrico de cortesía; le gusta la ubicación del cargador inalámbrico y coincide con las críticas."
+ },
+ {
+  "id": "p92l1fm",
+  "models": [
+   "macan-ev"
+  ],
+  "sentiment": "pos",
+  "basis": "driven",
+  "aspects": [
+   {
+    "a": "conduccion",
+    "p": "pos"
+   },
+   {
+    "a": "uso_diario",
+    "p": "pos"
+   }
+  ],
+  "resumen_es": "Le encantó el Macan eléctrico de cortesía: divertido cuando se quiere y cómodo cuando hace falta."
  }
 ]
