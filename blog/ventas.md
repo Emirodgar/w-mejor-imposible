@@ -612,4 +612,5 @@ El análisis de 20 años de ventas revela una **Porsche en plena transformación
 Los principales retos incluyen la **recuperación del mercado chino**, la **gestión de la transición eléctrica del Taycan**, y el mantenimiento del **momentum en Norteamérica**. Sin embargo, la diversificación geográfica, la fortaleza de modelos icónicos como el 911, y la flexibilidad estratégica posicionan a Porsche favorablemente para los próximos años.
 
 Si te interesa cómo se traduce este crecimiento en el mercado español, consulta la [evolución de precios de lanzamiento](/porsche/precios) de cada modelo o compara sus fichas técnicas completas en nuestro [directorio de modelos](/porsche/modelos).
-	
+
+Porsche ha anunciado además que reducirá su volumen y apostará por la exclusividad: mira qué modelos llegan en el [calendario de futuros modelos de Porsche](https://mejorimposible.es/porsche/futuros-modelos-porsche-calendario).

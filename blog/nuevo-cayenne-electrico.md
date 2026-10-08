@@ -51,6 +51,8 @@ Además, el compromiso con la **sostenibilidad** no se queda en el sistema eléc
 El Cayenne Electric representa el punto de unión entre el pasado y el futuro de Porsche.
 Durante años, modelos como el [Macan](https://mejorimposible.es/porsche/porsche-macan) han demostrado que un SUV puede ser emocionante. Ahora, el nuevo [Cayenne](https://mejorimposible.es/porsche/modelos/cayenne) da un paso más, combinando **tecnología, emociones, deportividad y sostenibilidad** en un solo vehículo.
 
+Si quieres saber qué otros modelos prepara Porsche tras su nueva estrategia, consulta el [calendario de futuros modelos 2026-2030](https://mejorimposible.es/porsche/futuros-modelos-porsche-calendario).
+
 No es solo el siguiente capítulo de la marca: es **el coche total**. Un Porsche pensado no para imaginar el futuro, sino para vivirlo desde el primer kilómetro.
 
 El nuevo **Cayenne Electric** redefine lo que significa conducir un Porsche.

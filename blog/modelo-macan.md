@@ -17,6 +17,8 @@ El **Porsche Macan** se ha consolidado como uno de los SUVs deportivos más dese
 
 **En resumen:** el Macan eléctrico actual parte de unos 82.000-85.000 € en España y sube hasta unos 117.000 € en la versión Turbo; el Macan de combustión (2014-2024) se encuentra de segunda mano y es más fiable a partir de 2017-2019. Más abajo tienes las versiones, el precio, la fiabilidad y las recomendaciones de compra.
 
+Según la prensa, el Macan de combustión volverá hacia 2028: lo detallamos en el [calendario de futuros modelos de Porsche](https://mejorimposible.es/porsche/futuros-modelos-porsche-calendario).
+
 ## Historia y evolución
 
 ### Desarrollo y lanzamiento

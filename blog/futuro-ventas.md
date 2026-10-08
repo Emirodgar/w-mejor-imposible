@@ -47,6 +47,8 @@ Sí, pero con matices. La compañía debe equilibrar la **electrificación con l
 
 En un mercado que se enfría, **mantener el deseo por la marca será más importante que nunca**. Porque cuando el resto de fabricantes se centran en ajustar costes o cerrar plantas, Porsche puede seguir creciendo si consigue que su propuesta siga siendo aspiracional.
 
+> **Actualización (8 oct. 2026):** Porsche ha presentado su nueva estrategia, Sportwagenschmiede '35, con menos volumen, más exclusividad y combustión junto a la electrificación. Te contamos qué modelos llegan y cuándo en el [calendario de futuros modelos de Porsche](https://mejorimposible.es/porsche/futuros-modelos-porsche-calendario).
+
 ---
 
 **En resumen:** la tormenta del sector automovilístico europeo amenaza con arrastrar a todos, pero Porsche tiene más paraguas que la mayoría.
