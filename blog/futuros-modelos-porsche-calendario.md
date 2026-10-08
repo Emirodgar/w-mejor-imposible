@@ -32,7 +32,7 @@ Tanto las cifras de producción como el 20 % salen de cobertura de prensa. Convi
 
 | Modelo | Qué llega | Cuándo | Certeza |
 |---|---|---|---|
-| **Cayenne Electric** | Ya presentado y en entrega. Hasta 1.156 CV (Turbo) y unos 643 km de autonomía declarada en la versión de acceso. | 2026 | **Confirmado** (precio en España y cifras, según prensa) |
+| **Cayenne Electric** | Ya presentado y en entrega. Hasta 1.156 CV (Turbo) y 642 km WLTP en la versión de acceso. | 2026 | **Confirmado** (precio en España y cifras, según prensa) |
 | **Macan GTS (eléctrico)** | Nueva versión deportiva del Macan Electric. | 2026 | **Confirmado** |
 | **911** | Seguirá con **híbrido de altas prestaciones** y, según la cobertura del evento, **no habrá 911 100 % eléctrico**. Se esperan variantes sobre la serie 992.2 (por ejemplo, GT3 RS actualizado). | 2026-2027 | Estrategia confirmada; **versiones concretas, rumor** |
 | **718 Boxster y Cayman** | Nueva generación eléctrica sobre plataforma PPE acortada. Porsche ha confirmado que habrá también versiones de **combustión** en las más altas de la gama. | **2027 o 2028**, según la fuente | **Confirmado el cambio; la fecha varía entre medios** |
@@ -68,7 +68,7 @@ Porsche no ha dado una fecha cerrada. Los medios apuntan a **2027 o 2028**. Se c
 Según varias fuentes, sí, hacia **2028**, sobre una plataforma del grupo. Porsche aún no lo ha detallado.
 
 ### ¿Cuánto cuesta el Cayenne Electric en España?
-Según la prensa, desde unos **109.000 €**. Consulta el configurador de un [Centro Porsche](https://mejorimposible.es/porsche/concesionarios) para el precio vigente.
+Según la prensa, desde unos **108.300 €** el Electric y 169.100 € el Turbo. Más datos en la [ficha del Cayenne Electric](https://mejorimposible.es/porsche/porsche-cayenne-electric). Consulta el configurador de un [Centro Porsche](https://mejorimposible.es/porsche/concesionarios) para el precio vigente.
 
 ### ¿Qué es el Porsche S1 o Mission S?
 Un hiperdeportivo en desarrollo del que hay informaciones contradictorias. Actualizaremos esta página cuando Porsche lo presente.
