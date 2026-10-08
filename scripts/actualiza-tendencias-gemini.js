@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const comun = require('./tendencias-comun');
 
 const ROOT = path.join(__dirname, '..');
 const FEED_URL = 'https://www.google.es/alerts/feeds/05845247816632936990/7384118912035573051';
@@ -174,6 +175,10 @@ REDACCIÓN (siempre en español, aunque la fuente esté en otro idioma)
 - category: exactamente una de ${CATEGORIES.join(', ')}. Lanzamientos = producto nuevo y anuncios oficiales; Análisis = opinión, comparativas, mercado, estrategia de marca; Modelos = contenido centrado en un modelo concreto; Guías = consejos de compra o de uso. Si dudas, Análisis.
 - image: la ruta de la imagen del catálogo que mejor encaje con la noticia (si ninguna encaja de verdad, la menos mala). Catálogo:
 ${IMAGE_DESCRIPTIONS}
+- models: uno o varios de ${Object.keys(comun.MODELS).join(', ')}. 718 incluye Boxster y Cayman; "marca" es para estrategia, finanzas, mercado o tecnología que no se refiere a un modelo concreto. Pon solo los modelos de los que trata realmente la noticia.
+- impact: 1-2 frases en español sobre qué significa la noticia para quien compra, tiene o vende un Porsche (precio, valor de reventa, coste, fiabilidad, qué esperar o a qué estar atento). Concreto y útil, sin inventar cifras ni hechos que no estén en el titular o el fragmento, y sin repetir el excerpt. Si la implicación es indirecta, dilo con honestidad en vez de exagerarla.
+- links: de 1 a 3 claves de este catálogo de páginas internas, las que más ayuden a quien lee esa noticia (no pongas enlaces por rellenar):
+${Object.entries(comun.LINK_CATALOG).map(([k, v]) => `  ${k} — ${v.about}`).join('\n')}
 - id: copia literal el id de la entrada elegida.
 
 RESUMEN
@@ -193,9 +198,12 @@ const RESPONSE_SCHEMA = {
                     category: { type: 'STRING', enum: CATEGORIES },
                     shortTitle: { type: 'STRING' },
                     note: { type: 'STRING' },
-                    image: { type: 'STRING', enum: IMAGE_CATALOG }
+                    image: { type: 'STRING', enum: IMAGE_CATALOG },
+                    models: { type: 'ARRAY', items: { type: 'STRING', enum: Object.keys(comun.MODELS) } },
+                    impact: { type: 'STRING' },
+                    links: { type: 'ARRAY', items: { type: 'STRING', enum: Object.keys(comun.LINK_CATALOG) } }
                 },
-                required: ['id', 'headline', 'excerpt', 'category', 'shortTitle', 'note', 'image']
+                required: ['id', 'headline', 'excerpt', 'category', 'shortTitle', 'note', 'image', 'models', 'impact', 'links']
             }
         },
         summary: { type: 'STRING' }
@@ -205,21 +213,17 @@ const RESPONSE_SCHEMA = {
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-async function callGemini(candidates) {
+async function generate(systemPrompt, userText, schema) {
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) throw new Error('Falta la variable de entorno GEMINI_API_KEY');
 
-    const entriesText = candidates.map(c =>
-        `ID: ${c.id}\nTitular: ${c.title}\nFuente: ${c.source || 'desconocida'}\nFecha: ${c.published || 'desconocida'}\nFragmento: ${c.snippet}`
-    ).join('\n---\n');
-
     const body = {
-        systemInstruction: { parts: [{ text: EDITORIAL_PROMPT }] },
-        contents: [{ role: 'user', parts: [{ text: `Entradas nuevas del feed:\n\n${entriesText}` }] }],
+        systemInstruction: { parts: [{ text: systemPrompt }] },
+        contents: [{ role: 'user', parts: [{ text: userText }] }],
         generationConfig: {
             temperature: 0.3,
             responseMimeType: 'application/json',
-            responseSchema: RESPONSE_SCHEMA
+            responseSchema: schema
         }
     };
 
@@ -264,6 +268,60 @@ async function callGemini(candidates) {
     throw lastError;
 }
 
+function callGemini(candidates) {
+    const entriesText = candidates.map(c =>
+        `ID: ${c.id}
+Titular: ${c.title}
+Fuente: ${c.source || 'desconocida'}
+Fecha: ${c.published || 'desconocida'}
+Fragmento: ${c.snippet}`
+    ).join('\n---\n');
+    return generate(EDITORIAL_PROMPT, `Entradas nuevas del feed:
+
+${entriesText}`, RESPONSE_SCHEMA);
+}
+
+const WEEK_PROMPT = `Eres el editor de mejorimposible.es, una web en español para gente que se informa antes de comprar un Porsche. Recibes todas las noticias curadas de una semana (titular, extracto y modelos) y redactas el resumen semanal.
+- summary: 3-4 frases en español que expliquen qué ha pasado esta semana y por qué importa a quien compra o tiene un Porsche. Agrupa por temas en vez de enumerar. No inventes datos que no estén en las noticias.
+- highlights: de 3 a 5 destacados, cada uno con el id de una noticia recibida (copiado literal), un shortTitle de 2-5 palabras y una note de una frase que amplía el shortTitle.
+Tono directo e informativo, sin relleno ni superlativos vacíos.`;
+
+const WEEK_SCHEMA = {
+    type: 'OBJECT',
+    properties: {
+        summary: { type: 'STRING' },
+        highlights: {
+            type: 'ARRAY',
+            items: {
+                type: 'OBJECT',
+                properties: { id: { type: 'STRING' }, shortTitle: { type: 'STRING' }, note: { type: 'STRING' } },
+                required: ['id', 'shortTitle', 'note']
+            }
+        }
+    },
+    required: ['summary', 'highlights']
+};
+
+// Resumen de la semana ISO completa a partir de todas sus noticias curadas.
+async function summarizeWeek(items) {
+    const text = items.map(i =>
+        `ID: ${i.id}
+Titular: ${i.headline}
+Extracto: ${i.excerpt}
+Modelos: ${(i.models || []).join(', ')}`
+    ).join('\n---\n');
+    const res = await generate(WEEK_PROMPT, `Noticias de la semana:
+
+${text}`, WEEK_SCHEMA);
+    const byId = new Map(items.map(i => [i.id, i]));
+    const highlights = (res.highlights || [])
+        .filter(h => byId.has(h.id) && h.shortTitle && h.note)
+        .slice(0, 5)
+        .map(h => ({ url: byId.get(h.id).url, shortTitle: h.shortTitle.trim(), note: h.note.trim() }));
+    if (!res.summary || !res.summary.trim() || highlights.length === 0) throw new Error('Resumen semanal vacío');
+    return { summary: res.summary.trim(), highlights };
+}
+
 // ---------- HTML ----------
 
 function replaceBetween(html, startMarker, endMarker, build) {
@@ -276,9 +334,9 @@ function replaceBetween(html, startMarker, endMarker, build) {
     return html.slice(0, start + startMarker.length) + build(inner) + html.slice(end);
 }
 
-function buildSummaryHtml(summary, items) {
-    const highlights = items.slice(0, 5).map(it =>
-        `                    <li><a href="${escapeHtml(it.url)}" target="_blank" rel="noopener">${escapeHtml(it.shortTitle)}</a> — ${escapeHtml(it.note)}</li>`
+function buildSummaryHtml(summary, highlights, weekKey) {
+    const list = highlights.slice(0, 5).map(h =>
+        `                    <li><a href="${escapeHtml(h.url)}" target="_blank" rel="noopener">${escapeHtml(h.shortTitle)}</a> — ${escapeHtml(h.note)}</li>`
     ).join('\n');
     return `
             <div class="weekly-summary">
@@ -286,23 +344,14 @@ function buildSummaryHtml(summary, items) {
                 <h2>Lo más destacado de esta semana en el mundo Porsche</h2>
                 <p>${escapeHtml(summary)}</p>
                 <ul>
-${highlights}
+${list}
                 </ul>
+                <p class="weekly-summary-more"><a href="${comun.weekUrl(weekKey)}">Ver el resumen completo de la semana con lo que significa para ti →</a></p>
             </div>
             `;
 }
 
-function buildCardHtml(it) {
-    return `<div class="news-card" data-category="${it.category}">
-                <div class="source">${escapeHtml(it.source)}</div>
-                <h3>${escapeHtml(it.headline)}</h3>
-                <p class="excerpt">${escapeHtml(it.excerpt)}</p>
-                <div class="meta">
-                    <span>${formatDate(it.published)}</span>
-                    <a href="${escapeHtml(it.url)}" target="_blank" rel="noopener" class="read-more-link">Leer más →</a>
-                </div>
-                </div>`;
-}
+const buildCardHtml = comun.buildCardHtml;
 
 const CARD_RE = /<div class="news-card"[\s\S]*?<div class="meta">[\s\S]*?<\/div>\s*<\/div>/g;
 const THUMB_RE = /\s*<div class="news-thumb">[\s\S]*?<\/div>/;
@@ -390,7 +439,10 @@ async function main() {
             category: raw.category,
             shortTitle: raw.shortTitle.trim(),
             note: raw.note.trim(),
-            image: raw.image
+            image: raw.image,
+            models: [...new Set((raw.models || []).filter(m => comun.MODELS[m]))],
+            impact: typeof raw.impact === 'string' ? raw.impact.trim() : '',
+            links: [...new Set((raw.links || []).filter(k => comun.LINK_CATALOG[k]))].slice(0, 3)
         });
         if (chosen.length === MAX_NEW) break;
     }
@@ -407,8 +459,53 @@ async function main() {
 
     let html = fs.readFileSync(TENDENCIAS_PATH, 'utf8');
 
+    // 1) Archivo editorial acumulativo: solo se añade, nunca se borra.
+    const editorial = comun.mergeEditorial(comun.loadEditorial(), chosen.map(c => ({
+        id: c.id,
+        url: c.url,
+        source: c.source,
+        published: c.published,
+        headline: c.headline,
+        excerpt: c.excerpt,
+        category: c.category,
+        models: c.models,
+        impact: c.impact,
+        links: c.links,
+        week: comun.isoWeek(c.published).key
+    })));
+
+    // 2) Resumen de la semana ISO en curso (todas sus noticias, no solo las de esta pasada).
+    const semanas = comun.loadSemanas();
+    const touchedWeeks = [...new Set(chosen.map(c => comun.isoWeek(c.published).key))];
+    for (const wk of touchedWeeks) {
+        const weekItems = editorial.filter(i => i.week === wk);
+        const fromThisRun = chosen.filter(c => comun.isoWeek(c.published).key === wk);
+        try {
+            const s = await summarizeWeek(weekItems);
+            semanas[wk] = { summary: s.summary, highlights: s.highlights, updated: new Date().toISOString().slice(0, 10) };
+        } catch (err) {
+            // Sin resumen nuevo: se conserva el anterior de esa semana; si no había, se usa el de esta pasada.
+            console.warn(`No se pudo generar el resumen semanal de ${wk} (${err.message}).`);
+            if (!semanas[wk]) {
+                semanas[wk] = {
+                    summary: (result.summary || '').trim(),
+                    highlights: fromThisRun.slice(0, 5).map(c => ({ url: c.url, shortTitle: c.shortTitle, note: c.note })),
+                    updated: new Date().toISOString().slice(0, 10)
+                };
+            }
+        }
+    }
+    const currentWeek = Object.keys(semanas).sort().pop(); // la semana más reciente con resumen
+    const weekSummary = semanas[currentWeek];
+    const weekItems = editorial.filter(i => i.week === currentWeek);
+
     html = replaceBetween(html, '<!-- RSS-SUMMARY:START -->', '<!-- RSS-SUMMARY:END -->',
-        () => buildSummaryHtml(result.summary.trim(), chosen));
+        () => buildSummaryHtml(weekSummary.summary, weekSummary.highlights, currentWeek));
+
+    // Páginas semanales (se reescriben todas a partir de los JSON; en dry-run no se escribe nada).
+    const weekKeys = comun.writeWeeklyPages(editorial, semanas, { dryRun: DRY_RUN });
+    html = replaceBetween(html, '<!-- WEEKS-ARCHIVE:START -->', '<!-- WEEKS-ARCHIVE:END -->',
+        () => comun.buildArchiveHtml(weekKeys.filter(k => k !== currentWeek), editorial, semanas));
 
     html = replaceBetween(html, '<!-- RSS-NEWS-CARDS:START -->', '<!-- RSS-NEWS-CARDS:END -->', inner => {
         const existing = inner.match(CARD_RE) || [];
@@ -421,19 +518,24 @@ async function main() {
     });
 
     const isoDate = new Date().toISOString().slice(0, 10);
-    const sitemap = updateSitemapLastmod(fs.readFileSync(SITEMAP_PATH, 'utf8'), SITEMAP_LOC, isoDate);
+    let sitemap = updateSitemapLastmod(fs.readFileSync(SITEMAP_PATH, 'utf8'), SITEMAP_LOC, isoDate);
 
     const newSeen = [...seen, ...chosen.map(c => c.id)].slice(-MAX_SEEN);
 
     if (DRY_RUN) {
-        console.log('--dry-run: no se escribe ningún archivo.');
+        console.log(`--dry-run: no se escribe ningún archivo (semana ${currentWeek}, ${weekItems.length} noticias).`);
         return;
     }
+    // 3) Entradas de sitemap de las páginas semanales (solo se añaden las que falten).
+    sitemap = comun.ensureSitemapWeeks(sitemap, weekKeys, editorial);
+
+    comun.saveJson(comun.EDITORIAL_PATH, editorial);
+    comun.saveJson(comun.SEMANAS_PATH, semanas);
     fs.writeFileSync(TENDENCIAS_PATH, html, 'utf8');
     fs.writeFileSync(SITEMAP_PATH, sitemap, 'utf8');
     fs.mkdirSync(path.dirname(SEEN_PATH), { recursive: true });
     fs.writeFileSync(SEEN_PATH, JSON.stringify(newSeen, null, 2) + '\n', 'utf8');
-    console.log('Página, sitemap y estado actualizados.');
+    console.log('Página, archivo editorial, resumen semanal, páginas semanales, sitemap y estado actualizados.');
 }
 
 main().catch(err => {

@@ -36,7 +36,7 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 7. **Elige como máximo 6 noticias** de esta pasada (las más relevantes, si hay más candidatas válidas). Si tras el filtro no queda ninguna noticia con valor real, **no toques el bloque de noticias ni el de resumen esta semana** — termina sin hacer cambios ni commit. No rellenes con contenido de relleno solo por rellenar.
 
-8. **Genera el bloque "Resumen de la semana"**: un párrafo corto (2-3 frases) que sintetice lo más destacado de las noticias elegidas esta semana, más una lista de 3-5 highlights, cada uno enlazando a la noticia correspondiente. Este bloque se **sustituye entero** cada semana (no se acumula con el de semanas anteriores).
+8. **Genera el bloque "Resumen de la semana"**: un párrafo corto (2-3 frases) que sintetice lo más destacado de las noticias elegidas esta semana, más una lista de 3-5 highlights, cada uno enlazando a la noticia correspondiente. Este bloque de la página principal se **sustituye entero** con el resumen de la semana más reciente; el de las semanas anteriores no se pierde: queda guardado en `porsche/tendencias-semanas.json` y en su página semanal (ver "Capa editorial acumulativa" más abajo).
 
 9. **Edita `porsche/tendencias.html`**:
 
@@ -93,15 +93,32 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
 
 12. **Publica el cambio**:
     ```
-    git add porsche/tendencias.html sitemap.xml .claude/state/tendencias-rss-seen.json
+    git add porsche/tendencias.html porsche/tendencias-editorial.json porsche/tendencias-semanas.json porsche/tendencias sitemap.xml .claude/state/tendencias-rss-seen.json
     git commit -m "Actualiza tendencias con noticias de la semana (RSS)"
     git push
     ```
     Si `git push` falla (conflicto, red, permisos...), deja el commit local hecho, no lo fuerces ni lo reintentes de forma agresiva, e informa claramente del problema en tu resumen final.
 
+## Capa editorial acumulativa (qué significa para ti, modelos y semanas)
+
+La página no es solo una lista de titulares: cada noticia curada lleva su lectura para el comprador y se acumula en ficheros de datos que alimentan más sitios. **Esta capa es obligatoria también en ejecuciones manuales.** La implementación de referencia es `scripts/tendencias-comun.js` (catálogos, render, semanas ISO, páginas semanales) y `scripts/actualiza-tendencias-gemini.js`; si cambias reglas aquí, replícalas allí.
+
+Por cada noticia que elijas (paso 7), además de titular, extracto, categoría y miniatura, rellena:
+- `models`: uno o varios de `911`, `718` (incluye Boxster y Cayman), `macan`, `cayenne`, `panamera`, `taycan`, `marca` (estrategia, finanzas, mercado o tecnología sin modelo concreto). Solo los modelos de los que trata de verdad.
+- `impact`: 1-2 frases en español sobre qué significa para quien compra, tiene o vende un Porsche (precio, reventa, coste, fiabilidad, a qué estar atento). Concreto, sin inventar cifras que no estén en el titular o el fragmento, sin repetir el extracto; si la implicación es indirecta, dilo con honestidad.
+- `links`: 1-3 claves del catálogo `LINK_CATALOG` de `tendencias-comun.js` (páginas internas que existen). Nunca escribas URLs a mano: el render añade además la ficha del modelo (`/porsche/modelos/...`).
+
+Con eso se pintan las tarjetas (`data-models` + bloque `.impact` con "Qué significa para ti") usando `buildCardHtml` de `tendencias-comun.js`.
+
+Ficheros que se mantienen (todos **solo se añaden**, nunca se borra histórico, aunque la página principal siga recortando a 30 tarjetas):
+- `porsche/tendencias-editorial.json`: todas las noticias curadas (id, url, source, published, headline, excerpt, category, models, impact, links, week). Lo consumen el bloque "De qué se habla en la prensa" de `/porsche/tendencias` y las fichas `/porsche/modelos/*` (campo `news_model` en su front matter). Se deduplica por `id` y por `url`.
+- `porsche/tendencias-semanas.json`: resumen y destacados por semana ISO (`2026-W41`). El resumen de cada semana se redacta con **todas** las noticias de esa semana, no solo las de la pasada, y se regenera cuando entran noticias nuevas en ella.
+- `porsche/tendencias/semana-AAAA-WW.html`: una página por semana con su resumen y sus noticias (URL `/porsche/tendencias/semana-2026-41`), con entrada en `sitemap.xml`. Se reescriben todas a partir de los dos JSON anteriores (`writeWeeklyPages`), nunca a mano.
+- Zonas de `tendencias.html`: `RSS-SUMMARY` (resumen de la semana más reciente, con enlace a su página semanal) y `WEEKS-ARCHIVE` (lista de las demás semanas, rastreable). El resto del contenido dinámico de la página (bloque "Pulso del mercado") se pinta en el navegador a partir de `precios-anuncios.json`, `analisis-reddit.json` y `tendencias-editorial.json`; no requiere mantenimiento.
+
 ## Notas
 
-- Esta skill está pensada para ejecutarse automáticamente cada semana vía una tarea programada, sin supervisión humana en el momento de ejecutarse. También se puede invocar a mano.
+- La ejecución automática (cada dos días, GitHub Actions) ya no invoca esta skill: la hace `scripts/actualiza-tendencias-gemini.js` con la API de Gemini (secret `GEMINI_API_KEY`), siguiendo estos mismos criterios editoriales y las mismas zonas marcadas. Si cambias las reglas aquí, replícalas en el prompt y las constantes de ese script. Esta skill queda para ejecuciones manuales con Claude.
 - Si el feed no responde, da error, o su formato ha cambiado de forma irreconocible, no toques la página: informa del fallo con el detalle del error y termina sin hacer commit.
 - Los enlaces internos a posts del blog dentro de las tarjetas o el resumen deben usar el prefijo `/porsche/` (p. ej. `https://mejorimposible.es/porsche/nombre-del-post`), igual que el resto de URLs internas del sitio tras la migración a esa subcarpeta.
 - Idioma de salida: siempre español, sin excepciones, aunque la fuente original esté en otro idioma.

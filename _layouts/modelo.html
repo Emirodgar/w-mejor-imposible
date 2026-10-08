@@ -128,12 +128,13 @@
         .news-item .news-source { font-size: 0.78em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--porsche-gold); margin-bottom: 4px; }
         .news-item h4 { margin: 0 0 6px 0; font-size: 1.02em; }
         .news-item p { margin: 0; font-size: 0.92em; opacity: 0.8; line-height: 1.5; }
+        .news-item .news-impact { margin-top: 8px; padding-left: 10px; border-left: 3px solid var(--porsche-red); opacity: 1; font-size: 0.9em; }
         .news-empty { font-size: 0.95em; opacity: 0.7; margin: 0 0 15px 0; }
         .news-cta { display: inline-block; margin-top: 15px; color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 0.95em; }
         .news-cta:hover { text-decoration: underline; }
     </style>
 </head>
-<body data-news-keywords="{{ page.news_keywords | join: ',' }}">
+<body data-news-keywords="{{ page.news_keywords | join: ',' }}" data-news-model="{{ page.news_model }}">
 
     <header class="site-header">
         <div class="site-header-inner">
@@ -302,7 +303,7 @@
             <section class="card">
                 <h2 class="card-title">Actualidad y tendencias sobre el {{ page.model_name }}</h2>
                 <div id="model-news-list"></div>
-                <a href="/porsche/tendencias" class="news-cta">Ver todas las tendencias →</a>
+                <a href="/porsche/tendencias" class="news-cta" id="model-news-cta">Ver todas las tendencias →</a>
             </section>
         </main>
     </div>
@@ -314,21 +315,57 @@
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
     <script>
-    // Reutiliza las noticias ya publicadas en /porsche/tendencias (se actualizan semanalmente),
-    // filtrando por las palabras clave del modelo. Así el bloque nunca queda desactualizado
-    // ni requiere mantenimiento manual en cada ficha.
+    // Noticias del modelo. Fuente principal: el archivo editorial de /porsche/tendencias
+    // (noticias curadas y etiquetadas por modelo, con su "qué significa para ti"). Si no está
+    // disponible, se recurre a buscar las palabras clave del modelo en la página de tendencias.
     document.addEventListener('DOMContentLoaded', async () => {
         const keywords = (document.body.dataset.newsKeywords || '')
             .split(',')
             .map(k => k.trim().toLowerCase())
             .filter(Boolean);
+        const model = (document.body.dataset.newsModel || '').trim();
         const container = document.getElementById('model-news-list');
         if (!container) return;
 
+        const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        const fmtDate = iso => {
+            const d = new Date(iso);
+            return isNaN(d.getTime()) ? '' : d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+        };
+
         function showEmpty() {
-            container.innerHTML = '<p class="news-empty">Esta semana no hay noticias específicas sobre este modelo en nuestro radar de tendencias.</p>';
+            container.innerHTML = '<p class="news-empty">Por ahora no hay noticias específicas sobre este modelo en nuestro radar de tendencias.</p>';
         }
 
+        // 1) Archivo editorial etiquetado por modelo
+        if (model) {
+            try {
+                const res = await fetch('/porsche/tendencias-editorial.json');
+                if (!res.ok) throw new Error('HTTP ' + res.status);
+                const items = await res.json();
+                const matches = items
+                    .filter(i => (i.models || []).includes(model))
+                    .sort((a, b) => new Date(b.published) - new Date(a.published))
+                    .slice(0, 3);
+                if (matches.length) {
+                    container.innerHTML = matches.map(i => `
+                        <div class="news-item">
+                            <div class="news-source">${esc(i.source)} · ${esc(fmtDate(i.published))}</div>
+                            <h4><a href="${esc(i.url)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${esc(i.headline)}</a></h4>
+                            <p>${esc(i.excerpt)}</p>
+                            ${i.impact ? `<p class="news-impact"><strong>Qué significa para ti:</strong> ${esc(i.impact)}</p>` : ''}
+                        </div>
+                    `).join('');
+                    const cta = document.getElementById('model-news-cta');
+                    if (cta) cta.href = '/porsche/tendencias?modelo=' + encodeURIComponent(model);
+                    return;
+                }
+            } catch (error) {
+                // se intenta el método alternativo
+            }
+        }
+
+        // 2) Alternativa: buscar las palabras clave en las tarjetas de /porsche/tendencias
         if (keywords.length === 0) {
             showEmpty();
             return;
@@ -339,7 +376,7 @@
             if (!response.ok) throw new Error('No se pudo cargar tendencias');
             const html = await response.text();
             const doc = new DOMParser().parseFromString(html, 'text/html');
-            const cards = Array.from(doc.querySelectorAll('.news-card'));
+            const cards = Array.from(doc.querySelectorAll('#news-container .news-card'));
 
             const matches = cards.filter(card => {
                 const text = card.textContent.toLowerCase();
@@ -357,9 +394,9 @@
                 const excerpt = card.querySelector('.excerpt')?.textContent || '';
                 return `
                     <div class="news-item">
-                        ${source ? `<div class="news-source">${source}</div>` : ''}
-                        <h4>${title}</h4>
-                        <p>${excerpt}</p>
+                        ${source ? `<div class="news-source">${esc(source)}</div>` : ''}
+                        <h4>${esc(title)}</h4>
+                        <p>${esc(excerpt)}</p>
                     </div>
                 `;
             }).join('');

@@ -1,0 +1,90 @@
+{
+  "2026-W39": {
+    "summary": "La semana la dominan las cuentas de Porsche y Volkswagen: la rentabilidad de Porsche se hunde del 14,1% al 1,1% y el grupo recorta previsiones, mientras el CEO desmiente 4.000 despidos más. En producto, el Cayenne Electric se prueba en varios medios con un veredicto parecido (muy rápido, con menos carácter que los V6 y V8), Bentley estrena un eléctrico sobre su plataforma y se multiplican las pistas de un superdeportivo con motor bóxer de ocho cilindros y de un 911 GT3 RS con turbo.",
+    "highlights": [
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/skoda-rentabilidad-volkswagen-supera-porsche/",
+        "shortTitle": "Rentabilidad al 1,1%",
+        "note": "El desplome de márgenes explica la estrategia de vender menos y más caro."
+      },
+      {
+        "url": "https://www.carexpert.com.au/car-reviews/2027-porsche-cayenne-electric-review",
+        "shortTitle": "Cayenne Electric a prueba",
+        "note": "Rápido y refinado, pero con menos alma y demasiadas pantallas."
+      },
+      {
+        "url": "https://www.carexpert.com.au/car-news/2027-bentley-torcal-british-brands-first-ev-revealed-with-porsche-dna",
+        "shortTitle": "Bentley sobre base Cayenne",
+        "note": "El Torcal reutiliza la plataforma del Cayenne Electric."
+      },
+      {
+        "url": "https://www.motor1.com/news/808907/porsche-new-supercar-flat-eight-engine/",
+        "shortTitle": "Superdeportivo bóxer de 8",
+        "note": "Un buque insignia de unos 500.000 euros, según fuentes del sector."
+      },
+      {
+        "url": "https://www.autoevolution.com/news/2027-porsche-911-gt3-rs-nurburgring-prototype-swaps-atmo-scream-for-turbo-soundtrack-276030.html",
+        "shortTitle": "GT3 RS 2027 con turbo",
+        "note": "Prototipo cazado en Nürburgring con sonido de turbo."
+      }
+    ],
+    "updated": "2026-10-08"
+  },
+  "2026-W40": {
+    "summary": "El Cayenne Electric sigue acaparando titulares (carga inalámbrica, llegada a India y comparativa con el BMW iX5), mientras Porsche repite como la marca de lujo más valiosa del mundo, aunque con una valoración un 15% menor que en 2025. Para quien busca de segunda mano, lo más útil de la semana es el sistema que añade CarPlay y Android Auto inalámbricos a los 911 997.2 y a los Boxster y Cayman 987.2.",
+    "highlights": [
+      {
+        "url": "https://newsroom.porsche.com/en/2026/products/porsche-classic-communication-management-plus-infotainmentsystem-43342.html",
+        "shortTitle": "CarPlay en clásicos",
+        "note": "Reequipamiento oficial para 911 997.2 y Boxster/Cayman 987.2."
+      },
+      {
+        "url": "https://zecar.com/reviews/porsche-evs-can-now-charge-without-a-cable",
+        "shortTitle": "Carga sin cable",
+        "note": "El Cayenne Electric admite carga por inducción de hasta 11 kW."
+      },
+      {
+        "url": "https://www.canberratimes.com.au/story/9360367/porsche-cayenne-electric-rival-driven/",
+        "shortTitle": "Cayenne Electric vs. iX5",
+        "note": "Mejor de conducir el Porsche, más autonomía el BMW."
+      },
+      {
+        "url": "https://www.timeslive.co.za/motoring/2026-09-28-porsche-beats-chanel-for-title-of-worlds-most-valuable-luxury-brand/",
+        "shortTitle": "Marca de lujo nº 1",
+        "note": "Porsche supera a Chanel, con un 15% menos de valoración que en 2025."
+      },
+      {
+        "url": "https://www.motor1.com/features/810284/porsche-flat-eight-supercar-price-horsepower-details/",
+        "shortTitle": "Posible bóxer de ocho cilindros",
+        "note": "Motor1 repasa lo que se sabe del sucesor de gasolina del 918 Spyder."
+      }
+    ],
+    "updated": "2026-10-08"
+  },
+  "2026-W41": {
+    "summary": "Porsche reorienta su estrategia hacia vender menos coches y más caros, y rectifica en el Macan: habrá versiones de combustión e híbridas enchufables previstas para 2028. Además, adelanta el Mission S, un concept de motor central por encima del 911, y Singer presenta su restomod DLS Turbo con 700 CV y cambio manual.",
+    "highlights": [
+      {
+        "url": "https://www.caranddriver.com/news/a74065319/porsche-mid-engine-supercar-teaser/",
+        "shortTitle": "Concept Mission S",
+        "note": "Superdeportivo de motor central por encima del 911."
+      },
+      {
+        "url": "https://soymotor.com/coches/noticias/porsche-se-prepara-para-ser-un-20-mas-cara-en-busca-de-mas-beneficios",
+        "shortTitle": "Nueva política de precios",
+        "note": "Enfoque en exclusividad y subida de tarifas hasta un 20%."
+      },
+      {
+        "url": "https://www.motorpoint.com/singer-dls-turbo-porsche-911-700-cv-manual",
+        "shortTitle": "Singer DLS Turbo",
+        "note": "Restomod biturbo manual sobre chasis 964."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-macan-hibrido-enchufable-2028/",
+        "shortTitle": "Macan térmico en 2028",
+        "note": "Vuelven los motores de combustión y los PHEV a la gama SUV."
+      }
+    ],
+    "updated": "2026-10-08"
+  }
+}
