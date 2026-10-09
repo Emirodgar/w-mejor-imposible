@@ -23,7 +23,7 @@ const MODEL = process.env.GEMINI_MODEL || 'gemini-flash-latest';
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const MAX_NEW = 6;          // noticias nuevas por pasada
-const MAX_CARDS = 30;       // tarjetas totales en la página
+const MAX_CARDS = 18;       // tarjetas totales en la página
 const MAX_SEEN = 300;       // ids recordados en el estado
 const THUMB_POSITIONS = new Set([1, 2, 3, 7, 8, 9]); // posiciones (1-based) con miniatura
 const CATEGORIES = ['Lanzamientos', 'Análisis', 'Modelos', 'Guías'];
@@ -346,7 +346,7 @@ function buildSummaryHtml(summary, highlights, weekKey) {
                 <ul>
 ${list}
                 </ul>
-                <p class="weekly-summary-more"><a href="${comun.weekUrl(weekKey)}">Ver el resumen completo de la semana con lo que significa para ti →</a></p>
+                <p class="weekly-summary-more"><a href="${comun.weekUrl(weekKey)}">Ver el resumen completo de la semana con nuestra lectura de cada noticia →</a></p>
             </div>
             `;
 }

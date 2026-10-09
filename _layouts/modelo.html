@@ -316,7 +316,7 @@
 
     <script>
     // Noticias del modelo. Fuente principal: el archivo editorial de /porsche/tendencias
-    // (noticias curadas y etiquetadas por modelo, con su "qué significa para ti"). Si no está
+    // (noticias curadas y etiquetadas por modelo, con su "nuestra lectura"). Si no está
     // disponible, se recurre a buscar las palabras clave del modelo en la página de tendencias.
     document.addEventListener('DOMContentLoaded', async () => {
         const keywords = (document.body.dataset.newsKeywords || '')
@@ -353,7 +353,7 @@
                             <div class="news-source">${esc(i.source)} · ${esc(fmtDate(i.published))}</div>
                             <h4><a href="${esc(i.url)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${esc(i.headline)}</a></h4>
                             <p>${esc(i.excerpt)}</p>
-                            ${i.impact ? `<p class="news-impact"><strong>Qué significa para ti:</strong> ${esc(i.impact)}</p>` : ''}
+                            ${i.impact ? `<p class="news-impact"><strong>Nuestra lectura:</strong> ${esc(i.impact)}</p>` : ''}
                         </div>
                     `).join('');
                     const cta = document.getElementById('model-news-cta');

@@ -159,7 +159,7 @@ function impactHtml(item, indent) {
     if (!item.impact) return '';
     const links = itemLinks(item).map(l => `<a href="${l.url}">${escapeHtml(l.label)}</a>`).join('');
     return `${indent}<div class="impact">
-${indent}    <span class="impact-label">Qué significa para ti</span>
+${indent}    <span class="impact-label">Nuestra lectura</span>
 ${indent}    <p>${escapeHtml(item.impact)}</p>${links ? `\n${indent}    <div class="impact-links">${links}</div>` : ''}
 ${indent}</div>\n`;
 }

@@ -65,13 +65,13 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
          </div>
      </div>
      ```
-   - Si después de añadir las nuevas tarjetas hay más de 30 en total dentro de esa zona, elimina las más antiguas (las del final) hasta dejar como máximo 30.
+   - Si después de añadir las nuevas tarjetas hay más de 18 en total dentro de esa zona, elimina las más antiguas (las del final) hasta dejar como máximo 18.
 
    - **Patrón fijo de miniaturas (`.news-thumb`)**: en el grid de escritorio (3 columnas) la página debe mostrar imagen únicamente en la fila 1 y la fila 3 — es decir, en las posiciones **1ª, 2ª, 3ª, 7ª, 8ª y 9ª** de la lista completa de tarjetas, contando desde la más nueva (arriba) hacia abajo. El resto de posiciones (4ª-6ª, 10ª en adelante) van siempre sin imagen. Este patrón debe mantenerse siempre igual, así que después de insertar las tarjetas nuevas y recortar a 30 (paso anterior), **repasa la lista completa resultante de arriba abajo, tarjeta por tarjeta, y corrígela**:
      - Posiciones 1, 2, 3, 7, 8 y 9 → si la tarjeta no tiene `.news-thumb`, añádesela (elige la imagen que mejor encaje del catálogo de abajo; si ninguna encaja de verdad, usa la menos mala en vez de dejarla sin imagen — en estas seis posiciones el patrón exige que haya foto).
      - Cualquier otra posición → si la tarjeta tiene `.news-thumb`, quítasela (que quede solo con texto).
 
-     Es normal y esperado que semana a semana varias tarjetas ganen o pierdan su miniatura solo porque cambian de posición al insertarse tarjetas nuevas arriba — no es un error, es el patrón haciendo su trabajo. Dado que esto implica revisar hasta 30 tarjetas con precisión posicional, es preferible que escribas un pequeño script (p. ej. Python) que parsee la zona `RSS-NEWS-CARDS`, imponga la regla y reescriba el archivo, en vez de editar cada tarjeta a mano una por una — así evitas contar mal la posición.
+     Es normal y esperado que semana a semana varias tarjetas ganen o pierdan su miniatura solo porque cambian de posición al insertarse tarjetas nuevas arriba — no es un error, es el patrón haciendo su trabajo. Dado que esto implica revisar hasta 18 tarjetas con precisión posicional, es preferible que escribas un pequeño script (p. ej. Python) que parsee la zona `RSS-NEWS-CARDS`, imponga la regla y reescriba el archivo, en vez de editar cada tarjeta a mano una por una — así evitas contar mal la posición.
 
      Catálogo de imágenes disponibles (dos carpetas, ambas del propio sitio, sin problema de derechos):
      - `img/tendencias/` — fotos de ambiente/escena (no genéricas por modelo): `circuito.jfif` (curva de circuito tipo Spa vista desde un coche en marcha), `competicion.jfif` (911 GT3 RS verde en pista mojada), `concesionario.png` (showroom con varios Porsche expuestos), `deportivo.png` (911 GT3 plateado en puerto de montaña), `descapotable-amarillo.jfif` (718 Boxster amarillo en carretera costera), `fabrica.jfif` (línea de montaje/fábrica), `interior.png` (volante y cuadro de instrumentos), `motor.png` (motor en un taller), `noche.jfif` (Panamera de noche en ciudad asiática), `viaje-911.jfif` (911 azul en carretera de montaña), `viaje-taycan.jfif` (Taycan negro en autopista al atardecer), `cayenne-electrico.jfif` (tres Cayenne Electric en fila, azul/rojo/amarillo), `porsche-clasico.jfif` (dos 550 Spyder plateados clásicos), `racing-competicion.jfif` (911 GT3 Cup rosa con librea BWT en boxes), `indianapolis-competicion.jpg` (963 LMDh de Penske en pista).
@@ -99,7 +99,7 @@ Fuente del feed (Atom de Google Alerts para "Porsche"):
     ```
     Si `git push` falla (conflicto, red, permisos...), deja el commit local hecho, no lo fuerces ni lo reintentes de forma agresiva, e informa claramente del problema en tu resumen final.
 
-## Capa editorial acumulativa (qué significa para ti, modelos y semanas)
+## Capa editorial acumulativa (nuestra lectura, modelos y semanas)
 
 La página no es solo una lista de titulares: cada noticia curada lleva su lectura para el comprador y se acumula en ficheros de datos que alimentan más sitios. **Esta capa es obligatoria también en ejecuciones manuales.** La implementación de referencia es `scripts/tendencias-comun.js` (catálogos, render, semanas ISO, páginas semanales) y `scripts/actualiza-tendencias-gemini.js`; si cambias reglas aquí, replícalas allí.
 
@@ -108,9 +108,9 @@ Por cada noticia que elijas (paso 7), además de titular, extracto, categoría y
 - `impact`: 1-2 frases en español sobre qué significa para quien compra, tiene o vende un Porsche (precio, reventa, coste, fiabilidad, a qué estar atento). Concreto, sin inventar cifras que no estén en el titular o el fragmento, sin repetir el extracto; si la implicación es indirecta, dilo con honestidad.
 - `links`: 1-3 claves del catálogo `LINK_CATALOG` de `tendencias-comun.js` (páginas internas que existen). Nunca escribas URLs a mano: el render añade además la ficha del modelo (`/porsche/modelos/...`).
 
-Con eso se pintan las tarjetas (`data-models` + bloque `.impact` con "Qué significa para ti") usando `buildCardHtml` de `tendencias-comun.js`.
+Con eso se pintan las tarjetas (`data-models` + bloque `.impact` con "Nuestra lectura") usando `buildCardHtml` de `tendencias-comun.js`.
 
-Ficheros que se mantienen (todos **solo se añaden**, nunca se borra histórico, aunque la página principal siga recortando a 30 tarjetas):
+Ficheros que se mantienen (todos **solo se añaden**, nunca se borra histórico, aunque la página principal siga recortando a 18 tarjetas):
 - `porsche/tendencias-editorial.json`: todas las noticias curadas (id, url, source, published, headline, excerpt, category, models, impact, links, week). Lo consumen el bloque "De qué se habla en la prensa" de `/porsche/tendencias` y las fichas `/porsche/modelos/*` (campo `news_model` en su front matter). Se deduplica por `id` y por `url`.
 - `porsche/tendencias-semanas.json`: resumen y destacados por semana ISO (`2026-W41`). El resumen de cada semana se redacta con **todas** las noticias de esa semana, no solo las de la pasada, y se regenera cuando entran noticias nuevas en ella.
 - `porsche/tendencias/semana-AAAA-WW.html`: una página por semana con su resumen y sus noticias (URL `/porsche/tendencias/semana-2026-41`), con entrada en `sitemap.xml`. Se reescriben todas a partir de los dos JSON anteriores (`writeWeeklyPages`), nunca a mano.
