@@ -124,7 +124,7 @@ Y opcionalmente 2-3 subreddits más específicos si hay actividad reciente relev
 
     - No toques nada fuera de esas tres zonas: ni el CSS, ni las funciones de renderizado, ni la cabecera/footer.
 
-12. **Actualiza `.claude/state/menciones-seen.json`**: añade los identificadores usados en esta ejecución (los descartados por poco relevantes no hace falta guardarlos). Si el array supera 500 elementos, elimina los más antiguos del principio.
+12. **Actualiza `.claude/state/menciones-seen.json`**: añade los identificadores de **todo lo recopilado** en esta ejecución, tanto lo relevante como lo descartado (así no se vuelve a analizar). **Nunca se recorta**: se acumula sin límite.
 
 12b. **Actualiza `porsche/menciones-historico.json`** (fichero público, servido directamente por el sitio y consumido por `fetch()` desde la sección "Histórico de menciones analizadas" de `porsche/menciones.html`): es un array de menciones, más antigua primero, que se **acumula** entre ejecuciones (a diferencia del bloque `socialData`, que se sustituye entero). Si el fichero no existe, trátalo como `[]`.
 
@@ -132,13 +132,20 @@ Y opcionalmente 2-3 subreddits más específicos si hay actividad reciente relev
     ```json
     { "date": "AAAA-MM-DD", "author": "Nombre o medio", "text": "Texto en español, sin HTML.", "source": "Nombre de la fuente", "url": "https://enlace-real", "sentiment": "positive" }
     ```
-    `date` es la fecha de esta ejecución (la misma que va en `MENCIONES-META`). Si el array supera 500 elementos tras añadir los nuevos, elimina los más antiguos del principio para dejarlo en 500 (igual criterio que `menciones-seen.json`).
+    `date` es la fecha de esta ejecución (la misma que va en `MENCIONES-META`). **Nunca se recorta ni se borra nada**: este fichero es el archivo acumulativo de todas las menciones relevantes analizadas, no solo de la muestra de los últimos 7 días (esa muestra es únicamente lo que enseña el bloque `socialData`).
 
-13. **Actualiza `.claude/state/menciones-history.json`**: añade al final un objeto con `{ "date": "AAAA-MM-DD", "totalMentions": N, "distinctSources": N, "sentimentNet": N, "negativeCount": N }` correspondiente a esta ejecución. Si el array supera 20 entradas, elimina las más antiguas del principio.
+12c. **Actualiza `porsche/menciones-recopiladas.json`** (fichero público y acumulativo, nunca se recorta): guarda **todo lo recopilado y analizado** en cada ejecución, también lo que descartas, para que quede constancia de qué se miró y por qué se dejó fuera. No lo consume ninguna sección de la página (el histórico visible usa solo `menciones-historico.json`, que contiene únicamente las relevantes). Añade al final una entrada por cada elemento recogido y no visto antes (Google News y Reddit), con este formato:
+    ```json
+    { "date": "AAAA-MM-DD", "guid": "id único", "title": "Titular original", "source": "Medio", "published": "fecha ISO", "url": "https://…", "query": "búsqueda que lo trajo", "decision": "relevante", "sentiment": "positive", "text": "Texto en español que se publica" }
+    { "date": "AAAA-MM-DD", "guid": "…", "title": "…", "source": "…", "published": "…", "url": "…", "query": "…", "decision": "descartada", "reason": "Motivo breve" }
+    ```
+    Motivos habituales de descarte: otra marca (Porsche no aparece o solo como comparación), ficha de precio o clasificado, motorsport o evento, concesionario o anécdota, noticia de marca o dato técnico sin opinión. Descarta solo lo que de verdad no encaja con el criterio del paso 4; **toda prueba o comparativa con opinión se conserva** aunque su fuente ya esté en la muestra (no recortes por «diversidad» al decidir qué es relevante; la diversidad se aplica solo a las 6-8 destacadas del feed).
+
+13. **Actualiza `.claude/state/menciones-history.json`**: añade al final un objeto con `{ "date": "AAAA-MM-DD", "totalMentions": N, "distinctSources": N, "sentimentNet": N, "negativeCount": N }` correspondiente a esta ejecución. Tampoco se recorta: se acumula sin límite.
 
 14. **Publica el cambio**:
     ```
-    git add porsche/menciones.html porsche/menciones-historico.json .claude/state/menciones-seen.json .claude/state/menciones-history.json
+    git add porsche/menciones.html porsche/menciones-historico.json porsche/menciones-recopiladas.json .claude/state/menciones-seen.json .claude/state/menciones-history.json
     git commit -m "Actualiza menciones sociales de Porsche"
     git push
     ```

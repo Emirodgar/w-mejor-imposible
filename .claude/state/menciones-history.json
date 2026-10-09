@@ -36,9 +36,9 @@
   },
   {
     "date": "2026-10-08",
-    "totalMentions": 11,
-    "distinctSources": 10,
-    "sentimentNet": 55,
+    "totalMentions": 19,
+    "distinctSources": 15,
+    "sentimentNet": 42,
     "negativeCount": 1
   }
 ]
