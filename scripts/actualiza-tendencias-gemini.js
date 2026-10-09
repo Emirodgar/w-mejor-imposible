@@ -228,7 +228,7 @@ async function generate(systemPrompt, userText, schema) {
     };
 
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(MODEL)}:generateContent`;
-    const maxAttempts = 4;
+    const maxAttempts = 6; // la API de Gemini sufre picos de carga (503) que duran más de unos segundos
     let lastError;
     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
         try {
@@ -260,7 +260,7 @@ async function generate(systemPrompt, userText, schema) {
         } catch (err) {
             lastError = err;
             if (err.fatal || attempt === maxAttempts) break;
-            const wait = 5000 * attempt;
+            const wait = Math.min(60000, 5000 * 2 ** (attempt - 1)); // 5, 10, 20, 40 y 60 s
             console.warn(`Intento ${attempt} fallido (${err.message}). Reintentando en ${wait / 1000}s...`);
             await sleep(wait);
         }
