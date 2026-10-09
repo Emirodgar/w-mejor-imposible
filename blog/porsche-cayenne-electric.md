@@ -1,6 +1,6 @@
 ---
 title: "Porsche Cayenne Electric: versiones, precio en España, autonomía y ficha técnica"
-description: Ficha del Porsche Cayenne Electric en España: versiones (Electric, S y Turbo), potencia, batería de 113 kWh, autonomía WLTP, carga rápida, maletero y precios, con las dudas que aún quedan por confirmar.
+description: "Ficha del Porsche Cayenne Electric en España: versiones (Electric, S y Turbo), potencia, batería de 113 kWh, autonomía WLTP, carga rápida, maletero y precios, con las dudas que aún quedan por confirmar."
 image:
 author: Emirodgar
 lang: es_ES
@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-10-09
 folder: Modelos
+tema: comprar
+modelos: [cayenne]
 permalink: porsche/porsche-cayenne-electric
 ---
 

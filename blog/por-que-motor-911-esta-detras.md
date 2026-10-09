@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-09-13
 folder: Guías
+tema: tecnica
+modelos: [911]
 permalink: porsche/por-que-motor-911-esta-detras
 ---
 

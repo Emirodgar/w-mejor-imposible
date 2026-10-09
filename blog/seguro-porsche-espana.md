@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-09-12
 folder: Guías
+tema: costes
+modelos: []
 permalink: porsche/seguro-porsche-espana
 ---
 

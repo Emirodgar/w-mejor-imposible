@@ -1,0 +1,5 @@
+---
+---
+[
+{% assign posts = site.pages | where_exp: "p", "p.feed == 1" | sort: "date" | reverse %}{% for p in posts %}  { "title": {{ p.title | jsonify }}, "url": {{ p.url | jsonify }}, "description": {{ p.description | jsonify }}, "tema": {{ p.tema | jsonify }}, "folder": {{ p.folder | jsonify }}, "modelos": {{ p.modelos | jsonify }}, "date": {{ p.date | date: "%Y-%m-%d" | jsonify }} }{% unless forloop.last %},{% endunless %}
+{% endfor %}]

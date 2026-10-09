@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-09-29
 folder: Guías
+tema: comprar
+modelos: [macan]
 permalink: porsche/porsche-macan-segunda-mano
 ---
 

@@ -709,11 +709,27 @@
 
         <div class="section-divider">
             <span class="eyebrow">Blog de mejorimposible.es</span>
-            <h2>Artículos y guías completas</h2>
+            <h2>Guías para decidir mejor</h2>
         </div>
 		<main id="publicaciones">
-			{% include posts.html %}
-        </main>
+{% assign recientes = site.pages | where_exp: "p", "p.feed == 1" | sort: "date" | reverse %}
+			<div class="news-grid">
+{% for art in recientes limit: 3 %}
+				<div class="news-card" data-category="{{ art.folder }}">
+					<div>
+						<div class="source">{{ art.folder }}</div>
+						<h3>{{ art.title }}</h3>
+						<p class="excerpt">{{ art.description }}</p>
+					</div>
+					<div class="meta">
+						<span>{{ art.date | date: "%d/%m/%Y" }}</span>
+						<a href="https://mejorimposible.es{{ art.url }}" class="read-more-link">Leer más &rarr;</a>
+					</div>
+				</div>
+{% endfor %}
+			</div>
+			<p class="grid-more"><a href="/porsche/blog">Ver las {{ recientes.size }} guías y análisis del blog &rarr;</a></p>
+		</main>
 
 
     </div>

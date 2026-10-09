@@ -9,6 +9,8 @@ sitemap: 1
 feed: 1
 date: 2025-10-09
 folder: Lanzamientos
+tema: novedades
+modelos: [cayenne]
 permalink: porsche/el-futuro-ya-esta-aqui-con-el-nuevo-porsche-cayenne-electric
 ---
 

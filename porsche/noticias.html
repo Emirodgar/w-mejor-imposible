@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archivo de noticias de Porsche, por modelo y mes | Mejor Imposible</title>
-    <meta name="description" content="Archivo completo de noticias de Porsche recopiladas automáticamente, ordenadas por mes y filtrables por modelo (911, 718, Macan, Cayenne, Panamera, Taycan), con buscador en tiempo real.">
+    <meta name="description" content="Archivo completo de noticias de Porsche, agrupadas por historia y filtrables por modelo (911, 718, Macan, Cayenne, Panamera, Taycan), con nuestra lectura de las más relevantes y guías relacionadas.">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,11 +57,13 @@
         .page-back { display: inline-block; margin-bottom: 18px; font-size: 0.85rem; color: var(--porsche-red); text-decoration: none; font-weight: 600; }
         .page-back:hover { text-decoration: underline; }
         .page-title { margin: 0 0 6px 0; font-size: 1.8rem; }
-        .page-subtitle { margin: 0 0 25px 0; opacity: 0.7; font-size: 0.95rem; }
+        .page-subtitle { margin: 0 0 25px 0; opacity: 0.75; font-size: 0.95rem; line-height: 1.6; }
+        .page-subtitle a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .page-subtitle a:hover { text-decoration: underline; }
 
         .search-box {
             position: sticky; top: 78px; z-index: 90;
-            background-color: var(--light-bg); padding: 10px 0 18px 0;
+            background-color: var(--light-bg); padding: 10px 0 14px 0;
         }
         .theme-dark .search-box { background-color: var(--dark-bg); }
         .search-box input {
@@ -71,24 +73,48 @@
         }
         .theme-dark .search-box input { background: var(--dark-card-bg); }
         .search-box input:focus { outline: 2px solid var(--porsche-red); outline-offset: 1px; }
-
-        .chip-row { margin: 0 0 14px 0; }
+        .chip-row { margin: 12px 0 0 0; }
         .chip-btn { background: none; border: 1px solid var(--hairline); color: inherit; padding: 6px 14px; border-radius: 16px; cursor: pointer; font-size: 13px; margin: 3px 6px 3px 0; font-family: inherit; }
         .chip-btn:hover { border-color: var(--porsche-red); }
         .chip-btn.active { background-color: var(--porsche-grey); border-color: var(--porsche-grey); color: white; }
-        .noticias-list li.month-heading { background: none; border: none; padding: 0; margin: 26px 0 12px 0; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; color: var(--porsche-red); }
+
+        .guides-box { background: var(--light-card-bg); border: 1px solid var(--hairline); border-left: 3px solid var(--porsche-gold); border-radius: 6px; padding: 12px 18px; margin: 4px 0 18px 0; font-size: 0.9rem; line-height: 1.7; }
+        .guides-box[hidden] { display: none; }
+        .guides-box .guides-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; opacity: 0.6; margin-bottom: 2px; }
+        .guides-box a { color: var(--porsche-red); font-weight: 600; text-decoration: none; margin-right: 16px; }
+        .guides-box a:hover { text-decoration: underline; }
+        .guides-box a.all { opacity: 0.85; }
+
         .results-count { margin: 0 0 18px 0; font-size: 0.85rem; opacity: 0.65; }
 
         .noticias-list { list-style: none; margin: 0; padding: 0; }
-        .noticias-list li {
+        .noticias-list li.story {
             background-color: var(--light-card-bg); border: 1px solid var(--hairline);
             border-radius: 8px; padding: 18px 22px; margin-bottom: 14px;
         }
-        .theme-dark .noticias-list li { background-color: var(--dark-card-bg); border-color: rgba(255,255,255,0.08); }
+        .theme-dark .noticias-list li.story { background-color: var(--dark-card-bg); border-color: rgba(255,255,255,0.08); }
+        .noticias-list li.story.curated { border-color: rgba(177, 43, 40, 0.35); }
+        .noticias-list li.month-heading { margin: 26px 0 12px 0; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; color: var(--porsche-red); }
+        .badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #fff; background: var(--porsche-red); border-radius: 3px; padding: 3px 7px; margin-bottom: 8px; }
         .noticias-list a.noticia-title { color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 1.05rem; }
         .noticias-list a.noticia-title:hover { text-decoration: underline; }
         .noticia-meta { display: block; font-size: 0.75rem; opacity: 0.6; margin: 4px 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px; }
-        .noticias-list p { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
+        .story p.desc { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
+        .lectura { border-left: 3px solid var(--porsche-red); background: rgba(177, 43, 40, 0.06); padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 12px 0 0 0; }
+        .lectura .lectura-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--porsche-red); margin-bottom: 4px; }
+        .lectura p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
+        .lectura .lectura-links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; }
+        .lectura .lectura-links a { font-size: 0.82rem; font-weight: 600; color: var(--porsche-red); text-decoration: none; }
+        .lectura .lectura-links a:hover { text-decoration: underline; }
+        details.also { margin-top: 12px; font-size: 0.85rem; }
+        details.also summary { cursor: pointer; font-weight: 600; opacity: 0.8; }
+        details.also summary:hover { color: var(--porsche-red); }
+        details.also ul { list-style: none; margin: 8px 0 0 0; padding: 0; }
+        details.also li { padding: 5px 0; border-top: 1px solid var(--hairline); line-height: 1.45; }
+        details.also li:first-child { border-top: none; }
+        details.also li a { color: inherit; text-decoration: none; }
+        details.also li a:hover { color: var(--porsche-red); text-decoration: underline; }
+        details.also li .src { opacity: 0.55; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.4px; margin-right: 6px; }
         .empty-state, .loading-state { text-align: center; opacity: 0.65; padding: 40px 0; }
     </style>
 </head>
@@ -113,12 +139,14 @@
     <div class="container">
         <a class="page-back" href="/porsche/tendencias">&larr; Volver a tendencias</a>
         <h1 class="page-title">Archivo de noticias de Porsche</h1>
-        <p class="page-subtitle">Todo lo que recogemos de la prensa, sin filtrar por relevancia. Si buscas lo que de verdad importa para comprar o tener un Porsche, con su análisis, mira las <a href="/porsche/tendencias" style="color:var(--porsche-red);font-weight:600;text-decoration:none;">tendencias del mercado</a>.</p>
+        <p class="page-subtitle">Todo lo que recogemos de la prensa, agrupado por historia: si varios medios cuentan lo mismo, lo verás una sola vez con el resto de fuentes debajo. Las historias marcadas como <strong>Analizada en tendencias</strong> llevan nuestra lectura y las encontrarás en las <a href="/porsche/tendencias">tendencias del mercado</a>, y para profundizar tienes las <a href="/porsche/blog">guías del blog</a>.</p>
 
         <div class="search-box">
             <input type="search" id="noticias-search" placeholder="Buscar noticias... (ej. Cayenne, GT3, Volkswagen)" autocomplete="off">
-            <div class="chip-row" id="chip-row" style="margin:12px 0 0 0;"></div>
+            <div class="chip-row" id="chip-row"></div>
         </div>
+
+        <div class="guides-box" id="guides-box" hidden></div>
 
         <p class="results-count" id="results-count"></p>
         <ul class="noticias-list" id="noticias-list">
@@ -137,22 +165,14 @@
         const listEl = document.getElementById('noticias-list');
         const countEl = document.getElementById('results-count');
         const searchEl = document.getElementById('noticias-search');
-        let allNoticias = [];
+        const chipRow = document.getElementById('chip-row');
+        const guidesEl = document.getElementById('guides-box');
+        let stories = [];     // historias (cada una con su noticia principal y las demás fuentes)
+        let totalItems = 0;
+        let guias = [];
+        let catalogo = { links: {}, models: {} };
+        let activeModel = 'all';
 
-        function escapeHtml(str) {
-            const div = document.createElement('div');
-            div.textContent = str == null ? '' : String(str);
-            return div.innerHTML;
-        }
-
-        function formatDateEs(iso) {
-            if (!iso) return '';
-            const d = new Date(iso);
-            if (isNaN(d.getTime())) return '';
-            return d.toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' });
-        }
-
-        // Detección de modelo por palabras clave (el archivo crudo no trae etiquetas).
         const MODEL_PATTERNS = [
             ['911', /\b911\b|\bGT[23]\b/i],
             ['718', /\b718\b|boxster|cayman/i],
@@ -161,63 +181,131 @@
             ['panamera', /panamera/i],
             ['taycan', /taycan/i]
         ];
-        const CHIPS = [['all', 'Todas'], ['911', '911'], ['718', '718 Boxster/Cayman'], ['macan', 'Macan'], ['cayenne', 'Cayenne'], ['panamera', 'Panamera'], ['taycan', 'Taycan']];
-        const chipRow = document.getElementById('chip-row');
-        let activeModel = 'all';
+        const CHIPS = [['all', 'Todas'], ['911', '911'], ['718', '718 Boxster/Cayman'], ['macan', 'Macan'], ['cayenne', 'Cayenne'], ['panamera', 'Panamera'], ['taycan', 'Taycan'], ['marca', 'Marca y mercado']];
+        const MODEL_NAME = { '911': '911', '718': '718 (Boxster y Cayman)', macan: 'Macan', cayenne: 'Cayenne', panamera: 'Panamera', taycan: 'Taycan', marca: 'la marca' };
 
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str == null ? '' : String(str);
+            return div.innerHTML;
+        }
+        const getJson = (url, fallback) => fetch(url, { cache: 'no-store' }).then(r => { if (!r.ok) throw new Error(url); return r.json(); }).catch(err => { if (fallback !== undefined) return fallback; throw err; });
+        const fmtDate = iso => { const d = new Date(iso); return isNaN(d.getTime()) ? '' : d.toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' }); };
+        const monthKey = iso => { const d = new Date(iso); return isNaN(d.getTime()) ? '' : d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }); };
+        const host = url => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
+        const weekUrl = key => '/porsche/tendencias/semana-' + String(key).replace('-W', '-');
+
+        // ---------- agrupado por historia ----------
+        const STOP = new Set('porsche para como pero este esta esos estas sobre entre desde hasta cuando donde segun tras mas menos muy tambien sido ser son han hay una unos unas del los las con por que sus nuevo nueva nuevos nuevas coche coches marca alemana'.split(' '));
+        const stem = w => (w.length > 6 ? w.slice(0, 6) : w);
+        function tokens(it) {
+            const txt = (it.title + ' ' + (it.desc || '').slice(0, 140)).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+            const out = new Set();
+            (txt.match(/[a-z0-9]+/g) || []).forEach(w => {
+                if (STOP.has(w)) return;
+                if (w.length >= 4 || (/^\d+$/.test(w) && w.length >= 2)) out.add(stem(w));
+            });
+            return out;
+        }
         function modelsOf(n) {
-            const text = `${n.title || ''} ${n.description || ''}`;
+            const text = (n.title || '') + ' ' + (n.description || '');
             return MODEL_PATTERNS.filter(p => p[1].test(text)).map(p => p[0]);
         }
-
-        function monthKey(iso) {
-            const d = new Date(iso);
-            if (isNaN(d.getTime())) return '';
-            return d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+        function buildStories(news, editorial) {
+            const items = [];
+            editorial.forEach(e => items.push({ kind: 'e', title: e.headline, desc: e.excerpt, source: e.source, url: e.url, published: e.published, models: e.models || [], impact: e.impact, links: e.links || [], week: e.week }));
+            news.forEach(n => items.push({ kind: 'n', title: n.title, desc: n.description || '', source: n.source || host(n.url), url: n.url, published: n.published, models: modelsOf(n) }));
+            const df = {};
+            items.forEach(it => { it.k = tokens(it); it.k.forEach(t => { df[t] = (df[t] || 0) + 1; }); it.t = Date.parse(it.published) || 0; });
+            const score = (a, b) => {
+                if (Math.abs(a.t - b.t) > 3 * 864e5) return 0;
+                let shared = 0, weight = 0;
+                a.k.forEach(t => { if (b.k.has(t)) { shared++; weight += 1 / df[t]; } });
+                if (shared < 2) return 0;
+                return (weight >= 0.6 && shared / Math.min(a.k.size, b.k.size) >= 0.2) ? weight : 0;
+            };
+            // Las noticias curadas son siempre el eje de su historia y nunca se fusionan entre sí.
+            const clusters = items.filter(i => i.kind === 'e').map(e => ({ main: e, curated: true, others: [] }));
+            items.filter(i => i.kind === 'n').sort((a, b) => b.t - a.t).forEach(n => {
+                let best = null, bestScore = 0;
+                clusters.forEach(c => { const s = score(n, c.main); if (s > bestScore) { bestScore = s; best = c; } });
+                if (best) best.others.push(n); else clusters.push({ main: n, curated: false, others: [] });
+            });
+            totalItems = items.length;
+            return clusters.map(c => {
+                const models = new Set(c.main.models);
+                c.others.forEach(o => o.models.forEach(m => models.add(m)));
+                return { main: c.main, curated: c.curated, others: c.others.sort((a, b) => b.t - a.t), models: Array.from(models), t: c.main.t };
+            }).sort((a, b) => b.t - a.t);
         }
 
-        function render(items) {
-            if (!items.length) {
-                listEl.innerHTML = '<li class="empty-state">No hay noticias que coincidan con la búsqueda.</li>';
-                return;
-            }
-            let lastMonth = null;
-            listEl.innerHTML = items.map(n => {
-                const metaParts = [n.source, formatDateEs(n.published)].filter(Boolean);
-                const meta = metaParts.length
-                    ? `<span class="noticia-meta">${escapeHtml(metaParts.join(' · '))}</span>`
-                    : '';
-                const month = monthKey(n.published);
-                const heading = month && month !== lastMonth ? `<li class="month-heading">${escapeHtml(month)}</li>` : '';
-                lastMonth = month || lastMonth;
-                return `${heading}
-                <li>
-                    <a class="noticia-title" href="${escapeHtml(n.url)}" target="_blank" rel="noopener">${escapeHtml(n.title)}</a>
-                    ${meta}
-                    <p>${escapeHtml(n.description)}</p>
-                </li>`;
+        // ---------- pintado ----------
+        function lecturaHtml(m) {
+            if (!m.impact) return '';
+            const seen = {}, links = [];
+            const push = (label, url) => { if (url && !seen[url]) { seen[url] = 1; links.push('<a href="' + escapeHtml(url) + '">' + escapeHtml(label) + '</a>'); } };
+            (m.links || []).forEach(k => { const l = catalogo.links[k]; if (l) push(l.label, l.url); });
+            (m.models || []).forEach(k => { const mod = catalogo.models[k]; if (mod && mod.sheet) push('Ficha del ' + mod.label.split(' ')[0], mod.sheet); });
+            if (m.week) push('Ver en el resumen de su semana', weekUrl(m.week));
+            return '<div class="lectura"><span class="lectura-label">Nuestra lectura</span><p>' + escapeHtml(m.impact) + '</p>' +
+                (links.length ? '<div class="lectura-links">' + links.slice(0, 5).join('') + '</div>' : '') + '</div>';
+        }
+        function storyHtml(s) {
+            const m = s.main;
+            const meta = [m.source, fmtDate(m.published)].filter(Boolean).join(' · ');
+            const also = s.others.length
+                ? '<details class="also"><summary>También en ' + s.others.length + (s.others.length === 1 ? ' medio más' : ' medios más') + '</summary><ul>' +
+                  s.others.map(o => '<li><span class="src">' + escapeHtml(o.source) + '</span><a href="' + escapeHtml(o.url) + '" target="_blank" rel="noopener">' + escapeHtml(o.title) + '</a></li>').join('') + '</ul></details>'
+                : '';
+            return '<li class="story' + (s.curated ? ' curated' : '') + '">' +
+                (s.curated ? '<span class="badge">Analizada en tendencias</span><br>' : '') +
+                '<a class="noticia-title" href="' + escapeHtml(m.url) + '" target="_blank" rel="noopener">' + escapeHtml(m.title) + '</a>' +
+                (meta ? '<span class="noticia-meta">' + escapeHtml(meta) + '</span>' : '') +
+                '<p class="desc">' + escapeHtml(m.desc) + '</p>' + (s.curated ? lecturaHtml(m) : '') + also + '</li>';
+        }
+        function render(list) {
+            if (!list.length) { listEl.innerHTML = '<li class="empty-state">No hay noticias que coincidan con la búsqueda.</li>'; return; }
+            let last = null;
+            listEl.innerHTML = list.map(s => {
+                const month = monthKey(s.main.published);
+                const heading = month && month !== last ? '<li class="month-heading">' + escapeHtml(month) + '</li>' : '';
+                last = month || last;
+                return heading + storyHtml(s);
             }).join('');
         }
-
+        function renderGuides() {
+            if (!guias.length) { guidesEl.hidden = true; return; }
+            let picks, label;
+            if (activeModel === 'all') {
+                picks = guias.slice(0, 3);
+                label = 'Del blog: últimas guías';
+            } else {
+                picks = guias.filter(g => (g.modelos || []).includes(activeModel)).slice(0, 4);
+                label = 'Guías del blog sobre ' + (MODEL_NAME[activeModel] || activeModel);
+            }
+            if (!picks.length) { guidesEl.hidden = true; return; }
+            guidesEl.hidden = false;
+            const all = activeModel === 'all' ? '/porsche/blog' : '/porsche/blog?modelo=' + encodeURIComponent(activeModel);
+            guidesEl.innerHTML = '<span class="guides-label">' + escapeHtml(label) + '</span>' +
+                picks.map(g => '<a href="' + escapeHtml(g.url) + '">' + escapeHtml(g.title) + '</a>').join('') +
+                '<a class="all" href="' + all + '">Ver todas →</a>';
+        }
         function applyFilter() {
             const q = searchEl.value.trim().toLowerCase();
-            const filtered = allNoticias.filter(n => {
-                if (activeModel !== 'all' && !modelsOf(n).includes(activeModel)) return false;
+            const filtered = stories.filter(s => {
+                if (activeModel !== 'all' && !s.models.includes(activeModel)) return false;
                 if (!q) return true;
-                const haystack = `${n.title || ''} ${n.description || ''} ${n.source || ''}`.toLowerCase();
-                return haystack.includes(q);
+                const hay = [s.main].concat(s.others).map(i => i.title + ' ' + i.desc + ' ' + i.source).join(' ').toLowerCase();
+                return hay.includes(q);
             });
             const filtering = q || activeModel !== 'all';
-            countEl.textContent = filtering
-                ? `${filtered.length} de ${allNoticias.length} noticias coinciden con el filtro`
-                : `${allNoticias.length} noticias en el archivo`;
+            const n = filtered.reduce((acc, s) => acc + 1 + s.others.length, 0);
+            countEl.textContent = (filtering ? filtered.length + ' historias (' + n + ' noticias) coinciden con el filtro' : stories.length + ' historias · ' + totalItems + ' noticias en el archivo');
             render(filtered);
+            renderGuides();
         }
-
         function buildChips() {
-            chipRow.innerHTML = CHIPS.map(c =>
-                `<button type="button" class="chip-btn${c[0] === activeModel ? ' active' : ''}" data-model="${c[0]}">${c[1]}</button>`
-            ).join('');
+            chipRow.innerHTML = CHIPS.map(c => '<button type="button" class="chip-btn' + (c[0] === activeModel ? ' active' : '') + '" data-model="' + c[0] + '">' + c[1] + '</button>').join('');
             chipRow.querySelectorAll('.chip-btn').forEach(btn => btn.addEventListener('click', () => {
                 activeModel = btn.dataset.model;
                 chipRow.querySelectorAll('.chip-btn').forEach(b => b.classList.toggle('active', b === btn));
@@ -227,16 +315,23 @@
 
         async function load() {
             try {
-                const res = await fetch('noticias-historico.json', { cache: 'no-store' });
-                if (!res.ok) throw new Error('HTTP ' + res.status);
-                const data = await res.json();
-                allNoticias = Array.isArray(data) ? data : [];
-                allNoticias.sort((a, b) => new Date(b.published || 0) - new Date(a.published || 0));
+                const [news, editorial, cat, blog] = await Promise.all([
+                    getJson('noticias-historico.json'),
+                    getJson('/porsche/tendencias-editorial.json', []),
+                    getJson('/porsche/tendencias-catalogo.json', { links: {}, models: {} }),
+                    getJson('/porsche/blog-indice.json', [])
+                ]);
+                catalogo = cat; guias = blog;
+                stories = buildStories(Array.isArray(news) ? news : [], Array.isArray(editorial) ? editorial : []);
             } catch (err) {
                 listEl.innerHTML = '<li class="empty-state">No se ha podido cargar el archivo de noticias.</li>';
                 countEl.textContent = '';
                 return;
             }
+            try {
+                const wanted = new URLSearchParams(location.search).get('modelo');
+                if (wanted && CHIPS.some(c => c[0] === wanted)) activeModel = wanted;
+            } catch (e) { /* sin filtro inicial */ }
             buildChips();
             applyFilter();
         }

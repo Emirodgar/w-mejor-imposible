@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2025-09-15
 folder: Análisis
+tema: marca
+modelos: [marca]
 permalink: porsche/ventas-porsche
 ---
 

@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-10-08
 folder: Lanzamientos
+tema: novedades
+modelos: [marca]
 permalink: porsche/futuros-modelos-porsche-calendario
 ---
 

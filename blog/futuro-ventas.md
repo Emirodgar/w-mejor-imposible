@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2025-10-09
 folder: Análisis
+tema: marca
+modelos: [marca]
 permalink: porsche/podra-porsche-esquivar-la-tormenta-del-mercado-automovilistico-europeo
 ---
 

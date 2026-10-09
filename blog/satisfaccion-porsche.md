@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2025-09-05
 folder: Análisis
+tema: marca
+modelos: [marca]
 permalink: porsche/satisfaccion-porsche
 ---
 

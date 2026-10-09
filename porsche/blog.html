@@ -1,0 +1,202 @@
+---
+title: "Blog de Porsche: guías de compra, costes, técnica y novedades | Mejor Imposible"
+description: "Guías y análisis sobre Porsche en España: cómo comprar un 911, Macan o Cayenne de segunda mano, costes de seguro e impuestos, tecnología explicada y próximos modelos."
+temas:
+  - { key: comprar, title: "Guías de compra", desc: "Versiones, precios, fiabilidad y qué mirar antes de comprar cada modelo, nuevo o de segunda mano." }
+  - { key: costes, title: "Costes, seguro y trámites", desc: "Lo que cuesta de verdad tener un Porsche más allá del precio de compra." }
+  - { key: tecnica, title: "Cómo funciona un Porsche", desc: "Tecnología, siglas y decisiones de ingeniería explicadas sin jerga." }
+  - { key: novedades, title: "Novedades y próximos modelos", desc: "Lo que llega y lo que cambia en la gama de la marca." }
+  - { key: marca, title: "La marca y el mercado", desc: "Historia, ventas, directivos y estrategia de Porsche." }
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <link rel="canonical" href="https://mejorimposible.es/porsche/blog">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-grey: #464C47;
+            --light-bg: #f6f6f6; --light-card-bg: #ffffff; --light-text: #1a1a1a; --hairline: #e5e5e5;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        .site-header { padding: 18px 32px; background: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
+        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
+        .site-logo-mark { height: 26px; width: auto; display: block; }
+        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+        .site-logo-text span { color: var(--porsche-red); }
+        .site-nav { display: flex; align-items: center; gap: 28px; }
+        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        .site-nav a:hover { color: var(--porsche-red); }
+        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
+        .site-footer p { margin: 6px 0; }
+        .nav-toggle { display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit; width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px; align-items: center; justify-content: center; flex-shrink: 0; }
+        @media (max-width: 600px) {
+            .site-logo-text { display: none; } .site-nav { display: none; } .nav-toggle { display: flex; }
+            .site-nav.is-open { display: flex; flex-direction: column; align-items: flex-start; gap: 0; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline); }
+            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
+        }
+        .page-hero { margin: 10px 0 26px 0; }
+        .page-hero h1 { margin: 0 0 8px 0; font-size: 2rem; line-height: 1.2; }
+        .page-hero p { margin: 0; max-width: 780px; line-height: 1.6; opacity: 0.8; }
+        .toolbar { margin-bottom: 28px; }
+        .toolbar input { width: 100%; box-sizing: border-box; padding: 13px 18px; border-radius: 8px; border: 1px solid var(--porsche-grey); background: #fff; color: inherit; font-family: inherit; font-size: 1rem; }
+        .toolbar input:focus { outline: 2px solid var(--porsche-red); outline-offset: 1px; }
+        .chip-row { margin-top: 12px; }
+        .chip-btn { background: none; border: 1px solid var(--hairline); color: inherit; padding: 6px 14px; border-radius: 16px; cursor: pointer; font-size: 13px; margin: 3px 6px 3px 0; font-family: inherit; }
+        .chip-btn:hover { border-color: var(--porsche-red); }
+        .chip-btn.active { background-color: var(--porsche-grey); border-color: var(--porsche-grey); color: #fff; }
+        .topic { margin-bottom: 40px; }
+        .topic h2 { margin: 0 0 4px 0; font-size: 1.4rem; }
+        .topic .topic-desc { margin: 0 0 16px 0; font-size: 0.92rem; opacity: 0.7; }
+        .post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+        .post-card { display: flex; flex-direction: column; background: var(--light-card-bg); border: 1px solid var(--hairline); border-radius: 8px; padding: 20px 22px; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s; }
+        .post-card:hover { border-color: var(--porsche-red); box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+        .post-cat { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--porsche-gold); margin-bottom: 8px; }
+        .post-card h3 { margin: 0 0 10px 0; font-size: 1.1rem; line-height: 1.35; }
+        .post-card p { margin: 0 0 14px 0; font-size: 0.9rem; line-height: 1.55; opacity: 0.8; flex-grow: 1; }
+        .post-date { font-size: 0.78rem; opacity: 0.55; }
+        .empty { text-align: center; opacity: 0.65; padding: 40px 0; display: none; }
+        .cross { margin-top: 30px; padding: 20px 24px; background: var(--light-card-bg); border: 1px solid var(--hairline); border-radius: 8px; font-size: 0.95rem; line-height: 1.6; }
+        .cross a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
+        .cross a:hover { text-decoration: underline; }
+        [hidden] { display: none !important; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Blog de Porsche",
+      "url": "https://mejorimposible.es/porsche/blog",
+      "inLanguage": "es",
+      "isPartOf": { "@type": "WebSite", "name": "Mejor Imposible", "url": "https://mejorimposible.es" },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+{% assign posts = site.pages | where_exp: "p", "p.feed == 1" | sort: "date" | reverse %}{% for p in posts %}          { "@type": "ListItem", "position": {{ forloop.index }}, "name": {{ p.title | jsonify }}, "url": "https://mejorimposible.es{{ p.url }}" }{% unless forloop.last %},{% endunless %}
+{% endfor %}        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo">
+                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
+                <span class="site-logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="site-nav">
+                <a href="/#tools">Herramientas</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/analisis">Opiniones</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="page-hero">
+            <h1>Blog de Porsche</h1>
+            <p>Guías y análisis propios para decidir mejor: cómo comprar cada modelo, cuánto cuesta realmente tenerlo, cómo funciona y qué viene. Para lo que pasa esta semana, mira las <a href="/porsche/tendencias" style="color:var(--porsche-red);font-weight:600;text-decoration:none;">tendencias del mercado</a>.</p>
+        </div>
+
+        <div class="toolbar">
+            <input type="search" id="blog-search" placeholder="Buscar en las guías… (ej. segunda mano, seguro, GTS)" autocomplete="off">
+            <div class="chip-row" id="chip-row">
+                <button type="button" class="chip-btn active" data-model="all">Todos</button>
+                <button type="button" class="chip-btn" data-model="911">911</button>
+                <button type="button" class="chip-btn" data-model="718">718 Boxster/Cayman</button>
+                <button type="button" class="chip-btn" data-model="macan">Macan</button>
+                <button type="button" class="chip-btn" data-model="cayenne">Cayenne</button>
+                <button type="button" class="chip-btn" data-model="panamera">Panamera</button>
+                <button type="button" class="chip-btn" data-model="taycan">Taycan</button>
+            </div>
+        </div>
+
+        <main id="blog-main">
+{% for t in page.temas %}{% assign grupo = posts | where: "tema", t.key %}{% if grupo.size > 0 %}
+            <section class="topic" id="{{ t.key }}">
+                <h2>{{ t.title }}</h2>
+                <p class="topic-desc">{{ t.desc }}</p>
+                <div class="post-grid">
+{% for p in grupo %}                    <a class="post-card" href="{{ p.url }}" data-models="{{ p.modelos | join: ',' }}" data-search="{{ p.title | downcase | escape }} {{ p.description | downcase | escape }}">
+                        <span class="post-cat">{{ p.folder }}</span>
+                        <h3>{{ p.title | escape }}</h3>
+                        <p>{{ p.description | truncate: 160 | escape }}</p>
+                        <span class="post-date">{{ p.date | date: "%d/%m/%Y" }}</span>
+                    </a>
+{% endfor %}                </div>
+            </section>
+{% endif %}{% endfor %}
+            <p class="empty" id="blog-empty">No hay guías que coincidan con la búsqueda o el modelo elegido.</p>
+        </main>
+
+        <div class="cross">
+            ¿Buscas datos en vez de guías? Consulta los <a href="/porsche/precio-segunda-mano">precios de segunda mano</a>, el <a href="/porsche/coste-real">coste real de propiedad</a>, los <a href="/porsche/fallos">fallos habituales</a> y las <a href="/porsche/tendencias">tendencias del mercado</a>.
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </footer>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var cards = Array.prototype.slice.call(document.querySelectorAll('.post-card'));
+        var topics = Array.prototype.slice.call(document.querySelectorAll('.topic'));
+        var chips = Array.prototype.slice.call(document.querySelectorAll('#chip-row .chip-btn'));
+        var search = document.getElementById('blog-search');
+        var empty = document.getElementById('blog-empty');
+        var model = 'all';
+
+        function apply() {
+            var q = search.value.trim().toLowerCase();
+            var any = false;
+            cards.forEach(function (card) {
+                var models = (card.getAttribute('data-models') || '').split(',').filter(Boolean);
+                // Las guías generales (sin modelo concreto, p. ej. seguro o impuestos) valen para todos los modelos.
+                var okModel = model === 'all' || models.length === 0 || models.indexOf(model) !== -1;
+                var okText = !q || (card.getAttribute('data-search') || '').indexOf(q) !== -1;
+                var show = okModel && okText;
+                card.hidden = !show;
+                if (show) any = true;
+            });
+            topics.forEach(function (t) {
+                t.hidden = !t.querySelector('.post-card:not([hidden])');
+            });
+            empty.style.display = any ? 'none' : 'block';
+        }
+
+        chips.forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                model = chip.getAttribute('data-model');
+                chips.forEach(function (c) { c.classList.toggle('active', c === chip); });
+                apply();
+            });
+        });
+        search.addEventListener('input', apply);
+
+        try {
+            var wanted = new URLSearchParams(location.search).get('modelo');
+            var match = chips.filter(function (c) { return c.getAttribute('data-model') === wanted; })[0];
+            if (match) match.click();
+        } catch (e) { /* sin filtro inicial */ }
+
+        var toggle = document.getElementById('nav-toggle');
+        var nav = document.querySelector('.site-nav');
+        if (toggle && nav) toggle.addEventListener('click', function () { nav.classList.toggle('is-open'); });
+    });
+    </script>
+</body>
+</html>

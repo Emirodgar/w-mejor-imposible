@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-09-11
 folder: Guías
+tema: tecnica
+modelos: []
 permalink: porsche/siglas-tecnologias-porsche
 ---
 

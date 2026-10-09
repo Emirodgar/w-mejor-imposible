@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2026-08-30
 folder: Guías
+tema: marca
+modelos: [marca]
 permalink: porsche/historia-origen-porsche
 ---
 

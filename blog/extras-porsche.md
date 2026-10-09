@@ -8,6 +8,8 @@ sitemap: 1
 feed: 1
 date: 2025-10-07
 folder: Guías
+tema: comprar
+modelos: []
 permalink: porsche/extras-porsche
 ---
 
