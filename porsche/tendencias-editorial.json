@@ -1,5 +1,85 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:1663314069338071107",
+    "url": "https://www.autocar.co.uk/car-news/business-corporate/why-porsche-suffers-more-most-high-ev-costs",
+    "source": "Autocar",
+    "published": "2026-10-09T13:30:19Z",
+    "headline": "Los sobrecostes del coche eléctrico pasan factura a los acuerdos de Porsche",
+    "excerpt": "Porsche afronta compensaciones a sus proveedores tras recortar sus previsiones iniciales de volumen de ventas en modelos 100 % eléctricos como el Macan.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "macan"
+    ],
+    "impact": "Un ritmo de ventas de eléctricos inferior al previsto puede moderar las listas de espera del nuevo Macan y acelerar descuentos o condiciones ventajosas en concesionario.",
+    "links": [
+      "sm_macan",
+      "renting_leasing",
+      "coste_real"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11031072077379191618",
+    "url": "https://www.caranddriver.com/news/a74071001/porsche-911-gt3-cup-718-cayman-gt4-rs-race-cars-manthey/",
+    "source": "caranddriver.com",
+    "published": "2026-10-09T11:39:09Z",
+    "headline": "Manthey presenta ediciones especiales del 911 GT3 Cup y 718 GT4 RS Clubsport",
+    "excerpt": "El preparador celebra su aniversario con el 911 GT3 Cup MR 30 y el 718 Cayman GT4 RS Clubsport MR 30, limitados a tan solo 15 ejemplares cada uno.",
+    "category": "Modelos",
+    "models": [
+      "911",
+      "718"
+    ],
+    "impact": "Tiradas ultralimitadas orientadas a coleccionistas de circuito con primas elevadas de reventa inmediata, sin impacto directo en versiones de calle estándar.",
+    "links": [
+      "sm_911",
+      "sm_cayman"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11191060265169184843",
+    "url": "https://www.elconfidencial.com/empresas/2026-10-09/porsche-caida-ventas-china-1hms_4441864/",
+    "source": "elconfidencial.com",
+    "published": "2026-10-09T10:56:43Z",
+    "headline": "Porsche entrega un 16 % menos de coches en 2026, pero el 911 repunta con fuerza",
+    "excerpt": "La marca cerró los tres primeros trimestres con 178.532 entregas mundiales, lastrada por caídas generales pese al crecimiento del 12 % en la gama 911. Cayenne se mantiene como el modelo más vendido.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911",
+      "cayenne",
+      "panamera"
+    ],
+    "impact": "La alta demanda del 911 sostiene su valor en el mercado de ocasión frente a otros modelos de la gama, donde la menor rotación comercial puede abrir margen para negociar precios.",
+    "links": [
+      "precios_ocasion",
+      "sm_911",
+      "sm_cayenne"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:511261624310235697",
+    "url": "https://espirituracer.com/noticias/porsche-se-resiste-al-monopatin-electrico/",
+    "source": "espíritu RACER",
+    "published": "2026-10-09T10:02:09Z",
+    "headline": "Los próximos 718 Cayman y Boxster eléctricos llegarán en 2027",
+    "excerpt": "Porsche descarta las plataformas estándar tipo monopatín para la nueva generación a baterías del 718, cuyo debut queda fijado para el año 2027.",
+    "category": "Lanzamientos",
+    "models": [
+      "718"
+    ],
+    "impact": "La confirmación de la fecha en 2027 define el horizonte final de los motores térmicos en el 718, lo que suele acelerar la cotización de las últimas unidades de gasolina de segunda mano.",
+    "links": [
+      "sm_boxster",
+      "sm_cayman",
+      "precios_ocasion"
+    ],
+    "week": "2026-W41"
+  },
+  {
     "id": "https://www.caranddriver.com/news/a74065319/porsche-mid-engine-supercar-teaser/",
     "url": "https://www.caranddriver.com/news/a74065319/porsche-mid-engine-supercar-teaser/",
     "source": "Car and Driver",

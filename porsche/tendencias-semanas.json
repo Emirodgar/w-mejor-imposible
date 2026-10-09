@@ -62,29 +62,29 @@
     "updated": "2026-10-08"
   },
   "2026-W41": {
-    "summary": "Porsche reorienta su estrategia hacia vender menos coches y más caros, y rectifica en el Macan: habrá versiones de combustión e híbridas enchufables previstas para 2028. Además, adelanta el Mission S, un concept de motor central por encima del 911, y Singer presenta su restomod DLS Turbo con 700 CV y cambio manual.",
+    "summary": "Porsche está reajustando los tiempos de su electrificación: los futuros 718 a baterías llegarán en 2027 y el Macan recuperará mecánicas térmicas e híbridas enchufables en 2028 tras el impacto financiero de recortar previsiones de ventas eléctricas. Para contrarrestar una caída global del 16 % en las entregas, la compañía prevé elevar los precios de sus gamas más exclusivas hasta un 20 % priorizando la rentabilidad sobre el volumen. Entretanto, el tirón comercial del 911 se mantiene intacto con un crecimiento del 12 %, respaldado por el anticipo del Mission S como nuevo superdeportivo de motor central.",
     "highlights": [
       {
-        "url": "https://www.caranddriver.com/news/a74065319/porsche-mid-engine-supercar-teaser/",
-        "shortTitle": "Concept Mission S",
-        "note": "Superdeportivo de motor central por encima del 911."
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-macan-hibrido-enchufable-2028/",
+        "shortTitle": "Motores térmicos para Macan",
+        "note": "Porsche recuperará versiones de combustión e híbridas enchufables sobre la plataforma PPC para la gama Macan a partir de 2028."
       },
       {
         "url": "https://soymotor.com/coches/noticias/porsche-se-prepara-para-ser-un-20-mas-cara-en-busca-de-mas-beneficios",
-        "shortTitle": "Nueva política de precios",
-        "note": "Enfoque en exclusividad y subida de tarifas hasta un 20%."
+        "shortTitle": "Subida general de precios",
+        "note": "La marca planea encarecer sus modelos más exclusivos hasta un 20 % para compensar la caída de matriculaciones con mayores márgenes de beneficio."
       },
       {
-        "url": "https://www.motorpoint.com/singer-dls-turbo-porsche-911-700-cv-manual",
-        "shortTitle": "Singer DLS Turbo",
-        "note": "Restomod biturbo manual sobre chasis 964."
+        "url": "https://espirituracer.com/noticias/porsche-se-resiste-al-monopatin-electrico/",
+        "shortTitle": "718 eléctrico pospuesto a 2027",
+        "note": "La nueva generación eléctrica de los Cayman y Boxster se retrasa hasta 2027 con una arquitectura específica de baterías."
       },
       {
-        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-macan-hibrido-enchufable-2028/",
-        "shortTitle": "Macan térmico en 2028",
-        "note": "Vuelven los motores de combustión y los PHEV a la gama SUV."
+        "url": "https://www.caranddriver.com/news/a74065319/porsche-mid-engine-supercar-teaser/",
+        "shortTitle": "Adelanto del Mission S",
+        "note": "Porsche anticipa un nuevo concepto de superdeportivo con motor central diseñado para posicionarse por encima del 911."
       }
     ],
-    "updated": "2026-10-08"
+    "updated": "2026-10-09"
   }
 }
