@@ -15,6 +15,7 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const EDITORIAL_PATH = path.join(ROOT, 'porsche', 'tendencias-editorial.json');
 const SEMANAS_PATH = path.join(ROOT, 'porsche', 'tendencias-semanas.json');
+const CATALOGO_PATH = path.join(ROOT, 'porsche', 'tendencias-catalogo.json');
 const SEMANAS_DIR = path.join(ROOT, 'porsche', 'tendencias');
 const SITE = 'https://mejorimposible.es';
 
@@ -390,8 +391,17 @@ ${lis}
                     `;
 }
 
+// Catálogo publicado como JSON para que el navegador pinte las tarjetas del archivo completo
+// (filtro por modelo de /porsche/tendencias) sin duplicar las listas de este fichero.
+function catalogo() {
+    return {
+        links: Object.fromEntries(Object.entries(LINK_CATALOG).map(([k, v]) => [k, { label: v.label, url: v.url }])),
+        models: Object.fromEntries(Object.entries(MODELS).map(([k, v]) => [k, { label: v.label, sheet: v.sheet }]))
+    };
+}
+
 module.exports = {
-    ROOT, EDITORIAL_PATH, SEMANAS_PATH, MODELS, LINK_CATALOG, MONTHS,
+    ROOT, EDITORIAL_PATH, SEMANAS_PATH, CATALOGO_PATH, MODELS, LINK_CATALOG, MONTHS, catalogo,
     escapeHtml, isoWeek, weekSlug, weekUrl, weekLabel, weekRangeFromKey, formatDateCard,
     loadEditorial, loadSemanas, saveJson, mergeEditorial,
     itemLinks, impactHtml, buildCardHtml, buildArchiveHtml, writeWeeklyPages, ensureSitemapWeeks

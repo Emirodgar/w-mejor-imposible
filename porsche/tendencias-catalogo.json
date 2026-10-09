@@ -1,0 +1,110 @@
+{
+  "links": {
+    "precios_ocasion": {
+      "label": "Precios de segunda mano",
+      "url": "/porsche/precio-segunda-mano"
+    },
+    "coste_real": {
+      "label": "Coste real de propiedad",
+      "url": "/porsche/coste-real"
+    },
+    "fallos": {
+      "label": "Fallos habituales",
+      "url": "/porsche/fallos"
+    },
+    "opiniones": {
+      "label": "Opinión de propietarios",
+      "url": "/porsche/analisis"
+    },
+    "comparador": {
+      "label": "Comparador de modelos",
+      "url": "/porsche/comparador"
+    },
+    "comparativas": {
+      "label": "Comparativas con rivales",
+      "url": "/porsche/comparativas"
+    },
+    "financiacion": {
+      "label": "Simulador de financiación",
+      "url": "/porsche/financiacion"
+    },
+    "renting_leasing": {
+      "label": "Comprar, renting o leasing",
+      "url": "/porsche/comprar-renting-leasing"
+    },
+    "garantia_approved": {
+      "label": "Garantía Porsche Approved",
+      "url": "/porsche/garantia-porsche-approved"
+    },
+    "inspeccion": {
+      "label": "Checklist de inspección",
+      "url": "/porsche/checklist-inspecciones-segunda-mano"
+    },
+    "importacion": {
+      "label": "Importar desde Alemania",
+      "url": "/porsche/importacion-alemania"
+    },
+    "vender": {
+      "label": "Cómo vender tu Porsche",
+      "url": "/porsche/como-vender-tu-porsche"
+    },
+    "sm_911": {
+      "label": "911 de segunda mano",
+      "url": "/porsche/911-segunda-mano"
+    },
+    "sm_boxster": {
+      "label": "Boxster de segunda mano",
+      "url": "/porsche/boxster-segunda-mano"
+    },
+    "sm_cayman": {
+      "label": "Cayman de segunda mano",
+      "url": "/porsche/cayman-segunda-mano"
+    },
+    "sm_macan": {
+      "label": "Macan de segunda mano",
+      "url": "/porsche/macan-segunda-mano"
+    },
+    "sm_cayenne": {
+      "label": "Cayenne de segunda mano",
+      "url": "/porsche/cayenne-segunda-mano"
+    },
+    "sm_panamera": {
+      "label": "Panamera de segunda mano",
+      "url": "/porsche/panamera-segunda-mano"
+    },
+    "sm_taycan": {
+      "label": "Taycan de segunda mano",
+      "url": "/porsche/taycan-segunda-mano"
+    }
+  },
+  "models": {
+    "718": {
+      "label": "718 (Boxster/Cayman)",
+      "sheet": "/porsche/modelos/718"
+    },
+    "911": {
+      "label": "911",
+      "sheet": "/porsche/modelos/911"
+    },
+    "macan": {
+      "label": "Macan",
+      "sheet": "/porsche/modelos/macan"
+    },
+    "cayenne": {
+      "label": "Cayenne",
+      "sheet": "/porsche/modelos/cayenne"
+    },
+    "panamera": {
+      "label": "Panamera",
+      "sheet": "/porsche/modelos/panamera"
+    },
+    "taycan": {
+      "label": "Taycan",
+      "sheet": "/porsche/modelos/taycan"
+    },
+    "marca": {
+      "label": "Marca y mercado",
+      "sheet": null
+    }
+  }
+}

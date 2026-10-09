@@ -531,6 +531,7 @@ async function main() {
 
     comun.saveJson(comun.EDITORIAL_PATH, editorial);
     comun.saveJson(comun.SEMANAS_PATH, semanas);
+    comun.saveJson(comun.CATALOGO_PATH, comun.catalogo());
     fs.writeFileSync(TENDENCIAS_PATH, html, 'utf8');
     fs.writeFileSync(SITEMAP_PATH, sitemap, 'utf8');
     fs.mkdirSync(path.dirname(SEEN_PATH), { recursive: true });

@@ -263,6 +263,9 @@
         .grid-more a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
         .grid-more a:hover { text-decoration: underline; }
         .latest-news { margin-bottom: 10px; }
+        .news-grid[hidden], .grid-more[hidden], .results-line[hidden] { display: none !important; }
+        .results-line { text-align: center; margin: 0 0 18px 0; font-size: 0.9rem; opacity: 0.75; }
+        .results-line .chip-btn { margin-left: 8px; }
     </style>
 </head>
 <body class="theme-light">
@@ -613,6 +616,9 @@
                 <!-- RSS-NEWS-CARDS:END -->
             </div>
 
+            <p class="results-line" id="model-results-count" hidden></p>
+            <div class="news-grid" id="model-results" hidden></div>
+
             <p class="grid-more">Mostramos las 18 noticias más recientes. El resto está en los <a href="#semanas">resúmenes semanales</a>.</p>
 
             <p class="no-results" id="no-results">No hay noticias recientes con esa combinación de filtros. Prueba en los <a href="#semanas" style="color:var(--porsche-red);font-weight:600;">resúmenes semanales</a>.</p>
@@ -737,29 +743,108 @@
 	
 	<script>
 	document.addEventListener('DOMContentLoaded', function() {
-    // --- Filtros combinados: categoría + modelo (solo sobre las noticias curadas) ---
-    const cards = Array.from(document.querySelectorAll('#news-container .news-grid .news-card'));
+    // --- Filtros combinados: categoría + modelo ---
+    // Sin filtro de modelo se ve la rejilla de portada (las 18 más recientes). Con un modelo
+    // elegido se pinta, desde el archivo editorial completo, todo lo curado sobre ese modelo.
+    const cards = Array.from(document.querySelectorAll('#news-container > .news-grid:not(#model-results) .news-card'));
+    const frontGrid = document.querySelector('#news-container > .news-grid:not(#model-results)');
+    const results = document.getElementById('model-results');
+    const resultsCount = document.getElementById('model-results-count');
+    const gridMore = document.querySelector('.grid-more');
     const catButtons = document.querySelectorAll('.filter-btn');
     const modelChips = document.querySelectorAll('#model-filter .chip-btn');
     const noResults = document.getElementById('no-results');
+    const PAGE_SIZE = 24;
     let category = 'all';
     let model = 'all';
+    let shown = PAGE_SIZE;
+    let archivePromise = null;
+
+    const MESES_CAP = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const fmtCardDate = iso => {
+        const d = new Date(iso);
+        if (isNaN(d.getTime())) return '';
+        const p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Madrid', day: 'numeric', month: 'numeric', year: 'numeric' }).formatToParts(d);
+        const g = t => Number(p.find(x => x.type === t).value);
+        return g('day') + ' de ' + MESES_CAP[g('month') - 1] + ', ' + g('year');
+    };
+
+    function loadArchive() {
+        if (!archivePromise) {
+            archivePromise = Promise.all([
+                fetch('/porsche/tendencias-editorial.json').then(r => { if (!r.ok) throw new Error('editorial'); return r.json(); }),
+                fetch('/porsche/tendencias-catalogo.json').then(r => r.ok ? r.json() : { links: {}, models: {} }).catch(() => ({ links: {}, models: {} }))
+            ]);
+        }
+        return archivePromise;
+    }
+
+    function itemLinks(item, cat) {
+        const out = [], seen = {};
+        const push = (label, url) => { if (url && !seen[url]) { seen[url] = 1; out.push({ label: label, url: url }); } };
+        (item.links || []).forEach(k => { const l = cat.links && cat.links[k]; if (l) push(l.label, l.url); });
+        (item.models || []).forEach(m => { const mod = cat.models && cat.models[m]; if (mod && mod.sheet) push('Ficha del ' + mod.label.split(' ')[0], mod.sheet); });
+        return out.slice(0, 4);
+    }
+
+    function cardHtml(item, cat) {
+        const links = itemLinks(item, cat).map(l => '<a href="' + esc(l.url) + '">' + esc(l.label) + '</a>').join('');
+        const impact = item.impact
+            ? '<div class="impact"><span class="impact-label">Nuestra lectura</span><p>' + esc(item.impact) + '</p>' + (links ? '<div class="impact-links">' + links + '</div>' : '') + '</div>'
+            : '';
+        return '<div class="news-card" data-category="' + esc(item.category) + '" data-models="' + esc((item.models || []).join(',')) + '">' +
+            '<div class="source">' + esc(item.source) + '</div><h3>' + esc(item.headline) + '</h3><p class="excerpt">' + esc(item.excerpt) + '</p>' + impact +
+            '<div class="meta"><span>' + esc(fmtCardDate(item.published)) + '</span><a href="' + esc(item.url) + '" target="_blank" rel="noopener" class="read-more-link">Leer más →</a></div></div>';
+    }
+
+    function renderArchive() {
+        loadArchive().then(pair => {
+            const items = pair[0], cat = pair[1];
+            const matches = items
+                .filter(i => (i.models || []).includes(model) && (category === 'all' || i.category === category))
+                .sort((a, b) => new Date(b.published) - new Date(a.published));
+            const label = (cat.models && cat.models[model] && cat.models[model].label) || model;
+            if (!matches.length) {
+                results.innerHTML = '';
+                resultsCount.textContent = '';
+                noResults.style.display = 'block';
+                return;
+            }
+            noResults.style.display = 'none';
+            const visible = matches.slice(0, shown);
+            results.innerHTML = visible.map(i => cardHtml(i, cat)).join('');
+            resultsCount.innerHTML = matches.length + (matches.length === 1 ? ' noticia' : ' noticias') + ' sobre ' + esc(label) + ' en el archivo completo' +
+                (matches.length > visible.length ? ' · <button type="button" class="chip-btn" id="show-more">Mostrar más</button>' : '') + '.';
+            const more = document.getElementById('show-more');
+            if (more) more.addEventListener('click', () => { shown += PAGE_SIZE; renderArchive(); });
+        }).catch(() => {
+            results.innerHTML = '';
+            resultsCount.textContent = 'No se ha podido cargar el archivo de noticias. Prueba en los resúmenes semanales.';
+        });
+    }
 
     function applyFilters() {
-        let shown = 0;
-        cards.forEach(card => {
-            const okCat = category === 'all' || (card.dataset.category || '') === category;
-            const models = (card.dataset.models || '').split(',');
-            const okModel = model === 'all' || models.includes(model);
-            const show = okCat && okModel;
-            card.style.display = show ? '' : 'none';
-            if (show) shown++;
-        });
-        if (noResults) noResults.style.display = shown ? 'none' : 'block';
+        if (model === 'all') {
+            results.hidden = true; resultsCount.hidden = true; frontGrid.hidden = false;
+            if (gridMore) gridMore.hidden = false;
+            let visible = 0;
+            cards.forEach(card => {
+                const show = category === 'all' || (card.dataset.category || '') === category;
+                card.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            if (noResults) noResults.style.display = visible ? 'none' : 'block';
+            return;
+        }
+        frontGrid.hidden = true; if (gridMore) gridMore.hidden = true;
+        results.hidden = false; resultsCount.hidden = false;
+        renderArchive();
     }
 
     function setModel(value) {
         model = value;
+        shown = PAGE_SIZE;
         modelChips.forEach(chip => chip.classList.toggle('active', chip.dataset.model === value));
         applyFilters();
     }
@@ -767,6 +852,7 @@
     catButtons.forEach(button => {
         button.addEventListener('click', function() {
             category = this.getAttribute('data-filter');
+            shown = PAGE_SIZE;
             catButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             applyFilters();
