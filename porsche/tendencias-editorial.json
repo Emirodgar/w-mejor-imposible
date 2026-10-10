@@ -1,5 +1,96 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:17335210137723682219",
+    "url": "https://www.thesupercarblog.com/next-gen-audi-a8-could-share-its-underpinnings-with-porsche-panamera/",
+    "source": "thesupercarblog.com",
+    "published": "2026-10-10T19:26:59Z",
+    "headline": "El futuro Audi A8 podría compartir base técnica con el Porsche Panamera",
+    "excerpt": "Informaciones apuntan a que la próxima generación del buque insignia de Audi podría fabricarse en la planta de Leipzig y adoptar la plataforma del Panamera.",
+    "category": "Análisis",
+    "models": [
+      "panamera"
+    ],
+    "impact": "Compartir desarrollo e instalaciones reduce costes de producción para el Panamera y asegura la continuidad de componentes y soporte técnico a largo plazo.",
+    "links": [
+      "sm_panamera",
+      "comparativas"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:18445018569880103998",
+    "url": "https://www.netcarshow.com/porsche/2027-cayenne_s_electric_uk-version/",
+    "source": "NetCarShow.com",
+    "published": "2026-10-10T19:05:57Z",
+    "headline": "Porsche perfila la tecnología del Cayenne eléctrico de cara a 2027",
+    "excerpt": "La versión eléctrica del Cayenne incorporará avances de chasis como la suspensión activa Porsche Active Ride y el diferencial Porsche Torque Vectoring Plus.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "La llegada del Cayenne 100% eléctrico marcará el relevo generacional y podría acelerar la depreciación de las versiones de combustión actuales o redefinir su cotización en ocasión.",
+    "links": [
+      "sm_cayenne",
+      "comparador"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:39613488056326668",
+    "url": "https://carbuzz.com/porsche-911-manual-transmission-sales-october-2026/",
+    "source": "CarBuzz",
+    "published": "2026-10-10T19:02:26Z",
+    "headline": "El cambio manual en el Porsche 911 arrasa en demanda en Estados Unidos",
+    "excerpt": "Las ventas del 911 se mantienen fuertes con cuotas de transmisión manual que llegan al 80% en determinadas versiones del deportivo.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Las unidades manuales del 911 continúan concentrando un gran interés entre entusiastas, un factor clave para preservar su valor de reventa frente a las versiones automáticas.",
+    "links": [
+      "sm_911",
+      "precios_ocasion"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11977149621346614757",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/porsche-records-massive-sales-slide-130000796.html",
+    "source": "Yahoo Finance",
+    "published": "2026-10-10T16:38:37Z",
+    "headline": "Porsche afronta un ajuste de ventas globales y prepara su plan de respuesta",
+    "excerpt": "Tras un descenso en las entregas a nivel global en 2026, la marca evalúa medidas operativas sin comprometer su política de rentabilidad.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Un enfriamiento en el ritmo de entregas globales puede traducirse en menores tiempos de espera para coches nuevos o en un mayor margen de negociación en el mercado secundario.",
+    "links": [
+      "precios_ocasion",
+      "financiacion"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4213388935453167313",
+    "url": "https://www.caranddriver.com/es/coches/planeta-motor/a74076017/porsche-plan-futuro/",
+    "source": "caranddriver.com",
+    "published": "2026-10-10T15:33:10Z",
+    "headline": "Porsche reorienta su estrategia: más exclusividad y subida de precios",
+    "excerpt": "La firma de Stuttgart planea priorizar el valor sobre el volumen, lo que supondrá tarifas más elevadas y nuevas versiones especiales del 911.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911"
+    ],
+    "impact": "Un posicionamiento aún más exclusivo anticipa un incremento general en los precios de los modelos nuevos y un mayor blindaje del valor residual en el mercado de ocasión.",
+    "links": [
+      "precios_ocasion",
+      "vender"
+    ],
+    "week": "2026-W41"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:1663314069338071107",
     "url": "https://www.autocar.co.uk/car-news/business-corporate/why-porsche-suffers-more-most-high-ev-costs",
     "source": "Autocar",
