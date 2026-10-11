@@ -1,5 +1,77 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:15652246343686487811",
+    "url": "https://www.lemonde.fr/economie/article/2026/10/11/porsche-toujours-plus-chere-et-plus-sportive-pour-une-clientele-de-passionnes_6791782_3234.html",
+    "source": "Le Monde",
+    "published": "2026-10-11T18:29:51Z",
+    "headline": "Porsche afianza su estrategia: coches más caros y enfocados al cliente purista",
+    "excerpt": "La marca continúa elevando sus tarifas y orientando sus series especiales hacia un público entusiasta dispuesto a pagar por la máxima deportividad.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911"
+    ],
+    "impact": "Para los compradores de vehículos nuevos implica afrontar precios de acceso más elevados, lo que a su vez favorece la retención de valor en las versiones especiales de segunda mano.",
+    "links": [
+      "precios_ocasion",
+      "vender"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:984050930956830904",
+    "url": "https://www.slashgear.com/2278507/porsche-only-4-liter-6-cylinder-engine-united-states/",
+    "source": "SlashGear",
+    "published": "2026-10-11T16:19:10Z",
+    "headline": "El motor bóxer de 4 litros del 911 GT3 resiste como una rara avis mecánica",
+    "excerpt": "El bloque atmosférico de seis cilindros y cuatro litros del Porsche 911 GT3 se consolida como una de las últimas mecánicas puras de gran cilindrada en producción.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "La condición de 'último en su especie' garantiza una depreciación excepcionalmente baja y un mercado de ocasión muy codiciado para las unidades con este motor.",
+    "links": [
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:8604689781995878106",
+    "url": "https://www.autonocion.com/motornocion/porsche-mission-s-hypercar-hibrido/",
+    "source": "autonocion.com",
+    "published": "2026-10-11T16:17:02Z",
+    "headline": "Porsche reorienta el desarrollo de su próximo 'hypercar' de referencia",
+    "excerpt": "El proyecto destinado a suceder al 918 Spyder reajusta su planteamiento frente a los conceptos 100% eléctricos para medirse con la élite de los superdeportivos.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Aunque se trata de un modelo de producción muy limitada, anticipa las soluciones técnicas y de propulsión que marcarán la pauta en los futuros deportivos de la marca.",
+    "links": [
+      "opiniones"
+    ],
+    "week": "2026-W41"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5314212728964117414",
+    "url": "https://www.electrive.net/2026/10/11/porsche-cayenne-s-coupe-electric-im-test-die-ppe-eine-stufe-weiter/",
+    "source": "electrive.net",
+    "published": "2026-10-11T16:02:40Z",
+    "headline": "Primeros análisis técnicos del Cayenne Coupé eléctrico sobre la plataforma PPE",
+    "excerpt": "Las pruebas de las nuevas versiones eléctricas del Cayenne analizan las diferencias mecánicas de la plataforma PPE y el escalonamiento de potencia hasta el Turbo.",
+    "category": "Análisis",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Quienes valoren adquirir un Cayenne deberán sopesar el salto tecnológico a la plataforma eléctrica frente a la oferta actual de combustión e híbrida en el mercado usado y nuevo.",
+    "links": [
+      "comparador",
+      "sm_cayenne"
+    ],
+    "week": "2026-W41"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:17335210137723682219",
     "url": "https://www.thesupercarblog.com/next-gen-audi-a8-could-share-its-underpinnings-with-porsche-panamera/",
     "source": "thesupercarblog.com",
