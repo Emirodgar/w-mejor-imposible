@@ -1,5 +1,44 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:5754820399179888298",
+    "url": "https://www.motor16.com/industria/ventas-porsche-2026-911-record/",
+    "source": "Motor16",
+    "published": "2026-10-12T17:29:11Z",
+    "headline": "El Porsche 911 bate récord de entregas en 2026 pese a la caída global del fabricante",
+    "excerpt": "El 911 acumula 42.217 unidades entregadas hasta septiembre con una subida del 12%, mientras el Cayenne se mantiene como el modelo más vendido pese al frenazo comercial en China.",
+    "category": "Análisis",
+    "models": [
+      "911",
+      "cayenne",
+      "marca"
+    ],
+    "impact": "Una demanda tan sostenida para el 911 refuerza su valor de reventa en el mercado usado, mientras que las dificultades comerciales generales podrían facilitar margen de negociación en modelos de mayor volumen como el Cayenne.",
+    "links": [
+      "precios_ocasion",
+      "sm_911",
+      "sm_cayenne"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11884353104734886564",
+    "url": "https://www.formacar.com/it/porsche--71280--article",
+    "source": "Formacar",
+    "published": "2026-10-12T15:11:01Z",
+    "headline": "Porsche muestra el primer adelanto del Mission S, su próximo superdeportivo conceptual",
+    "excerpt": "La marca ha publicado un avance en vídeo del Mission S, un nuevo prototipo concebido para anticipar las líneas maestras de una futura gama de superdeportivos.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Aunque se trata de un vehículo conceptual, anticipa la dirección técnica y estética que Porsche trasladará a medio plazo a sus modelos de altas prestaciones.",
+    "links": [
+      "comparador",
+      "opiniones"
+    ],
+    "week": "2026-W42"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:15652246343686487811",
     "url": "https://www.lemonde.fr/economie/article/2026/10/11/porsche-toujours-plus-chere-et-plus-sportive-pour-une-clientele-de-passionnes_6791782_3234.html",
     "source": "Le Monde",
