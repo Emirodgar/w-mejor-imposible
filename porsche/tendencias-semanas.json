@@ -88,19 +88,29 @@
     "updated": "2026-10-11"
   },
   "2026-W42": {
-    "summary": "El Porsche 911 consolida su fortaleza en el mercado con un crecimiento del 12% y récord histórico de entregas hasta septiembre, manteniendo al Cayenne como el modelo más vendido de la gama frente a la desaceleración en China. En el apartado de producto futuro, la firma alemana ha revelado un primer vistazo al prototipo Mission S, concebido para marcar el rumbo de su próxima era de superdeportivos. Estos movimientos reflejan la solidez de los modelos consolidados para el comprador actual y ofrecen pistas clave sobre la dirección que tomará la marca a largo plazo.",
+    "summary": "Porsche ha ratificado su apuesta a largo plazo por los motores térmicos prolongando su vida comercial hacia la próxima década, una estrategia respaldada por el récord histórico de entregas del 911 y el galardón concedido a su nuevo sistema T-Hybrid. En el ámbito comercial, tanto el 911 como el Cayenne continúan blindando la rentabilidad del fabricante frente a la desaceleración global de las ventas. Paralelamente, la firma afina el comportamiento dinámico de su futura gama eléctrica con el diseño de motor central para el 718 a batería y el desarrollo de cambios por levas para involucrar más al conductor.",
     "highlights": [
       {
-        "url": "https://www.motor16.com/industria/ventas-porsche-2026-911-record/",
-        "shortTitle": "Récord de entregas del 911",
-        "note": "El deportivo acumula 42.217 unidades vendidas hasta septiembre con un alza del 12%, mientras el Cayenne retiene el liderato de ventas."
+        "url": "https://www.wardsauto.com/news/porsche-steers-toward-gas-leans-less-on-sales-volume-for-profitability/832806/",
+        "shortTitle": "Continuidad del motor térmico",
+        "note": "La marca mantendrá las mecánicas de combustión e híbridas enchufables bien entrada la próxima década, anteponiendo los márgenes operativos al volumen de ventas."
       },
       {
-        "url": "https://www.formacar.com/it/porsche--71280--article",
-        "shortTitle": "Adelanto del Mission S",
-        "note": "Porsche desvela en vídeo las primeras líneas maestras del prototipo que anticipará su futura gama de superdeportivos."
+        "url": "https://www.motor16.com/industria/ventas-porsche-2026-911-record/",
+        "shortTitle": "Récord histórico del 911",
+        "note": "El deportivo alemán acumula 42.217 entregas hasta septiembre con un crecimiento del 12%, amortiguando el frenazo comercial global de la compañía."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-718-electrico-baterias-motor-central/",
+        "shortTitle": "Distribución del 718 eléctrico",
+        "note": "El reparto de baterías tras los asientos arroja un 55,2% del peso en el eje posterior para replicar el tacto clásico de motor central."
+      },
+      {
+        "url": "https://autotrader.co.nz/news/porsches-new-petrol-powered-supercar-concept-to-debut-on-friday",
+        "shortTitle": "Concepto Mission S gasolina",
+        "note": "Porsche anticipa un nuevo prototipo de superdeportivo con mecánica térmica que sentará las bases de un futuro buque insignia de alto rendimiento."
       }
     ],
-    "updated": "2026-10-12"
+    "updated": "2026-10-14"
   }
 }

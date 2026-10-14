@@ -1,5 +1,118 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:9006430596664193300",
+    "url": "https://autotrader.co.nz/news/porsches-new-petrol-powered-supercar-concept-to-debut-on-friday",
+    "source": "Auto Trader",
+    "published": "2026-10-13T20:05:56Z",
+    "headline": "Porsche anticipa el Mission S, un superdeportivo conceptual propulsado por gasolina",
+    "excerpt": "La firma presentará el Mission S, un prototipo que ofrece un primer vistazo a un futuro buque insignia de alto rendimiento dotado de mecánica térmica.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Confirma que el techo de la gama de deportivos no prescindirá de la combustión, marcando la senda de diseño y rendimiento de las futuras ediciones especiales.",
+    "links": [
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12907195063756661989",
+    "url": "https://carbuzz.com/porsche-patent-ev-gear-shift-october-2026/",
+    "source": "CarBuzz",
+    "published": "2026-10-13T17:30:27Z",
+    "headline": "Porsche desarrolla un sistema de cambio con levas para sus modelos eléctricos",
+    "excerpt": "La compañía trabaja en una tecnología que combina cambios simulados y mecánicos mediante levas para ofrecer una conducción más participativa en sus deportivos eléctricos.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "taycan"
+    ],
+    "impact": "Apunta a resolver la falta de implicación mecánica en la gama eléctrica, un factor clave para contener la fuerte depreciación que afecta a los deportivos a batería.",
+    "links": [
+      "sm_taycan",
+      "opiniones"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11236942073007290661",
+    "url": "https://www.autoblog.com/news/porsches-u-s-sales-are-down-but-one-model-is-the-main-culprit",
+    "source": "Autoblog",
+    "published": "2026-10-13T17:08:19Z",
+    "headline": "El 911 y el Cayenne sostienen las ventas de Porsche frente a la desaceleración",
+    "excerpt": "Pese a la caída general de entregas en Estados Unidos durante el tercer trimestre de 2026, el 911 y el Cayenne lograron registrar resultados comerciales positivos.",
+    "category": "Análisis",
+    "models": [
+      "911",
+      "cayenne"
+    ],
+    "impact": "Demuestra la solidez estructural de la demanda en estos dos modelos, lo que augura un comportamiento más resistente en sus precios de segunda mano frente al resto de la gama.",
+    "links": [
+      "sm_911",
+      "sm_cayenne",
+      "precios_ocasion"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5655768977832806926",
+    "url": "https://www.motor16.com/las-ultimas-noticias/porsche-718-electrico-baterias-motor-central/",
+    "source": "motor16.com",
+    "published": "2026-10-13T16:46:34Z",
+    "headline": "El Porsche 718 eléctrico ubica las baterías tras los asientos con un 55,2% del peso detrás",
+    "excerpt": "La marca confirma que el paquete de baterías se divide en tres módulos repartidos en dos niveles tras el habitáculo, emulando la clásica arquitectura de motor central.",
+    "category": "Modelos",
+    "models": [
+      "718"
+    ],
+    "impact": "Quien valore esperar a la nueva generación eléctrica o adquirir un Cayman actual de gasolina puede esperar un comportamiento dinámico ágil, aunque bajo una solución técnica completamente inédita.",
+    "links": [
+      "sm_cayman",
+      "sm_boxster",
+      "comparador"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:8366685876398022114",
+    "url": "https://newsroom.porsche.com/en_US/2026/products/porsche-t-hybrid-flat-six-named-among-2026-wards-10-best-engines--propulsion-systems.html",
+    "source": "newsroom.porsche.com",
+    "published": "2026-10-13T16:40:09Z",
+    "headline": "El motor T-Hybrid del 911 es premiado entre las mejores mecánicas del año",
+    "excerpt": "El sistema bóxer T-Hybrid presente en los 911 GTS y Turbo S (992.2) ha sido seleccionado entre los 10 mejores sistemas de propulsión de 2026 por los premios Wards.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Aporta tranquilidad sobre la madurez técnica del sistema híbrido del 911 a quienes dudaban de dar el salto al 992.2, favoreciendo su cotización futura.",
+    "links": [
+      "sm_911",
+      "fallos",
+      "opiniones"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5987795153896096634",
+    "url": "https://www.wardsauto.com/news/porsche-steers-toward-gas-leans-less-on-sales-volume-for-profitability/832806/",
+    "source": "wardsauto.com",
+    "published": "2026-10-13T16:02:18Z",
+    "headline": "Porsche prolongará los motores de combustión y priorizará los márgenes sobre el volumen",
+    "excerpt": "La marca mantendrá propulsores térmicos, híbridos enchufables y eléctricos bien entrada la próxima década, buscando sostener la rentabilidad sin depender de inflar el volumen de ventas.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Asegura la vigencia técnica de las versiones de gasolina e híbridas durante años, respaldando el valor residual y la demanda en el mercado frente a una transición eléctrica forzada.",
+    "links": [
+      "precios_ocasion",
+      "vender"
+    ],
+    "week": "2026-W42"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:5754820399179888298",
     "url": "https://www.motor16.com/industria/ventas-porsche-2026-911-record/",
     "source": "Motor16",
