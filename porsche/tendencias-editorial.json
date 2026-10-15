@@ -1,5 +1,81 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:13727004720486623447",
+    "url": "https://www.detroitnews.com/picture-gallery/business/autos/2026/10/15/2026-porsche-911-turbo-s-cabriolet/92228103007/",
+    "source": "The Detroit News",
+    "published": "2026-10-15T04:28:02Z",
+    "headline": "El nuevo 911 Turbo S Cabriolet 2026 adopta mecánica híbrida con 701 CV",
+    "excerpt": "La próxima entrega del 911 Turbo S Cabriolet contará con un propulsor híbrido de 3,6 litros turboalimentado que entrega 701 CV de potencia.",
+    "category": "Lanzamientos",
+    "models": [
+      "911"
+    ],
+    "impact": "El salto a la propulsión híbrida en la cúspide de la gama 911 podría reforzar el valor de reventa de las generaciones Turbo S puramente térmicas en el mercado de ocasión.",
+    "links": [
+      "sm_911",
+      "precios_ocasion"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14005092298344724298",
+    "url": "https://www.16valvulas.com.ar/lanzamiento-porsche-cayenne-electric-desde-us-167-000/",
+    "source": "16 Valvulas",
+    "published": "2026-10-15T01:26:30Z",
+    "headline": "El Cayenne Electric inicia su despliegue comercial con versiones de hasta 1.156 CV",
+    "excerpt": "La cuarta generación del Porsche Cayenne arranca su etapa totalmente eléctrica anunciando variantes tope de gama capaces de entregar hasta 1.156 CV.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Quien valore adquirir un Cayenne deberá decidir entre dar el salto a la electrificación total o acudir al mercado de segunda mano para asegurar mecánicas térmicas tradicionales.",
+    "links": [
+      "sm_cayenne",
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:1676154044816840624",
+    "url": "https://carbuzz.com/porsche-macan-gas-mule-spy-october-14/",
+    "source": "CarBuzz",
+    "published": "2026-10-15T00:54:26Z",
+    "headline": "Porsche prueba alternativas de combustión ante la respuesta al Macan eléctrico",
+    "excerpt": "Fotografías espía captan mulas de desarrollo que sugieren trabajos de la marca para mantener oferta térmica o híbrida ante la demanda de los clientes de SUV compactos.",
+    "category": "Análisis",
+    "models": [
+      "macan",
+      "marca"
+    ],
+    "impact": "Si buscas un SUV de tamaño medio de Porsche y prefieres evitar el eléctrico puro, conviene vigilar los precios de los Macan de gasolina usados ante posibles cambios de gama.",
+    "links": [
+      "sm_macan",
+      "precios_ocasion",
+      "coste_real"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6009403132605738796",
+    "url": "https://laopinion.com/2026/10/14/porsche-mission-s-el-superdeportivo-que-estara-por-encima-del-911/",
+    "source": "La Opinión",
+    "published": "2026-10-14T22:04:27Z",
+    "headline": "Se filtra el Porsche Mission S, un superdeportivo de motor central situado sobre el 911",
+    "excerpt": "Primeras imágenes y detalles adelantan el concept car Mission S, un vehículo de motor central concebido para ocupar un escalón superior al 911 en dinamismo y prestaciones.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca",
+      "911"
+    ],
+    "impact": "Muestra el rumbo técnico de los modelos halo de Porsche y cómo redefinirá la posición del 911 como icono deportivo frente a proyectos de motor central.",
+    "links": [
+      "comparador",
+      "precios_ocasion"
+    ],
+    "week": "2026-W42"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:9006430596664193300",
     "url": "https://autotrader.co.nz/news/porsches-new-petrol-powered-supercar-concept-to-debut-on-friday",
     "source": "Auto Trader",
