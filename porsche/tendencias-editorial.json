@@ -1,5 +1,64 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:11446163247038998129",
+    "url": "https://www.motor.es/noticias/ceo-porsche-mission-s-2026117058.html",
+    "source": "motor.es",
+    "published": "2026-10-16T16:35:31Z",
+    "headline": "Sin versión 100% eléctrica: la baja demanda descarta un Mission S a batería",
+    "excerpt": "La dirección de Porsche ha descartado que el futuro Mission S sea totalmente eléctrico debido a la falta de demanda en este segmento. El fabricante mantendrá alternativas de combustión o hibridación en su próximo buque insignia.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "taycan"
+    ],
+    "impact": "Confirma que la marca protege el interés de los compradores tradicionales de superdeportivos, donde la propulsión térmica retiene un atractivo y un valor de reventa mucho más sólidos.",
+    "links": [
+      "comparativas",
+      "precios_ocasion",
+      "sm_taycan"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:16800552008027963373",
+    "url": "https://www.autopista.es/novedades-coches/porsche-mission-s-es-nuevo-superdeportivo-motor-central-se-ubicara-por-encima-911_334423_102.html",
+    "source": "Autopista",
+    "published": "2026-10-16T14:48:33Z",
+    "headline": "Porsche Mission S: un superdeportivo permanente con motor central por encima del 911",
+    "excerpt": "La firma alemana anticipa con el prototipo Mission S su futuro modelo cúspide con arquitectura de motor central. A diferencia de proyectos especiales anteriores, no se tratará de una serie limitada sino de un vehículo de producción regular en la gama.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "marca"
+    ],
+    "impact": "Para quien busca el máximo escalón deportivo de la marca, este modelo abrirá una nueva cúspide de gama por encima de las variantes GT y Turbo del 911, lo que reordenará la exclusividad del catálogo.",
+    "links": [
+      "comparador",
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:10206145384210935992",
+    "url": "https://www.bloomberglinea.com/negocios/porsche-apuesta-por-un-superdeportivo-mas-caro-que-el-911-para-recuperar-sus-margenes-de-beneficio/?outputType=amp",
+    "source": "Bloomberg Línea",
+    "published": "2026-10-16T10:07:18Z",
+    "headline": "Giro hacia el lujo extremo: Porsche busca rivalizar con Ferrari con un modelo más caro",
+    "excerpt": "Con el anticipo del Mission S, Porsche planea reducir volumen para priorizar mayores márgenes de beneficio. La marca enfoca su estrategia en vender deportivos a precios más altos para competir directamente en el segmento de hiperdeportivos.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Un giro hacia tarifas más elitistas suele empujar al alza la percepción de exclusividad de la marca y sostener los valores residuales en el mercado secundario de sus gamas deportivas altas.",
+    "links": [
+      "precios_ocasion",
+      "comparativas",
+      "coste_real"
+    ],
+    "week": "2026-W42"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:13727004720486623447",
     "url": "https://www.detroitnews.com/picture-gallery/business/autos/2026/10/15/2026-porsche-911-turbo-s-cabriolet/92228103007/",
     "source": "The Detroit News",
