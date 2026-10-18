@@ -1,5 +1,80 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:5595585147466196267",
+    "url": "https://www.autonews.com/mercedes-benz/an-mercedes-amg-first-electric-crossover-targets-porsche-1017/",
+    "source": "autonews.com",
+    "published": "2026-10-18T00:12:46Z",
+    "headline": "Mercedes-AMG prepara un SUV eléctrico de 1.153 CV frente al Porsche Cayenne",
+    "excerpt": "AMG ultima su primer SUV eléctrico independiente para rivalizar de forma directa con el Cayenne de alta potencia en un mercado donde casi el 40 % de clientes de Porsche compara con Mercedes.",
+    "category": "Análisis",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Una mayor competencia directa en los SUV de lujo de altas prestaciones suele traducirse en mejoras de equipamiento y ajustes comerciales en las versiones más prestacionales del Cayenne.",
+    "links": [
+      "comparativas",
+      "sm_cayenne",
+      "comparador"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:13061741510208101077",
+    "url": "https://insideevs.com/reviews/811706/2026-porsche-taycan-4-review/",
+    "source": "InsideEVs",
+    "published": "2026-10-18T00:02:12Z",
+    "headline": "Prueba del Porsche Taycan 4: la versión de acceso convence por chasis",
+    "excerpt": "Los análisis del Taycan 4 con tracción total destacan que el comportamiento dinámico y la puesta a punto del chasis pesan más en la experiencia de conducción que las cifras brutas de aceleración.",
+    "category": "Análisis",
+    "models": [
+      "taycan"
+    ],
+    "impact": "Para quien se plantea comprar un Taycan, confirma que no es imprescindible desembolsar el sobreprecio de las versiones Turbo para disfrutar del tacto dinámico característico de Porsche.",
+    "links": [
+      "sm_taycan",
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:606901102022949457",
+    "url": "https://root-nation.com/es/cars-es/car-news-es/es-porsche-previews-mission-s/",
+    "source": "Root-Nation.com",
+    "published": "2026-10-17T21:49:55Z",
+    "headline": "Porsche desvela el concept Mission S, un superdeportivo con motor central",
+    "excerpt": "La firma de Stuttgart presenta un prototipo conceptual concebido para situarse por encima del 911, explorando una nueva arquitectura deportiva con motor en posición central.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca",
+      "911"
+    ],
+    "impact": "Anticipa la dirección técnica de los futuros modelos halo de la marca y da pistas sobre el nuevo techo de prestaciones que fijará Porsche en su catálogo.",
+    "links": [
+      "sm_911",
+      "opiniones"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12842423176080567684",
+    "url": "https://www.autocar.co.uk/car-news/new-cars/porsche-designer-mission-s-sets-heritage-template-next-911",
+    "source": "Autocar",
+    "published": "2026-10-17T20:35:22Z",
+    "headline": "El diseño del Mission S marcará la pauta estética del próximo Porsche 911",
+    "excerpt": "La dirección de diseño de Porsche adelanta que los rasgos y proporciones explorados en el prototipo Mission S servirán como base conceptual para definir la futura generación del 911.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Conocer el rumbo estético del 911 ayuda a valorar el momento de compra de la generación actual frente a la futura depreciación que suele acompañar a un cambio de diseño relevante.",
+    "links": [
+      "sm_911",
+      "precios_ocasion"
+    ],
+    "week": "2026-W42"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:11446163247038998129",
     "url": "https://www.motor.es/noticias/ceo-porsche-mission-s-2026117058.html",
     "source": "motor.es",
