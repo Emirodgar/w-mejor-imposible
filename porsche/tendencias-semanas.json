@@ -88,29 +88,50 @@
     "updated": "2026-10-11"
   },
   "2026-W42": {
-    "summary": "Porsche ha presentado el Mission S, un superdeportivo conceptual de motor central situado sobre el 911 que llegará a producción regular con mecánica térmica o híbrida y marcará las líneas de futuros modelos. Este movimiento acompaña un ajuste estratégico donde la marca prolongará los motores de combustión y explora alternativas térmicas para su gama SUV ante la menor demanda de vehículos 100 % eléctricos. Mientras tanto, el 911 y el Cayenne continúan sosteniendo los volúmenes comerciales y batiendo registros de ventas, consolidando la vigencia de sus mecánicas tradicionales e híbridas.",
+    "summary": "Porsche reorienta su estrategia hacia la exclusividad con el adelanto del Mission S, un superdeportivo de motor central situado por encima del 911 que prescinde de versión eléctrica pura. En respuesta a la demanda de los clientes, la marca confirma además la continuidad de los motores de combustión y ya prueba un SUV térmico alternativo al Macan. En el apartado comercial y técnico, la cuarta generación del Cayenne arranca con versiones eléctricas de hasta 1.156 CV mientras el 911 bate récords históricos de ventas para sostener las cuentas del fabricante.",
     "highlights": [
       {
         "url": "https://www.autopista.es/novedades-coches/porsche-mission-s-es-nuevo-superdeportivo-motor-central-se-ubicara-por-encima-911_334423_102.html",
         "shortTitle": "Superdeportivo Porsche Mission S",
-        "note": "La marca anticipa un modelo permanente de producción regular con motor central ubicado por encima del 911."
+        "note": "La marca anticipa un modelo permanente con motor central por encima del 911 que descarta la propulsión totalmente eléctrica."
       },
       {
-        "url": "https://www.motor.es/noticias/ceo-porsche-mission-s-2026117058.html",
-        "shortTitle": "Sin versión cien por cien eléctrica",
-        "note": "Porsche descarta una variante totalmente a batería para el Mission S y recurrirá a mecánicas térmicas o híbridas."
-      },
-      {
-        "url": "https://www.detroitnews.com/picture-gallery/business/autos/2026/10/15/2026-porsche-911-turbo-s-cabriolet/92228103007/",
-        "shortTitle": "911 Turbo S híbrido",
-        "note": "La variante Cabriolet incorporará un propulsor bóxer híbrido turbo de 3,6 litros con 701 CV."
+        "url": "https://www.auto-motor-und-sport.de/neuheiten/porsche-macan-verbrenner-nachfolger-hier-rollt-der-porsche-octan-an/",
+        "shortTitle": "Nuevo SUV de gasolina",
+        "note": "Porsche inicia las pruebas de un todocamino térmico para ofrecer una alternativa de combustión en la gama del Macan."
       },
       {
         "url": "https://www.16valvulas.com.ar/lanzamiento-porsche-cayenne-electric-desde-us-167-000/",
-        "shortTitle": "Llegada del Cayenne eléctrico",
-        "note": "La nueva generación del SUV arranca su despliegue comercial con versiones tope de gama de hasta 1.156 CV."
+        "shortTitle": "Despliegue del Cayenne Electric",
+        "note": "La nueva generación del todocamino arranca su comercialización anunciando versiones que llegan a entregar hasta 1.156 CV."
+      },
+      {
+        "url": "https://www.motor16.com/industria/ventas-porsche-2026-911-record/",
+        "shortTitle": "Récord de entregas del 911",
+        "note": "El icónico deportivo crece un 12 % en ventas y amortigua la desaceleración comercial del fabricante en otros mercados."
       }
     ],
-    "updated": "2026-10-18"
+    "updated": "2026-10-19"
+  },
+  "2026-W43": {
+    "summary": "Porsche ha definido su estrategia hasta 2035 centrada en reforzar la exclusividad y rentabilidad de sus deportivos, acompañada de un ajuste operativo que implicará el recorte de 5.000 puestos para contener costes. Para quien planea comprar o posee un vehículo de la marca, estos movimientos confirman la apuesta por proteger el valor residual y el posicionamiento prémium de su catálogo. Al mismo tiempo, la batalla en la electrificación se recrudece con el desarrollo de un futuro SUV de Mercedes-AMG de más de 1.150 CV concebido para plantar cara directamente al próximo Cayenne eléctrico.",
+    "highlights": [
+      {
+        "url": "https://valenciaplaza.com/valenciaplaza/plazamotor/porsche-presenta-una-nueva-estrategia-hasta-2035",
+        "shortTitle": "Estrategia Porsche 2035",
+        "note": "La marca priorizará nuevos modelos deportivos y mayores márgenes comerciales en su hoja de ruta a diez años."
+      },
+      {
+        "url": "https://www.elconfidencial.com/empleo/2026-10-19/trabajara-en-la-fabrica-de-coches-del-futuro_4443951/",
+        "shortTitle": "Plan de contención",
+        "note": "La firma prevé recortar 5.000 puestos dentro de una reorganización de costes en el sector automotriz europeo."
+      },
+      {
+        "url": "https://www.motorpoint.com/mercedes-amg-gt-suv-1153-cv-autonomia",
+        "shortTitle": "Rival para el Cayenne",
+        "note": "Mercedes-AMG prepara un SUV eléctrico de más de 1.150 CV para competir frente al futuro Cayenne eléctrico."
+      }
+    ],
+    "updated": "2026-10-19"
   }
 }

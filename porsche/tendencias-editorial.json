@@ -1,5 +1,96 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:7875410975834998798",
+    "url": "https://valenciaplaza.com/valenciaplaza/plazamotor/porsche-presenta-una-nueva-estrategia-hasta-2035",
+    "source": "Valencia Plaza",
+    "published": "2026-10-19T04:03:56Z",
+    "headline": "Porsche traza su plan estratégico hasta 2035 enfocado en exclusividad y rentabilidad",
+    "excerpt": "En su jornada de mercados de capitales, la firma alemana ha revelado su hoja de ruta a diez años vista, priorizando nuevos modelos deportivos y mayores márgenes comerciales.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Un posicionamiento centrado en mayor exclusividad y margen suele traducirse en precios de catálogo más elevados para los nuevos modelos y menor margen para descuentos en concesionario.",
+    "links": [
+      "coste_real",
+      "precios_ocasion"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6412492581826136745",
+    "url": "https://www.elconfidencial.com/empleo/2026-10-19/trabajara-en-la-fabrica-de-coches-del-futuro_4443951/",
+    "source": "elconfidencial.com",
+    "published": "2026-10-19T03:04:54Z",
+    "headline": "Porsche prevé recortar 5.000 puestos dentro de un plan de contención de costes",
+    "excerpt": "La compañía acometerá un ajuste en su estructura de personal dentro de la reorganización general que afrontan los fabricantes de automóviles europeos.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Las medidas de contención de costes y ajustes de personal en las plantas podrían condicionar la cadencia de fabricación y los tiempos de espera en los pedidos a fábrica de vehículos nuevos.",
+    "links": [
+      "coste_real",
+      "renting_leasing"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:16717543920775331072",
+    "url": "https://www.motorpoint.com/mercedes-amg-gt-suv-1153-cv-autonomia",
+    "source": "MotorPoint",
+    "published": "2026-10-18T23:33:56Z",
+    "headline": "Mercedes-AMG prepara un SUV de altas prestaciones como rival directo del Cayenne eléctrico",
+    "excerpt": "El nuevo SUV eléctrico de AMG alcanzará más de 1.150 CV de potencia para competir de tú a tú frente al futuro Porsche Cayenne Electric en dinamismo y autonomía.",
+    "category": "Análisis",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "La llegada de alternativas de máxima potencia intensificará la competencia en el segmento SUV prémium eléctrico, lo que puede influir en las tarifas y el equipamiento de partida con el que llegue el Cayenne Electric.",
+    "links": [
+      "comparativas",
+      "sm_cayenne"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:2788303169816277656",
+    "url": "https://www.welt.de/iconist/service/plus6ad1b8340e64c69ce0e153e8/porsche-mission-s-dieser-neue-supersportwagen-muss-den-mythos-porsche-retten.html",
+    "source": "WELT",
+    "published": "2026-10-18T19:45:45Z",
+    "headline": "El Porsche Mission S anticipa la próxima generación de superdeportivos de la firma",
+    "excerpt": "El proyecto muestra un diseño deportivo de motor central y proporciones reconocibles, pensado para revalidar el prestigio prestacional de Porsche en el segmento más alto.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Aunque se perfile como un modelo de tirada exclusiva, sirve de banco de pruebas para soluciones técnicas y de diseño que terminarán influyendo en los deportivos de producción de serie.",
+    "links": [
+      "opiniones",
+      "precios_ocasion"
+    ],
+    "week": "2026-W42"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:16017338412795878597",
+    "url": "https://www.auto-motor-und-sport.de/neuheiten/porsche-macan-verbrenner-nachfolger-hier-rollt-der-porsche-octan-an/",
+    "source": "Auto Motor und Sport",
+    "published": "2026-10-18T17:40:07Z",
+    "headline": "Porsche trabaja en un nuevo SUV de combustión como alternativa térmica al Macan",
+    "excerpt": "Los primeros prototipos del futuro todocamino de gasolina comienzan a tomar forma tras la confirmación de la marca de mantener opciones térmicas junto a su gama eléctrica.",
+    "category": "Lanzamientos",
+    "models": [
+      "macan"
+    ],
+    "impact": "Quienes duden en dar el salto al Macan 100% eléctrico contarán con una opción alternativa con motor térmico en la gama, lo que influirá directamente en la depreciación de las unidades Macan actuales de gasolina.",
+    "links": [
+      "sm_macan",
+      "comparador",
+      "precios_ocasion"
+    ],
+    "week": "2026-W42"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:5595585147466196267",
     "url": "https://www.autonews.com/mercedes-benz/an-mercedes-amg-first-electric-crossover-targets-porsche-1017/",
     "source": "autonews.com",
