@@ -1,5 +1,59 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:7863742804622167047",
+    "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
+    "source": "evo.co.uk",
+    "published": "2026-10-20T08:58:04Z",
+    "headline": "Porsche prueba un nuevo Macan de combustión con motor V8",
+    "excerpt": "Una mula camuflada con carrocería de Audi Q5 revela que Porsche está desarrollando un nuevo Macan térmico equipado con mecánica de ocho cilindros.",
+    "category": "Modelos",
+    "models": [
+      "macan"
+    ],
+    "impact": "Para quienes dudaban si pasar al Macan eléctrico, este desarrollo confirma que la marca no abandona la gasolina en el SUV medio y plantea una opción de muy altas prestaciones.",
+    "links": [
+      "sm_macan",
+      "comparador"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14071704374148338633",
+    "url": "https://www.motor16.com/las-ultimas-noticias/porsche-superdeportivo-electrico-sin-demanda/",
+    "source": "motor16.com",
+    "published": "2026-10-20T08:22:21Z",
+    "headline": "Porsche descarta el superdeportivo eléctrico por falta de demanda",
+    "excerpt": "La marca renuncia a una versión puramente eléctrica para su futuro superdeportivo de motor central, apostando por la combustión y la hibridación ante la respuesta del mercado.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Refuerza la vigencia y el valor a largo plazo de los Porsche con motor térmico e híbrido, demostrando que los clientes de la gama más alta siguen rechazando el salto 100% eléctrico.",
+    "links": [
+      "precios_ocasion",
+      "opiniones"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:302896800350341620",
+    "url": "https://www.16valvulas.com.ar/gustavo-gioia-y-el-salto-electrico-de-porsche-llega-la-cayenne-100-electrica-y-la-marca-va-por-las-200-unidades-anuales/",
+    "source": "16valvulas.com.ar",
+    "published": "2026-10-19T20:23:08Z",
+    "headline": "Porsche prepara la llegada del nuevo Cayenne eléctrico de cuarta generación",
+    "excerpt": "La firma avanza en el despliegue del Cayenne Electric, modelo que representará la cuarta generación del SUV dentro de su estrategia de electrificación.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Si estás valorando comprar un Cayenne actual, la proximidad del modelo eléctrico influirá en las opciones de gama nueva y acelerará la depreciación de las unidades térmicas e híbridas existentes.",
+    "links": [
+      "sm_cayenne",
+      "comparativas"
+    ],
+    "week": "2026-W43"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:7875410975834998798",
     "url": "https://valenciaplaza.com/valenciaplaza/plazamotor/porsche-presenta-una-nueva-estrategia-hasta-2035",
     "source": "Valencia Plaza",

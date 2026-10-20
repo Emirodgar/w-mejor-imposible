@@ -114,24 +114,29 @@
     "updated": "2026-10-19"
   },
   "2026-W43": {
-    "summary": "Porsche ha definido su estrategia hasta 2035 centrada en reforzar la exclusividad y rentabilidad de sus deportivos, acompañada de un ajuste operativo que implicará el recorte de 5.000 puestos para contener costes. Para quien planea comprar o posee un vehículo de la marca, estos movimientos confirman la apuesta por proteger el valor residual y el posicionamiento prémium de su catálogo. Al mismo tiempo, la batalla en la electrificación se recrudece con el desarrollo de un futuro SUV de Mercedes-AMG de más de 1.150 CV concebido para plantar cara directamente al próximo Cayenne eléctrico.",
+    "summary": "Porsche recalibra su transición eléctrica apostando de nuevo por la combustión y la hibridación, como demuestran el descarte de un superdeportivo totalmente eléctrico y el desarrollo de un Macan con motor V8. En paralelo, la firma mantiene firme la llegada del Cayenne eléctrico de cuarta generación para medirse contra los nuevos SUV de altas prestaciones de Mercedes-AMG. A nivel corporativo, el nuevo plan estratégico hasta 2035 busca blindar la rentabilidad y exclusividad de la marca mediante una reorganización interna que contempla el recorte de 5.000 puestos de trabajo.",
     "highlights": [
       {
-        "url": "https://valenciaplaza.com/valenciaplaza/plazamotor/porsche-presenta-una-nueva-estrategia-hasta-2035",
-        "shortTitle": "Estrategia Porsche 2035",
-        "note": "La marca priorizará nuevos modelos deportivos y mayores márgenes comerciales en su hoja de ruta a diez años."
+        "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
+        "shortTitle": "Macan con motor V8",
+        "note": "Porsche prueba en carretera mulas de desarrollo para mantener una variante térmica de ocho cilindros en la gama Macan."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-superdeportivo-electrico-sin-demanda/",
+        "shortTitle": "Adiós al superdeportivo eléctrico",
+        "note": "La escasa demanda comercial motiva la cancelación de la variante puramente a batería en favor de motores térmicos e híbridos."
+      },
+      {
+        "url": "https://www.16valvulas.com.ar/gustavo-gioia-y-el-salto-electrico-de-porsche-llega-la-cayenne-100-electrica-y-la-marca-va-por-las-200-unidades-anuales/",
+        "shortTitle": "Cuarta generación del Cayenne",
+        "note": "El fabricante intensifica el despliegue del Cayenne Electric como estandarte tecnológico dentro de su catálogo SUV."
       },
       {
         "url": "https://www.elconfidencial.com/empleo/2026-10-19/trabajara-en-la-fabrica-de-coches-del-futuro_4443951/",
-        "shortTitle": "Plan de contención",
-        "note": "La firma prevé recortar 5.000 puestos dentro de una reorganización de costes en el sector automotriz europeo."
-      },
-      {
-        "url": "https://www.motorpoint.com/mercedes-amg-gt-suv-1153-cv-autonomia",
-        "shortTitle": "Rival para el Cayenne",
-        "note": "Mercedes-AMG prepara un SUV eléctrico de más de 1.150 CV para competir frente al futuro Cayenne eléctrico."
+        "shortTitle": "Ajuste laboral de costes",
+        "note": "La marca prevé recortar 5.000 empleos para proteger márgenes y optimizar su estructura operativa en Europa."
       }
     ],
-    "updated": "2026-10-19"
+    "updated": "2026-10-20"
   }
 }
