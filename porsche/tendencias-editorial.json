@@ -1,5 +1,97 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:12207218222380235039",
+    "url": "https://www.autopista.es/noticias-motor/porsche-911-gt3-rs-cuanto-cuesta-ofrece-por-ese-precio-ecn_332341_102.html",
+    "source": "Autopista",
+    "published": "2026-10-21T11:53:53Z",
+    "headline": "Porsche 911 GT3 RS: examen a su tarifa y equipamiento",
+    "excerpt": "Un análisis pormenorizado del 911 GT3 RS de la generación 992 evalúa su precio de venta, su desarrollo aerodinámico extremo y el peso de sus opciones más cotizadas.",
+    "category": "Análisis",
+    "models": [
+      "911"
+    ],
+    "impact": "El GT3 RS sostiene cotizaciones con sobreprecio en el mercado secundario, por lo que desglosar el valor de extras clave ayuda a comprobar si las unidades de ocasión piden cifras realistas.",
+    "links": [
+      "sm_911",
+      "coste_real",
+      "precios_ocasion"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:421300268665129557",
+    "url": "https://espirituracer.com/noticias/porsche-actualiza-el-navegador-y-respeta-el-salpicadero/",
+    "source": "espíritu RACER",
+    "published": "2026-10-21T11:50:08Z",
+    "headline": "Navegación actualizada sin alterar la integración de origen",
+    "excerpt": "Porsche actualiza sus sistemas de navegación garantizando la compatibilidad con los ajustes del vehículo y el control desde los mandos del volante original.",
+    "category": "Guías",
+    "models": [
+      "marca"
+    ],
+    "impact": "Actualizar el sistema conservando la funcionalidad del volante y la estética del salpicadero evita recurrir a pantallas de terceros que reducen el valor de reventa.",
+    "links": [
+      "inspeccion",
+      "fallos",
+      "opiniones"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4233287647355284972",
+    "url": "https://www.europapress.es/motor/sector-00644/noticia-porsche-auna-divisiones-engineering-digital-porsche-technologies-partir-2027-20261021104126.html",
+    "source": "europapress.es",
+    "published": "2026-10-21T09:15:10Z",
+    "headline": "Porsche une sus áreas de ingeniería y software en Porsche Technologies",
+    "excerpt": "Porsche Engineering y Porsche Digital se fusionarán en una sola estructura a partir de 2027 para centralizar el desarrollo de software y servicios tecnológicos.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Unificar el desarrollo técnico y digital apunta a resolver fricciones en la integración de software, un factor determinante para la fiabilidad a bordo en las próximas generaciones.",
+    "links": [
+      "fallos",
+      "comparativas"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:7392355697103149910",
+    "url": "https://www.finanzas.com/inversion/analisis/mercedes-porsche-20261020/",
+    "source": "Finanzas.com",
+    "published": "2026-10-21T09:11:06Z",
+    "headline": "El viraje hacia el ultralujo frente a las tensiones de la industria",
+    "excerpt": "La búsqueda de un posicionamiento de exclusividad extrema coincide con reajustes de plantilla y la necesidad de responder a la creciente presión comercial en Europa.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Priorizar el margen unitario frente al volumen protege el valor residual en el mercado de ocasión, aunque encarece progresivamente la entrada a la gama nueva.",
+    "links": [
+      "precios_ocasion",
+      "financiacion"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12250841358535687090",
+    "url": "https://www.thesupercarblog.com/2027-porsche-panamera-facelift-new-design-revealed-in-latest-spy-shot/",
+    "source": "The Supercar Blog",
+    "published": "2026-10-21T07:40:57Z",
+    "headline": "El Porsche Panamera 2027 se deja ver al descubierto en fotos espía",
+    "excerpt": "Un prototipo de la actualización del Panamera ha sido avistado rodando sin camuflaje, dejando ver las modificaciones de diseño que incorporará la berlina.",
+    "category": "Modelos",
+    "models": [
+      "panamera"
+    ],
+    "impact": "Para quien esté valorando un Panamera en el mercado nuevo o de reestreno, la cercanía de este cambio estético suele traducirse en mayor depreciación para la versión previa o margen extra de negociación.",
+    "links": [
+      "sm_panamera",
+      "precios_ocasion"
+    ],
+    "week": "2026-W43"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:7863742804622167047",
     "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
     "source": "evo.co.uk",

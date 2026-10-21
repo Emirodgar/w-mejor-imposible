@@ -114,29 +114,29 @@
     "updated": "2026-10-19"
   },
   "2026-W43": {
-    "summary": "Porsche recalibra su transición eléctrica apostando de nuevo por la combustión y la hibridación, como demuestran el descarte de un superdeportivo totalmente eléctrico y el desarrollo de un Macan con motor V8. En paralelo, la firma mantiene firme la llegada del Cayenne eléctrico de cuarta generación para medirse contra los nuevos SUV de altas prestaciones de Mercedes-AMG. A nivel corporativo, el nuevo plan estratégico hasta 2035 busca blindar la rentabilidad y exclusividad de la marca mediante una reorganización interna que contempla el recorte de 5.000 puestos de trabajo.",
+    "summary": "Esta semana Porsche ha recalibrado su estrategia mecánica ante la respuesta del mercado, descartando un superdeportivo 100% eléctrico en favor de motores térmicos e híbridos, mientras prueba un sorprendente Macan de combustión con bloque V8. Al mismo tiempo, la marca sigue adelante con la electrificación del futuro Cayenne de cuarta generación y ultima el rediseño del Panamera para 2027. En el plano corporativo, la firma ajusta su estructura de costes y plantilla mientras consolida su desarrollo digital y de ingeniería bajo la filial Porsche Technologies.",
     "highlights": [
       {
         "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
-        "shortTitle": "Macan con motor V8",
-        "note": "Porsche prueba en carretera mulas de desarrollo para mantener una variante térmica de ocho cilindros en la gama Macan."
+        "shortTitle": "Macan térmico con motor V8",
+        "note": "Aparecen mulas de prueba que confirman el desarrollo de una variante de combustión de ocho cilindros para convivir con la gama eléctrica."
       },
       {
         "url": "https://www.motor16.com/las-ultimas-noticias/porsche-superdeportivo-electrico-sin-demanda/",
         "shortTitle": "Adiós al superdeportivo eléctrico",
-        "note": "La escasa demanda comercial motiva la cancelación de la variante puramente a batería en favor de motores térmicos e híbridos."
+        "note": "La marca renuncia a una mecánica puramente eléctrica para su futuro biplaza de motor central ante la baja demanda de los clientes."
       },
       {
-        "url": "https://www.16valvulas.com.ar/gustavo-gioia-y-el-salto-electrico-de-porsche-llega-la-cayenne-100-electrica-y-la-marca-va-por-las-200-unidades-anuales/",
-        "shortTitle": "Cuarta generación del Cayenne",
-        "note": "El fabricante intensifica el despliegue del Cayenne Electric como estandarte tecnológico dentro de su catálogo SUV."
+        "url": "https://www.thesupercarblog.com/2027-porsche-panamera-facelift-new-design-revealed-in-latest-spy-shot/",
+        "shortTitle": "Panamera 2027 al descubierto",
+        "note": "Fotografías espía muestran sin camuflaje los retoques estéticos que incorporará la próxima actualización de la berlina."
       },
       {
-        "url": "https://www.elconfidencial.com/empleo/2026-10-19/trabajara-en-la-fabrica-de-coches-del-futuro_4443951/",
-        "shortTitle": "Ajuste laboral de costes",
-        "note": "La marca prevé recortar 5.000 empleos para proteger márgenes y optimizar su estructura operativa en Europa."
+        "url": "https://www.europapress.es/motor/sector-00644/noticia-porsche-auna-divisiones-engineering-digital-porsche-technologies-partir-2027-20261021104126.html",
+        "shortTitle": "Nace Porsche Technologies",
+        "note": "Porsche Engineering y Porsche Digital se fusionarán a partir de 2027 para centralizar el desarrollo de software de la compañía."
       }
     ],
-    "updated": "2026-10-20"
+    "updated": "2026-10-21"
   }
 }
