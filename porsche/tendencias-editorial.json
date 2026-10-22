@@ -1,5 +1,100 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:4112406286679977115",
+    "url": "https://www.rdworldonline.com/how-porsche-turns-rare-road-events-into-repeatable-ai-tests-with-nvidia/",
+    "source": "R&D World",
+    "published": "2026-10-22T19:10:24Z",
+    "headline": "Porsche y NVIDIA recrean incidencias reales de carretera mediante inteligencia artificial",
+    "excerpt": "Porsche colabora con NVIDIA y Voxel51 para extraer situaciones imprevistas de los datos de su flota y reproducirlas en entornos simulados de prueba durante la noche, mejorando la respuesta del vehículo ante imprevistos como animales en la vía.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Esta tecnología busca elevar la fiabilidad y rapidez de actuación de los asistentes a la conducción en los próximos modelos de la firma.",
+    "links": [
+      "fallos",
+      "comparador"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5118991087842664082",
+    "url": "https://www.thesupercarblog.com/porsche-cayenne-gt-facelift-weissach-spied-with-dual-centre-exhausts/",
+    "source": "thesupercarblog.com",
+    "published": "2026-10-22T15:43:49Z",
+    "headline": "Cazado el restyling del Porsche Cayenne GT con paquete Weissach y escape central",
+    "excerpt": "Un prototipo del renovado Porsche Cayenne GT ha sido visto durante pruebas en Los Ángeles. El vehículo equipa el paquete Weissach y muestra una llamativa salida doble de escape situada en el centro de la zaga.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "El lanzamiento de esta versión tope de gama suele presionar a la baja las cotizaciones de las versiones GT y Turbo anteriores en el mercado de segunda mano.",
+    "links": [
+      "sm_cayenne",
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4009104912523103770",
+    "url": "https://www.roadandtrack.com/news/a74218137/porsche-911-gt3-turbo-s-718-cayman-gt4-spyder-rs-do-not-drive-recall-wheels/",
+    "source": "roadandtrack.com",
+    "published": "2026-10-22T15:24:20Z",
+    "headline": "Alerta de inmovilización para modelos 911 y 718 de 2024 por la tuerca central",
+    "excerpt": "Porsche ha ampliado una llamada a revisión con aviso de no circular que afecta a varias versiones de 2024 del 911 y 718. El fallo reside en el mecanismo de bloqueo central monotuerca, que podría provocar el desprendimiento de las ruedas.",
+    "category": "Modelos",
+    "models": [
+      "911",
+      "718"
+    ],
+    "impact": "Si tienes o planeas comprar una unidad de 2024 con llantas monotuerca, es crítico verificar en servicio oficial que la campaña esté realizada antes de realizar cualquier prueba dinámica o cerrar la operación.",
+    "links": [
+      "fallos",
+      "inspeccion",
+      "garantia_approved"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12231403777989881671",
+    "url": "https://roadethos.com/news/porsches-turnaround-plan-includes-a-new-macan-sports-cars-and-more",
+    "source": "Road Ethos",
+    "published": "2026-10-22T14:39:22Z",
+    "headline": "Porsche prepara un plan estratégico con un nuevo crossover y más deportivos",
+    "excerpt": "Tras un ejercicio financiero complejo, la firma alemana diseña una reestructuración de su gama para reforzar sus ingresos. El plan incluye el lanzamiento de un crossover inédito y nuevos modelos deportivos.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "La ampliación de la gama puede redefinir los escalones de acceso y el valor residual de los SUV actuales de la casa en los próximos ejercicios.",
+    "links": [
+      "precios_ocasion",
+      "comparador",
+      "renting_leasing"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:15242382205096296649",
+    "url": "https://www.highmotor.com/en/the-porsche-911-speedster-is-already-roaring-around-the-nurburgring-and-it-is-impressive.html/porsche-911-speedster-nurburgring-01",
+    "source": "Highmotor",
+    "published": "2026-10-22T11:53:08Z",
+    "headline": "El próximo Porsche 911 Speedster rueda en fase de pruebas en Nürburgring",
+    "excerpt": "La nueva generación del Porsche 911 Speedster ha sido avistada completando vueltas en el circuito de Nürburgring para afinar su puesta a punto.",
+    "category": "Lanzamientos",
+    "models": [
+      "911"
+    ],
+    "impact": "Al tratarse de ediciones muy exclusivas y limitadas, su llegada suele consolidar el valor de inversión de las variantes Speedster y GT abiertas ya existentes.",
+    "links": [
+      "sm_911",
+      "precios_ocasion",
+      "opiniones"
+    ],
+    "week": "2026-W43"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:12207218222380235039",
     "url": "https://www.autopista.es/noticias-motor/porsche-911-gt3-rs-cuanto-cuesta-ofrece-por-ese-precio-ecn_332341_102.html",
     "source": "Autopista",

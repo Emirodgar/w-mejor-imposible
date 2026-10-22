@@ -114,29 +114,29 @@
     "updated": "2026-10-19"
   },
   "2026-W43": {
-    "summary": "Esta semana Porsche ha recalibrado su estrategia mecánica ante la respuesta del mercado, descartando un superdeportivo 100% eléctrico en favor de motores térmicos e híbridos, mientras prueba un sorprendente Macan de combustión con bloque V8. Al mismo tiempo, la marca sigue adelante con la electrificación del futuro Cayenne de cuarta generación y ultima el rediseño del Panamera para 2027. En el plano corporativo, la firma ajusta su estructura de costes y plantilla mientras consolida su desarrollo digital y de ingeniería bajo la filial Porsche Technologies.",
+    "summary": "En el apartado de seguridad y mantenimiento, Porsche ha emitido una orden de inmovilización para unidades 2024 de los 911 y 718 equipadas con sistema monotuerca ante el riesgo de pérdida de rueda. En cuanto a estrategia de producto, el fabricante modula sus planes de electrificación al descartar un superdeportivo 100% eléctrico en favor de mecánicas híbridas y térmicas, al tiempo que prueba un nuevo Macan con motor V8. Asimismo, la gama deportiva continúa su desarrollo con prototipos del próximo 911 Speedster en Nürburgring y el restyling del Cayenne GT con paquete Weissach.",
     "highlights": [
       {
-        "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
-        "shortTitle": "Macan térmico con motor V8",
-        "note": "Aparecen mulas de prueba que confirman el desarrollo de una variante de combustión de ocho cilindros para convivir con la gama eléctrica."
+        "url": "https://www.roadandtrack.com/news/a74218137/porsche-911-gt3-turbo-s-718-cayman-gt4-spyder-rs-do-not-drive-recall-wheels/",
+        "shortTitle": "Inmovilización de 911 y 718",
+        "note": "Una llamada a revisión con aviso de no circular afecta a modelos 2024 por posibles fallos en el mecanismo de la tuerca central."
       },
       {
         "url": "https://www.motor16.com/las-ultimas-noticias/porsche-superdeportivo-electrico-sin-demanda/",
-        "shortTitle": "Adiós al superdeportivo eléctrico",
-        "note": "La marca renuncia a una mecánica puramente eléctrica para su futuro biplaza de motor central ante la baja demanda de los clientes."
+        "shortTitle": "Superdeportivo eléctrico cancelado",
+        "note": "La marca descarta una versión totalmente eléctrica de su futuro superdeportivo y priorizará la combustión y la hibridación."
       },
       {
-        "url": "https://www.thesupercarblog.com/2027-porsche-panamera-facelift-new-design-revealed-in-latest-spy-shot/",
-        "shortTitle": "Panamera 2027 al descubierto",
-        "note": "Fotografías espía muestran sin camuflaje los retoques estéticos que incorporará la próxima actualización de la berlina."
+        "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
+        "shortTitle": "Nuevo Macan térmico V8",
+        "note": "Mulas de pruebas confirman que Porsche trabaja en una variante de combustión del SUV con mecánica de ocho cilindros."
       },
       {
-        "url": "https://www.europapress.es/motor/sector-00644/noticia-porsche-auna-divisiones-engineering-digital-porsche-technologies-partir-2027-20261021104126.html",
-        "shortTitle": "Nace Porsche Technologies",
-        "note": "Porsche Engineering y Porsche Digital se fusionarán a partir de 2027 para centralizar el desarrollo de software de la compañía."
+        "url": "https://www.highmotor.com/en/the-porsche-911-speedster-is-already-roaring-around-the-nurburgring-and-it-is-impressive.html/porsche-911-speedster-nurburgring-01",
+        "shortTitle": "Nuevo 911 Speedster en Nürburgring",
+        "note": "La nueva generación del exclusivo descapotable afina su puesta a punto dinámica en el trazado alemán."
       }
     ],
-    "updated": "2026-10-21"
+    "updated": "2026-10-22"
   }
 }
