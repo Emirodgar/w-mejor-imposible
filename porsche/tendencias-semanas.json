@@ -114,29 +114,29 @@
     "updated": "2026-10-19"
   },
   "2026-W43": {
-    "summary": "En el apartado de seguridad y mantenimiento, Porsche ha emitido una orden de inmovilización para unidades 2024 de los 911 y 718 equipadas con sistema monotuerca ante el riesgo de pérdida de rueda. En cuanto a estrategia de producto, el fabricante modula sus planes de electrificación al descartar un superdeportivo 100% eléctrico en favor de mecánicas híbridas y térmicas, al tiempo que prueba un nuevo Macan con motor V8. Asimismo, la gama deportiva continúa su desarrollo con prototipos del próximo 911 Speedster en Nürburgring y el restyling del Cayenne GT con paquete Weissach.",
+    "summary": "En el plano de seguridad, Porsche ha emitido un aviso de inmovilizacion urgente que afecta a unidades de 2024 de los 911 y 718 debido a un defecto en la fijacion de la tuerca central. A nivel estrategico, la marca modula su calendario de electrificacion al descartar un superdeportivo a baterias por falta de demanda, mantener el desarrollo de motores termicos como un Macan V8 y apostar por modelos de tirada limitada y alto margen comercial. En cuanto a futuros lanzamientos, avanzan en circuito las pruebas dinamicas del proximo 911 Speedster y del Cayenne Turbo Electric de 1.156 CV.",
     "highlights": [
       {
-        "url": "https://www.roadandtrack.com/news/a74218137/porsche-911-gt3-turbo-s-718-cayman-gt4-spyder-rs-do-not-drive-recall-wheels/",
-        "shortTitle": "Inmovilización de 911 y 718",
-        "note": "Una llamada a revisión con aviso de no circular afecta a modelos 2024 por posibles fallos en el mecanismo de la tuerca central."
+        "url": "https://driving.ca/auto-news/driver-info/porsche-911-turbo-gt3-718-cayman-gt4-centre-lock-wheels-recall-fall-off",
+        "shortTitle": "Fallo en tuerca central",
+        "note": "Porsche amplia la orden de no circular para unidades de 2024 de 911 y 718 por riesgo de desprendimiento de ruedas."
       },
       {
         "url": "https://www.motor16.com/las-ultimas-noticias/porsche-superdeportivo-electrico-sin-demanda/",
-        "shortTitle": "Superdeportivo eléctrico cancelado",
-        "note": "La marca descarta una versión totalmente eléctrica de su futuro superdeportivo y priorizará la combustión y la hibridación."
+        "shortTitle": "Superdeportivo electrico descartado",
+        "note": "La marca renuncia a una mecanica exclusivamente electrica para su futuro deportivo de motor central y priorizara la combustion e hibridacion."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-cayenne-turbo-electric-prueba/",
+        "shortTitle": "Cayenne Turbo Electric en pista",
+        "note": "Las primeras pruebas en circuito analizan la capacidad de la suspension Active Ride para gestionar los 2.890 kg de esta version de 1.156 CV."
       },
       {
         "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
-        "shortTitle": "Nuevo Macan térmico V8",
-        "note": "Mulas de pruebas confirman que Porsche trabaja en una variante de combustión del SUV con mecánica de ocho cilindros."
-      },
-      {
-        "url": "https://www.highmotor.com/en/the-porsche-911-speedster-is-already-roaring-around-the-nurburgring-and-it-is-impressive.html/porsche-911-speedster-nurburgring-01",
-        "shortTitle": "Nuevo 911 Speedster en Nürburgring",
-        "note": "La nueva generación del exclusivo descapotable afina su puesta a punto dinámica en el trazado alemán."
+        "shortTitle": "Desarrollo de Macan V8",
+        "note": "Una mula de pruebas confirma el desarrollo de una nueva variante termica del Macan equipada con motor de ocho cilindros."
       }
     ],
-    "updated": "2026-10-22"
+    "updated": "2026-10-23"
   }
 }

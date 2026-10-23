@@ -1,5 +1,80 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:4202242760488568501",
+    "url": "https://www.motor16.com/las-ultimas-noticias/porsche-cayenne-turbo-electric-prueba/",
+    "source": "Motor16",
+    "published": "2026-10-23T22:27:51Z",
+    "headline": "Cayenne Turbo Electric: 1.156 CV y casi 2,9 toneladas puestos a prueba en pista",
+    "excerpt": "Los primeros ensayos en circuito ponen a prueba la cifra de 2.890 kg del Cayenne Turbo Electric y cómo el chasis con suspensión Active Ride mitiga esa masa.",
+    "category": "Modelos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Demuestra la apuesta de Porsche por compensar pesos elevados mediante suspensión activa de alto rendimiento, algo a considerar en cuanto a desgaste de componentes y costes de mantenimiento.",
+    "links": [
+      "comparador",
+      "sm_cayenne"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14675283655037552844",
+    "url": "https://driving.ca/auto-news/driver-info/porsche-911-turbo-gt3-718-cayman-gt4-centre-lock-wheels-recall-fall-off",
+    "source": "Driving.ca",
+    "published": "2026-10-23T19:37:34Z",
+    "headline": "Aviso de no circular para ciertos 911 y 718 por riesgo de fallo en la tuerca central",
+    "excerpt": "Porsche amplía una llamada a revisión por posibles defectos en las tuercas monotuerca de las ruedas, que podrían fallar y provocar la pérdida de la rueda.",
+    "category": "Modelos",
+    "models": [
+      "911",
+      "718"
+    ],
+    "impact": "Si tienes o vas a comprar un 911 o 718 equipado con llantas de cierre central, comprueba de inmediato en un taller oficial si el vehículo tiene pendiente esta campaña de seguridad.",
+    "links": [
+      "fallos",
+      "garantia_approved",
+      "inspeccion"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12164771837082366070",
+    "url": "https://www.roadandtrack.com/news/a74232559/porsche-could-be-planning-a-400k-911-in-efforts-to-raise-profit-margins/",
+    "source": "Road & Track",
+    "published": "2026-10-23T18:50:33Z",
+    "headline": "Porsche baraja un 911 de 400.000 dólares para impulsar sus márgenes",
+    "excerpt": "La marca explora proyectos especiales, ediciones limitadas y one-offs de muy alto precio como estrategia para elevar su rentabilidad por vehículo.",
+    "category": "Análisis",
+    "models": [
+      "911",
+      "marca"
+    ],
+    "impact": "Confirma la tendencia alcista de precios en la cúspide de la gama 911, lo que suele empujar al alza las cotizaciones de las versiones especiales y GT en el mercado usado.",
+    "links": [
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14456441104679793400",
+    "url": "https://es.motor1.com/news/812594/jaguar-porsche-cambio-rumbo-amenaza-china/",
+    "source": "Motor1.com",
+    "published": "2026-10-23T15:07:55Z",
+    "headline": "Porsche intensifica su giro hacia nichos exclusivos frente a la competencia china",
+    "excerpt": "Ante el avance de la industria automovilística china, los fabricantes tradicionales como Porsche buscan proteger su negocio refugiándose en segmentos de nicho y mayor lujo.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "El enfoque comercial de Porsche seguirá primando el margen sobre el volumen, lo que anticipa coches nuevos más caros y configuraciones cada vez más enfocadas a la exclusividad.",
+    "links": [
+      "comparativas",
+      "opiniones"
+    ],
+    "week": "2026-W43"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:4112406286679977115",
     "url": "https://www.rdworldonline.com/how-porsche-turns-rare-road-events-into-repeatable-ai-tests-with-nvidia/",
     "source": "R&D World",
