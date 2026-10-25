@@ -114,29 +114,29 @@
     "updated": "2026-10-19"
   },
   "2026-W43": {
-    "summary": "En el plano de seguridad, Porsche ha emitido un aviso de inmovilizacion urgente que afecta a unidades de 2024 de los 911 y 718 debido a un defecto en la fijacion de la tuerca central. A nivel estrategico, la marca modula su calendario de electrificacion al descartar un superdeportivo a baterias por falta de demanda, mantener el desarrollo de motores termicos como un Macan V8 y apostar por modelos de tirada limitada y alto margen comercial. En cuanto a futuros lanzamientos, avanzan en circuito las pruebas dinamicas del proximo 911 Speedster y del Cayenne Turbo Electric de 1.156 CV.",
+    "summary": "En el plano de seguridad y mantenimiento, Porsche ha emitido un aviso de inmovilización preventiva para unidades 2024 de 911 y 718 equipadas con tuerca central por riesgo de desprendimiento de la rueda. A nivel comercial y estratégico, la marca reorienta su catálogo cancelando el superdeportivo 100% eléctrico ante la falta de demanda para apostar por ediciones limitadas de alto margen y mantener mecánicas térmicas como un inédito Macan V8. Paralelamente, el desarrollo técnico continúa con intensas pruebas del futuro Cayenne y el registro de patentes destinadas a replicar el tacto de un cambio manual en sus cajas PDK.",
     "highlights": [
       {
-        "url": "https://driving.ca/auto-news/driver-info/porsche-911-turbo-gt3-718-cayman-gt4-centre-lock-wheels-recall-fall-off",
-        "shortTitle": "Fallo en tuerca central",
-        "note": "Porsche amplia la orden de no circular para unidades de 2024 de 911 y 718 por riesgo de desprendimiento de ruedas."
+        "url": "https://www.roadandtrack.com/news/a74218137/porsche-911-gt3-turbo-s-718-cayman-gt4-spyder-rs-do-not-drive-recall-wheels/",
+        "shortTitle": "Alerta de inmovilización técnica",
+        "note": "Porsche solicita no circular con determinados 911 y 718 de 2024 por un defecto en el mecanismo monotuerca."
       },
       {
         "url": "https://www.motor16.com/las-ultimas-noticias/porsche-superdeportivo-electrico-sin-demanda/",
-        "shortTitle": "Superdeportivo electrico descartado",
-        "note": "La marca renuncia a una mecanica exclusivamente electrica para su futuro deportivo de motor central y priorizara la combustion e hibridacion."
+        "shortTitle": "Adiós al superdeportivo eléctrico",
+        "note": "La firma descarta un modelo 100% a batería para su futuro superdeportivo de motor central por la baja demanda comercial."
       },
       {
-        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-cayenne-turbo-electric-prueba/",
-        "shortTitle": "Cayenne Turbo Electric en pista",
-        "note": "Las primeras pruebas en circuito analizan la capacidad de la suspension Active Ride para gestionar los 2.890 kg de esta version de 1.156 CV."
+        "url": "https://carbuzz.com/porsche-manual-patent-october-2026/",
+        "shortTitle": "Tacto manual en PDK",
+        "note": "Nuevas patentes buscan recrear la experiencia y sensaciones de una caja manual en transmisiones de doble embrague."
       },
       {
         "url": "https://www.evo.co.uk/porsche/macan/209207/this-mystery-audi-q5-is-actually-a-porsche-macan-and-it-has-a-v8",
-        "shortTitle": "Desarrollo de Macan V8",
-        "note": "Una mula de pruebas confirma el desarrollo de una nueva variante termica del Macan equipada con motor de ocho cilindros."
+        "shortTitle": "Macan térmico con V8",
+        "note": "Pruebas con mulas camufladas sugieren el desarrollo de una versión de combustión con ocho cilindros para el SUV compacto."
       }
     ],
-    "updated": "2026-10-23"
+    "updated": "2026-10-25"
   }
 }

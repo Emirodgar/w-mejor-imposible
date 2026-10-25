@@ -1,5 +1,62 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:247870061990533825",
+    "url": "https://www.autoblog.com/news/porsche-is-betting-on-400000-sports-cars-to-boost-its-profits",
+    "source": "Autoblog",
+    "published": "2026-10-25T06:16:52Z",
+    "headline": "Porsche recurrirá a ediciones limitadas de alto precio para recuperar margen de beneficio",
+    "excerpt": "Tras un ejercicio financiero difícil, la marca alemana planea centrarse en el lanzamiento de deportivos exclusivos de más de 400.000 dólares para impulsar sus ingresos.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Para compradores de gama alta, anticipa un acceso a cupos aún más restringido en modelos especiales y un impacto alcista en las cotizaciones del mercado secundario.",
+    "links": [
+      "precios_ocasion",
+      "vender"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4791349465941403080",
+    "url": "https://carbuzz.com/porsche-manual-patent-october-2026/",
+    "source": "CarBuzz",
+    "published": "2026-10-25T04:01:25Z",
+    "headline": "Porsche registra patentes para devolver el tacto de un cambio manual a sus cajas PDK",
+    "excerpt": "La compañía alemana ha presentado nuevas solicitudes de patente con el objetivo de recrear sensaciones manuales en transmisiones automáticas.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911",
+      "718"
+    ],
+    "impact": "Si llega a producción en futuros modelos deportivos, permitirá a los puristas disfrutar de sensaciones más analógicas sin prescindir de la eficacia del cambio de doble embrague.",
+    "links": [
+      "opiniones",
+      "sm_911"
+    ],
+    "week": "2026-W43"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:9300152694814640136",
+    "url": "https://www.autoexpress.co.uk/car-group-tests/370745/porsche-macan-vs-alpine-a390-sportiest-ev-suvs-go-head-head",
+    "source": "autoexpress.co.uk",
+    "published": "2026-10-25T00:48:05Z",
+    "headline": "Porsche Macan eléctrico frente al Alpine A390: pulso entre SUV deportivos a batería",
+    "excerpt": "El primer todocamino eléctrico de Alpine llega al mercado dispuesto a desafiar la hegemonía del Macan en el segmento de SUV deportivos premium.",
+    "category": "Análisis",
+    "models": [
+      "macan"
+    ],
+    "impact": "La llegada de competidores directos amplía el abanico para quienes buscan un SUV eléctrico de tacto dinámico y ofrece referencias útiles para comparar precio y equipamiento.",
+    "links": [
+      "comparativas",
+      "comparador",
+      "sm_macan"
+    ],
+    "week": "2026-W43"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:4202242760488568501",
     "url": "https://www.motor16.com/las-ultimas-noticias/porsche-cayenne-turbo-electric-prueba/",
     "source": "Motor16",
