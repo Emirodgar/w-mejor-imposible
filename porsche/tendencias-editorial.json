@@ -1,5 +1,81 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:15763433646149210419",
+    "url": "https://www.motor16.com/las-ultimas-noticias/estrategia-porsche-exclusivos-14-millones/",
+    "source": "motor16.com",
+    "published": "2026-10-26T17:58:47Z",
+    "headline": "Porsche prioriza la exclusividad y prepara 15 creaciones únicas 'one-off'",
+    "excerpt": "La compañía busca elevar sus márgenes operativos centrándose en proyectos ultraexclusivos y restauraciones especiales de gran valor en lugar de perseguir el volumen.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "La apuesta por vehículos únicos y personalización extrema refuerza la imagen de marca de cara al coleccionismo, aunque aleja los productos más codiciados del comprador habitual.",
+    "links": [
+      "precios_ocasion",
+      "vender"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12421976365931005539",
+    "url": "https://autobuzz.my/2026/10/26/porsches-franken-manual-gearbox-could-be-even-better-than-ferraris-manuale/",
+    "source": "autobuzz.my",
+    "published": "2026-10-26T15:14:47Z",
+    "headline": "Porsche patenta una transmisión manual simulada para futuros modelos",
+    "excerpt": "La marca ha registrado una patente de cambio electrónico con tacto en H que emula la interacción manual y se adapta según las condiciones de conducción.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911",
+      "718"
+    ],
+    "impact": "Esta solución busca retener la conexión tradicional del conductor con el vehículo frente a la progresiva electrificación de las transmisiones mecánicas convencionales.",
+    "links": [
+      "comparador",
+      "fallos"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:8731199703133676102",
+    "url": "https://www.carmag.co.za/news/new-models/porsche-unveils-gt3-touring-earls-court-51-edition/",
+    "source": "CAR Magazine",
+    "published": "2026-10-26T12:40:37Z",
+    "headline": "Porsche presenta el 911 GT3 Touring Earls Court 51 Edition",
+    "excerpt": "Para celebrar 75 años de presencia en Reino Unido, el fabricante alemán ha creado una edición conmemorativa y exclusiva para dicho mercado basada en el GT3 Touring.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Las variantes conmemorativas sobre carrocería GT Touring suelen sostener una demanda sólida entre coleccionistas y mantener con firmeza su cotización en el mercado secundario.",
+    "links": [
+      "sm_911",
+      "precios_ocasion",
+      "garantia_approved"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5792322585792825653",
+    "url": "https://www.theupcoming.co.uk/2026/10/26/porsche-unveils-mission-s-concept-previewing-permanent-mid-engined-super-sports-car-above-the-911/",
+    "source": "theupcoming.co.uk",
+    "published": "2026-10-26T12:09:36Z",
+    "headline": "Porsche presenta el Mission S, anticipo de un superdeportivo de motor central",
+    "excerpt": "La firma de Stuttgart ha desvelado el Mission S, un modelo conceptual que adelanta una nueva plataforma de superdeportivo con motor central situada por encima del 911.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "marca"
+    ],
+    "impact": "Anticipa una nueva cúspide de rendimiento en la gama deportiva de Porsche, lo que a medio plazo podría redefinir los techos de precio y exclusividad de la marca.",
+    "links": [
+      "comparador",
+      "opiniones"
+    ],
+    "week": "2026-W44"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:247870061990533825",
     "url": "https://www.autoblog.com/news/porsche-is-betting-on-400000-sports-cars-to-boost-its-profits",
     "source": "Autoblog",

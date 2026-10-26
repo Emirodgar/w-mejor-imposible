@@ -138,5 +138,31 @@
       }
     ],
     "updated": "2026-10-25"
+  },
+  "2026-W44": {
+    "summary": "Porsche refuerza su estrategia hacia la ultraexclusividad y los altos márgenes con el anuncio de 15 proyectos únicos y series limitadas como el nuevo 911 GT3 Touring Earls Court 51 Edition. En el plano técnico e innovador, la marca desvela el concept Mission S, que anticipa un superdeportivo de motor central situado por encima del 911. Al mismo tiempo, el registro de una patente de cambio manual simulado evidencia el esfuerzo por mantener la implicación del conductor en futuros modelos electrificados o de nueva generación.",
+    "highlights": [
+      {
+        "url": "https://www.theupcoming.co.uk/2026/10/26/porsche-unveils-mission-s-concept-previewing-permanent-mid-engined-super-sports-car-above-the-911/",
+        "shortTitle": "Superdeportivo conceptual Mission S",
+        "note": "Adelanta una plataforma de motor central concebida para posicionarse por encima de la gama 911."
+      },
+      {
+        "url": "https://autobuzz.my/2026/10/26/porsches-franken-manual-gearbox-could-be-even-better-than-ferraris-manuale/",
+        "shortTitle": "Patente de cambio manual simulado",
+        "note": "Registra una transmisión electrónica con tacto en H que emula la interacción clásica según las exigencias de la conducción."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/estrategia-porsche-exclusivos-14-millones/",
+        "shortTitle": "Estrategia de creaciones one-off",
+        "note": "La firma proyecta 15 modelos únicos y restauraciones de gran valor para proteger sus márgenes sin depender del volumen."
+      },
+      {
+        "url": "https://www.carmag.co.za/news/new-models/porsche-unveils-gt3-touring-earls-court-51-edition/",
+        "shortTitle": "911 GT3 Earls Court 51",
+        "note": "Presentan una edición exclusiva para Reino Unido basada en el GT3 Touring que celebra 75 años de presencia local."
+      }
+    ],
+    "updated": "2026-10-26"
   }
 }
