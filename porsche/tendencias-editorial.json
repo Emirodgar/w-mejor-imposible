@@ -1,5 +1,62 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:10881414613923850881",
+    "url": "https://www.autoblog.com/news/porsches-gas-powered-macan-successor-may-get-a-v8",
+    "source": "Autoblog",
+    "published": "2026-10-28T16:44:37Z",
+    "headline": "El futuro Macan de combustión podría recibir una mecánica V8",
+    "excerpt": "Informaciones procedentes de Alemania apuntan a que Porsche no solo mantendrá una alternativa térmica para el Macan en los próximos años, sino que podría incorporar motores V8 en su gama.",
+    "category": "Lanzamientos",
+    "models": [
+      "macan"
+    ],
+    "impact": "Para quienes dudaban en dar el salto al Macan eléctrico, esto anticipa que seguirá habiendo opciones de gasolina potentes, lo que además podría estabilizar el valor residual de los Macan GTS y Turbo actuales.",
+    "links": [
+      "sm_macan",
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11566399970633302725",
+    "url": "https://www.nu.nl/economie/6414583/porsche-ziet-winst-herstellen-ondanks-minder-autoverkopen.html",
+    "source": "nu.nl",
+    "published": "2026-10-28T15:11:49Z",
+    "headline": "Porsche eleva sus beneficios pese al descenso en el volumen de entregas",
+    "excerpt": "Durante los primeros nueve meses del ejercicio, la marca alemana ha visto recuperarse sus ganancias gracias a un mayor margen por unidad vendida, compensando la reducción en el número total de matriculaciones.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Demuestra que Porsche no entrará en guerras de descuentos en nuevos pedidos, lo que mantiene firmes los precios de catálogo y ayuda a preservar los valores del mercado de ocasión oficial.",
+    "links": [
+      "precios_ocasion",
+      "garantia_approved",
+      "financiacion"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:7008784543631968597",
+    "url": "https://carbuzz.com/porsche-working-on-15-special-one-off-cars/",
+    "source": "carbuzz.com",
+    "published": "2026-10-28T14:16:20Z",
+    "headline": "Porsche planea hasta 15 modelos 'one-off' para elevar su exclusividad",
+    "excerpt": "La estrategia a futuro del fabricante alemán contempla el desarrollo de vehículos únicos y series muy reducidas con precios multimillonarios para maximizar la rentabilidad de cada unidad.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911"
+    ],
+    "impact": "Esta apuesta por la hiper-exclusividad consolida la imagen de la marca como objeto de colección y suele arrastrar al alza las cotizaciones de las versiones GT y series especiales en el mercado de ocasión.",
+    "links": [
+      "precios_ocasion",
+      "vender"
+    ],
+    "week": "2026-W44"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:15763433646149210419",
     "url": "https://www.motor16.com/las-ultimas-noticias/estrategia-porsche-exclusivos-14-millones/",
     "source": "motor16.com",
