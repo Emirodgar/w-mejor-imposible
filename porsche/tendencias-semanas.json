@@ -140,29 +140,29 @@
     "updated": "2026-10-25"
   },
   "2026-W44": {
-    "summary": "Porsche consolida su estrategia de primar la rentabilidad sobre las ventas masivas, apoyándose en proyectos ultraexclusivos de tipo one-off y ediciones especiales para elevar sus márgenes. Para los futuros compradores, el panorama mecánico se diversifica con la posibilidad de que el Macan conserve motores térmicos e incluso adopte variantes V8, junto con patentes de cambios manuales simulados para próximas generaciones. En el escalón más alto, el prototipo Mission S anticipa la llegada de una nueva plataforma de superdeportivo de motor central situada por encima del 911.",
+    "summary": "Porsche afianza su estrategia comercial priorizando el margen y la exclusividad sobre el volumen mediante proyectos 'one-off' y ediciones especiales conmemorativas, lo que consolida los valores residuales de la marca. En el apartado de producto y tecnología, informaciones del sector apuntan a la continuidad de versiones de combustión con motor V8 en la saga Macan, mientras la firma registra patentes de cambio manual simulado y anticipa un futuro superdeportivo de motor central con el Mission S. Para propietarios y futuros compradores, estas novedades confirman la apuesta del fabricante por proteger el valor de compra y mantener el carácter pasional en sus próximas generaciones de modelos.",
     "highlights": [
       {
         "url": "https://www.autoblog.com/news/porsches-gas-powered-macan-successor-may-get-a-v8",
-        "shortTitle": "Macan térmico con V8",
-        "note": "Informaciones en Alemania apuntan a que el SUV mantendrá variantes de gasolina e integrará mecánicas de ocho cilindros."
-      },
-      {
-        "url": "https://www.theupcoming.co.uk/2026/10/26/porsche-unveils-mission-s-concept-previewing-permanent-mid-engined-super-sports-car-above-the-911/",
-        "shortTitle": "Prototipo Porsche Mission S",
-        "note": "La marca muestra un concepto con motor central que sentará las bases de un superdeportivo superior al 911."
-      },
-      {
-        "url": "https://autobuzz.my/2026/10/26/porsches-franken-manual-gearbox-could-be-even-better-than-ferraris-manuale/",
-        "shortTitle": "Cambio manual simulado patentado",
-        "note": "El fabricante registra una transmisión electrónica en H que emula la interacción manual tradicional."
+        "shortTitle": "Posible Macan térmico V8",
+        "note": "Informaciones desde Alemania señalan que Porsche podría mantener opciones de combustión con ocho cilindros en su gama SUV."
       },
       {
         "url": "https://carbuzz.com/porsche-working-on-15-special-one-off-cars/",
-        "shortTitle": "Quince modelos one-off exclusivos",
-        "note": "Porsche prepara series únicas de precio multimillonario destinadas a elevar la rentabilidad por vehículo."
+        "shortTitle": "Quince creaciones 'one-off'",
+        "note": "El fabricante planea desarrollar hasta 15 modelos únicos multimillonarios para maximizar la exclusividad y los márgenes de beneficio."
+      },
+      {
+        "url": "https://autobuzz.my/2026/10/26/porsches-franken-manual-gearbox-could-be-even-better-than-ferraris-manuale/",
+        "shortTitle": "Patente de cambio simulado",
+        "note": "La marca registra un sistema electrónico con tacto de rejilla en H para emular transmisiones manuales en modelos futuros."
+      },
+      {
+        "url": "https://www.theupcoming.co.uk/2026/10/26/porsche-unveils-mission-s-concept-previewing-permanent-mid-engined-super-sports-car-above-the-911/",
+        "shortTitle": "Concepto Mission S desvelado",
+        "note": "Este prototipo anticipa una plataforma inédita para un superdeportivo de motor central ubicado por encima del 911."
       }
     ],
-    "updated": "2026-10-28"
+    "updated": "2026-10-30"
   }
 }

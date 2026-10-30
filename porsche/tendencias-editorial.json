@@ -1,5 +1,60 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:132789934119812265",
+    "url": "https://www.expansion.com/empresas/motor/2026/10/29/volkswagen-pierde-5-822-millones-euros-porsche.html",
+    "source": "Expansión",
+    "published": "2026-10-29T20:42:09Z",
+    "headline": "Volkswagen acusa un fuerte ajuste contable por su participación en Porsche",
+    "excerpt": "El balance operativo del Grupo Volkswagen se reduce de forma drástica en los primeros nueve meses debido a depreciaciones sobre el valor de Porsche y al retroceso de entregas en China.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Un entorno de menores márgenes e incertidumbre en mercados internacionales puede favorecer negociaciones más flexibles en concesionario y moderar futuras subidas de precios oficiales.",
+    "links": [
+      "coste_real",
+      "precios_ocasion"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:10617810058117724020",
+    "url": "https://es.motor1.com/photos/934748/porsche-964-stoccarda-restomod/",
+    "source": "Motor1.com",
+    "published": "2026-10-29T15:53:37Z",
+    "headline": "STOCCARDA presenta un restomod sobre base Porsche 964 inspirado en el 911 ST Heritage",
+    "excerpt": "Un nuevo proyecto artesanal reconstruye por completo un 911 de 1992, combinando la base clásica del 964 con detalles estéticos que rinden homenaje al actual 911 ST Heritage.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "El interés continuo de preparadores en la generación 964 para proyectos exclusivos mantiene una fuerte presión al alza sobre las cotizaciones de los 911 refrigerados por aire en el mercado usado.",
+    "links": [
+      "sm_911",
+      "precios_ocasion"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:8343101704533179406",
+    "url": "https://roadethos.com/car-buying/we-compared-the-2026-porsche-macan-and-audi-q5-one-clearly-won",
+    "source": "Road Ethos",
+    "published": "2026-10-29T14:05:11Z",
+    "headline": "Porsche Macan frente a Audi Q5: dinámica y valor residual marcan la diferencia",
+    "excerpt": "Frente a un Audi Q5 más asequible y amplio, el Porsche Macan 2026 impone su comportamiento dinámico de referencia y una depreciación notablemente más baja.",
+    "category": "Análisis",
+    "models": [
+      "macan"
+    ],
+    "impact": "Aunque el precio de compra del Macan es más elevado, su reducida depreciación en el mercado de ocasión ayuda a compensar la diferencia frente a rivales directos en el coste total de posesión.",
+    "links": [
+      "comparativas",
+      "sm_macan",
+      "precios_ocasion"
+    ],
+    "week": "2026-W44"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:10881414613923850881",
     "url": "https://www.autoblog.com/news/porsches-gas-powered-macan-successor-may-get-a-v8",
     "source": "Autoblog",
