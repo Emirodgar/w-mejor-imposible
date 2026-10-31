@@ -1,5 +1,79 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:15929265250627350304",
+    "url": "https://www.somoselectricos.com/coches-electricos/xiaomi-prepara-su7-ultra-mas-radical-quiere-plantar-cara-porsche-nurburgring/20261031144513064774.html",
+    "source": "somoselectricos.com",
+    "published": "2026-10-31T13:47:39Z",
+    "headline": "Xiaomi prepara un SU7 Ultra más radical para desafiar a Porsche en Nürburgring",
+    "excerpt": "La firma tecnológica prueba una variante mejorada de su berlina con gran alerón y paquete aerodinámico específico para asaltar el récord de pista frente a la gama eléctrica alemana.",
+    "category": "Análisis",
+    "models": [
+      "taycan"
+    ],
+    "impact": "La creciente rivalidad en berlinas eléctricas de circuito acelera la evolución del Taycan y puede presionar los precios de los modelos deportivos a batería.",
+    "links": [
+      "comparativas",
+      "sm_taycan"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4989843920503286011",
+    "url": "https://www.dailysportscar.com/2026/10/31/dr-steiner-departs-porsche-executive-board.html",
+    "source": "dailysportscar.com",
+    "published": "2026-10-31T12:03:48Z",
+    "headline": "Michael Steiner deja el consejo ejecutivo de Porsche",
+    "excerpt": "El fabricante alemán ha anunciado la salida de Michael Steiner de su consejo de administración, donde ejercía hasta ahora un papel clave en la dirección de la compañía.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Los cambios en la cúpula técnica y de desarrollo suelen marcar la orientación futura de producto, mecánicas y proyectos que acabarán llegando a los concesionarios.",
+    "links": [
+      "opiniones",
+      "comparador"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:15207737489982504141",
+    "url": "https://www.pistonheads.com/news/ph-driven/morgan-supersport-400-vs-porsche-911-carrera-t/51852",
+    "source": "PistonHeads UK",
+    "published": "2026-10-31T04:13:57Z",
+    "headline": "Porsche 911 Carrera T frente al Morgan Supersport 400",
+    "excerpt": "Una comparativa directa enfrenta la propuesta purista y utilizable del 911 Carrera T con el planteamiento artesanal y radical del nuevo roadster británico.",
+    "category": "Análisis",
+    "models": [
+      "911"
+    ],
+    "impact": "El Carrera T mantiene un valor residual sólido entre entusiastas gracias a su configuración centrada en la conducción diaria con peso reducido.",
+    "links": [
+      "sm_911",
+      "comparativas",
+      "precios_ocasion"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:693461928005361764",
+    "url": "https://driving.ca/car-comparisons/2027-porsche-cayenne-electric-vs-2027-audi-rs-q8/",
+    "source": "Driving.ca",
+    "published": "2026-10-31T00:55:47Z",
+    "headline": "Cayenne Electric frente al Audi RS Q8: duelo técnico de cara a 2027",
+    "excerpt": "Análisis preliminar de especificaciones y planteamiento entre el futuro Cayenne 100% eléctrico y la propuesta de altas prestaciones de Audi.",
+    "category": "Análisis",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "La transición hacia el Cayenne eléctrico afectará tanto a la depreciación de las generaciones actuales de gasolina como a los costes previstos en leasing.",
+    "links": [
+      "sm_cayenne",
+      "comparativas",
+      "renting_leasing"
+    ],
+    "week": "2026-W44"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:132789934119812265",
     "url": "https://www.expansion.com/empresas/motor/2026/10/29/volkswagen-pierde-5-822-millones-euros-porsche.html",
     "source": "Expansión",
