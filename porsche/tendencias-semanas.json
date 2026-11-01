@@ -140,29 +140,29 @@
     "updated": "2026-10-25"
   },
   "2026-W44": {
-    "summary": "Porsche afianza su estrategia comercial priorizando el margen y la exclusividad sobre el volumen mediante proyectos 'one-off' y ediciones especiales conmemorativas, lo que consolida los valores residuales de la marca. En el apartado de producto y tecnología, informaciones del sector apuntan a la continuidad de versiones de combustión con motor V8 en la saga Macan, mientras la firma registra patentes de cambio manual simulado y anticipa un futuro superdeportivo de motor central con el Mission S. Para propietarios y futuros compradores, estas novedades confirman la apuesta del fabricante por proteger el valor de compra y mantener el carácter pasional en sus próximas generaciones de modelos.",
+    "summary": "Porsche reorienta su estrategia corporativa con recortes de plantilla y un mayor enfoque en proyectos exclusivos y superdeportivos por encima del 911 para asegurar su rentabilidad por unidad. En la gama SUV, la marca proyecta superar los 1.000 CV con el Cayenne eléctrico mientras estudia mantener opciones térmicas de alta cilindrada en el Macan. Para quienes acuden al mercado de ocasión, cobra especial relevancia la estricta política de Porsche que puede anular la garantía de la batería del Taycan ante leves roces inferiores.",
     "highlights": [
       {
-        "url": "https://www.autoblog.com/news/porsches-gas-powered-macan-successor-may-get-a-v8",
-        "shortTitle": "Posible Macan térmico V8",
-        "note": "Informaciones desde Alemania señalan que Porsche podría mantener opciones de combustión con ocho cilindros en su gama SUV."
-      },
-      {
-        "url": "https://carbuzz.com/porsche-working-on-15-special-one-off-cars/",
-        "shortTitle": "Quince creaciones 'one-off'",
-        "note": "El fabricante planea desarrollar hasta 15 modelos únicos multimillonarios para maximizar la exclusividad y los márgenes de beneficio."
-      },
-      {
-        "url": "https://autobuzz.my/2026/10/26/porsches-franken-manual-gearbox-could-be-even-better-than-ferraris-manuale/",
-        "shortTitle": "Patente de cambio simulado",
-        "note": "La marca registra un sistema electrónico con tacto de rejilla en H para emular transmisiones manuales en modelos futuros."
+        "url": "https://www.motor.es/noticias/porsche-taycan-gts-garantia-bateria-2026117357.html",
+        "shortTitle": "Riesgo de garantía en Taycan",
+        "note": "Una deformación de apenas milímetros en la protección de la batería puede dejar sin cobertura oficial a unidades de ocasión."
       },
       {
         "url": "https://www.theupcoming.co.uk/2026/10/26/porsche-unveils-mission-s-concept-previewing-permanent-mid-engined-super-sports-car-above-the-911/",
-        "shortTitle": "Concepto Mission S desvelado",
-        "note": "Este prototipo anticipa una plataforma inédita para un superdeportivo de motor central ubicado por encima del 911."
+        "shortTitle": "Nuevo superdeportivo Mission S",
+        "note": "Este concepto adelanta una arquitectura de motor central concebida para posicionarse en prestaciones y precio por encima del 911."
+      },
+      {
+        "url": "https://amp.lasexta.com/motor/noticias/porsche-cayenne-turbo-electric-gran-suv-deportivo-electrico-1056-que-admite-cargas-induccion_202611016ae75c32a5f83c2fb8eb9b63.html",
+        "shortTitle": "Cayenne eléctrico de 1.000 CV",
+        "note": "La futura variante Turbo del SUV superará los 1.050 CV de potencia en su transición completa a propulsión eléctrica."
+      },
+      {
+        "url": "https://www.autoblog.com/news/porsches-gas-powered-macan-successor-may-get-a-v8",
+        "shortTitle": "Posible Macan térmico V8",
+        "note": "Porsche contempla mantener versiones de gasolina del Macan en catálogo e incorporar mecánicas de ocho cilindros."
       }
     ],
-    "updated": "2026-10-30"
+    "updated": "2026-11-01"
   }
 }

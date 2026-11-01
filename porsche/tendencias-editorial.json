@@ -1,5 +1,81 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:4249575213219044235",
+    "url": "https://www.ad.nl/auto/reddingsplan-voor-porsche-nieuwe-sportwagen-boven-de-911-en-9000-banen-weg~a0d0e8d0/",
+    "source": "AD",
+    "published": "2026-11-01T17:39:54Z",
+    "headline": "Plan de reestructuración en Porsche: ajuste de plantilla y un nuevo deportivo sobre el 911",
+    "excerpt": "Ante el descenso de ventas globales y el estrechamiento de márgenes, la nueva dirección de Porsche plantea suprimir 9.000 empleos y proyecta un modelo deportivo situado por encima del 911.",
+    "category": "Análisis",
+    "models": [
+      "911",
+      "marca"
+    ],
+    "impact": "Los ajustes operativos y la futura llegada de un escalón superior podrían alterar la política de precios y la disponibilidad en las gamas más altas de la marca.",
+    "links": [
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5446622471666891642",
+    "url": "https://es-us.noticias.yahoo.com/range-rover-el%C3%A9ctrico-frente-porsche-154421449.html",
+    "source": "Yahoo Noticias",
+    "published": "2026-11-01T16:01:55Z",
+    "headline": "Duelo de SUV prémium a batería: Porsche Macan frente al Range Rover eléctrico",
+    "excerpt": "El Macan eléctrico mide sus cualidades de comportamiento y prestaciones frente al enfoque de gran lujo británico en un segmento que sigue ganando alternativas.",
+    "category": "Análisis",
+    "models": [
+      "macan"
+    ],
+    "impact": "Frente a rivales centrados en el confort, el Macan busca sostener su valor de reventa apoyándose en su dinamismo, un aspecto crítico al elegir financiar o contratar un renting en este segmento.",
+    "links": [
+      "comparativas",
+      "sm_macan",
+      "renting_leasing"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:654262905663565991",
+    "url": "https://amp.lasexta.com/motor/noticias/porsche-cayenne-turbo-electric-gran-suv-deportivo-electrico-1056-que-admite-cargas-induccion_202611016ae75c32a5f83c2fb8eb9b63.html",
+    "source": "amp.lasexta.com",
+    "published": "2026-11-01T15:49:26Z",
+    "headline": "Porsche Cayenne Turbo Electric: el gran SUV superará los 1.000 CV de potencia",
+    "excerpt": "El SUV más vendido en la historia de Porsche avanza en su transición hacia la propulsión eléctrica con una variante Turbo prevista para entregar más de 1.050 CV.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "La confirmación de cifras tan elevadas en el nuevo Cayenne eléctrico influirá de manera directa en el valor residual de las generaciones previas de gasolina e híbridas.",
+    "links": [
+      "sm_cayenne",
+      "precios_ocasion",
+      "comparador"
+    ],
+    "week": "2026-W44"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4904753314306157292",
+    "url": "https://www.motor.es/noticias/porsche-taycan-gts-garantia-bateria-2026117357.html",
+    "source": "Motor.es",
+    "published": "2026-11-01T15:09:55Z",
+    "headline": "Alerta en el Taycan de segunda mano: riesgo de pérdida de garantía por roces en la batería",
+    "excerpt": "Un comprador de un Taycan GTS usado denuncia que la marca pretende retirarle la garantía oficial de la batería tras detectar una deformación de 5 milímetros en la tapa inferior.",
+    "category": "Guías",
+    "models": [
+      "taycan"
+    ],
+    "impact": "Si vas a adquirir un Taycan de ocasión, es fundamental elevar el vehículo y examinar minuciosamente la parte inferior del chasis para evitar sorpresas con la garantía de la batería.",
+    "links": [
+      "sm_taycan",
+      "garantia_approved",
+      "inspeccion"
+    ],
+    "week": "2026-W44"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:15929265250627350304",
     "url": "https://www.somoselectricos.com/coches-electricos/xiaomi-prepara-su7-ultra-mas-radical-quiere-plantar-cara-porsche-nurburgring/20261031144513064774.html",
     "source": "somoselectricos.com",
