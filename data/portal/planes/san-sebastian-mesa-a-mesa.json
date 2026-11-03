@@ -1,0 +1,213 @@
+{
+  "slug": "san-sebastian-mesa-a-mesa",
+  "orden": 4,
+  "titulo": {
+    "es": "San Sebastián, mesa a mesa"
+  },
+  "meta": {
+    "es": "Plan completo · 3 días · Gastronomía"
+  },
+  "meta_corta": {
+    "es": "3 días · Gastronomía"
+  },
+  "lead": {
+    "es": "Tres estrellas con vistas al mar, una cocina de investigación y los pintxos de la Parte Vieja."
+  },
+  "foto_portada": {
+    "es": "La Concha desde Igueldo"
+  },
+  "zona": "resto",
+  "tipo_turista": "Gastronomía",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de San Sebastián"
+      }
+    },
+    {
+      "tipo": "coche",
+      "nombre": {
+        "es": "[Deportivo]"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "nombre": {
+        "es": "Hotel María Cristina"
+      }
+    },
+    {
+      "tipo": "mesa",
+      "ref": "restaurantes/arzak"
+    },
+    {
+      "tipo": "cena",
+      "nombre": {
+        "es": "Akelarre"
+      }
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "[Spa]"
+      }
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de San Sebastián"
+          },
+          "por_que": {
+            "es": "El más cercano a la ciudad; Bilbao y Biarritz son las alternativas con más vuelos."
+          },
+          "foto": {
+            "es": "terminal"
+          },
+          "alternativas": [
+            {
+              "es": "Aeropuerto de Bilbao"
+            },
+            {
+              "es": "Aeropuerto de Biarritz"
+            }
+          ]
+        },
+        {
+          "tipo": "Hotel 5*",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Hotel María Cristina"
+          },
+          "por_que": {
+            "es": "Un hotel histórico de la ciudad, abierto desde 1912 y de la Luxury Collection."
+          },
+          "foto": {
+            "es": "fachada junto al río Urumea"
+          }
+        },
+        {
+          "tipo": "Pintxos",
+          "tono": "claro",
+          "nombre": {
+            "es": "Parte Vieja"
+          },
+          "por_que": {
+            "es": "Una ronda de barra en barra: la mejor forma de empezar."
+          },
+          "foto": {
+            "es": "barra de pintxos"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Las grandes mesas"
+      },
+      "pasos": [
+        {
+          "tipo": "Comida",
+          "tono": "oscuro",
+          "ref": "restaurantes/arzak"
+        },
+        {
+          "tipo": "Paseo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Monte Igueldo"
+          },
+          "por_que": {
+            "es": "Vistas de la bahía de La Concha antes de la cena."
+          },
+          "foto": {
+            "es": "bahía de La Concha"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Akelarre"
+          },
+          "por_que": {
+            "es": "Tres estrellas Michelin en el monte Igueldo, con Pedro Subijana al frente."
+          },
+          "foto": {
+            "es": "sala con vistas al mar"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Más allá de la ciudad"
+      },
+      "pasos": [
+        {
+          "tipo": "Comida",
+          "tono": "oscuro",
+          "ref": "restaurantes/mugaritz"
+        },
+        {
+          "tipo": "Costa",
+          "tono": "claro",
+          "nombre": {
+            "es": "Getaria · Elkano"
+          },
+          "por_que": {
+            "es": "Pescado a la brasa de leña, con el rodaballo como plato insignia."
+          },
+          "foto": {
+            "es": "parrilla frente al mar"
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de San Sebastián"
+          },
+          "por_que": {
+            "es": "[Ruta recomendada de vuelta.]"
+          },
+          "foto": {
+            "es": "carretera de costa"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de San Sebastián"
+      },
+      "min": 25
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Biarritz"
+      },
+      "texto": {
+        "es": "Aprox. 50 min"
+      }
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Bilbao"
+      },
+      "texto": {
+        "es": "Aprox. 1 h 10 min"
+      }
+    }
+  ]
+}

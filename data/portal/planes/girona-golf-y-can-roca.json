@@ -1,0 +1,165 @@
+{
+  "slug": "girona-golf-y-can-roca",
+  "orden": 3,
+  "titulo": {
+    "es": "Girona: golf y Can Roca"
+  },
+  "meta": {
+    "es": "Plan completo · 2 días · Golf y gastronomía"
+  },
+  "meta_corta": {
+    "es": "2 días · Golf y gastronomía"
+  },
+  "lead": {
+    "es": "El campo de la Ryder Cup de 2031 y la mesa de tres hermanos con tres estrellas, a una media hora."
+  },
+  "foto_portada": {
+    "es": "pinar y campo de golf al sur de Girona"
+  },
+  "zona": "cataluna",
+  "tipo_turista": "Golf",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Girona-Costa Brava"
+      }
+    },
+    {
+      "tipo": "coche",
+      "nombre": {
+        "es": "[Deportivo]"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "nombre": {
+        "es": "[Hotel]"
+      }
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/camiral-stadium"
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/el-celler-de-can-roca"
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "[Spa]"
+      }
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Girona-Costa Brava"
+          },
+          "por_que": {
+            "es": "El más cercano, a unos 20 minutos de Camiral."
+          },
+          "foto": {
+            "es": "terminal"
+          },
+          "alternativas": [
+            {
+              "es": "Aeropuerto de Barcelona-El Prat"
+            }
+          ]
+        },
+        {
+          "tipo": "Coche",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Modelo de deportivo]"
+          },
+          "por_que": {
+            "es": "[Por qué este coche para esta ruta.]"
+          },
+          "foto": {
+            "es": "deportivo en carretera"
+          }
+        },
+        {
+          "tipo": "Hotel 5*",
+          "tono": "claro",
+          "nombre": {
+            "es": "[Nombre del hotel]"
+          },
+          "por_que": {
+            "es": "[N.º X del ranking de hoteles de la zona.]"
+          },
+          "foto": {
+            "es": "suite con terraza"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "El campo y la mesa"
+      },
+      "pasos": [
+        {
+          "tipo": "Golf",
+          "tono": "oscuro",
+          "ref": "golf/camiral-stadium"
+        },
+        {
+          "tipo": "Almuerzo",
+          "tono": "claro",
+          "nombre": {
+            "es": "[Casa club o restaurante]"
+          },
+          "por_que": {
+            "es": "[Por qué parar aquí.]"
+          },
+          "foto": {
+            "es": "terraza"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "ref": "restaurantes/el-celler-de-can-roca",
+          "por_que": {
+            "es": "A unos 30 minutos de Camiral: Joan, Josep y Jordi Roca, tres estrellas en Girona."
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Girona-Costa Brava"
+      },
+      "min": 20
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Barcelona-El Prat"
+      },
+      "texto": {
+        "es": "Aprox. 1 h 15 min"
+      }
+    },
+    {
+      "nombre": {
+        "es": "Aviación privada"
+      },
+      "texto": {
+        "es": "[Aeródromo]"
+      }
+    }
+  ]
+}

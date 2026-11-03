@@ -195,33 +195,9 @@
       }
     }
   ],
-  "otros": [
-    {
-      "meta": {
-        "es": "2 días · Vino"
-      },
-      "titulo": {
-        "es": "La Rioja de bodega en bodega"
-      },
-      "slug": "la-rioja-de-bodega-en-bodega"
-    },
-    {
-      "meta": {
-        "es": "4 días · Mar"
-      },
-      "titulo": {
-        "es": "Ibiza y Formentera en barco"
-      },
-      "slug": "ibiza-y-formentera-en-barco"
-    },
-    {
-      "meta": {
-        "es": "3 días · Gastronomía"
-      },
-      "titulo": {
-        "es": "San Sebastián, mesa a mesa"
-      },
-      "slug": "san-sebastian-mesa-a-mesa"
-    }
-  ]
+  "orden": 1,
+  "meta_corta": {
+    "es": "3 días · Golf"
+  },
+  "tipo_turista": "Golf"
 }

@@ -1,0 +1,271 @@
+{
+  "slug": "ibiza-y-formentera-en-barco",
+  "orden": 6,
+  "titulo": {
+    "es": "Ibiza y Formentera en barco"
+  },
+  "meta": {
+    "es": "Plan completo · 4 días · Mar"
+  },
+  "meta_corta": {
+    "es": "4 días · Mar"
+  },
+  "lead": {
+    "es": "Es Vedrà, Cala d'Hort, Ses Illetes y Cala Saona: las mejores calas de las dos islas, a bordo."
+  },
+  "foto_portada": {
+    "es": "cala de aguas turquesa"
+  },
+  "zona": "baleares",
+  "tipo_turista": "Navegación",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Ibiza"
+      }
+    },
+    {
+      "tipo": "barco",
+      "nombre": {
+        "es": "[Barco privado]"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "nombre": {
+        "es": "[Hotel]"
+      }
+    },
+    {
+      "tipo": "cala",
+      "nombre": {
+        "es": "Cala d'Hort"
+      }
+    },
+    {
+      "tipo": "cena",
+      "nombre": {
+        "es": "[Restaurante]"
+      }
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "[Spa]"
+      }
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Ibiza"
+          },
+          "por_que": {
+            "es": "[Por qué este aeropuerto y cuánto se tarda a puerto.]"
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Hotel 5*",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Nombre del hotel]"
+          },
+          "por_que": {
+            "es": "[N.º X del ranking de hoteles de la zona.]"
+          },
+          "foto": {
+            "es": "suite con terraza"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "claro",
+          "nombre": {
+            "es": "[Restaurante]"
+          },
+          "por_que": {
+            "es": "[N.º X del ranking de mesas cercanas.]"
+          },
+          "foto": {
+            "es": "mesa al atardecer"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Es Vedrà y la costa oeste"
+      },
+      "pasos": [
+        {
+          "tipo": "Barco",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Barco privado]"
+          },
+          "por_que": {
+            "es": "Desde Ibiza ciudad, Cala d'Hort queda a una hora de navegación."
+          },
+          "foto": {
+            "es": "cubierta al amanecer"
+          }
+        },
+        {
+          "tipo": "Cala",
+          "tono": "claro",
+          "nombre": {
+            "es": "Cala d'Hort"
+          },
+          "por_que": {
+            "es": "Desde aquí se ve Es Vedrà, una roca de 382 metros."
+          },
+          "foto": {
+            "es": "Es Vedrà desde la cala"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Restaurante]"
+          },
+          "por_que": {
+            "es": "[Por qué cenar aquí.]"
+          },
+          "foto": {
+            "es": "mesa frente al mar"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Formentera"
+      },
+      "pasos": [
+        {
+          "tipo": "Barco",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Barco privado]"
+          },
+          "por_que": {
+            "es": "La travesía a La Savina en ferry dura unos 55 minutos; en barco propio se elige la hora y la ruta."
+          },
+          "foto": {
+            "es": "estela al cruzar el canal"
+          }
+        },
+        {
+          "tipo": "Cala",
+          "tono": "claro",
+          "nombre": {
+            "es": "Ses Illetes"
+          },
+          "por_que": {
+            "es": "A unos 30 minutos en barco del puerto de Formentera."
+          },
+          "foto": {
+            "es": "aguas poco profundas"
+          }
+        },
+        {
+          "tipo": "Almuerzo",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Chiringuito]"
+          },
+          "por_que": {
+            "es": "[Por qué parar aquí.]"
+          },
+          "foto": {
+            "es": "terraza sobre la arena"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Cala Saona y regreso"
+      },
+      "pasos": [
+        {
+          "tipo": "Cala",
+          "tono": "claro",
+          "nombre": {
+            "es": "Cala Saona"
+          },
+          "por_que": {
+            "es": "A 4 millas del puerto de Formentera, unos 40 minutos de navegación."
+          },
+          "foto": {
+            "es": "cala al atardecer"
+          }
+        },
+        {
+          "tipo": "Spa",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Spa]"
+          },
+          "por_que": {
+            "es": "[Para cerrar el viaje.]"
+          },
+          "foto": {
+            "es": "piscina interior"
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Ibiza"
+          },
+          "por_que": {
+            "es": "[Ruta recomendada de vuelta.]"
+          },
+          "foto": {
+            "es": "carretera de costa"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Ibiza"
+      },
+      "texto": {
+        "es": "[X] min al puerto"
+      }
+    },
+    {
+      "nombre": {
+        "es": "Ibiza (Figueretas) → La Savina"
+      },
+      "texto": {
+        "es": "Aprox. 55 min en ferry"
+      }
+    },
+    {
+      "nombre": {
+        "es": "Aviación privada"
+      },
+      "texto": {
+        "es": "[Aeródromo]"
+      }
+    }
+  ]
+}

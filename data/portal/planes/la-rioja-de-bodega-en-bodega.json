@@ -1,0 +1,179 @@
+{
+  "slug": "la-rioja-de-bodega-en-bodega",
+  "orden": 5,
+  "titulo": {
+    "es": "La Rioja de bodega en bodega"
+  },
+  "meta": {
+    "es": "Plan completo · 2 días · Vino"
+  },
+  "meta_corta": {
+    "es": "2 días · Vino"
+  },
+  "lead": {
+    "es": "Arquitectura de autor, cavas históricas y dos mesas con dos estrellas Michelin en la Rioja Alavesa y sus alrededores."
+  },
+  "foto_portada": {
+    "es": "viñedo y bodega en la Rioja Alavesa"
+  },
+  "zona": "resto",
+  "tipo_turista": "Vino",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Bilbao"
+      }
+    },
+    {
+      "tipo": "coche",
+      "nombre": {
+        "es": "[Deportivo]"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "nombre": {
+        "es": "Hotel Marqués de Riscal"
+      }
+    },
+    {
+      "tipo": "bodega",
+      "nombre": {
+        "es": "Marqués de Riscal"
+      }
+    },
+    {
+      "tipo": "cena",
+      "nombre": {
+        "es": "Venta Moncalvillo"
+      }
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "[Spa]"
+      }
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada y primeras bodegas"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Bilbao"
+          },
+          "por_que": {
+            "es": "La puerta de entrada habitual: Laguardia queda a unos 110 km por autopista."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Hotel 5*",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Hotel Marqués de Riscal"
+          },
+          "por_que": {
+            "es": "Obra de Frank Gehry, abierta en 2006 en Elciego, dentro de la propia bodega."
+          },
+          "foto": {
+            "es": "titanio y rosa sobre el viñedo"
+          }
+        },
+        {
+          "tipo": "Bodega",
+          "tono": "claro",
+          "nombre": {
+            "es": "Marqués de Riscal"
+          },
+          "por_que": {
+            "es": "Una de las bodegas pioneras de Rioja, fundada en 1858: visita a las cavas subterráneas."
+          },
+          "foto": {
+            "es": "cavas históricas"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Arquitectura y vino"
+      },
+      "pasos": [
+        {
+          "tipo": "Bodega",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Ysios"
+          },
+          "por_que": {
+            "es": "Diseño de Santiago Calatrava (2001) a las afueras de Laguardia."
+          },
+          "foto": {
+            "es": "cubierta ondulada frente a la sierra"
+          }
+        },
+        {
+          "tipo": "Comida",
+          "tono": "claro",
+          "nombre": {
+            "es": "El Portal de Echaurren"
+          },
+          "por_que": {
+            "es": "Dos estrellas Michelin en Ezcaray, en la Rioja Alta."
+          },
+          "foto": {
+            "es": "sala del restaurante"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Venta Moncalvillo"
+          },
+          "por_que": {
+            "es": "Dos estrellas Michelin en Daroca de Rioja."
+          },
+          "foto": {
+            "es": "sala del restaurante"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Bilbao"
+      },
+      "texto": {
+        "es": "Aprox. 1 h 20 min"
+      }
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Vitoria"
+      },
+      "texto": {
+        "es": "Aprox. 50 min"
+      }
+    },
+    {
+      "nombre": {
+        "es": "Aviación privada"
+      },
+      "texto": {
+        "es": "[Aeródromo]"
+      }
+    }
+  ]
+}

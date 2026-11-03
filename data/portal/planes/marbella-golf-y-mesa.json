@@ -1,0 +1,201 @@
+{
+  "slug": "marbella-golf-y-mesa",
+  "orden": 2,
+  "titulo": {
+    "es": "Marbella: golf y mesa"
+  },
+  "meta": {
+    "es": "Plan completo · 3 días · Golf y gastronomía"
+  },
+  "meta_corta": {
+    "es": "3 días · Golf y gastronomía"
+  },
+  "lead": {
+    "es": "Dos campos de primer nivel, una mesa con dos estrellas Michelin y la Milla de Oro como base."
+  },
+  "foto_portada": {
+    "es": "Marbella al atardecer"
+  },
+  "zona": "andalucia",
+  "tipo_turista": "Golf",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Málaga"
+      }
+    },
+    {
+      "tipo": "coche",
+      "nombre": {
+        "es": "[Deportivo]"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "nombre": {
+        "es": "Puente Romano Marbella"
+      }
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/real-club-de-golf-las-brisas"
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/skina"
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "[Spa]"
+      }
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Málaga"
+          },
+          "por_que": {
+            "es": "A unos 40 minutos de Marbella; el aeropuerto con más conexiones de la Costa del Sol."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Coche",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "[Modelo de deportivo]"
+          },
+          "por_que": {
+            "es": "[Por qué este coche para esta ruta.]"
+          },
+          "foto": {
+            "es": "deportivo en carretera"
+          }
+        },
+        {
+          "tipo": "Hotel 5*",
+          "tono": "claro",
+          "nombre": {
+            "es": "Puente Romano Marbella"
+          },
+          "por_que": {
+            "es": "En la Milla de Oro, a unos 4 km de Las Brisas."
+          },
+          "foto": {
+            "es": "suite con terraza"
+          },
+          "alternativas": [
+            {
+              "es": "Marbella Club Hotel"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "El campo"
+      },
+      "pasos": [
+        {
+          "tipo": "Golf",
+          "tono": "oscuro",
+          "ref": "golf/real-club-de-golf-las-brisas"
+        },
+        {
+          "tipo": "Almuerzo",
+          "tono": "claro",
+          "nombre": {
+            "es": "[Casa club o restaurante]"
+          },
+          "por_que": {
+            "es": "[Por qué parar aquí.]"
+          },
+          "foto": {
+            "es": "terraza"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "ref": "restaurantes/skina",
+          "por_que": {
+            "es": "A unos 15 minutos de Las Brisas: dos estrellas Michelin en el casco antiguo de Marbella."
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Sin prisa"
+      },
+      "pasos": [
+        {
+          "tipo": "Spa",
+          "tono": "claro",
+          "nombre": {
+            "es": "[Spa]"
+          },
+          "por_que": {
+            "es": "[Para cerrar el viaje.]"
+          },
+          "foto": {
+            "es": "piscina interior"
+          }
+        },
+        {
+          "tipo": "Segundo campo",
+          "tono": "oscuro",
+          "ref": "golf/finca-cortesin"
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Málaga"
+          },
+          "por_que": {
+            "es": "[Ruta recomendada de vuelta.]"
+          },
+          "foto": {
+            "es": "carretera de costa"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Málaga-Costa del Sol"
+      },
+      "min": 40
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Gibraltar"
+      },
+      "min": 50
+    },
+    {
+      "nombre": {
+        "es": "Aviación privada"
+      },
+      "texto": {
+        "es": "[Aeródromo]"
+      }
+    }
+  ]
+}

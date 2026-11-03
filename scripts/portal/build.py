@@ -317,6 +317,10 @@ ICONS = {
     'golf': '<path d="M8 21V3l9 4-9 4"></path><path d="M4 21h12"></path>',
     'cena': '<path d="M7 3v8"></path><path d="M5 3v4a2 2 0 0 0 4 0V3"></path><path d="M7 11v10"></path><path d="M17 21V3c-2 1-3 4-3 7h3"></path>',
     'descanso': '<path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11z"></path><path d="M4 17c4 0 6 2 8 4 2-2 4-4 8-4"></path>',
+    'mesa': '<path d="M7 3v8"></path><path d="M5 3v4a2 2 0 0 0 4 0V3"></path><path d="M7 11v10"></path><path d="M17 21V3c-2 1-3 4-3 7h3"></path>',
+    'bodega': '<path d="M8 3h8l-1 7a3 3 0 0 1-6 0z"></path><path d="M12 13v8"></path><path d="M8 21h8"></path>',
+    'barco': '<path d="M3 17l2 3h14l2-3z"></path><path d="M12 3v11"></path><path d="M12 4l6 8h-6"></path>',
+    'cala': '<path d="M3 9c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path><path d="M3 15c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path>',
 }
 # tipo de paso de la ruta -> (etiqueta, categoría de ranking enlazada, texto del enlace)
 ROUTE = {
@@ -326,7 +330,22 @@ ROUTE = {
     'golf': ('Golf', 'golf', 'Ver campos de golf en {z}'),
     'cena': ('Cena', 'restaurantes', 'Ver restaurantes en {z}'),
     'descanso': ('Descanso', 'spas', 'Ver spas en {z}'),
+    'mesa': ('Mesa', 'restaurantes', 'Ver restaurantes en {z}'),
+    'bodega': ('Bodega', 'bodegas', 'Ver bodegas en {z}'),
+    'barco': ('Barco', 'yates-y-calas', 'Ver calas y rutas en barco en {z}'),
+    'cala': ('Cala', 'yates-y-calas', 'Ver calas y rutas en barco en {z}'),
 }
+# el paso destacado (círculo oscuro) de la ruta
+HIGHLIGHT = ('golf', 'bodega', 'cala', 'mesa')
+
+
+def all_plans():
+    plans = [load(f'planes/{fn}') for fn in os.listdir(os.path.join(DATA, 'planes'))]
+    return sorted(plans, key=lambda p: p.get('orden', 99))
+
+
+def other_plans(slug):
+    return [p for p in all_plans() if p['slug'] != slug]
 
 
 def build_plan(slug):
@@ -343,7 +362,7 @@ def build_plan(slug):
         label, cat, txt = ROUTE[s['tipo']]
         name = step_name(s)
         href = '#llegar-h' if cat is None else f'/ranking/{cat}/?zona={zona}'
-        on = s['tipo'] == 'golf'
+        on = s['tipo'] in HIGHLIGHT and not any(r['tipo'] in HIGHLIGHT for r in p['ruta'][:p['ruta'].index(s)])
         stroke = '#F6F3EE' if on else '#16140F'
         route_html += f'''
             <li><a href="{href}" aria-label="{e(txt.format(z=zn))}"><span class="dot{' on' if on else ''}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{stroke}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[s['tipo']]}</svg></span><span class="k">{label}</span><span class="v">{e(name)}</span></a></li>'''
@@ -360,13 +379,17 @@ def build_plan(slug):
                 foto, why = t(it['foto']), t(s['por_que']) if s.get('por_que') else t(it['por_que'])
             else:
                 name, foto, why = e(t(s['nombre'])), t(s['foto']), t(s['por_que'])
+            if s.get('alternativas'):
+                alts = ' · '.join(f'<a href="#">{e(t(a))}</a>' for a in s['alternativas'])
+            else:
+                alts = '<a href="#">[Opción 2]</a> · <a href="#">[Opción 3]</a>'
             steps += f'''
                 <article>
                     <div class="ph{tone}">[FOTO · {e(foto)}]</div>
                     <p class="kind">{e(s['tipo'])}</p>
                     <h3>{name}</h3>
                     <p class="why">{e(why)}</p>
-                    <p class="alt">Alternativas: <a href="#">[Opción 2]</a> · <a href="#">[Opción 3]</a></p>
+                    <p class="alt">Alternativas: {alts}</p>
                 </article>'''
         days_html += f'''
     <section class="wrap day" aria-labelledby="dia-{n:02d}">
@@ -381,11 +404,11 @@ def build_plan(slug):
         val = f"~{r['min']} min" if r.get('min') else t(r['texto'])
         llegar += f'\n                    <div class="r"><dt>{e(t(r["nombre"]))}</dt><dd>{e(val)}</dd></div>'
     others = ''.join(
-        f'\n            <a href="/planes/{o["slug"]}/"><span class="thumb"></span><span class="m">{e(t(o["meta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
-        for o in p['otros'])
+        f'\n            <a href="/planes/{o["slug"]}/"><span class="thumb"></span><span class="m">{e(t(o["meta_corta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
+        for o in other_plans(slug)[:3])
     crumb = [('Inicio', '/index2.html'), ('Planes completos', '/index2.html#planes'), (title, None)]
     trip = {"@type": "TouristTrip", "name": title, "inLanguage": LANG, "description": t(p['lead']),
-            "touristType": "Golf", "itinerary": {"@type": "ItemList", "itemListElement": route_ld}}
+            "touristType": p.get("tipo_turista", "Golf"), "itinerary": {"@type": "ItemList", "itemListElement": route_ld}}
     body = f'''
 {crumbs(crumb)}
 
@@ -441,6 +464,11 @@ def build_home_strips():
             for i, en in enumerate(entries[:5]))
         pat = re.compile(rf'(<!-- strip:{slug} -->).*?(<!-- /strip:{slug} -->)', re.S)
         h = pat.sub(lambda m: f'{m.group(1)}\n                <ol>{lis}\n                </ol>\n                {m.group(2)}', h)
+    cards = ''.join(
+        f'\n                <a href="/planes/{p["slug"]}/"><div class="ph t3">[FOTO · {e(t(p["foto_portada"]))}]</div><p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
+        for p in all_plans())
+    h = re.sub(r'(<!-- strip:planes -->).*?(<!-- /strip:planes -->)',
+               lambda m: f'{m.group(1)}{cards}\n                {m.group(2)}', h, flags=re.S)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(h)
 
