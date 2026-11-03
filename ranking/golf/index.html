@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los 10 mejores campos de golf de España · Mejor Imposible</title>
-    <meta name="description" content="Ranking de los 10 mejores campos de golf de España: top 5 con lo mejor cerca (hotel 5*, restaurante, aeropuerto) y del 6 al 10 en formato compacto.">
+    <meta name="description" content="Los 10 mejores campos de golf de España: top 5 con lo mejor cerca y del 6 al 10 en formato compacto, con filtro por zona.">
     <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->
     <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -114,6 +114,8 @@
         <a href="/en/" hreflang="en" lang="en">EN</a>
         <a href="/fr/" hreflang="fr" lang="fr">FR</a>
         <a href="/de/" hreflang="de" lang="de">DE</a>
+        <a href="/pt/" hreflang="pt" lang="pt">PT</a>
+        <a href="/it/" hreflang="it" lang="it">IT</a>
     </div>
 </header>
 
@@ -144,7 +146,7 @@
         </li>
         <li class="top-item" data-zone="andalucia" data-rank="2">
             <div class="num" aria-hidden="true">02</div>
-            <div class="ph photo t3">[FOTO · green con vistas al mar]</div>
+            <div class="ph photo t3">[FOTO · hoyo junto al alcornocal]</div>
             <div class="info">
                 <p class="place">Casares · Málaga</p>
                 <h2><span class="visually-hidden">2. </span>[Nombre del campo]</h2>
@@ -159,7 +161,7 @@
         </li>
         <li class="top-item" data-zone="cataluna" data-rank="3">
             <div class="num" aria-hidden="true">03</div>
-            <div class="ph photo">[FOTO · calle entre pinos]</div>
+            <div class="ph photo">[FOTO · hoyo junto al alcornocal]</div>
             <div class="info">
                 <p class="place">Girona</p>
                 <h2><span class="visually-hidden">3. </span>[Nombre del campo]</h2>
@@ -174,7 +176,7 @@
         </li>
         <li class="top-item" data-zone="andalucia" data-rank="4">
             <div class="num" aria-hidden="true">04</div>
-            <div class="ph photo t3">[FOTO · casa club]</div>
+            <div class="ph photo t3">[FOTO · hoyo junto al alcornocal]</div>
             <div class="info">
                 <p class="place">Marbella · Málaga</p>
                 <h2><span class="visually-hidden">4. </span>[Nombre del campo]</h2>
@@ -189,7 +191,7 @@
         </li>
         <li class="top-item" data-zone="baleares" data-rank="5">
             <div class="num" aria-hidden="true">05</div>
-            <div class="ph photo">[FOTO · campo junto a la costa]</div>
+            <div class="ph photo">[FOTO · hoyo junto al alcornocal]</div>
             <div class="info">
                 <p class="place">Mallorca</p>
                 <h2><span class="visually-hidden">5. </span>[Nombre del campo]</h2>
@@ -203,7 +205,7 @@
             </div>
         </li>
     </ol>
-    <p class="wrap empty" id="empty-top" hidden>Ningún campo de la zona seleccionada está entre los cinco primeros.</p>
+    <p class="wrap empty" id="empty-top" hidden>Ningún elemento de la zona seleccionada está entre los cinco primeros.</p>
 
     <section class="wrap rest" id="rest" aria-labelledby="rest-h">
         <h2 id="rest-h">Del 6 al 10</h2>
@@ -253,6 +255,8 @@
         buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.filter === zone)); });
     }
     buttons.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.filter); }); });
+    var z = new URLSearchParams(location.search).get('zona');
+    if (z && document.querySelector('[data-filter="' + z + '"]')) apply(z);
 })();
 </script>
 </body>
