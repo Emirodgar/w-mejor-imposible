@@ -1,0 +1,36 @@
+{
+  "id": "golf/el-saler",
+  "categoria": "golf",
+  "nombre": "Campo de Golf El Saler",
+  "lugar": "El Saler · Valencia",
+  "zona": "resto",
+  "foto": {
+    "es": "pinar junto a la Albufera"
+  },
+  "por_que": {
+    "es": "Un campo de pinar entre el mar y La Albufera, obra de Javier Arana (1968), a las puertas de Valencia."
+  },
+  "ficha": {
+    "arquitecto": "Javier Arana",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nombre": "Parador de El Saler",
+      "nota": "junto al campo"
+    },
+    {
+      "tipo": "restaurante"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Valencia",
+      "min": 30
+    }
+  ],
+  "fuentes": [
+    "https://www.top100golfcourses.com/golf-course/el-saler"
+  ]
+}

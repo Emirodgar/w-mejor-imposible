@@ -1,0 +1,36 @@
+{
+  "id": "golf/real-club-de-golf-las-brisas",
+  "categoria": "golf",
+  "nombre": "Real Club de Golf Las Brisas",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "lago y calles del valle de Nueva Andalucía"
+  },
+  "por_que": {
+    "es": "Otro Robert Trent Jones Sr. en el valle de Nueva Andalucía, abierto en 1968 y renovado por Kyle Phillips."
+  },
+  "ficha": {
+    "arquitecto": "Robert Trent Jones Sr.",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante",
+      "ref": "restaurantes/skina",
+      "min": 15
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Málaga",
+      "min": 40
+    }
+  ],
+  "fuentes": [
+    "https://www.golfpass.com/courses/23547-real-club-de-golf-las-brisas/"
+  ]
+}

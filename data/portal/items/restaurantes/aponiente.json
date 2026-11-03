@@ -1,0 +1,33 @@
+{
+  "id": "restaurantes/aponiente",
+  "categoria": "restaurantes",
+  "nombre": "Aponiente",
+  "lugar": "El Puerto de Santa María · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "molino junto a la bahía"
+  },
+  "por_que": {
+    "es": "Tres estrellas en un molino del siglo XIX de El Puerto de Santa María, con el mar de la bahía de Cádiz como producto."
+  },
+  "ficha": {
+    "chef": "Ángel León",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Jerez",
+      "min": 25
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

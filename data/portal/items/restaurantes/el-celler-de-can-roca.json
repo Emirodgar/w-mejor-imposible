@@ -1,0 +1,35 @@
+{
+  "id": "restaurantes/el-celler-de-can-roca",
+  "categoria": "restaurantes",
+  "nombre": "El Celler de Can Roca",
+  "lugar": "Girona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "sala del restaurante"
+  },
+  "por_que": {
+    "es": "Tres hermanos, Joan, Josep y Jordi, y tres estrellas en Girona: cocina, bodega y postres en una misma mesa."
+  },
+  "ficha": {
+    "chef": "Joan, Josep y Jordi Roca",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/camiral-stadium",
+      "min": 30
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Girona-Costa Brava",
+      "min": 15
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

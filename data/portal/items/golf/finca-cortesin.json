@@ -1,0 +1,36 @@
+{
+  "id": "golf/finca-cortesin",
+  "categoria": "golf",
+  "nombre": "Finca Cortesín",
+  "lugar": "Casares · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "green con vistas al mar"
+  },
+  "por_que": {
+    "es": "Sede de la Solheim Cup de 2023, con vistas a la sierra y al mar y servicio de cinco estrellas."
+  },
+  "ficha": {
+    "arquitecto": "Cabell B. Robinson",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nombre": "Finca Cortesín",
+      "nota": "en el propio resort"
+    },
+    {
+      "tipo": "restaurante"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Málaga",
+      "min": 55
+    }
+  ],
+  "fuentes": [
+    "https://www.golfmonthly.com/travel/spain/finca-cortesin-golf-course-review-148560"
+  ]
+}

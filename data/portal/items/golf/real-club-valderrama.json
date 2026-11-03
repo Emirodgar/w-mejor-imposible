@@ -1,0 +1,35 @@
+{
+  "id": "golf/real-club-valderrama",
+  "categoria": "golf",
+  "nombre": "Real Club Valderrama",
+  "lugar": "Sotogrande · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "calle entre alcornoques"
+  },
+  "por_que": {
+    "es": "Sede de la Ryder Cup de 1997 y referencia del golf español: calles estrechas entre alcornoques y greenes de máxima exigencia."
+  },
+  "ficha": {
+    "arquitecto": "Robert Trent Jones Sr.",
+    "hoyos": 18,
+    "par": 71
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Gibraltar",
+      "min": 30
+    }
+  ],
+  "fuentes": [
+    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain",
+    "https://en.wikipedia.org/wiki/Valderrama_Golf_Club"
+  ]
+}

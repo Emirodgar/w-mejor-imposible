@@ -1,0 +1,33 @@
+{
+  "id": "restaurantes/azurmendi",
+  "categoria": "restaurantes",
+  "nombre": "Azurmendi",
+  "lugar": "Larrabetzu · Bizkaia",
+  "zona": "resto",
+  "foto": {
+    "es": "edificio entre viñedos"
+  },
+  "por_que": {
+    "es": "Tres estrellas en Larrabetzu, a las puertas de Bilbao, con la cocina de Eneko Atxa."
+  },
+  "ficha": {
+    "chef": "Eneko Atxa",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Bilbao",
+      "min": 15
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

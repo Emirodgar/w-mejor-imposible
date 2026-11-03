@@ -1,0 +1,35 @@
+{
+  "id": "restaurantes/skina",
+  "categoria": "restaurantes",
+  "nombre": "Skina",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "sala del casco antiguo"
+  },
+  "por_que": {
+    "es": "Dos estrellas en el casco antiguo de Marbella, con Mario Cachinero reinterpretando recetas andaluzas."
+  },
+  "ficha": {
+    "chef": "Mario Cachinero",
+    "estrellas": "2 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/real-club-de-golf-las-brisas",
+      "min": 15
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Málaga",
+      "min": 50
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

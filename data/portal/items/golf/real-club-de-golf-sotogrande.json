@@ -1,0 +1,34 @@
+{
+  "id": "golf/real-club-de-golf-sotogrande",
+  "categoria": "golf",
+  "nombre": "Real Club de Golf Sotogrande",
+  "lugar": "Sotogrande · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "green con vistas al Peñón"
+  },
+  "por_que": {
+    "es": "El primer diseño de Robert Trent Jones Sr. en Europa, a pocos minutos de Valderrama: un clásico que sigue en lo más alto."
+  },
+  "ficha": {
+    "arquitecto": "Robert Trent Jones Sr.",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Gibraltar",
+      "min": 30
+    }
+  ],
+  "fuentes": [
+    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
+  ]
+}

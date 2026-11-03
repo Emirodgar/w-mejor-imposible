@@ -1,0 +1,34 @@
+{
+  "id": "restaurantes/voro",
+  "categoria": "restaurantes",
+  "nombre": "Voro",
+  "lugar": "Canyamel · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "terraza sobre la cala"
+  },
+  "por_que": {
+    "es": "Dos estrellas en Canyamel, en el levante de Mallorca, con el Mediterráneo como telón de fondo."
+  },
+  "ficha": {
+    "estrellas": "2 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/club-de-golf-alcanada",
+      "min": 30
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Palma",
+      "min": 60
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

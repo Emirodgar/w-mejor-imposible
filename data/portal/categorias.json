@@ -1,0 +1,466 @@
+{
+  "hoteles-5-estrellas": {
+    "corto": {
+      "es": "Hoteles 5*"
+    },
+    "titulo": {
+      "es": "Los 10 mejores hoteles 5* de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del hotel]"
+    },
+    "foto_placeholder": {
+      "es": "fachada del hotel"
+    },
+    "ficha": [
+      "[N] habitaciones",
+      "Abierto en [AÑO]"
+    ],
+    "cerca": [
+      "Restaurante",
+      "Spa",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Servicio, habitaciones, ubicación y la experiencia completa de la estancia. Ningún hotel paga por estar."
+    },
+    "placeholder": [
+      {
+        "lugar": "Madrid",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Mallorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Marbella · Málaga",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Barcelona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Ibiza",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Sevilla",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Tenerife",
+        "zona": "canarias"
+      },
+      {
+        "lugar": "Menorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "San Sebastián",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Costa Brava",
+        "zona": "cataluna"
+      }
+    ]
+  },
+  "golf": {
+    "corto": {
+      "es": "Golf"
+    },
+    "titulo": {
+      "es": "Los 10 mejores campos de golf de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del campo]"
+    },
+    "foto_placeholder": {
+      "es": "hoyo emblemático"
+    },
+    "ficha": [
+      "Diseño de {arquitecto}",
+      "{hoyos} hoyos",
+      "Par {par}"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Diseño del recorrido, estado del campo, entorno y la experiencia completa a su alrededor. Ningún campo paga por estar."
+    },
+    "placeholder": []
+  },
+  "restaurantes": {
+    "corto": {
+      "es": "Restaurantes"
+    },
+    "titulo": {
+      "es": "Las 10 mejores mesas de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del restaurante]"
+    },
+    "foto_placeholder": {
+      "es": "sala del restaurante"
+    },
+    "ficha": [
+      "Cocina de {chef}",
+      "{estrellas} Michelin"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Golf",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Cocina, producto, servicio y la experiencia completa de la mesa; las estrellas de la Guía Michelin 2026 sirven de punto de partida. Ningún restaurante paga por estar."
+    },
+    "placeholder": []
+  },
+  "casas-de-lujo": {
+    "corto": {
+      "es": "Casas de lujo"
+    },
+    "titulo": {
+      "es": "Las 10 casas más espectaculares de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre de la casa]"
+    },
+    "foto_placeholder": {
+      "es": "casa sobre el mar"
+    },
+    "ficha": [
+      "[N] dormitorios",
+      "[N] m²",
+      "Arquitecto [NOMBRE]"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Arquitectura, ubicación, privacidad y servicios. Ninguna casa paga por estar."
+    },
+    "placeholder": [
+      {
+        "lugar": "Ibiza",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Menorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Costa Brava",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Marbella · Málaga",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Lanzarote",
+        "zona": "canarias"
+      },
+      {
+        "lugar": "Mallorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Sotogrande · Cádiz",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Tenerife",
+        "zona": "canarias"
+      },
+      {
+        "lugar": "Sitges · Barcelona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Formentera",
+        "zona": "baleares"
+      }
+    ]
+  },
+  "bodegas": {
+    "corto": {
+      "es": "Bodegas"
+    },
+    "titulo": {
+      "es": "Las 10 mejores bodegas de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre de la bodega]"
+    },
+    "foto_placeholder": {
+      "es": "viñedo al amanecer"
+    },
+    "ficha": [
+      "D.O. [NOMBRE]",
+      "Fundada en [AÑO]"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Vinos, viñedo, arquitectura y la visita completa. Ninguna bodega paga por estar."
+    },
+    "placeholder": [
+      {
+        "lugar": "La Rioja",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Ribera del Duero · Burgos",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Priorat · Tarragona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Jerez · Cádiz",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Rías Baixas · Pontevedra",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Penedès · Barcelona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Rueda · Valladolid",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Ronda · Málaga",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Mallorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Lanzarote",
+        "zona": "canarias"
+      }
+    ]
+  },
+  "spas": {
+    "corto": {
+      "es": "Spas"
+    },
+    "titulo": {
+      "es": "Los 10 mejores spas de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del spa]"
+    },
+    "foto_placeholder": {
+      "es": "piscina interior"
+    },
+    "ficha": [
+      "[N] m²",
+      "[N] tratamientos"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Instalaciones, tratamientos, equipo y entorno. Ningún spa paga por estar."
+    },
+    "placeholder": [
+      {
+        "lugar": "Marbella · Málaga",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Mallorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Madrid",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Barcelona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Ibiza",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Sevilla",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Tenerife",
+        "zona": "canarias"
+      },
+      {
+        "lugar": "Girona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Granada",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Gran Canaria",
+        "zona": "canarias"
+      }
+    ]
+  },
+  "yates-y-calas": {
+    "corto": {
+      "es": "Yates y calas"
+    },
+    "titulo": {
+      "es": "Las 10 mejores calas y rutas en barco de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre de la cala o ruta]"
+    },
+    "foto_placeholder": {
+      "es": "cala desde el mar"
+    },
+    "ficha": [
+      "[N] millas",
+      "Mejor época: [MESES]"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Restaurante",
+      "Puerto"
+    ],
+    "como_ordenamos": {
+      "es": "Belleza del entorno, acceso, calidad del fondeo y servicios cercanos. Nadie paga por estar."
+    },
+    "placeholder": [
+      {
+        "lugar": "Ibiza",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Formentera",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Mallorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Costa Brava",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Menorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Marbella · Málaga",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Cabo de Gata · Almería",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Islas Cíes · Pontevedra",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Tenerife",
+        "zona": "canarias"
+      },
+      {
+        "lugar": "Lanzarote",
+        "zona": "canarias"
+      }
+    ]
+  },
+  "motor": {
+    "corto": {
+      "es": "Motor"
+    },
+    "titulo": {
+      "es": "Las 10 mejores experiencias de motor de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre de la experiencia]"
+    },
+    "foto_placeholder": {
+      "es": "coche en circuito"
+    },
+    "ficha": [
+      "[Experiencia]",
+      "[N] horas"
+    ],
+    "cerca": [
+      "Hotel 5*",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Circuito o ruta, coches, instructores y la experiencia completa. Nadie paga por estar."
+    },
+    "placeholder": [
+      {
+        "lugar": "Jerez · Cádiz",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Montmeló · Barcelona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Ronda · Málaga",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Madrid",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Mallorca",
+        "zona": "baleares"
+      },
+      {
+        "lugar": "Cheste · Valencia",
+        "zona": "resto"
+      },
+      {
+        "lugar": "Cerdanya · Girona",
+        "zona": "cataluna"
+      },
+      {
+        "lugar": "Sierra Nevada · Granada",
+        "zona": "andalucia"
+      },
+      {
+        "lugar": "Tenerife",
+        "zona": "canarias"
+      },
+      {
+        "lugar": "Calafat · Tarragona",
+        "zona": "cataluna"
+      }
+    ]
+  }
+}

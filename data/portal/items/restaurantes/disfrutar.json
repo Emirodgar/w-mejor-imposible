@@ -1,0 +1,35 @@
+{
+  "id": "restaurantes/disfrutar",
+  "categoria": "restaurantes",
+  "nombre": "Disfrutar",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "sala y cocina abierta"
+  },
+  "por_que": {
+    "es": "Tres estrellas y cocina creativa de tres chefs salidos de elBulli: pocas mesas del país tienen tanta imaginación."
+  },
+  "ficha": {
+    "chef": "Oriol Castro, Eduard Xatruch y Mateu Casañas",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/real-club-de-golf-el-prat",
+      "min": 35
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Barcelona-El Prat",
+      "min": 25
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

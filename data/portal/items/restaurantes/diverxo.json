@@ -1,0 +1,35 @@
+{
+  "id": "restaurantes/diverxo",
+  "categoria": "restaurantes",
+  "nombre": "DiverXO",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "sala del restaurante"
+  },
+  "por_que": {
+    "es": "El único tres estrellas de Madrid y la cocina más teatral de la capital, de David Muñoz."
+  },
+  "ficha": {
+    "chef": "David Muñoz",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/club-de-campo-villa-de-madrid",
+      "min": 25
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Madrid-Barajas",
+      "min": 20
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

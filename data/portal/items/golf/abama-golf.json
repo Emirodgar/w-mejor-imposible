@@ -1,0 +1,36 @@
+{
+  "id": "golf/abama-golf",
+  "categoria": "golf",
+  "nombre": "Abama Golf",
+  "lugar": "Guía de Isora · Tenerife",
+  "zona": "canarias",
+  "foto": {
+    "es": "calles en terrazas bajo el Teide"
+  },
+  "por_que": {
+    "es": "Calles en terrazas sobre la ladera volcánica del Teide, con lagos y cascadas, dentro del resort The Ritz-Carlton, Abama."
+  },
+  "ficha": {
+    "arquitecto": "Dave Thomas",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nombre": "The Ritz-Carlton, Abama",
+      "nota": "en el propio resort"
+    },
+    {
+      "tipo": "restaurante"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Tenerife Sur",
+      "min": 35
+    }
+  ],
+  "fuentes": [
+    "https://www.golfbreaks.com/en-gb/holidays/tenerife/abama-hotel/abama-golf/"
+  ]
+}

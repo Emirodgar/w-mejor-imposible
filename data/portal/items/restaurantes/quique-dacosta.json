@@ -1,0 +1,33 @@
+{
+  "id": "restaurantes/quique-dacosta",
+  "categoria": "restaurantes",
+  "nombre": "Quique Dacosta",
+  "lugar": "Dénia · Alicante",
+  "zona": "resto",
+  "foto": {
+    "es": "mesa frente al mar"
+  },
+  "por_que": {
+    "es": "Tres estrellas en Dénia, en la costa alicantina, con el sello personal de Quique Dacosta."
+  },
+  "ficha": {
+    "chef": "Quique Dacosta",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Alicante-Elche",
+      "min": 65
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

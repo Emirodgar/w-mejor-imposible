@@ -1,0 +1,36 @@
+{
+  "id": "golf/club-de-campo-villa-de-madrid",
+  "categoria": "golf",
+  "nombre": "Club de Campo Villa de Madrid (Negro)",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "calle clásica junto a la Casa de Campo"
+  },
+  "por_que": {
+    "es": "El Negro de Javier Arana (1956), dentro de la Casa de Campo: golf clásico a las puertas de la ciudad."
+  },
+  "ficha": {
+    "arquitecto": "Javier Arana",
+    "hoyos": 18,
+    "par": 71
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante",
+      "ref": "restaurantes/diverxo",
+      "min": 25
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Madrid-Barajas",
+      "min": 30
+    }
+  ],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Club_de_Campo_Villa_de_Madrid"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "golf/camiral-stadium",
+  "categoria": "golf",
+  "nombre": "Camiral Stadium (antes PGA Catalunya)",
+  "lugar": "Caldes de Malavella · Girona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "calle entre pinos"
+  },
+  "por_que": {
+    "es": "Sede de la Ryder Cup de 2031: un recorrido de campeonato entre pinos y lagos, al sur de Girona."
+  },
+  "ficha": {
+    "arquitecto": "Neil Coles y Ángel Gallardo",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante",
+      "ref": "restaurantes/el-celler-de-can-roca",
+      "min": 30
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Girona-Costa Brava",
+      "min": 20
+    }
+  ],
+  "fuentes": [
+    "https://www.golfmonthly.com/news/camiral-ryder-cup-2031-things-to-know",
+    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
+  ]
+}

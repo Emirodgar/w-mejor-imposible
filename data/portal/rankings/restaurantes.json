@@ -1,0 +1,18 @@
+{
+  "categoria": "restaurantes",
+  "actualizado": {
+    "es": "noviembre 2026"
+  },
+  "items": [
+    "restaurantes/disfrutar",
+    "restaurantes/el-celler-de-can-roca",
+    "restaurantes/diverxo",
+    "restaurantes/quique-dacosta",
+    "restaurantes/aponiente",
+    "restaurantes/arzak",
+    "restaurantes/azurmendi",
+    "restaurantes/mugaritz",
+    "restaurantes/skina",
+    "restaurantes/voro"
+  ]
+}

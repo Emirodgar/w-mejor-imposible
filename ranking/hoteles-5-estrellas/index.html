@@ -23,52 +23,52 @@
         {
             "@type": "ListItem",
             "position": 1,
-            "name": "[Nombre del hotel n.º 1]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 2,
-            "name": "[Nombre del hotel n.º 2]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": "[Nombre del hotel n.º 3]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 4,
-            "name": "[Nombre del hotel n.º 4]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 5,
-            "name": "[Nombre del hotel n.º 5]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 6,
-            "name": "[Nombre del hotel n.º 6]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 7,
-            "name": "[Nombre del hotel n.º 7]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 8,
-            "name": "[Nombre del hotel n.º 8]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 9,
-            "name": "[Nombre del hotel n.º 9]"
+            "name": "[Nombre del hotel]"
         },
         {
             "@type": "ListItem",
             "position": 10,
-            "name": "[Nombre del hotel n.º 10]"
+            "name": "[Nombre del hotel]"
         }
     ]
 }
@@ -252,6 +252,11 @@
     buttons.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.filter); }); });
     var z = new URLSearchParams(location.search).get('zona');
     if (z && document.querySelector('[data-filter="' + z + '"]')) apply(z);
+    if (location.hash) {
+        var target = document.getElementById(location.hash.slice(1));
+        if (target && target.hidden) apply('todas');
+        if (target) target.scrollIntoView();
+    }
 })();
 </script>
 </body>

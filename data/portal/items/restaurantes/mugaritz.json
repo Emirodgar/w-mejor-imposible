@@ -1,0 +1,33 @@
+{
+  "id": "restaurantes/mugaritz",
+  "categoria": "restaurantes",
+  "nombre": "Mugaritz",
+  "lugar": "Errenteria · Gipuzkoa",
+  "zona": "resto",
+  "foto": {
+    "es": "caserío entre robles"
+  },
+  "por_que": {
+    "es": "Dos estrellas y una cocina de investigación, de Andoni Luis Aduriz, a pocos minutos de San Sebastián."
+  },
+  "ficha": {
+    "chef": "Andoni Luis Aduriz",
+    "estrellas": "2 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de San Sebastián",
+      "min": 15
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

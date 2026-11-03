@@ -1,0 +1,227 @@
+{
+  "slug": "golf-en-sotogrande",
+  "titulo": {
+    "es": "Golf en Sotogrande"
+  },
+  "meta": {
+    "es": "Plan completo · 3 días · Golf"
+  },
+  "lead": {
+    "es": "El mejor campo de España y, alrededor, lo mejor de cada paso del viaje."
+  },
+  "foto_portada": {
+    "es": "Sotogrande desde el aire"
+  },
+  "zona": "andalucia",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Gibraltar o Málaga"
+      }
+    },
+    {
+      "tipo": "coche",
+      "nombre": {
+        "es": "[Deportivo]"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "nombre": {
+        "es": "[Hotel]"
+      }
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/real-club-valderrama"
+    },
+    {
+      "tipo": "cena",
+      "nombre": {
+        "es": "[Restaurante]"
+      }
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "[Spa]"
+      }
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "nombre": {
+            "es": "Aeropuerto de Gibraltar (o Málaga)"
+          },
+          "tono": "claro",
+          "foto": {
+            "es": "terminal"
+          },
+          "por_que": {
+            "es": "El más cercano a Sotogrande, a unos 30 minutos en coche; Málaga es la alternativa con más vuelos."
+          }
+        },
+        {
+          "tipo": "Coche",
+          "nombre": {
+            "es": "[Modelo de deportivo]"
+          },
+          "tono": "oscuro",
+          "foto": {
+            "es": "deportivo en carretera"
+          },
+          "por_que": {
+            "es": "[Por qué este coche para esta ruta.]"
+          }
+        },
+        {
+          "tipo": "Hotel 5*",
+          "nombre": {
+            "es": "[Nombre del hotel]"
+          },
+          "tono": "claro",
+          "foto": {
+            "es": "suite con terraza"
+          },
+          "por_que": {
+            "es": "[N.º X del ranking de hoteles de la zona.]"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "El campo"
+      },
+      "pasos": [
+        {
+          "tipo": "Golf",
+          "ref": "golf/real-club-valderrama",
+          "tono": "oscuro"
+        },
+        {
+          "tipo": "Almuerzo",
+          "nombre": {
+            "es": "[Casa club o restaurante]"
+          },
+          "tono": "claro",
+          "foto": {
+            "es": "terraza"
+          },
+          "por_que": {
+            "es": "[Por qué parar aquí.]"
+          }
+        },
+        {
+          "tipo": "Cena",
+          "nombre": {
+            "es": "[Restaurante]"
+          },
+          "tono": "oscuro",
+          "foto": {
+            "es": "mesa al atardecer"
+          },
+          "por_que": {
+            "es": "[N.º X del ranking de mesas cercanas.]"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Sin prisa"
+      },
+      "pasos": [
+        {
+          "tipo": "Spa",
+          "nombre": {
+            "es": "[Spa]"
+          },
+          "tono": "claro",
+          "foto": {
+            "es": "piscina interior"
+          },
+          "por_que": {
+            "es": "[Para cerrar el viaje.]"
+          }
+        },
+        {
+          "tipo": "Segundo campo",
+          "ref": "golf/real-club-de-golf-sotogrande",
+          "tono": "oscuro"
+        },
+        {
+          "tipo": "Regreso",
+          "nombre": {
+            "es": "Aeropuerto de Gibraltar (o Málaga)"
+          },
+          "tono": "claro",
+          "foto": {
+            "es": "carretera de costa"
+          },
+          "por_que": {
+            "es": "[Ruta recomendada de vuelta.]"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Gibraltar"
+      },
+      "min": 30
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Málaga-Costa del Sol"
+      },
+      "min": 60
+    },
+    {
+      "nombre": {
+        "es": "Aviación privada"
+      },
+      "texto": {
+        "es": "[Aeródromo]"
+      }
+    }
+  ],
+  "otros": [
+    {
+      "meta": {
+        "es": "2 días · Vino"
+      },
+      "titulo": {
+        "es": "La Rioja de bodega en bodega"
+      },
+      "slug": "la-rioja-de-bodega-en-bodega"
+    },
+    {
+      "meta": {
+        "es": "4 días · Mar"
+      },
+      "titulo": {
+        "es": "Ibiza y Formentera en barco"
+      },
+      "slug": "ibiza-y-formentera-en-barco"
+    },
+    {
+      "meta": {
+        "es": "3 días · Gastronomía"
+      },
+      "titulo": {
+        "es": "San Sebastián, mesa a mesa"
+      },
+      "slug": "san-sebastian-mesa-a-mesa"
+    }
+  ]
+}

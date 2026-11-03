@@ -1,0 +1,33 @@
+{
+  "id": "restaurantes/arzak",
+  "categoria": "restaurantes",
+  "nombre": "Arzak",
+  "lugar": "San Sebastián",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada de la casa"
+  },
+  "por_que": {
+    "es": "Una casa histórica de la cocina vasca, con tres estrellas en San Sebastián y Elena Arzak al frente."
+  },
+  "ficha": {
+    "chef": "Elena Arzak",
+    "estrellas": "3 estrellas"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "golf"
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de San Sebastián",
+      "min": 25
+    }
+  ],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+  ]
+}

@@ -23,52 +23,152 @@
         {
             "@type": "ListItem",
             "position": 1,
-            "name": "[Nombre del restaurante n.º 1]"
+            "name": "Disfrutar",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#disfrutar",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Disfrutar",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Barcelona",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 2,
-            "name": "[Nombre del restaurante n.º 2]"
+            "name": "El Celler de Can Roca",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#el-celler-de-can-roca",
+            "item": {
+                "@type": "Restaurant",
+                "name": "El Celler de Can Roca",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Girona",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 3,
-            "name": "[Nombre del restaurante n.º 3]"
+            "name": "DiverXO",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#diverxo",
+            "item": {
+                "@type": "Restaurant",
+                "name": "DiverXO",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Madrid",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 4,
-            "name": "[Nombre del restaurante n.º 4]"
+            "name": "Quique Dacosta",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#quique-dacosta",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Quique Dacosta",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Dénia · Alicante",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 5,
-            "name": "[Nombre del restaurante n.º 5]"
+            "name": "Aponiente",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#aponiente",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Aponiente",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "El Puerto de Santa María · Cádiz",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 6,
-            "name": "[Nombre del restaurante n.º 6]"
+            "name": "Arzak",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#arzak",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Arzak",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "San Sebastián",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 7,
-            "name": "[Nombre del restaurante n.º 7]"
+            "name": "Azurmendi",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#azurmendi",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Azurmendi",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Larrabetzu · Bizkaia",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 8,
-            "name": "[Nombre del restaurante n.º 8]"
+            "name": "Mugaritz",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#mugaritz",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Mugaritz",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Errenteria · Gipuzkoa",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 9,
-            "name": "[Nombre del restaurante n.º 9]"
+            "name": "Skina",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#skina",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Skina",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Marbella · Málaga",
+                    "addressCountry": "ES"
+                }
+            }
         },
         {
             "@type": "ListItem",
             "position": 10,
-            "name": "[Nombre del restaurante n.º 10]"
+            "name": "Voro",
+            "url": "https://mejorimposible.es/ranking/restaurantes/#voro",
+            "item": {
+                "@type": "Restaurant",
+                "name": "Voro",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Canyamel · Mallorca",
+                    "addressCountry": "ES"
+                }
+            }
         }
     ]
 }
@@ -123,79 +223,79 @@
 
 <main>
     <section class="wrap rank-hero">
-        <p class="eyebrow">Ranking · Restaurantes · Actualizado [MES AÑO]</p>
+        <p class="eyebrow">Ranking · Restaurantes · Actualizado noviembre 2026</p>
         <h1>Las 10 mejores mesas de España</h1>
         <div class="chips left" role="group" aria-label="Filtrar por zona"><button type="button" data-filter="todas" aria-pressed="true">Toda España</button><button type="button" data-filter="andalucia" aria-pressed="false">Andalucía</button><button type="button" data-filter="cataluna" aria-pressed="false">Cataluña</button><button type="button" data-filter="baleares" aria-pressed="false">Baleares</button><button type="button" data-filter="canarias" aria-pressed="false">Canarias</button><button type="button" data-filter="resto" aria-pressed="false">Resto</button></div>
     </section>
 
     <ol class="wrap top-list" id="top">
-        <li class="top-item" data-zone="resto" data-rank="1">
+        <li class="top-item" id="disfrutar" data-zone="cataluna" data-rank="1">
             <div class="num" aria-hidden="true">01</div>
-            <div class="ph photo">[FOTO · sala del restaurante]</div>
+            <div class="ph photo">[FOTO · sala y cocina abierta]</div>
             <div class="info">
-                <p class="place">San Sebastián</p>
-                <h2><span class="visually-hidden">1. </span>[Nombre del restaurante]</h2>
-                <p class="why">[Una frase: por qué está en este puesto.]</p>
-                <p class="spec">Cocina [TIPO] · [N] estrellas Michelin</p>
+                <p class="place">Barcelona</p>
+                <h2><span class="visually-hidden">1. </span>Disfrutar</h2>
+                <p class="why">Tres estrellas y cocina creativa de tres chefs salidos de elBulli: pocas mesas del país tienen tanta imaginación.</p>
+                <p class="spec">Cocina de Oriol Castro, Eduard Xatruch y Mateu Casañas · 3 estrellas Michelin</p>
                 <div class="near">
                     <p class="label">Lo mejor cerca</p>
-                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Bodega</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto</span><span class="t">a [X] min</span></a></div>
+                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="/ranking/golf/#real-club-de-golf-el-prat"><span class="sq"></span><span class="k">Real Club de Golf El Prat (Pink)</span><span class="t">Golf · a ~35 min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto de Barcelona-El Prat</span><span class="t">Aeropuerto · a ~25 min</span></a></div>
                 </div>
             </div>
         </li>
-        <li class="top-item" data-zone="cataluna" data-rank="2">
+        <li class="top-item" id="el-celler-de-can-roca" data-zone="cataluna" data-rank="2">
             <div class="num" aria-hidden="true">02</div>
             <div class="ph photo t3">[FOTO · sala del restaurante]</div>
             <div class="info">
                 <p class="place">Girona</p>
-                <h2><span class="visually-hidden">2. </span>[Nombre del restaurante]</h2>
-                <p class="why">[Una frase: por qué está en este puesto.]</p>
-                <p class="spec">Cocina [TIPO] · [N] estrellas Michelin</p>
+                <h2><span class="visually-hidden">2. </span>El Celler de Can Roca</h2>
+                <p class="why">Tres hermanos, Joan, Josep y Jordi, y tres estrellas en Girona: cocina, bodega y postres en una misma mesa.</p>
+                <p class="spec">Cocina de Joan, Josep y Jordi Roca · 3 estrellas Michelin</p>
                 <div class="near">
                     <p class="label">Lo mejor cerca</p>
-                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Bodega</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto</span><span class="t">a [X] min</span></a></div>
+                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="/ranking/golf/#camiral-stadium"><span class="sq"></span><span class="k">Camiral Stadium (antes PGA Catalunya)</span><span class="t">Golf · a ~30 min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto de Girona-Costa Brava</span><span class="t">Aeropuerto · a ~15 min</span></a></div>
                 </div>
             </div>
         </li>
-        <li class="top-item" data-zone="resto" data-rank="3">
+        <li class="top-item" id="diverxo" data-zone="resto" data-rank="3">
             <div class="num" aria-hidden="true">03</div>
             <div class="ph photo">[FOTO · sala del restaurante]</div>
             <div class="info">
                 <p class="place">Madrid</p>
-                <h2><span class="visually-hidden">3. </span>[Nombre del restaurante]</h2>
-                <p class="why">[Una frase: por qué está en este puesto.]</p>
-                <p class="spec">Cocina [TIPO] · [N] estrellas Michelin</p>
+                <h2><span class="visually-hidden">3. </span>DiverXO</h2>
+                <p class="why">El único tres estrellas de Madrid y la cocina más teatral de la capital, de David Muñoz.</p>
+                <p class="spec">Cocina de David Muñoz · 3 estrellas Michelin</p>
                 <div class="near">
                     <p class="label">Lo mejor cerca</p>
-                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Bodega</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto</span><span class="t">a [X] min</span></a></div>
+                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="/ranking/golf/#club-de-campo-villa-de-madrid"><span class="sq"></span><span class="k">Club de Campo Villa de Madrid (Negro)</span><span class="t">Golf · a ~25 min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto de Madrid-Barajas</span><span class="t">Aeropuerto · a ~20 min</span></a></div>
                 </div>
             </div>
         </li>
-        <li class="top-item" data-zone="resto" data-rank="4">
+        <li class="top-item" id="quique-dacosta" data-zone="resto" data-rank="4">
             <div class="num" aria-hidden="true">04</div>
-            <div class="ph photo t3">[FOTO · sala del restaurante]</div>
+            <div class="ph photo t3">[FOTO · mesa frente al mar]</div>
             <div class="info">
                 <p class="place">Dénia · Alicante</p>
-                <h2><span class="visually-hidden">4. </span>[Nombre del restaurante]</h2>
-                <p class="why">[Una frase: por qué está en este puesto.]</p>
-                <p class="spec">Cocina [TIPO] · [N] estrellas Michelin</p>
+                <h2><span class="visually-hidden">4. </span>Quique Dacosta</h2>
+                <p class="why">Tres estrellas en Dénia, en la costa alicantina, con el sello personal de Quique Dacosta.</p>
+                <p class="spec">Cocina de Quique Dacosta · 3 estrellas Michelin</p>
                 <div class="near">
                     <p class="label">Lo mejor cerca</p>
-                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Bodega</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto</span><span class="t">a [X] min</span></a></div>
+                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Golf</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto de Alicante-Elche</span><span class="t">Aeropuerto · a ~65 min</span></a></div>
                 </div>
             </div>
         </li>
-        <li class="top-item" data-zone="resto" data-rank="5">
+        <li class="top-item" id="aponiente" data-zone="andalucia" data-rank="5">
             <div class="num" aria-hidden="true">05</div>
-            <div class="ph photo">[FOTO · sala del restaurante]</div>
+            <div class="ph photo">[FOTO · molino junto a la bahía]</div>
             <div class="info">
-                <p class="place">Valencia</p>
-                <h2><span class="visually-hidden">5. </span>[Nombre del restaurante]</h2>
-                <p class="why">[Una frase: por qué está en este puesto.]</p>
-                <p class="spec">Cocina [TIPO] · [N] estrellas Michelin</p>
+                <p class="place">El Puerto de Santa María · Cádiz</p>
+                <h2><span class="visually-hidden">5. </span>Aponiente</h2>
+                <p class="why">Tres estrellas en un molino del siglo XIX de El Puerto de Santa María, con el mar de la bahía de Cádiz como producto.</p>
+                <p class="spec">Cocina de Ángel León · 3 estrellas Michelin</p>
                 <div class="near">
                     <p class="label">Lo mejor cerca</p>
-                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Bodega</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto</span><span class="t">a [X] min</span></a></div>
+                    <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">Hotel 5*</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Golf</span><span class="t">a [X] min</span></a><a href="#"><span class="sq"></span><span class="k">Aeropuerto de Jerez</span><span class="t">Aeropuerto · a ~25 min</span></a></div>
                 </div>
             </div>
         </li>
@@ -205,11 +305,11 @@
     <section class="wrap rest" id="rest" aria-labelledby="rest-h">
         <h2 id="rest-h">Del 6 al 10</h2>
         <ol class="compact-list">
-            <li data-zone="andalucia"><a href="#"><span class="n">06</span><span class="thumb"></span><span class="nm">[Nombre del restaurante]</span><span class="pl">Marbella · Málaga</span><span class="arrow" aria-hidden="true">→</span></a></li>
-            <li data-zone="cataluna"><a href="#"><span class="n">07</span><span class="thumb"></span><span class="nm">[Nombre del restaurante]</span><span class="pl">Barcelona</span><span class="arrow" aria-hidden="true">→</span></a></li>
-            <li data-zone="baleares"><a href="#"><span class="n">08</span><span class="thumb"></span><span class="nm">[Nombre del restaurante]</span><span class="pl">Mallorca</span><span class="arrow" aria-hidden="true">→</span></a></li>
-            <li data-zone="canarias"><a href="#"><span class="n">09</span><span class="thumb"></span><span class="nm">[Nombre del restaurante]</span><span class="pl">Tenerife</span><span class="arrow" aria-hidden="true">→</span></a></li>
-            <li data-zone="andalucia"><a href="#"><span class="n">10</span><span class="thumb"></span><span class="nm">[Nombre del restaurante]</span><span class="pl">Sevilla</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li id="arzak" data-zone="resto"><a href="#"><span class="n">06</span><span class="thumb"></span><span class="nm">Arzak</span><span class="pl">San Sebastián</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li id="azurmendi" data-zone="resto"><a href="#"><span class="n">07</span><span class="thumb"></span><span class="nm">Azurmendi</span><span class="pl">Larrabetzu · Bizkaia</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li id="mugaritz" data-zone="resto"><a href="#"><span class="n">08</span><span class="thumb"></span><span class="nm">Mugaritz</span><span class="pl">Errenteria · Gipuzkoa</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li id="skina" data-zone="andalucia"><a href="#"><span class="n">09</span><span class="thumb"></span><span class="nm">Skina</span><span class="pl">Marbella · Málaga</span><span class="arrow" aria-hidden="true">→</span></a></li>
+            <li id="voro" data-zone="baleares"><a href="#"><span class="n">10</span><span class="thumb"></span><span class="nm">Voro</span><span class="pl">Canyamel · Mallorca</span><span class="arrow" aria-hidden="true">→</span></a></li>
         </ol>
     </section>
 
@@ -217,7 +317,7 @@
         <div class="box">
             <div>
                 <p class="eyebrow">Cómo ordenamos</p>
-                <p class="txt">Cocina, producto, servicio y la experiencia completa de la mesa. Ningún restaurante paga por estar.</p>
+                <p class="txt">Cocina, producto, servicio y la experiencia completa de la mesa; las estrellas de la Guía Michelin 2026 sirven de punto de partida. Ningún restaurante paga por estar.</p>
             </div>
             <a href="/metodologia/">Metodología completa →</a>
         </div>
@@ -252,6 +352,11 @@
     buttons.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.filter); }); });
     var z = new URLSearchParams(location.search).get('zona');
     if (z && document.querySelector('[data-filter="' + z + '"]')) apply(z);
+    if (location.hash) {
+        var target = document.getElementById(location.hash.slice(1));
+        if (target && target.hidden) apply('todas');
+        if (target) target.scrollIntoView();
+    }
 })();
 </script>
 </body>

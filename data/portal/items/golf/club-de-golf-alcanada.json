@@ -1,0 +1,36 @@
+{
+  "id": "golf/club-de-golf-alcanada",
+  "categoria": "golf",
+  "nombre": "Club de Golf Alcanada",
+  "lugar": "Alcúdia · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "campo junto al faro"
+  },
+  "por_que": {
+    "es": "Diseño de Robert Trent Jones Jr. (2003) junto al faro y la bahía de Alcúdia, en el norte de Mallorca."
+  },
+  "ficha": {
+    "arquitecto": "Robert Trent Jones Jr.",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante",
+      "ref": "restaurantes/voro",
+      "min": 30
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Palma",
+      "min": 60
+    }
+  ],
+  "fuentes": [
+    "https://www.rtj2.com/news/golf-mallorca-views-and-conditioning-write-home-about"
+  ]
+}

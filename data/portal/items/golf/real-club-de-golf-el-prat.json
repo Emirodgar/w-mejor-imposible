@@ -1,0 +1,36 @@
+{
+  "id": "golf/real-club-de-golf-el-prat",
+  "categoria": "golf",
+  "nombre": "Real Club de Golf El Prat (Pink)",
+  "lugar": "Terrassa · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "casa club"
+  },
+  "por_que": {
+    "es": "Diseño de Greg Norman (2004) en Terrassa, uno de los campos de referencia del área de Barcelona."
+  },
+  "ficha": {
+    "arquitecto": "Greg Norman",
+    "hoyos": 18,
+    "par": 72
+  },
+  "cerca": [
+    {
+      "tipo": "hotel"
+    },
+    {
+      "tipo": "restaurante",
+      "ref": "restaurantes/disfrutar",
+      "min": 35
+    },
+    {
+      "tipo": "aeropuerto",
+      "nombre": "Aeropuerto de Barcelona-El Prat",
+      "min": 40
+    }
+  ],
+  "fuentes": [
+    "https://www.golfmagic.com/courses/western-europe/real-club-de-golf-el-prat-course-review"
+  ]
+}
