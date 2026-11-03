@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejor Imposible · Solo lo mejor de España en lujo</title>
+    <meta name="description" content="Rankings independientes de los mejores hoteles, campos de golf, restaurantes, casas, bodegas, spas, yates y motor de España. Pocos, elegidos y ordenados.">
+    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F6F3EE;
+            --ink: #16140F;
+            --muted: #5E574C;
+            --accent: #7A5E32;
+            --accent-light: #D9C39A;
+            --line: #DDD6CA;
+            --chip-line: #CFC6B8;
+            --dark: #2A2723;
+            --dark-label: #BDB3A3;
+            --light-tone: #E4DDD1;
+            --light-tone-2: #D8D0C2;
+            --dark-tone-2: #3A362F;
+            --serif: 'Cormorant Garamond', Georgia, serif;
+            --sans: Inter, 'Helvetica Neue', Arial, sans-serif;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 16px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--ink); }
+        a:hover { color: var(--muted); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+        h1, h2, p, ol { margin: 0; }
+        .wrap { max-width: 1360px; margin: 0 auto; padding: 0 40px; }
+
+        /* Cabecera */
+        .site-header {
+            display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+            gap: 24px; padding-top: 28px; padding-bottom: 28px;
+        }
+        .brand { font-family: var(--serif); font-style: italic; font-size: 30px; text-decoration: none; }
+        .main-nav { display: flex; flex-wrap: wrap; gap: 32px; font-size: 14px; letter-spacing: .04em; }
+        .main-nav a, .lang a { text-decoration: none; }
+        .lang { display: flex; gap: 14px; font-size: 13px; letter-spacing: .08em; }
+        .lang a { color: var(--muted); }
+        .lang a[aria-current] { color: var(--ink); font-weight: 500; }
+
+        /* Hero */
+        .hero { padding-top: 96px; padding-bottom: 72px; text-align: center; }
+        .eyebrow { margin-bottom: 20px; font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); }
+        .hero h1 {
+            max-width: 1000px; margin: 0 auto; font-family: var(--serif); font-weight: 400;
+            font-size: clamp(56px, 9vw, 104px); line-height: .98;
+        }
+        .hero .lead { max-width: 560px; margin: 28px auto 48px; font-size: 18px; color: var(--muted); }
+        .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .chips a {
+            display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px;
+            border: 1px solid var(--chip-line); border-radius: 999px;
+            text-decoration: none; font-size: 14px; letter-spacing: .03em;
+        }
+        .chips a:hover { border-color: var(--accent); }
+
+        /* Placeholders de foto */
+        .ph {
+            display: flex; align-items: flex-end; padding: 16px;
+            background: var(--dark); color: var(--dark-label);
+            font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+        }
+        .ph.t2 { background: var(--light-tone); color: var(--muted); }
+        .ph.t3 { background: var(--dark-tone-2); }
+        .ph.t4 { background: var(--light-tone-2); color: var(--muted); }
+
+        /* Destacado */
+        .featured {
+            position: relative; display: flex; flex-direction: column; justify-content: flex-end;
+            min-height: 560px; padding: 56px; background: var(--dark); color: var(--bg); text-decoration: none;
+        }
+        .featured:hover { color: var(--bg); }
+        .featured .ph-label {
+            position: absolute; top: 24px; right: 28px; font-size: 11px; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--dark-label);
+        }
+        .featured .kicker { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--accent-light); }
+        .featured .title {
+            display: block; margin: 12px 0 16px; font-family: var(--serif);
+            font-size: clamp(38px, 5vw, 72px); line-height: 1;
+        }
+        .featured .cta { font-size: 15px; letter-spacing: .06em; }
+
+        /* Tiras por categoría */
+        .strip { padding-top: 96px; }
+        .strip-head {
+            display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end;
+            gap: 16px; margin-bottom: 32px;
+        }
+        .strip-head h2, .plans h2 { font-family: var(--serif); font-weight: 400; line-height: 1.05; }
+        .strip-head h2 { font-size: clamp(34px, 4vw, 48px); }
+        .strip-head a { font-size: 14px; letter-spacing: .06em; }
+        .strip-scroll { overflow-x: auto; padding-bottom: 8px; }
+        .strip ol {
+            list-style: none; padding: 0; display: grid; grid-auto-flow: column;
+            grid-auto-columns: minmax(250px, 1fr); gap: 20px;
+        }
+        .strip li a { display: block; text-decoration: none; }
+        .strip .ph { aspect-ratio: 4 / 5; font-size: 10px; }
+        .strip .row { display: flex; gap: 14px; align-items: baseline; margin-top: 14px; }
+        .strip .n { font-family: var(--serif); font-size: 40px; line-height: 1; color: var(--accent); }
+        .strip .name { display: block; font-family: var(--serif); font-size: 22px; line-height: 1.2; }
+        .strip .place { display: block; font-size: 13px; color: var(--muted); }
+
+        /* Planes completos */
+        .plans { margin-top: 112px; background: var(--ink); color: var(--bg); }
+        .plans .wrap { padding-top: 96px; padding-bottom: 96px; }
+        .plans .eyebrow { margin-bottom: 12px; font-size: 12px; color: var(--accent-light); letter-spacing: .22em; }
+        .plans h2 { margin-bottom: 16px; font-size: clamp(36px, 4.5vw, 56px); }
+        .plans .lead { margin-bottom: 48px; max-width: 560px; color: #D6CEC1; }
+        .plan-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px; }
+        .plan-grid a { display: block; text-decoration: none; color: var(--bg); }
+        .plan-grid .ph { aspect-ratio: 3 / 2; font-size: 10px; }
+        .plan-grid .meta { margin: 18px 0 6px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--dark-label); }
+        .plan-grid .ptitle { font-family: var(--serif); font-size: 30px; line-height: 1.15; }
+        .plan-grid a:hover .ptitle { color: var(--accent-light); }
+
+        /* Confianza */
+        .trust { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; justify-content: space-between; padding-top: 96px; padding-bottom: 96px; }
+        .trust h2 { flex: 1 1 420px; font-family: var(--serif); font-weight: 400; font-size: clamp(32px, 3.6vw, 44px); line-height: 1.1; }
+        .trust a { font-size: 14px; letter-spacing: .06em; }
+
+        /* Pie */
+        .site-footer { border-top: 1px solid var(--line); }
+        .site-footer .wrap {
+            display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+            gap: 24px; padding-top: 48px; padding-bottom: 48px; font-size: 14px; color: var(--muted);
+        }
+        .site-footer .brand { font-size: 24px; }
+        .footer-links { display: flex; flex-wrap: wrap; gap: 24px; }
+        .footer-links a { color: var(--muted); }
+        .footer-links a:hover { color: var(--ink); }
+
+        @media (max-width: 720px) {
+            .wrap { padding: 0 20px; }
+            .main-nav { gap: 20px 24px; }
+            .hero { padding-top: 56px; padding-bottom: 48px; }
+            .featured { min-height: 420px; padding: 28px 24px; }
+            .strip { padding-top: 64px; }
+            .strip ol { grid-auto-columns: 70%; }
+            .plans { margin-top: 72px; }
+            .plans .wrap, .trust { padding-top: 64px; padding-bottom: 64px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Mejor Imposible",
+        "url": "https://mejorimposible.es/",
+        "inLanguage": "es"
+    }
+    </script>
+</head>
+<body>
+
+<header class="wrap site-header">
+    <a class="brand" href="/index2.html">mejor imposible</a>
+    <nav class="main-nav" aria-label="Principal">
+        <a href="#rankings">Rankings</a>
+        <a href="#planes">Planes completos</a>
+        <a href="/destinos/">Destinos</a>
+        <a href="/porsche/">Guía Porsche</a>
+    </nav>
+    <div class="lang" aria-label="Idioma">
+        <a href="/index2.html" hreflang="es" lang="es" aria-current="true">ES</a>
+        <a href="/en/" hreflang="en" lang="en">EN</a>
+        <a href="/fr/" hreflang="fr" lang="fr">FR</a>
+        <a href="/de/" hreflang="de" lang="de">DE</a>
+    </div>
+</header>
+
+<main>
+    <section class="wrap hero">
+        <p class="eyebrow">Rankings independientes de España</p>
+        <h1>Solo lo mejor.</h1>
+        <p class="lead">Los mejores hoteles, campos, mesas y casas del país. Pocos, elegidos y ordenados.</p>
+        <nav class="chips" aria-label="Categorías">
+            <a href="/ranking/hoteles-5-estrellas/">Hoteles 5*</a>
+            <a href="/ranking/golf/">Golf</a>
+            <a href="/ranking/restaurantes/">Restaurantes</a>
+            <a href="/ranking/casas-de-lujo/">Casas de lujo</a>
+            <a href="/ranking/bodegas/">Bodegas</a>
+            <a href="/ranking/spas/">Spas</a>
+            <a href="/ranking/yates-y-calas/">Yates y calas</a>
+            <a href="/ranking/motor/">Motor</a>
+        </nav>
+    </section>
+
+    <section class="wrap" aria-label="Destacado">
+        <a class="featured" href="/ranking/golf/">
+            <span class="ph-label">[FOTO · calle de golf al atardecer]</span>
+            <span class="kicker">Ranking del mes</span>
+            <span class="title">Los 10 mejores campos de golf de España</span>
+            <span class="cta">Ver el ranking →</span>
+        </a>
+    </section>
+
+    <div id="rankings">
+        <section class="wrap strip" aria-labelledby="r-hoteles">
+            <div class="strip-head">
+                <h2 id="r-hoteles">Los mejores hoteles 5* de España</h2>
+                <a href="/ranking/hoteles-5-estrellas/">Ranking completo →</a>
+            </div>
+            <div class="strip-scroll">
+                <ol>
+                    <li><a href="/ranking/hoteles-5-estrellas/"><div class="ph">[FOTO]</div><div class="row"><span class="n">01</span><span><span class="name">[Hotel]</span><span class="place">Madrid</span></span></div></a></li>
+                    <li><a href="/ranking/hoteles-5-estrellas/"><div class="ph t2">[FOTO]</div><div class="row"><span class="n">02</span><span><span class="name">[Hotel]</span><span class="place">Mallorca</span></span></div></a></li>
+                    <li><a href="/ranking/hoteles-5-estrellas/"><div class="ph t3">[FOTO]</div><div class="row"><span class="n">03</span><span><span class="name">[Hotel]</span><span class="place">Marbella</span></span></div></a></li>
+                    <li><a href="/ranking/hoteles-5-estrellas/"><div class="ph t4">[FOTO]</div><div class="row"><span class="n">04</span><span><span class="name">[Hotel]</span><span class="place">Barcelona</span></span></div></a></li>
+                    <li><a href="/ranking/hoteles-5-estrellas/"><div class="ph">[FOTO]</div><div class="row"><span class="n">05</span><span><span class="name">[Hotel]</span><span class="place">Ibiza</span></span></div></a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="wrap strip" aria-labelledby="r-golf">
+            <div class="strip-head">
+                <h2 id="r-golf">Los mejores campos de golf</h2>
+                <a href="/ranking/golf/">Ranking completo →</a>
+            </div>
+            <div class="strip-scroll">
+                <ol>
+                    <li><a href="/ranking/golf/"><div class="ph">[FOTO]</div><div class="row"><span class="n">01</span><span><span class="name">[Campo]</span><span class="place">Sotogrande</span></span></div></a></li>
+                    <li><a href="/ranking/golf/"><div class="ph t2">[FOTO]</div><div class="row"><span class="n">02</span><span><span class="name">[Campo]</span><span class="place">Casares</span></span></div></a></li>
+                    <li><a href="/ranking/golf/"><div class="ph t3">[FOTO]</div><div class="row"><span class="n">03</span><span><span class="name">[Campo]</span><span class="place">Girona</span></span></div></a></li>
+                    <li><a href="/ranking/golf/"><div class="ph t4">[FOTO]</div><div class="row"><span class="n">04</span><span><span class="name">[Campo]</span><span class="place">Marbella</span></span></div></a></li>
+                    <li><a href="/ranking/golf/"><div class="ph">[FOTO]</div><div class="row"><span class="n">05</span><span><span class="name">[Campo]</span><span class="place">Mallorca</span></span></div></a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="wrap strip" aria-labelledby="r-mesas">
+            <div class="strip-head">
+                <h2 id="r-mesas">Las mejores mesas</h2>
+                <a href="/ranking/restaurantes/">Ranking completo →</a>
+            </div>
+            <div class="strip-scroll">
+                <ol>
+                    <li><a href="/ranking/restaurantes/"><div class="ph">[FOTO]</div><div class="row"><span class="n">01</span><span><span class="name">[Restaurante]</span><span class="place">San Sebastián</span></span></div></a></li>
+                    <li><a href="/ranking/restaurantes/"><div class="ph t2">[FOTO]</div><div class="row"><span class="n">02</span><span><span class="name">[Restaurante]</span><span class="place">Girona</span></span></div></a></li>
+                    <li><a href="/ranking/restaurantes/"><div class="ph t3">[FOTO]</div><div class="row"><span class="n">03</span><span><span class="name">[Restaurante]</span><span class="place">Madrid</span></span></div></a></li>
+                    <li><a href="/ranking/restaurantes/"><div class="ph t4">[FOTO]</div><div class="row"><span class="n">04</span><span><span class="name">[Restaurante]</span><span class="place">Dénia</span></span></div></a></li>
+                    <li><a href="/ranking/restaurantes/"><div class="ph">[FOTO]</div><div class="row"><span class="n">05</span><span><span class="name">[Restaurante]</span><span class="place">Valencia</span></span></div></a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="wrap strip" aria-labelledby="r-casas">
+            <div class="strip-head">
+                <h2 id="r-casas">Las casas más espectaculares</h2>
+                <a href="/ranking/casas-de-lujo/">Ranking completo →</a>
+            </div>
+            <div class="strip-scroll">
+                <ol>
+                    <li><a href="/ranking/casas-de-lujo/"><div class="ph">[FOTO]</div><div class="row"><span class="n">01</span><span><span class="name">[Casa]</span><span class="place">Ibiza</span></span></div></a></li>
+                    <li><a href="/ranking/casas-de-lujo/"><div class="ph t2">[FOTO]</div><div class="row"><span class="n">02</span><span><span class="name">[Casa]</span><span class="place">Menorca</span></span></div></a></li>
+                    <li><a href="/ranking/casas-de-lujo/"><div class="ph t3">[FOTO]</div><div class="row"><span class="n">03</span><span><span class="name">[Casa]</span><span class="place">Costa Brava</span></span></div></a></li>
+                    <li><a href="/ranking/casas-de-lujo/"><div class="ph t4">[FOTO]</div><div class="row"><span class="n">04</span><span><span class="name">[Casa]</span><span class="place">Marbella</span></span></div></a></li>
+                    <li><a href="/ranking/casas-de-lujo/"><div class="ph">[FOTO]</div><div class="row"><span class="n">05</span><span><span class="name">[Casa]</span><span class="place">Lanzarote</span></span></div></a></li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+    <section id="planes" class="plans" aria-labelledby="planes-h">
+        <div class="wrap">
+            <p class="eyebrow">Planes completos</p>
+            <h2 id="planes-h">Todo el viaje, en una sola vista</h2>
+            <p class="lead">Aeropuerto, coche, hotel, la actividad y dónde cenar: lo mejor de cada paso, encadenado.</p>
+            <div class="plan-grid">
+                <a href="/planes/golf-en-sotogrande/"><div class="ph t3">[FOTO · campo junto al mar]</div><p class="meta">3 días · Golf</p><p class="ptitle">Golf en Sotogrande</p></a>
+                <a href="/planes/la-rioja-de-bodega-en-bodega/"><div class="ph t3">[FOTO · viñedo]</div><p class="meta">2 días · Vino</p><p class="ptitle">La Rioja de bodega en bodega</p></a>
+                <a href="/planes/ibiza-y-formentera-en-barco/"><div class="ph t3">[FOTO · cala]</div><p class="meta">4 días · Mar</p><p class="ptitle">Ibiza y Formentera en barco</p></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap trust">
+        <h2>Nadie paga por aparecer.<br>Por eso merece la pena mirarlo.</h2>
+        <a href="/metodologia/">Cómo elaboramos los rankings →</a>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <a class="brand" href="/index2.html">mejor imposible</a>
+        <p>Rankings independientes</p>
+        <nav class="footer-links" aria-label="Pie">
+            <a href="/porsche/">Guía Porsche (no oficial)</a>
+            <a href="/metodologia/">Metodología</a>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
