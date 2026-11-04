@@ -232,19 +232,19 @@ def nearest(item, tipo):
     else:
         return None
     best = min(((haversine_km(here, coords(x)), n, ref, None, x) for n, ref, x in pool), default=None)
-    # si ningún ítem del ranking queda a menos de 60 min, se recurre a la lista Michelin más próxima
+    # la lista Michelin entra si no hay ítem del ranking a menos de 60 min, o si uno estrellado queda
+    # al menos 15 min más cerca (por ejemplo, el restaurante de la propia bodega)
     extra = {'restaurante': (MICHELIN, 'estrellas', 'estrella', 'estrellas'),
              'hotel': (LLAVES, 'llaves', 'Llave', 'Llaves')}.get(tipo)
-    if extra and not (best and drive_min(best[0]) <= 60):
-        for r in extra[0]:
-            d = haversine_km(here, coords(r))
-            if not best or d < best[0]:
-                best = (d, r['nombre'], None, r[extra[1]], r)
+    if extra:
+        mbest = min(((haversine_km(here, coords(r)), r['nombre'], None, r[extra[1]], r) for r in extra[0]), default=None)
+        if mbest and (not best or drive_min(best[0]) > 60 or drive_min(mbest[0]) + 15 <= drive_min(best[0])):
+            best = mbest if not best or mbest[0] < best[0] else best
     if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM) or (tipo == 'aeropuerto' and drive_min(best[0]) > 150):
         return None
     out = dict(tipo=tipo, nombre=best[1], ref=best[2], min=drive_min(best[0]))
-    exact = 'localidad' not in (item.get('geo_precision'), best[4].get('geo_precision'))
-    if best[0] < 0.3 and exact and tipo in ('restaurante', 'hotel'):
+    mismo = best[1].lower() in item['nombre'].lower() or item['nombre'].lower() in best[1].lower()
+    if best[0] < 0.3 and mismo and tipo in ('restaurante', 'hotel'):
         out['nota'] = 'en el mismo lugar'
         out['min'] = 0
     elif best[3]:
@@ -258,7 +258,7 @@ def near_tiles(cat, item):
     for label in CATS[cat]['cerca']:
         tipo = LABEL_TIPO.get(label, label.lower())
         # lo escrito a mano en el ítem manda; si no hay, se calcula por coordenadas
-        entry = next((c for c in (item or {}).get('cerca', []) if c['tipo'] == tipo), None) or nearest(item, tipo)
+        entry = next((c for c in (item or {}).get('cerca', []) if c['tipo'] == tipo and (c.get('ref') or c.get('nombre'))), None) or nearest(item, tipo)
         name = href = None
         if entry:
             if entry.get('ref'):

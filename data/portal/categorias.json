@@ -204,8 +204,8 @@
       "es": "viñedo al amanecer"
     },
     "ficha": [
-      "D.O. [NOMBRE]",
-      "Fundada en [AÑO]"
+      "{denominacion}",
+      "{puesto}"
     ],
     "cerca": [
       "Hotel",
@@ -213,7 +213,7 @@
       "Aeropuerto"
     ],
     "como_ordenamos": {
-      "es": "Vinos, viñedo, arquitectura y la visita completa. Ninguna bodega paga por estar."
+      "es": "Vinos, viñedo, arquitectura y la visita completa; partimos de la lista World's 50 Best Vineyards 2025. Ninguna bodega paga por estar."
     },
     "placeholder": [
       {

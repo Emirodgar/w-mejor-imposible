@@ -39,9 +39,7 @@
     },
     {
       "tipo": "bodega",
-      "nombre": {
-        "es": "Marqués de Riscal"
-      }
+      "ref": "bodegas/marques-de-riscal"
     },
     {
       "tipo": "cena",
@@ -91,14 +89,9 @@
         {
           "tipo": "Bodega",
           "tono": "claro",
-          "nombre": {
-            "es": "Marqués de Riscal"
-          },
+          "ref": "bodegas/marques-de-riscal",
           "por_que": {
             "es": "Una de las bodegas pioneras de Rioja, fundada en 1858: visita a las cavas subterráneas."
-          },
-          "foto": {
-            "es": "cavas históricas"
           }
         }
       ]
@@ -111,14 +104,9 @@
         {
           "tipo": "Bodega",
           "tono": "oscuro",
-          "nombre": {
-            "es": "Ysios"
-          },
+          "ref": "bodegas/ysios",
           "por_que": {
-            "es": "Diseño de Santiago Calatrava (2001) a las afueras de Laguardia."
-          },
-          "foto": {
-            "es": "cubierta ondulada frente a la sierra"
+            "es": "Tercera del mundo en World's 50 Best Vineyards 2025: diseño de Santiago Calatrava (2001) a las afueras de Laguardia."
           }
         },
         {

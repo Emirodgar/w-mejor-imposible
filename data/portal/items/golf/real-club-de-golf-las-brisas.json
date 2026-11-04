@@ -15,11 +15,7 @@
     "hoyos": 18,
     "par": 72
   },
-  "cerca": [
-    {
-      "tipo": "hotel"
-    }
-  ],
+  "cerca": [],
   "fuentes": [
     "https://www.golfpass.com/courses/23547-real-club-de-golf-las-brisas/"
   ],

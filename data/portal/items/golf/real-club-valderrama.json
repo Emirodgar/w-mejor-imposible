@@ -15,11 +15,7 @@
     "hoyos": 18,
     "par": 71
   },
-  "cerca": [
-    {
-      "tipo": "hotel"
-    }
-  ],
+  "cerca": [],
   "fuentes": [
     "https://www.top100golfcourses.com/news/best-golf-courses-in-spain",
     "https://en.wikipedia.org/wiki/Valderrama_Golf_Club"

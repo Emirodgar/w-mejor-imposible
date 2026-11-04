@@ -1,0 +1,27 @@
+{
+  "id": "bodegas/abadia-retuerta",
+  "categoria": "bodegas",
+  "nombre": "Abadía Retuerta",
+  "lugar": "Sardón de Duero · Valladolid",
+  "zona": "resto",
+  "foto": {
+    "es": "abadía entre viñedos"
+  },
+  "por_que": {
+    "es": "Puesto 38 en 2025, en una antigua abadía del siglo XII junto al Duero, que también es hotel con tres Llaves Michelin."
+  },
+  "ficha": {
+    "denominacion": "Valle del Duero",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 38"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Abadía Retuerta Sardón de Duero",
+  "coordenadas": {
+    "lat": 41.61654,
+    "lon": -4.41093
+  },
+  "geo_fuente": "Abadía Retuerta Le Domaine, Carretera Zaragoza a Portugal, Retuerta, Sardón de Duero, Vall"
+}

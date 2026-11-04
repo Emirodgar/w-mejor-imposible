@@ -15,11 +15,7 @@
     "hoyos": 18,
     "par": 71
   },
-  "cerca": [
-    {
-      "tipo": "hotel"
-    }
-  ],
+  "cerca": [],
   "fuentes": [
     "https://en.wikipedia.org/wiki/Club_de_Campo_Villa_de_Madrid"
   ],

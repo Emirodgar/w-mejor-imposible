@@ -1,0 +1,27 @@
+{
+  "id": "bodegas/muga",
+  "categoria": "bodegas",
+  "nombre": "Muga",
+  "lugar": "Haro · La Rioja",
+  "zona": "resto",
+  "foto": {
+    "es": "barrio de la Estación de Haro"
+  },
+  "por_que": {
+    "es": "Puesto 53 en 2025 (lista 51-100), en Haro."
+  },
+  "ficha": {
+    "denominacion": "D.O.Ca. Rioja",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 53"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Bodegas Muga Haro",
+  "coordenadas": {
+    "lat": 42.58291,
+    "lon": -2.8472
+  },
+  "geo_fuente": "Bodegas Muga S.A., Avenida Vizcaya, Barrio de La Estación, Haro, La Rioja, 26200, España"
+}

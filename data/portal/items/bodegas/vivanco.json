@@ -1,0 +1,28 @@
+{
+  "id": "bodegas/vivanco",
+  "categoria": "bodegas",
+  "nombre": "Vivanco",
+  "lugar": "Briones · La Rioja",
+  "zona": "resto",
+  "foto": {
+    "es": "viñedo y museo"
+  },
+  "por_que": {
+    "es": "Puesto 24 en 2025, subiendo desde el 31, en Briones."
+  },
+  "ficha": {
+    "denominacion": "D.O.Ca. Rioja",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 24"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Vivanco Briones",
+  "coordenadas": {
+    "lat": 42.53968,
+    "lon": -2.77729
+  },
+  "geo_precision": "local",
+  "geo_fuente": "Vivanco, Dinastía Vivanco, Briones"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bodegas/marques-de-riscal",
+  "categoria": "bodegas",
+  "nombre": "Marqués de Riscal",
+  "lugar": "Elciego · Álava",
+  "zona": "resto",
+  "foto": {
+    "es": "bodega de Gehry entre viñedos"
+  },
+  "por_que": {
+    "es": "Ganadora de World's 50 Best Vineyards en 2024 y hoy en su Salón de la Fama: fundada en 1858, con el hotel de Frank Gehry en la propia bodega."
+  },
+  "ficha": {
+    "denominacion": "D.O.Ca. Rioja",
+    "puesto": "World's 50 Best Vineyards: Salón de la Fama"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Bodegas Marqués de Riscal Elciego",
+  "coordenadas": {
+    "lat": 42.51151,
+    "lon": -2.61848
+  },
+  "geo_fuente": "Bodegas Marqués de Riscal, Plaza del Reloj, Barrihuelo, Elciego, Arabako Errioxa, Araba / "
+}

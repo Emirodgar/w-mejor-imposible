@@ -1,0 +1,28 @@
+{
+  "id": "bodegas/gonzalez-byass-tio-pepe",
+  "categoria": "bodegas",
+  "nombre": "González Byass-Tío Pepe",
+  "lugar": "Jerez de la Frontera · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "bodegas y viñedo de Jerez"
+  },
+  "por_que": {
+    "es": "Puesto 21 en 2025: los viñedos y las bodegas de la casa de Tío Pepe, en Jerez de la Frontera."
+  },
+  "ficha": {
+    "denominacion": "Jerez-Xérès-Sherry",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 21"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Jerez de la Frontera",
+  "coordenadas": {
+    "lat": 36.68169,
+    "lon": -6.13774
+  },
+  "geo_precision": "localidad",
+  "geo_fuente": "Jerez de la Frontera"
+}

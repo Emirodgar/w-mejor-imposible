@@ -1,0 +1,27 @@
+{
+  "id": "bodegas/gramona",
+  "categoria": "bodegas",
+  "nombre": "Gramona",
+  "lugar": "Sant Sadurní d'Anoia · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "cava en la cava"
+  },
+  "por_que": {
+    "es": "Puesto 25 en 2025: la referencia del cava del Penedès."
+  },
+  "ficha": {
+    "denominacion": "Penedès (cava)",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 25"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Gramona Sant Sadurní d'Anoia",
+  "coordenadas": {
+    "lat": 41.42698,
+    "lon": 1.77299
+  },
+  "geo_fuente": "Caves Gramona, Variant de Sant Sadurní d'Anoia, Sant Sadurní d'Anoia, Alt Penedès, Barcelo"
+}

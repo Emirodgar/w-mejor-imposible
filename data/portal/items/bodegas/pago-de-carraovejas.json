@@ -1,0 +1,27 @@
+{
+  "id": "bodegas/pago-de-carraovejas",
+  "categoria": "bodegas",
+  "nombre": "Pago de Carraovejas",
+  "lugar": "Peñafiel · Valladolid",
+  "zona": "resto",
+  "foto": {
+    "es": "viñedo y bodega"
+  },
+  "por_que": {
+    "es": "Puesto 18 en World's 50 Best Vineyards 2025, en el corazón de la Ribera del Duero."
+  },
+  "ficha": {
+    "denominacion": "Ribera del Duero",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 18"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Pago de Carraovejas Peñafiel",
+  "coordenadas": {
+    "lat": 41.59434,
+    "lon": -4.08763
+  },
+  "geo_fuente": "Bodega Pago de Carraovejas, Camino de Carraovejas, Mélida, Peñafiel, Valladolid, Castilla "
+}

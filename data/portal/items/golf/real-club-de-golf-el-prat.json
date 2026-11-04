@@ -15,11 +15,7 @@
     "hoyos": 18,
     "par": 72
   },
-  "cerca": [
-    {
-      "tipo": "hotel"
-    }
-  ],
+  "cerca": [],
   "fuentes": [
     "https://www.golfmagic.com/courses/western-europe/real-club-de-golf-el-prat-course-review"
   ],

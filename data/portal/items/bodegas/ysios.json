@@ -1,0 +1,27 @@
+{
+  "id": "bodegas/ysios",
+  "categoria": "bodegas",
+  "nombre": "Ysios",
+  "lugar": "Laguardia · Álava",
+  "zona": "resto",
+  "foto": {
+    "es": "cubierta de Calatrava ante la sierra"
+  },
+  "por_que": {
+    "es": "Tercera del mundo en 2025 y la mejor bodega española de la lista, con diseño de Santiago Calatrava a los pies de la Sierra de Cantabria."
+  },
+  "ficha": {
+    "denominacion": "D.O.Ca. Rioja",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 3"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Bodegas Ysios Laguardia",
+  "coordenadas": {
+    "lat": 42.5687,
+    "lon": -2.59098
+  },
+  "geo_fuente": "Bodegas Ysios, La hoya Bidea, Laguardia, Arabako Errioxa, Araba / Álava, Euskadi, 01300, E"
+}

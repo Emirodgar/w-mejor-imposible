@@ -1,0 +1,28 @@
+{
+  "id": "bodegas/marques-de-murrieta",
+  "categoria": "bodegas",
+  "nombre": "Marqués de Murrieta",
+  "lugar": "Logroño · La Rioja",
+  "zona": "resto",
+  "foto": {
+    "es": "finca Ygay"
+  },
+  "por_que": {
+    "es": "Puesto 48 en 2025, en Logroño."
+  },
+  "ficha": {
+    "denominacion": "D.O.Ca. Rioja",
+    "puesto": "World's 50 Best Vineyards 2025: n.º 48"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+  ],
+  "busqueda": "Logrono La Rioja",
+  "coordenadas": {
+    "lat": 42.46612,
+    "lon": -2.43967
+  },
+  "geo_fuente": "Logroño (la finca Ygay está a las afueras)",
+  "geo_precision": "localidad"
+}
