@@ -295,3 +295,13 @@ h1, h2, p, ol { margin: 0; }
 .dealer .muted { font-size: 13px; color: var(--muted); }
 .badge { display: inline-block; margin-left: 8px; padding: 1px 10px; border: 1px solid var(--chip-line); border-radius: 999px; font-size: 11px; letter-spacing: .08em; color: var(--muted); }
 .badge.ok { border-color: var(--accent); color: var(--accent); }
+
+/* Metodología y destinos */
+.prose { padding-top: 40px; }
+.prose > * { max-width: 760px; }
+.prose h2 { margin-bottom: 16px; font-family: var(--serif); font-weight: 400; font-size: 32px; }
+.prose p { margin: 0 0 14px; font-size: 17px; }
+.sources { margin: 0; padding: 0; list-style: none; }
+.sources li { margin-bottom: 12px; font-size: 16px; }
+.dir-brand .label { margin: 20px 0 10px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.dir-brand .chips { justify-content: flex-start; }

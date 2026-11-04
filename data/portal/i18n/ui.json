@@ -822,5 +822,61 @@
   "de": "Wie wir die Rankings erstellen →",
   "pt": "Como elaboramos os rankings →",
   "it": "Come elaboriamo le classifiche →"
+ },
+ "dest.h1": {
+  "es": "Destinos",
+  "en": "Destinations",
+  "fr": "Destinations",
+  "de": "Reiseziele",
+  "pt": "Destinos",
+  "it": "Destinazioni"
+ },
+ "dest.title": {
+  "es": "Destinos: lo mejor de España por zonas",
+  "en": "Destinations: the best of Spain, region by region",
+  "fr": "Destinations : le meilleur de l'Espagne, région par région",
+  "de": "Reiseziele: das Beste Spaniens, Region für Region",
+  "pt": "Destinos: o melhor de Espanha, região a região",
+  "it": "Destinazioni: il meglio della Spagna, zona per zona"
+ },
+ "dest.lead": {
+  "es": "Lo mejor de España, zona a zona: qué hay en cada región y qué planes la recorren.",
+  "en": "The best of Spain, region by region: what each one has and which itineraries cross it.",
+  "fr": "Le meilleur de l'Espagne, région par région : ce que chacune offre et quels séjours la parcourent.",
+  "de": "Das Beste Spaniens, Region für Region: was jede zu bieten hat und welche Reisen sie durchqueren.",
+  "pt": "O melhor de Espanha, região a região: o que cada uma tem e que roteiros a percorrem.",
+  "it": "Il meglio della Spagna, zona per zona: cosa offre ciascuna e quali itinerari la attraversano."
+ },
+ "dest.desc": {
+  "es": "Qué hay en cada zona de España en nuestros rankings (hoteles, golf, restaurantes, bodegas, spas, puertos y motor) y los planes completos que la recorren.",
+  "en": "What each region of Spain has in our rankings (hotels, golf, restaurants, wineries, spas, marinas and motor) and the complete itineraries that cross it.",
+  "fr": "Ce que chaque région d'Espagne compte dans nos classements (hôtels, golf, restaurants, domaines viticoles, spas, ports et automobile) et les séjours complets qui la parcourent.",
+  "de": "Was jede Region Spaniens in unseren Rankings zu bieten hat (Hotels, Golf, Restaurants, Weingüter, Spas, Häfen und Motor) und welche kompletten Reisen sie durchqueren.",
+  "pt": "O que cada região de Espanha tem nos nossos rankings (hotéis, golfe, restaurantes, adegas, spas, marinas e motor) e os roteiros completos que a percorrem.",
+  "it": "Cosa offre ciascuna zona della Spagna nelle nostre classifiche (hotel, golf, ristoranti, cantine, spa, porti e motori) e gli itinerari completi che la attraversano."
+ },
+ "dest.resto": {
+  "es": "Resto de España",
+  "en": "Rest of Spain",
+  "fr": "Reste de l'Espagne",
+  "de": "Übriges Spanien",
+  "pt": "Resto de Espanha",
+  "it": "Resto della Spagna"
+ },
+ "dest.rankings": {
+  "es": "En los rankings",
+  "en": "In the rankings",
+  "fr": "Dans les classements",
+  "de": "In den Rankings",
+  "pt": "Nos rankings",
+  "it": "Nelle classifiche"
+ },
+ "method.eyebrow": {
+  "es": "Metodología · Actualizado {updated}",
+  "en": "Methodology · Updated {updated}",
+  "fr": "Méthodologie · Mis à jour {updated}",
+  "de": "Methodik · Aktualisiert {updated}",
+  "pt": "Metodologia · Atualizado {updated}",
+  "it": "Metodologia · Aggiornata {updated}"
  }
 }

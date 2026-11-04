@@ -746,6 +746,80 @@ def build_home():
     write(HOME, page(HOME, ui('home.title'), ui('home.desc'), [site], body))
 
 
+# ---------------- Metodología y destinos ----------------
+def build_method():
+    m = load('metodologia.json')
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('nav.method'), None)]
+    secs = ''
+    for s in m['secciones']:
+        paras = ''.join(f'\n            <p>{e(t(p))}</p>' for p in s['parrafos'])
+        secs += (f'\n    <section class="wrap prose" id="{s["id"]}" aria-labelledby="h-{s["id"]}">'
+                 f'\n        <h2 id="h-{s["id"]}">{e(t(s["titulo"]))}</h2>{paras}\n    </section>')
+    lis = ''
+    for f in m['fuentes']:
+        txt = e(t(f['texto']))
+        if f.get('url'):
+            txt = f'<a href="{e(f["url"])}" rel="noopener">{txt}</a>'
+        lis += f'\n            <li><strong>{e(t(CATS[f["cat"]]["corto"]))}.</strong> {txt}</li>'
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">{e(ui('method.eyebrow', updated=t(m['actualizado'])))}</p>
+        <h1>{e(t(m['titulo']))}</h1>
+        <p class="lead-text">{e(t(m['lead']))}</p>
+    </section>
+{secs}
+    <section class="wrap prose" id="fuentes" aria-labelledby="h-fuentes">
+        <h2 id="h-fuentes">{e(t(m['fuentes_titulo']))}</h2>
+        <ul class="sources">{lis}
+        </ul>
+    </section>
+</main>
+'''
+    write('/metodologia/index.html', page('/metodologia/', f'{t(m["titulo"])} · Mejor Imposible', t(m['meta']),
+                                           [{"@type": "WebPage", "name": t(m['titulo']), "inLanguage": LANG}, bc_ld(crumb)], body))
+
+
+def build_destinos():
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('dest.h1'), None)]
+    plans = all_plans()
+    sections = ''
+    for zk in ZONE_KEYS[1:]:
+        counts = [(c, sum(1 for i in ITEMS.values() if i['categoria'] == c and i['zona'] == zk)) for c in HOME_CHIPS]
+        counts = [(c, n) for c, n in counts if n]
+        if not counts:
+            continue
+        name = ui('dest.resto') if zk == 'resto' else ui('zone.' + zk)
+        chips = ''.join(f'\n            <a href="{u(f"/ranking/{c}/")}?zona={zk}">{e(t(CATS[c]["corto"]))} · {n}</a>' for c, n in counts)
+        zplans = [p for p in plans if p['zona'] == zk]
+        plan_html = ''
+        if zplans:
+            plan_chips = ''.join(f'\n            <a href="{u("/planes/" + p["slug"] + "/")}">{e(t(p["titulo"]))}</a>' for p in zplans)
+            plan_html = f'\n        <p class="label">{e(ui("nav.plans"))}</p>\n        <nav class="chips" aria-label="{e(ui("nav.plans"))}">{plan_chips}\n        </nav>'
+        sections += f'''
+    <section class="wrap dir-brand" id="{zk}" aria-labelledby="z-{zk}">
+        <h2 id="z-{zk}">{e(name)}</h2>
+        <p class="label">{e(ui('dest.rankings'))}</p>
+        <nav class="chips" aria-label="{e(ui('dest.rankings'))}">{chips}
+        </nav>{plan_html}
+    </section>'''
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <h1>{e(ui('dest.h1'))}</h1>
+        <p class="lead-text">{e(ui('dest.lead'))}</p>
+    </section>
+{sections}
+</main>
+'''
+    write('/destinos/index.html', page('/destinos/', f'{ui("dest.title")} · Mejor Imposible', ui('dest.desc'),
+                                        [{"@type": "CollectionPage", "name": ui('dest.title'), "inLanguage": LANG}, bc_ld(crumb)], body))
+
+
 # ---------------- Sitemap ----------------
 def build_sitemap():
     today = datetime.date.today().isoformat()
@@ -773,6 +847,8 @@ if __name__ == '__main__':
         for fn in os.listdir(os.path.join(DATA, 'planes')):
             build_plan(fn[:-5])
         build_directory()
+        build_method()
+        build_destinos()
     build_sitemap()
     bad = False
     for lang in PUBLISHED:
