@@ -19,8 +19,8 @@ Idiomas:
   - PUBLISHED (abajo) lista los idiomas que se generan. Un idioma solo debe entrar ahí cuando no le falte
     ninguna traducción: el script lo avisa y escribe las que faltan en data/portal/i18n/_pendiente-<idioma>.json.
   - es vive en la raíz; el resto bajo /<idioma>/. Cada página lleva canonical, hreflang y x-default.
-  - También se genera sitemap-portal.xml (con alternativas por idioma). No se enlaza desde robots.txt ni desde
-    sitemap.xml mientras el portal esté en noindex.
+  - También se genera sitemap-portal.xml (con alternativas por idioma), referenciado desde robots.txt.
+  - HOME y NOINDEX controlan la ruta de la home y si las páginas llevan noindex (borrador).
 """
 import datetime
 import html
@@ -32,8 +32,8 @@ import re
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 DATA = os.path.join(ROOT, 'data', 'portal')
 SITE = 'https://mejorimposible.es'
-HOME = '/index2.html'      # cuando el portal sustituya a la home, cambiar a '/'
-NOINDEX = True             # quitar al lanzar el portal
+HOME = '/'                 # home del portal (es en /, resto en /<idioma>/)
+NOINDEX = False            # True mientras el portal sea un borrador
 LANGS = [('es', 'ES'), ('en', 'EN'), ('fr', 'FR'), ('de', 'DE'), ('pt', 'PT'), ('it', 'IT')]
 PUBLISHED = ['es', 'en']   # idiomas que se generan y aparecen en el selector
 LANG = 'es'
@@ -97,8 +97,8 @@ def prefix(lang):
 
 
 def u(path):
-    """Enlace interno en el idioma actual. La raíz '/' (guía Porsche, solo en español) y los anclas no cambian."""
-    if not path.startswith('/') or path == '/':
+    """Enlace interno en el idioma actual. La guía Porsche (/porsche/, solo en español) y las anclas no cambian."""
+    if not path.startswith('/') or path.startswith('/porsche/'):
         return path
     return prefix(LANG) + path
 
@@ -169,7 +169,7 @@ HEAD = '''<!DOCTYPE html>
         <a href="@@HOME@@#rankings">@@N_RANK@@</a>
         <a href="@@HOME@@#planes">@@N_PLANS@@</a>
         <a href="@@DEST@@">@@N_DEST@@</a>
-        <a href="/">@@N_PORSCHE@@</a>
+        <a href="/porsche/">@@N_PORSCHE@@</a>
     </nav>
     <div class="lang" aria-label="@@ARIA_LANG@@">
 @@LANG@@
@@ -182,7 +182,7 @@ FOOT = '''
     <div class="wrap">
         <a class="brand" href="@@HOME@@">mejor imposible</a>
         <nav class="footer-links" aria-label="@@ARIA_FOOT@@">
-            <a href="/">@@N_PORSCHE@@</a>
+            <a href="/porsche/">@@N_PORSCHE@@</a>
             <a href="@@METHOD@@">@@N_METHOD@@</a>
         </nav>
     </div>
@@ -818,6 +818,10 @@ def build_destinos():
 '''
     write('/destinos/index.html', page('/destinos/', f'{ui("dest.title")} · Mejor Imposible', ui('dest.desc'),
                                         [{"@type": "CollectionPage", "name": ui('dest.title'), "inLanguage": LANG}, bc_ld(crumb)], body))
+
+
+PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
+              + ['/motor/marcas/', '/metodologia/', '/destinos/'])
 
 
 # ---------------- Sitemap ----------------
