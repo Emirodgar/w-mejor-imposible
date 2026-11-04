@@ -1,5 +1,100 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:1820470225550679768",
+    "url": "https://es.motor1.com/photos/935074/porsche-approved-official-certified-pre-owned-porsche-vehicles/",
+    "source": "es.motor1.com",
+    "published": "2026-11-04T17:49:12Z",
+    "headline": "Porsche Approved: hasta 36 meses de cobertura oficial en coches de ocasión",
+    "excerpt": "El programa de seminuevos certificados de Porsche incluye chequeo exhaustivo en 111 puntos, asistencia en carretera y hasta tres años de garantía oficial.",
+    "category": "Guías",
+    "models": [
+      "marca"
+    ],
+    "impact": "Permite ponderar si compensa asumir el sobreprecio habitual de una unidad certificada en centro oficial frente a la compra a un particular.",
+    "links": [
+      "garantia_approved",
+      "inspeccion",
+      "precios_ocasion"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:9130894722356068836",
+    "url": "https://www.roadandtrack.com/news/a74333834/porsche-more-powerful-infotainment-911-taycan-panamera-cayenne/",
+    "source": "roadandtrack.com",
+    "published": "2026-11-04T16:43:13Z",
+    "headline": "Porsche renueva su infoentretenimiento: cinco veces más potencia para 911, Taycan, Panamera y Cayenne",
+    "excerpt": "El nuevo sistema multimedia de Porsche multiplica por cinco la capacidad de procesamiento e integra controles por voz avanzados con inteligencia artificial.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "taycan",
+      "panamera",
+      "cayenne"
+    ],
+    "impact": "Un salto tecnológico relevante a valorar si dudas entre comprar una unidad nueva o acudir a modelos de años anteriores con sistemas más lentos.",
+    "links": [
+      "comparador",
+      "opiniones"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:7859695526824087193",
+    "url": "http://www.wardsauto.com/news/porsche-mission-s-previews-new-mid-engined-supercar/873136/",
+    "source": "wardsauto.com",
+    "published": "2026-11-04T15:01:02Z",
+    "headline": "Porsche Mission S: el prototipo que anticipa un superdeportivo de motor central",
+    "excerpt": "Presentado recientemente en Nueva York, el Mission S plasma la visión de Porsche para una nueva cúspide de gama con motor central.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Adelanta soluciones aerodinámicas y técnicas que marcarán el diseño y las prestaciones de las futuras generaciones deportivas de la marca.",
+    "links": [
+      "sm_911",
+      "comparador"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:13312151912842604054",
+    "url": "https://annuelauto.ca/essai-routier-du-porsche-cayenne-electrique/",
+    "source": "L'Annuel de l'automobile",
+    "published": "2026-11-04T13:22:51Z",
+    "headline": "Porsche reajusta su calendario eléctrico: la gasolina seguirá presente en la gama Cayenne",
+    "excerpt": "Tras reconsiderar el objetivo de alcanzar un 80 % de ventas eléctricas para 2030, la marca confirma que los motores térmicos convivirán con la nueva generación.",
+    "category": "Análisis",
+    "models": [
+      "cayenne",
+      "marca"
+    ],
+    "impact": "Tranquilidad para los compradores que buscan un Cayenne de gasolina o híbrido: no desaparecerán a corto plazo ni sufrirán una obsolescencia precipitada.",
+    "links": [
+      "sm_cayenne",
+      "precios_ocasion"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14550179316888915989",
+    "url": "https://www.motortrend.com/reviews/first-test-2026-porsche-cayenne-electric",
+    "source": "MotorTrend",
+    "published": "2026-11-04T13:12:03Z",
+    "headline": "Primeras pruebas del Porsche Cayenne eléctrico: autonomía, recarga y comportamiento",
+    "excerpt": "Los primeros ensayos exhaustivos del nuevo Cayenne Electric analizan su velocidad de carga, autonomía real y rendimiento dinámico.",
+    "category": "Modelos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Datos clave para quienes valoran dar el salto al SUV eléctrico de la marca y necesitan conocer si sus tiempos de carga y autonomía encajan en su uso habitual.",
+    "links": [
+      "sm_cayenne",
+      "comparador"
+    ],
+    "week": "2026-W45"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:4249575213219044235",
     "url": "https://www.ad.nl/auto/reddingsplan-voor-porsche-nieuwe-sportwagen-boven-de-911-en-9000-banen-weg~a0d0e8d0/",
     "source": "AD",

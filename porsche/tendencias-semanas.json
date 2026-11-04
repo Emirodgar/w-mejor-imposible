@@ -164,5 +164,31 @@
       }
     ],
     "updated": "2026-11-01"
+  },
+  "2026-W45": {
+    "summary": "Esta semana Porsche combina ajustes clave en su calendario de electrificación con importantes mejoras tecnológicas y de compra. La marca ha confirmado que mantendrá los motores de gasolina en la gama Cayenne en paralelo a la llegada de la nueva generación eléctrica, que ya afronta sus primeras pruebas dinámicas y de recarga. Además, se actualiza el sistema multimedia con cinco veces más potencia para gran parte del catálogo y el programa de ocasión Porsche Approved amplía su garantía oficial hasta los 36 meses.",
+    "highlights": [
+      {
+        "url": "https://annuelauto.ca/essai-routier-du-porsche-cayenne-electrique/",
+        "shortTitle": "Motores térmicos en Cayenne",
+        "note": "Porsche reconsidera su calendario eléctrico para 2030 y confirma que la gasolina seguirá conviviendo con la nueva generación."
+      },
+      {
+        "url": "https://www.roadandtrack.com/news/a74333834/porsche-more-powerful-infotainment-911-taycan-panamera-cayenne/",
+        "shortTitle": "Nuevo infoentretenimiento con IA",
+        "note": "La marca quintuplica la capacidad de procesamiento de sus pantallas y mejora el reconocimiento por voz en 911, Taycan, Panamera y Cayenne."
+      },
+      {
+        "url": "https://es.motor1.com/photos/935074/porsche-approved-official-certified-pre-owned-porsche-vehicles/",
+        "shortTitle": "Más garantía Porsche Approved",
+        "note": "El programa oficial de seminuevos ofrece hasta tres años de cobertura tras una revisión técnica exhaustiva en 111 puntos."
+      },
+      {
+        "url": "https://www.motortrend.com/reviews/first-test-2026-porsche-cayenne-electric",
+        "shortTitle": "Pruebas del Cayenne Electric",
+        "note": "Los primeros ensayos exhaustivos evalúan el comportamiento dinámico, la velocidad de carga y la autonomía real del nuevo SUV eléctrico."
+      }
+    ],
+    "updated": "2026-11-04"
   }
 }
