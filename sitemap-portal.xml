@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap del portal nuevo. No se referencia desde robots.txt ni sitemap.xml hasta quitar el noindex. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mejorimposible.es/index2.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/index2.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/hoteles-de-lujo/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/hoteles-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/hoteles-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/hoteles-de-lujo/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/hoteles-de-lujo/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/hoteles-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/hoteles-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/hoteles-de-lujo/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/golf/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/golf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/golf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/golf/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/golf/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/golf/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/golf/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/golf/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/restaurantes/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/restaurantes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/restaurantes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/restaurantes/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/restaurantes/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/restaurantes/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/restaurantes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/restaurantes/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/casas-de-lujo/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/casas-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/casas-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/casas-de-lujo/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/casas-de-lujo/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/casas-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/casas-de-lujo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/casas-de-lujo/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/bodegas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/bodegas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/bodegas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/bodegas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/bodegas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/bodegas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/bodegas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/bodegas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/spas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/spas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/spas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/spas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/spas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/spas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/spas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/spas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/yates-y-calas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/yates-y-calas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/yates-y-calas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/yates-y-calas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/yates-y-calas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/yates-y-calas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/yates-y-calas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/yates-y-calas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/ranking/motor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/motor/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/motor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/motor/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/ranking/motor/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/ranking/motor/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/ranking/motor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/ranking/motor/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/planes/girona-golf-y-can-roca/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/girona-golf-y-can-roca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/girona-golf-y-can-roca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/girona-golf-y-can-roca/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/planes/girona-golf-y-can-roca/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/girona-golf-y-can-roca/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/girona-golf-y-can-roca/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/girona-golf-y-can-roca/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/planes/golf-en-sotogrande/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/golf-en-sotogrande/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/golf-en-sotogrande/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/golf-en-sotogrande/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/planes/golf-en-sotogrande/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/golf-en-sotogrande/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/golf-en-sotogrande/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/golf-en-sotogrande/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/planes/ibiza-y-formentera-en-barco/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/ibiza-y-formentera-en-barco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/ibiza-y-formentera-en-barco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/ibiza-y-formentera-en-barco/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/planes/ibiza-y-formentera-en-barco/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/ibiza-y-formentera-en-barco/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/ibiza-y-formentera-en-barco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/ibiza-y-formentera-en-barco/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/planes/la-rioja-de-bodega-en-bodega/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/la-rioja-de-bodega-en-bodega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/la-rioja-de-bodega-en-bodega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/la-rioja-de-bodega-en-bodega/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/planes/la-rioja-de-bodega-en-bodega/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/la-rioja-de-bodega-en-bodega/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/la-rioja-de-bodega-en-bodega/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/la-rioja-de-bodega-en-bodega/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/planes/marbella-golf-y-mesa/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/marbella-golf-y-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/marbella-golf-y-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/marbella-golf-y-mesa/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/planes/marbella-golf-y-mesa/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/marbella-golf-y-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/marbella-golf-y-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/marbella-golf-y-mesa/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/planes/san-sebastian-mesa-a-mesa/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/san-sebastian-mesa-a-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/san-sebastian-mesa-a-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/san-sebastian-mesa-a-mesa/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/planes/san-sebastian-mesa-a-mesa/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/planes/san-sebastian-mesa-a-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/planes/san-sebastian-mesa-a-mesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/planes/san-sebastian-mesa-a-mesa/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/motor/marcas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/motor/marcas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/motor/marcas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/motor/marcas/"/>
+  </url>
+  <url>
+    <loc>https://mejorimposible.es/en/motor/marcas/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/motor/marcas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/motor/marcas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/motor/marcas/"/>
+  </url>
+</urlset>

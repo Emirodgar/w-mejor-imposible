@@ -1,18 +1,28 @@
 #!/usr/bin/env python3
-"""Genera las páginas del portal (rankings, planes y tiras de la home) desde data/portal/.
+"""Genera las páginas del portal (home, rankings, planes y directorio) en todos los idiomas publicados.
 
 Uso:  python scripts/portal/build.py
 
 Datos (un archivo por elemento, con referencias cruzadas por id "categoria/slug"):
-  data/portal/categorias.json          metadatos de cada ranking y placeholders mientras no esté relleno
+  data/portal/categorias.json          metadatos de cada ranking
   data/portal/items/<cat>/<slug>.json  un lugar (campo, restaurante...)
-  data/portal/rankings/<cat>.json      orden del top 10 (lista de ids); si no existe, se usan placeholders
+  data/portal/rankings/<cat>.json      orden del ranking (lista de ids)
   data/portal/planes/<slug>.json       un plan completo; sus pasos apuntan a ítems por id
   data/portal/aeropuertos.json         aeropuertos con coordenadas ("Lo mejor cerca" se calcula con ellas)
-Las coordenadas se obtienen con scripts/portal/geocode.py; "Lo mejor cerca" (restaurante, golf, aeropuerto)
+Las coordenadas se obtienen con scripts/portal/geocode.py; "Lo mejor cerca" (hotel, restaurante, golf, aeropuerto)
 se calcula por distancia a partir de ellas, salvo que el ítem lo fije a mano en "cerca".
-Los textos van como {"es": "..."} para añadir en/fr/de/pt/it sin cambiar la estructura.
+
+Idiomas:
+  - Los textos van en español en los datos ({"es": "..."} o cadenas sueltas).
+  - data/portal/i18n/ui.json        textos de la interfaz en los 6 idiomas (clave -> {es, en, fr, de, pt, it}).
+  - data/portal/i18n/<idioma>.json  traducción del contenido: {"texto en español": "traducción"}.
+  - PUBLISHED (abajo) lista los idiomas que se generan. Un idioma solo debe entrar ahí cuando no le falte
+    ninguna traducción: el script lo avisa y escribe las que faltan en data/portal/i18n/_pendiente-<idioma>.json.
+  - es vive en la raíz; el resto bajo /<idioma>/. Cada página lleva canonical, hreflang y x-default.
+  - También se genera sitemap-portal.xml (con alternativas por idioma). No se enlaza desde robots.txt ni desde
+    sitemap.xml mientras el portal esté en noindex.
 """
+import datetime
 import html
 import json
 import math
@@ -22,29 +32,26 @@ import re
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 DATA = os.path.join(ROOT, 'data', 'portal')
 SITE = 'https://mejorimposible.es'
+HOME = '/index2.html'      # cuando el portal sustituya a la home, cambiar a '/'
+NOINDEX = True             # quitar al lanzar el portal
+LANGS = [('es', 'ES'), ('en', 'EN'), ('fr', 'FR'), ('de', 'DE'), ('pt', 'PT'), ('it', 'IT')]
+PUBLISHED = ['es', 'en']   # idiomas que se generan y aparecen en el selector
 LANG = 'es'
 
-LANGS = [('es', 'ES'), ('en', 'EN'), ('fr', 'FR'), ('de', 'DE'), ('pt', 'PT'), ('it', 'IT')]
-ZONES = [('todas', 'Toda España'), ('andalucia', 'Andalucía'), ('cataluna', 'Cataluña'),
-         ('baleares', 'Baleares'), ('canarias', 'Canarias'), ('resto', 'Resto')]
-ZONE_NAMES = dict(ZONES)
+ZONE_KEYS = ['todas', 'andalucia', 'cataluna', 'baleares', 'canarias', 'resto']
 TONES = ['', ' t3', '', ' t3', '']
 STRIP_TONES = ['', ' t2', ' t3', ' t4', '']
-LABEL_TIPO = {'Hotel': 'hotel', 'Hotel': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
+LABEL_TIPO = {'Hotel': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
               'Spa': 'spa', 'Puerto': 'puerto', 'Bodega': 'bodega'}
 CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-de-lujo': 'Hotel',
               'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness'}
+HOME_STRIPS = [('hoteles-de-lujo', 'hoteles', 'r-hoteles'), ('golf', 'golf', 'r-golf'),
+               ('restaurantes', 'restaurantes', 'r-mesas'), ('casas-de-lujo', 'casas', 'r-casas')]
+HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor']
 
 
 def e(s):
     return html.escape(str(s), quote=True)
-
-
-def t(x):
-    """Texto traducible: {"es": ...} -> cadena."""
-    if isinstance(x, dict):
-        return x.get(LANG) or x.get('es') or ''
-    return x
 
 
 def load(rel):
@@ -56,8 +63,50 @@ def exists(rel):
     return os.path.exists(os.path.join(DATA, *rel.split('/')))
 
 
+# ---------------- Idiomas ----------------
+UI = load('i18n/ui.json')
+TEXT = {c: (load(f'i18n/{c}.json') if exists(f'i18n/{c}.json') else {}) for c, _ in LANGS if c != 'es'}
+MISSING = {c: set() for c, _ in LANGS}
+
+
+def ui(key, **kw):
+    s = UI[key][LANG]
+    return s.format(**kw) if kw else s
+
+
+def tr(es):
+    """Traduce una cadena en español al idioma actual; anota las que faltan."""
+    if LANG == 'es' or not es:
+        return es
+    v = TEXT[LANG].get(es)
+    if v is None:
+        MISSING[LANG].add(es)
+        return es
+    return v
+
+
+def t(x):
+    """Texto traducible: {"es": ...} (o {"es": ..., "en": ...}) o cadena suelta -> cadena en el idioma actual."""
+    if isinstance(x, dict):
+        return x[LANG] if LANG in x else tr(x.get('es', ''))
+    return tr(x)
+
+
+def prefix(lang):
+    return '' if lang == 'es' else f'/{lang}'
+
+
+def u(path):
+    """Enlace interno en el idioma actual. La raíz '/' (guía Porsche, solo en español) y los anclas no cambian."""
+    if not path.startswith('/') or path == '/':
+        return path
+    return prefix(LANG) + path
+
+
 def write(path, content):
-    full = os.path.join(ROOT, *path.split('/'))
+    if path.endswith('/'):
+        path += 'index.html'
+    full = os.path.join(ROOT, *(prefix(LANG) + path).strip('/').split('/'))
     os.makedirs(os.path.dirname(full), exist_ok=True)
     with open(full, 'w', encoding='utf-8', newline='\n') as f:
         f.write(content)
@@ -65,36 +114,46 @@ def write(path, content):
 
 CATS = load('categorias.json')
 ITEMS = {}
-for cat in os.listdir(os.path.join(DATA, 'items')):
-    for fn in os.listdir(os.path.join(DATA, 'items', cat)):
-        item = load(f'items/{cat}/{fn}')
-        ITEMS[item['id']] = item
+for _cat in os.listdir(os.path.join(DATA, 'items')):
+    for _fn in os.listdir(os.path.join(DATA, 'items', _cat)):
+        _item = load(f'items/{_cat}/{_fn}')
+        ITEMS[_item['id']] = _item
+PAGES = []  # rutas (en español) de las páginas generadas, para el sitemap
 
 
 def item_url(ref):
     cat, slug = ref.split('/')
-    return f'/ranking/{cat}/#{slug}'
+    return f'{u(f"/ranking/{cat}/")}#{slug}'
 
 
 # ---------------- Plantilla común ----------------
-def lang_html():
+def lang_html(path):
     out = []
     for c, n in LANGS:
-        href = '#' if c == 'es' else f'/{c}/'
-        cur = ' aria-current="true"' if c == 'es' else ''
-        out.append(f'        <a href="{href}" hreflang="{c}" lang="{c}"{cur}>{n}</a>')
+        if c not in PUBLISHED:
+            continue
+        cur = ' aria-current="true"' if c == LANG else ''
+        out.append(f'        <a href="{prefix(c)}{path}" hreflang="{c}" lang="{c}"{cur}>{n}</a>')
+    return '\n'.join(out)
+
+
+def head_links(path):
+    out = [f'    <link rel="canonical" href="{SITE}{prefix(LANG)}{path}">']
+    for c in PUBLISHED:
+        out.append(f'    <link rel="alternate" hreflang="{c}" href="{SITE}{prefix(c)}{path}">')
+    out.append(f'    <link rel="alternate" hreflang="x-default" href="{SITE}{path}">')
     return '\n'.join(out)
 
 
 HEAD = '''<!DOCTYPE html>
-<html lang="es">
+<html lang="@@L@@">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@@TITLE@@</title>
     <meta name="description" content="@@DESC@@">
-    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->
-    <meta name="robots" content="noindex, nofollow">
+@@ROBOTS@@
+@@LINKS@@
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,14 +164,14 @@ HEAD = '''<!DOCTYPE html>
 <body>
 
 <header class="wrap site-header">
-    <a class="brand" href="/index2.html">mejor imposible</a>
-    <nav class="main-nav" aria-label="Principal">
-        <a href="/index2.html#rankings">Rankings</a>
-        <a href="/index2.html#planes">Planes completos</a>
-        <a href="/destinos/">Destinos</a>
-        <a href="/">Guía Porsche</a>
+    <a class="brand" href="@@HOME@@">mejor imposible</a>
+    <nav class="main-nav" aria-label="@@ARIA_MAIN@@">
+        <a href="@@HOME@@#rankings">@@N_RANK@@</a>
+        <a href="@@HOME@@#planes">@@N_PLANS@@</a>
+        <a href="@@DEST@@">@@N_DEST@@</a>
+        <a href="/">@@N_PORSCHE@@</a>
     </nav>
-    <div class="lang" aria-label="Idioma">
+    <div class="lang" aria-label="@@ARIA_LANG@@">
 @@LANG@@
     </div>
 </header>
@@ -121,10 +180,10 @@ HEAD = '''<!DOCTYPE html>
 FOOT = '''
 <footer class="site-footer">
     <div class="wrap">
-        <a class="brand" href="/index2.html">mejor imposible</a>
-        <nav class="footer-links" aria-label="Pie">
-            <a href="/">Guía Porsche</a>
-            <a href="/metodologia/">Metodología</a>
+        <a class="brand" href="@@HOME@@">mejor imposible</a>
+        <nav class="footer-links" aria-label="@@ARIA_FOOT@@">
+            <a href="/">@@N_PORSCHE@@</a>
+            <a href="@@METHOD@@">@@N_METHOD@@</a>
         </nav>
     </div>
 </footer>
@@ -159,14 +218,14 @@ SCRIPT = '''
 
 
 def crumbs(items):
-    lis = ''.join(f'<li><a href="{u}">{e(n)}</a></li>' if u else f'<li aria-current="page">{e(n)}</li>' for n, u in items)
-    return f'<nav class="wrap crumbs" aria-label="Migas de pan"><ol>{lis}</ol></nav>'
+    lis = ''.join(f'<li><a href="{u_}">{e(n)}</a></li>' if u_ else f'<li aria-current="page">{e(n)}</li>' for n, u_ in items)
+    return f'<nav class="wrap crumbs" aria-label="{e(ui("aria.crumbs"))}"><ol>{lis}</ol></nav>'
 
 
 def bc_ld(items):
     return {"@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": i + 1, "name": n, **({"item": SITE + u} if u else {})}
-        for i, (n, u) in enumerate(items)]}
+        {"@type": "ListItem", "position": i + 1, "name": n, **({"item": SITE + u_} if u_ else {})}
+        for i, (n, u_) in enumerate(items)]}
 
 
 def ld(*objs):
@@ -174,22 +233,42 @@ def ld(*objs):
         {"@context": "https://schema.org", **o}, ensure_ascii=False, indent=4) + '\n    </script>' for o in objs)
 
 
-def page(title, desc, lds, body):
-    h = (HEAD.replace('@@TITLE@@', e(title)).replace('@@DESC@@', e(desc))
-         .replace('@@LD@@', ld(*lds)).replace('@@LANG@@', lang_html()))
-    return h + body + FOOT + (SCRIPT if 'data-zone' in body else '') + '\n</body>\n</html>\n'
+def page(path, title, desc, lds, body):
+    """path: ruta de la página en español (con barra inicial); sirve para canonical, hreflang y selector de idioma."""
+    if path not in PAGES:
+        PAGES.append(path)
+    robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
+              '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
+    rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
+           '@@LD@@': ld(*lds), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@METHOD@@': u('/metodologia/'),
+           '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
+           '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
+           '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
+    h, f = HEAD, FOOT
+    for k, v in rep.items():
+        h, f = h.replace(k, v), f.replace(k, v)
+    return h + body + f + (SCRIPT if 'data-zone' in body else '') + '\n</body>\n</html>\n'
 
 
 # ---------------- Rankings ----------------
+def fval(v):
+    """Valor de ficha: números con coma decimal en español, punto en otros idiomas; textos traducidos."""
+    if isinstance(v, str):
+        if re.fullmatch(r'\d+,\d+', v):
+            return v if LANG == 'es' else v.replace(',', '.')
+        return tr(v)
+    return v
+
+
 def spec_text(cat, ficha):
     """Compone la línea de ficha; omite las partes cuyo dato falte."""
     parts = []
     for tpl in CATS[cat]['ficha']:
         fields = re.findall(r'\{(\w+)\}', tpl)
         if all(f in ficha for f in fields):
-            parts.append(tpl.format(**ficha))
+            parts.append(tr(tpl).format(**{f: fval(ficha[f]) for f in fields}))
         elif not fields:
-            parts.append(tpl)
+            parts.append(tr(tpl))
     return ' · '.join(parts)
 
 
@@ -234,22 +313,22 @@ def nearest(item, tipo):
     best = min(((haversine_km(here, coords(x)), n, ref, None, x) for n, ref, x in pool), default=None)
     # la lista Michelin entra si no hay ítem del ranking a menos de 60 min, o si uno estrellado queda
     # al menos 15 min más cerca (por ejemplo, el restaurante de la propia bodega)
-    extra = {'restaurante': (MICHELIN, 'estrellas', 'estrella', 'estrellas'),
-             'hotel': (LLAVES, 'llaves', 'Llave', 'Llaves')}.get(tipo)
+    extra = {'restaurante': (MICHELIN, 'estrellas', 'michelin.star'),
+             'hotel': (LLAVES, 'llaves', 'michelin.key')}.get(tipo)
     if extra:
         mbest = min(((haversine_km(here, coords(r)), r['nombre'], None, r[extra[1]], r) for r in extra[0]), default=None)
         if mbest and (not best or drive_min(best[0]) > 60 or drive_min(mbest[0]) + 15 <= drive_min(best[0])):
             best = mbest if not best or mbest[0] < best[0] else best
     if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM) or (tipo == 'aeropuerto' and drive_min(best[0]) > 150):
         return None
-    out = dict(tipo=tipo, nombre=best[1], ref=best[2], min=drive_min(best[0]))
+    name = tr(best[1]) if tipo == 'aeropuerto' else best[1]
+    out = dict(tipo=tipo, nombre=name, ref=best[2], min=drive_min(best[0]))
     mismo = best[1].lower() in item['nombre'].lower() or item['nombre'].lower() in best[1].lower()
     if best[0] < 0.3 and mismo and tipo in ('restaurante', 'hotel'):
-        out['nota'] = 'en el mismo lugar'
+        out['nota'] = ui('near.same')
         out['min'] = 0
     elif best[3]:
-        word = extra[2] if best[3] == 1 else extra[3]
-        out['nota'] = f"{best[3]} {word} Michelin · a ~{out['min']} min"
+        out['nota'] = f"{ui(extra[2] + ('1' if best[3] == 1 else '2'), n=best[3])} · {ui('near.min', n=out['min'])}"
     return out
 
 
@@ -257,8 +336,11 @@ def near_tiles(cat, item):
     tiles = ''
     for label in CATS[cat]['cerca']:
         tipo = LABEL_TIPO.get(label, label.lower())
+        name_l = ui('near.' + tipo)
         # lo escrito a mano en el ítem manda; si no hay, se calcula por coordenadas
-        entry = next((c for c in (item or {}).get('cerca', []) if c['tipo'] == tipo and (c.get('ref') or c.get('nombre'))), None) or nearest(item, tipo)
+        manual = next((c for c in (item or {}).get('cerca', []) if c['tipo'] == tipo and (c.get('ref') or c.get('nombre'))), None)
+        entry = dict(manual, nota=tr(manual['nota'])) if manual and manual.get('nota') else manual
+        entry = entry or nearest(item, tipo)
         name = href = None
         if entry:
             if entry.get('ref'):
@@ -269,31 +351,23 @@ def near_tiles(cat, item):
             else:
                 name = entry.get('nombre')
         if name:
-            detail = entry.get('nota') or (f"a ~{entry['min']} min" if entry.get('min') else '')
-            k, tt = e(name), e(f'{label} · {detail}' if detail else label)
+            detail = entry.get('nota') or (ui('near.min', n=entry['min']) if entry.get('min') else '')
+            k, tt = e(name), e(f'{name_l} · {detail}' if detail else name_l)
         else:
-            k, tt = e(label), 'a [X] min'
+            k, tt = e(name_l), e(ui('near.tbd'))
         tiles += f'<a href="{href or "#"}"><span class="sq"></span><span class="k">{k}</span><span class="t">{tt}</span></a>'
     return tiles
 
 
 def ranking_entries(slug):
-    """Devuelve lista de dicts normalizados (reales o placeholders) y el aviso de actualización."""
-    c = CATS[slug]
-    if exists(f'rankings/{slug}.json'):
-        rk = load(f'rankings/{slug}.json')
-        out = []
-        for ref in rk['items']:
-            it = ITEMS[ref]
-            out.append(dict(slug=ref.split('/')[1], nombre=it['nombre'], lugar=it['lugar'], zona=it['zona'],
-                            foto=t(it['foto']), why=t(it['por_que']), spec=spec_text(slug, it['ficha']), item=it))
-        return out, t(rk['actualizado'])
+    """Lista de dicts normalizados del ranking y su fecha de actualización."""
+    rk = load(f'rankings/{slug}.json')
     out = []
-    for p in c['placeholder']:
-        out.append(dict(slug=None, nombre=t(c['nombre_placeholder']), lugar=p['lugar'], zona=p['zona'],
-                        foto=t(c['foto_placeholder']), why='[Una frase: por qué está en este puesto.]',
-                        spec=' · '.join(c['ficha']), item=None))
-    return out, '[MES AÑO]'
+    for ref in rk['items']:
+        it = ITEMS[ref]
+        out.append(dict(slug=ref.split('/')[1], nombre=it['nombre'], lugar=it['lugar'], zona=it['zona'],
+                        foto=t(it['foto']), why=t(it['por_que']), spec=spec_text(slug, it['ficha']), item=it))
+    return out, t(rk['actualizado'])
 
 
 def build_rank(slug):
@@ -303,61 +377,59 @@ def build_rank(slug):
     items = ''
     for i, en in enumerate(top):
         anchor = f' id="{en["slug"]}"' if en['slug'] else ''
-        plan = (f'\n                    <a class="plan-link" href="/planes/golf-en-sotogrande/">Ver el plan completo →</a>'
+        plan = (f'\n                    <a class="plan-link" href="{u("/planes/golf-en-sotogrande/")}">{e(ui("rank.plan_link"))}</a>'
                 if en['slug'] == 'real-club-valderrama' else '')
         items += f'''
         <li class="top-item"{anchor} data-zone="{en['zona']}" data-rank="{i+1}">
             <div class="num" aria-hidden="true">{i+1:02d}</div>
-            <div class="ph photo{TONES[i]}">[FOTO · {e(en['foto'])}]</div>
+            <div class="ph photo{TONES[i]}">{e(ui('plan.photo', x=en['foto']))}</div>
             <div class="info">
                 <p class="place">{e(en['lugar'])}</p>
                 <h2><span class="visually-hidden">{i+1}. </span>{e(en['nombre'])}</h2>
                 <p class="why">{e(en['why'])}</p>
                 <p class="spec">{e(en['spec'])}</p>
                 <div class="near">
-                    <p class="label">Lo mejor cerca</p>
+                    <p class="label">{e(ui('rank.near'))}</p>
                     <div class="near-grid">{near_tiles(slug, en['item'])}</div>{plan}
                 </div>
             </div>
         </li>'''
     restli = ''.join(f'''
-            <li{f' id="{en["slug"]}"' if en['slug'] else ''} data-zone="{en['zona']}"><a href="#"><span class="n">{i+6:02d}</span><span class="thumb"></span><span class="nm">{e(en['nombre'])}</span><span class="pl">{e(en['lugar'])}</span><span class="arrow" aria-hidden="true">→</span></a></li>'''
+            <li id="{en["slug"]}" data-zone="{en['zona']}"><a href="#"><span class="n">{i+6:02d}</span><span class="thumb"></span><span class="nm">{e(en['nombre'])}</span><span class="pl">{e(en['lugar'])}</span><span class="arrow" aria-hidden="true">→</span></a></li>'''
                      for i, en in enumerate(rest))
     chips = ''.join(
-        f'<button type="button" data-filter="{k}" aria-pressed="{"true" if k == "todas" else "false"}">{n}</button>'
-        for k, n in ZONES)
+        f'<button type="button" data-filter="{k}" aria-pressed="{"true" if k == "todas" else "false"}">{e(ui("zone." + k))}</button>'
+        for k in ZONE_KEYS)
     short, h1 = t(c['corto']), t(c['titulo'])
-    extra_link = ('\n        <p class="hero-link"><a href="/motor/marcas/">Concesionarios oficiales de marcas de lujo →</a></p>'
+    extra_link = (f'\n        <p class="hero-link"><a href="{u("/motor/marcas/")}">{e(ui("rank.motor_link"))}</a></p>'
                   if slug == 'motor' else '')
-    crumb = [('Inicio', '/index2.html'), ('Rankings', '/index2.html#rankings'), (short, None)]
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('crumb.rankings'), u(HOME) + '#rankings'), (short, None)]
     schema = CAT_SCHEMA.get(slug)
     ld_items = []
     for n, en in enumerate(entries, 1):
-        li = {"@type": "ListItem", "position": n, "name": en['nombre']}
-        if en['slug']:
-            li["url"] = f"{SITE}/ranking/{slug}/#{en['slug']}"
-            if schema:
-                li["item"] = {"@type": schema, "name": en['nombre'],
-                              "address": {"@type": "PostalAddress", "addressLocality": en['lugar'], "addressCountry": "ES"}}
+        li = {"@type": "ListItem", "position": n, "name": en['nombre'], "url": f"{SITE}{u(f'/ranking/{slug}/')}#{en['slug']}"}
+        if schema:
+            li["item"] = {"@type": schema, "name": en['nombre'],
+                          "address": {"@type": "PostalAddress", "addressLocality": en['lugar'], "addressCountry": "ES"}}
         ld_items.append(li)
-    itemlist = {"@type": "ItemList", "name": h1, "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    itemlist = {"@type": "ItemList", "name": h1, "inLanguage": LANG, "itemListOrder": "https://schema.org/ItemListOrderAscending",
                 "numberOfItems": len(entries), "itemListElement": ld_items}
     body = f'''
 {crumbs(crumb)}
 
 <main>
     <section class="wrap rank-hero">
-        <p class="eyebrow">Ranking · {e(short)} · Actualizado {e(updated)}</p>
+        <p class="eyebrow">{e(ui('rank.eyebrow', short=short, updated=updated))}</p>
         <h1>{e(h1)}</h1>
-        <div class="chips left" role="group" aria-label="Filtrar por zona">{chips}</div>{extra_link}
+        <div class="chips left" role="group" aria-label="{e(ui('rank.filter_aria'))}">{chips}</div>{extra_link}
     </section>
 
     <ol class="wrap top-list" id="top">{items}
     </ol>
-    <p class="wrap empty" id="empty-top" hidden>Ningún elemento de la zona seleccionada está entre los cinco primeros.</p>
+    <p class="wrap empty" id="empty-top" hidden>{e(ui('rank.empty'))}</p>
 
     <section class="wrap rest" id="rest" aria-labelledby="rest-h">
-        <h2 id="rest-h">Del 6 al 10</h2>
+        <h2 id="rest-h">{e(ui('rank.rest_h', last=len(entries)))}</h2>
         <ol class="compact-list">{restli}
         </ol>
     </section>
@@ -365,18 +437,16 @@ def build_rank(slug):
     <section class="wrap method" id="metodologia">
         <div class="box">
             <div>
-                <p class="eyebrow">Cómo ordenamos</p>
+                <p class="eyebrow">{e(ui('rank.how'))}</p>
                 <p class="txt">{e(t(c['como_ordenamos']))}</p>
             </div>
-            <a href="/metodologia/">Metodología completa →</a>
+            <a href="{u('/metodologia/')}">{e(ui('rank.method_link'))}</a>
         </div>
     </section>
 </main>
 '''
-    write(f'ranking/{slug}/index.html', page(
-        f'{h1} · Mejor Imposible',
-        f'{h1}: top 5 con lo mejor cerca y del 6 al 10 en formato compacto, con filtro por zona.',
-        [itemlist, bc_ld(crumb)], body))
+    write(f'/ranking/{slug}/index.html', page(
+        f'/ranking/{slug}/', f'{h1} · Mejor Imposible', ui('rank.desc', h1=h1), [itemlist, bc_ld(crumb)], body))
 
 
 # ---------------- Planes ----------------
@@ -392,19 +462,9 @@ ICONS = {
     'barco': '<path d="M3 17l2 3h14l2-3z"></path><path d="M12 3v11"></path><path d="M12 4l6 8h-6"></path>',
     'cala': '<path d="M3 9c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path><path d="M3 15c3 0 3 2 6 2s3-2 6-2 3 2 6 2"></path>',
 }
-# tipo de paso de la ruta -> (etiqueta, categoría de ranking enlazada, texto del enlace)
-ROUTE = {
-    'llegada': ('Llegada', None, 'Ver cómo llegar'),
-    'coche': ('Coche', 'motor', 'Ver experiencias de motor en {z}'),
-    'hotel': ('Hotel', 'hoteles-de-lujo', 'Ver hoteles de lujo en {z}'),
-    'golf': ('Golf', 'golf', 'Ver campos de golf en {z}'),
-    'cena': ('Cena', 'restaurantes', 'Ver restaurantes en {z}'),
-    'descanso': ('Descanso', 'spas', 'Ver spas en {z}'),
-    'mesa': ('Mesa', 'restaurantes', 'Ver restaurantes en {z}'),
-    'bodega': ('Bodega', 'bodegas', 'Ver bodegas en {z}'),
-    'barco': ('Barco', 'yates-y-calas', 'Ver calas y rutas en barco en {z}'),
-    'cala': ('Cala', 'yates-y-calas', 'Ver calas y rutas en barco en {z}'),
-}
+# tipo de paso de la ruta -> categoría de ranking enlazada (None: ancla "cómo llegar")
+ROUTE_CAT = {'llegada': None, 'coche': 'motor', 'hotel': 'hoteles-de-lujo', 'golf': 'golf', 'cena': 'restaurantes',
+             'descanso': 'spas', 'mesa': 'restaurantes', 'bodega': 'bodegas', 'barco': 'yates-y-calas', 'cala': 'yates-y-calas'}
 # el paso destacado (círculo oscuro) de la ruta
 HIGHLIGHT = ('golf', 'bodega', 'cala', 'mesa')
 
@@ -421,7 +481,7 @@ def other_plans(slug):
 def build_plan(slug):
     p = load(f'planes/{slug}.json')
     zona = p['zona']
-    zn = ZONE_NAMES[zona]
+    zn = ui('zone.' + zona)
     title = t(p['titulo'])
 
     def step_name(s):
@@ -429,13 +489,14 @@ def build_plan(slug):
 
     route_html, route_ld = '', []
     for s in p['ruta']:
-        label, cat, txt = ROUTE[s['tipo']]
+        label, txt = ui('route.' + s['tipo']), ui('route.' + s['tipo'] + '.link', z=zn)
+        cat = ROUTE_CAT[s['tipo']]
         name = step_name(s)
-        href = '#llegar-h' if cat is None else f'/ranking/{cat}/?zona={zona}'
+        href = '#llegar-h' if cat is None else f'{u(f"/ranking/{cat}/")}?zona={zona}'
         on = s['tipo'] in HIGHLIGHT and not any(r['tipo'] in HIGHLIGHT for r in p['ruta'][:p['ruta'].index(s)])
         stroke = '#F6F3EE' if on else '#16140F'
         route_html += f'''
-            <li><a href="{href}" aria-label="{e(txt.format(z=zn))}"><span class="dot{' on' if on else ''}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{stroke}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[s['tipo']]}</svg></span><span class="k">{label}</span><span class="v">{e(name)}</span></a></li>'''
+            <li><a href="{href}" aria-label="{e(txt)}"><span class="dot{' on' if on else ''}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{stroke}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[s['tipo']]}</svg></span><span class="k">{e(label)}</span><span class="v">{e(name)}</span></a></li>'''
         route_ld.append({"@type": "ListItem", "position": len(route_ld) + 1, "name": f'{label}: {name}'})
 
     days_html = ''
@@ -450,22 +511,22 @@ def build_plan(slug):
             else:
                 name, foto, why = e(t(s['nombre'])), t(s['foto']), t(s['por_que'])
                 if s.get('enlace'):
-                    name = f'<a href="{s["enlace"]}">{name}</a>'
+                    name = f'<a href="{u(s["enlace"])}">{name}</a>'
             if s.get('alternativas'):
                 alts = ' · '.join(f'<a href="#">{e(t(a))}</a>' for a in s['alternativas'])
             else:
-                alts = '<a href="#">[Opción 2]</a> · <a href="#">[Opción 3]</a>'
+                alts = f'<a href="#">{e(ui("plan.opt2"))}</a> · <a href="#">{e(ui("plan.opt3"))}</a>'
             steps += f'''
                 <article>
-                    <div class="ph{tone}">[FOTO · {e(foto)}]</div>
-                    <p class="kind">{e(s['tipo'])}</p>
+                    <div class="ph{tone}">{e(ui('plan.photo', x=foto))}</div>
+                    <p class="kind">{e(tr(s['tipo']))}</p>
                     <h3>{name}</h3>
                     <p class="why">{e(why)}</p>
-                    <p class="alt">Alternativas: {alts}</p>
+                    <p class="alt">{e(ui('plan.alts'))} {alts}</p>
                 </article>'''
         days_html += f'''
     <section class="wrap day" aria-labelledby="dia-{n:02d}">
-        <div class="day-head"><span class="dn" aria-hidden="true">{n:02d}</span><h2 id="dia-{n:02d}">Día {n} · {e(t(d['titulo']))}</h2></div>
+        <div class="day-head"><span class="dn" aria-hidden="true">{n:02d}</span><h2 id="dia-{n:02d}">{e(ui('plan.day', n=n, t=t(d['titulo'])))}</h2></div>
         <div class="steps">{steps}
         </div>
     </section>
@@ -476,34 +537,34 @@ def build_plan(slug):
         val = f"~{r['min']} min" if r.get('min') else t(r['texto'])
         llegar += f'\n                    <div class="r"><dt>{e(t(r["nombre"]))}</dt><dd>{e(val)}</dd></div>'
     others = ''.join(
-        f'\n            <a href="/planes/{o["slug"]}/"><span class="thumb"></span><span class="m">{e(t(o["meta_corta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
+        f'\n            <a href="{u("/planes/" + o["slug"] + "/")}"><span class="thumb"></span><span class="m">{e(t(o["meta_corta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
         for o in other_plans(slug)[:3])
-    crumb = [('Inicio', '/index2.html'), ('Planes completos', '/index2.html#planes'), (title, None)]
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('nav.plans'), u(HOME) + '#planes'), (title, None)]
     trip = {"@type": "TouristTrip", "name": title, "inLanguage": LANG, "description": t(p['lead']),
-            "touristType": p.get("tipo_turista", "Golf"), "itinerary": {"@type": "ItemList", "itemListElement": route_ld}}
+            "touristType": t(p.get("tipo_turista", "Golf")), "itinerary": {"@type": "ItemList", "itemListElement": route_ld}}
     body = f'''
 {crumbs(crumb)}
 
 <main>
     <section class="wrap">
         <div class="plan-hero">
-            <span class="ph-label">[FOTO · {e(t(p['foto_portada']))}]</span>
+            <span class="ph-label">{e(ui('plan.photo', x=t(p['foto_portada'])))}</span>
             <p class="kicker">{e(t(p['meta']))}</p>
             <h1>{e(title)}</h1>
             <p class="lead">{e(t(p['lead']))}</p>
         </div>
     </section>
 
-    <section class="wrap route" aria-label="Resumen del plan">
+    <section class="wrap route" aria-label="{e(ui('plan.summary_aria'))}">
         <ol>{route_html}
         </ol>
     </section>
 {days_html}
     <section class="wrap getting" aria-labelledby="llegar-h">
         <div class="cols">
-            <div class="map">[MAPA · aeropuerto, hotel, campo y restaurante]</div>
+            <div class="map">{e(ui('plan.map'))}</div>
             <div class="times">
-                <h2 id="llegar-h">Cómo llegar</h2>
+                <h2 id="llegar-h">{e(ui('plan.getting'))}</h2>
                 <dl>{llegar}
                 </dl>
             </div>
@@ -511,14 +572,14 @@ def build_plan(slug):
     </section>
 
     <section class="wrap others" aria-labelledby="otros-h">
-        <h2 id="otros-h">Otros planes completos</h2>
+        <h2 id="otros-h">{e(ui('plan.others'))}</h2>
         <div class="grid">{others}
         </div>
     </section>
 </main>
 '''
-    write(f'planes/{slug}/index.html', page(
-        f'{title}: plan completo · Mejor Imposible',
+    write(f'/planes/{slug}/index.html', page(
+        f'/planes/{slug}/', f'{ui("plan.title", title=title)} · Mejor Imposible',
         f'{t(p["meta"])}: {t(p["lead"])}', [trip, bc_ld(crumb)], body))
 
 
@@ -548,7 +609,7 @@ def build_directory():
     data = load('concesionarios/lujo.json')
     rows = data['concesionarios']
     cities = sorted({r['ciudad'] for r in rows}, key=lambda c: list(CITY_SLUG).index(c) if c in CITY_SLUG else 99)
-    chips = '<button type="button" data-ciudad="todas" aria-pressed="true">Toda España</button>' + ''.join(
+    chips = f'<button type="button" data-ciudad="todas" aria-pressed="true">{e(ui("zone.todas"))}</button>' + ''.join(
         f'<button type="button" data-ciudad="{CITY_SLUG.get(c, c.lower())}" aria-pressed="false">{e(c)}</button>'
         for c in cities)
     sections = ''
@@ -560,18 +621,19 @@ def build_directory():
         cards = ''
         for r in dealers:
             ok = r['estado'].startswith(('verificado', 'contrastado', 'dirección verificada'))
-            badge = '<span class="badge ok">Verificado</span>' if ok else '<span class="badge">Por verificar</span>'
+            badge = (f'<span class="badge ok">{e(ui("dir.verified"))}</span>' if ok
+                     else f'<span class="badge">{e(ui("dir.unverified"))}</span>')
             if r.get('direccion'):
                 lines = [f'<p class="addr">{e(r["direccion"])}</p>']
             else:
-                lines = ['<p class="addr muted">Dirección por confirmar</p>']
+                lines = [f'<p class="addr muted">{e(ui("dir.noaddr"))}</p>']
             if r.get('telefono'):
                 digits = re.sub(r'[^+0-9]', '', r['telefono'])
                 lines.append(f'<p class="tel"><a href="tel:{digits}">{e(r["telefono"])}</a></p>')
             if r.get('horario'):
-                lines.append(f'<p class="muted">{e(r["horario"])}</p>')
+                lines.append(f'<p class="muted">{e(tr(r["horario"]))}</p>')
             if r.get('notas'):
-                lines.append(f'<p class="muted">{e(r["notas"])}</p>')
+                lines.append(f'<p class="muted">{e(tr(r["notas"]))}</p>')
             slug = CITY_SLUG.get(r['ciudad'], r['ciudad'].lower())
             cards += (f'\n            <li class="dealer" id="{r["id"]}" data-c="{slug}">'
                       f'\n                <p class="city">{e(r["ciudad"])} {badge}</p>'
@@ -580,7 +642,7 @@ def build_directory():
         sections += (f'\n    <section class="wrap dir-brand" aria-labelledby="m-{bid}">'
                      f'\n        <h2 id="m-{bid}">{e(brand)}</h2>'
                      f'\n        <ul class="dealers">{cards}\n        </ul>\n    </section>')
-    crumb = [('Inicio', '/index2.html'), ('Motor', '/ranking/motor/'), ('Marcas de lujo', None)]
+    crumb = [(ui('crumb.home'), u(HOME)), (t(CATS['motor']['corto']), u('/ranking/motor/')), (ui('dir.crumb'), None)]
     ld_items = []
     for n, r in enumerate([r for r in rows if r.get('direccion')], 1):
         item = {"@type": "AutoDealer", "name": r['nombre'], "brand": {"@type": "Brand", "name": r['marca']},
@@ -591,64 +653,133 @@ def build_directory():
             item["geo"] = {"@type": "GeoCoordinates", "latitude": r['coordenadas']['lat'],
                            "longitude": r['coordenadas']['lon']}
         ld_items.append({"@type": "ListItem", "position": n, "item": item})
-    itemlist = {"@type": "ItemList", "name": "Concesionarios oficiales de marcas de lujo en España",
-                "itemListElement": ld_items}
+    itemlist = {"@type": "ItemList", "name": ui('dir.title'), "inLanguage": LANG, "itemListElement": ld_items}
     body = f'''
 {crumbs(crumb)}
 
 <main>
     <section class="wrap rank-hero">
-        <p class="eyebrow">Motor · Directorio · Actualizado {data['actualizado']}</p>
-        <h1>Marcas de lujo en España</h1>
-        <p class="lead-text">Concesionarios oficiales, sin ordenar y sin precios. Cada marca tiene un único punto oficial por ciudad, así que aquí no hay ranking: solo dónde encontrarlos.</p>
-        <div class="chips left" role="group" aria-label="Filtrar por ciudad">{chips}</div>
+        <p class="eyebrow">{e(ui('dir.eyebrow', updated=data['actualizado']))}</p>
+        <h1>{e(ui('dir.h1'))}</h1>
+        <p class="lead-text">{e(ui('dir.lead'))}</p>
+        <div class="chips left" role="group" aria-label="{e(ui('dir.filter_aria'))}">{chips}</div>
     </section>
 {sections}
     <section class="wrap method">
         <div class="box">
             <div>
-                <p class="eyebrow">Sobre estos datos</p>
-                <p class="txt">Las direcciones salen de las webs de los concesionarios, de sus grupos y de la prensa. Los puntos marcados «Por verificar» proceden de fuentes antiguas: confirma siempre con la marca antes de desplazarte.</p>
+                <p class="eyebrow">{e(ui('dir.about'))}</p>
+                <p class="txt">{e(ui('dir.about_txt'))}</p>
             </div>
-            <a href="/ranking/motor/">Ver el ranking de motor →</a>
+            <a href="{u('/ranking/motor/')}">{e(ui('dir.back'))}</a>
         </div>
     </section>
 </main>
 '''
-    html_page = page('Concesionarios oficiales de marcas de lujo en España · Mejor Imposible',
-                     'Directorio de concesionarios oficiales de Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce y McLaren en España, por ciudad.',
-                     [itemlist, bc_ld(crumb)], body)
-    write('motor/marcas/index.html', html_page.replace('</body>', DIR_SCRIPT + '\n</body>'))
+    html_page = page('/motor/marcas/', f'{ui("dir.title")} · Mejor Imposible', ui('dir.desc'), [itemlist, bc_ld(crumb)], body)
+    write('/motor/marcas/index.html', html_page.replace('</body>', DIR_SCRIPT + '\n</body>'))
 
 
-# ---------------- Tiras de la home ----------------
-def build_home_strips():
-    path = os.path.join(ROOT, 'index2.html')
-    with open(path, encoding='utf-8') as f:
-        h = f.read()
-    for slug in ('golf', 'restaurantes'):
-        if not exists(f'rankings/{slug}.json'):
-            continue
+# ---------------- Home ----------------
+def build_home():
+    chips = ''.join(f'\n            <a href="{u(f"/ranking/{s}/")}">{e(t(CATS[s]["corto"]))}</a>' for s in HOME_CHIPS)
+    strips = ''
+    for slug, key, hid in HOME_STRIPS:
         entries, _ = ranking_entries(slug)
         lis = ''.join(
-            f'\n                    <li><a href="/ranking/{slug}/#{en["slug"]}"><div class="ph{STRIP_TONES[i]}">[FOTO]</div><div class="row"><span class="n">{i+1:02d}</span><span><span class="name">{e(en["nombre"])}</span><span class="place">{e(en["lugar"])}</span></span></div></a></li>'
+            f'\n                    <li><a href="{u(f"/ranking/{slug}/")}#{en["slug"]}"><div class="ph{STRIP_TONES[i]}">[FOTO]</div><div class="row"><span class="n">{i+1:02d}</span><span><span class="name">{e(en["nombre"])}</span><span class="place">{e(en["lugar"])}</span></span></div></a></li>'
             for i, en in enumerate(entries[:5]))
-        pat = re.compile(rf'(<!-- strip:{slug} -->).*?(<!-- /strip:{slug} -->)', re.S)
-        h = pat.sub(lambda m: f'{m.group(1)}\n                <ol>{lis}\n                </ol>\n                {m.group(2)}', h)
+        strips += f'''
+        <section class="wrap strip" aria-labelledby="{hid}">
+            <div class="strip-head">
+                <h2 id="{hid}">{e(ui('home.strip_' + key))}</h2>
+                <a href="{u(f"/ranking/{slug}/")}">{e(ui('home.strip_full'))}</a>
+            </div>
+            <div class="strip-scroll">
+                <ol>{lis}
+                </ol>
+            </div>
+        </section>
+'''
     cards = ''.join(
-        f'\n                <a href="/planes/{p["slug"]}/"><div class="ph t3">[FOTO · {e(t(p["foto_portada"]))}]</div><p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
+        f'\n                <a href="{u("/planes/" + p["slug"] + "/")}"><div class="ph t3">{e(ui("plan.photo", x=t(p["foto_portada"])))}</div><p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
         for p in all_plans())
-    h = re.sub(r'(<!-- strip:planes -->).*?(<!-- /strip:planes -->)',
-               lambda m: f'{m.group(1)}{cards}\n                {m.group(2)}', h, flags=re.S)
-    with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        f.write(h)
+    golf = u('/ranking/golf/')
+    body = f'''
+<main>
+    <section class="wrap hero">
+        <p class="eyebrow">{e(ui('home.eyebrow'))}</p>
+        <h1>{e(ui('home.h1'))}</h1>
+        <p class="lead">{e(ui('home.lead'))}</p>
+        <nav class="chips" aria-label="{e(ui('home.cats_aria'))}">{chips}
+        </nav>
+    </section>
+
+    <section class="wrap" aria-label="{e(ui('home.featured_aria'))}">
+        <a class="featured" href="{golf}">
+            <span class="ph-label">{e(ui('plan.photo', x=ui('home.featured_photo')))}</span>
+            <span class="kicker">{e(ui('home.kicker'))}</span>
+            <span class="title">{e(t(CATS['golf']['titulo']))}</span>
+            <span class="cta">{e(ui('home.cta'))}</span>
+        </a>
+    </section>
+
+    <div id="rankings">{strips}    </div>
+
+    <section id="planes" class="plans" aria-labelledby="planes-h">
+        <div class="wrap">
+            <p class="eyebrow">{e(ui('nav.plans'))}</p>
+            <h2 id="planes-h">{e(ui('home.plans_h'))}</h2>
+            <p class="lead">{e(ui('home.plans_lead'))}</p>
+            <div class="plan-grid">{cards}
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap trust">
+        <h2>{ui('home.trust_h')}</h2>
+        <a href="{u('/metodologia/')}">{e(ui('home.trust_link'))}</a>
+    </section>
+</main>
+'''
+    site = {"@type": "WebSite", "name": "Mejor Imposible", "url": SITE + prefix(LANG) + '/', "inLanguage": LANG}
+    write(HOME, page(HOME, ui('home.title'), ui('home.desc'), [site], body))
+
+
+# ---------------- Sitemap ----------------
+def build_sitemap():
+    today = datetime.date.today().isoformat()
+    urls = ''
+    for path in PAGES:
+        loc = lambda c, path=path: SITE + prefix(c) + path
+        for c in PUBLISHED:
+            alts = ''.join(f'\n    <xhtml:link rel="alternate" hreflang="{a}" href="{loc(a)}"/>' for a in PUBLISHED)
+            alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{loc("es")}"/>'
+            urls += f'\n  <url>\n    <loc>{loc(c)}</loc>\n    <lastmod>{today}</lastmod>{alts}\n  </url>'
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<!-- Sitemap del portal nuevo. No se referencia desde robots.txt ni sitemap.xml hasta quitar el noindex. -->\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+           f'{urls}\n</urlset>\n')
+    with open(os.path.join(ROOT, 'sitemap-portal.xml'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(xml)
 
 
 if __name__ == '__main__':
-    for slug in CATS:
-        build_rank(slug)
-    for fn in os.listdir(os.path.join(DATA, 'planes')):
-        build_plan(fn[:-5])
-    build_directory()
-    build_home_strips()
-    print('portal generado')
+    for lang in PUBLISHED:
+        LANG = lang
+        build_home()
+        for slug in CATS:
+            build_rank(slug)
+        for fn in os.listdir(os.path.join(DATA, 'planes')):
+            build_plan(fn[:-5])
+        build_directory()
+    build_sitemap()
+    bad = False
+    for lang in PUBLISHED:
+        if MISSING[lang]:
+            bad = True
+            pend = os.path.join(DATA, 'i18n', f'_pendiente-{lang}.json')
+            with open(pend, 'w', encoding='utf-8', newline='\n') as f:
+                json.dump({k: '' for k in sorted(MISSING[lang])}, f, ensure_ascii=False, indent=1)
+            print(f'AVISO {lang}: faltan {len(MISSING[lang])} traducciones -> {os.path.relpath(pend, ROOT)}')
+    print('portal generado' + (' (con traducciones pendientes)' if bad else ''))
