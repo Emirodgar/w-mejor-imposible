@@ -1,0 +1,28 @@
+{
+  "id": "casas-de-lujo/la-moraleja",
+  "categoria": "casas-de-lujo",
+  "nombre": "La Moraleja",
+  "lugar": "Alcobendas · Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "calle residencial arbolada"
+  },
+  "por_que": {
+    "es": "La urbanización de lujo de referencia en Madrid. El Paseo del Conde de los Gaitanes figura en el puesto 5 de idealista 2026."
+  },
+  "ficha": {
+    "tipo": "Urbanización",
+    "referencia": "idealista 2026: n.º 5"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "La Moraleja Alcobendas",
+  "coordenadas": {
+    "lat": 40.53203,
+    "lon": -3.63549
+  },
+  "geo_fuente": "La Moraleja, Avenida de la Ermita, Parque Empresarial Arroyo de la Vega, La Moraleja, Alco"
+}

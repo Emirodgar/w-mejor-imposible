@@ -1,0 +1,28 @@
+{
+  "id": "casas-de-lujo/la-zagaleta",
+  "categoria": "casas-de-lujo",
+  "nombre": "La Zagaleta",
+  "lugar": "Benahavís · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "portada de la urbanización"
+  },
+  "por_que": {
+    "es": "Urbanización privada en las montañas de Benahavís, «considerada una de las más exclusivas de Europa» según Hiscox. Coto Zagaleta es la tercera dirección del ranking idealista 2026."
+  },
+  "ficha": {
+    "tipo": "Urbanización privada",
+    "referencia": "idealista 2026: n.º 3"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "La Zagaleta Benahavís",
+  "coordenadas": {
+    "lat": 36.53969,
+    "lon": -5.01961
+  },
+  "geo_fuente": "La Zagaleta, Benahavís, Costa del Sol Occidental, Málaga, Andalucía, 29678, España"
+}

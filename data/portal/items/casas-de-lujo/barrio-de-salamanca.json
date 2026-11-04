@@ -1,0 +1,27 @@
+{
+  "id": "casas-de-lujo/barrio-de-salamanca",
+  "categoria": "casas-de-lujo",
+  "nombre": "Barrio de Salamanca",
+  "lugar": "Madrid · Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "fachadas de la calle Serrano"
+  },
+  "por_que": {
+    "es": "La zona urbana más cara de la capital. Las calles Serrano y José Ortega y Gasset ocupan los puestos 8 y 9 de idealista 2026."
+  },
+  "ficha": {
+    "tipo": "Barrio céntrico",
+    "referencia": "idealista 2026: n.º 8 y 9"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html"
+  ],
+  "busqueda": "Barrio de Salamanca Madrid",
+  "coordenadas": {
+    "lat": 40.43644,
+    "lon": -3.6857
+  },
+  "geo_fuente": "Barrio de Salamanca, Calle del General Oráa, Castellana, Salamanca, Madrid, Comunidad de M"
+}

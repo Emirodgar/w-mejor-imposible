@@ -1,0 +1,28 @@
+{
+  "id": "casas-de-lujo/puerto-de-andratx",
+  "categoria": "casas-de-lujo",
+  "nombre": "Puerto de Andratx",
+  "lugar": "Andratx · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "puerto con casas en la ladera"
+  },
+  "por_que": {
+    "es": "Su Camí des Salinar encabeza el ranking de idealista 2026 de direcciones más caras de España. Hiscox lo describe como «el lujo del Mediterráneo»."
+  },
+  "ficha": {
+    "tipo": "Enclave marítimo",
+    "referencia": "idealista 2026: n.º 1"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "Puerto de Andratx",
+  "coordenadas": {
+    "lat": 39.54542,
+    "lon": 2.3916
+  },
+  "geo_fuente": "Cine Puerto, carretera d'es Port, Port d'Andratx, Andratx, Serra de Tramuntana, Illes Bale"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "casas-de-lujo/marbella",
+  "categoria": "casas-de-lujo",
+  "nombre": "Marbella",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "villas sobre el mar"
+  },
+  "por_que": {
+    "es": "Dos direcciones en el top 10 de idealista 2026: calle Osa Menor (n.º 7) y Cascada de Camoján (n.º 10). Los Monteros es la zona más cara de la provincia según Hiscox."
+  },
+  "ficha": {
+    "tipo": "Ciudad costera",
+    "referencia": "idealista 2026: n.º 7 y 10"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "Marbella",
+  "coordenadas": {
+    "lat": 36.50748,
+    "lon": -4.80472
+  },
+  "geo_fuente": "Marbella, Costa del Sol Occidental, Málaga, Andalucía, España"
+}

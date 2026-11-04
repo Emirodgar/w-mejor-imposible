@@ -1,0 +1,28 @@
+{
+  "id": "casas-de-lujo/son-vida",
+  "categoria": "casas-de-lujo",
+  "nombre": "Son Vida",
+  "lugar": "Palma · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "calle entre campos de golf"
+  },
+  "por_que": {
+    "es": "Urbanización exclusiva de la capital mallorquina, con campos de golf. Dos calles de Palma figuran en el ranking idealista 2026 (n.º 4 y 6)."
+  },
+  "ficha": {
+    "tipo": "Urbanización",
+    "referencia": "idealista 2026: Palma n.º 4 y 6"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "Son Vida Palma",
+  "coordenadas": {
+    "lat": 39.59027,
+    "lon": 2.58954
+  },
+  "geo_fuente": "Son Vida, Districte de Ponent, Palma, Illes Balears, 07011, España"
+}

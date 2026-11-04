@@ -1,0 +1,27 @@
+{
+  "id": "casas-de-lujo/es-cubells",
+  "categoria": "casas-de-lujo",
+  "nombre": "Es Cubells",
+  "lugar": "Sant Josep de sa Talaia · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "casas sobre el acantilado"
+  },
+  "por_que": {
+    "es": "La zona más cara de Ibiza según Hiscox, con viviendas de hasta 12 millones de euros."
+  },
+  "ficha": {
+    "tipo": "Enclave costero",
+    "referencia": "Hiscox 2023"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "Es Cubells Ibiza",
+  "coordenadas": {
+    "lat": 38.88144,
+    "lon": 1.27237
+  },
+  "geo_fuente": "Es Cubells, Sant Josep de sa Talaia, Eivissa, Illes Balears, 07839, España"
+}

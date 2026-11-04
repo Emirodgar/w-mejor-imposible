@@ -1,0 +1,28 @@
+{
+  "id": "casas-de-lujo/la-finca",
+  "categoria": "casas-de-lujo",
+  "nombre": "La Finca",
+  "lugar": "Pozuelo de Alarcón · Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "calle de villas entre pinos"
+  },
+  "por_que": {
+    "es": "Urbanización de lujo a las afueras de Madrid. Su Paseo de los Lagos es la segunda dirección más cara de España según idealista 2026."
+  },
+  "ficha": {
+    "tipo": "Urbanización",
+    "referencia": "idealista 2026: n.º 2"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "La Finca Pozuelo de Alarcón",
+  "coordenadas": {
+    "lat": 40.41422,
+    "lon": -3.81136
+  },
+  "geo_fuente": "La Finca, Somosaguas Sur, Pozuelo de Alarcón, Comunidad de Madrid, España"
+}

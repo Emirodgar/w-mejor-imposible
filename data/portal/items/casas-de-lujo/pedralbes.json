@@ -1,0 +1,27 @@
+{
+  "id": "casas-de-lujo/pedralbes",
+  "categoria": "casas-de-lujo",
+  "nombre": "Pedralbes",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "villas bajo Collserola"
+  },
+  "por_que": {
+    "es": "El barrio residencial más exclusivo de Barcelona. Hiscox cita viviendas de hasta 25 millones de euros."
+  },
+  "ficha": {
+    "tipo": "Barrio residencial",
+    "referencia": "Hiscox 2023"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+  ],
+  "busqueda": "Pedralbes Barcelona",
+  "coordenadas": {
+    "lat": 41.39014,
+    "lon": 2.11222
+  },
+  "geo_fuente": "Pedralbes, les Corts, Barcelona, Barcelonès, Barcelona, Catalunya, España"
+}

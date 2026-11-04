@@ -126,18 +126,17 @@
       "es": "Casas de lujo"
     },
     "titulo": {
-      "es": "Las 10 casas más espectaculares de España"
+      "es": "Las 10 zonas residenciales más exclusivas de España"
     },
     "nombre_placeholder": {
-      "es": "[Nombre de la casa]"
+      "es": "[Nombre de la zona]"
     },
     "foto_placeholder": {
       "es": "casa sobre el mar"
     },
     "ficha": [
-      "[N] dormitorios",
-      "[N] m²",
-      "Arquitecto [NOMBRE]"
+      "{tipo}",
+      "{referencia}"
     ],
     "cerca": [
       "Hotel",
@@ -145,7 +144,7 @@
       "Aeropuerto"
     ],
     "como_ordenamos": {
-      "es": "Arquitectura, ubicación, privacidad y servicios. Ninguna casa paga por estar."
+      "es": "Ranking de idealista 2026 de direcciones más caras, informe Hiscox 2023 y privacidad y servicios del entorno. Ninguna zona paga por estar."
     },
     "placeholder": [
       {

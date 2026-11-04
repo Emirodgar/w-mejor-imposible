@@ -1,0 +1,27 @@
+{
+  "id": "casas-de-lujo/sotogrande",
+  "categoria": "casas-de-lujo",
+  "nombre": "Sotogrande",
+  "lugar": "San Roque · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "marina y campos de golf"
+  },
+  "por_que": {
+    "es": "La mayor urbanización privada de Andalucía, fundada en 1964, con cinco campos de golf (entre ellos Valderrama) y puerto deportivo."
+  },
+  "ficha": {
+    "tipo": "Urbanización privada",
+    "referencia": "Fundada en 1964"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Sotogrande"
+  ],
+  "busqueda": "Sotogrande San Roque",
+  "coordenadas": {
+    "lat": 36.28206,
+    "lon": -5.29706
+  },
+  "geo_fuente": "Sotogrande, San Roque, Campo de Gibraltar, Cádiz, Andalucía, 11310, España"
+}
