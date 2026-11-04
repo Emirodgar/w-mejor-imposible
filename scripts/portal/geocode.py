@@ -3,7 +3,8 @@
 
 Uso:  python scripts/portal/geocode.py [--force]
 
-Cada ítem de data/portal/items/** y cada aeropuerto de data/portal/aeropuertos.json
+Cada ítem de data/portal/items/**, cada aeropuerto de data/portal/aeropuertos.json y cada
+concesionario de data/portal/concesionarios/lujo.json
 puede traer "busqueda" (texto exacto para Nominatim). Se guarda "coordenadas": {"lat", "lon"}
 y "geo_fuente" con el nombre que devolvió el servicio, para poder revisarlo a ojo.
 Respeta el límite de 1 petición por segundo de Nominatim.
@@ -67,6 +68,11 @@ if __name__ == '__main__':
         air = json.load(f)
     if any([fill(a, force) for a in air['aeropuertos']]):
         save(air_path, air)
+    dl_path = os.path.join(DATA, 'concesionarios', 'lujo.json')
+    with open(dl_path, encoding='utf-8') as f:
+        dl = json.load(f)
+    if any([fill(d, force) for d in dl['concesionarios']]):
+        save(dl_path, dl)
     for cat in sorted(os.listdir(os.path.join(DATA, 'items'))):
         for fn in sorted(os.listdir(os.path.join(DATA, 'items', cat))):
             p = os.path.join(DATA, 'items', cat, fn)

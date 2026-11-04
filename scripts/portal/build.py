@@ -327,6 +327,8 @@ def build_rank(slug):
         f'<button type="button" data-filter="{k}" aria-pressed="{"true" if k == "todas" else "false"}">{n}</button>'
         for k, n in ZONES)
     short, h1 = t(c['corto']), t(c['titulo'])
+    extra_link = ('\n        <p class="hero-link"><a href="/motor/marcas/">Concesionarios oficiales de marcas de lujo →</a></p>'
+                  if slug == 'motor' else '')
     crumb = [('Inicio', '/index2.html'), ('Rankings', '/index2.html#rankings'), (short, None)]
     schema = CAT_SCHEMA.get(slug)
     ld_items = []
@@ -347,7 +349,7 @@ def build_rank(slug):
     <section class="wrap rank-hero">
         <p class="eyebrow">Ranking · {e(short)} · Actualizado {e(updated)}</p>
         <h1>{e(h1)}</h1>
-        <div class="chips left" role="group" aria-label="Filtrar por zona">{chips}</div>
+        <div class="chips left" role="group" aria-label="Filtrar por zona">{chips}</div>{extra_link}
     </section>
 
     <ol class="wrap top-list" id="top">{items}
@@ -447,6 +449,8 @@ def build_plan(slug):
                 foto, why = t(it['foto']), t(s['por_que']) if s.get('por_que') else t(it['por_que'])
             else:
                 name, foto, why = e(t(s['nombre'])), t(s['foto']), t(s['por_que'])
+                if s.get('enlace'):
+                    name = f'<a href="{s["enlace"]}">{name}</a>'
             if s.get('alternativas'):
                 alts = ' · '.join(f'<a href="#">{e(t(a))}</a>' for a in s['alternativas'])
             else:
@@ -518,6 +522,105 @@ def build_plan(slug):
         f'{t(p["meta"])}: {t(p["lead"])}', [trip, bc_ld(crumb)], body))
 
 
+# ---------------- Directorio de marcas de lujo (motor) ----------------
+BRAND_ORDER = ['Ferrari', 'Lamborghini', 'Aston Martin', 'Bentley', 'Rolls-Royce', 'McLaren']
+CITY_SLUG = {'Madrid': 'madrid', 'Barcelona': 'barcelona', 'Marbella': 'marbella', 'Valencia': 'valencia'}
+
+DIR_SCRIPT = '''
+<script>
+(function () {
+    var buttons = document.querySelectorAll('[data-ciudad]');
+    var cards = document.querySelectorAll('.dealer');
+    var sections = document.querySelectorAll('.dir-brand');
+    function apply(c) {
+        cards.forEach(function (el) { el.hidden = !(c === 'todas' || el.dataset.c === c); });
+        sections.forEach(function (sec) { sec.hidden = !sec.querySelector('.dealer:not([hidden])'); });
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.ciudad === c)); });
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { apply(b.dataset.ciudad); }); });
+    var c = new URLSearchParams(location.search).get('ciudad');
+    if (c && document.querySelector('[data-ciudad="' + c + '"]')) apply(c);
+})();
+</script>'''
+
+
+def build_directory():
+    data = load('concesionarios/lujo.json')
+    rows = data['concesionarios']
+    cities = sorted({r['ciudad'] for r in rows}, key=lambda c: list(CITY_SLUG).index(c) if c in CITY_SLUG else 99)
+    chips = '<button type="button" data-ciudad="todas" aria-pressed="true">Toda España</button>' + ''.join(
+        f'<button type="button" data-ciudad="{CITY_SLUG.get(c, c.lower())}" aria-pressed="false">{e(c)}</button>'
+        for c in cities)
+    sections = ''
+    for brand in BRAND_ORDER:
+        dealers = [r for r in rows if r['marca'] == brand]
+        if not dealers:
+            continue
+        bid = re.sub('[^a-z]', '', brand.lower())
+        cards = ''
+        for r in dealers:
+            ok = r['estado'].startswith(('verificado', 'contrastado', 'dirección verificada'))
+            badge = '<span class="badge ok">Verificado</span>' if ok else '<span class="badge">Por verificar</span>'
+            if r.get('direccion'):
+                lines = [f'<p class="addr">{e(r["direccion"])}</p>']
+            else:
+                lines = ['<p class="addr muted">Dirección por confirmar</p>']
+            if r.get('telefono'):
+                digits = re.sub(r'[^+0-9]', '', r['telefono'])
+                lines.append(f'<p class="tel"><a href="tel:{digits}">{e(r["telefono"])}</a></p>')
+            if r.get('horario'):
+                lines.append(f'<p class="muted">{e(r["horario"])}</p>')
+            if r.get('notas'):
+                lines.append(f'<p class="muted">{e(r["notas"])}</p>')
+            slug = CITY_SLUG.get(r['ciudad'], r['ciudad'].lower())
+            cards += (f'\n            <li class="dealer" id="{r["id"]}" data-c="{slug}">'
+                      f'\n                <p class="city">{e(r["ciudad"])} {badge}</p>'
+                      f'\n                <h3>{e(r["nombre"])}</h3>'
+                      f'\n                {"".join(lines)}\n            </li>')
+        sections += (f'\n    <section class="wrap dir-brand" aria-labelledby="m-{bid}">'
+                     f'\n        <h2 id="m-{bid}">{e(brand)}</h2>'
+                     f'\n        <ul class="dealers">{cards}\n        </ul>\n    </section>')
+    crumb = [('Inicio', '/index2.html'), ('Motor', '/ranking/motor/'), ('Marcas de lujo', None)]
+    ld_items = []
+    for n, r in enumerate([r for r in rows if r.get('direccion')], 1):
+        item = {"@type": "AutoDealer", "name": r['nombre'], "brand": {"@type": "Brand", "name": r['marca']},
+                "address": {"@type": "PostalAddress", "streetAddress": r['direccion'], "addressCountry": "ES"}}
+        if r.get('telefono'):
+            item["telephone"] = r['telefono']
+        if coords(r):
+            item["geo"] = {"@type": "GeoCoordinates", "latitude": r['coordenadas']['lat'],
+                           "longitude": r['coordenadas']['lon']}
+        ld_items.append({"@type": "ListItem", "position": n, "item": item})
+    itemlist = {"@type": "ItemList", "name": "Concesionarios oficiales de marcas de lujo en España",
+                "itemListElement": ld_items}
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">Motor · Directorio · Actualizado {data['actualizado']}</p>
+        <h1>Marcas de lujo en España</h1>
+        <p class="lead-text">Concesionarios oficiales, sin ordenar y sin precios. Cada marca tiene un único punto oficial por ciudad, así que aquí no hay ranking: solo dónde encontrarlos.</p>
+        <div class="chips left" role="group" aria-label="Filtrar por ciudad">{chips}</div>
+    </section>
+{sections}
+    <section class="wrap method">
+        <div class="box">
+            <div>
+                <p class="eyebrow">Sobre estos datos</p>
+                <p class="txt">Las direcciones salen de las webs de los concesionarios, de sus grupos y de la prensa. Los puntos marcados «Por verificar» proceden de fuentes antiguas: confirma siempre con la marca antes de desplazarte.</p>
+            </div>
+            <a href="/ranking/motor/">Ver el ranking de motor →</a>
+        </div>
+    </section>
+</main>
+'''
+    html_page = page('Concesionarios oficiales de marcas de lujo en España · Mejor Imposible',
+                     'Directorio de concesionarios oficiales de Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce y McLaren en España, por ciudad.',
+                     [itemlist, bc_ld(crumb)], body)
+    write('motor/marcas/index.html', html_page.replace('</body>', DIR_SCRIPT + '\n</body>'))
+
+
 # ---------------- Tiras de la home ----------------
 def build_home_strips():
     path = os.path.join(ROOT, 'index2.html')
@@ -546,5 +649,6 @@ if __name__ == '__main__':
         build_rank(slug)
     for fn in os.listdir(os.path.join(DATA, 'planes')):
         build_plan(fn[:-5])
+    build_directory()
     build_home_strips()
     print('portal generado')

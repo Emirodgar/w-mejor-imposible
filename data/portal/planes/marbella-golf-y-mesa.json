@@ -28,7 +28,7 @@
     {
       "tipo": "coche",
       "nombre": {
-        "es": "[Deportivo]"
+        "es": "Ferrari o Lamborghini"
       }
     },
     {
@@ -73,14 +73,15 @@
           "tipo": "Coche",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Modelo de deportivo]"
+            "es": "Ferrari o Lamborghini"
           },
           "por_que": {
-            "es": "[Por qué este coche para esta ruta.]"
+            "es": "Las dos marcas tienen concesionario oficial en Marbella."
           },
           "foto": {
             "es": "deportivo en carretera"
-          }
+          },
+          "enlace": "/motor/marcas/?ciudad=marbella"
         },
         {
           "tipo": "Hotel",

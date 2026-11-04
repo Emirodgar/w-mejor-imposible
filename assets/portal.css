@@ -281,3 +281,17 @@ h1, h2, p, ol { margin: 0; }
 .route li a:hover .v { color: var(--accent); }
 .route li a:focus-visible { outline-offset: 6px; }
 @media (max-width: 720px) { .crumbs { padding-bottom: 20px; } }
+
+/* Enlace extra en el hero y directorio de marcas */
+.hero-link { margin-top: 24px; font-size: 14px; letter-spacing: .06em; }
+.lead-text { max-width: 640px; margin-bottom: 32px; font-size: 17px; color: var(--muted); }
+.dir-brand { padding-top: 56px; }
+.dir-brand[hidden], .dealer[hidden] { display: none; }
+.dir-brand h2 { margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-weight: 400; font-size: 40px; }
+.dealers { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px; }
+.dealer .city { margin-bottom: 6px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.dealer h3 { margin: 0 0 8px; font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.15; }
+.dealer p { margin: 0 0 4px; font-size: 15px; }
+.dealer .muted { font-size: 13px; color: var(--muted); }
+.badge { display: inline-block; margin-left: 8px; padding: 1px 10px; border: 1px solid var(--chip-line); border-radius: 999px; font-size: 11px; letter-spacing: .08em; color: var(--muted); }
+.badge.ok { border-color: var(--accent); color: var(--accent); }

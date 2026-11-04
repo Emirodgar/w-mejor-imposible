@@ -9,13 +9,19 @@
       "nombre": "Ferrari Madrid (Santogal Automóviles)",
       "direccion": "Calle Puerto de Somport 8, 28050 Madrid",
       "telefono": "+34 910 488 169",
-      "estado": "contrastado en varias fuentes",
+      "estado": "contrastado en varias fuentes (web oficial del concesionario y prensa de 2022)",
       "notas": "Un directorio antiguo lista además Avenida de Valladolid 45 (C. de Salamanca); probablemente obsoleto.",
       "fuentes": [
         "https://madrid.ferraridealers.com/es-ES",
         "https://www.ferrariclubespana.com/concesionarios/1-ferrari-en-madrid"
       ],
-      "id": "ferrari-madrid"
+      "id": "ferrari-madrid",
+      "busqueda": "Calle Puerto de Somport 8, Madrid",
+      "coordenadas": {
+        "lat": 40.49563,
+        "lon": -3.67064
+      },
+      "geo_fuente": "Calle de Puerto de Somport, Valverde, Fuencarral, Fuencarral-El Pardo, Madrid, Comunidad d"
     },
     {
       "marca": "Ferrari",
@@ -24,11 +30,17 @@
       "nombre": "Ferrari Barcelona (Quadis Gallery)",
       "direccion": "Passeig de la Zona Franca 10-12, 08038 Barcelona",
       "telefono": "932 896 363",
-      "estado": "contrastado en varias fuentes",
+      "estado": "contrastado (directorio del Ferrari Club España); la web del grupo no detalla marcas",
       "fuentes": [
         "https://www.ferrariclubespana.com/concesionarios/2-ferrari-en-barcelona"
       ],
-      "id": "ferrari-barcelona"
+      "id": "ferrari-barcelona",
+      "busqueda": "Passeig de la Zona Franca 10, Barcelona",
+      "coordenadas": {
+        "lat": 41.3642,
+        "lon": 2.13618
+      },
+      "geo_fuente": "Passeig de la Zona Franca, Ciutat Groga, la Marina de Port, Sants-Montjuïc, Barcelona, Bar"
     },
     {
       "marca": "Ferrari",
@@ -37,11 +49,17 @@
       "nombre": "Ferrari Valencia (Quadis Gallery)",
       "direccion": "Avda. Maestro Rodrigo 50, 46035 Valencia",
       "telefono": "963 479 199",
-      "estado": "por verificar (fuente antigua o única)",
+      "estado": "por verificar: solo aparece en el directorio del Ferrari Club España",
       "fuentes": [
         "https://www.ferrariclubespana.com/concesionarios/3-ferrari-en-valencia"
       ],
-      "id": "ferrari-valencia"
+      "id": "ferrari-valencia",
+      "busqueda": "Avenida Maestro Rodrigo 50, Valencia",
+      "coordenadas": {
+        "lat": 39.47665,
+        "lon": -0.39708
+      },
+      "geo_fuente": "Avinguda del Mestre Rodrigo, Campanar, València, Comarca de València, València / Valencia,"
     },
     {
       "marca": "Ferrari",
@@ -50,11 +68,17 @@
       "nombre": "Ferrari Marbella (C. de Salamanca)",
       "direccion": "Avda. Norberto Goizueta s/n, 29670 San Pedro Alcántara (Marbella)",
       "telefono": "952 78 52 50",
-      "estado": "contrastado en varias fuentes",
+      "estado": "contrastado (prensa 2023 y directorios); confirmar en la web oficial",
       "fuentes": [
         "https://www.elespanol.com/malaga/vivir/20230909/maranello-marbella-historia-concesionarios-antiguos-espana/792921020_0.html"
       ],
-      "id": "ferrari-marbella"
+      "id": "ferrari-marbella",
+      "busqueda": "Avenida Norberto Goizueta, San Pedro de Alcántara",
+      "coordenadas": {
+        "lat": 36.48189,
+        "lon": -4.98988
+      },
+      "geo_fuente": "Terminal de San Pedro de Alcántara, Avenida Norberto Goizueta Díaz, El Ingenio, Guadalmina"
     },
     {
       "marca": "Lamborghini",
@@ -63,12 +87,19 @@
       "nombre": "Lamborghini Barcelona (Quadis Gallery)",
       "direccion": "Ganduxer 71, 08017 Barcelona",
       "telefono": "933 624 123",
-      "estado": "contrastado en varias fuentes",
+      "estado": "verificado en la web oficial del concesionario y en la del grupo Quadis",
       "notas": "Taller en Passeig de la Zona Franca 10.",
       "fuentes": [
         "https://www.lamborghini-barcelona.es/donde-estamos/"
       ],
-      "id": "lamborghini-barcelona"
+      "id": "lamborghini-barcelona",
+      "busqueda": "Carrer de Ganduxer 71, Barcelona",
+      "horario": "Lunes a viernes, 9:00-14:00 y 16:00-19:00",
+      "coordenadas": {
+        "lat": 41.39813,
+        "lon": 2.13483
+      },
+      "geo_fuente": "67-71, Carrer de Ganduxer, Sant Gervasi - Galvany, Sarrià - Sant Gervasi, Barcelona, Barce"
     },
     {
       "marca": "Lamborghini",
@@ -77,12 +108,18 @@
       "nombre": "Lamborghini Marbella",
       "direccion": "Av. de Julio Iglesias 3, Local 2, Nueva Andalucía, 29660 Marbella",
       "telefono": null,
-      "estado": "por verificar (fuente antigua o única)",
+      "estado": "dirección verificada en la web del operador (Spirits of Speed); teléfono por confirmar",
       "notas": "Taller en C/ Ucrania, naves 7-8, San Pedro Alcántara. Un listado da el teléfono 647 672 304 sin confirmar.",
       "fuentes": [
         "https://www.spiritsofspeed.com/es/brand/lamborghini/"
       ],
-      "id": "lamborghini-marbella"
+      "id": "lamborghini-marbella",
+      "busqueda": "Avenida Julio Iglesias 3, Marbella",
+      "coordenadas": {
+        "lat": 36.48927,
+        "lon": -4.95099
+      },
+      "geo_fuente": "Avenida Julio Iglesias, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa del Sol Occi"
     },
     {
       "marca": "Lamborghini",
@@ -91,12 +128,18 @@
       "nombre": "Lamborghini Madrid",
       "direccion": "Vía de las Dos Castillas 9, 28224 Pozuelo de Alarcón",
       "telefono": null,
-      "estado": "por verificar (fuente antigua o única)",
+      "estado": "por verificar: fuente de 2013 y directorios",
       "notas": "Abrió en 2013 gestionado por Jemercar; taller listado en C/ Gamonal 47, nave 10 (Madrid).",
       "fuentes": [
         "https://www.motor.es/noticias/lamborghini-inaugura-concesionario-oficial-en-madrid-201314542.php"
       ],
-      "id": "lamborghini-madrid"
+      "id": "lamborghini-madrid",
+      "busqueda": "Via de las Dos Castillas 9, Pozuelo de Alarcón",
+      "coordenadas": {
+        "lat": 40.4324,
+        "lon": -3.80275
+      },
+      "geo_fuente": "Domestique cycling Lab, 9C, Vía de las Dos Castillas, Distrito Municipal I (sin urbanizaci"
     },
     {
       "marca": "Aston Martin",
@@ -105,12 +148,18 @@
       "nombre": "Aston Martin Madrid (Tayre Automoción)",
       "direccion": "Glorieta de López de Hoyos 5, 28002 Madrid",
       "telefono": null,
-      "estado": "por verificar (fuente antigua o única)",
+      "estado": "por verificar: fuente de 2019",
       "notas": "Fuente de 2019; Tayre también figura como Maserati.",
       "fuentes": [
         "https://es.motor1.com/news/344257/aston-martin-madrid-concesionario-tayre/"
       ],
-      "id": "aston-martin-madrid"
+      "id": "aston-martin-madrid",
+      "busqueda": "Glorieta de López de Hoyos 5, Madrid",
+      "coordenadas": {
+        "lat": 40.44086,
+        "lon": -3.68014
+      },
+      "geo_fuente": "5, Glorieta de López de Hoyos, El Viso, Chamartín, Madrid, Comunidad de Madrid, 28002, Esp"
     },
     {
       "marca": "Bentley",

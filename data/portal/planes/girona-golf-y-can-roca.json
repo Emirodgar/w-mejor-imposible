@@ -28,7 +28,7 @@
     {
       "tipo": "coche",
       "nombre": {
-        "es": "[Deportivo]"
+        "es": "Ferrari o Lamborghini"
       }
     },
     {
@@ -80,14 +80,15 @@
           "tipo": "Coche",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Modelo de deportivo]"
+            "es": "Ferrari o Lamborghini"
           },
           "por_que": {
-            "es": "[Por qué este coche para esta ruta.]"
+            "es": "Ferrari y Lamborghini tienen concesionario oficial en Barcelona, a menos de dos horas de Girona."
           },
           "foto": {
             "es": "deportivo en carretera"
-          }
+          },
+          "enlace": "/motor/marcas/?ciudad=barcelona"
         },
         {
           "tipo": "Hotel",

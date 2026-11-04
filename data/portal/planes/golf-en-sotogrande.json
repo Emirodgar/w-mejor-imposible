@@ -23,7 +23,7 @@
     {
       "tipo": "coche",
       "nombre": {
-        "es": "[Deportivo]"
+        "es": "Ferrari o Lamborghini"
       }
     },
     {
@@ -71,15 +71,16 @@
         {
           "tipo": "Coche",
           "nombre": {
-            "es": "[Modelo de deportivo]"
+            "es": "Ferrari o Lamborghini"
           },
           "tono": "oscuro",
           "foto": {
             "es": "deportivo en carretera"
           },
           "por_que": {
-            "es": "[Por qué este coche para esta ruta.]"
-          }
+            "es": "Ferrari y Lamborghini tienen concesionario oficial en Marbella, a menos de una hora de Sotogrande."
+          },
+          "enlace": "/motor/marcas/?ciudad=marbella"
         },
         {
           "tipo": "Hotel",
