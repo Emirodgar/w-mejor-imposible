@@ -399,7 +399,7 @@
       "es": "Motor"
     },
     "titulo": {
-      "es": "Las 10 mejores experiencias de motor de España"
+      "es": "Las 9 mejores experiencias de motor de España"
     },
     "nombre_placeholder": {
       "es": "[Nombre de la experiencia]"
@@ -408,8 +408,8 @@
       "es": "coche en circuito"
     },
     "ficha": [
-      "[Experiencia]",
-      "[N] horas"
+      "{longitud} km",
+      "Desde {anio}"
     ],
     "cerca": [
       "Hotel",
@@ -417,7 +417,7 @@
       "Aeropuerto"
     ],
     "como_ordenamos": {
-      "es": "Circuito o ruta, coches, instructores y la experiencia completa. Nadie paga por estar."
+      "es": "Trazado, historia, oferta de coches e instructores y la experiencia completa. Nadie paga por estar."
     },
     "placeholder": [
       {

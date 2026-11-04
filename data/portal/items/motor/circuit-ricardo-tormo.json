@@ -1,0 +1,27 @@
+{
+  "id": "motor/circuit-ricardo-tormo",
+  "categoria": "motor",
+  "nombre": "Circuit Ricardo Tormo",
+  "lugar": "Cheste · Valencia",
+  "zona": "resto",
+  "foto": {
+    "es": "recta principal con gradas"
+  },
+  "por_que": {
+    "es": "Sede del GP de la Comunitat Valenciana de MotoGP, con cuatro trazados: el principal, uno exterior, uno de escuela y uno de Fórmula E."
+  },
+  "ficha": {
+    "anio": 1999,
+    "longitud": "4,005"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuit_Ricardo_Tormo"
+  ],
+  "busqueda": "Circuit Ricardo Tormo Cheste",
+  "coordenadas": {
+    "lat": 39.48581,
+    "lon": -0.62864
+  },
+  "geo_fuente": "Circuit Ricardo Tormo, CV-3845, Cheste, La Hoya de Buñol, València / Valencia, Comunitat V"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "motor/ascari-race-resort",
+  "categoria": "motor",
+  "nombre": "Ascari Race Resort",
+  "lugar": "Ronda · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "curvas entre sierras"
+  },
+  "por_que": {
+    "es": "Club privado de motor de 26 curvas inspiradas en circuitos de todo el mundo, abierto en 2003 en la sierra de Ronda. Es el más exclusivo de España."
+  },
+  "ficha": {
+    "anio": 2003,
+    "longitud": "5,425"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Ascari_Race_Resort"
+  ],
+  "busqueda": "Ascari Race Resort Ronda",
+  "coordenadas": {
+    "lat": 36.82348,
+    "lon": -5.08246
+  },
+  "geo_fuente": "Circuito Ascari, Carretera de Ardales a Ronda, Ronda, Serranía de Ronda, Málaga, Andalucía"
+}

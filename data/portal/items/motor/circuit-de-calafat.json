@@ -1,0 +1,26 @@
+{
+  "id": "motor/circuit-de-calafat",
+  "categoria": "motor",
+  "nombre": "Circuit de Calafat",
+  "lugar": "L'Ametlla de Mar · Tarragona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "pista deslizante"
+  },
+  "por_que": {
+    "es": "En marcha desde 1974. Además del trazado de velocidad tiene rallycross, pista deslizante y cursos de conducción."
+  },
+  "ficha": {
+    "anio": 1974
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuit_de_Calafat"
+  ],
+  "busqueda": "Circuit de Calafat L'Ametlla de Mar",
+  "coordenadas": {
+    "lat": 40.93218,
+    "lon": 0.84082
+  },
+  "geo_fuente": "Circuit de Calafat, Passatge del Bou, Calafat, l'Ametlla de Mar, Baix Ebre, Tarragona, Cat"
+}

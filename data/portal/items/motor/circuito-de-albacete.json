@@ -1,0 +1,27 @@
+{
+  "id": "motor/circuito-de-albacete",
+  "categoria": "motor",
+  "nombre": "Circuito de Albacete",
+  "lugar": "Albacete · Castilla-La Mancha",
+  "zona": "resto",
+  "foto": {
+    "es": "recta de boxes"
+  },
+  "por_que": {
+    "es": "Circuito de 14 curvas inaugurado en 1990, con configuraciones de 3,5, 2,2 y 1,3 km. Fue sede del Mundial de Superbike en los años noventa."
+  },
+  "ficha": {
+    "anio": 1990,
+    "longitud": "3,550"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuito_de_Albacete"
+  ],
+  "busqueda": "Circuito de Albacete",
+  "coordenadas": {
+    "lat": 39.00617,
+    "lon": -1.7935
+  },
+  "geo_fuente": "Circuito de Albacete, Camino de Aviación, Albacete, Castilla-La Mancha, 02008, España"
+}

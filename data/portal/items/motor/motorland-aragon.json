@@ -1,0 +1,27 @@
+{
+  "id": "motor/motorland-aragon",
+  "categoria": "motor",
+  "nombre": "MotorLand Aragón",
+  "lugar": "Alcañiz · Teruel",
+  "zona": "resto",
+  "foto": {
+    "es": "trazado entre campos"
+  },
+  "por_que": {
+    "es": "Complejo con circuito de MotoGP y Superbike de 5 km, más karting y áreas de ocio y hotel. Abierto en 2009."
+  },
+  "ficha": {
+    "anio": 2009,
+    "longitud": "5,345"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/MotorLand_Arag%C3%B3n"
+  ],
+  "busqueda": "MotorLand Aragón Alcañiz",
+  "coordenadas": {
+    "lat": 41.07782,
+    "lon": -0.19496
+  },
+  "geo_fuente": "Motorland Aragón, TE-V-7032, Valmuel, Alcañiz, Bajo Aragón, Teruel, Aragón, 44600, España"
+}

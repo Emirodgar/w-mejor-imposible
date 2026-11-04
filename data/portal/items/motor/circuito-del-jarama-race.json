@@ -1,0 +1,27 @@
+{
+  "id": "motor/circuito-del-jarama-race",
+  "categoria": "motor",
+  "nombre": "Circuito del Jarama – RACE",
+  "lugar": "San Sebastián de los Reyes · Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "curva Le Mans"
+  },
+  "por_que": {
+    "es": "El circuito de Madrid, a unos 30 km de la capital. Acogió nueve GP de España de F1 entre 1968 y 1981 y hoy recibe Fórmula E y turismos."
+  },
+  "ficha": {
+    "anio": 1967,
+    "longitud": "3,850"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuito_del_Jarama"
+  ],
+  "busqueda": "Circuito del Jarama San Sebastián de los Reyes",
+  "coordenadas": {
+    "lat": 40.61582,
+    "lon": -3.58489
+  },
+  "geo_fuente": "Circuito del Jarama, Autovía del Norte, Race, San Sebastián de los Reyes, Comunidad de Mad"
+}

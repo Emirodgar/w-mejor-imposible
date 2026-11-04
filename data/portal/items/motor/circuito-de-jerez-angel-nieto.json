@@ -1,0 +1,27 @@
+{
+  "id": "motor/circuito-de-jerez-angel-nieto",
+  "categoria": "motor",
+  "nombre": "Circuito de Jerez – Ángel Nieto",
+  "lugar": "Jerez de la Frontera · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "curva Dry Sack"
+  },
+  "por_que": {
+    "es": "Acogió el GP de España de F1 de 1986 a 1990 y sigue siendo sede del GP de España de MotoGP. Lleva el nombre de Ángel Nieto desde 2018."
+  },
+  "ficha": {
+    "anio": 1985,
+    "longitud": "4,428"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuito_de_Jerez"
+  ],
+  "busqueda": "Circuito de Jerez Jerez de la Frontera",
+  "coordenadas": {
+    "lat": 36.7078,
+    "lon": -6.03251
+  },
+  "geo_fuente": "Circuito de Jerez, Antigua carretera de Jerez de la Frontera a Arcos de la Frontera, Torre"
+}

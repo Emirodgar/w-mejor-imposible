@@ -1,0 +1,27 @@
+{
+  "id": "motor/circuito-de-navarra",
+  "categoria": "motor",
+  "nombre": "Circuito de Navarra",
+  "lugar": "Los Arcos · Navarra",
+  "zona": "resto",
+  "foto": {
+    "es": "curvas entre viñedos"
+  },
+  "por_que": {
+    "es": "Trazado de 16 curvas abierto en 2010; ha recibido el Mundial de Superbike y el FIA GT1. Su configuración actual data de 2024."
+  },
+  "ficha": {
+    "anio": 2010,
+    "longitud": "4,313"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuito_de_Navarra"
+  ],
+  "busqueda": "Circuito de Navarra Los Arcos",
+  "coordenadas": {
+    "lat": 42.56118,
+    "lon": -2.16498
+  },
+  "geo_fuente": "Circuito de Navarra, Autovía del Camino de Santiago, Los Arcos, Estellerria, Navarra, Nava"
+}

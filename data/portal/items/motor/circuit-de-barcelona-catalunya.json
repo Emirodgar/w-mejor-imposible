@@ -1,0 +1,27 @@
+{
+  "id": "motor/circuit-de-barcelona-catalunya",
+  "categoria": "motor",
+  "nombre": "Circuit de Barcelona-Catalunya",
+  "lugar": "Montmeló · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "pista de salida de F1"
+  },
+  "por_que": {
+    "es": "Sede del Gran Premio de España de F1 de 1991 a 2025 y del Barcelona-Catalunya GP en 2026. La oferta de experiencias con superdeportivos es la más amplia del país."
+  },
+  "ficha": {
+    "anio": 1991,
+    "longitud": "4,657"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya"
+  ],
+  "busqueda": "Circuit de Barcelona-Catalunya Montmeló",
+  "coordenadas": {
+    "lat": 41.57001,
+    "lon": 2.25881
+  },
+  "geo_fuente": "Circuit de Barcelona-Catalunya, BV-5003, Can Tabola, Montmeló, Vallès Oriental, Barcelona,"
+}
