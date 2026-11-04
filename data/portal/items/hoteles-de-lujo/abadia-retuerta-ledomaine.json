@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/abadia-retuerta-ledomaine",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Abadía Retuerta LeDomaine",
+  "lugar": "Sardón de Duero · Valladolid",
+  "zona": "resto",
+  "foto": {
+    "es": "monasterio entre viñedos"
+  },
+  "por_que": {
+    "es": "Un monasterio del siglo XII convertido en hotel y rodeado de viñedos junto al Duero, con tres Llaves Michelin."
+  },
+  "ficha": {
+    "llaves": "3 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Abadía Retuerta Sardón de Duero",
+  "coordenadas": {
+    "lat": 41.61654,
+    "lon": -4.41093
+  },
+  "geo_fuente": "Abadía Retuerta Le Domaine, Carretera Zaragoza a Portugal, Retuerta, Sardón de Duero, Vall"
+}

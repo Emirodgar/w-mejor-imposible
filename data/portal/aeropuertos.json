@@ -165,6 +165,248 @@
         "lon": -1.52287
       },
       "geo_fuente": "Aéroport de Biarritz-Pays Basque, 7, Esplanade de l'Europe, Lapurdi, Parme, Anglet, Bayonn"
+    },
+    {
+      "id": "svq",
+      "nombre": "Aeropuerto de Sevilla",
+      "iata": "SVQ",
+      "busqueda": "Aeropuerto de Sevilla San Pablo",
+      "coordenadas": {
+        "lat": 37.4177,
+        "lon": -5.89493
+      },
+      "geo_fuente": "Aeropuerto internacional de Sevilla - San Pablo, Calle María Zambrano, Parque Alcosa, Dist"
+    },
+    {
+      "id": "vll",
+      "nombre": "Aeropuerto de Valladolid",
+      "iata": "VLL",
+      "busqueda": "Aeropuerto de Valladolid Villanubla",
+      "coordenadas": {
+        "lat": 41.70663,
+        "lon": -4.84954
+      },
+      "geo_fuente": "Aeropuerto de Valladolid, Calle del Teso, Villanubla, Valladolid, Castilla y León, 47620, "
+    },
+    {
+      "id": "zaz",
+      "nombre": "Aeropuerto de Zaragoza",
+      "iata": "ZAZ",
+      "busqueda": "Aeropuerto de Zaragoza",
+      "coordenadas": {
+        "lat": 41.66297,
+        "lon": -1.0379
+      },
+      "geo_fuente": "Aeropuerto de Zaragoza, Camino de Bárboles, Urbanización Conde Fuentes, Garrapinillos, Dis"
+    },
+    {
+      "id": "reu",
+      "nombre": "Aeropuerto de Reus",
+      "iata": "REU",
+      "busqueda": "Aeropuerto de Reus",
+      "coordenadas": {
+        "lat": 41.14693,
+        "lon": 1.15775
+      },
+      "geo_fuente": "Aeroport de Reus, Autopista de la Mediterrània, Constantí, Tarragonès, Tarragona, Cataluny"
+    },
+    {
+      "id": "sdr",
+      "nombre": "Aeropuerto de Santander",
+      "iata": "SDR",
+      "busqueda": "Aeropuerto de Santander Seve Ballesteros",
+      "coordenadas": {
+        "lat": 43.42693,
+        "lon": -3.82427
+      },
+      "geo_fuente": "Aeropuerto de Santander-Seve Ballesteros, Carretera del Aeropuerto, Maliaño Alto, Maliaño,"
+    },
+    {
+      "id": "scq",
+      "nombre": "Aeropuerto de Santiago de Compostela",
+      "iata": "SCQ",
+      "busqueda": "Aeropuerto de Santiago-Rosalía de Castro",
+      "coordenadas": {
+        "lat": 42.89764,
+        "lon": -8.41891
+      },
+      "geo_fuente": "Aeroporto de Santiago - Rosalía de Castro, O Camiño Real, Loureda, Boqueixón, Santiago, A "
+    },
+    {
+      "id": "vgo",
+      "nombre": "Aeropuerto de Vigo",
+      "iata": "VGO",
+      "busqueda": "Aeropuerto de Vigo Peinador",
+      "coordenadas": {
+        "lat": 42.23292,
+        "lon": -8.62617
+      },
+      "geo_fuente": "Aeroporto de Vigo, Estrada Peinador - Os Valos, Peinador, San Xoán, Torroso, Mos, Vigo, Po"
+    },
+    {
+      "id": "lcg",
+      "nombre": "Aeropuerto de A Coruña",
+      "iata": "LCG",
+      "busqueda": "Aeropuerto de A Coruña Alvedro",
+      "coordenadas": {
+        "lat": 43.30026,
+        "lon": -8.37961
+      },
+      "geo_fuente": "Aeroporto da Coruña, Rúa Emilio Santos Rampín, Fontemaior, Culleredo, A Coruña, Galicia, 1"
+    },
+    {
+      "id": "grx",
+      "nombre": "Aeropuerto de Granada",
+      "iata": "GRX",
+      "busqueda": "Aeropuerto de Granada Federico García Lorca",
+      "coordenadas": {
+        "lat": 37.18679,
+        "lon": -3.77731
+      },
+      "geo_fuente": "Aeropuerto de Granada - Federico García Lorca, Calle Economía, Polígono Industrial La Rosa"
+    },
+    {
+      "id": "lei",
+      "nombre": "Aeropuerto de Almería",
+      "iata": "LEI",
+      "busqueda": "Aeropuerto de Almería",
+      "coordenadas": {
+        "lat": 36.84391,
+        "lon": -2.3701
+      },
+      "geo_fuente": "Almería (coordenada manual)"
+    },
+    {
+      "id": "rmu",
+      "nombre": "Aeropuerto de Murcia-Región de Murcia",
+      "iata": "RMU",
+      "busqueda": "Aeropuerto Internacional Región de Murcia Corvera",
+      "coordenadas": {
+        "lat": 37.77493,
+        "lon": -1.12526
+      },
+      "geo_fuente": "Región de Murcia, Corvera (coordenada manual)"
+    },
+    {
+      "id": "mah",
+      "nombre": "Aeropuerto de Menorca",
+      "iata": "MAH",
+      "busqueda": "Aeropuerto de Menorca Mahón",
+      "coordenadas": {
+        "lat": 39.86299,
+        "lon": 4.22061
+      },
+      "geo_fuente": "Aeroport de Menorca, Carretera de l'Aeroport, Maó, Menorca, Illes Balears, 07714, España"
+    },
+    {
+      "id": "ace",
+      "nombre": "Aeropuerto de Lanzarote",
+      "iata": "ACE",
+      "busqueda": "Aeropuerto de Lanzarote César Manrique",
+      "coordenadas": {
+        "lat": 28.95221,
+        "lon": -13.60666
+      },
+      "geo_fuente": "Aeropuerto César Manrique-Lanzarote T2, Aeropuerto de Lanzarote, Aeropuerto, Playa Honda, "
+    },
+    {
+      "id": "lpa",
+      "nombre": "Aeropuerto de Gran Canaria",
+      "iata": "LPA",
+      "busqueda": "Aeropuerto de Gran Canaria Gando",
+      "coordenadas": {
+        "lat": 27.93016,
+        "lon": -15.38801
+      },
+      "geo_fuente": "Aeropuerto de Gran Canaria, Autopista del Sur, Los Moriscos, Ingenio, Las Palmas, Canarias"
+    },
+    {
+      "id": "tfn",
+      "nombre": "Aeropuerto de Tenerife Norte",
+      "iata": "TFN",
+      "busqueda": "Aeropuerto de Tenerife Norte Los Rodeos",
+      "coordenadas": {
+        "lat": 28.48276,
+        "lon": -16.34122
+      },
+      "geo_fuente": "Aeropuerto de Tenerife Norte - Los Rodeos, Calle Escultor Luján Pérez, San Benito, La Cues"
+    },
+    {
+      "id": "ovd",
+      "nombre": "Aeropuerto de Asturias",
+      "iata": "OVD",
+      "busqueda": "Aeropuerto de Asturias Ranón",
+      "coordenadas": {
+        "lat": 43.56356,
+        "lon": -6.03462
+      },
+      "geo_fuente": "Asturias, Ranón (coordenada manual)"
+    },
+    {
+      "id": "pna",
+      "nombre": "Aeropuerto de Pamplona",
+      "iata": "PNA",
+      "busqueda": "Aeropuerto de Pamplona Noáin",
+      "coordenadas": {
+        "lat": 42.77114,
+        "lon": -1.64562
+      },
+      "geo_fuente": "Iruñea-Noain aireportua, Carretera Noáin - Salinas de Pamplona, Noáin, Noáin / Noain, Vall"
+    },
+    {
+      "id": "rjl",
+      "nombre": "Aeropuerto de Logroño-Agoncillo",
+      "iata": "RJL",
+      "busqueda": "Aeropuerto de Logroño-Agoncillo",
+      "coordenadas": {
+        "lat": 42.46072,
+        "lon": -2.3238
+      },
+      "geo_fuente": "Aeropuerto de Logroño-Agoncillo, Carretera del aeropuerto de Logroño, Agoncillo, La Rioja,"
+    },
+    {
+      "id": "bjz",
+      "nombre": "Aeropuerto de Badajoz",
+      "iata": "BJZ",
+      "busqueda": "Aeropuerto de Badajoz Talavera la Real",
+      "coordenadas": {
+        "lat": 38.89095,
+        "lon": -6.81932
+      },
+      "geo_fuente": "Aeropuerto de Badajoz, Carretera de Balboa a N-V, Balboa, Villafranco del Guadiana, Badajo"
+    },
+    {
+      "id": "slm",
+      "nombre": "Aeropuerto de Salamanca",
+      "iata": "SLM",
+      "busqueda": "Aeropuerto de Salamanca Matacán",
+      "coordenadas": {
+        "lat": 40.95101,
+        "lon": -5.50164
+      },
+      "geo_fuente": "Aeropuerto de Salamanca, Carretera de Madrid, El Salinar, Calvarrasa de Abajo, Salamanca, "
+    },
+    {
+      "id": "fue",
+      "nombre": "Aeropuerto de Fuerteventura",
+      "iata": "FUE",
+      "busqueda": "Aeropuerto de Fuerteventura El Matorral",
+      "coordenadas": {
+        "lat": 28.45328,
+        "lon": -13.8694
+      },
+      "geo_fuente": "Terminal de Llegadas Aeropuerto de Fuerteventura, FV-2, El Matorral, Puerto del Rosario, L"
+    },
+    {
+      "id": "cdt",
+      "nombre": "Aeropuerto de Castellón",
+      "iata": "CDT",
+      "busqueda": "Aeropuerto de Castellón Costa Azahar",
+      "coordenadas": {
+        "lat": 40.21226,
+        "lon": 0.06974
+      },
+      "geo_fuente": "Aeroport de Castelló-Costa Azahar, CV-145, Vilanova d'Alcolea, la Plana Alta, Castelló / C"
     }
   ]
 }

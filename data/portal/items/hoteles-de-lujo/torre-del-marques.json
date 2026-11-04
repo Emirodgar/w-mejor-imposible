@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/torre-del-marques",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Torre del Marqués",
+  "lugar": "Matarraña · Teruel",
+  "zona": "resto",
+  "foto": {
+    "es": "masía entre olivos"
+  },
+  "por_que": {
+    "es": "Hotel, spa y bodega en el Matarraña turolense, con tres Llaves Michelin."
+  },
+  "ficha": {
+    "llaves": "3 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Torre del Marqués Teruel",
+  "coordenadas": {
+    "lat": 40.81219,
+    "lon": 0.02133
+  },
+  "geo_fuente": "Mas de la Torre del Marqués, Monroyo / Montroig, Matarraña / Matarranya, Teruel, Aragón, 4"
+}

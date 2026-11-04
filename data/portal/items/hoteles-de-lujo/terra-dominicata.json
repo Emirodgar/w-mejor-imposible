@@ -1,0 +1,27 @@
+{
+  "id": "hoteles-de-lujo/terra-dominicata",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Terra Dominicata",
+  "lugar": "Escaladei · Tarragona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "viñedo del Priorat"
+  },
+  "por_que": {
+    "es": "Hotel y bodega en pleno Priorat, en el entorno de la cartuja de Escaladei, con tres Llaves Michelin."
+  },
+  "ficha": {
+    "llaves": "3 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Escaladei",
+  "coordenadas": {
+    "lat": 41.24806,
+    "lon": 0.81112
+  },
+  "geo_precision": "localidad",
+  "geo_fuente": "Escaladei, la Morera de Montsant, Priorat"
+}

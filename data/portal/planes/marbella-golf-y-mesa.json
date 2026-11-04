@@ -33,9 +33,7 @@
     },
     {
       "tipo": "hotel",
-      "nombre": {
-        "es": "Puente Romano Marbella"
-      }
+      "ref": "hoteles-de-lujo/marbella-club-hotel"
     },
     {
       "tipo": "golf",
@@ -85,20 +83,12 @@
           }
         },
         {
-          "tipo": "Hotel 5*",
+          "tipo": "Hotel",
           "tono": "claro",
-          "nombre": {
-            "es": "Puente Romano Marbella"
-          },
-          "por_que": {
-            "es": "En la Milla de Oro, a unos 4 km de Las Brisas."
-          },
-          "foto": {
-            "es": "suite con terraza"
-          },
+          "ref": "hoteles-de-lujo/marbella-club-hotel",
           "alternativas": [
             {
-              "es": "Marbella Club Hotel"
+              "es": "Puente Romano Marbella"
             }
           ]
         }

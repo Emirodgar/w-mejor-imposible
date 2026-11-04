@@ -1,10 +1,10 @@
 {
-  "hoteles-5-estrellas": {
+  "hoteles-de-lujo": {
     "corto": {
-      "es": "Hoteles 5*"
+      "es": "Hoteles de lujo"
     },
     "titulo": {
-      "es": "Los 10 mejores hoteles 5* de España"
+      "es": "Los 10 mejores hoteles de lujo de España"
     },
     "nombre_placeholder": {
       "es": "[Nombre del hotel]"
@@ -13,16 +13,15 @@
       "es": "fachada del hotel"
     },
     "ficha": [
-      "[N] habitaciones",
-      "Abierto en [AÑO]"
+      "{llaves} Michelin"
     ],
     "cerca": [
       "Restaurante",
-      "Spa",
+      "Golf",
       "Aeropuerto"
     ],
     "como_ordenamos": {
-      "es": "Servicio, habitaciones, ubicación y la experiencia completa de la estancia. Ningún hotel paga por estar."
+      "es": "Servicio, habitaciones, ubicación y la experiencia completa de la estancia; las Llaves de la Guía Michelin 2026 sirven de punto de partida. Ningún hotel paga por estar."
     },
     "placeholder": [
       {
@@ -86,7 +85,7 @@
       "Par {par}"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Restaurante",
       "Aeropuerto"
     ],
@@ -113,7 +112,7 @@
       "{estrellas} Michelin"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Golf",
       "Aeropuerto"
     ],
@@ -141,7 +140,7 @@
       "Arquitecto [NOMBRE]"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Restaurante",
       "Aeropuerto"
     ],
@@ -209,7 +208,7 @@
       "Fundada en [AÑO]"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Restaurante",
       "Aeropuerto"
     ],
@@ -277,7 +276,7 @@
       "[N] tratamientos"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Restaurante",
       "Aeropuerto"
     ],
@@ -345,7 +344,7 @@
       "Mejor época: [MESES]"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Restaurante",
       "Puerto"
     ],
@@ -413,7 +412,7 @@
       "[N] horas"
     ],
     "cerca": [
-      "Hotel 5*",
+      "Hotel",
       "Restaurante",
       "Aeropuerto"
     ],

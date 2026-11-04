@@ -34,7 +34,7 @@
     {
       "tipo": "hotel",
       "nombre": {
-        "es": "[Hotel]"
+        "es": "Petunia Ibiza, Beaumier Hotel"
       }
     },
     {
@@ -76,16 +76,16 @@
           }
         },
         {
-          "tipo": "Hotel 5*",
+          "tipo": "Hotel",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Nombre del hotel]"
+            "es": "Petunia Ibiza, Beaumier Hotel"
           },
           "por_que": {
-            "es": "[N.º X del ranking de hoteles de la zona.]"
+            "es": "Una Llave Michelin en Cala Vadella, en la costa oeste de Ibiza, cerca de Cala d'Hort."
           },
           "foto": {
-            "es": "suite con terraza"
+            "es": "hotel sobre la cala"
           }
         },
         {

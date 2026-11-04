@@ -30,9 +30,9 @@ ZONES = [('todas', 'Toda España'), ('andalucia', 'Andalucía'), ('cataluna', 'C
 ZONE_NAMES = dict(ZONES)
 TONES = ['', ' t3', '', ' t3', '']
 STRIP_TONES = ['', ' t2', ' t3', ' t4', '']
-LABEL_TIPO = {'Hotel 5*': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
+LABEL_TIPO = {'Hotel': 'hotel', 'Hotel': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
               'Spa': 'spa', 'Puerto': 'puerto', 'Bodega': 'bodega'}
-CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-5-estrellas': 'Hotel',
+CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-de-lujo': 'Hotel',
               'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness'}
 
 
@@ -196,6 +196,9 @@ def spec_text(cat, ficha):
 AIRPORTS = load('aeropuertos.json')['aeropuertos']
 MICHELIN = [r for r in (load('michelin/guia-2026.json')['restaurantes'] if exists('michelin/guia-2026.json') else [])
             if r.get('coordenadas') and not r.get('ref')]  # los que ya son ítems del ranking salen como ítem
+LLAVES = [r for r in (load('michelin/llaves-2026.json')['hoteles'] if exists('michelin/llaves-2026.json') else [])
+          if r.get('coordenadas') and not r.get('ref')]
+CAT_DE_TIPO = {'restaurante': 'restaurantes', 'golf': 'golf', 'hotel': 'hoteles-de-lujo'}
 MAX_KM = 75  # radio máximo para sugerir un restaurante o un campo "cerca"
 
 
@@ -222,24 +225,31 @@ def nearest(item, tipo):
         return None
     if tipo == 'aeropuerto':
         pool = [(a['nombre'], None, a) for a in AIRPORTS if coords(a)]
-    elif tipo in ('restaurante', 'golf'):
-        cat = 'restaurantes' if tipo == 'restaurante' else 'golf'
+    elif tipo in CAT_DE_TIPO:
+        cat = CAT_DE_TIPO[tipo]
         pool = [(i['nombre'], i['id'], i) for i in ITEMS.values()
                 if i['categoria'] == cat and i['id'] != item['id'] and coords(i)]
     else:
         return None
-    best = min(((haversine_km(here, coords(x)), n, ref, None) for n, ref, x in pool), default=None)
-    if tipo == 'restaurante':
-        # si ningún restaurante del ranking queda cerca, se recurre al estrellado más próximo
-        for r in ([] if best and best[0] <= MAX_KM else MICHELIN):
+    best = min(((haversine_km(here, coords(x)), n, ref, None, x) for n, ref, x in pool), default=None)
+    # si ningún ítem del ranking queda a menos de 60 min, se recurre a la lista Michelin más próxima
+    extra = {'restaurante': (MICHELIN, 'estrellas', 'estrella', 'estrellas'),
+             'hotel': (LLAVES, 'llaves', 'Llave', 'Llaves')}.get(tipo)
+    if extra and not (best and drive_min(best[0]) <= 60):
+        for r in extra[0]:
             d = haversine_km(here, coords(r))
             if not best or d < best[0]:
-                best = (d, r['nombre'], None, r['estrellas'])
-    if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM):
+                best = (d, r['nombre'], None, r[extra[1]], r)
+    if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM) or (tipo == 'aeropuerto' and drive_min(best[0]) > 150):
         return None
     out = dict(tipo=tipo, nombre=best[1], ref=best[2], min=drive_min(best[0]))
-    if best[3]:
-        out['nota'] = f"{best[3]} {'estrella' if best[3] == 1 else 'estrellas'} Michelin · a ~{out['min']} min"
+    exact = 'localidad' not in (item.get('geo_precision'), best[4].get('geo_precision'))
+    if best[0] < 0.3 and exact and tipo in ('restaurante', 'hotel'):
+        out['nota'] = 'en el mismo lugar'
+        out['min'] = 0
+    elif best[3]:
+        word = extra[2] if best[3] == 1 else extra[3]
+        out['nota'] = f"{best[3]} {word} Michelin · a ~{out['min']} min"
     return out
 
 
@@ -384,7 +394,7 @@ ICONS = {
 ROUTE = {
     'llegada': ('Llegada', None, 'Ver cómo llegar'),
     'coche': ('Coche', 'motor', 'Ver experiencias de motor en {z}'),
-    'hotel': ('Hotel 5*', 'hoteles-5-estrellas', 'Ver hoteles 5* en {z}'),
+    'hotel': ('Hotel', 'hoteles-de-lujo', 'Ver hoteles de lujo en {z}'),
     'golf': ('Golf', 'golf', 'Ver campos de golf en {z}'),
     'cena': ('Cena', 'restaurantes', 'Ver restaurantes en {z}'),
     'descanso': ('Descanso', 'spas', 'Ver spas en {z}'),

@@ -29,7 +29,7 @@
     {
       "tipo": "hotel",
       "nombre": {
-        "es": "[Hotel]"
+        "es": "Fairmont La Hacienda Costa del Sol"
       }
     },
     {
@@ -82,16 +82,16 @@
           }
         },
         {
-          "tipo": "Hotel 5*",
+          "tipo": "Hotel",
           "nombre": {
-            "es": "[Nombre del hotel]"
+            "es": "Fairmont La Hacienda Costa del Sol"
           },
           "tono": "claro",
           "foto": {
-            "es": "suite con terraza"
+            "es": "hotel entre jardines"
           },
           "por_que": {
-            "es": "[N.º X del ranking de hoteles de la zona.]"
+            "es": "Una Llave Michelin en San Roque, en el entorno de Sotogrande."
           }
         }
       ]

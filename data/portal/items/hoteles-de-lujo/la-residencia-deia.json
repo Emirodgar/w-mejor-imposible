@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/la-residencia-deia",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "La Residencia, A Belmond Hotel, Mallorca",
+  "lugar": "Deià · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "pueblo de Deià y Tramuntana"
+  },
+  "por_que": {
+    "es": "Dos Llaves Michelin en Deià, en plena Serra de Tramuntana."
+  },
+  "ficha": {
+    "llaves": "2 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "La Residencia Belmond Deià",
+  "coordenadas": {
+    "lat": 39.74973,
+    "lon": 2.64922
+  },
+  "geo_fuente": "La Residència, Carrer de Son Canals, es Clot, Deià, Serra de Tramuntana, Illes Balears, 07"
+}

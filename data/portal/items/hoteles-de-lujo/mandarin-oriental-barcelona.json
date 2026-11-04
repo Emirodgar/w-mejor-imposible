@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/mandarin-oriental-barcelona",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Mandarin Oriental Barcelona",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "terraza sobre el Paseo de Gracia"
+  },
+  "por_que": {
+    "es": "Nuevo cinco estrellas Forbes Travel Guide en 2026 y dos Llaves Michelin, en el Paseo de Gracia."
+  },
+  "ficha": {
+    "llaves": "2 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Mandarin Oriental Barcelona",
+  "coordenadas": {
+    "lat": 41.39138,
+    "lon": 2.16691
+  },
+  "geo_fuente": "Mandarin Oriental, 38-40, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eix"
+}

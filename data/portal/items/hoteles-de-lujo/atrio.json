@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/atrio",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Atrio Restaurante Hotel",
+  "lugar": "Cáceres",
+  "zona": "resto",
+  "foto": {
+    "es": "patio del hotel"
+  },
+  "por_que": {
+    "es": "Hotel y restaurante en Cáceres, el único de España con tres Llaves y tres estrellas Michelin."
+  },
+  "ficha": {
+    "llaves": "3 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Atrio Cáceres",
+  "coordenadas": {
+    "lat": 39.47299,
+    "lon": -6.3714
+  },
+  "geo_fuente": "Atrio, 1, Plaza de San Mateo, Ciudad Monumental, Cáceres, Extremadura, 10003, España"
+}

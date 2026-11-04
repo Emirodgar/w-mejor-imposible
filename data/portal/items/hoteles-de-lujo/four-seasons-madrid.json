@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/four-seasons-madrid",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Four Seasons Hotel Madrid",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "patio del hotel"
+  },
+  "por_que": {
+    "es": "Cinco estrellas Forbes Travel Guide cuatro años seguidos, hotel y spa, y dos Llaves Michelin en el centro de Madrid."
+  },
+  "ficha": {
+    "llaves": "2 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Four Seasons Hotel Madrid",
+  "coordenadas": {
+    "lat": 40.41727,
+    "lon": -3.70039
+  },
+  "geo_fuente": "Four Seasons Hotel Madrid, 3, Calle de Sevilla, Sol, Centro, Madrid, Comunidad de Madrid, "
+}

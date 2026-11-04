@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/marbella-club-hotel",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Marbella Club Hotel",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "jardines frente al mar"
+  },
+  "por_que": {
+    "es": "Un clásico de la Milla de Oro de Marbella: dos Llaves Michelin y una elegancia sin estridencias."
+  },
+  "ficha": {
+    "llaves": "2 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Marbella Club Hotel",
+  "coordenadas": {
+    "lat": 36.50652,
+    "lon": -4.91922
+  },
+  "geo_fuente": "Marbella Club Hotel, Bulevar del Príncipe Alfonso de Hohenlohe, Marbella Real, El Vicario,"
+}

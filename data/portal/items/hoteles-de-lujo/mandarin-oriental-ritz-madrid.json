@@ -1,0 +1,26 @@
+{
+  "id": "hoteles-de-lujo/mandarin-oriental-ritz-madrid",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Mandarin Oriental Ritz, Madrid",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada junto al Prado"
+  },
+  "por_que": {
+    "es": "El histórico Ritz de Madrid, hoy Mandarin Oriental, con tres Llaves Michelin."
+  },
+  "ficha": {
+    "llaves": "3 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Mandarin Oriental Ritz Madrid",
+  "coordenadas": {
+    "lat": 40.41555,
+    "lon": -3.69273
+  },
+  "geo_fuente": "Mandarin Oriental Ritz, Madrid, 5, Plaza de la Lealtad, Jerónimos, Retiro, Madrid, Comunid"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hoteles-de-lujo/four-seasons-formentor",
+  "categoria": "hoteles-de-lujo",
+  "nombre": "Four Seasons Resort Mallorca at Formentor",
+  "lugar": "Formentor · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "bahía de Formentor"
+  },
+  "por_que": {
+    "es": "Dos Llaves Michelin en la península de Formentor, en el extremo norte de Mallorca."
+  },
+  "ficha": {
+    "llaves": "2 Llaves"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+  ],
+  "busqueda": "Hotel Formentor",
+  "coordenadas": {
+    "lat": 39.92675,
+    "lon": 3.14483
+  },
+  "geo_precision": "calle",
+  "geo_fuente": "Formentor, Carrer de Formentor, Pollença"
+}

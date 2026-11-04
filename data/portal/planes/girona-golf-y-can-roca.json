@@ -34,7 +34,7 @@
     {
       "tipo": "hotel",
       "nombre": {
-        "es": "[Hotel]"
+        "es": "Hotel Esperit Roca"
       }
     },
     {
@@ -90,16 +90,16 @@
           }
         },
         {
-          "tipo": "Hotel 5*",
+          "tipo": "Hotel",
           "tono": "claro",
           "nombre": {
-            "es": "[Nombre del hotel]"
+            "es": "Hotel Esperit Roca"
           },
           "por_que": {
-            "es": "[N.º X del ranking de hoteles de la zona.]"
+            "es": "Dos Llaves Michelin, de la familia Roca, en Sant Julià de Ramis, a las puertas de Girona."
           },
           "foto": {
-            "es": "suite con terraza"
+            "es": "fachada del hotel"
           }
         }
       ]

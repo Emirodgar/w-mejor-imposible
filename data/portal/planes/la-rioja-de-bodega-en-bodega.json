@@ -76,13 +76,13 @@
           }
         },
         {
-          "tipo": "Hotel 5*",
+          "tipo": "Hotel",
           "tono": "oscuro",
           "nombre": {
             "es": "Hotel Marqués de Riscal"
           },
           "por_que": {
-            "es": "Obra de Frank Gehry, abierta en 2006 en Elciego, dentro de la propia bodega."
+            "es": "Obra de Frank Gehry, abierta en 2006 en Elciego, dentro de la propia bodega; una Llave Michelin."
           },
           "foto": {
             "es": "titanio y rosa sobre el viñedo"

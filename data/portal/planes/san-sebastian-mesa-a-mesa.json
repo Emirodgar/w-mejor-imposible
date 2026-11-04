@@ -82,13 +82,13 @@
           ]
         },
         {
-          "tipo": "Hotel 5*",
+          "tipo": "Hotel",
           "tono": "oscuro",
           "nombre": {
             "es": "Hotel María Cristina"
           },
           "por_que": {
-            "es": "Un hotel histórico de la ciudad, abierto desde 1912 y de la Luxury Collection."
+            "es": "Un hotel histórico de la ciudad, abierto desde 1912, de la Luxury Collection y con una Llave Michelin."
           },
           "foto": {
             "es": "fachada junto al río Urumea"

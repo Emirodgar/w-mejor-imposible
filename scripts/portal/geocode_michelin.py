@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Añade coordenadas a data/portal/michelin/guia-2026.json (OpenStreetMap / Nominatim).
+"""Añade coordenadas a data/portal/michelin/guia-2026.json (restaurantes) o llaves-2026.json (hoteles).
 
-Uso:  python scripts/portal/geocode_michelin.py [--force]
+Uso:  python scripts/portal/geocode_michelin.py [guia-2026|llaves-2026] [--force]
 
 Para cada restaurante busca "<nombre>, <ciudad>"; el resultado solo se acepta si cae a menos de
 25 km del centro de su ciudad. Si no aparece (OpenStreetMap no tiene todos los locales) se usa el
@@ -20,7 +20,8 @@ import urllib.parse  # noqa: E402
 import urllib.request  # noqa: E402
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
-PATH = os.path.join(ROOT, 'data', 'portal', 'michelin', 'guia-2026.json')
+NAME = next((a for a in sys.argv[1:] if not a.startswith('--')), 'guia-2026')
+PATH = os.path.join(ROOT, 'data', 'portal', 'michelin', NAME + '.json')
 ANDORRA = {'Soldeu'}
 
 
@@ -56,8 +57,9 @@ if __name__ == '__main__':
     force = '--force' in sys.argv
     with open(PATH, encoding='utf-8') as f:
         data = json.load(f)
+    key = 'restaurantes' if 'restaurantes' in data else 'hoteles'
     cities = {}
-    todo = [r for r in data['restaurantes'] if force or not r.get('coordenadas')]
+    todo = [r for r in data[key] if force or not r.get('coordenadas')]
     print(f'{len(todo)} por geocodificar')
     for n, r in enumerate(todo, 1):
         country = 'ad' if r['ciudad'] in ANDORRA else 'es'
@@ -77,6 +79,6 @@ if __name__ == '__main__':
             save(PATH, data)
             print(f'  {n}/{len(todo)}')
     save(PATH, data)
-    ok = [r for r in data['restaurantes'] if r.get('coordenadas')]
+    ok = [r for r in data[key] if r.get('coordenadas')]
     loc = sum(1 for r in ok if r['geo_precision'] == 'local')
     print(f'listo: {len(ok)} con coordenadas ({loc} del local, {len(ok) - loc} del centro de la ciudad)')
