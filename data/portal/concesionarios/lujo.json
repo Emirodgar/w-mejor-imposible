@@ -1,0 +1,158 @@
+{
+  "actualizado": "2026-11-04",
+  "nota": "Datos de directorios y prensa; verificar en la web oficial de cada marca antes de publicar.",
+  "concesionarios": [
+    {
+      "marca": "Ferrari",
+      "ciudad": "Madrid",
+      "zona": "resto",
+      "nombre": "Ferrari Madrid (Santogal Automóviles)",
+      "direccion": "Calle Puerto de Somport 8, 28050 Madrid",
+      "telefono": "+34 910 488 169",
+      "estado": "contrastado en varias fuentes",
+      "notas": "Un directorio antiguo lista además Avenida de Valladolid 45 (C. de Salamanca); probablemente obsoleto.",
+      "fuentes": [
+        "https://madrid.ferraridealers.com/es-ES",
+        "https://www.ferrariclubespana.com/concesionarios/1-ferrari-en-madrid"
+      ],
+      "id": "ferrari-madrid"
+    },
+    {
+      "marca": "Ferrari",
+      "ciudad": "Barcelona",
+      "zona": "cataluna",
+      "nombre": "Ferrari Barcelona (Quadis Gallery)",
+      "direccion": "Passeig de la Zona Franca 10-12, 08038 Barcelona",
+      "telefono": "932 896 363",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://www.ferrariclubespana.com/concesionarios/2-ferrari-en-barcelona"
+      ],
+      "id": "ferrari-barcelona"
+    },
+    {
+      "marca": "Ferrari",
+      "ciudad": "Valencia",
+      "zona": "resto",
+      "nombre": "Ferrari Valencia (Quadis Gallery)",
+      "direccion": "Avda. Maestro Rodrigo 50, 46035 Valencia",
+      "telefono": "963 479 199",
+      "estado": "por verificar (fuente antigua o única)",
+      "fuentes": [
+        "https://www.ferrariclubespana.com/concesionarios/3-ferrari-en-valencia"
+      ],
+      "id": "ferrari-valencia"
+    },
+    {
+      "marca": "Ferrari",
+      "ciudad": "Marbella",
+      "zona": "andalucia",
+      "nombre": "Ferrari Marbella (C. de Salamanca)",
+      "direccion": "Avda. Norberto Goizueta s/n, 29670 San Pedro Alcántara (Marbella)",
+      "telefono": "952 78 52 50",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://www.elespanol.com/malaga/vivir/20230909/maranello-marbella-historia-concesionarios-antiguos-espana/792921020_0.html"
+      ],
+      "id": "ferrari-marbella"
+    },
+    {
+      "marca": "Lamborghini",
+      "ciudad": "Barcelona",
+      "zona": "cataluna",
+      "nombre": "Lamborghini Barcelona (Quadis Gallery)",
+      "direccion": "Ganduxer 71, 08017 Barcelona",
+      "telefono": "933 624 123",
+      "estado": "contrastado en varias fuentes",
+      "notas": "Taller en Passeig de la Zona Franca 10.",
+      "fuentes": [
+        "https://www.lamborghini-barcelona.es/donde-estamos/"
+      ],
+      "id": "lamborghini-barcelona"
+    },
+    {
+      "marca": "Lamborghini",
+      "ciudad": "Marbella",
+      "zona": "andalucia",
+      "nombre": "Lamborghini Marbella",
+      "direccion": "Av. de Julio Iglesias 3, Local 2, Nueva Andalucía, 29660 Marbella",
+      "telefono": null,
+      "estado": "por verificar (fuente antigua o única)",
+      "notas": "Taller en C/ Ucrania, naves 7-8, San Pedro Alcántara. Un listado da el teléfono 647 672 304 sin confirmar.",
+      "fuentes": [
+        "https://www.spiritsofspeed.com/es/brand/lamborghini/"
+      ],
+      "id": "lamborghini-marbella"
+    },
+    {
+      "marca": "Lamborghini",
+      "ciudad": "Madrid",
+      "zona": "resto",
+      "nombre": "Lamborghini Madrid",
+      "direccion": "Vía de las Dos Castillas 9, 28224 Pozuelo de Alarcón",
+      "telefono": null,
+      "estado": "por verificar (fuente antigua o única)",
+      "notas": "Abrió en 2013 gestionado por Jemercar; taller listado en C/ Gamonal 47, nave 10 (Madrid).",
+      "fuentes": [
+        "https://www.motor.es/noticias/lamborghini-inaugura-concesionario-oficial-en-madrid-201314542.php"
+      ],
+      "id": "lamborghini-madrid"
+    },
+    {
+      "marca": "Aston Martin",
+      "ciudad": "Madrid",
+      "zona": "resto",
+      "nombre": "Aston Martin Madrid (Tayre Automoción)",
+      "direccion": "Glorieta de López de Hoyos 5, 28002 Madrid",
+      "telefono": null,
+      "estado": "por verificar (fuente antigua o única)",
+      "notas": "Fuente de 2019; Tayre también figura como Maserati.",
+      "fuentes": [
+        "https://es.motor1.com/news/344257/aston-martin-madrid-concesionario-tayre/"
+      ],
+      "id": "aston-martin-madrid"
+    },
+    {
+      "marca": "Bentley",
+      "ciudad": "Marbella",
+      "zona": "andalucia",
+      "nombre": "Bentley Marbella",
+      "direccion": null,
+      "telefono": "+34 952 785 258",
+      "estado": "por verificar (fuente antigua o única)",
+      "notas": "Bentley figura con puntos en Barcelona, Madrid (Astara Retail), Marbella y Valencia; faltan direcciones.",
+      "fuentes": [
+        "https://marbella.bentleymotors.com/eu/en/stock/bentley/mulsanne-speed-v8/details-jkdd3xv6"
+      ],
+      "id": "bentley-marbella"
+    },
+    {
+      "marca": "Rolls-Royce",
+      "ciudad": "Barcelona",
+      "zona": "cataluna",
+      "nombre": "Rolls-Royce Motor Cars Barcelona",
+      "direccion": null,
+      "telefono": null,
+      "estado": "por verificar (fuente antigua o única)",
+      "notas": "Anunciado como único concesionario de España (con Spirits of Speed Catalunya); artículo antiguo.",
+      "fuentes": [
+        "https://www.motorpasion.com/superlujo/rolls-royce-abrira-barcelona-su-unico-concesionario-espana-animada-auge-10-mercado-lujo"
+      ],
+      "id": "rolls-royce-barcelona"
+    },
+    {
+      "marca": "McLaren",
+      "ciudad": "Barcelona",
+      "zona": "cataluna",
+      "nombre": "McLaren Barcelona",
+      "direccion": null,
+      "telefono": null,
+      "estado": "por verificar (fuente antigua o única)",
+      "notas": "L'Hospitalet; anunciado en 2017-2018 como único concesionario, gestionado por Comercial Chelsea 1979.",
+      "fuentes": [
+        "https://www.motorpasion.com/industria/mclaren-barcelona-es-el-nuevo-y-unico-concesionario-de-la-firma-britanica-en-nuestro-pais"
+      ],
+      "id": "mclaren-barcelona"
+    }
+  ]
+}

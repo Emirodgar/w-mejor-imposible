@@ -1,0 +1,1553 @@
+{
+ "fuente": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+ "guia": "Guía MICHELIN España & Andorra 2026",
+ "gala": "2025-11-25",
+ "nota": "Sin Bib Gourmand ni Estrella Verde. Datos copiados de la lista oficial; revisar cada edición. Soldeu (Ibaya) es de Andorra.",
+ "restaurantes": [
+  {
+   "nombre": "Casa Marcial",
+   "ciudad": "Arriondas",
+   "estrellas": 3
+  },
+  {
+   "nombre": "ABaC",
+   "ciudad": "Barcelona",
+   "estrellas": 3
+  },
+  {
+   "nombre": "Cocina Hermanos Torres",
+   "ciudad": "Barcelona",
+   "estrellas": 3
+  },
+  {
+   "nombre": "Disfrutar",
+   "ciudad": "Barcelona",
+   "estrellas": 3,
+   "ref": "restaurantes/disfrutar"
+  },
+  {
+   "nombre": "Lasarte",
+   "ciudad": "Barcelona",
+   "estrellas": 3
+  },
+  {
+   "nombre": "Atrio",
+   "ciudad": "Cáceres",
+   "estrellas": 3
+  },
+  {
+   "nombre": "Noor",
+   "ciudad": "Córdoba",
+   "estrellas": 3
+  },
+  {
+   "nombre": "Quique Dacosta",
+   "ciudad": "Dénia",
+   "estrellas": 3,
+   "ref": "restaurantes/quique-dacosta"
+  },
+  {
+   "nombre": "Akelarre",
+   "ciudad": "San Sebastián",
+   "estrellas": 3
+  },
+  {
+   "nombre": "Arzak",
+   "ciudad": "San Sebastián",
+   "estrellas": 3,
+   "ref": "restaurantes/arzak"
+  },
+  {
+   "nombre": "Aponiente",
+   "ciudad": "El Puerto de Santa María",
+   "estrellas": 3,
+   "ref": "restaurantes/aponiente"
+  },
+  {
+   "nombre": "El Celler de Can Roca",
+   "ciudad": "Girona",
+   "estrellas": 3,
+   "ref": "restaurantes/el-celler-de-can-roca"
+  },
+  {
+   "nombre": "Azurmendi",
+   "ciudad": "Larrabetzu",
+   "estrellas": 3,
+   "ref": "restaurantes/azurmendi"
+  },
+  {
+   "nombre": "Martín Berasategui",
+   "ciudad": "Lasarte-Oria",
+   "estrellas": 3
+  },
+  {
+   "nombre": "DiverXO",
+   "ciudad": "Madrid",
+   "estrellas": 3,
+   "ref": "restaurantes/diverxo"
+  },
+  {
+   "nombre": "Cenador de Amós",
+   "ciudad": "Villaverde de Pontones",
+   "estrellas": 3
+  },
+  {
+   "nombre": "El Rincón de Juan Carlos",
+   "ciudad": "Adeje",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Maralba",
+   "ciudad": "Almansa",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Aleia",
+   "ciudad": "Barcelona",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Enigma",
+   "ciudad": "Barcelona",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Cinc Sentits",
+   "ciudad": "Barcelona",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Enoteca Paco Pérez",
+   "ciudad": "Barcelona",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Mont Bar",
+   "ciudad": "Barcelona",
+   "estrellas": 2
+  },
+  {
+   "nombre": "La Boscana",
+   "ciudad": "Bellvís",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Voro",
+   "ciudad": "Canyamel",
+   "estrellas": 2,
+   "ref": "restaurantes/voro"
+  },
+  {
+   "nombre": "Alevante",
+   "ciudad": "Chiclana de la Frontera",
+   "estrellas": 2
+  },
+  {
+   "nombre": "L'Escaleta",
+   "ciudad": "Cocentaina",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Bo.TiC",
+   "ciudad": "Corçà",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Venta Moncalvillo",
+   "ciudad": "Daroca de Rioja",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Amelia by Paulo Airaudo",
+   "ciudad": "San Sebastián",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Cabaña Buenavista",
+   "ciudad": "El Palmar",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Mugaritz",
+   "ciudad": "Errenteria",
+   "estrellas": 2,
+   "ref": "restaurantes/mugaritz"
+  },
+  {
+   "nombre": "El Portal de Echaurren",
+   "ciudad": "Ezcaray",
+   "estrellas": 2
+  },
+  {
+   "nombre": "M.B",
+   "ciudad": "Guía de Isora",
+   "estrellas": 2
+  },
+  {
+   "nombre": "LÚ Cocina y Alma",
+   "ciudad": "Jerez de la Frontera",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Miramar",
+   "ciudad": "Llançà",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Coque",
+   "ciudad": "Madrid",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Deessa",
+   "ciudad": "Madrid",
+   "estrellas": 2
+  },
+  {
+   "nombre": "DSTAgE",
+   "ciudad": "Madrid",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Paco Roncero (La Terraza del Casino)",
+   "ciudad": "Madrid",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Ramón Freixa Atelier",
+   "ciudad": "Madrid",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Smoked Room",
+   "ciudad": "Madrid",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Skina",
+   "ciudad": "Marbella",
+   "estrellas": 2,
+   "ref": "restaurantes/skina"
+  },
+  {
+   "nombre": "Culler de Pau",
+   "ciudad": "O Grove",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Les Cols",
+   "ciudad": "Olot",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Pepe Vieira",
+   "ciudad": "Raxó",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Bardal",
+   "ciudad": "Ronda",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Retiro da Costiña",
+   "ciudad": "Santa Comba",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Iván Cerdeño",
+   "ciudad": "Toledo",
+   "estrellas": 2
+  },
+  {
+   "nombre": "El Molino de Urdániz",
+   "ciudad": "Urdaitz",
+   "estrellas": 2
+  },
+  {
+   "nombre": "El Poblet",
+   "ciudad": "València",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Ricard Camarena",
+   "ciudad": "València",
+   "estrellas": 2
+  },
+  {
+   "nombre": "BonAmb",
+   "ciudad": "Xàbia",
+   "estrellas": 2
+  },
+  {
+   "nombre": "Ibaya",
+   "ciudad": "Soldeu",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Árbore da Veira",
+   "ciudad": "A Coruña",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Donaire",
+   "ciudad": "Adeje",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Haydée by Víctor Suárez",
+   "ciudad": "Adeje",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Il Bocconcino by Royal Hideaway",
+   "ciudad": "Adeje",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Nub",
+   "ciudad": "Adeje",
+   "estrellas": 1
+  },
+  {
+   "nombre": "San-Hô",
+   "ciudad": "Adeje",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Callizo",
+   "ciudad": "Aínsa",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Baeza & Rufete",
+   "ciudad": "Alacant",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ababol",
+   "ciudad": "Albacete",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Mesón Sabor Andaluz",
+   "ciudad": "Alcalá del Valle",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Citrus del Tancat",
+   "ciudad": "Alcanar",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Atalaya",
+   "ciudad": "Alcoseebre",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Boroa",
+   "ciudad": "Amorebieta-Etxano",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Revelía",
+   "ciudad": "Amorebieta-Etxano",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Solana",
+   "ciudad": "Ampuero",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ansils",
+   "ciudad": "Anciles",
+   "estrellas": 1
+  },
+  {
+   "nombre": "L'Aliança d'Anglès",
+   "ciudad": "Anglès",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Les Magnòlies",
+   "ciudad": "Arbúcies",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Corral del Indianu",
+   "ciudad": "Arriondas",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Barro",
+   "ciudad": "Ávila",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Etxebarri",
+   "ciudad": "Axpe",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Txispa",
+   "ciudad": "Axpe",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Vandelvira",
+   "ciudad": "Baeza",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Alkimia",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Angle",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Atempo",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Caelis",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "COME by Paco Méndez",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Dos Palillos",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Fishølogy",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Hisop",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Hofmann",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kamikaze",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Koy Shunka",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "MAE Barcelona",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Moments",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Prodigi",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Quirat",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "SCAPAR",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Slow & Low",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Suto",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Teatro kitchen & bar",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Via Veneto",
+   "ciudad": "Barcelona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "As Garzas",
+   "ciudad": "Barizo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Ermitaño",
+   "ciudad": "Benavente",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Raúl Resino",
+   "ciudad": "Benicarló",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Bernardi",
+   "ciudad": "Benissa",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Islares",
+   "ciudad": "Bilbao",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Mina",
+   "ciudad": "Bilbao",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Nerua Guggenheim Bilbao",
+   "ciudad": "Bilbao",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ola Martín Berasategui",
+   "ciudad": "Bilbao",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Zarate",
+   "ciudad": "Bilbao",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Cobo Evolución",
+   "ciudad": "Burgos",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ricardo Temiño",
+   "ciudad": "Burgos",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Código de Barra",
+   "ciudad": "Cádiz",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Mare",
+   "ciudad": "Cádiz",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Can Jubany",
+   "ciudad": "Calldetenes",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Audrey's",
+   "ciudad": "Calp",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Beat",
+   "ciudad": "Calp",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Orobianco",
+   "ciudad": "Calp",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Yayo Daporta",
+   "ciudad": "Cambados",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Can Bosch",
+   "ciudad": "Cambrils",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Rincón de Diego",
+   "ciudad": "Cambrils",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Canfranc Express",
+   "ciudad": "Canfranc-Estación",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Pico Velasco",
+   "ciudad": "Carasa",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Origen",
+   "ciudad": "Carcaixent",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Magoga",
+   "ciudad": "Cartagena",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Oba-",
+   "ciudad": "Casas-Ibáñez",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Emporium",
+   "ciudad": "Castelló d'Empúries",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Lera",
+   "ciudad": "Castroverde de Campos",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Choco",
+   "ciudad": "Córdoba",
+   "estrellas": 1
+  },
+  {
+   "nombre": "ReComiendo",
+   "ciudad": "Córdoba",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Quatre Molins",
+   "ciudad": "Cornudella de Montsant",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casas Colgadas Restaurante",
+   "ciudad": "Cuenca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Peix & Brases",
+   "ciudad": "Dénia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Garena",
+   "ciudad": "Dima",
+   "estrellas": 1
+  },
+  {
+   "nombre": "iBAi by Paulo Airaudo",
+   "ciudad": "San Sebastián",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Itzuli",
+   "ciudad": "San Sebastián",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kokotxa",
+   "ciudad": "San Sebastián",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Gaia",
+   "ciudad": "Eivissa",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Omakase by Walt",
+   "ciudad": "Eivissa",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Costa",
+   "ciudad": "El Ejido",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Tresmacarrons",
+   "ciudad": "El Masnou",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Finca",
+   "ciudad": "Elche",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Sa Clastra",
+   "ciudad": "Es Capdellà",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Terra",
+   "ciudad": "Fisterra",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Sollo",
+   "ciudad": "Fuengirola",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Andra Mari",
+   "ciudad": "Galdakao",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Elkano",
+   "ciudad": "Getaria",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Auga",
+   "ciudad": "Gijón",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Marcos",
+   "ciudad": "Gijón",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Malena",
+   "ciudad": "Gimenells",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Divinum",
+   "ciudad": "Girona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Massana",
+   "ciudad": "Girona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Faralá",
+   "ciudad": "Granada",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Fonda Xesc",
+   "ciudad": "Gombrèn",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Nublo",
+   "ciudad": "Haro",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Alameda",
+   "ciudad": "Hondarribia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Bicicleta",
+   "ciudad": "Hoznayo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Lillas Pastia",
+   "ciudad": "Huesca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Tatau",
+   "ciudad": "Huesca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Bohío",
+   "ciudad": "Illescas",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Bagá",
+   "ciudad": "Jaén",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Dama Juana",
+   "ciudad": "Jaén",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Malak",
+   "ciudad": "Jaén",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Radis",
+   "ciudad": "Jaén",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Mantúa",
+   "ciudad": "Jerez de la Frontera",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Xato",
+   "ciudad": "La Nucia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ca l'Enric",
+   "ciudad": "La Vall de Bianya",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Eneko",
+   "ciudad": "Larrabetzu",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Muxgo",
+   "ciudad": "Las Palmas de Gran Canaria",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Poemas by Hermanos Padrón",
+   "ciudad": "Las Palmas de Gran Canaria",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Tabaiba",
+   "ciudad": "Las Palmas de Gran Canaria",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Cocinandos",
+   "ciudad": "León",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Pablo",
+   "ciudad": "León",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Els Tinars",
+   "ciudad": "Llagostera",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Retiro",
+   "ciudad": "Llanes",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Andreu Genestra",
+   "ciudad": "Llucmajor",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ajonegro",
+   "ciudad": "Logroño",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ikaro",
+   "ciudad": "Logroño",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kiro Sushi",
+   "ciudad": "Logroño",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ochando",
+   "ciudad": "Los Rosales",
+   "estrellas": 1
+  },
+  {
+   "nombre": "A'Barra",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "CEBO",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Chispa Bistró",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Clos Madrid",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Corral de la Morería Gastronómico",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Desde 1911",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Invernadero",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "EMi",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Èter",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Gaytán",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Gofio",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Tasquería",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "OSA",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Pabú",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Quimbaya",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "RavioXO",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ricardo Sanz Wellington",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Saddle",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Santerra",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Sen Omakase",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Toki",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ugo Chan",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "VelascoAbellà",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Yugo The Bunker",
+   "ciudad": "Madrid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Blossom",
+   "ciudad": "Málaga",
+   "estrellas": 1
+  },
+  {
+   "nombre": "José Carlos García",
+   "ciudad": "Málaga",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kaleja",
+   "ciudad": "Málaga",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Palodú",
+   "ciudad": "Málaga",
+   "estrellas": 1
+  },
+  {
+   "nombre": "BACK",
+   "ciudad": "Marbella",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Messina",
+   "ciudad": "Marbella",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Nintai",
+   "ciudad": "Marbella",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Botica de Matapozuelos",
+   "ciudad": "Matapozuelos",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Alejandro Serrano",
+   "ciudad": "Miranda de Ebro",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Erre de Roca",
+   "ciudad": "Miranda de Ebro",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Los Guayres",
+   "ciudad": "Mogán",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Bakea",
+   "ciudad": "Mungia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Almo de Juan Guillamón",
+   "ciudad": "Murcia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Frases",
+   "ciudad": "Murcia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Fusion19",
+   "ciudad": "Muro",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Lobita",
+   "ciudad": "Navaleno",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Sala",
+   "ciudad": "Olost",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Pepa",
+   "ciudad": "Ondara",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Llavor",
+   "ciudad": "Oropesa del Mar",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ferpel Gastronómico",
+   "ciudad": "Ortiguera",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ceibe",
+   "ciudad": "Ourense",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Nova",
+   "ciudad": "Ourense",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Miguel González",
+   "ciudad": "Ourense",
+   "estrellas": 1
+  },
+  {
+   "nombre": "NM",
+   "ciudad": "Oviedo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "O'Pazo",
+   "ciudad": "Padrón",
+   "estrellas": 1
+  },
+  {
+   "nombre": "DINS Santi Taura",
+   "ciudad": "Palma",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Marc Fosh",
+   "ciudad": "Palma",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Zaranda",
+   "ciudad": "Palma",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Es Fum",
+   "ciudad": "Palmanova",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Europa",
+   "ciudad": "Pamplona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kabo",
+   "ciudad": "Pamplona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Rodero",
+   "ciudad": "Pamplona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Aquarela",
+   "ciudad": "Patalavaca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ambivium",
+   "ciudad": "Peñafiel",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Castell Perelada",
+   "ciudad": "Peralada",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Taste 1973",
+   "ciudad": "Playa de las Américas",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kamezí",
+   "ciudad": "Playa Blanca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Mu•na",
+   "ciudad": "Ponferrada",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Eirado",
+   "ciudad": "Pontevedra",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Voramar",
+   "ciudad": "Portbou",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Maca de Castro",
+   "ciudad": "Port d'Alcúdia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ancestral",
+   "ciudad": "Pozuelo de Alarcón",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Gerardo",
+   "ciudad": "Prendes",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Taller Seve Díaz",
+   "ciudad": "Puerto de la Cruz",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Taller Arzuaga",
+   "ciudad": "Quintanilla de Onésimo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ayalga",
+   "ciudad": "Ribadesella",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Els Casals",
+   "ciudad": "Sagàs",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Arrels",
+   "ciudad": "Sagunt",
+   "estrellas": 1
+  },
+  {
+   "nombre": "En la Parra",
+   "ciudad": "Salamanca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Víctor Gutiérrez",
+   "ciudad": "Salamanca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Real Balneario",
+   "ciudad": "Salinas",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Deliranto",
+   "ciudad": "Salou",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Simposio",
+   "ciudad": "San Antonio de Benagéber",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Monte",
+   "ciudad": "San Feliz",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Montia",
+   "ciudad": "San Lorenzo de El Escorial",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Solla",
+   "ciudad": "San Salvador de Poio",
+   "estrellas": 1
+  },
+  {
+   "nombre": "L'Ó",
+   "ciudad": "Sant Fruitós de Bages",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Unic",
+   "ciudad": "Sant Josep de sa Talaia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Esperit Roca",
+   "ciudad": "Sant Julià de Ramis",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Nova",
+   "ciudad": "Sant Martí Sarroca",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Lluerna",
+   "ciudad": "Santa Coloma de Gramenet",
+   "estrellas": 1
+  },
+  {
+   "nombre": "ARREA!",
+   "ciudad": "Santa Cruz de Campezo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casona del Judío",
+   "ciudad": "Santander",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Serbal",
+   "ciudad": "Santander",
+   "estrellas": 1
+  },
+  {
+   "nombre": "A Tafona",
+   "ciudad": "Santiago de Compostela",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Marcelo",
+   "ciudad": "Santiago de Compostela",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Simpar",
+   "ciudad": "Santiago de Compostela",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Era de los Nogales",
+   "ciudad": "Sardas",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Refectorio",
+   "ciudad": "Sardón de Duero",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Abantal",
+   "ciudad": "Sevilla",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Cañabota",
+   "ciudad": "Sevilla",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Doncel",
+   "ciudad": "Sigüenza",
+   "estrellas": 1
+  },
+  {
+   "nombre": "El Molino de Alcuneza",
+   "ciudad": "Sigüenza",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Vértigo",
+   "ciudad": "Sober",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Béns d'Avall",
+   "ciudad": "Sóller",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Fogony",
+   "ciudad": "Sort",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Raíces-Carlos Maldonado",
+   "ciudad": "Talavera de la Reina",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Rubén",
+   "ciudad": "Tella",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Ama",
+   "ciudad": "Tolosa",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Epílogo",
+   "ciudad": "Tomelloso",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Coto de Quevedo Evolución",
+   "ciudad": "Torre de Juan Abad",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Retama",
+   "ciudad": "Torrenueva",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Regueiro",
+   "ciudad": "Tox",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Hospedería El Batán",
+   "ciudad": "Tramacastilla",
+   "estrellas": 1
+  },
+  {
+   "nombre": "L'Antic Molí",
+   "ciudad": "Ulldecona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Les Moles",
+   "ciudad": "Ulldecona",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Casa de Manolo Franco",
+   "ciudad": "Valdemorillo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Chirón",
+   "ciudad": "Valdemoro",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Fierro",
+   "ciudad": "València",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Fraula",
+   "ciudad": "València",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Kaido Sushi Bar",
+   "ciudad": "València",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Salita",
+   "ciudad": "València",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Lienzo",
+   "ciudad": "València",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Riff",
+   "ciudad": "València",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Cal Paradís",
+   "ciudad": "Vall d'Alba",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Alquimia – Laboratorio",
+   "ciudad": "Valladolid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Trigo",
+   "ciudad": "Valladolid",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Casa Arcas",
+   "ciudad": "Villanova",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Maruja Limón",
+   "ciudad": "Vigo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Silabario",
+   "ciudad": "Vigo",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Rubén Miralles",
+   "ciudad": "Vinaròs",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Tula",
+   "ciudad": "Xàbia",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Villa Retiro",
+   "ciudad": "Xerta",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Barahonda",
+   "ciudad": "Yecla",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Gente Rara",
+   "ciudad": "Zaragoza",
+   "estrellas": 1
+  },
+  {
+   "nombre": "La Prensa",
+   "ciudad": "Zaragoza",
+   "estrellas": 1
+  },
+  {
+   "nombre": "Versátil",
+   "ciudad": "Zarza de Granadilla",
+   "estrellas": 1
+  }
+ ]
+}
