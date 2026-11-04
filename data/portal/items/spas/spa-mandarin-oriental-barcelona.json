@@ -1,0 +1,33 @@
+{
+  "id": "spas/spa-mandarin-oriental-barcelona",
+  "categoria": "spas",
+  "nombre": "The Spa · Mandarin Oriental Barcelona",
+  "lugar": "Barcelona · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "spa urbano del hotel"
+  },
+  "por_que": {
+    "es": "Nominado en 2026 a mejor spa de hotel de España, en el Passeig de Gràcia."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Nominado 2026",
+    "tipo": "Spa de hotel"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "ref": "hoteles-de-lujo/mandarin-oriental-barcelona"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-hotel-spa/2026"
+  ],
+  "busqueda": "Mandarin Oriental Barcelona",
+  "coordenadas": {
+    "lat": 41.39138,
+    "lon": 2.16691
+  },
+  "geo_fuente": "Mandarin Oriental, 38-40, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eix"
+}

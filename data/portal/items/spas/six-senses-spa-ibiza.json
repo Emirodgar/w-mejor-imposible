@@ -1,0 +1,34 @@
+{
+  "id": "spas/six-senses-spa-ibiza",
+  "categoria": "spas",
+  "nombre": "Six Senses Spa Ibiza",
+  "lugar": "Sant Joan de Labritja · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "bahía de Xarraca"
+  },
+  "por_que": {
+    "es": "Nominado en 2026 a mejor spa de resort y mejor retiro de bienestar de España."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Nominado 2026",
+    "tipo": "Spa de resort"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "nombre": "Six Senses Ibiza"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026",
+    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026"
+  ],
+  "busqueda": "Six Senses Ibiza Portinatx",
+  "coordenadas": {
+    "lat": 39.11083,
+    "lon": 1.50782
+  },
+  "geo_fuente": "Six Senses Ibiza, 71, Carrer de Camí de sa Torre, Portinatx, Sant Joan de Labritja, Eiviss"
+}

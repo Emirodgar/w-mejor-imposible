@@ -1,0 +1,27 @@
+{
+  "id": "spas/sha-spain",
+  "categoria": "spas",
+  "nombre": "SHA Spain",
+  "lugar": "Alfaz del Pi · Alicante",
+  "zona": "resto",
+  "foto": {
+    "es": "jardín del centro de bienestar"
+  },
+  "por_que": {
+    "es": "Mejor retiro de bienestar de España en los World Spa Awards 2026, y ganador también en 2025."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Ganador 2026",
+    "tipo": "Retiro de bienestar"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026"
+  ],
+  "busqueda": "SHA Wellness Clinic Albir",
+  "coordenadas": {
+    "lat": 38.55991,
+    "lon": -0.07372
+  },
+  "geo_fuente": "Sha Wellness Clinic, Carrer Verderol, l'Albir, l'Alfàs del Pi, la Marina Baixa, Alacant / "
+}

@@ -1,0 +1,34 @@
+{
+  "id": "spas/pure-seven-7pines-ibiza",
+  "categoria": "spas",
+  "nombre": "Pure Seven · 7Pines Resort Ibiza",
+  "lugar": "Sant Josep de sa Talaia · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "terraza sobre el mar"
+  },
+  "por_que": {
+    "es": "Nominado en 2026 a mejor spa de resort y mejor retiro de bienestar de España."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Nominado 2026",
+    "tipo": "Spa de resort"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "nombre": "7Pines Resort Ibiza"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026",
+    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026"
+  ],
+  "busqueda": "Cala Codolar Sant Josep de sa Talaia",
+  "coordenadas": {
+    "lat": 38.95196,
+    "lon": 1.22569
+  },
+  "geo_fuente": "Puig des Delfí, Urbanització Cala Tarida, Sant Josep de sa Talaia, Eivissa, Illes Balears,"
+}

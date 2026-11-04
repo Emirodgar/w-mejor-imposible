@@ -1,0 +1,33 @@
+{
+  "id": "spas/spa-four-seasons-formentor",
+  "categoria": "spas",
+  "nombre": "The Spa · Four Seasons Resort Mallorca at Formentor",
+  "lugar": "Pollença · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "piscina climatizada"
+  },
+  "por_que": {
+    "es": "Nominado en 2026 a mejor spa de resort de España."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Nominado 2026",
+    "tipo": "Spa de resort"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "ref": "hoteles-de-lujo/four-seasons-formentor"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026"
+  ],
+  "busqueda": "Hotel Formentor Pollença",
+  "coordenadas": {
+    "lat": 39.92675,
+    "lon": 3.14483
+  },
+  "geo_fuente": "Formentor, Carrer de Formentor, Pollença, Serra de Tramuntana, Illes Balears, España"
+}

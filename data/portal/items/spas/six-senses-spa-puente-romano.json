@@ -1,0 +1,34 @@
+{
+  "id": "spas/six-senses-spa-puente-romano",
+  "categoria": "spas",
+  "nombre": "Six Senses Spa · Puente Romano",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "jardín mediterráneo"
+  },
+  "por_que": {
+    "es": "Nominado en 2026 a mejor spa de resort de España. Fue el ganador de esa categoría en 2023."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Nominado 2026",
+    "tipo": "Spa de resort"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "nombre": "Puente Romano Beach Resort"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026",
+    "https://theluxuryeditor.com/news/kempinski-hotel-bahia-scoops-spains-best-hotel-spa-in-the-world-spa-awards/"
+  ],
+  "busqueda": "Puente Romano Marbella",
+  "coordenadas": {
+    "lat": 36.50366,
+    "lon": -4.92558
+  },
+  "geo_fuente": "Puente Romano Marbella, Urbanización Torre Verde, Urbanización Los Verdales, El Vicario, M"
+}

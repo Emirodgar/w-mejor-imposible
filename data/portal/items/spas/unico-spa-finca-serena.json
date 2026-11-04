@@ -1,0 +1,34 @@
+{
+  "id": "spas/unico-spa-finca-serena",
+  "categoria": "spas",
+  "nombre": "Único Spa · Finca Serena Mallorca",
+  "lugar": "Montuïri · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "finca entre almendros"
+  },
+  "por_que": {
+    "es": "Mejor spa de resort de España en 2025 y nominado de nuevo en 2026."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Ganador 2025",
+    "tipo": "Spa de resort"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "nombre": "Finca Serena Mallorca"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026",
+    "https://worldspaawards.com/award/spain-best-resort-spa/2025"
+  ],
+  "busqueda": "Finca Serena Mallorca",
+  "coordenadas": {
+    "lat": 39.58847,
+    "lon": 2.9469
+  },
+  "geo_fuente": "Hotel Finca Serena, 3, Ma-3200, Na Païssa, Montuïri, Pla de Mallorca, Illes Balears, 07230"
+}

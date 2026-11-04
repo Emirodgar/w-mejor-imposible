@@ -1,0 +1,33 @@
+{
+  "id": "spas/arabella-spa-st-regis-mardavall",
+  "categoria": "spas",
+  "nombre": "Arabella Spa · The St. Regis Mardavall",
+  "lugar": "Calvià · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "sala de tratamientos con vistas"
+  },
+  "por_que": {
+    "es": "Mejor spa de resort de España en los World Spa Awards 2026."
+  },
+  "ficha": {
+    "galardon": "World Spa Awards: Ganador 2026",
+    "tipo": "Spa de resort"
+  },
+  "cerca": [
+    {
+      "tipo": "hotel",
+      "nota": "en el propio hotel",
+      "nombre": "The St. Regis Mardavall Mallorca Resort"
+    }
+  ],
+  "fuentes": [
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026"
+  ],
+  "busqueda": "Mardavall Hotel Costa d'en Blanes",
+  "coordenadas": {
+    "lat": 39.52784,
+    "lon": 2.55071
+  },
+  "geo_fuente": "Mardavall, Ma-1C, Costa d'en Blanes, Son Caliu, Calvià, Serra de Tramuntana, Illes Balears"
+}

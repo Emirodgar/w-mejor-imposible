@@ -271,8 +271,8 @@
       "es": "piscina interior"
     },
     "ficha": [
-      "[N] m²",
-      "[N] tratamientos"
+      "{galardon}",
+      "{tipo}"
     ],
     "cerca": [
       "Hotel",
@@ -280,7 +280,7 @@
       "Aeropuerto"
     ],
     "como_ordenamos": {
-      "es": "Instalaciones, tratamientos, equipo y entorno. Ningún spa paga por estar."
+      "es": "Ganadores y nominados españoles de los World Spa Awards 2026, que se deciden en parte por voto público, más la valoración editorial de instalaciones y entorno. Ningún spa paga por estar."
     },
     "placeholder": [
       {
