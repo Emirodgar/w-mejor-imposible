@@ -16,19 +16,16 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf",
-      "ref": "golf/club-de-golf-alcanada",
-      "min": 30
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Palma",
-      "min": 60
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Canyamel Capdepera",
+  "geo_precision": "localidad",
+  "coordenadas": {
+    "lat": 39.65685,
+    "lon": 3.43976
+  },
+  "geo_fuente": "Canyamel, Capdepera, Llevant, Illes Balears, 07589, España"
 }

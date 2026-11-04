@@ -18,17 +18,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Gibraltar",
-      "min": 30
     }
   ],
   "fuentes": [
     "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
-  ]
+  ],
+  "busqueda": "Sotogrande Golf Club",
+  "coordenadas": {
+    "lat": 36.28009,
+    "lon": -5.29189
+  },
+  "geo_fuente": "Real Club de Golf de Sotogrande, Paseo del Parque, Sotogrande, San Roque, Campo de Gibralt"
 }

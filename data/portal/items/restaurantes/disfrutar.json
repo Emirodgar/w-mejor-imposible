@@ -17,19 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf",
-      "ref": "golf/real-club-de-golf-el-prat",
-      "min": 35
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Barcelona-El Prat",
-      "min": 25
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Disfrutar Barcelona",
+  "coordenadas": {
+    "lat": 41.38776,
+    "lon": 2.15317
+  },
+  "geo_fuente": "Disfrutar, 163, Carrer de Villarroel, l'Antiga Esquerra de l'Eixample, l'Eixample, Barcelo"
 }

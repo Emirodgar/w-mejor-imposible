@@ -17,19 +17,16 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf",
-      "ref": "golf/club-de-campo-villa-de-madrid",
-      "min": 25
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Madrid-Barajas",
-      "min": 20
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "NH Collection Madrid Eurobuilding",
+  "geo_precision": "edificio (el restaurante está en el hotel NH Eurobuilding)",
+  "coordenadas": {
+    "lat": 40.45839,
+    "lon": -3.68597
+  },
+  "geo_fuente": "NH Eurobuilding, 23, Calle del Padre Damián, Hispanoamérica, Chamartín, Madrid, Comunidad "
 }

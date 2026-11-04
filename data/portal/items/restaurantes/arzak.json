@@ -17,17 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de San Sebastián",
-      "min": 25
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Arzak San Sebastián",
+  "coordenadas": {
+    "lat": 43.31172,
+    "lon": -2.00689
+  },
+  "geo_fuente": "Antonio Arzak kalea, Bentaberri, Antiguo-Ondarreta, Mendebaldea, Donostia / San Sebastián,"
 }

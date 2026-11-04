@@ -17,17 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Jerez",
-      "min": 25
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Aponiente El Puerto de Santa María",
+  "coordenadas": {
+    "lat": 36.60334,
+    "lon": -6.21669
+  },
+  "geo_fuente": "Aponiente, Calle Francisco Cossi Ochoa, El Tejar, Sudamérica, El Puerto de Santa María, Ba"
 }

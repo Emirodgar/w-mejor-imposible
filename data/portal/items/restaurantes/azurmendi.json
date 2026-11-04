@@ -17,17 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Bilbao",
-      "min": 15
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Azurmendi Larrabetzu",
+  "coordenadas": {
+    "lat": 43.26085,
+    "lon": -2.81517
+  },
+  "geo_fuente": "Restaurante Azurmendi, Txorierriko korridorea, Larrabetzu, Bizkaia, Euskadi, 48195, España"
 }

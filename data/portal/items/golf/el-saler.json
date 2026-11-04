@@ -20,17 +20,15 @@
       "tipo": "hotel",
       "nombre": "Parador de El Saler",
       "nota": "junto al campo"
-    },
-    {
-      "tipo": "restaurante"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Valencia",
-      "min": 30
     }
   ],
   "fuentes": [
     "https://www.top100golfcourses.com/golf-course/el-saler"
-  ]
+  ],
+  "busqueda": "Campo de Golf El Saler Valencia",
+  "coordenadas": {
+    "lat": 39.31885,
+    "lon": -0.30217
+  },
+  "geo_fuente": "Golf Parador de El Saler, 151, Carretera València - Sueca (pel Saler), el Saler, Pobles de"
 }

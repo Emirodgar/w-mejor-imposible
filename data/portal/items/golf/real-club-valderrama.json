@@ -18,18 +18,16 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Gibraltar",
-      "min": 30
     }
   ],
   "fuentes": [
     "https://www.top100golfcourses.com/news/best-golf-courses-in-spain",
     "https://en.wikipedia.org/wiki/Valderrama_Golf_Club"
-  ]
+  ],
+  "busqueda": "Valderrama Golf Club San Roque",
+  "coordenadas": {
+    "lat": 36.2855,
+    "lon": -5.32522
+  },
+  "geo_fuente": "Club de Golf Valderrama, Avenida Los Cortijos, San Roque, Campo de Gibraltar, Cádiz, Andal"
 }

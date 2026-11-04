@@ -17,17 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Alicante-Elche",
-      "min": 65
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Quique Dacosta Dénia",
+  "coordenadas": {
+    "lat": 38.85374,
+    "lon": 0.0851
+  },
+  "geo_fuente": "Quique Dacosta Restaurant, Carretera de les Marines, les Marines, Dénia, la Marina Alta, A"
 }

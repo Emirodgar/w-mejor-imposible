@@ -17,19 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf",
-      "ref": "golf/camiral-stadium",
-      "min": 30
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Girona-Costa Brava",
-      "min": 15
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "El Celler de Can Roca Girona",
+  "coordenadas": {
+    "lat": 41.9934,
+    "lon": 2.80777
+  },
+  "geo_fuente": "El Celler de Can Roca, 48, Carrer de Can Sunyer, Domeny, Girona, Gironès, Girona, Cataluny"
 }

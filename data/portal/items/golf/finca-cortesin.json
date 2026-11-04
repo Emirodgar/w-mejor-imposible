@@ -20,17 +20,15 @@
       "tipo": "hotel",
       "nombre": "Finca Cortesín",
       "nota": "en el propio resort"
-    },
-    {
-      "tipo": "restaurante"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Málaga",
-      "min": 55
     }
   ],
   "fuentes": [
     "https://www.golfmonthly.com/travel/spain/finca-cortesin-golf-course-review-148560"
-  ]
+  ],
+  "busqueda": "Finca Cortesín Casares",
+  "coordenadas": {
+    "lat": 36.39646,
+    "lon": -5.22386
+  },
+  "geo_fuente": "Hotel Finca Cortesín Golf and Spa, MA-8300, Casares del Sol, Casares, Costa del Sol Occide"
 }

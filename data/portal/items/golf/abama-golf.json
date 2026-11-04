@@ -20,17 +20,15 @@
       "tipo": "hotel",
       "nombre": "The Ritz-Carlton, Abama",
       "nota": "en el propio resort"
-    },
-    {
-      "tipo": "restaurante"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Tenerife Sur",
-      "min": 35
     }
   ],
   "fuentes": [
     "https://www.golfbreaks.com/en-gb/holidays/tenerife/abama-hotel/abama-golf/"
-  ]
+  ],
+  "busqueda": "Abama Golf Guía de Isora",
+  "coordenadas": {
+    "lat": 28.17189,
+    "lon": -16.78214
+  },
+  "geo_fuente": "Abama Golf, 2, TF-47, Abama, Piedra Hincada, Adeje, Santa Cruz de Tenerife, Canarias, 3868"
 }

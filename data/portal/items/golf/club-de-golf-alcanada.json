@@ -18,19 +18,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante",
-      "ref": "restaurantes/voro",
-      "min": 30
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Palma",
-      "min": 60
     }
   ],
   "fuentes": [
     "https://www.rtj2.com/news/golf-mallorca-views-and-conditioning-write-home-about"
-  ]
+  ],
+  "busqueda": "Club de Golf Alcanada Alcúdia",
+  "coordenadas": {
+    "lat": 39.84372,
+    "lon": 3.1693
+  },
+  "geo_fuente": "Club de Golf Alcanada, Camí de la Muntanya, Alcanada, Alcúdia, Raiguer, Illes Balears, 074"
 }

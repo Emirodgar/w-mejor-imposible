@@ -8,10 +8,14 @@ Datos (un archivo por elemento, con referencias cruzadas por id "categoria/slug"
   data/portal/items/<cat>/<slug>.json  un lugar (campo, restaurante...)
   data/portal/rankings/<cat>.json      orden del top 10 (lista de ids); si no existe, se usan placeholders
   data/portal/planes/<slug>.json       un plan completo; sus pasos apuntan a ítems por id
+  data/portal/aeropuertos.json         aeropuertos con coordenadas ("Lo mejor cerca" se calcula con ellas)
+Las coordenadas se obtienen con scripts/portal/geocode.py; "Lo mejor cerca" (restaurante, golf, aeropuerto)
+se calcula por distancia a partir de ellas, salvo que el ítem lo fije a mano en "cerca".
 Los textos van como {"es": "..."} para añadir en/fr/de/pt/it sin cambiar la estructura.
 """
 import html
 import json
+import math
 import os
 import re
 
@@ -189,15 +193,58 @@ def spec_text(cat, ficha):
     return ' · '.join(parts)
 
 
+AIRPORTS = load('aeropuertos.json')['aeropuertos']
+MAX_KM = 75  # radio máximo para sugerir un restaurante o un campo "cerca"
+
+
+def coords(x):
+    c = x.get('coordenadas')
+    return (c['lat'], c['lon']) if c else None
+
+
+def haversine_km(a, b):
+    lat1, lon1, lat2, lon2 = map(math.radians, (*a, *b))
+    h = math.sin((lat2 - lat1) / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2
+    return 6371 * 2 * math.asin(math.sqrt(h))
+
+
+def drive_min(km):
+    """Estimación: trazado ~25 % más largo que la línea recta, a 70 km/h de media, más 5 min de salida/llegada; redondeo a 5 min."""
+    return max(5, int(round((km * 1.25 / 70 * 60 + 5) / 5)) * 5)
+
+
+def nearest(item, tipo):
+    """Busca automáticamente lo más cercano a un ítem por coordenadas (None si no hay o está lejos)."""
+    here = coords(item or {})
+    if not here:
+        return None
+    if tipo == 'aeropuerto':
+        pool = [(a['nombre'], None, a) for a in AIRPORTS if coords(a)]
+    elif tipo in ('restaurante', 'golf'):
+        cat = 'restaurantes' if tipo == 'restaurante' else 'golf'
+        pool = [(i['nombre'], i['id'], i) for i in ITEMS.values()
+                if i['categoria'] == cat and i['id'] != item['id'] and coords(i)]
+    else:
+        return None
+    best = min(((haversine_km(here, coords(x)), n, ref) for n, ref, x in pool), default=None)
+    if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM):
+        return None
+    return dict(tipo=tipo, nombre=best[1], ref=best[2], min=drive_min(best[0]))
+
+
 def near_tiles(cat, item):
     tiles = ''
     for label in CATS[cat]['cerca']:
         tipo = LABEL_TIPO.get(label, label.lower())
-        entry = next((c for c in (item or {}).get('cerca', []) if c['tipo'] == tipo), None)
+        # lo escrito a mano en el ítem manda; si no hay, se calcula por coordenadas
+        entry = next((c for c in (item or {}).get('cerca', []) if c['tipo'] == tipo), None) or nearest(item, tipo)
         name = href = None
         if entry:
             if entry.get('ref'):
-                name, href = ITEMS[entry['ref']]['nombre'], item_url(entry['ref'])
+                ref_item = ITEMS[entry['ref']]
+                name, href = ref_item['nombre'], item_url(entry['ref'])
+                if not entry.get('min') and coords(item) and coords(ref_item):
+                    entry = dict(entry, min=drive_min(haversine_km(coords(item), coords(ref_item))))
             else:
                 name = entry.get('nombre')
         if name:

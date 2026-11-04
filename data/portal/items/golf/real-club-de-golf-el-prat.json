@@ -18,19 +18,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante",
-      "ref": "restaurantes/disfrutar",
-      "min": 35
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Barcelona-El Prat",
-      "min": 40
     }
   ],
   "fuentes": [
     "https://www.golfmagic.com/courses/western-europe/real-club-de-golf-el-prat-course-review"
-  ]
+  ],
+  "busqueda": "Real Club de Golf El Prat Terrassa",
+  "coordenadas": {
+    "lat": 41.57351,
+    "lon": 2.05389
+  },
+  "geo_fuente": "Real Club de Golf el Prat, 17, masia de Can Bonvilar, Terrassa, Vallès Occidental, Barcelo"
 }

@@ -18,19 +18,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante",
-      "ref": "restaurantes/diverxo",
-      "min": 25
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Madrid-Barajas",
-      "min": 30
     }
   ],
   "fuentes": [
     "https://en.wikipedia.org/wiki/Club_de_Campo_Villa_de_Madrid"
-  ]
+  ],
+  "busqueda": "Club de Campo Villa de Madrid",
+  "coordenadas": {
+    "lat": 40.44745,
+    "lon": -3.7454
+  },
+  "geo_fuente": "Club de Campo Villa de Madrid, Anillo Verde Ciclista, Ciudad Universitaria, Moncloa-Aravac"
 }

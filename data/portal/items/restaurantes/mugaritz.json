@@ -17,17 +17,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "golf"
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de San Sebastián",
-      "min": 15
     }
   ],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
-  ]
+  ],
+  "busqueda": "Mugaritz Errenteria",
+  "coordenadas": {
+    "lat": 43.27236,
+    "lon": -1.91723
+  },
+  "geo_fuente": "Mugaritz, 20, Aldura gunea, Aldura Gunea, Errenteria, Gipuzkoa, Euskadi, 20100, España"
 }

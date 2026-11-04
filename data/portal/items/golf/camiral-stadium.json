@@ -18,20 +18,16 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante",
-      "ref": "restaurantes/el-celler-de-can-roca",
-      "min": 30
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Girona-Costa Brava",
-      "min": 20
     }
   ],
   "fuentes": [
     "https://www.golfmonthly.com/news/camiral-ryder-cup-2031-things-to-know",
     "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
-  ]
+  ],
+  "busqueda": "Camiral Golf Caldes de Malavella",
+  "coordenadas": {
+    "lat": 41.85555,
+    "lon": 2.76993
+  },
+  "geo_fuente": "LAVIDA Hotel, Carrer del Suro, Sector Residencial Golf, Caldes de Malavella, la Selva, Gir"
 }

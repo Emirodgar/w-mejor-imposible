@@ -18,19 +18,15 @@
   "cerca": [
     {
       "tipo": "hotel"
-    },
-    {
-      "tipo": "restaurante",
-      "ref": "restaurantes/skina",
-      "min": 15
-    },
-    {
-      "tipo": "aeropuerto",
-      "nombre": "Aeropuerto de Málaga",
-      "min": 40
     }
   ],
   "fuentes": [
     "https://www.golfpass.com/courses/23547-real-club-de-golf-las-brisas/"
-  ]
+  ],
+  "busqueda": "Real Club de Golf Las Brisas Marbella",
+  "coordenadas": {
+    "lat": 36.50542,
+    "lon": -4.96799
+  },
+  "geo_fuente": "Real Club de Golf Las Brisas, 1, Calle Londres, Marbella River Garden, Nueva Andalucía, Sa"
 }
