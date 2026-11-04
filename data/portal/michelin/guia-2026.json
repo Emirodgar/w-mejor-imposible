@@ -1,1553 +1,3088 @@
 {
- "fuente": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
- "guia": "Guía MICHELIN España & Andorra 2026",
- "gala": "2025-11-25",
- "nota": "Sin Bib Gourmand ni Estrella Verde. Datos copiados de la lista oficial; revisar cada edición. Soldeu (Ibaya) es de Andorra.",
- "restaurantes": [
-  {
-   "nombre": "Casa Marcial",
-   "ciudad": "Arriondas",
-   "estrellas": 3
-  },
-  {
-   "nombre": "ABaC",
-   "ciudad": "Barcelona",
-   "estrellas": 3
-  },
-  {
-   "nombre": "Cocina Hermanos Torres",
-   "ciudad": "Barcelona",
-   "estrellas": 3
-  },
-  {
-   "nombre": "Disfrutar",
-   "ciudad": "Barcelona",
-   "estrellas": 3,
-   "ref": "restaurantes/disfrutar"
-  },
-  {
-   "nombre": "Lasarte",
-   "ciudad": "Barcelona",
-   "estrellas": 3
-  },
-  {
-   "nombre": "Atrio",
-   "ciudad": "Cáceres",
-   "estrellas": 3
-  },
-  {
-   "nombre": "Noor",
-   "ciudad": "Córdoba",
-   "estrellas": 3
-  },
-  {
-   "nombre": "Quique Dacosta",
-   "ciudad": "Dénia",
-   "estrellas": 3,
-   "ref": "restaurantes/quique-dacosta"
-  },
-  {
-   "nombre": "Akelarre",
-   "ciudad": "San Sebastián",
-   "estrellas": 3
-  },
-  {
-   "nombre": "Arzak",
-   "ciudad": "San Sebastián",
-   "estrellas": 3,
-   "ref": "restaurantes/arzak"
-  },
-  {
-   "nombre": "Aponiente",
-   "ciudad": "El Puerto de Santa María",
-   "estrellas": 3,
-   "ref": "restaurantes/aponiente"
-  },
-  {
-   "nombre": "El Celler de Can Roca",
-   "ciudad": "Girona",
-   "estrellas": 3,
-   "ref": "restaurantes/el-celler-de-can-roca"
-  },
-  {
-   "nombre": "Azurmendi",
-   "ciudad": "Larrabetzu",
-   "estrellas": 3,
-   "ref": "restaurantes/azurmendi"
-  },
-  {
-   "nombre": "Martín Berasategui",
-   "ciudad": "Lasarte-Oria",
-   "estrellas": 3
-  },
-  {
-   "nombre": "DiverXO",
-   "ciudad": "Madrid",
-   "estrellas": 3,
-   "ref": "restaurantes/diverxo"
-  },
-  {
-   "nombre": "Cenador de Amós",
-   "ciudad": "Villaverde de Pontones",
-   "estrellas": 3
-  },
-  {
-   "nombre": "El Rincón de Juan Carlos",
-   "ciudad": "Adeje",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Maralba",
-   "ciudad": "Almansa",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Aleia",
-   "ciudad": "Barcelona",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Enigma",
-   "ciudad": "Barcelona",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Cinc Sentits",
-   "ciudad": "Barcelona",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Enoteca Paco Pérez",
-   "ciudad": "Barcelona",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Mont Bar",
-   "ciudad": "Barcelona",
-   "estrellas": 2
-  },
-  {
-   "nombre": "La Boscana",
-   "ciudad": "Bellvís",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Voro",
-   "ciudad": "Canyamel",
-   "estrellas": 2,
-   "ref": "restaurantes/voro"
-  },
-  {
-   "nombre": "Alevante",
-   "ciudad": "Chiclana de la Frontera",
-   "estrellas": 2
-  },
-  {
-   "nombre": "L'Escaleta",
-   "ciudad": "Cocentaina",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Bo.TiC",
-   "ciudad": "Corçà",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Venta Moncalvillo",
-   "ciudad": "Daroca de Rioja",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Amelia by Paulo Airaudo",
-   "ciudad": "San Sebastián",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Cabaña Buenavista",
-   "ciudad": "El Palmar",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Mugaritz",
-   "ciudad": "Errenteria",
-   "estrellas": 2,
-   "ref": "restaurantes/mugaritz"
-  },
-  {
-   "nombre": "El Portal de Echaurren",
-   "ciudad": "Ezcaray",
-   "estrellas": 2
-  },
-  {
-   "nombre": "M.B",
-   "ciudad": "Guía de Isora",
-   "estrellas": 2
-  },
-  {
-   "nombre": "LÚ Cocina y Alma",
-   "ciudad": "Jerez de la Frontera",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Miramar",
-   "ciudad": "Llançà",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Coque",
-   "ciudad": "Madrid",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Deessa",
-   "ciudad": "Madrid",
-   "estrellas": 2
-  },
-  {
-   "nombre": "DSTAgE",
-   "ciudad": "Madrid",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Paco Roncero (La Terraza del Casino)",
-   "ciudad": "Madrid",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Ramón Freixa Atelier",
-   "ciudad": "Madrid",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Smoked Room",
-   "ciudad": "Madrid",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Skina",
-   "ciudad": "Marbella",
-   "estrellas": 2,
-   "ref": "restaurantes/skina"
-  },
-  {
-   "nombre": "Culler de Pau",
-   "ciudad": "O Grove",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Les Cols",
-   "ciudad": "Olot",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Pepe Vieira",
-   "ciudad": "Raxó",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Bardal",
-   "ciudad": "Ronda",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Retiro da Costiña",
-   "ciudad": "Santa Comba",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Iván Cerdeño",
-   "ciudad": "Toledo",
-   "estrellas": 2
-  },
-  {
-   "nombre": "El Molino de Urdániz",
-   "ciudad": "Urdaitz",
-   "estrellas": 2
-  },
-  {
-   "nombre": "El Poblet",
-   "ciudad": "València",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Ricard Camarena",
-   "ciudad": "València",
-   "estrellas": 2
-  },
-  {
-   "nombre": "BonAmb",
-   "ciudad": "Xàbia",
-   "estrellas": 2
-  },
-  {
-   "nombre": "Ibaya",
-   "ciudad": "Soldeu",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Árbore da Veira",
-   "ciudad": "A Coruña",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Donaire",
-   "ciudad": "Adeje",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Haydée by Víctor Suárez",
-   "ciudad": "Adeje",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Il Bocconcino by Royal Hideaway",
-   "ciudad": "Adeje",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Nub",
-   "ciudad": "Adeje",
-   "estrellas": 1
-  },
-  {
-   "nombre": "San-Hô",
-   "ciudad": "Adeje",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Callizo",
-   "ciudad": "Aínsa",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Baeza & Rufete",
-   "ciudad": "Alacant",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ababol",
-   "ciudad": "Albacete",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Mesón Sabor Andaluz",
-   "ciudad": "Alcalá del Valle",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Citrus del Tancat",
-   "ciudad": "Alcanar",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Atalaya",
-   "ciudad": "Alcoseebre",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Boroa",
-   "ciudad": "Amorebieta-Etxano",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Revelía",
-   "ciudad": "Amorebieta-Etxano",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Solana",
-   "ciudad": "Ampuero",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ansils",
-   "ciudad": "Anciles",
-   "estrellas": 1
-  },
-  {
-   "nombre": "L'Aliança d'Anglès",
-   "ciudad": "Anglès",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Les Magnòlies",
-   "ciudad": "Arbúcies",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Corral del Indianu",
-   "ciudad": "Arriondas",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Barro",
-   "ciudad": "Ávila",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Etxebarri",
-   "ciudad": "Axpe",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Txispa",
-   "ciudad": "Axpe",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Vandelvira",
-   "ciudad": "Baeza",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Alkimia",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Angle",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Atempo",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Caelis",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "COME by Paco Méndez",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Dos Palillos",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Fishølogy",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Hisop",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Hofmann",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kamikaze",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Koy Shunka",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "MAE Barcelona",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Moments",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Prodigi",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Quirat",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "SCAPAR",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Slow & Low",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Suto",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Teatro kitchen & bar",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Via Veneto",
-   "ciudad": "Barcelona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "As Garzas",
-   "ciudad": "Barizo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Ermitaño",
-   "ciudad": "Benavente",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Raúl Resino",
-   "ciudad": "Benicarló",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Bernardi",
-   "ciudad": "Benissa",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Islares",
-   "ciudad": "Bilbao",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Mina",
-   "ciudad": "Bilbao",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Nerua Guggenheim Bilbao",
-   "ciudad": "Bilbao",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ola Martín Berasategui",
-   "ciudad": "Bilbao",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Zarate",
-   "ciudad": "Bilbao",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Cobo Evolución",
-   "ciudad": "Burgos",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ricardo Temiño",
-   "ciudad": "Burgos",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Código de Barra",
-   "ciudad": "Cádiz",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Mare",
-   "ciudad": "Cádiz",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Can Jubany",
-   "ciudad": "Calldetenes",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Audrey's",
-   "ciudad": "Calp",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Beat",
-   "ciudad": "Calp",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Orobianco",
-   "ciudad": "Calp",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Yayo Daporta",
-   "ciudad": "Cambados",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Can Bosch",
-   "ciudad": "Cambrils",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Rincón de Diego",
-   "ciudad": "Cambrils",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Canfranc Express",
-   "ciudad": "Canfranc-Estación",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Pico Velasco",
-   "ciudad": "Carasa",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Origen",
-   "ciudad": "Carcaixent",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Magoga",
-   "ciudad": "Cartagena",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Oba-",
-   "ciudad": "Casas-Ibáñez",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Emporium",
-   "ciudad": "Castelló d'Empúries",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Lera",
-   "ciudad": "Castroverde de Campos",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Choco",
-   "ciudad": "Córdoba",
-   "estrellas": 1
-  },
-  {
-   "nombre": "ReComiendo",
-   "ciudad": "Córdoba",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Quatre Molins",
-   "ciudad": "Cornudella de Montsant",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casas Colgadas Restaurante",
-   "ciudad": "Cuenca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Peix & Brases",
-   "ciudad": "Dénia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Garena",
-   "ciudad": "Dima",
-   "estrellas": 1
-  },
-  {
-   "nombre": "iBAi by Paulo Airaudo",
-   "ciudad": "San Sebastián",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Itzuli",
-   "ciudad": "San Sebastián",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kokotxa",
-   "ciudad": "San Sebastián",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Gaia",
-   "ciudad": "Eivissa",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Omakase by Walt",
-   "ciudad": "Eivissa",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Costa",
-   "ciudad": "El Ejido",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Tresmacarrons",
-   "ciudad": "El Masnou",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Finca",
-   "ciudad": "Elche",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Sa Clastra",
-   "ciudad": "Es Capdellà",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Terra",
-   "ciudad": "Fisterra",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Sollo",
-   "ciudad": "Fuengirola",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Andra Mari",
-   "ciudad": "Galdakao",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Elkano",
-   "ciudad": "Getaria",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Auga",
-   "ciudad": "Gijón",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Marcos",
-   "ciudad": "Gijón",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Malena",
-   "ciudad": "Gimenells",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Divinum",
-   "ciudad": "Girona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Massana",
-   "ciudad": "Girona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Faralá",
-   "ciudad": "Granada",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Fonda Xesc",
-   "ciudad": "Gombrèn",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Nublo",
-   "ciudad": "Haro",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Alameda",
-   "ciudad": "Hondarribia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Bicicleta",
-   "ciudad": "Hoznayo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Lillas Pastia",
-   "ciudad": "Huesca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Tatau",
-   "ciudad": "Huesca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Bohío",
-   "ciudad": "Illescas",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Bagá",
-   "ciudad": "Jaén",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Dama Juana",
-   "ciudad": "Jaén",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Malak",
-   "ciudad": "Jaén",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Radis",
-   "ciudad": "Jaén",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Mantúa",
-   "ciudad": "Jerez de la Frontera",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Xato",
-   "ciudad": "La Nucia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ca l'Enric",
-   "ciudad": "La Vall de Bianya",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Eneko",
-   "ciudad": "Larrabetzu",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Muxgo",
-   "ciudad": "Las Palmas de Gran Canaria",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Poemas by Hermanos Padrón",
-   "ciudad": "Las Palmas de Gran Canaria",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Tabaiba",
-   "ciudad": "Las Palmas de Gran Canaria",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Cocinandos",
-   "ciudad": "León",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Pablo",
-   "ciudad": "León",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Els Tinars",
-   "ciudad": "Llagostera",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Retiro",
-   "ciudad": "Llanes",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Andreu Genestra",
-   "ciudad": "Llucmajor",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ajonegro",
-   "ciudad": "Logroño",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ikaro",
-   "ciudad": "Logroño",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kiro Sushi",
-   "ciudad": "Logroño",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ochando",
-   "ciudad": "Los Rosales",
-   "estrellas": 1
-  },
-  {
-   "nombre": "A'Barra",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "CEBO",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Chispa Bistró",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Clos Madrid",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Corral de la Morería Gastronómico",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Desde 1911",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Invernadero",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "EMi",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Èter",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Gaytán",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Gofio",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Tasquería",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "OSA",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Pabú",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Quimbaya",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "RavioXO",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ricardo Sanz Wellington",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Saddle",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Santerra",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Sen Omakase",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Toki",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ugo Chan",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "VelascoAbellà",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Yugo The Bunker",
-   "ciudad": "Madrid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Blossom",
-   "ciudad": "Málaga",
-   "estrellas": 1
-  },
-  {
-   "nombre": "José Carlos García",
-   "ciudad": "Málaga",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kaleja",
-   "ciudad": "Málaga",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Palodú",
-   "ciudad": "Málaga",
-   "estrellas": 1
-  },
-  {
-   "nombre": "BACK",
-   "ciudad": "Marbella",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Messina",
-   "ciudad": "Marbella",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Nintai",
-   "ciudad": "Marbella",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Botica de Matapozuelos",
-   "ciudad": "Matapozuelos",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Alejandro Serrano",
-   "ciudad": "Miranda de Ebro",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Erre de Roca",
-   "ciudad": "Miranda de Ebro",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Los Guayres",
-   "ciudad": "Mogán",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Bakea",
-   "ciudad": "Mungia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Almo de Juan Guillamón",
-   "ciudad": "Murcia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Frases",
-   "ciudad": "Murcia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Fusion19",
-   "ciudad": "Muro",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Lobita",
-   "ciudad": "Navaleno",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Sala",
-   "ciudad": "Olost",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Pepa",
-   "ciudad": "Ondara",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Llavor",
-   "ciudad": "Oropesa del Mar",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ferpel Gastronómico",
-   "ciudad": "Ortiguera",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ceibe",
-   "ciudad": "Ourense",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Nova",
-   "ciudad": "Ourense",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Miguel González",
-   "ciudad": "Ourense",
-   "estrellas": 1
-  },
-  {
-   "nombre": "NM",
-   "ciudad": "Oviedo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "O'Pazo",
-   "ciudad": "Padrón",
-   "estrellas": 1
-  },
-  {
-   "nombre": "DINS Santi Taura",
-   "ciudad": "Palma",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Marc Fosh",
-   "ciudad": "Palma",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Zaranda",
-   "ciudad": "Palma",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Es Fum",
-   "ciudad": "Palmanova",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Europa",
-   "ciudad": "Pamplona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kabo",
-   "ciudad": "Pamplona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Rodero",
-   "ciudad": "Pamplona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Aquarela",
-   "ciudad": "Patalavaca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ambivium",
-   "ciudad": "Peñafiel",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Castell Perelada",
-   "ciudad": "Peralada",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Taste 1973",
-   "ciudad": "Playa de las Américas",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kamezí",
-   "ciudad": "Playa Blanca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Mu•na",
-   "ciudad": "Ponferrada",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Eirado",
-   "ciudad": "Pontevedra",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Voramar",
-   "ciudad": "Portbou",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Maca de Castro",
-   "ciudad": "Port d'Alcúdia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ancestral",
-   "ciudad": "Pozuelo de Alarcón",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Gerardo",
-   "ciudad": "Prendes",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Taller Seve Díaz",
-   "ciudad": "Puerto de la Cruz",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Taller Arzuaga",
-   "ciudad": "Quintanilla de Onésimo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ayalga",
-   "ciudad": "Ribadesella",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Els Casals",
-   "ciudad": "Sagàs",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Arrels",
-   "ciudad": "Sagunt",
-   "estrellas": 1
-  },
-  {
-   "nombre": "En la Parra",
-   "ciudad": "Salamanca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Víctor Gutiérrez",
-   "ciudad": "Salamanca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Real Balneario",
-   "ciudad": "Salinas",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Deliranto",
-   "ciudad": "Salou",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Simposio",
-   "ciudad": "San Antonio de Benagéber",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Monte",
-   "ciudad": "San Feliz",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Montia",
-   "ciudad": "San Lorenzo de El Escorial",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Solla",
-   "ciudad": "San Salvador de Poio",
-   "estrellas": 1
-  },
-  {
-   "nombre": "L'Ó",
-   "ciudad": "Sant Fruitós de Bages",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Unic",
-   "ciudad": "Sant Josep de sa Talaia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Esperit Roca",
-   "ciudad": "Sant Julià de Ramis",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Nova",
-   "ciudad": "Sant Martí Sarroca",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Lluerna",
-   "ciudad": "Santa Coloma de Gramenet",
-   "estrellas": 1
-  },
-  {
-   "nombre": "ARREA!",
-   "ciudad": "Santa Cruz de Campezo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casona del Judío",
-   "ciudad": "Santander",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Serbal",
-   "ciudad": "Santander",
-   "estrellas": 1
-  },
-  {
-   "nombre": "A Tafona",
-   "ciudad": "Santiago de Compostela",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Marcelo",
-   "ciudad": "Santiago de Compostela",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Simpar",
-   "ciudad": "Santiago de Compostela",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Era de los Nogales",
-   "ciudad": "Sardas",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Refectorio",
-   "ciudad": "Sardón de Duero",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Abantal",
-   "ciudad": "Sevilla",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Cañabota",
-   "ciudad": "Sevilla",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Doncel",
-   "ciudad": "Sigüenza",
-   "estrellas": 1
-  },
-  {
-   "nombre": "El Molino de Alcuneza",
-   "ciudad": "Sigüenza",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Vértigo",
-   "ciudad": "Sober",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Béns d'Avall",
-   "ciudad": "Sóller",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Fogony",
-   "ciudad": "Sort",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Raíces-Carlos Maldonado",
-   "ciudad": "Talavera de la Reina",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Rubén",
-   "ciudad": "Tella",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Ama",
-   "ciudad": "Tolosa",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Epílogo",
-   "ciudad": "Tomelloso",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Coto de Quevedo Evolución",
-   "ciudad": "Torre de Juan Abad",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Retama",
-   "ciudad": "Torrenueva",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Regueiro",
-   "ciudad": "Tox",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Hospedería El Batán",
-   "ciudad": "Tramacastilla",
-   "estrellas": 1
-  },
-  {
-   "nombre": "L'Antic Molí",
-   "ciudad": "Ulldecona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Les Moles",
-   "ciudad": "Ulldecona",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Casa de Manolo Franco",
-   "ciudad": "Valdemorillo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Chirón",
-   "ciudad": "Valdemoro",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Fierro",
-   "ciudad": "València",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Fraula",
-   "ciudad": "València",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Kaido Sushi Bar",
-   "ciudad": "València",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Salita",
-   "ciudad": "València",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Lienzo",
-   "ciudad": "València",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Riff",
-   "ciudad": "València",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Cal Paradís",
-   "ciudad": "Vall d'Alba",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Alquimia – Laboratorio",
-   "ciudad": "Valladolid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Trigo",
-   "ciudad": "Valladolid",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Casa Arcas",
-   "ciudad": "Villanova",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Maruja Limón",
-   "ciudad": "Vigo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Silabario",
-   "ciudad": "Vigo",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Rubén Miralles",
-   "ciudad": "Vinaròs",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Tula",
-   "ciudad": "Xàbia",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Villa Retiro",
-   "ciudad": "Xerta",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Barahonda",
-   "ciudad": "Yecla",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Gente Rara",
-   "ciudad": "Zaragoza",
-   "estrellas": 1
-  },
-  {
-   "nombre": "La Prensa",
-   "ciudad": "Zaragoza",
-   "estrellas": 1
-  },
-  {
-   "nombre": "Versátil",
-   "ciudad": "Zarza de Granadilla",
-   "estrellas": 1
-  }
- ]
+  "fuente": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+  "guia": "Guía MICHELIN España & Andorra 2026",
+  "gala": "2025-11-25",
+  "nota": "Sin Bib Gourmand ni Estrella Verde. Datos copiados de la lista oficial; revisar cada edición. Soldeu (Ibaya) es de Andorra.",
+  "restaurantes": [
+    {
+      "nombre": "Casa Marcial",
+      "ciudad": "Arriondas",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 43.4184,
+        "lon": -5.19305
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "ABaC",
+      "ciudad": "Barcelona",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 41.41044,
+        "lon": 2.13654
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Cocina Hermanos Torres",
+      "ciudad": "Barcelona",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 41.3865,
+        "lon": 2.14012
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Disfrutar",
+      "ciudad": "Barcelona",
+      "estrellas": 3,
+      "ref": "restaurantes/disfrutar",
+      "coordenadas": {
+        "lat": 41.38776,
+        "lon": 2.15317
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Lasarte",
+      "ciudad": "Barcelona",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 41.3562,
+        "lon": 2.06814
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Atrio",
+      "ciudad": "Cáceres",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 39.47299,
+        "lon": -6.3714
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Noor",
+      "ciudad": "Córdoba",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 37.88979,
+        "lon": -4.75849
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Quique Dacosta",
+      "ciudad": "Dénia",
+      "estrellas": 3,
+      "ref": "restaurantes/quique-dacosta",
+      "coordenadas": {
+        "lat": 38.85374,
+        "lon": 0.0851
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Akelarre",
+      "ciudad": "San Sebastián",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 43.30778,
+        "lon": -2.04315
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Arzak",
+      "ciudad": "San Sebastián",
+      "estrellas": 3,
+      "ref": "restaurantes/arzak",
+      "coordenadas": {
+        "lat": 43.31172,
+        "lon": -2.00689
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Aponiente",
+      "ciudad": "El Puerto de Santa María",
+      "estrellas": 3,
+      "ref": "restaurantes/aponiente",
+      "coordenadas": {
+        "lat": 36.60334,
+        "lon": -6.21669
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Celler de Can Roca",
+      "ciudad": "Girona",
+      "estrellas": 3,
+      "ref": "restaurantes/el-celler-de-can-roca",
+      "coordenadas": {
+        "lat": 41.9934,
+        "lon": 2.80777
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Azurmendi",
+      "ciudad": "Larrabetzu",
+      "estrellas": 3,
+      "ref": "restaurantes/azurmendi",
+      "coordenadas": {
+        "lat": 43.26085,
+        "lon": -2.81517
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Martín Berasategui",
+      "ciudad": "Lasarte-Oria",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 43.26677,
+        "lon": -2.01545
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "DiverXO",
+      "ciudad": "Madrid",
+      "estrellas": 3,
+      "ref": "restaurantes/diverxo",
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Cenador de Amós",
+      "ciudad": "Villaverde de Pontones",
+      "estrellas": 3,
+      "coordenadas": {
+        "lat": 43.4125,
+        "lon": -3.69918
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Rincón de Juan Carlos",
+      "ciudad": "Adeje",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 28.10159,
+        "lon": -16.7536
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Maralba",
+      "ciudad": "Almansa",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 38.86821,
+        "lon": -1.09786
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Aleia",
+      "ciudad": "Barcelona",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Enigma",
+      "ciudad": "Barcelona",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.37669,
+        "lon": 2.15411
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Cinc Sentits",
+      "ciudad": "Barcelona",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.38848,
+        "lon": 2.15936
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Enoteca Paco Pérez",
+      "ciudad": "Barcelona",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Mont Bar",
+      "ciudad": "Barcelona",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.38624,
+        "lon": 2.16182
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Boscana",
+      "ciudad": "Bellvís",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.66197,
+        "lon": 0.80797
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Voro",
+      "ciudad": "Canyamel",
+      "estrellas": 2,
+      "ref": "restaurantes/voro",
+      "coordenadas": {
+        "lat": 39.65685,
+        "lon": 3.43976
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Alevante",
+      "ciudad": "Chiclana de la Frontera",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 36.41911,
+        "lon": -6.14607
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "L'Escaleta",
+      "ciudad": "Cocentaina",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 38.75692,
+        "lon": -0.44675
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Bo.TiC",
+      "ciudad": "Corçà",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 41.98936,
+        "lon": 3.01708
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Venta Moncalvillo",
+      "ciudad": "Daroca de Rioja",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.37131,
+        "lon": -2.58051
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Amelia by Paulo Airaudo",
+      "ciudad": "San Sebastián",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 43.32242,
+        "lon": -1.98389
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Cabaña Buenavista",
+      "ciudad": "El Palmar",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 39.3116,
+        "lon": -0.31768
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Mugaritz",
+      "ciudad": "Errenteria",
+      "estrellas": 2,
+      "ref": "restaurantes/mugaritz",
+      "coordenadas": {
+        "lat": 43.27236,
+        "lon": -1.91723
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Portal de Echaurren",
+      "ciudad": "Ezcaray",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.32555,
+        "lon": -3.01454
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "M.B",
+      "ciudad": "Guía de Isora",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 28.21519,
+        "lon": -16.75898
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "LÚ Cocina y Alma",
+      "ciudad": "Jerez de la Frontera",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 36.68169,
+        "lon": -6.13774
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Miramar",
+      "ciudad": "Llançà",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.37108,
+        "lon": 3.16007
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Coque",
+      "ciudad": "Madrid",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 40.43069,
+        "lon": -3.69051
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Deessa",
+      "ciudad": "Madrid",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "DSTAgE",
+      "ciudad": "Madrid",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 40.42459,
+        "lon": -3.69633
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Paco Roncero (La Terraza del Casino)",
+      "ciudad": "Madrid",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ramón Freixa Atelier",
+      "ciudad": "Madrid",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Smoked Room",
+      "ciudad": "Madrid",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Skina",
+      "ciudad": "Marbella",
+      "estrellas": 2,
+      "ref": "restaurantes/skina",
+      "coordenadas": {
+        "lat": 36.50748,
+        "lon": -4.80472
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Culler de Pau",
+      "ciudad": "O Grove",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.47536,
+        "lon": -8.89589
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Les Cols",
+      "ciudad": "Olot",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.1944,
+        "lon": 2.50102
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Pepe Vieira",
+      "ciudad": "Raxó",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.40934,
+        "lon": -8.75403
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Bardal",
+      "ciudad": "Ronda",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 36.74213,
+        "lon": -5.16659
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Retiro da Costiña",
+      "ciudad": "Santa Comba",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 43.03326,
+        "lon": -8.80394
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Iván Cerdeño",
+      "ciudad": "Toledo",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 39.86168,
+        "lon": -4.04595
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Molino de Urdániz",
+      "ciudad": "Urdaitz",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 42.90926,
+        "lon": -1.53401
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Poblet",
+      "ciudad": "València",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 39.42817,
+        "lon": -0.37009
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Ricard Camarena",
+      "ciudad": "València",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 39.46875,
+        "lon": -0.36856
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "BonAmb",
+      "ciudad": "Xàbia",
+      "estrellas": 2,
+      "coordenadas": {
+        "lat": 38.78938,
+        "lon": 0.16342
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ibaya",
+      "ciudad": "Soldeu",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.57529,
+        "lon": 1.67137
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Árbore da Veira",
+      "ciudad": "A Coruña",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.37761,
+        "lon": -8.43296
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Donaire",
+      "ciudad": "Adeje",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.13944,
+        "lon": -16.73946
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Haydée by Víctor Suárez",
+      "ciudad": "Adeje",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.13944,
+        "lon": -16.73946
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Il Bocconcino by Royal Hideaway",
+      "ciudad": "Adeje",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.09997,
+        "lon": -16.75202
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Nub",
+      "ciudad": "Adeje",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.13944,
+        "lon": -16.73946
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "San-Hô",
+      "ciudad": "Adeje",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.13944,
+        "lon": -16.73946
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Callizo",
+      "ciudad": "Aínsa",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.4176,
+        "lon": 0.13819
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Baeza & Rufete",
+      "ciudad": "Alacant",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.36865,
+        "lon": -0.43349
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Ababol",
+      "ciudad": "Albacete",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.98881,
+        "lon": -1.85412
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Mesón Sabor Andaluz",
+      "ciudad": "Alcalá del Valle",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.90096,
+        "lon": -5.16881
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Citrus del Tancat",
+      "ciudad": "Alcanar",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.54386,
+        "lon": 0.48084
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Atalaya",
+      "ciudad": "Alcoseebre",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.24475,
+        "lon": 0.27559
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Boroa",
+      "ciudad": "Amorebieta-Etxano",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.24069,
+        "lon": -2.749
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Revelía",
+      "ciudad": "Amorebieta-Etxano",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.26492,
+        "lon": -2.75324
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Solana",
+      "ciudad": "Ampuero",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.32649,
+        "lon": -3.45316
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Ansils",
+      "ciudad": "Anciles",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.5909,
+        "lon": 0.50974
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "L'Aliança d'Anglès",
+      "ciudad": "Anglès",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.95606,
+        "lon": 2.63897
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Les Magnòlies",
+      "ciudad": "Arbúcies",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.81966,
+        "lon": 2.5221
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Corral del Indianu",
+      "ciudad": "Arriondas",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.39028,
+        "lon": -5.18441
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Barro",
+      "ciudad": "Ávila",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.6572,
+        "lon": -4.66267
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Etxebarri",
+      "ciudad": "Axpe",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.11599,
+        "lon": -2.59841
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Txispa",
+      "ciudad": "Axpe",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.11448,
+        "lon": -2.60245
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Vandelvira",
+      "ciudad": "Baeza",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.99413,
+        "lon": -3.46953
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Alkimia",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38266,
+        "lon": 2.16338
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Angle",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38827,
+        "lon": 2.16
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Atempo",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Caelis",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38703,
+        "lon": 2.17431
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "COME by Paco Méndez",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Dos Palillos",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38336,
+        "lon": 2.16868
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Fishølogy",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Hisop",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.39448,
+        "lon": 2.14805
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Hofmann",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.39716,
+        "lon": 2.15303
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Kamikaze",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Koy Shunka",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38581,
+        "lon": 2.1753
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "MAE Barcelona",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.37178,
+        "lon": 2.15762
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Moments",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.39121,
+        "lon": 2.1669
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Prodigi",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.3986,
+        "lon": 2.16596
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Quirat",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "SCAPAR",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Slow & Low",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Suto",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Teatro kitchen & bar",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38258,
+        "lon": 2.17707
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Via Veneto",
+      "ciudad": "Barcelona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.39246,
+        "lon": 2.13907
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "As Garzas",
+      "ciudad": "Barizo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.31795,
+        "lon": -8.87159
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Ermitaño",
+      "ciudad": "Benavente",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.00581,
+        "lon": -5.6569
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Raúl Resino",
+      "ciudad": "Benicarló",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41802,
+        "lon": 0.42298
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Casa Bernardi",
+      "ciudad": "Benissa",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.69181,
+        "lon": 0.07871
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Islares",
+      "ciudad": "Bilbao",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.26716,
+        "lon": -2.93528
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Mina",
+      "ciudad": "Bilbao",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.26124,
+        "lon": -2.93851
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Nerua Guggenheim Bilbao",
+      "ciudad": "Bilbao",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.263,
+        "lon": -2.935
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ola Martín Berasategui",
+      "ciudad": "Bilbao",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.25792,
+        "lon": -2.92638
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Zarate",
+      "ciudad": "Bilbao",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.26256,
+        "lon": -2.94355
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Cobo Evolución",
+      "ciudad": "Burgos",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.34485,
+        "lon": -3.68125
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ricardo Temiño",
+      "ciudad": "Burgos",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.34485,
+        "lon": -3.68125
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Código de Barra",
+      "ciudad": "Cádiz",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.53124,
+        "lon": -6.29315
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Mare",
+      "ciudad": "Cádiz",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.52974,
+        "lon": -6.2929
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Can Jubany",
+      "ciudad": "Calldetenes",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.92936,
+        "lon": 2.30172
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Audrey's",
+      "ciudad": "Calp",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.65038,
+        "lon": 0.07317
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Beat",
+      "ciudad": "Calp",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.64779,
+        "lon": 0.06048
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Orobianco",
+      "ciudad": "Calp",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.64433,
+        "lon": 0.04601
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Yayo Daporta",
+      "ciudad": "Cambados",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.51289,
+        "lon": -8.81479
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Can Bosch",
+      "ciudad": "Cambrils",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.06708,
+        "lon": 1.05906
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Rincón de Diego",
+      "ciudad": "Cambrils",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.06794,
+        "lon": 1.06576
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Canfranc Express",
+      "ciudad": "Canfranc-Estación",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.75088,
+        "lon": -0.51407
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Pico Velasco",
+      "ciudad": "Carasa",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.37581,
+        "lon": -3.46196
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Origen",
+      "ciudad": "Carcaixent",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.12097,
+        "lon": -0.44728
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Magoga",
+      "ciudad": "Cartagena",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.60552,
+        "lon": -0.9839
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Oba-",
+      "ciudad": "Casas-Ibáñez",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.28692,
+        "lon": -1.47066
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Emporium",
+      "ciudad": "Castelló d'Empúries",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.25594,
+        "lon": 3.07618
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Lera",
+      "ciudad": "Castroverde de Campos",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.96783,
+        "lon": -5.31422
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Choco",
+      "ciudad": "Córdoba",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.88518,
+        "lon": -4.76238
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "ReComiendo",
+      "ciudad": "Córdoba",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.90834,
+        "lon": -4.77625
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Quatre Molins",
+      "ciudad": "Cornudella de Montsant",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.26458,
+        "lon": 0.9049
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Casas Colgadas Restaurante",
+      "ciudad": "Cuenca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.0661,
+        "lon": -2.13135
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Peix & Brases",
+      "ciudad": "Dénia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.84605,
+        "lon": 0.10791
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Garena",
+      "ciudad": "Dima",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.12923,
+        "lon": -2.76592
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "iBAi by Paulo Airaudo",
+      "ciudad": "San Sebastián",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.32242,
+        "lon": -1.98389
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Itzuli",
+      "ciudad": "San Sebastián",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.31226,
+        "lon": -2.02645
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Kokotxa",
+      "ciudad": "San Sebastián",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.32353,
+        "lon": -1.98707
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Gaia",
+      "ciudad": "Eivissa",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.97439,
+        "lon": 1.41975
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Omakase by Walt",
+      "ciudad": "Eivissa",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.90738,
+        "lon": 1.43124
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Costa",
+      "ciudad": "El Ejido",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.77092,
+        "lon": -2.82737
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Tresmacarrons",
+      "ciudad": "El Masnou",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.48298,
+        "lon": 2.3326
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Finca",
+      "ciudad": "Elche",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.25607,
+        "lon": -0.65007
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Sa Clastra",
+      "ciudad": "Es Capdellà",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.57852,
+        "lon": 2.47045
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Terra",
+      "ciudad": "Fisterra",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.9048,
+        "lon": -9.2624
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Sollo",
+      "ciudad": "Fuengirola",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.57984,
+        "lon": -4.59535
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Andra Mari",
+      "ciudad": "Galdakao",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.23634,
+        "lon": -2.83281
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Elkano",
+      "ciudad": "Getaria",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.28809,
+        "lon": -2.1921
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Auga",
+      "ciudad": "Gijón",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.54654,
+        "lon": -5.66663
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Marcos",
+      "ciudad": "Gijón",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.54121,
+        "lon": -5.71019
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Malena",
+      "ciudad": "Gimenells",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.65198,
+        "lon": 0.38893
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Divinum",
+      "ciudad": "Girona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.98225,
+        "lon": 2.82411
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Massana",
+      "ciudad": "Girona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.98498,
+        "lon": 2.81946
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Faralá",
+      "ciudad": "Granada",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.17638,
+        "lon": -3.59523
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Fonda Xesc",
+      "ciudad": "Gombrèn",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.24843,
+        "lon": 2.0906
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Nublo",
+      "ciudad": "Haro",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.57781,
+        "lon": -2.84649
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Alameda",
+      "ciudad": "Hondarribia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.36136,
+        "lon": -1.79256
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Bicicleta",
+      "ciudad": "Hoznayo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.3902,
+        "lon": -3.70193
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Lillas Pastia",
+      "ciudad": "Huesca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.13606,
+        "lon": -0.0298
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Tatau",
+      "ciudad": "Huesca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.13606,
+        "lon": -0.0298
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "El Bohío",
+      "ciudad": "Illescas",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.12639,
+        "lon": -3.84627
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Bagá",
+      "ciudad": "Jaén",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.76686,
+        "lon": -3.78624
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Dama Juana",
+      "ciudad": "Jaén",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.76721,
+        "lon": -3.78549
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Malak",
+      "ciudad": "Jaén",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.76746,
+        "lon": -3.78725
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Radis",
+      "ciudad": "Jaén",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.76807,
+        "lon": -3.78637
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Mantúa",
+      "ciudad": "Jerez de la Frontera",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.68169,
+        "lon": -6.13774
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "El Xato",
+      "ciudad": "La Nucia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.61724,
+        "lon": -0.12316
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Ca l'Enric",
+      "ciudad": "La Vall de Bianya",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.22159,
+        "lon": 2.44034
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Eneko",
+      "ciudad": "Larrabetzu",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.26125,
+        "lon": -2.7959
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Muxgo",
+      "ciudad": "Las Palmas de Gran Canaria",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.12119,
+        "lon": -15.42836
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Poemas by Hermanos Padrón",
+      "ciudad": "Las Palmas de Gran Canaria",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.12887,
+        "lon": -15.4349
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Tabaiba",
+      "ciudad": "Las Palmas de Gran Canaria",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.13529,
+        "lon": -15.43979
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Cocinandos",
+      "ciudad": "León",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.63415,
+        "lon": -5.97142
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Pablo",
+      "ciudad": "León",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.63415,
+        "lon": -5.97142
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Els Tinars",
+      "ciudad": "Llagostera",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.82763,
+        "lon": 2.95388
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Retiro",
+      "ciudad": "Llanes",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.41232,
+        "lon": -4.76471
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Andreu Genestra",
+      "ciudad": "Llucmajor",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.49085,
+        "lon": 2.89132
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ajonegro",
+      "ciudad": "Logroño",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.46612,
+        "lon": -2.43967
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ikaro",
+      "ciudad": "Logroño",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.46431,
+        "lon": -2.44851
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Kiro Sushi",
+      "ciudad": "Logroño",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.4748,
+        "lon": -2.45069
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Ochando",
+      "ciudad": "Los Rosales",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.35719,
+        "lon": -3.68945
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "A'Barra",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.43865,
+        "lon": -3.68783
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "CEBO",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41641,
+        "lon": -3.6986
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Chispa Bistró",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Clos Madrid",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.44616,
+        "lon": -3.69954
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Corral de la Morería Gastronómico",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Desde 1911",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.44845,
+        "lon": -3.7099
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Invernadero",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.4446,
+        "lon": -3.69896
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "EMi",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.4102,
+        "lon": -3.64563
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Èter",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.39321,
+        "lon": -3.69169
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Gaytán",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.44982,
+        "lon": -3.67836
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Gofio",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41933,
+        "lon": -3.70017
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Tasquería",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.44545,
+        "lon": -3.69556
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "OSA",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.46174,
+        "lon": -3.77291
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Pabú",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Quimbaya",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.4361,
+        "lon": -3.69319
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "RavioXO",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ricardo Sanz Wellington",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Saddle",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.42754,
+        "lon": -3.69111
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Santerra",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.42898,
+        "lon": -3.67821
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Sen Omakase",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Toki",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ugo Chan",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "VelascoAbellà",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41678,
+        "lon": -3.70351
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Yugo The Bunker",
+      "ciudad": "Madrid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.41065,
+        "lon": -3.69465
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Blossom",
+      "ciudad": "Málaga",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.76479,
+        "lon": -4.4422
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "José Carlos García",
+      "ciudad": "Málaga",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.71683,
+        "lon": -4.41332
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Kaleja",
+      "ciudad": "Málaga",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.72111,
+        "lon": -4.41785
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Palodú",
+      "ciudad": "Málaga",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.76479,
+        "lon": -4.4422
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "BACK",
+      "ciudad": "Marbella",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.50914,
+        "lon": -4.89456
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Messina",
+      "ciudad": "Marbella",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.50748,
+        "lon": -4.80472
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Nintai",
+      "ciudad": "Marbella",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 36.50748,
+        "lon": -4.80472
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "La Botica de Matapozuelos",
+      "ciudad": "Matapozuelos",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.41431,
+        "lon": -4.7915
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Alejandro Serrano",
+      "ciudad": "Miranda de Ebro",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.68649,
+        "lon": -2.94216
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Erre de Roca",
+      "ciudad": "Miranda de Ebro",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.68009,
+        "lon": -2.97472
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Los Guayres",
+      "ciudad": "Mogán",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 27.82241,
+        "lon": -15.76033
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Bakea",
+      "ciudad": "Mungia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.35758,
+        "lon": -2.85057
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Almo de Juan Guillamón",
+      "ciudad": "Murcia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.93475,
+        "lon": -1.1131
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Frases",
+      "ciudad": "Murcia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.93475,
+        "lon": -1.1131
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Fusion19",
+      "ciudad": "Muro",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.73706,
+        "lon": 3.05671
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "La Lobita",
+      "ciudad": "Navaleno",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.83667,
+        "lon": -3.00629
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Sala",
+      "ciudad": "Olost",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.99263,
+        "lon": 2.05427
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Casa Pepa",
+      "ciudad": "Ondara",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.81906,
+        "lon": 0.00721
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Llavor",
+      "ciudad": "Oropesa del Mar",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.09321,
+        "lon": 0.13581
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ferpel Gastronómico",
+      "ciudad": "Ortiguera",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.55935,
+        "lon": -6.74094
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ceibe",
+      "ciudad": "Ourense",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.19396,
+        "lon": -7.53712
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Nova",
+      "ciudad": "Ourense",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.19396,
+        "lon": -7.53712
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Miguel González",
+      "ciudad": "Ourense",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.19396,
+        "lon": -7.53712
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "NM",
+      "ciudad": "Oviedo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.36513,
+        "lon": -5.84246
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "O'Pazo",
+      "ciudad": "Padrón",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.75677,
+        "lon": -8.6527
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "DINS Santi Taura",
+      "ciudad": "Palma",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.56958,
+        "lon": 2.65007
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Marc Fosh",
+      "ciudad": "Palma",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.57364,
+        "lon": 2.65132
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Zaranda",
+      "ciudad": "Palma",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.56958,
+        "lon": 2.65007
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Es Fum",
+      "ciudad": "Palmanova",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.5237,
+        "lon": 2.53838
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Europa",
+      "ciudad": "Pamplona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.73166,
+        "lon": -1.61522
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Kabo",
+      "ciudad": "Pamplona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.81569,
+        "lon": -1.65224
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Rodero",
+      "ciudad": "Pamplona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.81589,
+        "lon": -1.63732
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Aquarela",
+      "ciudad": "Patalavaca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 27.77098,
+        "lon": -15.68619
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ambivium",
+      "ciudad": "Peñafiel",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.59482,
+        "lon": -4.08787
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Castell Perelada",
+      "ciudad": "Peralada",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.30764,
+        "lon": 3.01111
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Taste 1973",
+      "ciudad": "Playa de las Américas",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.05183,
+        "lon": -16.71578
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Kamezí",
+      "ciudad": "Playa Blanca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.85969,
+        "lon": -13.86565
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Mu•na",
+      "ciudad": "Ponferrada",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.49844,
+        "lon": -6.56632
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Eirado",
+      "ciudad": "Pontevedra",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.42806,
+        "lon": -8.60414
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Voramar",
+      "ciudad": "Portbou",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.42743,
+        "lon": 3.15888
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Maca de Castro",
+      "ciudad": "Port d'Alcúdia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.84199,
+        "lon": 3.13298
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ancestral",
+      "ciudad": "Pozuelo de Alarcón",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.43465,
+        "lon": -3.81483
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Casa Gerardo",
+      "ciudad": "Prendes",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.55513,
+        "lon": -5.76629
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Taller Seve Díaz",
+      "ciudad": "Puerto de la Cruz",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 28.41659,
+        "lon": -16.55313
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Taller Arzuaga",
+      "ciudad": "Quintanilla de Onésimo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.6259,
+        "lon": -4.36277
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Ayalga",
+      "ciudad": "Ribadesella",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.44566,
+        "lon": -5.08355
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Els Casals",
+      "ciudad": "Sagàs",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.03112,
+        "lon": 1.96099
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Arrels",
+      "ciudad": "Sagunt",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.67929,
+        "lon": -0.27865
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "En la Parra",
+      "ciudad": "Salamanca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.96061,
+        "lon": -5.66433
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Víctor Gutiérrez",
+      "ciudad": "Salamanca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.96304,
+        "lon": -5.67031
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Real Balneario",
+      "ciudad": "Salinas",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.51976,
+        "lon": -0.91323
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Deliranto",
+      "ciudad": "Salou",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.07681,
+        "lon": 1.13261
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Simposio",
+      "ciudad": "San Antonio de Benagéber",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.56195,
+        "lon": -0.50013
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Monte",
+      "ciudad": "San Feliz",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.68227,
+        "lon": -5.53796
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Montia",
+      "ciudad": "San Lorenzo de El Escorial",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.59267,
+        "lon": -4.14716
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Solla",
+      "ciudad": "San Salvador de Poio",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.43345,
+        "lon": -8.66907
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "L'Ó",
+      "ciudad": "Sant Fruitós de Bages",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.7447,
+        "lon": 1.90047
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Unic",
+      "ciudad": "Sant Josep de sa Talaia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.89009,
+        "lon": 1.40768
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Esperit Roca",
+      "ciudad": "Sant Julià de Ramis",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.03255,
+        "lon": 2.84786
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Casa Nova",
+      "ciudad": "Sant Martí Sarroca",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.38542,
+        "lon": 1.61082
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Lluerna",
+      "ciudad": "Santa Coloma de Gramenet",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.4554,
+        "lon": 2.2066
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "ARREA!",
+      "ciudad": "Santa Cruz de Campezo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.66895,
+        "lon": -2.35053
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Casona del Judío",
+      "ciudad": "Santander",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.46881,
+        "lon": -3.82933
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Serbal",
+      "ciudad": "Santander",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.47767,
+        "lon": -3.78816
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "A Tafona",
+      "ciudad": "Santiago de Compostela",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.88994,
+        "lon": -8.54688
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Casa Marcelo",
+      "ciudad": "Santiago de Compostela",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.88067,
+        "lon": -8.54695
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Simpar",
+      "ciudad": "Santiago de Compostela",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.87828,
+        "lon": -8.54471
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Era de los Nogales",
+      "ciudad": "Sardas",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.50677,
+        "lon": -0.3374
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Refectorio",
+      "ciudad": "Sardón de Duero",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.61637,
+        "lon": -4.41125
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Abantal",
+      "ciudad": "Sevilla",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.38793,
+        "lon": -5.98371
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Cañabota",
+      "ciudad": "Sevilla",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 37.39359,
+        "lon": -5.99363
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Doncel",
+      "ciudad": "Sigüenza",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.06918,
+        "lon": -2.6436
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "El Molino de Alcuneza",
+      "ciudad": "Sigüenza",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.06803,
+        "lon": -2.64057
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Vértigo",
+      "ciudad": "Sober",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.44101,
+        "lon": -7.57552
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Béns d'Avall",
+      "ciudad": "Sóller",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.78306,
+        "lon": 2.67078
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Fogony",
+      "ciudad": "Sort",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.41554,
+        "lon": 1.13208
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Raíces-Carlos Maldonado",
+      "ciudad": "Talavera de la Reina",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.95224,
+        "lon": -4.89018
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Casa Rubén",
+      "ciudad": "Tella",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.54768,
+        "lon": 0.16226
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Ama",
+      "ciudad": "Tolosa",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.132,
+        "lon": -2.07772
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Epílogo",
+      "ciudad": "Tomelloso",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.14889,
+        "lon": -3.02662
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Coto de Quevedo Evolución",
+      "ciudad": "Torre de Juan Abad",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.58457,
+        "lon": -3.06093
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Retama",
+      "ciudad": "Torrenueva",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.63978,
+        "lon": -3.36481
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Regueiro",
+      "ciudad": "Tox",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.9143,
+        "lon": 1.46883
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Hospedería El Batán",
+      "ciudad": "Tramacastilla",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.42664,
+        "lon": -1.56031
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "L'Antic Molí",
+      "ciudad": "Ulldecona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.6089,
+        "lon": 0.33747
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Les Moles",
+      "ciudad": "Ulldecona",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.60383,
+        "lon": 0.4208
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Casa de Manolo Franco",
+      "ciudad": "Valdemorillo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.50168,
+        "lon": -4.06889
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Chirón",
+      "ciudad": "Valdemoro",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.19157,
+        "lon": -3.67648
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Fierro",
+      "ciudad": "València",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.6183,
+        "lon": -0.30761
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Fraula",
+      "ciudad": "València",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.46971,
+        "lon": -0.37634
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Kaido Sushi Bar",
+      "ciudad": "València",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.46971,
+        "lon": -0.37634
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "La Salita",
+      "ciudad": "València",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.46971,
+        "lon": -0.37634
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Lienzo",
+      "ciudad": "València",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.47499,
+        "lon": -0.36961
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Riff",
+      "ciudad": "València",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 39.46971,
+        "lon": -0.37634
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Cal Paradís",
+      "ciudad": "Vall d'Alba",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.17685,
+        "lon": -0.03394
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Alquimia – Laboratorio",
+      "ciudad": "Valladolid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.62,
+        "lon": -4.72599
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Trigo",
+      "ciudad": "Valladolid",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.65442,
+        "lon": -4.73057
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Casa Arcas",
+      "ciudad": "Villanova",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 43.52632,
+        "lon": -6.70487
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Maruja Limón",
+      "ciudad": "Vigo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.24035,
+        "lon": -8.72384
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Silabario",
+      "ciudad": "Vigo",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 42.23649,
+        "lon": -8.72212
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Rubén Miralles",
+      "ciudad": "Vinaròs",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.4704,
+        "lon": 0.47461
+      },
+      "geo_precision": "localidad"
+    },
+    {
+      "nombre": "Tula",
+      "ciudad": "Xàbia",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.77068,
+        "lon": 0.19272
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Villa Retiro",
+      "ciudad": "Xerta",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.9121,
+        "lon": 0.48986
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Barahonda",
+      "ciudad": "Yecla",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 38.58732,
+        "lon": -1.08007
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Gente Rara",
+      "ciudad": "Zaragoza",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.65882,
+        "lon": -0.87061
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "La Prensa",
+      "ciudad": "Zaragoza",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 41.63335,
+        "lon": -0.87469
+      },
+      "geo_precision": "local"
+    },
+    {
+      "nombre": "Versátil",
+      "ciudad": "Zarza de Granadilla",
+      "estrellas": 1,
+      "coordenadas": {
+        "lat": 40.23722,
+        "lon": -6.04776
+      },
+      "geo_precision": "local"
+    }
+  ]
 }

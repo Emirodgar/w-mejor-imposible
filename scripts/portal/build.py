@@ -194,6 +194,8 @@ def spec_text(cat, ficha):
 
 
 AIRPORTS = load('aeropuertos.json')['aeropuertos']
+MICHELIN = [r for r in (load('michelin/guia-2026.json')['restaurantes'] if exists('michelin/guia-2026.json') else [])
+            if r.get('coordenadas') and not r.get('ref')]  # los que ya son ítems del ranking salen como ítem
 MAX_KM = 75  # radio máximo para sugerir un restaurante o un campo "cerca"
 
 
@@ -226,10 +228,19 @@ def nearest(item, tipo):
                 if i['categoria'] == cat and i['id'] != item['id'] and coords(i)]
     else:
         return None
-    best = min(((haversine_km(here, coords(x)), n, ref) for n, ref, x in pool), default=None)
+    best = min(((haversine_km(here, coords(x)), n, ref, None) for n, ref, x in pool), default=None)
+    if tipo == 'restaurante':
+        # si ningún restaurante del ranking queda cerca, se recurre al estrellado más próximo
+        for r in ([] if best and best[0] <= MAX_KM else MICHELIN):
+            d = haversine_km(here, coords(r))
+            if not best or d < best[0]:
+                best = (d, r['nombre'], None, r['estrellas'])
     if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM):
         return None
-    return dict(tipo=tipo, nombre=best[1], ref=best[2], min=drive_min(best[0]))
+    out = dict(tipo=tipo, nombre=best[1], ref=best[2], min=drive_min(best[0]))
+    if best[3]:
+        out['nota'] = f"{best[3]} {'estrella' if best[3] == 1 else 'estrellas'} Michelin · a ~{out['min']} min"
+    return out
 
 
 def near_tiles(cat, item):
