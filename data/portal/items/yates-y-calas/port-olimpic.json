@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/port-olimpic",
+  "categoria": "yates-y-calas",
+  "nombre": "Port Olímpic / OneOcean",
+  "lugar": "Barcelona · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "puerto frente a la Vila Olímpica"
+  },
+  "por_que": {
+    "es": "Octavo de Velvua 2026, en el frente marítimo de Barcelona."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 8",
+    "costa": "Barcelona"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Port Olímpic Barcelona",
+  "coordenadas": {
+    "lat": 41.38613,
+    "lon": 2.19983
+  },
+  "geo_fuente": "Port Olímpic, Moll de Xaloc, la Vila Olímpica del Poblenou, Sant Martí, Barcelona, Barcelo"
+}

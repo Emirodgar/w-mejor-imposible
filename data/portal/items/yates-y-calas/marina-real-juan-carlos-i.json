@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/marina-real-juan-carlos-i",
+  "categoria": "yates-y-calas",
+  "nombre": "Marina Real Juan Carlos I",
+  "lugar": "Valencia · Valencia",
+  "zona": "resto",
+  "foto": {
+    "es": "puerto de la Copa América"
+  },
+  "por_que": {
+    "es": "Sexto de Velvua 2026, en el puerto de Valencia."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 6",
+    "costa": "Valencia"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Marina Real Juan Carlos I Valencia",
+  "coordenadas": {
+    "lat": 39.45958,
+    "lon": -0.31456
+  },
+  "geo_fuente": "La Marina de València, Avinguda de l'Enginyer Manuel Soto, el Grau, Poblats Marítims, Valè"
+}

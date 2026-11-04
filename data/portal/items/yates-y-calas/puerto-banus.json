@@ -1,0 +1,28 @@
+{
+  "id": "yates-y-calas/puerto-banus",
+  "categoria": "yates-y-calas",
+  "nombre": "Puerto Banús",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "pantalanes de superyates"
+  },
+  "por_que": {
+    "es": "Segundo del ranking Velvua 2026. Según el propio puerto, tiene más de 900 amarres y admite superyates de hasta 180 m."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 2",
+    "costa": "Costa del Sol"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://puerto-banus.com/en/noticias/puerto-banus-second-best-marina-spain-2026/"
+  ],
+  "busqueda": "Puerto Banús Marbella",
+  "coordenadas": {
+    "lat": 36.4889,
+    "lon": -4.95295
+  },
+  "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/real-club-nautico-de-palma",
+  "categoria": "yates-y-calas",
+  "nombre": "Real Club Náutico de Palma",
+  "lugar": "Palma · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "pantalanes frente a la catedral"
+  },
+  "por_que": {
+    "es": "Primer puesto del ranking Velvua 2026 de puertos deportivos de España."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 1",
+    "costa": "Mallorca"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Real Club Náutico de Palma",
+  "coordenadas": {
+    "lat": 39.56717,
+    "lon": 2.63856
+  },
+  "geo_fuente": "Real Club Náutico, Contramoll Mollet, Puig de Sant Pere, Canavall, Districte Centre, Palma"
+}

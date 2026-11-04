@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/empuriabrava",
+  "categoria": "yates-y-calas",
+  "nombre": "Empuriabrava",
+  "lugar": "Castelló d'Empúries · Girona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "canales de Empuriabrava"
+  },
+  "por_que": {
+    "es": "Noveno de Velvua 2026, en la Costa Brava."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 9",
+    "costa": "Costa Brava"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Empuriabrava",
+  "coordenadas": {
+    "lat": 42.24701,
+    "lon": 3.12069
+  },
+  "geo_fuente": "Empuriabrava, Castelló d'Empúries, Alt Empordà, Girona, Catalunya, 17487, España"
+}

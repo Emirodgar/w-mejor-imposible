@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/mahon",
+  "categoria": "yates-y-calas",
+  "nombre": "Puerto de Mahón",
+  "lugar": "Mahón · Menorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "puerto natural de Mahón"
+  },
+  "por_que": {
+    "es": "Décimo de Velvua 2026, el puerto de entrada a Menorca."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 10",
+    "costa": "Menorca"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Puerto de Mahón",
+  "coordenadas": {
+    "lat": 39.88893,
+    "lon": 4.27332
+  },
+  "geo_fuente": "Avinguda Port de Maó, Fort de l'Eau, Sant Antoni, Maó, Menorca, Illes Balears, 07701, Espa"
+}

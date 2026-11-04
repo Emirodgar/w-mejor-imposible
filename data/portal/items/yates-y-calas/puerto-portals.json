@@ -1,0 +1,28 @@
+{
+  "id": "yates-y-calas/puerto-portals",
+  "categoria": "yates-y-calas",
+  "nombre": "Puerto Portals",
+  "lugar": "Calvià · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "paseo marítimo del puerto"
+  },
+  "por_que": {
+    "es": "Cuarto de Velvua 2026. Acoge unas 680 embarcaciones de 8 a 60 m de eslora."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 4",
+    "costa": "Mallorca"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://www.nomadotravel.app/es/attractions/puerto-portals"
+  ],
+  "busqueda": "Puerto Portals Calvià",
+  "coordenadas": {
+    "lat": 39.53018,
+    "lon": 2.56829
+  },
+  "geo_fuente": "Puerto Portals, carrer Klaus Graf, Costa d'en Blanes, Portals Nous, Calvià, Serra de Tramu"
+}

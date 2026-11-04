@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/marina-badalona",
+  "categoria": "yates-y-calas",
+  "nombre": "Marina Badalona",
+  "lugar": "Badalona · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "puerto de Badalona"
+  },
+  "por_que": {
+    "es": "Séptimo de Velvua 2026, en el área metropolitana de Barcelona."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 7",
+    "costa": "Barcelona"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Marina Badalona",
+  "coordenadas": {
+    "lat": 41.43397,
+    "lon": 2.24136
+  },
+  "geo_fuente": "Port de Badalona, Carrer del Pont de la Cros, la Mora, Districte 5, Badalona, Barcelonès, "
+}

@@ -1,0 +1,27 @@
+{
+  "id": "yates-y-calas/marina-ibiza",
+  "categoria": "yates-y-calas",
+  "nombre": "Marina Ibiza / Botafoch",
+  "lugar": "Ibiza · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "puerto con Dalt Vila al fondo"
+  },
+  "por_que": {
+    "es": "Tercer puesto de Velvua 2026, a las puertas de Ibiza ciudad."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 3",
+    "costa": "Ibiza"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+  ],
+  "busqueda": "Marina Botafoch Ibiza",
+  "coordenadas": {
+    "lat": 38.91201,
+    "lon": 1.44763
+  },
+  "geo_fuente": "Marina Botafoch, Avinguda del Vuit d'Agost, Passeig Maritim, Eivissa, Illes Balears, 07800"
+}

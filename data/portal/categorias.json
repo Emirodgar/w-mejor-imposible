@@ -330,25 +330,25 @@
       "es": "Yates y calas"
     },
     "titulo": {
-      "es": "Las 10 mejores calas y rutas en barco de España"
+      "es": "Los 10 mejores puertos deportivos de España"
     },
     "nombre_placeholder": {
-      "es": "[Nombre de la cala o ruta]"
+      "es": "[Nombre del puerto]"
     },
     "foto_placeholder": {
       "es": "cala desde el mar"
     },
     "ficha": [
-      "[N] millas",
-      "Mejor época: [MESES]"
+      "{puesto}",
+      "{costa}"
     ],
     "cerca": [
       "Hotel",
       "Restaurante",
-      "Puerto"
+      "Aeropuerto"
     ],
     "como_ordenamos": {
-      "es": "Belleza del entorno, acceso, calidad del fondeo y servicios cercanos. Nadie paga por estar."
+      "es": "Ranking Velvua 2026: capacidad y eslora, servicios, conectividad y prestigio, y transparencia de precio. Nadie paga por estar."
     },
     "placeholder": [
       {

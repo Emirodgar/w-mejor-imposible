@@ -1,0 +1,28 @@
+{
+  "id": "yates-y-calas/puerto-sotogrande",
+  "categoria": "yates-y-calas",
+  "nombre": "Puerto Sotogrande",
+  "lugar": "San Roque · Cádiz",
+  "zona": "andalucia",
+  "foto": {
+    "es": "puerto deportivo y plaza"
+  },
+  "por_que": {
+    "es": "Quinto de Velvua 2026. El puerto de Sotogrande abrió en 1988, junto a la urbanización y sus campos de golf."
+  },
+  "ficha": {
+    "puesto": "Velvua 2026: n.º 5",
+    "costa": "Costa de la Luz"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://en.wikipedia.org/wiki/Sotogrande"
+  ],
+  "busqueda": "Puerto Sotogrande",
+  "coordenadas": {
+    "lat": 36.28698,
+    "lon": -5.27852
+  },
+  "geo_fuente": "Puerto Sotogrande, Sotogrande, Torreguadiaro, 11312, España"
+}
