@@ -320,3 +320,17 @@ h1, h2, p, ol { margin: 0; }
 .credits ul { margin: 12px 0 0; padding-left: 18px; }
 .credits li { margin-bottom: 4px; }
 .credits a { color: var(--muted); text-decoration: underline; }
+
+/* Ficha de cada lugar */
+.item-hero { padding-bottom: 32px; }
+.item-hero .lead-text { color: var(--ink); font-size: 19px; margin-bottom: 16px; }
+.item-spec { margin: 0 0 8px; font-size: 14px; letter-spacing: .04em; color: var(--muted); }
+.rank-line { margin: 0; font-size: 13px; letter-spacing: .08em; color: var(--muted); }
+.item-photo { padding-bottom: 32px; }
+.item-photo .ph { aspect-ratio: 16 / 9; width: 100%; max-height: 640px; }
+.item-near { margin-top: 0; padding-bottom: 40px; }
+.item-near .near-grid { max-width: 640px; }
+.item-map { padding-bottom: 40px; }
+.item-map .map.live { min-height: 380px; }
+.item-nav { display: flex; justify-content: space-between; gap: 24px; padding-top: 32px; padding-bottom: 72px; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 22px; }
+.top-item h2 a { text-decoration: none; }

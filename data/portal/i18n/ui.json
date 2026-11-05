@@ -894,5 +894,69 @@
   "de": "Karte der Reise: Flughafen, Hotel, Golfplatz und Restaurant",
   "pt": "Mapa do roteiro: aeroporto, hotel, campo e restaurante",
   "it": "Mappa dell'itinerario: aeroporto, hotel, campo e ristorante"
+ },
+ "item.title": {
+  "es": "{name}: n.º {n} en {cat}",
+  "en": "{name}: No. {n} in {cat}",
+  "fr": "{name} : n° {n} en {cat}",
+  "de": "{name}: Nr. {n} bei {cat}",
+  "pt": "{name}: n.º {n} em {cat}",
+  "it": "{name}: n. {n} in {cat}"
+ },
+ "item.position": {
+  "es": "N.º {n} de {total}",
+  "en": "No. {n} of {total}",
+  "fr": "N° {n} sur {total}",
+  "de": "Nr. {n} von {total}",
+  "pt": "N.º {n} de {total}",
+  "it": "N. {n} su {total}"
+ },
+ "item.full": {
+  "es": "Ver ficha completa →",
+  "en": "See full profile →",
+  "fr": "Voir la fiche complète →",
+  "de": "Zur vollständigen Seite →",
+  "pt": "Ver ficha completa →",
+  "it": "Vedi la scheda completa →"
+ },
+ "item.sources": {
+  "es": "Fuentes",
+  "en": "Sources",
+  "fr": "Sources",
+  "de": "Quellen",
+  "pt": "Fontes",
+  "it": "Fonti"
+ },
+ "item.plans": {
+  "es": "Aparece en estos planes",
+  "en": "Featured in these itineraries",
+  "fr": "Présent dans ces séjours",
+  "de": "Kommt in diesen Reisen vor",
+  "pt": "Aparece nestes roteiros",
+  "it": "Compare in questi itinerari"
+ },
+ "item.map_aria": {
+  "es": "Mapa: {name} y lo mejor cerca",
+  "en": "Map: {name} and the best nearby",
+  "fr": "Carte : {name} et le meilleur à proximité",
+  "de": "Karte: {name} und das Beste in der Nähe",
+  "pt": "Mapa: {name} e o melhor por perto",
+  "it": "Mappa: {name} e il meglio nelle vicinanze"
+ },
+ "item.prev": {
+  "es": "← Anterior",
+  "en": "← Previous",
+  "fr": "← Précédent",
+  "de": "← Zurück",
+  "pt": "← Anterior",
+  "it": "← Precedente"
+ },
+ "item.next": {
+  "es": "Siguiente →",
+  "en": "Next →",
+  "fr": "Suivant →",
+  "de": "Weiter →",
+  "pt": "Seguinte →",
+  "it": "Successivo →"
  }
 }

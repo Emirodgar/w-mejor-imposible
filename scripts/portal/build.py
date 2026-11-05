@@ -161,7 +161,7 @@ def credits_html():
 
 def item_url(ref):
     cat, slug = ref.split('/')
-    return f'{u(f"/ranking/{cat}/")}#{slug}'
+    return u(f'/ranking/{cat}/{slug}/')
 
 
 # ---------------- Plantilla común ----------------
@@ -362,7 +362,7 @@ def nearest(item, tipo):
     if not best or (tipo != 'aeropuerto' and best[0] > MAX_KM) or (tipo == 'aeropuerto' and drive_min(best[0]) > 150):
         return None
     name = tr(best[1]) if tipo == 'aeropuerto' else best[1]
-    out = dict(tipo=tipo, nombre=name, ref=best[2], min=drive_min(best[0]))
+    out = dict(tipo=tipo, nombre=name, ref=best[2], min=drive_min(best[0]), geo=coords(best[4]))
     mismo = best[1].lower() in item['nombre'].lower() or item['nombre'].lower() in best[1].lower()
     if best[0] < 0.3 and mismo and tipo in ('restaurante', 'hotel'):
         out['nota'] = ui('near.same')
@@ -425,17 +425,18 @@ def build_rank(slug):
             {ph_box(en['item'], 'photo' + TONES[i])}
             <div class="info">
                 <p class="place">{e(en['lugar'])}</p>
-                <h2><span class="visually-hidden">{i+1}. </span>{e(en['nombre'])}</h2>
+                <h2><span class="visually-hidden">{i+1}. </span><a href="{item_url(en['item']['id'])}">{e(en['nombre'])}</a></h2>
                 <p class="why">{e(en['why'])}</p>
                 <p class="spec">{e(en['spec'])}</p>
                 <div class="near">
                     <p class="label">{e(ui('rank.near'))}</p>
-                    <div class="near-grid">{near_tiles(slug, en['item'])}</div>{plan}
+                    <div class="near-grid">{near_tiles(slug, en['item'])}</div>
+                    <a class="plan-link" href="{item_url(en['item']['id'])}">{e(ui('item.full'))}</a>{plan}
                 </div>
             </div>
         </li>'''
     restli = ''.join(f'''
-            <li id="{en["slug"]}" data-zone="{en['zona']}"><a href="#"><span class="n">{i+6:02d}</span><span class="thumb"></span><span class="nm">{e(en['nombre'])}</span><span class="pl">{e(en['lugar'])}</span><span class="arrow" aria-hidden="true">→</span></a></li>'''
+            <li id="{en["slug"]}" data-zone="{en['zona']}"><a href="{item_url(en['item']['id'])}"><span class="n">{i+6:02d}</span><span class="thumb"></span><span class="nm">{e(en['nombre'])}</span><span class="pl">{e(en['lugar'])}</span><span class="arrow" aria-hidden="true">→</span></a></li>'''
                      for i, en in enumerate(rest))
     chips = ''.join(
         f'<button type="button" data-filter="{k}" aria-pressed="{"true" if k == "todas" else "false"}">{e(ui("zone." + k))}</button>'
@@ -447,7 +448,7 @@ def build_rank(slug):
     schema = CAT_SCHEMA.get(slug)
     ld_items = []
     for n, en in enumerate(entries, 1):
-        li = {"@type": "ListItem", "position": n, "name": en['nombre'], "url": f"{SITE}{u(f'/ranking/{slug}/')}#{en['slug']}"}
+        li = {"@type": "ListItem", "position": n, "name": en['nombre'], "url": SITE + item_url(en['item']['id'])}
         if schema:
             li["item"] = {"@type": schema, "name": en['nombre'],
                           "address": {"@type": "PostalAddress", "addressLocality": en['lugar'], "addressCountry": "ES"}}
@@ -689,6 +690,117 @@ def build_plan(slug):
     write(f'/planes/{slug}/index.html', html_page.replace('</body>', MAP_JS + '\n</body>') if 'id="plan-map"' in body else html_page)
 
 
+
+# ---------------- Fichas de cada lugar ----------------
+SCHEMA_OF = dict(CAT_SCHEMA, **{'motor': 'SportsActivityLocation', 'casas-de-lujo': 'Place', 'yates-y-calas': 'Place'})
+
+
+def ranking_positions():
+    pos = {}
+    for cat in CATS:
+        if exists(f'rankings/{cat}.json'):
+            refs = load(f'rankings/{cat}.json')['items']
+            for i, r in enumerate(refs):
+                pos[r] = (cat, i + 1, len(refs), refs[i - 1] if i else None, refs[i + 1] if i + 1 < len(refs) else None)
+    return pos
+
+
+RANK_POS = ranking_positions()
+
+
+def trim(text, n=170):
+    if len(text) <= n:
+        return text
+    return text[:n].rsplit(' ', 1)[0].rstrip(',;:') + '…'
+
+
+def near_points(cat, item):
+    """Lugares cercanos con coordenadas, para el mapa de la ficha."""
+    pts = []
+    for label in CATS[cat]['cerca']:
+        tipo = LABEL_TIPO.get(label, label.lower())
+        manual = next((c for c in item.get('cerca', []) if c['tipo'] == tipo and c.get('ref')), None)
+        entry = manual or nearest(item, tipo)
+        if not entry:
+            continue
+        if entry.get('ref'):
+            ref_item = ITEMS[entry['ref']]
+            c = coords(ref_item)
+            name = ref_item['nombre']
+        else:
+            c, name = entry.get('geo'), entry.get('nombre')
+        if c and name:
+            pts.append({'n': name, 'lat': c[0], 'lon': c[1], 'k': 'a'})
+    return pts
+
+
+def build_item(ref):
+    it = ITEMS[ref]
+    cat, slug = ref.split('/')
+    rk = RANK_POS.get(ref)
+    c = CATS[cat]
+    short, h1 = t(c['corto']), t(c['titulo'])
+    name, why, spec = it['nombre'], t(it['por_que']), spec_text(cat, it['ficha'])
+    path = f'/ranking/{cat}/{slug}/'
+    pos = rk[1] if rk else None
+    title = (ui('item.title', name=name, n=pos, cat=short) if pos else f'{name} · {short}') + ' · Mejor Imposible'
+    desc = trim(why if len(why) >= 60 else f'{why} {it["lugar"]} · {short}.')
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('crumb.rankings'), u(HOME) + '#rankings'), (short, u(f'/ranking/{cat}/')), (name, None)]
+    photo = ''
+    if it.get('foto_real'):
+        photo = f'\n    <section class="wrap item-photo">{ph_box(it, "photo")}</section>'
+    tiles = near_tiles(cat, it)
+    pts = [{'n': name, 'lat': coords(it)[0], 'lon': coords(it)[1], 'k': 'p'}] if coords(it) else []
+    pts += near_points(cat, it)
+    map_block = ''
+    if pts:
+        aria = ui('item.map_aria', name=name)
+        map_block = (f'\n    <section class="wrap item-map"><div class="map live" id="plan-map" role="region" aria-label="{e(aria)}" '
+                     f'data-points="{e(json.dumps(pts, ensure_ascii=False))}"><noscript>{e(aria)}</noscript></div></section>')
+    plans = [p for p in all_plans() if any(s.get('ref') == ref for d in p['dias'] for s in d['pasos'])]
+    plans_block = ''
+    if plans:
+        lis = ''.join(f'\n            <li><a href="{u("/planes/" + p["slug"] + "/")}">{e(t(p["titulo"]))}</a></li>' for p in plans)
+        plans_block = (f'\n    <section class="wrap prose"><h2>{e(ui("item.plans"))}</h2>\n        <ul class="sources">{lis}\n        </ul>\n    </section>')
+    src = ''
+    if it.get('fuentes'):
+        lis = ''.join(f'\n            <li><a href="{e(url)}" rel="noopener">{e(url.split("/")[2].replace("www.", ""))}</a></li>' for url in it['fuentes'])
+        src = (f'\n    <section class="wrap prose"><h2>{e(ui("item.sources"))}</h2>\n        <ul class="sources">{lis}\n        </ul>\n    </section>')
+    nav = ''
+    if rk:
+        prev_l = f'<a href="{item_url(rk[3])}">{e(ui("item.prev"))} {e(ITEMS[rk[3]]["nombre"])}</a>' if rk[3] else '<span></span>'
+        next_l = f'<a href="{item_url(rk[4])}">{e(ITEMS[rk[4]]["nombre"])} {e(ui("item.next"))}</a>' if rk[4] else '<span></span>'
+        nav = f'\n    <nav class="wrap item-nav" aria-label="{e(h1)}">{prev_l}{next_l}</nav>'
+    rank_line = ''
+    if rk:
+        rank_line = (f'\n        <p class="rank-line">{e(ui("item.position", n=rk[1], total=rk[2]))} · '
+                     f'<a href="{u(f"/ranking/{cat}/")}#{slug}">{e(h1)}</a></p>')
+    ld_obj = {"@type": SCHEMA_OF.get(cat, 'Place'), "name": name, "description": why, "inLanguage": LANG,
+              "url": SITE + u(path), "address": {"@type": "PostalAddress", "addressLocality": it['lugar'], "addressCountry": "ES"}}
+    if coords(it):
+        ld_obj["geo"] = {"@type": "GeoCoordinates", "latitude": coords(it)[0], "longitude": coords(it)[1]}
+    if it.get('foto_real'):
+        ld_obj["image"] = SITE + it['foto_real']['archivo']
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero item-hero">
+        <p class="eyebrow">{e(short)} · {e(it['lugar'])}</p>
+        <h1>{e(name)}</h1>
+        <p class="lead-text">{e(why)}</p>
+        <p class="item-spec">{e(spec)}</p>{rank_line}
+    </section>{photo}
+    <section class="wrap near item-near">
+        <p class="label">{e(ui('rank.near'))}</p>
+        <div class="near-grid">{tiles}</div>
+    </section>{map_block}{plans_block}{src}{nav}
+</main>
+'''
+    html_page = page(path, title, desc, [ld_obj, bc_ld(crumb)], body)
+    write(path + 'index.html', html_page.replace('</body>', MAP_JS + '\n</body>') if map_block else html_page)
+
+
 # ---------------- Directorio de marcas de lujo (motor) ----------------
 BRAND_ORDER = ['Ferrari', 'Lamborghini', 'Aston Martin', 'Bentley', 'Rolls-Royce', 'McLaren']
 CITY_SLUG = {'Madrid': 'madrid', 'Barcelona': 'barcelona', 'Marbella': 'marbella', 'Valencia': 'valencia'}
@@ -793,7 +905,7 @@ def build_home():
     for slug, key, hid in HOME_STRIPS:
         entries, _ = ranking_entries(slug)
         lis = ''.join(
-            f'\n                    <li><a href="{u(f"/ranking/{slug}/")}#{en["slug"]}">{ph_box(en["item"], STRIP_TONES[i])}<div class="row"><span class="n">{i+1:02d}</span><span><span class="name">{e(en["nombre"])}</span><span class="place">{e(en["lugar"])}</span></span></div></a></li>'
+            f'\n                    <li><a href="{item_url(en["item"]["id"])}">{ph_box(en["item"], STRIP_TONES[i])}<div class="row"><span class="n">{i+1:02d}</span><span><span class="name">{e(en["nombre"])}</span><span class="place">{e(en["lugar"])}</span></span></div></a></li>'
             for i, en in enumerate(entries[:5]))
         strips += f'''
         <section class="wrap strip" aria-labelledby="{hid}">
@@ -928,7 +1040,8 @@ def build_destinos():
 
 
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
-              + ['/motor/marcas/', '/metodologia/', '/destinos/'])
+              + ['/motor/marcas/', '/metodologia/', '/destinos/']
+              + ['/ranking/' + r + '/' for r in ITEMS])
 
 
 # ---------------- Sitemap ----------------
@@ -955,6 +1068,8 @@ if __name__ == '__main__':
         build_home()
         for slug in CATS:
             build_rank(slug)
+        for ref in ITEMS:
+            build_item(ref)
         for fn in os.listdir(os.path.join(DATA, 'planes')):
             build_plan(fn[:-5])
         build_directory()
