@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-04",
+  "actualizado": "2026-11-05",
   "nota": "Datos de directorios y prensa; verificar en la web oficial de cada marca antes de publicar.",
   "concesionarios": [
     {
@@ -47,19 +47,21 @@
       "ciudad": "Valencia",
       "zona": "resto",
       "nombre": "Ferrari Valencia (Quadis Gallery)",
-      "direccion": "Avda. Maestro Rodrigo 50, 46035 Valencia",
+      "direccion": "Avda. Maestro Rodrigo 50-52, 46015 Valencia",
       "telefono": "963 479 199",
-      "estado": "por verificar: solo aparece en el directorio del Ferrari Club España",
+      "estado": "contrastado (Quadis y AutoScout24); confirmar en el localizador de Ferrari",
       "fuentes": [
-        "https://www.ferrariclubespana.com/concesionarios/3-ferrari-en-valencia"
+        "https://www.ferrariclubespana.com/concesionarios/3-ferrari-en-valencia",
+        "https://www.autoscout24.de/haendler/quadis-gallery-valencia"
       ],
       "id": "ferrari-valencia",
-      "busqueda": "Avenida Maestro Rodrigo 50, Valencia",
+      "busqueda": "Avenida Maestro Rodrigo 50 Valencia",
+      "notas": "El Maserati de Quadis consta en el nº 107 de la misma avenida.",
       "coordenadas": {
-        "lat": 39.47665,
-        "lon": -0.39708
+        "lat": 39.48202,
+        "lon": -0.40092
       },
-      "geo_fuente": "Avinguda del Mestre Rodrigo, Campanar, València, Comarca de València, València / Valencia,"
+      "geo_fuente": "Avinguda del Mestre Rodrigo, Sant Pau, Campanar, València, Comarca de València, València /"
     },
     {
       "marca": "Ferrari",
@@ -147,14 +149,16 @@
       "zona": "resto",
       "nombre": "Aston Martin Madrid (Tayre Automoción)",
       "direccion": "Glorieta de López de Hoyos 5, 28002 Madrid",
-      "telefono": null,
-      "estado": "por verificar: fuente de 2019",
-      "notas": "Fuente de 2019; Tayre también figura como Maserati.",
+      "telefono": "91 457 76 34",
+      "estado": "verificado en la web oficial de Aston Martin",
+      "notas": "Taller y ocasión en C/ Manuel Tovar 12, 28034 Madrid.",
       "fuentes": [
+        "https://astonmartin.com/en/dealers/aston-martin-madrid",
         "https://es.motor1.com/news/344257/aston-martin-madrid-concesionario-tayre/"
       ],
       "id": "aston-martin-madrid",
-      "busqueda": "Glorieta de López de Hoyos 5, Madrid",
+      "busqueda": "Glorieta de López de Hoyos 5 Madrid",
+      "horario": "Lunes a viernes, 9:30-14:00 y 16:30-20:00; sábados, 10:00-13:30",
       "coordenadas": {
         "lat": 40.44086,
         "lon": -3.68014
@@ -166,42 +170,64 @@
       "ciudad": "Marbella",
       "zona": "andalucia",
       "nombre": "Bentley Marbella",
-      "direccion": null,
+      "direccion": "Avda. Norberto Goizueta s/n, 29670 San Pedro Alcántara (Marbella)",
       "telefono": "+34 952 785 258",
-      "estado": "por verificar (fuente antigua o única)",
-      "notas": "Bentley figura con puntos en Barcelona, Madrid (Astara Retail), Marbella y Valencia; faltan direcciones.",
+      "estado": "por verificar: teléfono en la web oficial; dirección del grupo operador, sin confirmar",
+      "notas": "Dirección del grupo C. de Salamanca; otras fuentes citan la Ctra. de Cádiz km 171.",
       "fuentes": [
-        "https://marbella.bentleymotors.com/eu/en/stock/bentley/mulsanne-speed-v8/details-jkdd3xv6"
+        "https://marbella.bentleymotors.com/eu/en/stock/bentley/mulsanne-speed-v8/details-jkdd3xv6",
+        "https://www.coches.com/concesionario-c-de-salamanca-malaga/D2242/73aea404-77a3-481e-9264-5d3f5cafe9a8/"
       ],
-      "id": "bentley-marbella"
+      "id": "bentley-marbella",
+      "busqueda": "Avenida Norberto Goizueta San Pedro Alcántara",
+      "coordenadas": {
+        "lat": 36.48189,
+        "lon": -4.98988
+      },
+      "geo_fuente": "Terminal de San Pedro de Alcántara, Avenida Norberto Goizueta Díaz, El Ingenio, Guadalmina"
     },
     {
       "marca": "Rolls-Royce",
       "ciudad": "Barcelona",
       "zona": "cataluna",
       "nombre": "Rolls-Royce Motor Cars Barcelona",
-      "direccion": null,
-      "telefono": null,
-      "estado": "por verificar (fuente antigua o única)",
-      "notas": "Anunciado como único concesionario de España (con Spirits of Speed Catalunya); artículo antiguo.",
+      "direccion": "Carrer de les Ciències 114-118, 08908 L'Hospitalet de Llobregat (Barcelona)",
+      "telefono": "+34 931 311 553",
+      "estado": "contrastado (ficha legal de la web oficial y OpenStreetMap)",
+      "notas": "Dirección de la ficha legal de la web oficial; en 2019 se anunció en la calle Valencia 300 (Barcelona).",
       "fuentes": [
+        "https://www.rolls-roycemotorcars.com/barcelona/en_GB/legal-information.html",
         "https://www.motorpasion.com/superlujo/rolls-royce-abrira-barcelona-su-unico-concesionario-espana-animada-auge-10-mercado-lujo"
       ],
-      "id": "rolls-royce-barcelona"
+      "id": "rolls-royce-barcelona",
+      "busqueda": "Carrer de les Ciències 114 L'Hospitalet de Llobregat",
+      "coordenadas": {
+        "lat": 41.35061,
+        "lon": 2.11873
+      },
+      "geo_fuente": "Rolls Royce Motor Cars Barcelona, 114-118, Carrer de les Ciències, Granvia Sud, Districte "
     },
     {
       "marca": "McLaren",
       "ciudad": "Barcelona",
       "zona": "cataluna",
       "nombre": "McLaren Barcelona",
-      "direccion": null,
-      "telefono": null,
-      "estado": "por verificar (fuente antigua o única)",
-      "notas": "L'Hospitalet; anunciado en 2017-2018 como único concesionario, gestionado por Comercial Chelsea 1979.",
+      "direccion": "Carrer de la Botànica 81, 08908 L'Hospitalet de Llobregat (Barcelona)",
+      "telefono": "+34 930 155 346",
+      "estado": "contrastado (web oficial de McLaren según el buscador y prensa de 2020)",
       "fuentes": [
+        "https://cars.mclaren.com/gl_en/retailers/Barcelona",
+        "https://www.autofacil.es/mclaren-nueva-sede-barcelona-2020/",
         "https://www.motorpasion.com/industria/mclaren-barcelona-es-el-nuevo-y-unico-concesionario-de-la-firma-britanica-en-nuestro-pais"
       ],
-      "id": "mclaren-barcelona"
+      "id": "mclaren-barcelona",
+      "horario": "Lunes a miércoles, 9:00-14:00 y 15:00-19:30; resto de días por confirmar",
+      "busqueda": "Carrer de la Botànica 81 L'Hospitalet de Llobregat",
+      "coordenadas": {
+        "lat": 41.35238,
+        "lon": 2.13204
+      },
+      "geo_fuente": "Carrer de la Botànica, Granvia Sud, Districte III, l'Hospitalet de Llobregat, Barcelonès, "
     }
   ]
 }
