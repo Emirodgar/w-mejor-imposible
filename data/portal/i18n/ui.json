@@ -1070,5 +1070,13 @@
     "de": "Im Plan: {plan}",
     "pt": "No plano: {plan}",
     "it": "Nel piano: {plan}"
+  },
+  "item.context": {
+    "es": "Contexto",
+    "en": "Context",
+    "fr": "Contexte",
+    "de": "Kontext",
+    "pt": "Contexto",
+    "it": "Contesto"
   }
 }

@@ -17,7 +17,8 @@
   "cerca": [],
   "fuentes": [
     "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
-    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/",
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
   ],
   "busqueda": "Son Vida Palma",
   "coordenadas": {
@@ -32,5 +33,13 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Palma._Castell_de_Son_Vida_(2).jpg",
     "titulo": "File:Palma. Castell de Son Vida (2).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Palma tiene la tercera casa del ranking de idealista de 2026: Villa Solitaire, obra del arquitecto Matteo Thun, con siete dormitorios y dos piscinas."
+    },
+    {
+      "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
+    }
+  ]
 }

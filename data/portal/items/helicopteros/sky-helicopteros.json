@@ -1,0 +1,28 @@
+{
+  "id": "helicopteros/sky-helicopteros",
+  "categoria": "helicopteros",
+  "nombre": "Sky Helicópteros",
+  "lugar": "Son Bonet · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "helicóptero en el aeródromo de Son Bonet"
+  },
+  "por_que": {
+    "es": "Base principal en el aeródromo de Son Bonet, en Marratxí, con helicópteros AS350 y AS355."
+  },
+  "ficha": {
+    "base": "Son Bonet (Mallorca)",
+    "aoc": "AOC ES.AOC.138"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
+    "https://theflyingengineer.com/listing/sky-helicopteros/"
+  ],
+  "busqueda": "Aeródromo de Son Bonet, Marratxí",
+  "coordenadas": {
+    "lat": 39.60022,
+    "lon": 2.70384
+  },
+  "geo_fuente": "Aeròdrom de Son Bonet, carreró de Can Barbut, es Pla de na Tesa, Marratxí, Raiguer, Illes "
+}

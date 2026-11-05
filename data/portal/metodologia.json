@@ -159,6 +159,13 @@
         "es": "Fichas de los miembros españoles de Relais & Châteaux, noviembre de 2026."
       },
       "url": "https://www.relaischateaux.com/us/destinations/europe/spain"
+    },
+    {
+      "cat": "helicopteros",
+      "texto": {
+        "es": "Listado de certificados de operador aéreo (AOC) de AESA, generado el 2 de noviembre de 2026; las bases salen de las webs de los operadores y de fichas de terceros, y están pendientes de confirmar con cada empresa."
+      },
+      "url": "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf"
     }
   ]
 }

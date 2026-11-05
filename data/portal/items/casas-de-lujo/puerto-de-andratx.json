@@ -17,12 +17,29 @@
   "cerca": [],
   "fuentes": [
     "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
-    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/",
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
   ],
   "busqueda": "Puerto de Andratx",
   "coordenadas": {
     "lat": 39.54542,
     "lon": 2.3916
   },
-  "geo_fuente": "Cine Puerto, carretera d'es Port, Port d'Andratx, Andratx, Serra de Tramuntana, Illes Bale"
+  "geo_fuente": "Cine Puerto, carretera d'es Port, Port d'Andratx, Andratx, Serra de Tramuntana, Illes Bale",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/puerto-de-andratx.jpg",
+    "autor": "Dietmar Rabich",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Port_d%27Andratx_(Mallorca,_Spain),_Harbour_--_2009_--_1540.jpg",
+    "titulo": "File:Port d'Andratx (Mallorca, Spain), Harbour -- 2009 -- 1540.jpg"
+  },
+  "contexto": [
+    {
+      "es": "Mallorca ocupa tres de los cinco primeros puestos del ranking de idealista de 2026, con casas en Pollença, Palma y Puigpunyent."
+    },
+    {
+      "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
+    }
+  ]
 }

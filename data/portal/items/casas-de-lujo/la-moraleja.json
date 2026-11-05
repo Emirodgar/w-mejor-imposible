@@ -17,7 +17,8 @@
   "cerca": [],
   "fuentes": [
     "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
-    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/",
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
   ],
   "busqueda": "La Moraleja Alcobendas",
   "coordenadas": {
@@ -32,5 +33,13 @@
     "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fuente": "https://commons.wikimedia.org/wiki/File:Alcobendas_-_Urbanizaci%C3%B3n_La_Moraleja_03.jpg",
     "titulo": "File:Alcobendas - Urbanización La Moraleja 03.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "En el ranking de idealista de 2026, las diez casas más caras a la venta están en la Costa del Sol y en Baleares; fuera de ahí, la oferta más cara se reparte entre Cataluña y la Comunidad de Madrid."
+    },
+    {
+      "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
+    }
+  ]
 }

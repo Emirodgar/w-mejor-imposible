@@ -187,6 +187,11 @@
         <div class="near-grid"><a href="#"><span class="sq"></span><span class="k">VIVOOD Landscape Hotel &amp; Spa</span><span class="t">Hotel · 1 Michelin-Schlüssel · ca. 25 Min. entfernt</span></a><a href="#"><span class="sq"></span><span class="k">El Xato</span><span class="t">Restaurant · 1 Michelin-Stern · ca. 15 Min. entfernt</span></a><a href="#"><span class="sq"></span><span class="k">Flughafen Alicante-Elche</span><span class="t">Flughafen · ca. 60 Min. entfernt</span></a></div>
     </section>
     <section class="wrap item-map"><div class="map live" id="plan-map" role="region" aria-label="Karte: SHA Spain und das Beste in der Nähe" data-points="[{&quot;n&quot;: &quot;SHA Spain&quot;, &quot;lat&quot;: 38.55991, &quot;lon&quot;: -0.07372, &quot;k&quot;: &quot;p&quot;, &quot;i&quot;: &quot;spas&quot;}, {&quot;n&quot;: &quot;VIVOOD Landscape Hotel &amp; Spa&quot;, &quot;lat&quot;: 38.67604, &quot;lon&quot;: -0.21009, &quot;k&quot;: &quot;a&quot;, &quot;i&quot;: &quot;hotel&quot;}, {&quot;n&quot;: &quot;El Xato&quot;, &quot;lat&quot;: 38.61724, &quot;lon&quot;: -0.12316, &quot;k&quot;: &quot;a&quot;, &quot;i&quot;: &quot;restaurante&quot;}, {&quot;n&quot;: &quot;Flughafen Alicante-Elche&quot;, &quot;lat&quot;: 38.28442, &quot;lon&quot;: -0.56575, &quot;k&quot;: &quot;a&quot;, &quot;i&quot;: &quot;airport&quot;}]"><noscript>Karte: SHA Spain und das Beste in der Nähe</noscript></div></section>
+    <section class="wrap prose"><h2>Kommt in diesen Reisen vor</h2>
+        <ul class="sources">
+            <li><a href="/de/planes/longevidad-en-la-costa-blanca/">Langlebigkeit an der Costa Blanca</a></li>
+        </ul>
+    </section>
     <section class="wrap prose"><h2>Quellen</h2>
         <ul class="sources">
             <li><a href="https://worldspaawards.com/award/spain-best-wellness-retreat/2026" rel="noopener">worldspaawards.com</a></li>
@@ -226,13 +231,14 @@
         motor: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM12 2v7M12 15v7M2 12h7M15 12h7',
         'compras-de-lujo': 'M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0',
         'vida-nocturna': 'M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z',
+        helicopteros: 'M3 5h18M12 5v4M5 12h9a5 5 0 0 1 5 5v1H8a3 3 0 0 1-3-3zM19 14h3M8 21h9',
         'bares-de-cocteleria': 'M8 22h8M12 11v11M19 3l-7 8-7-8z',
         airport: 'M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z'
     };
     var pts = JSON.parse(el.dataset.points);
     var map = L.map(el, { scrollWheelZoom: false, zoomControl: false });
     L.control.zoom({ position: 'bottomright' }).addTo(map);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=cb1_2izw_1_55d93b51ded1dcecfa044181', {
         subdomains: 'abcd', maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
     }).addTo(map);

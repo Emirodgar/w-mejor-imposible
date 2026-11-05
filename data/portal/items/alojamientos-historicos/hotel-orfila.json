@@ -24,5 +24,13 @@
     "lat": 40.4272,
     "lon": -3.69328
   },
-  "geo_fuente": "Relais & Châteaux Hotel Orfila Madrid, 6, Calle de Orfila, Almagro, Chamberí, Madrid, Comu"
+  "geo_fuente": "Relais & Châteaux Hotel Orfila Madrid, 6, Calle de Orfila, Almagro, Chamberí, Madrid, Comu",
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/hotel-orfila.jpg",
+    "autor": "Triplecaña",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Hotel_Orfila_(01.jpg",
+    "titulo": "File:Hotel Orfila (01.jpg"
+  }
 }

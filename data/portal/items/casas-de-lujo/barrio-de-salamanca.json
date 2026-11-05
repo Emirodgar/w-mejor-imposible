@@ -16,12 +16,21 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html"
+    "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
   ],
   "busqueda": "Barrio de Salamanca Madrid",
   "coordenadas": {
     "lat": 40.43644,
     "lon": -3.6857
   },
-  "geo_fuente": "Barrio de Salamanca, Calle del General Oráa, Castellana, Salamanca, Madrid, Comunidad de M"
+  "geo_fuente": "Barrio de Salamanca, Calle del General Oráa, Castellana, Salamanca, Madrid, Comunidad de M",
+  "contexto": [
+    {
+      "es": "En el ranking de idealista de 2026, las diez casas más caras a la venta están en la Costa del Sol y en Baleares; fuera de ahí, la oferta más cara se reparte entre Cataluña y la Comunidad de Madrid."
+    },
+    {
+      "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
+    }
+  ]
 }

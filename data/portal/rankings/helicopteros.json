@@ -1,0 +1,11 @@
+{
+  "categoria": "helicopteros",
+  "actualizado": {
+    "es": "noviembre 2026"
+  },
+  "items": [
+    "helicopteros/sky-helicopteros",
+    "helicopteros/world-aviation",
+    "helicopteros/bg-helicopters"
+  ]
+}

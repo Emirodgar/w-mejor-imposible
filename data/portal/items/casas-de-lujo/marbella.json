@@ -17,7 +17,8 @@
   "cerca": [],
   "fuentes": [
     "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
-    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/",
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
   ],
   "busqueda": "Marbella",
   "coordenadas": {
@@ -32,5 +33,13 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Marbella_from_La_Concha,_Andalucia,_Spain_-_Sept_2009.jpg",
     "titulo": "File:Marbella from La Concha, Andalucia, Spain - Sept 2009.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "La casa más cara del ranking de idealista de 2026 es Villa Bellagio, en la Milla de Oro de Marbella: 13 dormitorios en una parcela de 14.000 metros cuadrados."
+    },
+    {
+      "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
+    }
+  ]
 }

@@ -1,0 +1,28 @@
+{
+  "id": "helicopteros/world-aviation",
+  "categoria": "helicopteros",
+  "nombre": "World Aviation",
+  "lugar": "Málaga · Marbella",
+  "zona": "andalucia",
+  "foto": {
+    "es": "helicóptero sobre la Costa del Sol"
+  },
+  "por_que": {
+    "es": "Vuela en la Costa del Sol con Bell 429, Bell 505 y EC130; según la propia empresa, opera desde el aeropuerto de Málaga y el helipuerto de Marbella."
+  },
+  "ficha": {
+    "base": "Málaga y Marbella",
+    "aoc": "AOC ES.AOC.163"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
+    "https://worldaviationato.com/"
+  ],
+  "busqueda": "Aeropuerto de Málaga-Costa del Sol",
+  "coordenadas": {
+    "lat": 36.67854,
+    "lon": -4.49996
+  },
+  "geo_fuente": "Aeropuerto de Málaga - Costa del Sol, Avenida del Comandante García Morato, Churriana, Mál"
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "longevidad-en-la-costa-blanca",
+  "orden": 12,
+  "titulo": {
+    "es": "Longevidad en la Costa Blanca"
+  },
+  "meta": {
+    "es": "Plan completo · 3 días · Bienestar"
+  },
+  "meta_corta": {
+    "es": "3 días · Bienestar"
+  },
+  "lead": {
+    "es": "El mejor retiro de bienestar de España según los World Spa Awards, una clínica nueva en Altea y una cena de tres estrellas en Dénia."
+  },
+  "foto_portada": {
+    "es": "costa de Altea"
+  },
+  "portada_ref": "spas/sha-spain",
+  "zona": "resto",
+  "tipo_turista": "Bienestar",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Alicante-Elche"
+      }
+    },
+    {
+      "tipo": "descanso",
+      "ref": "spas/sha-spain"
+    },
+    {
+      "tipo": "descanso",
+      "nombre": {
+        "es": "ZEM Wellness Clinic Altea"
+      }
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/quique-dacosta"
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada y retiro"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Alicante-Elche"
+          },
+          "por_que": {
+            "es": "El más cercano a L'Albir, a unos 50 minutos en coche."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Spa",
+          "tono": "oscuro",
+          "ref": "spas/sha-spain"
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Una segunda opción en Altea"
+      },
+      "pasos": [
+        {
+          "tipo": "Spa",
+          "tono": "claro",
+          "nombre": {
+            "es": "ZEM Wellness Clinic Altea"
+          },
+          "por_que": {
+            "es": "Abrió en 2025 en Altea, en la misma comarca que SHA, con un enfoque de «longevidad mediterránea»."
+          },
+          "foto": {
+            "es": "clínica con vistas al mar"
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Una cena de contraste"
+      },
+      "pasos": [
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "ref": "restaurantes/quique-dacosta",
+          "por_que": {
+            "es": "A algo menos de una hora de L'Albir: tres estrellas Michelin en Dénia."
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Alicante-Elche"
+          },
+          "por_que": {
+            "es": "A algo más de una hora de Dénia."
+          },
+          "foto": {
+            "es": "carretera de costa"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Alicante-Elche"
+      },
+      "min": 50
+    }
+  ]
+}

@@ -567,5 +567,31 @@
       "es": "Miembros españoles de Relais & Châteaux alojados en edificios históricos, del más antiguo al más reciente según la ficha de la asociación. No es la lista completa de la asociación y ningún alojamiento paga por estar."
     },
     "placeholder": []
+  },
+  "helicopteros": {
+    "corto": {
+      "es": "Helicópteros"
+    },
+    "titulo": {
+      "es": "Los 3 operadores de helicóptero con certificado AOC y base en nuestras zonas"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del operador]"
+    },
+    "foto_placeholder": {
+      "es": "helicóptero en su base"
+    },
+    "ficha": [
+      "{base}",
+      "{aoc}"
+    ],
+    "cerca": [
+      "Aeropuerto",
+      "Hotel"
+    ],
+    "como_ordenamos": {
+      "es": "Solo operadores del listado de certificados de operador aéreo (AOC) de AESA, con base conocida. Ordenamos por la solidez de la base confirmada y la zona que cubren. Ningún operador paga por estar."
+    },
+    "placeholder": []
   }
 }

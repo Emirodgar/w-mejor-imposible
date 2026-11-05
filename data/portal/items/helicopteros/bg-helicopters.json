@@ -1,0 +1,28 @@
+{
+  "id": "helicopteros/bg-helicopters",
+  "categoria": "helicopteros",
+  "nombre": "BG Helicopters",
+  "lugar": "Sabadell · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "helicóptero en un helipuerto"
+  },
+  "por_que": {
+    "es": "Sede en Sabadell, en el área de Barcelona; ofrece chárter VIP y vuelos para eventos. Su base de operaciones está por confirmar."
+  },
+  "ficha": {
+    "base": "Sabadell (Barcelona)",
+    "aoc": "AOC ES.AOC.136"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
+    "https://www.iberinform.es/empresa/862196/bigas-grup-helicopters"
+  ],
+  "busqueda": "Sabadell, Barcelona",
+  "coordenadas": {
+    "lat": 41.54608,
+    "lon": 2.10832
+  },
+  "geo_fuente": "Sabadell, Vallès Occidental, Barcelona, Catalunya, España"
+}
