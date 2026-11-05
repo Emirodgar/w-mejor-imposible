@@ -1,5 +1,98 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:13382450732145813628",
+    "url": "https://gtspirit.com/2026/11/05/mercedes-amg-gt-4-door-coupe-first-drive-the-porsche-taycan-turbo-gt-has-met-its-match/",
+    "source": "gtspirit.com",
+    "published": "2026-11-05T18:22:55Z",
+    "headline": "Mercedes-AMG planta cara al Porsche Taycan Turbo GT con su nueva berlina deportiva",
+    "excerpt": "El nuevo Mercedes-AMG GT de 4 puertas se postula como rival directo del Taycan Turbo GT con 1.169 CV de potencia y capacidad de carga de hasta 600 kW.",
+    "category": "Análisis",
+    "models": [
+      "taycan"
+    ],
+    "impact": "La llegada de alternativas con potencias similares y altas velocidades de recarga puede presionar las tarifas y el valor residual del escalón superior del Taycan.",
+    "links": [
+      "comparativas",
+      "sm_taycan"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:2525592043081580660",
+    "url": "https://driving.ca/car-comparisons/2027-audi-sq6-e-tron-vs-2027-porsche-cayenne-electric/",
+    "source": "Driving.ca",
+    "published": "2026-11-05T17:54:17Z",
+    "headline": "Frente a frente: Audi SQ6 e-tron contra el futuro Porsche Cayenne Electric",
+    "excerpt": "Una comparativa técnica anticipa el duelo entre el Audi SQ6 e-tron y el próximo Porsche Cayenne eléctrico de cara a los lanzamientos previstos para 2027.",
+    "category": "Análisis",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Permite a quienes busquen un SUV eléctrico familiar de altas prestaciones valorar si merece la pena aguardar al Cayenne de baterías o considerar opciones ya en el mercado.",
+    "links": [
+      "comparador",
+      "sm_cayenne"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6855869819582725096",
+    "url": "https://www.thesupercarblog.com/porsche-911-taycan-panamera-get-updated-infotainment-software/",
+    "source": "The Supercar Blog",
+    "published": "2026-11-05T17:07:40Z",
+    "headline": "Porsche actualiza el sistema multimedia en las gamas 911, Taycan y Panamera",
+    "excerpt": "Una nueva actualización de software incorpora Porsche Digital Interaction a los modelos 911, Taycan y Panamera, además de incluir a las versiones térmicas e híbridas del Cayenne.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "taycan",
+      "panamera",
+      "cayenne"
+    ],
+    "impact": "Si compras una unidad reciente o de ocasión moderna, conviene verificar si cuenta con esta última versión del software para asegurar la compatibilidad con las funciones digitales actualizadas.",
+    "links": [
+      "opiniones",
+      "fallos"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:7368470341780791183",
+    "url": "https://www.hotcars.com/older-manual-porsche-gt3-rs-that-out-earned-faster-newer-pdk-model/",
+    "source": "HotCars",
+    "published": "2026-11-05T15:15:33Z",
+    "headline": "El 911 GT3 RS 997.2 manual supera en cotización a generaciones más modernas",
+    "excerpt": "Las unidades del 911 GT3 RS 997.2 de 2011 rondan ya los 450.000 dólares en el mercado de ocasión, superando claramente las cifras de modelos automáticos posteriores.",
+    "category": "Análisis",
+    "models": [
+      "911"
+    ],
+    "impact": "Refleja cómo las versiones puristas manuales actúan como valor refugio frente a variantes automáticas más rápidas pero menos cotizadas a largo plazo.",
+    "links": [
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:3418750323595856070",
+    "url": "https://www.carscoops.com/2307565/porsche-panamera-hybrid-spy-shots-my28-no-disguise/",
+    "source": "CarScoops",
+    "published": "2026-11-05T15:04:28Z",
+    "headline": "Cazado el rediseño del Porsche Panamera para revitalizar sus ventas",
+    "excerpt": "Fotografías espía revelan pruebas de actualización estética en el Panamera, mientras la marca busca contener la desaceleración comercial de su berlina.",
+    "category": "Modelos",
+    "models": [
+      "panamera"
+    ],
+    "impact": "Si tienes en mente adquirir un Panamera en concesionario, la proximidad de un rediseño suele abrir margen de negociación en el stock existente.",
+    "links": [
+      "precios_ocasion",
+      "sm_panamera"
+    ],
+    "week": "2026-W45"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:1820470225550679768",
     "url": "https://es.motor1.com/photos/935074/porsche-approved-official-certified-pre-owned-porsche-vehicles/",
     "source": "es.motor1.com",
