@@ -758,6 +758,7 @@
       "nombre": "Etxebarri",
       "ciudad": "Axpe",
       "estrellas": 1,
+      "ref": "restaurantes/etxebarri",
       "coordenadas": {
         "lat": 43.11599,
         "lon": -2.59841

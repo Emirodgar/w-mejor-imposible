@@ -35,7 +35,7 @@ SITE = 'https://mejorimposible.es'
 HOME = '/'                 # home del portal (es en /, resto en /<idioma>/)
 NOINDEX = False            # True mientras el portal sea un borrador
 LANGS = [('es', 'ES'), ('en', 'EN'), ('fr', 'FR'), ('de', 'DE'), ('pt', 'PT'), ('it', 'IT')]
-PUBLISHED = ['es', 'en']   # idiomas que se generan y aparecen en el selector
+PUBLISHED = ['es', 'en', 'fr', 'de', 'pt', 'it']   # idiomas que se generan y aparecen en el selector
 LANG = 'es'
 
 ZONE_KEYS = ['todas', 'andalucia', 'cataluna', 'baleares', 'canarias', 'resto']
@@ -275,6 +275,8 @@ def page(path, title, desc, lds, body):
     """path: ruta de la página en español (con barra inicial); sirve para canonical, hreflang y selector de idioma."""
     if path not in PAGES:
         PAGES.append(path)
+    if len(title) > 65:  # los títulos largos pierden la marca para no cortarse en los resultados
+        title = title.replace(' · Mejor Imposible', '')
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
@@ -392,7 +394,7 @@ def near_tiles(cat, item):
             detail = entry.get('nota') or (ui('near.min', n=entry['min']) if entry.get('min') else '')
             k, tt = e(name), e(f'{name_l} · {detail}' if detail else name_l)
         else:
-            k, tt = e(name_l), e(ui('near.tbd'))
+            continue  # sin sugerencia cercana: no se muestra el hueco
         tiles += f'<a href="{href or "#"}"><span class="sq"></span><span class="k">{k}</span><span class="t">{tt}</span></a>'
     return tiles
 
@@ -619,14 +621,14 @@ def build_plan(slug):
             if s.get('alternativas'):
                 alts = ' · '.join(f'<a href="#">{e(t(a))}</a>' for a in s['alternativas'])
             else:
-                alts = f'<a href="#">{e(ui("plan.opt2"))}</a> · <a href="#">{e(ui("plan.opt3"))}</a>'
+                alts = ''
             steps += f'''
                 <article>
                     {pic}
                     <p class="kind">{e(tr(s['tipo']))}</p>
                     <h3>{name}</h3>
                     <p class="why">{e(why)}</p>
-                    <p class="alt">{e(ui('plan.alts'))} {alts}</p>
+                    {f'<p class="alt">{e(ui("plan.alts"))} {alts}</p>' if alts else ''}
                 </article>'''
         days_html += f'''
     <section class="wrap day" aria-labelledby="dia-{n:02d}">

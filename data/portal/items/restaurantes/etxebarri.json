@@ -1,0 +1,36 @@
+{
+  "id": "restaurantes/etxebarri",
+  "categoria": "restaurantes",
+  "nombre": "Asador Etxebarri",
+  "lugar": "Axpe · Bizkaia",
+  "zona": "resto",
+  "foto": {
+    "es": "asador en el valle de Atxondo"
+  },
+  "por_que": {
+    "es": "Una estrella Michelin y brasa de leña en Axpe, en el valle de Atxondo: número uno del mundo en The World's 50 Best 2026."
+  },
+  "ficha": {
+    "chef": "Bittor Arginzoniz",
+    "estrellas": "1 estrella"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html"
+  ],
+  "busqueda": "Asador Etxebarri Axpe",
+  "coordenadas": {
+    "lat": 43.11599,
+    "lon": -2.59841
+  },
+  "geo_fuente": "Michelin guía 2026: Etxebarri, Axpe (coordenadas ya verificadas en data/portal/michelin/guia-2026.json)",
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/etxebarri.jpg",
+    "autor": "Krista",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Etxebarri_angulas.jpg",
+    "titulo": "File:Etxebarri angulas.jpg"
+  }
+}
