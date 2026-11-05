@@ -109,7 +109,8 @@
     },
     "ficha": [
       "Cocina de {chef}",
-      "{estrellas} Michelin"
+      "{estrellas} Michelin",
+      "{galardon}"
     ],
     "cerca": [
       "Hotel",
