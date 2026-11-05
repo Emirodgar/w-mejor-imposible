@@ -1,0 +1,28 @@
+{
+  "id": "bares-de-cocteleria/sips",
+  "categoria": "bares-de-cocteleria",
+  "nombre": "Sips",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "barra de coctelería"
+  },
+  "por_que": {
+    "es": "Bar de autor en el Eixample de Barcelona, tercero del mundo en 2025 y decimosexto en 2026."
+  },
+  "ficha": {
+    "puesto": "The World's 50 Best Bars 2026: n.º 16"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://thedotmagazine.com/the-50-best-bars-2026-full-list-and-winners/",
+    "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe",
+    "https://joinpearl.co/lists/2025-worlds-50-best-bars"
+  ],
+  "busqueda": "Sips Bar Barcelona Muntaner",
+  "coordenadas": {
+    "lat": 41.38887,
+    "lon": 2.15672
+  },
+  "geo_fuente": "Sips, Carrer de Muntaner, l'Antiga Esquerra de l'Eixample, l'Eixample, Barcelona, Barcelon"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/eden",
+  "categoria": "vida-nocturna",
+  "nombre": "Eden",
+  "lugar": "Sant Antoni de Portmany · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Club de San Antonio conocido por su potente sistema de sonido y su programación de techno."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 99",
+    "aforo": "Aforo: 4.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/99/eden"
+  ],
+  "busqueda": "Eden Ibiza San Antonio",
+  "coordenadas": {
+    "lat": 38.97904,
+    "lon": 1.30778
+  },
+  "geo_fuente": "Eden, 3, Carrer de Salvador Espriu, Sant Antoni de Portmany, Eivissa, Illes Balears, 07820"
+}

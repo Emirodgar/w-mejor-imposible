@@ -1,0 +1,14 @@
+{
+  "categoria": "bares-de-cocteleria",
+  "actualizado": {
+    "es": "noviembre 2026"
+  },
+  "items": [
+    "bares-de-cocteleria/sips",
+    "bares-de-cocteleria/paradiso",
+    "bares-de-cocteleria/angelita",
+    "bares-de-cocteleria/boadas",
+    "bares-de-cocteleria/salmon-guru",
+    "bares-de-cocteleria/foco"
+  ]
+}

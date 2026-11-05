@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/ushuaia-ibiza",
+  "categoria": "vida-nocturna",
+  "nombre": "Ushuaïa Ibiza",
+  "lugar": "Playa d'en Bossa · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Club al aire libre frente a la playa, con una gran piscina y un escenario enorme donde actúan algunos de los mayores DJ del mundo."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 3",
+    "aforo": "Aforo: 7.866 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/3/ushuaia-ibiza"
+  ],
+  "busqueda": "Ushuaïa Ibiza",
+  "coordenadas": {
+    "lat": 38.8841,
+    "lon": 1.4049
+  },
+  "geo_fuente": "Ushuaïa, Carretera de Platja d'en Bossa, Platja d'en Bossa, Sant Jordi de ses Salines, San"
+}

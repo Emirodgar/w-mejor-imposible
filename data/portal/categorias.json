@@ -488,5 +488,58 @@
       "es": "Prestigio comercial según Cushman & Wakefield 2025 y la prensa del sector, variedad de marcas y entorno. Ninguna zona paga por estar."
     },
     "placeholder": []
+  },
+  "vida-nocturna": {
+    "corto": {
+      "es": "Vida nocturna"
+    },
+    "titulo": {
+      "es": "Los 12 mejores clubes de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del club]"
+    },
+    "foto_placeholder": {
+      "es": "pista principal"
+    },
+    "ficha": [
+      "{puesto}",
+      "{aforo}"
+    ],
+    "cerca": [
+      "Hotel",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Orden de la votación anual DJ Mag Top 100 Clubs 2026, solo con los clubes españoles. Ningún club paga por estar. Los beach clubs sin clasificación independiente no se incluyen."
+    },
+    "placeholder": []
+  },
+  "bares-de-cocteleria": {
+    "corto": {
+      "es": "Bares de coctelería"
+    },
+    "titulo": {
+      "es": "Los 6 mejores bares de coctelería de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del bar]"
+    },
+    "foto_placeholder": {
+      "es": "barra de coctelería"
+    },
+    "ficha": [
+      "{puesto}"
+    ],
+    "cerca": [
+      "Hotel",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Orden de The World's 50 Best Bars 2026, solo con los bares españoles. Ningún bar paga por estar."
+    },
+    "placeholder": []
   }
 }

@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/fabrik",
+  "categoria": "vida-nocturna",
+  "nombre": "FABRIK",
+  "lugar": "Humanes de Madrid · Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "El gran club de Madrid: siete salas interiores y exteriores, restaurante y hotel propio, abierto en 2003 a las afueras de la ciudad."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 8",
+    "aforo": "Aforo: 6.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/8/fabrik"
+  ],
+  "busqueda": "FABRIK Humanes de Madrid",
+  "coordenadas": {
+    "lat": 40.2653,
+    "lon": -3.84057
+  },
+  "geo_fuente": "Fabrik Madrid, 82, Avenida de la Industria, Madrid, Comunidad de Madrid, 28970, España"
+}

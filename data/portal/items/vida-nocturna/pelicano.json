@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/pelicano",
+  "categoria": "vida-nocturna",
+  "nombre": "Pelícano",
+  "lugar": "A Coruña",
+  "zona": "resto",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "El mayor club del noroeste de España, con dos plantas y zonas VIP, en A Coruña."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 81",
+    "aforo": "Aforo: 3.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/81/pelicano"
+  ],
+  "busqueda": "Pelícano, Coruña",
+  "coordenadas": {
+    "lat": 43.3682,
+    "lon": -8.39981
+  },
+  "geo_fuente": "Pelícano, 3, Avenida Porto da Coruña, A Pescaría, A Coruña, Galicia, 15003, España"
+}

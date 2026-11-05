@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/papagayo-tenerife",
+  "categoria": "vida-nocturna",
+  "nombre": "Papagayo Tenerife",
+  "lugar": "Playa de las Américas · Tenerife",
+  "zona": "canarias",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Beach club de Playa de las Américas que pasa de lounge al atardecer a club de noche, con zonas VIP con camas balinesas."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 76",
+    "aforo": "Aforo: 1.500 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/76/papagayo-tenerife"
+  ],
+  "busqueda": "Papagayo Beach Club Playa de las Américas",
+  "coordenadas": {
+    "lat": 28.0676,
+    "lon": -16.73105
+  },
+  "geo_fuente": "Papagayo Beach Club, 2, Avenida Rafael Puig Lluvina, Playa de las Américas, Los Cristianos"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/dc-10",
+  "categoria": "vida-nocturna",
+  "nombre": "DC-10",
+  "lugar": "Playa d'en Bossa · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Sede de la residencia CircoLoco desde 1999, con house y techno al aire libre bajo los aviones."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 19",
+    "aforo": "Aforo: 1.500 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/19/dc-10"
+  ],
+  "busqueda": "DC-10 Ibiza",
+  "coordenadas": {
+    "lat": 38.88024,
+    "lon": 1.39264
+  },
+  "geo_fuente": "DC-10, Carretera Sant Jordi - Ses Salines, Sant Jordi de ses Salines, Sant Josep de sa Tal"
+}

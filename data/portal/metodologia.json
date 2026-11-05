@@ -19,7 +19,7 @@
       },
       "parrafos": [
         {
-          "es": "Ningún hotel, restaurante, campo, bodega, spa, puerto o circuito paga por estar en un ranking ni por subir en él."
+          "es": "Ningún hotel, restaurante, campo, bodega, spa, puerto, circuito, club ni bar paga por estar en un ranking ni por subir en él."
         },
         {
           "es": "Tampoco hay precios ni reservas: este portal es solo información."
@@ -138,6 +138,20 @@
         "es": "Datos de cada circuito contrastados en fuentes públicas; el orden es editorial."
       },
       "url": null
+    },
+    {
+      "cat": "vida-nocturna",
+      "texto": {
+        "es": "Votación anual DJ Mag Top 100 Clubs 2026; solo los clubes españoles."
+      },
+      "url": "https://djmag.com/top100clubs"
+    },
+    {
+      "cat": "bares-de-cocteleria",
+      "texto": {
+        "es": "The World's 50 Best Bars 2026 (clasificación 1-100); solo los bares españoles."
+      },
+      "url": "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html"
     }
   ]
 }

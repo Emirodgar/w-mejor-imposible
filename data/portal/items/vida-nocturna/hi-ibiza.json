@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/hi-ibiza",
+  "categoria": "vida-nocturna",
+  "nombre": "Hï Ibiza",
+  "lugar": "Playa d'en Bossa · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Superclub de Playa d'en Bossa con diseño de anfiteatro italiano y la primera galería de arte dentro de un club del mundo."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 4",
+    "aforo": "Aforo: 5.633 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/4/hi-ibiza"
+  ],
+  "busqueda": "Hï Ibiza",
+  "coordenadas": {
+    "lat": 38.88599,
+    "lon": 1.40386
+  },
+  "geo_fuente": "Hï Ibiza, Carretera de Platja d'en Bossa, Platja d'en Bossa, Sant Jordi de ses Salines, Sa"
+}

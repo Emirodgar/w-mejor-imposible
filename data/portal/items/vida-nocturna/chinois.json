@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/chinois",
+  "categoria": "vida-nocturna",
+  "nombre": "Chinois",
+  "lugar": "Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Club mediano en el antiguo HEART, con programación cuidada y un toque de lujo."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 74",
+    "aforo": "Aforo: 1.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/74/chinois"
+  ],
+  "busqueda": "Chinois Ibiza",
+  "coordenadas": {
+    "lat": 38.91649,
+    "lon": 1.44146
+  },
+  "geo_fuente": "Club Chinois, 17, Passeig de Joan Carles I, Passeig Maritim, Eivissa, Illes Balears, 07800"
+}

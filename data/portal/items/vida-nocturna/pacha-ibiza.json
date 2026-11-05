@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/pacha-ibiza",
+  "categoria": "vida-nocturna",
+  "nombre": "Pacha Ibiza",
+  "lugar": "Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Clásico de la isla que renovó su escalera de entrada y abrió en 2025 un bar de cócteles, Paradiso Ibiza."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 18",
+    "aforo": "Aforo: 5.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/18/pacha-ibiza"
+  ],
+  "busqueda": "Pacha Ibiza",
+  "coordenadas": {
+    "lat": 38.91844,
+    "lon": 1.44332
+  },
+  "geo_fuente": "Pacha, 19, Avinguda 8 d'Agost, s'Hort de sa Fruita, Eivissa, Illes Balears, 07800, España"
+}

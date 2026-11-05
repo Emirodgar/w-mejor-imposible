@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/amnesia-ibiza",
+  "categoria": "vida-nocturna",
+  "nombre": "Amnesia Ibiza",
+  "lugar": "Sant Rafel · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Cumple 50 años en 2026: nació como una finca al aire libre y hoy es uno de los clubes de referencia de Ibiza."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 16",
+    "aforo": "Aforo: 3.800 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/16/amnesia-ibiza"
+  ],
+  "busqueda": "Amnesia Ibiza",
+  "coordenadas": {
+    "lat": 38.94766,
+    "lon": 1.40823
+  },
+  "geo_fuente": "Amnesia, EI-600, Sant Antoni de Portmany, Eivissa, Illes Balears, 07816, España"
+}

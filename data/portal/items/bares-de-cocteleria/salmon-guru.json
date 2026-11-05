@@ -1,0 +1,27 @@
+{
+  "id": "bares-de-cocteleria/salmon-guru",
+  "categoria": "bares-de-cocteleria",
+  "nombre": "Salmon Guru",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "barra de coctelería"
+  },
+  "por_que": {
+    "es": "Coctelería creativa en el centro de Madrid: puesto 37 en 2025 y 66 en la lista ampliada de 2026."
+  },
+  "ficha": {
+    "puesto": "The World's 50 Best Bars 2026: n.º 66"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html",
+    "https://joinpearl.co/lists/2025-worlds-50-best-bars"
+  ],
+  "busqueda": "Salmon Guru Madrid Echegaray",
+  "coordenadas": {
+    "lat": 40.4149,
+    "lon": -3.69953
+  },
+  "geo_fuente": "Salmon Guru, 21, Calle de Echegaray, Barrio de las Letras, Cortes, Centro, Madrid, Comunid"
+}

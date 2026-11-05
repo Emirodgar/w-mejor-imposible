@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/nitsa",
+  "categoria": "vida-nocturna",
+  "nombre": "Nitsa",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Noche de música electrónica dentro de la sala Apolo, en su 32.º año: una institución de Barcelona."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 56",
+    "aforo": "Aforo: 1.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/56/nitsa"
+  ],
+  "busqueda": "Sala Apolo Barcelona",
+  "coordenadas": {
+    "lat": 41.37439,
+    "lon": 2.16956
+  },
+  "geo_fuente": "Sala Apolo, Carrer Nou de la Rambla, les Hortes de Sant Bertran, el Poble-sec, Sants-Montj"
+}

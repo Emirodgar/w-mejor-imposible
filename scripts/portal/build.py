@@ -44,10 +44,10 @@ STRIP_TONES = ['', ' t2', ' t3', ' t4', '']
 LABEL_TIPO = {'Hotel': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
               'Spa': 'spa', 'Puerto': 'puerto', 'Bodega': 'bodega'}
 CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-de-lujo': 'Hotel',
-              'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness'}
+              'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness', 'vida-nocturna': 'NightClub', 'bares-de-cocteleria': 'BarOrPub'}
 HOME_STRIPS = [('hoteles-de-lujo', 'hoteles', 'r-hoteles'), ('golf', 'golf', 'r-golf'),
                ('restaurantes', 'restaurantes', 'r-mesas'), ('casas-de-lujo', 'casas', 'r-casas')]
-HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor']
+HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor', 'vida-nocturna', 'bares-de-cocteleria']
 
 
 def e(s):
@@ -266,6 +266,32 @@ def bc_ld(items):
         for i, (n, u_) in enumerate(items)]}
 
 
+ORG_ID = SITE + '/#organization'
+SITE_ID = SITE + '/#website'
+# Perfiles oficiales de la marca (LinkedIn, Instagram, Wikidata...). Añadirlos aquí los emite en sameAs.
+SAME_AS = []
+
+
+def entity_nodes():
+    """Organización y sitio web: se emiten en todas las páginas para que los @id de publisher/isPartOf se resuelvan."""
+    org = {"@type": "Organization", "@id": ORG_ID, "name": "Mejor Imposible", "url": SITE + '/',
+           "logo": {"@type": "ImageObject", "url": SITE + '/img/logo_mi_transparent.png'}}
+    if SAME_AS:
+        org["sameAs"] = SAME_AS
+    person = {"@type": "Person", "@id": SITE + '/#autor', "name": "Emilio Rodríguez García", "alternateName": "Emirodgar",
+              "sameAs": ["https://x.com/emirodgar", "https://www.linkedin.com/in/emirodgar/"]}
+    site = {"@type": "WebSite", "@id": SITE_ID, "name": "Mejor Imposible", "url": SITE + prefix(LANG) + '/',
+            "inLanguage": LANG, "publisher": {"@id": ORG_ID}}
+    return [org, person, site]
+
+
+def webpage(kind, path, name, desc, **extra):
+    """Nodo WebPage (o subtipo) de la página, enlazado al sitio y a la organización."""
+    return {"@type": kind, "@id": SITE + u(path) + '#webpage', "url": SITE + u(path), "name": name,
+            "description": desc, "inLanguage": LANG, "isPartOf": {"@id": SITE_ID}, "publisher": {"@id": ORG_ID},
+            "author": {"@id": SITE + '/#autor'}, "dateModified": datetime.date.today().isoformat(), **extra}
+
+
 def ld(*objs):
     return '\n'.join('    <script type="application/ld+json">\n' + json.dumps(
         {"@context": "https://schema.org", **o}, ensure_ascii=False, indent=4) + '\n    </script>' for o in objs)
@@ -280,7 +306,7 @@ def page(path, title, desc, lds, body):
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
-           '@@LD@@': ld(*lds), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@METHOD@@': u('/metodologia/'),
+           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@METHOD@@': u('/metodologia/'),
            '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
@@ -310,6 +336,47 @@ def spec_text(cat, ficha):
         elif not fields:
             parts.append(tr(tpl))
     return ' · '.join(parts)
+
+
+def item_extra(cat, f):
+    """Propiedades schema.org (premios y datos de ficha) de un lugar, a partir de su ficha."""
+    awards, props = [], []
+
+    def prop(name, v, unit=None):
+        p = {"@type": "PropertyValue", "name": name, "value": v}
+        if unit:
+            p["unitCode"] = unit
+        props.append(p)
+
+    if f.get('estrellas'):
+        awards.append(f"Michelin: {fval(f['estrellas'])}")
+    if f.get('llaves'):
+        awards.append(f"Michelin: {fval(f['llaves'])}")
+    for k in ('galardon', 'puesto'):
+        if f.get(k):
+            awards.append(fval(f[k]))
+    if f.get('hoyos'):
+        prop('Holes', f['hoyos'])
+    if f.get('par'):
+        prop('Par', f['par'])
+    if f.get('arquitecto'):
+        prop('Architect', f['arquitecto'])
+    if f.get('denominacion'):
+        prop('Appellation', f['denominacion'])
+    if f.get('anio'):
+        prop('Year opened', f['anio'])
+    if f.get('longitud'):
+        prop('Track length', float(str(f['longitud']).replace(',', '.')), 'KMT')
+    if f.get('tipo'):
+        prop('Type', fval(f['tipo']))
+    out = {}
+    if awards:
+        out["award"] = awards
+    if props:
+        out["additionalProperty"] = props
+    if f.get('chef'):
+        out["employee"] = {"@type": "Person", "name": f['chef'], "jobTitle": "Chef"}
+    return out
 
 
 AIRPORTS = load('aeropuertos.json')['aeropuertos']
@@ -493,9 +560,14 @@ def build_rank(slug):
         if schema:
             li["item"] = {"@type": schema, "name": en['nombre'],
                           "address": {"@type": "PostalAddress", "addressLocality": en['lugar'], "addressCountry": "ES"}}
+            if coords(en['item']):
+                li["item"]["geo"] = {"@type": "GeoCoordinates", "latitude": coords(en['item'])[0],
+                                     "longitude": coords(en['item'])[1]}
+            li["item"].update(item_extra(slug, en['item']['ficha']))
         ld_items.append(li)
     itemlist = {"@type": "ItemList", "name": h1, "inLanguage": LANG, "itemListOrder": "https://schema.org/ItemListOrderAscending",
                 "numberOfItems": len(entries), "itemListElement": ld_items}
+    itemlist = webpage('CollectionPage', f'/ranking/{slug}/', h1, ui('rank.desc', h1=h1), mainEntity=itemlist)
     body = f'''
 {crumbs(crumb)}
 
@@ -644,7 +716,13 @@ def build_plan(slug):
         stroke = '#F6F3EE' if on else '#16140F'
         route_html += f'''
             <li><a href="{href}" aria-label="{e(txt)}"><span class="dot{' on' if on else ''}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="{stroke}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[s['tipo']]}</svg></span><span class="k">{e(label)}</span><span class="v">{e(name)}</span></a></li>'''
-        route_ld.append({"@type": "ListItem", "position": len(route_ld) + 1, "name": f'{label}: {name}'})
+        li = {"@type": "ListItem", "position": len(route_ld) + 1, "name": f'{label}: {name}'}
+        if s.get('ref'):
+            ref_it = ITEMS[s['ref']]
+            li["url"] = SITE + item_url(s['ref'])
+            li["item"] = {"@type": SCHEMA_OF.get(ref_it['categoria'], 'Place'), "name": ref_it['nombre'],
+                          "url": SITE + item_url(s['ref'])}
+        route_ld.append(li)
 
     days_html = ''
     for n, d in enumerate(p['dias'], 1):
@@ -689,8 +767,18 @@ def build_plan(slug):
         f'\n            <a href="{u("/planes/" + o["slug"] + "/")}"><span class="thumb">{photo_img(plan_cover(o))}</span><span class="m">{e(t(o["meta_corta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
         for o in other_plans(slug)[:3])
     crumb = [(ui('crumb.home'), u(HOME)), (ui('nav.plans'), u(HOME) + '#planes'), (title, None)]
-    trip = {"@type": "TouristTrip", "name": title, "inLanguage": LANG, "description": t(p['lead']),
-            "touristType": t(p.get("tipo_turista", "Golf")), "itinerary": {"@type": "ItemList", "itemListElement": route_ld}}
+    trip = {"@type": "TouristTrip", "@id": SITE + u(f'/planes/{slug}/') + '#trip', "name": title, "inLanguage": LANG,
+            "description": t(p['lead']), "url": SITE + u(f'/planes/{slug}/'),
+            "touristType": t(p.get("tipo_turista", "Golf")), "provider": {"@id": ORG_ID},
+            "mainEntityOfPage": {"@id": SITE + u(f'/planes/{slug}/') + '#webpage'},
+            "itinerary": {"@type": "ItemList", "numberOfItems": len(route_ld), "itemListElement": route_ld}}
+    if len(p['dias']) > 0:
+        trip["duration"] = f"P{len(p['dias'])}D"
+    cover = plan_cover(p)
+    if cover and cover.get('foto_real'):
+        trip["image"] = SITE + cover['foto_real']['archivo']
+    plan_page = webpage('WebPage', f'/planes/{slug}/', f'{ui("plan.title", title=title)}', f'{t(p["meta"])}: {t(p["lead"])}',
+                        mainEntity={"@id": trip["@id"]})
     body = f'''
 {crumbs(crumb)}
 
@@ -728,7 +816,7 @@ def build_plan(slug):
 </main>
 '''
     html_page = page(f'/planes/{slug}/', f'{ui("plan.title", title=title)} · Mejor Imposible',
-                     f'{t(p["meta"])}: {t(p["lead"])}', [trip, bc_ld(crumb)], body)
+                     f'{t(p["meta"])}: {t(p["lead"])}', [plan_page, trip, bc_ld(crumb)], body)
     write(f'/planes/{slug}/index.html', html_page.replace('</body>', MAP_JS + '\n</body>') if 'id="plan-map"' in body else html_page)
 
 
@@ -821,8 +909,23 @@ def build_item(ref):
               "url": SITE + u(path), "address": {"@type": "PostalAddress", "addressLocality": it['lugar'], "addressCountry": "ES"}}
     if coords(it):
         ld_obj["geo"] = {"@type": "GeoCoordinates", "latitude": coords(it)[0], "longitude": coords(it)[1]}
+    ld_obj["@id"] = SITE + u(path) + '#entity'
+    ld_obj["mainEntityOfPage"] = {"@id": SITE + u(path) + '#webpage'}
+    ld_obj.update(item_extra(cat, it['ficha']))
     if it.get('foto_real'):
-        ld_obj["image"] = SITE + it['foto_real']['archivo']
+        fr = it['foto_real']
+        img = {"@type": "ImageObject", "url": SITE + fr['archivo'], "creditText": fr.get('autor', '')}
+        if fr.get('autor'):
+            img["creator"] = {"@type": "Person", "name": fr['autor']}
+        if fr.get('licencia_url'):
+            img["license"] = fr['licencia_url']
+        ld_obj["image"] = img
+    page_node = webpage('ItemPage', path, title, desc, mainEntity={"@id": ld_obj["@id"]})
+    if it.get('fuentes'):
+        page_node["citation"] = it['fuentes']
+    if it.get('foto_real'):
+        page_node["primaryImageOfPage"] = {"@id": SITE + u(path) + '#image'}
+        ld_obj["image"]["@id"] = SITE + u(path) + '#image'
     body = f'''
 {crumbs(crumb)}
 
@@ -839,7 +942,7 @@ def build_item(ref):
     </section>{map_block}{plans_block}{src}{nav}
 </main>
 '''
-    html_page = page(path, title, desc, [ld_obj, bc_ld(crumb)], body)
+    html_page = page(path, title, desc, [page_node, ld_obj, bc_ld(crumb)], body)
     write(path + 'index.html', html_page.replace('</body>', MAP_JS + '\n</body>') if map_block else html_page)
 
 
@@ -914,6 +1017,7 @@ def build_directory():
                            "longitude": r['coordenadas']['lon']}
         ld_items.append({"@type": "ListItem", "position": n, "item": item})
     itemlist = {"@type": "ItemList", "name": ui('dir.title'), "inLanguage": LANG, "itemListElement": ld_items}
+    itemlist = webpage('CollectionPage', '/motor/marcas/', ui('dir.title'), ui('dir.desc'), mainEntity=itemlist)
     body = f'''
 {crumbs(crumb)}
 
@@ -1079,8 +1183,8 @@ def build_home():
     </section>
 </main>
 '''
-    site = {"@type": "WebSite", "name": "Mejor Imposible", "url": SITE + prefix(LANG) + '/', "inLanguage": LANG}
-    write(HOME, page(HOME, ui('home.title'), ui('home.desc'), [site], body))
+    home_page = webpage('WebPage', HOME, ui('home.title'), ui('home.desc'))
+    write(HOME, page(HOME, ui('home.title'), ui('home.desc'), [home_page], body))
 
 
 # ---------------- Metodología y destinos ----------------
@@ -1098,6 +1202,12 @@ def build_method():
         if f.get('url'):
             txt = f'<a href="{e(f["url"])}" rel="noopener">{txt}</a>'
         lis += f'\n            <li><strong>{e(t(CATS[f["cat"]]["corto"]))}.</strong> {txt}</li>'
+    dataset = {"@type": "Dataset", "name": t(m['titulo']), "description": t(m['meta']), "inLanguage": LANG,
+               "url": SITE + u('/metodologia/'), "creator": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID},
+               "spatialCoverage": {"@type": "Country", "name": "España"},
+               "isBasedOn": [f['url'] for f in m['fuentes'] if f.get('url')],
+               "hasPart": [{"@type": "ItemList", "name": t(CATS[c]['titulo']), "url": SITE + u(f'/ranking/{c}/')}
+                           for c in CATS]}
     body = f'''
 {crumbs(crumb)}
 
@@ -1116,7 +1226,8 @@ def build_method():
 </main>
 '''
     write('/metodologia/index.html', page('/metodologia/', f'{t(m["titulo"])} · Mejor Imposible', t(m['meta']),
-                                           [{"@type": "WebPage", "name": t(m['titulo']), "inLanguage": LANG}, bc_ld(crumb)], body))
+                                           [webpage('AboutPage', '/metodologia/', t(m['titulo']), t(m['meta'])),
+                                            dataset, bc_ld(crumb)], body))
 
 
 def build_destinos():
@@ -1154,7 +1265,7 @@ def build_destinos():
 </main>
 '''
     write('/destinos/index.html', page('/destinos/', f'{ui("dest.title")} · Mejor Imposible', ui('dest.desc'),
-                                        [{"@type": "CollectionPage", "name": ui('dest.title'), "inLanguage": LANG}, bc_ld(crumb)], body))
+                                        [webpage('CollectionPage', '/destinos/', ui('dest.title'), ui('dest.desc')), bc_ld(crumb)], body))
 
 
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]

@@ -1,0 +1,27 @@
+{
+  "id": "bares-de-cocteleria/boadas",
+  "categoria": "bares-de-cocteleria",
+  "nombre": "Boadas",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "barra de coctelería"
+  },
+  "por_que": {
+    "es": "Bar clásico de Barcelona: puesto 85 en 2025 y 52 en la lista ampliada de 2026."
+  },
+  "ficha": {
+    "puesto": "The World's 50 Best Bars 2026: n.º 52"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html",
+    "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe"
+  ],
+  "busqueda": "Boadas Cocktails, Carrer dels Tallers, Barcelona",
+  "coordenadas": {
+    "lat": 41.3866,
+    "lon": 2.17
+  },
+  "geo_fuente": "aproximada: Carrer dels Tallers, Barcelona"
+}

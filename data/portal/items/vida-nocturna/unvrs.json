@@ -1,0 +1,27 @@
+{
+  "id": "vida-nocturna/unvrs",
+  "categoria": "vida-nocturna",
+  "nombre": "[UNVRS]",
+  "lugar": "Sant Rafel · Ibiza",
+  "zona": "baleares",
+  "foto": {
+    "es": "pista principal"
+  },
+  "por_que": {
+    "es": "Abierto el 30 de mayo de 2025, el «hiperclub» de Ibiza ya es el número uno del mundo en la votación de DJ Mag."
+  },
+  "ficha": {
+    "puesto": "DJ Mag Top 100 Clubs 2026: n.º 1",
+    "aforo": "Aforo: 4.000 personas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://djmag.com/top100clubs/2026/1/unvrs"
+  ],
+  "busqueda": "UNVRS Ibiza",
+  "coordenadas": {
+    "lat": 38.9579,
+    "lon": 1.4083
+  },
+  "geo_fuente": "UNVRS, 7, Carrer de Can Parent 3, Sant Rafel de sa Creu, Sant Antoni de Portmany, Eivissa,"
+}

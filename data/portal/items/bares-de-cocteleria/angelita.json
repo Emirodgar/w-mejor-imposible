@@ -1,0 +1,28 @@
+{
+  "id": "bares-de-cocteleria/angelita",
+  "categoria": "bares-de-cocteleria",
+  "nombre": "Angelita",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "barra de coctelería"
+  },
+  "por_que": {
+    "es": "Bar de vinos y coctelería de los hermanos Villalón en Madrid; entra en el top 50 mundial en 2026."
+  },
+  "ficha": {
+    "puesto": "The World's 50 Best Bars 2026: n.º 50"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://thedotmagazine.com/the-50-best-bars-2026-full-list-and-winners/",
+    "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe",
+    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html"
+  ],
+  "busqueda": "Angelita Madrid Calle Reina",
+  "coordenadas": {
+    "lat": 40.42035,
+    "lon": -3.70037
+  },
+  "geo_fuente": "Angelita, 4, Calle de la Reina, Chueca, Justicia, Centro, Madrid, Comunidad de Madrid, 280"
+}
