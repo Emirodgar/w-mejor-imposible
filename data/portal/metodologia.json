@@ -1,52 +1,143 @@
 {
-  "actualizado": {"es": "noviembre 2026"},
-  "titulo": {"es": "Cómo elaboramos los rankings"},
-  "meta": {"es": "Las reglas con las que elaboramos los rankings de Mejor Imposible, de dónde salen los datos y qué límites tienen."},
-  "lead": {"es": "Pocos, elegidos y ordenados. Estas son las reglas con las que lo hacemos, de dónde salen los datos y qué límites tienen."},
+  "actualizado": {
+    "es": "noviembre 2026"
+  },
+  "titulo": {
+    "es": "Cómo elaboramos los rankings"
+  },
+  "meta": {
+    "es": "Las reglas con las que elaboramos los rankings de Mejor Imposible, de dónde salen los datos y qué límites tienen."
+  },
+  "lead": {
+    "es": "Pocos, elegidos y ordenados. Estas son las reglas con las que lo hacemos, de dónde salen los datos y qué límites tienen."
+  },
   "secciones": [
     {
       "id": "independencia",
-      "titulo": {"es": "Nadie paga por aparecer"},
+      "titulo": {
+        "es": "Nadie paga por aparecer"
+      },
       "parrafos": [
-        {"es": "Ningún hotel, restaurante, campo, bodega, spa, puerto o circuito paga por estar en un ranking ni por subir en él."},
-        {"es": "Tampoco hay precios ni reservas: este portal es solo información."}
+        {
+          "es": "Ningún hotel, restaurante, campo, bodega, spa, puerto o circuito paga por estar en un ranking ni por subir en él."
+        },
+        {
+          "es": "Tampoco hay precios ni reservas: este portal es solo información."
+        }
       ]
     },
     {
       "id": "criterio",
-      "titulo": {"es": "De dónde sale cada ranking"},
+      "titulo": {
+        "es": "De dónde sale cada ranking"
+      },
       "parrafos": [
-        {"es": "Siempre que existe, partimos de una lista independiente y fechada, como la Guía Michelin, World's 50 Best Vineyards o Top100GolfCourses. Esa lista es el punto de partida: la selección y el orden final son decisión editorial."},
-        {"es": "En cada ranking, el apartado «Cómo ordenamos» indica qué criterios pesan más."}
+        {
+          "es": "Siempre que existe, partimos de una lista independiente y fechada, como la Guía Michelin, World's 50 Best Vineyards o Top100GolfCourses. Esa lista es el punto de partida: la selección y el orden final son decisión editorial."
+        },
+        {
+          "es": "En cada ranking, el apartado «Cómo ordenamos» indica qué criterios pesan más."
+        }
       ]
     },
     {
       "id": "cerca",
-      "titulo": {"es": "Cómo calculamos «Lo mejor cerca»"},
+      "titulo": {
+        "es": "Cómo calculamos «Lo mejor cerca»"
+      },
       "parrafos": [
-        {"es": "En cada ficha mostramos un hotel, un restaurante o un aeropuerto cercanos. Se calculan con las coordenadas de cada lugar: elegimos el más próximo de nuestros rankings dentro de 75 km, y los aeropuertos hasta 150 minutos."},
-        {"es": "Si un restaurante con estrella Michelin o un hotel con Llave Michelin queda mucho más cerca, o no hay ninguno de nuestros rankings a menos de una hora, mostramos ese en su lugar."},
-        {"es": "Los tiempos son estimaciones en coche a partir de la distancia en línea recta, no rutas reales. Algunas coordenadas son las de la localidad y no las del local."}
+        {
+          "es": "En cada ficha mostramos un hotel, un restaurante o un aeropuerto cercanos. Se calculan con las coordenadas de cada lugar: elegimos el más próximo de nuestros rankings dentro de 75 km, y los aeropuertos hasta 150 minutos."
+        },
+        {
+          "es": "Si un restaurante con estrella Michelin o un hotel con Llave Michelin queda mucho más cerca, o no hay ninguno de nuestros rankings a menos de una hora, mostramos ese en su lugar."
+        },
+        {
+          "es": "Los tiempos son estimaciones en coche a partir de la distancia en línea recta, no rutas reales. Algunas coordenadas son las de la localidad y no las del local."
+        }
       ]
     },
     {
       "id": "limites",
-      "titulo": {"es": "Límites y actualización"},
+      "titulo": {
+        "es": "Límites y actualización"
+      },
       "parrafos": [
-        {"es": "Cada ranking indica su fecha de actualización. Las listas externas cambian cada año y las revisamos en cada edición."},
-        {"es": "Algunos premios, como los World Spa Awards, se deciden en parte por voto público. En el directorio de concesionarios, los puntos marcados «Por verificar» proceden de fuentes antiguas."}
+        {
+          "es": "Cada ranking indica su fecha de actualización. Las listas externas cambian cada año y las revisamos en cada edición."
+        },
+        {
+          "es": "Algunos premios, como los World Spa Awards, se deciden en parte por voto público. En el directorio de concesionarios, los puntos marcados «Por verificar» proceden de fuentes antiguas."
+        }
       ]
     }
   ],
-  "fuentes_titulo": {"es": "Fuentes por ranking"},
+  "fuentes_titulo": {
+    "es": "Fuentes por ranking"
+  },
   "fuentes": [
-    {"cat": "hoteles-de-lujo", "texto": {"es": "Llaves de la Guía MICHELIN España 2026."}, "url": "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"},
-    {"cat": "golf", "texto": {"es": "Clasificación de campos de España de Top100GolfCourses (2026)."}, "url": "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"},
-    {"cat": "restaurantes", "texto": {"es": "Estrellas de la Guía MICHELIN España & Andorra 2026."}, "url": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"},
-    {"cat": "casas-de-lujo", "texto": {"es": "Ranking de idealista de calles y urbanizaciones más caras (agosto de 2026) e informe Hiscox de vivienda de lujo (2023)."}, "url": "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html"},
-    {"cat": "bodegas", "texto": {"es": "World's 50 Best Vineyards 2025, a través de Forbes España."}, "url": "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"},
-    {"cat": "spas", "texto": {"es": "Ganadores y nominados españoles de los World Spa Awards 2026."}, "url": "https://worldspaawards.com/award/spain-best-resort-spa/2026"},
-    {"cat": "yates-y-calas", "texto": {"es": "Ranking Velvua 2026 de puertos deportivos de España."}, "url": "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"},
-    {"cat": "motor", "texto": {"es": "Datos de cada circuito contrastados en fuentes públicas; el orden es editorial."}, "url": null}
+    {
+      "cat": "hoteles-de-lujo",
+      "texto": {
+        "es": "Llaves de la Guía MICHELIN España 2026."
+      },
+      "url": "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    },
+    {
+      "cat": "golf",
+      "texto": {
+        "es": "Clasificación de campos de España de Top100GolfCourses (2026)."
+      },
+      "url": "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
+    },
+    {
+      "cat": "restaurantes",
+      "texto": {
+        "es": "Estrellas de la Guía MICHELIN España & Andorra 2026."
+      },
+      "url": "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    },
+    {
+      "cat": "casas-de-lujo",
+      "texto": {
+        "es": "Ranking de idealista de calles y urbanizaciones más caras (agosto de 2026) e informe Hiscox de vivienda de lujo (2023)."
+      },
+      "url": "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html"
+    },
+    {
+      "cat": "compras-de-lujo",
+      "texto": {
+        "es": "Cushman & Wakefield, Main Streets Across the World 2025, y prensa del sector (Modaes, Valencia Plaza)."
+      },
+      "url": "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42"
+    },
+    {
+      "cat": "bodegas",
+      "texto": {
+        "es": "World's 50 Best Vineyards 2025, a través de Forbes España."
+      },
+      "url": "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    },
+    {
+      "cat": "spas",
+      "texto": {
+        "es": "Ganadores y nominados españoles de los World Spa Awards 2026."
+      },
+      "url": "https://worldspaawards.com/award/spain-best-resort-spa/2026"
+    },
+    {
+      "cat": "yates-y-calas",
+      "texto": {
+        "es": "Ranking Velvua 2026 de puertos deportivos de España."
+      },
+      "url": "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    },
+    {
+      "cat": "motor",
+      "texto": {
+        "es": "Datos de cada circuito contrastados en fuentes públicas; el orden es editorial."
+      },
+      "url": null
+    }
   ]
 }

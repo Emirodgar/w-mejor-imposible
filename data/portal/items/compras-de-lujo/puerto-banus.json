@@ -1,0 +1,27 @@
+{
+  "id": "compras-de-lujo/puerto-banus",
+  "categoria": "compras-de-lujo",
+  "nombre": "Puerto Banús",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "Puerto Banús"
+  },
+  "por_que": {
+    "es": "Alrededor de un centenar de tiendas en las calles principales de la marina, con grandes firmas internacionales de moda y complementos."
+  },
+  "ficha": {
+    "tipo": "Zona comercial",
+    "referencia": "Cerca de un centenar de tiendas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+  ],
+  "busqueda": "Puerto Banús Marbella",
+  "coordenadas": {
+    "lat": 36.48746,
+    "lon": -4.9536
+  },
+  "geo_fuente": "Puerto Banús, Avenida Julio Iglesias, Nueva Andalucía, San Pedro Alcántara, Marbella, Cost"
+}

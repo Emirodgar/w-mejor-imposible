@@ -1,0 +1,29 @@
+{
+  "id": "compras-de-lujo/serrano-y-ortega-y-gasset",
+  "categoria": "compras-de-lujo",
+  "nombre": "Serrano y Ortega y Gasset",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "Calle Serrano"
+  },
+  "por_que": {
+    "es": "Serrano y José Ortega y Gasset, en el Barrio de Salamanca, concentraron las seis aperturas de lujo de Madrid en 2024. Serrano es la segunda calle comercial más cara de España."
+  },
+  "ficha": {
+    "tipo": "Zona comercial",
+    "referencia": "Cushman & Wakefield 2025: Serrano, n.º 2 de España"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42",
+    "https://www.cushmanwakefield.com/en/spain/news/2025/03/luxury-store-rent-spain",
+    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+  ],
+  "busqueda": "Calle de Serrano Madrid",
+  "coordenadas": {
+    "lat": 40.42044,
+    "lon": -3.68875
+  },
+  "geo_fuente": "Calle de Serrano, Recoletos, Salamanca, Madrid, Comunidad de Madrid, 28001, España"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "compras-de-lujo/las-rozas-village",
+  "categoria": "compras-de-lujo",
+  "nombre": "Las Rozas Village",
+  "lugar": "Las Rozas de Madrid · Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "Las Rozas Village"
+  },
+  "por_que": {
+    "es": "Outlet de lujo con más de cien boutiques, a las afueras de Madrid y con lanzadera desde el centro."
+  },
+  "ficha": {
+    "tipo": "Outlet de lujo",
+    "referencia": "Más de 100 boutiques"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.visitmadrid.es/rozas-village-outlet-lujo-madrid-experiencia-compras-unica"
+  ],
+  "busqueda": "Las Rozas Village",
+  "schema": "ShoppingCenter",
+  "coordenadas": {
+    "lat": 40.51895,
+    "lon": -3.90127
+  },
+  "geo_fuente": "Las Rozas Village, Las Rozas de Madrid, Comunidad de Madrid, 28232, España"
+}

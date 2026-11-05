@@ -461,5 +461,32 @@
         "zona": "cataluna"
       }
     ]
+  },
+  "compras-de-lujo": {
+    "corto": {
+      "es": "Compras de lujo"
+    },
+    "titulo": {
+      "es": "Las 9 mejores zonas de compras de lujo de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre de la zona]"
+    },
+    "foto_placeholder": {
+      "es": "calle comercial"
+    },
+    "ficha": [
+      "{tipo}",
+      "{referencia}"
+    ],
+    "cerca": [
+      "Hotel",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Prestigio comercial según Cushman & Wakefield 2025 y la prensa del sector, variedad de marcas y entorno. Ninguna zona paga por estar."
+    },
+    "placeholder": []
   }
 }

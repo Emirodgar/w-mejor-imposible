@@ -47,7 +47,7 @@ CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-de-lu
               'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness'}
 HOME_STRIPS = [('hoteles-de-lujo', 'hoteles', 'r-hoteles'), ('golf', 'golf', 'r-golf'),
                ('restaurantes', 'restaurantes', 'r-mesas'), ('casas-de-lujo', 'casas', 'r-casas')]
-HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor']
+HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor']
 
 
 def e(s):
@@ -775,7 +775,7 @@ def build_item(ref):
     if rk:
         rank_line = (f'\n        <p class="rank-line">{e(ui("item.position", n=rk[1], total=rk[2]))} · '
                      f'<a href="{u(f"/ranking/{cat}/")}#{slug}">{e(h1)}</a></p>')
-    ld_obj = {"@type": SCHEMA_OF.get(cat, 'Place'), "name": name, "description": why, "inLanguage": LANG,
+    ld_obj = {"@type": it.get('schema') or SCHEMA_OF.get(cat, 'Place'), "name": name, "description": why, "inLanguage": LANG,
               "url": SITE + u(path), "address": {"@type": "PostalAddress", "addressLocality": it['lugar'], "addressCountry": "ES"}}
     if coords(it):
         ld_obj["geo"] = {"@type": "GeoCoordinates", "latitude": coords(it)[0], "longitude": coords(it)[1]}

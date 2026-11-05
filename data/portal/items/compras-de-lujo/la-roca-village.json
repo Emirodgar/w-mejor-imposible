@@ -1,0 +1,29 @@
+{
+  "id": "compras-de-lujo/la-roca-village",
+  "categoria": "compras-de-lujo",
+  "nombre": "La Roca Village",
+  "lugar": "La Roca del Vallès · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "La Roca Village"
+  },
+  "por_que": {
+    "es": "Outlet de lujo a unos 40 minutos de Barcelona, con más de 150 boutiques según Turismo de Barcelona."
+  },
+  "ficha": {
+    "tipo": "Outlet de lujo",
+    "referencia": "Más de 150 boutiques"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.spain.info/en/top/best-outlets-spain/",
+    "https://www.bcn.travel/de/?p=255272"
+  ],
+  "busqueda": "La Roca Village",
+  "schema": "ShoppingCenter",
+  "coordenadas": {
+    "lat": 41.61076,
+    "lon": 2.34386
+  },
+  "geo_fuente": "la Roca Village, Autopista de la Mediterrània, Santa Agnès de Malanyanes, la Roca del Vall"
+}

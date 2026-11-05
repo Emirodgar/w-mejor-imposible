@@ -1,0 +1,28 @@
+{
+  "id": "compras-de-lujo/passeig-de-gracia",
+  "categoria": "compras-de-lujo",
+  "nombre": "Passeig de Gràcia",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "Passeig de Gràcia"
+  },
+  "por_que": {
+    "es": "La calle comercial más cara de España y decimosexta del mundo según Cushman & Wakefield 2025. En 2024 abrieron aquí dos tiendas de lujo."
+  },
+  "ficha": {
+    "tipo": "Calle comercial",
+    "referencia": "Cushman & Wakefield 2025: n.º 1 de España"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42",
+    "https://www.cushmanwakefield.com/en/spain/news/2025/03/luxury-store-rent-spain"
+  ],
+  "busqueda": "Passeig de Gràcia Barcelona",
+  "coordenadas": {
+    "lat": 41.39498,
+    "lon": 2.16171
+  },
+  "geo_fuente": "Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eixample, Barcelona, Barcelon"
+}

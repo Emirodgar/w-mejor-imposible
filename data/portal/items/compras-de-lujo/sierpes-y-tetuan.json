@@ -1,0 +1,27 @@
+{
+  "id": "compras-de-lujo/sierpes-y-tetuan",
+  "categoria": "compras-de-lujo",
+  "nombre": "Sierpes y Tetuán",
+  "lugar": "Sevilla",
+  "zona": "andalucia",
+  "foto": {
+    "es": "Calle Sierpes"
+  },
+  "por_que": {
+    "es": "Sierpes y Tetuán reúnen moda, alta costura y complementos de lujo, con joyeros y relojeros centenarios como El Cronómetro."
+  },
+  "ficha": {
+    "tipo": "Zona comercial",
+    "referencia": "Joyerías y relojerías históricas"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+  ],
+  "busqueda": "Calle Sierpes Sevilla",
+  "coordenadas": {
+    "lat": 37.39109,
+    "lon": -5.99457
+  },
+  "geo_fuente": "Calle Sierpes, Alfalfa, Casco Antiguo, Sevilla, Andalucía, 41001, España"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "compras-de-lujo/marques-de-larios",
+  "categoria": "compras-de-lujo",
+  "nombre": "Calle Marqués de Larios",
+  "lugar": "Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "Calle Larios"
+  },
+  "por_que": {
+    "es": "Quinta calle comercial más cara de España según Cushman & Wakefield 2025, en el centro de Málaga."
+  },
+  "ficha": {
+    "tipo": "Calle comercial",
+    "referencia": "Cushman & Wakefield 2025: n.º 5 de España"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.modaes.com/entorno/paseo-de-gracia-asciende-en-el-ranking-mundial-y-repite-como-la-calle-mas-cara-de-espana"
+  ],
+  "busqueda": "Calle Marqués de Larios Málaga",
+  "coordenadas": {
+    "lat": 36.71967,
+    "lon": -4.4216
+  },
+  "geo_fuente": "Calle Marqués de Larios, Centro Histórico, Centro, Málaga, Málaga-Costa del Sol, Málaga, A"
+}

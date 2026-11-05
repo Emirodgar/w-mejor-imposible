@@ -1,0 +1,28 @@
+{
+  "id": "compras-de-lujo/passeig-des-born",
+  "categoria": "compras-de-lujo",
+  "nombre": "Passeig des Born",
+  "lugar": "Palma · Mallorca",
+  "zona": "baleares",
+  "foto": {
+    "es": "Passeig des Born"
+  },
+  "por_que": {
+    "es": "La milla de oro de Palma, con Louis Vuitton y la primera boutique Rolex de Mallorca, abierta en septiembre de 2026 en Can Alomar."
+  },
+  "ficha": {
+    "tipo": "Calle comercial",
+    "referencia": "Primera boutique Rolex de Mallorca, 2026"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.modaes.com/entorno/palma-el-born-agota-el-espacio-y-empuja-al-lujo-hacia-nuevas-calles-del-centro",
+    "https://amp.majorcadailybulletin.com/news/local/2026/09/05/145533/first-rolex-boutique-mallorca-now-open.html"
+  ],
+  "busqueda": "Passeig des Born Palma",
+  "coordenadas": {
+    "lat": 39.57036,
+    "lon": 2.64671
+  },
+  "geo_fuente": "Passeig des Born, Canavall, Districte Centre, Palma, Illes Balears, España"
+}
