@@ -38,14 +38,12 @@
     },
     {
       "tipo": "cena",
-      "nombre": {
-        "es": "[Restaurante]"
-      }
+      "ref": "restaurantes/skina"
     },
     {
       "tipo": "descanso",
       "nombre": {
-        "es": "[Spa]"
+        "es": "Sotogrande Spa & Wellness"
       }
     }
   ],
@@ -108,30 +106,20 @@
           "tono": "oscuro"
         },
         {
-          "tipo": "Almuerzo",
-          "nombre": {
-            "es": "[Casa club o restaurante]"
-          },
-          "tono": "claro",
-          "foto": {
-            "es": "terraza"
-          },
-          "por_que": {
-            "es": "[Por qué parar aquí.]"
-          }
-        },
-        {
           "tipo": "Cena",
-          "nombre": {
-            "es": "[Restaurante]"
-          },
           "tono": "oscuro",
-          "foto": {
-            "es": "mesa al atardecer"
-          },
+          "ref": "restaurantes/skina",
           "por_que": {
-            "es": "[N.º X del ranking de mesas cercanas.]"
-          }
+            "es": "Dos estrellas Michelin en Marbella, a una hora de Sotogrande."
+          },
+          "alternativas": [
+            {
+              "es": "BACK"
+            },
+            {
+              "es": "Messina"
+            }
+          ]
         }
       ]
     },
@@ -142,15 +130,15 @@
       "pasos": [
         {
           "tipo": "Spa",
-          "nombre": {
-            "es": "[Spa]"
-          },
           "tono": "claro",
-          "foto": {
-            "es": "piscina interior"
+          "nombre": {
+            "es": "Sotogrande Spa & Wellness · SO/ Sotogrande"
           },
           "por_que": {
-            "es": "[Para cerrar el viaje.]"
+            "es": "Nominado en 2026 a mejor spa de resort de España."
+          },
+          "foto": {
+            "es": "sala de relajación"
           }
         },
         {
@@ -168,7 +156,7 @@
             "es": "carretera de costa"
           },
           "por_que": {
-            "es": "[Ruta recomendada de vuelta.]"
+            "es": "El más cercano a Sotogrande, a unos 30 minutos en coche; Málaga es la alternativa con más vuelos."
           }
         }
       ]
@@ -186,14 +174,6 @@
         "es": "Aeropuerto de Málaga-Costa del Sol"
       },
       "min": 60
-    },
-    {
-      "nombre": {
-        "es": "Aviación privada"
-      },
-      "texto": {
-        "es": "[Aeródromo]"
-      }
     }
   ],
   "orden": 1,

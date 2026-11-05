@@ -28,7 +28,7 @@
     {
       "tipo": "barco",
       "nombre": {
-        "es": "[Barco privado]"
+        "es": "Barco con patrón"
       }
     },
     {
@@ -46,14 +46,12 @@
     {
       "tipo": "cena",
       "nombre": {
-        "es": "[Restaurante]"
+        "es": "Unic"
       }
     },
     {
       "tipo": "descanso",
-      "nombre": {
-        "es": "[Spa]"
-      }
+      "ref": "spas/pure-seven-7pines-ibiza"
     }
   ],
   "dias": [
@@ -69,7 +67,7 @@
             "es": "Aeropuerto de Ibiza"
           },
           "por_que": {
-            "es": "[Por qué este aeropuerto y cuánto se tarda a puerto.]"
+            "es": "El único aeropuerto de la isla, a unos 15 minutos de Marina Ibiza."
           },
           "foto": {
             "es": "terminal"
@@ -92,10 +90,10 @@
           "tipo": "Cena",
           "tono": "claro",
           "nombre": {
-            "es": "[Restaurante]"
+            "es": "Unic"
           },
           "por_que": {
-            "es": "[N.º X del ranking de mesas cercanas.]"
+            "es": "Una estrella Michelin en Sant Josep de sa Talaia, a unos 25 minutos de Cala Vadella."
           },
           "foto": {
             "es": "mesa al atardecer"
@@ -112,7 +110,7 @@
           "tipo": "Barco",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Barco privado]"
+            "es": "Barco con patrón"
           },
           "por_que": {
             "es": "Desde Ibiza ciudad, Cala d'Hort queda a una hora de navegación."
@@ -138,10 +136,10 @@
           "tipo": "Cena",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Restaurante]"
+            "es": "La Gaia"
           },
           "por_que": {
-            "es": "[Por qué cenar aquí.]"
+            "es": "Una estrella Michelin en Ibiza ciudad, a unos 30 minutos de Cala Vadella."
           },
           "foto": {
             "es": "mesa frente al mar"
@@ -158,7 +156,7 @@
           "tipo": "Barco",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Barco privado]"
+            "es": "Barco con patrón"
           },
           "por_que": {
             "es": "La travesía a La Savina en ferry dura unos 55 minutos; en barco propio se elige la hora y la ruta."
@@ -184,10 +182,10 @@
           "tipo": "Almuerzo",
           "tono": "oscuro",
           "nombre": {
-            "es": "[Chiringuito]"
+            "es": "Juan y Andrea"
           },
           "por_que": {
-            "es": "[Por qué parar aquí.]"
+            "es": "Restaurante de pescado y marisco sobre la arena de ses Illetes, abierto como quiosco en 1971."
           },
           "foto": {
             "es": "terraza sobre la arena"
@@ -216,15 +214,7 @@
         {
           "tipo": "Spa",
           "tono": "oscuro",
-          "nombre": {
-            "es": "[Spa]"
-          },
-          "por_que": {
-            "es": "[Para cerrar el viaje.]"
-          },
-          "foto": {
-            "es": "piscina interior"
-          }
+          "ref": "spas/pure-seven-7pines-ibiza"
         },
         {
           "tipo": "Regreso",
@@ -233,7 +223,7 @@
             "es": "Aeropuerto de Ibiza"
           },
           "por_que": {
-            "es": "[Ruta recomendada de vuelta.]"
+            "es": "El único aeropuerto de la isla."
           },
           "foto": {
             "es": "carretera de costa"
@@ -245,11 +235,9 @@
   "llegar": [
     {
       "nombre": {
-        "es": "Aeropuerto de Ibiza"
+        "es": "Aeropuerto de Ibiza → Marina Ibiza"
       },
-      "texto": {
-        "es": "[X] min al puerto"
-      }
+      "min": 15
     },
     {
       "nombre": {
@@ -257,14 +245,6 @@
       },
       "texto": {
         "es": "Aprox. 55 min en ferry"
-      }
-    },
-    {
-      "nombre": {
-        "es": "Aviación privada"
-      },
-      "texto": {
-        "es": "[Aeródromo]"
       }
     }
   ]

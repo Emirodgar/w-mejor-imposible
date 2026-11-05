@@ -45,9 +45,7 @@
     },
     {
       "tipo": "descanso",
-      "nombre": {
-        "es": "[Spa]"
-      }
+      "ref": "spas/six-senses-spa-puente-romano"
     }
   ],
   "dias": [
@@ -109,13 +107,13 @@
           "tipo": "Almuerzo",
           "tono": "claro",
           "nombre": {
-            "es": "[Casa club o restaurante]"
+            "es": "BACK"
           },
           "por_que": {
-            "es": "[Por qué parar aquí.]"
+            "es": "Una estrella Michelin en Marbella, a unos 10 minutos de Las Brisas."
           },
           "foto": {
-            "es": "terraza"
+            "es": "sala del restaurante"
           }
         },
         {
@@ -136,15 +134,7 @@
         {
           "tipo": "Spa",
           "tono": "claro",
-          "nombre": {
-            "es": "[Spa]"
-          },
-          "por_que": {
-            "es": "[Para cerrar el viaje.]"
-          },
-          "foto": {
-            "es": "piscina interior"
-          }
+          "ref": "spas/six-senses-spa-puente-romano"
         },
         {
           "tipo": "Segundo campo",
@@ -158,7 +148,7 @@
             "es": "Aeropuerto de Málaga"
           },
           "por_que": {
-            "es": "[Ruta recomendada de vuelta.]"
+            "es": "A unos 40 minutos de Marbella; el aeropuerto con más conexiones de la Costa del Sol."
           },
           "foto": {
             "es": "carretera de costa"
@@ -179,14 +169,6 @@
         "es": "Aeropuerto de Gibraltar"
       },
       "min": 50
-    },
-    {
-      "nombre": {
-        "es": "Aviación privada"
-      },
-      "texto": {
-        "es": "[Aeródromo]"
-      }
     }
   ]
 }

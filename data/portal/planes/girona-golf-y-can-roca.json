@@ -44,12 +44,6 @@
     {
       "tipo": "cena",
       "ref": "restaurantes/el-celler-de-can-roca"
-    },
-    {
-      "tipo": "descanso",
-      "nombre": {
-        "es": "[Spa]"
-      }
     }
   ],
   "dias": [
@@ -119,14 +113,19 @@
           "tipo": "Almuerzo",
           "tono": "claro",
           "nombre": {
-            "es": "[Casa club o restaurante]"
+            "es": "Massana"
           },
           "por_que": {
-            "es": "[Por qué parar aquí.]"
+            "es": "Una estrella Michelin en Girona, a unos 20 minutos de Camiral."
           },
           "foto": {
-            "es": "terraza"
-          }
+            "es": "sala del restaurante"
+          },
+          "alternativas": [
+            {
+              "es": "Divinum"
+            }
+          ]
         },
         {
           "tipo": "Cena",
@@ -152,14 +151,6 @@
       },
       "texto": {
         "es": "Aprox. 1 h 15 min"
-      }
-    },
-    {
-      "nombre": {
-        "es": "Aviación privada"
-      },
-      "texto": {
-        "es": "[Aeródromo]"
       }
     }
   ]

@@ -225,7 +225,7 @@ h1, h2, p, ol { margin: 0; }
 .plan-hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(44px, 7vw, 88px); line-height: 1; }
 .plan-hero .lead { margin-top: 16px; max-width: 520px; font-size: 17px; color: #D6CEC1; }
 .route { padding-top: 56px; padding-bottom: 56px; overflow-x: auto; }
-.route ol { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(140px, 1fr)); min-width: 900px; }
+.route ol { list-style: none; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(140px, 1fr); }
 .route li { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; border-top: 1px solid var(--chip-line); }
 .route .dot {
     margin-top: -24px; width: 48px; height: 48px; border-radius: 50%; background: var(--bg);

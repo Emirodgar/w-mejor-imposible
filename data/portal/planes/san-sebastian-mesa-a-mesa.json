@@ -26,12 +26,6 @@
       }
     },
     {
-      "tipo": "coche",
-      "nombre": {
-        "es": "[Deportivo]"
-      }
-    },
-    {
       "tipo": "hotel",
       "nombre": {
         "es": "Hotel María Cristina"
@@ -45,12 +39,6 @@
       "tipo": "cena",
       "nombre": {
         "es": "Akelarre"
-      }
-    },
-    {
-      "tipo": "descanso",
-      "nombre": {
-        "es": "[Spa]"
       }
     }
   ],
@@ -177,7 +165,7 @@
             "es": "Aeropuerto de San Sebastián"
           },
           "por_que": {
-            "es": "[Ruta recomendada de vuelta.]"
+            "es": "El más cercano a la ciudad; Bilbao y Biarritz son las alternativas con más vuelos."
           },
           "foto": {
             "es": "carretera de costa"

@@ -26,12 +26,6 @@
       }
     },
     {
-      "tipo": "coche",
-      "nombre": {
-        "es": "[Deportivo]"
-      }
-    },
-    {
       "tipo": "hotel",
       "nombre": {
         "es": "Hotel Marqués de Riscal"
@@ -50,7 +44,7 @@
     {
       "tipo": "descanso",
       "nombre": {
-        "es": "[Spa]"
+        "es": "Vinothérapie Spa Caudalie"
       }
     }
   ],
@@ -92,6 +86,19 @@
           "ref": "bodegas/marques-de-riscal",
           "por_que": {
             "es": "Una de las bodegas pioneras de Rioja, fundada en 1858: visita a las cavas subterráneas."
+          }
+        },
+        {
+          "tipo": "Spa",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Vinothérapie Spa Caudalie"
+          },
+          "por_que": {
+            "es": "Spa de vinoterapia en el propio hotel de Frank Gehry, en Elciego."
+          },
+          "foto": {
+            "es": "sala de relajación"
           }
         }
       ]
@@ -153,14 +160,6 @@
       },
       "texto": {
         "es": "Aprox. 50 min"
-      }
-    },
-    {
-      "nombre": {
-        "es": "Aviación privada"
-      },
-      "texto": {
-        "es": "[Aeródromo]"
       }
     }
   ]
