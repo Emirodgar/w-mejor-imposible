@@ -761,7 +761,6 @@
  "Listado de certificados de operador aéreo (AOC) de AESA, generado el 2 de noviembre de 2026; las bases salen de las webs de los operadores y de fichas de terceros, y están pendientes de confirmar con cada empresa.": "Liste der Luftverkehrsbetreiberzeugnisse (AOC) der AESA, erstellt am 2. November 2026; die Stützpunkte stammen von den Websites der Betreiber und aus Drittverzeichnissen und müssen noch mit jedem Unternehmen bestätigt werden.",
  "Llegada y retiro": "Ankunft und Retreat",
  "Longevidad en la Costa Blanca": "Langlebigkeit an der Costa Blanca",
- "Los 3 operadores de helicóptero con certificado AOC y base en nuestras zonas": "Die 3 Hubschrauberbetreiber mit AOC-Zertifikat und Stützpunkt in unseren Gebieten",
  "Málaga y Marbella": "Málaga und Marbella",
  "Plan completo · 3 días · Bienestar": "Komplette Reise · 3 Tage · Wellness",
  "Sabadell (Barcelona)": "Sabadell (Barcelona)",
@@ -777,5 +776,6 @@
  "helicóptero en un helipuerto": "Hubschrauber auf einem Hubschrauberlandeplatz",
  "helicóptero sobre la Costa del Sol": "Hubschrauber über der Costa del Sol",
  "{aoc}": "{aoc}",
- "{base}": "{base}"
+ "{base}": "{base}",
+ "3 operadores de helicóptero con certificado AOC": "3 Hubschrauberbetreiber mit AOC-Zertifikat"
 }
