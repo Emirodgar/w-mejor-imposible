@@ -1065,11 +1065,11 @@
   },
   "rank.others_plan": {
     "es": "En el plan: {plan}",
-    "en": "In the plan: {plan}",
-    "fr": "Dans le plan : {plan}",
-    "de": "Im Plan: {plan}",
-    "pt": "No plano: {plan}",
-    "it": "Nel piano: {plan}"
+    "en": "In the itinerary: {plan}",
+    "fr": "Dans le séjour : {plan}",
+    "de": "In der Reise: {plan}",
+    "pt": "No roteiro: {plan}",
+    "it": "Nell'itinerario: {plan}"
   },
   "item.context": {
     "es": "Contexto",
