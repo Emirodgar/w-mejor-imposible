@@ -1,0 +1,28 @@
+{
+  "id": "compras-de-lujo/gran-via",
+  "categoria": "compras-de-lujo",
+  "nombre": "Gran Vía",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "Gran Vía"
+  },
+  "por_que": {
+    "es": "Gran Vía, en el centro de Madrid, es la tercera calle comercial más cara de España, con una renta prime de 3.120 euros por metro cuadrado al año."
+  },
+  "ficha": {
+    "tipo": "Calle comercial",
+    "referencia": "Cushman & Wakefield 2025: n.º 3 de España"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.cushmanwakefield.com/es-es/spain/insights/main-streets-across-the-world",
+    "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42"
+  ],
+  "busqueda": "Gran Vía Madrid",
+  "coordenadas": {
+    "lat": 40.42019,
+    "lon": -3.70416
+  },
+  "geo_fuente": "Gran Vía, Universidad, Centro, Madrid, Comunidad de Madrid, 28013, España"
+}

@@ -199,6 +199,10 @@ h1, h2, p, ol { margin: 0; }
     display: flex; flex-wrap: wrap; align-items: center; gap: 28px;
     padding: 20px 0; border-bottom: 1px solid var(--line); text-decoration: none;
 }
+.compact-list .row { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.compact-list .note { flex: 1 1 100%; font-size: 14px; color: var(--muted); }
+.compact-list a .note { order: 9; }
+.others-more .others-lead { max-width: 640px; margin-bottom: 24px; color: var(--muted); }
 .compact-list .n { flex: 0 0 56px; font-family: var(--serif); font-size: 36px; color: var(--accent); }
 .compact-list .thumb { flex: 0 0 120px; aspect-ratio: 3 / 2; background: var(--light-tone-2); }
 .compact-list .nm { flex: 1 1 240px; font-family: var(--serif); font-size: 26px; }

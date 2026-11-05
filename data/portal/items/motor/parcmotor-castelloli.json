@@ -1,0 +1,28 @@
+{
+  "id": "motor/parcmotor-castelloli",
+  "categoria": "motor",
+  "nombre": "Parcmotor Castellolí",
+  "lugar": "Castellolí · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "recta de meta"
+  },
+  "por_que": {
+    "es": "Circuito reversible de unos 4,1 km, terminado en 2009 por iniciativa del Circuit de Catalunya y la Generalitat, y homologado por las federaciones internacionales de motociclismo y automovilismo."
+  },
+  "ficha": {
+    "anio": 2009,
+    "longitud": "4,14"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://patrimonicultural.diba.cat/print/pdf/node/46658",
+    "https://www.lapmeta.com/es/track/variation/426"
+  ],
+  "busqueda": "Parcmotor Castellolí",
+  "coordenadas": {
+    "lat": 41.59072,
+    "lon": 1.68587
+  },
+  "geo_fuente": "Parcmotor Castellolí, Can n'Alzina, Castellolí, Anoia, Barcelona, Catalunya, 08719, España"
+}
