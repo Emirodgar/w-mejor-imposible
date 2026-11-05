@@ -38,21 +38,46 @@ def items():
             yield path, json.load(f)
 
 
+def usage():
+    """Dónde se muestra la foto de cada ficha: puestos 1-5 de su ranking (los demás no llevan foto) y pasos de planes."""
+    where = {}
+    for path in glob.glob(os.path.join(ROOT, 'data', 'portal', 'rankings', '*.json')):
+        with open(path, encoding='utf-8') as f:
+            rk = json.load(f)
+        for pos, ref in enumerate(rk['items'][:5], 1):
+            where.setdefault(ref, []).append(f'puesto {pos} de su ranking')
+    for path in glob.glob(os.path.join(ROOT, 'data', 'portal', 'planes', '*.json')):
+        with open(path, encoding='utf-8') as f:
+            plan = json.load(f)
+        for day in plan['dias']:
+            for st in day['pasos']:
+                if st.get('ref'):
+                    where.setdefault(st['ref'], []).append('plan ' + plan['slug'])
+    return where
+
+
 def write_pending():
     os.makedirs(SRC, exist_ok=True)
-    lines = []
+    where = usage()
+    prio, resto, con = [], [], []
     for _, it in items():
         fr = it.get('foto_real')
-        if not fr or fr.get('origen') != 'propia':
-            estado = 'sin foto' if not fr else 'foto de Wikimedia Commons'
-            lines.append(f'{it["id"]}.jpg   ({estado})   {it["nombre"]}, {it["lugar"]}')
-    sin = [ln for ln in lines if '(sin foto)' in ln]
-    con = [ln for ln in lines if '(sin foto)' not in ln]
+        if fr and fr.get('origen') == 'propia':
+            continue
+        line = f'{it["id"]}.jpg   {it["nombre"]}, {it["lugar"]}'
+        if fr:
+            con.append(line)
+        elif it['id'] in where:
+            prio.append(line + '   [' + '; '.join(sorted(set(where[it['id']]))) + ']')
+        else:
+            resto.append(line)
     with open(os.path.join(SRC, 'PENDIENTES.txt'), 'w', encoding='utf-8', newline='\n') as f:
-        f.write('Fotos pendientes. Guarda cada una en fotos-propias/ con la ruta indicada (categoria/slug.jpg).\n\n')
-        f.write(f'SIN FOTO ({len(sin)})\n' + '\n'.join(sin) + '\n\n')
-        f.write(f'CON FOTO DE WIKIMEDIA COMMONS, SUSTITUIBLE ({len(con)})\n' + '\n'.join(con) + '\n')
-    print(f'PENDIENTES.txt: {len(sin)} sin foto, {len(con)} con foto de Commons')
+        f.write('Fotos pendientes. Guarda cada una en fotos-propias/ con la ruta indicada (categoria/slug.jpg).\n'
+                'Las fichas del puesto 6 en adelante no muestran foto, así que no hace falta cubrirlas.\n\n')
+        f.write(f'1. SIN FOTO Y SE MUESTRA YA ({len(prio)})\n' + '\n'.join(prio) + '\n\n')
+        f.write(f'2. SIN FOTO, SIN HUECO EN LA WEB TODAVÍA ({len(resto)})\n' + '\n'.join(resto) + '\n\n')
+        f.write(f'3. CON FOTO DE WIKIMEDIA COMMONS, SUSTITUIBLE ({len(con)})\n' + '\n'.join(con) + '\n')
+    print(f'PENDIENTES.txt: {len(prio)} sin foto y visibles, {len(resto)} sin foto no visibles, {len(con)} con foto de Commons')
 
 
 def find_source(cat, slug):
