@@ -23,5 +23,13 @@
     "lat": 42.5687,
     "lon": -2.59098
   },
-  "geo_fuente": "Bodegas Ysios, La hoya Bidea, Laguardia, Arabako Errioxa, Araba / Álava, Euskadi, 01300, E"
+  "geo_fuente": "Bodegas Ysios, La hoya Bidea, Laguardia, Arabako Errioxa, Araba / Álava, Euskadi, 01300, E",
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/ysios.jpg",
+    "autor": "Roberto Lumbreras from Madrid, España",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Bodegas_Ysios,_junio_de_2007_(3).jpg",
+    "titulo": "File:Bodegas Ysios, junio de 2007 (3).jpg"
+  }
 }

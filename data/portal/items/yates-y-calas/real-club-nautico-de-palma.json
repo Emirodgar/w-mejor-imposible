@@ -23,5 +23,13 @@
     "lat": 39.56717,
     "lon": 2.63856
   },
-  "geo_fuente": "Real Club Náutico, Contramoll Mollet, Puig de Sant Pere, Canavall, Districte Centre, Palma"
+  "geo_fuente": "Real Club Náutico, Contramoll Mollet, Puig de Sant Pere, Canavall, Districte Centre, Palma",
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/real-club-nautico-de-palma.jpg",
+    "autor": "Николай Максимович",
+    "licencia": "CC BY 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:RCNP_-_Real_Club_N%C3%A1utico_de_Palma_-_panoramio.jpg",
+    "titulo": "File:RCNP - Real Club Náutico de Palma - panoramio.jpg"
+  }
 }

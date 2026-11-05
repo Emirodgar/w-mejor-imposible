@@ -24,5 +24,13 @@
     "lat": 36.4889,
     "lon": -4.95295
   },
-  "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+  "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d",
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/puerto-banus.jpg",
+    "autor": "Tomas Fano",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Marbella3.jpg",
+    "titulo": "File:Marbella3.jpg"
+  }
 }

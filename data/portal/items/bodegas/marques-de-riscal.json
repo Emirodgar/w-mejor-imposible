@@ -23,5 +23,13 @@
     "lat": 42.51151,
     "lon": -2.61848
   },
-  "geo_fuente": "Bodegas Marqués de Riscal, Plaza del Reloj, Barrihuelo, Elciego, Arabako Errioxa, Araba / "
+  "geo_fuente": "Bodegas Marqués de Riscal, Plaza del Reloj, Barrihuelo, Elciego, Arabako Errioxa, Araba / ",
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/marques-de-riscal.jpg",
+    "autor": "Juan E. M.",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Bodega_Marqu%C3%A9s_de_Riscal_en_Elciego_(%C3%81lava)_-_panoramio.jpg",
+    "titulo": "File:Bodega Marqués de Riscal en Elciego (Álava) - panoramio.jpg"
+  }
 }

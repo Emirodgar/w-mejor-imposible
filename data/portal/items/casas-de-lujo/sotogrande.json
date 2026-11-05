@@ -23,5 +23,13 @@
     "lat": 36.28206,
     "lon": -5.29706
   },
-  "geo_fuente": "Sotogrande, San Roque, Campo de Gibraltar, Cádiz, Andalucía, 11310, España"
+  "geo_fuente": "Sotogrande, San Roque, Campo de Gibraltar, Cádiz, Andalucía, 11310, España",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/sotogrande.jpg",
+    "autor": "Sergio Rus",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Port_of_Sotogrande_(5793604574).jpg",
+    "titulo": "File:Port of Sotogrande (5793604574).jpg"
+  }
 }

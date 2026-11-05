@@ -23,5 +23,13 @@
     "lat": 41.59434,
     "lon": -4.08763
   },
-  "geo_fuente": "Bodega Pago de Carraovejas, Camino de Carraovejas, Mélida, Peñafiel, Valladolid, Castilla "
+  "geo_fuente": "Bodega Pago de Carraovejas, Camino de Carraovejas, Mélida, Peñafiel, Valladolid, Castilla ",
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/pago-de-carraovejas.jpg",
+    "autor": "Pablo Guillén Llanos",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Bodega_Pago_de_Carraovejas.jpg",
+    "titulo": "File:Bodega Pago de Carraovejas.jpg"
+  }
 }

@@ -23,5 +23,13 @@
     "lat": 42.30764,
     "lon": 3.01111
   },
-  "geo_fuente": "Castell de Peralada, Carrer Sant Joan, Peralada, Alt Empordà, Girona, Catalunya, 17491, Es"
+  "geo_fuente": "Castell de Peralada, Carrer Sant Joan, Peralada, Alt Empordà, Girona, Catalunya, 17491, Es",
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/perelada.jpg",
+    "autor": "Gordito1869",
+    "licencia": "CC BY 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Castell_de_Peralada_20.JPG",
+    "titulo": "File:Castell de Peralada 20.JPG"
+  }
 }

@@ -23,5 +23,13 @@
     "lat": 43.31172,
     "lon": -2.00689
   },
-  "geo_fuente": "Antonio Arzak kalea, Bentaberri, Antiguo-Ondarreta, Mendebaldea, Donostia / San Sebastián,"
+  "geo_fuente": "Antonio Arzak kalea, Bentaberri, Antiguo-Ondarreta, Mendebaldea, Donostia / San Sebastián,",
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/arzak.jpg",
+    "autor": "Krista",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Fachada_del_restaurante_Arzak.jpg",
+    "titulo": "File:Fachada del restaurante Arzak.jpg"
+  }
 }

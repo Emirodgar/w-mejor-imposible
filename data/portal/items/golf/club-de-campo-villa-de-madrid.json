@@ -24,5 +24,13 @@
     "lat": 40.44745,
     "lon": -3.7454
   },
-  "geo_fuente": "Club de Campo Villa de Madrid, Anillo Verde Ciclista, Ciudad Universitaria, Moncloa-Aravac"
+  "geo_fuente": "Club de Campo Villa de Madrid, Anillo Verde Ciclista, Ciudad Universitaria, Moncloa-Aravac",
+  "foto_real": {
+    "archivo": "/img/portal/golf/club-de-campo-villa-de-madrid.jpg",
+    "autor": "Diario de Madrid",
+    "licencia": "CC BY 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:La_Casa_de_Campo,_m%C3%A1s_protegida_(01).jpg",
+    "titulo": "File:La Casa de Campo, más protegida (01).jpg"
+  }
 }

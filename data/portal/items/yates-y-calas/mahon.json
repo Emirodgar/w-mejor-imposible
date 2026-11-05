@@ -23,5 +23,13 @@
     "lat": 39.88893,
     "lon": 4.27332
   },
-  "geo_fuente": "Avinguda Port de Maó, Fort de l'Eau, Sant Antoni, Maó, Menorca, Illes Balears, 07701, Espa"
+  "geo_fuente": "Avinguda Port de Maó, Fort de l'Eau, Sant Antoni, Maó, Menorca, Illes Balears, 07701, Espa",
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/mahon.jpg",
+    "autor": "Paucabot",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Ma%C3%B3.jpg",
+    "titulo": "File:Maó.jpg"
+  }
 }

@@ -22,5 +22,13 @@
     "lat": 41.39138,
     "lon": 2.16691
   },
-  "geo_fuente": "Mandarin Oriental, 38-40, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eix"
+  "geo_fuente": "Mandarin Oriental, 38-40, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eix",
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/mandarin-oriental-barcelona.jpg",
+    "autor": "Enric",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:449_Hotel_Mandarin_Oriental,_pg._de_Gr%C3%A0cia_38-40_(Barcelona).jpg",
+    "titulo": "File:449 Hotel Mandarin Oriental, pg. de Gràcia 38-40 (Barcelona).jpg"
+  }
 }

@@ -878,5 +878,21 @@
   "de": "Methodik · Aktualisiert {updated}",
   "pt": "Metodologia · Atualizado {updated}",
   "it": "Metodologia · Aggiornata {updated}"
+ },
+ "credits.h": {
+  "es": "Créditos de las fotos",
+  "en": "Photo credits",
+  "fr": "Crédits photos",
+  "de": "Bildnachweise",
+  "pt": "Créditos das fotografias",
+  "it": "Crediti fotografici"
+ },
+ "plan.map_aria": {
+  "es": "Mapa del plan: aeropuerto, hotel, campo y restaurante",
+  "en": "Itinerary map: airport, hotel, course and restaurant",
+  "fr": "Carte du séjour : aéroport, hôtel, parcours et restaurant",
+  "de": "Karte der Reise: Flughafen, Hotel, Golfplatz und Restaurant",
+  "pt": "Mapa do roteiro: aeroporto, hotel, campo e restaurante",
+  "it": "Mappa dell'itinerario: aeroporto, hotel, campo e ristorante"
  }
 }

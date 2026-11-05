@@ -23,5 +23,13 @@
     "lat": 41.07782,
     "lon": -0.19496
   },
-  "geo_fuente": "Motorland Aragón, TE-V-7032, Valmuel, Alcañiz, Bajo Aragón, Teruel, Aragón, 44600, España"
+  "geo_fuente": "Motorland Aragón, TE-V-7032, Valmuel, Alcañiz, Bajo Aragón, Teruel, Aragón, 44600, España",
+  "foto_real": {
+    "archivo": "/img/portal/motor/motorland-aragon.jpg",
+    "autor": "",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Formul%27Academy_Euroseries_2009._Motorland_Arag%C3%B3n.jpg",
+    "titulo": "File:Formul'Academy Euroseries 2009. Motorland Aragón.jpg"
+  }
 }

@@ -24,5 +24,13 @@
     "lat": 40.53203,
     "lon": -3.63549
   },
-  "geo_fuente": "La Moraleja, Avenida de la Ermita, Parque Empresarial Arroyo de la Vega, La Moraleja, Alco"
+  "geo_fuente": "La Moraleja, Avenida de la Ermita, Parque Empresarial Arroyo de la Vega, La Moraleja, Alco",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/la-moraleja.jpg",
+    "autor": "Zarateman",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Alcobendas_-_Urbanizaci%C3%B3n_La_Moraleja_03.jpg",
+    "titulo": "File:Alcobendas - Urbanización La Moraleja 03.jpg"
+  }
 }

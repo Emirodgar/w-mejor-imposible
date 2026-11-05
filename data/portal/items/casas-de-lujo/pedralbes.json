@@ -23,5 +23,13 @@
     "lat": 41.39014,
     "lon": 2.11222
   },
-  "geo_fuente": "Pedralbes, les Corts, Barcelona, Barcelonès, Barcelona, Catalunya, España"
+  "geo_fuente": "Pedralbes, les Corts, Barcelona, Barcelonès, Barcelona, Catalunya, España",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/pedralbes.jpg",
+    "autor": "Canaan",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Palau_Reial_Pedralbes_(Barcelona).JPG",
+    "titulo": "File:Palau Reial Pedralbes (Barcelona).JPG"
+  }
 }

@@ -23,5 +23,13 @@
     "lat": 38.85374,
     "lon": 0.0851
   },
-  "geo_fuente": "Quique Dacosta Restaurant, Carretera de les Marines, les Marines, Dénia, la Marina Alta, A"
+  "geo_fuente": "Quique Dacosta Restaurant, Carretera de les Marines, les Marines, Dénia, la Marina Alta, A",
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/quique-dacosta.jpg",
+    "autor": "https://www.flickr.com/photos/kentwang/",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Quique_Dacosta_Exterior.jpg",
+    "titulo": "File:Quique Dacosta Exterior.jpg"
+  }
 }

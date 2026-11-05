@@ -24,5 +24,13 @@
     "lat": 36.50748,
     "lon": -4.80472
   },
-  "geo_fuente": "Marbella, Costa del Sol Occidental, Málaga, Andalucía, España"
+  "geo_fuente": "Marbella, Costa del Sol Occidental, Málaga, Andalucía, España",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/marbella.jpg",
+    "autor": "Diliff",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Marbella_from_La_Concha,_Andalucia,_Spain_-_Sept_2009.jpg",
+    "titulo": "File:Marbella from La Concha, Andalucia, Spain - Sept 2009.jpg"
+  }
 }

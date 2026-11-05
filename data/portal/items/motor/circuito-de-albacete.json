@@ -23,5 +23,13 @@
     "lat": 39.00617,
     "lon": -1.7935
   },
-  "geo_fuente": "Circuito de Albacete, Camino de Aviación, Albacete, Castilla-La Mancha, 02008, España"
+  "geo_fuente": "Circuito de Albacete, Camino de Aviación, Albacete, Castilla-La Mancha, 02008, España",
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuito-de-albacete.jpg",
+    "autor": "Equipo Competición CEPSA",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Antonio_Albacete_en_primer_puesto._Circuito_de_Albacete.jpg",
+    "titulo": "File:Antonio Albacete en primer puesto. Circuito de Albacete.jpg"
+  }
 }

@@ -8,7 +8,7 @@
     "es": "sala del restaurante"
   },
   "por_que": {
-    "es": "El único tres estrellas de Madrid y la cocina más teatral de la capital, de David Muñoz."
+    "es": "El único tres estrellas de Madrid y la cocina más teatral de la capital, de David Muñoz; noveno del mundo en The World's 50 Best 2026."
   },
   "ficha": {
     "chef": "David Muñoz",
@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html"
   ],
   "busqueda": "NH Collection Madrid Eurobuilding",
   "geo_precision": "edificio (el restaurante está en el hotel NH Eurobuilding)",

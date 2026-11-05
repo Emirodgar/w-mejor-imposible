@@ -23,5 +23,13 @@
     "lat": 36.7078,
     "lon": -6.03251
   },
-  "geo_fuente": "Circuito de Jerez, Antigua carretera de Jerez de la Frontera a Arcos de la Frontera, Torre"
+  "geo_fuente": "Circuito de Jerez, Antigua carretera de Jerez de la Frontera a Arcos de la Frontera, Torre",
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuito-de-jerez-angel-nieto.jpg",
+    "autor": "Daniel Sancho from Málaga, Spain",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Circuito_de_Jerez_(4360360194).jpg",
+    "titulo": "File:Circuito de Jerez (4360360194).jpg"
+  }
 }

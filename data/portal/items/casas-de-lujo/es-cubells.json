@@ -23,5 +23,13 @@
     "lat": 38.88144,
     "lon": 1.27237
   },
-  "geo_fuente": "Es Cubells, Sant Josep de sa Talaia, Eivissa, Illes Balears, 07839, España"
+  "geo_fuente": "Es Cubells, Sant Josep de sa Talaia, Eivissa, Illes Balears, 07839, España",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/es-cubells.jpg",
+    "autor": "JanManu",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:KircheEsCubells.jpg",
+    "titulo": "File:KircheEsCubells.jpg"
+  }
 }

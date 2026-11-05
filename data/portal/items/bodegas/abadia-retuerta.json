@@ -23,5 +23,13 @@
     "lat": 41.61654,
     "lon": -4.41093
   },
-  "geo_fuente": "Abadía Retuerta Le Domaine, Carretera Zaragoza a Portugal, Retuerta, Sardón de Duero, Vall"
+  "geo_fuente": "Abadía Retuerta Le Domaine, Carretera Zaragoza a Portugal, Retuerta, Sardón de Duero, Vall",
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/abadia-retuerta.jpg",
+    "autor": "Lourdes Cardenal",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Valladolid_monasterio_Retuerta_01_lou.JPG",
+    "titulo": "File:Valladolid monasterio Retuerta 01 lou.JPG"
+  }
 }

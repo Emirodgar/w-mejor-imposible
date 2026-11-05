@@ -23,5 +23,13 @@
     "lat": 36.82348,
     "lon": -5.08246
   },
-  "geo_fuente": "Circuito Ascari, Carretera de Ardales a Ronda, Ronda, Serranía de Ronda, Málaga, Andalucía"
+  "geo_fuente": "Circuito Ascari, Carretera de Ardales a Ronda, Ronda, Serranía de Ronda, Málaga, Andalucía",
+  "foto_real": {
+    "archivo": "/img/portal/motor/ascari-race-resort.jpg",
+    "autor": "Ascarinet",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Vista_del_cortijo-casa_Club_de_Ascari_Race_Resort.jpg",
+    "titulo": "File:Vista del cortijo-casa Club de Ascari Race Resort.jpg"
+  }
 }

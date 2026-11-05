@@ -22,5 +22,13 @@
     "lat": 36.50652,
     "lon": -4.91922
   },
-  "geo_fuente": "Marbella Club Hotel, Bulevar del Príncipe Alfonso de Hohenlohe, Marbella Real, El Vicario,"
+  "geo_fuente": "Marbella Club Hotel, Bulevar del Príncipe Alfonso de Hohenlohe, Marbella Real, El Vicario,",
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/marbella-club-hotel.jpg",
+    "autor": "Zarateman",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Marbella_-_Milla_de_Oro,_Marbella_Club_Hotel_1.jpg",
+    "titulo": "File:Marbella - Milla de Oro, Marbella Club Hotel 1.jpg"
+  }
 }

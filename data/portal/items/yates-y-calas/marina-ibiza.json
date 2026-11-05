@@ -23,5 +23,13 @@
     "lat": 38.91201,
     "lon": 1.44763
   },
-  "geo_fuente": "Marina Botafoch, Avinguda del Vuit d'Agost, Passeig Maritim, Eivissa, Illes Balears, 07800"
+  "geo_fuente": "Marina Botafoch, Avinguda del Vuit d'Agost, Passeig Maritim, Eivissa, Illes Balears, 07800",
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/marina-ibiza.jpg",
+    "autor": "AH AP",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Marina_Botafoch.jpg",
+    "titulo": "File:Marina Botafoch.jpg"
+  }
 }

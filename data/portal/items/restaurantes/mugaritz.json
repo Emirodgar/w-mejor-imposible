@@ -23,5 +23,13 @@
     "lat": 43.27236,
     "lon": -1.91723
   },
-  "geo_fuente": "Mugaritz, 20, Aldura gunea, Aldura Gunea, Errenteria, Gipuzkoa, Euskadi, 20100, España"
+  "geo_fuente": "Mugaritz, 20, Aldura gunea, Aldura Gunea, Errenteria, Gipuzkoa, Euskadi, 20100, España",
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/mugaritz.jpg",
+    "autor": "Krista",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Mugaritz_entrance.jpg",
+    "titulo": "File:Mugaritz entrance.jpg"
+  }
 }

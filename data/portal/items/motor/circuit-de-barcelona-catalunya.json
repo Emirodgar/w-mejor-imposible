@@ -23,5 +23,13 @@
     "lat": 41.57001,
     "lon": 2.25881
   },
-  "geo_fuente": "Circuit de Barcelona-Catalunya, BV-5003, Can Tabola, Montmeló, Vallès Oriental, Barcelona,"
+  "geo_fuente": "Circuit de Barcelona-Catalunya, BV-5003, Can Tabola, Montmeló, Vallès Oriental, Barcelona,",
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuit-de-barcelona-catalunya.jpg",
+    "autor": "Wilnel José Verdú Guerrero",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Curva_10_de_Circuit_de_Barcelona-Catalunya_Montmel%C3%B3_(2023).jpg",
+    "titulo": "File:Curva 10 de Circuit de Barcelona-Catalunya Montmeló (2023).jpg"
+  }
 }

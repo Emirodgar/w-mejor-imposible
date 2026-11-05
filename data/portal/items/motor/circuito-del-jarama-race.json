@@ -23,5 +23,13 @@
     "lat": 40.61582,
     "lon": -3.58489
   },
-  "geo_fuente": "Circuito del Jarama, Autovía del Norte, Race, San Sebastián de los Reyes, Comunidad de Mad"
+  "geo_fuente": "Circuito del Jarama, Autovía del Norte, Race, San Sebastián de los Reyes, Comunidad de Mad",
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuito-del-jarama-race.jpg",
+    "autor": "CARLOS TEIXIDOR CADENAS",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Circuito_de_Madrid_Jarama_-_RACE,_o_%22Circuito_del_Jarama%22._Comunidad_de_Madrid._Espa%C3%B1a,_Spain.jpg",
+    "titulo": "File:Circuito de Madrid Jarama - RACE, o \"Circuito del Jarama\". Comunidad de Madrid. España, Spain.jpg"
+  }
 }

@@ -24,5 +24,13 @@
     "lat": 39.59027,
     "lon": 2.58954
   },
-  "geo_fuente": "Son Vida, Districte de Ponent, Palma, Illes Balears, 07011, España"
+  "geo_fuente": "Son Vida, Districte de Ponent, Palma, Illes Balears, 07011, España",
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/son-vida.jpg",
+    "autor": "Joan Gené",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Palma._Castell_de_Son_Vida_(2).jpg",
+    "titulo": "File:Palma. Castell de Son Vida (2).jpg"
+  }
 }

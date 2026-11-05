@@ -23,5 +23,13 @@
     "lat": 41.42698,
     "lon": 1.77299
   },
-  "geo_fuente": "Caves Gramona, Variant de Sant Sadurní d'Anoia, Sant Sadurní d'Anoia, Alt Penedès, Barcelo"
+  "geo_fuente": "Caves Gramona, Variant de Sant Sadurní d'Anoia, Sant Sadurní d'Anoia, Alt Penedès, Barcelo",
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/gramona.jpg",
+    "autor": "NMP01",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:GRAMONA_ENTRADA_CELLER_BATLLE.jpg",
+    "titulo": "File:GRAMONA ENTRADA CELLER BATLLE.jpg"
+  }
 }

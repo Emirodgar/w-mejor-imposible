@@ -24,5 +24,13 @@
     "lat": 39.84372,
     "lon": 3.1693
   },
-  "geo_fuente": "Club de Golf Alcanada, Camí de la Muntanya, Alcanada, Alcúdia, Raiguer, Illes Balears, 074"
+  "geo_fuente": "Club de Golf Alcanada, Camí de la Muntanya, Alcanada, Alcúdia, Raiguer, Illes Balears, 074",
+  "foto_real": {
+    "archivo": "/img/portal/golf/club-de-golf-alcanada.jpg",
+    "autor": "Eortegachapel",
+    "licencia": "CC BY 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:CasasAlcanada.jpg",
+    "titulo": "File:CasasAlcanada.jpg"
+  }
 }

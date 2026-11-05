@@ -24,5 +24,13 @@
     "lat": 36.28698,
     "lon": -5.27852
   },
-  "geo_fuente": "Puerto Sotogrande, Sotogrande, Torreguadiaro, 11312, España"
+  "geo_fuente": "Puerto Sotogrande, Sotogrande, Torreguadiaro, 11312, España",
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/puerto-sotogrande.jpg",
+    "autor": "Sergio Rus",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Port_of_Sotogrande_(5793604574).jpg",
+    "titulo": "File:Port of Sotogrande (5793604574).jpg"
+  }
 }

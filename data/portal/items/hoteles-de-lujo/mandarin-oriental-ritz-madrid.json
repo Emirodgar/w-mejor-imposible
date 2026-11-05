@@ -22,5 +22,13 @@
     "lat": 40.41555,
     "lon": -3.69273
   },
-  "geo_fuente": "Mandarin Oriental Ritz, Madrid, 5, Plaza de la Lealtad, Jerónimos, Retiro, Madrid, Comunid"
+  "geo_fuente": "Mandarin Oriental Ritz, Madrid, 5, Plaza de la Lealtad, Jerónimos, Retiro, Madrid, Comunid",
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/mandarin-oriental-ritz-madrid.jpg",
+    "autor": "Luis García (Zaqarbal)",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Hotel_Ritz_(Madrid)_01.jpg",
+    "titulo": "File:Hotel Ritz (Madrid) 01.jpg"
+  }
 }

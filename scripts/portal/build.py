@@ -119,6 +119,41 @@ for _cat in os.listdir(os.path.join(DATA, 'items')):
         _item = load(f'items/{_cat}/{_fn}')
         ITEMS[_item['id']] = _item
 PAGES = []  # rutas (en español) de las páginas generadas, para el sitemap
+USED = []   # ítems cuya foto se muestra en la página en curso (para la sección de créditos)
+
+
+def photo_img(item, eager=False, cls=''):
+    """Etiqueta <img> de la foto real del ítem (vacía si no tiene) y la anota para los créditos."""
+    fr = (item or {}).get('foto_real')
+    if not fr:
+        return ''
+    if item not in USED:
+        USED.append(item)
+    return (f'<img{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} src="{e(fr["archivo"])}" alt="{e(item["nombre"])}, {e(item["lugar"])}" '
+            f'{"" if eager else "loading=" + chr(34) + "lazy" + chr(34) + " "}decoding="async">')
+
+
+def ph_box(item, extra=''):
+    """Recuadro de foto: con la foto real si existe; si no, un bloque neutro sin texto."""
+    img = photo_img(item)
+    cls = ' '.join(x for x in ('ph', extra.strip(), 'has-img' if img else '') if x)
+    return f'<div class="{cls}"{"" if img else " aria-hidden=" + chr(34) + "true" + chr(34)}>{img}</div>'
+
+
+def credits_html():
+    """Sección de créditos de las fotos usadas en la página; vacía la lista."""
+    if not USED:
+        return ''
+    lis = ''
+    for it in sorted(USED, key=lambda x: x['nombre']):
+        fr = it['foto_real']
+        author = e(fr.get('autor') or 'Wikimedia Commons')
+        lic = f'<a href="{e(fr["licencia_url"])}" rel="noopener">{e(fr["licencia"])}</a>' if fr.get('licencia_url') else e(fr['licencia'])
+        lis += (f'\n            <li>{e(it["nombre"])}: <a href="{e(fr["fuente"])}" rel="noopener">{author}</a> · {lic}'
+                f' · Wikimedia Commons</li>')
+    USED.clear()
+    return (f'\n<section class="wrap credits" aria-label="{e(ui("credits.h"))}">\n    <details>\n        <summary>{e(ui("credits.h"))}</summary>'
+            f'\n        <ul>{lis}\n        </ul>\n    </details>\n</section>\n')
 
 
 def item_url(ref):
@@ -247,7 +282,7 @@ def page(path, title, desc, lds, body):
     h, f = HEAD, FOOT
     for k, v in rep.items():
         h, f = h.replace(k, v), f.replace(k, v)
-    return h + body + f + (SCRIPT if 'data-zone' in body else '') + '\n</body>\n</html>\n'
+    return h + body + credits_html() + f + (SCRIPT if 'data-zone' in body else '') + '\n</body>\n</html>\n'
 
 
 # ---------------- Rankings ----------------
@@ -382,7 +417,7 @@ def build_rank(slug):
         items += f'''
         <li class="top-item"{anchor} data-zone="{en['zona']}" data-rank="{i+1}">
             <div class="num" aria-hidden="true">{i+1:02d}</div>
-            <div class="ph photo{TONES[i]}">{e(ui('plan.photo', x=en['foto']))}</div>
+            {ph_box(en['item'], 'photo' + TONES[i])}
             <div class="info">
                 <p class="place">{e(en['lugar'])}</p>
                 <h2><span class="visually-hidden">{i+1}. </span>{e(en['nombre'])}</h2>
@@ -478,6 +513,70 @@ def other_plans(slug):
     return [p for p in all_plans() if p['slug'] != slug]
 
 
+def plan_cover(p):
+    """Ítem cuya foto ilustra el plan: 'portada_ref' del plan o el primero con foto."""
+    if p.get('portada_ref'):
+        return ITEMS[p['portada_ref']]
+    for d in p['dias']:
+        for s in d['pasos']:
+            it = ITEMS.get(s.get('ref'))
+            if it and it.get('foto_real'):
+                return it
+    return None
+
+
+def plan_points(p):
+    """Puntos del mapa: aeropuertos de 'llegar' y lugares con ficha, con coordenadas."""
+    pts, seen = [], set()
+
+    def add(name, c, kind):
+        if c and name not in seen:
+            seen.add(name)
+            pts.append({'n': name, 'lat': c[0], 'lon': c[1], 'k': kind})
+    for r in p['llegar']:
+        rn = r['nombre']['es']
+        a = next((a for a in sorted(AIRPORTS, key=lambda x: -len(x['nombre'])) if a['nombre'] in rn or rn in a['nombre']), None)
+        if a:
+            add(t(r['nombre']), coords(a), 'a')
+    for d in p['dias']:
+        for s in d['pasos']:
+            it = ITEMS.get(s.get('ref'))
+            if it:
+                add(it['nombre'], coords(it), 'p')
+    return pts
+
+
+MAP_JS = '''
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+(function () {
+    var el = document.getElementById('plan-map');
+    if (!el || !window.L) return;
+    var pts = JSON.parse(el.dataset.points);
+    var map = L.map(el, { scrollWheelZoom: false });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var ll = pts.map(function (p) {
+        L.circleMarker([p.lat, p.lon], { radius: 8, weight: 2, color: '#16140F', fillColor: p.k === 'a' ? '#16140F' : '#7A5E32', fillOpacity: 1 })
+            .bindTooltip(p.n).addTo(map);
+        return [p.lat, p.lon];
+    });
+    if (ll.length > 1) map.fitBounds(ll, { padding: [40, 40], maxZoom: 12 }); else map.setView(ll[0], 11);
+})();
+</script>'''
+
+
+def map_html(p):
+    """Mapa interactivo (Leaflet + OpenStreetMap) con los puntos del plan."""
+    pts = plan_points(p)
+    if not pts:
+        return ''
+    return (f'<div class="map live" id="plan-map" role="region" aria-label="{e(ui("plan.map_aria"))}" '
+            f'data-points="{e(json.dumps(pts, ensure_ascii=False))}"><noscript>{e(ui("plan.map_aria"))}</noscript></div>')
+
+
 def build_plan(slug):
     p = load(f'planes/{slug}.json')
     zona = p['zona']
@@ -504,6 +603,8 @@ def build_plan(slug):
         steps = ''
         for s in d['pasos']:
             tone = ' t3' if s.get('tono') == 'oscuro' else ''
+            it = ITEMS.get(s.get('ref'))
+            pic = ph_box(it, tone) if it and it.get('foto_real') else ''
             if s.get('ref'):
                 it = ITEMS[s['ref']]
                 name = f'<a href="{item_url(s["ref"])}">{e(it["nombre"])}</a>'
@@ -518,7 +619,7 @@ def build_plan(slug):
                 alts = f'<a href="#">{e(ui("plan.opt2"))}</a> · <a href="#">{e(ui("plan.opt3"))}</a>'
             steps += f'''
                 <article>
-                    <div class="ph{tone}">{e(ui('plan.photo', x=foto))}</div>
+                    {pic}
                     <p class="kind">{e(tr(s['tipo']))}</p>
                     <h3>{name}</h3>
                     <p class="why">{e(why)}</p>
@@ -537,7 +638,7 @@ def build_plan(slug):
         val = f"~{r['min']} min" if r.get('min') else t(r['texto'])
         llegar += f'\n                    <div class="r"><dt>{e(t(r["nombre"]))}</dt><dd>{e(val)}</dd></div>'
     others = ''.join(
-        f'\n            <a href="{u("/planes/" + o["slug"] + "/")}"><span class="thumb"></span><span class="m">{e(t(o["meta_corta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
+        f'\n            <a href="{u("/planes/" + o["slug"] + "/")}"><span class="thumb">{photo_img(plan_cover(o))}</span><span class="m">{e(t(o["meta_corta"]))}</span><span class="t">{e(t(o["titulo"]))}</span></a>'
         for o in other_plans(slug)[:3])
     crumb = [(ui('crumb.home'), u(HOME)), (ui('nav.plans'), u(HOME) + '#planes'), (title, None)]
     trip = {"@type": "TouristTrip", "name": title, "inLanguage": LANG, "description": t(p['lead']),
@@ -548,7 +649,7 @@ def build_plan(slug):
 <main>
     <section class="wrap">
         <div class="plan-hero">
-            <span class="ph-label">{e(ui('plan.photo', x=t(p['foto_portada'])))}</span>
+            {photo_img(plan_cover(p), eager=True, cls='cover')}
             <p class="kicker">{e(t(p['meta']))}</p>
             <h1>{e(title)}</h1>
             <p class="lead">{e(t(p['lead']))}</p>
@@ -562,7 +663,7 @@ def build_plan(slug):
 {days_html}
     <section class="wrap getting" aria-labelledby="llegar-h">
         <div class="cols">
-            <div class="map">{e(ui('plan.map'))}</div>
+            {map_html(p)}
             <div class="times">
                 <h2 id="llegar-h">{e(ui('plan.getting'))}</h2>
                 <dl>{llegar}
@@ -578,9 +679,9 @@ def build_plan(slug):
     </section>
 </main>
 '''
-    write(f'/planes/{slug}/index.html', page(
-        f'/planes/{slug}/', f'{ui("plan.title", title=title)} · Mejor Imposible',
-        f'{t(p["meta"])}: {t(p["lead"])}', [trip, bc_ld(crumb)], body))
+    html_page = page(f'/planes/{slug}/', f'{ui("plan.title", title=title)} · Mejor Imposible',
+                     f'{t(p["meta"])}: {t(p["lead"])}', [trip, bc_ld(crumb)], body)
+    write(f'/planes/{slug}/index.html', html_page.replace('</body>', MAP_JS + '\n</body>') if 'id="plan-map"' in body else html_page)
 
 
 # ---------------- Directorio de marcas de lujo (motor) ----------------
@@ -687,7 +788,7 @@ def build_home():
     for slug, key, hid in HOME_STRIPS:
         entries, _ = ranking_entries(slug)
         lis = ''.join(
-            f'\n                    <li><a href="{u(f"/ranking/{slug}/")}#{en["slug"]}"><div class="ph{STRIP_TONES[i]}">[FOTO]</div><div class="row"><span class="n">{i+1:02d}</span><span><span class="name">{e(en["nombre"])}</span><span class="place">{e(en["lugar"])}</span></span></div></a></li>'
+            f'\n                    <li><a href="{u(f"/ranking/{slug}/")}#{en["slug"]}">{ph_box(en["item"], STRIP_TONES[i])}<div class="row"><span class="n">{i+1:02d}</span><span><span class="name">{e(en["nombre"])}</span><span class="place">{e(en["lugar"])}</span></span></div></a></li>'
             for i, en in enumerate(entries[:5]))
         strips += f'''
         <section class="wrap strip" aria-labelledby="{hid}">
@@ -702,9 +803,10 @@ def build_home():
         </section>
 '''
     cards = ''.join(
-        f'\n                <a href="{u("/planes/" + p["slug"] + "/")}"><div class="ph t3">{e(ui("plan.photo", x=t(p["foto_portada"])))}</div><p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
+        f'\n                <a href="{u("/planes/" + p["slug"] + "/")}">{ph_box(plan_cover(p), "t3")}<p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
         for p in all_plans())
     golf = u('/ranking/golf/')
+    ENTRY_GOLF = ranking_entries('golf')[0][0]['item']
     body = f'''
 <main>
     <section class="wrap hero">
@@ -717,7 +819,7 @@ def build_home():
 
     <section class="wrap" aria-label="{e(ui('home.featured_aria'))}">
         <a class="featured" href="{golf}">
-            <span class="ph-label">{e(ui('plan.photo', x=ui('home.featured_photo')))}</span>
+            {photo_img(ENTRY_GOLF, eager=True, cls='cover')}
             <span class="kicker">{e(ui('home.kicker'))}</span>
             <span class="title">{e(t(CATS['golf']['titulo']))}</span>
             <span class="cta">{e(ui('home.cta'))}</span>

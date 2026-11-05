@@ -30,5 +30,13 @@
     "lat": 36.39646,
     "lon": -5.22386
   },
-  "geo_fuente": "Hotel Finca Cortesín Golf and Spa, MA-8300, Casares del Sol, Casares, Costa del Sol Occide"
+  "geo_fuente": "Hotel Finca Cortesín Golf and Spa, MA-8300, Casares del Sol, Casares, Costa del Sol Occide",
+  "foto_real": {
+    "archivo": "/img/portal/golf/finca-cortesin.jpg",
+    "autor": "Walter Schärer",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Please_check_out_the_full_travelogue_at_http-travelmemo.com-%5Ep%3D4663_-_panoramio_(1).jpg",
+    "titulo": "File:Please check out the full travelogue at http-travelmemo.com-^p=4663 - panoramio (1).jpg"
+  }
 }
