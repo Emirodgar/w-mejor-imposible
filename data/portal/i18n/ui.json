@@ -1286,5 +1286,149 @@
     "de": "Nr. {n} von {t}",
     "pt": "N.º {n} de {t}",
     "it": "N. {n} su {t}"
+  },
+  "nav.trip": {
+    "es": "Mi viaje",
+    "en": "My trip",
+    "fr": "Mon voyage",
+    "de": "Meine Reise",
+    "pt": "A minha viagem",
+    "it": "Il mio viaggio"
+  },
+  "save.off": {
+    "es": "Guardar en Mi viaje",
+    "en": "Save to My trip",
+    "fr": "Ajouter à Mon voyage",
+    "de": "In „Meine Reise“ speichern",
+    "pt": "Guardar em A minha viagem",
+    "it": "Salva in Il mio viaggio"
+  },
+  "save.on": {
+    "es": "Guardado en Mi viaje",
+    "en": "Saved to My trip",
+    "fr": "Ajouté à Mon voyage",
+    "de": "In „Meine Reise“ gespeichert",
+    "pt": "Guardado em A minha viagem",
+    "it": "Salvato in Il mio viaggio"
+  },
+  "trip.title": {
+    "es": "Mi viaje: tu lista de lugares",
+    "en": "My trip: your list of places",
+    "fr": "Mon voyage : votre liste de lieux",
+    "de": "Meine Reise: Ihre Liste von Orten",
+    "pt": "A minha viagem: a sua lista de lugares",
+    "it": "Il mio viaggio: la tua lista di luoghi"
+  },
+  "trip.h1": {
+    "es": "Mi viaje",
+    "en": "My trip",
+    "fr": "Mon voyage",
+    "de": "Meine Reise",
+    "pt": "A minha viagem",
+    "it": "Il mio viaggio"
+  },
+  "trip.lead": {
+    "es": "Guarda los lugares que te interesan, imprímelos o compártelos con un enlace. La lista se queda en este navegador y no necesita cuenta.",
+    "en": "Save the places you like, print them or share them with a link. The list stays in this browser and needs no account.",
+    "fr": "Enregistrez les lieux qui vous intéressent, imprimez-les ou partagez-les par lien. La liste reste dans ce navigateur et ne demande aucun compte.",
+    "de": "Speichern Sie die Orte, die Sie interessieren, drucken Sie sie aus oder teilen Sie sie per Link. Die Liste bleibt in diesem Browser, ein Konto ist nicht nötig.",
+    "pt": "Guarde os lugares que lhe interessam, imprima-os ou partilhe-os com uma ligação. A lista fica neste navegador e não precisa de conta.",
+    "it": "Salva i luoghi che ti interessano, stampali o condividili con un link. La lista resta in questo browser e non richiede un account."
+  },
+  "trip.desc": {
+    "es": "Tu lista de lugares guardados en Mejor Imposible, lista para imprimir o compartir.",
+    "en": "Your list of places saved on Mejor Imposible, ready to print or share.",
+    "fr": "Votre liste de lieux enregistrés sur Mejor Imposible, prête à imprimer ou à partager.",
+    "de": "Ihre Liste gespeicherter Orte auf Mejor Imposible, bereit zum Drucken oder Teilen.",
+    "pt": "A sua lista de lugares guardados no Mejor Imposible, pronta para imprimir ou partilhar.",
+    "it": "La tua lista di luoghi salvati su Mejor Imposible, pronta da stampare o condividere."
+  },
+  "trip.empty": {
+    "es": "Todavía no has guardado ningún lugar. Pulsa «Guardar en Mi viaje» en cualquier ficha o resultado.",
+    "en": "You have not saved any place yet. Press “Save to My trip” on any listing or search result.",
+    "fr": "Vous n'avez encore enregistré aucun lieu. Appuyez sur « Ajouter à Mon voyage » sur une fiche ou un résultat.",
+    "de": "Sie haben noch keinen Ort gespeichert. Klicken Sie bei einem Eintrag oder Suchergebnis auf „In ‚Meine Reise‘ speichern“.",
+    "pt": "Ainda não guardou nenhum lugar. Prima «Guardar em A minha viagem» em qualquer ficha ou resultado.",
+    "it": "Non hai ancora salvato alcun luogo. Premi «Salva in Il mio viaggio» su una scheda o un risultato."
+  },
+  "trip.print": {
+    "es": "Imprimir",
+    "en": "Print",
+    "fr": "Imprimer",
+    "de": "Drucken",
+    "pt": "Imprimir",
+    "it": "Stampa"
+  },
+  "trip.copy": {
+    "es": "Copiar enlace",
+    "en": "Copy link",
+    "fr": "Copier le lien",
+    "de": "Link kopieren",
+    "pt": "Copiar ligação",
+    "it": "Copia link"
+  },
+  "trip.copied": {
+    "es": "Enlace copiado",
+    "en": "Link copied",
+    "fr": "Lien copié",
+    "de": "Link kopiert",
+    "pt": "Ligação copiada",
+    "it": "Link copiato"
+  },
+  "trip.clear": {
+    "es": "Vaciar la lista",
+    "en": "Clear the list",
+    "fr": "Vider la liste",
+    "de": "Liste leeren",
+    "pt": "Esvaziar a lista",
+    "it": "Svuota la lista"
+  },
+  "trip.remove": {
+    "es": "Quitar",
+    "en": "Remove",
+    "fr": "Retirer",
+    "de": "Entfernen",
+    "pt": "Remover",
+    "it": "Rimuovi"
+  },
+  "trip.shared": {
+    "es": "Estás viendo una lista compartida. Guárdala para añadirla a tu viaje.",
+    "en": "You are viewing a shared list. Save it to add it to your trip.",
+    "fr": "Vous consultez une liste partagée. Enregistrez-la pour l'ajouter à votre voyage.",
+    "de": "Sie sehen eine geteilte Liste. Speichern Sie sie, um sie Ihrer Reise hinzuzufügen.",
+    "pt": "Está a ver uma lista partilhada. Guarde-a para a juntar à sua viagem.",
+    "it": "Stai guardando una lista condivisa. Salvala per aggiungerla al tuo viaggio."
+  },
+  "trip.save_shared": {
+    "es": "Guardar esta lista",
+    "en": "Save this list",
+    "fr": "Enregistrer cette liste",
+    "de": "Diese Liste speichern",
+    "pt": "Guardar esta lista",
+    "it": "Salva questa lista"
+  },
+  "trip.count": {
+    "es": "{n} lugares guardados",
+    "en": "{n} places saved",
+    "fr": "{n} lieux enregistrés",
+    "de": "{n} Orte gespeichert",
+    "pt": "{n} lugares guardados",
+    "it": "{n} luoghi salvati"
+  },
+  "trip.count1": {
+    "es": "1 lugar guardado",
+    "en": "1 place saved",
+    "fr": "1 lieu enregistré",
+    "de": "1 Ort gespeichert",
+    "pt": "1 lugar guardado",
+    "it": "1 luogo salvato"
+  },
+  "trip.noscript": {
+    "es": "Esta página necesita JavaScript.",
+    "en": "This page needs JavaScript.",
+    "fr": "Cette page nécessite JavaScript.",
+    "de": "Diese Seite benötigt JavaScript.",
+    "pt": "Esta página precisa de JavaScript.",
+    "it": "Questa pagina richiede JavaScript."
   }
 }

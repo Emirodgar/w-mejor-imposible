@@ -208,6 +208,7 @@ HEAD = '''<!DOCTYPE html>
         <a href="@@HOME@@#planes">@@N_PLANS@@</a>
         <a href="@@DEST@@">@@N_DEST@@</a>
         <a href="@@SEARCH@@">@@N_SEARCH@@</a>
+        <a href="@@TRIP@@">@@N_TRIP@@<span class="trip-count" hidden></span></a>
         <a href="/">@@N_PORSCHE@@</a>
     </nav>
     <div class="lang" aria-label="@@ARIA_LANG@@">
@@ -307,14 +308,14 @@ def page(path, title, desc, lds, body):
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
-           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'),
+           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'),
            '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
     h, f = HEAD, FOOT
     for k, v in rep.items():
         h, f = h.replace(k, v), f.replace(k, v)
-    return h + body + credits_html() + f + (SCRIPT if 'data-zone' in body else '') + '\n</body>\n</html>\n'
+    return h + body + credits_html() + f + (SCRIPT if 'data-zone' in body else '') + '\n<script src="/assets/viaje.js" defer></script>\n</body>\n</html>\n'
 
 
 # ---------------- Rankings ----------------
@@ -964,6 +965,7 @@ def build_item(ref):
         <h1>{e(name)}</h1>
         <p class="lead-text">{e(why)}</p>
         <p class="item-spec">{e(spec)}</p>{rank_line}
+        {save_btn(it['id'])}
     </section>{photo}{ctx_block}
     <section class="wrap near item-near">
         <p class="label">{e(ui('rank.near'))}</p>
@@ -1342,7 +1344,7 @@ def build_dest(d):
             cards += (f'\n            <li class="dealer">\n                <p class="city">{e(it["lugar"])} {rank}</p>'
                       f'\n                <h3><a href="{item_url(it["id"])}">{e(it["nombre"])}</a></h3>'
                       f'\n                <p>{e(t(it["por_que"]))}</p>'
-                      + (f'\n                <p class="muted">{e(spec)}</p>' if spec else '') + '\n            </li>')
+                      + (f'\n                <p class="muted">{e(spec)}</p>' if spec else '') + f'\n                {save_btn(it["id"])}\n            </li>')
             ld_items.append({"@type": "ListItem", "position": len(ld_items) + 1, "url": SITE + item_url(it['id']), "name": it['nombre']})
             c = coords(it)
             if c:
@@ -1398,7 +1400,7 @@ def build_search():
     idx = []
     for it in ITEMS.values():
         cat = it['categoria']
-        idx.append({'n': it['nombre'], 'p': it['lugar'], 'c': cat, 'z': it['zona'], 'u': item_url(it['id']),
+        idx.append({'id': it['id'], 'n': it['nombre'], 'p': it['lugar'], 'c': cat, 'z': it['zona'], 'u': item_url(it['id']),
                     's': spec_text(cat, it['ficha']), 'w': t(it['por_que'])})
     idx.sort(key=lambda x: (HOME_CHIPS.index(x['c']) if x['c'] in HOME_CHIPS else 99, x['n']))
     write('/buscar/indice.json', json.dumps(idx, ensure_ascii=False, separators=(',', ':')))
@@ -1417,7 +1419,7 @@ def build_search():
         <h1>{e(ui('search.h1'))}</h1>
         <p class="lead-text">{e(ui('search.lead'))}</p>
         <form class="search" id="search" role="search" data-index="{u('/buscar/')}indice.json" data-cats="{e(cat_names)}" data-zones="{e(zone_names)}"
-              data-none="{e(ui('search.none'))}" data-count="{e(ui('search.count'))}" data-count1="{e(ui('search.count1'))}">
+              data-save="{e(ui('save.off'))}" data-saved="{e(ui('save.on'))}" data-none="{e(ui('search.none'))}" data-count="{e(ui('search.count'))}" data-count1="{e(ui('search.count1'))}">
             <label class="sr" for="q">{e(ui('search.label'))}</label>
             <input id="q" name="q" type="search" autocomplete="off" placeholder="{e(ui('search.placeholder'))}">
             <label class="sr" for="cat">{e(ui('search.cat'))}</label>
@@ -1439,8 +1441,47 @@ def build_search():
 
 
 
+def save_btn(ref):
+    return (f'<button type="button" class="save" data-ref="{ref}" data-on="{e(ui("save.on"))}" data-off="{e(ui("save.off"))}" '
+            f'aria-pressed="false">{e(ui("save.off"))}</button>')
+
+
+def build_trip():
+    cat_names = json.dumps({c: t(CATS[c]['corto']) for c in HOME_CHIPS if c in CATS}, ensure_ascii=False)
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('trip.h1'), None)]
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <h1>{e(ui('trip.h1'))}</h1>
+        <p class="lead-text">{e(ui('trip.lead'))}</p>
+        <div id="trip" data-index="{u('/buscar/')}indice.json" data-cats="{e(cat_names)}" data-count="{e(ui('trip.count'))}" data-count1="{e(ui('trip.count1'))}"
+             data-rm="{e(ui('trip.remove'))}" data-copied="{e(ui('trip.copied'))}">
+            <p class="muted" id="trip-shared" hidden>{e(ui('trip.shared'))}</p>
+            <div class="trip-actions" id="trip-actions" hidden>
+                <button type="button" id="trip-print">{e(ui('trip.print'))}</button>
+                <button type="button" id="trip-copy">{e(ui('trip.copy'))}</button>
+                <button type="button" id="trip-save" hidden>{e(ui('trip.save_shared'))}</button>
+                <button type="button" id="trip-clear">{e(ui('trip.clear'))}</button>
+            </div>
+            <p class="muted" id="trip-count" aria-live="polite" hidden></p>
+        </div>
+    </section>
+    <section class="wrap">
+        <p id="trip-msg">{e(ui('trip.empty'))}</p>
+        <ul id="trip-list"></ul>
+        <noscript><p>{e(ui('trip.noscript'))}</p></noscript>
+    </section>
+</main>
+'''
+    write('/mi-viaje/index.html', page('/mi-viaje/', f'{ui("trip.title")} · Mejor Imposible', ui('trip.desc'),
+                                       [webpage('WebPage', '/mi-viaje/', ui('trip.title'), ui('trip.desc')), bc_ld(crumb)], body))
+
+
+
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
-              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/'] + [f'/destinos/{d["slug"]}/' for d in DESTS]
+              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/', '/mi-viaje/'] + [f'/destinos/{d["slug"]}/' for d in DESTS]
               + ['/ranking/' + r + '/' for r in ITEMS] + ['/ranking/compras-de-lujo/tiendas/'])
 
 
@@ -1479,6 +1520,7 @@ if __name__ == '__main__':
         for _d in DESTS:
             build_dest(_d)
         build_search()
+        build_trip()
     build_sitemap()
     bad = False
     for lang in PUBLISHED:

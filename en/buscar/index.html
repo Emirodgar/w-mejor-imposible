@@ -109,6 +109,7 @@
         <a href="/en/index2.html#planes">Complete itineraries</a>
         <a href="/en/destinos/">Destinations</a>
         <a href="/en/buscar/">Search</a>
+        <a href="/en/mi-viaje/">My trip<span class="trip-count" hidden></span></a>
         <a href="/">Porsche guide (in Spanish)</a>
     </nav>
     <div class="lang" aria-label="Language">
@@ -128,7 +129,7 @@
         <h1>Search</h1>
         <p class="lead-text">Hotels, restaurants, golf, clubs and more. Type a place, a city or a category.</p>
         <form class="search" id="search" role="search" data-index="/en/buscar/indice.json" data-cats="{&quot;hoteles-de-lujo&quot;: &quot;Luxury hotels&quot;, &quot;golf&quot;: &quot;Golf&quot;, &quot;restaurantes&quot;: &quot;Restaurants&quot;, &quot;casas-de-lujo&quot;: &quot;Luxury homes&quot;, &quot;compras-de-lujo&quot;: &quot;Luxury shopping&quot;, &quot;bodegas&quot;: &quot;Wineries&quot;, &quot;spas&quot;: &quot;Spas&quot;, &quot;yates-y-calas&quot;: &quot;Yachts and coves&quot;, &quot;motor&quot;: &quot;Motor&quot;, &quot;vida-nocturna&quot;: &quot;Nightlife&quot;, &quot;bares-de-cocteleria&quot;: &quot;Cocktail bars&quot;, &quot;alojamientos-historicos&quot;: &quot;Historic stays&quot;, &quot;helicopteros&quot;: &quot;Helicopters&quot;, &quot;museos&quot;: &quot;Museums and art&quot;}" data-zones="{&quot;andalucia&quot;: &quot;Andalusia&quot;, &quot;cataluna&quot;: &quot;Catalonia&quot;, &quot;baleares&quot;: &quot;Balearic Islands&quot;, &quot;canarias&quot;: &quot;Canary Islands&quot;, &quot;resto&quot;: &quot;Rest of Spain&quot;}"
-              data-none="No results. Try another word or remove a filter." data-count="{n} results" data-count1="1 result">
+              data-save="Save to My trip" data-saved="Saved to My trip" data-none="No results. Try another word or remove a filter." data-count="{n} results" data-count1="1 result">
             <label class="sr" for="q">Search for a place</label>
             <input id="q" name="q" type="search" autocomplete="off" placeholder="Marbella, spa, golf…">
             <label class="sr" for="cat">Category</label>
@@ -180,5 +181,6 @@
     }
 })();
 </script>
+<script src="/assets/viaje.js" defer></script>
 </body>
 </html>

@@ -109,6 +109,7 @@
         <a href="/fr/index2.html#planes">Séjours complets</a>
         <a href="/fr/destinos/">Destinations</a>
         <a href="/fr/buscar/">Rechercher</a>
+        <a href="/fr/mi-viaje/">Mon voyage<span class="trip-count" hidden></span></a>
         <a href="/">Guide Porsche (en espagnol)</a>
     </nav>
     <div class="lang" aria-label="Langue">
@@ -128,7 +129,7 @@
         <h1>Rechercher</h1>
         <p class="lead-text">Hôtels, restaurants, golf, clubs et plus encore. Saisissez un lieu, une ville ou une catégorie.</p>
         <form class="search" id="search" role="search" data-index="/fr/buscar/indice.json" data-cats="{&quot;hoteles-de-lujo&quot;: &quot;Hôtels de luxe&quot;, &quot;golf&quot;: &quot;Golf&quot;, &quot;restaurantes&quot;: &quot;Restaurants&quot;, &quot;casas-de-lujo&quot;: &quot;Demeures de luxe&quot;, &quot;compras-de-lujo&quot;: &quot;Shopping de luxe&quot;, &quot;bodegas&quot;: &quot;Domaines viticoles&quot;, &quot;spas&quot;: &quot;Spas&quot;, &quot;yates-y-calas&quot;: &quot;Yachts et criques&quot;, &quot;motor&quot;: &quot;Automobile&quot;, &quot;vida-nocturna&quot;: &quot;Vie nocturne&quot;, &quot;bares-de-cocteleria&quot;: &quot;Bars à cocktails&quot;, &quot;alojamientos-historicos&quot;: &quot;Hébergements historiques&quot;, &quot;helicopteros&quot;: &quot;Hélicoptères&quot;, &quot;museos&quot;: &quot;Musées et art&quot;}" data-zones="{&quot;andalucia&quot;: &quot;Andalousie&quot;, &quot;cataluna&quot;: &quot;Catalogne&quot;, &quot;baleares&quot;: &quot;Baléares&quot;, &quot;canarias&quot;: &quot;Canaries&quot;, &quot;resto&quot;: &quot;Reste de l&#x27;Espagne&quot;}"
-              data-none="Aucun résultat. Essayez un autre mot ou retirez un filtre." data-count="{n} résultats" data-count1="1 résultat">
+              data-save="Ajouter à Mon voyage" data-saved="Ajouté à Mon voyage" data-none="Aucun résultat. Essayez un autre mot ou retirez un filtre." data-count="{n} résultats" data-count1="1 résultat">
             <label class="sr" for="q">Rechercher un lieu</label>
             <input id="q" name="q" type="search" autocomplete="off" placeholder="Marbella, spa, golf…">
             <label class="sr" for="cat">Catégorie</label>
@@ -180,5 +181,6 @@
     }
 })();
 </script>
+<script src="/assets/viaje.js" defer></script>
 </body>
 </html>

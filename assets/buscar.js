@@ -18,13 +18,15 @@
         list.innerHTML = shown.map(function (d) {
             return '<li class="dealer"><p class="city">' + esc(cats[d.c] || d.c) + ' · ' + esc(d.p) + '</p>' +
                 '<h3><a href="' + esc(d.u) + '">' + esc(d.n) + '</a></h3><p>' + esc(d.w) + '</p>' +
-                (d.s ? '<p class="muted">' + esc(d.s) + '</p>' : '') + '</li>';
+                (d.s ? '<p class="muted">' + esc(d.s) + '</p>' : '') +
+                '<button type="button" class="save" data-ref="' + esc(d.id) + '" data-on="' + esc(form.dataset.saved) + '" data-off="' + esc(form.dataset.save) + '" aria-pressed="false">' + esc(form.dataset.save) + '</button></li>';
         }).join('');
         count.textContent = out.length === 0 ? form.dataset.none : (out.length === 1 ? form.dataset.count1 : form.dataset.count.replace('{n}', out.length));
         var p = new URLSearchParams();
         if (q.value) p.set('q', q.value);
         if (cat.value) p.set('cat', cat.value);
         if (zone.value) p.set('zone', zone.value);
+        if (window.miViaje) window.miViaje.update();
         var s = p.toString();
         try { history.replaceState(null, '', location.pathname + (s ? '?' + s : '')); } catch (e) { }
     }

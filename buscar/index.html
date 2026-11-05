@@ -109,6 +109,7 @@
         <a href="/index2.html#planes">Planes completos</a>
         <a href="/destinos/">Destinos</a>
         <a href="/buscar/">Buscar</a>
+        <a href="/mi-viaje/">Mi viaje<span class="trip-count" hidden></span></a>
         <a href="/">Guía Porsche</a>
     </nav>
     <div class="lang" aria-label="Idioma">
@@ -128,7 +129,7 @@
         <h1>Buscar</h1>
         <p class="lead-text">Hoteles, restaurantes, golf, clubes y más. Escribe un lugar, una ciudad o una categoría.</p>
         <form class="search" id="search" role="search" data-index="/buscar/indice.json" data-cats="{&quot;hoteles-de-lujo&quot;: &quot;Hoteles de lujo&quot;, &quot;golf&quot;: &quot;Golf&quot;, &quot;restaurantes&quot;: &quot;Restaurantes&quot;, &quot;casas-de-lujo&quot;: &quot;Casas de lujo&quot;, &quot;compras-de-lujo&quot;: &quot;Compras de lujo&quot;, &quot;bodegas&quot;: &quot;Bodegas&quot;, &quot;spas&quot;: &quot;Spas&quot;, &quot;yates-y-calas&quot;: &quot;Yates y calas&quot;, &quot;motor&quot;: &quot;Motor&quot;, &quot;vida-nocturna&quot;: &quot;Vida nocturna&quot;, &quot;bares-de-cocteleria&quot;: &quot;Bares de coctelería&quot;, &quot;alojamientos-historicos&quot;: &quot;Alojamientos históricos&quot;, &quot;helicopteros&quot;: &quot;Helicópteros&quot;, &quot;museos&quot;: &quot;Museos y arte&quot;}" data-zones="{&quot;andalucia&quot;: &quot;Andalucía&quot;, &quot;cataluna&quot;: &quot;Cataluña&quot;, &quot;baleares&quot;: &quot;Baleares&quot;, &quot;canarias&quot;: &quot;Canarias&quot;, &quot;resto&quot;: &quot;Resto&quot;}"
-              data-none="No hay resultados. Prueba con otra palabra o quita un filtro." data-count="{n} resultados" data-count1="1 resultado">
+              data-save="Guardar en Mi viaje" data-saved="Guardado en Mi viaje" data-none="No hay resultados. Prueba con otra palabra o quita un filtro." data-count="{n} resultados" data-count1="1 resultado">
             <label class="sr" for="q">Buscar un lugar</label>
             <input id="q" name="q" type="search" autocomplete="off" placeholder="Marbella, spa, golf…">
             <label class="sr" for="cat">Categoría</label>
@@ -180,5 +181,6 @@
     }
 })();
 </script>
+<script src="/assets/viaje.js" defer></script>
 </body>
 </html>
