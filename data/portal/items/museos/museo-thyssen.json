@@ -1,0 +1,27 @@
+{
+  "id": "museos/museo-thyssen",
+  "categoria": "museos",
+  "nombre": "Museo Thyssen-Bornemisza",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada del museo"
+  },
+  "por_que": {
+    "es": "Superó el millón de visitantes en 2025, un 5,4 % más que en 2024; casi la mitad del público es internacional."
+  },
+  "ficha": {
+    "visitantes": "Visitantes en 2025: 1.003.455"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.infobae.com/espana/agencias/2026/01/02/el-museo-thyssen-bornemisza-aumenta-su-numero-de-visitantes-y-llega-al-millon-en-2025/"
+  ],
+  "busqueda": "Museo Thyssen-Bornemisza Madrid",
+  "schema": "Museum",
+  "coordenadas": {
+    "lat": 40.41622,
+    "lon": -3.69493
+  },
+  "geo_fuente": "Museo Thyssen-Bornemisza, 8, Paseo del Prado, Cortes, Centro, Madrid, Comunidad de Madrid,"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "museos/museo-reina-sofia",
+  "categoria": "museos",
+  "nombre": "Museo Reina Sofía",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada del museo"
+  },
+  "por_que": {
+    "es": "Museo de arte moderno y contemporáneo, con el Guernica de Picasso, y un 4,2 % más de visitantes que en 2024."
+  },
+  "ficha": {
+    "visitantes": "Visitantes en 2025: 1.601.732"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/paginas/2026/020126-visitantes-2025-museos-cultura.aspx",
+    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/"
+  ],
+  "busqueda": "Museo Reina Sofía Madrid",
+  "schema": "Museum",
+  "coordenadas": {
+    "lat": 40.40805,
+    "lon": -3.69442
+  },
+  "geo_fuente": "Museo Nacional Centro de Arte Reina Sofía, 52, Calle de Santa Isabel, Embajadores, Centro,"
+}

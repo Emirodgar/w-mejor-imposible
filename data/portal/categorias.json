@@ -593,5 +593,31 @@
       "es": "Solo operadores del listado de certificados de operador aéreo (AOC) de AESA, con base conocida. Ordenamos por la solidez de la base confirmada y la zona que cubren. Ningún operador paga por estar."
     },
     "placeholder": []
+  },
+  "museos": {
+    "corto": {
+      "es": "Museos y arte"
+    },
+    "titulo": {
+      "es": "Los 5 grandes museos de arte de España por visitantes"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del museo]"
+    },
+    "foto_placeholder": {
+      "es": "fachada del museo"
+    },
+    "ficha": [
+      "{visitantes}"
+    ],
+    "cerca": [
+      "Hotel",
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Visitantes en 2025 según las cifras publicadas por los museos y las administraciones. Incluimos solo los museos de arte con cifra comprobada, así que faltan otros, como la Fundación Dalí o el MNAC. Ningún museo paga por estar."
+    },
+    "placeholder": []
   }
 }

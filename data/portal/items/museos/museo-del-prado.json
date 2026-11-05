@@ -1,0 +1,28 @@
+{
+  "id": "museos/museo-del-prado",
+  "categoria": "museos",
+  "nombre": "Museo del Prado",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada del museo"
+  },
+  "por_que": {
+    "es": "Primer museo de España por visitantes: récord histórico en 2025, con dos de cada tres visitantes extranjeros."
+  },
+  "ficha": {
+    "visitantes": "Visitantes en 2025: 3.513.402"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.museodelprado.es/actualidad/noticia/el-museo-del-prado-supera-por-primera-vez-los-35/fee45a1b-ac0f-9bb8-51a9-75bcb3c7326b",
+    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/"
+  ],
+  "busqueda": "Museo del Prado Madrid",
+  "schema": "Museum",
+  "coordenadas": {
+    "lat": 40.41379,
+    "lon": -3.69204
+  },
+  "geo_fuente": "Museo del Prado, Paseo del Prado, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28014, E"
+}

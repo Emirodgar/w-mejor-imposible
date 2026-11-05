@@ -1,0 +1,27 @@
+{
+  "id": "museos/museu-picasso-barcelona",
+  "categoria": "museos",
+  "nombre": "Museu Picasso de Barcelona",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "fachada del museo"
+  },
+  "por_que": {
+    "es": "El museo municipal más visitado de Barcelona: más de un millón de visitantes en 2025, algo menos que en 2024."
+  },
+  "ficha": {
+    "visitantes": "Visitantes en 2025: 1.021.500"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.barcelona.cat/infobarcelona/en/nearly-3-8-million-visitors-to-museums-and-exhibition-centres-in-2025_1586782.html"
+  ],
+  "busqueda": "Museu Picasso Barcelona",
+  "schema": "Museum",
+  "coordenadas": {
+    "lat": 41.3851,
+    "lon": 2.1812
+  },
+  "geo_fuente": "Museu Picasso, Carrer de Montcada, la Ribera, Sant Pere, Santa Caterina i la Ribera, Ciuta"
+}

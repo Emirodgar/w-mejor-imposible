@@ -1,0 +1,13 @@
+{
+  "categoria": "museos",
+  "actualizado": {
+    "es": "noviembre 2026"
+  },
+  "items": [
+    "museos/museo-del-prado",
+    "museos/museo-reina-sofia",
+    "museos/guggenheim-bilbao",
+    "museos/museu-picasso-barcelona",
+    "museos/museo-thyssen"
+  ]
+}

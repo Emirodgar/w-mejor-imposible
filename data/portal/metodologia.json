@@ -166,6 +166,13 @@
         "es": "Listado de certificados de operador aéreo (AOC) de AESA, generado el 2 de noviembre de 2026; las bases salen de las webs de los operadores y de fichas de terceros, y están pendientes de confirmar con cada empresa."
       },
       "url": "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf"
+    },
+    {
+      "cat": "museos",
+      "texto": {
+        "es": "Cifras de visitantes de 2025 del Museo del Prado, el Ministerio de Cultura, el Ayuntamiento de Barcelona y la prensa."
+      },
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/paginas/2026/020126-visitantes-2025-museos-cultura.aspx"
     }
   ]
 }

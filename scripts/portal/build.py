@@ -44,10 +44,10 @@ STRIP_TONES = ['', ' t2', ' t3', ' t4', '']
 LABEL_TIPO = {'Hotel': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
               'Spa': 'spa', 'Puerto': 'puerto', 'Bodega': 'bodega'}
 CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-de-lujo': 'Hotel',
-              'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness', 'vida-nocturna': 'NightClub', 'bares-de-cocteleria': 'BarOrPub', 'alojamientos-historicos': 'Hotel', 'helicopteros': 'Organization'}
+              'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness', 'vida-nocturna': 'NightClub', 'bares-de-cocteleria': 'BarOrPub', 'alojamientos-historicos': 'Hotel', 'museos': 'Museum', 'helicopteros': 'Organization'}
 HOME_STRIPS = [('hoteles-de-lujo', 'hoteles', 'r-hoteles'), ('golf', 'golf', 'r-golf'),
                ('restaurantes', 'restaurantes', 'r-mesas'), ('casas-de-lujo', 'casas', 'r-casas')]
-HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor', 'vida-nocturna', 'bares-de-cocteleria', 'alojamientos-historicos', 'helicopteros']
+HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor', 'vida-nocturna', 'bares-de-cocteleria', 'alojamientos-historicos', 'helicopteros', 'museos']
 
 
 def e(s):
@@ -688,6 +688,7 @@ MAP_JS = '''
         'compras-de-lujo': 'M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0',
         'vida-nocturna': 'M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z',
         helicopteros: 'M3 5h18M12 5v4M5 12h9a5 5 0 0 1 5 5v1H8a3 3 0 0 1-3-3zM19 14h3M8 21h9',
+        museos: 'M3 3h18v18H3zM8 8h8v8H8z',
         'bares-de-cocteleria': 'M8 22h8M12 11v11M19 3l-7 8-7-8z',
         airport: 'M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z'
     };
