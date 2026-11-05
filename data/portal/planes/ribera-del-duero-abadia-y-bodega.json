@@ -1,0 +1,110 @@
+{
+  "slug": "ribera-del-duero-abadia-y-bodega",
+  "orden": 9,
+  "titulo": {
+    "es": "Ribera del Duero: abadía y bodega"
+  },
+  "meta": {
+    "es": "Plan completo · 2 días · Vino"
+  },
+  "meta_corta": {
+    "es": "2 días · Vino"
+  },
+  "lead": {
+    "es": "Una abadía del siglo XII convertida en hotel y bodega, y a media hora, uno de los viñedos mejor clasificados del mundo."
+  },
+  "foto_portada": {
+    "es": "viñedo en la Ribera del Duero"
+  },
+  "portada_ref": "bodegas/abadia-retuerta",
+  "zona": "resto",
+  "tipo_turista": "Vino",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Valladolid"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "ref": "hoteles-de-lujo/abadia-retuerta-ledomaine"
+    },
+    {
+      "tipo": "bodega",
+      "ref": "bodegas/abadia-retuerta"
+    },
+    {
+      "tipo": "bodega",
+      "ref": "bodegas/pago-de-carraovejas"
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "La abadía"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Valladolid"
+          },
+          "por_que": {
+            "es": "A unos 45 minutos de Sardón de Duero."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Hotel",
+          "tono": "oscuro",
+          "ref": "hoteles-de-lujo/abadia-retuerta-ledomaine"
+        },
+        {
+          "tipo": "Bodega",
+          "tono": "claro",
+          "ref": "bodegas/abadia-retuerta"
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Peñafiel"
+      },
+      "pasos": [
+        {
+          "tipo": "Bodega",
+          "tono": "oscuro",
+          "ref": "bodegas/pago-de-carraovejas",
+          "por_que": {
+            "es": "A unos 30 minutos de la abadía, en Peñafiel."
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Valladolid"
+          },
+          "por_que": {
+            "es": "A algo menos de una hora de Peñafiel."
+          },
+          "foto": {
+            "es": "carretera entre viñedos"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Valladolid"
+      },
+      "min": 45
+    }
+  ]
+}

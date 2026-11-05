@@ -498,6 +498,7 @@ ICONS = {
     'coche': '<path d="M3 16v-3l2-5h14l2 5v3"></path><path d="M3 16h18"></path><circle cx="7" cy="17" r="2"></circle><circle cx="17" cy="17" r="2"></circle>',
     'hotel': '<path d="M3 18V8"></path><path d="M3 14h18v4"></path><path d="M7 14v-3h10a4 4 0 0 1 4 4"></path>',
     'golf': '<path d="M8 21V3l9 4-9 4"></path><path d="M4 21h12"></path>',
+    'compras': '<path d="M5 8h14l-1 12H6z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path>',
     'cena': '<path d="M7 3v8"></path><path d="M5 3v4a2 2 0 0 0 4 0V3"></path><path d="M7 11v10"></path><path d="M17 21V3c-2 1-3 4-3 7h3"></path>',
     'descanso': '<path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11z"></path><path d="M4 17c4 0 6 2 8 4 2-2 4-4 8-4"></path>',
     'mesa': '<path d="M7 3v8"></path><path d="M5 3v4a2 2 0 0 0 4 0V3"></path><path d="M7 11v10"></path><path d="M17 21V3c-2 1-3 4-3 7h3"></path>',
@@ -507,9 +508,9 @@ ICONS = {
 }
 # tipo de paso de la ruta -> categoría de ranking enlazada (None: ancla "cómo llegar")
 ROUTE_CAT = {'llegada': None, 'coche': 'motor', 'hotel': 'hoteles-de-lujo', 'golf': 'golf', 'cena': 'restaurantes',
-             'descanso': 'spas', 'mesa': 'restaurantes', 'bodega': 'bodegas', 'barco': 'yates-y-calas', 'cala': 'yates-y-calas'}
+             'descanso': 'spas', 'mesa': 'restaurantes', 'bodega': 'bodegas', 'barco': 'yates-y-calas', 'cala': 'yates-y-calas', 'compras': 'compras-de-lujo'}
 # el paso destacado (círculo oscuro) de la ruta
-HIGHLIGHT = ('golf', 'bodega', 'cala', 'mesa')
+HIGHLIGHT = ('golf', 'bodega', 'cala', 'mesa', 'compras')
 
 
 def all_plans():

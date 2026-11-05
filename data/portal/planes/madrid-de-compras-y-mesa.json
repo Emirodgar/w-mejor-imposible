@@ -1,0 +1,146 @@
+{
+  "slug": "madrid-de-compras-y-mesa",
+  "orden": 8,
+  "titulo": {
+    "es": "Madrid: compras y mesa"
+  },
+  "meta": {
+    "es": "Plan completo · 2 días · Compras y gastronomía"
+  },
+  "meta_corta": {
+    "es": "2 días · Compras y gastronomía"
+  },
+  "lead": {
+    "es": "La Milla de Oro a pie, un outlet de lujo a las afueras, un spa en pleno barrio de Salamanca y tres estrellas Michelin para cenar."
+  },
+  "foto_portada": {
+    "es": "calle de Serrano"
+  },
+  "portada_ref": "compras-de-lujo/serrano-y-ortega-y-gasset",
+  "zona": "resto",
+  "tipo_turista": "Compras",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Madrid-Barajas"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "ref": "hoteles-de-lujo/mandarin-oriental-ritz-madrid"
+    },
+    {
+      "tipo": "compras",
+      "ref": "compras-de-lujo/serrano-y-ortega-y-gasset"
+    },
+    {
+      "tipo": "descanso",
+      "ref": "spas/sense-rosewood-villa-magna"
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/diverxo"
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada y Milla de Oro"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Madrid-Barajas"
+          },
+          "por_que": {
+            "es": "A unos 25 minutos del centro de Madrid."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Hotel",
+          "tono": "oscuro",
+          "ref": "hoteles-de-lujo/mandarin-oriental-ritz-madrid",
+          "alternativas": [
+            {
+              "es": "Four Seasons Madrid"
+            }
+          ]
+        },
+        {
+          "tipo": "Compras",
+          "tono": "claro",
+          "ref": "compras-de-lujo/serrano-y-ortega-y-gasset"
+        },
+        {
+          "tipo": "Boutiques",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Boutiques insignia"
+          },
+          "por_que": {
+            "es": "Louis Vuitton, Cartier, Bulgari, Tiffany & Co. y otras marcas, a pocos pasos unas de otras y con la dirección de cada una."
+          },
+          "foto": {
+            "es": "escaparate en Serrano"
+          },
+          "enlace": "/ranking/compras-de-lujo/tiendas/?ciudad=madrid"
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Outlet, spa y mesa"
+      },
+      "pasos": [
+        {
+          "tipo": "Compras",
+          "tono": "claro",
+          "ref": "compras-de-lujo/las-rozas-village",
+          "por_que": {
+            "es": "A unos 30 minutos del centro: un outlet de lujo al noroeste de Madrid."
+          }
+        },
+        {
+          "tipo": "Spa",
+          "tono": "oscuro",
+          "ref": "spas/sense-rosewood-villa-magna"
+        },
+        {
+          "tipo": "Cena",
+          "tono": "claro",
+          "ref": "restaurantes/diverxo",
+          "por_que": {
+            "es": "A unos 15 minutos del barrio de Salamanca: tres estrellas Michelin."
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Aeropuerto de Madrid-Barajas"
+          },
+          "por_que": {
+            "es": "A unos 25 minutos del centro de Madrid."
+          },
+          "foto": {
+            "es": "carretera de acceso"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Madrid-Barajas"
+      },
+      "min": 25
+    }
+  ]
+}

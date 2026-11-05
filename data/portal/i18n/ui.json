@@ -1030,5 +1030,21 @@
     "de": "Flagship-Stores der großen Marken →",
     "pt": "Lojas emblemáticas das grandes marcas →",
     "it": "Flagship store dei grandi marchi →"
+  },
+  "route.compras": {
+    "es": "Compras",
+    "en": "Shopping",
+    "fr": "Shopping",
+    "de": "Shopping",
+    "pt": "Compras",
+    "it": "Shopping"
+  },
+  "route.compras.link": {
+    "es": "Ver compras de lujo en {z}",
+    "en": "See luxury shopping in {z}",
+    "fr": "Voir le shopping de luxe : {z}",
+    "de": "Luxus-Shopping ansehen: {z}",
+    "pt": "Ver compras de luxo em {z}",
+    "it": "Vedi lo shopping di lusso: {z}"
   }
 }

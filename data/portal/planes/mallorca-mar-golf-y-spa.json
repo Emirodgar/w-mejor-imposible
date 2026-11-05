@@ -1,0 +1,146 @@
+{
+  "slug": "mallorca-mar-golf-y-spa",
+  "orden": 7,
+  "titulo": {
+    "es": "Mallorca: mar, golf y spa"
+  },
+  "meta": {
+    "es": "Plan completo · 3 días · Mar, golf y spa"
+  },
+  "meta_corta": {
+    "es": "3 días · Mar, golf y spa"
+  },
+  "lead": {
+    "es": "Un campo frente al mar en Alcúdia, un hotel en el cabo de Formentor y un día de puerto deportivo en el suroeste."
+  },
+  "foto_portada": {
+    "es": "bahía de Mallorca"
+  },
+  "portada_ref": "hoteles-de-lujo/four-seasons-formentor",
+  "zona": "baleares",
+  "tipo_turista": "Golf",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Palma"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "ref": "hoteles-de-lujo/four-seasons-formentor"
+    },
+    {
+      "tipo": "golf",
+      "ref": "golf/club-de-golf-alcanada"
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/voro"
+    },
+    {
+      "tipo": "barco",
+      "ref": "yates-y-calas/puerto-portals"
+    },
+    {
+      "tipo": "descanso",
+      "ref": "spas/arabella-spa-st-regis-mardavall"
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada al norte"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Palma"
+          },
+          "por_que": {
+            "es": "A algo más de una hora de Formentor; el aeropuerto con más conexiones de Baleares."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Hotel",
+          "tono": "oscuro",
+          "ref": "hoteles-de-lujo/four-seasons-formentor"
+        },
+        {
+          "tipo": "Spa",
+          "tono": "claro",
+          "ref": "spas/spa-four-seasons-formentor"
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "El campo y la mesa"
+      },
+      "pasos": [
+        {
+          "tipo": "Golf",
+          "tono": "oscuro",
+          "ref": "golf/club-de-golf-alcanada",
+          "por_que": {
+            "es": "A unos 30 minutos de Formentor, junto a la bahía de Alcúdia."
+          }
+        },
+        {
+          "tipo": "Cena",
+          "tono": "claro",
+          "ref": "restaurantes/voro",
+          "por_que": {
+            "es": "A unos 45 minutos de Alcanada: dos estrellas Michelin en Canyamel."
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "El mar y el descanso"
+      },
+      "pasos": [
+        {
+          "tipo": "Barco",
+          "tono": "oscuro",
+          "ref": "yates-y-calas/puerto-portals"
+        },
+        {
+          "tipo": "Spa",
+          "tono": "claro",
+          "ref": "spas/arabella-spa-st-regis-mardavall",
+          "por_que": {
+            "es": "A pocos minutos de Puerto Portals."
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Aeropuerto de Palma"
+          },
+          "por_que": {
+            "es": "A unos 30 minutos de Calvià."
+          },
+          "foto": {
+            "es": "carretera de costa"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Palma"
+      },
+      "min": 70
+    }
+  ]
+}
