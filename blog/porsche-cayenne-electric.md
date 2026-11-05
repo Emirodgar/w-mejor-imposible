@@ -12,6 +12,7 @@ tema: comprar
 modelos: [cayenne]
 permalink: porsche/porsche-cayenne-electric
 ---
+{% include article-ld.html %}
 
 # Porsche Cayenne Electric: ficha técnica, versiones y precio
 

@@ -14,6 +14,7 @@ modelos: [marca]
 permalink: porsche/porsche-transformacion-digital
 
 ---
+{% include article-ld.html %}
 
 # ¿Qué busca Porsche con esta nueva alianza?
 

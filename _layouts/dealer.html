@@ -123,6 +123,36 @@
         .social-links a:hover { background-color: var(--porsche-grey); color: white; }
         .social-note { font-size: 0.85em; opacity: 0.6; margin-top: 12px; margin-bottom: 0; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoDealer",
+      "@id": "https://mejorimposible.es{{ page.url | remove: '.html' }}#dealer",
+      "name": {{ page.dealer_name | jsonify }},
+      "url": "https://mejorimposible.es{{ page.url | remove: '.html' }}",
+      "brand": { "@type": "Brand", "name": "Porsche" },
+      "description": "Concesionario oficial Porsche: dirección, teléfono y valoración media en Google.",
+      "inLanguage": "es",
+      "address": { "@type": "PostalAddress", "streetAddress": {{ page.address | jsonify }}, "addressCountry": "ES" },{% if page.phone %}
+      "telephone": "+34{{ page.phone | replace: ' ', '' }}",{% endif %}{% if page.lat and page.lng %}
+      "geo": { "@type": "GeoCoordinates", "latitude": {{ page.lat }}, "longitude": {{ page.lng }} },{% endif %}{% if page.cover_image %}
+      "image": "https://mejorimposible.es{{ page.cover_image }}",{% endif %}{% if page.google_profile_url %}
+      "hasMap": {{ page.google_profile_url | jsonify }},{% endif %}{% if page.rating and page.review_count %}
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": {{ page.rating }}, "bestRating": 5, "worstRating": 1, "reviewCount": {{ page.review_count }} },{% endif %}
+      "isPartOf": { "@type": "WebSite", "@id": "https://mejorimposible.es/#website", "name": "Mejor Imposible", "url": "https://mejorimposible.es/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mejorimposible.es/" },
+        { "@type": "ListItem", "position": 2, "name": "Concesionarios Porsche", "item": "https://mejorimposible.es/porsche/concesionarios" },
+        { "@type": "ListItem", "position": 3, "name": {{ page.dealer_name | jsonify }} }
+      ]
+    }
+    </script>
 </head>
 <body class="theme-light" data-dealer-name="{{ page.dealer_name }}" data-dealer-address="{{ page.address }}">
 

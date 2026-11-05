@@ -12,6 +12,7 @@ tema: comprar
 modelos: [macan]
 permalink: porsche/porsche-macan
 ---
+{% include article-ld.html %}
 
 # Porsche Macan: guía completa de compra
 

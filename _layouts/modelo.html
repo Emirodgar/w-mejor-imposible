@@ -133,6 +133,43 @@
         .news-cta { display: inline-block; margin-top: 15px; color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 0.95em; }
         .news-cta:hover { text-decoration: underline; }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://mejorimposible.es{{ page.url | remove: '.html' }}#webpage",
+      "url": "https://mejorimposible.es{{ page.url | remove: '.html' }}",
+      "name": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "inLanguage": "es",
+      "isPartOf": { "@type": "WebSite", "@id": "https://mejorimposible.es/#website", "name": "Mejor Imposible", "url": "https://mejorimposible.es/" },
+      "publisher": { "@type": "Organization", "@id": "https://mejorimposible.es/#organization", "name": "Mejor Imposible", "url": "https://mejorimposible.es/", "logo": { "@type": "ImageObject", "url": "https://mejorimposible.es/img/logo_mi_transparent.png" } },
+      "mainEntity": {
+        "@type": "Car",
+        "name": {{ page.model_name | jsonify }},
+        "description": {{ page.tagline | jsonify }},
+        "brand": { "@type": "Brand", "name": "Porsche" },
+        "manufacturer": { "@type": "Organization", "name": "Porsche AG" }{% if page.hero_image_side %},
+        "image": [{% if page.hero_image_front %}"https://mejorimposible.es{{ page.hero_image_front }}", {% endif %}"https://mejorimposible.es{{ page.hero_image_side }}"]{% endif %},
+        "additionalProperty": [{% assign sep = "" %}{% if page.price_from %}{{ sep }}
+          { "@type": "PropertyValue", "name": "Precio desde", "value": {{ page.price_from }}, "unitText": "EUR", "description": {{ page.price_from_label | jsonify }} }{% assign sep = "," %}{% endif %}{% if page.maintenance_cost_5y %}{{ sep }}
+          { "@type": "PropertyValue", "name": "Coste de mantenimiento a 5 años", "value": {{ page.maintenance_cost_5y }}, "unitText": "EUR" }{% assign sep = "," %}{% endif %}{% if page.reliability_current %}{{ sep }}
+          { "@type": "PropertyValue", "name": "Índice de fiabilidad (0-100)", "value": {{ page.reliability_current }}, "description": {{ page.reliability_current_label | jsonify }} }{% assign sep = "," %}{% endif %}
+        ]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mejorimposible.es/" },
+        { "@type": "ListItem", "position": 2, "name": "Modelos", "item": "https://mejorimposible.es/porsche/modelos" },
+        { "@type": "ListItem", "position": 3, "name": {{ page.model_name | jsonify }} }
+      ]
+    }
+    </script>
 </head>
 <body data-news-keywords="{{ page.news_keywords | join: ',' }}" data-news-model="{{ page.news_model }}">
 

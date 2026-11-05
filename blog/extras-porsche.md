@@ -12,6 +12,7 @@ tema: comprar
 modelos: []
 permalink: porsche/extras-porsche
 ---
+{% include article-ld.html %}
 
 # Guía definitiva de opciones Porsche: un análisis experto para la configuración perfecta
 

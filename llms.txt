@@ -1,0 +1,39 @@
+# Mejor Imposible
+
+> Guías independientes en español para comprar y mantener un Porsche en España (modelos, fiabilidad, costes, segunda mano, concesionarios, comparativas) y, en el portal, rankings de lo mejor de España en hoteles, golf, restaurantes, bodegas, spas, casas, yates y motor. Nadie paga por aparecer. Idioma principal: español.
+
+## Modelos Porsche
+- [Porsche 718 (Boxster / Cayman)](https://mejorimposible.es/porsche/modelos/718): Ficha técnica del Porsche 718 Boxster y Cayman centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa de cada generación, del 986 al 718 actual.
+- [Porsche 911](https://mejorimposible.es/porsche/modelos/911): Ficha técnica del Porsche 911 centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa de cada generación, de la G-Model a la 992.
+- [Porsche Cayenne](https://mejorimposible.es/porsche/modelos/cayenne): Ficha técnica del Porsche Cayenne centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa de cada generación, del 955/957 a la E-Hybrid E3.2.
+- [Porsche Macan](https://mejorimposible.es/porsche/modelos/macan): Ficha técnica del Porsche Macan centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa de cada generación, desde el modelo original hasta el Macan Eléctrico.
+- [Porsche Panamera](https://mejorimposible.es/porsche/modelos/panamera): Ficha técnica del Porsche Panamera centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa de cada generación, de la 970 a la 972.
+- [Porsche Taycan](https://mejorimposible.es/porsche/modelos/taycan): Ficha técnica del Porsche Taycan centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa del primer eléctrico 100% de la marca.
+
+## Guías y artículos
+- [Porsche Cayenne Electric: versiones, precio en España, autonomía y ficha técnica](https://mejorimposible.es/porsche/porsche-cayenne-electric): Ficha del Porsche Cayenne Electric en España: versiones (Electric, S y Turbo), potencia, batería de 113 kWh, autonomía WLTP, carga rápida, maletero y precios, con las dudas que aún quedan por confirmar.
+- [Futuros modelos de Porsche 2026-2030: calendario de lanzamientos](https://mejorimposible.es/porsche/futuros-modelos-porsche-calendario): Qué ha presentado Porsche, qué está confirmado y qué solo se rumorea para el 911, el 718, el Macan, el Cayenne y los nuevos modelos tras la estrategia Sportwagenschmiede '35. Con el grado de certeza de cada fecha.
+- [Porsche Macan de segunda mano: qué mirar, precios y versiones que compensan](https://mejorimposible.es/porsche/porsche-macan-segunda-mano): Guía para comprar un Porsche Macan de segunda mano en España - precios por año, versiones y motores, averías conocidas con su coste, qué revisar antes de firmar y qué Macan elegir según tu presupuesto.
+- [Porsche Macan: guía de compra, versiones, precio y fiabilidad (2026)](https://mejorimposible.es/porsche/porsche-macan): Guía del Porsche Macan en España: versiones (Macan, 4, 4S, GTS, Turbo, S), precio, fiabilidad, problemas conocidos, costes de mantenimiento y qué año o versión comprar.
+- [Impuesto de matriculación e ITV de un Porsche](https://mejorimposible.es/porsche/impuesto-matriculacion-itv-porsche): Cómo funciona el impuesto de matriculación por emisiones de CO2 en un Porsche nuevo o importado, qué modelos se libran del tramo más alto, y qué esperar en la ITV.
+- [¿Por qué el motor del Porsche 911 está detrás?](https://mejorimposible.es/porsche/por-que-motor-911-esta-detras): La razón histórica y técnica de que el Porsche 911 monte el motor detrás del eje trasero, cómo afecta a su conducción y por qué la marca nunca lo ha cambiado.
+- [Seguro de un Porsche en España](https://mejorimposible.es/porsche/seguro-porsche-espana): Qué factores determinan el precio del seguro de un Porsche en España, rangos orientativos por modelo y consejos reales para pagar menos sin perder cobertura.
+- [Siglas y tecnologías de Porsche explicadas](https://mejorimposible.es/porsche/siglas-tecnologias-porsche): PDK, PASM, PDCC, PCCB, PSE, PTV... qué significa cada sigla de Porsche, qué hace realmente y si merece la pena pagarla al configurar tu coche.
+- [Porsche 911: guía de compra por generación, fiabilidad y precios](https://mejorimposible.es/porsche/porsche-911): Guía completa de compra del Porsche 911 por generación (2026) — fiabilidad, coste real de mantenimiento, precios de mercado y qué generación conviene según tu presupuesto.
+- [¿De dónde es Porsche? Historia, origen, dueño y curiosidades de la marca](https://mejorimposible.es/porsche/historia-origen-porsche): De dónde es Porsche, quién la fundó, a qué grupo pertenece y qué significa su nombre y su logo. La historia completa de la marca, desde el primer Porsche 356 hasta hoy.
+- [¿Podrá Porsche esquivar la tormenta del mercado automovilístico europeo?](https://mejorimposible.es/porsche/podra-porsche-esquivar-la-tormenta-del-mercado-automovilistico-europeo): Entre la electrificación y la presión de las marcas chinas, la industria del motor atraviesa un momento delicado. Analizamos cómo podría afectar este escenario a Porsche y su estrategia de futuro.
+- [El futuro ya está aquí con el nuevo Porsche Cayenne Electric](https://mejorimposible.es/porsche/el-futuro-ya-esta-aqui-con-el-nuevo-porsche-cayenne-electric): El nuevo Cayenne Electric redefine lo que significa conducir un Porsche. Tecnología, emociones, deportividad y sostenibilidad se fusionan en un modelo que marca el camino hacia el futuro.
+- [Porsche une fuerzas para acelerar su transformación digital](https://mejorimposible.es/porsche/porsche-transformacion-digital): Porsche refuerza su apuesta por la innovación uniendo la experiencia de Porsche Engineering y Porsche Digital para crear soluciones tecnológicas y digitales integradas.
+- [Guía de extras para Porsche](https://mejorimposible.es/porsche/extras-porsche): Descubre las opciones imprescindibles para tu Porsche. Nuestra guía experta analiza qué extras añaden valor y mejoran la conducción en cada modelo, ayudándote a lograr la configuración perfecta.
+- [Evolución y ventas de los CEO de Porsche Ibérica](https://mejorimposible.es/porsche/ceos-porsche): Descubre la historia de Porsche en España a través de sus CEO. Analizamos 40 años de evolución, ventas y liderazgo, desde su fundación hasta la actual era eléctrica.
+- [Análisis de ventas de Porsche](https://mejorimposible.es/porsche/ventas-porsche): Analizamos la evolución de las ventas globales de Porsche (2004-2024). Descubre el dominio de los SUV, el renacer del 911 y los desafíos de la electrificación en mercados clave.
+- [Satisfacción de propietarios de Porsche](https://mejorimposible.es/porsche/satisfaccion-porsche): ¿Están satisfechos los propietarios de Porsche? Analizamos los datos de J.D. Power 2025 y opiniones que revelan por qué es líder en fiabilidad y experiencia del cliente.
+
+## Herramientas y datos
+- [Concesionarios oficiales Porsche](https://mejorimposible.es/porsche/concesionarios): 22 centros con dirección, teléfono y valoración media en Google
+- [Comparativas](https://mejorimposible.es/porsche/comparativas): Porsche frente a sus rivales directos
+- [Tendencias semanales](https://mejorimposible.es/porsche/tendencias): resumen semanal de noticias sobre la marca
+
+## Contexto
+- Sitemap: https://mejorimposible.es/sitemap.xml
+- Traducciones del portal: /en/, /fr/, /de/, /it/, /pt/

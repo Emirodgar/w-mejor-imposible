@@ -12,6 +12,7 @@ tema: marca
 modelos: [marca]
 permalink: porsche/historia-origen-porsche
 ---
+{% include article-ld.html %}
 
 # ¿De dónde es Porsche? Historia, origen, dueño y curiosidades de la marca
 

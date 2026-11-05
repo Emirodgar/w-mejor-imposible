@@ -12,6 +12,7 @@ tema: marca
 modelos: [marca]
 permalink: porsche/satisfaccion-porsche
 ---
+{% include article-ld.html %}
 
 
 # Análisis de la satisfacción general de los usuarios de Porsche

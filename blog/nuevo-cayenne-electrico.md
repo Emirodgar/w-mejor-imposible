@@ -13,6 +13,7 @@ tema: novedades
 modelos: [cayenne]
 permalink: porsche/el-futuro-ya-esta-aqui-con-el-nuevo-porsche-cayenne-electric
 ---
+{% include article-ld.html %}
 
 ## ¿Cómo será el futuro de Porsche?
 

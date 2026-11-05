@@ -12,6 +12,7 @@ tema: comprar
 modelos: [macan]
 permalink: porsche/porsche-macan-segunda-mano
 ---
+{% include article-ld.html %}
 
 # Porsche Macan de segunda mano: qué mirar, precios y versiones que compensan
 

@@ -12,6 +12,7 @@ tema: novedades
 modelos: [marca]
 permalink: porsche/futuros-modelos-porsche-calendario
 ---
+{% include article-ld.html %}
 
 # Futuros modelos de Porsche 2026-2030: calendario de lanzamientos
 

@@ -12,6 +12,7 @@ tema: marca
 modelos: [marca]
 permalink: porsche/ventas-porsche
 ---
+{% include article-ld.html %}
 
 # Análisis de ventas de Porsche (2004-2024)
 

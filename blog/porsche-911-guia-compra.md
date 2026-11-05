@@ -12,6 +12,7 @@ tema: comprar
 modelos: [911]
 permalink: porsche/porsche-911
 ---
+{% include article-ld.html %}
 
 # Porsche 911: guía completa de compra 2026
 

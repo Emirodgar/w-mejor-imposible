@@ -12,6 +12,7 @@ tema: tecnica
 modelos: []
 permalink: porsche/siglas-tecnologias-porsche
 ---
+{% include article-ld.html %}
 
 # Siglas y tecnologías de Porsche explicadas: PDK, PASM, PCCB y todas las demás
 

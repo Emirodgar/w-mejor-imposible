@@ -12,6 +12,7 @@ tema: costes
 modelos: []
 permalink: porsche/seguro-porsche-espana
 ---
+{% include article-ld.html %}
 
 # Seguro de un Porsche en España: cuánto cuesta y cómo abaratarlo
 

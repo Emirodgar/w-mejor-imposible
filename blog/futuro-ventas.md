@@ -12,6 +12,7 @@ tema: marca
 modelos: [marca]
 permalink: porsche/podra-porsche-esquivar-la-tormenta-del-mercado-automovilistico-europeo
 ---
+{% include article-ld.html %}
 
 # ¿Podrá Porsche esquivar la tormenta del mercado automovilístico europeo?
 
