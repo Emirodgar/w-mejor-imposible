@@ -3,193 +3,596 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mejor Imposible · Solo lo mejor de España en lujo</title>
-    <meta name="description" content="Rankings de los mejores hoteles, campos de golf, restaurantes, casas, bodegas, spas, yates y motor de España. Pocos, elegidos y ordenados.">
-
-    <link rel="canonical" href="https://mejorimposible.es/">
-    <link rel="alternate" hreflang="es" href="https://mejorimposible.es/">
-    <link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/">
-    <link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/">
-    <link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/">
-    <link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/">
-    <link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/">
-    <link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/">
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <title>Tu guía definitiva para comprar un Porsche - Mejor Imposible</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/portal.css">
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Mejor Imposible",
-    "url": "https://mejorimposible.es/",
-    "inLanguage": "es"
-}
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-grey: #6e6e6e; --ink: #1a1a1a; --hairline: #e5e5e5;
+            --bg: #ffffff; --bg-alt: #f6f6f6;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: inherit; }
+        .container {
+            max-width: 1440px;
+            margin: auto;
+            padding: 0 32px;
+        }
+
+        /* --- Header --- */
+        .main-header {
+            padding: 26px 32px;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            z-index: 100;
+            color: #fff;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        .main-header.is-scrolled {
+            background-color: rgba(255,255,255,0.96);
+            color: var(--ink);
+            padding: 16px 32px;
+            box-shadow: 0 1px 0 var(--hairline);
+            backdrop-filter: saturate(180%) blur(8px);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .main-header.is-scrolled .logo { opacity: 1; pointer-events: auto; }
+        .logo-text span { color: var(--porsche-red); }
+        .logo-mark {
+            height: 30px;
+            width: 30px;
+            object-fit: contain;
+        }
+        .main-nav { display: flex; align-items: center; gap: 36px; }
+        .main-nav a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, opacity 0.2s ease;
+            white-space: nowrap;
+        }
+        .main-nav a:hover { border-bottom-color: currentColor; }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid currentColor;
+            color: inherit;
+            width: 38px; height: 38px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- Hero Section --- */
+        .hero-section {
+            height: 100vh;
+            min-height: 560px;
+            background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.55)), url('img/porschefondo.png');
+            background-size: cover;
+            background-position: center 60%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-align: left;
+            color: white;
+        }
+        .hero-content { max-width: 720px; padding: 0 32px 110px; }
+        .hero-logo-link { display: inline-block; margin-bottom: 36px; }
+        .hero-logo { display: block; height: 130px; width: auto; }
+        .hero-kicker {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--porsche-gold);
+            margin-bottom: 18px;
+        }
+        .hero-content h1 {
+            font-size: 3.6rem;
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 0.2px;
+            line-height: 1.1;
+        }
+        .hero-content p {
+            font-size: 1.15rem;
+            font-weight: 300;
+            margin: 20px 0 36px 0;
+            opacity: 0.92;
+            max-width: 520px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.75);
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+        }
+        .cta-button:hover { background-color: #fff; color: var(--ink); border-color: #fff; }
+        .cta-button.solid {
+            background-color: var(--ink);
+            border-color: var(--ink);
+            color: #fff;
+        }
+        .cta-button.solid:hover { background-color: var(--porsche-red); border-color: var(--porsche-red); color: #fff; }
+
+        /* --- Intro Section --- */
+        .intro-section {
+            padding: 130px 20px 110px;
+            text-align: center;
+            max-width: 780px;
+            margin: auto;
+        }
+        .intro-section .eyebrow {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--porsche-red);
+            margin-bottom: 18px;
+        }
+        .intro-section h2 { font-size: 2.4rem; font-weight: 300; margin: 0 0 24px 0; line-height: 1.25; }
+        .intro-section p { font-size: 1.1rem; line-height: 1.8; color: var(--porsche-grey); font-weight: 400; }
+
+        /* --- Tools Section --- */
+        .tools-section { padding: 40px 0 130px; background-color: var(--bg-alt); padding-top: 90px; }
+        .section-title-wrap { text-align: center; margin-bottom: 56px; }
+        .section-title-wrap .eyebrow {
+            display: block; font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+            font-weight: 600; color: var(--porsche-red); margin-bottom: 14px;
+        }
+        .section-title { font-size: 2.2rem; font-weight: 300; margin: 0; }
+
+        .segment-nav {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
+            margin: 0 0 70px;
+        }
+        .segment-nav a {
+            font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+            text-decoration: none; color: var(--ink); background-color: #fff;
+            border: 1px solid var(--hairline); border-radius: 30px; padding: 11px 20px;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+        .segment-nav a:hover { border-color: var(--ink); }
+
+        .tool-group { margin-bottom: 68px; scroll-margin-top: 100px; }
+        .tool-group:last-child { margin-bottom: 0; }
+        .tool-group-header { margin-bottom: 28px; border-bottom: 1px solid var(--hairline); padding-bottom: 18px; }
+        .tool-group-header h3 { font-size: 1.4rem; font-weight: 600; margin: 0 0 6px; }
+        .tool-group-header p { margin: 0; color: var(--porsche-grey); font-size: 0.95rem; }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 28px;
+        }
+        .tool-card {
+            background-color: #fff;
+            border: 1px solid var(--hairline);
+            border-radius: 3px;
+            overflow: hidden;
+            text-decoration: none;
+            color: var(--ink);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: transparent; }
+        .tool-card .tool-card-media { position: relative; overflow: hidden; }
+        .tool-card img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+        .tool-card:hover img { transform: scale(1.05); }
+        .tool-card-content { padding: 26px 26px 28px; flex-grow: 1; display: flex; flex-direction: column; }
+        .tool-card-content h3 { margin: 0 0 10px 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.2px; }
+        .tool-card-content p { margin: 0 0 18px 0; line-height: 1.6; color: var(--porsche-grey); font-size: 0.95rem; flex-grow: 1; }
+        .tool-card-arrow {
+            font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+            color: var(--ink); display: inline-flex; align-items: center; gap: 8px;
+        }
+        .tool-card-arrow span { transition: transform 0.25s ease; }
+        .tool-card:hover .tool-card-arrow span { transform: translateX(5px); }
+
+        /* --- Philosophy Section --- */
+        .philosophy-section {
+            padding: 100px 32px;
+            background-color: var(--bg);
+            border-top: 1px solid var(--hairline);
+            border-bottom: 1px solid var(--hairline);
+        }
+        .philosophy-section .container {
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+        }
+        .philosophy-section .eyebrow {
+            display: block; font-size: 13px; letter-spacing: 3px; text-transform: uppercase;
+            font-weight: 600; color: var(--porsche-red); margin-bottom: 28px;
+        }
+        .philosophy-media { margin-bottom: 32px; }
+        .philosophy-media img {
+            width: 140px; height: 140px; object-fit: cover; border-radius: 50%;
+            border: 1px solid var(--hairline); padding: 6px;
+        }
+        .philosophy-text { max-width: 680px; }
+        .philosophy-text blockquote {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin: 0;
+            line-height: 1.5;
+            color: var(--ink);
+        }
+        .philosophy-text cite {
+            display: block; margin-top: 20px; font-size: 0.9rem;
+            font-style: normal; color: var(--porsche-grey); letter-spacing: 0.5px;
+        }
+
+        /* --- CTA Final Section --- */
+        .cta-final {
+            padding: 110px 20px;
+            text-align: center;
+            background-color: var(--ink);
+            color: white;
+        }
+        .cta-final h2 { font-size: 2rem; font-weight: 300; padding-bottom: 32px; margin: 0; }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid var(--hairline);
+            font-size: 0.85rem;
+            color: var(--porsche-grey);
+            background-color: var(--bg);
+        }
+        .main-footer p { margin: 6px 0; }
+
+        @media (max-width: 900px) {
+            .philosophy-section { padding: 80px 24px; }
+        }
+        @media (max-width: 768px) {
+            .main-nav { display: none; }
+            .nav-toggle { display: flex; }
+            .hero-content h1 { font-size: 2.4rem; }
+            .hero-content p { font-size: 1.05rem; }
+            .hero-content { padding-bottom: 70px; }
+            .hero-logo { height: 90px; }
+            .hero-logo-link { margin-bottom: 24px; }
+            .intro-section { padding: 90px 20px 70px; }
+            .intro-section h2 { font-size: 1.9rem; }
+        }
+    </style>
 </head>
 <body>
 
-<header class="wrap site-header">
-    <a class="brand" href="/">mejor imposible</a>
-    <nav class="main-nav" aria-label="Principal">
-        <a href="/#rankings">Rankings</a>
-        <a href="/#planes">Planes completos</a>
-        <a href="/destinos/">Destinos</a>
-        <a href="/porsche/">Guía Porsche</a>
-    </nav>
-    <div class="lang" aria-label="Idioma">
-        <a href="/" hreflang="es" lang="es" aria-current="true">ES</a>
-        <a href="/en/" hreflang="en" lang="en">EN</a>
-        <a href="/fr/" hreflang="fr" lang="fr">FR</a>
-        <a href="/de/" hreflang="de" lang="de">DE</a>
-        <a href="/pt/" hreflang="pt" lang="pt">PT</a>
-        <a href="/it/" hreflang="it" lang="it">IT</a>
-    </div>
-</header>
+    <header class="main-header" id="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <img src="img/logo_mi_inverso_transparent.png" alt="" class="logo-mark" id="logo-mark">
+                <span class="logo-text">mejor <span>imposible</span></span>
+            </a>
+            <nav class="main-nav">
+                <a href="#tools">Herramientas</a>
+                <a href="#philosophy">Filosofía</a>
+                <a href="/porsche/tendencias">Tendencias</a>
+                <a href="/porsche/modelos">Modelos</a>
+                <a href="/porsche/concesionarios">Concesionarios</a>
+                <a href="/porsche/blog">Blog</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+        </div>
+    </header>
 
-<main>
-    <section class="wrap hero">
-        <p class="eyebrow">Rankings de España</p>
-        <h1>Solo lo mejor.</h1>
-        <p class="lead">Los mejores hoteles, campos, mesas y casas del país. Pocos, elegidos y ordenados.</p>
-        <nav class="chips" aria-label="Categorías">
-            <a href="/ranking/hoteles-de-lujo/">Hoteles de lujo</a>
-            <a href="/ranking/golf/">Golf</a>
-            <a href="/ranking/restaurantes/">Restaurantes</a>
-            <a href="/ranking/casas-de-lujo/">Casas de lujo</a>
-            <a href="/ranking/bodegas/">Bodegas</a>
-            <a href="/ranking/spas/">Spas</a>
-            <a href="/ranking/yates-y-calas/">Yates y calas</a>
-            <a href="/ranking/motor/">Motor</a>
-        </nav>
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="hero-kicker">Guía Porsche</span>
+            <h1>El corazón sigue al coche.</h1>
+            <p>Hay coches que te llevan. Un Porsche te transforma. Descubre cuál es el tuyo con datos, no solo con pasión.</p>
+            <a href="#intro" class="cta-button">Descubre cómo elegir el tuyo</a>
+        </div>
     </section>
 
-    <section class="wrap" aria-label="Destacado">
-        <a class="featured" href="/ranking/golf/">
-            
-            <span class="kicker">Ranking del mes</span>
-            <span class="title">Los 10 mejores campos de golf de España</span>
-            <span class="cta">Ver el ranking →</span>
-        </a>
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <span class="eyebrow">Nuestra misión</span>
+            <h2>No compres un Porsche. Invierte en uno.</h2>
+            <p>Conducir un Porsche es una experiencia que redefine la conexión entre el hombre y la máquina. Pero elegir el modelo correcto es un arte que requiere conocimiento. En <strong>mejorimposible.es</strong> te ofrecemos la información más completa y las herramientas más potentes para que tu decisión no sea solo pasional, sino también la más inteligente. Aquí empieza tu viaje hacia el Porsche perfecto.</p>
+        </div>
     </section>
 
-    <div id="rankings">
-        <section class="wrap strip" aria-labelledby="r-hoteles">
-            <div class="strip-head">
-                <h2 id="r-hoteles">Los mejores hoteles de lujo de España</h2>
-                <a href="/ranking/hoteles-de-lujo/">Ranking completo →</a>
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <span class="eyebrow">Herramientas</span>
+                <h2 class="section-title">Tus herramientas de análisis</h2>
             </div>
-            <div class="strip-scroll">
-                <ol>
-                    <li><a href="/ranking/hoteles-de-lujo/#mandarin-oriental-ritz-madrid"><div class="ph has-img"><img src="/img/portal/hoteles-de-lujo/mandarin-oriental-ritz-madrid.jpg" alt="Mandarin Oriental Ritz, Madrid, Madrid" loading="lazy" decoding="async"></div><div class="row"><span class="n">01</span><span><span class="name">Mandarin Oriental Ritz, Madrid</span><span class="place">Madrid</span></span></div></a></li>
-                    <li><a href="/ranking/hoteles-de-lujo/#atrio"><div class="ph t2" aria-hidden="true"></div><div class="row"><span class="n">02</span><span><span class="name">Atrio Restaurante Hotel</span><span class="place">Cáceres</span></span></div></a></li>
-                    <li><a href="/ranking/hoteles-de-lujo/#abadia-retuerta-ledomaine"><div class="ph t3 has-img"><img src="/img/portal/hoteles-de-lujo/abadia-retuerta-ledomaine.jpg" alt="Abadía Retuerta LeDomaine, Sardón de Duero · Valladolid" loading="lazy" decoding="async"></div><div class="row"><span class="n">03</span><span><span class="name">Abadía Retuerta LeDomaine</span><span class="place">Sardón de Duero · Valladolid</span></span></div></a></li>
-                    <li><a href="/ranking/hoteles-de-lujo/#terra-dominicata"><div class="ph t4" aria-hidden="true"></div><div class="row"><span class="n">04</span><span><span class="name">Terra Dominicata</span><span class="place">Escaladei · Tarragona</span></span></div></a></li>
-                    <li><a href="/ranking/hoteles-de-lujo/#torre-del-marques"><div class="ph" aria-hidden="true"></div><div class="row"><span class="n">05</span><span><span class="name">Torre del Marqués</span><span class="place">Matarraña · Teruel</span></span></div></a></li>
-                </ol>
-            </div>
-        </section>
 
-        <section class="wrap strip" aria-labelledby="r-golf">
-            <div class="strip-head">
-                <h2 id="r-golf">Los mejores campos de golf</h2>
-                <a href="/ranking/golf/">Ranking completo →</a>
-            </div>
-            <div class="strip-scroll">
-                <ol>
-                    <li><a href="/ranking/golf/#real-club-valderrama"><div class="ph" aria-hidden="true"></div><div class="row"><span class="n">01</span><span><span class="name">Real Club Valderrama</span><span class="place">Sotogrande · Cádiz</span></span></div></a></li>
-                    <li><a href="/ranking/golf/#real-club-de-golf-sotogrande"><div class="ph t2" aria-hidden="true"></div><div class="row"><span class="n">02</span><span><span class="name">Real Club de Golf Sotogrande</span><span class="place">Sotogrande · Cádiz</span></span></div></a></li>
-                    <li><a href="/ranking/golf/#camiral-stadium"><div class="ph t3" aria-hidden="true"></div><div class="row"><span class="n">03</span><span><span class="name">Camiral Stadium (antes PGA Catalunya)</span><span class="place">Caldes de Malavella · Girona</span></span></div></a></li>
-                    <li><a href="/ranking/golf/#finca-cortesin"><div class="ph t4 has-img"><img src="/img/portal/golf/finca-cortesin.jpg" alt="Finca Cortesín, Casares · Málaga" loading="lazy" decoding="async"></div><div class="row"><span class="n">04</span><span><span class="name">Finca Cortesín</span><span class="place">Casares · Málaga</span></span></div></a></li>
-                    <li><a href="/ranking/golf/#real-club-de-golf-las-brisas"><div class="ph" aria-hidden="true"></div><div class="row"><span class="n">05</span><span><span class="name">Real Club de Golf Las Brisas</span><span class="place">Marbella · Málaga</span></span></div></a></li>
-                </ol>
-            </div>
-        </section>
+            <nav class="segment-nav" aria-label="Categorías de herramientas">
+                <a href="#elige">Elige tu Porsche</a>
+                <a href="#analiza">Precio y coste</a>
+                <a href="#antes-de-comprar">Antes de comprar</a>
+                <a href="#comunidad">Comunidad y tendencias</a>
+            </nav>
 
-        <section class="wrap strip" aria-labelledby="r-mesas">
-            <div class="strip-head">
-                <h2 id="r-mesas">Las mejores mesas</h2>
-                <a href="/ranking/restaurantes/">Ranking completo →</a>
+            <div id="elige" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Elige tu Porsche</h3>
+                    <p>Descubre qué modelo encaja contigo antes de mirar precios.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/porsche/asistente" class="tool-card">
+                        <div class="tool-card-media"><img src="img/para-mi.jpg" alt="Asistente de recomendación" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>¿Qué Porsche es para mí?</h3>
+                            <p>Responde 5 preguntas sobre tu presupuesto y tu forma de conducir y descubre tus modelos recomendados.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/modelos" class="tool-card">
+                        <div class="tool-card-media"><img src="img/fiabilidad.png" alt="Fichas técnicas por modelo" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Fichas técnicas por modelo</h3>
+                            <p>Fiabilidad por generación, coste real de propiedad y precio de cada modelo, todo en una sola ficha.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/comparador" class="tool-card">
+                        <div class="tool-card-media"><img src="img/sensaciones.png" alt="Comparador de Prestaciones" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Comparador de sensaciones</h3>
+                            <p>¿Circuito, viaje o día a día? Encuentra el Porsche con la personalidad que encaja contigo.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/comparativa-visual" class="tool-card">
+                        <div class="tool-card-media"><img src="img/porschefondo.png" alt="Comparador Visual de Dimensiones" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Comparador visual de dimensiones</h3>
+                            <p>Compara la silueta, las medidas y las diferencias exactas entre dos modelos, lado a lado.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/analisis-compra" class="tool-card">
+                        <div class="tool-card-media"><img src="img/opciones.png" alt="Análisis de Opciones" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Guía de opciones</h3>
+                            <p>Aprende qué extras son imprescindibles para el disfrute y el valor de reventa, y cuáles evitar.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/comparativas" class="tool-card">
+                        <div class="tool-card-media"><img src="img/comparativa.jfif" alt="Comparativas frente a la competencia" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Porsche vs la competencia</h3>
+                            <p>Macan, Cayenne, Panamera, 911 y 718 frente a sus rivales directos de Audi, BMW, Mercedes y más.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="strip-scroll">
-                <ol>
-                    <li><a href="/ranking/restaurantes/#etxebarri"><div class="ph has-img"><img src="/img/portal/restaurantes/etxebarri.jpg" alt="Asador Etxebarri, Axpe · Bizkaia" loading="lazy" decoding="async"></div><div class="row"><span class="n">01</span><span><span class="name">Asador Etxebarri</span><span class="place">Axpe · Bizkaia</span></span></div></a></li>
-                    <li><a href="/ranking/restaurantes/#disfrutar"><div class="ph t2" aria-hidden="true"></div><div class="row"><span class="n">02</span><span><span class="name">Disfrutar</span><span class="place">Barcelona</span></span></div></a></li>
-                    <li><a href="/ranking/restaurantes/#el-celler-de-can-roca"><div class="ph t3" aria-hidden="true"></div><div class="row"><span class="n">03</span><span><span class="name">El Celler de Can Roca</span><span class="place">Girona</span></span></div></a></li>
-                    <li><a href="/ranking/restaurantes/#diverxo"><div class="ph t4" aria-hidden="true"></div><div class="row"><span class="n">04</span><span><span class="name">DiverXO</span><span class="place">Madrid</span></span></div></a></li>
-                    <li><a href="/ranking/restaurantes/#quique-dacosta"><div class="ph has-img"><img src="/img/portal/restaurantes/quique-dacosta.jpg" alt="Quique Dacosta, Dénia · Alicante" loading="lazy" decoding="async"></div><div class="row"><span class="n">05</span><span><span class="name">Quique Dacosta</span><span class="place">Dénia · Alicante</span></span></div></a></li>
-                </ol>
-            </div>
-        </section>
 
-        <section class="wrap strip" aria-labelledby="r-casas">
-            <div class="strip-head">
-                <h2 id="r-casas">Las zonas residenciales más exclusivas</h2>
-                <a href="/ranking/casas-de-lujo/">Ranking completo →</a>
+            <div id="analiza" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Precio y coste</h3>
+                    <p>La parte numérica: lanzamiento, reventa, financiación y coste total de propiedad.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/porsche/precios" class="tool-card">
+                        <div class="tool-card-media"><img src="img/concesionario.png" alt="Evolución de Precios de Lanzamiento" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Precios de lanzamiento (PVP)</h3>
+                            <p>Sigue la evolución del precio oficial de cada generación y descubre cuánto ha subido cada modelo con los años.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/precio-segunda-mano" class="tool-card">
+                        <div class="tool-card-media"><img src="img/depreciacion.png" alt="Análisis de Precios y Depreciación" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Precios y depreciación</h3>
+                            <p>Analiza la evolución de precios de segunda mano y descubre qué modelos son la mejor inversión.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/coste-real" class="tool-card">
+                        <div class="tool-card-media"><img src="img/coste.png" alt="Coste Real de Propiedad" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Coste real de propiedad</h3>
+                            <p>Calcula el gasto total a 5 años: depreciación, mantenimiento, seguro y más. Sin sorpresas.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/financiacion" class="tool-card">
+                        <div class="tool-card-media"><img src="img/financiacion.jpg" alt="Calculadora de financiación" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Calculadora de financiación</h3>
+                            <p>Simula tu cuota mensual, los intereses totales y compara financiar frente a pagar al contado.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/comprar-renting-leasing" class="tool-card">
+                        <div class="tool-card-media"><img src="img/renting.jpg" alt="Comparativa comprar, renting o leasing" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>¿Comprar, renting o leasing?</h3>
+                            <p>Compara la propiedad, la fiscalidad y el coste total de cada opción con un simulador y tus propios números.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/importacion-alemania" class="tool-card">
+                        <div class="tool-card-media"><img src="img/porschefondo.png" alt="Calculadora de importación desde Alemania" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Importar un Porsche de Alemania</h3>
+                            <p>Calcula el impuesto de matriculación según el CO2, el IVA y los trámites, y compáralo con el precio oficial en España.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/como-vender-tu-porsche" class="tool-card">
+                        <div class="tool-card-media"><img src="img/para-mi.jpg" alt="Cómo y cuándo vender tu Porsche" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Cómo y cuándo vender tu Porsche</h3>
+                            <p>La tendencia de valor de tu modelo, qué canal de venta te da más dinero y los trámites legales en España.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="strip-scroll">
-                <ol>
-                    <li><a href="/ranking/casas-de-lujo/#puerto-de-andratx"><div class="ph" aria-hidden="true"></div><div class="row"><span class="n">01</span><span><span class="name">Puerto de Andratx</span><span class="place">Andratx · Mallorca</span></span></div></a></li>
-                    <li><a href="/ranking/casas-de-lujo/#la-finca"><div class="ph t2" aria-hidden="true"></div><div class="row"><span class="n">02</span><span><span class="name">La Finca</span><span class="place">Pozuelo de Alarcón · Madrid</span></span></div></a></li>
-                    <li><a href="/ranking/casas-de-lujo/#la-zagaleta"><div class="ph t3" aria-hidden="true"></div><div class="row"><span class="n">03</span><span><span class="name">La Zagaleta</span><span class="place">Benahavís · Málaga</span></span></div></a></li>
-                    <li><a href="/ranking/casas-de-lujo/#la-moraleja"><div class="ph t4 has-img"><img src="/img/portal/casas-de-lujo/la-moraleja.jpg" alt="La Moraleja, Alcobendas · Madrid" loading="lazy" decoding="async"></div><div class="row"><span class="n">04</span><span><span class="name">La Moraleja</span><span class="place">Alcobendas · Madrid</span></span></div></a></li>
-                    <li><a href="/ranking/casas-de-lujo/#marbella"><div class="ph has-img"><img src="/img/portal/casas-de-lujo/marbella.jpg" alt="Marbella, Marbella · Málaga" loading="lazy" decoding="async"></div><div class="row"><span class="n">05</span><span><span class="name">Marbella</span><span class="place">Marbella · Málaga</span></span></div></a></li>
-                </ol>
-            </div>
-        </section>
-    </div>
 
-    <section id="planes" class="plans" aria-labelledby="planes-h">
-        <div class="wrap">
-            <p class="eyebrow">Planes completos</p>
-            <h2 id="planes-h">Todo el viaje, en una sola vista</h2>
-            <p class="lead">Aeropuerto, coche, hotel, la actividad y dónde cenar: lo mejor de cada paso, encadenado.</p>
-            <div class="plan-grid">
-                <a href="/planes/golf-en-sotogrande/"><div class="ph t3" aria-hidden="true"></div><p class="meta">3 días · Golf</p><p class="ptitle">Golf en Sotogrande</p></a>
-                <a href="/planes/marbella-golf-y-mesa/"><div class="ph t3 has-img"><img src="/img/portal/hoteles-de-lujo/marbella-club-hotel.jpg" alt="Marbella Club Hotel, Marbella · Málaga" loading="lazy" decoding="async"></div><p class="meta">3 días · Golf y gastronomía</p><p class="ptitle">Marbella: golf y mesa</p></a>
-                <a href="/planes/girona-golf-y-can-roca/"><div class="ph t3" aria-hidden="true"></div><p class="meta">2 días · Golf y gastronomía</p><p class="ptitle">Girona: golf y Can Roca</p></a>
-                <a href="/planes/san-sebastian-mesa-a-mesa/"><div class="ph t3 has-img"><img src="/img/portal/restaurantes/arzak.jpg" alt="Arzak, San Sebastián" loading="lazy" decoding="async"></div><p class="meta">3 días · Gastronomía</p><p class="ptitle">San Sebastián, mesa a mesa</p></a>
-                <a href="/planes/la-rioja-de-bodega-en-bodega/"><div class="ph t3 has-img"><img src="/img/portal/bodegas/marques-de-riscal.jpg" alt="Marqués de Riscal, Elciego · Álava" loading="lazy" decoding="async"></div><p class="meta">2 días · Vino</p><p class="ptitle">La Rioja de bodega en bodega</p></a>
-                <a href="/planes/ibiza-y-formentera-en-barco/"><div class="ph t3" aria-hidden="true"></div><p class="meta">4 días · Mar</p><p class="ptitle">Ibiza y Formentera en barco</p></a>
+            <div id="antes-de-comprar" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Antes de comprar</h3>
+                    <p>Fiabilidad y checklist de inspección para no llevarte sorpresas.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/porsche/fallos" class="tool-card">
+                        <div class="tool-card-media"><img src="img/fiabilidad.png" alt="Análisis de Fiabilidad" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Análisis de fiabilidad</h3>
+                            <p>Descubre los fallos comunes, costes de reparación y el índice de fiabilidad de cada modelo y generación.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/checklist-inspecciones-segunda-mano" class="tool-card">
+                        <div class="tool-card-media"><img src="img/inspeccion.png" alt="Guía de Inspección" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Guía de inspección</h3>
+                            <p>Tu checklist interactiva para inspeccionar un Porsche de segunda mano como un profesional.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/garantia-porsche-approved" class="tool-card">
+                        <div class="tool-card-media"><img src="img/opciones.png" alt="Garantía Porsche Approved" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Garantía Porsche Approved</h3>
+                            <p>Qué cubre, hasta qué antigüedad y kilometraje, y cómo contratarla aunque el coche no venga de un concesionario oficial.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="comunidad" class="tool-group">
+                <div class="tool-group-header">
+                    <h3>Comunidad y tendencias</h3>
+                    <p>Lo que se dice y se comparte sobre Porsche ahora mismo.</p>
+                </div>
+                <div class="tools-grid">
+                    <a href="/porsche/menciones" class="tool-card">
+                        <div class="tool-card-media"><img src="img/pulso.png" alt="Dashboard Social" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Pulso de la marca</h3>
+                            <p>Monitoriza en tiempo real lo que se dice de Porsche en redes sociales. Sentimiento y tendencias.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                    <a href="/porsche/tendencias" class="tool-card">
+                        <div class="tool-card-media"><img src="img/tendencias.png" alt="Collage de Tendencias" loading="lazy"></div>
+                        <div class="tool-card-content">
+                            <h3>Tendencias</h3>
+                            <p>Una galería visual inmersiva con las mejores fotos y vídeos de Porsche en redes sociales.</p>
+                            <span class="tool-card-arrow">Descubrir <span>&rarr;</span></span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="wrap trust">
-        <h2>Nadie paga por aparecer.<br>Por eso merece la pena mirarlo.</h2>
-        <a href="/metodologia/">Cómo elaboramos los rankings →</a>
+    <section id="philosophy" class="philosophy-section">
+        <div class="container">
+            <span class="eyebrow">Nuestra filosofía</span>
+            <div class="philosophy-media">
+                <img src="img/ferry.png" alt="Porsche 356 Clásico">
+            </div>
+            <div class="philosophy-text">
+                <blockquote>"Al principio miré a mi alrededor y no encontré el coche de mis sueños, así que decidí construirlo yo mismo."</blockquote>
+                <cite>— Ferry Porsche</cite>
+            </div>
+        </div>
     </section>
-</main>
 
-<section class="wrap credits" aria-label="Créditos de las fotos">
-    <details>
-        <summary>Créditos de las fotos</summary>
-        <ul>
-            <li>Abadía Retuerta LeDomaine: <a href="https://commons.wikimedia.org/wiki/File:Valladolid_monasterio_Retuerta_01_lou.JPG" rel="noopener">Lourdes Cardenal</a> · <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="noopener">CC BY-SA 3.0</a> · Wikimedia Commons</li>
-            <li>Arzak: <a href="https://commons.wikimedia.org/wiki/File:Fachada_del_restaurante_Arzak.jpg" rel="noopener">Krista</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener">CC BY 2.0</a> · Wikimedia Commons</li>
-            <li>Asador Etxebarri: <a href="https://commons.wikimedia.org/wiki/File:Etxebarri_angulas.jpg" rel="noopener">Krista</a> · <a href="https://creativecommons.org/licenses/by/2.0" rel="noopener">CC BY 2.0</a> · Wikimedia Commons</li>
-            <li>Finca Cortesín: <a href="https://commons.wikimedia.org/wiki/File:Please_check_out_the_full_travelogue_at_http-travelmemo.com-%5Ep%3D4663_-_panoramio_(1).jpg" rel="noopener">Walter Schärer</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener">CC BY-SA 3.0</a> · Wikimedia Commons</li>
-            <li>La Moraleja: <a href="https://commons.wikimedia.org/wiki/File:Alcobendas_-_Urbanizaci%C3%B3n_La_Moraleja_03.jpg" rel="noopener">Zarateman</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="noopener">CC0</a> · Wikimedia Commons</li>
-            <li>Mandarin Oriental Ritz, Madrid: <a href="https://commons.wikimedia.org/wiki/File:Hotel_Ritz_(Madrid)_01.jpg" rel="noopener">Luis García (Zaqarbal)</a> · <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="noopener">CC BY-SA 3.0</a> · Wikimedia Commons</li>
-            <li>Marbella: <a href="https://commons.wikimedia.org/wiki/File:Marbella_from_La_Concha,_Andalucia,_Spain_-_Sept_2009.jpg" rel="noopener">Diliff</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener">CC BY-SA 3.0</a> · Wikimedia Commons</li>
-            <li>Marbella Club Hotel: <a href="https://commons.wikimedia.org/wiki/File:Marbella_-_Milla_de_Oro,_Marbella_Club_Hotel_1.jpg" rel="noopener">Zarateman</a> · <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" rel="noopener">CC0</a> · Wikimedia Commons</li>
-            <li>Marqués de Riscal: <a href="https://commons.wikimedia.org/wiki/File:Bodega_Marqu%C3%A9s_de_Riscal_en_Elciego_(%C3%81lava)_-_panoramio.jpg" rel="noopener">Juan E. M.</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener">CC BY-SA 3.0</a> · Wikimedia Commons</li>
-            <li>Quique Dacosta: <a href="https://commons.wikimedia.org/wiki/File:Quique_Dacosta_Exterior.jpg" rel="noopener">https://www.flickr.com/photos/kentwang/</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0" rel="noopener">CC BY-SA 2.0</a> · Wikimedia Commons</li>
-        </ul>
-    </details>
-</section>
+    <section class="cta-final">
+        <div class="container">
+            <h2>Si quieres comprar tu Porsche, es el momento</h2>
+            <a href="/porsche/concesionarios" class="cta-button solid">Centros oficiales</a>
+        </div>
+    </section>
 
-<footer class="site-footer">
-    <div class="wrap">
-        <a class="brand" href="/">mejor imposible</a>
-        <nav class="footer-links" aria-label="Pie">
-            <a href="/porsche/">Guía Porsche</a>
-            <a href="/metodologia/">Metodología</a>
-        </nav>
-    </div>
-</footer>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
+            <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const header = document.getElementById('site-header');
+        const logoMark = document.getElementById('logo-mark');
+        const onScroll = () => {
+            const scrolled = window.scrollY > 40;
+            header.classList.toggle('is-scrolled', scrolled);
+            logoMark.src = scrolled ? 'img/logo_mi_transparent.png' : 'img/logo_mi_inverso_transparent.png';
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        const navToggle = document.getElementById('nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        navToggle.addEventListener('click', () => {
+            const open = mainNav.style.display === 'flex';
+            mainNav.style.cssText = open ? '' : 'display:flex; position:absolute; top:100%; left:0; width:100%; flex-direction:column; align-items:flex-start; gap:0; background:#fff; padding:10px 32px 20px;';
+            if (!open) {
+                mainNav.querySelectorAll('a').forEach(a => a.style.cssText = 'color:#1a1a1a; padding:12px 0; width:100%; border-bottom:1px solid #e5e5e5;');
+                header.classList.add('is-scrolled');
+                logoMark.src = 'img/logo_mi_transparent.png';
+            } else {
+                onScroll();
+            }
+        });
+    </script>
 
 </body>
 </html>

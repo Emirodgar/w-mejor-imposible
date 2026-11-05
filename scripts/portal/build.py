@@ -32,8 +32,8 @@ import re
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 DATA = os.path.join(ROOT, 'data', 'portal')
 SITE = 'https://mejorimposible.es'
-HOME = '/'                 # home del portal (es en /, resto en /<idioma>/)
-NOINDEX = False            # True mientras el portal sea un borrador
+HOME = '/index2.html'      # cuando el portal sustituya a la home, cambiar a '/'
+NOINDEX = True             # quitar al lanzar el portal
 LANGS = [('es', 'ES'), ('en', 'EN'), ('fr', 'FR'), ('de', 'DE'), ('pt', 'PT'), ('it', 'IT')]
 PUBLISHED = ['es', 'en', 'fr', 'de', 'pt', 'it']   # idiomas que se generan y aparecen en el selector
 LANG = 'es'
@@ -98,7 +98,7 @@ def prefix(lang):
 
 def u(path):
     """Enlace interno en el idioma actual. La guía Porsche (/porsche/, solo en español) y las anclas no cambian."""
-    if not path.startswith('/') or path.startswith('/porsche/'):
+    if not path.startswith('/') or path == '/':
         return path
     return prefix(LANG) + path
 
@@ -207,7 +207,7 @@ HEAD = '''<!DOCTYPE html>
         <a href="@@HOME@@#rankings">@@N_RANK@@</a>
         <a href="@@HOME@@#planes">@@N_PLANS@@</a>
         <a href="@@DEST@@">@@N_DEST@@</a>
-        <a href="/porsche/">@@N_PORSCHE@@</a>
+        <a href="/">@@N_PORSCHE@@</a>
     </nav>
     <div class="lang" aria-label="@@ARIA_LANG@@">
 @@LANG@@
@@ -220,7 +220,7 @@ FOOT = '''
     <div class="wrap">
         <a class="brand" href="@@HOME@@">mejor imposible</a>
         <nav class="footer-links" aria-label="@@ARIA_FOOT@@">
-            <a href="/porsche/">@@N_PORSCHE@@</a>
+            <a href="/">@@N_PORSCHE@@</a>
             <a href="@@METHOD@@">@@N_METHOD@@</a>
         </nav>
     </div>

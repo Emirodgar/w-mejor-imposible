@@ -2,70 +2,70 @@
 <!-- Sitemap del portal nuevo. No se referencia desde robots.txt ni sitemap.xml hasta quitar el noindex. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mejorimposible.es/</loc>
+    <loc>https://mejorimposible.es/index2.html</loc>
     <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
   </url>
   <url>
-    <loc>https://mejorimposible.es/en/</loc>
+    <loc>https://mejorimposible.es/en/index2.html</loc>
     <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
   </url>
   <url>
-    <loc>https://mejorimposible.es/fr/</loc>
+    <loc>https://mejorimposible.es/fr/index2.html</loc>
     <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
   </url>
   <url>
-    <loc>https://mejorimposible.es/de/</loc>
+    <loc>https://mejorimposible.es/de/index2.html</loc>
     <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
   </url>
   <url>
-    <loc>https://mejorimposible.es/pt/</loc>
+    <loc>https://mejorimposible.es/pt/index2.html</loc>
     <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
   </url>
   <url>
-    <loc>https://mejorimposible.es/it/</loc>
+    <loc>https://mejorimposible.es/it/index2.html</loc>
     <lastmod>2026-11-05</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mejorimposible.es/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mejorimposible.es/en/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mejorimposible.es/fr/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mejorimposible.es/de/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mejorimposible.es/pt/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mejorimposible.es/it/index2.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mejorimposible.es/index2.html"/>
   </url>
   <url>
     <loc>https://mejorimposible.es/ranking/hoteles-de-lujo/</loc>
