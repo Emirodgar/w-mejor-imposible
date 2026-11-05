@@ -8,3 +8,6 @@
 # Mockups de referencia del portal (solo local)
 design/
 data/portal/i18n/_pendiente-*.json
+
+# Originales de fotos propias (solo en local; las versiones reducidas van en img/portal/)
+fotos-propias/

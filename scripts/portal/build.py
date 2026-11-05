@@ -147,6 +147,9 @@ def credits_html():
     lis = ''
     for it in sorted(USED, key=lambda x: x['nombre']):
         fr = it['foto_real']
+        if fr.get('origen') == 'propia':
+            lis += f'\n            <li>{e(it["nombre"])}: © {e(fr.get("autor") or "Mejor Imposible")}</li>'
+            continue
         author = e(fr.get('autor') or 'Wikimedia Commons')
         lic = f'<a href="{e(fr["licencia_url"])}" rel="noopener">{e(fr["licencia"])}</a>' if fr.get('licencia_url') else e(fr['licencia'])
         lis += (f'\n            <li>{e(it["nombre"])}: <a href="{e(fr["fuente"])}" rel="noopener">{author}</a> · {lic}'
