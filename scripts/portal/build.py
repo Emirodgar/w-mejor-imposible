@@ -443,7 +443,9 @@ def build_rank(slug):
         for k in ZONE_KEYS)
     short, h1 = t(c['corto']), t(c['titulo'])
     extra_link = (f'\n        <p class="hero-link"><a href="{u("/motor/marcas/")}">{e(ui("rank.motor_link"))}</a></p>'
-                  if slug == 'motor' else '')
+                  if slug == 'motor' else
+                  f'\n        <p class="hero-link"><a href="{u("/ranking/compras-de-lujo/tiendas/")}">{e(ui("rank.shops_link"))}</a></p>'
+                  if slug == 'compras-de-lujo' else '')
     crumb = [(ui('crumb.home'), u(HOME)), (ui('crumb.rankings'), u(HOME) + '#rankings'), (short, None)]
     schema = CAT_SCHEMA.get(slug)
     ld_items = []
@@ -898,6 +900,82 @@ def build_directory():
     write('/motor/marcas/index.html', html_page.replace('</body>', DIR_SCRIPT + '\n</body>'))
 
 
+
+# ---------------- Directorio de tiendas insignia (compras) ----------------
+SHOP_BRANDS = ['Louis Vuitton', 'Hermès', 'Chanel', 'Cartier', 'Rolex', 'Gucci', 'Dior', 'Loewe']
+SHOP_CITIES = {'Madrid': 'madrid', 'Barcelona': 'barcelona', 'Marbella': 'marbella', 'Palma': 'palma'}
+
+
+def build_tiendas():
+    data = load('tiendas/lujo.json')
+    rows = data['tiendas']
+    cities = sorted({r['ciudad'] for r in rows}, key=lambda c: list(SHOP_CITIES).index(c) if c in SHOP_CITIES else 99)
+    chips = f'<button type="button" data-ciudad="todas" aria-pressed="true">{e(ui("zone.todas"))}</button>' + ''.join(
+        f'<button type="button" data-ciudad="{SHOP_CITIES.get(c, c.lower())}" aria-pressed="false">{e(c)}</button>' for c in cities)
+    sections = ''
+    for brand in SHOP_BRANDS:
+        stores = [r for r in rows if r['marca'] == brand]
+        if not stores:
+            continue
+        bid = re.sub('[^a-z]', '', brand.lower())
+        cards = ''
+        for r in stores:
+            ok = r['estado'].startswith(('verificado', 'contrastado'))
+            badge = (f'<span class="badge ok">{e(ui("dir.verified"))}</span>' if ok else f'<span class="badge">{e(ui("dir.unverified"))}</span>')
+            lines = [f'<p class="addr">{e(r["direccion"])}</p>']
+            if r.get('telefono'):
+                digits = re.sub(r'[^+0-9]', '', r['telefono'])
+                lines.append(f'<p class="tel"><a href="tel:{digits}">{e(r["telefono"])}</a></p>')
+            if r.get('horario'):
+                lines.append(f'<p class="muted">{e(tr(r["horario"]))}</p>')
+            if r.get('notas'):
+                lines.append(f'<p class="muted">{e(tr(r["notas"]))}</p>')
+            slug = SHOP_CITIES.get(r['ciudad'], r['ciudad'].lower())
+            cards += (f'\n            <li class="dealer" id="{r["id"]}" data-c="{slug}">'
+                      f'\n                <p class="city">{e(r["ciudad"])} {badge}</p>'
+                      f'\n                <h3>{e(r["nombre"])}</h3>'
+                      f'\n                {"".join(lines)}\n            </li>')
+        sections += (f'\n    <section class="wrap dir-brand" aria-labelledby="m-{bid}">'
+                     f'\n        <h2 id="m-{bid}">{e(brand)}</h2>'
+                     f'\n        <ul class="dealers">{cards}\n        </ul>\n    </section>')
+    crumb = [(ui('crumb.home'), u(HOME)), (t(CATS['compras-de-lujo']['corto']), u('/ranking/compras-de-lujo/')), (ui('shop.crumb'), None)]
+    ld_items = []
+    for n, r in enumerate(rows, 1):
+        item = {"@type": "Store", "name": r['nombre'], "brand": {"@type": "Brand", "name": r['marca']},
+                "address": {"@type": "PostalAddress", "streetAddress": r['direccion'], "addressCountry": "ES"}}
+        if r.get('telefono'):
+            item["telephone"] = r['telefono']
+        if coords(r):
+            item["geo"] = {"@type": "GeoCoordinates", "latitude": r['coordenadas']['lat'], "longitude": r['coordenadas']['lon']}
+        ld_items.append({"@type": "ListItem", "position": n, "item": item})
+    itemlist = {"@type": "ItemList", "name": ui('shop.title'), "inLanguage": LANG, "itemListElement": ld_items}
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">{e(ui('shop.eyebrow', updated=data['actualizado']))}</p>
+        <h1>{e(ui('shop.h1'))}</h1>
+        <p class="lead-text">{e(ui('shop.lead'))}</p>
+        <div class="chips left" role="group" aria-label="{e(ui('dir.filter_aria'))}">{chips}</div>
+    </section>
+{sections}
+    <section class="wrap method">
+        <div class="box">
+            <div>
+                <p class="eyebrow">{e(ui('dir.about'))}</p>
+                <p class="txt">{e(ui('shop.about_txt'))}</p>
+            </div>
+            <a href="{u('/ranking/compras-de-lujo/')}">{e(ui('shop.back'))}</a>
+        </div>
+    </section>
+</main>
+'''
+    path = '/ranking/compras-de-lujo/tiendas/'
+    html_page = page(path, f'{ui("shop.title")} · Mejor Imposible', ui('shop.desc'), [itemlist, bc_ld(crumb)], body)
+    write(path + 'index.html', html_page.replace('</body>', DIR_SCRIPT + '\n</body>'))
+
+
 # ---------------- Home ----------------
 def build_home():
     chips = ''.join(f'\n            <a href="{u(f"/ranking/{s}/")}">{e(t(CATS[s]["corto"]))}</a>' for s in HOME_CHIPS)
@@ -1041,7 +1119,7 @@ def build_destinos():
 
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
               + ['/motor/marcas/', '/metodologia/', '/destinos/']
-              + ['/ranking/' + r + '/' for r in ITEMS])
+              + ['/ranking/' + r + '/' for r in ITEMS] + ['/ranking/compras-de-lujo/tiendas/'])
 
 
 # ---------------- Sitemap ----------------
@@ -1073,6 +1151,7 @@ if __name__ == '__main__':
         for fn in os.listdir(os.path.join(DATA, 'planes')):
             build_plan(fn[:-5])
         build_directory()
+        build_tiendas()
         build_method()
         build_destinos()
     build_sitemap()

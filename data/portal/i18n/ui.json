@@ -958,5 +958,77 @@
   "de": "Weiter →",
   "pt": "Seguinte →",
   "it": "Successivo →"
+ },
+ "shop.h1": {
+  "es": "Tiendas insignia de lujo en España",
+  "en": "Luxury flagship stores in Spain",
+  "fr": "Boutiques de luxe en Espagne",
+  "de": "Luxus-Flagship-Stores in Spanien",
+  "pt": "Lojas de luxo em Espanha",
+  "it": "Negozi di lusso in Spagna"
+ },
+ "shop.crumb": {
+  "es": "Tiendas insignia",
+  "en": "Flagship stores",
+  "fr": "Boutiques phares",
+  "de": "Flagship-Stores",
+  "pt": "Lojas emblemáticas",
+  "it": "Flagship store"
+ },
+ "shop.eyebrow": {
+  "es": "Compras · Directorio · Actualizado {updated}",
+  "en": "Shopping · Directory · Updated {updated}",
+  "fr": "Shopping · Annuaire · Mis à jour {updated}",
+  "de": "Shopping · Verzeichnis · Aktualisiert {updated}",
+  "pt": "Compras · Diretório · Atualizado {updated}",
+  "it": "Shopping · Elenco · Aggiornato {updated}"
+ },
+ "shop.lead": {
+  "es": "Las boutiques de las grandes marcas en Madrid, Barcelona, Marbella y Palma, sin ordenar y sin precios. Solo dónde encontrarlas.",
+  "en": "The boutiques of the major brands in Madrid, Barcelona, Marbella and Palma, unranked and without prices. Just where to find them.",
+  "fr": "Les boutiques des grandes marques à Madrid, Barcelone, Marbella et Palma, sans classement et sans prix. Seulement où les trouver.",
+  "de": "Die Boutiquen der großen Marken in Madrid, Barcelona, Marbella und Palma, ohne Rangfolge und ohne Preise. Nur wo man sie findet.",
+  "pt": "As boutiques das grandes marcas em Madrid, Barcelona, Marbella e Palma, sem ordem e sem preços. Apenas onde as encontrar.",
+  "it": "Le boutique dei grandi marchi a Madrid, Barcellona, Marbella e Palma, senza classifica e senza prezzi. Solo dove trovarle."
+ },
+ "shop.about_txt": {
+  "es": "Las direcciones salen de las webs oficiales de las marcas, de la prensa y de guías. Los puntos marcados «Por verificar» tienen datos que no coinciden entre fuentes: confirma siempre con la marca antes de desplazarte.",
+  "en": "Addresses come from the brands' official websites, the press and guides. Entries marked \"To be verified\" have data that does not match across sources: always confirm with the brand before travelling.",
+  "fr": "Les adresses proviennent des sites officiels des marques, de la presse et de guides. Les points marqués « À vérifier » ont des données qui ne concordent pas entre les sources : confirmez toujours auprès de la marque avant de vous déplacer.",
+  "de": "Die Adressen stammen von den offiziellen Websites der Marken, aus der Presse und aus Reiseführern. Als „Noch zu prüfen“ markierte Einträge haben Angaben, die sich zwischen den Quellen widersprechen: Bitte vor der Anreise immer bei der Marke bestätigen.",
+  "pt": "As moradas vêm dos sites oficiais das marcas, da imprensa e de guias. Os pontos assinalados «Por verificar» têm dados que não coincidem entre fontes: confirme sempre com a marca antes de se deslocar.",
+  "it": "Gli indirizzi provengono dai siti ufficiali dei marchi, dalla stampa e da guide. I punti segnati «Da verificare» hanno dati che non coincidono tra le fonti: conferma sempre con il marchio prima di spostarti."
+ },
+ "shop.back": {
+  "es": "Ver el ranking de compras de lujo →",
+  "en": "See the luxury shopping ranking →",
+  "fr": "Voir le classement du shopping de luxe →",
+  "de": "Zum Ranking der Luxus-Shoppinggegenden →",
+  "pt": "Ver o ranking de compras de luxo →",
+  "it": "Vedi la classifica dello shopping di lusso →"
+ },
+ "shop.title": {
+  "es": "Tiendas insignia de marcas de lujo en España",
+  "en": "Luxury brand flagship stores in Spain",
+  "fr": "Boutiques phares de marques de luxe en Espagne",
+  "de": "Flagship-Stores von Luxusmarken in Spanien",
+  "pt": "Lojas emblemáticas de marcas de luxo em Espanha",
+  "it": "Flagship store di marchi di lusso in Spagna"
+ },
+ "shop.desc": {
+  "es": "Directorio de boutiques de Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior y Loewe en Madrid, Barcelona, Marbella y Palma, con dirección y estado de verificación.",
+  "en": "Directory of Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior and Loewe boutiques in Madrid, Barcelona, Marbella and Palma, with addresses and verification status.",
+  "fr": "Annuaire des boutiques Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior et Loewe à Madrid, Barcelone, Marbella et Palma, avec adresses et statut de vérification.",
+  "de": "Verzeichnis der Boutiquen von Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior und Loewe in Madrid, Barcelona, Marbella und Palma, mit Adressen und Prüfstatus.",
+  "pt": "Diretório das boutiques da Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior e Loewe em Madrid, Barcelona, Marbella e Palma, com moradas e estado de verificação.",
+  "it": "Elenco delle boutique di Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior e Loewe a Madrid, Barcellona, Marbella e Palma, con indirizzi e stato di verifica."
+ },
+ "rank.shops_link": {
+  "es": "Tiendas insignia de las grandes marcas →",
+  "en": "Flagship stores of the major brands →",
+  "fr": "Boutiques phares des grandes marques →",
+  "de": "Flagship-Stores der großen Marken →",
+  "pt": "Lojas emblemáticas das grandes marcas →",
+  "it": "Flagship store dei grandi marchi →"
  }
 }

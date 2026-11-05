@@ -73,6 +73,12 @@ if __name__ == '__main__':
         dl = json.load(f)
     if any([fill(d, force) for d in dl['concesionarios']]):
         save(dl_path, dl)
+    sp_path = os.path.join(DATA, 'tiendas', 'lujo.json')
+    if os.path.exists(sp_path):
+        with open(sp_path, encoding='utf-8') as f:
+            sp = json.load(f)
+        if any([fill(d, force) for d in sp['tiendas']]):
+            save(sp_path, sp)
     for cat in sorted(os.listdir(os.path.join(DATA, 'items'))):
         for fn in sorted(os.listdir(os.path.join(DATA, 'items', cat))):
             p = os.path.join(DATA, 'items', cat, fn)

@@ -1,0 +1,471 @@
+{
+  "actualizado": "2026-11-05",
+  "nota": "Boutiques de grandes marcas en Madrid, Barcelona, Marbella y Palma. Datos de webs oficiales, prensa y guías.",
+  "tiendas": [
+    {
+      "id": "lv-madrid-serrano",
+      "marca": "Louis Vuitton",
+      "ciudad": "Madrid",
+      "nombre": "Louis Vuitton Madrid Serrano",
+      "direccion": "Calle de Serrano 66, 28001 Madrid",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://us.louisvuitton.com/eng-us/point-of-sale/spain/louis-vuitton-madrid-serrano",
+        "https://uk.louisvuitton.com/eng-gb/stores/spain"
+      ],
+      "busqueda": "Calle de Serrano 66 Madrid",
+      "telefono": "+34 913 75 30 70",
+      "coordenadas": {
+        "lat": 40.42964,
+        "lon": -3.68688
+      },
+      "geo_fuente": "Louis Vuitton, 66, Calle de Serrano, Castellana, Salamanca, Madrid, Comunidad de Madrid, 2"
+    },
+    {
+      "id": "lv-madrid-canalejas",
+      "marca": "Louis Vuitton",
+      "ciudad": "Madrid",
+      "nombre": "Louis Vuitton Galería Canalejas",
+      "direccion": "Plaza de Canalejas 1, 28014 Madrid",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://uk.louisvuitton.com/eng-gb/point-of-sale/spain/louis-vuitton-madrid-galeria-canalejas",
+        "https://uk.louisvuitton.com/eng-gb/stores/spain"
+      ],
+      "busqueda": "Plaza de Canalejas 1 Madrid",
+      "coordenadas": {
+        "lat": 40.41662,
+        "lon": -3.70046
+      },
+      "geo_fuente": "Plaza de Canalejas, Sol, Centro, Madrid, Comunidad de Madrid, 28014, España"
+    },
+    {
+      "id": "lv-barcelona-pg",
+      "marca": "Louis Vuitton",
+      "ciudad": "Barcelona",
+      "nombre": "Louis Vuitton Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 71, 08008 Barcelona",
+      "estado": "por verificar: el número no coincide entre fuentes",
+      "fuentes": [
+        "https://uk.louisvuitton.com/eng-gb/stores/spain"
+      ],
+      "busqueda": "Passeig de Gràcia 71 Barcelona",
+      "notas": "La web oficial indica el número 71 y otra fuente el 80; la boutique principal estuvo en reformas.",
+      "coordenadas": {
+        "lat": 41.3935,
+        "lon": 2.16274
+      },
+      "geo_fuente": "71, Passeig de Gràcia (lateral Llobregat), la Dreta de l'Eixample, l'Eixample, Barcelona, "
+    },
+    {
+      "id": "lv-marbella-banus",
+      "marca": "Louis Vuitton",
+      "ciudad": "Marbella",
+      "nombre": "Louis Vuitton Puerto Banús",
+      "direccion": "Muelle Ribera, Casa N, 29660 Marbella",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://uk.louisvuitton.com/eng-gb/stores/spain"
+      ],
+      "busqueda": "Puerto Banús, Marbella",
+      "coordenadas": {
+        "lat": 36.4889,
+        "lon": -4.95295
+      },
+      "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+    },
+    {
+      "id": "lv-palma-born",
+      "marca": "Louis Vuitton",
+      "ciudad": "Palma",
+      "nombre": "Louis Vuitton Palma",
+      "direccion": "Passeig des Born 19, 07012 Palma",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://uk.louisvuitton.com/eng-gb/stores/spain"
+      ],
+      "busqueda": "Passeig des Born 19 Palma",
+      "coordenadas": {
+        "lat": 39.56983,
+        "lon": 2.64622
+      },
+      "geo_fuente": "19, Passeig des Born, La Llotja - Born, Canamunt, Districte Centre, Palma, Illes Balears, "
+    },
+    {
+      "id": "hermes-madrid-ortega",
+      "marca": "Hermès",
+      "ciudad": "Madrid",
+      "nombre": "Hermès José Ortega y Gasset",
+      "direccion": "Calle José Ortega y Gasset 12, 28006 Madrid",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://www.hermes.cn/es/es/find-store/espana/madrid/hermes-jose-ortega-y-gasset-IAENQ6HR"
+      ],
+      "busqueda": "Calle de José Ortega y Gasset 12 Madrid",
+      "horario": "Lunes a sábado, 11:00-19:00; domingo cerrado",
+      "coordenadas": {
+        "lat": 40.43024,
+        "lon": -3.68544
+      },
+      "geo_fuente": "12, Calle de José Ortega y Gasset, Castellana, Salamanca, Madrid, Comunidad de Madrid, 280"
+    },
+    {
+      "id": "hermes-barcelona-pg",
+      "marca": "Hermès",
+      "ciudad": "Barcelona",
+      "nombre": "Hermès Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 81, 08008 Barcelona",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://www.hermes.com/mx/es/find-store/espana/barcelona/"
+      ],
+      "busqueda": "Passeig de Gràcia 81 Barcelona",
+      "telefono": "+34 934 88 05 40",
+      "coordenadas": {
+        "lat": 41.39419,
+        "lon": 2.1619
+      },
+      "geo_fuente": "81, Passeig de Gràcia (lateral Llobregat), la Dreta de l'Eixample, l'Eixample, Barcelona, "
+    },
+    {
+      "id": "hermes-marbella",
+      "marca": "Hermès",
+      "ciudad": "Marbella",
+      "nombre": "Hermès Marbella (Puerto Banús)",
+      "direccion": "Calle Ribera 18, 29660 Marbella",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://www.hermes.com/mx/es/find-store/espana/marbella/hermes-marbella-pop-up-HFVJ2LSO/"
+      ],
+      "busqueda": "Puerto Banús, Marbella",
+      "telefono": "+34 952 81 71 25",
+      "notas": "La ficha oficial la llama «pop-up»; otra guía indica el número 11.",
+      "coordenadas": {
+        "lat": 36.4889,
+        "lon": -4.95295
+      },
+      "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+    },
+    {
+      "id": "chanel-madrid-ortega",
+      "marca": "Chanel",
+      "ciudad": "Madrid",
+      "nombre": "Chanel José Ortega y Gasset",
+      "direccion": "Calle José Ortega y Gasset 16, 28006 Madrid",
+      "estado": "contrastado en varias fuentes (guía de terceros y OpenStreetMap)",
+      "fuentes": [
+        "https://www.chanel.com/es/boutiques/"
+      ],
+      "busqueda": "Chanel Calle de José Ortega y Gasset 16 Madrid",
+      "telefono": "+34 914 313 036",
+      "coordenadas": {
+        "lat": 40.43017,
+        "lon": -3.68465
+      },
+      "geo_fuente": "Chanel, 16, Calle de José Ortega y Gasset, Castellana, Salamanca, Madrid, Comunidad de Mad"
+    },
+    {
+      "id": "chanel-barcelona-pg",
+      "marca": "Chanel",
+      "ciudad": "Barcelona",
+      "nombre": "Chanel Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 70, 08007 Barcelona",
+      "estado": "contrastado en varias fuentes (guía de terceros y OpenStreetMap)",
+      "fuentes": [
+        "https://www.chanel.com/es/boutiques/"
+      ],
+      "busqueda": "Passeig de Gràcia 68 Barcelona",
+      "coordenadas": {
+        "lat": 41.39528,
+        "lon": 2.16106
+      },
+      "geo_fuente": "Passeig de Gràcia, la Dreta de l'Eixample, l'Eixample, Barcelona, Barcelonès, Barcelona, C"
+    },
+    {
+      "id": "chanel-marbella-club",
+      "marca": "Chanel",
+      "ciudad": "Marbella",
+      "nombre": "Chanel Marbella Club (estacional)",
+      "direccion": "Hotel Marbella Club, Bulevar Príncipe Alfonso de Hohenlohe s/n, 29602 Marbella",
+      "estado": "contrastado en varias fuentes (localizador oficial de Chanel y prensa)",
+      "fuentes": [
+        "https://www.chanel.com/ch-fr/storelocator/store/chanel-marbella-112610/",
+        "https://www.neo2.com/chanel-marbella-club-boutique-temporal/"
+      ],
+      "busqueda": "Marbella Club Hotel Marbella",
+      "telefono": "+34 952 86 74 14",
+      "notas": "Boutique estacional; en 2023 abrió del 11 de abril al 31 de octubre.",
+      "coordenadas": {
+        "lat": 36.50652,
+        "lon": -4.91922
+      },
+      "geo_fuente": "Marbella Club Hotel, Bulevar del Príncipe Alfonso de Hohenlohe, Marbella Real, El Vicario,"
+    },
+    {
+      "id": "cartier-madrid-serrano",
+      "marca": "Cartier",
+      "ciudad": "Madrid",
+      "nombre": "Cartier Serrano",
+      "direccion": "Calle Serrano 74, 28006 Madrid",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://stores.cartier.com/spain/madrid/madrid/c/-serrano,-74"
+      ],
+      "busqueda": "Calle de Serrano 74 Madrid",
+      "notas": "El listado oficial anunció cierre por reformas hasta el 31 de marzo de 2026.",
+      "coordenadas": {
+        "lat": 40.43068,
+        "lon": -3.68671
+      },
+      "geo_fuente": "74, Calle de Serrano, Castellana, Salamanca, Madrid, Comunidad de Madrid, 28006, España"
+    },
+    {
+      "id": "cartier-madrid-canalejas",
+      "marca": "Cartier",
+      "ciudad": "Madrid",
+      "nombre": "Cartier Galería Canalejas",
+      "direccion": "Plaza de Canalejas 1, 28014 Madrid",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://stores.cartier.com/en_es/spain/madrid/madrid/plaza-canalejas,-1"
+      ],
+      "busqueda": "Plaza de Canalejas 1 Madrid",
+      "coordenadas": {
+        "lat": 40.41662,
+        "lon": -3.70046
+      },
+      "geo_fuente": "Plaza de Canalejas, Sol, Centro, Madrid, Comunidad de Madrid, 28014, España"
+    },
+    {
+      "id": "cartier-barcelona-pg",
+      "marca": "Cartier",
+      "ciudad": "Barcelona",
+      "nombre": "Cartier Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 82, 08008 Barcelona",
+      "estado": "contrastado en varias fuentes (prensa)",
+      "fuentes": [
+        "https://forbes.es/empresas/180651/cartier-inaugura-su-emblematica-boutique-de-paseo-de-gracia-de-barcelona/"
+      ],
+      "busqueda": "Passeig de Gràcia 82 Barcelona",
+      "coordenadas": {
+        "lat": 41.39439,
+        "lon": 2.16263
+      },
+      "geo_fuente": "82, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eixample, Barcelona, Barc"
+    },
+    {
+      "id": "rolex-madrid-castellana",
+      "marca": "Rolex",
+      "ciudad": "Madrid",
+      "nombre": "Boutique Rolex Castellana",
+      "direccion": "Calle Raimundo Fernández Villaverde 79, 28003 Madrid",
+      "estado": "verificado en la web oficial de la marca (localizador de Rolex)",
+      "fuentes": [
+        "https://www.rolex.com/en-sg/rolex-dealers/rswi_122118-madrid-spain"
+      ],
+      "busqueda": "Calle de Raimundo Fernández Villaverde 79 Madrid",
+      "coordenadas": {
+        "lat": 40.4477,
+        "lon": -3.6939
+      },
+      "geo_fuente": "Honest Greens, 79, Calle de Raimundo Fernández Villaverde, Complejo AZCA, Cuatro Caminos, "
+    },
+    {
+      "id": "rolex-madrid-canalejas",
+      "marca": "Rolex",
+      "ciudad": "Madrid",
+      "nombre": "Boutique Rolex Canalejas",
+      "direccion": "Plaza de Canalejas 1, 28014 Madrid",
+      "estado": "verificado en la web oficial de la marca (localizador de Rolex)",
+      "fuentes": [
+        "https://www.rolex.com/es/rolex-dealers/joyeriagrassy-968/rswi_133216-madrid-spain",
+        "https://www.rolex.com/en-sg/rolex-dealers/joyeriagrassy-968/rswi_2438-madrid-spain"
+      ],
+      "busqueda": "Plaza de Canalejas 1 Madrid",
+      "coordenadas": {
+        "lat": 40.41662,
+        "lon": -3.70046
+      },
+      "geo_fuente": "Plaza de Canalejas, Sol, Centro, Madrid, Comunidad de Madrid, 28014, España"
+    },
+    {
+      "id": "rolex-madrid-ortega",
+      "marca": "Rolex",
+      "ciudad": "Madrid",
+      "nombre": "Boutique Rolex José Ortega y Gasset",
+      "direccion": "Calle José Ortega y Gasset 17, 28006 Madrid",
+      "estado": "verificado en la web oficial de la marca (localizador de Rolex)",
+      "fuentes": [
+        "https://www.rolex.com/es/rolex-dealers/joyeriagrassy-968/rswi_133216-madrid-spain",
+        "https://www.rolex.com/en-sg/rolex-dealers/joyeriagrassy-968/rswi_2438-madrid-spain"
+      ],
+      "busqueda": "Calle de José Ortega y Gasset 17 Madrid",
+      "coordenadas": {
+        "lat": 40.43054,
+        "lon": -3.6855
+      },
+      "geo_fuente": "Mas y Calvet, 17, Calle de José Ortega y Gasset, Castellana, Salamanca, Madrid, Comunidad "
+    },
+    {
+      "id": "rolex-barcelona-pg",
+      "marca": "Rolex",
+      "ciudad": "Barcelona",
+      "nombre": "Boutique Rolex Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 75, 08008 Barcelona",
+      "estado": "verificado en la web oficial de la marca (localizador de Rolex)",
+      "fuentes": [
+        "https://www.rolex.com/en-my/rolex-dealers/rswi_106113-barcelona-spain",
+        "https://www.rolex.com/nl/rolex-dealers/tous-296/rswi_17315-barcelona-spain"
+      ],
+      "busqueda": "Passeig de Gràcia 75 Barcelona",
+      "coordenadas": {
+        "lat": 41.39376,
+        "lon": 2.16224
+      },
+      "geo_fuente": "Monument Hotel, 75, Passeig de Gràcia (lateral Llobregat), la Dreta de l'Eixample, l'Eixam"
+    },
+    {
+      "id": "rolex-palma-born",
+      "marca": "Rolex",
+      "ciudad": "Palma",
+      "nombre": "Boutique Rolex Palma (Can Alomar)",
+      "direccion": "Can Alomar, Passeig des Born, Palma",
+      "estado": "contrastado en varias fuentes (prensa local)",
+      "fuentes": [
+        "https://amp.majorcadailybulletin.com/news/local/2026/09/05/145533/first-rolex-boutique-mallorca-now-open.html"
+      ],
+      "busqueda": "Passeig des Born Palma",
+      "notas": "Primera boutique Rolex de Mallorca, abierta en septiembre de 2026.",
+      "coordenadas": {
+        "lat": 39.57036,
+        "lon": 2.64671
+      },
+      "geo_fuente": "Passeig des Born, Canavall, Districte Centre, Palma, Illes Balears, España"
+    },
+    {
+      "id": "gucci-madrid-serrano",
+      "marca": "Gucci",
+      "ciudad": "Madrid",
+      "nombre": "Gucci Serrano",
+      "direccion": "Calle de Serrano 49, 28006 Madrid",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://www.shopenauer.com/en/store/gucci-madrid"
+      ],
+      "busqueda": "Calle de Serrano 49 Madrid",
+      "telefono": "+34 914 311 717",
+      "horario": "Lunes a viernes, 10:00-20:30",
+      "coordenadas": {
+        "lat": 40.43063,
+        "lon": -3.68709
+      },
+      "geo_fuente": "Gucci, 49, Calle de Serrano, Castellana, Salamanca, Madrid, Comunidad de Madrid, 28006, Es"
+    },
+    {
+      "id": "gucci-barcelona-pg",
+      "marca": "Gucci",
+      "ciudad": "Barcelona",
+      "nombre": "Gucci Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 76, 08008 Barcelona",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://www.barcelona-tourist-guide.com/ru/magaziny/gucci-magaziny-v-barselone.html"
+      ],
+      "busqueda": "Passeig de Gràcia 76 Barcelona",
+      "notas": "Un registro antiguo indica el número 56.",
+      "coordenadas": {
+        "lat": 41.39376,
+        "lon": 2.16343
+      },
+      "geo_fuente": "76, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eixample, Barcelona, Barc"
+    },
+    {
+      "id": "gucci-marbella-banus",
+      "marca": "Gucci",
+      "ciudad": "Marbella",
+      "nombre": "Gucci Puerto Banús",
+      "direccion": "Muelle de Ribera, Puerto Banús, 29660 Marbella",
+      "estado": "por verificar: sin número",
+      "fuentes": [
+        "https://puerto-banus.com/en/?p=31028"
+      ],
+      "busqueda": "Puerto Banús, Marbella",
+      "notas": "Número por confirmar.",
+      "coordenadas": {
+        "lat": 36.4889,
+        "lon": -4.95295
+      },
+      "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+    },
+    {
+      "id": "dior-madrid-canalejas",
+      "marca": "Dior",
+      "ciudad": "Madrid",
+      "nombre": "Dior Galería Canalejas",
+      "direccion": "Galería Canalejas, Calle de Sevilla 4, 28014 Madrid",
+      "estado": "por verificar: una sola fuente",
+      "fuentes": [
+        "https://dk.fashionnetwork.com/news/Dior-opens-its-largest-store-in-spain-in-galeria-canalejas,1510817.html"
+      ],
+      "busqueda": "Calle de Sevilla 4 Madrid",
+      "notas": "También hay una tienda en José Ortega y Gasset; el número no coincide entre fuentes.",
+      "coordenadas": {
+        "lat": 40.41704,
+        "lon": -3.69996
+      },
+      "geo_fuente": "Hotel Quatro Puerta del Sol, 4, Calle de Sevilla, Barrio de las Letras, Cortes, Centro, Ma"
+    },
+    {
+      "id": "dior-barcelona-pg",
+      "marca": "Dior",
+      "ciudad": "Barcelona",
+      "nombre": "Dior Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 74, 08008 Barcelona",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://www.dior.com/fashion/stores/en_dk/spain/barcelona/passeig-de-gracia-74"
+      ],
+      "busqueda": "Passeig de Gràcia 74 Barcelona",
+      "coordenadas": {
+        "lat": 41.39364,
+        "lon": 2.16357
+      },
+      "geo_fuente": "74, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eixample, Barcelona, Barc"
+    },
+    {
+      "id": "loewe-madrid-serrano",
+      "marca": "Loewe",
+      "ciudad": "Madrid",
+      "nombre": "Loewe Serrano",
+      "direccion": "Calle de Serrano 34, 28001 Madrid",
+      "estado": "contrastado en varias fuentes (prensa y OpenStreetMap)",
+      "fuentes": [
+        "https://www.modaes.com/empresas/loewe-abre-en-madrid-su-mayor-tienda-del-mundo"
+      ],
+      "busqueda": "Loewe Calle de Serrano 34 Madrid",
+      "coordenadas": {
+        "lat": 40.42521,
+        "lon": -3.68768
+      },
+      "geo_fuente": "Loewe, 34, Calle de Serrano, Recoletos, Salamanca, Madrid, Comunidad de Madrid, 28001, Esp"
+    },
+    {
+      "id": "loewe-marbella-banus",
+      "marca": "Loewe",
+      "ciudad": "Marbella",
+      "nombre": "Loewe Puerto Banús",
+      "direccion": "Calle Ribera, Casa 6, Puerto Banús, 29660 Marbella",
+      "estado": "por verificar: una sola fuente",
+      "fuentes": [
+        "https://www.modaes.com/empresas/loewe-a-la-caza-del-turista-abre-en-puerto-banus"
+      ],
+      "busqueda": "Puerto Banús, Marbella",
+      "notas": "Número por confirmar.",
+      "coordenadas": {
+        "lat": 36.4889,
+        "lon": -4.95295
+      },
+      "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+    }
+  ]
+}
