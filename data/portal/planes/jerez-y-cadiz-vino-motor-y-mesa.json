@@ -1,0 +1,119 @@
+{
+  "slug": "jerez-y-cadiz-vino-motor-y-mesa",
+  "orden": 11,
+  "titulo": {
+    "es": "Jerez y Cádiz: vino, motor y mesa"
+  },
+  "meta": {
+    "es": "Plan completo · 2 días · Vino y motor"
+  },
+  "meta_corta": {
+    "es": "2 días · Vino y motor"
+  },
+  "lead": {
+    "es": "Una de las mejores bodegas del mundo, un circuito de MotoGP y tres estrellas Michelin frente a la bahía de Cádiz."
+  },
+  "foto_portada": {
+    "es": "bodega en Jerez"
+  },
+  "portada_ref": "bodegas/gonzalez-byass-tio-pepe",
+  "zona": "andalucia",
+  "tipo_turista": "Vino",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Jerez"
+      }
+    },
+    {
+      "tipo": "bodega",
+      "ref": "bodegas/gonzalez-byass-tio-pepe"
+    },
+    {
+      "tipo": "coche",
+      "ref": "motor/circuito-de-jerez-angel-nieto"
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/aponiente"
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Jerez"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Jerez"
+          },
+          "por_que": {
+            "es": "A unos 15 minutos del centro de Jerez."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Bodega",
+          "tono": "oscuro",
+          "ref": "bodegas/gonzalez-byass-tio-pepe"
+        },
+        {
+          "tipo": "Circuito",
+          "tono": "claro",
+          "ref": "motor/circuito-de-jerez-angel-nieto",
+          "por_que": {
+            "es": "A unos 15 minutos del centro de Jerez."
+          }
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "El Puerto de Santa María"
+      },
+      "pasos": [
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "ref": "restaurantes/aponiente",
+          "por_que": {
+            "es": "A unos 20 minutos de Jerez: tres estrellas Michelin junto a la bahía de Cádiz."
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Jerez"
+          },
+          "por_que": {
+            "es": "A unos 20 minutos de El Puerto de Santa María."
+          },
+          "foto": {
+            "es": "carretera de acceso"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Jerez"
+      },
+      "min": 15
+    },
+    {
+      "nombre": {
+        "es": "Aeropuerto de Sevilla"
+      },
+      "min": 60
+    }
+  ]
+}

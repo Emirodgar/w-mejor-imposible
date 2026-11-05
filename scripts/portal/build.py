@@ -410,6 +410,45 @@ def ranking_entries(slug):
     return out, t(rk['actualizado'])
 
 
+def others_html(slug):
+    """Apartado "Otros": lugares fuera del TOP10 con premio o presentes en los planes (ítem con ficha o solo nombre)."""
+    rk = load(f'rankings/{slug}.json')
+    if not rk.get('otros'):
+        return ''
+    guia = load('michelin/guia-2026.json')['restaurantes'] if slug == 'restaurantes' else []
+    plans = {p['slug']: p for p in all_plans()}
+    rows = ''
+    for o in rk['otros']:
+        if o.get('ref'):
+            it = ITEMS[o['ref']]
+            name, place = it['nombre'], it['lugar']
+            m = next((r for r in guia if r.get('ref') == o['ref']), None)
+            href = item_url(o['ref'])
+        else:
+            m = next((r for r in guia if r['nombre'] == o['nombre']), None)
+            name, place, href = o['nombre'], (m['ciudad'] if m else o.get('lugar', '')), None
+        stars = m['estrellas'] if m else 0
+        badge = ui('michelin.star1' if stars == 1 else 'michelin.star2', n=stars) if stars else ''
+        notes = ' · '.join(([badge] if badge else []) + [
+            ui('rank.others_plan', plan=t(plans[sl]['titulo'])) for sl in o.get('planes', [])])
+        inner = (f'<span class="nm">{e(name)}</span><span class="pl">{e(place)}</span>'
+                 f'<span class="note">{e(notes)}</span>')
+        if href:
+            rows += f'''
+            <li><a href="{href}">{inner}<span class="arrow" aria-hidden="true">→</span></a></li>'''
+        else:
+            rows += f'''
+            <li><div class="row">{inner}</div></li>'''
+    return f'''
+    <section class="wrap rest others-more" id="otros" aria-labelledby="otros-h">
+        <h2 id="otros-h">{e(ui('rank.others_h'))}</h2>
+        <p class="others-lead">{e(ui('rank.others_lead'))}</p>
+        <ol class="compact-list">{rows}
+        </ol>
+    </section>
+'''
+
+
 def build_rank(slug):
     c = CATS[slug]
     entries, updated = ranking_entries(slug)
@@ -476,7 +515,7 @@ def build_rank(slug):
         <ol class="compact-list">{restli}
         </ol>
     </section>
-
+{others_html(slug)}
     <section class="wrap method" id="metodologia">
         <div class="box">
             <div>

@@ -13,7 +13,86 @@
     "restaurantes/arzak",
     "restaurantes/azurmendi",
     "restaurantes/mugaritz",
-    "restaurantes/skina",
-    "restaurantes/voro"
+    "restaurantes/skina"
+  ],
+  "otros": [
+    {
+      "ref": "restaurantes/voro",
+      "planes": [
+        "mallorca-mar-golf-y-spa"
+      ]
+    },
+    {
+      "nombre": "Akelarre",
+      "planes": [
+        "san-sebastian-mesa-a-mesa"
+      ]
+    },
+    {
+      "nombre": "Casa Marcial"
+    },
+    {
+      "nombre": "ABaC"
+    },
+    {
+      "nombre": "Cocina Hermanos Torres"
+    },
+    {
+      "nombre": "Lasarte"
+    },
+    {
+      "nombre": "Atrio"
+    },
+    {
+      "nombre": "Noor"
+    },
+    {
+      "nombre": "Martín Berasategui"
+    },
+    {
+      "nombre": "Cenador de Amós"
+    },
+    {
+      "nombre": "El Portal de Echaurren",
+      "planes": [
+        "la-rioja-de-bodega-en-bodega"
+      ]
+    },
+    {
+      "nombre": "Venta Moncalvillo",
+      "planes": [
+        "la-rioja-de-bodega-en-bodega"
+      ]
+    },
+    {
+      "nombre": "Elkano",
+      "planes": [
+        "san-sebastian-mesa-a-mesa"
+      ]
+    },
+    {
+      "nombre": "BACK",
+      "planes": [
+        "marbella-golf-y-mesa"
+      ]
+    },
+    {
+      "nombre": "Massana",
+      "planes": [
+        "girona-golf-y-can-roca"
+      ]
+    },
+    {
+      "nombre": "Unic",
+      "planes": [
+        "ibiza-y-formentera-en-barco"
+      ]
+    },
+    {
+      "nombre": "La Gaia",
+      "planes": [
+        "ibiza-y-formentera-en-barco"
+      ]
+    }
   ]
 }

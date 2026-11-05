@@ -1046,5 +1046,29 @@
     "de": "Luxus-Shopping ansehen: {z}",
     "pt": "Ver compras de luxo em {z}",
     "it": "Vedi lo shopping di lusso: {z}"
+  },
+  "rank.others_h": {
+    "es": "Otros lugares destacados",
+    "en": "Other notable places",
+    "fr": "Autres adresses remarquables",
+    "de": "Weitere bemerkenswerte Adressen",
+    "pt": "Outros lugares de destaque",
+    "it": "Altri luoghi di rilievo"
+  },
+  "rank.others_lead": {
+    "es": "Fuera del TOP10, pero con premios o presentes en nuestros planes. Siguen en la guía para que sus fichas se mantengan en el tiempo.",
+    "en": "Outside the top 10, but award-winning or featured in our plans. They stay in the guide so their pages remain over time.",
+    "fr": "Hors du top 10, mais récompensées ou présentes dans nos plans. Elles restent dans le guide pour que leurs fiches durent dans le temps.",
+    "de": "Außerhalb der Top 10, aber ausgezeichnet oder in unseren Plänen enthalten. Sie bleiben im Guide, damit ihre Seiten dauerhaft erhalten bleiben.",
+    "pt": "Fora do top 10, mas premiados ou presentes nos nossos planos. Continuam no guia para que as suas fichas se mantenham ao longo do tempo.",
+    "it": "Fuori dalla top 10, ma premiati o presenti nei nostri piani. Restano nella guida perché le loro schede si mantengano nel tempo."
+  },
+  "rank.others_plan": {
+    "es": "En el plan: {plan}",
+    "en": "In the plan: {plan}",
+    "fr": "Dans le plan : {plan}",
+    "de": "Im Plan: {plan}",
+    "pt": "No plano: {plan}",
+    "it": "Nel piano: {plan}"
   }
 }

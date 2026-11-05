@@ -1,0 +1,150 @@
+{
+  "slug": "barcelona-passeig-de-gracia-y-mesa",
+  "orden": 10,
+  "titulo": {
+    "es": "Barcelona: Passeig de Gràcia y mesa"
+  },
+  "meta": {
+    "es": "Plan completo · 2 días · Compras y gastronomía"
+  },
+  "meta_corta": {
+    "es": "2 días · Compras y gastronomía"
+  },
+  "lead": {
+    "es": "El Passeig de Gràcia a pie, un outlet de lujo a las afueras, el puerto olímpico, un spa y una mesa con tres estrellas Michelin."
+  },
+  "foto_portada": {
+    "es": "Passeig de Gràcia"
+  },
+  "portada_ref": "compras-de-lujo/passeig-de-gracia",
+  "zona": "cataluna",
+  "tipo_turista": "Compras",
+  "ruta": [
+    {
+      "tipo": "llegada",
+      "nombre": {
+        "es": "Aeropuerto de Barcelona-El Prat"
+      }
+    },
+    {
+      "tipo": "hotel",
+      "ref": "hoteles-de-lujo/mandarin-oriental-barcelona"
+    },
+    {
+      "tipo": "compras",
+      "ref": "compras-de-lujo/passeig-de-gracia"
+    },
+    {
+      "tipo": "barco",
+      "ref": "yates-y-calas/port-olimpic"
+    },
+    {
+      "tipo": "descanso",
+      "ref": "spas/spa-mandarin-oriental-barcelona"
+    },
+    {
+      "tipo": "cena",
+      "ref": "restaurantes/disfrutar"
+    }
+  ],
+  "dias": [
+    {
+      "titulo": {
+        "es": "Llegada y Passeig de Gràcia"
+      },
+      "pasos": [
+        {
+          "tipo": "Vuelo",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Barcelona-El Prat"
+          },
+          "por_que": {
+            "es": "A unos 25 minutos del centro de Barcelona."
+          },
+          "foto": {
+            "es": "terminal"
+          }
+        },
+        {
+          "tipo": "Hotel",
+          "tono": "oscuro",
+          "ref": "hoteles-de-lujo/mandarin-oriental-barcelona"
+        },
+        {
+          "tipo": "Compras",
+          "tono": "claro",
+          "ref": "compras-de-lujo/passeig-de-gracia"
+        },
+        {
+          "tipo": "Boutiques",
+          "tono": "oscuro",
+          "nombre": {
+            "es": "Boutiques insignia"
+          },
+          "por_que": {
+            "es": "Louis Vuitton, Hermès, Chanel, Cartier, Prada, Bulgari, Tiffany & Co. y otras marcas en un mismo paseo, con la dirección de cada una."
+          },
+          "foto": {
+            "es": "escaparate en el Passeig de Gràcia"
+          },
+          "enlace": "/ranking/compras-de-lujo/tiendas/?ciudad=barcelona"
+        }
+      ]
+    },
+    {
+      "titulo": {
+        "es": "Outlet, mar y mesa"
+      },
+      "pasos": [
+        {
+          "tipo": "Compras",
+          "tono": "claro",
+          "ref": "compras-de-lujo/la-roca-village",
+          "por_que": {
+            "es": "A unos 40 minutos de Barcelona: un outlet de lujo en el Vallès Oriental."
+          }
+        },
+        {
+          "tipo": "Barco",
+          "tono": "oscuro",
+          "ref": "yates-y-calas/port-olimpic"
+        },
+        {
+          "tipo": "Spa",
+          "tono": "claro",
+          "ref": "spas/spa-mandarin-oriental-barcelona"
+        },
+        {
+          "tipo": "Cena",
+          "tono": "oscuro",
+          "ref": "restaurantes/disfrutar",
+          "por_que": {
+            "es": "A unos 10 minutos del Passeig de Gràcia: tres estrellas Michelin."
+          }
+        },
+        {
+          "tipo": "Regreso",
+          "tono": "claro",
+          "nombre": {
+            "es": "Aeropuerto de Barcelona-El Prat"
+          },
+          "por_que": {
+            "es": "A unos 25 minutos del centro de Barcelona."
+          },
+          "foto": {
+            "es": "carretera de acceso"
+          }
+        }
+      ]
+    }
+  ],
+  "llegar": [
+    {
+      "nombre": {
+        "es": "Aeropuerto de Barcelona-El Prat"
+      },
+      "min": 25
+    }
+  ]
+}
