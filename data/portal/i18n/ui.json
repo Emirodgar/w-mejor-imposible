@@ -1078,5 +1078,213 @@
     "de": "Kontext",
     "pt": "Contexto",
     "it": "Contesto"
+  },
+  "nav.search": {
+    "es": "Buscar",
+    "en": "Search",
+    "fr": "Rechercher",
+    "de": "Suchen",
+    "pt": "Pesquisar",
+    "it": "Cerca"
+  },
+  "search.title": {
+    "es": "Buscador de lugares de lujo en España",
+    "en": "Search luxury places in Spain",
+    "fr": "Recherche de lieux de luxe en Espagne",
+    "de": "Suche nach Luxusadressen in Spanien",
+    "pt": "Pesquisa de lugares de luxo em Espanha",
+    "it": "Ricerca di luoghi di lusso in Spagna"
+  },
+  "search.h1": {
+    "es": "Buscar",
+    "en": "Search",
+    "fr": "Rechercher",
+    "de": "Suchen",
+    "pt": "Pesquisar",
+    "it": "Cerca"
+  },
+  "search.lead": {
+    "es": "Hoteles, restaurantes, golf, clubes y más. Escribe un lugar, una ciudad o una categoría.",
+    "en": "Hotels, restaurants, golf, clubs and more. Type a place, a city or a category.",
+    "fr": "Hôtels, restaurants, golf, clubs et plus encore. Saisissez un lieu, une ville ou une catégorie.",
+    "de": "Hotels, Restaurants, Golf, Clubs und mehr. Geben Sie einen Ort, eine Stadt oder eine Kategorie ein.",
+    "pt": "Hotéis, restaurantes, golfe, clubes e mais. Escreva um lugar, uma cidade ou uma categoria.",
+    "it": "Hotel, ristoranti, golf, club e altro. Scrivi un luogo, una città o una categoria."
+  },
+  "search.label": {
+    "es": "Buscar un lugar",
+    "en": "Search for a place",
+    "fr": "Rechercher un lieu",
+    "de": "Einen Ort suchen",
+    "pt": "Pesquisar um lugar",
+    "it": "Cerca un luogo"
+  },
+  "search.placeholder": {
+    "es": "Marbella, spa, golf…",
+    "en": "Marbella, spa, golf…",
+    "fr": "Marbella, spa, golf…",
+    "de": "Marbella, Spa, Golf…",
+    "pt": "Marbella, spa, golfe…",
+    "it": "Marbella, spa, golf…"
+  },
+  "search.cat": {
+    "es": "Categoría",
+    "en": "Category",
+    "fr": "Catégorie",
+    "de": "Kategorie",
+    "pt": "Categoria",
+    "it": "Categoria"
+  },
+  "search.zone": {
+    "es": "Zona",
+    "en": "Area",
+    "fr": "Zone",
+    "de": "Region",
+    "pt": "Zona",
+    "it": "Zona"
+  },
+  "search.all_cats": {
+    "es": "Todas las categorías",
+    "en": "All categories",
+    "fr": "Toutes les catégories",
+    "de": "Alle Kategorien",
+    "pt": "Todas as categorias",
+    "it": "Tutte le categorie"
+  },
+  "search.none": {
+    "es": "No hay resultados. Prueba con otra palabra o quita un filtro.",
+    "en": "No results. Try another word or remove a filter.",
+    "fr": "Aucun résultat. Essayez un autre mot ou retirez un filtre.",
+    "de": "Keine Ergebnisse. Versuchen Sie ein anderes Wort oder entfernen Sie einen Filter.",
+    "pt": "Sem resultados. Tente outra palavra ou retire um filtro.",
+    "it": "Nessun risultato. Prova un'altra parola o rimuovi un filtro."
+  },
+  "search.count": {
+    "es": "{n} resultados",
+    "en": "{n} results",
+    "fr": "{n} résultats",
+    "de": "{n} Ergebnisse",
+    "pt": "{n} resultados",
+    "it": "{n} risultati"
+  },
+  "search.count1": {
+    "es": "1 resultado",
+    "en": "1 result",
+    "fr": "1 résultat",
+    "de": "1 Ergebnis",
+    "pt": "1 resultado",
+    "it": "1 risultato"
+  },
+  "search.noscript": {
+    "es": "El buscador necesita JavaScript. Mientras tanto, puedes recorrer los rankings desde la portada.",
+    "en": "Search needs JavaScript. Meanwhile, you can browse the rankings from the home page.",
+    "fr": "La recherche nécessite JavaScript. En attendant, vous pouvez parcourir les classements depuis la page d'accueil.",
+    "de": "Die Suche benötigt JavaScript. Bis dahin können Sie die Rankings über die Startseite durchsuchen.",
+    "pt": "A pesquisa precisa de JavaScript. Entretanto, pode percorrer os rankings a partir da página inicial.",
+    "it": "La ricerca richiede JavaScript. Nel frattempo puoi sfogliare le classifiche dalla home."
+  },
+  "search.desc": {
+    "es": "Busca hoteles, restaurantes, campos de golf, spas, clubes y otros lugares de lujo de España por nombre, ciudad o categoría.",
+    "en": "Search hotels, restaurants, golf courses, spas, clubs and other luxury places in Spain by name, city or category.",
+    "fr": "Recherchez hôtels, restaurants, golfs, spas, clubs et autres lieux de luxe en Espagne par nom, ville ou catégorie.",
+    "de": "Suchen Sie Hotels, Restaurants, Golfplätze, Spas, Clubs und weitere Luxusadressen in Spanien nach Name, Stadt oder Kategorie.",
+    "pt": "Pesquise hotéis, restaurantes, campos de golfe, spas, clubes e outros lugares de luxo de Espanha por nome, cidade ou categoria.",
+    "it": "Cerca hotel, ristoranti, campi da golf, spa, club e altri luoghi di lusso della Spagna per nome, città o categoria."
+  },
+  "dest.guides_h": {
+    "es": "Guías por destino",
+    "en": "Destination guides",
+    "fr": "Guides par destination",
+    "de": "Reiseführer nach Reiseziel",
+    "pt": "Guias por destino",
+    "it": "Guide per destinazione"
+  },
+  "dest.guide.eyebrow": {
+    "es": "Guía de destino",
+    "en": "Destination guide",
+    "fr": "Guide de destination",
+    "de": "Reiseziel-Guide",
+    "pt": "Guia de destino",
+    "it": "Guida alla destinazione"
+  },
+  "dest.guide.title": {
+    "es": "{n}: lo mejor del lujo",
+    "en": "{n}: the best of luxury",
+    "fr": "{n} : le meilleur du luxe",
+    "de": "{n}: das Beste an Luxus",
+    "pt": "{n}: o melhor do luxo",
+    "it": "{n}: il meglio del lusso"
+  },
+  "dest.guide.desc": {
+    "es": "Los mejores hoteles, restaurantes, golf, spas y más en {n}, según nuestros rankings.",
+    "en": "The best hotels, restaurants, golf, spas and more in {n}, according to our rankings.",
+    "fr": "Les meilleurs hôtels, restaurants, golfs, spas et plus encore : {n}, selon nos classements.",
+    "de": "Die besten Hotels, Restaurants, Golfplätze, Spas und mehr in {n}, laut unseren Rankings.",
+    "pt": "Os melhores hotéis, restaurantes, golfe, spas e mais em {n}, segundo os nossos rankings.",
+    "it": "I migliori hotel, ristoranti, golf, spa e altro a {n}, secondo le nostre classifiche."
+  },
+  "dest.guide.lead": {
+    "es": "{c} lugares de {k} categorías de nuestros rankings. Aeropuerto más cercano: {a}, a unos {m} minutos en coche.",
+    "en": "{c} places across {k} categories of our rankings. Nearest airport: {a}, about {m} minutes by car.",
+    "fr": "{c} lieux répartis dans {k} catégories de nos classements. Aéroport le plus proche : {a}, à environ {m} minutes en voiture.",
+    "de": "{c} Orte aus {k} Kategorien unserer Rankings. Nächster Flughafen: {a}, etwa {m} Minuten mit dem Auto.",
+    "pt": "{c} lugares de {k} categorias dos nossos rankings. Aeroporto mais próximo: {a}, a cerca de {m} minutos de carro.",
+    "it": "{c} luoghi di {k} categorie delle nostre classifiche. Aeroporto più vicino: {a}, a circa {m} minuti in auto."
+  },
+  "dest.guide.lead0": {
+    "es": "{c} lugares de {k} categorías de nuestros rankings.",
+    "en": "{c} places across {k} categories of our rankings.",
+    "fr": "{c} lieux répartis dans {k} catégories de nos classements.",
+    "de": "{c} Orte aus {k} Kategorien unserer Rankings.",
+    "pt": "{c} lugares de {k} categorias dos nossos rankings.",
+    "it": "{c} luoghi di {k} categorie delle nostre classifiche."
+  },
+  "dest.guide.shops": {
+    "es": "Boutiques de lujo",
+    "en": "Luxury boutiques",
+    "fr": "Boutiques de luxe",
+    "de": "Luxusboutiquen",
+    "pt": "Boutiques de luxo",
+    "it": "Boutique di lusso"
+  },
+  "dest.guide.dealers": {
+    "es": "Concesionarios de lujo",
+    "en": "Luxury car dealers",
+    "fr": "Concessionnaires de luxe",
+    "de": "Luxusauto-Händler",
+    "pt": "Concessionários de luxo",
+    "it": "Concessionari di lusso"
+  },
+  "dest.guide.more": {
+    "es": "Directorios",
+    "en": "Directories",
+    "fr": "Annuaires",
+    "de": "Verzeichnisse",
+    "pt": "Diretórios",
+    "it": "Elenchi"
+  },
+  "dest.guide.back": {
+    "es": "← Todos los destinos",
+    "en": "← All destinations",
+    "fr": "← Toutes les destinations",
+    "de": "← Alle Reiseziele",
+    "pt": "← Todos os destinos",
+    "it": "← Tutte le destinazioni"
+  },
+  "dest.guide.map_aria": {
+    "es": "Mapa de los lugares de {n}",
+    "en": "Map of the places in {n}",
+    "fr": "Carte des lieux : {n}",
+    "de": "Karte der Orte: {n}",
+    "pt": "Mapa dos lugares de {n}",
+    "it": "Mappa dei luoghi: {n}"
+  },
+  "dest.rank": {
+    "es": "N.º {n} de {t}",
+    "en": "No. {n} of {t}",
+    "fr": "N° {n} sur {t}",
+    "de": "Nr. {n} von {t}",
+    "pt": "N.º {n} de {t}",
+    "it": "N. {n} su {t}"
   }
 }

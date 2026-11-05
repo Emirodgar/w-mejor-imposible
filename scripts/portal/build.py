@@ -207,6 +207,7 @@ HEAD = '''<!DOCTYPE html>
         <a href="@@HOME@@#rankings">@@N_RANK@@</a>
         <a href="@@HOME@@#planes">@@N_PLANS@@</a>
         <a href="@@DEST@@">@@N_DEST@@</a>
+        <a href="@@SEARCH@@">@@N_SEARCH@@</a>
         <a href="/">@@N_PORSCHE@@</a>
     </nav>
     <div class="lang" aria-label="@@ARIA_LANG@@">
@@ -306,7 +307,7 @@ def page(path, title, desc, lds, body):
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
-           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@METHOD@@': u('/metodologia/'),
+           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'),
            '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
@@ -1262,6 +1263,8 @@ def build_destinos():
     crumb = [(ui('crumb.home'), u(HOME)), (ui('dest.h1'), None)]
     plans = all_plans()
     sections = ''
+    gchips = ''.join(f'\n            <a href="{u("/destinos/" + d["slug"] + "/")}">{e(tr(d["nombre"]))} · {len(dest_items(d))}</a>' for d in DESTS)
+    guides = (f'    <section class="wrap dir-brand" aria-labelledby="g-guias">\n        <h2 id="g-guias">{e(ui("dest.guides_h"))}</h2>\n        <nav class="chips" aria-label="{e(ui("dest.guides_h"))}">{gchips}\n        </nav>\n    </section>')
     for zk in ZONE_KEYS[1:]:
         counts = [(c, sum(1 for i in ITEMS.values() if i['categoria'] == c and i['zona'] == zk)) for c in HOME_CHIPS]
         counts = [(c, n) for c, n in counts if n]
@@ -1289,6 +1292,7 @@ def build_destinos():
         <h1>{e(ui('dest.h1'))}</h1>
         <p class="lead-text">{e(ui('dest.lead'))}</p>
     </section>
+{guides}
 {sections}
 </main>
 '''
@@ -1296,8 +1300,147 @@ def build_destinos():
                                         [webpage('CollectionPage', '/destinos/', ui('dest.title'), ui('dest.desc')), bc_ld(crumb)], body))
 
 
+# ---------------- Guías por destino y buscador ----------------
+DESTS = load('destinos.json')['destinos']
+
+
+def dest_items(d):
+    # lugares dentro del radio del destino; cada uno va al destino más cercano en proporción a su radio
+    out = []
+    for it in ITEMS.values():
+        c = coords(it)
+        if not c:
+            continue
+        best = min(((haversine_km(c, tuple(x['centro'])) / x['radio'], x['slug']) for x in DESTS), default=None)
+        if best and best[0] <= 1 and best[1] == d['slug']:
+            out.append(it)
+    return out
+
+
+def build_dest(d):
+    items = dest_items(d)
+    name = tr(d['nombre'])
+    by_cat = {}
+    for it in items:
+        by_cat.setdefault(it['categoria'], []).append(it)
+    for lst in by_cat.values():
+        lst.sort(key=lambda i: (RANK_POS.get(i['id'], ('', 99))[1], i['nombre']))
+    here = {'coordenadas': {'lat': d['centro'][0], 'lon': d['centro'][1]}, 'nombre': '', 'id': ''}
+    ap = nearest(here, 'aeropuerto')
+    ncat = len(by_cat)
+    lead = ui('dest.guide.lead', c=len(items), k=ncat, a=ap['nombre'], m=ap['min']) if ap else ui('dest.guide.lead0', c=len(items), k=ncat)
+    sections, ld_items, pts = '', [], []
+    for cat in HOME_CHIPS:
+        lst = by_cat.get(cat)
+        if not lst:
+            continue
+        cards = ''
+        for it in lst:
+            rk = RANK_POS.get(it['id'])
+            rank = f'<span class="badge ok">{e(ui("dest.rank", n=rk[1], t=rk[2]))}</span>' if rk else ''
+            spec = spec_text(cat, it['ficha'])
+            cards += (f'\n            <li class="dealer">\n                <p class="city">{e(it["lugar"])} {rank}</p>'
+                      f'\n                <h3><a href="{item_url(it["id"])}">{e(it["nombre"])}</a></h3>'
+                      f'\n                <p>{e(t(it["por_que"]))}</p>'
+                      + (f'\n                <p class="muted">{e(spec)}</p>' if spec else '') + '\n            </li>')
+            ld_items.append({"@type": "ListItem", "position": len(ld_items) + 1, "url": SITE + item_url(it['id']), "name": it['nombre']})
+            c = coords(it)
+            if c:
+                pts.append({'n': it['nombre'], 'lat': c[0], 'lon': c[1], 'k': 'p', 'i': cat})
+        sections += f'''
+    <section class="wrap dir-brand" aria-labelledby="c-{cat}">
+        <h2 id="c-{cat}"><a href="{u(f"/ranking/{cat}/")}">{e(t(CATS[cat]["corto"]))}</a></h2>
+        <ul class="dealers">{cards}
+        </ul>
+    </section>'''
+    if ap and ap.get('geo'):
+        pts.append({'n': ap['nombre'], 'lat': ap['geo'][0], 'lon': ap['geo'][1], 'k': 'a', 'i': 'airport'})
+    ids = {i['id'] for i in items}
+    zplans = [p for p in all_plans() if any((s.get('ref') in ids) for dd in p['dias'] for s in dd['pasos'])]
+    extra = ''
+    if zplans:
+        chips = ''.join(f'\n            <a href="{u("/planes/" + p["slug"] + "/")}">{e(t(p["titulo"]))}</a>' for p in zplans)
+        extra += f'\n        <p class="label">{e(ui("nav.plans"))}</p>\n        <nav class="chips" aria-label="{e(ui("nav.plans"))}">{chips}\n        </nav>'
+    links = ''
+    if d.get('tiendas'):
+        links += f'\n            <a href="{u("/ranking/compras-de-lujo/tiendas/")}?ciudad={d["tiendas"]}">{e(ui("dest.guide.shops"))}</a>'
+    if d.get('concesionarios'):
+        links += f'\n            <a href="{u("/motor/marcas/")}?ciudad={d["concesionarios"]}">{e(ui("dest.guide.dealers"))}</a>'
+    if links:
+        extra += f'\n        <p class="label">{e(ui("dest.guide.more"))}</p>\n        <nav class="chips" aria-label="{e(ui("dest.guide.more"))}">{links}\n        </nav>'
+    mp = (f'<div class="map live" id="plan-map" role="region" aria-label="{e(ui("dest.guide.map_aria", n=name))}" '
+          f'data-points="{e(json.dumps(pts, ensure_ascii=False))}"></div>') if pts else ''
+    path = f'/destinos/{d["slug"]}/'
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('dest.h1'), u('/destinos/')), (name, None)]
+    title = ui('dest.guide.title', n=name)
+    desc = ui('dest.guide.desc', n=name)
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">{e(ui('dest.guide.eyebrow'))}</p>
+        <h1>{e(name)}</h1>
+        <p class="lead-text">{e(lead)}</p>
+    </section>
+    <section class="wrap">{mp}</section>{sections}
+    <section class="wrap dir-brand">{extra}
+        <p><a href="{u('/destinos/')}">{e(ui('dest.guide.back'))}</a></p>
+    </section>
+</main>
+'''
+    lds = [webpage('CollectionPage', path, title, desc), {"@type": "ItemList", "name": title, "inLanguage": LANG, "itemListElement": ld_items}, bc_ld(crumb)]
+    html_page = page(path, f'{title} · Mejor Imposible', desc, lds, body)
+    write(path + 'index.html', html_page.replace('</body>', MAP_JS + '\n</body>') if mp else html_page)
+
+
+def build_search():
+    idx = []
+    for it in ITEMS.values():
+        cat = it['categoria']
+        idx.append({'n': it['nombre'], 'p': it['lugar'], 'c': cat, 'z': it['zona'], 'u': item_url(it['id']),
+                    's': spec_text(cat, it['ficha']), 'w': t(it['por_que'])})
+    idx.sort(key=lambda x: (HOME_CHIPS.index(x['c']) if x['c'] in HOME_CHIPS else 99, x['n']))
+    write('/buscar/indice.json', json.dumps(idx, ensure_ascii=False, separators=(',', ':')))
+    cat_opts = f'<option value="">{e(ui("search.all_cats"))}</option>' + ''.join(
+        f'<option value="{c}">{e(t(CATS[c]["corto"]))}</option>' for c in HOME_CHIPS if c in CATS)
+    zone_opts = ''.join(f'<option value="{"" if z == "todas" else z}">{e(ui("zone." + z))}</option>' for z in ZONE_KEYS)
+    labels = {t(CATS[c]['corto']): c for c in HOME_CHIPS if c in CATS}
+    cat_names = json.dumps({c: t(CATS[c]['corto']) for c in HOME_CHIPS if c in CATS}, ensure_ascii=False)
+    zone_names = json.dumps({z: ui('zone.' + z) for z in ZONE_KEYS if z != 'todas'}, ensure_ascii=False)
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('search.h1'), None)]
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <h1>{e(ui('search.h1'))}</h1>
+        <p class="lead-text">{e(ui('search.lead'))}</p>
+        <form class="search" id="search" role="search" data-index="{u('/buscar/')}indice.json" data-cats="{e(cat_names)}" data-zones="{e(zone_names)}"
+              data-none="{e(ui('search.none'))}" data-count="{e(ui('search.count'))}" data-count1="{e(ui('search.count1'))}">
+            <label class="sr" for="q">{e(ui('search.label'))}</label>
+            <input id="q" name="q" type="search" autocomplete="off" placeholder="{e(ui('search.placeholder'))}">
+            <label class="sr" for="cat">{e(ui('search.cat'))}</label>
+            <select id="cat" name="cat">{cat_opts}</select>
+            <label class="sr" for="zone">{e(ui('search.zone'))}</label>
+            <select id="zone" name="zone">{zone_opts}</select>
+        </form>
+        <p class="muted count" id="count" aria-live="polite"></p>
+    </section>
+    <section class="wrap">
+        <ul class="dealers results" id="results"></ul>
+        <noscript><p>{e(ui('search.noscript'))}</p></noscript>
+    </section>
+</main>
+<script src="/assets/buscar.js" defer></script>
+'''
+    write('/buscar/index.html', page('/buscar/', f'{ui("search.title")} · Mejor Imposible', ui('search.desc'),
+                                     [webpage('WebPage', '/buscar/', ui('search.title'), ui('search.desc')), bc_ld(crumb)], body))
+
+
+
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
-              + ['/motor/marcas/', '/metodologia/', '/destinos/']
+              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/'] + [f'/destinos/{d["slug"]}/' for d in DESTS]
               + ['/ranking/' + r + '/' for r in ITEMS] + ['/ranking/compras-de-lujo/tiendas/'])
 
 
@@ -1333,6 +1476,9 @@ if __name__ == '__main__':
         build_tiendas()
         build_method()
         build_destinos()
+        for _d in DESTS:
+            build_dest(_d)
+        build_search()
     build_sitemap()
     bad = False
     for lang in PUBLISHED:

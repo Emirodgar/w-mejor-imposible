@@ -1,0 +1,114 @@
+{
+  "destinos": [
+    {
+      "slug": "madrid",
+      "nombre": "Madrid",
+      "centro": [
+        40.4168,
+        -3.7038
+      ],
+      "radio": 40,
+      "tiendas": "madrid",
+      "concesionarios": "madrid"
+    },
+    {
+      "slug": "barcelona",
+      "nombre": "Barcelona",
+      "centro": [
+        41.3874,
+        2.1686
+      ],
+      "radio": 40,
+      "tiendas": "barcelona",
+      "concesionarios": "barcelona"
+    },
+    {
+      "slug": "costa-del-sol",
+      "nombre": "Marbella y la Costa del Sol",
+      "centro": [
+        36.55,
+        -4.9
+      ],
+      "radio": 70,
+      "tiendas": "marbella",
+      "concesionarios": "marbella"
+    },
+    {
+      "slug": "mallorca",
+      "nombre": "Mallorca",
+      "centro": [
+        39.62,
+        2.95
+      ],
+      "radio": 85,
+      "tiendas": "palma",
+      "concesionarios": null
+    },
+    {
+      "slug": "ibiza",
+      "nombre": "Ibiza",
+      "centro": [
+        38.98,
+        1.43
+      ],
+      "radio": 30,
+      "tiendas": null,
+      "concesionarios": null
+    },
+    {
+      "slug": "girona",
+      "nombre": "Girona y la Costa Brava",
+      "centro": [
+        42.0,
+        2.9
+      ],
+      "radio": 55,
+      "tiendas": null,
+      "concesionarios": null
+    },
+    {
+      "slug": "la-rioja",
+      "nombre": "La Rioja",
+      "centro": [
+        42.45,
+        -2.7
+      ],
+      "radio": 55,
+      "tiendas": null,
+      "concesionarios": null
+    },
+    {
+      "slug": "valencia",
+      "nombre": "Valencia",
+      "centro": [
+        39.47,
+        -0.376
+      ],
+      "radio": 40,
+      "tiendas": null,
+      "concesionarios": "valencia"
+    },
+    {
+      "slug": "jerez-cadiz",
+      "nombre": "Jerez y Cádiz",
+      "centro": [
+        36.65,
+        -6.15
+      ],
+      "radio": 40,
+      "tiendas": null,
+      "concesionarios": null
+    },
+    {
+      "slug": "ribera-del-duero",
+      "nombre": "Ribera del Duero",
+      "centro": [
+        41.6,
+        -4.25
+      ],
+      "radio": 40,
+      "tiendas": null,
+      "concesionarios": null
+    }
+  ]
+}
