@@ -1,1034 +1,1034 @@
 {
- "nav.rankings": {
-  "es": "Rankings",
-  "en": "Rankings",
-  "fr": "Classements",
-  "de": "Rankings",
-  "pt": "Rankings",
-  "it": "Classifiche"
- },
- "nav.plans": {
-  "es": "Planes completos",
-  "en": "Complete itineraries",
-  "fr": "Séjours complets",
-  "de": "Komplette Reisen",
-  "pt": "Roteiros completos",
-  "it": "Itinerari completi"
- },
- "nav.destinations": {
-  "es": "Destinos",
-  "en": "Destinations",
-  "fr": "Destinations",
-  "de": "Reiseziele",
-  "pt": "Destinos",
-  "it": "Destinazioni"
- },
- "nav.porsche": {
-  "es": "Guía Porsche",
-  "en": "Porsche guide (in Spanish)",
-  "fr": "Guide Porsche (en espagnol)",
-  "de": "Porsche-Guide (auf Spanisch)",
-  "pt": "Guia Porsche (em espanhol)",
-  "it": "Guida Porsche (in spagnolo)"
- },
- "nav.method": {
-  "es": "Metodología",
-  "en": "Methodology",
-  "fr": "Méthodologie",
-  "de": "Methodik",
-  "pt": "Metodologia",
-  "it": "Metodologia"
- },
- "aria.main": {
-  "es": "Principal",
-  "en": "Main",
-  "fr": "Principal",
-  "de": "Hauptmenü",
-  "pt": "Principal",
-  "it": "Principale"
- },
- "aria.lang": {
-  "es": "Idioma",
-  "en": "Language",
-  "fr": "Langue",
-  "de": "Sprache",
-  "pt": "Idioma",
-  "it": "Lingua"
- },
- "aria.footer": {
-  "es": "Pie",
-  "en": "Footer",
-  "fr": "Pied de page",
-  "de": "Fußbereich",
-  "pt": "Rodapé",
-  "it": "Piè di pagina"
- },
- "aria.crumbs": {
-  "es": "Migas de pan",
-  "en": "Breadcrumb",
-  "fr": "Fil d'Ariane",
-  "de": "Brotkrumennavigation",
-  "pt": "Navegação estrutural",
-  "it": "Percorso di navigazione"
- },
- "crumb.home": {
-  "es": "Inicio",
-  "en": "Home",
-  "fr": "Accueil",
-  "de": "Startseite",
-  "pt": "Início",
-  "it": "Home"
- },
- "zone.todas": {
-  "es": "Toda España",
-  "en": "All of Spain",
-  "fr": "Toute l'Espagne",
-  "de": "Ganz Spanien",
-  "pt": "Toda a Espanha",
-  "it": "Tutta la Spagna"
- },
- "zone.andalucia": {
-  "es": "Andalucía",
-  "en": "Andalusia",
-  "fr": "Andalousie",
-  "de": "Andalusien",
-  "pt": "Andaluzia",
-  "it": "Andalusia"
- },
- "zone.cataluna": {
-  "es": "Cataluña",
-  "en": "Catalonia",
-  "fr": "Catalogne",
-  "de": "Katalonien",
-  "pt": "Catalunha",
-  "it": "Catalogna"
- },
- "zone.baleares": {
-  "es": "Baleares",
-  "en": "Balearic Islands",
-  "fr": "Baléares",
-  "de": "Balearen",
-  "pt": "Baleares",
-  "it": "Baleari"
- },
- "zone.canarias": {
-  "es": "Canarias",
-  "en": "Canary Islands",
-  "fr": "Canaries",
-  "de": "Kanaren",
-  "pt": "Canárias",
-  "it": "Canarie"
- },
- "zone.resto": {
-  "es": "Resto",
-  "en": "Rest of Spain",
-  "fr": "Reste de l'Espagne",
-  "de": "Übriges Spanien",
-  "pt": "Resto de Espanha",
-  "it": "Resto della Spagna"
- },
- "rank.filter_aria": {
-  "es": "Filtrar por zona",
-  "en": "Filter by region",
-  "fr": "Filtrer par région",
-  "de": "Nach Region filtern",
-  "pt": "Filtrar por região",
-  "it": "Filtra per zona"
- },
- "rank.eyebrow": {
-  "es": "Ranking · {short} · Actualizado {updated}",
-  "en": "Ranking · {short} · Updated {updated}",
-  "fr": "Classement · {short} · Mis à jour {updated}",
-  "de": "Ranking · {short} · Aktualisiert {updated}",
-  "pt": "Ranking · {short} · Atualizado {updated}",
-  "it": "Classifica · {short} · Aggiornata {updated}"
- },
- "rank.near": {
-  "es": "Lo mejor cerca",
-  "en": "The best nearby",
-  "fr": "Le meilleur à proximité",
-  "de": "Das Beste in der Nähe",
-  "pt": "O melhor por perto",
-  "it": "Il meglio nelle vicinanze"
- },
- "rank.plan_link": {
-  "es": "Ver el plan completo →",
-  "en": "See the complete itinerary →",
-  "fr": "Voir le séjour complet →",
-  "de": "Zur kompletten Reise →",
-  "pt": "Ver o roteiro completo →",
-  "it": "Vedi l'itinerario completo →"
- },
- "rank.empty": {
-  "es": "Ningún elemento de la zona seleccionada está entre los cinco primeros.",
-  "en": "None of the entries in the selected region is in the top five.",
-  "fr": "Aucune adresse de la région sélectionnée ne figure parmi les cinq premières.",
-  "de": "Kein Eintrag der gewählten Region gehört zu den ersten fünf.",
-  "pt": "Nenhum item da região selecionada está entre os cinco primeiros.",
-  "it": "Nessun elemento della zona selezionata è tra i primi cinque."
- },
- "rank.rest_h": {
-  "es": "Del 6 al {last}",
-  "en": "From 6 to {last}",
-  "fr": "Du 6 au {last}",
-  "de": "Plätze 6 bis {last}",
-  "pt": "Do 6.º ao {last}.º",
-  "it": "Dal 6 al {last}"
- },
- "rank.how": {
-  "es": "Cómo ordenamos",
-  "en": "How we rank",
-  "fr": "Comment nous classons",
-  "de": "So ordnen wir",
-  "pt": "Como ordenamos",
-  "it": "Come ordiniamo"
- },
- "rank.method_link": {
-  "es": "Metodología completa →",
-  "en": "Full methodology →",
-  "fr": "Méthodologie complète →",
-  "de": "Vollständige Methodik →",
-  "pt": "Metodologia completa →",
-  "it": "Metodologia completa →"
- },
- "rank.desc": {
-  "es": "{h1}: los cinco primeros con lo mejor cerca y del 6 en adelante en formato compacto, con filtro por zona.",
-  "en": "{h1}: the top five with the best places nearby, and the rest in compact form, filterable by region.",
-  "fr": "{h1} : les cinq premiers avec le meilleur à proximité, puis la suite en format compact, filtrable par région.",
-  "de": "{h1}: die ersten fünf mit dem Besten in der Nähe, der Rest kompakt, nach Region filterbar.",
-  "pt": "{h1}: os cinco primeiros com o melhor por perto e os restantes em formato compacto, com filtro por região.",
-  "it": "{h1}: i primi cinque con il meglio nelle vicinanze e il resto in formato compatto, con filtro per zona."
- },
- "rank.motor_link": {
-  "es": "Concesionarios oficiales de marcas de lujo →",
-  "en": "Official luxury-brand dealerships →",
-  "fr": "Concessionnaires officiels de marques de luxe →",
-  "de": "Offizielle Händler von Luxusmarken →",
-  "pt": "Concessionários oficiais de marcas de luxo →",
-  "it": "Concessionari ufficiali di marchi di lusso →"
- },
- "crumb.rankings": {
-  "es": "Rankings",
-  "en": "Rankings",
-  "fr": "Classements",
-  "de": "Rankings",
-  "pt": "Rankings",
-  "it": "Classifiche"
- },
- "near.hotel": {
-  "es": "Hotel",
-  "en": "Hotel",
-  "fr": "Hôtel",
-  "de": "Hotel",
-  "pt": "Hotel",
-  "it": "Hotel"
- },
- "near.restaurante": {
-  "es": "Restaurante",
-  "en": "Restaurant",
-  "fr": "Restaurant",
-  "de": "Restaurant",
-  "pt": "Restaurante",
-  "it": "Ristorante"
- },
- "near.aeropuerto": {
-  "es": "Aeropuerto",
-  "en": "Airport",
-  "fr": "Aéroport",
-  "de": "Flughafen",
-  "pt": "Aeroporto",
-  "it": "Aeroporto"
- },
- "near.golf": {
-  "es": "Golf",
-  "en": "Golf",
-  "fr": "Golf",
-  "de": "Golf",
-  "pt": "Golfe",
-  "it": "Golf"
- },
- "near.spa": {
-  "es": "Spa",
-  "en": "Spa",
-  "fr": "Spa",
-  "de": "Spa",
-  "pt": "Spa",
-  "it": "Spa"
- },
- "near.puerto": {
-  "es": "Puerto",
-  "en": "Marina",
-  "fr": "Port",
-  "de": "Hafen",
-  "pt": "Porto",
-  "it": "Porto"
- },
- "near.bodega": {
-  "es": "Bodega",
-  "en": "Winery",
-  "fr": "Domaine viticole",
-  "de": "Weingut",
-  "pt": "Adega",
-  "it": "Cantina"
- },
- "near.min": {
-  "es": "a ~{n} min",
-  "en": "~{n} min away",
-  "fr": "à ~{n} min",
-  "de": "ca. {n} Min. entfernt",
-  "pt": "a ~{n} min",
-  "it": "a ~{n} min"
- },
- "near.tbd": {
-  "es": "a [X] min",
-  "en": "[X] min away",
-  "fr": "à [X] min",
-  "de": "[X] Min. entfernt",
-  "pt": "a [X] min",
-  "it": "a [X] min"
- },
- "near.same": {
-  "es": "en el mismo lugar",
-  "en": "at the same place",
-  "fr": "au même endroit",
-  "de": "am selben Ort",
-  "pt": "no mesmo local",
-  "it": "nello stesso luogo"
- },
- "michelin.star1": {
-  "es": "{n} estrella Michelin",
-  "en": "{n} Michelin star",
-  "fr": "{n} étoile Michelin",
-  "de": "{n} Michelin-Stern",
-  "pt": "{n} estrela Michelin",
-  "it": "{n} stella Michelin"
- },
- "michelin.star2": {
-  "es": "{n} estrellas Michelin",
-  "en": "{n} Michelin stars",
-  "fr": "{n} étoiles Michelin",
-  "de": "{n} Michelin-Sterne",
-  "pt": "{n} estrelas Michelin",
-  "it": "{n} stelle Michelin"
- },
- "michelin.key1": {
-  "es": "{n} Llave Michelin",
-  "en": "{n} Michelin Key",
-  "fr": "{n} Clé Michelin",
-  "de": "{n} Michelin-Schlüssel",
-  "pt": "{n} Chave Michelin",
-  "it": "{n} Chiave Michelin"
- },
- "michelin.key2": {
-  "es": "{n} Llaves Michelin",
-  "en": "{n} Michelin Keys",
-  "fr": "{n} Clés Michelin",
-  "de": "{n} Michelin-Schlüssel",
-  "pt": "{n} Chaves Michelin",
-  "it": "{n} Chiavi Michelin"
- },
- "route.llegada": {
-  "es": "Llegada",
-  "en": "Arrival",
-  "fr": "Arrivée",
-  "de": "Ankunft",
-  "pt": "Chegada",
-  "it": "Arrivo"
- },
- "route.llegada.link": {
-  "es": "Ver cómo llegar",
-  "en": "See how to get there",
-  "fr": "Voir comment s'y rendre",
-  "de": "Anreise ansehen",
-  "pt": "Ver como chegar",
-  "it": "Vedi come arrivare"
- },
- "route.coche": {
-  "es": "Coche",
-  "en": "Car",
-  "fr": "Voiture",
-  "de": "Auto",
-  "pt": "Carro",
-  "it": "Auto"
- },
- "route.coche.link": {
-  "es": "Ver experiencias de motor en {z}",
-  "en": "See motor experiences in {z}",
-  "fr": "Voir les expériences automobiles : {z}",
-  "de": "Motorsport-Erlebnisse ansehen: {z}",
-  "pt": "Ver experiências de motor: {z}",
-  "it": "Vedi le esperienze motoristiche: {z}"
- },
- "route.hotel": {
-  "es": "Hotel",
-  "en": "Hotel",
-  "fr": "Hôtel",
-  "de": "Hotel",
-  "pt": "Hotel",
-  "it": "Hotel"
- },
- "route.hotel.link": {
-  "es": "Ver hoteles de lujo en {z}",
-  "en": "See luxury hotels in {z}",
-  "fr": "Voir les hôtels de luxe : {z}",
-  "de": "Luxushotels ansehen: {z}",
-  "pt": "Ver hotéis de luxo: {z}",
-  "it": "Vedi gli hotel di lusso: {z}"
- },
- "route.golf": {
-  "es": "Golf",
-  "en": "Golf",
-  "fr": "Golf",
-  "de": "Golf",
-  "pt": "Golfe",
-  "it": "Golf"
- },
- "route.golf.link": {
-  "es": "Ver campos de golf en {z}",
-  "en": "See golf courses in {z}",
-  "fr": "Voir les parcours de golf : {z}",
-  "de": "Golfplätze ansehen: {z}",
-  "pt": "Ver campos de golfe: {z}",
-  "it": "Vedi i campi da golf: {z}"
- },
- "route.cena": {
-  "es": "Cena",
-  "en": "Dinner",
-  "fr": "Dîner",
-  "de": "Abendessen",
-  "pt": "Jantar",
-  "it": "Cena"
- },
- "route.cena.link": {
-  "es": "Ver restaurantes en {z}",
-  "en": "See restaurants in {z}",
-  "fr": "Voir les restaurants : {z}",
-  "de": "Restaurants ansehen: {z}",
-  "pt": "Ver restaurantes: {z}",
-  "it": "Vedi i ristoranti: {z}"
- },
- "route.descanso": {
-  "es": "Descanso",
-  "en": "Rest",
-  "fr": "Détente",
-  "de": "Erholung",
-  "pt": "Descanso",
-  "it": "Relax"
- },
- "route.descanso.link": {
-  "es": "Ver spas en {z}",
-  "en": "See spas in {z}",
-  "fr": "Voir les spas : {z}",
-  "de": "Spas ansehen: {z}",
-  "pt": "Ver spas: {z}",
-  "it": "Vedi le spa: {z}"
- },
- "route.mesa": {
-  "es": "Mesa",
-  "en": "Table",
-  "fr": "Table",
-  "de": "Tisch",
-  "pt": "Mesa",
-  "it": "Tavola"
- },
- "route.mesa.link": {
-  "es": "Ver restaurantes en {z}",
-  "en": "See restaurants in {z}",
-  "fr": "Voir les restaurants : {z}",
-  "de": "Restaurants ansehen: {z}",
-  "pt": "Ver restaurantes: {z}",
-  "it": "Vedi i ristoranti: {z}"
- },
- "route.bodega": {
-  "es": "Bodega",
-  "en": "Winery",
-  "fr": "Domaine",
-  "de": "Weingut",
-  "pt": "Adega",
-  "it": "Cantina"
- },
- "route.bodega.link": {
-  "es": "Ver bodegas en {z}",
-  "en": "See wineries in {z}",
-  "fr": "Voir les domaines viticoles : {z}",
-  "de": "Weingüter ansehen: {z}",
-  "pt": "Ver adegas: {z}",
-  "it": "Vedi le cantine: {z}"
- },
- "route.barco": {
-  "es": "Barco",
-  "en": "Boat",
-  "fr": "Bateau",
-  "de": "Boot",
-  "pt": "Barco",
-  "it": "Barca"
- },
- "route.barco.link": {
-  "es": "Ver puertos deportivos en {z}",
-  "en": "See marinas in {z}",
-  "fr": "Voir les ports de plaisance : {z}",
-  "de": "Yachthäfen ansehen: {z}",
-  "pt": "Ver marinas: {z}",
-  "it": "Vedi i porti turistici: {z}"
- },
- "route.cala": {
-  "es": "Cala",
-  "en": "Cove",
-  "fr": "Crique",
-  "de": "Bucht",
-  "pt": "Enseada",
-  "it": "Cala"
- },
- "route.cala.link": {
-  "es": "Ver puertos deportivos en {z}",
-  "en": "See marinas in {z}",
-  "fr": "Voir les ports de plaisance : {z}",
-  "de": "Yachthäfen ansehen: {z}",
-  "pt": "Ver marinas: {z}",
-  "it": "Vedi i porti turistici: {z}"
- },
- "plan.alts": {
-  "es": "Alternativas:",
-  "en": "Alternatives:",
-  "fr": "Alternatives :",
-  "de": "Alternativen:",
-  "pt": "Alternativas:",
-  "it": "Alternative:"
- },
- "plan.opt2": {
-  "es": "[Opción 2]",
-  "en": "[Option 2]",
-  "fr": "[Option 2]",
-  "de": "[Option 2]",
-  "pt": "[Opção 2]",
-  "it": "[Opzione 2]"
- },
- "plan.opt3": {
-  "es": "[Opción 3]",
-  "en": "[Option 3]",
-  "fr": "[Option 3]",
-  "de": "[Option 3]",
-  "pt": "[Opção 3]",
-  "it": "[Opzione 3]"
- },
- "plan.day": {
-  "es": "Día {n} · {t}",
-  "en": "Day {n} · {t}",
-  "fr": "Jour {n} · {t}",
-  "de": "Tag {n} · {t}",
-  "pt": "Dia {n} · {t}",
-  "it": "Giorno {n} · {t}"
- },
- "plan.photo": {
-  "es": "[FOTO · {x}]",
-  "en": "[PHOTO · {x}]",
-  "fr": "[PHOTO · {x}]",
-  "de": "[FOTO · {x}]",
-  "pt": "[FOTO · {x}]",
-  "it": "[FOTO · {x}]"
- },
- "plan.map": {
-  "es": "[MAPA · aeropuerto, hotel, campo y restaurante]",
-  "en": "[MAP · airport, hotel, course and restaurant]",
-  "fr": "[CARTE · aéroport, hôtel, parcours et restaurant]",
-  "de": "[KARTE · Flughafen, Hotel, Golfplatz und Restaurant]",
-  "pt": "[MAPA · aeroporto, hotel, campo e restaurante]",
-  "it": "[MAPPA · aeroporto, hotel, campo e ristorante]"
- },
- "plan.summary_aria": {
-  "es": "Resumen del plan",
-  "en": "Itinerary summary",
-  "fr": "Résumé du séjour",
-  "de": "Reiseübersicht",
-  "pt": "Resumo do roteiro",
-  "it": "Riepilogo dell'itinerario"
- },
- "plan.getting": {
-  "es": "Cómo llegar",
-  "en": "How to get there",
-  "fr": "Comment s'y rendre",
-  "de": "Anreise",
-  "pt": "Como chegar",
-  "it": "Come arrivare"
- },
- "plan.others": {
-  "es": "Otros planes completos",
-  "en": "More complete itineraries",
-  "fr": "Autres séjours complets",
-  "de": "Weitere komplette Reisen",
-  "pt": "Outros roteiros completos",
-  "it": "Altri itinerari completi"
- },
- "plan.title": {
-  "es": "{title}: plan completo",
-  "en": "{title}: complete itinerary",
-  "fr": "{title} : séjour complet",
-  "de": "{title}: komplette Reise",
-  "pt": "{title}: roteiro completo",
-  "it": "{title}: itinerario completo"
- },
- "dir.h1": {
-  "es": "Marcas de lujo en España",
-  "en": "Luxury car brands in Spain",
-  "fr": "Marques de luxe en Espagne",
-  "de": "Luxusmarken in Spanien",
-  "pt": "Marcas de luxo em Espanha",
-  "it": "Marchi di lusso in Spagna"
- },
- "dir.crumb": {
-  "es": "Marcas de lujo",
-  "en": "Luxury brands",
-  "fr": "Marques de luxe",
-  "de": "Luxusmarken",
-  "pt": "Marcas de luxo",
-  "it": "Marchi di lusso"
- },
- "dir.eyebrow": {
-  "es": "Motor · Directorio · Actualizado {updated}",
-  "en": "Motor · Directory · Updated {updated}",
-  "fr": "Auto · Annuaire · Mis à jour {updated}",
-  "de": "Motor · Verzeichnis · Aktualisiert {updated}",
-  "pt": "Motor · Diretório · Atualizado {updated}",
-  "it": "Motori · Elenco · Aggiornato {updated}"
- },
- "dir.lead": {
-  "es": "Concesionarios oficiales, sin ordenar y sin precios. Cada marca tiene un único punto oficial por ciudad, así que aquí no hay ranking: solo dónde encontrarlos.",
-  "en": "Official dealerships, unranked and without prices. Each brand has a single official outlet per city, so there is no ranking here: just where to find them.",
-  "fr": "Concessionnaires officiels, sans classement et sans prix. Chaque marque a un seul point officiel par ville : il n'y a donc pas de classement ici, seulement où les trouver.",
-  "de": "Offizielle Händler, ohne Rangfolge und ohne Preise. Jede Marke hat pro Stadt nur einen offiziellen Standort, daher gibt es hier kein Ranking: nur wo man sie findet.",
-  "pt": "Concessionários oficiais, sem ordem e sem preços. Cada marca tem um único ponto oficial por cidade, por isso aqui não há ranking: apenas onde os encontrar.",
-  "it": "Concessionari ufficiali, senza classifica e senza prezzi. Ogni marchio ha un solo punto ufficiale per città, quindi qui non c'è una classifica: solo dove trovarli."
- },
- "dir.verified": {
-  "es": "Verificado",
-  "en": "Verified",
-  "fr": "Vérifié",
-  "de": "Geprüft",
-  "pt": "Verificado",
-  "it": "Verificato"
- },
- "dir.unverified": {
-  "es": "Por verificar",
-  "en": "To be verified",
-  "fr": "À vérifier",
-  "de": "Noch zu prüfen",
-  "pt": "Por verificar",
-  "it": "Da verificare"
- },
- "dir.noaddr": {
-  "es": "Dirección por confirmar",
-  "en": "Address to be confirmed",
-  "fr": "Adresse à confirmer",
-  "de": "Adresse noch zu bestätigen",
-  "pt": "Morada por confirmar",
-  "it": "Indirizzo da confermare"
- },
- "dir.filter_aria": {
-  "es": "Filtrar por ciudad",
-  "en": "Filter by city",
-  "fr": "Filtrer par ville",
-  "de": "Nach Stadt filtern",
-  "pt": "Filtrar por cidade",
-  "it": "Filtra per città"
- },
- "dir.about": {
-  "es": "Sobre estos datos",
-  "en": "About this data",
-  "fr": "À propos de ces données",
-  "de": "Zu diesen Daten",
-  "pt": "Sobre estes dados",
-  "it": "Su questi dati"
- },
- "dir.about_txt": {
-  "es": "Las direcciones salen de las webs de los concesionarios, de sus grupos y de la prensa. Los puntos marcados «Por verificar» proceden de fuentes antiguas: confirma siempre con la marca antes de desplazarte.",
-  "en": "Addresses come from the dealers' websites, their groups and the press. Entries marked \"To be verified\" come from older sources: always confirm with the brand before travelling.",
-  "fr": "Les adresses proviennent des sites des concessionnaires, de leurs groupes et de la presse. Les points marqués « À vérifier » viennent de sources anciennes : confirmez toujours auprès de la marque avant de vous déplacer.",
-  "de": "Die Adressen stammen von den Websites der Händler, ihrer Gruppen und der Presse. Als „Noch zu prüfen“ markierte Einträge beruhen auf älteren Quellen: Bitte vor der Anreise immer bei der Marke bestätigen.",
-  "pt": "As moradas vêm dos sites dos concessionários, dos seus grupos e da imprensa. Os pontos assinalados «Por verificar» provêm de fontes antigas: confirme sempre com a marca antes de se deslocar.",
-  "it": "Gli indirizzi provengono dai siti dei concessionari, dai loro gruppi e dalla stampa. I punti segnati «Da verificare» derivano da fonti datate: conferma sempre con il marchio prima di spostarti."
- },
- "dir.back": {
-  "es": "Ver el ranking de motor →",
-  "en": "See the motor ranking →",
-  "fr": "Voir le classement automobile →",
-  "de": "Zum Motor-Ranking →",
-  "pt": "Ver o ranking de motor →",
-  "it": "Vedi la classifica motori →"
- },
- "dir.title": {
-  "es": "Concesionarios oficiales de marcas de lujo en España",
-  "en": "Official luxury car dealerships in Spain",
-  "fr": "Concessionnaires officiels de marques de luxe en Espagne",
-  "de": "Offizielle Händler von Luxusmarken in Spanien",
-  "pt": "Concessionários oficiais de marcas de luxo em Espanha",
-  "it": "Concessionari ufficiali di marchi di lusso in Spagna"
- },
- "dir.desc": {
-  "es": "Directorio de concesionarios oficiales de Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce y McLaren en España, por ciudad.",
-  "en": "Directory of official Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce and McLaren dealerships in Spain, by city.",
-  "fr": "Annuaire des concessionnaires officiels Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce et McLaren en Espagne, par ville.",
-  "de": "Verzeichnis der offiziellen Händler von Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce und McLaren in Spanien, nach Stadt.",
-  "pt": "Diretório dos concessionários oficiais Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce e McLaren em Espanha, por cidade.",
-  "it": "Elenco dei concessionari ufficiali Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce e McLaren in Spagna, per città."
- },
- "home.title": {
-  "es": "Mejor Imposible · Solo lo mejor de España en lujo",
-  "en": "Mejor Imposible · Only the best of Spain in luxury",
-  "fr": "Mejor Imposible · Le meilleur de l'Espagne, rien d'autre",
-  "de": "Mejor Imposible · Nur das Beste Spaniens im Luxus",
-  "pt": "Mejor Imposible · Só o melhor de Espanha em luxo",
-  "it": "Mejor Imposible · Solo il meglio della Spagna nel lusso"
- },
- "home.desc": {
-  "es": "Rankings de los mejores hoteles, campos de golf, restaurantes, casas, bodegas, spas, yates y motor de España. Pocos, elegidos y ordenados.",
-  "en": "Rankings of the best hotels, golf courses, restaurants, residential areas, wineries, spas, yachting and motoring in Spain. Few, chosen and ranked.",
-  "fr": "Classements des meilleurs hôtels, parcours de golf, restaurants, quartiers résidentiels, domaines viticoles, spas, ports de plaisance et expériences automobiles d'Espagne. Peu, choisis et classés.",
-  "de": "Rankings der besten Hotels, Golfplätze, Restaurants, Wohngegenden, Weingüter, Spas, Yachthäfen und Motorerlebnisse Spaniens. Wenige, ausgewählt und geordnet.",
-  "pt": "Rankings dos melhores hotéis, campos de golfe, restaurantes, zonas residenciais, adegas, spas, marinas e experiências de motor de Espanha. Poucos, escolhidos e ordenados.",
-  "it": "Classifiche dei migliori hotel, campi da golf, ristoranti, zone residenziali, cantine, spa, porti turistici ed esperienze motoristiche della Spagna. Pochi, scelti e ordinati."
- },
- "home.eyebrow": {
-  "es": "Rankings de España",
-  "en": "Rankings of Spain",
-  "fr": "Classements d'Espagne",
-  "de": "Spaniens Rankings",
-  "pt": "Rankings de Espanha",
-  "it": "Classifiche della Spagna"
- },
- "home.h1": {
-  "es": "Solo lo mejor.",
-  "en": "Only the best.",
-  "fr": "Rien que le meilleur.",
-  "de": "Nur das Beste.",
-  "pt": "Só o melhor.",
-  "it": "Solo il meglio."
- },
- "home.lead": {
-  "es": "Los mejores hoteles, campos, mesas y casas del país. Pocos, elegidos y ordenados.",
-  "en": "The finest hotels, courses, tables and homes in the country. Few, chosen and ranked.",
-  "fr": "Les meilleurs hôtels, parcours, tables et demeures du pays. Peu, choisis et classés.",
-  "de": "Die besten Hotels, Golfplätze, Restaurants und Wohnlagen des Landes. Wenige, ausgewählt und geordnet.",
-  "pt": "Os melhores hotéis, campos, mesas e casas do país. Poucos, escolhidos e ordenados.",
-  "it": "I migliori hotel, campi, tavole e dimore del paese. Pochi, scelti e ordinati."
- },
- "home.cats_aria": {
-  "es": "Categorías",
-  "en": "Categories",
-  "fr": "Catégories",
-  "de": "Kategorien",
-  "pt": "Categorias",
-  "it": "Categorie"
- },
- "home.featured_aria": {
-  "es": "Destacado",
-  "en": "Featured",
-  "fr": "À la une",
-  "de": "Hervorgehoben",
-  "pt": "Destaque",
-  "it": "In evidenza"
- },
- "home.featured_photo": {
-  "es": "calle de golf al atardecer",
-  "en": "fairway at sunset",
-  "fr": "fairway au coucher du soleil",
-  "de": "Fairway bei Sonnenuntergang",
-  "pt": "fairway ao entardecer",
-  "it": "fairway al tramonto"
- },
- "home.kicker": {
-  "es": "Ranking del mes",
-  "en": "Ranking of the month",
-  "fr": "Classement du mois",
-  "de": "Ranking des Monats",
-  "pt": "Ranking do mês",
-  "it": "Classifica del mese"
- },
- "home.cta": {
-  "es": "Ver el ranking →",
-  "en": "See the ranking →",
-  "fr": "Voir le classement →",
-  "de": "Zum Ranking →",
-  "pt": "Ver o ranking →",
-  "it": "Vedi la classifica →"
- },
- "home.strip_hoteles": {
-  "es": "Los mejores hoteles de lujo de España",
-  "en": "The best luxury hotels in Spain",
-  "fr": "Les meilleurs hôtels de luxe d'Espagne",
-  "de": "Die besten Luxushotels Spaniens",
-  "pt": "Os melhores hotéis de luxo de Espanha",
-  "it": "I migliori hotel di lusso della Spagna"
- },
- "home.strip_golf": {
-  "es": "Los mejores campos de golf",
-  "en": "The best golf courses",
-  "fr": "Les meilleurs parcours de golf",
-  "de": "Die besten Golfplätze",
-  "pt": "Os melhores campos de golfe",
-  "it": "I migliori campi da golf"
- },
- "home.strip_restaurantes": {
-  "es": "Las mejores mesas",
-  "en": "The best tables",
-  "fr": "Les meilleures tables",
-  "de": "Die besten Tische",
-  "pt": "As melhores mesas",
-  "it": "Le migliori tavole"
- },
- "home.strip_casas": {
-  "es": "Las zonas residenciales más exclusivas",
-  "en": "The most exclusive residential areas",
-  "fr": "Les quartiers résidentiels les plus exclusifs",
-  "de": "Die exklusivsten Wohngegenden",
-  "pt": "As zonas residenciais mais exclusivas",
-  "it": "Le zone residenziali più esclusive"
- },
- "home.strip_full": {
-  "es": "Ranking completo →",
-  "en": "Full ranking →",
-  "fr": "Classement complet →",
-  "de": "Komplettes Ranking →",
-  "pt": "Ranking completo →",
-  "it": "Classifica completa →"
- },
- "home.plans_h": {
-  "es": "Todo el viaje, en una sola vista",
-  "en": "The whole trip, at a glance",
-  "fr": "Tout le voyage, d'un seul coup d'œil",
-  "de": "Die ganze Reise auf einen Blick",
-  "pt": "A viagem inteira, de relance",
-  "it": "Tutto il viaggio, in un colpo d'occhio"
- },
- "home.plans_lead": {
-  "es": "Aeropuerto, coche, hotel, la actividad y dónde cenar: lo mejor de cada paso, encadenado.",
-  "en": "Airport, car, hotel, the activity and where to dine: the best of every step, linked together.",
-  "fr": "Aéroport, voiture, hôtel, l'activité et où dîner : le meilleur de chaque étape, enchaîné.",
-  "de": "Flughafen, Auto, Hotel, Aktivität und Abendessen: das Beste jeder Etappe, verknüpft.",
-  "pt": "Aeroporto, carro, hotel, a atividade e onde jantar: o melhor de cada passo, encadeado.",
-  "it": "Aeroporto, auto, hotel, l'attività e dove cenare: il meglio di ogni tappa, collegato."
- },
- "home.trust_h": {
-  "es": "Nadie paga por aparecer.<br>Por eso merece la pena mirarlo.",
-  "en": "Nobody pays to be listed.<br>That is why it is worth a look.",
-  "fr": "Personne ne paie pour figurer ici.<br>C'est pourquoi cela vaut le coup d'œil.",
-  "de": "Niemand zahlt fürs Aufgeführtwerden.<br>Darum lohnt sich der Blick.",
-  "pt": "Ninguém paga para aparecer.<br>Por isso vale a pena ver.",
-  "it": "Nessuno paga per esserci.<br>Per questo vale la pena guardare."
- },
- "home.trust_link": {
-  "es": "Cómo elaboramos los rankings →",
-  "en": "How we compile the rankings →",
-  "fr": "Comment nous élaborons les classements →",
-  "de": "Wie wir die Rankings erstellen →",
-  "pt": "Como elaboramos os rankings →",
-  "it": "Come elaboriamo le classifiche →"
- },
- "dest.h1": {
-  "es": "Destinos",
-  "en": "Destinations",
-  "fr": "Destinations",
-  "de": "Reiseziele",
-  "pt": "Destinos",
-  "it": "Destinazioni"
- },
- "dest.title": {
-  "es": "Destinos: lo mejor de España por zonas",
-  "en": "Destinations: the best of Spain, region by region",
-  "fr": "Destinations : le meilleur de l'Espagne, région par région",
-  "de": "Reiseziele: das Beste Spaniens, Region für Region",
-  "pt": "Destinos: o melhor de Espanha, região a região",
-  "it": "Destinazioni: il meglio della Spagna, zona per zona"
- },
- "dest.lead": {
-  "es": "Lo mejor de España, zona a zona: qué hay en cada región y qué planes la recorren.",
-  "en": "The best of Spain, region by region: what each one has and which itineraries cross it.",
-  "fr": "Le meilleur de l'Espagne, région par région : ce que chacune offre et quels séjours la parcourent.",
-  "de": "Das Beste Spaniens, Region für Region: was jede zu bieten hat und welche Reisen sie durchqueren.",
-  "pt": "O melhor de Espanha, região a região: o que cada uma tem e que roteiros a percorrem.",
-  "it": "Il meglio della Spagna, zona per zona: cosa offre ciascuna e quali itinerari la attraversano."
- },
- "dest.desc": {
-  "es": "Qué hay en cada zona de España en nuestros rankings (hoteles, golf, restaurantes, bodegas, spas, puertos y motor) y los planes completos que la recorren.",
-  "en": "What each region of Spain has in our rankings (hotels, golf, restaurants, wineries, spas, marinas and motor) and the complete itineraries that cross it.",
-  "fr": "Ce que chaque région d'Espagne compte dans nos classements (hôtels, golf, restaurants, domaines viticoles, spas, ports et automobile) et les séjours complets qui la parcourent.",
-  "de": "Was jede Region Spaniens in unseren Rankings zu bieten hat (Hotels, Golf, Restaurants, Weingüter, Spas, Häfen und Motor) und welche kompletten Reisen sie durchqueren.",
-  "pt": "O que cada região de Espanha tem nos nossos rankings (hotéis, golfe, restaurantes, adegas, spas, marinas e motor) e os roteiros completos que a percorrem.",
-  "it": "Cosa offre ciascuna zona della Spagna nelle nostre classifiche (hotel, golf, ristoranti, cantine, spa, porti e motori) e gli itinerari completi che la attraversano."
- },
- "dest.resto": {
-  "es": "Resto de España",
-  "en": "Rest of Spain",
-  "fr": "Reste de l'Espagne",
-  "de": "Übriges Spanien",
-  "pt": "Resto de Espanha",
-  "it": "Resto della Spagna"
- },
- "dest.rankings": {
-  "es": "En los rankings",
-  "en": "In the rankings",
-  "fr": "Dans les classements",
-  "de": "In den Rankings",
-  "pt": "Nos rankings",
-  "it": "Nelle classifiche"
- },
- "method.eyebrow": {
-  "es": "Metodología · Actualizado {updated}",
-  "en": "Methodology · Updated {updated}",
-  "fr": "Méthodologie · Mis à jour {updated}",
-  "de": "Methodik · Aktualisiert {updated}",
-  "pt": "Metodologia · Atualizado {updated}",
-  "it": "Metodologia · Aggiornata {updated}"
- },
- "credits.h": {
-  "es": "Créditos de las fotos",
-  "en": "Photo credits",
-  "fr": "Crédits photos",
-  "de": "Bildnachweise",
-  "pt": "Créditos das fotografias",
-  "it": "Crediti fotografici"
- },
- "plan.map_aria": {
-  "es": "Mapa del plan: aeropuerto, hotel, campo y restaurante",
-  "en": "Itinerary map: airport, hotel, course and restaurant",
-  "fr": "Carte du séjour : aéroport, hôtel, parcours et restaurant",
-  "de": "Karte der Reise: Flughafen, Hotel, Golfplatz und Restaurant",
-  "pt": "Mapa do roteiro: aeroporto, hotel, campo e restaurante",
-  "it": "Mappa dell'itinerario: aeroporto, hotel, campo e ristorante"
- },
- "item.title": {
-  "es": "{name}: n.º {n} en {cat}",
-  "en": "{name}: No. {n} in {cat}",
-  "fr": "{name} : n° {n} en {cat}",
-  "de": "{name}: Nr. {n} bei {cat}",
-  "pt": "{name}: n.º {n} em {cat}",
-  "it": "{name}: n. {n} in {cat}"
- },
- "item.position": {
-  "es": "N.º {n} de {total}",
-  "en": "No. {n} of {total}",
-  "fr": "N° {n} sur {total}",
-  "de": "Nr. {n} von {total}",
-  "pt": "N.º {n} de {total}",
-  "it": "N. {n} su {total}"
- },
- "item.full": {
-  "es": "Ver ficha completa →",
-  "en": "See full profile →",
-  "fr": "Voir la fiche complète →",
-  "de": "Zur vollständigen Seite →",
-  "pt": "Ver ficha completa →",
-  "it": "Vedi la scheda completa →"
- },
- "item.sources": {
-  "es": "Fuentes",
-  "en": "Sources",
-  "fr": "Sources",
-  "de": "Quellen",
-  "pt": "Fontes",
-  "it": "Fonti"
- },
- "item.plans": {
-  "es": "Aparece en estos planes",
-  "en": "Featured in these itineraries",
-  "fr": "Présent dans ces séjours",
-  "de": "Kommt in diesen Reisen vor",
-  "pt": "Aparece nestes roteiros",
-  "it": "Compare in questi itinerari"
- },
- "item.map_aria": {
-  "es": "Mapa: {name} y lo mejor cerca",
-  "en": "Map: {name} and the best nearby",
-  "fr": "Carte : {name} et le meilleur à proximité",
-  "de": "Karte: {name} und das Beste in der Nähe",
-  "pt": "Mapa: {name} e o melhor por perto",
-  "it": "Mappa: {name} e il meglio nelle vicinanze"
- },
- "item.prev": {
-  "es": "← Anterior",
-  "en": "← Previous",
-  "fr": "← Précédent",
-  "de": "← Zurück",
-  "pt": "← Anterior",
-  "it": "← Precedente"
- },
- "item.next": {
-  "es": "Siguiente →",
-  "en": "Next →",
-  "fr": "Suivant →",
-  "de": "Weiter →",
-  "pt": "Seguinte →",
-  "it": "Successivo →"
- },
- "shop.h1": {
-  "es": "Tiendas insignia de lujo en España",
-  "en": "Luxury flagship stores in Spain",
-  "fr": "Boutiques de luxe en Espagne",
-  "de": "Luxus-Flagship-Stores in Spanien",
-  "pt": "Lojas de luxo em Espanha",
-  "it": "Negozi di lusso in Spagna"
- },
- "shop.crumb": {
-  "es": "Tiendas insignia",
-  "en": "Flagship stores",
-  "fr": "Boutiques phares",
-  "de": "Flagship-Stores",
-  "pt": "Lojas emblemáticas",
-  "it": "Flagship store"
- },
- "shop.eyebrow": {
-  "es": "Compras · Directorio · Actualizado {updated}",
-  "en": "Shopping · Directory · Updated {updated}",
-  "fr": "Shopping · Annuaire · Mis à jour {updated}",
-  "de": "Shopping · Verzeichnis · Aktualisiert {updated}",
-  "pt": "Compras · Diretório · Atualizado {updated}",
-  "it": "Shopping · Elenco · Aggiornato {updated}"
- },
- "shop.lead": {
-  "es": "Las boutiques de las grandes marcas en Madrid, Barcelona, Marbella y Palma, sin ordenar y sin precios. Solo dónde encontrarlas.",
-  "en": "The boutiques of the major brands in Madrid, Barcelona, Marbella and Palma, unranked and without prices. Just where to find them.",
-  "fr": "Les boutiques des grandes marques à Madrid, Barcelone, Marbella et Palma, sans classement et sans prix. Seulement où les trouver.",
-  "de": "Die Boutiquen der großen Marken in Madrid, Barcelona, Marbella und Palma, ohne Rangfolge und ohne Preise. Nur wo man sie findet.",
-  "pt": "As boutiques das grandes marcas em Madrid, Barcelona, Marbella e Palma, sem ordem e sem preços. Apenas onde as encontrar.",
-  "it": "Le boutique dei grandi marchi a Madrid, Barcellona, Marbella e Palma, senza classifica e senza prezzi. Solo dove trovarle."
- },
- "shop.about_txt": {
-  "es": "Las direcciones salen de las webs oficiales de las marcas, de la prensa y de guías. Los puntos marcados «Por verificar» tienen datos que no coinciden entre fuentes: confirma siempre con la marca antes de desplazarte.",
-  "en": "Addresses come from the brands' official websites, the press and guides. Entries marked \"To be verified\" have data that does not match across sources: always confirm with the brand before travelling.",
-  "fr": "Les adresses proviennent des sites officiels des marques, de la presse et de guides. Les points marqués « À vérifier » ont des données qui ne concordent pas entre les sources : confirmez toujours auprès de la marque avant de vous déplacer.",
-  "de": "Die Adressen stammen von den offiziellen Websites der Marken, aus der Presse und aus Reiseführern. Als „Noch zu prüfen“ markierte Einträge haben Angaben, die sich zwischen den Quellen widersprechen: Bitte vor der Anreise immer bei der Marke bestätigen.",
-  "pt": "As moradas vêm dos sites oficiais das marcas, da imprensa e de guias. Os pontos assinalados «Por verificar» têm dados que não coincidem entre fontes: confirme sempre com a marca antes de se deslocar.",
-  "it": "Gli indirizzi provengono dai siti ufficiali dei marchi, dalla stampa e da guide. I punti segnati «Da verificare» hanno dati che non coincidono tra le fonti: conferma sempre con il marchio prima di spostarti."
- },
- "shop.back": {
-  "es": "Ver el ranking de compras de lujo →",
-  "en": "See the luxury shopping ranking →",
-  "fr": "Voir le classement du shopping de luxe →",
-  "de": "Zum Ranking der Luxus-Shoppinggegenden →",
-  "pt": "Ver o ranking de compras de luxo →",
-  "it": "Vedi la classifica dello shopping di lusso →"
- },
- "shop.title": {
-  "es": "Tiendas insignia de marcas de lujo en España",
-  "en": "Luxury brand flagship stores in Spain",
-  "fr": "Boutiques phares de marques de luxe en Espagne",
-  "de": "Flagship-Stores von Luxusmarken in Spanien",
-  "pt": "Lojas emblemáticas de marcas de luxo em Espanha",
-  "it": "Flagship store di marchi di lusso in Spagna"
- },
- "shop.desc": {
-  "es": "Directorio de boutiques de Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior y Loewe en Madrid, Barcelona, Marbella y Palma, con dirección y estado de verificación.",
-  "en": "Directory of Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior and Loewe boutiques in Madrid, Barcelona, Marbella and Palma, with addresses and verification status.",
-  "fr": "Annuaire des boutiques Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior et Loewe à Madrid, Barcelone, Marbella et Palma, avec adresses et statut de vérification.",
-  "de": "Verzeichnis der Boutiquen von Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior und Loewe in Madrid, Barcelona, Marbella und Palma, mit Adressen und Prüfstatus.",
-  "pt": "Diretório das boutiques da Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior e Loewe em Madrid, Barcelona, Marbella e Palma, com moradas e estado de verificação.",
-  "it": "Elenco delle boutique di Louis Vuitton, Hermès, Chanel, Cartier, Rolex, Gucci, Dior e Loewe a Madrid, Barcellona, Marbella e Palma, con indirizzi e stato di verifica."
- },
- "rank.shops_link": {
-  "es": "Tiendas insignia de las grandes marcas →",
-  "en": "Flagship stores of the major brands →",
-  "fr": "Boutiques phares des grandes marques →",
-  "de": "Flagship-Stores der großen Marken →",
-  "pt": "Lojas emblemáticas das grandes marcas →",
-  "it": "Flagship store dei grandi marchi →"
- }
+  "nav.rankings": {
+    "es": "Rankings",
+    "en": "Rankings",
+    "fr": "Classements",
+    "de": "Rankings",
+    "pt": "Rankings",
+    "it": "Classifiche"
+  },
+  "nav.plans": {
+    "es": "Planes completos",
+    "en": "Complete itineraries",
+    "fr": "Séjours complets",
+    "de": "Komplette Reisen",
+    "pt": "Roteiros completos",
+    "it": "Itinerari completi"
+  },
+  "nav.destinations": {
+    "es": "Destinos",
+    "en": "Destinations",
+    "fr": "Destinations",
+    "de": "Reiseziele",
+    "pt": "Destinos",
+    "it": "Destinazioni"
+  },
+  "nav.porsche": {
+    "es": "Guía Porsche",
+    "en": "Porsche guide (in Spanish)",
+    "fr": "Guide Porsche (en espagnol)",
+    "de": "Porsche-Guide (auf Spanisch)",
+    "pt": "Guia Porsche (em espanhol)",
+    "it": "Guida Porsche (in spagnolo)"
+  },
+  "nav.method": {
+    "es": "Metodología",
+    "en": "Methodology",
+    "fr": "Méthodologie",
+    "de": "Methodik",
+    "pt": "Metodologia",
+    "it": "Metodologia"
+  },
+  "aria.main": {
+    "es": "Principal",
+    "en": "Main",
+    "fr": "Principal",
+    "de": "Hauptmenü",
+    "pt": "Principal",
+    "it": "Principale"
+  },
+  "aria.lang": {
+    "es": "Idioma",
+    "en": "Language",
+    "fr": "Langue",
+    "de": "Sprache",
+    "pt": "Idioma",
+    "it": "Lingua"
+  },
+  "aria.footer": {
+    "es": "Pie",
+    "en": "Footer",
+    "fr": "Pied de page",
+    "de": "Fußbereich",
+    "pt": "Rodapé",
+    "it": "Piè di pagina"
+  },
+  "aria.crumbs": {
+    "es": "Migas de pan",
+    "en": "Breadcrumb",
+    "fr": "Fil d'Ariane",
+    "de": "Brotkrumennavigation",
+    "pt": "Navegação estrutural",
+    "it": "Percorso di navigazione"
+  },
+  "crumb.home": {
+    "es": "Inicio",
+    "en": "Home",
+    "fr": "Accueil",
+    "de": "Startseite",
+    "pt": "Início",
+    "it": "Home"
+  },
+  "zone.todas": {
+    "es": "Toda España",
+    "en": "All of Spain",
+    "fr": "Toute l'Espagne",
+    "de": "Ganz Spanien",
+    "pt": "Toda a Espanha",
+    "it": "Tutta la Spagna"
+  },
+  "zone.andalucia": {
+    "es": "Andalucía",
+    "en": "Andalusia",
+    "fr": "Andalousie",
+    "de": "Andalusien",
+    "pt": "Andaluzia",
+    "it": "Andalusia"
+  },
+  "zone.cataluna": {
+    "es": "Cataluña",
+    "en": "Catalonia",
+    "fr": "Catalogne",
+    "de": "Katalonien",
+    "pt": "Catalunha",
+    "it": "Catalogna"
+  },
+  "zone.baleares": {
+    "es": "Baleares",
+    "en": "Balearic Islands",
+    "fr": "Baléares",
+    "de": "Balearen",
+    "pt": "Baleares",
+    "it": "Baleari"
+  },
+  "zone.canarias": {
+    "es": "Canarias",
+    "en": "Canary Islands",
+    "fr": "Canaries",
+    "de": "Kanaren",
+    "pt": "Canárias",
+    "it": "Canarie"
+  },
+  "zone.resto": {
+    "es": "Resto",
+    "en": "Rest of Spain",
+    "fr": "Reste de l'Espagne",
+    "de": "Übriges Spanien",
+    "pt": "Resto de Espanha",
+    "it": "Resto della Spagna"
+  },
+  "rank.filter_aria": {
+    "es": "Filtrar por zona",
+    "en": "Filter by region",
+    "fr": "Filtrer par région",
+    "de": "Nach Region filtern",
+    "pt": "Filtrar por região",
+    "it": "Filtra per zona"
+  },
+  "rank.eyebrow": {
+    "es": "Ranking · {short} · Actualizado {updated}",
+    "en": "Ranking · {short} · Updated {updated}",
+    "fr": "Classement · {short} · Mis à jour {updated}",
+    "de": "Ranking · {short} · Aktualisiert {updated}",
+    "pt": "Ranking · {short} · Atualizado {updated}",
+    "it": "Classifica · {short} · Aggiornata {updated}"
+  },
+  "rank.near": {
+    "es": "Lo mejor cerca",
+    "en": "The best nearby",
+    "fr": "Le meilleur à proximité",
+    "de": "Das Beste in der Nähe",
+    "pt": "O melhor por perto",
+    "it": "Il meglio nelle vicinanze"
+  },
+  "rank.plan_link": {
+    "es": "Ver el plan completo →",
+    "en": "See the complete itinerary →",
+    "fr": "Voir le séjour complet →",
+    "de": "Zur kompletten Reise →",
+    "pt": "Ver o roteiro completo →",
+    "it": "Vedi l'itinerario completo →"
+  },
+  "rank.empty": {
+    "es": "Ningún elemento de la zona seleccionada está entre los cinco primeros.",
+    "en": "None of the entries in the selected region is in the top five.",
+    "fr": "Aucune adresse de la région sélectionnée ne figure parmi les cinq premières.",
+    "de": "Kein Eintrag der gewählten Region gehört zu den ersten fünf.",
+    "pt": "Nenhum item da região selecionada está entre os cinco primeiros.",
+    "it": "Nessun elemento della zona selezionata è tra i primi cinque."
+  },
+  "rank.rest_h": {
+    "es": "Del 6 al {last}",
+    "en": "From 6 to {last}",
+    "fr": "Du 6 au {last}",
+    "de": "Plätze 6 bis {last}",
+    "pt": "Do 6.º ao {last}.º",
+    "it": "Dal 6 al {last}"
+  },
+  "rank.how": {
+    "es": "Cómo ordenamos",
+    "en": "How we rank",
+    "fr": "Comment nous classons",
+    "de": "So ordnen wir",
+    "pt": "Como ordenamos",
+    "it": "Come ordiniamo"
+  },
+  "rank.method_link": {
+    "es": "Metodología completa →",
+    "en": "Full methodology →",
+    "fr": "Méthodologie complète →",
+    "de": "Vollständige Methodik →",
+    "pt": "Metodologia completa →",
+    "it": "Metodologia completa →"
+  },
+  "rank.desc": {
+    "es": "{h1}: los cinco primeros con lo mejor cerca y del 6 en adelante en formato compacto, con filtro por zona.",
+    "en": "{h1}: the top five with the best places nearby, and the rest in compact form, filterable by region.",
+    "fr": "{h1} : les cinq premiers avec le meilleur à proximité, puis la suite en format compact, filtrable par région.",
+    "de": "{h1}: die ersten fünf mit dem Besten in der Nähe, der Rest kompakt, nach Region filterbar.",
+    "pt": "{h1}: os cinco primeiros com o melhor por perto e os restantes em formato compacto, com filtro por região.",
+    "it": "{h1}: i primi cinque con il meglio nelle vicinanze e il resto in formato compatto, con filtro per zona."
+  },
+  "rank.motor_link": {
+    "es": "Concesionarios oficiales de marcas de lujo →",
+    "en": "Official luxury-brand dealerships →",
+    "fr": "Concessionnaires officiels de marques de luxe →",
+    "de": "Offizielle Händler von Luxusmarken →",
+    "pt": "Concessionários oficiais de marcas de luxo →",
+    "it": "Concessionari ufficiali di marchi di lusso →"
+  },
+  "crumb.rankings": {
+    "es": "Rankings",
+    "en": "Rankings",
+    "fr": "Classements",
+    "de": "Rankings",
+    "pt": "Rankings",
+    "it": "Classifiche"
+  },
+  "near.hotel": {
+    "es": "Hotel",
+    "en": "Hotel",
+    "fr": "Hôtel",
+    "de": "Hotel",
+    "pt": "Hotel",
+    "it": "Hotel"
+  },
+  "near.restaurante": {
+    "es": "Restaurante",
+    "en": "Restaurant",
+    "fr": "Restaurant",
+    "de": "Restaurant",
+    "pt": "Restaurante",
+    "it": "Ristorante"
+  },
+  "near.aeropuerto": {
+    "es": "Aeropuerto",
+    "en": "Airport",
+    "fr": "Aéroport",
+    "de": "Flughafen",
+    "pt": "Aeroporto",
+    "it": "Aeroporto"
+  },
+  "near.golf": {
+    "es": "Golf",
+    "en": "Golf",
+    "fr": "Golf",
+    "de": "Golf",
+    "pt": "Golfe",
+    "it": "Golf"
+  },
+  "near.spa": {
+    "es": "Spa",
+    "en": "Spa",
+    "fr": "Spa",
+    "de": "Spa",
+    "pt": "Spa",
+    "it": "Spa"
+  },
+  "near.puerto": {
+    "es": "Puerto",
+    "en": "Marina",
+    "fr": "Port",
+    "de": "Hafen",
+    "pt": "Porto",
+    "it": "Porto"
+  },
+  "near.bodega": {
+    "es": "Bodega",
+    "en": "Winery",
+    "fr": "Domaine viticole",
+    "de": "Weingut",
+    "pt": "Adega",
+    "it": "Cantina"
+  },
+  "near.min": {
+    "es": "a ~{n} min",
+    "en": "~{n} min away",
+    "fr": "à ~{n} min",
+    "de": "ca. {n} Min. entfernt",
+    "pt": "a ~{n} min",
+    "it": "a ~{n} min"
+  },
+  "near.tbd": {
+    "es": "a [X] min",
+    "en": "[X] min away",
+    "fr": "à [X] min",
+    "de": "[X] Min. entfernt",
+    "pt": "a [X] min",
+    "it": "a [X] min"
+  },
+  "near.same": {
+    "es": "en el mismo lugar",
+    "en": "at the same place",
+    "fr": "au même endroit",
+    "de": "am selben Ort",
+    "pt": "no mesmo local",
+    "it": "nello stesso luogo"
+  },
+  "michelin.star1": {
+    "es": "{n} estrella Michelin",
+    "en": "{n} Michelin star",
+    "fr": "{n} étoile Michelin",
+    "de": "{n} Michelin-Stern",
+    "pt": "{n} estrela Michelin",
+    "it": "{n} stella Michelin"
+  },
+  "michelin.star2": {
+    "es": "{n} estrellas Michelin",
+    "en": "{n} Michelin stars",
+    "fr": "{n} étoiles Michelin",
+    "de": "{n} Michelin-Sterne",
+    "pt": "{n} estrelas Michelin",
+    "it": "{n} stelle Michelin"
+  },
+  "michelin.key1": {
+    "es": "{n} Llave Michelin",
+    "en": "{n} Michelin Key",
+    "fr": "{n} Clé Michelin",
+    "de": "{n} Michelin-Schlüssel",
+    "pt": "{n} Chave Michelin",
+    "it": "{n} Chiave Michelin"
+  },
+  "michelin.key2": {
+    "es": "{n} Llaves Michelin",
+    "en": "{n} Michelin Keys",
+    "fr": "{n} Clés Michelin",
+    "de": "{n} Michelin-Schlüssel",
+    "pt": "{n} Chaves Michelin",
+    "it": "{n} Chiavi Michelin"
+  },
+  "route.llegada": {
+    "es": "Llegada",
+    "en": "Arrival",
+    "fr": "Arrivée",
+    "de": "Ankunft",
+    "pt": "Chegada",
+    "it": "Arrivo"
+  },
+  "route.llegada.link": {
+    "es": "Ver cómo llegar",
+    "en": "See how to get there",
+    "fr": "Voir comment s'y rendre",
+    "de": "Anreise ansehen",
+    "pt": "Ver como chegar",
+    "it": "Vedi come arrivare"
+  },
+  "route.coche": {
+    "es": "Coche",
+    "en": "Car",
+    "fr": "Voiture",
+    "de": "Auto",
+    "pt": "Carro",
+    "it": "Auto"
+  },
+  "route.coche.link": {
+    "es": "Ver experiencias de motor en {z}",
+    "en": "See motor experiences in {z}",
+    "fr": "Voir les expériences automobiles : {z}",
+    "de": "Motorsport-Erlebnisse ansehen: {z}",
+    "pt": "Ver experiências de motor: {z}",
+    "it": "Vedi le esperienze motoristiche: {z}"
+  },
+  "route.hotel": {
+    "es": "Hotel",
+    "en": "Hotel",
+    "fr": "Hôtel",
+    "de": "Hotel",
+    "pt": "Hotel",
+    "it": "Hotel"
+  },
+  "route.hotel.link": {
+    "es": "Ver hoteles de lujo en {z}",
+    "en": "See luxury hotels in {z}",
+    "fr": "Voir les hôtels de luxe : {z}",
+    "de": "Luxushotels ansehen: {z}",
+    "pt": "Ver hotéis de luxo: {z}",
+    "it": "Vedi gli hotel di lusso: {z}"
+  },
+  "route.golf": {
+    "es": "Golf",
+    "en": "Golf",
+    "fr": "Golf",
+    "de": "Golf",
+    "pt": "Golfe",
+    "it": "Golf"
+  },
+  "route.golf.link": {
+    "es": "Ver campos de golf en {z}",
+    "en": "See golf courses in {z}",
+    "fr": "Voir les parcours de golf : {z}",
+    "de": "Golfplätze ansehen: {z}",
+    "pt": "Ver campos de golfe: {z}",
+    "it": "Vedi i campi da golf: {z}"
+  },
+  "route.cena": {
+    "es": "Cena",
+    "en": "Dinner",
+    "fr": "Dîner",
+    "de": "Abendessen",
+    "pt": "Jantar",
+    "it": "Cena"
+  },
+  "route.cena.link": {
+    "es": "Ver restaurantes en {z}",
+    "en": "See restaurants in {z}",
+    "fr": "Voir les restaurants : {z}",
+    "de": "Restaurants ansehen: {z}",
+    "pt": "Ver restaurantes: {z}",
+    "it": "Vedi i ristoranti: {z}"
+  },
+  "route.descanso": {
+    "es": "Descanso",
+    "en": "Rest",
+    "fr": "Détente",
+    "de": "Erholung",
+    "pt": "Descanso",
+    "it": "Relax"
+  },
+  "route.descanso.link": {
+    "es": "Ver spas en {z}",
+    "en": "See spas in {z}",
+    "fr": "Voir les spas : {z}",
+    "de": "Spas ansehen: {z}",
+    "pt": "Ver spas: {z}",
+    "it": "Vedi le spa: {z}"
+  },
+  "route.mesa": {
+    "es": "Mesa",
+    "en": "Table",
+    "fr": "Table",
+    "de": "Tisch",
+    "pt": "Mesa",
+    "it": "Tavola"
+  },
+  "route.mesa.link": {
+    "es": "Ver restaurantes en {z}",
+    "en": "See restaurants in {z}",
+    "fr": "Voir les restaurants : {z}",
+    "de": "Restaurants ansehen: {z}",
+    "pt": "Ver restaurantes: {z}",
+    "it": "Vedi i ristoranti: {z}"
+  },
+  "route.bodega": {
+    "es": "Bodega",
+    "en": "Winery",
+    "fr": "Domaine",
+    "de": "Weingut",
+    "pt": "Adega",
+    "it": "Cantina"
+  },
+  "route.bodega.link": {
+    "es": "Ver bodegas en {z}",
+    "en": "See wineries in {z}",
+    "fr": "Voir les domaines viticoles : {z}",
+    "de": "Weingüter ansehen: {z}",
+    "pt": "Ver adegas: {z}",
+    "it": "Vedi le cantine: {z}"
+  },
+  "route.barco": {
+    "es": "Barco",
+    "en": "Boat",
+    "fr": "Bateau",
+    "de": "Boot",
+    "pt": "Barco",
+    "it": "Barca"
+  },
+  "route.barco.link": {
+    "es": "Ver puertos deportivos en {z}",
+    "en": "See marinas in {z}",
+    "fr": "Voir les ports de plaisance : {z}",
+    "de": "Yachthäfen ansehen: {z}",
+    "pt": "Ver marinas: {z}",
+    "it": "Vedi i porti turistici: {z}"
+  },
+  "route.cala": {
+    "es": "Cala",
+    "en": "Cove",
+    "fr": "Crique",
+    "de": "Bucht",
+    "pt": "Enseada",
+    "it": "Cala"
+  },
+  "route.cala.link": {
+    "es": "Ver puertos deportivos en {z}",
+    "en": "See marinas in {z}",
+    "fr": "Voir les ports de plaisance : {z}",
+    "de": "Yachthäfen ansehen: {z}",
+    "pt": "Ver marinas: {z}",
+    "it": "Vedi i porti turistici: {z}"
+  },
+  "plan.alts": {
+    "es": "Alternativas:",
+    "en": "Alternatives:",
+    "fr": "Alternatives :",
+    "de": "Alternativen:",
+    "pt": "Alternativas:",
+    "it": "Alternative:"
+  },
+  "plan.opt2": {
+    "es": "[Opción 2]",
+    "en": "[Option 2]",
+    "fr": "[Option 2]",
+    "de": "[Option 2]",
+    "pt": "[Opção 2]",
+    "it": "[Opzione 2]"
+  },
+  "plan.opt3": {
+    "es": "[Opción 3]",
+    "en": "[Option 3]",
+    "fr": "[Option 3]",
+    "de": "[Option 3]",
+    "pt": "[Opção 3]",
+    "it": "[Opzione 3]"
+  },
+  "plan.day": {
+    "es": "Día {n} · {t}",
+    "en": "Day {n} · {t}",
+    "fr": "Jour {n} · {t}",
+    "de": "Tag {n} · {t}",
+    "pt": "Dia {n} · {t}",
+    "it": "Giorno {n} · {t}"
+  },
+  "plan.photo": {
+    "es": "[FOTO · {x}]",
+    "en": "[PHOTO · {x}]",
+    "fr": "[PHOTO · {x}]",
+    "de": "[FOTO · {x}]",
+    "pt": "[FOTO · {x}]",
+    "it": "[FOTO · {x}]"
+  },
+  "plan.map": {
+    "es": "[MAPA · aeropuerto, hotel, campo y restaurante]",
+    "en": "[MAP · airport, hotel, course and restaurant]",
+    "fr": "[CARTE · aéroport, hôtel, parcours et restaurant]",
+    "de": "[KARTE · Flughafen, Hotel, Golfplatz und Restaurant]",
+    "pt": "[MAPA · aeroporto, hotel, campo e restaurante]",
+    "it": "[MAPPA · aeroporto, hotel, campo e ristorante]"
+  },
+  "plan.summary_aria": {
+    "es": "Resumen del plan",
+    "en": "Itinerary summary",
+    "fr": "Résumé du séjour",
+    "de": "Reiseübersicht",
+    "pt": "Resumo do roteiro",
+    "it": "Riepilogo dell'itinerario"
+  },
+  "plan.getting": {
+    "es": "Cómo llegar",
+    "en": "How to get there",
+    "fr": "Comment s'y rendre",
+    "de": "Anreise",
+    "pt": "Como chegar",
+    "it": "Come arrivare"
+  },
+  "plan.others": {
+    "es": "Otros planes completos",
+    "en": "More complete itineraries",
+    "fr": "Autres séjours complets",
+    "de": "Weitere komplette Reisen",
+    "pt": "Outros roteiros completos",
+    "it": "Altri itinerari completi"
+  },
+  "plan.title": {
+    "es": "{title}: plan completo",
+    "en": "{title}: complete itinerary",
+    "fr": "{title} : séjour complet",
+    "de": "{title}: komplette Reise",
+    "pt": "{title}: roteiro completo",
+    "it": "{title}: itinerario completo"
+  },
+  "dir.h1": {
+    "es": "Marcas de lujo en España",
+    "en": "Luxury car brands in Spain",
+    "fr": "Marques de luxe en Espagne",
+    "de": "Luxusmarken in Spanien",
+    "pt": "Marcas de luxo em Espanha",
+    "it": "Marchi di lusso in Spagna"
+  },
+  "dir.crumb": {
+    "es": "Marcas de lujo",
+    "en": "Luxury brands",
+    "fr": "Marques de luxe",
+    "de": "Luxusmarken",
+    "pt": "Marcas de luxo",
+    "it": "Marchi di lusso"
+  },
+  "dir.eyebrow": {
+    "es": "Motor · Directorio · Actualizado {updated}",
+    "en": "Motor · Directory · Updated {updated}",
+    "fr": "Auto · Annuaire · Mis à jour {updated}",
+    "de": "Motor · Verzeichnis · Aktualisiert {updated}",
+    "pt": "Motor · Diretório · Atualizado {updated}",
+    "it": "Motori · Elenco · Aggiornato {updated}"
+  },
+  "dir.lead": {
+    "es": "Concesionarios oficiales, sin ordenar y sin precios. Cada marca tiene un único punto oficial por ciudad, así que aquí no hay ranking: solo dónde encontrarlos.",
+    "en": "Official dealerships, unranked and without prices. Each brand has a single official outlet per city, so there is no ranking here: just where to find them.",
+    "fr": "Concessionnaires officiels, sans classement et sans prix. Chaque marque a un seul point officiel par ville : il n'y a donc pas de classement ici, seulement où les trouver.",
+    "de": "Offizielle Händler, ohne Rangfolge und ohne Preise. Jede Marke hat pro Stadt nur einen offiziellen Standort, daher gibt es hier kein Ranking: nur wo man sie findet.",
+    "pt": "Concessionários oficiais, sem ordem e sem preços. Cada marca tem um único ponto oficial por cidade, por isso aqui não há ranking: apenas onde os encontrar.",
+    "it": "Concessionari ufficiali, senza classifica e senza prezzi. Ogni marchio ha un solo punto ufficiale per città, quindi qui non c'è una classifica: solo dove trovarli."
+  },
+  "dir.verified": {
+    "es": "Verificado",
+    "en": "Verified",
+    "fr": "Vérifié",
+    "de": "Geprüft",
+    "pt": "Verificado",
+    "it": "Verificato"
+  },
+  "dir.unverified": {
+    "es": "Por verificar",
+    "en": "To be verified",
+    "fr": "À vérifier",
+    "de": "Noch zu prüfen",
+    "pt": "Por verificar",
+    "it": "Da verificare"
+  },
+  "dir.noaddr": {
+    "es": "Dirección por confirmar",
+    "en": "Address to be confirmed",
+    "fr": "Adresse à confirmer",
+    "de": "Adresse noch zu bestätigen",
+    "pt": "Morada por confirmar",
+    "it": "Indirizzo da confermare"
+  },
+  "dir.filter_aria": {
+    "es": "Filtrar por ciudad",
+    "en": "Filter by city",
+    "fr": "Filtrer par ville",
+    "de": "Nach Stadt filtern",
+    "pt": "Filtrar por cidade",
+    "it": "Filtra per città"
+  },
+  "dir.about": {
+    "es": "Sobre estos datos",
+    "en": "About this data",
+    "fr": "À propos de ces données",
+    "de": "Zu diesen Daten",
+    "pt": "Sobre estes dados",
+    "it": "Su questi dati"
+  },
+  "dir.about_txt": {
+    "es": "Las direcciones salen de las webs de los concesionarios, de sus grupos y de la prensa. Los puntos marcados «Por verificar» proceden de fuentes antiguas: confirma siempre con la marca antes de desplazarte.",
+    "en": "Addresses come from the dealers' websites, their groups and the press. Entries marked \"To be verified\" come from older sources: always confirm with the brand before travelling.",
+    "fr": "Les adresses proviennent des sites des concessionnaires, de leurs groupes et de la presse. Les points marqués « À vérifier » viennent de sources anciennes : confirmez toujours auprès de la marque avant de vous déplacer.",
+    "de": "Die Adressen stammen von den Websites der Händler, ihrer Gruppen und der Presse. Als „Noch zu prüfen“ markierte Einträge beruhen auf älteren Quellen: Bitte vor der Anreise immer bei der Marke bestätigen.",
+    "pt": "As moradas vêm dos sites dos concessionários, dos seus grupos e da imprensa. Os pontos assinalados «Por verificar» provêm de fontes antigas: confirme sempre com a marca antes de se deslocar.",
+    "it": "Gli indirizzi provengono dai siti dei concessionari, dai loro gruppi e dalla stampa. I punti segnati «Da verificare» derivano da fonti datate: conferma sempre con il marchio prima di spostarti."
+  },
+  "dir.back": {
+    "es": "Ver el ranking de motor →",
+    "en": "See the motor ranking →",
+    "fr": "Voir le classement automobile →",
+    "de": "Zum Motor-Ranking →",
+    "pt": "Ver o ranking de motor →",
+    "it": "Vedi la classifica motori →"
+  },
+  "dir.title": {
+    "es": "Concesionarios oficiales de marcas de lujo en España",
+    "en": "Official luxury car dealerships in Spain",
+    "fr": "Concessionnaires officiels de marques de luxe en Espagne",
+    "de": "Offizielle Händler von Luxusmarken in Spanien",
+    "pt": "Concessionários oficiais de marcas de luxo em Espanha",
+    "it": "Concessionari ufficiali di marchi di lusso in Spagna"
+  },
+  "dir.desc": {
+    "es": "Directorio de concesionarios oficiales de Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce y McLaren en España, por ciudad.",
+    "en": "Directory of official Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce and McLaren dealerships in Spain, by city.",
+    "fr": "Annuaire des concessionnaires officiels Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce et McLaren en Espagne, par ville.",
+    "de": "Verzeichnis der offiziellen Händler von Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce und McLaren in Spanien, nach Stadt.",
+    "pt": "Diretório dos concessionários oficiais Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce e McLaren em Espanha, por cidade.",
+    "it": "Elenco dei concessionari ufficiali Ferrari, Lamborghini, Aston Martin, Bentley, Rolls-Royce e McLaren in Spagna, per città."
+  },
+  "home.title": {
+    "es": "Mejor Imposible · Solo lo mejor de España en lujo",
+    "en": "Mejor Imposible · Only the best of Spain in luxury",
+    "fr": "Mejor Imposible · Le meilleur de l'Espagne, rien d'autre",
+    "de": "Mejor Imposible · Nur das Beste Spaniens im Luxus",
+    "pt": "Mejor Imposible · Só o melhor de Espanha em luxo",
+    "it": "Mejor Imposible · Solo il meglio della Spagna nel lusso"
+  },
+  "home.desc": {
+    "es": "Rankings de los mejores hoteles, campos de golf, restaurantes, casas, bodegas, spas, yates y motor de España. Pocos, elegidos y ordenados.",
+    "en": "Rankings of the best hotels, golf courses, restaurants, residential areas, wineries, spas, yachting and motoring in Spain. Few, chosen and ranked.",
+    "fr": "Classements des meilleurs hôtels, parcours de golf, restaurants, quartiers résidentiels, domaines viticoles, spas, ports de plaisance et expériences automobiles d'Espagne. Peu, choisis et classés.",
+    "de": "Rankings der besten Hotels, Golfplätze, Restaurants, Wohngegenden, Weingüter, Spas, Yachthäfen und Motorerlebnisse Spaniens. Wenige, ausgewählt und geordnet.",
+    "pt": "Rankings dos melhores hotéis, campos de golfe, restaurantes, zonas residenciais, adegas, spas, marinas e experiências de motor de Espanha. Poucos, escolhidos e ordenados.",
+    "it": "Classifiche dei migliori hotel, campi da golf, ristoranti, zone residenziali, cantine, spa, porti turistici ed esperienze motoristiche della Spagna. Pochi, scelti e ordinati."
+  },
+  "home.eyebrow": {
+    "es": "Rankings de España",
+    "en": "Rankings of Spain",
+    "fr": "Classements d'Espagne",
+    "de": "Spaniens Rankings",
+    "pt": "Rankings de Espanha",
+    "it": "Classifiche della Spagna"
+  },
+  "home.h1": {
+    "es": "Solo lo mejor.",
+    "en": "Only the best.",
+    "fr": "Rien que le meilleur.",
+    "de": "Nur das Beste.",
+    "pt": "Só o melhor.",
+    "it": "Solo il meglio."
+  },
+  "home.lead": {
+    "es": "Los mejores hoteles, campos, mesas y casas del país. Pocos, elegidos y ordenados.",
+    "en": "The finest hotels, courses, tables and homes in the country. Few, chosen and ranked.",
+    "fr": "Les meilleurs hôtels, parcours, tables et demeures du pays. Peu, choisis et classés.",
+    "de": "Die besten Hotels, Golfplätze, Restaurants und Wohnlagen des Landes. Wenige, ausgewählt und geordnet.",
+    "pt": "Os melhores hotéis, campos, mesas e casas do país. Poucos, escolhidos e ordenados.",
+    "it": "I migliori hotel, campi, tavole e dimore del paese. Pochi, scelti e ordinati."
+  },
+  "home.cats_aria": {
+    "es": "Categorías",
+    "en": "Categories",
+    "fr": "Catégories",
+    "de": "Kategorien",
+    "pt": "Categorias",
+    "it": "Categorie"
+  },
+  "home.featured_aria": {
+    "es": "Destacado",
+    "en": "Featured",
+    "fr": "À la une",
+    "de": "Hervorgehoben",
+    "pt": "Destaque",
+    "it": "In evidenza"
+  },
+  "home.featured_photo": {
+    "es": "calle de golf al atardecer",
+    "en": "fairway at sunset",
+    "fr": "fairway au coucher du soleil",
+    "de": "Fairway bei Sonnenuntergang",
+    "pt": "fairway ao entardecer",
+    "it": "fairway al tramonto"
+  },
+  "home.kicker": {
+    "es": "Ranking del mes",
+    "en": "Ranking of the month",
+    "fr": "Classement du mois",
+    "de": "Ranking des Monats",
+    "pt": "Ranking do mês",
+    "it": "Classifica del mese"
+  },
+  "home.cta": {
+    "es": "Ver el ranking →",
+    "en": "See the ranking →",
+    "fr": "Voir le classement →",
+    "de": "Zum Ranking →",
+    "pt": "Ver o ranking →",
+    "it": "Vedi la classifica →"
+  },
+  "home.strip_hoteles": {
+    "es": "Los mejores hoteles de lujo de España",
+    "en": "The best luxury hotels in Spain",
+    "fr": "Les meilleurs hôtels de luxe d'Espagne",
+    "de": "Die besten Luxushotels Spaniens",
+    "pt": "Os melhores hotéis de luxo de Espanha",
+    "it": "I migliori hotel di lusso della Spagna"
+  },
+  "home.strip_golf": {
+    "es": "Los mejores campos de golf",
+    "en": "The best golf courses",
+    "fr": "Les meilleurs parcours de golf",
+    "de": "Die besten Golfplätze",
+    "pt": "Os melhores campos de golfe",
+    "it": "I migliori campi da golf"
+  },
+  "home.strip_restaurantes": {
+    "es": "Las mejores mesas",
+    "en": "The best tables",
+    "fr": "Les meilleures tables",
+    "de": "Die besten Tische",
+    "pt": "As melhores mesas",
+    "it": "Le migliori tavole"
+  },
+  "home.strip_casas": {
+    "es": "Las zonas residenciales más exclusivas",
+    "en": "The most exclusive residential areas",
+    "fr": "Les quartiers résidentiels les plus exclusifs",
+    "de": "Die exklusivsten Wohngegenden",
+    "pt": "As zonas residenciais mais exclusivas",
+    "it": "Le zone residenziali più esclusive"
+  },
+  "home.strip_full": {
+    "es": "Ranking completo →",
+    "en": "Full ranking →",
+    "fr": "Classement complet →",
+    "de": "Komplettes Ranking →",
+    "pt": "Ranking completo →",
+    "it": "Classifica completa →"
+  },
+  "home.plans_h": {
+    "es": "Todo el viaje, en una sola vista",
+    "en": "The whole trip, at a glance",
+    "fr": "Tout le voyage, d'un seul coup d'œil",
+    "de": "Die ganze Reise auf einen Blick",
+    "pt": "A viagem inteira, de relance",
+    "it": "Tutto il viaggio, in un colpo d'occhio"
+  },
+  "home.plans_lead": {
+    "es": "Aeropuerto, coche, hotel, la actividad y dónde cenar: lo mejor de cada paso, encadenado.",
+    "en": "Airport, car, hotel, the activity and where to dine: the best of every step, linked together.",
+    "fr": "Aéroport, voiture, hôtel, l'activité et où dîner : le meilleur de chaque étape, enchaîné.",
+    "de": "Flughafen, Auto, Hotel, Aktivität und Abendessen: das Beste jeder Etappe, verknüpft.",
+    "pt": "Aeroporto, carro, hotel, a atividade e onde jantar: o melhor de cada passo, encadeado.",
+    "it": "Aeroporto, auto, hotel, l'attività e dove cenare: il meglio di ogni tappa, collegato."
+  },
+  "home.trust_h": {
+    "es": "Nadie paga por aparecer.<br>Por eso merece la pena mirarlo.",
+    "en": "Nobody pays to be listed.<br>That is why it is worth a look.",
+    "fr": "Personne ne paie pour figurer ici.<br>C'est pourquoi cela vaut le coup d'œil.",
+    "de": "Niemand zahlt fürs Aufgeführtwerden.<br>Darum lohnt sich der Blick.",
+    "pt": "Ninguém paga para aparecer.<br>Por isso vale a pena ver.",
+    "it": "Nessuno paga per esserci.<br>Per questo vale la pena guardare."
+  },
+  "home.trust_link": {
+    "es": "Cómo elaboramos los rankings →",
+    "en": "How we compile the rankings →",
+    "fr": "Comment nous élaborons les classements →",
+    "de": "Wie wir die Rankings erstellen →",
+    "pt": "Como elaboramos os rankings →",
+    "it": "Come elaboriamo le classifiche →"
+  },
+  "dest.h1": {
+    "es": "Destinos",
+    "en": "Destinations",
+    "fr": "Destinations",
+    "de": "Reiseziele",
+    "pt": "Destinos",
+    "it": "Destinazioni"
+  },
+  "dest.title": {
+    "es": "Destinos: lo mejor de España por zonas",
+    "en": "Destinations: the best of Spain, region by region",
+    "fr": "Destinations : le meilleur de l'Espagne, région par région",
+    "de": "Reiseziele: das Beste Spaniens, Region für Region",
+    "pt": "Destinos: o melhor de Espanha, região a região",
+    "it": "Destinazioni: il meglio della Spagna, zona per zona"
+  },
+  "dest.lead": {
+    "es": "Lo mejor de España, zona a zona: qué hay en cada región y qué planes la recorren.",
+    "en": "The best of Spain, region by region: what each one has and which itineraries cross it.",
+    "fr": "Le meilleur de l'Espagne, région par région : ce que chacune offre et quels séjours la parcourent.",
+    "de": "Das Beste Spaniens, Region für Region: was jede zu bieten hat und welche Reisen sie durchqueren.",
+    "pt": "O melhor de Espanha, região a região: o que cada uma tem e que roteiros a percorrem.",
+    "it": "Il meglio della Spagna, zona per zona: cosa offre ciascuna e quali itinerari la attraversano."
+  },
+  "dest.desc": {
+    "es": "Qué hay en cada zona de España en nuestros rankings (hoteles, golf, restaurantes, bodegas, spas, puertos y motor) y los planes completos que la recorren.",
+    "en": "What each region of Spain has in our rankings (hotels, golf, restaurants, wineries, spas, marinas and motor) and the complete itineraries that cross it.",
+    "fr": "Ce que chaque région d'Espagne compte dans nos classements (hôtels, golf, restaurants, domaines viticoles, spas, ports et automobile) et les séjours complets qui la parcourent.",
+    "de": "Was jede Region Spaniens in unseren Rankings zu bieten hat (Hotels, Golf, Restaurants, Weingüter, Spas, Häfen und Motor) und welche kompletten Reisen sie durchqueren.",
+    "pt": "O que cada região de Espanha tem nos nossos rankings (hotéis, golfe, restaurantes, adegas, spas, marinas e motor) e os roteiros completos que a percorrem.",
+    "it": "Cosa offre ciascuna zona della Spagna nelle nostre classifiche (hotel, golf, ristoranti, cantine, spa, porti e motori) e gli itinerari completi che la attraversano."
+  },
+  "dest.resto": {
+    "es": "Resto de España",
+    "en": "Rest of Spain",
+    "fr": "Reste de l'Espagne",
+    "de": "Übriges Spanien",
+    "pt": "Resto de Espanha",
+    "it": "Resto della Spagna"
+  },
+  "dest.rankings": {
+    "es": "En los rankings",
+    "en": "In the rankings",
+    "fr": "Dans les classements",
+    "de": "In den Rankings",
+    "pt": "Nos rankings",
+    "it": "Nelle classifiche"
+  },
+  "method.eyebrow": {
+    "es": "Metodología · Actualizado {updated}",
+    "en": "Methodology · Updated {updated}",
+    "fr": "Méthodologie · Mis à jour {updated}",
+    "de": "Methodik · Aktualisiert {updated}",
+    "pt": "Metodologia · Atualizado {updated}",
+    "it": "Metodologia · Aggiornata {updated}"
+  },
+  "credits.h": {
+    "es": "Créditos de las fotos",
+    "en": "Photo credits",
+    "fr": "Crédits photos",
+    "de": "Bildnachweise",
+    "pt": "Créditos das fotografias",
+    "it": "Crediti fotografici"
+  },
+  "plan.map_aria": {
+    "es": "Mapa del plan: aeropuerto, hotel, campo y restaurante",
+    "en": "Itinerary map: airport, hotel, course and restaurant",
+    "fr": "Carte du séjour : aéroport, hôtel, parcours et restaurant",
+    "de": "Karte der Reise: Flughafen, Hotel, Golfplatz und Restaurant",
+    "pt": "Mapa do roteiro: aeroporto, hotel, campo e restaurante",
+    "it": "Mappa dell'itinerario: aeroporto, hotel, campo e ristorante"
+  },
+  "item.title": {
+    "es": "{name}: n.º {n} en {cat}",
+    "en": "{name}: No. {n} in {cat}",
+    "fr": "{name} : n° {n} en {cat}",
+    "de": "{name}: Nr. {n} bei {cat}",
+    "pt": "{name}: n.º {n} em {cat}",
+    "it": "{name}: n. {n} in {cat}"
+  },
+  "item.position": {
+    "es": "N.º {n} de {total}",
+    "en": "No. {n} of {total}",
+    "fr": "N° {n} sur {total}",
+    "de": "Nr. {n} von {total}",
+    "pt": "N.º {n} de {total}",
+    "it": "N. {n} su {total}"
+  },
+  "item.full": {
+    "es": "Ver ficha completa →",
+    "en": "See full profile →",
+    "fr": "Voir la fiche complète →",
+    "de": "Zur vollständigen Seite →",
+    "pt": "Ver ficha completa →",
+    "it": "Vedi la scheda completa →"
+  },
+  "item.sources": {
+    "es": "Fuentes",
+    "en": "Sources",
+    "fr": "Sources",
+    "de": "Quellen",
+    "pt": "Fontes",
+    "it": "Fonti"
+  },
+  "item.plans": {
+    "es": "Aparece en estos planes",
+    "en": "Featured in these itineraries",
+    "fr": "Présent dans ces séjours",
+    "de": "Kommt in diesen Reisen vor",
+    "pt": "Aparece nestes roteiros",
+    "it": "Compare in questi itinerari"
+  },
+  "item.map_aria": {
+    "es": "Mapa: {name} y lo mejor cerca",
+    "en": "Map: {name} and the best nearby",
+    "fr": "Carte : {name} et le meilleur à proximité",
+    "de": "Karte: {name} und das Beste in der Nähe",
+    "pt": "Mapa: {name} e o melhor por perto",
+    "it": "Mappa: {name} e il meglio nelle vicinanze"
+  },
+  "item.prev": {
+    "es": "← Anterior",
+    "en": "← Previous",
+    "fr": "← Précédent",
+    "de": "← Zurück",
+    "pt": "← Anterior",
+    "it": "← Precedente"
+  },
+  "item.next": {
+    "es": "Siguiente →",
+    "en": "Next →",
+    "fr": "Suivant →",
+    "de": "Weiter →",
+    "pt": "Seguinte →",
+    "it": "Successivo →"
+  },
+  "shop.h1": {
+    "es": "Tiendas insignia de lujo en España",
+    "en": "Luxury flagship stores in Spain",
+    "fr": "Boutiques de luxe en Espagne",
+    "de": "Luxus-Flagship-Stores in Spanien",
+    "pt": "Lojas de luxo em Espanha",
+    "it": "Negozi di lusso in Spagna"
+  },
+  "shop.crumb": {
+    "es": "Tiendas insignia",
+    "en": "Flagship stores",
+    "fr": "Boutiques phares",
+    "de": "Flagship-Stores",
+    "pt": "Lojas emblemáticas",
+    "it": "Flagship store"
+  },
+  "shop.eyebrow": {
+    "es": "Compras · Directorio · Actualizado {updated}",
+    "en": "Shopping · Directory · Updated {updated}",
+    "fr": "Shopping · Annuaire · Mis à jour {updated}",
+    "de": "Shopping · Verzeichnis · Aktualisiert {updated}",
+    "pt": "Compras · Diretório · Atualizado {updated}",
+    "it": "Shopping · Elenco · Aggiornato {updated}"
+  },
+  "shop.lead": {
+    "es": "Las boutiques de las grandes marcas en Madrid, Barcelona, Marbella, Palma, Sevilla y Bilbao, sin ordenar y sin precios. Solo dónde encontrarlas.",
+    "en": "The boutiques of the major brands in Madrid, Barcelona, Marbella, Palma, Seville and Bilbao, unranked and without prices. Just where to find them.",
+    "fr": "Les boutiques des grandes marques à Madrid, Barcelone, Marbella, Palma, Séville et Bilbao, sans classement et sans prix. Seulement où les trouver.",
+    "de": "Die Boutiquen der großen Marken in Madrid, Barcelona, Marbella, Palma, Sevilla und Bilbao, ohne Rangfolge und ohne Preise. Nur wo man sie findet.",
+    "pt": "As boutiques das grandes marcas em Madrid, Barcelona, Marbella, Palma, Sevilha e Bilbau, sem ordem e sem preços. Apenas onde as encontrar.",
+    "it": "Le boutique dei grandi marchi a Madrid, Barcellona, Marbella, Palma, Siviglia e Bilbao, senza classifica e senza prezzi. Solo dove trovarle."
+  },
+  "shop.about_txt": {
+    "es": "Las direcciones salen de las webs oficiales de las marcas, de la prensa y de guías. Los puntos marcados «Por verificar» tienen datos que no coinciden entre fuentes: confirma siempre con la marca antes de desplazarte.",
+    "en": "Addresses come from the brands' official websites, the press and guides. Entries marked \"To be verified\" have data that does not match across sources: always confirm with the brand before travelling.",
+    "fr": "Les adresses proviennent des sites officiels des marques, de la presse et de guides. Les points marqués « À vérifier » ont des données qui ne concordent pas entre les sources : confirmez toujours auprès de la marque avant de vous déplacer.",
+    "de": "Die Adressen stammen von den offiziellen Websites der Marken, aus der Presse und aus Reiseführern. Als „Noch zu prüfen“ markierte Einträge haben Angaben, die sich zwischen den Quellen widersprechen: Bitte vor der Anreise immer bei der Marke bestätigen.",
+    "pt": "As moradas vêm dos sites oficiais das marcas, da imprensa e de guias. Os pontos assinalados «Por verificar» têm dados que não coincidem entre fontes: confirme sempre com a marca antes de se deslocar.",
+    "it": "Gli indirizzi provengono dai siti ufficiali dei marchi, dalla stampa e da guide. I punti segnati «Da verificare» hanno dati che non coincidono tra le fonti: conferma sempre con il marchio prima di spostarti."
+  },
+  "shop.back": {
+    "es": "Ver el ranking de compras de lujo →",
+    "en": "See the luxury shopping ranking →",
+    "fr": "Voir le classement du shopping de luxe →",
+    "de": "Zum Ranking der Luxus-Shoppinggegenden →",
+    "pt": "Ver o ranking de compras de luxo →",
+    "it": "Vedi la classifica dello shopping di lusso →"
+  },
+  "shop.title": {
+    "es": "Tiendas insignia de marcas de lujo en España",
+    "en": "Luxury brand flagship stores in Spain",
+    "fr": "Boutiques phares de marques de luxe en Espagne",
+    "de": "Flagship-Stores von Luxusmarken in Spanien",
+    "pt": "Lojas emblemáticas de marcas de luxo em Espanha",
+    "it": "Flagship store di marchi di lusso in Spagna"
+  },
+  "shop.desc": {
+    "es": "Directorio de boutiques de 11 marcas de lujo en Madrid, Barcelona, Marbella, Palma, Sevilla y Bilbao, con dirección y estado de verificación.",
+    "en": "Directory of boutiques of 11 luxury brands in Madrid, Barcelona, Marbella, Palma, Seville and Bilbao, with addresses and verification status.",
+    "fr": "Annuaire des boutiques de 11 marques de luxe à Madrid, Barcelone, Marbella, Palma, Séville et Bilbao, avec adresses et statut de vérification.",
+    "de": "Verzeichnis der Boutiquen von 11 Luxusmarken in Madrid, Barcelona, Marbella, Palma, Sevilla und Bilbao, mit Adressen und Prüfstatus.",
+    "pt": "Diretório das boutiques de 11 marcas de luxo em Madrid, Barcelona, Marbella, Palma, Sevilha e Bilbau, com moradas e estado de verificação.",
+    "it": "Elenco delle boutique di 11 marchi di lusso a Madrid, Barcellona, Marbella, Palma, Siviglia e Bilbao, con indirizzi e stato di verifica."
+  },
+  "rank.shops_link": {
+    "es": "Tiendas insignia de las grandes marcas →",
+    "en": "Flagship stores of the major brands →",
+    "fr": "Boutiques phares des grandes marques →",
+    "de": "Flagship-Stores der großen Marken →",
+    "pt": "Lojas emblemáticas das grandes marcas →",
+    "it": "Flagship store dei grandi marchi →"
+  }
 }

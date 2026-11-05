@@ -837,7 +837,7 @@ def build_directory():
         dealers = [r for r in rows if r['marca'] == brand]
         if not dealers:
             continue
-        bid = re.sub('[^a-z]', '', brand.lower())
+        bid = re.sub('[^a-z]', '', brand.lower().replace('&', 'and'))
         cards = ''
         for r in dealers:
             ok = r['estado'].startswith(('verificado', 'contrastado', 'dirección verificada'))
@@ -902,8 +902,8 @@ def build_directory():
 
 
 # ---------------- Directorio de tiendas insignia (compras) ----------------
-SHOP_BRANDS = ['Louis Vuitton', 'Hermès', 'Chanel', 'Cartier', 'Rolex', 'Gucci', 'Dior', 'Loewe']
-SHOP_CITIES = {'Madrid': 'madrid', 'Barcelona': 'barcelona', 'Marbella': 'marbella', 'Palma': 'palma'}
+SHOP_BRANDS = ['Louis Vuitton', 'Hermès', 'Chanel', 'Cartier', 'Rolex', 'Gucci', 'Dior', 'Loewe', 'Prada', 'Bulgari', 'Tiffany & Co.']
+SHOP_CITIES = {'Madrid': 'madrid', 'Barcelona': 'barcelona', 'Marbella': 'marbella', 'Palma': 'palma', 'Sevilla': 'sevilla', 'Bilbao': 'bilbao'}
 
 
 def build_tiendas():
@@ -917,7 +917,7 @@ def build_tiendas():
         stores = [r for r in rows if r['marca'] == brand]
         if not stores:
             continue
-        bid = re.sub('[^a-z]', '', brand.lower())
+        bid = re.sub('[^a-z]', '', brand.lower().replace('&', 'and'))
         cards = ''
         for r in stores:
             ok = r['estado'].startswith(('verificado', 'contrastado'))

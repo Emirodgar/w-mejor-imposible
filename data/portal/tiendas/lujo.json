@@ -1,6 +1,6 @@
 {
   "actualizado": "2026-11-05",
-  "nota": "Boutiques de grandes marcas en Madrid, Barcelona, Marbella y Palma. Datos de webs oficiales, prensa y guías.",
+  "nota": "Boutiques de grandes marcas en Madrid, Barcelona, Marbella, Palma, Sevilla y Bilbao. Datos de webs oficiales, prensa y guías.",
   "tiendas": [
     {
       "id": "lv-madrid-serrano",
@@ -466,6 +466,155 @@
         "lon": -4.95295
       },
       "geo_fuente": "Puerto Banús, Calle José Saramago, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa d"
+    },
+    {
+      "id": "prada-madrid-serrano",
+      "marca": "Prada",
+      "ciudad": "Madrid",
+      "nombre": "Prada Madrid Serrano",
+      "direccion": "Calle de Serrano 26, 28001 Madrid",
+      "estado": "por verificar: la ficha oficial la muestra cerrada",
+      "fuentes": [
+        "https://www.prada.com/ww/en/store-locator/spain/prada_madrid_donna/S184.html"
+      ],
+      "busqueda": "Calle de Serrano 26 Madrid",
+      "telefono": "+34 914 362 088",
+      "notas": "La ficha oficial de Prada muestra esta tienda como cerrada; conviene confirmarlo antes de ir.",
+      "coordenadas": {
+        "lat": 40.42409,
+        "lon": -3.68784
+      },
+      "geo_fuente": "Embajada de Noruega, 26, Calle de Serrano, Recoletos, Salamanca, Madrid, Comunidad de Madr"
+    },
+    {
+      "id": "prada-barcelona-pg",
+      "marca": "Prada",
+      "ciudad": "Barcelona",
+      "nombre": "Prada Barcelona Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 88, 08008 Barcelona",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://www.prada.com/es/es/store-locator/spain/prada_barcelona/s866/book-an-appointment.html",
+        "https://barcelonapaseodegracia.com/en/members/prada/"
+      ],
+      "busqueda": "Passeig de Gràcia 88 Barcelona",
+      "telefono": "+34 934 673 990",
+      "coordenadas": {
+        "lat": 41.39473,
+        "lon": 2.16222
+      },
+      "geo_fuente": "Prada, 88, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eixample, Barcelon"
+    },
+    {
+      "id": "bulgari-madrid-ortega",
+      "marca": "Bulgari",
+      "ciudad": "Madrid",
+      "nombre": "Bulgari Madrid Ortega y Gasset",
+      "direccion": "Calle de José Ortega y Gasset 17, 28006 Madrid",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://www.bulgari.com/en-int/storelocator/country-region/spain/madrid/madrid/calle-de-jos%C3%A9-ortega-y-gasset-17"
+      ],
+      "busqueda": "Calle de José Ortega y Gasset 17 Madrid",
+      "coordenadas": {
+        "lat": 40.43054,
+        "lon": -3.6855
+      },
+      "geo_fuente": "Mas y Calvet, 17, Calle de José Ortega y Gasset, Castellana, Salamanca, Madrid, Comunidad "
+    },
+    {
+      "id": "bulgari-barcelona-pg",
+      "marca": "Bulgari",
+      "ciudad": "Barcelona",
+      "nombre": "Bulgari Barcelona Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 74, 08008 Barcelona",
+      "estado": "verificado en la web oficial de la marca",
+      "fuentes": [
+        "https://www.bulgari.com/en-int/storelocator/country-region/spain/barcelona/barcelona/paseo-de-gracia-74"
+      ],
+      "busqueda": "Passeig de Gràcia 74 Barcelona",
+      "telefono": "+34 934 67 70 65",
+      "coordenadas": {
+        "lat": 41.39364,
+        "lon": 2.16357
+      },
+      "geo_fuente": "74, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eixample, Barcelona, Barc"
+    },
+    {
+      "id": "tiffany-madrid-serrano",
+      "marca": "Tiffany & Co.",
+      "ciudad": "Madrid",
+      "nombre": "Tiffany & Co. Madrid Serrano",
+      "direccion": "Calle de Serrano 72, 28006 Madrid",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://es.fashionnetwork.com/news/Tiffany-co-estrena-ubicacion-en-el-barrio-de-salamanca-y-se-muda-a-la-calle-serrano,1651513.html",
+        "https://forbes.es/forbes-women/492746/arte-y-lujo-la-nueva-tienda-de-tiffany-co-en-madrid-lo-tiene/"
+      ],
+      "busqueda": "Calle de Serrano 72 Madrid",
+      "coordenadas": {
+        "lat": 40.43068,
+        "lon": -3.68671
+      },
+      "geo_fuente": "aproximada: junto a Calle de Serrano 74 (el geocodificador devolvió un punto erróneo)"
+    },
+    {
+      "id": "tiffany-barcelona-pg",
+      "marca": "Tiffany & Co.",
+      "ciudad": "Barcelona",
+      "nombre": "Tiffany & Co. Barcelona Passeig de Gràcia",
+      "direccion": "Passeig de Gràcia 61, 08007 Barcelona",
+      "estado": "contrastado en varias fuentes",
+      "fuentes": [
+        "https://forbes.es/empresas/129920/tiffany-co-traslada-e-inaugura-su-nueva-tienda-de-paseo-de-gracia-de-barcelona/",
+        "https://barcelonapaseodegracia.com/en/members/tiffany-co/"
+      ],
+      "busqueda": "Passeig de Gràcia 61 Barcelona",
+      "coordenadas": {
+        "lat": 41.39304,
+        "lon": 2.16331
+      },
+      "geo_fuente": "61, Passeig de Gràcia (lateral Llobregat), la Dreta de l'Eixample, l'Eixample, Barcelona, "
+    },
+    {
+      "id": "loewe-sevilla-plaza-nueva",
+      "marca": "Loewe",
+      "ciudad": "Sevilla",
+      "nombre": "Loewe Sevilla Plaza Nueva",
+      "direccion": "Plaza Nueva 12, 41001 Sevilla",
+      "estado": "por verificar: una sola fuente de terceros",
+      "fuentes": [
+        "https://maps.apple.com/place?place-id=IFAA55C1C387E6A64",
+        "https://www.tiendas-espana.es/tiendas/Loewe/Sevilla.html"
+      ],
+      "busqueda": "Plaza Nueva 12 Sevilla",
+      "telefono": "+34 954 225 253",
+      "notas": "Una sola fuente de terceros; otra ficha la sitúa en el Hotel Alfonso XIII (Calle San Fernando 2).",
+      "coordenadas": {
+        "lat": 37.38861,
+        "lon": -5.99511
+      },
+      "geo_fuente": "Plaza Nueva, El Arenal, Casco Antiguo, Sevilla, Andalucía, España"
+    },
+    {
+      "id": "lv-bilbao-gran-via",
+      "marca": "Louis Vuitton",
+      "ciudad": "Bilbao",
+      "nombre": "Louis Vuitton Bilbao Gran Vía",
+      "direccion": "Gran Vía de Don Diego López de Haro 42, 48011 Bilbao",
+      "estado": "por verificar: fuentes antiguas",
+      "fuentes": [
+        "https://www.mystore411.com/store/view/10283971/Spain/Louis-Vuitton-(LV)-Bilbao",
+        "https://fashionunited.es/v1/columns/louis-vuitton-en-bilbao/2008120511582"
+      ],
+      "busqueda": "Gran Vía 42, Bilbao",
+      "telefono": "+34 944 356 122",
+      "notas": "Las fuentes son antiguas y un directorio no la lista; conviene confirmarla antes de ir.",
+      "coordenadas": {
+        "lat": 43.26353,
+        "lon": -2.93661
+      },
+      "geo_fuente": "42, On Diego Lopez Haroko kale nagusia, Abando, Bilbao, Bizkaia, Euskadi, 48011, España"
     }
   ]
 }
