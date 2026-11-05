@@ -44,10 +44,10 @@ STRIP_TONES = ['', ' t2', ' t3', ' t4', '']
 LABEL_TIPO = {'Hotel': 'hotel', 'Restaurante': 'restaurante', 'Golf': 'golf', 'Aeropuerto': 'aeropuerto',
               'Spa': 'spa', 'Puerto': 'puerto', 'Bodega': 'bodega'}
 CAT_SCHEMA = {'golf': 'GolfCourse', 'restaurantes': 'Restaurant', 'hoteles-de-lujo': 'Hotel',
-              'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness', 'vida-nocturna': 'NightClub', 'bares-de-cocteleria': 'BarOrPub'}
+              'bodegas': 'Winery', 'spas': 'HealthAndBeautyBusiness', 'vida-nocturna': 'NightClub', 'bares-de-cocteleria': 'BarOrPub', 'alojamientos-historicos': 'Hotel'}
 HOME_STRIPS = [('hoteles-de-lujo', 'hoteles', 'r-hoteles'), ('golf', 'golf', 'r-golf'),
                ('restaurantes', 'restaurantes', 'r-mesas'), ('casas-de-lujo', 'casas', 'r-casas')]
-HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor', 'vida-nocturna', 'bares-de-cocteleria']
+HOME_CHIPS = ['hoteles-de-lujo', 'golf', 'restaurantes', 'casas-de-lujo', 'compras-de-lujo', 'bodegas', 'spas', 'yates-y-calas', 'motor', 'vida-nocturna', 'bares-de-cocteleria', 'alojamientos-historicos']
 
 
 def e(s):

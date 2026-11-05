@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/hotel-orfila",
+  "categoria": "alojamientos-historicos",
+  "nombre": "Hotel Orfila",
+  "lugar": "Madrid",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Pequeño palacete del siglo XIX en el centro de Madrid, con un patio ajardinado y cocina de Mario Sandoval."
+  },
+  "ficha": {
+    "tipo": "Palacete",
+    "edificio": "Palacete del siglo XIX"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "Hotel Orfila Madrid",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 40.4272,
+    "lon": -3.69328
+  },
+  "geo_fuente": "Relais & Châteaux Hotel Orfila Madrid, 6, Calle de Orfila, Almagro, Chamberí, Madrid, Comu"
+}

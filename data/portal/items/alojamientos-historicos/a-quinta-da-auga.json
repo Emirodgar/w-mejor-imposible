@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/a-quinta-da-auga",
+  "categoria": "alojamientos-historicos",
+  "nombre": "A Quinta da Auga Hotel & Spa",
+  "lugar": "Santiago de Compostela · A Coruña",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Antigua fábrica de papel del siglo XVIII con jardines y spa, a unos cinco minutos del centro de Santiago."
+  },
+  "ficha": {
+    "tipo": "Antigua fábrica de papel",
+    "edificio": "Edificio del siglo XVIII"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain"
+  ],
+  "busqueda": "Hotel Quinta da Auga, Santiago de Compostela",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 42.86994,
+    "lon": -8.5825
+  },
+  "geo_fuente": "Hotel Spa Relais & Châteaux A Quinta da Auga, 23B, Paseo da Amaía, Brandia, A Ponte Vella,"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/mas-de-torrent",
+  "categoria": "alojamientos-historicos",
+  "nombre": "Mas de Torrent Hotel & Spa",
+  "lugar": "Torrent · Girona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Masía del siglo XVIII en el Empordà, con un spa de unos 600 metros cuadrados y pensada para amantes del arte."
+  },
+  "ficha": {
+    "tipo": "Masía",
+    "edificio": "Edificio del siglo XVIII"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "Mas de Torrent Hotel Torrent Girona",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 41.95404,
+    "lon": 3.1249
+  },
+  "geo_fuente": "Hotel Mas de Torrent, Camí del Cementiri dels Moros, Torrentí, Torrent, Baix Empordà, Giro"
+}

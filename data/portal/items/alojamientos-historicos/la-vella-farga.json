@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/la-vella-farga",
+  "categoria": "alojamientos-historicos",
+  "nombre": "La Vella Farga",
+  "lugar": "Lladurs · Lleida",
+  "zona": "cataluna",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Finca del siglo XI con vistas a los Pirineos catalanes, miembro de Relais & Châteaux."
+  },
+  "ficha": {
+    "tipo": "Finca",
+    "edificio": "Edificio del siglo XI"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "La Vella Farga Lladurs",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 42.03502,
+    "lon": 1.49538
+  },
+  "geo_fuente": "La Vella Farga, Camí de Casa Corral, Lladurs, Solsonès, Lleida, Catalunya, 25283, España"
+}

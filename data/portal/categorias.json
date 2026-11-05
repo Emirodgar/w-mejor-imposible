@@ -541,5 +541,31 @@
       "es": "Orden de The World's 50 Best Bars 2026, solo con los bares españoles. Ningún bar paga por estar."
     },
     "placeholder": []
+  },
+  "alojamientos-historicos": {
+    "corto": {
+      "es": "Alojamientos históricos"
+    },
+    "titulo": {
+      "es": "Los 9 alojamientos con más historia de España"
+    },
+    "nombre_placeholder": {
+      "es": "[Nombre del alojamiento]"
+    },
+    "foto_placeholder": {
+      "es": "fachada histórica"
+    },
+    "ficha": [
+      "{tipo}",
+      "{edificio}"
+    ],
+    "cerca": [
+      "Restaurante",
+      "Aeropuerto"
+    ],
+    "como_ordenamos": {
+      "es": "Miembros españoles de Relais & Châteaux alojados en edificios históricos, del más antiguo al más reciente según la ficha de la asociación. No es la lista completa de la asociación y ningún alojamiento paga por estar."
+    },
+    "placeholder": []
   }
 }

@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/la-torre-del-visco",
+  "categoria": "alojamientos-historicos",
+  "nombre": "La Torre del Visco",
+  "lugar": "Fuentespalda · Teruel",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Casa del siglo XV con jardines, olivares y una finca ecológica de unas 80 hectáreas en el Matarraña."
+  },
+  "ficha": {
+    "tipo": "Casa histórica",
+    "edificio": "Edificio del siglo XV"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "Fuentespalda, Teruel",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 40.80709,
+    "lon": 0.06577
+  },
+  "geo_fuente": "Fuentespalda / Fontespala, Matarraña / Matarranya, Teruel, Aragón, 44587, España"
+}

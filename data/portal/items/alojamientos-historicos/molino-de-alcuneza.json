@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/molino-de-alcuneza",
+  "categoria": "alojamientos-historicos",
+  "nombre": "Molino de Alcuneza",
+  "lugar": "Sigüenza · Guadalajara",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Molino familiar del siglo XV con cocina Slow Food; su restaurante tiene una estrella Michelin en 2026."
+  },
+  "ficha": {
+    "tipo": "Molino",
+    "edificio": "Edificio del siglo XV"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "Molino de Alcuneza Sigüenza",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 41.10598,
+    "lon": -2.60425
+  },
+  "geo_fuente": "Molino de Alcuneza, GU-128, Alcuneza, Sigüenza, Guadalajara, Castilla-La Mancha, 19250, Es"
+}

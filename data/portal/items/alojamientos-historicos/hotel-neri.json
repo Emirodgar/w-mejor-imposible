@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/hotel-neri",
+  "categoria": "alojamientos-historicos",
+  "nombre": "Hotel Neri",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Instalado en varios palacios de los siglos XII y XVIII en el Barrio Gótico, con piscina en la azotea."
+  },
+  "ficha": {
+    "tipo": "Palacios",
+    "edificio": "Palacios de los siglos XII y XVIII"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "Hotel Neri Barcelona Sant Sever",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 41.38304,
+    "lon": 2.17539
+  },
+  "geo_fuente": "Hotel Neri Apartments, Carrer de Sant Sever, el Call, el Gòtic, Ciutat Vella, Barcelona, B"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "alojamientos-historicos/la-fonda-heritage-hotel",
+  "categoria": "alojamientos-historicos",
+  "nombre": "La Fonda Heritage Hotel",
+  "lugar": "Marbella · Málaga",
+  "zona": "andalucia",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Hotel en edificios del siglo XVI del casco antiguo de Marbella, con carácter andaluz y un bar en la azotea."
+  },
+  "ficha": {
+    "tipo": "Casa histórica",
+    "edificio": "Edificios del siglo XVI"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+  ],
+  "busqueda": "Plaza de la Iglesia, Marbella",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 36.5097,
+    "lon": -4.8856
+  },
+  "geo_fuente": "aproximada: casco antiguo de Marbella"
+}

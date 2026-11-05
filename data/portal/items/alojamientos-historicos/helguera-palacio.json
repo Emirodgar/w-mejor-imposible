@@ -1,0 +1,29 @@
+{
+  "id": "alojamientos-historicos/helguera-palacio",
+  "categoria": "alojamientos-historicos",
+  "nombre": "Helguera Palacio Boutique & Antique",
+  "lugar": "Las Presillas · Cantabria",
+  "zona": "resto",
+  "foto": {
+    "es": "fachada histórica"
+  },
+  "por_que": {
+    "es": "Palacio del siglo XVII solo para adultos y decorado por un interiorista; uno de los tres miembros nuevos de Relais & Châteaux en España en 2026."
+  },
+  "ficha": {
+    "tipo": "Palacio",
+    "edificio": "Palacio del siglo XVII"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://yo.estate/index.php/2026/03/13/relais-chateaux-integre-trois-nouveaux-membres-en-espagne-2/"
+  ],
+  "busqueda": "Helguera Palacio Las Presillas Cantabria",
+  "schema": "Hotel",
+  "coordenadas": {
+    "lat": 43.31868,
+    "lon": -3.98051
+  },
+  "geo_fuente": "Helguera Palacio Boutique Antique, Barrio Revia, Las Presillas, Vargas, Puente Viesgo, Can"
+}
