@@ -17,12 +17,24 @@
   "cerca": [],
   "fuentes": [
     "https://www.modaes.com/entorno/palma-el-born-agota-el-espacio-y-empuja-al-lujo-hacia-nuevas-calles-del-centro",
-    "https://amp.majorcadailybulletin.com/news/local/2026/09/05/145533/first-rolex-boutique-mallorca-now-open.html"
+    "https://amp.majorcadailybulletin.com/news/local/2026/09/05/145533/first-rolex-boutique-mallorca-now-open.html",
+    "https://www.spain.info/es/top/millas-oro-compras-espana/"
   ],
   "busqueda": "Passeig des Born Palma",
   "coordenadas": {
     "lat": 39.57036,
     "lon": 2.64671
   },
-  "geo_fuente": "Passeig des Born, Canavall, Districte Centre, Palma, Illes Balears, España"
+  "geo_fuente": "Passeig des Born, Canavall, Districte Centre, Palma, Illes Balears, España",
+  "contexto": [
+    {
+      "es": "El Passeig des Born es el eje de lujo de Palma, junto a Jaume III y Sant Miquel. Turespaña lo incluye en la milla de oro de la ciudad, con Sant Feliu y el Casal Solleric, que alberga exposiciones. Modaes (agosto de 2026) cuenta más de 25.000 peatones diarios y 42 locales en el Born, todos ocupados."
+    },
+    {
+      "es": "Entre las firmas citadas en el eje figuran Louis Vuitton, Gucci y Cartier. La primera boutique Rolex de Mallorca abrió el 5 de septiembre de 2026 en Can Alomar, según Majorca Daily Bulletin, y Modaes anuncia el regreso de Loewe al Born en 2026."
+    },
+    {
+      "es": "Modaes señala que el lujo se extiende hacia Sant Nicolau, Sant Miquel y Colón, porque el Born no tiene más espacio."
+    }
+  ]
 }

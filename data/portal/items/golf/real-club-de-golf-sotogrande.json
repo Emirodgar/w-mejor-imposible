@@ -17,12 +17,23 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
+    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain",
+    "https://www.top100golfcourses.com/golf-course/real-sotogrande/reviews/18044",
+    "https://andaluciagolf.com/en/?p=12308",
+    "https://www.andalucia.com/golf/valderrama/history.htm"
   ],
   "busqueda": "Sotogrande Golf Club",
   "coordenadas": {
     "lat": 36.28009,
     "lon": -5.29189
   },
-  "geo_fuente": "Real Club de Golf de Sotogrande, Paseo del Parque, Sotogrande, San Roque, Campo de Gibralt"
+  "geo_fuente": "Real Club de Golf de Sotogrande, Paseo del Parque, Sotogrande, San Roque, Campo de Gibralt",
+  "contexto": [
+    {
+      "es": "El Real Club de Golf Sotogrande abrió en 1964 y fue el primer diseño de Robert Trent Jones Sr. en Europa. Según la historia del club, el propio Trent Jones eligió el terreno a petición del promotor de Sotogrande. Tiene 18 hoyos y par 72."
+    },
+    {
+      "es": "El club inauguró su casa club en 1965 y acogió el Open de España en 1966. En 2014 celebró su 50.º aniversario. Está en Sotogrande, en el campo de Gibraltar (Cádiz), a poca distancia de Valderrama, otro campo de la zona diseñado también por Trent Jones."
+    }
+  ]
 }

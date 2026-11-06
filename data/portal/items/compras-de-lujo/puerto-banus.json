@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+    "https://www.spain.info/es/top/millas-oro-compras-espana/",
+    "https://www.modaes.com/global/markets/puerto-banus-the-summer-showcase-where-major-brands-compete-for-a-share-of-the-luxury-retail-market"
   ],
   "busqueda": "Puerto Banús Marbella",
   "coordenadas": {
     "lat": 36.48746,
     "lon": -4.9536
   },
-  "geo_fuente": "Puerto Banús, Avenida Julio Iglesias, Nueva Andalucía, San Pedro Alcántara, Marbella, Cost"
+  "geo_fuente": "Puerto Banús, Avenida Julio Iglesias, Nueva Andalucía, San Pedro Alcántara, Marbella, Cost",
+  "contexto": [
+    {
+      "es": "Puerto Banús es el puerto deportivo de Marbella, en la Costa del Sol. Turespaña habla de un centenar de tiendas en las calles principales de la marina, con grandes firmas internacionales de moda y complementos, boutiques náuticas y piezas de edición limitada."
+    },
+    {
+      "es": "Modaes, en un reportaje sobre el puerto, señala la presencia de Louis Vuitton y Dior, además de Gucci, Saint Laurent y Bottega Veneta. A diferencia de las calles de ciudad, las tiendas se reparten junto a los amarres, con terrazas y restaurantes frente al agua."
+    },
+    {
+      "es": "El perfil de visitante es sobre todo estacional, por lo que la oferta se orienta al verano."
+    }
+  ]
 }

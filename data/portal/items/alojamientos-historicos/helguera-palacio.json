@@ -8,7 +8,7 @@
     "es": "fachada histórica"
   },
   "por_que": {
-    "es": "Palacio del siglo XVII solo para adultos y decorado por un interiorista; uno de los tres miembros nuevos de Relais & Châteaux en España en 2026."
+    "es": "Palacio del siglo XVII solo para adultos y decorado por un interiorista, miembro de Relais & Châteaux."
   },
   "ficha": {
     "tipo": "Palacio",
@@ -17,7 +17,8 @@
   "cerca": [],
   "fuentes": [
     "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
-    "https://yo.estate/index.php/2026/03/13/relais-chateaux-integre-trois-nouveaux-membres-en-espagne-2/"
+    "https://www.relaischateaux.com/es/details/helguera-palacio-boutique-antique-hotel/",
+    "https://guide.michelin.com/mx/es/hotels-stays/Santander/helguera-palacio-boutique-antique-13204"
   ],
   "busqueda": "Helguera Palacio Las Presillas Cantabria",
   "schema": "Hotel",
@@ -25,5 +26,16 @@
     "lat": 43.31868,
     "lon": -3.98051
   },
-  "geo_fuente": "Helguera Palacio Boutique Antique, Barrio Revia, Las Presillas, Vargas, Puente Viesgo, Can"
+  "geo_fuente": "Helguera Palacio Boutique Antique, Barrio Revia, Las Presillas, Vargas, Puente Viesgo, Can",
+  "contexto": [
+    {
+      "es": "Palacio del siglo XVII reconvertido en hotel solo para adultos. Cada habitación se inspira en un personaje histórico de la nobleza española o inglesa, y todas tienen vistas a los valles pasiegos. Parte de las antigüedades de la casa están a la venta, de ahí el nombre «Boutique & Antique»."
+    },
+    {
+      "es": "Está en Las Presillas, en plena campiña cántabra, con prados cercados por muros bajos de piedra. Desde el aeropuerto de Santander (SDR) hay unos 32 km, la estación de Torrelavega queda a 10 km y se accede por la salida 223 de la A-8. El restaurante Trastámara ofrece un menú degustación de cocina cántabra, según la Guía Michelin."
+    },
+    {
+      "es": "La ficha de Relais & Châteaux indica que es miembro desde 2023. Michelin lo recoge con una Llave."
+    }
+  ]
 }

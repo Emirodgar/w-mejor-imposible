@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/es/details/hotel-orfila/",
+    "https://www.esmadrid.com/node/67394"
   ],
   "busqueda": "Hotel Orfila Madrid",
   "schema": "Hotel",
@@ -32,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Hotel_Orfila_(01.jpg",
     "titulo": "File:Hotel Orfila (01.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Palacete del siglo XIX construido en 1886, en la calle de Orfila, en el barrio de Chamberí, a poca distancia de Colón. En la década de 1920 se hizo conocido por las representaciones teatrales que se celebraban en sus salones."
+    },
+    {
+      "es": "Conserva mobiliario de época, mármoles y un patio con vegetación y trampantojo, donde cena el restaurante El Jardín de Orfila, vinculado al chef Mario Sandoval. Es miembro de Relais & Châteaux desde 2001."
+    },
+    {
+      "es": "El aeropuerto Adolfo Suárez Madrid-Barajas queda a unos 12 km. Según el portal turístico de Madrid, es el único hotel de la ciudad dentro de esta asociación."
+    }
+  ]
 }

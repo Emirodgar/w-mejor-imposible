@@ -16,12 +16,25 @@
   "cerca": [],
   "fuentes": [
     "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html",
-    "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe"
+    "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe",
+    "https://www.the50.com/bars/best-in-europe/the-list/boadas.html",
+    "https://es.ara.cat/comer/cocteleria-boadas-cocteles-vida-desafian-tiempo-rambla-barcelona_1_4822108.html"
   ],
   "busqueda": "Boadas Cocktails, Carrer dels Tallers, Barcelona",
   "coordenadas": {
     "lat": 41.3866,
     "lon": 2.17
   },
-  "geo_fuente": "aproximada: Carrer dels Tallers, Barcelona"
+  "geo_fuente": "aproximada: Carrer dels Tallers, Barcelona",
+  "contexto": [
+    {
+      "es": "Boadas abrió en 1933 en el carrer dels Tallers, junto a la Rambla, y es uno de los bares de coctelería más antiguos de Barcelona. Lo fundó Miguel Boadas, que trajo de El Floridita de La Habana la técnica de lanzar el cóctel de un recipiente a otro."
+    },
+    {
+      "es": "El local es pequeño y de planta triangular. Los camareros sirven con esmoquin y la carta se apoya en los clásicos: el Dry Martini, algunos cócteles cubanos como el Hotel Nacional y el propio Boadas, de los años treinta. The 50 Best recoge que entre sus clientes pasados estuvo Salvador Dalí."
+    },
+    {
+      "es": "En 2022 el equipo de Sips, con Simone Caporale y Marc Álvarez, recuperó el bar y mantiene sus tradiciones. Está en el puesto 52 de The World's 50 Best Bars 2026 y en el 36 de Europe's 50 Best Bars 2026."
+    }
+  ]
 }

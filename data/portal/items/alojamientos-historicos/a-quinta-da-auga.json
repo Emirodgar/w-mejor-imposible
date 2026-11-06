@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain"
+    "https://www.relaischateaux.com/us/destinations/europe/spain",
+    "https://guide.michelin.com/en/hotels-stays/santiago-de-compostela/hotel-spa-relais-chateaux-a-quinta-da-auga-3601"
   ],
   "busqueda": "Hotel Quinta da Auga, Santiago de Compostela",
   "schema": "Hotel",
@@ -24,5 +25,16 @@
     "lat": 42.86994,
     "lon": -8.5825
   },
-  "geo_fuente": "Hotel Spa Relais & Châteaux A Quinta da Auga, 23B, Paseo da Amaía, Brandia, A Ponte Vella,"
+  "geo_fuente": "Hotel Spa Relais & Châteaux A Quinta da Auga, 23B, Paseo da Amaía, Brandia, A Ponte Vella,",
+  "contexto": [
+    {
+      "es": "El edificio fue un molino de papel del siglo XVIII. Una familia lo transformó en hotel conservando la piedra original e interiores de estilo campestre, con chimeneas y mobiliario que mezcla piezas antiguas y contemporáneas. Según la Guía Michelin, consultada en 2026, tiene una Llave Michelin."
+    },
+    {
+      "es": "Ocupa una finca de una hectárea en las afueras de Santiago de Compostela, a pocos minutos del casco histórico. La estación de tren queda a unos 4 km y el aeropuerto de Santiago-Rosalía de Castro (SCQ), a unos 20 km."
+    },
+    {
+      "es": "El spa, con varias piscinas climatizadas y saunas, ocupa la parte alta del edificio. El restaurante Filigrana propone cocina gallega. Es un lugar de estancia tranquila, pensado para combinar la visita a la ciudad con el descanso."
+    }
+  ]
 }

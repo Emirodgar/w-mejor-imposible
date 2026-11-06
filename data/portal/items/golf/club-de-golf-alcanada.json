@@ -17,7 +17,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.rtj2.com/news/golf-mallorca-views-and-conditioning-write-home-about"
+    "https://www.rtj2.com/news/golf-mallorca-views-and-conditioning-write-home-about",
+    "https://www.golf-alcanada.com/the-course/",
+    "https://www.golfdigest.com/courses/spain/club-de-golf-alcanada",
+    "https://golfbusinessnews.com/news/travel/alcanada-voted-top-course-in-europe-for-5th-successive-year/"
   ],
   "busqueda": "Club de Golf Alcanada Alcúdia",
   "coordenadas": {
@@ -32,5 +35,13 @@
     "licencia_url": "https://creativecommons.org/licenses/by/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:CasasAlcanada.jpg",
     "titulo": "File:CasasAlcanada.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Alcanada es un campo de 18 hoyos y par 72 diseñado por Robert Trent Jones Jr. Según el club, abrió en 2003 tras tres años de obras, aunque Golf Digest sitúa la apertura en 2004. Mide unos 6.500 metros desde las salidas blancas."
+    },
+    {
+      "es": "Se encuentra en la península de Alcúdia, en el norte de Mallorca, con vistas al mar y al faro de Alcanada. En su día, los lectores de la revista alemana Golf Journal lo eligieron su campo favorito de Europa cinco años seguidos, según Golf Business News."
+    }
+  ]
 }

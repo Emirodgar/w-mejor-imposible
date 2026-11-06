@@ -23,12 +23,23 @@
     }
   ],
   "fuentes": [
-    "https://www.golfbreaks.com/en-gb/holidays/tenerife/abama-hotel/abama-golf/"
+    "https://www.golfbreaks.com/en-gb/holidays/tenerife/abama-hotel/abama-golf/",
+    "https://todays-golfer.com/courses/europe/spain/tenerife/abama-golf-club",
+    "https://www.where2golf.com/spain/abama-golf-spa-resort/",
+    "https://www.webtenerife.co.uk/what-to-do/sports/land/golf/golf-courses/abama/"
   ],
   "busqueda": "Abama Golf Guía de Isora",
   "coordenadas": {
     "lat": 28.17189,
     "lon": -16.78214
   },
-  "geo_fuente": "Abama Golf, 2, TF-47, Abama, Piedra Hincada, Adeje, Santa Cruz de Tenerife, Canarias, 3868"
+  "geo_fuente": "Abama Golf, 2, TF-47, Abama, Piedra Hincada, Adeje, Santa Cruz de Tenerife, Canarias, 3868",
+  "contexto": [
+    {
+      "es": "Abama Golf es un recorrido de 18 hoyos y par 72 diseñado por Dave Thomas, jugador de cuatro Ryder Cup. Abrió en noviembre de 2005 y ese mismo año albergó el Open de Canarias del circuito europeo. Según Golf World, en 2025 figuraba como el 42.º mejor campo de España."
+    },
+    {
+      "es": "Está en Guía de Isora, en la costa oeste de Tenerife, dentro del resort The Ritz-Carlton, Abama, un hotel de 459 habitaciones. El trazado sube por la ladera con lagos entre las calles y, según las fuentes consultadas, todos los hoyos menos uno tienen vistas al océano. La longitud varía según la fuente: entre 6.232 y 6.250 metros aproximadamente."
+    }
+  ]
 }

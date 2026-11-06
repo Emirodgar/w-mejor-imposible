@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/",
+    "https://www.the50.com/vineyards/best-in-the-world/the-list/21-30/gramona.html",
+    "https://www.gramona.com/en/"
   ],
   "busqueda": "Gramona Sant Sadurní d'Anoia",
   "coordenadas": {
@@ -31,5 +33,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:GRAMONA_ENTRADA_CELLER_BATLLE.jpg",
     "titulo": "File:GRAMONA ENTRADA CELLER BATLLE.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "La familia Gramona cultiva viña desde 1850 y elabora vino espumoso desde principios del siglo XX, según la ficha de 50 Best. Hoy trabajan la quinta y la sexta generación, con cultivo ecológico y biodinámico: labran con caballos, podan a mano y elaboran compost con sus propios animales. Ocupó el puesto 25 en The World's 50 Best Vineyards 2025."
+    },
+    {
+      "es": "La sede está en Sant Sadurní d'Anoia, en el Alt Penedès, a unos 30 kilómetros al sur de Barcelona, con Montserrat al norte. Trabaja xarel·lo, macabeo, parellada, chardonnay y pinot noir. La visita incluye la bodega subterránea histórica, con soleras centenarias, y paseos a caballo por el viñedo."
+    },
+    {
+      "es": "La gama Enoteca, de largas crianzas, se lanzó en 1997."
+    }
+  ]
 }

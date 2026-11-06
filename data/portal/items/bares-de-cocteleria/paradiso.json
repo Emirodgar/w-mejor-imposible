@@ -17,12 +17,25 @@
   "fuentes": [
     "https://thedotmagazine.com/the-50-best-bars-2026-full-list-and-winners/",
     "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe",
-    "https://joinpearl.co/lists/2025-worlds-50-best-bars"
+    "https://joinpearl.co/lists/2025-worlds-50-best-bars",
+    "https://www.the50.com/bars/best-in-europe/the-list/paradiso.html",
+    "https://thedotmagazine.com/paradiso-barcelona-is-the-worlds-best-bar-and-giacomo-giannottis-paradiso-express-just-pulled-into-saigon/"
   ],
   "busqueda": "Carrer de Rera Palau 4, Barcelona",
   "coordenadas": {
     "lat": 41.3841,
     "lon": 2.1836
   },
-  "geo_fuente": "aproximada: El Born, Barcelona"
+  "geo_fuente": "aproximada: El Born, Barcelona",
+  "contexto": [
+    {
+      "es": "Paradiso se abre tras una puerta de nevera en el fondo de una tienda de pastrami, en el carrer de Rera Palau, en el Born. Dentro hay una sala de madera curvada que recuerda al interior de una ballena."
+    },
+    {
+      "es": "Lo creó Giacomo Giannotti, junto a su socia y esposa Margarita Sáder. Sus cócteles son teatrales y de inspiración dalinesca: nubes flotantes, medusas luminosas y el Supercool Martini, que se solidifica como un carámbano invertido. El Paradiso Lab, donde se desarrollan las bebidas, está al otro lado de la calle, y la marca tiene también locales en Ibiza y Dubái."
+    },
+    {
+      "es": "Fue The World's Best Bar en 2022, la primera vez que lo lograba un bar de fuera de Londres o Nueva York. The 50 Best lo sitúa en el puesto 9 de Europe's 50 Best Bars 2026."
+    }
+  ]
 }

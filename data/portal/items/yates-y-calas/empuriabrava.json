@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://www.interempresas.net/Nautica/659496-Marina-d-Empuriabrava-lidera-ranking-mayores-puertos-deportivos-Espana-numero-amarres.html",
+    "https://es.wikipedia.org/wiki/Empuriabrava"
   ],
   "busqueda": "Empuriabrava",
   "coordenadas": {
     "lat": 42.24701,
     "lon": 3.12069
   },
-  "geo_fuente": "Empuriabrava, Castelló d'Empúries, Alt Empordà, Girona, Catalunya, 17487, España"
+  "geo_fuente": "Empuriabrava, Castelló d'Empúries, Alt Empordà, Girona, Catalunya, 17487, España",
+  "contexto": [
+    {
+      "es": "Empuriabrava es una marina residencial: los amarres están en canales excavados junto a las casas. Según el Observatorio de Marinas y Puertos (revisión de julio de 2026), es la instalación con más amarres en agua de España, unos 5.000. Los canales navegables suman alrededor de 24 km."
+    },
+    {
+      "es": "Pertenece a Castelló d'Empúries, en el golfo de Rosas, rodeada por el Parque Natural dels Aiguamolls de l'Empordà, creado en 1983. Se llega por la C-68, a unos 18 km de Figueres. La población crece mucho en verano, hasta unos 75.000 habitantes."
+    },
+    {
+      "es": "Las obras de los canales empezaron en 1967, con un modelo inspirado en proyectos de Florida y en Port Grimaud, en la Costa Azul. Hoy la zona cuenta también con un aeródromo de paracaidismo y el túnel de viento Windoor."
+    }
+  ]
 }

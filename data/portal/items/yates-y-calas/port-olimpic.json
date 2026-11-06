@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://es.wikipedia.org/wiki/Puerto_Ol%C3%ADmpico_de_Barcelona",
+    "https://thisisbarcelona.com/es/artes-y-diseno/artes-visuales/monumentos-y-esculturas/pez-frank-gehry"
   ],
   "busqueda": "Port Olímpic Barcelona",
   "coordenadas": {
     "lat": 41.38613,
     "lon": 2.19983
   },
-  "geo_fuente": "Port Olímpic, Moll de Xaloc, la Vila Olímpica del Poblenou, Sant Martí, Barcelona, Barcelo"
+  "geo_fuente": "Port Olímpic, Moll de Xaloc, la Vila Olímpica del Poblenou, Sant Martí, Barcelona, Barcelo",
+  "contexto": [
+    {
+      "es": "El Port Olímpic se construyó en 1991 para las pruebas de vela de los Juegos de 1992. Lo proyectaron Oriol Bohigas, Josep Martorell, David Mackay y Albert Puigdomènech, con obras dirigidas por el ingeniero Joan Ramon de Clascà. Cuenta con 743 amarres para embarcaciones de 7 a 30 m."
+    },
+    {
+      "es": "Está frente a la Vila Olímpica, entre la Barceloneta y Nova Icària. A su lado se alza El Peix, la escultura de Frank Gehry de unos 56 m de longitud diseñada para los Juegos de 1992. El entorno está lleno de bares y restaurantes."
+    },
+    {
+      "es": "Velvua lo colocó octavo en su ranking de puertos deportivos de 2026."
+    }
+  ]
 }

@@ -17,12 +17,25 @@
   "fuentes": [
     "https://thedotmagazine.com/the-50-best-bars-2026-full-list-and-winners/",
     "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe",
-    "https://joinpearl.co/lists/2025-worlds-50-best-bars"
+    "https://joinpearl.co/lists/2025-worlds-50-best-bars",
+    "https://www.the50.com/bars/best-in-the-world/the-list/sips.html",
+    "https://www.theworlds50best.com/stories/News/sips-barcelona-the-worlds-best-bar.html"
   ],
   "busqueda": "Sips Bar Barcelona Muntaner",
   "coordenadas": {
     "lat": 41.38887,
     "lon": 2.15672
   },
-  "geo_fuente": "Sips, Carrer de Muntaner, l'Antiga Esquerra de l'Eixample, l'Eixample, Barcelona, Barcelon"
+  "geo_fuente": "Sips, Carrer de Muntaner, l'Antiga Esquerra de l'Eixample, l'Eixample, Barcelona, Barcelon",
+  "contexto": [
+    {
+      "es": "Sips abrió en 2021 en el carrer de Muntaner, en la Antiga Esquerra de l'Eixample. Lo fundaron Simone Caporale, que dirigió el Artesian de Londres, y Marc Álvarez, que pasó más de diez años en la innovación líquida del grupo de Albert Adrià."
+    },
+    {
+      "es": "Combina precisión de alta cocina y espíritu de bar. No tiene barra larga: unas islas centrales permiten ver trabajar al equipo desde todos los ángulos. Entre sus bebidas, The 50 Best cita el Nixtamil, de bourbon, maíz y miso, y un Tommy's Margarita con puré de fresa y ají amarillo. Dentro del local hay Esencia, un bar de 14 plazas con menú degustación líquido."
+    },
+    {
+      "es": "Fue The World's Best Bar en 2023 y ocupa el puesto 16 en The World's 50 Best Bars 2026."
+    }
+  ]
 }

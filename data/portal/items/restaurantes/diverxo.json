@@ -18,7 +18,11 @@
   "cerca": [],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
-    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html"
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html",
+    "https://guide.michelin.com/us/en/comunidad-de-madrid/madrid/restaurant/diverxo",
+    "https://www.theworlds50best.com/discovery/Establishments/Spain/Madrid/DiverXO.html",
+    "https://finedininglovers.com/node/136401",
+    "https://www.businesstraveller.com/food-and-drink/best-chef-in-the-world-dabiz-munoz-diverxo/"
   ],
   "busqueda": "NH Collection Madrid Eurobuilding",
   "geo_precision": "edificio (el restaurante está en el hotel NH Eurobuilding)",
@@ -26,5 +30,16 @@
     "lat": 40.45839,
     "lon": -3.68597
   },
-  "geo_fuente": "NH Eurobuilding, 23, Calle del Padre Damián, Hispanoamérica, Chamartín, Madrid, Comunidad "
+  "geo_fuente": "NH Eurobuilding, 23, Calle del Padre Damián, Hispanoamérica, Chamartín, Madrid, Comunidad ",
+  "contexto": [
+    {
+      "es": "DiverXO es el único restaurante con tres estrellas Michelin de Madrid, según la guía de 2026. Está en el hotel NH Eurobuilding, en la calle Padre Damián 23, en el distrito de Chamartín. Su chef, Dabiz Muñoz, firma una cocina que Michelin describe como creativa, transgresora, hedonista y divertida, con base en productos españoles y fuerte influencia asiática."
+    },
+    {
+      "es": "El menú degustación se presenta como «la cocina de los cerdos voladores». La web de Business Traveller y otras fuentes sitúan la tercera estrella en 2013."
+    },
+    {
+      "es": "En The World's 50 Best, DiverXO entró en 2021 en el puesto 20, subió al cuarto en 2022 y fue tercero en 2023, según Fine Dining Lovers; la web oficial de la lista lo recoge cuarto en 2024 y 2025."
+    }
+  ]
 }

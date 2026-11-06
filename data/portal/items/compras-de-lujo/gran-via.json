@@ -17,12 +17,26 @@
   "cerca": [],
   "fuentes": [
     "https://www.cushmanwakefield.com/es-es/spain/insights/main-streets-across-the-world",
-    "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42"
+    "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42",
+    "https://www.modaes.com/entorno/paseo-de-gracia-asciende-en-el-ranking-mundial-y-repite-como-la-calle-mas-cara-de-espana",
+    "https://www.visitmadrid.es/hacer/hacer-madrid-planes-experiencias-imperdibles/compras-madrid/calles-barrios-emblematicos-1",
+    "https://www.idealista.com/news/node/806830"
   ],
   "busqueda": "Gran Vía Madrid",
   "coordenadas": {
     "lat": 40.42019,
     "lon": -3.70416
   },
-  "geo_fuente": "Gran Vía, Universidad, Centro, Madrid, Comunidad de Madrid, 28013, España"
+  "geo_fuente": "Gran Vía, Universidad, Centro, Madrid, Comunidad de Madrid, 28013, España",
+  "contexto": [
+    {
+      "es": "La Gran Vía madrileña une la calle de Alcalá con la plaza de España. Es un eje de grandes superficies y cadenas internacionales más que de alta joyería: Visit Madrid cita Primark, Zara, H&M, Uniqlo y Mango, junto a tiendas de deporte y perfumerías. Idealista, con datos de JLL de 2023, la describe como un tramo de 1,3 kilómetros con unos 80.500 peatones diarios en sus zonas más transitadas."
+    },
+    {
+      "es": "El mismo análisis señalaba en 2023 que el 88 % de los operadores eran de gama media y que la restauración era la primera actividad. Quien busque firmas de lujo encontrará más oferta en el cercano Barrio de Salamanca."
+    },
+    {
+      "es": "Cushman & Wakefield (Main Streets Across the World 2025) la coloca tercera de España, con una renta prime de 3.120 euros por metro cuadrado al año. Por delante quedan Passeig de Gràcia y Serrano."
+    }
+  ]
 }

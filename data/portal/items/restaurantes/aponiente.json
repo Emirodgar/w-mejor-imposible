@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/es/es/andalucia/el-puerto-de-santa-maria/restaurante/aponiente",
+    "https://aponiente.com/wp-content/uploads/2024/11/PRESS-BOOK-APONIENTE-2022_ESPANOL-20220718.pdf"
   ],
   "busqueda": "Aponiente El Puerto de Santa María",
   "coordenadas": {
     "lat": 36.60334,
     "lon": -6.21669
   },
-  "geo_fuente": "Aponiente, Calle Francisco Cossi Ochoa, El Tejar, Sudamérica, El Puerto de Santa María, Ba"
+  "geo_fuente": "Aponiente, Calle Francisco Cossi Ochoa, El Tejar, Sudamérica, El Puerto de Santa María, Ba",
+  "contexto": [
+    {
+      "es": "Aponiente funciona desde 2015 en un antiguo molino de mareas rodeado de marismas, en El Puerto de Santa María. Su cocina parte del mar y de especies poco habituales en la alta cocina, como pescados de descarte, plancton, cereales marinos y embutidos de pescado. La Guía Michelin 2026 le mantiene las tres estrellas y lo define como «un clásico»."
+    },
+    {
+      "es": "La visita incluye un paseo por pasarelas de madera hasta los esteros recuperados, donde el comensal participa en la recolección de algunos ingredientes antes del menú degustación. Según la guía, el restaurante ha rehabilitado 20 hectáreas de marismas degradadas, que se usan para pesca responsable, cultivo y refugio de aves migratorias."
+    },
+    {
+      "es": "Su dosier de prensa de 2022 sitúa la tercera estrella en 2017. El local ofrece aparcamiento y acceso para personas con movilidad reducida."
+    }
+  ]
 }

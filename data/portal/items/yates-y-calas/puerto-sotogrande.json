@@ -17,7 +17,9 @@
   "cerca": [],
   "fuentes": [
     "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
-    "https://en.wikipedia.org/wiki/Sotogrande"
+    "https://en.wikipedia.org/wiki/Sotogrande",
+    "https://es.wikipedia.org/wiki/Sotogrande",
+    "https://www.interempresas.net/Nautica/659496-Marina-d-Empuriabrava-lidera-ranking-mayores-puertos-deportivos-Espana-numero-amarres.html"
   ],
   "busqueda": "Puerto Sotogrande",
   "coordenadas": {
@@ -32,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Port_of_Sotogrande_(5793604574).jpg",
     "titulo": "File:Port of Sotogrande (5793604574).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El puerto de Sotogrande abrió en 1987 y está especializado en embarcaciones de recreo de lujo. Según el Observatorio de Marinas y Puertos (julio de 2026), cuenta con 1.382 amarres en agua y es el quinto de España por capacidad."
+    },
+    {
+      "es": "Forma parte de la urbanización de Sotogrande, en San Roque (Cádiz), a la que se llega por la A-7 y la AP-7. La promoción nació en 1964 con un club de golf diseñado por Robert Trent Jones. Hoy hay cinco campos, entre ellos Valderrama, sede de la Ryder Cup de 1997. También destacan el polo y la vela."
+    },
+    {
+      "es": "La obra del puerto alteró parte del sistema dunar de la playa de Torreguadiaro y la dinámica del delta del río."
+    }
+  ]
 }

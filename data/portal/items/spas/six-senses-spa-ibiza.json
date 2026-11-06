@@ -23,12 +23,26 @@
   ],
   "fuentes": [
     "https://worldspaawards.com/award/spain-best-resort-spa/2026",
-    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026"
+    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026",
+    "https://www.journaldespalaces.com/en/pressrelease-50240-six-senses-hotels-resorts-spas-premieres-first-and-only-resort-and-spa-in-ibiza.html",
+    "https://forbestravelguide.com/hotels/ibiza-spain/six-senses-ibiza",
+    "https://www.ibiza-spotlight.com/magazine/2021/03/six-senses-ibiza-brings-authentic-experiences-on-luxury-level-cala-xarraca"
   ],
   "busqueda": "Six Senses Ibiza Portinatx",
   "coordenadas": {
     "lat": 39.11083,
     "lon": 1.50782
   },
-  "geo_fuente": "Six Senses Ibiza, 71, Carrer de Camí de sa Torre, Portinatx, Sant Joan de Labritja, Eiviss"
+  "geo_fuente": "Six Senses Ibiza, 71, Carrer de Camí de sa Torre, Portinatx, Sant Joan de Labritja, Eiviss",
+  "contexto": [
+    {
+      "es": "Six Senses Ibiza está en la bahía de Xarraca, en el norte de la isla, junto a Portinatx. Abrió en 2021 y se presentó como el primer y único resort de la marca en Ibiza. Su spa, de unos 1.200 metros cuadrados en tres plantas, incluye cabinas individuales y para parejas, vapor, hammam y una zona de fitness con terraza de yoga y ring de boxeo en la azotea."
+    },
+    {
+      "es": "Ofrece programas de belleza, nutrición, biohacking y longevidad, además de retiros con profesionales invitados. Las fuentes sitúan el resort a unos 30 minutos del aeropuerto."
+    },
+    {
+      "es": "En 2026 estuvo nominado en los World Spa Awards a mejor spa de resort y a mejor retiro de bienestar de España."
+    }
+  ]
 }

@@ -31,5 +31,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Antonio_Albacete_en_primer_puesto._Circuito_de_Albacete.jpg",
     "titulo": "File:Antonio Albacete en primer puesto. Circuito de Albacete.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Circuito de Albacete se inauguró el 14 de julio de 1990 y tiene capacidad para 7.200 espectadores. El trazado principal, en uso desde 2015, mide 3,550 km y tiene 14 curvas. El original (1990-2014) medía 3,539 km y tenía 15. Hay además un circuito de 2,237 km y 8 curvas y otro corto de 1,336 km y 6 curvas."
+    },
+    {
+      "es": "Acogió el Campeonato del Mundo de Superbike de 1992 a 1999. Por su pista pasaron también el Mundial de Resistencia de motociclismo (2003-2011), el Campeonato de Europa de Camiones (1995 y 2005-2011), el Campeonato de España de GT (1999-2011) y la World Series by Nissan (1998-2002)."
+    },
+    {
+      "es": "Entre 2012 y 2019 fue sede del Mundial Junior de Moto3 del CEV."
+    }
+  ]
 }

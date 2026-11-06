@@ -18,12 +18,25 @@
   "fuentes": [
     "https://digital.cushmanwakefield.com/mainstreets-11-2025-global-central-en-content-retail/42",
     "https://www.cushmanwakefield.com/en/spain/news/2025/03/luxury-store-rent-spain",
-    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+    "https://www.spain.info/es/top/millas-oro-compras-espana/",
+    "https://www.modaes.com/entorno/paseo-de-gracia-asciende-en-el-ranking-mundial-y-repite-como-la-calle-mas-cara-de-espana",
+    "https://www.modaes.com/empresa/kering-conquista-serrano-bottega-veneta-y-saint-laurent-relevan-a-el-corte-ingles"
   ],
   "busqueda": "Calle de Serrano Madrid",
   "coordenadas": {
     "lat": 40.42044,
     "lon": -3.68875
   },
-  "geo_fuente": "Calle de Serrano, Recoletos, Salamanca, Madrid, Comunidad de Madrid, 28001, España"
+  "geo_fuente": "Calle de Serrano, Recoletos, Salamanca, Madrid, Comunidad de Madrid, 28001, España",
+  "contexto": [
+    {
+      "es": "Serrano y José Ortega y Gasset forman el núcleo del lujo madrileño, en el Barrio de Salamanca. Cushman & Wakefield (Main Streets Across the World 2025) sitúa Serrano segunda de España, con 3.300 euros por metro cuadrado al año y un 8 % de subida, atribuida a la llegada continua de grandes firmas internacionales. Ortega y Gasset marca 3.060 euros."
+    },
+    {
+      "es": "La consultora contó seis aperturas de lujo en Madrid en 2024, todas en estas dos calles, con disponibilidad prácticamente nula. Modaes ha informado de que Kering ultimaba Bottega Veneta y Saint Laurent en un local que ocupó El Corte Inglés en Serrano."
+    },
+    {
+      "es": "Las dos calles se cruzan en el entorno de la calle de Serrano con Ortega y Gasset, cerca del Museo Arqueológico Nacional y del parque del Retiro."
+    }
+  ]
 }

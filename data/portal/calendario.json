@@ -1,0 +1,291 @@
+{
+  "actualizado": "2026-11-06",
+  "fuentes": [
+    {
+      "id": "djmag-top100-clubs",
+      "fuente": "DJ Mag Top 100 Clubs",
+      "que_publica": {
+        "es": "Votación anual de los mejores clubes del mundo"
+      },
+      "ultima": {
+        "ym": "2026-04"
+      },
+      "proxima": {
+        "ym": "2027-04",
+        "est": 1
+      },
+      "url": "https://djmag.com/top100clubs",
+      "categorias": [
+        "vida-nocturna"
+      ],
+      "mes": 4,
+      "confianza": "media",
+      "nota_interna": "Día exacto de 2026 sin confirmar en la web oficial (solo medios)."
+    },
+    {
+      "id": "50best-bars",
+      "fuente": "The World's 50 Best Bars",
+      "que_publica": {
+        "es": "Los 100 mejores bares del mundo"
+      },
+      "ultima": {
+        "texto": "Septiembre y octubre de 2026"
+      },
+      "proxima": {
+        "texto": "Septiembre y octubre de 2027 (estimado)"
+      },
+      "url": "https://www.theworlds50best.com/bars",
+      "categorias": [
+        "bares-de-cocteleria"
+      ],
+      "mes": 10,
+      "confianza": "alta",
+      "nota_interna": "La lista 51-100 sale en septiembre y el top 50 en octubre."
+    },
+    {
+      "id": "michelin-estrellas-es",
+      "fuente": "Guía MICHELIN España (estrellas)",
+      "que_publica": {
+        "es": "Estrellas y Bib Gourmand de los restaurantes"
+      },
+      "ultima": {
+        "texto": "Noviembre de 2025 (edición 2026)"
+      },
+      "proxima": {
+        "texto": "1 de diciembre de 2026 (edición 2027, gala en Huesca)"
+      },
+      "url": "https://guide.michelin.com/es/es",
+      "categorias": [
+        "restaurantes"
+      ],
+      "mes": 12,
+      "confianza": "alta",
+      "nota_interna": "Gala de la edición 2027 aplazada del 24 de noviembre al 1 de diciembre de 2026 (fuente: prensa). Al salir, actualizar el ranking de restaurantes."
+    },
+    {
+      "id": "michelin-llaves-es",
+      "fuente": "Llaves MICHELIN (hoteles)",
+      "que_publica": {
+        "es": "Llaves de los hoteles"
+      },
+      "ultima": {
+        "ym": "2026-09"
+      },
+      "proxima": {
+        "texto": "Septiembre u octubre de 2027 (estimado)"
+      },
+      "url": "https://guide.michelin.com/es/es/hotels",
+      "categorias": [
+        "hoteles-de-lujo",
+        "alojamientos-historicos"
+      ],
+      "mes": 9,
+      "confianza": "media",
+      "nota_interna": "Solo dos ediciones (octubre de 2025 y septiembre de 2026): patrón no consolidado."
+    },
+    {
+      "id": "top100golf-espana",
+      "fuente": "Top100GolfCourses",
+      "que_publica": {
+        "es": "Clasificación de campos de golf de España"
+      },
+      "ultima": {
+        "ym": "2026-03"
+      },
+      "proxima": {
+        "texto": "Sin fecha fija; posible marzo de 2027"
+      },
+      "url": "https://www.top100golfcourses.com/best-golf-courses-in-spain",
+      "categorias": [
+        "golf"
+      ],
+      "mes": 3,
+      "confianza": "media",
+      "nota_interna": "No se verificaron ediciones anteriores."
+    },
+    {
+      "id": "50best-vineyards",
+      "fuente": "The World's 50 Best Vineyards",
+      "que_publica": {
+        "es": "Los 100 mejores viñedos del mundo"
+      },
+      "ultima": {
+        "ym": "2025-11"
+      },
+      "proxima": {
+        "texto": "18 de noviembre de 2026 (Santiago de Chile)"
+      },
+      "url": "https://www.theworlds50best.com/vineyards",
+      "categorias": [
+        "bodegas"
+      ],
+      "mes": 11,
+      "confianza": "alta",
+      "nota_interna": "Ceremonia del 18 de noviembre de 2026; la lista 51-100 sale unos días antes. Al salir, actualizar el ranking de bodegas."
+    },
+    {
+      "id": "world-spa-awards",
+      "fuente": "World Spa Awards",
+      "que_publica": {
+        "es": "Premios anuales de spas por país"
+      },
+      "ultima": {
+        "ym": "2026-09"
+      },
+      "proxima": {
+        "ym": "2027-09",
+        "est": 1
+      },
+      "url": "https://worldspaawards.com",
+      "categorias": [
+        "spas"
+      ],
+      "mes": 9,
+      "confianza": "baja",
+      "nota_interna": "Ganadores de España 2026 sin confirmar; revisar a fondo el ranking de spas."
+    },
+    {
+      "id": "cw-main-streets",
+      "fuente": "Cushman & Wakefield Main Streets",
+      "que_publica": {
+        "es": "Calles comerciales más caras del mundo"
+      },
+      "ultima": {
+        "ym": "2025-11"
+      },
+      "proxima": {
+        "texto": "Hacia noviembre de 2026 (estimado)"
+      },
+      "url": "https://www.cushmanwakefield.com/en/insights/main-streets-across-the-world",
+      "categorias": [
+        "compras-de-lujo"
+      ],
+      "mes": 11,
+      "confianza": "baja",
+      "nota_interna": "Fecha de 2025 y patrón sin confirmar; comprobar si ya hay edición 2026."
+    },
+    {
+      "id": "idealista-casas-caras",
+      "fuente": "idealista: casas más caras",
+      "que_publica": {
+        "es": "Las 10 casas más caras a la venta en España"
+      },
+      "ultima": {
+        "ym": "2026-08"
+      },
+      "proxima": {
+        "ym": "2027-08",
+        "est": 1
+      },
+      "url": "https://www.idealista.com/news/etiquetas/viviendas-mas-caras",
+      "categorias": [
+        "casas-de-lujo"
+      ],
+      "mes": 8,
+      "confianza": "media",
+      "nota_interna": "Patrón de agosto en 2024, 2025 y 2026."
+    },
+    {
+      "id": "idealista-calles-caras",
+      "fuente": "idealista: calles más caras",
+      "que_publica": {
+        "es": "Direcciones más caras de España"
+      },
+      "ultima": {
+        "ym": "2026-08"
+      },
+      "proxima": {
+        "ym": "2027-08",
+        "est": 1
+      },
+      "url": "https://www.idealista.com/news/taxonomy/term/69362",
+      "categorias": [
+        "casas-de-lujo"
+      ],
+      "mes": 8,
+      "confianza": "media",
+      "nota_interna": "Solo 2025 y 2026 con indicios."
+    },
+    {
+      "id": "velvua-marinas",
+      "fuente": "Velvua: puertos deportivos",
+      "que_publica": {
+        "es": "Mejores puertos deportivos de España"
+      },
+      "ultima": {
+        "texto": "2026"
+      },
+      "proxima": {
+        "texto": "Sin fecha fija"
+      },
+      "url": "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+      "categorias": [
+        "yates-y-calas"
+      ],
+      "mes": null,
+      "confianza": "baja",
+      "nota_interna": "Ranking editorial de una empresa privada; fecha sin confirmar."
+    },
+    {
+      "id": "museos-visitantes",
+      "fuente": "Visitantes de los museos",
+      "que_publica": {
+        "es": "Cifras anuales de visitantes de los museos"
+      },
+      "ultima": {
+        "texto": "Enero de 2026 (datos de 2025)"
+      },
+      "proxima": {
+        "ym": "2027-01",
+        "est": 1
+      },
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/paginas/2026/020126-visitantes-2025-museos-cultura.aspx",
+      "categorias": [
+        "museos"
+      ],
+      "mes": 1,
+      "confianza": "media",
+      "nota_interna": "Los datos de 2024 salieron el 2 de enero de 2025 y los de 2025 el 2 de enero de 2026."
+    },
+    {
+      "id": "relais-chateaux",
+      "fuente": "Relais & Châteaux",
+      "que_publica": {
+        "es": "Listado de miembros"
+      },
+      "ultima": {
+        "texto": "Se actualiza durante el año"
+      },
+      "proxima": {
+        "texto": "Sin calendario fijo"
+      },
+      "url": "https://www.relaischateaux.com/es/",
+      "categorias": [
+        "alojamientos-historicos"
+      ],
+      "mes": null,
+      "confianza": "baja",
+      "nota_interna": "Revisar el listado de España cada seis meses."
+    },
+    {
+      "id": "aesa-aoc",
+      "fuente": "AESA: certificados AOC",
+      "que_publica": {
+        "es": "Operadores aéreos con certificado AOC"
+      },
+      "ultima": {
+        "texto": "Consulta del 2 de noviembre de 2026"
+      },
+      "proxima": {
+        "texto": "Sin calendario fijo"
+      },
+      "url": "https://www.seguridadaerea.gob.es/es/ambitos/operaciones-aereas",
+      "categorias": [
+        "helicopteros"
+      ],
+      "mes": null,
+      "confianza": "baja",
+      "nota_interna": "Revisar el listado cada seis meses."
+    }
+  ]
+}

@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Circuito_de_Navarra"
+    "https://en.wikipedia.org/wiki/Circuito_de_Navarra",
+    "https://www.circuitodenavarra.com"
   ],
   "busqueda": "Circuito de Navarra Los Arcos",
   "coordenadas": {
     "lat": 42.56118,
     "lon": -2.16498
   },
-  "geo_fuente": "Circuito de Navarra, Autovía del Camino de Santiago, Los Arcos, Estellerria, Navarra, Nava"
+  "geo_fuente": "Circuito de Navarra, Autovía del Camino de Santiago, Los Arcos, Estellerria, Navarra, Nava",
+  "contexto": [
+    {
+      "es": "El Circuito de Navarra abrió en junio de 2010 junto a Los Arcos, en Navarra. Su configuración larga mide 4,313 km y tiene 16 curvas. Existen también una media de 2,693 km y 11 curvas y una corta de 1,391 km y 5 curvas."
+    },
+    {
+      "es": "Fue sede del FIA GT1 World Championship de 2010 a 2012 y de una prueba del Mundial de Superbike en agosto de 2021. En 2024 acogió el British Superbike. Una reforma en dos fases, de marzo a septiembre de 2024, amplió el trazado; la configuración larga actual se usa desde septiembre de 2024."
+    },
+    {
+      "es": "Su web oficial indica que ofrece jornadas de pista para coches y motos, kárting, zona de todoterreno, zona de derrapes y alquiler de instalaciones. Está en la calle Malvasía, en Los Arcos."
+    }
+  ]
 }

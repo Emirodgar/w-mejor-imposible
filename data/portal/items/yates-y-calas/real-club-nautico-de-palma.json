@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://es.wikipedia.org/wiki/Real_Club_N%C3%A1utico_de_Palma",
+    "https://orc.org/sailors/news-archive/copa-del-rey-mapfre-surpasses-100-entries"
   ],
   "busqueda": "Real Club Náutico de Palma",
   "coordenadas": {
@@ -31,5 +33,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:RCNP_-_Real_Club_N%C3%A1utico_de_Palma_-_panoramio.jpg",
     "titulo": "File:RCNP - Real Club Náutico de Palma - panoramio.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Real Club Náutico de Palma nació en 1948 de la fusión del Real Club de Regatas, con raíces en 1891, y el Club España, de 1919. Es el club náutico más antiguo de las Baleares. Su ficha recoge 946 amarres, 589 de ellos para socios y el resto para tránsito."
+    },
+    {
+      "es": "Organiza el Trofeo Princesa Sofía desde 1968, en origen para la clase Dragon, y la primera Copa del Rey de vela de crucero, a comienzos de 1982. En 2026 la 44.ª edición de la Copa del Rey Mapfre superó las 100 inscripciones, según el club y la organización."
+    },
+    {
+      "es": "Velvua lo situó primero entre los puertos deportivos de España en su ranking de 2026."
+    }
+  ]
 }

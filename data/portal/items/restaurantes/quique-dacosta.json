@@ -16,7 +16,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/us/en/comunidad-valenciana/dnia/restaurant/quique-dacosta",
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/quique-dacosta-premio-michelin-al-chef-mentor-2026",
+    "https://alicanteplaza.es/quique-dacosta-mantiene-las-tres-estrellas-michelin-para-el-restaurante-de-denia-y-suma-la-segunda-para-deessa-en-madrid"
   ],
   "busqueda": "Quique Dacosta Dénia",
   "coordenadas": {
@@ -31,5 +34,13 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Quique_Dacosta_Exterior.jpg",
     "titulo": "File:Quique Dacosta Exterior.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Quique Dacosta está en la calle Rascassa de Dénia, en la costa alicantina. Nació de El Poblet, un restaurante familiar abierto en 1981 que el chef asumió en 1999 y rebautizó con su nombre entre 2008 y 2009, según las fuentes consultadas. La Guía Michelin 2026 le mantiene las tres estrellas y el menú se llama Octavo, que cambia casi por completo cada año."
+    },
+    {
+      "es": "En 2026 Michelin concedió a Dacosta el Premio Michelin al Chef Mentor, entregado en la gala de Málaga. La guía destacó en 2025 su plato «Blanco sobre negro» entre los mejores de España según los inspectores."
+    }
+  ]
 }

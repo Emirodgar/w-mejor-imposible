@@ -15,7 +15,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://guide.michelin.com/it/it/hotels-stays/tarragona/terra-dominicata-hotel-winery-8962",
+    "https://www.diaridetarragona.com/reus/el-hotel-tarraconense-que-ha-logrado-la-maxima-distincion-de-la-guia-michelin-HN19415736"
   ],
   "busqueda": "Escaladei",
   "coordenadas": {
@@ -23,5 +25,16 @@
     "lon": 0.81112
   },
   "geo_precision": "localidad",
-  "geo_fuente": "Escaladei, la Morera de Montsant, Priorat"
+  "geo_fuente": "Escaladei, la Morera de Montsant, Priorat",
+  "contexto": [
+    {
+      "es": "Terra Dominicata es un hotel aislado, de estilo clásico y contemporáneo, con 26 habitaciones y solo para adultos, según la Guía Michelin. Tiene bodega propia y se encuentra en Escaladei, a los pies de la sierra del Montsant."
+    },
+    {
+      "es": "La cartuja de Escaladei, que da nombre a la comarca del Priorat vinícola, queda a unos 1,5 kilómetros según una de las fuentes consultadas."
+    },
+    {
+      "es": "Fue uno de los cinco primeros hoteles españoles con tres Llaves Michelin, en 2024, junto con el Mandarin Oriental Ritz de Madrid y Torre del Marqués."
+    }
+  ]
 }

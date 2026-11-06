@@ -17,12 +17,25 @@
   "cerca": [],
   "fuentes": [
     "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
-    "https://www.nomadotravel.app/es/attractions/puerto-portals"
+    "https://www.nomadotravel.app/es/attractions/puerto-portals",
+    "https://www.puertoportals.com/en/",
+    "https://www.majorcadailybulletin.com/news/local/2026/07/05/143771/the-glamour-puerto-portals-fortieth-anniversary-celebrations.html"
   ],
   "busqueda": "Puerto Portals Calvià",
   "coordenadas": {
     "lat": 39.53018,
     "lon": 2.56829
   },
-  "geo_fuente": "Puerto Portals, carrer Klaus Graf, Costa d'en Blanes, Portals Nous, Calvià, Serra de Tramu"
+  "geo_fuente": "Puerto Portals, carrer Klaus Graf, Costa d'en Blanes, Portals Nous, Calvià, Serra de Tramu",
+  "contexto": [
+    {
+      "es": "Puerto Portals se inauguró en 1986; en julio de 2026 celebró su cuadragésimo aniversario. Según su web, dispone de 701 amarres para barcos de 8 a 60 m. La declaración ambiental del puerto de 2021 hablaba de 650."
+    },
+    {
+      "es": "Está en Portals Nous, municipio de Calvià, a unos 10 km del centro de Palma y a 16 km del aeropuerto. Velvua lo describe con un ambiente más cercano al de un resort y buena conexión con Calvià y Andratx."
+    },
+    {
+      "es": "Velvua lo colocó cuarto entre los puertos deportivos de España en su ranking de 2026."
+    }
+  ]
 }

@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://www.marinaibiza.com/en/"
   ],
   "busqueda": "Marina Botafoch Ibiza",
   "coordenadas": {
@@ -31,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Marina_Botafoch.jpg",
     "titulo": "File:Marina Botafoch.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Marina Ibiza, junto al paseo Juan Carlos I, ocupa un frente de la ciudad de Ibiza con vistas al casco urbano y al puerto. Según su web oficial, dispone de 425 amarres y admite superyates de hasta 110 m de eslora."
+    },
+    {
+      "es": "La marina ofrece servicio de conserjería con peticiones previas a la llegada, combustible, seguridad y privacidad las 24 horas y un servicio de traslado para los huéspedes. Velvua la sitúa a unos cinco minutos a pie de Dalt Vila, el casco antiguo amurallado. Julio y agosto son los meses de mayor demanda."
+    },
+    {
+      "es": "Velvua la colocó tercera entre los puertos deportivos españoles en su ranking de 2026."
+    }
+  ]
 }

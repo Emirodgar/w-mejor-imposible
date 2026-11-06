@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/es/restaurant/molino-de-alcuneza/",
+    "https://www.directoalpaladar.com/viajes/molino-alcuneza-como-antiguo-molino-harinero-se-convirtio-estrella-michelin-pedania-siguenza"
   ],
   "busqueda": "Molino de Alcuneza Sigüenza",
   "schema": "Hotel",
@@ -24,5 +26,16 @@
     "lat": 41.10598,
     "lon": -2.60425
   },
-  "geo_fuente": "Molino de Alcuneza, GU-128, Alcuneza, Sigüenza, Guadalajara, Castilla-La Mancha, 19250, Es"
+  "geo_fuente": "Molino de Alcuneza, GU-128, Alcuneza, Sigüenza, Guadalajara, Castilla-La Mancha, 19250, Es",
+  "contexto": [
+    {
+      "es": "Antiguo molino harinero del siglo XV, con muros de más de 500 años, hoy hotel familiar de Relais & Châteaux en una pedanía de Sigüenza (Guadalajara). Su restaurante, dirigido por el chef Samuel Moreno, tiene una estrella Michelin en 2026."
+    },
+    {
+      "es": "La cocina sigue el enfoque Slow Food, con recetas tradicionales y producto local y de temporada. Cada menú incluye siete panes artesanales hechos a diario con harinas ecológicas de proximidad."
+    },
+    {
+      "es": "La finca tiene jardín, piscina y spa, y el cielo nocturno es bueno para observar estrellas. Cerca están la ciudad histórica de Sigüenza, pueblos medievales, parques naturales y salinas. Según el calendario de Relais & Châteaux, el restaurante cierra del 8 de diciembre de 2026 al 11 de febrero de 2027."
+    }
+  ]
 }

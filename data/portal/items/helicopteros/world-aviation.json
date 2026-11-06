@@ -24,5 +24,13 @@
     "lat": 36.67854,
     "lon": -4.49996
   },
-  "geo_fuente": "Aeropuerto de Málaga - Costa del Sol, Avenida del Comandante García Morato, Churriana, Mál"
+  "geo_fuente": "Aeropuerto de Málaga - Costa del Sol, Avenida del Comandante García Morato, Churriana, Mál",
+  "contexto": [
+    {
+      "es": "World Aviation, S.L. figura en el listado de operadores aéreos de AESA, generado el 2 de noviembre de 2026, con el certificado AOC ES.AOC.163 y sin marca de suspensión. Según ese listado, su flota de helicópteros autorizada comprende Bell 429, Bell 505 y Airbus Helicopters EC130."
+    },
+    {
+      "es": "La web worldaviationato.com, de su área de formación, muestra bases en Madrid (Cuatro Vientos) y Málaga. Allí se declara organización de formación aprobada por AESA (ATO 272), con enseñanza de piloto de avión, helicóptero y dron, habilitaciones de tipo y simuladores de A320, A330 y H135."
+    }
+  ]
 }

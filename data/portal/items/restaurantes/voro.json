@@ -15,7 +15,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/us/en/islas-baleares/canyamel/restaurant/voro"
   ],
   "busqueda": "Canyamel Capdepera",
   "geo_precision": "localidad",
@@ -23,5 +24,13 @@
     "lat": 39.65685,
     "lon": 3.43976
   },
-  "geo_fuente": "Canyamel, Capdepera, Llevant, Illes Balears, 07589, España"
+  "geo_fuente": "Canyamel, Capdepera, Llevant, Illes Balears, 07589, España",
+  "contexto": [
+    {
+      "es": "Voro está en la urbanización Atalaya de Canyamel, en el levante de Mallorca, en un edificio independiente del hotel Cap Vermell Grand Hotel. La Guía Michelin 2026 le da dos estrellas. Consiguió la primera en la edición de 2020 y la segunda en 2022, cuando fue uno de los cuatro nuevos restaurantes con dos estrellas de España."
+    },
+    {
+      "es": "Al frente de la cocina está Álvaro Salazar, con una propuesta mediterránea y moderna, sin limitaciones, atenta al entorno. Ofrece un único menú degustación, Devoro, estructurado en tres momentos que evocan el sol: amanecer, cénit y ocaso."
+    }
+  ]
 }

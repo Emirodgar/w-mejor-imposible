@@ -23,12 +23,25 @@
   ],
   "fuentes": [
     "https://worldspaawards.com/award/spain-best-resort-spa/2026",
-    "https://worldspaawards.com/award/spain-best-resort-spa/2025"
+    "https://worldspaawards.com/award/spain-best-resort-spa/2025",
+    "https://greatsmallhotels.com/majorca-boutique-hotels/finca-serena",
+    "https://www.i-escape.com/finca-serena"
   ],
   "busqueda": "Finca Serena Mallorca",
   "coordenadas": {
     "lat": 39.58847,
     "lon": 2.9469
   },
-  "geo_fuente": "Hotel Finca Serena, 3, Ma-3200, Na Païssa, Montuïri, Pla de Mallorca, Illes Balears, 07230"
+  "geo_fuente": "Hotel Finca Serena, 3, Ma-3200, Na Païssa, Montuïri, Pla de Mallorca, Illes Balears, 07230",
+  "contexto": [
+    {
+      "es": "Único Spa está en Finca Serena Mallorca, un hotel de Único Hotels abierto en el verano de 2019 en Montuïri, en el centro de la isla. Cuenta con unas 25 habitaciones repartidas entre el edificio principal y varias casas."
+    },
+    {
+      "es": "El spa ocupa 250 metros cuadrados e incluye piscina interior climatizada, sauna, cabina de tratamiento y zona de fitness con equipos Technogym."
+    },
+    {
+      "es": "Ganó el premio a mejor spa de resort de España en los World Spa Awards 2025 y en 2026 volvió a estar nominado."
+    }
+  ]
 }

@@ -15,12 +15,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Circuit_de_Calafat"
+    "https://en.wikipedia.org/wiki/Circuit_de_Calafat",
+    "https://www.circuitcalafat.com",
+    "https://www.diaridetarragona.com/deportes/circuit-calafat-50-aniversario-acto-mural-placa-JH22430548"
   ],
   "busqueda": "Circuit de Calafat L'Ametlla de Mar",
   "coordenadas": {
     "lat": 40.93218,
     "lon": 0.84082
   },
-  "geo_fuente": "Circuit de Calafat, Passatge del Bou, Calafat, l'Ametlla de Mar, Baix Ebre, Tarragona, Cat"
+  "geo_fuente": "Circuit de Calafat, Passatge del Bou, Calafat, l'Ametlla de Mar, Baix Ebre, Tarragona, Cat",
+  "contexto": [
+    {
+      "es": "El Circuit de Calafat abrió el 29 de septiembre de 1974 y fue, según la prensa local, el segundo circuito permanente de España tras el Jarama. Empezó con unos 2.500 m y hoy llega a 3.250 m. La web del circuito cuenta 16 curvas, nueve a derechas y siete a izquierdas."
+    },
+    {
+      "es": "Está en L'Ametlla de Mar (Tarragona), junto a la AP-7 y la N-340, a unas dos horas de Barcelona y de Valencia. Además de la pista de velocidad hay un circuito de rallycross de 715 m, mixto de tierra y asfalto, una pista de derrapes de 770 m y un kárting de 700 m. Ofrece cuatro programas de cursos: conducción segura, deportiva, eficiente y a medida para empresas."
+    },
+    {
+      "es": "En 2024 cumplió 50 años. Han entrenado allí pilotos como Ángel Nieto, Sito Pons o Álex Crivillé, y en 2023 Porsche probó en él su monoplaza de Fórmula E."
+    }
+  ]
 }

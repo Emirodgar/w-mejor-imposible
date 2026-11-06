@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/us/en/andalucia/marbella/restaurant/skina"
   ],
   "busqueda": "Calle Mesoncillo Marbella",
   "geo_precision": "calle",
@@ -24,5 +25,16 @@
     "lat": 36.51095,
     "lon": -4.88614
   },
-  "geo_fuente": "Calle Mesoncillo, Barrio Alto, Casco antiguo, Marbella, Costa del Sol Occidental, Málaga, "
+  "geo_fuente": "Calle Mesoncillo, Barrio Alto, Casco antiguo, Marbella, Costa del Sol Occidental, Málaga, ",
+  "contexto": [
+    {
+      "es": "Skina está en el casco antiguo de Marbella, en la calle Cánovas del Castillo. Según la Guía Michelin, su cocina propone un regreso a las recetas y sabores clásicos andaluces, reinterpretados con creatividad. Al frente de los fogones está Mario Cachinero; en sala trabaja el sumiller Marcos Granda."
+    },
+    {
+      "es": "La Guía Michelin 2026 le mantiene las dos estrellas, que ya figuraban en la lista de 2022. La oferta incluye carta, un menú Evolution con maridaje opcional y otro, Grand Crú, centrado en vinos y champanes excepcionales."
+    },
+    {
+      "es": "El restaurante gestiona él mismo sus reservas."
+    }
+  ]
 }

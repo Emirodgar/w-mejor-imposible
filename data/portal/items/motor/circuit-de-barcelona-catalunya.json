@@ -31,5 +31,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Curva_10_de_Circuit_de_Barcelona-Catalunya_Montmel%C3%B3_(2023).jpg",
     "titulo": "File:Curva 10 de Circuit de Barcelona-Catalunya Montmeló (2023).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Circuit de Barcelona-Catalunya se inauguró el 10 de septiembre de 1991. El trazado de Gran Premio mide 4,657 km sin la chicane (4,675 km con ella) y tiene 14 curvas, o 16 con chicane. Su aforo es de 140.700 espectadores."
+    },
+    {
+      "es": "Está en Montmeló, en la provincia de Barcelona. Acogió el Gran Premio de España de Fórmula 1 de 1991 a 2025; en 2026 esa carrera pasó a Madrid y el circuito celebró el Gran Premio de Barcelona-Catalunya, previsto del 12 al 14 de junio. Tiene además acuerdo para recibir la F1 en 2028, 2030 y 2032, en alternancia con Bélgica."
+    },
+    {
+      "es": "El motociclismo llegó en 1992. El Gran Premio de Europa se disputó de 1992 a 1995 y el Gran Premio de Catalunya, desde 1996. En 2026 estaba previsto del 15 al 17 de mayo."
+    }
+  ]
 }

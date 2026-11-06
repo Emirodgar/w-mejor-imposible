@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/ar/es/pais-vasco/es-donostia-san-sebastian/restaurante/arzak",
+    "https://en.wikipedia.org/wiki/Juan_Mari_Arzak"
   ],
   "busqueda": "Arzak San Sebastián",
   "coordenadas": {
@@ -31,5 +33,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Fachada_del_restaurante_Arzak.jpg",
     "titulo": "File:Fachada del restaurante Arzak.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Arzak ocupa una casa familiar de más de un siglo, en el barrio del Alto de Miracruz, en San Sebastián. Según la Guía Michelin, consiguió su primera estrella en 1974 y lleva medio siglo en la guía. Hoy lo dirigen Juan Mari Arzak y su hija Elena, y la guía lo clasifica como cocina vasca tradicional y contemporánea con tres estrellas en su edición de 2026."
+    },
+    {
+      "es": "Dentro del restaurante trabaja el Laboratorio Arzak, un espacio de experimentación con un «banco de sabores» de más de mil productos, según Michelin. La carta de vinos supera las 3.000 referencias. Hay menú degustación y una carta de temporada, además de la mesa del chef."
+    },
+    {
+      "es": "Michelin sitúa el edificio en el número 273 de la avenida Alcalde José Elosegi, en San Sebastián. Reserva y trato directo con la casa, sin intermediarios."
+    }
+  ]
 }

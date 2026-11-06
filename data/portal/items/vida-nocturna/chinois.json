@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/74/chinois"
+    "https://djmag.com/top100clubs/2026/74/chinois",
+    "https://ticketsibiza.com/clubs/club-chinois/",
+    "https://edmislife.com/?p=10954",
+    "https://suppermag.com/?p=93522"
   ],
   "busqueda": "Chinois Ibiza",
   "coordenadas": {
     "lat": 38.91649,
     "lon": 1.44146
   },
-  "geo_fuente": "Club Chinois, 17, Passeig de Joan Carles I, Passeig Maritim, Eivissa, Illes Balears, 07800"
+  "geo_fuente": "Club Chinois, 17, Passeig de Joan Carles I, Passeig Maritim, Eivissa, Illes Balears, 07800",
+  "contexto": [
+    {
+      "es": "Chinois es un club de unas 1.000 personas de aforo en Talamanca, junto a Ibiza ciudad y la zona de la marina. Ocupa el local que dejó HEART Ibiza y abrió en junio de 2022. Lo gestiona el equipo del Park Chinois de Londres y la decoración es del estudio parisino Laleh Assef, según la prensa especializada."
+    },
+    {
+      "es": "Está pegado a la terraza al aire libre del Ibiza Gran Hotel y del Casino de Ibiza. Su programación de 2025 incluyó The Masquerade de Claptone los sábados, SAGA de Bedouin los domingos y Honey Dijon los jueves; la de 2026 debe consultarse en la web oficial."
+    },
+    {
+      "es": "DJ Mag lo sitúa en el puesto 74 de su Top 100 Clubs 2026."
+    }
+  ]
 }

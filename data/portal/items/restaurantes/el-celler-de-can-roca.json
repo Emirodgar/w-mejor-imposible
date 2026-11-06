@@ -18,12 +18,21 @@
   "cerca": [],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
-    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html"
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html",
+    "https://guide.michelin.com/us/en/catalunya/girona/restaurant/el-celler-de-can-roca"
   ],
   "busqueda": "El Celler de Can Roca Girona",
   "coordenadas": {
     "lat": 41.9934,
     "lon": 2.80777
   },
-  "geo_fuente": "El Celler de Can Roca, 48, Carrer de Can Sunyer, Domeny, Girona, Gironès, Girona, Cataluny"
+  "geo_fuente": "El Celler de Can Roca, 48, Carrer de Can Sunyer, Domeny, Girona, Gironès, Girona, Cataluny",
+  "contexto": [
+    {
+      "es": "Los hermanos Joan, Josep y Jordi Roca abrieron El Celler de Can Roca en 1986, en Girona. Según la Guía Michelin, consiguió su primera estrella en 1995 y la tercera en 2009. Desde 2007 ocupa su sede actual, en la calle Can Sunyer, y la edición de 2026 le mantiene las tres estrellas. Michelin lo clasifica como cocina creativa."
+    },
+    {
+      "es": "La guía destaca su bodega, de unas 60.000 botellas. La ficha del portal los presenta como tres hermanos al frente de cocina, bodega y postres."
+    }
+  ]
 }

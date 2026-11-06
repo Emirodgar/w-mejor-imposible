@@ -9,7 +9,16 @@
       ],
       "radio": 40,
       "tiendas": "madrid",
-      "concesionarios": "madrid"
+      "concesionarios": "madrid",
+      "contexto": [
+        "Madrid es una capital abierta y diversa, con barrio histórico, bares familiares de más de un siglo y centros culturales que programan exposiciones y conciertos. Sus grandes museos son el Prado, el Reina Sofía y el Thyssen-Bornemisza. Las tiendas de lujo se concentran en la Milla de Oro. En la mesa conviven los bares de tapas de La Latina y la cocina de vanguardia de restaurantes como DiverXO.",
+        "El aeropuerto Adolfo Suárez Madrid-Barajas está a unos 12 km del centro. La línea 8 del metro llega a todas las terminales y los Cercanías C-1 y C-10 paran en la T4 y enlazan con Atocha y Chamartín. Desde Atocha salen trenes de alta velocidad a Barcelona, Sevilla y Málaga; desde Chamartín, a Valencia. Barcelona y Sevilla quedan a partir de 2 h 30 de viaje, según Turespaña."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/madrid/",
+        "https://www.spain.info/en/aeroplane/adolfo-suarez-madrid-barajas-airport/",
+        "https://www.spain.info/en/route/explore-spain-on-high-speed-trains/"
+      ]
     },
     {
       "slug": "barcelona",
@@ -20,7 +29,15 @@
       ],
       "radio": 40,
       "tiendas": "barcelona",
-      "concesionarios": "barcelona"
+      "concesionarios": "barcelona",
+      "contexto": [
+        "Barcelona es una ciudad cosmopolita, punto de encuentro de tendencias en cultura, moda y gastronomía. Combina un casco antiguo de ritmo pausado con barrios de vanguardia. Ofrece cocina catalana tradicional, alta cocina de reconocimiento internacional y mercados como La Boquería. Su arquitectura modernista incluye la Sagrada Família, el Park Güell, la Casa Batlló y La Pedrera. Mira al Mediterráneo, con playas urbanas, paseo marítimo, puerto deportivo y Vila Olímpica.",
+        "El aeropuerto de El Prat está a unos 12 km. El centro se alcanza en unos 35 minutos o menos en Aerobús, tren R2 Nord, metro L9 Sud, autobús o taxi. La estación de Sants conecta en alta velocidad con Francia, Madrid, Valencia, Málaga, Sevilla y Zaragoza; a Madrid se llega desde 2 h 30. El puerto tiene líneas con las Baleares."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/barcelona/",
+        "https://www.spain.info/en/route/explore-spain-on-high-speed-trains/"
+      ]
     },
     {
       "slug": "costa-del-sol",
@@ -31,7 +48,17 @@
       ],
       "radio": 70,
       "tiendas": "marbella",
-      "concesionarios": "marbella"
+      "concesionarios": "marbella",
+      "contexto": [
+        "La Costa del Sol, en la provincia de Málaga, tiene en Marbella su núcleo más conocido. El casco antiguo se extiende a los pies de la Sierra Blanca, con la plaza de los Naranjos como centro. Puerto Banús recibe cada año yates de gran tamaño y reúne restaurantes y firmas de moda. El golf es el otro eje: Marbella cuenta con una docena de campos y la costa supera los 70, la mayor cifra de la Europa continental según Turespaña. IAGTO la nombró mejor destino europeo de golf en 2025.",
+        "Turespaña habla de una media de 325 días de sol al año. El aeropuerto de Málaga está a unos 8 km de la ciudad; el Cercanías C1 llega hasta Fuengirola y hay autobuses interurbanos a Marbella, Estepona y Nerja. Desde Madrid, la alta velocidad a Málaga tarda desde 2 h 40."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/marbella/",
+        "https://www.tourspain.es/en/b2b/costa-del-sol-best-european-golf-destination/",
+        "https://www.spain.info/en/aeroplane/malaga-airport/",
+        "https://www.spain.info/en/route/explore-spain-on-high-speed-trains/"
+      ]
     },
     {
       "slug": "mallorca",
@@ -42,7 +69,14 @@
       ],
       "radio": 85,
       "tiendas": "palma",
-      "concesionarios": null
+      "concesionarios": null,
+      "contexto": [
+        "Palma, capital de Mallorca, se asienta en la bahía que lleva su nombre. Su casco antiguo reúne la catedral, el palacio de la Almudaina y la Lonja. Turespaña describe un clima benigno todo el año, con una temperatura media anual de 17,9 °C. La isla cuenta además con tres líneas de tren que recorren su interior.",
+        "El aeropuerto de Son Sant Joan está a unos 8 km de la ciudad. Hay vuelos directos a numerosas ciudades europeas, de unas dos horas, y vuelos diarios a las principales ciudades españolas. Por mar, hay ferris regulares con Barcelona, Valencia, Alicante y Dénia, y con las demás islas Baleares. En la ciudad, el autobús A1 sirve al aeropuerto y al puerto, y el metro tiene dos líneas, M1 y M2."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/palma/"
+      ]
     },
     {
       "slug": "ibiza",
@@ -53,7 +87,15 @@
       ],
       "radio": 30,
       "tiendas": null,
-      "concesionarios": null
+      "concesionarios": null,
+      "contexto": [
+        "Eivissa, la capital, es el centro cultural de la isla. Dalt Vila, su recinto amurallado, se entra por el portal de Ses Taules y conserva calles blancas con boutiques, restaurantes y galerías; en lo alto están la catedral y la Almudaina. La isla fue declarada Patrimonio de la Humanidad por su biodiversidad y su cultura, con la necrópolis de Puig des Molins como ejemplo. Entre sus playas figuran d'en Bossa, Ses Figueretes y Talamanca. Formentera, con playas de arena blanca fina, queda a unos 30 km.",
+        "El aeropuerto está a unos 7,5 km de Eivissa y recibe vuelos directos desde las demás islas, la península y Europa. Por mar, hay ferris desde Barcelona, Valencia, Dénia, Mallorca y Formentera hacia el puerto de Eivissa y Sant Antoni."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/ibiza/",
+        "https://www.spain.info/en/aeroplane/ibiza-airport/"
+      ]
     },
     {
       "slug": "girona",
@@ -64,7 +106,16 @@
       ],
       "radio": 55,
       "tiendas": null,
-      "concesionarios": null
+      "concesionarios": null,
+      "contexto": [
+        "Girona, la ciudad de los cuatro ríos, fue fundada por los romanos en el siglo I a. C. y su casco histórico conserva huellas romanas, árabes y hebreas. El Call, con la calle de la Força como eje, es uno de los barrios judíos mejor conservados de España. La cocina combina mar y montaña y se acompaña con vinos de la DO Empordà-Costa Brava. La Costa Brava se extiende de Portbou a Blanes e incluye el Parque Natural del Cap de Creus, Cadaqués y Tossa de Mar.",
+        "El aeropuerto de Girona-Costa Brava tiene autobús a la estación de Girona, a Barcelona Nord y al aeropuerto de El Prat; por carretera se accede por la A-2, la AP-7 o la C-25. La alta velocidad enlaza Girona con Barcelona."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/girona/",
+        "https://www.spain.info/en/aeroplane/girona-costa-brava-airport/",
+        "https://www.spain.info/en/route/explore-spain-on-high-speed-trains/"
+      ]
     },
     {
       "slug": "la-rioja",
@@ -75,7 +126,15 @@
       ],
       "radio": 55,
       "tiendas": null,
-      "concesionarios": null
+      "concesionarios": null,
+      "contexto": [
+        "La DOCa Rioja se reparte en tres subzonas: Rioja Alta, Rioja Alavesa y Rioja Oriental. Su Consejo Regulador habla de más de 66.000 hectáreas de viñedo y cerca de 600 bodegas con propuestas para el visitante. La denominación cerró en febrero de 2026 los actos de su centenario y calificó la cosecha de 2025 como excelente. La Rioja Alavesa, entre el Ebro y la sierra de Cantabria, tiene un microclima favorable al tempranillo y bodegas de autor como Ysios (Calatrava), Marqués de Riscal (Gehry) y Baigorri.",
+        "Laguardia, capital de la Rioja Alavesa, está a 18 km de Logroño y a 45 km de Vitoria-Gasteiz. Vitoria y Bilbao tienen aeropuerto internacional. Desde Madrid, la región queda a unos 362 km por la A-1."
+      ],
+      "fuentes": [
+        "https://www.riojawine.com/en/",
+        "https://www.spain.info/en/oenology/wine-route-rioja-alavesa/"
+      ]
     },
     {
       "slug": "valencia",
@@ -86,7 +145,15 @@
       ],
       "radio": 40,
       "tiendas": null,
-      "concesionarios": "valencia"
+      "concesionarios": "valencia",
+      "contexto": [
+        "Valencia es una ciudad de contrastes, con un casco antiguo cercano a edificios futuristas. La Ciudad de las Artes y las Ciencias, obra de Santiago Calatrava y Félix Candela, incluye el Oceanogràfic. La paella es el plato emblemático y Turespaña recomienda probarla junto al mar, en playas como la Malvarrosa, El Saler o El Palmar. La Albufera es un lago navegable conocido por sus atardeceres. Turespaña cita más de 300 días de sol al año.",
+        "El aeropuerto está a unos 8 km, unos 20 minutos en las líneas 3 y 5 del metro. La estación Joaquín Sorolla tiene alta velocidad con Madrid, que se alcanza desde 1 h 50, además de Cuenca, Sevilla y Córdoba. Las Fallas culminan cada 19 de marzo con la quema de las esculturas."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/valencia/",
+        "https://www.spain.info/en/route/explore-spain-on-high-speed-trains/"
+      ]
     },
     {
       "slug": "jerez-cadiz",
@@ -97,7 +164,16 @@
       ],
       "radio": 40,
       "tiendas": null,
-      "concesionarios": null
+      "concesionarios": null,
+      "contexto": [
+        "Cádiz se presenta como la ciudad más antigua de Europa occidental, fundada hace 3.000 años por los fenicios. Sus barrios históricos son El Pópulo, La Viña y Santa María, centro del flamenco, y La Caleta es la playa del casco antiguo. Entre sus productos, Turespaña cita los langostinos de Sanlúcar. Jerez aporta el vino: fino, manzanilla y oloroso entre los secos, y Moscatel y Pedro Ximénez entre los dulces. Bodegas históricas como González Byass, con La Concha diseñada por Eiffel, o Domecq se visitan en la ruta del Marco de Jerez, que incluye El Puerto de Santa María y Sanlúcar. Jerez cuenta además con programación de flamenco y de cultura del caballo.",
+        "Hay aeropuerto en Jerez, acceso por la A-4 desde Sevilla y la A-7 desde Málaga, y tren a Jerez, El Puerto de Santa María y Puerto Real."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/cadiz/",
+        "https://www.spain.info/en/oenology/wine-route-sherry-brandy-marco-jerez/",
+        "https://www.turismojerez.com/en"
+      ]
     },
     {
       "slug": "ribera-del-duero",
@@ -108,7 +184,109 @@
       ],
       "radio": 40,
       "tiendas": null,
-      "concesionarios": null
+      "concesionarios": null,
+      "contexto": [
+        "La DO Ribera del Duero se creó oficialmente el 21 de julio de 1982. Abarca cuatro provincias, Soria, Burgos, Valladolid y Segovia, y 118 localidades. Según su ruta del vino, tiene 23.353 hectáreas de viñedo (cifra de 2021), el 73,45 % en Burgos. El tempranillo, también llamado tinta fina, es la variedad dominante; se autorizan además cabernet sauvignon, merlot, malbec, garnacha tinta y, como única blanca, albillo mayor. El viñedo soporta fuertes contrastes de temperatura entre el día y la noche en verano.",
+        "La vendimia suele comenzar a finales de septiembre o, como muy tarde, a principios de octubre, una de las más tardías de Castilla y León. Burgos concentra la mayor parte del viñedo, por delante de Valladolid, Soria y Segovia."
+      ],
+      "fuentes": [
+        "https://rutadelvinoriberadelduero.es/en/curiosities-about-the-designation-of-origin-ribera-del-duero/"
+      ]
+    },
+    {
+      "slug": "san-sebastian",
+      "nombre": "San Sebastián",
+      "centro": [
+        43.32,
+        -1.98
+      ],
+      "radio": 45,
+      "tiendas": null,
+      "concesionarios": null,
+      "contexto": [
+        "San Sebastián es una ciudad cosmopolita de fuerte identidad vasca, con eventos como la Tamborrada, la Semana Grande y los festivales de cine y de jazz. Se extiende por una bahía entre los montes Urgull e Igeldo. La cocina vasca es internacionalmente conocida y algunos de los restaurantes más renombrados de España están aquí; el pescado y el marisco se acompañan con chacolí de Getaria, que tiene denominación de origen propia. La Concha es una bahía de arena blanca, con La Perla, antiguo balneario real, sobre la playa; Ondarreta empieza en el Peine del Viento.",
+        "El aeropuerto de San Sebastián, en Hondarribia, está a unos 22 km de la ciudad, con acceso por la N-638, la AP-1 y la AP-8, y autobuses entre ambas localidades."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/san-sebastian/",
+        "https://www.spain.info/en/aeroplane/san-sebastian-airport/"
+      ]
+    },
+    {
+      "slug": "sevilla",
+      "nombre": "Sevilla",
+      "centro": [
+        37.39,
+        -5.99
+      ],
+      "radio": 40,
+      "tiendas": "sevilla",
+      "concesionarios": null,
+      "contexto": [
+        "Sevilla es conocida por sus monumentos, sus tapas, el flamenco y sus fiestas. La Giralda, la catedral y el Real Alcázar están muy próximos en el centro histórico; Turespaña describe la catedral como el mayor templo gótico de Europa y recuerda que el Alcázar ofrece visitas nocturnas en verano. El calendario lo marcan la Feria de Abril, con guitarra y flamenco, y la Semana Santa, con procesiones y saetas.",
+        "El aeropuerto está a unos 10 km, junto a la A-4, y el trayecto en taxi dura unos 15 minutos. La estación de Santa Justa, a unos 2 km de la catedral, tiene alta velocidad: Madrid se alcanza en unos 2 h 40 min, Barcelona en unos 5 h 40 min y Valencia desde 4 h 30 min."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/seville/"
+      ]
+    },
+    {
+      "slug": "bilbao",
+      "nombre": "Bilbao",
+      "centro": [
+        43.26,
+        -2.93
+      ],
+      "radio": 30,
+      "tiendas": "bilbao",
+      "concesionarios": null,
+      "contexto": [
+        "Bilbao combina arquitectura de vanguardia con un casco viejo de calles y bares de pintxos en torno a la plaza Nueva. El Museo Guggenheim, de Frank Gehry, se reviste con 33.000 placas de titanio y comparte con Nueva York y Venecia una de las colecciones privadas de arte moderno y contemporáneo más importantes del mundo, según Turespaña. En el mercado de la Ribera se pueden probar pintxos y txakoli. Turespaña recuerda que el País Vasco es uno de los lugares del mundo con más estrellas Michelin por habitante.",
+        "El aeropuerto está a unos 12 km del centro. El autobús A3247 llega a la terminal intermodal de Bilbao, con varias paradas en la ciudad, y por la N-637 el trayecto en coche dura unos 15 minutos. Bilbao es también aeropuerto de acceso a la Rioja Alavesa."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/bilbao/",
+        "https://www.spain.info/en/oenology/wine-route-rioja-alavesa/"
+      ]
+    },
+    {
+      "slug": "alicante",
+      "nombre": "Alicante y la Costa Blanca",
+      "centro": [
+        38.68,
+        -0.1
+      ],
+      "radio": 60,
+      "tiendas": null,
+      "concesionarios": null,
+      "contexto": [
+        "Alicante, en la Costa Blanca, mantiene tradiciones arraigadas como los Moros y Cristianos y la noche de San Juan, el 24 de junio, con hogueras de ninots. El castillo de Santa Bárbara, de origen árabe, domina el monte Benacantil y su estructura actual es en gran parte del siglo XVI. La playa del Postiguet está junto al centro. El arroz es la base de la cocina local: a banda, negro o al horno. Los vinos llevan la DO Alicante y el Fondillón es su dulce más singular.",
+        "El aeropuerto Alicante-Elche Miguel Hernández está a pocos kilómetros de la ciudad y el autobús C6 enlaza con la estación de tranvía de Luceros. Desde Madrid, la alta velocidad llega a Alicante desde 2 h 15 min."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/destination/alicante-alacant/",
+        "https://www.spain.info/en/aeroplane/alicante-elche-airport/",
+        "https://www.spain.info/en/route/explore-spain-on-high-speed-trains/"
+      ]
+    },
+    {
+      "slug": "tenerife",
+      "nombre": "Tenerife",
+      "centro": [
+        28.15,
+        -16.6
+      ],
+      "radio": 45,
+      "tiendas": null,
+      "concesionarios": null,
+      "contexto": [
+        "Turespaña describe en Tenerife un clima primaveral, con ropa de verano durante todo el año. El Teide, Parque Nacional y Patrimonio de la Humanidad, se sube en teleférico y permite dormir a sus pies, en el Parador de Las Cañadas del Teide; el parque es además un buen lugar para observar las estrellas. En el sur, Costa Adeje concentra hoteles de lujo; en el norte están Puerto de la Cruz y los Lagos Martiánez. Los vinos de la isla deben su carácter a la tierra volcánica y al clima atlántico.",
+        "La isla tiene dos aeropuertos. Tenerife Norte, a unos 3 km de La Laguna, atiende la mayoría de conexiones nacionales e interinsulares; Tenerife Sur concentra las internacionales. Una línea de autobús los une en unos 50 minutos."
+      ],
+      "fuentes": [
+        "https://www.spain.info/en/region/tenerife-island/",
+        "https://www.spain.info/en/aeroplane/tenerife-sur-airport/"
+      ]
     }
   ]
 }

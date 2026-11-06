@@ -24,5 +24,16 @@
     "lat": 41.59072,
     "lon": 1.68587
   },
-  "geo_fuente": "Parcmotor Castellolí, Can n'Alzina, Castellolí, Anoia, Barcelona, Catalunya, 08719, España"
+  "geo_fuente": "Parcmotor Castellolí, Can n'Alzina, Castellolí, Anoia, Barcelona, Catalunya, 08719, España",
+  "contexto": [
+    {
+      "es": "Parcmotor Castellolí es un complejo de 100 hectáreas dedicado al motor, con fines de entrenamiento, iniciación y competición. Su circuito de velocidad ocupa 27 hectáreas y tiene un trazado reversible de casi 4.200 m, homologado por las federaciones internacionales de motociclismo y automovilismo."
+    },
+    {
+      "es": "Está en Castellolí (comarca de l'Anoia, Barcelona), junto a la carretera nacional A-2, en el km 560. Además del circuito hay escuela de conducción, circuito de supermotard, minimotos y kárting, motocross, enduro, trial, zona 4x4 y paintball. Dentro del recinto está el Campus Motor Anoia, dedicado a pruebas e investigación del sector."
+    },
+    {
+      "es": "El proyecto data de 2001. La primera instalación, el circuito de motocross, se inauguró en 2002. La construcción del circuito de velocidad comenzó en 2004 y el conjunto se terminó en 2009, por iniciativa del Circuit de Catalunya y la Generalitat con la Federación Catalana de Motociclismo. En 2008 acogió una prueba del Mundial de trial al aire libre."
+    }
+  ]
 }

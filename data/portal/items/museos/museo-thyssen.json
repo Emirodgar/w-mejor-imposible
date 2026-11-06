@@ -15,7 +15,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.infobae.com/espana/agencias/2026/01/02/el-museo-thyssen-bornemisza-aumenta-su-numero-de-visitantes-y-llega-al-millon-en-2025/"
+    "https://www.infobae.com/espana/agencias/2026/01/02/el-museo-thyssen-bornemisza-aumenta-su-numero-de-visitantes-y-llega-al-millon-en-2025/",
+    "https://www.museothyssen.org/en/about-us/history-building/financial-headquarters-museo-thyssen-bornemisza-building-since-1950s",
+    "https://arquitecturaviva.com/works/museo-thyssen-bornemisza-madrid"
   ],
   "busqueda": "Museo Thyssen-Bornemisza Madrid",
   "schema": "Museum",
@@ -23,5 +25,16 @@
     "lat": 40.41622,
     "lon": -3.69493
   },
-  "geo_fuente": "Museo Thyssen-Bornemisza, 8, Paseo del Prado, Cortes, Centro, Madrid, Comunidad de Madrid,"
+  "geo_fuente": "Museo Thyssen-Bornemisza, 8, Paseo del Prado, Cortes, Centro, Madrid, Comunidad de Madrid,",
+  "contexto": [
+    {
+      "es": "El Museo Thyssen-Bornemisza ocupa el palacio de Villahermosa, en el Paseo del Prado. Tras pasar por manos de un banco, que vació el interior en los años setenta, el edificio se ofreció al barón Hans Heinrich Thyssen-Bornemisza tras valorarse como ampliación del Prado."
+    },
+    {
+      "es": "Rafael Moneo lo reformó entre 1989 y 1992. Conservó el carácter palaciego del proyecto original de Antonio López Aguado y convirtió la fachada del jardín en acceso principal. El museo abrió en octubre de 1992 y el Estado compró la colección en 1993."
+    },
+    {
+      "es": "En 2004 se amplió con los palacios de Goyeneche y Guaqui, obra de BOPBAA, para albergar la colección de Carmen Thyssen-Bornemisza. Desde 2021 forma parte del Paisaje de la Luz, inscrito por la UNESCO."
+    }
+  ]
 }

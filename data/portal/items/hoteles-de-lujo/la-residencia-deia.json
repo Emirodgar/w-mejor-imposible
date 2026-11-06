@@ -15,12 +15,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://guide.michelin.com/en/hotels-stays/majorca/la-residencia-a-belmond-hotel-mallorca-6384",
+    "https://en.wikipedia.org/wiki/Belmond_La_Residencia"
   ],
   "busqueda": "La Residencia Belmond Deià",
   "coordenadas": {
     "lat": 39.74973,
     "lon": 2.64922
   },
-  "geo_fuente": "La Residència, Carrer de Son Canals, es Clot, Deià, Serra de Tramuntana, Illes Balears, 07"
+  "geo_fuente": "La Residència, Carrer de Son Canals, es Clot, Deià, Serra de Tramuntana, Illes Balears, 07",
+  "contexto": [
+    {
+      "es": "La Residencia ocupa una villa de los siglos XVI y XVII en la ladera de la sierra de Tramuntana, con vistas a Deià y al Mediterráneo, según la Guía Michelin. Abrió como hotel en 1984 y, según la Wikipedia, fue el primero de su tipo en la isla."
+    },
+    {
+      "es": "Michelin le atribuye 73 habitaciones y dos Llaves, con la descripción de estancia excepcional. En 2002 pasó a Orient-Express Hotels, hoy Belmond."
+    },
+    {
+      "es": "Deià está en la costa noroeste de Mallorca. Algunas fuentes indican que el hotel cierra en invierno, un dato que conviene contrastar con el propio establecimiento antes de organizar el viaje."
+    }
+  ]
 }

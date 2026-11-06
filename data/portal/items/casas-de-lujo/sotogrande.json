@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Sotogrande"
+    "https://en.wikipedia.org/wiki/Sotogrande",
+    "https://es.wikipedia.org/wiki/Sotogrande"
   ],
   "busqueda": "Sotogrande San Roque",
   "coordenadas": {
@@ -31,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Port_of_Sotogrande_(5793604574).jpg",
     "titulo": "File:Port of Sotogrande (5793604574).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Sotogrande, en San Roque (Cádiz), ocupa unos 25 km². Lo impulsaron Joseph McMicking y Mercedes Zóbel de Ayala; Alfredo Melián Zóbel localizó los terrenos en 1962. La urbanización arrancó en 1964 con un club de golf junto al río Guadiaro, diseñado por Robert Trent Jones."
+    },
+    {
+      "es": "Hoy tiene cinco campos de golf, entre ellos Valderrama, sede de la Ryder Cup de 1997. Su puerto deportivo se inauguró a finales de los años ochenta. El Santa María Polo Club organiza un torneo internacional desde hace más de cincuenta años. Está a unos 25 km de Gibraltar y se llega por la A-7 y la AP-7."
+    },
+    {
+      "es": "El INE contaba 2.743 habitantes en 2020; en verano la cifra puede llegar a unos 12.500."
+    }
+  ]
 }

@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/76/papagayo-tenerife"
+    "https://djmag.com/top100clubs/2026/76/papagayo-tenerife",
+    "https://papagayotenerife.com/"
   ],
   "busqueda": "Papagayo Beach Club Playa de las Américas",
   "coordenadas": {
     "lat": 28.0676,
     "lon": -16.73105
   },
-  "geo_fuente": "Papagayo Beach Club, 2, Avenida Rafael Puig Lluvina, Playa de las Américas, Los Cristianos"
+  "geo_fuente": "Papagayo Beach Club, 2, Avenida Rafael Puig Lluvina, Playa de las Américas, Los Cristianos",
+  "contexto": [
+    {
+      "es": "Papagayo es un beach club de día y club de noche en el paseo marítimo de Playa de las Américas, en Costa Adeje, al sur de Tenerife (avenida Rafael Puig y Lluvina, 2). Tiene la sala principal, la sala El Nido, mesas reservadas y un restaurante en el mismo edificio. DJ Mag le atribuye 1.500 personas de aforo."
+    },
+    {
+      "es": "Su web programa de miércoles a domingo y las puertas suelen abrir a las 22:00. Cada noche tiene su fiesta propia: Move On con house de los noventa y dosmiles, Follow con tech house latino y afro house, La Loka con reguetón, Essence con tech house oscuro y Freak & Chic con house, disco y funk. La web los presenta como programación vigente de 2026."
+    },
+    {
+      "es": "DJ Mag lo sitúa en el puesto 76 de su Top 100 Clubs 2026."
+    }
+  ]
 }

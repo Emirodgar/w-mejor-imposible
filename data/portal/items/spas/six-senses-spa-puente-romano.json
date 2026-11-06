@@ -23,12 +23,26 @@
   ],
   "fuentes": [
     "https://worldspaawards.com/award/spain-best-resort-spa/2026",
-    "https://theluxuryeditor.com/news/kempinski-hotel-bahia-scoops-spains-best-hotel-spa-in-the-world-spa-awards/"
+    "https://theluxuryeditor.com/news/kempinski-hotel-bahia-scoops-spains-best-hotel-spa-in-the-world-spa-awards/",
+    "https://spaandbeautytoday.com/articles/spa-profile-six-senses-spa-at-puente-romano-beach-resort",
+    "https://www.breakingtravelnews.com/news/article/six-senses-spa-opens-at-puente-romano-beach-resort-marbella/",
+    "https://worldspaawards.com/award/spain-best-resort-spa/2023"
   ],
   "busqueda": "Puente Romano Marbella",
   "coordenadas": {
     "lat": 36.50366,
     "lon": -4.92558
   },
-  "geo_fuente": "Puente Romano Marbella, Urbanización Torre Verde, Urbanización Los Verdales, El Vicario, M"
+  "geo_fuente": "Puente Romano Marbella, Urbanización Torre Verde, Urbanización Los Verdales, El Vicario, M",
+  "contexto": [
+    {
+      "es": "El Six Senses Spa abrió en el verano de 2015 dentro del Puente Romano Beach Resort, en Marbella, tras una reforma del complejo. Según una guía especializada, es el único spa de la marca en la España peninsular."
+    },
+    {
+      "es": "Tiene nueve cabinas de tratamiento y un interiorismo de paredes encaladas, suelos de roble y piedra local, que remite a la arquitectura andaluza. Lo comparten los huéspedes del resort y los del vecino Nobu Hotel Marbella."
+    },
+    {
+      "es": "Fue elegido mejor spa de resort de España en los World Spa Awards 2023 y en 2026 volvió a estar nominado."
+    }
+  ]
 }

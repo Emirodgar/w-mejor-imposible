@@ -18,12 +18,23 @@
   "cerca": [],
   "fuentes": [
     "https://www.golfmonthly.com/news/camiral-ryder-cup-2031-things-to-know",
-    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain"
+    "https://www.top100golfcourses.com/news/best-golf-courses-in-spain",
+    "https://www.espn.com.au/golf/story/_/id/45798263/ryder-cup-returning-spain-2nd-2031-camiral",
+    "https://www.camiral.com/en/golf/ryder-cup-2031",
+    "https://eigca.org/david-williams-golf-designs-delight-at-award-of-2031-ryder-cup-to-camiral-golf-formerly-pgca-catalunya/"
   ],
   "busqueda": "Camiral Golf Caldes de Malavella",
   "coordenadas": {
     "lat": 41.85555,
     "lon": 2.76993
   },
-  "geo_fuente": "LAVIDA Hotel, Carrer del Suro, Sector Residencial Golf, Caldes de Malavella, la Selva, Gir"
+  "geo_fuente": "LAVIDA Hotel, Carrer del Suro, Sector Residencial Golf, Caldes de Malavella, la Selva, Gir",
+  "contexto": [
+    {
+      "es": "El Stadium Course de Camiral, conocido hasta hace pocos años como PGA Catalunya, abrió en 1999. Se concibió para acoger la Ryder Cup de 1997, pero esa edición se disputó finalmente en Valderrama. Es un par 72 que puede alcanzar unos 7.300 yardas."
+    },
+    {
+      "es": "En 2025 se confirmó que será sede de la Ryder Cup de 2031, la segunda que se celebra en España. El resort, llamado Camiral Golf & Wellness, está en Caldes de Malavella, en la provincia de Girona, y combina el campo con instalaciones de bienestar."
+    }
+  ]
 }

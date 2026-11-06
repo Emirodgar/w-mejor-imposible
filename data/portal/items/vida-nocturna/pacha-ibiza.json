@@ -8,7 +8,7 @@
     "es": "pista principal"
   },
   "por_que": {
-    "es": "Clásico de la isla que renovó su escalera de entrada y abrió en 2025 un bar de cócteles, Paradiso Ibiza."
+    "es": "Clásico de la isla, con un bar de cócteles propio, Paradiso Ibiza."
   },
   "ficha": {
     "puesto": "DJ Mag Top 100 Clubs 2026: n.º 18",
@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/18/pacha-ibiza"
+    "https://djmag.com/top100clubs/2026/18/pacha-ibiza",
+    "https://www.ibiza-spotlight.com/magazine/2023/07/10-surprising-facts-about-pacha-ibiza",
+    "https://ibiza-spotlight.com/magazine/2024/08/pacha-brand-continues-soar-new-cocktail-bar-paradiso",
+    "https://lavozdeibiza.com/que-hacer-en-ibiza-y-formentera/la-mejor-cocteleria-del-mundo-vuelve-a-pacha-ibiza-con-una-propuesta-renovada/"
   ],
   "busqueda": "Pacha Ibiza",
   "coordenadas": {
     "lat": 38.91844,
     "lon": 1.44332
   },
-  "geo_fuente": "Pacha, 19, Avinguda 8 d'Agost, s'Hort de sa Fruita, Eivissa, Illes Balears, 07800, España"
+  "geo_fuente": "Pacha, 19, Avinguda 8 d'Agost, s'Hort de sa Fruita, Eivissa, Illes Balears, 07800, España",
+  "contexto": [
+    {
+      "es": "Pacha Ibiza abrió en junio de 1973 en el borde de Ibiza ciudad, frente al casco antiguo al otro lado del puerto. Lo fundó la familia que ya tenía otro Pacha en Sitges desde 1967. Las fuentes sitúan su aforo entre 3.000 y 5.000 personas; DJ Mag da 5.000 en 2026."
+    },
+    {
+      "es": "En 2024 abrió dentro del club un bar de cócteles, Paradiso, con tres accesos y diseño retrofuturista. Funciona de junio a octubre y solo para quienes tienen entrada al club. En 2019 se renovaron más de 2.100 metros cuadrados del local para mejorar la acústica y las instalaciones."
+    },
+    {
+      "es": "DJ Mag lo sitúa en el puesto 18 de su Top 100 Clubs 2026."
+    }
+  ]
 }

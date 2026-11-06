@@ -22,12 +22,25 @@
     }
   ],
   "fuentes": [
-    "https://worldspaawards.com/award/spain-best-resort-spa/2026"
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026",
+    "https://www.marriott.com/en-us/hotels/pmixr-the-st-regis-mardavall-mallorca-resort/experiences",
+    "https://forbestravelguide.com/hotels/mallorca-spain/the-st-regis-mardavall-mallorca-resort"
   ],
   "busqueda": "Mardavall Hotel Costa d'en Blanes",
   "coordenadas": {
     "lat": 39.52784,
     "lon": 2.55071
   },
-  "geo_fuente": "Mardavall, Ma-1C, Costa d'en Blanes, Son Caliu, Calvià, Serra de Tramuntana, Illes Balears"
+  "geo_fuente": "Mardavall, Ma-1C, Costa d'en Blanes, Son Caliu, Calvià, Serra de Tramuntana, Illes Balears",
+  "contexto": [
+    {
+      "es": "El Arabella Spa ocupa más de 4.700 metros cuadrados, lo que lo sitúa entre los mayores de Europa según la descripción del resort. Forma parte del St. Regis Mardavall Mallorca Resort, un complejo de unas 125 habitaciones y suites en el municipio de Calvià, en el suroeste de Mallorca."
+    },
+    {
+      "es": "Es un spa pensado sobre todo para quien se aloja en el hotel, con espacio amplio para circuitos de agua, tratamientos y zonas de descanso. Marriott, propietaria de la marca St. Regis, lo incluye entre las experiencias principales del resort."
+    },
+    {
+      "es": "En 2026 recibió el premio a mejor spa de resort de España en los World Spa Awards."
+    }
+  ]
 }

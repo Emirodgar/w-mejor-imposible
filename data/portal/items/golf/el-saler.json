@@ -23,12 +23,22 @@
     }
   ],
   "fuentes": [
-    "https://www.top100golfcourses.com/golf-course/el-saler"
+    "https://www.top100golfcourses.com/golf-course/el-saler",
+    "https://paradores.es/en/parador-de-el-saler",
+    "https://www.ega-golf.ch/content/parador-de-el-saler"
   ],
   "busqueda": "Campo de Golf El Saler Valencia",
   "coordenadas": {
     "lat": 39.31885,
     "lon": -0.30217
   },
-  "geo_fuente": "Golf Parador de El Saler, 151, Carretera València - Sueca (pel Saler), el Saler, Pobles de"
+  "geo_fuente": "Golf Parador de El Saler, 151, Carretera València - Sueca (pel Saler), el Saler, Pobles de",
+  "contexto": [
+    {
+      "es": "El Saler fue diseñado por Javier Arana por encargo del Ministerio de Información y Turismo, durante la construcción del Parador. Abrió en 1968. Tiene 18 hoyos y par 72, y alterna hoyos junto al mar con otros entre pinares."
+    },
+    {
+      "es": "Está en el Parque Natural de la Albufera, en la costa a pocos kilómetros de Valencia, junto al Parador de El Saler. Según Paradores, Arana vio el potencial del terreno paseando por el pinar. EGA Golf lo vincula con la Seve Trophy de 2003 y con varias ediciones del Open de España, fechas que conviene contrastar con una fuente oficial."
+    }
+  ]
 }

@@ -18,7 +18,8 @@
   "cerca": [],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
-    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html"
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html",
+    "https://guide.michelin.com/en/pais-vasco/axpe/restaurant/etxebarri"
   ],
   "busqueda": "Asador Etxebarri Axpe",
   "coordenadas": {
@@ -33,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Etxebarri_angulas.jpg",
     "titulo": "File:Etxebarri angulas.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Asador Etxebarri está en la plaza San Juan, en Axpe, en el valle de Atxondo (Bizkaia). La Guía Michelin 2026 le da una estrella y lo describe como una parrilla del chef y propietario Bittor Arginzoniz, que cocina productos de primera calidad con distintas maderas de leña."
+    },
+    {
+      "es": "La oferta consiste en una carta breve y un menú degustación. Entre los platos que citan los inspectores figuran la yema de huevo con trufa blanca, la chuleta madurada y el helado de leche reducida con jugo de remolacha."
+    },
+    {
+      "es": "Michelin recomienda reservar con mucha antelación, de varios meses según la guía. Dispone de aparcamiento y terraza."
+    }
+  ]
 }

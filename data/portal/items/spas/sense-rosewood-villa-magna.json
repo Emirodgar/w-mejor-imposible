@@ -23,12 +23,25 @@
   ],
   "fuentes": [
     "https://worldspaawards.com/award/spain-best-hotel-spa/2026",
-    "https://www.rosewoodhotels.com/es/villa-magna/overview/awards.html"
+    "https://www.rosewoodhotels.com/es/villa-magna/overview/awards.html",
+    "https://rosewoodhotels.com/en/villa-magna/wellness",
+    "https://spaandbeautytoday.com/articles/spa-profile-sense-a-rosewood-spa-at-rosewood-villa-magna"
   ],
   "busqueda": "Rosewood Villa Magna Madrid",
   "coordenadas": {
     "lat": 40.42994,
     "lon": -3.68816
   },
-  "geo_fuente": "Rosewood Villa Magna, 22, Paseo de la Castellana, Castellana, Salamanca, Madrid, Comunidad"
+  "geo_fuente": "Rosewood Villa Magna, 22, Paseo de la Castellana, Castellana, Salamanca, Madrid, Comunidad",
+  "contexto": [
+    {
+      "es": "Sense, A Rosewood Spa está en el Rosewood Villa Magna, en el Paseo de la Castellana 22 de Madrid. Su propuesta parte de los «remedios perdidos»: terapias inspiradas en los orígenes musulmanes de Madrid y en prácticas medicinales tradicionales transmitidas por las abuelas."
+    },
+    {
+      "es": "Dispone de sauna finlandesa, baño de vapor, zona de hidroterapia con ducha sensorial y jacuzzi, además de un gimnasio abierto las 24 horas, según la web del hotel."
+    },
+    {
+      "es": "Los World Spa Awards lo nombraron mejor spa de hotel de España en 2023, y en 2026 volvió a figurar entre los nominados de esa categoría."
+    }
+  ]
 }

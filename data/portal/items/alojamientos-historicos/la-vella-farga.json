@@ -16,7 +16,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/us/details/la-vella-farga/",
+    "https://www.relaischateaux.com/us/spa/la-vella-farga/",
+    "https://www.icastelli.net/es/la-vella-farga-hotel"
   ],
   "busqueda": "La Vella Farga Lladurs",
   "schema": "Hotel",
@@ -24,5 +27,16 @@
     "lat": 42.03502,
     "lon": 1.49538
   },
-  "geo_fuente": "La Vella Farga, Camí de Casa Corral, Lladurs, Solsonès, Lleida, Catalunya, 25283, España"
+  "geo_fuente": "La Vella Farga, Camí de Casa Corral, Lladurs, Solsonès, Lleida, Catalunya, 25283, España",
+  "contexto": [
+    {
+      "es": "Gran casa de campo y finca construida en el siglo XI, según Relais & Châteaux, cuya ficha la integra desde 2020. Un directorio de terceros sitúa el origen de la masía en 1036. El spa usa salas de masaje instaladas en una antigua cuadra."
+    },
+    {
+      "es": "Se encuentra en Lladurs (Lleida), en las estribaciones del Pirineo catalán, con vistas a las montañas, una terraza con piscina infinita y un ambiente de silencio. Se llega desde Solsona por la C-26 hacia La Seu d'Urgell."
+    },
+    {
+      "es": "El aeropuerto de Andorra-La Seu d'Urgell queda a 70 km y el de Barcelona-El Prat, a 120 km. La estación de tren más cercana es la de Lleida."
+    }
+  ]
 }

@@ -22,12 +22,26 @@
     }
   ],
   "fuentes": [
-    "https://worldspaawards.com/award/spain-best-resort-spa/2026"
+    "https://worldspaawards.com/award/spain-best-resort-spa/2026",
+    "https://press.fourseasons.com/mallorca/hotel-news/2025/introducing-the-spa-and-wellness-retreat",
+    "https://forbestravelguide.com/spas/mallorca-spain/spa-at-four-seasons-resort-mallorca-at-formentor",
+    "https://theluxuryeditor.com/news/four-seasons-resort-mallorca-at-formentor-mediterranean-paradise-reimagined-for-2025/"
   ],
   "busqueda": "Hotel Formentor Pollença",
   "coordenadas": {
     "lat": 39.92675,
     "lon": 3.14483
   },
-  "geo_fuente": "Formentor, Carrer de Formentor, Pollença, Serra de Tramuntana, Illes Balears, España"
+  "geo_fuente": "Formentor, Carrer de Formentor, Pollença, Serra de Tramuntana, Illes Balears, España",
+  "contexto": [
+    {
+      "es": "El spa del Four Seasons Resort Mallorca at Formentor, en Pollença, abrió con carácter permanente en la temporada 2025, tras un periodo con un spa temporal. El hotel lo presenta como un espacio basado en la naturaleza, con un plan personalizado que el huésped diseña con un especialista."
+    },
+    {
+      "es": "Según guías de terceros, cuenta con seis cabinas, sauna y baño de vapor, y se asoma al pinar de la península de Formentor. Los tratamientos combinan prácticas tradicionales mallorquinas con técnicas actuales."
+    },
+    {
+      "es": "En 2026 estuvo nominado en los World Spa Awards a mejor spa de resort de España."
+    }
+  ]
 }

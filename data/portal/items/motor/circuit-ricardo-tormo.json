@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Circuit_Ricardo_Tormo"
+    "https://en.wikipedia.org/wiki/Circuit_Ricardo_Tormo",
+    "https://www.circuitricardotormo.com/"
   ],
   "busqueda": "Circuit Ricardo Tormo Cheste",
   "coordenadas": {
     "lat": 39.48581,
     "lon": -0.62864
   },
-  "geo_fuente": "Circuit Ricardo Tormo, CV-3845, Cheste, La Hoya de Buñol, València / Valencia, Comunitat V"
+  "geo_fuente": "Circuit Ricardo Tormo, CV-3845, Cheste, La Hoya de Buñol, València / Valencia, Comunitat V",
+  "contexto": [
+    {
+      "es": "El Circuit Ricardo Tormo, también llamado Circuit de Valencia, abrió el 19 de septiembre de 1999 en Cheste. Lleva el nombre del piloto valenciano bicampeón del mundo de motociclismo. Su aforo es de 165.000 personas, 125.000 de ellas sentadas."
+    },
+    {
+      "es": "Tiene cuatro configuraciones. El circuito de Gran Premio mide 4,005 km y tiene 14 curvas. El exterior tiene 3,136 km y 11 curvas, el de escuela 1,300 km y 7 curvas, y el de Fórmula E 3,376 km y 15 curvas."
+    },
+    {
+      "es": "Es sede del Gran Premio de la Comunitat Valenciana de MotoGP, que se disputó de 1999 a 2023 y desde 2025. En 2020 acogió el Gran Premio de Europa. En 2021 celebró el ePrix de Valencia y, salvo en 2024, ha sido sede de los test de pretemporada de Fórmula E desde 2017."
+    }
+  ]
 }

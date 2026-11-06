@@ -18,7 +18,8 @@
   "fuentes": [
     "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
     "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/",
-    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026",
+    "https://es.wikipedia.org/wiki/Marbella"
   ],
   "busqueda": "Marbella",
   "coordenadas": {
@@ -35,6 +36,15 @@
     "titulo": "File:Marbella from La Concha, Andalucia, Spain - Sept 2009.jpg"
   },
   "contexto": [
+    {
+      "es": "Marbella ocupa unos 117 km² entre el mar y la Sierra Blanca, con unos 27 km de costa y la reserva natural de las Dunas de Artola. Tenía 159.786 habitantes en 2025. Desde la década de 1950 se consolidó como destino turístico de lujo, primero para la aristocracia europea y después para visitantes de Oriente Próximo en los años setenta y ochenta."
+    },
+    {
+      "es": "Entre sus referencias están la plaza de los Naranjos, Puerto Banús, la Milla de Oro y el distrito de San Pedro Alcántara."
+    },
+    {
+      "es": "El informe de Hiscox de 2023 identifica Los Monteros como la zona más cara de la provincia, con 6.842 euros por metro cuadrado de media, seguida de Lomas de Marbella y Puente Romano, con 6.173."
+    },
     {
       "es": "La casa más cara del ranking de idealista de 2026 es Villa Bellagio, en la Milla de Oro de Marbella: 13 dormitorios en una parcela de 14.000 metros cuadrados."
     },

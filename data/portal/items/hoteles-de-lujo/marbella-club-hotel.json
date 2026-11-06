@@ -15,7 +15,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://www.andalucia.com/marbella/fascinating-facts-5.htm",
+    "https://guide.michelin.com/es/es/hotels-stays/marbella/marbella-club-hotel-5985",
+    "https://www.marbellaclub.com/our-story"
   ],
   "busqueda": "Marbella Club Hotel",
   "coordenadas": {
@@ -30,5 +33,16 @@
     "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "fuente": "https://commons.wikimedia.org/wiki/File:Marbella_-_Milla_de_Oro,_Marbella_Club_Hotel_1.jpg",
     "titulo": "File:Marbella - Milla de Oro, Marbella Club Hotel 1.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Marbella Club nació en 1954, cuando el príncipe Alfonso de Hohenlohe abrió un pequeño hotel de 20 habitaciones, con comedor y bar, en la antigua finca Santa Margarita."
+    },
+    {
+      "es": "El nombre de Milla de Oro, de uso informal, se refiere al tramo de aproximadamente una milla entre este hotel y el complejo Puente Romano (1979); la zona se ha ampliado hasta unos cinco kilómetros."
+    },
+    {
+      "es": "La Guía Michelin le otorga dos Llaves desde 2024. El número de habitaciones varía según la edición de la guía y la fuente consultada, por lo que no se concreta aquí."
+    }
+  ]
 }

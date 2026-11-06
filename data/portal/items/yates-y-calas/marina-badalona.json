@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://es.wikipedia.org/wiki/Puerto_de_Badalona"
   ],
   "busqueda": "Marina Badalona",
   "coordenadas": {
     "lat": 41.43397,
     "lon": 2.24136
   },
-  "geo_fuente": "Port de Badalona, Carrer del Pont de la Cros, la Mora, Districte 5, Badalona, Barcelonès, "
+  "geo_fuente": "Port de Badalona, Carrer del Pont de la Cros, la Mora, Districte 5, Badalona, Barcelonès, ",
+  "contexto": [
+    {
+      "es": "Marina Badalona es un puerto deportivo de la Generalitat de Catalunya gestionado por la sociedad Marina de Badalona S.A. Su ficha técnica recoge 410 puestos de atraque y 8,65 hectáreas de agua abrigada, con embarcaciones de unos 10 m hasta 75 m de eslora, aunque las fuentes difieren en los máximos."
+    },
+    {
+      "es": "Está en Badalona, junto a la C-31 (a 1,2 km) y a unos 1.000 m del metro de Gorg. Forma parte de la remodelación de un frente litoral de unos dos kilómetros, entre las tres chimeneas de FECSA y la antigua fábrica de Anís del Mono, donde antes había industria química."
+    },
+    {
+      "es": "El puerto añade parques, restaurantes y un centro comercial, y el paseo marítimo enlaza con Montgat y el Fòrum de Barcelona."
+    }
+  ]
 }

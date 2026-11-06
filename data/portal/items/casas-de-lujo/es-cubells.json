@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/",
+    "https://www.santjosep.net/en/?p=1571",
+    "https://en.wikipedia.org/wiki/Es_Cubells"
   ],
   "busqueda": "Es Cubells Ibiza",
   "coordenadas": {
@@ -31,5 +33,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:KircheEsCubells.jpg",
     "titulo": "File:KircheEsCubells.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Es Cubells es un pequeño núcleo del municipio de Sant Josep de sa Talaia, en la costa suroeste de Ibiza. El centro del pueblo tiene una iglesia y dos bares, y se asienta al borde de un gran acantilado. La iglesia encalada fue fundada en 1864 por el carmelita Francesc Palau, que pasó largas temporadas como ermitaño en es Vedrà. Una escultura junto al templo lo recuerda."
+    },
+    {
+      "es": "Las calas de pescadores de los alrededores son Ses Boques, Cala Llentrisca, Es Torrent y Porroig. Desde el pueblo se accede también al Parque Natural de Cala d'Hort. La Wikipedia sitúa Es Cubells a unos 17 km de la ciudad de Ibiza y a unos 13 km del aeropuerto."
+    },
+    {
+      "es": "El informe de Hiscox de 2023 recoge para Es Cubells un precio medio de 7.454 euros por metro cuadrado y un máximo de 12 millones de euros por vivienda, entre las zonas más caras de Baleares."
+    }
+  ]
 }

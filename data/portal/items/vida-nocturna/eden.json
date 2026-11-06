@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/99/eden"
+    "https://djmag.com/top100clubs/2026/99/eden",
+    "https://www.edenibiza.com/",
+    "https://www.ibiza-spotlight.com/magazine/2021/04/ibiza-club-rewind-02-eden"
   ],
   "busqueda": "Eden Ibiza San Antonio",
   "coordenadas": {
     "lat": 38.97904,
     "lon": 1.30778
   },
-  "geo_fuente": "Eden, 3, Carrer de Salvador Espriu, Sant Antoni de Portmany, Eivissa, Illes Balears, 07820"
+  "geo_fuente": "Eden, 3, Carrer de Salvador Espriu, Sant Antoni de Portmany, Eivissa, Illes Balears, 07820",
+  "contexto": [
+    {
+      "es": "Eden está en Sant Antoni de Portmany, en la bahía de Sant Antoni, en la calle Salvador Espriu. Nació en 1999 sobre el solar de antiguas discotecas de la zona, la Star Club y la Kaos. Tiene una sala principal y una sala menor, NeXt, y DJ Mag cifra su aforo en 4.000 personas, aunque otras guías hablan de hasta 5.000."
+    },
+    {
+      "es": "Su web destaca el sistema de sonido Incubus Gold de Void y una tecnología de reconocimiento de música. En 2026 la programación incluye noches de techno como Galactica, los martes, además de Fire In The Club y House of Eden. El club tuvo cambios de gestión en los años 2010; hoy lo lleva de nuevo un grupo neerlandés, según Ibiza Spotlight."
+    },
+    {
+      "es": "DJ Mag lo sitúa en el puesto 99 de su Top 100 Clubs 2026."
+    }
+  ]
 }

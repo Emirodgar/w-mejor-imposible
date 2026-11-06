@@ -16,12 +16,22 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/",
+    "https://www.the50.com/stories/News/the-worlds-50-best-vineyards-2025-the-51-100-list.html",
+    "https://www.the50.com/discovery/Establishments/Spain/Rioja/Bodega-Muga.html"
   ],
   "busqueda": "Bodegas Muga Haro",
   "coordenadas": {
     "lat": 42.58291,
     "lon": -2.8472
   },
-  "geo_fuente": "Bodegas Muga S.A., Avenida Vizcaya, Barrio de La Estación, Haro, La Rioja, 26200, España"
+  "geo_fuente": "Bodegas Muga S.A., Avenida Vizcaya, Barrio de La Estación, Haro, La Rioja, 26200, España",
+  "contexto": [
+    {
+      "es": "Bodegas Muga elabora rioja desde 1932 y sigue siendo una casa familiar, instalada en el histórico Barrio de la Estación de Haro. Según 50 Best es la única bodega de la zona que fabrica los barriles en los que cría sus vinos, en una tonelería propia. Ocupó el puesto 53 en The World's 50 Best Vineyards 2025, dentro del tramo 51-100."
+    },
+    {
+      "es": "Haro es la capital de la Rioja Alta. Muga produce tintos, blancos, rosados y cava con tempranillo, garnacha, graciano, mazuelo, viura y otras variedades. Entre sus tintos figura Prado Enea Gran Reserva, de larga guarda. Ofrece catas y actividades como recorridos por el viñedo en segway y paseos en globo."
+    }
+  ]
 }

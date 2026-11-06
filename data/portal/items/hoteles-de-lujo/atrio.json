@@ -15,12 +15,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://guide.michelin.com/es/es/hotels-stays/caceres-1/atrio-restaurante-hotel-6598",
+    "https://guide.michelin.com/es/es/articulo/travel/en-fotos-todos-los-hoteles-con-tres-llaves-en-espana"
   ],
   "busqueda": "Atrio Cáceres",
   "coordenadas": {
     "lat": 39.47299,
     "lon": -6.3714
   },
-  "geo_fuente": "Atrio, 1, Plaza de San Mateo, Ciudad Monumental, Cáceres, Extremadura, 10003, España"
+  "geo_fuente": "Atrio, 1, Plaza de San Mateo, Ciudad Monumental, Cáceres, Extremadura, 10003, España",
+  "contexto": [
+    {
+      "es": "Atrio ocupa un edificio histórico de piedra en la parte antigua amurallada de Cáceres, en la plaza de San Mateo. Según la Guía Michelin, combina interiores blancos y contemporáneos con una colección de arte que incluye obras de Andy Warhol y Georg Baselitz. El hotel tiene 25 habitaciones."
+    },
+    {
+      "es": "Su restaurante, dirigido por el cocinero Toño Pérez, tiene tres estrellas Michelin, y la bodega es conocida por añadas antiguas de vinos europeos. Es el único alojamiento de la lista con tres Llaves y un restaurante con tres estrellas en el mismo establecimiento."
+    },
+    {
+      "es": "Atrio estuvo entre los cinco primeros hoteles españoles con tres Llaves en abril de 2024 y la selección de 2025 lo mantiene con esa distinción."
+    }
+  ]
 }

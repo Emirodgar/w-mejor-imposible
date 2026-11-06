@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/es/details/hotel-neri/",
+    "https://www.relaischateaux.com/es/hotel/hotel-neri/"
   ],
   "busqueda": "Hotel Neri Barcelona Sant Sever",
   "schema": "Hotel",
@@ -24,5 +26,16 @@
     "lat": 41.38304,
     "lon": 2.17539
   },
-  "geo_fuente": "Hotel Neri Apartments, Carrer de Sant Sever, el Call, el Gòtic, Ciutat Vella, Barcelona, B"
+  "geo_fuente": "Hotel Neri Apartments, Carrer de Sant Sever, el Call, el Gòtic, Ciutat Vella, Barcelona, B",
+  "contexto": [
+    {
+      "es": "El hotel reúne dos edificios históricos fusionados en el siglo XVIII, uno de ellos de origen medieval. Está frente a la plaza de Sant Felip Neri, en el centro del Barrio Gótico, entre la catedral y el Palau de la Generalitat."
+    },
+    {
+      "es": "Es miembro de Relais & Châteaux desde 2012. El restaurante propone cocina mediterránea de producto de temporada, y en la cuarta planta hay una terraza con tapas. La azotea tiene un estanque."
+    },
+    {
+      "es": "El aeropuerto de Barcelona-El Prat queda a unos 18 km. Al estar en pleno casco antiguo, el entorno es peatonal y muy silencioso para su ubicación."
+    }
+  ]
 }

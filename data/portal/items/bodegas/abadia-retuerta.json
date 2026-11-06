@@ -16,7 +16,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/",
+    "https://www.the50.com/vineyards/best-in-the-world/the-list/31-40/abadia-retuerta.html",
+    "https://www.vinetur.com/2025101892361/abadia-retuerta-ledomaine-recibe-las-tres-llaves-michelin-y-consolida-su-liderazgo-en-enoturismo-de-lujo-en-castilla-y-leon.html",
+    "https://guide.michelin.com/mx/es/hotels-stays/valladolid2/abadia-retuerta-ledomaine-10200"
   ],
   "busqueda": "Abadía Retuerta Sardón de Duero",
   "coordenadas": {
@@ -31,5 +34,16 @@
     "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "fuente": "https://commons.wikimedia.org/wiki/File:Valladolid_monasterio_Retuerta_01_lou.JPG",
     "titulo": "File:Valladolid monasterio Retuerta 01 lou.JPG"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El monasterio de Santa María de Retuerta se fundó en 1146 y hoy alberga la bodega y LeDomaine, un hotel de cinco estrellas con 30 habitaciones que abrió en 2012 tras cuatro años de restauración. La finca ocupa 700 hectáreas, de las que 192 son viñedo repartido en 54 parcelas, según la ficha de The World's 50 Best Vineyards."
+    },
+    {
+      "es": "Está en Sardón de Duero (Valladolid), en el Valle del Duero, a unas dos horas de Madrid. El restaurante Refectorio, instalado en el antiguo comedor de los monjes, conserva una estrella Michelin."
+    },
+    {
+      "es": "En octubre de 2025 LeDomaine recibió las Tres Llaves de la Guía Michelin, la máxima distinción de la guía para hoteles. Ese mismo año la bodega ocupó el puesto 38 en The World's 50 Best Vineyards."
+    }
+  ]
 }

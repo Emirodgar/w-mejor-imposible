@@ -15,12 +15,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html"
+    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html",
+    "https://www.the50.com/discovery/Establishments/Spain/Barcelona/Foco.html"
   ],
   "busqueda": "Foco Bar Barcelona",
   "coordenadas": {
     "lat": 41.40656,
     "lon": 2.16042
   },
-  "geo_fuente": "FOCO, 52, Carrer de l'Encarnació, la Vila de Gràcia, Gràcia, Barcelona, Barcelonès, Barcel"
+  "geo_fuente": "FOCO, 52, Carrer de l'Encarnació, la Vila de Gràcia, Gràcia, Barcelona, Barcelonès, Barcel",
+  "contexto": [
+    {
+      "es": "Foco lo dirigen los bartenders ingleses Tom Godfrey y Theo Quinn, que antes trabajaron en bares como Paradiso y Two Schmucks. Está en el barrio de Gràcia, en el carrer de l'Encarnació."
+    },
+    {
+      "es": "El nombre y el concepto vienen de los clubes de corresponsales extranjeros, donde los periodistas intercambiaban historias. El local es informal, de aire industrial, y la carta reúne unos doce cócteles. Son versiones actuales de clásicos: el Clover Club se hace con mermelada casera de frambuesa y limón mentolado, y el Espresso Martini usa café de infusión en frío extraído con destilado en lugar de agua."
+    },
+    {
+      "es": "The 50 Best lo colocó en el puesto 89 de The World's 50 Best Bars 2025 y en el 90 de la edición de 2026. También es el n.º 48 de Europe's 50 Best Bars 2026."
+    }
+  ]
 }

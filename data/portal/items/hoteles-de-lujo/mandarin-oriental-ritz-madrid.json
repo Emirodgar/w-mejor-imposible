@@ -15,7 +15,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://en.wikipedia.org/wiki/Mandarin_Oriental_Ritz,_Madrid",
+    "https://lepetitjournal.com/madrid/reouverture-ritz-madrid-303418"
   ],
   "busqueda": "Mandarin Oriental Ritz Madrid",
   "coordenadas": {
@@ -30,5 +32,16 @@
     "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "fuente": "https://commons.wikimedia.org/wiki/File:Hotel_Ritz_(Madrid)_01.jpg",
     "titulo": "File:Hotel Ritz (Madrid) 01.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Ritz se construyó entre 1908 y 1910 por iniciativa de Alfonso XIII, que echaba en falta un hotel a la altura de la realeza europea. Charles Mewès, arquitecto del Ritz de París, presentó los planos y Luis de Landecho dirigió la obra. Abrió el 2 de octubre de 1910."
+    },
+    {
+      "es": "Tras tres años de obras, reabrió el 15 de abril de 2021 con 153 habitaciones y suites y cinco restaurantes y bares. La restauración corrió a cargo del arquitecto Rafael de La-Hoz y del estudio parisino Gilles & Boissier, con un coste cercano a 100 millones de euros según la prensa francesa."
+    },
+    {
+      "es": "Michelin lo incluyó entre los primeros hoteles españoles con tres Llaves en 2024 y lo describe como el gran salón de la capital desde hace más de un siglo."
+    }
+  ]
 }

@@ -17,12 +17,22 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.golfpass.com/courses/23547-real-club-de-golf-las-brisas/"
+    "https://www.golfpass.com/courses/23547-real-club-de-golf-las-brisas/",
+    "https://andaluciagolf.com/en/?p=12318",
+    "https://andaluciagolf.com/en/?p=15214"
   ],
   "busqueda": "Real Club de Golf Las Brisas Marbella",
   "coordenadas": {
     "lat": 36.50542,
     "lon": -4.96799
   },
-  "geo_fuente": "Real Club de Golf Las Brisas, 1, Calle Londres, Marbella River Garden, Nueva Andalucía, Sa"
+  "geo_fuente": "Real Club de Golf Las Brisas, 1, Calle Londres, Marbella River Garden, Nueva Andalucía, Sa",
+  "contexto": [
+    {
+      "es": "Las Brisas es un campo de 18 hoyos y par 72 diseñado por Robert Trent Jones. El club se fundó en 1968, como Nueva Andalucía Golf Club, por iniciativa del promotor de la zona."
+    },
+    {
+      "es": "A partir de 2012, Kyle Phillips, que había trabajado durante años en el estudio de Trent Jones, dirigió una reforma de salidas, búnkeres, greenes y calles, con la idea de mantener el concepto original. Las obras se plantearon para el 50.º aniversario del club. Se encuentra en Nueva Andalucía, en el término de Marbella (Málaga)."
+    }
+  ]
 }

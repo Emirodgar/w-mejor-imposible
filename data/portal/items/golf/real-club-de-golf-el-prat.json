@@ -17,7 +17,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.golfmagic.com/courses/western-europe/real-club-de-golf-el-prat-course-review"
+    "https://www.golfmagic.com/courses/western-europe/real-club-de-golf-el-prat-course-review",
+    "https://www.golfdigest.com/courses/spain/real-club-de-golf-el-prat-pink",
+    "https://visitvalles.com/en/portfolio_page/real-club-de-golf-el-prat/"
   ],
   "busqueda": "Real Club de Golf El Prat Terrassa",
   "coordenadas": {
@@ -32,5 +34,13 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Real_Club_de_Golf_El_Prat.jpg",
     "titulo": "File:Real Club de Golf El Prat.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Prat tiene 45 hoyos. El Pink, de Greg Norman, es el recorrido más exigente del club, de 18 hoyos y par 72. Las obras comenzaron hacia 2002 y la ampliación del aeropuerto de Barcelona obligó al club a trasladarse a su emplazamiento actual."
+    },
+    {
+      "es": "Se encuentra en Terrassa, a unos 16 kilómetros al noroeste de Barcelona. El club adoptó el nombre de El Prat en 1954, cuando dejó Pedralbes, y sus orígenes se remontan a 1912 con el Barcelona Golf Club. Según el propio club, ha organizado más de 250 campeonatos, entre ellos el Open de España, con ediciones en 2011 y 2015 en la sede actual."
+    }
+  ]
 }

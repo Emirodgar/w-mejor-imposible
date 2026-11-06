@@ -17,12 +17,24 @@
   "cerca": [],
   "fuentes": [
     "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
-    "https://theflyingengineer.com/listing/sky-helicopteros/"
+    "https://theflyingengineer.com/listing/sky-helicopteros/",
+    "https://www.skyhelicopteros.com"
   ],
   "busqueda": "Aeródromo de Son Bonet, Marratxí",
   "coordenadas": {
     "lat": 39.60022,
     "lon": 2.70384
   },
-  "geo_fuente": "Aeròdrom de Son Bonet, carreró de Can Barbut, es Pla de na Tesa, Marratxí, Raiguer, Illes "
+  "geo_fuente": "Aeròdrom de Son Bonet, carreró de Can Barbut, es Pla de na Tesa, Marratxí, Raiguer, Illes ",
+  "contexto": [
+    {
+      "es": "Sky Helicópteros, S.A. figura en el listado de operadores aéreos de AESA, generado el 2 de noviembre de 2026, con el certificado AOC ES.AOC.138 y sin marca de suspensión. La flota autorizada que consta en ese listado son helicópteros Airbus Helicopters AS350 y AS355."
+    },
+    {
+      "es": "Su web declara bases en Mallorca, Madrid, Barcelona y Extremadura, y una flota de Eurocopter H125 (AS350 B3e) y AS355 N/NP de menos de cinco años. Un directorio del sector sitúa la base principal en el hangar 1 del aeródromo de Son Bonet, en Marratxí, y fecha la fundación en 1992."
+    },
+    {
+      "es": "Entre sus servicios la web cita vuelos turísticos en Mallorca y vuelos VIP, trabajos aéreos (carga externa, filmación, líneas eléctricas, vigilancia y publicidad aérea), extinción de incendios y salvamento, e ingeniería y mantenimiento."
+    }
+  ]
 }

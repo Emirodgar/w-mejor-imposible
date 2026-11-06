@@ -22,12 +22,25 @@
     }
   ],
   "fuentes": [
-    "https://worldspaawards.com/award/spain-best-hotel-spa/2026"
+    "https://worldspaawards.com/award/spain-best-hotel-spa/2026",
+    "https://www.hospitalitynet.org/announcement/41006198/mandarin-oriental-ritz-madrid.html",
+    "https://www.eglobaltravelmedia.com.au/mandarin-oriental-ritz-madrid-now-open/"
   ],
   "busqueda": "Mandarin Oriental Ritz Madrid",
   "coordenadas": {
     "lat": 40.41555,
     "lon": -3.69273
   },
-  "geo_fuente": "Mandarin Oriental Ritz, Madrid, 5, Plaza de la Lealtad, Jerónimos, Retiro, Madrid, Comunid"
+  "geo_fuente": "Mandarin Oriental Ritz, Madrid, 5, Plaza de la Lealtad, Jerónimos, Retiro, Madrid, Comunid",
+  "contexto": [
+    {
+      "es": "El spa del Mandarin Oriental Ritz de Madrid es nuevo para el hotel. Abrió con la reapertura del 15 de abril de 2021, tras tres años de restauración del edificio, de unos 110 años, y se gestiona junto a The Beauty Concept, que aporta tratamientos faciales y corporales personalizados."
+    },
+    {
+      "es": "Ocupa un espacio subterráneo con piscina interior climatizada, piscina de vitalidad, duchas de experiencias, baño de vapor y baño turco, además de un gimnasio."
+    },
+    {
+      "es": "Los World Spa Awards lo eligieron mejor spa de hotel de España en 2026."
+    }
+  ]
 }

@@ -22,12 +22,26 @@
     }
   ],
   "fuentes": [
-    "https://worldspaawards.com/award/spain-best-hotel-spa/2026"
+    "https://worldspaawards.com/award/spain-best-hotel-spa/2026",
+    "https://www.baunetzwissen.de/bad-und-sanitaer/objekte/hotel-gastronomie/hotel-mandarin-in-barcelona-932247",
+    "https://forbestravelguide.com/spas/barcelona-spain/the-spa-at-mandarin-oriental-barcelona",
+    "https://forbestravelguide.com/hotels/barcelona-spain/mandarin-oriental-barcelona"
   ],
   "busqueda": "Mandarin Oriental Barcelona",
   "coordenadas": {
     "lat": 41.39138,
     "lon": 2.16691
   },
-  "geo_fuente": "Mandarin Oriental, 38-40, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eix"
+  "geo_fuente": "Mandarin Oriental, 38-40, Passeig de Gràcia (lateral Besòs), la Dreta de l'Eixample, l'Eix",
+  "contexto": [
+    {
+      "es": "The Spa del Mandarin Oriental Barcelona ocupa unos 1.000 metros cuadrados en la planta inferior del hotel, en el Passeig de Gràcia 38-40. Es un espacio íntimo y minimalista; Forbes Travel Guide atribuye su estética a Patricia Urquiola, con negro, blanco, madera y malaquita."
+    },
+    {
+      "es": "El hotel se completó en 2009 en un edificio de mediados del siglo XX reformado, en pleno Eixample."
+    },
+    {
+      "es": "En 2026 estuvo nominado en los World Spa Awards a mejor spa de hotel de España."
+    }
+  ]
 }

@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/8/fabrik"
+    "https://djmag.com/top100clubs/2026/8/fabrik",
+    "https://www.esmadrid.com/en/nightlife/fabrik",
+    "https://es.hispanopedia.com/wiki/Fabrik",
+    "https://www.fabrikmadrid.com/"
   ],
   "busqueda": "FABRIK Humanes de Madrid",
   "coordenadas": {
     "lat": 40.2653,
     "lon": -3.84057
   },
-  "geo_fuente": "Fabrik Madrid, 82, Avenida de la Industria, Madrid, Comunidad de Madrid, 28970, España"
+  "geo_fuente": "Fabrik Madrid, 82, Avenida de la Industria, Madrid, Comunidad de Madrid, 28970, España",
+  "contexto": [
+    {
+      "es": "FABRIK está en la avenida de la Industria, en Humanes de Madrid, en un polígono al suroeste de la capital. Abrió en 2003 y en 2023 amplió hasta siete salas, además de una terraza con pista de baile. Es un club de música electrónica con hotel propio. DJ Mag le atribuye 6.000 personas de aforo; otras fuentes dan cifras distintas."
+    },
+    {
+      "es": "Para llegar hay metro hasta Fuenlabrada Central (línea 12), autobuses 496, 497 y 498, y tren de Cercanías a Fuenlabrada o Humanes. Mientras el club está abierto circula un autobús lanzadera desde el Templo de Debod o desde la estación de Fuenlabrada, según el portal de turismo de Madrid."
+    },
+    {
+      "es": "En 2025 recibió el premio al mejor club grande de la península ibérica en los Premios Nacionales de Música Electrónica. DJ Mag lo sitúa en el puesto 8 de 2026 y llegó al 2.º en 2011."
+    }
+  ]
 }

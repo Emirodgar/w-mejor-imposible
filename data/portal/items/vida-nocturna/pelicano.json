@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/81/pelicano"
+    "https://djmag.com/top100clubs/2026/81/pelicano",
+    "https://www.lonelyplanet.com/pois/1481743",
+    "https://www.salir.com/sala-pelicano-a-coruna-neg-128183.html",
+    "https://www.eldebate.com/espana/galicia/20260419/sala-conciertos-grande-galicia-cuela-entre-100-mejores-mundo_407503.html"
   ],
   "busqueda": "Pelícano, Coruña",
   "coordenadas": {
     "lat": 43.3682,
     "lon": -8.39981
   },
-  "geo_fuente": "Pelícano, 3, Avenida Porto da Coruña, A Pescaría, A Coruña, Galicia, 15003, España"
+  "geo_fuente": "Pelícano, 3, Avenida Porto da Coruña, A Pescaría, A Coruña, Galicia, 15003, España",
+  "contexto": [
+    {
+      "es": "Pelícano es una discoteca de A Coruña en el edificio Los Cantones Village, en la avenida do Porto. Tiene dos plantas y una terraza. Lonely Planet cuenta que abrió en 2016 con espacio para 3.000 personas, cifra que coincide con la ficha de DJ Mag."
+    },
+    {
+      "es": "Tiene una programación de noches de música electrónica y de pop y urbano, y en los últimos años ha acogido a artistas que después alcanzaron fama internacional, según la prensa gallega."
+    },
+    {
+      "es": "En abril de 2026 la prensa destacó su entrada por primera vez en el Top 100 de DJ Mag, en el puesto 81."
+    }
+  ]
 }

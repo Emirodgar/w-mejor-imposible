@@ -1430,5 +1430,125 @@
     "de": "Diese Seite benötigt JavaScript.",
     "pt": "Esta página precisa de JavaScript.",
     "it": "Questa pagina richiede JavaScript."
+  },
+  "chg.h1": {
+    "es": "Qué ha cambiado",
+    "en": "What has changed",
+    "fr": "Ce qui a changé",
+    "de": "Was sich geändert hat",
+    "pt": "O que mudou",
+    "it": "Cosa è cambiato"
+  },
+  "chg.title": {
+    "es": "Qué ha cambiado y cuándo se actualiza cada fuente",
+    "en": "What has changed and when each source is updated",
+    "fr": "Ce qui a changé et quand chaque source est mise à jour",
+    "de": "Was sich geändert hat und wann jede Quelle aktualisiert wird",
+    "pt": "O que mudou e quando se atualiza cada fonte",
+    "it": "Cosa è cambiato e quando si aggiorna ogni fonte"
+  },
+  "chg.lead": {
+    "es": "Las novedades del portal por fecha y el calendario con el que revisamos cada lista externa.",
+    "en": "The portal's updates by date and the calendar we use to review each external list.",
+    "de": "Die Neuerungen des Portals nach Datum und der Kalender, nach dem wir jede externe Liste überprüfen.",
+    "pt": "As novidades do portal por data e o calendário com que revemos cada lista externa.",
+    "it": "Le novità del portale per data e il calendario con cui rivediamo ogni lista esterna.",
+    "fr": "Les nouveautés du portail par date et le calendrier avec lequel nous révisons chaque liste externe."
+  },
+  "chg.desc": {
+    "es": "Novedades de Mejor Imposible por fecha y calendario de actualización de las fuentes de los rankings.",
+    "en": "Mejor Imposible updates by date and the update calendar for the sources behind the rankings.",
+    "de": "Neuerungen von Mejor Imposible nach Datum und Aktualisierungskalender der Quellen hinter den Rankings.",
+    "pt": "Novidades do Mejor Imposible por data e calendário de atualização das fontes dos rankings.",
+    "it": "Novità di Mejor Imposible per data e calendario di aggiornamento delle fonti delle classifiche.",
+    "fr": "Nouveautés de Mejor Imposible par date et calendrier de mise à jour des sources des classements."
+  },
+  "chg.news": {
+    "es": "Novedades",
+    "en": "Updates",
+    "fr": "Nouveautés",
+    "de": "Neuerungen",
+    "pt": "Novidades",
+    "it": "Novità"
+  },
+  "chg.cal_h": {
+    "es": "Cuándo se actualiza cada fuente",
+    "en": "When each source is updated",
+    "fr": "Quand chaque source est mise à jour",
+    "de": "Wann jede Quelle aktualisiert wird",
+    "pt": "Quando se atualiza cada fonte",
+    "it": "Quando si aggiorna ogni fonte"
+  },
+  "chg.cal_lead": {
+    "es": "Los rankings parten de listas externas que se renuevan cada año. Esta tabla indica cuándo salió la última edición y cuándo esperamos la siguiente.",
+    "en": "The rankings start from external lists that are renewed every year. This table shows when the latest edition came out and when we expect the next one.",
+    "de": "Die Rankings gehen von externen Listen aus, die jährlich erneuert werden. Die Tabelle zeigt, wann die letzte Ausgabe erschien und wann wir die nächste erwarten.",
+    "pt": "Os rankings partem de listas externas que se renovam todos os anos. Esta tabela indica quando saiu a última edição e quando esperamos a seguinte.",
+    "it": "Le classifiche partono da liste esterne che si rinnovano ogni anno. Questa tabella indica quando è uscita l'ultima edizione e quando prevediamo la prossima.",
+    "fr": "Les classements partent de listes externes renouvelées chaque année. Ce tableau indique quand est sortie la dernière édition et quand nous attendons la suivante."
+  },
+  "chg.col_source": {
+    "es": "Fuente",
+    "en": "Source",
+    "fr": "Source",
+    "de": "Quelle",
+    "pt": "Fonte",
+    "it": "Fonte"
+  },
+  "chg.col_what": {
+    "es": "Qué publica",
+    "en": "What it publishes",
+    "fr": "Ce qu'elle publie",
+    "de": "Was sie veröffentlicht",
+    "pt": "O que publica",
+    "it": "Cosa pubblica"
+  },
+  "chg.col_last": {
+    "es": "Última edición",
+    "en": "Latest edition",
+    "fr": "Dernière édition",
+    "de": "Letzte Ausgabe",
+    "pt": "Última edição",
+    "it": "Ultima edizione"
+  },
+  "chg.col_next": {
+    "es": "Próxima",
+    "en": "Next",
+    "fr": "Prochaine",
+    "de": "Nächste",
+    "pt": "Próxima",
+    "it": "Prossima"
+  },
+  "chg.cal_note": {
+    "es": "Las fechas de ediciones futuras son una estimación a partir de años anteriores. Cada ranking indica la fecha de su última actualización.",
+    "en": "Dates for future editions are an estimate based on previous years. Each ranking shows the date of its latest update.",
+    "de": "Die Termine künftiger Ausgaben sind Schätzungen auf Grundlage früherer Jahre. Jedes Ranking nennt das Datum seiner letzten Aktualisierung.",
+    "pt": "As datas das edições futuras são uma estimativa com base nos anos anteriores. Cada ranking indica a data da sua última atualização.",
+    "it": "Le date delle edizioni future sono una stima basata sugli anni precedenti. Ogni classifica indica la data del suo ultimo aggiornamento.",
+    "fr": "Les dates des éditions futures sont une estimation fondée sur les années précédentes. Chaque classement indique la date de sa dernière mise à jour."
+  },
+  "nav.changes": {
+    "es": "Qué ha cambiado",
+    "en": "What has changed",
+    "fr": "Ce qui a changé",
+    "de": "Was sich geändert hat",
+    "pt": "O que mudou",
+    "it": "Cosa è cambiato"
+  },
+  "dest.guide.about": {
+    "es": "Qué tener en cuenta",
+    "en": "What to know",
+    "fr": "Bon à savoir",
+    "de": "Gut zu wissen",
+    "pt": "O que convém saber",
+    "it": "Da sapere"
+  },
+  "chg.est": {
+    "es": "(estimado)",
+    "en": "(estimated)",
+    "fr": "(estimation)",
+    "de": "(geschätzt)",
+    "pt": "(estimado)",
+    "it": "(stimato)"
   }
 }

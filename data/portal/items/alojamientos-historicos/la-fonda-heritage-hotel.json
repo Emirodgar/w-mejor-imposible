@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/es/hotel/la-fonda-heritage-hotel/",
+    "https://guide.michelin.com/ar/es/hotels-stays/marbella/la-fonda-heritage-hotel-relais-chateaux-13663"
   ],
   "busqueda": "Plaza de la Iglesia, Marbella",
   "schema": "Hotel",
@@ -24,5 +26,16 @@
     "lat": 36.5097,
     "lon": -4.8856
   },
-  "geo_fuente": "aproximada: casco antiguo de Marbella"
+  "geo_fuente": "aproximada: casco antiguo de Marbella",
+  "contexto": [
+    {
+      "es": "El hotel ocupa tres edificios del siglo XVI en el casco antiguo de Marbella, junto a la plaza del Santo Cristo. Según la Guía Michelin, los edificios tuvieron usos distintos (iglesia, escuela y residencia privada) y conservan columnas de piedra, arcos, techos con frescos y patios de baldosas."
+    },
+    {
+      "es": "Forma parte de Relais & Châteaux. Su situación en el centro histórico permite recorrer a pie las plazas y calles del casco antiguo, a diferencia de los resorts de la costa."
+    },
+    {
+      "es": "Algunas fuentes mencionan restos arqueológicos de época nazarí visibles bajo suelos de cristal, un dato que conviene confirmar con el propio establecimiento."
+    }
+  ]
 }

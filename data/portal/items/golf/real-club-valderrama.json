@@ -18,12 +18,23 @@
   "cerca": [],
   "fuentes": [
     "https://www.top100golfcourses.com/news/best-golf-courses-in-spain",
-    "https://en.wikipedia.org/wiki/Valderrama_Golf_Club"
+    "https://en.wikipedia.org/wiki/Valderrama_Golf_Club",
+    "https://valderrama.com/history-timeline",
+    "https://www.golfinspain.com/prehistoria/ryder97/vald_history.html",
+    "https://www.top100golfcourses.com/golf-course/real-valderrama"
   ],
   "busqueda": "Valderrama Golf Club San Roque",
   "coordenadas": {
     "lat": 36.2855,
     "lon": -5.32522
   },
-  "geo_fuente": "Club de Golf Valderrama, Avenida Los Cortijos, San Roque, Campo de Gibraltar, Cádiz, Andal"
+  "geo_fuente": "Club de Golf Valderrama, Avenida Los Cortijos, San Roque, Campo de Gibraltar, Cádiz, Andal",
+  "contexto": [
+    {
+      "es": "Valderrama fue sede de la Ryder Cup de 1997, la primera disputada fuera de las islas británicas. Europa, capitaneada por Seve Ballesteros, ganó 14,5 a 13,5. Su designación se anunció en mayo de 1994. Es un par 71 diseñado por Robert Trent Jones Sr."
+    },
+    {
+      "es": "Abrió en 1974 con el nombre de Las Aves (alguna fuente da 1975) y se rebautizó como Valderrama tras ser adquirido y rediseñado en los años ochenta. El club ostenta el título de Real. Está en Sotogrande (Cádiz), junto a la costa del Estrecho, y ha acogido también el Volvo Masters y un torneo del WGC en la década de 1990 y 2000."
+    }
+  ]
 }

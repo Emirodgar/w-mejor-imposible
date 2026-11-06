@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/1/unvrs"
+    "https://djmag.com/top100clubs/2026/1/unvrs",
+    "https://www.unvrs.com/",
+    "https://en.wikipedia.org/wiki/UNVRS",
+    "https://ibiza-spotlight.com/magazine/2024/08/world-first-hyper-club-UNVRS-open-Ibiza-2025"
   ],
   "busqueda": "UNVRS Ibiza",
   "coordenadas": {
     "lat": 38.9579,
     "lon": 1.4083
   },
-  "geo_fuente": "UNVRS, 7, Carrer de Can Parent 3, Sant Rafel de sa Creu, Sant Antoni de Portmany, Eivissa,"
+  "geo_fuente": "UNVRS, 7, Carrer de Can Parent 3, Sant Rafel de sa Creu, Sant Antoni de Portmany, Eivissa,",
+  "contexto": [
+    {
+      "es": "[UNVRS] abrió el 30 de mayo de 2025 en Sant Rafel, cerca de Sant Antoni, y se presenta como el primer hiperclub del mundo. Ocupa el solar de Ku Club (1979 a 1995) y Privilege Ibiza (1995 a 2019). Lo gestiona The Night League, la empresa de Ushuaïa y Hï Ibiza. DJ Mag le atribuye 4.000 personas de aforo, aunque otras fuentes hablan de 10.000."
+    },
+    {
+      "es": "La programación de 2026 se organizó por noches: lunes con Tiësto, Armin van Buuren y John Summit, martes con Anyma, miércoles con Jamie Jones, jueves con Fisher, viernes con David Guetta, sábados con elrow y domingos con Carl Cox. La web ya anuncia la temporada de 2027."
+    },
+    {
+      "es": "DJ Mag lo sitúa en el primer puesto de su Top 100 Clubs 2026."
+    }
+  ]
 }

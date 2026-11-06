@@ -17,7 +17,9 @@
   "cerca": [],
   "fuentes": [
     "https://www.elespanol.com/malaga/20260820/zonas-malaga-cuelan-caras-espana-comprar-vivienda-casas-millones/1003744358136_0.amp.html",
-    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026"
+    "https://www.idealista.com/news/inmobiliario/vivienda/2026/08/26/911189-las-10-casas-mas-caras-a-la-venta-en-espana-en-2026",
+    "https://es.wikipedia.org/wiki/Barrio_de_Salamanca",
+    "https://forbes.es/ultima-hora/313756/baleares-y-madrid-son-las-comunidades-que-tienen-las-viviendas-de-lujo-mas-caras-de-espana-segun-hiscox/"
   ],
   "busqueda": "Barrio de Salamanca Madrid",
   "coordenadas": {
@@ -26,6 +28,15 @@
   },
   "geo_fuente": "Barrio de Salamanca, Calle del General Oráa, Castellana, Salamanca, Madrid, Comunidad de M",
   "contexto": [
+    {
+      "es": "El Barrio de Salamanca es hoy el distrito de Salamanca de Madrid. Nació del ensanche del Plan Castro, de 1860, y toma el nombre de José de Salamanca, que en 1863 pidió licencia para construir catorce manzanas. Hacia 1927 la trama estaba urbanizada. El distrito se divide en seis barrios: Recoletos, Goya, Fuente del Berro, La Guindalera, Lista y Castellana."
+    },
+    {
+      "es": "Limita al oeste con el paseo de la Castellana y Recoletos, y al este con la M-30. Lo sirven las líneas 2, 4, 5, 6, 7 y 9 de metro, y el Retiro queda al otro lado de la plaza de la Independencia. Entre sus referencias están la Fundación Juan March y la Casa Árabe. Las calles Serrano, Claudio Coello, Lagasca y Ortega y Gasset forman la Milla de Oro comercial."
+    },
+    {
+      "es": "Según el informe de Hiscox de 2023, la zona de Recoletos tenía un precio medio de 9.000 euros por metro cuadrado, el más alto de Madrid capital en ese estudio."
+    },
     {
       "es": "En el ranking de idealista de 2026, las diez casas más caras a la venta están en la Costa del Sol y en Baleares; fuera de ahí, la oferta más cara se reparte entre Cataluña y la Comunidad de Madrid."
     },

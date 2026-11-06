@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026"
+    "https://worldspaawards.com/award/spain-best-wellness-retreat/2026",
+    "https://smartflyer.com/review/sha-wellness-clinic-spain/",
+    "https://www.healthandfitnesstravel.com/blog/a-review-of-sha-wellness-clinic-spain",
+    "https://luxurylink.com/5star/hotels/alicante-spain/sha-wellness-clinic"
   ],
   "busqueda": "SHA Wellness Clinic Albir",
   "coordenadas": {
     "lat": 38.55991,
     "lon": -0.07372
   },
-  "geo_fuente": "Sha Wellness Clinic, Carrer Verderol, l'Albir, l'Alfàs del Pi, la Marina Baixa, Alacant / "
+  "geo_fuente": "Sha Wellness Clinic, Carrer Verderol, l'Albir, l'Alfàs del Pi, la Marina Baixa, Alacant / ",
+  "contexto": [
+    {
+      "es": "SHA Spain es un centro de bienestar y medicina integrativa en El Albir, en Alfaz del Pi, entre la playa y la Sierra Helada. Su método combina dietética macrobiótica, terapias orientales y diagnóstico médico avanzado, en programas de entre tres y catorce días."
+    },
+    {
+      "es": "El alojamiento consta de unas 93 suites con terraza y vistas al mar, según varias reseñas. Está a unos 40 minutos en coche del aeropuerto de Alicante-Elche."
+    },
+    {
+      "es": "En 2026 ganó el premio a mejor retiro de bienestar de España en los World Spa Awards, tras haberlo ganado también en 2025."
+    }
+  ]
 }

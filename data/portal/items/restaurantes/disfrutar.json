@@ -18,12 +18,26 @@
   "cerca": [],
   "fuentes": [
     "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
-    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html"
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html",
+    "https://guide.michelin.com/es/es/catalunya/barcelona/restaurante/disfrutar",
+    "https://en.wikipedia.org/wiki/Disfrutar",
+    "https://www.thestar.com.my/lifestyle/living/2024/06/06/spain039s-disfrutar-named-world039s-top-restaurant-by-50-best"
   ],
   "busqueda": "Disfrutar Barcelona",
   "coordenadas": {
     "lat": 41.38776,
     "lon": 2.15317
   },
-  "geo_fuente": "Disfrutar, 163, Carrer de Villarroel, l'Antiga Esquerra de l'Eixample, l'Eixample, Barcelo"
+  "geo_fuente": "Disfrutar, 163, Carrer de Villarroel, l'Antiga Esquerra de l'Eixample, l'Eixample, Barcelo",
+  "contexto": [
+    {
+      "es": "Disfrutar abrió en diciembre de 2014 en la calle Villarroel, junto al mercado del Ninot, en el Eixample de Barcelona. Lo dirigen Oriol Castro, Eduard Xatruch y Mateu Casañas, que trabajaron juntos en elBulli. Obtuvo la tercera estrella en la Guía Michelin España 2024, y la guía de 2026 le mantiene las tres."
+    },
+    {
+      "es": "The World's 50 Best lo situó segundo en 2023 y primero en 2024, en una gala celebrada en Las Vegas. Michelin recoge dos menús degustación, Clásico y Festival: el primero reúne los platos emblemáticos de la casa y el segundo se centra en creaciones de temporada."
+    },
+    {
+      "es": "Según la guía, el restaurante gestiona él mismo las reservas y suele tener lista de espera."
+    }
+  ]
 }

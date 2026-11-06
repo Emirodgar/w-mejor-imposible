@@ -224,6 +224,7 @@ FOOT = '''
         <nav class="footer-links" aria-label="@@ARIA_FOOT@@">
             <a href="/">@@N_PORSCHE@@</a>
             <a href="@@METHOD@@">@@N_METHOD@@</a>
+            <a href="@@CHANGES@@">@@N_CHANGES@@</a>
         </nav>
     </div>
 </footer>
@@ -308,7 +309,7 @@ def page(path, title, desc, lds, body):
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
-           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'),
+           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'), '@@CHANGES@@': u('/novedades/'), '@@N_CHANGES@@': e(ui('nav.changes')),
            '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
@@ -1372,6 +1373,12 @@ def build_dest(d):
         extra += f'\n        <p class="label">{e(ui("dest.guide.more"))}</p>\n        <nav class="chips" aria-label="{e(ui("dest.guide.more"))}">{links}\n        </nav>'
     mp = (f'<div class="map live" id="plan-map" role="region" aria-label="{e(ui("dest.guide.map_aria", n=name))}" '
           f'data-points="{e(json.dumps(pts, ensure_ascii=False))}"></div>') if pts else ''
+    about = ''
+    if d.get('contexto'):
+        paras = ''.join(f'\n            <p>{e(t(c))}</p>' for c in d['contexto'])
+        srcs = ''.join(f'<li><a href="{e(x)}" rel="noopener">{e(x.split("/")[2].replace("www.", ""))}</a></li>' for x in d.get('fuentes', []))
+        about = (f'\n    <section class="wrap prose item-ctx">\n        <h2>{e(ui("dest.guide.about"))}</h2>{paras}'
+                 + (f'\n        <ul class="sources">{srcs}</ul>' if srcs else '') + '\n    </section>')
     path = f'/destinos/{d["slug"]}/'
     crumb = [(ui('crumb.home'), u(HOME)), (ui('dest.h1'), u('/destinos/')), (name, None)]
     title = ui('dest.guide.title', n=name)
@@ -1385,6 +1392,7 @@ def build_dest(d):
         <h1>{e(name)}</h1>
         <p class="lead-text">{e(lead)}</p>
     </section>
+{about}
     <section class="wrap">{mp}</section>{sections}
     <section class="wrap dir-brand">{extra}
         <p><a href="{u('/destinos/')}">{e(ui('dest.guide.back'))}</a></p>
@@ -1480,8 +1488,77 @@ def build_trip():
 
 
 
+MESES = {
+    'es': ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
+    'en': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    'fr': ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+    'de': ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+    'pt': ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'],
+    'it': ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
+}
+
+
+def fmt_fecha(iso):
+    y, m, d_ = (int(x) for x in iso.split('-'))
+    mes = MESES[LANG][m - 1]
+    return {'es': f'{d_} de {mes} de {y}', 'pt': f'{d_} de {mes} de {y}', 'en': f'{mes} {d_}, {y}', 'fr': f'{d_} {mes} {y}' if d_ > 1 else f'1er {mes} {y}',
+            'de': f'{d_}. {mes} {y}', 'it': f'{d_} {mes} {y}'}[LANG]
+
+
+def cal_fecha(x):
+    if x.get('texto'):
+        return tr(x['texto'])
+    y, m = (int(v) for v in x['ym'].split('-'))
+    txt = f"{MESES[LANG][m - 1]} {y}" if LANG != 'en' else f"{MESES['en'][m - 1]} {y}"
+    return txt + (' ' + ui('chg.est') if x.get('est') else '')
+
+
+def build_novedades():
+    cam = sorted(load('cambios.json')['cambios'], key=lambda c: c['fecha'], reverse=True)
+    cal = load('calendario.json')['fuentes'] if exists('calendario.json') else []
+    news = ''.join(
+        f'\n        <article class="chg"><p class="eyebrow"><time datetime="{c["fecha"]}">{e(fmt_fecha(c["fecha"]))}</time></p>'
+        f'<h3>{e(t(c["titulo"]))}</h3><p>{e(t(c["texto"]))}</p></article>' for c in cam)
+    rows = ''
+    for f in cal:
+        name = e(f['fuente'])
+        if f.get('url'):
+            name = f'<a href="{e(f["url"])}" rel="noopener">{name}</a>'
+        rows += (f'\n            <tr><th scope="row">{name}</th><td>{e(t(f["que_publica"]))}</td>'
+                 f'<td>{e(cal_fecha(f["ultima"]))}</td><td>{e(cal_fecha(f["proxima"]))}</td></tr>')
+    table = ''
+    if rows:
+        table = f'''
+    <section class="wrap prose" aria-labelledby="h-cal">
+        <h2 id="h-cal">{e(ui('chg.cal_h'))}</h2>
+        <p>{e(ui('chg.cal_lead'))}</p>
+        <div class="table-wrap"><table class="cal">
+            <thead><tr><th scope="col">{e(ui('chg.col_source'))}</th><th scope="col">{e(ui('chg.col_what'))}</th><th scope="col">{e(ui('chg.col_last'))}</th><th scope="col">{e(ui('chg.col_next'))}</th></tr></thead>
+            <tbody>{rows}
+            </tbody></table></div>
+        <p class="muted">{e(ui('chg.cal_note'))}</p>
+    </section>'''
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('chg.h1'), None)]
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <h1>{e(ui('chg.h1'))}</h1>
+        <p class="lead-text">{e(ui('chg.lead'))}</p>
+    </section>
+    <section class="wrap prose" aria-labelledby="h-news">
+        <h2 id="h-news">{e(ui('chg.news'))}</h2>{news}
+    </section>{table}
+</main>
+'''
+    write('/novedades/index.html', page('/novedades/', f'{ui("chg.title")} · Mejor Imposible', ui('chg.desc'),
+                                        [webpage('WebPage', '/novedades/', ui('chg.title'), ui('chg.desc')), bc_ld(crumb)], body))
+
+
+
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
-              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/', '/mi-viaje/'] + [f'/destinos/{d["slug"]}/' for d in DESTS]
+              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/', '/mi-viaje/', '/novedades/'] + [f'/destinos/{d["slug"]}/' for d in DESTS]
               + ['/ranking/' + r + '/' for r in ITEMS] + ['/ranking/compras-de-lujo/tiendas/'])
 
 
@@ -1521,6 +1598,7 @@ if __name__ == '__main__':
             build_dest(_d)
         build_search()
         build_trip()
+        build_novedades()
     build_sitemap()
     bad = False
     for lang in PUBLISHED:

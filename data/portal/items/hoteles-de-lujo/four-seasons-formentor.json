@@ -15,7 +15,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://press.fourseasons.com/mallorca/trending-now/hotel-history",
+    "https://amp.majorcadailybulletin.com/holiday/hotels/2024/07/13/125695/mallorca-hotels-month-the-official-reopening-the-formentor.html"
   ],
   "busqueda": "Hotel Formentor",
   "coordenadas": {
@@ -23,5 +25,16 @@
     "lon": 3.14483
   },
   "geo_precision": "calle",
-  "geo_fuente": "Formentor, Carrer de Formentor, Pollença"
+  "geo_fuente": "Formentor, Carrer de Formentor, Pollença",
+  "contexto": [
+    {
+      "es": "El hotel abrió el 24 de agosto de 1929, impulsado por Adan Diehl, humanista y amante del arte de origen argentino. La carretera a Pollença no estaba terminada y los primeros huéspedes llegaron en barco; el camino se completó seis meses después."
+    },
+    {
+      "es": "Está en la península de Formentor, en el extremo norte de Mallorca, cerca de Pollença. Tras una reforma, volvió a funcionar en 2024 bajo la gestión de Four Seasons."
+    },
+    {
+      "es": "La Guía Michelin lo describe como uno de los grandes clásicos de la isla y lo incluye con dos Llaves en la selección de hoteles de 2026."
+    }
+  ]
 }

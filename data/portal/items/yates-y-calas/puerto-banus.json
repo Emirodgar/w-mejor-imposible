@@ -17,7 +17,8 @@
   "cerca": [],
   "fuentes": [
     "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
-    "https://puerto-banus.com/en/noticias/puerto-banus-second-best-marina-spain-2026/"
+    "https://puerto-banus.com/en/noticias/puerto-banus-second-best-marina-spain-2026/",
+    "https://es.wikipedia.org/wiki/Puerto_Ban%C3%BAs"
   ],
   "busqueda": "Puerto Banús Marbella",
   "coordenadas": {
@@ -32,5 +33,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Marbella3.jpg",
     "titulo": "File:Marbella3.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Puerto Banús se inauguró en mayo de 1970 en Nueva Andalucía, dentro del término de Marbella. Lleva el nombre del promotor de urbanizaciones José Banús. En el diseño participó Noldi Schreck, con Marcos Sainz en el planeamiento urbano."
+    },
+    {
+      "es": "Dispone de 915 atraques y admite embarcaciones de hasta 50 m de eslora. Tiene conexión por carretera con Málaga y Gibraltar. Velvua destaca su demanda creciente para barcos de más de 30 m."
+    },
+    {
+      "es": "Velvua lo situó segundo entre los puertos deportivos de España en su ranking de 2026, solo por detrás del Real Club Náutico de Palma."
+    }
+  ]
 }

@@ -15,7 +15,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/"
+    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/",
+    "https://www.guggenheim-bilbao.eus/en/the-building/the-construction",
+    "https://www.guggenheim-bilbao.eus/en/the-building",
+    "https://www.spain.info/en/places-of-interest/guggenheim-museum/"
   ],
   "busqueda": "Museo Guggenheim Bilbao",
   "schema": "Museum",
@@ -23,5 +26,16 @@
     "lat": 43.26843,
     "lon": -2.93406
   },
-  "geo_fuente": "Bilboko Guggenheim museoa, 2, Lehendakari Leizaola kalea, Indautxu, Abando, Bilbao, Bizkai"
+  "geo_fuente": "Bilboko Guggenheim museoa, 2, Lehendakari Leizaola kalea, Indautxu, Abando, Bilbao, Bizkai",
+  "contexto": [
+    {
+      "es": "El Museo Guggenheim Bilbao es obra del arquitecto Frank Gehry. Se construyó entre octubre de 1993 y octubre de 1997 sobre un antiguo muelle industrial en una curva de la ría del Nervión, en un solar que simbolizó la recuperación de las orillas para la ciudad."
+    },
+    {
+      "es": "El exterior se reviste con unas 33.000 láminas finas de titanio. Gehry trabajó con CATIA, un programa nacido en la industria aeroespacial, para trasladar su diseño a la estructura. El edificio tiene 24.000 m², de ellos 9.000 para exposiciones, repartidos en tres niveles alrededor de un atrio."
+    },
+    {
+      "es": "Junto a la entrada se alza Puppy, la escultura de Jeff Koons de 1992 cubierta de plantas con flor, que el museo adquirió en 1997. Desde entonces su colección se centra en obras de mediados del siglo XX a la actualidad y complementa las de la Fundación Solomon R. Guggenheim."
+    }
+  ]
 }

@@ -16,7 +16,10 @@
   "cerca": [],
   "fuentes": [
     "https://www.museodelprado.es/actualidad/noticia/el-museo-del-prado-supera-por-primera-vez-los-35/fee45a1b-ac0f-9bb8-51a9-75bcb3c7326b",
-    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/"
+    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/",
+    "https://www.museodelprado.es/en/museum/history-of-the-museum",
+    "https://www.museodelprado.es/en/the-collection",
+    "https://www.ucm.es/data/cont/docs/1609-2020-04-21-Sab%C3%ADas%20que...%20Bicentenario%20de%20la%20inauguraci%C3%B3n%20del%20Museo%20del%20Prado.pdf"
   ],
   "busqueda": "Museo del Prado Madrid",
   "schema": "Museum",
@@ -24,5 +27,16 @@
     "lat": 40.41379,
     "lon": -3.69204
   },
-  "geo_fuente": "Museo del Prado, Paseo del Prado, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28014, E"
+  "geo_fuente": "Museo del Prado, Paseo del Prado, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28014, E",
+  "contexto": [
+    {
+      "es": "El Museo del Prado abrió al público el 19 de noviembre de 1819. Su edificio principal lo proyectó Juan de Villanueva en 1785, por encargo de Carlos III, como sede de un gabinete de historia natural, dentro de la reurbanización del Salón del Prado junto al Jardín Botánico."
+    },
+    {
+      "es": "Su base es la colección real de los Habsburgo y los Borbones. El museo reúne las mayores colecciones de El Bosco, Tiziano, El Greco, Rubens, Velázquez y Goya. Entre las obras más conocidas están Las Meninas, las dos Majas de Goya y El jardín de las delicias. Los datos del propio museo de 2021 hablan de más de 8.000 pinturas y más de 9.000 dibujos en sus fondos, de los que solo se muestra una parte."
+    },
+    {
+      "es": "Rafael Moneo diseñó entre 2001 y 2007 la ampliación hacia el claustro de los Jerónimos, sin alterar sustancialmente el edificio de Villanueva."
+    }
+  ]
 }

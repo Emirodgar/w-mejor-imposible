@@ -23,7 +23,10 @@
     }
   ],
   "fuentes": [
-    "https://www.golfmonthly.com/travel/spain/finca-cortesin-golf-course-review-148560"
+    "https://www.golfmonthly.com/travel/spain/finca-cortesin-golf-course-review-148560",
+    "https://en.wikipedia.org/wiki/2023_Solheim_Cup",
+    "https://www.golfdigest.com/story/solheim-cup-2023-sunday-singles-timeline-europe-retains-cup-with-14-14-tie-finca-cortesin",
+    "https://where2golf.com/spain/club-de-golf-finca-cortesin"
   ],
   "busqueda": "Finca Cortesín Casares",
   "coordenadas": {
@@ -38,5 +41,13 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Please_check_out_the_full_travelogue_at_http-travelmemo.com-%5Ep%3D4663_-_panoramio_(1).jpg",
     "titulo": "File:Please check out the full travelogue at http-travelmemo.com-^p=4663 - panoramio (1).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Finca Cortesín acogió la Solheim Cup de 2023, disputada del 22 al 24 de septiembre. El resultado fue un empate a 14 puntos y Europa conservó el trofeo. El campo es un par 72 de unos 6.312 metros en esa edición, según la Wikipedia."
+    },
+    {
+      "es": "Está en Casares, en la provincia de Málaga, a unos 1,5 kilómetros del Mediterráneo y a unos 50 minutos en coche del aeropuerto de Málaga según un listado de alojamiento. El diseño se atribuye a Cabell Robinson. Where2golf sitúa la fundación del club en 2006."
+    }
+  ]
 }

@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/MotorLand_Arag%C3%B3n"
+    "https://en.wikipedia.org/wiki/MotorLand_Arag%C3%B3n",
+    "https://www.motorlandaragon.com"
   ],
   "busqueda": "MotorLand Aragón Alcañiz",
   "coordenadas": {
@@ -31,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Formul%27Academy_Euroseries_2009._Motorland_Arag%C3%B3n.jpg",
     "titulo": "File:Formul'Academy Euroseries 2009. Motorland Aragón.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "MotorLand Aragón abrió el 6 de septiembre de 2009 en Alcañiz (Teruel). El circuito de velocidad FIA mide 5,345 km y tiene 18 curvas; la versión FIM tiene 16 y el circuito nacional, 13."
+    },
+    {
+      "es": "Acoge el Mundial de Superbike desde 2011. El Gran Premio de Aragón de MotoGP se disputó de 2010 a 2022 y vuelve a celebrarse desde 2024. En 2020 también albergó el Gran Premio de Teruel."
+    },
+    {
+      "es": "El complejo incluye circuito de kárting y circuitos de tierra, entre ellos uno off-road. Su web oficial menciona además un parque tecnológico (Technopark) y visitas guiadas. Para noviembre de 2026 anuncia jornadas de pista para coches y motos y el Campeonato de España de Rallycross."
+    }
+  ]
 }

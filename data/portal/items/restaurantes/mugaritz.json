@@ -16,7 +16,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/us/en/pais-vasco/errenteria/restaurant/mugaritz",
+    "https://www.mugaritz.com/files/contenidos/1276143570_1.pdf",
+    "https://en.wikipedia.org/wiki/Mugaritz"
   ],
   "busqueda": "Mugaritz Errenteria",
   "coordenadas": {
@@ -31,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Mugaritz_entrance.jpg",
     "titulo": "File:Mugaritz entrance.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Mugaritz abrió en marzo de 1998 bajo la dirección de Andoni Luis Aduriz, según su web oficial. Ocupa el caserío Otzazulueta, en el barrio de Aldura de Errenteria, entre Errenteria y San Sebastián. La Guía Michelin 2026 le mantiene dos estrellas y lo clasifica como cocina innovadora."
+    },
+    {
+      "es": "El menú se sirve sin un orden clásico de platos y muchos se comen con las manos. Michelin cita como plato emblemático un flan de queso con aspecto de moho en el exterior. Dispone de aparcamiento y acceso para personas con movilidad reducida."
+    },
+    {
+      "es": "Varias fuentes sitúan sus dos estrellas desde 2006."
+    }
+  ]
 }

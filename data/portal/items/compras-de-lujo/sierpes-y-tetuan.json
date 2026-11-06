@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+    "https://www.spain.info/es/top/millas-oro-compras-espana/",
+    "https://elcronometro.com/en/history/",
+    "https://www.modaes.com/entorno/paseo-de-gracia-asciende-en-el-ranking-mundial-y-repite-como-la-calle-mas-cara-de-espana"
   ],
   "busqueda": "Calle Sierpes Sevilla",
   "coordenadas": {
     "lat": 37.39109,
     "lon": -5.99457
   },
-  "geo_fuente": "Calle Sierpes, Alfalfa, Casco Antiguo, Sevilla, Andalucía, 41001, España"
+  "geo_fuente": "Calle Sierpes, Alfalfa, Casco Antiguo, Sevilla, Andalucía, 41001, España",
+  "contexto": [
+    {
+      "es": "Sierpes y Tetuán son las calles peatonales del centro comercial de Sevilla. Turespaña incluye en la zona Muñoz Olivé, Rosario, Sierpes y Tetuán, con moda, alta costura y complementos de lujo con toques locales. La calle Cuna es conocida por la moda nupcial."
+    },
+    {
+      "es": "Lo característico aquí es la joyería y la relojería de tradición, en locales históricos. El Cronómetro, que en su web se presenta como fundado en 1901, es un ejemplo de comercio centenario en Sierpes. Es un paseo de tiendas pequeñas, no de grandes flagships."
+    },
+    {
+      "es": "Cushman & Wakefield (Main Streets Across the World 2025) coloca Tetuán octava de España por renta prime, con 1.680 euros por metro cuadrado al año."
+    }
+  ]
 }

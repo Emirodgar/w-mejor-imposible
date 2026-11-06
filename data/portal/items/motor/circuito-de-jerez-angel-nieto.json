@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Circuito_de_Jerez"
+    "https://en.wikipedia.org/wiki/Circuito_de_Jerez",
+    "https://www.circuitodejerez.com"
   ],
   "busqueda": "Circuito de Jerez Jerez de la Frontera",
   "coordenadas": {
@@ -31,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/2.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Circuito_de_Jerez_(4360360194).jpg",
     "titulo": "File:Circuito de Jerez (4360360194).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Circuito de Jerez se inauguró el 8 de diciembre de 1985. El trazado de Gran Premio mide 4,428 km y tiene 15 curvas; la configuración para motos tiene 13. Su aforo es de 125.000 personas. Desde el 3 de mayo de 2018 lleva el nombre de Ángel Nieto."
+    },
+    {
+      "es": "Acogió el Gran Premio de España de Fórmula 1 de 1986 a 1990 y el Gran Premio de Europa en 1994 y 1997. El Gran Premio de España de motociclismo se celebra aquí desde 1987, con la excepción de 1988."
+    },
+    {
+      "es": "Está junto a la autovía Jerez-Arcos (salida 3), cerca de Jerez de la Frontera, a unos 90 km al sur de Sevilla. Su web oficial anuncia para el final de 2026 una jornada de puertas abiertas el 12 de diciembre y, en enero de 2027, la Asian Le Mans Series."
+    }
+  ]
 }

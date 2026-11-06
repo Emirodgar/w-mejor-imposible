@@ -17,7 +17,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Club_de_Campo_Villa_de_Madrid"
+    "https://en.wikipedia.org/wiki/Club_de_Campo_Villa_de_Madrid",
+    "https://w3.esmadrid.com/en/node/1979",
+    "https://progolfweekly.com/2019-open-de-espana-primer-history-tv-field-odds/"
   ],
   "busqueda": "Club de Campo Villa de Madrid",
   "coordenadas": {
@@ -32,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:La_Casa_de_Campo,_m%C3%A1s_protegida_(01).jpg",
     "titulo": "File:La Casa de Campo, más protegida (01).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El campo Negro, obra de Javier Arana, abrió en 1956. Tiene 18 hoyos, par 71 y unos 6.374 metros. El club, fundado en 1929 según Wikipedia (otras fuentes dan 1930 o 1931), cuenta además con el campo Amarillo, diseñado por Seve Ballesteros."
+    },
+    {
+      "es": "El Negro ha sido sede habitual del Open de España. Entre las ediciones recientes que registra Wikipedia están las de 1991, 1994, 1995 y 1996, con victorias de Eduardo Romero, Colin Montgomerie, Seve Ballesteros y Pádraig Harrington, y la de 2019, ganada por Jon Rahm. El primer Open en el club se disputó en 1957."
+    },
+    {
+      "es": "Está dentro de Madrid, en la zona de la Casa de Campo, por lo que se llega sin salir de la ciudad."
+    }
+  ]
 }

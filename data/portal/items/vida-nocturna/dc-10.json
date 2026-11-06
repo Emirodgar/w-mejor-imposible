@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/19/dc-10"
+    "https://djmag.com/top100clubs/2026/19/dc-10",
+    "https://www.dc10ibiza.com/",
+    "https://en.wikipedia.org/wiki/DC10_(nightclub)"
   ],
   "busqueda": "DC-10 Ibiza",
   "coordenadas": {
     "lat": 38.88024,
     "lon": 1.39264
   },
-  "geo_fuente": "DC-10, Carretera Sant Jordi - Ses Salines, Sant Jordi de ses Salines, Sant Josep de sa Tal"
+  "geo_fuente": "DC-10, Carretera Sant Jordi - Ses Salines, Sant Jordi de ses Salines, Sant Josep de sa Tal",
+  "contexto": [
+    {
+      "es": "DC-10 está en la carretera de las Salinas, en el término de Sant Josep de sa Talaia, junto al aeropuerto de Ibiza. Su aforo es de unas 1.500 personas según DJ Mag. Nació en los años noventa como un bar musical pequeño y hoy funciona como club de house y techno, con tres espacios: La Terrace, la sala principal y el jardín al aire libre."
+    },
+    {
+      "es": "En 1999 se unieron al local dos promotores italianos y crearon Circoloco, la noche de los lunes que sigue vinculada al club. Para 2026 su web anuncia las fiestas Circoloco y Solid Grooves en la temporada que empezó a principios de junio. Las entradas se venden en la plataforma oficial que enlaza la web."
+    },
+    {
+      "es": "DJ Mag lo coloca en el puesto 19 de su Top 100 Clubs 2026."
+    }
+  ]
 }

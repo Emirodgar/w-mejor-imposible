@@ -18,12 +18,24 @@
   "fuentes": [
     "https://valenciaplaza.com/la-antigua-milla-de-oro-de-valencia-se-vacia-adios-alouis-vuitton-y-loewe",
     "https://valenciaplaza.com/los-relojes-de-lujo-tag-heuer-llegan-al-centro-de-valencia-con-su-primera-tienda-propia",
-    "https://www.spain.info/es/top/millas-oro-compras-espana/"
+    "https://www.spain.info/es/top/millas-oro-compras-espana/",
+    "https://www.modaes.com/entorno/paseo-de-gracia-asciende-en-el-ranking-mundial-y-repite-como-la-calle-mas-cara-de-espana"
   ],
   "busqueda": "Carrer de Colón, València, Comunitat Valenciana",
   "coordenadas": {
     "lat": 39.46746,
     "lon": -0.37438
   },
-  "geo_fuente": "Carrer de Colón, el Pla del Remei, l'Eixample, València, Comarca de València, València / V"
+  "geo_fuente": "Carrer de Colón, el Pla del Remei, l'Eixample, València, Comarca de València, València / V",
+  "contexto": [
+    {
+      "es": "Valencia no tiene una sola calle de lujo, sino un eje que se ha desplazado. Poeta Querol, la milla de oro tradicional de la ciudad, perdió en los últimos años a varias firmas. Valencia Plaza informó en 2022 del cierre de Louis Vuitton en esa calle y del traslado de Loewe a la calle de la Paz, esquina con San Vicente Mártir, previsto para 2023."
+    },
+    {
+      "es": "Mientras tanto, la actividad comercial se reparte entre la calle Colón y Jorge Juan, en el Ensanche. Según el mismo diario, en Jorge Juan se habían instalado en 2022 firmas como Maje, Zadig & Voltaire, Bimba y Lola, COS y Purificación García. Es una oferta de moda y complementos de gama media y alta más que de grandes casas de lujo."
+    },
+    {
+      "es": "Cushman & Wakefield (informe de 2025) sitúa Colón como la séptima calle comercial de España por renta prime, con 1.800 euros por metro cuadrado al año. Valencia Plaza recoge además joyerías de tradición cerca de El Corte Inglés, en Colón."
+    }
+  ]
 }

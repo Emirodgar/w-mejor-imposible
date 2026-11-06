@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/16/amnesia-ibiza"
+    "https://djmag.com/top100clubs/2026/16/amnesia-ibiza",
+    "https://www.amnesia.es/en/news-info/amnesia-ibiza-50-years-of-dancing",
+    "https://www.amnesia.es/en/news-info/50-years-50-memories-the-exhibition-celebrating-half-a-century-of-dance-",
+    "https://www.planomato.com/es/ibiza/n/closing-aire-libre-50-aniversario",
+    "https://www.amnesia.es/"
   ],
   "busqueda": "Amnesia Ibiza",
   "coordenadas": {
     "lat": 38.94766,
     "lon": 1.40823
   },
-  "geo_fuente": "Amnesia, EI-600, Sant Antoni de Portmany, Eivissa, Illes Balears, 07816, España"
+  "geo_fuente": "Amnesia, EI-600, Sant Antoni de Portmany, Eivissa, Illes Balears, 07816, España",
+  "contexto": [
+    {
+      "es": "Amnesia está en Sant Rafel, junto a la carretera que une Ibiza ciudad con Sant Antoni. Abrió en 1976 en una finca rural y entonces se llamaba El Taller del Olvido. En 2026 celebra su 50.º aniversario. DJ Mag, que la sitúa en el puesto 16 de su Top 100 Clubs 2026, le atribuye un aforo de 3.800 personas."
+    },
+    {
+      "es": "La temporada 2026 arrancó el 9 de mayo con una fiesta de apertura de más de 24 horas, y el cierre del aniversario fue el 10 de octubre. Durante el año se recuperó la Fiesta de la Espuma, en junio, y se montó la exposición «50 Years, 50 Memories» sobre su historia. El cierre estrenó una sala nueva, El Taller. La programación por noches y residencias se publica cada año en la web oficial."
+    }
+  ]
 }

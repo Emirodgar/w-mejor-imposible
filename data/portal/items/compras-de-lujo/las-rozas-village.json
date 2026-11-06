@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.visitmadrid.es/rozas-village-outlet-lujo-madrid-experiencia-compras-unica"
+    "https://www.visitmadrid.es/rozas-village-outlet-lujo-madrid-experiencia-compras-unica",
+    "https://www.thebicestercollection.com/las-rozas-village/es"
   ],
   "busqueda": "Las Rozas Village",
   "schema": "ShoppingCenter",
@@ -24,5 +25,16 @@
     "lat": 40.51895,
     "lon": -3.90127
   },
-  "geo_fuente": "Las Rozas Village, Las Rozas de Madrid, Comunidad de Madrid, 28232, España"
+  "geo_fuente": "Las Rozas Village, Las Rozas de Madrid, Comunidad de Madrid, 28232, España",
+  "contexto": [
+    {
+      "es": "Las Rozas Village es un outlet al aire libre en Las Rozas de Madrid, a pocos kilómetros de la capital por la A-6. Visit Madrid cifra la oferta en más de cien boutiques de firmas internacionales y españolas, con moda, calzado, complementos, joyería, belleza y hogar. Pertenece a The Bicester Collection, que cita en su web firmas como Michael Kors, Sandro, Lacoste, Tommy Hilfiger, BOSS y Kenzo."
+    },
+    {
+      "es": "Visit Madrid indica que existe un servicio de autobús lanzadera desde el centro de Madrid, pensado para quien no lleva coche, sin precisar horarios ni frecuencias. La web oficial remite a una página de cómo llegar y a una de aparcamiento temporal."
+    },
+    {
+      "es": "La oferta gastronómica del recinto incluye restaurantes, cafeterías y terrazas, según la misma guía turística."
+    }
+  ]
 }

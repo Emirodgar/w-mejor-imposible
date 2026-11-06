@@ -16,12 +16,25 @@
   "cerca": [],
   "fuentes": [
     "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html",
-    "https://joinpearl.co/lists/2025-worlds-50-best-bars"
+    "https://joinpearl.co/lists/2025-worlds-50-best-bars",
+    "https://www.the50.com/bars/best-in-europe/the-list/salmon-guru.html",
+    "https://www.timeout.es/madrid/es/bares-y-pubs/salmon-guru"
   ],
   "busqueda": "Salmon Guru Madrid Echegaray",
   "coordenadas": {
     "lat": 40.4149,
     "lon": -3.69953
   },
-  "geo_fuente": "Salmon Guru, 21, Calle de Echegaray, Barrio de las Letras, Cortes, Centro, Madrid, Comunid"
+  "geo_fuente": "Salmon Guru, 21, Calle de Echegaray, Barrio de las Letras, Cortes, Centro, Madrid, Comunid",
+  "contexto": [
+    {
+      "es": "Salmon Guru está en la calle de Echegaray, en el Barrio de las Letras, y cumple diez años en 2026. Lo impulsa el bartender argentino Diego Cabrera, que también lleva Viva Madrid y el espacio de desarrollo Guru Lab, en la misma zona."
+    },
+    {
+      "es": "Se presenta como bebidas serias en un entorno poco serio. El local se reparte en tres espacios recargados: una sala de temática animal, otra con arte de cómic y otra de influencia asiática. Los cócteles se desarrollan a menudo en Guru Lab. La carta Big Bang se organiza por secciones temáticas e incluye bebidas sin alcohol."
+    },
+    {
+      "es": "The 50 Best lo sitúa en el puesto 66 de The World's 50 Best Bars 2026 y en el 46 de Europe's 50 Best Bars 2026."
+    }
+  ]
 }

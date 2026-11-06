@@ -15,7 +15,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.barcelona.cat/infobarcelona/en/nearly-3-8-million-visitors-to-museums-and-exhibition-centres-in-2025_1586782.html"
+    "https://www.barcelona.cat/infobarcelona/en/nearly-3-8-million-visitors-to-museums-and-exhibition-centres-in-2025_1586782.html",
+    "https://museupicassobcn.cat/en/collection/restoration/historical-and-museographic-tour-of-collection",
+    "https://www.barcelona.cat/barcelonacultura/en/barcelona-cultura/1263695"
   ],
   "busqueda": "Museu Picasso Barcelona",
   "schema": "Museum",
@@ -23,5 +25,16 @@
     "lat": 41.3851,
     "lon": 2.1812
   },
-  "geo_fuente": "Museu Picasso, Carrer de Montcada, la Ribera, Sant Pere, Santa Caterina i la Ribera, Ciuta"
+  "geo_fuente": "Museu Picasso, Carrer de Montcada, la Ribera, Sant Pere, Santa Caterina i la Ribera, Ciuta",
+  "contexto": [
+    {
+      "es": "El Museu Picasso abrió el 9 de marzo de 1963 en el palacio Berenguer d'Aguilar, en el carrer de Montcada, con el nombre de Colección Sabartés. Jaume Sabartés, secretario y amigo de Picasso, había iniciado en 1955 las gestiones para donar su colección a Barcelona, con la condición de que fuera el germen de un futuro museo."
+    },
+    {
+      "es": "Con el tiempo el museo pasó de un edificio a cinco, entre ellos el palacio del Barón de Castellet (1970), el palacio Meca (1981) y la casa Mauri y el palacio Finestres (1999). La exposición permanente ocupa la primera planta de cuatro palacios medievales."
+    },
+    {
+      "es": "Picasso donó en 1968 los 58 óleos de la serie de Las Meninas. En 1970 llegó otra donación, con 236 pinturas, 1.149 dibujos y 17 cuadernos. El museo muestra también la etapa de formación del artista, que se educó en Barcelona entre 1895 y 1904."
+    }
+  ]
 }

@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/4/hi-ibiza"
+    "https://djmag.com/top100clubs/2026/4/hi-ibiza",
+    "https://www.hiibiza.com/",
+    "https://www.ibiza-spotlight.com/night/2017/02/hi-ibiza-drops-its-opening-party-line-up-2017",
+    "https://datatransmission.co/news/hi-ibiza-opens-2017-former-space-site/"
   ],
   "busqueda": "Hï Ibiza",
   "coordenadas": {
     "lat": 38.88599,
     "lon": 1.40386
   },
-  "geo_fuente": "Hï Ibiza, Carretera de Platja d'en Bossa, Platja d'en Bossa, Sant Jordi de ses Salines, Sa"
+  "geo_fuente": "Hï Ibiza, Carretera de Platja d'en Bossa, Platja d'en Bossa, Sant Jordi de ses Salines, Sa",
+  "contexto": [
+    {
+      "es": "Hï Ibiza está en Playa d'en Bossa, en el solar del antiguo Space, y abrió el 28 de mayo de 2017. Lo gestiona The Night League, la misma empresa de Ushuaïa. Tiene dos salas con DJ de cartel, un tercer espacio que cambia según la noche, terrazas y una galería de arte dentro del club. DJ Mag le asigna 5.633 personas de aforo."
+    },
+    {
+      "es": "Según su web, abre los siete días de la semana. Las residencias de 2026 incluían a Dom Dolla y CamelPhat los viernes, Black Coffee los sábados y Solèy los lunes. Las de otros años cambian, así que conviene mirar la programación del año en curso."
+    },
+    {
+      "es": "DJ Mag lo ha situado en el primer puesto del mundo en 2022, 2023, 2024 y 2025, y en el cuarto en 2026."
+    }
+  ]
 }

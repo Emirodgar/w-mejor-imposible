@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/es/details/mas-de-torrent-hotel-spa/",
+    "https://guide.michelin.com/be/nl/hotels-stays/girona/mas-de-torrent-hotel-spa-7200"
   ],
   "busqueda": "Mas de Torrent Hotel Torrent Girona",
   "schema": "Hotel",
@@ -24,5 +26,16 @@
     "lat": 41.95404,
     "lon": 3.1249
   },
-  "geo_fuente": "Hotel Mas de Torrent, Camí del Cementiri dels Moros, Torrentí, Torrent, Baix Empordà, Giro"
+  "geo_fuente": "Hotel Mas de Torrent, Camí del Cementiri dels Moros, Torrentí, Torrent, Baix Empordà, Giro",
+  "contexto": [
+    {
+      "es": "Masía del siglo XVIII en el Empordà, miembro de Relais & Châteaux desde 1990. Tiene suites de estilo clásico y otras de estilo contemporáneo. El spa, llamado Mas Spa, mide 600 metros cuadrados. Según la Guía Michelin consultada en 2026, el hotel tiene dos Llaves."
+    },
+    {
+      "es": "Está en Torrent (Girona), entre olivos y cipreses, cerca de las playas y de pueblos como Pals, Peratallada, Cadaqués y Sant Martí d'Empúries. El aeropuerto de Girona-Costa Brava queda a unos 53 km, el de Barcelona-El Prat a 140 km y la estación de Girona, a 39 km."
+    },
+    {
+      "es": "La ficha oficial lo presenta como hotel para amantes del arte y menciona dos restaurantes, entre ellos El Mas."
+    }
+  ]
 }

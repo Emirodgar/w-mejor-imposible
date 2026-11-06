@@ -16,7 +16,10 @@
   "cerca": [],
   "fuentes": [
     "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/cultura/paginas/2026/020126-visitantes-2025-museos-cultura.aspx",
-    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/"
+    "https://www.unir.net/revista/artes/museos-mas-visitados-espana/",
+    "https://en.wikipedia.org/wiki/Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa",
+    "https://www.spain.info/es/lugares-interes/museo-reina-sofia/",
+    "https://guernica.museoreinasofia.es/en/taxonomy/term/5815"
   ],
   "busqueda": "Museo Reina Sofía Madrid",
   "schema": "Museum",
@@ -24,5 +27,16 @@
     "lat": 40.40805,
     "lon": -3.69442
   },
-  "geo_fuente": "Museo Nacional Centro de Arte Reina Sofía, 52, Calle de Santa Isabel, Embajadores, Centro,"
+  "geo_fuente": "Museo Nacional Centro de Arte Reina Sofía, 52, Calle de Santa Isabel, Embajadores, Centro,",
+  "contexto": [
+    {
+      "es": "El Museo Nacional Centro de Arte Reina Sofía es el museo nacional de arte del siglo XX en España. Se creó en 1986 como centro de arte y adquirió la condición de museo nacional en 1992. Está cerca de la estación de Atocha."
+    },
+    {
+      "es": "El edificio central es un antiguo hospital del siglo XVIII, obra principal de Francisco Sabatini. La ampliación de Jean Nouvel, fruto de un concurso internacional de 1999, se inauguró en octubre de 2005."
+    },
+    {
+      "es": "La colección se centra en el arte español, con obras destacadas de Pablo Picasso y Salvador Dalí, y presencia de Joan Miró. La pieza más conocida es el Guernica, de Picasso, pintado en 1937 y expuesto en el museo desde 1992, en el edificio Sabatini."
+    }
+  ]
 }

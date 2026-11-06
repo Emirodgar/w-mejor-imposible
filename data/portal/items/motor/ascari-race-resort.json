@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://en.wikipedia.org/wiki/Ascari_Race_Resort"
+    "https://en.wikipedia.org/wiki/Ascari_Race_Resort",
+    "https://en.andalucia.org/ronda-sports-ascari-race-resort/"
   ],
   "busqueda": "Ascari Race Resort Ronda",
   "coordenadas": {
@@ -31,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Vista_del_cortijo-casa_Club_de_Ascari_Race_Resort.jpg",
     "titulo": "File:Vista del cortijo-casa Club de Ascari Race Resort.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Ascari Race Resort es un club privado de motor cuya construcción empezó en el año 2000 y que abrió en 2003. Su trazado completo mide 5,425 km y tiene 26 curvas. Puede dividirse en tres circuitos menores: el central (2,592 km), el norte (1,341 km) y el sur (1,527 km)."
+    },
+    {
+      "es": "Está en la provincia de Málaga, a unos 10 km de Ronda. El fundador, Klaas Zwart, abrió la admisión a 500 aficionados al motor tras terminar la pista. Es un club de socios y no un circuito de acceso público."
+    },
+    {
+      "es": "Entre 2006 y 2008 acogió la serie EuroBOSS, y varias marcas europeas lo han usado para presentar modelos. En 2013 fue sede del lanzamiento mundial de Gran Turismo 6, que incluye el trazado. En marzo de 2022 pasó a manos de dos empresas, una suiza y otra argentina."
+    }
+  ]
 }

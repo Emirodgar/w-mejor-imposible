@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2"
+    "https://www.relaischateaux.com/us/destinations/europe/spain?page=2",
+    "https://www.relaischateaux.com/us/details/la-torre-del-visco/"
   ],
   "busqueda": "Fuentespalda, Teruel",
   "schema": "Hotel",
@@ -24,5 +25,16 @@
     "lat": 40.80709,
     "lon": 0.06577
   },
-  "geo_fuente": "Fuentespalda / Fontespala, Matarraña / Matarranya, Teruel, Aragón, 44587, España"
+  "geo_fuente": "Fuentespalda / Fontespala, Matarraña / Matarranya, Teruel, Aragón, 44587, España",
+  "contexto": [
+    {
+      "es": "La casa señorial y su torre datan de 1449, según Relais & Châteaux. Es una finca agrícola de producción ecológica que se extiende por unas 89 hectáreas, en las que hay huertos, olivares y jardines. Es miembro de Relais & Châteaux desde 2000."
+    },
+    {
+      "es": "Está en Fuentespalda (Teruel), en el Matarraña, en un valle junto al río Tastavins y con los Puertos de Beceite cerca. El aeropuerto de Reus queda a unos 130 km, el de Barcelona a 235 km y la estación de tren de Tortosa a 65 km."
+    },
+    {
+      "es": "Es un destino rural y aislado, adecuado para quien busca naturaleza y cocina de huerta. Conviene llegar en coche."
+    }
+  ]
 }

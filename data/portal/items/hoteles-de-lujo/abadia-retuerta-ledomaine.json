@@ -15,7 +15,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://en.wikipedia.org/wiki/Monastery_of_Santa_Mar%C3%ADa_de_Retuerta",
+    "https://www.turismocastillayleon.com/en/services/sleep/hotels/abadia-retuerta-domaine",
+    "https://www.hotelexecutive.com/newswire/52123/spains-newly-restored-historic-hotel-abada-retuerta-ledomaine-will-reopen-in-march-2015"
   ],
   "busqueda": "Abadía Retuerta Sardón de Duero",
   "coordenadas": {
@@ -30,5 +33,16 @@
     "licencia_url": "http://creativecommons.org/licenses/by-sa/3.0/",
     "fuente": "https://commons.wikimedia.org/wiki/File:Valladolid_monasterio_Retuerta_01_lou.JPG",
     "titulo": "File:Valladolid monasterio Retuerta 01 lou.JPG"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El hotel ocupa el monasterio de Santa María de Retuerta, de la orden premonstratense, cuya construcción arrancó en 1146 y se prolongó hasta el siglo XV en estilo románico tardío. Fue declarado Monumento Histórico-Artístico en 1931 y hoy es Bien de Interés Cultural."
+    },
+    {
+      "es": "Según el registro turístico de Castilla y León, es un cinco estrellas de 30 habitaciones, con restaurante, bar-café y servicio de habitaciones. Está en la margen izquierda del Duero, junto a Sardón de Duero (Valladolid), en la carretera N-122, y se anunció su reapertura tras la restauración para marzo de 2015."
+    },
+    {
+      "es": "La Guía Michelin lo incluyó entre los cinco primeros hoteles de España con tres Llaves cuando se estrenó la distinción, en abril de 2024."
+    }
+  ]
 }

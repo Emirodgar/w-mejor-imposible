@@ -16,7 +16,8 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://es.wikipedia.org/wiki/Puerto_de_Mahón"
   ],
   "busqueda": "Puerto de Mahón",
   "coordenadas": {
@@ -31,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Ma%C3%B3.jpg",
     "titulo": "File:Maó.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El Puerto de Mahón es uno de los mayores puertos naturales del Mediterráneo, con más de seis kilómetros de longitud. Es una ría profunda y protegida en la costa este de Menorca, y la ciudad de Mahón se asoma a ella desde lo alto del acantilado."
+    },
+    {
+      "es": "En el interior del puerto está la isla del Rey, que debe su nombre a Alfonso III, conquistador de Menorca en 1287. También el Lazareto, que en el siglo XIX pasó de península a islote para servir de estación de cuarentena y hoy pertenece al Ministerio de Sanidad. A la entrada, la fortaleza de la Mola se levantó en época de Isabel II."
+    },
+    {
+      "es": "El puerto recibe cruceros durante todo el año. Su posición estratégica en el Mediterráneo occidental explica que la isla cambiara de manos en repetidas ocasiones."
+    }
+  ]
 }

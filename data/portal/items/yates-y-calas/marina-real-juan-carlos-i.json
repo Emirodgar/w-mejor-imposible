@@ -16,12 +16,24 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana"
+    "https://velvua.com/es/blog/mejores-puertos-deportivos-espana",
+    "https://es.wikipedia.org/wiki/Marina_Real_Juan_Carlos_I"
   ],
   "busqueda": "Marina Real Juan Carlos I Valencia",
   "coordenadas": {
     "lat": 39.45958,
     "lon": -0.31456
   },
-  "geo_fuente": "La Marina de València, Avinguda de l'Enginyer Manuel Soto, el Grau, Poblats Marítims, Valè"
+  "geo_fuente": "La Marina de València, Avinguda de l'Enginyer Manuel Soto, el Grau, Poblats Marítims, Valè",
+  "contexto": [
+    {
+      "es": "La Marina Real Juan Carlos I ocupa la dársena histórica de Valencia, entre la playa de las Arenas y el puerto, en el distrito de Poblados Marítimos. Tiene unas 100 hectáreas entre tierra y agua y 820 amarres. Fue sede de la 32.ª America's Cup, en 2007, y entre 2007 y 2012 acogió dos ediciones de la regata y el Gran Premio de Fórmula 1."
+    },
+    {
+      "es": "La administra el Consorcio Valencia 2007, creado en 2004. Su edificio más reconocible es Veles e Vents, obra de David Chipperfield y Fermín Vázquez, que recibió el premio europeo LEAF en 2007. Hoy lo gestionan Heineken España y Grupo La Sucursal."
+    },
+    {
+      "es": "Velvua la situó sexta entre los puertos deportivos españoles en su ranking de 2026."
+    }
+  ]
 }

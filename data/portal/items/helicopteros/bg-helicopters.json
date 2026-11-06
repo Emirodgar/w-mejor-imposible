@@ -17,12 +17,24 @@
   "cerca": [],
   "fuentes": [
     "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
-    "https://www.iberinform.es/empresa/862196/bigas-grup-helicopters"
+    "https://www.iberinform.es/empresa/862196/bigas-grup-helicopters",
+    "https://www.bghelicopters.com"
   ],
   "busqueda": "Sabadell, Barcelona",
   "coordenadas": {
     "lat": 41.54608,
     "lon": 2.10832
   },
-  "geo_fuente": "Sabadell, Vallès Occidental, Barcelona, Catalunya, España"
+  "geo_fuente": "Sabadell, Vallès Occidental, Barcelona, Catalunya, España",
+  "contexto": [
+    {
+      "es": "BG Helicopters es el nombre comercial de Bigas Grup Helicopters, S.L., empresa con certificado de operador aéreo (AOC) de AESA número ES.AOC.136. Figura en el listado de AESA generado el 2 de noviembre de 2026 sin marca de suspensión."
+    },
+    {
+      "es": "Según ese listado, su flota autorizada incluye helicópteros Agusta/Leonardo A109 y AW109, Airbus Helicopters AS355 y EC130, Bell 206 y Robinson R44. Un directorio empresarial sitúa su domicilio en el aeropuerto de Sabadell, en la provincia de Barcelona."
+    },
+    {
+      "es": "Su web declara tres líneas de actividad: chárter VIP, vuelos turísticos y para eventos, y trabajos aéreos. Estos incluyen tratamientos aéreos, inspección de líneas eléctricas, extinción de incendios, filmación y fotografía, y captura de datos. También menciona un servicio de mantenimiento."
+    }
+  ]
 }

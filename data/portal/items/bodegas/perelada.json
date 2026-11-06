@@ -16,7 +16,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/",
+    "https://www.the50.com/vineyards/best-in-the-world/the-list/21-30/Perelada.html",
+    "https://www.theworlds50best.com/discovery/Establishments/Spain/Girona/Perelada.html"
   ],
   "busqueda": "Castell de Perelada Peralada",
   "coordenadas": {
@@ -31,5 +33,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Castell_de_Peralada_20.JPG",
     "titulo": "File:Castell de Peralada 20.JPG"
-  }
+  },
+  "contexto": [
+    {
+      "es": "La bodega Perelada nació en 1923, cuando la familia Mateu compró el castillo de Perelada, aunque la tradición vinícola del lugar se remonta al siglo XIV. Debutó en The World's 50 Best Vineyards en 2025, en el puesto 22."
+    },
+    {
+      "es": "Está en Peralada, en el Empordà, entre los Pirineos y el Mediterráneo, a pocos kilómetros del Teatro-Museo Dalí de Figueres y del parque natural de Cap de Creus. El listado de 50 Best la sitúa a unos 41 minutos del aeropuerto de Girona-Costa Brava."
+    },
+    {
+      "es": "El conjunto incluye el convento del Carmen, un museo en el castillo con colección privada de arte, un hotel de cinco estrellas con spa y un restaurante con estrella Michelin."
+    }
+  ]
 }

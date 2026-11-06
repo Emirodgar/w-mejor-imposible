@@ -15,7 +15,9 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://www.journaldespalaces.com/en/pressrelease-2934-Mandarin-Oriental-To-Open-Luxury-Hotel-In-Barcelona.html",
+    "https://the-european.eu/story-57049/these-european-hotels-have-just-been-named-five-star-in-forbes-travel-guides-2026-awards.html"
   ],
   "busqueda": "Mandarin Oriental Barcelona",
   "coordenadas": {
@@ -30,5 +32,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:449_Hotel_Mandarin_Oriental,_pg._de_Gr%C3%A0cia_38-40_(Barcelona).jpg",
     "titulo": "File:449 Hotel Mandarin Oriental, pg. de Gràcia 38-40 (Barcelona).jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "El hotel está en el Passeig de Gràcia 38-40, en el Eixample, y abrió el 26 de noviembre de 2009 en un edificio del siglo XX rehabilitado. Los interiores son de la diseñadora Patricia Urquiola."
+    },
+    {
+      "es": "En los Forbes Travel Guide Star Awards de 2026 obtuvo cinco estrellas, tras figurar con cuatro en 2025; según esa información, es el único hotel con spa de la ciudad con esa categoría. La Guía Michelin le otorga dos Llaves."
+    },
+    {
+      "es": "Su ubicación sobre el principal eje comercial y modernista de la ciudad facilita los desplazamientos a pie."
+    }
+  ]
 }

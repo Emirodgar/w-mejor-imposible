@@ -1,0 +1,76 @@
+{
+  "cambios": [
+    {
+      "fecha": "2026-11-06",
+      "titulo": {
+        "es": "Fichas ampliadas"
+      },
+      "texto": {
+        "es": "Los lugares de los rankings tienen ahora un apartado de contexto con datos verificados, sus fuentes y el año de cada dato."
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "titulo": {
+        "es": "Cinco guías de destino nuevas"
+      },
+      "texto": {
+        "es": "San Sebastián, Sevilla, Bilbao, Alicante y la Costa Blanca, y Tenerife se suman a las diez guías anteriores."
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "titulo": {
+        "es": "Calendario de actualización"
+      },
+      "texto": {
+        "es": "Esta página recoge cuándo se publica cada fuente de los rankings y cuándo toca revisarla."
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": {
+        "es": "Buscador, guías por destino y Mi viaje"
+      },
+      "texto": {
+        "es": "Se puede buscar en todos los rankings, consultar cada destino y guardar una lista de lugares para imprimir o compartir."
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": {
+        "es": "Cuatro categorías nuevas"
+      },
+      "texto": {
+        "es": "Vida nocturna (DJ Mag Top 100 Clubs 2026), bares de coctelería (The World's 50 Best Bars 2026), alojamientos históricos (Relais & Châteaux) y museos y arte."
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": {
+        "es": "Directorio de boutiques ampliado"
+      },
+      "texto": {
+        "es": "34 boutiques de 11 marcas en seis ciudades, cada una con su estado de verificación."
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": {
+        "es": "Cinco planes completos nuevos"
+      },
+      "texto": {
+        "es": "Mallorca, Madrid de compras y mesa, Ribera del Duero, Barcelona, y Jerez y Cádiz."
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "titulo": {
+        "es": "Concesionarios verificados"
+      },
+      "texto": {
+        "es": "9 de los 11 concesionarios de lujo están verificados; Bentley Marbella y Lamborghini Madrid siguen por verificar."
+      }
+    }
+  ]
+}

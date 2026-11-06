@@ -16,7 +16,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/",
+    "https://www.marquesderiscal.com/en/",
+    "https://www.decanter.com/wine-news/the-worlds-best-vineyards-2024-revealed-543319/",
+    "https://en.wikipedia.org/wiki/Marqu%C3%A9s_de_Riscal_Hotel"
   ],
   "busqueda": "Bodegas Marqués de Riscal Elciego",
   "coordenadas": {
@@ -31,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Bodega_Marqu%C3%A9s_de_Riscal_en_Elciego_(%C3%81lava)_-_panoramio.jpg",
     "titulo": "File:Bodega Marqués de Riscal en Elciego (Álava) - panoramio.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Fundada en 1858, Marqués de Riscal encabezó la lista World's Best Vineyards en 2024, tras quedar segunda en 2021, 2022 y 2023, y fue nombrada también mejor viñedo de Europa ese año. No figura en la lista numerada de 2025."
+    },
+    {
+      "es": "Está en Elciego, en la Rioja Alavesa. La Ciudad del Vino reúne la bodega, el hotel, restaurantes, un spa Caudalie y una tienda. El hotel, un Luxury Collection, es obra de Frank Gehry: las obras comenzaron en mayo de 2003 y se terminó en 2006, con métodos empleados antes en el Guggenheim de Bilbao."
+    },
+    {
+      "es": "En 2026 el hotel cumple 20 años, según la web de la bodega."
+    }
+  ]
 }

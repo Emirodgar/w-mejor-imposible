@@ -16,12 +16,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://djmag.com/top100clubs/2026/56/nitsa"
+    "https://djmag.com/top100clubs/2026/56/nitsa",
+    "https://sala-apolo.com/en/clubs/nitsa",
+    "https://xceed.me/blog/en/nitsa-club-history-of-the-party-in-barcelona/",
+    "https://www.djmag.com/top100clubs/2023/77/Nitsa"
   ],
   "busqueda": "Sala Apolo Barcelona",
   "coordenadas": {
     "lat": 41.37439,
     "lon": 2.16956
   },
-  "geo_fuente": "Sala Apolo, Carrer Nou de la Rambla, les Hortes de Sant Bertran, el Poble-sec, Sants-Montj"
+  "geo_fuente": "Sala Apolo, Carrer Nou de la Rambla, les Hortes de Sant Bertran, el Poble-sec, Sants-Montj",
+  "contexto": [
+    {
+      "es": "Nitsa es una noche de música electrónica de Barcelona que se celebra en la sala Apolo, en la avenida del Paral·lel. Nació en 1993 o 1994 en una sala pequeña de la plaza Joan Llongueras, en la parte alta de la ciudad, y se trasladó a Apolo en 1996. DJ Mag la presenta como la más antigua de su tipo en Barcelona y le atribuye 1.000 personas de aforo."
+    },
+    {
+      "es": "Se celebra los viernes y sábados, aproximadamente de 00:30 a 06:00, en la sala principal de Apolo. La sala vecina, que fue La [2], se reformó en 2017 y pasó a llamarse Astin, que es Nitsa escrito al revés."
+    },
+    {
+      "es": "DJ Mag la sitúa en el puesto 56 de su Top 100 Clubs 2026."
+    }
+  ]
 }

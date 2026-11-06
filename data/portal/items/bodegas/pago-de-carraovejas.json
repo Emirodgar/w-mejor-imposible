@@ -16,7 +16,10 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/"
+    "https://forbes.es/economia/831109/ysios-tio-pepe-pago-de-carraovejas-vivanco-y-marques-de-murrieta-entre-los-50-mejores-vinedos-y-bodegas/",
+    "https://www.the50.com/vineyards/best-in-the-world/the-list/11-20/Pago-De-Carraovejas.html",
+    "https://www.the50.com/discovery/Establishments/Spain/Ribera-del-Duero/Pago-de-Carraovejas.html",
+    "https://www.pagodecarraovejas.com/en/"
   ],
   "busqueda": "Pago de Carraovejas Peñafiel",
   "coordenadas": {
@@ -31,5 +34,16 @@
     "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "fuente": "https://commons.wikimedia.org/wiki/File:Bodega_Pago_de_Carraovejas.jpg",
     "titulo": "File:Bodega Pago de Carraovejas.jpg"
-  }
+  },
+  "contexto": [
+    {
+      "es": "Pago de Carraovejas entró en The World's 50 Best Vineyards en 2025 directamente en el puesto 18. Empezó con nueve hectáreas y hoy cultiva 180, a una altitud media de unos 850 metros y con pendientes de más del 30 % en algunas laderas. Elabora tintos de tinto fino, cabernet sauvignon y merlot; Cuesta de las Liebres es su vino de referencia en la gama Alma Carraovejas."
+    },
+    {
+      "es": "Está en Peñafiel (Valladolid), en la Ribera del Duero, a unas dos horas del aeropuerto de Madrid y a unos 45 minutos del de Valladolid. Su restaurante Ambivium tiene una estrella Michelin y maridaje con los vinos de la casa."
+    },
+    {
+      "es": "Las visitas van de menos de dos horas a unas tres, con recorrido por bodega y viñedo y cata de los vinos."
+    }
+  ]
 }

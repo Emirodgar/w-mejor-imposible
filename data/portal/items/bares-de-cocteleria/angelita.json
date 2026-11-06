@@ -17,12 +17,25 @@
   "fuentes": [
     "https://thedotmagazine.com/the-50-best-bars-2026-full-list-and-winners/",
     "https://www.euronews.com/2026/10/08/the-best-50-bars-in-the-world-have-been-revealed-for-2026-and-18-are-in-europe",
-    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html"
+    "https://www.the50.com/stories/News/best-in-the-world-2026-51-100-list.html",
+    "https://www.the50.com/bars/best-in-europe/the-list/angelita.html",
+    "https://www.esmadrid.com/noche/angelita-madrid"
   ],
   "busqueda": "Angelita Madrid Calle Reina",
   "coordenadas": {
     "lat": 40.42035,
     "lon": -3.70037
   },
-  "geo_fuente": "Angelita, 4, Calle de la Reina, Chueca, Justicia, Centro, Madrid, Comunidad de Madrid, 280"
+  "geo_fuente": "Angelita, 4, Calle de la Reina, Chueca, Justicia, Centro, Madrid, Comunidad de Madrid, 280",
+  "contexto": [
+    {
+      "es": "Angelita es un negocio familiar de los hermanos David y Mario Villalón. Ocupa un edificio de la calle de la Reina, junto a la Gran Vía, con comedor y bar de vinos en la planta baja y la coctelería en el sótano."
+    },
+    {
+      "es": "La propuesta va del huerto a la copa: buena parte de los productos procede del huerto familiar de Zamora. En el bar del sótano se emplean ingredientes poco habituales, como la pataca o la piel de pollo. Los cócteles se pesan, no llevan hielo ni cítricos y la casa elabora sus propios destilados de proximidad y mezcladores sin alcohol."
+    },
+    {
+      "es": "The 50 Best sitúa a Angelita en el puesto 45 de Europe's 50 Best Bars 2026 y recuerda que el local cumple diez años en 2026. Figura además en la lista ampliada de The World's 50 Best Bars 2026."
+    }
+  ]
 }

@@ -15,12 +15,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://guide.michelin.com/ca/fr/hotels-stays/teruel/torre-del-marques-hotel-spa-winery-11626",
+    "https://www.i-escape.com/torre-del-marques-hotel-spa"
   ],
   "busqueda": "Torre del Marqués Teruel",
   "coordenadas": {
     "lat": 40.81219,
     "lon": 0.02133
   },
-  "geo_fuente": "Mas de la Torre del Marqués, Monroyo / Montroig, Matarraña / Matarranya, Teruel, Aragón, 4"
+  "geo_fuente": "Mas de la Torre del Marqués, Monroyo / Montroig, Matarraña / Matarranya, Teruel, Aragón, 4",
+  "contexto": [
+    {
+      "es": "Torre del Marqués ocupa, según la Guía Michelin, un edificio del siglo XVIII cuidadosamente restaurado. La ficha de Michelin le atribuye 18 habitaciones, diseño moderno y un entorno tranquilo. Cuenta con spa y bodega propia."
+    },
+    {
+      "es": "Está en Monroyo (Teruel), en el Matarraña, en una finca de unas 130 hectáreas de olivos, almendros y viñedos, según una guía de hoteles. La misma fuente sitúa el hotel a unas tres horas en coche de Barcelona y de Valencia."
+    },
+    {
+      "es": "Entró en 2024 entre los primeros cinco hoteles españoles con tres Llaves Michelin."
+    }
+  ]
 }

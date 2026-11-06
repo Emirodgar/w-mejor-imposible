@@ -15,12 +15,26 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/"
+    "https://guide.michelin.com/es/es/articulo/travel/los-primeros-hoteles-con-llave-michelin-todas-las-llaves-de-espana/",
+    "https://guide.michelin.com/mx/es/hotels-stays/madrid/four-seasons-hotel-madrid-13597",
+    "https://www.timeout.es/madrid/es/noticias/asi-sera-el-espectacular-hotel-four-seasons-que-por-fin-abre-en-madrid-este-mes-083120",
+    "https://www.esmadrid.com/alojamientos/four-seasons-hotel-madrid"
   ],
   "busqueda": "Four Seasons Hotel Madrid",
   "coordenadas": {
     "lat": 40.41727,
     "lon": -3.70039
   },
-  "geo_fuente": "Four Seasons Hotel Madrid, 3, Calle de Sevilla, Sol, Centro, Madrid, Comunidad de Madrid, "
+  "geo_fuente": "Four Seasons Hotel Madrid, 3, Calle de Sevilla, Sol, Centro, Madrid, Comunidad de Madrid, ",
+  "contexto": [
+    {
+      "es": "El hotel abrió en 2020 dentro del complejo Canalejas, en el centro de Madrid. Según la Guía Michelin ocupa siete edificios históricos transformados en un espacio de diseño moderno, con 200 habitaciones, spa, piscina, restaurante en la azotea y obras de artistas españoles emergentes."
+    },
+    {
+      "es": "Está en la calle de Sevilla, 3, en el barrio Centro, y permite recorrer a pie buena parte de la ciudad. Michelin cita como restaurantes cercanos con estrella a los de Paco Roncero y CEBO."
+    },
+    {
+      "es": "Michelin le otorgó dos Llaves en 2024 y, según el portal turístico del Ayuntamiento, las mantiene en las tres ediciones publicadas hasta ahora."
+    }
+  ]
 }

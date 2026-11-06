@@ -16,12 +16,25 @@
   },
   "cerca": [],
   "fuentes": [
-    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026"
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://guide.michelin.com/en/pais-vasco/larrabetzu/restaurant/azurmendi",
+    "https://enekoatxa.com/en/eneko-atxa/"
   ],
   "busqueda": "Azurmendi Larrabetzu",
   "coordenadas": {
     "lat": 43.26085,
     "lon": -2.81517
   },
-  "geo_fuente": "Restaurante Azurmendi, Txorierriko korridorea, Larrabetzu, Bizkaia, Euskadi, 48195, España"
+  "geo_fuente": "Restaurante Azurmendi, Txorierriko korridorea, Larrabetzu, Bizkaia, Euskadi, 48195, España",
+  "contexto": [
+    {
+      "es": "Azurmendi está en Larrabetzu, en la barriada de Legina, a las afueras de Bilbao. Según la Guía Michelin, la cocina de Eneko Atxa se apoya en la sostenibilidad y la cultura local. La edición 2026 le mantiene las tres estrellas."
+    },
+    {
+      "es": "El restaurante ocupa desde 2012 un edificio bioclimático propio, según la web del chef, que sitúa en ese mismo año la tercera estrella. Algunas fuentes secundarias hablan de 2013. La visita incluye un recorrido por las instalaciones, y la guía describe dos menús degustación, Adarrak y Gran Menú, y una carta de vinos notable."
+    },
+    {
+      "es": "Atxa cuenta en su web que Azurmendi recibió en 2020 una estrella verde Michelin por su compromiso con la sostenibilidad."
+    }
+  ]
 }
