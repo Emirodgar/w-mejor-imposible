@@ -112,3 +112,25 @@
         upd();
     });
 })();
+
+/* Menú móvil: botón hamburguesa que agrupa navegación e idiomas */
+(function () {
+    var h = document.querySelector('.site-header');
+    var nav = h && h.querySelector('.main-nav');
+    if (!nav) return;
+    var L = { es: 'Menú', en: 'Menu', fr: 'Menu', de: 'Menü', pt: 'Menu', it: 'Menu' };
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'nav-toggle';
+    b.setAttribute('aria-label', L[(document.documentElement.lang || 'es').slice(0, 2)] || 'Menú');
+    b.setAttribute('aria-expanded', 'false');
+    b.innerHTML = '<span></span><span></span><span></span>';
+    nav.id = nav.id || 'main-nav';
+    b.setAttribute('aria-controls', nav.id);
+    h.insertBefore(b, nav);
+    h.classList.add('has-toggle');
+    function set(o) { h.classList.toggle('open', o); b.setAttribute('aria-expanded', String(o)); }
+    b.addEventListener('click', function () { set(!h.classList.contains('open')); });
+    nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+})();

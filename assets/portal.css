@@ -428,3 +428,28 @@ table.cal tbody th { font-weight: 500; }
 .ev p { margin: 0 0 6px; font-size: 15px; }
 .ev .city { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .ev-month { padding-top: 40px; }
+
+/* Menú móvil: botón hamburguesa (lo crea viaje.js) */
+.nav-toggle { display: none; }
+@media (max-width: 720px) {
+    .site-header.has-toggle { gap: 0; position: relative; }
+    .site-header.has-toggle .brand { flex: 1 1 auto; }
+    .site-header.has-toggle .nav-toggle {
+        display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+        width: 44px; height: 44px; padding: 0; cursor: pointer;
+        background: var(--bg); border: 1px solid var(--accent); border-radius: 50%;
+    }
+    .nav-toggle span { display: block; width: 18px; height: 1.5px; background: var(--accent); transition: transform .2s, opacity .2s; }
+    .nav-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .site-header.open .nav-toggle span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .site-header.open .nav-toggle span:nth-child(2) { opacity: 0; }
+    .site-header.open .nav-toggle span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+    .site-header.has-toggle .main-nav, .site-header.has-toggle .lang { display: none; flex: 0 0 100%; }
+    .site-header.has-toggle.open .main-nav {
+        display: flex; flex-direction: column; gap: 0; margin-top: 20px; border-top: 1px solid var(--line);
+    }
+    .site-header.has-toggle.open .main-nav a {
+        padding: 14px 0; font-family: var(--serif); font-size: 24px; letter-spacing: 0; border-bottom: 1px solid var(--line);
+    }
+    .site-header.has-toggle.open .lang { display: flex; margin-top: 20px; }
+}
