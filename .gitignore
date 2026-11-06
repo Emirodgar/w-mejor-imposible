@@ -14,3 +14,6 @@ fotos-propias/
 
 # Paquetes de revisión nativa de traducciones (solo local)
 revision-traducciones/
+
+# Informe de la revisión semanal (lo genera revision_semanal.py)
+informe-revision.md
