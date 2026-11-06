@@ -134,3 +134,18 @@
     nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
 })();
+
+/* Botón flotante: volver arriba */
+(function () {
+    var L = { es: 'Volver arriba', en: 'Back to top', fr: 'Haut de page', de: 'Nach oben', pt: 'Voltar ao topo', it: 'Torna su' };
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'to-top';
+    b.setAttribute('aria-label', L[(document.documentElement.lang || 'es').slice(0, 2)] || L.es);
+    b.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>';
+    b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    document.body.appendChild(b);
+    function upd() { b.classList.toggle('show', window.scrollY > 600); }
+    window.addEventListener('scroll', upd, { passive: true });
+    upd();
+})();

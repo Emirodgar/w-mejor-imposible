@@ -1,0 +1,62 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "index2.html"
+        ],
+        "createdAt": "2026-11-06T19:37:44.106Z",
+        "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "en/index2.html"
+        ],
+        "createdAt": "2026-11-06T19:37:44.411Z",
+        "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "fr/index2.html"
+        ],
+        "createdAt": "2026-11-06T19:37:44.724Z",
+        "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "de/index2.html"
+        ],
+        "createdAt": "2026-11-06T19:37:45.044Z",
+        "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "pt/index2.html"
+        ],
+        "createdAt": "2026-11-06T19:37:45.369Z",
+        "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "it/index2.html"
+        ],
+        "createdAt": "2026-11-06T19:37:45.692Z",
+        "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      }
+    ]
+  }
+}
