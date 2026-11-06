@@ -190,7 +190,7 @@ h1, h2, p, ol { margin: 0; }
 .chips button:hover { border-color: var(--accent); }
 .chips button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .chips button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
-.top-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 72px; }
+.top-list { list-style: none; padding-top: 0; padding-bottom: 0; display: flex; flex-direction: column; gap: 72px; }
 .top-item {
     display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch;
     padding-top: 40px; border-top: 1px solid var(--line);
@@ -227,7 +227,7 @@ h1, h2, p, ol { margin: 0; }
 .compact-list .nm { flex: 1 1 240px; font-family: var(--serif); font-size: 26px; }
 .compact-list .pl { flex: 0 1 200px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .compact-list .arrow { color: var(--muted); }
-.empty { padding: 48px 0; color: var(--muted); }
+.empty { padding-top: 48px; padding-bottom: 48px; color: var(--muted); }
 .method { padding-top: 96px; padding-bottom: 96px; }
 .method .box {
     display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-end;
