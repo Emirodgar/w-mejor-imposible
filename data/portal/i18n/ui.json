@@ -1550,5 +1550,253 @@
     "de": "(geschätzt)",
     "pt": "(estimado)",
     "it": "(stimato)"
+  },
+  "home.interests_h": {
+    "es": "Elige por interés",
+    "en": "Choose by interest",
+    "fr": "Choisissez selon vos envies",
+    "de": "Nach Interesse wählen",
+    "pt": "Escolha por interesse",
+    "it": "Scegli per interesse"
+  },
+  "home.interests_lead": {
+    "es": "Una selección de lugares y planes para cada tipo de viaje.",
+    "en": "A selection of places and itineraries for each kind of trip.",
+    "fr": "Une sélection de lieux et de séjours pour chaque type de voyage.",
+    "de": "Eine Auswahl an Orten und Reisen für jede Art von Reise.",
+    "pt": "Uma seleção de lugares e roteiros para cada tipo de viagem.",
+    "it": "Una selezione di luoghi e itinerari per ogni tipo di viaggio."
+  },
+  "int.eyebrow": {
+    "es": "Selección por interés",
+    "en": "Selection by interest",
+    "fr": "Sélection par centre d'intérêt",
+    "de": "Auswahl nach Interesse",
+    "pt": "Seleção por interesse",
+    "it": "Selezione per interesse"
+  },
+  "int.title": {
+    "es": "{n}: nuestra selección",
+    "en": "{n}: our selection",
+    "fr": "{n} : notre sélection",
+    "de": "{n}: unsere Auswahl",
+    "pt": "{n}: a nossa seleção",
+    "it": "{n}: la nostra selezione"
+  },
+  "int.desc": {
+    "es": "Lugares y planes de nuestros rankings para un viaje de {n}.",
+    "en": "Places and itineraries from our rankings for a {n} trip.",
+    "fr": "Lieux et séjours de nos classements pour un voyage : {n}.",
+    "de": "Orte und Reisen aus unseren Rankings für eine Reise zum Thema {n}.",
+    "pt": "Lugares e roteiros dos nossos rankings para uma viagem de {n}.",
+    "it": "Luoghi e itinerari delle nostre classifiche per un viaggio: {n}."
+  },
+  "int.places": {
+    "es": "Lugares",
+    "en": "Places",
+    "fr": "Lieux",
+    "de": "Orte",
+    "pt": "Lugares",
+    "it": "Luoghi"
+  },
+  "int.count": {
+    "es": "{p} lugares · {q} planes",
+    "en": "{p} places · {q} itineraries",
+    "fr": "{p} lieux · {q} séjours",
+    "de": "{p} Orte · {q} Reisen",
+    "pt": "{p} lugares · {q} roteiros",
+    "it": "{p} luoghi · {q} itinerari"
+  },
+  "int.ranking": {
+    "es": "Ver el ranking completo: {c}",
+    "en": "See the full ranking: {c}",
+    "fr": "Voir le classement complet : {c}",
+    "de": "Gesamtes Ranking ansehen: {c}",
+    "pt": "Ver o ranking completo: {c}",
+    "it": "Vedi la classifica completa: {c}"
+  },
+  "int.back": {
+    "es": "← Volver a la portada",
+    "en": "← Back to the home page",
+    "fr": "← Retour à l'accueil",
+    "de": "← Zurück zur Startseite",
+    "pt": "← Voltar à página inicial",
+    "it": "← Torna alla home"
+  },
+  "nav.events": {
+    "es": "Eventos",
+    "en": "Events",
+    "fr": "Événements",
+    "de": "Veranstaltungen",
+    "pt": "Eventos",
+    "it": "Eventi"
+  },
+  "ev.h1": {
+    "es": "Calendario de eventos",
+    "en": "Events calendar",
+    "fr": "Calendrier des événements",
+    "de": "Veranstaltungskalender",
+    "pt": "Calendário de eventos",
+    "it": "Calendario degli eventi"
+  },
+  "ev.title": {
+    "es": "Calendario de eventos en España, 2026-2027",
+    "en": "Events calendar for Spain, 2026-2027",
+    "fr": "Calendrier des événements en Espagne, 2026-2027",
+    "de": "Veranstaltungskalender für Spanien, 2026-2027",
+    "pt": "Calendário de eventos em Espanha, 2026-2027",
+    "it": "Calendario degli eventi in Spagna, 2026-2027"
+  },
+  "ev.lead": {
+    "es": "Grandes premios, ferias, regatas, torneos y festivales para organizar un viaje, con la fecha de su próxima edición y su fuente.",
+    "en": "Grands prix, fairs, regattas, tournaments and festivals to plan a trip around, with the date of the next edition and its source.",
+    "fr": "Grands prix, salons, régates, tournois et festivals pour organiser un voyage, avec la date de la prochaine édition et sa source.",
+    "de": "Grand Prix, Messen, Regatten, Turniere und Festivals als Reiseanlass, mit dem Termin der nächsten Ausgabe und der Quelle.",
+    "pt": "Grandes prémios, feiras, regatas, torneios e festivais para organizar uma viagem, com a data da próxima edição e a sua fonte.",
+    "it": "Gran premi, fiere, regate, tornei e festival per organizzare un viaggio, con la data della prossima edizione e la sua fonte."
+  },
+  "ev.desc": {
+    "es": "Grandes premios, ferias, regatas, torneos y festivales de España con la fecha de su próxima edición y su fuente.",
+    "en": "Grands prix, fairs, regattas, tournaments and festivals in Spain with the date of the next edition and its source.",
+    "fr": "Grands prix, salons, régates, tournois et festivals en Espagne avec la date de la prochaine édition et sa source.",
+    "de": "Grand Prix, Messen, Regatten, Turniere und Festivals in Spanien mit dem Termin der nächsten Ausgabe und der Quelle.",
+    "pt": "Grandes prémios, feiras, regatas, torneios e festivais de Espanha com a data da próxima edição e a sua fonte.",
+    "it": "Gran premi, fiere, regate, tornei e festival in Spagna con la data della prossima edizione e la sua fonte."
+  },
+  "ev.all": {
+    "es": "Todos",
+    "en": "All",
+    "fr": "Tous",
+    "de": "Alle",
+    "pt": "Todos",
+    "it": "Tutti"
+  },
+  "ev.confirmed": {
+    "es": "Fechas confirmadas",
+    "en": "Dates confirmed",
+    "fr": "Dates confirmées",
+    "de": "Termin bestätigt",
+    "pt": "Datas confirmadas",
+    "it": "Date confermate"
+  },
+  "ev.tbc": {
+    "es": "Fechas por confirmar",
+    "en": "Dates to be confirmed",
+    "fr": "Dates à confirmer",
+    "de": "Termin noch zu bestätigen",
+    "pt": "Datas por confirmar",
+    "it": "Date da confermare"
+  },
+  "ev.source": {
+    "es": "Fuente",
+    "en": "Source",
+    "fr": "Source",
+    "de": "Quelle",
+    "pt": "Fonte",
+    "it": "Fonte"
+  },
+  "ev.guide": {
+    "es": "Guía de {n}",
+    "en": "{n} guide",
+    "fr": "Guide : {n}",
+    "de": "Guide: {n}",
+    "pt": "Guia de {n}",
+    "it": "Guida: {n}"
+  },
+  "ev.none": {
+    "es": "No hay eventos próximos en esta categoría.",
+    "en": "There are no upcoming events in this category.",
+    "fr": "Aucun événement à venir dans cette catégorie.",
+    "de": "In dieser Kategorie gibt es keine kommenden Veranstaltungen.",
+    "pt": "Não há eventos próximos nesta categoria.",
+    "it": "Non ci sono eventi in programma in questa categoria."
+  },
+  "ev.note": {
+    "es": "Las fechas cambian cada año: compruébalas en la web oficial antes de viajar. Revisamos este calendario cada seis meses y los eventos ya celebrados desaparecen de la lista.",
+    "en": "Dates change every year: check the official website before you travel. We review this calendar every six months, and events that have already taken place drop off the list.",
+    "fr": "Les dates changent chaque année : vérifiez-les sur le site officiel avant de partir. Nous révisons ce calendrier tous les six mois et les événements déjà passés disparaissent de la liste.",
+    "de": "Die Termine ändern sich jedes Jahr: Prüfen Sie sie vor der Reise auf der offiziellen Website. Wir überprüfen diesen Kalender alle sechs Monate; bereits stattgefundene Veranstaltungen verschwinden aus der Liste.",
+    "pt": "As datas mudam todos os anos: confirme-as no site oficial antes de viajar. Revemos este calendário a cada seis meses e os eventos já realizados saem da lista.",
+    "it": "Le date cambiano ogni anno: verificale sul sito ufficiale prima di partire. Rivediamo questo calendario ogni sei mesi e gli eventi già svolti escono dall'elenco."
+  },
+  "ev.cat.deporte": {
+    "es": "Deporte",
+    "en": "Sport",
+    "fr": "Sport",
+    "de": "Sport",
+    "pt": "Desporto",
+    "it": "Sport"
+  },
+  "ev.cat.motor": {
+    "es": "Motor",
+    "en": "Motor",
+    "fr": "Sport automobile",
+    "de": "Motorsport",
+    "pt": "Motor",
+    "it": "Motori"
+  },
+  "ev.cat.vela": {
+    "es": "Vela",
+    "en": "Sailing",
+    "fr": "Voile",
+    "de": "Segeln",
+    "pt": "Vela",
+    "it": "Vela"
+  },
+  "ev.cat.golf": {
+    "es": "Golf",
+    "en": "Golf",
+    "fr": "Golf",
+    "de": "Golf",
+    "pt": "Golfe",
+    "it": "Golf"
+  },
+  "ev.cat.cultura": {
+    "es": "Cultura",
+    "en": "Culture",
+    "fr": "Culture",
+    "de": "Kultur",
+    "pt": "Cultura",
+    "it": "Cultura"
+  },
+  "ev.cat.gastronomia": {
+    "es": "Gastronomía",
+    "en": "Gastronomy",
+    "fr": "Gastronomie",
+    "de": "Gastronomie",
+    "pt": "Gastronomia",
+    "it": "Gastronomia"
+  },
+  "ev.cat.vino": {
+    "es": "Vino",
+    "en": "Wine",
+    "fr": "Vin",
+    "de": "Wein",
+    "pt": "Vinho",
+    "it": "Vino"
+  },
+  "ev.cat.moda": {
+    "es": "Moda",
+    "en": "Fashion",
+    "fr": "Mode",
+    "de": "Mode",
+    "pt": "Moda",
+    "it": "Moda"
+  },
+  "ev.cat.musica": {
+    "es": "Música",
+    "en": "Music",
+    "fr": "Musique",
+    "de": "Musik",
+    "pt": "Música",
+    "it": "Musica"
+  },
+  "ev.cat.fiesta": {
+    "es": "Fiesta",
+    "en": "Festival",
+    "fr": "Fête",
+    "de": "Fest",
+    "pt": "Festa",
+    "it": "Festa"
   }
 }

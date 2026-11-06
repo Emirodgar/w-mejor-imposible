@@ -45,6 +45,22 @@ def main():
             print(f'    nota: {f["nota_interna"]}')
     if not hay:
         print('- Ninguna dentro del margen.')
+    ruta_ev = os.path.join(DATA, 'eventos.json')
+    if os.path.exists(ruta_ev):
+        evs = json.load(open(ruta_ev, encoding='utf-8'))['eventos']
+        pasados = [x for x in evs if x.get('publicar') and (x.get('fin') or x.get('inicio')) and (x.get('fin') or x['inicio']) < hoy.isoformat()]
+        tbc = [x for x in evs if x.get('publicar') and x['confianza'] != 'alta' and (x.get('inicio') or x['mes_aprox'] + '-01') <= (hoy + datetime.timedelta(days=90)).isoformat()]
+        print('\n== EVENTOS ==')
+        if pasados:
+            print('Eventos que ya pasaron (poner la fecha de la próxima edición o quitarlos):')
+            for x in pasados:
+                print(f'- {x["nombre"]} (terminó el {x.get("fin") or x["inicio"]})')
+        if tbc:
+            print('Eventos próximos con fechas por confirmar (confirmar en la web oficial):')
+            for x in tbc:
+                print(f'- {x["nombre"]} ({x.get("inicio") or x["mes_aprox"]}) · {x["fuente_url"]}')
+        if not pasados and not tbc:
+            print('- Todo al día.')
     print('\n== Fuentes sin mes fijo: revisar cada seis meses ==')
     for f in sin_mes:
         print(f'- {f["fuente"]} → {", ".join(f["categorias"])}  ({f["nota_interna"]})')

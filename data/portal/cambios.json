@@ -71,6 +71,33 @@
       "texto": {
         "es": "9 de los 11 concesionarios de lujo están verificados; Bentley Marbella y Lamborghini Madrid siguen por verificar."
       }
+    },
+    {
+      "fecha": "2026-11-06",
+      "titulo": {
+        "es": "Calendario de eventos"
+      },
+      "texto": {
+        "es": "25 eventos de 2026 y 2027, con la fecha de su próxima edición y su fuente."
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "titulo": {
+        "es": "Entradas por interés"
+      },
+      "texto": {
+        "es": "Golf, gastronomía, mar y escapada de fin de semana, con lugares y planes de cada uno."
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "titulo": {
+        "es": "Revisión semanal automática"
+      },
+      "texto": {
+        "es": "Cada semana se comprueban las páginas, los enlaces de las fuentes y el calendario de actualización."
+      }
     }
   ]
 }

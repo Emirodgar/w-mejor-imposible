@@ -1,0 +1,90 @@
+{
+  "intereses": [
+    {
+      "slug": "golf",
+      "nombre": {
+        "es": "Golf"
+      },
+      "lead": {
+        "es": "Los campos mejor clasificados de España y los planes que los combinan con buena mesa y descanso."
+      },
+      "lugares": [
+        [
+          "golf",
+          6
+        ]
+      ],
+      "planes": [
+        "marbella-golf-y-mesa",
+        "golf-en-sotogrande",
+        "girona-golf-y-can-roca",
+        "mallorca-mar-golf-y-spa"
+      ]
+    },
+    {
+      "slug": "gastronomia",
+      "nombre": {
+        "es": "Gastronomía"
+      },
+      "lead": {
+        "es": "Restaurantes con estrellas Michelin, bares de coctelería de primer nivel y planes pensados alrededor de la mesa."
+      },
+      "lugares": [
+        [
+          "restaurantes",
+          6
+        ],
+        [
+          "bares-de-cocteleria",
+          3
+        ]
+      ],
+      "planes": [
+        "san-sebastian-mesa-a-mesa",
+        "madrid-de-compras-y-mesa",
+        "barcelona-passeig-de-gracia-y-mesa",
+        "jerez-y-cadiz-vino-motor-y-mesa",
+        "girona-golf-y-can-roca"
+      ]
+    },
+    {
+      "slug": "mar",
+      "nombre": {
+        "es": "Mar"
+      },
+      "lead": {
+        "es": "Puertos deportivos y calas para navegar por el Mediterráneo, con planes de varios días en barco."
+      },
+      "lugares": [
+        [
+          "yates-y-calas",
+          6
+        ]
+      ],
+      "planes": [
+        "ibiza-y-formentera-en-barco",
+        "mallorca-mar-golf-y-spa"
+      ]
+    },
+    {
+      "slug": "escapada",
+      "nombre": {
+        "es": "Escapada de fin de semana"
+      },
+      "lead": {
+        "es": "Planes de dos días y alojamientos con carácter para una escapada corta."
+      },
+      "lugares": [
+        [
+          "alojamientos-historicos",
+          4
+        ],
+        [
+          "spas",
+          2
+        ]
+      ],
+      "planes_max_dias": 2
+    }
+  ]
+}

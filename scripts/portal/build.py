@@ -224,6 +224,7 @@ FOOT = '''
         <nav class="footer-links" aria-label="@@ARIA_FOOT@@">
             <a href="/">@@N_PORSCHE@@</a>
             <a href="@@METHOD@@">@@N_METHOD@@</a>
+            <a href="@@EVENTS@@">@@N_EVENTS@@</a>
             <a href="@@CHANGES@@">@@N_CHANGES@@</a>
         </nav>
     </div>
@@ -309,7 +310,7 @@ def page(path, title, desc, lds, body):
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
-           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'), '@@CHANGES@@': u('/novedades/'), '@@N_CHANGES@@': e(ui('nav.changes')),
+           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'), '@@CHANGES@@': u('/novedades/'), '@@EVENTS@@': u('/eventos/'), '@@N_EVENTS@@': e(ui('nav.events')), '@@N_CHANGES@@': e(ui('nav.changes')),
            '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
@@ -1197,6 +1198,7 @@ def build_home():
         </a>
     </section>
 
+{interests_home()}
     <div id="rankings">{strips}    </div>
 
     <section id="planes" class="plans" aria-labelledby="planes-h">
@@ -1520,7 +1522,7 @@ def build_novedades():
         f'\n        <article class="chg"><p class="eyebrow"><time datetime="{c["fecha"]}">{e(fmt_fecha(c["fecha"]))}</time></p>'
         f'<h3>{e(t(c["titulo"]))}</h3><p>{e(t(c["texto"]))}</p></article>' for c in cam)
     rows = ''
-    for f in cal:
+    for f in [c for c in cal if not c.get('interno')]:
         name = e(f['fuente'])
         if f.get('url'):
             name = f'<a href="{e(f["url"])}" rel="noopener">{name}</a>'
@@ -1557,8 +1559,205 @@ def build_novedades():
 
 
 
+INTERESES = load('intereses.json')['intereses']
+
+
+def interes_datos(x):
+    lugares = []
+    for cat, n in x['lugares']:
+        entries, _ = ranking_entries(cat)
+        lugares += [(cat, en['item']) for en in entries[:n]]
+    if x.get('planes'):
+        planes = [p for p in all_plans() if p['slug'] in x['planes']]
+        planes.sort(key=lambda p: x['planes'].index(p['slug']))
+    else:
+        planes = [p for p in all_plans() if len(p['dias']) <= x.get('planes_max_dias', 2)]
+    return lugares, planes
+
+
+def build_interes(x):
+    lugares, planes = interes_datos(x)
+    name = t(x['nombre'])
+    cards, ld_items = '', []
+    for cat, it in lugares:
+        rk = RANK_POS.get(it['id'])
+        rank = f'<span class="badge ok">{e(ui("dest.rank", n=rk[1], t=rk[2]))}</span>' if rk else ''
+        spec = spec_text(cat, it['ficha'])
+        cards += (f'\n            <li class="dealer">\n                <p class="city">{e(t(CATS[cat]["corto"]))} · {e(it["lugar"])} {rank}</p>'
+                  f'\n                <h3><a href="{item_url(it["id"])}">{e(it["nombre"])}</a></h3>'
+                  f'\n                <p>{e(t(it["por_que"]))}</p>'
+                  + (f'\n                <p class="muted">{e(spec)}</p>' if spec else '') + f'\n                {save_btn(it["id"])}\n            </li>')
+        ld_items.append({"@type": "ListItem", "position": len(ld_items) + 1, "url": SITE + item_url(it['id']), "name": it['nombre']})
+    cats_used = []
+    for cat, _ in x['lugares']:
+        if cat not in cats_used:
+            cats_used.append(cat)
+    more = ''.join(f'\n            <a href="{u(f"/ranking/{c}/")}">{e(ui("int.ranking", c=t(CATS[c]["corto"])))}</a>' for c in cats_used)
+    plan_cards = ''.join(
+        f'\n                <a href="{u("/planes/" + p["slug"] + "/")}">{ph_box(plan_cover(p), "t3")}<p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
+        for p in planes)
+    plans_html = ''
+    if planes:
+        plans_html = f'''
+    <section class="plans" aria-labelledby="int-planes">
+        <div class="wrap">
+            <h2 id="int-planes">{e(ui('nav.plans'))}</h2>
+            <div class="plan-grid">{plan_cards}
+            </div>
+        </div>
+    </section>'''
+    path = f'/intereses/{x["slug"]}/'
+    crumb = [(ui('crumb.home'), u(HOME)), (name, None)]
+    title, desc = ui('int.title', n=name), ui('int.desc', n=name.lower() if LANG != 'de' else name)
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">{e(ui('int.eyebrow'))}</p>
+        <h1>{e(name)}</h1>
+        <p class="lead-text">{e(t(x['lead']))}</p>
+    </section>
+    <section class="wrap dir-brand" aria-labelledby="int-lugares">
+        <h2 id="int-lugares">{e(ui('int.places'))}</h2>
+        <ul class="dealers">{cards}
+        </ul>
+        <nav class="chips" aria-label="{e(ui('int.places'))}">{more}
+        </nav>
+    </section>{plans_html}
+    <section class="wrap dir-brand"><p><a href="{u(HOME)}">{e(ui('int.back'))}</a></p></section>
+</main>
+'''
+    lds = [webpage('CollectionPage', path, title, desc), {"@type": "ItemList", "name": title, "inLanguage": LANG, "itemListElement": ld_items}, bc_ld(crumb)]
+    write(path + 'index.html', page(path, f'{title} · Mejor Imposible', desc, lds, body))
+
+
+def interests_home():
+    cards = ''
+    for x in INTERESES:
+        lugares, planes = interes_datos(x)
+        cards += (f'\n            <a href="{u("/intereses/" + x["slug"] + "/")}"><span class="ititle">{e(t(x["nombre"]))}</span>'
+                  f'<span class="itxt">{e(t(x["lead"]))}</span><span class="icount">{e(ui("int.count", p=len(lugares), q=len(planes)))}</span></a>')
+    return f'''
+    <section class="wrap interests" aria-labelledby="intereses-h">
+        <h2 id="intereses-h">{e(ui('home.interests_h'))}</h2>
+        <p class="lead">{e(ui('home.interests_lead'))}</p>
+        <div class="interest-grid">{cards}
+        </div>
+    </section>
+'''
+
+
+def fechas_evento(x):
+    if x.get('inicio'):
+        a = datetime.date.fromisoformat(x['inicio'])
+        b = datetime.date.fromisoformat(x['fin']) if x.get('fin') else a
+        ma, mb, y = MESES[LANG][a.month - 1], MESES[LANG][b.month - 1], b.year
+        if a == b:
+            return fmt_fecha(x['inicio'])
+        same = (a.month == b.month and a.year == b.year)
+        if LANG == 'es':
+            return f'{a.day} al {b.day} de {ma} de {y}' if same else f'{a.day} de {ma} al {b.day} de {mb} de {y}'
+        if LANG == 'pt':
+            return f'{a.day} a {b.day} de {ma} de {y}' if same else f'{a.day} de {ma} a {b.day} de {mb} de {y}'
+        if LANG == 'en':
+            return f'{ma} {a.day}–{b.day}, {y}' if same else f'{ma} {a.day} – {mb} {b.day}, {y}'
+        if LANG == 'fr':
+            return f'du {a.day} au {b.day} {ma} {y}' if same else f'du {a.day} {ma} au {b.day} {mb} {y}'
+        if LANG == 'de':
+            return f'{a.day}.–{b.day}. {ma} {y}' if same else f'{a.day}. {ma} – {b.day}. {mb} {y}'
+        return f'dal {a.day} al {b.day} {ma} {y}' if same else f'dal {a.day} {ma} al {b.day} {mb} {y}'
+    return cal_fecha({'ym': x['mes_aprox']})
+
+
+def fin_evento(x):
+    if x.get('fin') or x.get('inicio'):
+        return x.get('fin') or x['inicio']
+    y, m = (int(v) for v in x['mes_aprox'].split('-'))
+    nxt = datetime.date(y + (m == 12), m % 12 + 1, 1)
+    return (nxt - datetime.timedelta(days=1)).isoformat()
+
+
+EV_SCRIPT = '''
+<script>
+(function () {
+    var today = new Date().toISOString().slice(0, 10), cat = 'todas';
+    var items = document.querySelectorAll('.ev'), months = document.querySelectorAll('.ev-month'), none = document.getElementById('ev-none');
+    function apply() {
+        var shown = 0;
+        items.forEach(function (el) {
+            var show = el.dataset.end >= today && (cat === 'todas' || el.dataset.cat === cat);
+            el.hidden = !show; if (show) shown++;
+        });
+        months.forEach(function (m) { m.hidden = !m.querySelector('.ev:not([hidden])'); });
+        none.hidden = shown > 0;
+        document.querySelectorAll('[data-ev-cat]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.evCat === cat)); });
+    }
+    document.querySelectorAll('[data-ev-cat]').forEach(function (b) { b.addEventListener('click', function () { cat = b.dataset.evCat; apply(); }); });
+    apply();
+})();
+</script>'''
+
+
+def build_eventos():
+    evs = [x for x in load('eventos.json')['eventos'] if x.get('publicar')]
+    evs.sort(key=lambda x: x.get('inicio') or (x['mes_aprox'] + '-01'))
+    dest_names = {d['slug']: tr(d['nombre']) for d in DESTS}
+    cats = []
+    for x in evs:
+        if x['categoria'] not in cats:
+            cats.append(x['categoria'])
+    chips = f'<button type="button" data-ev-cat="todas" aria-pressed="true">{e(ui("ev.all"))}</button>' + ''.join(
+        f'<button type="button" data-ev-cat="{c}" aria-pressed="false">{e(ui("ev.cat." + c))}</button>' for c in cats)
+    sections, cur, buf, ld = '', None, '', []
+    for x in evs + [None]:
+        ym = None if x is None else (x.get('inicio') or x['mes_aprox'] + '-01')[:7]
+        if cur and ym != cur:
+            y, m = (int(v) for v in cur.split('-'))
+            sections += (f'\n    <section class="wrap ev-month" aria-label="{MESES[LANG][m - 1]} {y}">\n        <h2>{e(MESES[LANG][m - 1].capitalize() if LANG != "en" else MESES[LANG][m - 1])} {y}</h2>'
+                         f'\n        <div class="ev-list">{buf}\n        </div>\n    </section>')
+            buf = ''
+        cur = ym
+        if x is None:
+            break
+        ok = x['confianza'] == 'alta'
+        badge = f'<span class="badge{" ok" if ok else ""}">{e(ui("ev.confirmed" if ok else "ev.tbc"))}</span>'
+        guide = (f' · <a href="{u("/destinos/" + x["destino"] + "/")}">{e(ui("ev.guide", n=dest_names[x["destino"]]))}</a>'
+                 if x.get('destino') in dest_names else '')
+        buf += (f'\n            <article class="ev" data-cat="{x["categoria"]}" data-end="{fin_evento(x)}">'
+                f'\n                <p class="eyebrow">{e(fechas_evento(x))} {badge}</p>'
+                f'\n                <h3>{e(x["nombre"])}</h3>'
+                f'\n                <p class="city">{e(ui("ev.cat." + x["categoria"]))} · {e(tr(x["lugar"]))}</p>'
+                f'\n                <p>{e(tr(x["que_es"]))}</p>'
+                f'\n                <p class="muted"><a href="{e(x["fuente_url"])}" rel="noopener">{e(ui("ev.source"))}</a>{guide}</p>\n            </article>')
+        ld.append({"@type": "Event", "name": x['nombre'], "location": {"@type": "Place", "name": tr(x['lugar']), "address": {"@type": "PostalAddress", "addressCountry": "ES"}},
+                   **({"startDate": x['inicio']} if x.get('inicio') else {}), **({"endDate": x['fin']} if x.get('fin') else {}),
+                   "description": tr(x['que_es']), "url": x['fuente_url'], "eventStatus": "https://schema.org/EventScheduled"})
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('ev.h1'), None)]
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <h1>{e(ui('ev.h1'))}</h1>
+        <p class="lead-text">{e(ui('ev.lead'))}</p>
+        <div class="chips left" role="group" aria-label="{e(ui('search.cat'))}">{chips}</div>
+    </section>{sections}
+    <section class="wrap prose">
+        <p id="ev-none" hidden>{e(ui('ev.none'))}</p>
+        <p class="muted">{e(ui('ev.note'))}</p>
+    </section>
+</main>
+{EV_SCRIPT}
+'''
+    path = '/eventos/'
+    lds = [webpage('CollectionPage', path, ui('ev.title'), ui('ev.desc')), {"@type": "ItemList", "name": ui('ev.title'), "numberOfItems": len(ld),
+           "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": ev} for i, ev in enumerate(ld)]}, bc_ld(crumb)]
+    write(path + 'index.html', page(path, f'{ui("ev.title")} · Mejor Imposible', ui('ev.desc'), lds, body))
+
+
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
-              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/', '/mi-viaje/', '/novedades/'] + [f'/destinos/{d["slug"]}/' for d in DESTS]
+              + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/', '/mi-viaje/', '/novedades/', '/eventos/'] + [f'/intereses/{x["slug"]}/' for x in INTERESES] + [f'/destinos/{d["slug"]}/' for d in DESTS]
               + ['/ranking/' + r + '/' for r in ITEMS] + ['/ranking/compras-de-lujo/tiendas/'])
 
 
@@ -1599,6 +1798,9 @@ if __name__ == '__main__':
         build_search()
         build_trip()
         build_novedades()
+        build_eventos()
+        for _x in INTERESES:
+            build_interes(_x)
     build_sitemap()
     bad = False
     for lang in PUBLISHED:

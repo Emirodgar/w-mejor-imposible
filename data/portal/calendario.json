@@ -286,6 +286,27 @@
       "mes": null,
       "confianza": "baja",
       "nota_interna": "Revisar el listado cada seis meses."
+    },
+    {
+      "id": "eventos",
+      "fuente": "Calendario de eventos",
+      "que_publica": {
+        "es": "Fechas de la próxima edición de cada evento"
+      },
+      "ultima": {
+        "texto": "2026"
+      },
+      "proxima": {
+        "texto": "Sin fecha fija"
+      },
+      "url": "https://mejorimposible.es/eventos/",
+      "categorias": [
+        "eventos"
+      ],
+      "mes": null,
+      "confianza": "media",
+      "interno": true,
+      "nota_interna": "Revisar cada seis meses (mayo y noviembre): fechas por confirmar y eventos ya celebrados. Los de confianza baja están en eventos.json con publicar=false."
     }
   ]
 }
