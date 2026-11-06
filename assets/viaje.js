@@ -73,3 +73,42 @@
     }
     update();
 })();
+
+/* Tiras de la portada: flechas laterales (el deslizamiento táctil es nativo) */
+(function () {
+    var L = {
+        es: ['Anterior', 'Siguiente'], en: ['Previous', 'Next'], fr: ['Précédent', 'Suivant'],
+        de: ['Zurück', 'Weiter'], pt: ['Anterior', 'Seguinte'], it: ['Precedente', 'Successivo']
+    };
+    var lab = L[(document.documentElement.lang || 'es').slice(0, 2)] || L.es;
+    var chev = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>';
+    document.querySelectorAll('.strip-scroll').forEach(function (sc) {
+        var rail = document.createElement('div');
+        rail.className = 'strip-rail';
+        sc.parentNode.insertBefore(rail, sc);
+        rail.appendChild(sc);
+        function mk(dir) {
+            var b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'strip-arrow ' + (dir < 0 ? 'prev' : 'next');
+            b.setAttribute('aria-label', lab[dir < 0 ? 0 : 1]);
+            b.innerHTML = chev;
+            b.addEventListener('click', function () {
+                var li = sc.querySelector('li');
+                var step = li ? li.getBoundingClientRect().width + 20 : sc.clientWidth * 0.8;
+                sc.scrollBy({ left: dir * step * 2, behavior: 'smooth' });
+            });
+            rail.appendChild(b);
+            return b;
+        }
+        var prev = mk(-1), next = mk(1);
+        function upd() {
+            var max = sc.scrollWidth - sc.clientWidth - 2;
+            prev.hidden = sc.scrollLeft <= 2;
+            next.hidden = sc.scrollLeft >= max;
+        }
+        sc.addEventListener('scroll', upd, { passive: true });
+        window.addEventListener('resize', upd);
+        upd();
+    });
+})();
