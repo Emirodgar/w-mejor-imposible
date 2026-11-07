@@ -1,5 +1,64 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:14602875942170470039",
+    "url": "https://www.roadandtrack.com/car-culture/a74313416/fender-bender-porsche-taycan-repair-matt-farah/",
+    "source": "RoadandTrack.com",
+    "published": "2026-11-06T18:49:14Z",
+    "headline": "Por qué un golpe leve en un Porsche Taycan puede costar 35.000 dólares",
+    "excerpt": "Un informe de Road & Track analiza cómo un choque leve en un Taycan generó una factura de reparación desorbitada debido a la complejidad estructural y técnica del modelo.",
+    "category": "Análisis",
+    "models": [
+      "taycan"
+    ],
+    "impact": "Los gastos de reparación de carrocería en deportivos eléctricos exigen pólizas de seguro muy completas y obligan a comprobar a fondo el historial de partes de chapa al comprar usado.",
+    "links": [
+      "coste_real",
+      "sm_taycan",
+      "garantia_approved"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12125905739587955465",
+    "url": "https://businessmotoring.co.uk/porsche-updates-infotainment-system-on-taycan-ice-and-hybrid-models/",
+    "source": "businessmotoring.co.uk",
+    "published": "2026-11-06T15:28:37Z",
+    "headline": "Porsche actualiza el sistema multimedia en el Taycan, 911, Panamera y Cayenne",
+    "excerpt": "La marca introduce mejoras en el sistema de infoentretenimiento tanto en el eléctrico Taycan como en las versiones de combustión e híbridas del 911, Panamera y Cayenne.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "cayenne",
+      "panamera",
+      "taycan"
+    ],
+    "impact": "Las mejoras en conectividad e interfaz repercuten en la experiencia diaria y ayudan a mantener vigente el valor residual frente a unidades con versiones de software más antiguas.",
+    "links": [
+      "comparador",
+      "opiniones"
+    ],
+    "week": "2026-W45"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:13360649300470293816",
+    "url": "https://roadethos.com/car-buying/we-compared-the-2026-porsche-macan-and-lexus-nx-one-clearly-won",
+    "source": "Road Ethos",
+    "published": "2026-11-06T15:07:26Z",
+    "headline": "Porsche Macan frente a Lexus NX: el tacto dinámico marca las distancias",
+    "excerpt": "Una comparativa entre el SUV compacto de Porsche y el Lexus NX resalta al Macan como la referencia para quienes priorizan el comportamiento dinámico sobre la carretera.",
+    "category": "Análisis",
+    "models": [
+      "macan"
+    ],
+    "impact": "Si valoras las sensaciones de conducción por encima del coste de mantenimiento o el confort puro, el Macan retiene mejor su atractivo frente a rivales generalistas premium.",
+    "links": [
+      "comparativas",
+      "sm_macan",
+      "coste_real"
+    ],
+    "week": "2026-W45"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:13382450732145813628",
     "url": "https://gtspirit.com/2026/11/05/mercedes-amg-gt-4-door-coupe-first-drive-the-porsche-taycan-turbo-gt-has-met-its-match/",
     "source": "gtspirit.com",

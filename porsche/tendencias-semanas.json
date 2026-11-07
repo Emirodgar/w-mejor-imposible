@@ -166,29 +166,29 @@
     "updated": "2026-11-01"
   },
   "2026-W45": {
-    "summary": "Porsche reajusta su calendario de electrificación confirmando la continuidad de los motores de gasolina en la gama Cayenne, al tiempo que moderniza el infoentretenimiento de sus modelos clave con mayor potencia de procesamiento y nuevas funciones. En el terreno de las altas prestaciones eléctricas, el Taycan Turbo GT afronta la llegada de un nuevo rival directo desarrollado por Mercedes-AMG con más de 1.100 CV. Por su parte, el mercado de ocasión refleja un notable interés por los deportivos analógicos, situando la cotización del 911 GT3 RS 997.2 manual por encima de versiones automáticas más recientes.",
+    "summary": "Porsche ha renovado el equipamiento tecnológico de casi toda su gama con un sistema multimedia sustancialmente más potente para los 911, Taycan, Panamera y Cayenne. En el apartado estratégico, la marca ha confirmado que mantendrá la combustión en el Cayenne junto a su futura versión eléctrica, respondiendo a la evolución real de la demanda. Por otro lado, los datos sobre los elevados costes de reparación estructural en el Taycan tras pequeños percances recuerdan la importancia de valorar el coste total de uso y la cobertura de garantías oficiales al adquirir un modelo de la marca.",
     "highlights": [
       {
-        "url": "https://annuelauto.ca/essai-routier-du-porsche-cayenne-electrique/",
-        "shortTitle": "Motores térmicos en el Cayenne",
-        "note": "Porsche confirma que las versiones de combustión convivirán con la nueva generación eléctrica tras reajustar sus objetivos de ventas para 2030."
-      },
-      {
         "url": "https://www.roadandtrack.com/news/a74333834/porsche-more-powerful-infotainment-911-taycan-panamera-cayenne/",
-        "shortTitle": "Nuevo sistema de infoentretenimiento",
-        "note": "Las gamas 911, Taycan, Panamera y Cayenne reciben una actualización multimedia con cinco veces más capacidad de cálculo y control por voz con inteligencia artificial."
+        "shortTitle": "Nuevo infoentretenimiento más potente",
+        "note": "Porsche multiplica por cinco la capacidad de procesamiento del sistema multimedia e integra control por voz con inteligencia artificial."
       },
       {
-        "url": "https://gtspirit.com/2026/11/05/mercedes-amg-gt-4-door-coupe-first-drive-the-porsche-taycan-turbo-gt-has-met-its-match/",
-        "shortTitle": "Rival para el Taycan",
-        "note": "Mercedes-AMG proyecta una berlina deportiva de 1.169 CV y recarga de 600 kW para competir directamente con el Taycan Turbo GT."
+        "url": "https://annuelauto.ca/essai-routier-du-porsche-cayenne-electrique/",
+        "shortTitle": "Gasolina confirmada en Cayenne",
+        "note": "La marca mantendrá los motores de combustión conviviendo con la próxima generación eléctrica del SUV tras ajustar sus metas comerciales."
+      },
+      {
+        "url": "https://www.roadandtrack.com/car-culture/a74313416/fender-bender-porsche-taycan-repair-matt-farah/",
+        "shortTitle": "Costes de reparación Taycan",
+        "note": "La complejidad técnica y estructural del modelo eléctrico puede disparar la factura de un golpe leve hasta cifras desorbitadas."
       },
       {
         "url": "https://www.hotcars.com/older-manual-porsche-gt3-rs-that-out-earned-faster-newer-pdk-model/",
-        "shortTitle": "Cotización récord del 997.2",
-        "note": "Los 911 GT3 RS manuales de 2011 rondan los 450.000 dólares en el mercado secundario y superan los valores de generaciones automáticas posteriores."
+        "shortTitle": "Cotización récord 997 GT3 RS",
+        "note": "Las unidades manuales de 2011 rondan los 450.000 dólares y sobrepasan la cotización de generaciones automáticas más modernas."
       }
     ],
-    "updated": "2026-11-05"
+    "updated": "2026-11-07"
   }
 }
