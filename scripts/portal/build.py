@@ -1182,7 +1182,8 @@ def build_home():
     body = f'''
 <main>
     <section class="wrap hero">
-        <h1>{e(ui('home.eyebrow'))}.<br>{e(ui('home.h1'))}</h1>
+        <p class="eyebrow">{e(ui('home.eyebrow'))}</p>
+        <h1>{e(ui('home.h1'))}</h1>
         <p class="lead">{e(ui('home.lead'))}</p>
         <nav class="chips" aria-label="{e(ui('home.cats_aria'))}">{chips}
         </nav>

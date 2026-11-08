@@ -56,6 +56,60 @@
         ],
         "createdAt": "2026-11-06T19:37:45.692Z",
         "reason": "assistant review: letter-spacing >.05em in portal.css is only on short uppercase labels, nav and link text, not body paragraphs"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "index2.html"
+        ],
+        "createdAt": "2026-11-08T18:43:26.085Z",
+        "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "en/index2.html"
+        ],
+        "createdAt": "2026-11-08T18:43:26.412Z",
+        "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "fr/index2.html"
+        ],
+        "createdAt": "2026-11-08T18:43:26.726Z",
+        "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "de/index2.html"
+        ],
+        "createdAt": "2026-11-08T18:43:27.053Z",
+        "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "pt/index2.html"
+        ],
+        "createdAt": "2026-11-08T18:43:27.372Z",
+        "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
+      },
+      {
+        "rule": "hero-eyebrow-chip",
+        "value": "*",
+        "files": [
+          "it/index2.html"
+        ],
+        "createdAt": "2026-11-08T18:43:27.676Z",
+        "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
       }
     ]
   }
