@@ -35,5 +35,13 @@
     {
       "es": "En 2024 cumplió 50 años. Han entrenado allí pilotos como Ángel Nieto, Sito Pons o Álex Crivillé, y en 2023 Porsche probó en él su monoplaza de Fórmula E."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuit-de-calafat.jpg",
+    "autor": "Kbcfotografia",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Calafat_(229700715).jpeg",
+    "titulo": "File:Calafat (229700715).jpeg"
+  }
 }

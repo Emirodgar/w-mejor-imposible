@@ -35,5 +35,13 @@
     {
       "es": "Su web oficial indica que ofrece jornadas de pista para coches y motos, kárting, zona de todoterreno, zona de derrapes y alquiler de instalaciones. Está en la calle Malvasía, en Los Arcos."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuito-de-navarra.jpg",
+    "autor": "Anton-Sid5",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Sidorkova_Irina,_Circuito_de_Navarra.jpg",
+    "titulo": "File:Sidorkova Irina, Circuito de Navarra.jpg"
+  }
 }

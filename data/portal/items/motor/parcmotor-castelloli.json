@@ -35,5 +35,13 @@
     {
       "es": "El proyecto data de 2001. La primera instalación, el circuito de motocross, se inauguró en 2002. La construcción del circuito de velocidad comenzó en 2004 y el conjunto se terminó en 2009, por iniciativa del Circuit de Catalunya y la Generalitat con la Federación Catalana de Motociclismo. En 2008 acogió una prueba del Mundial de trial al aire libre."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/motor/parcmotor-castelloli.jpg",
+    "autor": "Jordiferrer",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Parcmotor_Castellol%C3%AD_06_Circuit_de_l%27Escola_de_Conducci%C3%B3_FAST.jpg",
+    "titulo": "File:Parcmotor Castellolí 06 Circuit de l'Escola de Conducció FAST.jpg"
+  }
 }

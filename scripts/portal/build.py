@@ -129,7 +129,7 @@ def photo_img(item, eager=False, cls=''):
         return ''
     if item not in USED:
         USED.append(item)
-    return (f'<img{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} src="{e(fr["archivo"])}" alt="{e(item["nombre"])}, {e(item["lugar"])}" '
+    return (f'<img{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} src="{e(fr["archivo"])}" alt="{e(item["nombre"])}{", " + e(item["lugar"]) if item["lugar"] else ""}" '
             f'{"" if eager else "loading=" + chr(34) + "lazy" + chr(34) + " "}decoding="async">')
 
 
@@ -147,6 +147,9 @@ def credits_html():
     lis = ''
     for it in sorted(USED, key=lambda x: x['nombre']):
         fr = it['foto_real']
+        if fr.get('autor') == 'Unsplash':
+            lis += f'\n            <li>{e(it["nombre"])}: <a href="https://unsplash.com/license" rel="noopener">Unsplash</a></li>'
+            continue
         if fr.get('origen') == 'propia':
             lis += f'\n            <li>{e(it["nombre"])}: © {e(fr.get("autor") or "Mejor Imposible")}</li>'
             continue
@@ -1178,7 +1181,9 @@ def build_home():
         f'\n                <a href="{u("/planes/" + p["slug"] + "/")}">{ph_box(plan_cover(p), "t3")}<p class="meta">{e(t(p["meta_corta"]))}</p><p class="ptitle">{e(t(p["titulo"]))}</p></a>'
         for p in all_plans())
     golf = u('/ranking/golf/')
-    ENTRY_GOLF = ranking_entries('golf')[0][0]['item']
+    # Portada de la categoría (foto aportada por el sitio, no de un campo concreto)
+    ENTRY_GOLF = {'nombre': 'Green de golf visto desde el aire', 'lugar': '',
+                  'foto_real': {'archivo': '/img/portal/golf/portada.jpg', 'origen': 'propia', 'autor': 'Unsplash'}}
     body = f'''
 <main>
     <section class="wrap hero">

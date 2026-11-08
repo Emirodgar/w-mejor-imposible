@@ -35,5 +35,12 @@
     {
       "es": "Atrio estuvo entre los cinco primeros hoteles españoles con tres Llaves en abril de 2024 y la selección de 2025 lo mantiene con esa distinción."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/atrio.jpg",
+    "autor": "Atrio Restaurante Hotel",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://atriocaceres.com/"
+  }
 }

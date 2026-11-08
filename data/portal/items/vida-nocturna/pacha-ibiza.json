@@ -37,5 +37,13 @@
     {
       "es": "DJ Mag lo sitúa en el puesto 18 de su Top 100 Clubs 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/pacha-ibiza.jpg",
+    "autor": "Maria marv",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Pacha_Ibiza_nightclub.jpg",
+    "titulo": "File:Pacha Ibiza nightclub.jpg"
+  }
 }

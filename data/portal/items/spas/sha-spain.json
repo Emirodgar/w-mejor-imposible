@@ -37,5 +37,11 @@
     {
       "es": "En 2026 ganó el premio a mejor retiro de bienestar de España en los World Spa Awards, tras haberlo ganado también en 2025."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/sha-spain.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

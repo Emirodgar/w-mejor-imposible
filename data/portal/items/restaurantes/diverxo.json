@@ -40,5 +40,13 @@
     {
       "es": "En The World's 50 Best, DiverXO entró en 2021 en el puesto 20, subió al cuarto en 2022 y fue tercero en 2023, según Fine Dining Lovers; la web oficial de la lista lo recoge cuarto en 2024 y 2025."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/diverxo.jpg",
+    "autor": "City Foodsters",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:DiverXO_AV4A3498_(39601796080).jpg",
+    "titulo": "File:DiverXO AV4A3498 (39601796080).jpg"
+  }
 }

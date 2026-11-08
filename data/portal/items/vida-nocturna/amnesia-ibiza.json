@@ -35,5 +35,13 @@
     {
       "es": "La temporada 2026 arrancó el 9 de mayo con una fiesta de apertura de más de 24 horas, y el cierre del aniversario fue el 10 de octubre. Durante el año se recuperó la Fiesta de la Espuma, en junio, y se montó la exposición «50 Years, 50 Memories» sobre su historia. El cierre estrenó una sala nueva, El Taller. La programación por noches y residencias se publica cada año en la web oficial."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/amnesia-ibiza.jpg",
+    "autor": "Amnesia Ibiza from Ibiza, Spain",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Amnesia_ibiza.jpeg",
+    "titulo": "File:Amnesia ibiza.jpeg"
+  }
 }

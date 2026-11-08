@@ -37,5 +37,13 @@
     {
       "es": "El recinto incluye una zona de restauración con restaurantes propios, que la web oficial presenta en su sección gastronómica."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/la-roca-village.jpg",
+    "autor": "Manuel pino",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:C.C.L.ROCA...village_-_panoramio.jpg",
+    "titulo": "File:C.C.L.ROCA...village - panoramio.jpg"
+  }
 }

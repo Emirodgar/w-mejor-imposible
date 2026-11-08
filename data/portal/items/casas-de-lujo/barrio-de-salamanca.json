@@ -43,5 +43,13 @@
     {
       "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/barrio-de-salamanca.jpg",
+    "autor": "AntoineOne",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Boutique_Carrera_y_Carrera_Calle_Serrano_Madrid.jpg",
+    "titulo": "File:Boutique Carrera y Carrera Calle Serrano Madrid.jpg"
+  }
 }

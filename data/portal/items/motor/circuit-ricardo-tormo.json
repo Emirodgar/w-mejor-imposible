@@ -35,5 +35,13 @@
     {
       "es": "Es sede del Gran Premio de la Comunitat Valenciana de MotoGP, que se disputó de 1999 a 2023 y desde 2025. En 2020 acogió el Gran Premio de Europa. En 2021 celebró el ePrix de Valencia y, salvo en 2024, ha sido sede de los test de pretemporada de Fórmula E desde 2017."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/motor/circuit-ricardo-tormo.jpg",
+    "autor": "Juan2910",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Ricardo_Tormo.jpg",
+    "titulo": "File:Ricardo Tormo.jpg"
+  }
 }

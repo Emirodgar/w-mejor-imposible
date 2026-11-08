@@ -42,5 +42,11 @@
     {
       "es": "Los World Spa Awards lo eligieron mejor spa de hotel de España en 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/the-beauty-concept-spa-mandarin-oriental-ritz.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

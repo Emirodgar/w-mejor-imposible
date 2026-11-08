@@ -44,5 +44,11 @@
     {
       "es": "Fue elegido mejor spa de resort de España en los World Spa Awards 2023 y en 2026 volvió a estar nominado."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/six-senses-spa-puente-romano.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

@@ -38,5 +38,13 @@
     {
       "es": "Las dos calles se cruzan en el entorno de la calle de Serrano con Ortega y Gasset, cerca del Museo Arqueológico Nacional y del parque del Retiro."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/serrano-y-ortega-y-gasset.jpg",
+    "autor": "Luis García (Zaqarbal)",
+    "licencia": "CC BY-SA 3.0 es",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Calle_de_Jos%C3%A9_Ortega_y_Gasset_(Madrid)_01.jpg",
+    "titulo": "File:Calle de José Ortega y Gasset (Madrid) 01.jpg"
+  }
 }

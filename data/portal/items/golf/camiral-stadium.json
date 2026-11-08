@@ -36,5 +36,11 @@
     {
       "es": "En 2025 se confirmó que será sede de la Ryder Cup de 2031, la segunda que se celebra en España. El resort, llamado Camiral Golf & Wellness, está en Caldes de Malavella, en la provincia de Girona, y combina el campo con instalaciones de bienestar."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/golf/camiral-stadium.jpg",
+    "autor": "Mejor Imposible",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

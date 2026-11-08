@@ -43,5 +43,11 @@
     {
       "es": "En 2026 estuvo nominado en los World Spa Awards a mejor spa de resort de España."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/spa-four-seasons-formentor.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

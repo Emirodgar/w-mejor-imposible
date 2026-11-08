@@ -36,5 +36,12 @@
     {
       "es": "Fue uno de los cinco primeros hoteles españoles con tres Llaves Michelin, en 2024, junto con el Mandarin Oriental Ritz de Madrid y Torre del Marqués."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/terra-dominicata.jpg",
+    "autor": "Terra Dominicata",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://terradominicata.com/"
+  }
 }

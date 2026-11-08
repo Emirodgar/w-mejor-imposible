@@ -36,5 +36,13 @@
     {
       "es": "En 2004 se amplió con los palacios de Goyeneche y Guaqui, obra de BOPBAA, para albergar la colección de Carmen Thyssen-Bornemisza. Desde 2021 forma parte del Paisaje de la Luz, inscrito por la UNESCO."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/museos/museo-thyssen.jpg",
+    "autor": "Luis García (Zaqarbal)",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Museo_Thyssen-Bornemisza_(Madrid)_07.jpg",
+    "titulo": "File:Museo Thyssen-Bornemisza (Madrid) 07.jpg"
+  }
 }

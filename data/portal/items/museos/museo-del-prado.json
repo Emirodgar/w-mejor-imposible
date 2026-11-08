@@ -38,5 +38,13 @@
     {
       "es": "Rafael Moneo diseñó entre 2001 y 2007 la ampliación hacia el claustro de los Jerónimos, sin alterar sustancialmente el edificio de Villanueva."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/museos/museo-del-prado.jpg",
+    "autor": "Emilio J. Rodríguez Posada",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_2016_(25185969599).jpg",
+    "titulo": "File:Museo del Prado 2016 (25185969599).jpg"
+  }
 }

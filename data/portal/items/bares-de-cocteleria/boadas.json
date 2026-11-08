@@ -36,5 +36,13 @@
     {
       "es": "En 2022 el equipo de Sips, con Simone Caporale y Marc Álvarez, recuperó el bar y mantiene sus tradiciones. Está en el puesto 52 de The World's 50 Best Bars 2026 y en el 36 de Europe's 50 Best Bars 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bares-de-cocteleria/boadas.jpg",
+    "autor": "Pitxiquin",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Cockteleria_boadas_barcelona.jpg",
+    "titulo": "File:Cockteleria boadas barcelona.jpg"
+  }
 }

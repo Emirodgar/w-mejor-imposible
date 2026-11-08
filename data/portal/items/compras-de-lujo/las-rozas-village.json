@@ -36,5 +36,13 @@
     {
       "es": "La oferta gastronómica del recinto incluye restaurantes, cafeterías y terrazas, según la misma guía turística."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/las-rozas-village.jpg",
+    "autor": "jacilluch",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Restaurante_-_Las_Rozas_Village_-_Chic_outlet_shopping_(6926664573).jpg",
+    "titulo": "File:Restaurante - Las Rozas Village - Chic outlet shopping (6926664573).jpg"
+  }
 }

@@ -35,5 +35,13 @@
     {
       "es": "Es una calle corta, por lo que el paseo enlaza con la catedral, el Museo Picasso y la plaza de la Constitución a pocos minutos a pie. Para joyería y relojería, la oferta se reparte por calles próximas."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/marques-de-larios.jpg",
+    "autor": "Gruban",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Calle_Larios,_M%C3%A1laga_01.jpg",
+    "titulo": "File:Calle Larios, Málaga 01.jpg"
+  }
 }

@@ -40,5 +40,11 @@
     {
       "es": "Está en el Parque Natural de la Albufera, en la costa a pocos kilómetros de Valencia, junto al Parador de El Saler. Según Paradores, Arana vio el potencial del terreno paseando por el pinar. EGA Golf lo vincula con la Seve Trophy de 2003 y con varias ediciones del Open de España, fechas que conviene contrastar con una fuente oficial."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/golf/el-saler.jpg",
+    "autor": "Mejor Imposible",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

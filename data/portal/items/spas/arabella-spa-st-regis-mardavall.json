@@ -42,5 +42,11 @@
     {
       "es": "En 2026 recibió el premio a mejor spa de resort de España en los World Spa Awards."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/arabella-spa-st-regis-mardavall.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

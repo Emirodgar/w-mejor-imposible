@@ -44,5 +44,11 @@
     {
       "es": "En 2026 estuvo nominado en los World Spa Awards a mejor spa de resort y a mejor retiro de bienestar de España."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/pure-seven-7pines-ibiza.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

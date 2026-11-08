@@ -37,5 +37,13 @@
     {
       "es": "Junto a la entrada se alza Puppy, la escultura de Jeff Koons de 1992 cubierta de plantas con flor, que el museo adquirió en 1997. Desde entonces su colección se centra en obras de mediados del siglo XX a la actualidad y complementa las de la Fundación Solomon R. Guggenheim."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/museos/guggenheim-bilbao.jpg",
+    "autor": "Naotake Murayama",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Museo_Guggenheim,_Bilbao_(31273245344).jpg",
+    "titulo": "File:Museo Guggenheim, Bilbao (31273245344).jpg"
+  }
 }

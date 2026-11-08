@@ -36,5 +36,13 @@
     {
       "es": "Picasso donó en 1968 los 58 óleos de la serie de Las Meninas. En 1970 llegó otra donación, con 236 pinturas, 1.149 dibujos y 17 cuadernos. El museo muestra también la etapa de formación del artista, que se educó en Barcelona entre 1895 y 1904."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/museos/museu-picasso-barcelona.jpg",
+    "autor": "Kippelboy",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Museu_Picasso-_Palau_Finestres_-_Entrada_temporals.JPG",
+    "titulo": "File:Museu Picasso- Palau Finestres - Entrada temporals.JPG"
+  }
 }

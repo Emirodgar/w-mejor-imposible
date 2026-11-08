@@ -43,5 +43,11 @@
     {
       "es": "En 2026 estuvo nominado en los World Spa Awards a mejor spa de hotel de España."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/spa-mandarin-oriental-barcelona.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

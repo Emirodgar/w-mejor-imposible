@@ -35,5 +35,11 @@
     {
       "es": "El club inauguró su casa club en 1965 y acogió el Open de España en 1966. En 2014 celebró su 50.º aniversario. Está en Sotogrande, en el campo de Gibraltar (Cádiz), a poca distancia de Valderrama, otro campo de la zona diseñado también por Trent Jones."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/golf/real-club-de-golf-sotogrande.jpg",
+    "autor": "Mejor Imposible",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

@@ -43,5 +43,11 @@
     {
       "es": "Los World Spa Awards lo nombraron mejor spa de hotel de España en 2023, y en 2026 volvió a figurar entre los nominados de esa categoría."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/sense-rosewood-villa-magna.jpg",
+    "autor": "Unsplash",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }

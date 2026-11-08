@@ -38,5 +38,13 @@
     {
       "es": "La colección se centra en el arte español, con obras destacadas de Pablo Picasso y Salvador Dalí, y presencia de Joan Miró. La pieza más conocida es el Guernica, de Picasso, pintado en 1937 y expuesto en el museo desde 1992, en el edificio Sabatini."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/museos/museo-reina-sofia.jpg",
+    "autor": "Iantomferry",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa_interior.jpg",
+    "titulo": "File:Museo Nacional Centro de Arte Reina Sofía interior.jpg"
+  }
 }

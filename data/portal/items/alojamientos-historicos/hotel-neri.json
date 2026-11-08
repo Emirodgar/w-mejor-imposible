@@ -37,5 +37,13 @@
     {
       "es": "El aeropuerto de Barcelona-El Prat queda a unos 18 km. Al estar en pleno casco antiguo, el entorno es peatonal y muy silencioso para su ubicación."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/hotel-neri.jpg",
+    "autor": "MarcelloScotti",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Sant_Felip_Neri_-_Barcelona.jpg",
+    "titulo": "File:Sant Felip Neri - Barcelona.jpg"
+  }
 }
