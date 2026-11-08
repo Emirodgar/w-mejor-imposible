@@ -166,29 +166,34 @@
     "updated": "2026-11-01"
   },
   "2026-W45": {
-    "summary": "Porsche reajusta su calendario de electrificación confirmando la continuidad de los motores de gasolina en la gama Cayenne, al tiempo que moderniza el infoentretenimiento de sus modelos clave con mayor potencia de procesamiento y nuevas funciones. En el terreno de las altas prestaciones eléctricas, el Taycan Turbo GT afronta la llegada de un nuevo rival directo desarrollado por Mercedes-AMG con más de 1.100 CV. Por su parte, el mercado de ocasión refleja un notable interés por los deportivos analógicos, situando la cotización del 911 GT3 RS 997.2 manual por encima de versiones automáticas más recientes.",
+    "summary": "Esta semana la tecnología a bordo cobra protagonismo con una profunda actualización del sistema multimedia para el 911, Taycan, Panamera y Cayenne, que multiplica por cinco su potencia de cálculo e integra nuevos controles por voz. En el plano estratégico, Porsche confirma que los motores térmicos convivirán con el futuro Cayenne eléctrico mientras reajusta sus objetivos de electrificación, al tiempo que sorprende con el prototipo Mission S situado por encima del 911. Para quienes miran el mercado de ocasión y costes de uso, destaca la fuerte revalorización del 911 GT3 RS manual (997.2) y la advertencia sobre los elevados costes de reparación estructural que pueden acarrear golpes leves en modelos como el Taycan.",
     "highlights": [
       {
-        "url": "https://annuelauto.ca/essai-routier-du-porsche-cayenne-electrique/",
-        "shortTitle": "Motores térmicos en el Cayenne",
-        "note": "Porsche confirma que las versiones de combustión convivirán con la nueva generación eléctrica tras reajustar sus objetivos de ventas para 2030."
-      },
-      {
         "url": "https://www.roadandtrack.com/news/a74333834/porsche-more-powerful-infotainment-911-taycan-panamera-cayenne/",
-        "shortTitle": "Nuevo sistema de infoentretenimiento",
-        "note": "Las gamas 911, Taycan, Panamera y Cayenne reciben una actualización multimedia con cinco veces más capacidad de cálculo y control por voz con inteligencia artificial."
+        "shortTitle": "Nuevo sistema multimedia",
+        "note": "Porsche multiplica por cinco la potencia de procesamiento e introduce IA en el infoentretenimiento de las gamas 911, Taycan, Panamera y Cayenne."
       },
       {
-        "url": "https://gtspirit.com/2026/11/05/mercedes-amg-gt-4-door-coupe-first-drive-the-porsche-taycan-turbo-gt-has-met-its-match/",
-        "shortTitle": "Rival para el Taycan",
-        "note": "Mercedes-AMG proyecta una berlina deportiva de 1.169 CV y recarga de 600 kW para competir directamente con el Taycan Turbo GT."
+        "url": "https://annuelauto.ca/essai-routier-du-porsche-cayenne-electrique/",
+        "shortTitle": "Gasolina en el Cayenne",
+        "note": "La marca mantendrá las motorizaciones de combustión junto a la nueva generación eléctrica tras revisar sus previsiones de ventas para 2030."
+      },
+      {
+        "url": "https://revistacar.es/de-padre-a-hijo/",
+        "shortTitle": "Concept Porsche Mission S",
+        "note": "El prototipo anticipa un superdeportivo de motor central concebido para posicionarse en la gama por encima del 911."
       },
       {
         "url": "https://www.hotcars.com/older-manual-porsche-gt3-rs-that-out-earned-faster-newer-pdk-model/",
         "shortTitle": "Cotización récord del 997.2",
-        "note": "Los 911 GT3 RS manuales de 2011 rondan los 450.000 dólares en el mercado secundario y superan los valores de generaciones automáticas posteriores."
+        "note": "Las versiones manuales del 911 GT3 RS de 2011 rondan los 450.000 dólares y baten en valor a generaciones automáticas posteriores."
+      },
+      {
+        "url": "https://www.roadandtrack.com/car-culture/a74313416/fender-bender-porsche-taycan-repair-matt-farah/",
+        "shortTitle": "Costes de reparación Taycan",
+        "note": "Un análisis expone cómo la complejidad técnica y estructural del eléctrico puede disparar la factura de un golpe leve hasta los 35.000 dólares."
       }
     ],
-    "updated": "2026-11-05"
+    "updated": "2026-11-08"
   }
 }
