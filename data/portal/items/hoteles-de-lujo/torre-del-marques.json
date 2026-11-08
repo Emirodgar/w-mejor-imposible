@@ -35,5 +35,12 @@
     {
       "es": "Entró en 2024 entre los primeros cinco hoteles españoles con tres Llaves Michelin."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/torre-del-marques.jpg",
+    "autor": "Hotel Torre del Marqués",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.hoteltorredelmarques.com/"
+  }
 }
