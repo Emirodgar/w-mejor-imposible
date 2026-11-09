@@ -36,5 +36,12 @@
     {
       "es": "La Guía Michelin lo describe como uno de los grandes clásicos de la isla y lo incluye con dos Llaves en la selección de hoteles de 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/four-seasons-formentor.jpg",
+    "autor": "Four Seasons Hotels and Resorts",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.fourseasons.com/mallorca/"
+  }
 }
