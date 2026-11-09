@@ -37,5 +37,12 @@
     {
       "es": "En 2020 abrió el Hotel Bodega Tío Pepe, en el casco antiguo, con 27 habitaciones y suites en antiguas casas de trabajadores de unos 150 años, con azotea con bar, restaurante y piscina."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/gonzalez-byass-tio-pepe.jpg",
+    "autor": "González Byass",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.tiopepe.com/"
+  }
 }

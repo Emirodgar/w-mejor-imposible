@@ -644,7 +644,9 @@ def other_plans(slug):
 
 
 def plan_cover(p):
-    """Ítem cuya foto ilustra el plan: 'portada_ref' del plan o el primero con foto."""
+    """Ítem cuya foto ilustra el plan: foto propia del plan ('foto_real'), 'portada_ref' o el primero con foto."""
+    if p.get('foto_real'):
+        return {'nombre': p['foto_real'].get('nombre') or p['slug'], 'lugar': '', 'foto_real': p['foto_real']}
     if p.get('portada_ref'):
         return ITEMS[p['portada_ref']]
     for d in p['dias']:

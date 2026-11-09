@@ -115,5 +115,13 @@
       },
       "min": 60
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/planes/jerez-y-cadiz-vino-motor-y-mesa.jpg",
+    "nombre": "Bodegas González Byass",
+    "autor": "Zarateman",
+    "licencia": "CC0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Jerez_de_la_Frontera_-_Bodegas_Gonz%C3%A1lez_Byass_02.jpg"
+  }
 }

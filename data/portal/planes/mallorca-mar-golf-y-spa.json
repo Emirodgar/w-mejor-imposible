@@ -142,5 +142,11 @@
       },
       "min": 70
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/planes/mallorca-mar-golf-y-spa.jpg",
+    "nombre": "Cala en la costa de Mallorca",
+    "autor": "Unsplash",
+    "origen": "propia"
+  }
 }

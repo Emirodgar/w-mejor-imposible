@@ -146,5 +146,13 @@
       },
       "min": 25
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/planes/barcelona-passeig-de-gracia-y-mesa.jpg",
+    "nombre": "Casa Batlló",
+    "autor": "Mstyslav Chernov",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Casa_Batll%C3%B3_(Antoni_Gaudi)_(exterior),_43,_Passeig_de_Gr%C3%A0cia,_Eixample,_Barcelona,_Catalonia,_Spain.jpg"
+  }
 }
