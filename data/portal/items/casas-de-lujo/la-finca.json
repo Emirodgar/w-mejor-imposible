@@ -43,5 +43,11 @@
     {
       "es": "Datos del ranking de idealista de las 10 casas más caras a la venta (agosto de 2026), que recoge ofertas y no operaciones cerradas."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/casas-de-lujo/la-finca.jpg",
+    "autor": "The Avenue Real Estate",
+    "licencia": "Imagen de terceros",
+    "fuente": "https://theavenue.realestate/"
+  }
 }
