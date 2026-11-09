@@ -36,5 +36,12 @@
     {
       "es": "Las obras de los canales empezaron en 1967, con un modelo inspirado en proyectos de Florida y en Port Grimaud, en la Costa Azul. Hoy la zona cuenta también con un aeródromo de paracaidismo y el túnel de viento Windoor."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/empuriabrava.jpg",
+    "autor": "Visit Costa Brava",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.visitacostabrava.com/"
+  }
 }

@@ -37,5 +37,12 @@
     {
       "es": "Velvua lo colocó cuarto entre los puertos deportivos de España en su ranking de 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/puerto-portals.jpg",
+    "autor": "Puerto Portals",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://puertoportals.com/"
+  }
 }

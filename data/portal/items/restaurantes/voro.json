@@ -32,5 +32,12 @@
     {
       "es": "Al frente de la cocina está Álvaro Salazar, con una propuesta mediterránea y moderna, sin limitaciones, atenta al entorno. Ofrece un único menú degustación, Devoro, estructurado en tres momentos que evocan el sol: amanecer, cénit y ocaso."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/voro.jpg",
+    "autor": "Voro",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://vororestaurant.com/"
+  }
 }

@@ -36,5 +36,12 @@
     {
       "es": "Modaes señala que el lujo se extiende hacia Sant Nicolau, Sant Miquel y Colón, porque el Born no tiene más espacio."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/passeig-des-born.jpg",
+    "autor": "Nakar Hotel",
+    "licencia": "Imagen de terceros",
+    "origen": "propia",
+    "fuente": "https://nakarhotel.com/"
+  }
 }

@@ -35,5 +35,12 @@
     {
       "es": "Deià está en la costa noroeste de Mallorca. Algunas fuentes indican que el hotel cierra en invierno, un dato que conviene contrastar con el propio establecimiento antes de organizar el viaje."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/la-residencia-deia.jpg",
+    "autor": "Belmond",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.belmond.com/"
+  }
 }

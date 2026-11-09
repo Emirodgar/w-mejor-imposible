@@ -35,5 +35,12 @@
     {
       "es": "El puerto añade parques, restaurantes y un centro comercial, y el paseo marítimo enlaza con Montgat y el Fòrum de Barcelona."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/marina-badalona.jpg",
+    "autor": "Marina Badalona",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://marinabadalona.cat/"
+  }
 }

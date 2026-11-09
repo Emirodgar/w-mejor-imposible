@@ -36,5 +36,12 @@
     {
       "es": "DJ Mag lo sitúa en el puesto 99 de su Top 100 Clubs 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/eden.jpg",
+    "autor": "Yelp",
+    "licencia": "Imagen de terceros",
+    "origen": "propia",
+    "fuente": "https://www.yelp.com/"
+  }
 }

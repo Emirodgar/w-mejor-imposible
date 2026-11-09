@@ -36,5 +36,12 @@
     {
       "es": "El restaurante gestiona él mismo sus reservas."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/skina.jpg",
+    "autor": "Skina",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.restauranteskina.com/"
+  }
 }

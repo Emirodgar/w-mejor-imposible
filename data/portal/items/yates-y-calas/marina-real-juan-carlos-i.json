@@ -35,5 +35,12 @@
     {
       "es": "Velvua la situó sexta entre los puertos deportivos españoles en su ranking de 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/marina-real-juan-carlos-i.jpg",
+    "autor": "Marina de Valencia",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://marinaportvalencia.es/"
+  }
 }
