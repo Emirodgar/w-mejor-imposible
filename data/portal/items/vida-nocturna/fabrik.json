@@ -37,5 +37,12 @@
     {
       "es": "En 2025 recibió el premio al mejor club grande de la península ibérica en los Premios Nacionales de Música Electrónica. DJ Mag lo sitúa en el puesto 8 de 2026 y llegó al 2.º en 2011."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/fabrik.jpg",
+    "autor": "Fever",
+    "licencia": "Imagen de terceros",
+    "origen": "propia",
+    "fuente": "https://feverup.com/"
+  }
 }
