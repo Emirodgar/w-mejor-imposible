@@ -37,5 +37,12 @@
     {
       "es": "DJ Mag lo sitúa en el primer puesto de su Top 100 Clubs 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/unvrs.jpg",
+    "autor": "UNVRS",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://unvrs.com/"
+  }
 }
