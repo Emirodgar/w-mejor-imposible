@@ -37,5 +37,11 @@
     {
       "es": "El paseo continúa hacia el sur en dirección a plaza de Catalunya y Portal de l'Àngel, que Cushman & Wakefield coloca entre las cinco calles más caras del país (3.060 euros por metro cuadrado al año en 2025)."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/passeig-de-gracia.jpg",
+    "autor": "Mejor Imposible",
+    "licencia": "Propia",
+    "origen": "propia"
+  }
 }
