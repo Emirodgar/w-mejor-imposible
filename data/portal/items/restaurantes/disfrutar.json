@@ -39,5 +39,12 @@
     {
       "es": "Según la guía, el restaurante gestiona él mismo las reservas y suele tener lista de espera."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/disfrutar.jpg",
+    "autor": "Disfrutar",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.disfrutarbarcelona.com/"
+  }
 }
