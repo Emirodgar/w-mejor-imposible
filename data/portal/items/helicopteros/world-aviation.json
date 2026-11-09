@@ -32,5 +32,12 @@
     {
       "es": "La web worldaviationato.com, de su área de formación, muestra bases en Madrid (Cuatro Vientos) y Málaga. Allí se declara organización de formación aprobada por AESA (ATO 272), con enseñanza de piloto de avión, helicóptero y dron, habilitaciones de tipo y simuladores de A320, A330 y H135."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/helicopteros/world-aviation.jpg",
+    "autor": "World Aviation",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://worldaviation.es/"
+  }
 }

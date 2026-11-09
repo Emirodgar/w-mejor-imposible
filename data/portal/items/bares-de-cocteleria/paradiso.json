@@ -37,5 +37,12 @@
     {
       "es": "Fue The World's Best Bar en 2022, la primera vez que lo lograba un bar de fuera de Londres o Nueva York. The 50 Best lo sitúa en el puesto 9 de Europe's 50 Best Bars 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bares-de-cocteleria/paradiso.jpg",
+    "autor": "Paradiso",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://paradiso.cat/"
+  }
 }

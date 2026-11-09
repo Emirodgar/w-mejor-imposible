@@ -36,5 +36,12 @@
     {
       "es": "The 50 Best lo sitúa en el puesto 66 de The World's 50 Best Bars 2026 y en el 46 de Europe's 50 Best Bars 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bares-de-cocteleria/salmon-guru.jpg",
+    "autor": "Salmon Guru",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://salmonguru.es/"
+  }
 }
