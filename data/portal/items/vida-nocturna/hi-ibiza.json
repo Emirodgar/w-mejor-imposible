@@ -37,5 +37,12 @@
     {
       "es": "DJ Mag lo ha situado en el primer puesto del mundo en 2022, 2023, 2024 y 2025, y en el cuarto en 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/hi-ibiza.jpg",
+    "autor": "Tripadvisor",
+    "licencia": "Imagen de terceros",
+    "origen": "propia",
+    "fuente": "https://www.tripadvisor.es/"
+  }
 }
