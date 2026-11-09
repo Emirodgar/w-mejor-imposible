@@ -122,14 +122,15 @@ PAGES = []  # rutas (en español) de las páginas generadas, para el sitemap
 USED = []   # ítems cuya foto se muestra en la página en curso (para la sección de créditos)
 
 
-def photo_img(item, eager=False, cls=''):
+def photo_img(item, eager=False, cls='', alt=None):
     """Etiqueta <img> de la foto real del ítem (vacía si no tiene) y la anota para los créditos."""
     fr = (item or {}).get('foto_real')
     if not fr:
         return ''
     if item not in USED:
         USED.append(item)
-    return (f'<img{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} src="{e(fr["archivo"])}" alt="{e(item["nombre"])}{", " + e(item["lugar"]) if item["lugar"] else ""}" '
+    alt_txt = e(item["nombre"]) + (", " + e(item["lugar"]) if item["lugar"] else "") if alt is None else alt
+    return (f'<img{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} src="{e(fr["archivo"])}" alt="{alt_txt}" '
             f'{"" if eager else "loading=" + chr(34) + "lazy" + chr(34) + " "}decoding="async">')
 
 
@@ -456,9 +457,11 @@ def near_tiles(cat, item):
         entry = dict(manual, nota=tr(manual['nota'])) if manual and manual.get('nota') else manual
         entry = entry or nearest(item, tipo)
         name = href = None
+        img = ''
         if entry:
             if entry.get('ref'):
                 ref_item = ITEMS[entry['ref']]
+                img = photo_img(ref_item, alt='')  # alt vacío: el nombre ya está en el texto del enlace
                 name, href = ref_item['nombre'], item_url(entry['ref'])
                 if not entry.get('min') and coords(item) and coords(ref_item):
                     entry = dict(entry, min=drive_min(haversine_km(coords(item), coords(ref_item))))
@@ -469,7 +472,7 @@ def near_tiles(cat, item):
             k, tt = e(name), e(f'{name_l} · {detail}' if detail else name_l)
         else:
             continue  # sin sugerencia cercana: no se muestra el hueco
-        tiles += f'<a href="{href or "#"}"><span class="sq"></span><span class="k">{k}</span><span class="t">{tt}</span></a>'
+        tiles += f'<a href="{href or "#"}"><span class="sq">{img}</span><span class="k">{k}</span><span class="t">{tt}</span></a>'
     return tiles
 
 
