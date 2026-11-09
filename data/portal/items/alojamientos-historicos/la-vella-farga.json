@@ -38,5 +38,12 @@
     {
       "es": "El aeropuerto de Andorra-La Seu d'Urgell queda a 70 km y el de Barcelona-El Prat, a 120 km. La estación de tren más cercana es la de Lleida."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/la-vella-farga.jpg",
+    "autor": "La Vella Farga",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://hotelvellafarga.com/"
+  }
 }
