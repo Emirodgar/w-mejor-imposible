@@ -36,5 +36,12 @@
     {
       "es": "Entre sus servicios la web cita vuelos turísticos en Mallorca y vuelos VIP, trabajos aéreos (carga externa, filmación, líneas eléctricas, vigilancia y publicidad aérea), extinción de incendios y salvamento, e ingeniería y mantenimiento."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/helicopteros/sky-helicopteros.jpg",
+    "autor": "Sky Helicópteros",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://skyhelicopteros.com/"
+  }
 }

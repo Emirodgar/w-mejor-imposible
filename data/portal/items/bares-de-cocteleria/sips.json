@@ -37,5 +37,12 @@
     {
       "es": "Fue The World's Best Bar en 2023 y ocupa el puesto 16 en The World's 50 Best Bars 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bares-de-cocteleria/sips.jpg",
+    "autor": "Sips",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.sipsbarcelona.com/"
+  }
 }
