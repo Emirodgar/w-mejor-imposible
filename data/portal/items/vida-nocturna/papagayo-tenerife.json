@@ -35,5 +35,12 @@
     {
       "es": "DJ Mag lo sitúa en el puesto 76 de su Top 100 Clubs 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/papagayo-tenerife.jpg",
+    "autor": "Papagayo Tenerife",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://papagayotenerife.com/"
+  }
 }

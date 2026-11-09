@@ -37,5 +37,12 @@
     {
       "es": "En abril de 2026 la prensa destacó su entrada por primera vez en el Top 100 de DJ Mag, en el puesto 81."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/pelicano.jpg",
+    "autor": "Sala Pelícano",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://salapelicano.com/"
+  }
 }
