@@ -36,5 +36,11 @@
     {
       "es": "Su dosier de prensa de 2022 sitúa la tercera estrella en 2017. El local ofrece aparcamiento y acceso para personas con movilidad reducida."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/aponiente.jpg",
+    "autor": "Guía MICHELIN",
+    "licencia": "Imagen de terceros",
+    "fuente": "https://guide.michelin.com/es/es/andalucia/el-puerto-de-santa-maria/restaurante/aponiente"
+  }
 }
