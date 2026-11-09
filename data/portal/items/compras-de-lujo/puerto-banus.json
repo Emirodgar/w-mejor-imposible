@@ -35,5 +35,13 @@
     {
       "es": "El perfil de visitante es sobre todo estacional, por lo que la oferta se orienta al verano."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/compras-de-lujo/puerto-banus.jpg",
+    "autor": "Tomas Fano",
+    "licencia": "CC BY-SA 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Marbella3.jpg",
+    "titulo": "File:Marbella3.jpg"
+  }
 }

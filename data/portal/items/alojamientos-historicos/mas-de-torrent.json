@@ -37,5 +37,12 @@
     {
       "es": "La ficha oficial lo presenta como hotel para amantes del arte y menciona dos restaurantes, entre ellos El Mas."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/mas-de-torrent.jpg",
+    "autor": "Único Hotels",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.unicohotels.com/"
+  }
 }

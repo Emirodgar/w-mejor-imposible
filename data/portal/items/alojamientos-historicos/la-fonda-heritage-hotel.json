@@ -37,5 +37,12 @@
     {
       "es": "Algunas fuentes mencionan restos arqueológicos de época nazarí visibles bajo suelos de cristal, un dato que conviene confirmar con el propio establecimiento."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/la-fonda-heritage-hotel.jpg",
+    "autor": "La Fonda Heritage Hotel",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://lafondaheritage.com/"
+  }
 }

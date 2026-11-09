@@ -37,5 +37,12 @@
     {
       "es": "Su gama Colección recupera variedades minoritarias en monovarietales: garnacha, graciano, mazuelo y maturana tinta."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/vivanco.jpg",
+    "autor": "Vivanco Cultura de Vino",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://vivancoculturadevino.es/"
+  }
 }

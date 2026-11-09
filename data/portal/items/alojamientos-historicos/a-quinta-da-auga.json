@@ -36,5 +36,12 @@
     {
       "es": "El spa, con varias piscinas climatizadas y saunas, ocupa la parte alta del edificio. El restaurante Filigrana propone cocina gallega. Es un lugar de estancia tranquila, pensado para combinar la visita a la ciudad con el descanso."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/a-quinta-da-auga.jpg",
+    "autor": "A Quinta da Auga",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.aquintadaauga.com/"
+  }
 }
