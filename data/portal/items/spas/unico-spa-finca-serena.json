@@ -43,5 +43,12 @@
     {
       "es": "Ganó el premio a mejor spa de resort de España en los World Spa Awards 2025 y en 2026 volvió a estar nominado."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/spas/unico-spa-finca-serena.jpg",
+    "autor": "Único Hotels",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.unicohotels.com/"
+  }
 }

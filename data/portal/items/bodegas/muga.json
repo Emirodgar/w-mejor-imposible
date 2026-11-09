@@ -33,5 +33,12 @@
     {
       "es": "Haro es la capital de la Rioja Alta. Muga produce tintos, blancos, rosados y cava con tempranillo, garnacha, graciano, mazuelo, viura y otras variedades. Entre sus tintos figura Prado Enea Gran Reserva, de larga guarda. Ofrece catas y actividades como recorridos por el viñedo en segway y paseos en globo."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/muga.jpg",
+    "autor": "Bodegas Muga",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.bodegasmuga.com/"
+  }
 }

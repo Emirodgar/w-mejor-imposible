@@ -36,5 +36,12 @@
     {
       "es": "Es un destino rural y aislado, adecuado para quien busca naturaleza y cocina de huerta. Conviene llegar en coche."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/la-torre-del-visco.jpg",
+    "autor": "La Torre del Visco",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.torredelvisco.com/"
+  }
 }

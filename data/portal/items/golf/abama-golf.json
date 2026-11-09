@@ -41,5 +41,12 @@
     {
       "es": "Está en Guía de Isora, en la costa oeste de Tenerife, dentro del resort The Ritz-Carlton, Abama, un hotel de 459 habitaciones. El trazado sube por la ladera con lagos entre las calles y, según las fuentes consultadas, todos los hoyos menos uno tienen vistas al océano. La longitud varía según la fuente: entre 6.232 y 6.250 metros aproximadamente."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/golf/abama-golf.jpg",
+    "autor": "Abama Golf",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.abamagolf.com/"
+  }
 }

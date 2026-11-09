@@ -37,5 +37,12 @@
     {
       "es": "La finca tiene jardín, piscina y spa, y el cielo nocturno es bueno para observar estrellas. Cerca están la ciudad histórica de Sigüenza, pueblos medievales, parques naturales y salinas. Según el calendario de Relais & Châteaux, el restaurante cierra del 8 de diciembre de 2026 al 11 de febrero de 2027."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/molino-de-alcuneza.jpg",
+    "autor": "Molino de Alcuneza",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.molinodealcuneza.com/"
+  }
 }

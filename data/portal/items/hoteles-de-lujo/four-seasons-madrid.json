@@ -36,5 +36,12 @@
     {
       "es": "Michelin le otorgó dos Llaves en 2024 y, según el portal turístico del Ayuntamiento, las mantiene en las tres ediciones publicadas hasta ahora."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/hoteles-de-lujo/four-seasons-madrid.jpg",
+    "autor": "Four Seasons Hotels and Resorts",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.fourseasons.com/madrid/"
+  }
 }

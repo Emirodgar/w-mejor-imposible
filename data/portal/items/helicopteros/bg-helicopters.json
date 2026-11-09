@@ -36,5 +36,12 @@
     {
       "es": "Su web declara tres líneas de actividad: chárter VIP, vuelos turísticos y para eventos, y trabajos aéreos. Estos incluyen tratamientos aéreos, inspección de líneas eléctricas, extinción de incendios, filmación y fotografía, y captura de datos. También menciona un servicio de mantenimiento."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/helicopteros/bg-helicopters.jpg",
+    "autor": "BG Helicopters",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.bghelicopters.com/"
+  }
 }

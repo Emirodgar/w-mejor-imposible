@@ -37,5 +37,12 @@
     {
       "es": "La ficha de Relais & Châteaux indica que es miembro desde 2023. Michelin lo recoge con una Llave."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/alojamientos-historicos/helguera-palacio.jpg",
+    "autor": "Helguera Palacio Boutique & Antique",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://palaciohelguera.com/en/"
+  }
 }

@@ -36,5 +36,12 @@
     {
       "es": "Atxa cuenta en su web que Azurmendi recibió en 2020 una estrella verde Michelin por su compromiso con la sostenibilidad."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/azurmendi.jpg",
+    "autor": "Azurmendi",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.azurmendi.restaurant/"
+  }
 }

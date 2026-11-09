@@ -37,5 +37,12 @@
     {
       "es": "Se puede visitar la bodega nueva y la antigua, convertida en museo. Entre sus vinos figuran Castillo Ygay Gran Reserva Especial, de producción muy escasa, y Dalmau, un tinto de tempranillo con cabernet sauvignon y graciano criado en barricas francesas."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/bodegas/marques-de-murrieta.jpg",
+    "autor": "Marqués de Murrieta",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.marquesdemurrieta.com/"
+  }
 }

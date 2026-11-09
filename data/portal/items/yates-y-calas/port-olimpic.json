@@ -36,5 +36,12 @@
     {
       "es": "Velvua lo colocó octavo en su ranking de puertos deportivos de 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/yates-y-calas/port-olimpic.jpg",
+    "autor": "Port Olímpic de Barcelona (B:SM)",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.portolimpic.barcelona/"
+  }
 }
