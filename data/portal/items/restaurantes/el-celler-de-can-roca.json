@@ -34,5 +34,12 @@
     {
       "es": "La guía destaca su bodega, de unas 60.000 botellas. La ficha del portal los presenta como tres hermanos al frente de cocina, bodega y postres."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/el-celler-de-can-roca.jpg",
+    "autor": "El Celler de Can Roca",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://cellercanroca.com/"
+  }
 }
