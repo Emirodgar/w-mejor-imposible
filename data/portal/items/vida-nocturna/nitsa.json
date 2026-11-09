@@ -37,5 +37,12 @@
     {
       "es": "DJ Mag la sitúa en el puesto 56 de su Top 100 Clubs 2026."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/vida-nocturna/nitsa.jpg",
+    "autor": "Sala Apolo",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.sala-apolo.com/"
+  }
 }
