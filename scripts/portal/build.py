@@ -152,7 +152,11 @@ def credits_html():
             lis += f'\n            <li>{e(it["nombre"])}: <a href="https://unsplash.com/license" rel="noopener">Unsplash</a></li>'
             continue
         if fr.get('origen') == 'propia':
-            lis += f'\n            <li>{e(it["nombre"])}: © {e(fr.get("autor") or "Mejor Imposible")}</li>'
+            src = ''
+            if fr.get('fuente'):  # mención de la web de la que sale la foto
+                host = re.sub(r'^https?://(www\.)?', '', fr['fuente']).split('/')[0]
+                src = f' · <a href="{e(fr["fuente"])}" rel="noopener">{e(host)}</a>'
+            lis += f'\n            <li>{e(it["nombre"])}: © {e(fr.get("autor") or "Mejor Imposible")}{src}</li>'
             continue
         author = e(fr.get('autor') or 'Wikimedia Commons')
         lic = f'<a href="{e(fr["licencia_url"])}" rel="noopener">{e(fr["licencia"])}</a>' if fr.get('licencia_url') else e(fr['licencia'])
@@ -321,7 +325,8 @@ def page(path, title, desc, lds, body):
     h, f = HEAD, FOOT
     for k, v in rep.items():
         h, f = h.replace(k, v), f.replace(k, v)
-    return h + body + credits_html() + f + (SCRIPT if 'data-zone' in body else '') + '\n<script src="/assets/viaje.js" defer></script>\n</body>\n</html>\n'
+    f = f.replace('</footer>', credits_html() + '</footer>')  # los créditos de las fotos van dentro del pie
+    return h + body + f + (SCRIPT if 'data-zone' in body else '') + '\n<script src="/assets/viaje.js" defer></script>\n</body>\n</html>\n'
 
 
 # ---------------- Rankings ----------------
