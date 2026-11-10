@@ -1,5 +1,27 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:5875005364883973696",
+    "url": "https://www.eurekar.co.uk/articles/2026-11-09/new-tech-for-porsche-models",
+    "source": "Eurekar",
+    "published": "2026-11-09T20:34:22Z",
+    "headline": "Porsche renueva el sistema PCM en las gamas 911, Taycan, Panamera y Cayenne",
+    "excerpt": "La marca introduce una nueva generación de su sistema multimedia Porsche Communication Management con una plataforma de hardware renovada para sus principales modelos.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "taycan",
+      "panamera",
+      "cayenne"
+    ],
+    "impact": "Quienes busquen adquirir una unidad de última hornada deben verificar si incorpora ya esta actualización técnica, un detalle que impactará en la usabilidad del habitáculo y en la depreciación a medio plazo.",
+    "links": [
+      "comparador",
+      "opiniones",
+      "precios_ocasion"
+    ],
+    "week": "2026-W46"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:4177566931566075500",
     "url": "https://revistacar.es/de-padre-a-hijo/",
     "source": "Revista Car",
