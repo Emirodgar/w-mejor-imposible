@@ -1,0 +1,41 @@
+{
+  "id": "restaurantes/elkano",
+  "categoria": "restaurantes",
+  "nombre": "Elkano",
+  "lugar": "Getaria · Gipuzkoa",
+  "zona": "resto",
+  "foto": {
+    "es": "parrilla frente al mar"
+  },
+  "por_que": {
+    "es": "Pescado a la brasa en Getaria, con el rodaballo como plato insignia; puesto 33 en The World's 50 Best 2026."
+  },
+  "ficha": {
+    "chef": "Aitor Arregi",
+    "estrellas": "1 estrella",
+    "galardon": "The World's 50 Best 2026: n.º 33"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html",
+    "https://guide.michelin.com/es/es/pais-vasco/getaria/restaurante/elkano"
+  ],
+  "busqueda": "Elkano Getaria",
+  "coordenadas": {
+    "lat": 43.28809,
+    "lon": -2.1921
+  },
+  "geo_fuente": "Michelin guía 2026: Elkano, Getaria (coordenadas ya verificadas en data/portal/michelin/guia-2026.json)",
+  "contexto": [
+    {
+      "es": "Elkano está en la calle Herrerieta 2, en Getaria (Gipuzkoa). La Guía Michelin 2026 le da una estrella y lo describe como un restaurante de pescados y mariscos a la parrilla, «un clásico» ligado a Aitor Arregi y al Elkano original de su padre."
+    },
+    {
+      "es": "Michelin destaca el control del fuego, la selección de producto y el servicio de sala, y cita el rodaballo como plato mítico. Las reservas se gestionan directamente con el restaurante. Dispone de aire acondicionado y carta de vinos."
+    },
+    {
+      "es": "The World's 50 Best 2026 lo sitúa en el puesto 33."
+    }
+  ]
+}

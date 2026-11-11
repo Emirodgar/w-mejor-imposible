@@ -1,0 +1,44 @@
+{
+  "id": "restaurantes/enigma",
+  "categoria": "restaurantes",
+  "nombre": "Enigma",
+  "lugar": "Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "comedor futurista"
+  },
+  "por_que": {
+    "es": "Dos estrellas en Barcelona y un único menú de unos 25 pases de Albert Adrià; puesto 29 en The World's 50 Best 2026."
+  },
+  "ficha": {
+    "chef": "Albert Adrià",
+    "estrellas": "2 estrellas",
+    "galardon": "The World's 50 Best 2026: n.º 29"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://guide.michelin.com/es/es/articulo/michelin-guide-ceremony/todos-los-restaurantes-con-estrellas-michelin-en-espana-2026",
+    "https://www.elmundo.es/metropoli/gastronomia/restaurantes/2026/11/05/6aec1f4ce85eceaf0b8b456d.html",
+    "https://guide.michelin.com/ar/es/catalunya/barcelona/restaurante/enigma"
+  ],
+  "busqueda": "Enigma Barcelona Sepúlveda",
+  "coordenadas": {
+    "lat": 41.37669,
+    "lon": 2.15411
+  },
+  "geo_fuente": "Michelin guía 2026: Enigma, Barcelona (coordenadas ya verificadas en data/portal/michelin/guia-2026.json)",
+  "contexto": [
+    {
+      "es": "Enigma está en la calle Sepúlveda 38, en Barcelona. La Guía Michelin 2026 le da dos estrellas y lo clasifica como cocina creativa; lo presenta como heredero de elBulli, con Albert Adrià al frente."
+    },
+    {
+      "es": "Ofrece un único menú de temporada de unos 25 pases, con secciones como Almendra, Anchoa, Huerta, Setas, Quesos y Gamba. Muchos platos se terminan delante del comensal."
+    },
+    {
+      "es": "Según Michelin, abre de lunes a jueves de 18:30 a 21:00 y los viernes de 13:00 a 15:00, y cierra sábados y domingos. Recomienda reservar con mucha antelación, directamente con el restaurante. Tiene acceso para personas con movilidad reducida."
+    },
+    {
+      "es": "The World's 50 Best 2026 lo sitúa en el puesto 29."
+    }
+  ]
+}

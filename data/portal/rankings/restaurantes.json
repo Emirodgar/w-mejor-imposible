@@ -65,7 +65,7 @@
       ]
     },
     {
-      "nombre": "Elkano",
+      "ref": "restaurantes/elkano",
       "planes": [
         "san-sebastian-mesa-a-mesa"
       ]
@@ -93,6 +93,9 @@
       "planes": [
         "ibiza-y-formentera-en-barco"
       ]
+    },
+    {
+      "ref": "restaurantes/enigma"
     }
   ]
 }

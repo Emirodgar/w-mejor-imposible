@@ -16,6 +16,7 @@ temas:
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
     <link rel="canonical" href="https://mejorimposible.es/porsche/blog">
+    {% include opengraph.html title=page.title description=page.description url="/porsche/blog" %}
     <link rel="alternate" type="application/atom+xml" title="Mejor Imposible: guías Porsche" href="/feed.xml">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

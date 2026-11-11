@@ -146,17 +146,9 @@
           "ref": "restaurantes/mugaritz"
         },
         {
-          "tipo": "Costa",
+          "tipo": "Comida",
           "tono": "claro",
-          "nombre": {
-            "es": "Getaria · Elkano"
-          },
-          "por_que": {
-            "es": "Una estrella Michelin en Getaria: pescado a la brasa de leña, con el rodaballo como plato insignia."
-          },
-          "foto": {
-            "es": "parrilla frente al mar"
-          }
+          "ref": "restaurantes/elkano"
         },
         {
           "tipo": "Regreso",
