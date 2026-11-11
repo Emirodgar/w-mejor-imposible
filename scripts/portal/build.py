@@ -323,6 +323,8 @@ def page(path, title, desc, lds, body):
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
     h, f = HEAD, FOOT
+    if LANG != 'es':  # la guía Porsche solo existe en español: en el resto de idiomas no se enlaza
+        h, f = (x.replace('        <a href="/">@@N_PORSCHE@@</a>\n', '').replace('            <a href="/">@@N_PORSCHE@@</a>\n', '') for x in (h, f))
     for k, v in rep.items():
         h, f = h.replace(k, v), f.replace(k, v)
     f = f.replace('</footer>', credits_html() + '</footer>')  # los créditos de las fotos van dentro del pie

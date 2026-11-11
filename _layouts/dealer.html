@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.dealer_name }} | Mejor Imposible</title>
     <meta name="description" content="{{ page.dealer_name }}: dirección, teléfono, opiniones de clientes en Google ({{ page.rating }}/5{% if page.review_count %}, {{ page.review_count }} reseñas{% endif %}) y cómo llegar. Concesionario oficial Porsche en {{ page.address }}.">
+    {% capture og_desc %}{{ page.dealer_name }}: dirección, teléfono, opiniones de clientes en Google ({{ page.rating }}/5{% if page.review_count %}, {{ page.review_count }} reseñas{% endif %}) y cómo llegar. Concesionario oficial Porsche en {{ page.address }}.{% endcapture %}
+    {% capture og_title %}{{ page.dealer_name }} | Mejor Imposible{% endcapture %}
+    {% include opengraph.html title=og_title description=og_desc %}
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
