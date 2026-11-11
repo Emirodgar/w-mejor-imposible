@@ -197,24 +197,29 @@
     "updated": "2026-11-08"
   },
   "2026-W46": {
-    "summary": "Porsche ha renovado su sistema multimedia Porsche Communication Management introduciendo una plataforma de hardware actualizada. Esta nueva generación del sistema se despliega en las gamas 911, Taycan, Panamera y Cayenne. Para compradores e interesados en la marca, supone un cambio relevante a considerar al configurar una unidad nueva o valorar el equipamiento multimedia disponible.",
+    "summary": "Porsche ha renovado el sistema de infoentretenimiento PCM con una plataforma de hardware actualizada para las gamas 911, Taycan, Panamera y Cayenne, un aspecto clave a verificar si vas a encargar o adquirir una unidad reciente. En el apartado de prestaciones, la marca subraya el potencial combinado de su tecnología eléctrica y térmica rozando los 3.000 CV en sus modelos tope de gama, mientras preparadores como Brabus exprimen el 911 Turbo S hasta los 789 CV. En el terreno financiero, el holding Porsche SE registra pérdidas de 2.800 millones de euros derivadas del impacto contable de su participación en el Grupo Volkswagen.",
     "highlights": [
       {
         "url": "https://www.eurekar.co.uk/articles/2026-11-09/new-tech-for-porsche-models",
-        "shortTitle": "Nueva generación PCM",
-        "note": "La marca introduce una plataforma de hardware renovada para su sistema multimedia Porsche Communication Management."
+        "shortTitle": "Nuevo hardware multimedia PCM",
+        "note": "Porsche actualiza el sistema de infoentretenimiento en sus cuatro principales gamas de modelos."
       },
       {
-        "url": "https://www.eurekar.co.uk/articles/2026-11-09/new-tech-for-porsche-models",
-        "shortTitle": "Actualización en 911 y Taycan",
-        "note": "La renovación del sistema multimedia llega a la gama del emblemático deportivo y al modelo eléctrico."
+        "url": "https://www.autoblog.com/news/brabus-turns-the-porsche-911-turbo-s-up-to-789-hp",
+        "shortTitle": "Brabus 911 Turbo S",
+        "note": "El preparador alemán incrementa el rendimiento del cupé hasta situarlo en 789 CV."
       },
       {
-        "url": "https://www.eurekar.co.uk/articles/2026-11-09/new-tech-for-porsche-models",
-        "shortTitle": "Mejoras en Panamera y Cayenne",
-        "note": "Tanto la berlina como el SUV incorporan la nueva arquitectura de hardware del sistema PCM."
+        "url": "https://finance.yahoo.com/markets/stocks/articles/porsche-se-swings-2-8-081148631.html",
+        "shortTitle": "Números rojos en Porsche SE",
+        "note": "El holding acumula 2.800 millones de euros en pérdidas por ajustes contables asociados a Volkswagen."
+      },
+      {
+        "url": "https://www.elconfidencialdigital.com/articulo/motor/porsche-reune-tres-autenticas-bestias-que-suman-casi-3000-cv-dos-son-electricos-tercero-es-uno-deportivos-mas-miticos/202611102128501501251.html",
+        "shortTitle": "Casi 3.000 CV combinados",
+        "note": "Porsche reúne el Cayenne Turbo Coupé, el Taycan Turbo GT y el 911 Turbo S como referentes de potencia."
       }
     ],
-    "updated": "2026-11-10"
+    "updated": "2026-11-11"
   }
 }

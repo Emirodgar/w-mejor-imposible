@@ -1,5 +1,63 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:7479105657712185285",
+    "url": "https://www.autoblog.com/news/brabus-turns-the-porsche-911-turbo-s-up-to-789-hp",
+    "source": "Autoblog",
+    "published": "2026-11-10T21:26:23Z",
+    "headline": "Brabus exprime el Porsche 911 Turbo S hasta los 789 CV",
+    "excerpt": "El preparador alemán Brabus amplía su trabajo sobre la gama Porsche presentando una versión modificada del 911 Turbo S que eleva su potencia hasta los 789 CV.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Las unidades modificadas por terceros no mantienen la cobertura oficial Porsche Approved y suelen sufrir una depreciación mayor o un público comprador más reducido frente a unidades totalmente de serie.",
+    "links": [
+      "garantia_approved",
+      "sm_911",
+      "fallos"
+    ],
+    "week": "2026-W46"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:2557192972580167610",
+    "url": "https://www.elconfidencialdigital.com/articulo/motor/porsche-reune-tres-autenticas-bestias-que-suman-casi-3000-cv-dos-son-electricos-tercero-es-uno-deportivos-mas-miticos/202611102128501501251.html",
+    "source": "elconfidencialdigital.com",
+    "published": "2026-11-10T20:51:51Z",
+    "headline": "La cúspide del rendimiento Porsche: tres modelos que alcanzan casi 3.000 CV",
+    "excerpt": "Porsche reúne sus referentes de prestaciones actuales, el Cayenne Turbo Coupé Electric, el Taycan Turbo GT y el 911 Turbo S, combinando casi 3.000 CV entre tecnología eléctrica y combustión.",
+    "category": "Modelos",
+    "models": [
+      "911",
+      "cayenne",
+      "taycan"
+    ],
+    "impact": "Refleja cómo los nuevos modelos eléctricos de altas prestaciones igualan y superan en cifras puras de potencia al 911 Turbo S de combustión, un factor clave al sopesar la depreciación frente a las sensaciones clásicas.",
+    "links": [
+      "comparador",
+      "sm_911",
+      "sm_taycan"
+    ],
+    "week": "2026-W46"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:1345049247994444695",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/porsche-se-swings-2-8-081148631.html",
+    "source": "finance.yahoo.com",
+    "published": "2026-11-10T16:46:07Z",
+    "headline": "Porsche SE entra en números rojos lastrada por el Grupo Volkswagen",
+    "excerpt": "El holding Porsche SE registra pérdidas de 2.800 millones de euros en los primeros nueve meses tras aplicar correcciones contables derivadas de su participación en Volkswagen.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Las dificultades en la matriz no afectan directamente a las garantías ni a la fiabilidad de los coches actuales, pero reflejan el momento de tensión financiera y reajuste industrial que atraviesa el grupo automovilístico.",
+    "links": [
+      "precios_ocasion",
+      "financiacion"
+    ],
+    "week": "2026-W46"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:5875005364883973696",
     "url": "https://www.eurekar.co.uk/articles/2026-11-09/new-tech-for-porsche-models",
     "source": "Eurekar",
