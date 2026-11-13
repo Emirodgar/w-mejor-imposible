@@ -1,5 +1,77 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:13049159311279675559",
+    "url": "https://www.autoweek.com/news/a74416597/theon-964-porsche-911-build/",
+    "source": "Autoweek",
+    "published": "2026-11-12T22:47:10Z",
+    "headline": "Theon Design presenta un restomod del 911 con 419 CV y peso contenido",
+    "excerpt": "El preparador británico desvela una creación basada en el 911 clásico que combina un motor bóxer atmosférico de 419 CV con frenos procedentes del 993 RS y apenas 1.150 kilos.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Ilustra el auge del mercado restomod como alternativa exclusiva para compradores que buscan tacto clásico con prestaciones modernas al margen del catálogo oficial.",
+    "links": [
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W46"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:5564498501891476248",
+    "url": "https://www.autonext.co/news/porsche-project-gold-993-turbo-auction",
+    "source": "AutoNext",
+    "published": "2026-11-12T21:58:15Z",
+    "headline": "A subasta el último 911 Turbo air-cooled fabricado por Porsche con 92 kilómetros",
+    "excerpt": "Vuelve a subasta la unidad especial del 993 Turbo ensamblada por Porsche veinte años después del fin de producción de la serie, conservada prácticamente sin rodaje.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Funciona como referencia de techo de mercado para el 993 y evidencia el valor sostenido de las piezas de colección refrigeradas por aire.",
+    "links": [
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W46"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4580228954794705260",
+    "url": "https://www.biztoday.news/2026/11/12/porsche-mission-s-concept-to-feature-at-icons-of-porsche-festival-in-dubai/",
+    "source": "Biz Today",
+    "published": "2026-11-12T18:32:20Z",
+    "headline": "Porsche mostrará el prototipo Mission S en el festival Icons of Porsche",
+    "excerpt": "La firma alemana exhibirá en Dubai el concept Mission S, un superdeportivo de motor central que reinterpreta las líneas de iconos históricos de la marca.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Anticipa rasgos estéticos y soluciones técnicas de motor central que podrían trasladarse a futuros deportivos de la marca.",
+    "links": [
+      "comparador"
+    ],
+    "week": "2026-W46"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14855613484886968247",
+    "url": "https://www.infotaller.tv/concesionarios/que-marcas-de-coches-ofrecen-mas-garantia-en-espana.html",
+    "source": "Infotaller",
+    "published": "2026-11-12T16:51:52Z",
+    "headline": "Porsche se sitúa a la cola en duración de garantía oficial de fábrica en España",
+    "excerpt": "Un informe sobre las garantías ofrecidas por fabricantes de automóviles en España ubica a Porsche entre las marcas con menor cobertura oficial estándar.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Obliga a considerar de antemano el sobrecoste de extensiones como Porsche Approved si se busca tranquilidad mecánica tras los primeros años de uso.",
+    "links": [
+      "garantia_approved",
+      "coste_real",
+      "inspeccion"
+    ],
+    "week": "2026-W46"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:7479105657712185285",
     "url": "https://www.autoblog.com/news/brabus-turns-the-porsche-911-turbo-s-up-to-789-hp",
     "source": "Autoblog",
