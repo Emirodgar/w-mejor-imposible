@@ -1,5 +1,43 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:16290829692910457568",
+    "url": "https://www.freep.com/videos/cars/shopping/evs/2026/11/14/a-sports-luxury-suv-with-over-1100-horsepower/92644051007/",
+    "source": "Detroit Free Press",
+    "published": "2026-11-14T15:15:29Z",
+    "headline": "El primer Porsche Cayenne eléctrico apunta a superar los 1.100 CV",
+    "excerpt": "Las primeras pruebas del futuro Cayenne 100 % eléctrico destacan un nivel de potencia superior a los 1.100 CV y un despliegue completo de confort y prestaciones.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Si tienes pensado encargar un Cayenne nuevo o te preocupa la devaluación de los modelos actuales, la llegada de la versión eléctrica marcará un salto generacional importante en rendimiento y precio.",
+    "links": [
+      "sm_cayenne",
+      "comparador",
+      "precios_ocasion"
+    ],
+    "week": "2026-W46"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6538814457600542122",
+    "url": "https://www.hibridosyelectricos.com/coches/en-10-anos-coches-gasolina-seran-mero-pasatiempo-ministro-aleman-sostiene-electricos-son-unico-futuro_90498_102.html",
+    "source": "hibridosyelectricos.com",
+    "published": "2026-11-14T15:09:39Z",
+    "headline": "Debate político en Alemania por la reinversión de Porsche en motores térmicos",
+    "excerpt": "Declaraciones desde el gobierno alemán señalan a Porsche por continuar destinando inversión a los motores de combustión frente a la transición exclusivamente eléctrica.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Para compradores de modelos de gasolina e híbridos, el respaldo continuado de la marca a la combustión aporta certidumbre sobre el soporte técnico y el valor de reventa a medio plazo.",
+    "links": [
+      "precios_ocasion",
+      "coste_real",
+      "vender"
+    ],
+    "week": "2026-W46"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:13049159311279675559",
     "url": "https://www.autoweek.com/news/a74416597/theon-964-porsche-911-build/",
     "source": "Autoweek",
