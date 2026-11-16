@@ -1,5 +1,100 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:14183761398405686227",
+    "url": "https://www.autoexpress.co.uk/porsche/370905/all-new-porsche-macan-size-suv-get-its-own-name-and-petrol-power-maybe-v8",
+    "source": "autoexpress.co.uk",
+    "published": "2026-11-16T10:32:24Z",
+    "headline": "Porsche planea un nuevo SUV de gasolina para convivir con el Macan eléctrico",
+    "excerpt": "La marca trabaja en el desarrollo de un todocamino térmico de tamaño medio, con nombre propio y opciones mecánicas de gasolina para complementar al Macan eléctrico.",
+    "category": "Lanzamientos",
+    "models": [
+      "macan"
+    ],
+    "impact": "Quienes busquen un SUV Porsche de tamaño medio sin dar el salto al eléctrico tendrán una opción directa a estrenar sin depender únicamente del mercado de ocasión.",
+    "links": [
+      "comparador",
+      "sm_macan",
+      "precios_ocasion"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:565420737940099168",
+    "url": "https://www.autobild.de/artikel/gebrauchtwagen-angebot-porsche-taycan-gts-sport-turismo-58a5f90-28895393.html",
+    "source": "AUTO BILD",
+    "published": "2026-11-16T08:38:42Z",
+    "headline": "El Porsche Taycan GTS cae a la mitad de su precio original en ocasión",
+    "excerpt": "Unidades del Taycan GTS Sport Turismo con 598 CV que rondaban los 158.000 euros nuevos ya aparecen en el mercado de ocasión por aproximadamente la mitad.",
+    "category": "Análisis",
+    "models": [
+      "taycan"
+    ],
+    "impact": "Abre una ventana muy atractiva para acceder a versiones GTS de segunda mano, aunque advierte del fuerte ritmo de depreciación si se contempla comprar nuevo.",
+    "links": [
+      "precios_ocasion",
+      "sm_taycan",
+      "garantia_approved"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:7717783315456517062",
+    "url": "https://www.chip.de/news/auto-fahrrad/ki-statt-display-porsche-manager-glaubt-an-wandel-im-auto_0f260d39-19eb-4790-9021-6d3419a8ab07.html",
+    "source": "CHIP",
+    "published": "2026-11-16T06:50:34Z",
+    "headline": "El habitáculo del Cayenne Electric combinará pantallas con inteligencia artificial",
+    "excerpt": "La marca perfila el puesto de mando del próximo Cayenne Electric integrando varias pantallas en el salpicadero con control por voz asistido por IA.",
+    "category": "Análisis",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Los interesados en la transición eléctrica del Cayenne encontrarán una experiencia de uso fuertemente digitalizada frente a los mandos físicos tradicionales.",
+    "links": [
+      "sm_cayenne",
+      "fallos"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4114924613113587654",
+    "url": "https://autos.yahoo.com/new-vehicles-and-reviews/articles/porsche-mission-ss-deep-exhaust-150000399.html",
+    "source": "Yahoo Autos",
+    "published": "2026-11-16T06:15:52Z",
+    "headline": "El prototipo Porsche Mission S rueda en Nürburgring con sonido de combustión",
+    "excerpt": "Tras su presentación en Nueva York, el prototipo Mission S ha sido visto rodando en Nürburgring con un sonido de escape que aviva rumores sobre mecánicas térmicas.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Indica las líneas de desarrollo para la cúspide deportiva de la marca y sugiere que Porsche sigue considerando motores de combustión para proyectos de alto rendimiento.",
+    "links": [
+      "opiniones",
+      "comparativas"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6050797036931027190",
+    "url": "https://mbiz.heraldcorp.com/article/10938349",
+    "source": "The Herald Business",
+    "published": "2026-11-16T02:09:14Z",
+    "headline": "Porsche renueva el sistema multimedia PCM en 911, Taycan, Panamera y Cayenne",
+    "excerpt": "Porsche anuncia la incorporación de una nueva generación de su interfaz Porsche Communication Management en cuatro de sus principales modelos.",
+    "category": "Lanzamientos",
+    "models": [
+      "911",
+      "taycan",
+      "panamera",
+      "cayenne"
+    ],
+    "impact": "Si estás configurando o negociando una unidad nueva, conviene verificar la fecha de fabricación para asegurar que el coche incluya la última generación del sistema.",
+    "links": [
+      "comparador",
+      "opiniones"
+    ],
+    "week": "2026-W47"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:16290829692910457568",
     "url": "https://www.freep.com/videos/cars/shopping/evs/2026/11/14/a-sports-luxury-suv-with-over-1100-horsepower/92644051007/",
     "source": "Detroit Free Press",

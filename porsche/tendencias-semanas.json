@@ -221,5 +221,31 @@
       }
     ],
     "updated": "2026-11-11"
+  },
+  "2026-W47": {
+    "summary": "Porsche matiza los tiempos de su transición eléctrica con el desarrollo de un nuevo SUV mediano de gasolina paralelo al Macan y las pruebas del Mission S con sonido de combustión en Nürburgring. En el plano tecnológico, la gama recibe una renovación de la interfaz multimedia PCM y el futuro Cayenne Electric incorporará un habitáculo con inteligencia artificial integrada. Por su parte, el mercado de ocasión refleja una fuerte depreciación en las primeras unidades del Taycan GTS, reduciendo a la mitad el coste de acceso frente a su tarifa original.",
+    "highlights": [
+      {
+        "url": "https://www.autoexpress.co.uk/porsche/370905/all-new-porsche-macan-size-suv-get-its-own-name-and-petrol-power-maybe-v8",
+        "shortTitle": "Nuevo SUV de gasolina",
+        "note": "La marca desarrolla un todocamino térmico de tamaño medio con identidad propia para acompañar al Macan eléctrico."
+      },
+      {
+        "url": "https://www.autobild.de/artikel/gebrauchtwagen-angebot-porsche-taycan-gts-sport-turismo-58a5f90-28895393.html",
+        "shortTitle": "Depreciación del Taycan GTS",
+        "note": "Las unidades de ocasión del Sport Turismo de 598 CV rondan ya el 50% de su precio de catálogo original."
+      },
+      {
+        "url": "https://mbiz.heraldcorp.com/article/10938349",
+        "shortTitle": "Actualización del sistema PCM",
+        "note": "Una nueva versión del sistema de infoentretenimiento llega al 911, Taycan, Panamera y Cayenne."
+      },
+      {
+        "url": "https://www.chip.de/news/auto-fahrrad/ki-statt-display-porsche-manager-glaubt-an-wandel-im-auto_0f260d39-19eb-4790-9021-6d3419a8ab07.html",
+        "shortTitle": "Interior con IA integrada",
+        "note": "El futuro Cayenne eléctrico sumará múltiples pantallas en el salpicadero con control por voz asistido por inteligencia artificial."
+      }
+    ],
+    "updated": "2026-11-16"
   }
 }
