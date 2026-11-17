@@ -1,5 +1,61 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:6542297388939984943",
+    "url": "https://www.avtomanija.com/2026/11/119888/porsche-bi-rad-zavijal-tudi-z-zrakom/",
+    "source": "Avtomanija",
+    "published": "2026-11-17T17:53:49Z",
+    "headline": "Porsche patenta un sistema de aerodinámica activa para mejorar el apoyo en curva",
+    "excerpt": "El fabricante alemán ha registrado una patente de alerones activos diseñados para crear fuerza lateral a altas velocidades y facilitar el giro en trazados rápidos.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Anticipa soluciones de dinámica que podrían llegar a futuros modelos de circuito y versiones GT, elevando el rendimiento sin añadir peso mecánico excesivo.",
+    "links": [
+      "opiniones",
+      "fallos"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:722787125619651624",
+    "url": "https://www.autoevolution.com/news/spy-photos-2028-porsche-911-turbo-touring-spied-with-soft-top-278572.html",
+    "source": "autoevolution",
+    "published": "2026-11-17T17:13:00Z",
+    "headline": "Cazado en pruebas un futuro Porsche 911 Turbo Touring descapotable",
+    "excerpt": "Primeras imágenes espía muestran el desarrollo de una variante Touring de techo de lona para la gama 911 Turbo, concebida con un aspecto más sobrio y ubicada por debajo de la versión S.",
+    "category": "Lanzamientos",
+    "models": [
+      "911"
+    ],
+    "impact": "Ofrecería una alternativa directa para quien busca las prestaciones del bloque Turbo sin el impacto visual de los alerones prominentes tradicionales.",
+    "links": [
+      "sm_911",
+      "comparador",
+      "precios_ocasion"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12063196790801565616",
+    "url": "https://carsauce.com/news/porsche-2028-petrol-suv-new-name-possible-v8",
+    "source": "carsauce.com",
+    "published": "2026-11-17T16:07:50Z",
+    "headline": "El futuro SUV mediano de gasolina de Porsche estrenará nombre y podría equipar un V8",
+    "excerpt": "Informaciones del sector señalan que Porsche trabaja en un SUV térmico para 2028 que convivirá con el Macan eléctrico, adoptará una denominación inédita y podría coronar la gama con motor de ocho cilindros.",
+    "category": "Lanzamientos",
+    "models": [
+      "macan"
+    ],
+    "impact": "Para quienes dudan ante el Macan exclusivamente eléctrico, confirma que la combustión seguirá presente en el formato mediano, aunque todavía faltan años para su comercialización.",
+    "links": [
+      "sm_macan",
+      "comparador",
+      "precios_ocasion"
+    ],
+    "week": "2026-W47"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:14183761398405686227",
     "url": "https://www.autoexpress.co.uk/porsche/370905/all-new-porsche-macan-size-suv-get-its-own-name-and-petrol-power-maybe-v8",
     "source": "autoexpress.co.uk",
