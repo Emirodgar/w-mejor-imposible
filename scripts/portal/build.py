@@ -1542,7 +1542,7 @@ def build_novedades():
         f'<h3>{e(t(c["titulo"]))}</h3><p>{e(t(c["texto"]))}</p></article>' for c in cam)
     rows = ''
     for f in [c for c in cal if not c.get('interno')]:
-        name = e(f['fuente'])
+        name = e(TEXT[LANG].get(f['fuente'], f['fuente']) if LANG != 'es' else f['fuente'])  # nombres propios (DJ Mag...) pueden quedar sin traducir
         if f.get('url'):
             name = f'<a href="{e(f["url"])}" rel="noopener">{name}</a>'
         rows += (f'\n            <tr><th scope="row">{name}</th><td>{e(t(f["que_publica"]))}</td>'
