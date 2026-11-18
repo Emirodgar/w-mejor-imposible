@@ -3,111 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+	<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/portal.css">
+    <link rel="stylesheet" href="/assets/porsche.css">
     <title>¿Cuánto cuesta un Porsche? Precios por modelo 2026 | Mejor Imposible</title>
     <meta name="description" content="Cuánto cuesta un Porsche nuevo en 2026: precios oficiales de lanzamiento del 911, Cayenne, Macan, Panamera, Taycan y 718 Cayman, con la evolución de precio de cada generación, los Porsche GT (GT3, GT3 RS, GT4 RS), los SUV y el modelo más barato y más caro de la gama.">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        :root {
-            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
-            --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
-            --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
-            --dark-text: #e1e1e1; --hairline: #e5e5e5;
-        }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; -webkit-font-smoothing: antialiased; }
-        .theme-light { background-color: var(--light-bg ); color: var(--light-text); }
-        .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
-        .dashboard-container { padding: 20px; max-width: 1600px; margin: auto; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
-        .header-title { font-size: 24px; font-weight: 600; display: flex; align-items: center; }
-        .header-title img { height: 40px; margin-right: 15px; }
-        .header-controls button { background: none; border: 1px solid var(--porsche-grey); color: inherit; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
-        .site-header {
-            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
-            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
-        }
-        .site-header-inner {
-            display: flex; justify-content: space-between; align-items: center;
-            max-width: 1600px; margin: 0 auto;
-        }
-        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
-        .site-logo-mark { height: 26px; width: auto; display: block; }
-        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
-        .site-logo-text span { color: var(--porsche-red); }
-        .site-nav { display: flex; align-items: center; gap: 28px; }
-        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-        .site-nav a:hover { color: var(--porsche-red); }
-        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
-        .site-footer p { margin: 6px 0; }
-        .nav-toggle {
-            display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit;
-            width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px;
-            align-items: center; justify-content: center; flex-shrink: 0;
-        }
-        @media (max-width: 600px) {
-            .site-logo-text { display: none; }
-            .site-nav { display: none; }
-            .nav-toggle { display: flex; }
-            .site-nav.is-open {
-                display: flex; flex-direction: column; align-items: flex-start; gap: 0;
-                position: absolute; top: 100%; left: 0; width: 100%; background: #fff;
-                padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline);
-            }
-            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
-        }
-        .card { border-radius: 4px; padding: 20px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); transition: background-color 0.3s, color 0.3s; }
-        .theme-light .card { background-color: var(--light-card-bg); border: 1px solid var(--hairline); }
-        .theme-dark .card { background-color: var(--dark-card-bg); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); }
-        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 15px; opacity: 0.8; }
-        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
-        
-        .chart-section { grid-column: span 12; }
-        .table-section { grid-column: span 12; }
-
-        .table-container { max-height: 600px; overflow-y: auto; }
-        table { width: 100%; border-collapse: collapse; font-size: 14px; }
-        thead { position: sticky; top: 0; z-index: 10; }
-        .theme-light thead { background-color: var(--light-card-bg); }
-        .theme-dark thead { background-color: var(--dark-card-bg); }
-        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid; }
-        .theme-light th, .theme-light td { border-color: #e0e0e0; }
-        .theme-dark th, .theme-dark td { border-color: #444; }
-        th { font-weight: 600; }
-        .price-increase { color: #dc3545; font-weight: bold; }
-
-        /* --- Contenido introductorio y de apoyo (SEO) --- */
-        .intro-block { max-width: 900px; margin: 0 0 25px 0; }
-        .intro-block h1 { font-size: 1.8em; margin: 0 0 10px 0; }
-        .intro-block p { font-size: 1.05em; line-height: 1.6; opacity: 0.85; margin: 0 0 12px 0; }
-
-        .content-section h2 { font-size: 1.4em; margin: 0 0 15px 0; }
-        .content-section h3 { font-size: 1.1em; margin: 20px 0 8px 0; }
-        .content-section p, .content-section li { font-size: 1em; line-height: 1.7; opacity: 0.9; }
-        .content-section ul { padding-left: 20px; }
-        .content-section a { color: var(--porsche-red); font-weight: 600; text-decoration: none; }
-        .content-section a:hover { text-decoration: underline; }
-
-        .price-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0; }
-        .price-summary-item { border-radius: 8px; padding: 14px 16px; background-color: var(--porsche-grey); color: white; }
-        .price-summary-item .model-name { font-size: 0.85em; opacity: 0.85; }
-        .price-summary-item .model-price { font-size: 1.25em; font-weight: 700; margin-top: 4px; }
-
-        .faq-item { border-bottom: 1px solid var(--porsche-grey); padding: 15px 0; }
-        .faq-item:last-child { border-bottom: none; }
-        .faq-item summary { font-weight: 600; cursor: pointer; font-size: 1.05em; list-style: none; }
-        .faq-item summary::-webkit-details-marker { display: none; }
-        .faq-item summary::before { content: "+ "; color: var(--porsche-red); font-weight: 700; }
-        .faq-item[open] summary::before { content: "– "; }
-        .faq-item p { margin: 10px 0 0 0; }
-
-        .cross-link-box {
-            margin-top: 15px; padding: 18px 20px; border-radius: 8px; border: 1px solid var(--porsche-gold);
-            background-color: rgba(227, 171, 55, 0.1);
-        }
-    </style>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -261,26 +165,30 @@
     <meta name="twitter:image" content="https://mejorimposible.es/img/og-default.jpg">
     <meta name="twitter:image:alt" content="Mejor Imposible: Porsche, lujo y España">
 </head>
-<body class="theme-light">
+<body>
 
-    <header class="site-header">
-        <div class="site-header-inner">
-            <a href="/" class="site-logo">
-                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-                <span class="site-logo-text">mejor <span>imposible</span></span>
-            </a>
-            <nav class="site-nav">
-                <a href="/#tools">Herramientas</a>
-                <a href="/porsche/modelos">Modelos</a>
-                <a href="/porsche/analisis">Opiniones</a>
-                <a href="/porsche/concesionarios">Concesionarios</a>
-                <a href="/porsche/blog">Blog</a>
-            </nav>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
-        </div>
-    </header>
+<header class="wrap site-header">
+    <a class="brand" href="/index2.html">mejor imposible</a>
+    <nav class="main-nav" aria-label="Principal">
+        <a href="/index2.html#rankings">Rankings</a>
+        <a href="/index2.html#planes">Planes completos</a>
+        <a href="/destinos/">Destinos</a>
+        <a href="/buscar/">Buscar</a>
+        <a href="/mi-viaje/">Mi viaje<span class="trip-count" hidden></span></a>
+        <a href="/" aria-current="true">Guía Porsche</a>
+    </nav>
+</header>
+<nav class="wrap porsche-sub" aria-label="Guía Porsche">
+    <span class="lbl">Guía Porsche</span>
+    <a href="/#tools">Herramientas</a>
+    <a href="/porsche/modelos">Modelos</a>
+    <a href="/porsche/precios" aria-current="page">Precios</a>
+    <a href="/porsche/analisis">Opiniones</a>
+    <a href="/porsche/concesionarios">Concesionarios</a>
+    <a href="/porsche/blog">Blog</a>
+</nav>
 
-    <div class="dashboard-container">
+    <div class="wrap page">
         <div class="intro-block">
             <h1>¿Cuánto cuesta un Porsche nuevo?</h1>
             <p>El precio de un Porsche 0km va desde los 77.850 € del 718 Cayman hasta los más de 200.000 € de las variantes GT del 911. A continuación tienes el precio de lanzamiento (PVP) desde el que parte cada modelo actual, y más abajo la evolución de precio de cada generación desde 2012.</p>
@@ -405,9 +313,19 @@
     </div>
 
     <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
-        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
-    </footer>
+    <div class="wrap">
+        <a class="brand" href="/index2.html">mejor imposible</a>
+        <nav class="footer-links" aria-label="Pie">
+            <a href="/">Guía Porsche</a>
+            <a href="/metodologia/">Metodología</a>
+            <a href="/eventos/">Eventos</a>
+            <a href="/novedades/">Qué ha cambiado</a>
+        </nav>
+    </div>
+    <div class="wrap" style="padding-top:0;padding-bottom:32px;font-size:13px;color:var(--muted)">
+        <p>&copy; <span id="current-year"></span> mejorimposible.es · Guía no oficial. Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+    </div>
+</footer>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
     <script>
@@ -463,24 +381,24 @@
 
         function renderLaunchPriceChart() {
             const ctx = document.getElementById('launchPriceChart').getContext('2d');
-            const isDark = document.body.classList.contains('theme-dark');
-            const textColor = isDark ? 'white' : 'black';
-            const gridColor = isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+            const textColor = '#5E574C';
+            const gridColor = 'rgba(22, 20, 15, 0.1)';
 
             const labels = launchPriceData.map(item => `${item.model} (${item.generation})`);
             const prices = launchPriceData.map(item => item.price);
             
             const modelColors = {
-                '911 Carrera': '#B12B28',
-                '718 Cayman': '#E3AB37',
-                'Cayenne': '#464C47',
-                'Macan': '#8B0000',
-                'Panamera': '#696969',
-                'Taycan': '#4682B4'
+                '911 Carrera': '#7A5E32',
+                '718 Cayman': '#D9C39A',
+                'Cayenne': '#2A2723',
+                'Macan': '#A8884F',
+                'Panamera': '#8A8275',
+                'Taycan': '#5E574C'
             };
-            const backgroundColors = launchPriceData.map(item => modelColors[item.model] || '#cccccc');
+            const backgroundColors = launchPriceData.map(item => modelColors[Object.keys(modelColors).find(k => item.model.startsWith(k))] || '#cccccc');
 
             if (launchPriceChartInstance) launchPriceChartInstance.destroy();
+            Chart.defaults.font.family = 'Inter, sans-serif';
             launchPriceChartInstance = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -528,16 +446,6 @@
         initializePage();
     });
     </script>
-    <script>
-        (function () {
-            var toggle = document.getElementById('nav-toggle');
-            var nav = document.querySelector('.site-nav');
-            if (toggle && nav) {
-                toggle.addEventListener('click', function () {
-                    nav.classList.toggle('is-open');
-                });
-            }
-        })();
-    </script>
+    <script src="/assets/viaje.js" defer></script>
 </body>
 </html>
