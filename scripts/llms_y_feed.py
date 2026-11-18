@@ -56,14 +56,14 @@ def dealers():
 def llms(with_portal):
     ps, ms = posts(), models()
     out = ['# Mejor Imposible', '',
-           '> Guías independientes en español para comprar y mantener un Porsche en España (modelos, fiabilidad, costes, '
-           'segunda mano, concesionarios, comparativas) y, en el portal, rankings de lo mejor de España en hoteles, golf, '
-           'restaurantes, bodegas, spas, casas, yates y motor. Nadie paga por aparecer. Idioma principal: español.', '',
+           '> Rankings independientes de lo mejor de España en hoteles, golf, restaurantes, bodegas, spas, casas, yates y motor, '
+           'y una guía en español para comprar y mantener un Porsche en España (modelos, fiabilidad, costes, segunda mano, '
+           'concesionarios, comparativas). Nadie paga por aparecer. Idioma principal: español.', '',
            '## Modelos Porsche']
     out += [f"- [{m['title']}]({m['url']}): {m['desc']}" for m in ms]
     out += ['', '## Guías y artículos']
     out += [f"- [{p['title']}]({p['url']}): {p['desc']}" for p in ps]
-    out += ['', '## Herramientas y datos',
+    out += ['', '## Guía Porsche (' + SITE + '/porsche/)',
             f'- [Concesionarios oficiales Porsche]({SITE}/porsche/concesionarios): {dealers()} centros con dirección, teléfono y valoración media en Google',
             f'- [Comparativas]({SITE}/porsche/comparativas): Porsche frente a sus rivales directos',
             f'- [Tendencias semanales]({SITE}/porsche/tendencias): resumen semanal de noticias sobre la marca']
@@ -77,7 +77,7 @@ def llms(with_portal):
         for slug in sorted(os.listdir(os.path.join(ROOT, 'planes'))):
             if os.path.isdir(os.path.join(ROOT, 'planes', slug)):
                 out.append(f'- [Plan: {slug.replace("-", " ")}]({SITE}/planes/{slug}/)')
-    out += ['', '## Contexto', '- Sitemap: ' + SITE + '/sitemap.xml',
+    out += ['', '## Contexto', '- Sitemap: ' + SITE + '/sitemap.xml y ' + SITE + '/sitemap-portal.xml',
             '- Traducciones del portal: /en/, /fr/, /de/, /it/, /pt/', '']
     return '\n'.join(out)
 

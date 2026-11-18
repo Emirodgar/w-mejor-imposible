@@ -1,6 +1,6 @@
 # Mejor Imposible
 
-> Guías independientes en español para comprar y mantener un Porsche en España (modelos, fiabilidad, costes, segunda mano, concesionarios, comparativas) y, en el portal, rankings de lo mejor de España en hoteles, golf, restaurantes, bodegas, spas, casas, yates y motor. Nadie paga por aparecer. Idioma principal: español.
+> Rankings independientes de lo mejor de España en hoteles, golf, restaurantes, bodegas, spas, casas, yates y motor, y una guía en español para comprar y mantener un Porsche en España (modelos, fiabilidad, costes, segunda mano, concesionarios, comparativas). Nadie paga por aparecer. Idioma principal: español.
 
 ## Modelos Porsche
 - [Porsche 718 (Boxster / Cayman)](https://mejorimposible.es/porsche/modelos/718): Ficha técnica del Porsche 718 Boxster y Cayman centrada en fiabilidad, coste de mantenimiento y precio de lanzamiento y reventa de cada generación, del 986 al 718 actual.
@@ -29,11 +29,41 @@
 - [Análisis de ventas de Porsche](https://mejorimposible.es/porsche/ventas-porsche): Analizamos la evolución de las ventas globales de Porsche (2004-2024). Descubre el dominio de los SUV, el renacer del 911 y los desafíos de la electrificación en mercados clave.
 - [Satisfacción de propietarios de Porsche](https://mejorimposible.es/porsche/satisfaccion-porsche): ¿Están satisfechos los propietarios de Porsche? Analizamos los datos de J.D. Power 2025 y opiniones que revelan por qué es líder en fiabilidad y experiencia del cliente.
 
-## Herramientas y datos
+## Guía Porsche (https://mejorimposible.es/porsche/)
 - [Concesionarios oficiales Porsche](https://mejorimposible.es/porsche/concesionarios): 22 centros con dirección, teléfono y valoración media en Google
 - [Comparativas](https://mejorimposible.es/porsche/comparativas): Porsche frente a sus rivales directos
 - [Tendencias semanales](https://mejorimposible.es/porsche/tendencias): resumen semanal de noticias sobre la marca
 
+## Portal de rankings
+- [Cómo elaboramos los rankings](https://mejorimposible.es/metodologia/): criterios, fuentes y límites
+- [Destinos](https://mejorimposible.es/destinos/): rankings y planes por zona
+- [Ranking: alojamientos historicos](https://mejorimposible.es/ranking/alojamientos-historicos/)
+- [Ranking: bares de cocteleria](https://mejorimposible.es/ranking/bares-de-cocteleria/)
+- [Ranking: bodegas](https://mejorimposible.es/ranking/bodegas/)
+- [Ranking: casas de lujo](https://mejorimposible.es/ranking/casas-de-lujo/)
+- [Ranking: compras de lujo](https://mejorimposible.es/ranking/compras-de-lujo/)
+- [Ranking: golf](https://mejorimposible.es/ranking/golf/)
+- [Ranking: helicopteros](https://mejorimposible.es/ranking/helicopteros/)
+- [Ranking: hoteles de lujo](https://mejorimposible.es/ranking/hoteles-de-lujo/)
+- [Ranking: motor](https://mejorimposible.es/ranking/motor/)
+- [Ranking: museos](https://mejorimposible.es/ranking/museos/)
+- [Ranking: restaurantes](https://mejorimposible.es/ranking/restaurantes/)
+- [Ranking: spas](https://mejorimposible.es/ranking/spas/)
+- [Ranking: vida nocturna](https://mejorimposible.es/ranking/vida-nocturna/)
+- [Ranking: yates y calas](https://mejorimposible.es/ranking/yates-y-calas/)
+- [Plan: barcelona passeig de gracia y mesa](https://mejorimposible.es/planes/barcelona-passeig-de-gracia-y-mesa/)
+- [Plan: girona golf y can roca](https://mejorimposible.es/planes/girona-golf-y-can-roca/)
+- [Plan: golf en sotogrande](https://mejorimposible.es/planes/golf-en-sotogrande/)
+- [Plan: ibiza y formentera en barco](https://mejorimposible.es/planes/ibiza-y-formentera-en-barco/)
+- [Plan: jerez y cadiz vino motor y mesa](https://mejorimposible.es/planes/jerez-y-cadiz-vino-motor-y-mesa/)
+- [Plan: la rioja de bodega en bodega](https://mejorimposible.es/planes/la-rioja-de-bodega-en-bodega/)
+- [Plan: longevidad en la costa blanca](https://mejorimposible.es/planes/longevidad-en-la-costa-blanca/)
+- [Plan: madrid de compras y mesa](https://mejorimposible.es/planes/madrid-de-compras-y-mesa/)
+- [Plan: mallorca mar golf y spa](https://mejorimposible.es/planes/mallorca-mar-golf-y-spa/)
+- [Plan: marbella golf y mesa](https://mejorimposible.es/planes/marbella-golf-y-mesa/)
+- [Plan: ribera del duero abadia y bodega](https://mejorimposible.es/planes/ribera-del-duero-abadia-y-bodega/)
+- [Plan: san sebastian mesa a mesa](https://mejorimposible.es/planes/san-sebastian-mesa-a-mesa/)
+
 ## Contexto
-- Sitemap: https://mejorimposible.es/sitemap.xml
+- Sitemap: https://mejorimposible.es/sitemap.xml y https://mejorimposible.es/sitemap-portal.xml
 - Traducciones del portal: /en/, /fr/, /de/, /it/, /pt/

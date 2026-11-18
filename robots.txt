@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://mejorimposible.es/sitemap.xml
+Sitemap: https://mejorimposible.es/sitemap-portal.xml

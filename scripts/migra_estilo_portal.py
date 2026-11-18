@@ -4,7 +4,7 @@ Idempotente: salta las páginas que ya cargan /assets/porsche.css.
 Uso: python scripts/migra_estilo_portal.py [--dry]"""
 import glob, re, sys, io
 DRY = '--dry' in sys.argv
-SECCIONES = [('Herramientas','/#tools',None),('Modelos','/porsche/modelos','modelos'),('Precios','/porsche/precios','precios'),
+SECCIONES = [('Herramientas','/porsche/#tools',None),('Modelos','/porsche/modelos','modelos'),('Precios','/porsche/precios','precios'),
              ('Tendencias','/porsche/tendencias','tendencias'),('Opiniones','/porsche/analisis','analisis'),
              ('Concesionarios','/porsche/concesionarios','concesionarios'),('Blog','/porsche/blog','blog')]
 FONT = ('<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">\n'
@@ -13,25 +13,25 @@ FONT = ('<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond
 def header(seccion):
     sub = ''.join('\n    <a href="%s"%s>%s</a>' % (u, ' aria-current="page"' if k and k == seccion else '', n) for n, u, k in SECCIONES)
     return '''<header class="wrap site-header">
-        <a class="brand" href="/index2.html">mejor imposible</a>
+        <a class="brand" href="/">mejor imposible</a>
         <nav class="main-nav" aria-label="Principal">
-            <a href="/index2.html#rankings">Rankings</a>
-            <a href="/index2.html#planes">Planes completos</a>
+            <a href="/#rankings">Rankings</a>
+            <a href="/#planes">Planes completos</a>
             <a href="/destinos/">Destinos</a>
             <a href="/buscar/">Buscar</a>
             <a href="/mi-viaje/">Mi viaje<span class="trip-count" hidden></span></a>
-            <a href="/" aria-current="true">Guía Porsche</a>
+            <a href="/porsche/" aria-current="true">Guía Porsche</a>
         </nav>
     </header>
     <nav class="wrap porsche-sub" aria-label="Guía Porsche">
-        <span class="lbl">Guía Porsche</span>%s
+        <a class="lbl" href="/porsche/">Guía Porsche</a>%s
     </nav>''' % sub.replace('\n    ', '\n        ')
 
 FOOTER = '''<footer class="site-footer">
         <div class="wrap">
-            <a class="brand" href="/index2.html">mejor imposible</a>
+            <a class="brand" href="/">mejor imposible</a>
             <nav class="footer-links" aria-label="Pie">
-                <a href="/">Guía Porsche</a>
+                <a href="/porsche/">Guía Porsche</a>
                 <a href="/metodologia/">Metodología</a>
                 <a href="/eventos/">Eventos</a>
                 <a href="/novedades/">Qué ha cambiado</a>

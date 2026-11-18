@@ -32,8 +32,8 @@ import re
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 DATA = os.path.join(ROOT, 'data', 'portal')
 SITE = 'https://mejorimposible.es'
-HOME = '/index2.html'      # cuando el portal sustituya a la home, cambiar a '/'
-NOINDEX = True             # quitar al lanzar el portal
+HOME = '/'                 # la portada del portal vive en la raíz; la guía Porsche está en /porsche/
+NOINDEX = False            # True mantiene el portal como borrador (noindex)
 LANGS = [('es', 'ES'), ('en', 'EN'), ('fr', 'FR'), ('de', 'DE'), ('pt', 'PT'), ('it', 'IT')]
 PUBLISHED = ['es', 'en', 'fr', 'de', 'pt', 'it']   # idiomas que se generan y aparecen en el selector
 LANG = 'es'
@@ -98,7 +98,7 @@ def prefix(lang):
 
 def u(path):
     """Enlace interno en el idioma actual. La guía Porsche (/porsche/, solo en español) y las anclas no cambian."""
-    if not path.startswith('/') or path == '/':
+    if not path.startswith('/'):
         return path
     return prefix(LANG) + path
 
@@ -217,7 +217,7 @@ HEAD = '''<!DOCTYPE html>
         <a href="@@DEST@@">@@N_DEST@@</a>
         <a href="@@SEARCH@@">@@N_SEARCH@@</a>
         <a href="@@TRIP@@">@@N_TRIP@@<span class="trip-count" hidden></span></a>
-        <a href="/">@@N_PORSCHE@@</a>
+        <a href="/porsche/">@@N_PORSCHE@@</a>
     </nav>
     <div class="lang" aria-label="@@ARIA_LANG@@">
 @@LANG@@
@@ -230,7 +230,7 @@ FOOT = '''
     <div class="wrap">
         <a class="brand" href="@@HOME@@">mejor imposible</a>
         <nav class="footer-links" aria-label="@@ARIA_FOOT@@">
-            <a href="/">@@N_PORSCHE@@</a>
+            <a href="/porsche/">@@N_PORSCHE@@</a>
             <a href="@@METHOD@@">@@N_METHOD@@</a>
             <a href="@@EVENTS@@">@@N_EVENTS@@</a>
             <a href="@@CHANGES@@">@@N_CHANGES@@</a>
@@ -326,7 +326,7 @@ def page(path, title, desc, lds, body):
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
     h, f = HEAD, FOOT
     if LANG != 'es':  # la guía Porsche solo existe en español: en el resto de idiomas no se enlaza
-        h, f = (x.replace('        <a href="/">@@N_PORSCHE@@</a>\n', '').replace('            <a href="/">@@N_PORSCHE@@</a>\n', '') for x in (h, f))
+        h, f = (x.replace('        <a href="/porsche/">@@N_PORSCHE@@</a>\n', '').replace('            <a href="/porsche/">@@N_PORSCHE@@</a>\n', '') for x in (h, f))
     for k, v in rep.items():
         h, f = h.replace(k, v), f.replace(k, v)
     f = f.replace('</footer>', credits_html() + '</footer>')  # los créditos de las fotos van dentro del pie
@@ -1791,7 +1791,7 @@ def build_sitemap():
             alts += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{loc("es")}"/>'
             urls += f'\n  <url>\n    <loc>{loc(c)}</loc>\n    <lastmod>{today}</lastmod>{alts}\n  </url>'
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-           '<!-- Sitemap del portal nuevo. No se referencia desde robots.txt ni sitemap.xml hasta quitar el noindex. -->\n'
+           '<!-- Sitemap del portal (es, en, fr, de, pt, it). Referenciado desde robots.txt. -->\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
            f'{urls}\n</urlset>\n')
     with open(os.path.join(ROOT, 'sitemap-portal.xml'), 'w', encoding='utf-8', newline='\n') as f:
