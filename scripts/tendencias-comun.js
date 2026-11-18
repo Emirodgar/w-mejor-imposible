@@ -188,22 +188,7 @@ const WEEK_CSS = `
         }
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        .site-header { padding: 18px 32px; background: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
-        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
-        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
-        .site-logo-mark { height: 26px; width: auto; display: block; }
-        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
-        .site-logo-text span { color: var(--porsche-red); }
-        .site-nav { display: flex; align-items: center; gap: 28px; }
-        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-        .site-nav a:hover { color: var(--porsche-red); }
-        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
-        .site-footer p { margin: 6px 0; }
-        .nav-toggle { display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit; width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px; align-items: center; justify-content: center; flex-shrink: 0; }
         @media (max-width: 600px) {
-            .site-logo-text { display: none; } .site-nav { display: none; } .nav-toggle { display: flex; }
-            .site-nav.is-open { display: flex; flex-direction: column; align-items: flex-start; gap: 0; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline); }
-            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
         }
         .page-back { display: inline-block; margin-bottom: 18px; font-size: 0.85rem; color: var(--porsche-red); text-decoration: none; font-weight: 600; }
         .page-back:hover { text-decoration: underline; }
@@ -281,27 +266,34 @@ ${impactHtml(it, '            ')}            <a class="read-more-link" href="${e
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/portal.css">
     <style>${WEEK_CSS}    </style>
+    <link rel="stylesheet" href="/assets/porsche.css">
     <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="site-header-inner">
-            <a href="/" class="site-logo">
-                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-                <span class="site-logo-text">mejor <span>imposible</span></span>
-            </a>
-            <nav class="site-nav">
-                <a href="/#tools">Herramientas</a>
-                <a href="/porsche/modelos">Modelos</a>
-                <a href="/porsche/analisis">Opiniones</a>
-                <a href="/porsche/concesionarios">Concesionarios</a>
-                <a href="/porsche/blog">Blog</a>
-            </nav>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
-        </div>
+    <header class="wrap site-header">
+        <a class="brand" href="/index2.html">mejor imposible</a>
+        <nav class="main-nav" aria-label="Principal">
+            <a href="/index2.html#rankings">Rankings</a>
+            <a href="/index2.html#planes">Planes completos</a>
+            <a href="/destinos/">Destinos</a>
+            <a href="/buscar/">Buscar</a>
+            <a href="/mi-viaje/">Mi viaje<span class="trip-count" hidden></span></a>
+            <a href="/" aria-current="true">Guía Porsche</a>
+        </nav>
     </header>
+    <nav class="wrap porsche-sub" aria-label="Guía Porsche">
+        <span class="lbl">Guía Porsche</span>
+        <a href="/#tools">Herramientas</a>
+        <a href="/porsche/modelos">Modelos</a>
+        <a href="/porsche/precios">Precios</a>
+        <a href="/porsche/tendencias" aria-current="page">Tendencias</a>
+        <a href="/porsche/analisis">Opiniones</a>
+        <a href="/porsche/concesionarios">Concesionarios</a>
+        <a href="/porsche/blog">Blog</a>
+    </nav>
     <div class="container">
         <a class="page-back" href="/porsche/tendencias">&larr; Volver a tendencias</a>
         <span class="eyebrow">Resumen semanal · semana ${ww} de ${yy}</span>
@@ -313,11 +305,21 @@ ${itemsHtml}
         <div class="week-nav">${nav}</div>
     </div>
     <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
-        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        <div class="wrap">
+            <a class="brand" href="/index2.html">mejor imposible</a>
+            <nav class="footer-links" aria-label="Pie">
+                <a href="/">Guía Porsche</a>
+                <a href="/metodologia/">Metodología</a>
+                <a href="/eventos/">Eventos</a>
+                <a href="/novedades/">Qué ha cambiado</a>
+            </nav>
+        </div>
+        <div class="wrap" style="padding-top:0;padding-bottom:32px;font-size:13px;color:var(--muted)">
+            <p>&copy; <span id="current-year"></span> mejorimposible.es · Guía no oficial creada por y para entusiastas de Porsche. Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        </div>
     </footer>
-    <script>document.getElementById('current-year').textContent = new Date().getFullYear();
-        (function () { var t = document.getElementById('nav-toggle'), n = document.querySelector('.site-nav'); if (t && n) t.addEventListener('click', function () { n.classList.toggle('is-open'); }); })();</script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    <script src="/assets/viaje.js" defer></script>
 </body>
 </html>
 `;

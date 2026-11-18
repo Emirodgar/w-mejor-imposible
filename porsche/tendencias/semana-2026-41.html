@@ -11,30 +11,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/portal.css">
     <style>
         :root {
-            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-grey: #464C47;
+            --porsche-red: #7A5E32; --porsche-gold: #D9C39A; --porsche-grey: #464C47;
             --light-bg: #f6f6f6; --light-card-bg: #ffffff; --light-text: #1a1a1a; --hairline: #e5e5e5;
         }
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background: var(--light-bg); color: var(--light-text); -webkit-font-smoothing: antialiased; }
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        .site-header { padding: 18px 32px; background: #fff; border-bottom: 1px solid var(--hairline); position: sticky; top: 0; z-index: 100; box-sizing: border-box; }
-        .site-header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
-        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
-        .site-logo-mark { height: 26px; width: auto; display: block; }
-        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
-        .site-logo-text span { color: var(--porsche-red); }
-        .site-nav { display: flex; align-items: center; gap: 28px; }
-        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-        .site-nav a:hover { color: var(--porsche-red); }
-        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
-        .site-footer p { margin: 6px 0; }
-        .nav-toggle { display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit; width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px; align-items: center; justify-content: center; flex-shrink: 0; }
         @media (max-width: 600px) {
-            .site-logo-text { display: none; } .site-nav { display: none; } .nav-toggle { display: flex; }
-            .site-nav.is-open { display: flex; flex-direction: column; align-items: flex-start; gap: 0; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline); }
-            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
         }
         .page-back { display: inline-block; margin-bottom: 18px; font-size: 0.85rem; color: var(--porsche-red); text-decoration: none; font-weight: 600; }
         .page-back:hover { text-decoration: underline; }
@@ -61,25 +47,31 @@
         .week-nav a { color: var(--porsche-red); text-decoration: none; }
         .week-nav a:hover { text-decoration: underline; }
     </style>
+    <link rel="stylesheet" href="/assets/porsche.css">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tendencias Porsche: semana del 5 al 11 de octubre de 2026","url":"https://mejorimposible.es/porsche/tendencias/semana-2026-41","inLanguage":"es","isPartOf":{"@type":"WebSite","name":"Mejor Imposible","url":"https://mejorimposible.es"},"hasPart":[{"@type":"NewsArticle","headline":"Porsche afianza su estrategia: coches más caros y enfocados al cliente purista","url":"https://www.lemonde.fr/economie/article/2026/10/11/porsche-toujours-plus-chere-et-plus-sportive-pour-une-clientele-de-passionnes_6791782_3234.html","datePublished":"2026-10-11T18:29:51Z"},{"@type":"NewsArticle","headline":"El motor bóxer de 4 litros del 911 GT3 resiste como una rara avis mecánica","url":"https://www.slashgear.com/2278507/porsche-only-4-liter-6-cylinder-engine-united-states/","datePublished":"2026-10-11T16:19:10Z"},{"@type":"NewsArticle","headline":"Porsche reorienta el desarrollo de su próximo 'hypercar' de referencia","url":"https://www.autonocion.com/motornocion/porsche-mission-s-hypercar-hibrido/","datePublished":"2026-10-11T16:17:02Z"},{"@type":"NewsArticle","headline":"Primeros análisis técnicos del Cayenne Coupé eléctrico sobre la plataforma PPE","url":"https://www.electrive.net/2026/10/11/porsche-cayenne-s-coupe-electric-im-test-die-ppe-eine-stufe-weiter/","datePublished":"2026-10-11T16:02:40Z"},{"@type":"NewsArticle","headline":"El futuro Audi A8 podría compartir base técnica con el Porsche Panamera","url":"https://www.thesupercarblog.com/next-gen-audi-a8-could-share-its-underpinnings-with-porsche-panamera/","datePublished":"2026-10-10T19:26:59Z"},{"@type":"NewsArticle","headline":"Porsche perfila la tecnología del Cayenne eléctrico de cara a 2027","url":"https://www.netcarshow.com/porsche/2027-cayenne_s_electric_uk-version/","datePublished":"2026-10-10T19:05:57Z"},{"@type":"NewsArticle","headline":"El cambio manual en el Porsche 911 arrasa en demanda en Estados Unidos","url":"https://carbuzz.com/porsche-911-manual-transmission-sales-october-2026/","datePublished":"2026-10-10T19:02:26Z"},{"@type":"NewsArticle","headline":"Porsche afronta un ajuste de ventas globales y prepara su plan de respuesta","url":"https://finance.yahoo.com/markets/stocks/articles/porsche-records-massive-sales-slide-130000796.html","datePublished":"2026-10-10T16:38:37Z"},{"@type":"NewsArticle","headline":"Porsche reorienta su estrategia: más exclusividad y subida de precios","url":"https://www.caranddriver.com/es/coches/planeta-motor/a74076017/porsche-plan-futuro/","datePublished":"2026-10-10T15:33:10Z"},{"@type":"NewsArticle","headline":"Los sobrecostes del coche eléctrico pasan factura a los acuerdos de Porsche","url":"https://www.autocar.co.uk/car-news/business-corporate/why-porsche-suffers-more-most-high-ev-costs","datePublished":"2026-10-09T13:30:19Z"},{"@type":"NewsArticle","headline":"Manthey presenta ediciones especiales del 911 GT3 Cup y 718 GT4 RS Clubsport","url":"https://www.caranddriver.com/news/a74071001/porsche-911-gt3-cup-718-cayman-gt4-rs-race-cars-manthey/","datePublished":"2026-10-09T11:39:09Z"},{"@type":"NewsArticle","headline":"Porsche entrega un 16 % menos de coches en 2026, pero el 911 repunta con fuerza","url":"https://www.elconfidencial.com/empresas/2026-10-09/porsche-caida-ventas-china-1hms_4441864/","datePublished":"2026-10-09T10:56:43Z"},{"@type":"NewsArticle","headline":"Los próximos 718 Cayman y Boxster eléctricos llegarán en 2027","url":"https://espirituracer.com/noticias/porsche-se-resiste-al-monopatin-electrico/","datePublished":"2026-10-09T10:02:09Z"},{"@type":"NewsArticle","headline":"Porsche anticipa el Mission S, su próximo superdeportivo por encima del 911","url":"https://www.caranddriver.com/news/a74065319/porsche-mid-engine-supercar-teaser/","datePublished":"2026-10-07T12:00:00.000Z"},{"@type":"NewsArticle","headline":"Porsche busca mayor rentabilidad con coches más caros y menor volumen","url":"https://soymotor.com/coches/noticias/porsche-se-prepara-para-ser-un-20-mas-cara-en-busca-de-mas-beneficios","datePublished":"2026-10-07T12:00:00.000Z"},{"@type":"NewsArticle","headline":"Singer presenta el DLS Turbo, un tributo al 934/5 con 700 CV y cambio manual","url":"https://www.motorpoint.com/singer-dls-turbo-porsche-911-700-cv-manual","datePublished":"2026-10-07T12:00:00.000Z"},{"@type":"NewsArticle","headline":"El Porsche Macan recuperará motores térmicos e híbridos enchufables","url":"https://www.motor16.com/las-ultimas-noticias/porsche-macan-hibrido-enchufable-2028/","datePublished":"2026-10-07T12:00:00.000Z"}]}</script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="site-header-inner">
-            <a href="/" class="site-logo">
-                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-                <span class="site-logo-text">mejor <span>imposible</span></span>
-            </a>
-            <nav class="site-nav">
-                <a href="/#tools">Herramientas</a>
-                <a href="/porsche/modelos">Modelos</a>
-                <a href="/porsche/analisis">Opiniones</a>
-                <a href="/porsche/concesionarios">Concesionarios</a>
-                <a href="/porsche/blog">Blog</a>
-            </nav>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
-        </div>
+    <header class="wrap site-header">
+        <a class="brand" href="/index2.html">mejor imposible</a>
+        <nav class="main-nav" aria-label="Principal">
+            <a href="/index2.html#rankings">Rankings</a>
+            <a href="/index2.html#planes">Planes completos</a>
+            <a href="/destinos/">Destinos</a>
+            <a href="/buscar/">Buscar</a>
+            <a href="/mi-viaje/">Mi viaje<span class="trip-count" hidden></span></a>
+            <a href="/" aria-current="true">Guía Porsche</a>
+        </nav>
     </header>
+    <nav class="wrap porsche-sub" aria-label="Guía Porsche">
+        <span class="lbl">Guía Porsche</span>
+        <a href="/#tools">Herramientas</a>
+        <a href="/porsche/modelos">Modelos</a>
+        <a href="/porsche/precios">Precios</a>
+        <a href="/porsche/tendencias" aria-current="page">Tendencias</a>
+        <a href="/porsche/analisis">Opiniones</a>
+        <a href="/porsche/concesionarios">Concesionarios</a>
+        <a href="/porsche/blog">Blog</a>
+    </nav>
     <div class="container">
         <a class="page-back" href="/porsche/tendencias">&larr; Volver a tendencias</a>
         <span class="eyebrow">Resumen semanal · semana 41 de 2026</span>
@@ -300,10 +292,21 @@
         <div class="week-nav"><a href="/porsche/tendencias/semana-2026-40">&larr; Semana del 28 de septiembre al 4 de octubre de 2026</a><a href="/porsche/tendencias/semana-2026-42">Semana del 12 al 18 de octubre de 2026 &rarr;</a></div>
     </div>
     <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
-        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        <div class="wrap">
+            <a class="brand" href="/index2.html">mejor imposible</a>
+            <nav class="footer-links" aria-label="Pie">
+                <a href="/">Guía Porsche</a>
+                <a href="/metodologia/">Metodología</a>
+                <a href="/eventos/">Eventos</a>
+                <a href="/novedades/">Qué ha cambiado</a>
+            </nav>
+        </div>
+        <div class="wrap" style="padding-top:0;padding-bottom:32px;font-size:13px;color:var(--muted)">
+            <p>&copy; <span id="current-year"></span> mejorimposible.es · Guía no oficial creada por y para entusiastas de Porsche. Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        </div>
     </footer>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();
         (function () { var t = document.getElementById('nav-toggle'), n = document.querySelector('.site-nav'); if (t && n) t.addEventListener('click', function () { n.classList.toggle('is-open'); }); })();</script>
+    <script src="/assets/viaje.js" defer></script>
 </body>
 </html>

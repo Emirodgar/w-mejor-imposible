@@ -8,10 +8,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/portal.css">
     <style>
         :root {
-            --porsche-red: #B12B28; --porsche-gold: #E3AB37; --porsche-black: #000000;
+            --porsche-red: #7A5E32; --porsche-gold: #D9C39A; --porsche-black: #000000;
             --porsche-grey: #464C47; --light-bg: #f6f6f6; --light-card-bg: #ffffff;
             --light-text: #1a1a1a; --dark-bg: #1d2125; --dark-card-bg: #282c34;
             --dark-text: #e1e1e1; --hairline: #e5e5e5;
@@ -20,38 +21,7 @@
         .theme-light { background-color: var(--light-bg); color: var(--light-text); }
         .theme-dark { background-color: var(--dark-bg); color: var(--dark-text); }
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        .site-header {
-            padding: 18px 32px; background-color: #fff; border-bottom: 1px solid var(--hairline);
-            position: sticky; top: 0; z-index: 100; box-sizing: border-box;
-        }
-        .site-header-inner {
-            display: flex; justify-content: space-between; align-items: center;
-            max-width: 1400px; margin: 0 auto;
-        }
-        .site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--light-text); }
-        .site-logo-mark { height: 26px; width: auto; display: block; }
-        .site-logo-text { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
-        .site-logo-text span { color: var(--porsche-red); }
-        .site-nav { display: flex; align-items: center; gap: 28px; }
-        .site-nav a { text-decoration: none; color: var(--light-text); font-weight: 500; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-        .site-nav a:hover { color: var(--porsche-red); }
-        .site-footer { text-align: center; padding: 40px 20px; margin-top: 40px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--porsche-grey); }
-        .site-footer p { margin: 6px 0; }
-        .nav-toggle {
-            display: none; background: none; border: 1px solid var(--porsche-grey); color: inherit;
-            width: 34px; height: 34px; border-radius: 4px; cursor: pointer; font-size: 16px;
-            align-items: center; justify-content: center; flex-shrink: 0;
-        }
         @media (max-width: 600px) {
-            .site-logo-text { display: none; }
-            .site-nav { display: none; }
-            .nav-toggle { display: flex; }
-            .site-nav.is-open {
-                display: flex; flex-direction: column; align-items: flex-start; gap: 0;
-                position: absolute; top: 100%; left: 0; width: 100%; background: #fff;
-                padding: 6px 32px 16px; box-sizing: border-box; border-bottom: 1px solid var(--hairline);
-            }
-            .site-nav.is-open a { width: 100%; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
         }
 
         .page-back { display: inline-block; margin-bottom: 18px; font-size: 0.85rem; color: var(--porsche-red); text-decoration: none; font-weight: 600; }
@@ -93,14 +63,14 @@
             border-radius: 8px; padding: 18px 22px; margin-bottom: 14px;
         }
         .theme-dark .noticias-list li.story { background-color: var(--dark-card-bg); border-color: rgba(255,255,255,0.08); }
-        .noticias-list li.story.curated { border-color: rgba(177, 43, 40, 0.35); }
+        .noticias-list li.story.curated { border-color: rgba(122, 94, 50, 0.35); }
         .noticias-list li.month-heading { margin: 26px 0 12px 0; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; color: var(--porsche-red); }
         .badge { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #fff; background: var(--porsche-red); border-radius: 3px; padding: 3px 7px; margin-bottom: 8px; }
         .noticias-list a.noticia-title { color: var(--porsche-red); font-weight: 600; text-decoration: none; font-size: 1.05rem; }
         .noticias-list a.noticia-title:hover { text-decoration: underline; }
         .noticia-meta { display: block; font-size: 0.75rem; opacity: 0.6; margin: 4px 0 8px 0; text-transform: uppercase; letter-spacing: 0.5px; }
         .story p.desc { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
-        .lectura { border-left: 3px solid var(--porsche-red); background: rgba(177, 43, 40, 0.06); padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 12px 0 0 0; }
+        .lectura { border-left: 3px solid var(--porsche-red); background: rgba(122, 94, 50, 0.06); padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 12px 0 0 0; }
         .lectura .lectura-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--porsche-red); margin-bottom: 4px; }
         .lectura p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
         .lectura .lectura-links { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; }
@@ -117,6 +87,7 @@
         details.also li .src { opacity: 0.55; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.4px; margin-right: 6px; }
         .empty-state, .loading-state { text-align: center; opacity: 0.65; padding: 40px 0; }
     </style>
+    <link rel="stylesheet" href="/assets/porsche.css">
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mejor Imposible">
@@ -137,22 +108,27 @@
 </head>
 <body class="theme-light">
 
-    <header class="site-header">
-        <div class="site-header-inner">
-            <a href="/" class="site-logo">
-                <img src="/img/logo_mi_transparent.png" alt="" class="site-logo-mark">
-                <span class="site-logo-text">mejor <span>imposible</span></span>
-            </a>
-            <nav class="site-nav">
-                <a href="/#tools">Herramientas</a>
-                <a href="/porsche/modelos">Modelos</a>
-                <a href="/porsche/analisis">Opiniones</a>
-                <a href="/porsche/concesionarios">Concesionarios</a>
-                <a href="/porsche/blog">Blog</a>
-            </nav>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
-        </div>
+    <header class="wrap site-header">
+        <a class="brand" href="/index2.html">mejor imposible</a>
+        <nav class="main-nav" aria-label="Principal">
+            <a href="/index2.html#rankings">Rankings</a>
+            <a href="/index2.html#planes">Planes completos</a>
+            <a href="/destinos/">Destinos</a>
+            <a href="/buscar/">Buscar</a>
+            <a href="/mi-viaje/">Mi viaje<span class="trip-count" hidden></span></a>
+            <a href="/" aria-current="true">Guía Porsche</a>
+        </nav>
     </header>
+    <nav class="wrap porsche-sub" aria-label="Guía Porsche">
+        <span class="lbl">Guía Porsche</span>
+        <a href="/#tools">Herramientas</a>
+        <a href="/porsche/modelos">Modelos</a>
+        <a href="/porsche/precios">Precios</a>
+        <a href="/porsche/tendencias">Tendencias</a>
+        <a href="/porsche/analisis">Opiniones</a>
+        <a href="/porsche/concesionarios">Concesionarios</a>
+        <a href="/porsche/blog">Blog</a>
+    </nav>
 
     <div class="container">
         <a class="page-back" href="/porsche/tendencias">&larr; Volver a tendencias</a>
@@ -173,8 +149,18 @@
     </div>
 
     <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> mejorimposible.es - Una guía no oficial creada por y para entusiastas de Porsche.</p>
-        <p>Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        <div class="wrap">
+            <a class="brand" href="/index2.html">mejor imposible</a>
+            <nav class="footer-links" aria-label="Pie">
+                <a href="/">Guía Porsche</a>
+                <a href="/metodologia/">Metodología</a>
+                <a href="/eventos/">Eventos</a>
+                <a href="/novedades/">Qué ha cambiado</a>
+            </nav>
+        </div>
+        <div class="wrap" style="padding-top:0;padding-bottom:32px;font-size:13px;color:var(--muted)">
+            <p>&copy; <span id="current-year"></span> mejorimposible.es · Guía no oficial creada por y para entusiastas de Porsche. Todos los nombres de productos, logotipos y marcas son propiedad de sus respectivos dueños.</p>
+        </div>
     </footer>
     <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
 
@@ -358,16 +344,6 @@
         load();
     });
     </script>
-    <script>
-        (function () {
-            var toggle = document.getElementById('nav-toggle');
-            var nav = document.querySelector('.site-nav');
-            if (toggle && nav) {
-                toggle.addEventListener('click', function () {
-                    nav.classList.toggle('is-open');
-                });
-            }
-        })();
-    </script>
+    <script src="/assets/viaje.js" defer></script>
 </body>
 </html>
