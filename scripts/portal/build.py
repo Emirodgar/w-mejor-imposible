@@ -291,7 +291,9 @@ def entity_nodes():
     if SAME_AS:
         org["sameAs"] = SAME_AS
     person = {"@type": "Person", "@id": SITE + '/#autor', "name": "Emilio Rodríguez García", "alternateName": "Emirodgar",
-              "sameAs": ["https://x.com/emirodgar", "https://www.linkedin.com/in/emirodgar/"]}
+              "url": "https://emirodgar.com/", "jobTitle": "Consultor SEO y especialista en IA aplicada",
+              "sameAs": ["https://x.com/emirodgar", "https://www.linkedin.com/in/emirodgar/",
+                         "https://es.slideshare.net/emirodgar", "https://emirodgar.es"]}
     site = {"@type": "WebSite", "@id": SITE_ID, "name": "Mejor Imposible", "url": SITE + prefix(LANG) + '/',
             "inLanguage": LANG, "publisher": {"@id": ORG_ID}}
     return [org, person, site]

@@ -37,5 +37,12 @@
     {
       "es": "The World's 50 Best 2026 lo sitúa en el puesto 33."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/elkano.jpg",
+    "autor": "Restaurante Elkano",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.restauranteelkano.com/"
+  }
 }

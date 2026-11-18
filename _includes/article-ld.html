@@ -10,7 +10,7 @@
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
   "articleSection": {{ page.folder | jsonify }},
-  "author": { "@type": "Person", "@id": "https://mejorimposible.es/#autor", "name": "Emilio Rodríguez García", "alternateName": "Emirodgar", "sameAs": ["https://x.com/emirodgar", "https://www.linkedin.com/in/emirodgar/"] },
+  "author": { "@type": "Person", "@id": "https://mejorimposible.es/#autor", "name": "Emilio Rodríguez García", "alternateName": "Emirodgar", "url": "https://emirodgar.com/", "jobTitle": "Consultor SEO y especialista en IA aplicada", "sameAs": ["https://x.com/emirodgar", "https://www.linkedin.com/in/emirodgar/", "https://es.slideshare.net/emirodgar", "https://emirodgar.es"] },
   "publisher": { "@type": "Organization", "@id": "https://mejorimposible.es/#organization", "name": "Mejor Imposible", "url": "https://mejorimposible.es/", "logo": { "@type": "ImageObject", "url": "https://mejorimposible.es/img/logo_mi_transparent.png" } },
   "isPartOf": { "@type": "WebSite", "@id": "https://mejorimposible.es/#website", "name": "Mejor Imposible", "url": "https://mejorimposible.es/" },
   "image": {% if page.image and page.image != "" %}{{ page.image | prepend: "https://mejorimposible.es" | jsonify }}{% else %}"https://mejorimposible.es/img/logo_mi_transparent.png"{% endif %}

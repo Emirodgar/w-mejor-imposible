@@ -40,5 +40,12 @@
     {
       "es": "The World's 50 Best 2026 lo sitúa en el puesto 29."
     }
-  ]
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/restaurantes/enigma.jpg",
+    "autor": "Enigma",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://enigmaconcept.es/"
+  }
 }
