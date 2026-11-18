@@ -8,7 +8,8 @@
 
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 2px; padding: 32px; }
 .card + .card, .grid-layout .card + .card, .content-section { margin-top: 24px; }
-.grid-layout { display: grid; gap: 24px; }
+.grid-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+.card { min-width: 0; }
 .grid-layout .card { margin-top: 0; }
 .card-title, .content-section h2 { font-size: clamp(26px, 3vw, 36px); line-height: 1.1; margin-bottom: 20px; }
 .content-section h3 { font-size: 24px; margin: 28px 0 8px; }
