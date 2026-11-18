@@ -40,8 +40,9 @@
   ],
   "foto_real": {
     "archivo": "/img/portal/compras-de-lujo/calle-colon-y-jorge-juan.jpg",
-    "autor": "Autor sin identificar",
-    "licencia": "Imagen de terceros",
-    "origen": "propia"
+    "autor": "Visit València",
+    "licencia": "Imagen del organismo oficial de turismo",
+    "origen": "propia",
+    "fuente": "https://www.visitvalencia.com/"
   }
 }
