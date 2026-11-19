@@ -233,6 +233,7 @@ FOOT = '''
             <a href="/porsche/">@@N_PORSCHE@@</a>
             <a href="@@METHOD@@">@@N_METHOD@@</a>
             <a href="@@EVENTS@@">@@N_EVENTS@@</a>
+            <a href="@@GUIDES@@">@@N_GUIDES@@</a>
             <a href="@@CHANGES@@">@@N_CHANGES@@</a>
         </nav>
     </div>
@@ -320,7 +321,7 @@ def page(path, title, desc, lds, body):
     robots = ('    <!-- Borrador del nuevo portal: no indexar hasta sustituir a index.html -->\n'
               '    <meta name="robots" content="noindex, nofollow">') if NOINDEX else ''
     rep = {'@@L@@': LANG, '@@TITLE@@': e(title), '@@DESC@@': e(desc), '@@ROBOTS@@': robots, '@@LINKS@@': head_links(path),
-           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'), '@@CHANGES@@': u('/novedades/'), '@@EVENTS@@': u('/eventos/'), '@@N_EVENTS@@': e(ui('nav.events')), '@@N_CHANGES@@': e(ui('nav.changes')),
+           '@@LD@@': ld(*lds, *entity_nodes()), '@@HOME@@': u(HOME), '@@DEST@@': u('/destinos/'), '@@SEARCH@@': u('/buscar/'), '@@TRIP@@': u('/mi-viaje/'), '@@N_TRIP@@': e(ui('nav.trip')), '@@N_SEARCH@@': e(ui('nav.search')), '@@METHOD@@': u('/metodologia/'), '@@CHANGES@@': u('/novedades/'), '@@EVENTS@@': u('/eventos/'), '@@N_EVENTS@@': e(ui('nav.events')), '@@GUIDES@@': u('/guias/'), '@@N_GUIDES@@': e(ui('nav.guides')), '@@N_CHANGES@@': e(ui('nav.changes')),
            '@@ARIA_MAIN@@': e(ui('aria.main')), '@@ARIA_LANG@@': e(ui('aria.lang')), '@@ARIA_FOOT@@': e(ui('aria.footer')),
            '@@N_RANK@@': e(ui('nav.rankings')), '@@N_PLANS@@': e(ui('nav.plans')), '@@N_DEST@@': e(ui('nav.destinations')),
            '@@N_PORSCHE@@': e(ui('nav.porsche')), '@@N_METHOD@@': e(ui('nav.method')), '@@LANG@@': lang_html(path)}
@@ -1894,6 +1895,153 @@ def dominio_corto(url):
     return h
 
 
+def cargar_guias():
+    d = os.path.join(DATA, 'guias')
+    if not os.path.isdir(d):
+        return []
+    gs = [json.load(open(os.path.join(d, f), encoding='utf-8')) for f in sorted(os.listdir(d)) if f.endswith('.json')]
+    return [g for g in gs if g.get('publicar', True)]
+
+
+def build_guias():
+    gs = cargar_guias()
+    cards = ''.join(
+        f'\n            <article class="ev">\n                <p class="eyebrow">{e(ui("guide.eyebrow"))}</p>\n                <h3><a href="{u("/guias/" + g["slug"] + "/")}">{e(tr(g["titulo"]))}</a></h3>'
+        f'\n                <p>{e(tr(g["resumen"]))}</p>\n            </article>' for g in gs)
+    path = '/guias/'
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('guide.h1'), None)]
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <h1>{e(ui('guide.h1'))}</h1>
+        <p class="lead-text">{e(ui('guide.lead'))}</p>
+    </section>
+    <section class="wrap ev-month">
+        <div class="ev-list">{cards}
+        </div>
+    </section>
+</main>
+'''
+    lds = [webpage('CollectionPage', path, ui('guide.h1'), ui('guide.lead')), {"@type": "ItemList", "name": ui('guide.h1'), "numberOfItems": len(gs),
+           "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE + u('/guias/' + g['slug'] + '/'), "name": tr(g['titulo'])} for i, g in enumerate(gs)]}, bc_ld(crumb)]
+    write(path + 'index.html', page(path, f'{ui("guide.h1")} · Mejor Imposible', ui('guide.lead'), lds, body))
+
+
+def build_guia(g):
+    """Guía de reserva y precios: respuesta primero, tabla de precios con fuente y fecha, pasos, condiciones por sitio, consejos y preguntas."""
+    path = f'/guias/{g["slug"]}/'
+    page_url = SITE + u(path)
+    titulo, resumen = tr(g['titulo']), tr(g['resumen'])
+    upd = g.get('actualizado')
+
+    # precios
+    filas = g.get('precios', {}).get('filas', [])
+    precios = ''
+    if filas:
+        rows = ''
+        for f in filas:
+            detalle = ' · '.join(x for x in (tr(f['unidad']) if f.get('unidad') else '', tr(f['temporada']) if f.get('temporada') else '') if x)
+            fuente = f'<a href="{e(f["fuente_url"])}" rel="noopener">{e(f.get("fuente") or ui("ev.source"))} <span aria-hidden="true">↗</span></a>'
+            if f.get('fecha_dato'):
+                fuente += f'<span class="muted">{e(tr(f["fecha_dato"]))}</span>'
+            rows += (f'\n                <tr><th scope="row">{e(tr(f["concepto"]))}</th><td class="guia-imp">{e(f["importe"])}</td>'
+                     f'<td>{e(detalle)}</td><td class="guia-fuente">{fuente}</td></tr>')
+        nota = f'\n        <p class="muted">{e(tr(g["precios"]["nota"]))}</p>' if g['precios'].get('nota') else ''
+        precios = f'''
+    <section class="wrap prose guia" id="precios">
+        <h2>{e(ui("guide.prices"))}</h2>
+        <div class="guia-tabla">
+            <table>
+                <thead><tr><th scope="col">{e(ui("guide.col.item"))}</th><th scope="col">{e(ui("guide.col.price"))}</th><th scope="col">{e(ui("guide.col.detail"))}</th><th scope="col">{e(ui("guide.col.source"))}</th></tr></thead>
+                <tbody>{rows}
+                </tbody>
+            </table>
+        </div>{nota}
+        <p class="muted">{e(ui("guide.disclaimer"))}</p>
+    </section>'''
+
+    # pasos
+    pasos = g.get('pasos', [])
+    pasos_html = ''
+    if pasos:
+        li = ''.join(f'\n            <li><h3>{e(tr(p["titulo"]))}</h3><p>{e(tr(p["texto"]))}</p></li>' for p in pasos)
+        pasos_html = f'\n    <section class="wrap prose guia" id="pasos">\n        <h2>{e(ui("guide.steps"))}</h2>\n        <ol class="guia-pasos">{li}\n        </ol>\n    </section>'
+
+    # condiciones por sitio
+    res = g.get('reservas', [])
+    res_html = ''
+    if res:
+        cards = ''
+        for r in res:
+            filas_r = ''.join(f'\n                <dt>{e(ui(k))}</dt><dd>{e(tr(r[c]))}</dd>' for k, c in (('guide.how', 'como'), ('guide.lead_time', 'antelacion'), ('guide.policy', 'politica')) if r.get(c))
+            cards += f'\n            <article class="guia-card">\n                <h3>{e(tr(r["concepto"]))}</h3>\n                <dl class="guia-dl">{filas_r}\n                </dl>\n            </article>'
+        res_html = f'\n    <section class="wrap prose guia" id="condiciones">\n        <h2>{e(ui("guide.booking"))}</h2>\n        <div class="guia-grid">{cards}\n        </div>\n    </section>'
+
+    def lista(titulo_key, items, ident):
+        if not items:
+            return ''
+        li = ''.join(f'\n            <li>{e(tr(i))}</li>' for i in items)
+        return f'\n    <section class="wrap prose guia" id="{ident}">\n        <h2>{e(ui(titulo_key))}</h2>\n        <ul class="guia-lista">{li}\n        </ul>\n    </section>'
+
+    consejos = lista('guide.tips', g.get('consejos'), 'consejos') + lista('guide.mistakes', g.get('errores_comunes'), 'errores')
+
+    faq = g.get('faq', [])
+    faq_html = ''
+    if faq:
+        qa = ''.join(f'\n        <h3>{e(tr(f["p"]))}</h3>\n        <p>{e(tr(f["r"]))}</p>' for f in faq)
+        faq_html = f'\n    <section class="wrap prose ev-faq" id="preguntas">\n        <h2>{e(ui("ev.page.faq"))}</h2>{qa}\n    </section>'
+
+    huecos = lista('guide.gaps', g.get('huecos'), 'pendiente')
+
+    # enlaces internos
+    rel = g.get('relacionados', {})
+    links = []
+    for c in rel.get('rankings', []):
+        if c in CATS:
+            links.append((u(f'/ranking/{c}/'), t(CATS[c]['corto'])))
+    evs = {x['id']: x for x in load('eventos.json')['eventos']}
+    for i in rel.get('eventos', []):
+        if i in evs and evs[i].get('publicar'):
+            links.append((u(f'/eventos/{i}/'), evs[i]['nombre']))
+    for d_ in rel.get('destinos', []):
+        links.append((u(f'/destinos/{d_}/'), ui('ev.guide', n=tr(next((x['nombre'] for x in DESTS if x['slug'] == d_), d_)))))
+    rel_html = ''
+    if links:
+        btns = ''.join(f'<a class="ev-btn" href="{h}">{e(n)} <span aria-hidden="true">→</span></a>' for h, n in links)
+        rel_html = f'\n    <section class="wrap prose" id="relacionado">\n        <h2>{e(ui("guide.related"))}</h2>\n        <div class="guia-rel">{btns}</div>\n    </section>'
+
+    # fuentes
+    srcs = ''.join(f'<li><a href="{e(f["url"])}" rel="noopener">{e(f.get("nombre") or ui("ev.source"))} <span aria-hidden="true">↗</span></a><span class="muted">{e(dominio_corto(f["url"]))}</span></li>' for f in g.get('fuentes', []))
+    fuentes_html = ''
+    if srcs:
+        upd_html = f'<p class="muted">{e(ui("guide.updated", d=fmt_fecha(upd)))}</p>' if upd else ''
+        fuentes_html = (f'\n    <section class="wrap prose" id="fuentes">\n        <h2>{e(ui("ev.page.sources"))}</h2>\n        <ul class="ev-sources">{srcs}</ul>\n        {upd_html}'
+                        f'\n        <p class="ev-actions"><a class="ev-btn ev-btn-solid" href="{u("/guias/")}"><span aria-hidden="true">←</span> {e(ui("guide.all"))}</a></p>\n    </section>')
+
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('guide.h1'), u('/guias/')), (titulo, None)]
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">{e(ui("guide.eyebrow"))}</p>
+        <h1>{e(titulo)}</h1>
+        <p class="lead-text">{e(resumen)}</p>
+    </section>{precios}{pasos_html}{res_html}{consejos}{faq_html}{huecos}{rel_html}{fuentes_html}
+</main>
+'''
+    article = {"@type": "Article", "@id": page_url + '#article', "headline": titulo, "description": recorta(resumen), "inLanguage": LANG,
+               "mainEntityOfPage": {"@id": page_url + '#webpage'}, "author": {"@id": SITE + '/#autor'}, "publisher": {"@id": ORG_ID},
+               **({"dateModified": upd, "datePublished": g.get('publicado') or upd} if upd else {})}
+    howto = {"@type": "HowTo", "@id": page_url + '#howto', "name": titulo, "description": recorta(resumen),
+             "step": [{"@type": "HowToStep", "position": i + 1, "name": tr(p['titulo']), "text": tr(p['texto'])} for i, p in enumerate(pasos)]} if pasos else None
+    faq_ld = {"@type": "FAQPage", "@id": page_url + '#faq', "mainEntity": [{"@type": "Question", "name": tr(f['p']), "acceptedAnswer": {"@type": "Answer", "text": tr(f['r'])}} for f in faq]} if faq else None
+    lds = [webpage('WebPage', path, titulo, recorta(resumen), **({"dateModified": upd} if upd else {})), article] + [x for x in (howto, faq_ld) if x] + [bc_ld(crumb)]
+    write(path + 'index.html', page(path, f'{titulo} · Mejor Imposible', recorta(resumen), lds, body))
+
+
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
               + ['/motor/marcas/', '/metodologia/', '/destinos/', '/buscar/', '/mi-viaje/', '/novedades/', '/eventos/'] + [f'/intereses/{x["slug"]}/' for x in INTERESES] + [f'/destinos/{d["slug"]}/' for d in DESTS]
               + ['/ranking/' + r + '/' for r in ITEMS] + ['/ranking/compras-de-lujo/tiendas/'])
@@ -1937,6 +2085,9 @@ if __name__ == '__main__':
         build_trip()
         build_novedades()
         build_eventos()
+        build_guias()
+        for _g in cargar_guias():
+            build_guia(_g)
         for _ev in load('eventos.json')['eventos']:
             if _ev.get('publicar'):
                 build_evento(_ev)

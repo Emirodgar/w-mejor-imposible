@@ -505,3 +505,30 @@ table.cal tbody th { font-weight: 500; }
     .ev-btn { width: 100%; justify-content: center; }
     .ev-faq h3 { font-size: 22px; }
 }
+
+/* Guías de reserva y precios */
+.guia > .guia-tabla, .guia > .guia-grid { max-width: none; }
+.guia-tabla { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: #FBF9F5; }
+.guia-tabla table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 640px; }
+.guia-tabla th, .guia-tabla td { padding: 14px 18px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+.guia-tabla thead th { border-top: 0; background: #F1ECE3; font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.guia-tabla tbody th { font-weight: 500; }
+.guia-imp { white-space: nowrap; font-weight: 500; }
+.guia-fuente { font-size: 13px; }
+.guia-fuente a { display: block; text-decoration: underline; text-decoration-color: var(--accent-light); text-underline-offset: 3px; }
+.guia-fuente .muted { display: block; }
+.guia-pasos { list-style: none; counter-reset: paso; margin: 0; padding: 0; max-width: 760px; }
+.guia-pasos li { counter-increment: paso; position: relative; padding: 0 0 22px 58px; }
+.guia-pasos li::before { content: counter(paso); position: absolute; left: 0; top: 2px; width: 38px; height: 38px; border-radius: 50%; background: var(--ink); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; }
+.guia-pasos h3 { margin: 0 0 4px; font-family: var(--serif); font-weight: 500; font-size: 24px; line-height: 1.25; }
+.guia-pasos p { margin: 0; }
+.guia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+.guia-card { padding: 20px 22px; border: 1px solid var(--line); border-radius: 10px; background: #FBF9F5; }
+.guia-card h3 { margin: 0 0 10px; font-family: var(--serif); font-weight: 500; font-size: 24px; line-height: 1.2; }
+.guia-dl { margin: 0; }
+.guia-dl dt { margin-top: 10px; font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.guia-dl dd { margin: 2px 0 0; font-size: 15px; line-height: 1.5; }
+.guia-lista { margin: 0; padding-left: 20px; max-width: 760px; }
+.guia-lista li { margin: 0 0 10px; font-size: 17px; }
+.guia-rel { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 560px) { .guia-pasos li { padding-left: 50px; } .guia-pasos h3 { font-size: 22px; } }

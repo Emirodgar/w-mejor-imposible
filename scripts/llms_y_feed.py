@@ -87,6 +87,15 @@ def llms(with_portal):
         for e in ev:
             cuando = e.get('inicio') or e.get('mes_aprox') or ''
             out.append(f"- [{e['nombre']}]({SITE}/eventos/{e['id']}/): {e.get('resumen') or e['que_es']} ({cuando}; {e['lugar']})")
+    if with_portal:
+        gd = os.path.join(ROOT, 'data', 'portal', 'guias')
+        if os.path.isdir(gd):
+            import json as _json
+            gs = [_json.load(open(os.path.join(gd, f), encoding='utf-8')) for f in sorted(os.listdir(gd)) if f.endswith('.json')]
+            gs = [g for g in gs if g.get('publicar', True)]
+            if gs:
+                out += ['', '## Guías de reserva y precios (cómo reservar y cuánto cuesta, con fuente y fecha)', f'- [Todas las guías]({SITE}/guias/): índice']
+                out += [f"- [{g['titulo']}]({SITE}/guias/{g['slug']}/): {g['resumen']}" for g in gs]
     out += ['', '## Contexto', '- Sitemap: ' + SITE + '/sitemap.xml y ' + SITE + '/sitemap-portal.xml',
             '- Traducciones del portal: /en/, /fr/, /de/, /it/, /pt/', '']
     return '\n'.join(out)

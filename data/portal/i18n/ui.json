@@ -1990,5 +1990,173 @@
   "de": "{n} findet in {l} statt.",
   "pt": "{n} realiza-se em {l}.",
   "it": "{n} si svolge a {l}."
+ },
+ "nav.guides": {
+  "es": "Guías",
+  "en": "Guides",
+  "fr": "Guides",
+  "de": "Ratgeber",
+  "pt": "Guias",
+  "it": "Guide"
+ },
+ "guide.h1": {
+  "es": "Cómo reservar y cuánto cuesta",
+  "en": "How to book and what it costs",
+  "fr": "Comment réserver et combien ça coûte",
+  "de": "Buchen und was es kostet",
+  "pt": "Como reservar e quanto custa",
+  "it": "Come prenotare e quanto costa"
+ },
+ "guide.lead": {
+  "es": "Guías prácticas para organizar planes de lujo en España: cómo se reserva cada cosa, con cuánta antelación y qué precio tiene, con la fuente y la fecha de cada dato.",
+  "en": "Practical guides to organise luxury plans in Spain: how to book each thing, how far ahead and what it costs, with the source and date of every figure.",
+  "fr": "Guides pratiques pour organiser des séjours de luxe en Espagne : comment réserver, combien de temps à l'avance et quel prix, avec la source et la date de chaque donnée.",
+  "de": "Praktische Ratgeber für Luxusreisen in Spanien: wie man bucht, wie früh und zu welchem Preis, mit Quelle und Datum jeder Angabe.",
+  "pt": "Guias práticos para organizar planos de luxo em Espanha: como se reserva cada coisa, com que antecedência e que preço tem, com a fonte e a data de cada dado.",
+  "it": "Guide pratiche per organizzare piani di lusso in Spagna: come si prenota, con quanto anticipo e a che prezzo, con la fonte e la data di ogni dato."
+ },
+ "guide.eyebrow": {
+  "es": "Guía práctica",
+  "en": "Practical guide",
+  "fr": "Guide pratique",
+  "de": "Praktischer Ratgeber",
+  "pt": "Guia prática",
+  "it": "Guida pratica"
+ },
+ "guide.prices": {
+  "es": "Cuánto cuesta",
+  "en": "What it costs",
+  "fr": "Combien ça coûte",
+  "de": "Was es kostet",
+  "pt": "Quanto custa",
+  "it": "Quanto costa"
+ },
+ "guide.col.item": {
+  "es": "Concepto",
+  "en": "Item",
+  "fr": "Élément",
+  "de": "Posten",
+  "pt": "Item",
+  "it": "Voce"
+ },
+ "guide.col.price": {
+  "es": "Importe",
+  "en": "Price",
+  "fr": "Prix",
+  "de": "Preis",
+  "pt": "Preço",
+  "it": "Prezzo"
+ },
+ "guide.col.detail": {
+  "es": "Condiciones",
+  "en": "Terms",
+  "fr": "Conditions",
+  "de": "Bedingungen",
+  "pt": "Condições",
+  "it": "Condizioni"
+ },
+ "guide.col.source": {
+  "es": "Fuente y fecha",
+  "en": "Source and date",
+  "fr": "Source et date",
+  "de": "Quelle und Datum",
+  "pt": "Fonte e data",
+  "it": "Fonte e data"
+ },
+ "guide.disclaimer": {
+  "es": "Los importes se han copiado de cada fuente en la fecha indicada y pueden cambiar. Confirma siempre con el establecimiento antes de reservar.",
+  "en": "Figures are copied from each source on the date shown and may change. Always confirm with the venue before booking.",
+  "fr": "Les montants sont repris de chaque source à la date indiquée et peuvent changer. Confirmez toujours auprès de l'établissement avant de réserver.",
+  "de": "Die Beträge stammen von der jeweiligen Quelle am angegebenen Datum und können sich ändern. Vor der Buchung immer beim Anbieter bestätigen.",
+  "pt": "Os valores foram copiados de cada fonte na data indicada e podem mudar. Confirme sempre com o estabelecimento antes de reservar.",
+  "it": "Gli importi sono copiati da ciascuna fonte alla data indicata e possono cambiare. Conferma sempre con la struttura prima di prenotare."
+ },
+ "guide.steps": {
+  "es": "Cómo reservar, paso a paso",
+  "en": "How to book, step by step",
+  "fr": "Comment réserver, étape par étape",
+  "de": "So buchen Sie, Schritt für Schritt",
+  "pt": "Como reservar, passo a passo",
+  "it": "Come prenotare, passo dopo passo"
+ },
+ "guide.booking": {
+  "es": "Condiciones de reserva por sitio",
+  "en": "Booking terms by venue",
+  "fr": "Conditions de réservation par lieu",
+  "de": "Buchungsbedingungen je Anbieter",
+  "pt": "Condições de reserva por local",
+  "it": "Condizioni di prenotazione per struttura"
+ },
+ "guide.how": {
+  "es": "Cómo se reserva",
+  "en": "How to book",
+  "fr": "Comment réserver",
+  "de": "Buchung",
+  "pt": "Como se reserva",
+  "it": "Come si prenota"
+ },
+ "guide.lead_time": {
+  "es": "Antelación",
+  "en": "Lead time",
+  "fr": "Délai",
+  "de": "Vorlauf",
+  "pt": "Antecedência",
+  "it": "Anticipo"
+ },
+ "guide.policy": {
+  "es": "Condiciones",
+  "en": "Terms",
+  "fr": "Conditions",
+  "de": "Bedingungen",
+  "pt": "Condições",
+  "it": "Condizioni"
+ },
+ "guide.tips": {
+  "es": "Consejos",
+  "en": "Tips",
+  "fr": "Conseils",
+  "de": "Tipps",
+  "pt": "Conselhos",
+  "it": "Consigli"
+ },
+ "guide.mistakes": {
+  "es": "Errores habituales",
+  "en": "Common mistakes",
+  "fr": "Erreurs fréquentes",
+  "de": "Häufige Fehler",
+  "pt": "Erros habituais",
+  "it": "Errori comuni"
+ },
+ "guide.gaps": {
+  "es": "Lo que aún no hemos podido verificar",
+  "en": "What we have not yet been able to verify",
+  "fr": "Ce que nous n'avons pas encore pu vérifier",
+  "de": "Was wir noch nicht prüfen konnten",
+  "pt": "O que ainda não conseguimos verificar",
+  "it": "Ciò che non abbiamo ancora potuto verificare"
+ },
+ "guide.related": {
+  "es": "Más en el portal",
+  "en": "More on the portal",
+  "fr": "Plus sur le portail",
+  "de": "Mehr im Portal",
+  "pt": "Mais no portal",
+  "it": "Altro sul portale"
+ },
+ "guide.updated": {
+  "es": "Actualizada el {d}",
+  "en": "Updated {d}",
+  "fr": "Mise à jour le {d}",
+  "de": "Aktualisiert am {d}",
+  "pt": "Atualizada em {d}",
+  "it": "Aggiornata il {d}"
+ },
+ "guide.all": {
+  "es": "Ver todas las guías",
+  "en": "See all guides",
+  "fr": "Voir tous les guides",
+  "de": "Alle Ratgeber ansehen",
+  "pt": "Ver todas as guias",
+  "it": "Vedi tutte le guide"
  }
 }

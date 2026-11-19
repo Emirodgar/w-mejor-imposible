@@ -1,0 +1,314 @@
+{
+  "slug": "golf-de-lujo",
+  "titulo": "Cómo reservar golf de alto nivel en España y cuánto cuesta el green fee",
+  "resumen": "Solo Real Club Valderrama publica en su web un green fee de visitante con importe: 700 € por 18 hoyos, con buggy y forecaddie aparte. En los otros clubes del ranking, el acceso depende de la reserva (plataforma de salidas, teléfono o email) o de ser invitado por un socio, y el precio se consulta en el sistema de reservas.",
+  "pasos": [
+    {
+      "titulo": "Averigua si el campo admite visitantes",
+      "texto": "Algunos campos del ranking reciben visitantes con reserva. Otros solo admiten jugadores invitados por un socio. El Real Club de Campo Villa de Madrid se presenta como club privado y su normativa de invitaciones exige que lo invite un abonado."
+    },
+    {
+      "titulo": "Localiza el canal oficial de reserva",
+      "texto": "Valderrama y El Prat enlazan a la plataforma open.teeone.golf. Sotogrande usa eu.golfmanager.com/golfsotogrande. Camiral usa golf.camiral.com. Abama y Alcanada ofrecen reserva online desde su web y teléfono. Finca Cortesín tiene botón Book Now y correo proshop@golfcortesin.es para grupos."
+    },
+    {
+      "titulo": "Consulta el tarifario vigente",
+      "texto": "Mira la temporada o el año a los que corresponde el importe. Valderrama indica 2027 en su página de tarifas. Los precios de otros clubes se cargan dentro del sistema de reservas y cambian por fecha y hora."
+    },
+    {
+      "titulo": "Comprueba qué incluye el green fee",
+      "texto": "Valderrama cobra aparte buggy (70 €), forecaddie (70 € más propina) y alquiler de palos (50 €). Finca Cortesín indica en su web buggy, bolas de práctica y carrito entre los servicios incluidos en la reserva de golf."
+    },
+    {
+      "titulo": "Prepara la documentación",
+      "texto": "Las Brisas indica que los invitados deben mostrar un certificado de hándicap vigente. Lleva también el hándicap federado o el certificado de tu club de origen. Los demás clubes no publican el requisito en las páginas consultadas."
+    },
+    {
+      "titulo": "Confirma la hora de salida y las normas",
+      "texto": "Revisa código de vestimenta y calzado. Presenta la reserva en el starter con antelación: Las Brisas pide estar 10 minutos antes. Valderrama indica en su web horario de visitantes de 12 a 13 h de lunes a jueves, con redacción ambigua."
+    },
+    {
+      "titulo": "Si buscas golf y hotel, pide el paquete",
+      "texto": "El Prat publica paquetes Stay and Play desde 472 € (3 noches, 2 green fees, por persona en habitación doble, temporada baja). Los suplementos por fin de semana, cena y bebidas se detallan en su web."
+    }
+  ],
+  "precios": {
+    "nota": "Importes copiados de las páginas oficiales abiertas el 2026-11-19. El green fee de Valderrama no incluye buggy ni forecaddie. Los paquetes de El Prat son precios desde, por persona en habitación doble, con suplementos aparte. No se han podido leer importes de green fee de visitante en las webs de los demás campos.",
+    "filas": [
+      {
+        "concepto": "Real Club Valderrama · Green fee 18 hoyos",
+        "importe": "700 €",
+        "unidad": "por jugador, 18 hoyos",
+        "temporada": "etiquetada 2027 en la web",
+        "fecha_dato": "La página indica 2027; no muestra otra fecha ni temporadas distintas",
+        "fuente_url": "https://www.valderrama.com/golf-course-rates/",
+        "fuente": "Tarifas oficiales de Real Club Valderrama"
+      },
+      {
+        "concepto": "Real Club Valderrama · Tarifa PGA Professional",
+        "importe": "325 €",
+        "unidad": "por jugador",
+        "temporada": "etiquetada 2027 en la web",
+        "fecha_dato": "sin fecha adicional en la fuente",
+        "fuente_url": "https://www.valderrama.com/golf-course-rates/",
+        "fuente": "Tarifas oficiales de Real Club Valderrama"
+      },
+      {
+        "concepto": "Real Club Valderrama · Forecaddie (obligatorio, uno por grupo)",
+        "importe": "70 € más propina",
+        "unidad": "por día; propina pagada al forecaddie el día de juego",
+        "temporada": "etiquetada 2027 en la web",
+        "fecha_dato": "sin fecha adicional en la fuente",
+        "fuente_url": "https://www.valderrama.com/golf-course-rates/",
+        "fuente": "Tarifas oficiales de Real Club Valderrama"
+      },
+      {
+        "concepto": "Real Club Valderrama · Buggy",
+        "importe": "70 €",
+        "unidad": "por día",
+        "temporada": "etiquetada 2027 en la web",
+        "fecha_dato": "sin fecha adicional en la fuente",
+        "fuente_url": "https://www.valderrama.com/golf-course-rates/",
+        "fuente": "Tarifas oficiales de Real Club Valderrama"
+      },
+      {
+        "concepto": "Real Club Valderrama · Trolley eléctrico / manual / palos Callaway",
+        "importe": "25 € / gratuito / 50 €",
+        "unidad": "por día",
+        "temporada": "etiquetada 2027 en la web",
+        "fecha_dato": "Bolas de práctica: gratuitas según la misma página",
+        "fuente_url": "https://www.valderrama.com/golf-course-rates/",
+        "fuente": "Tarifas oficiales de Real Club Valderrama"
+      },
+      {
+        "concepto": "Real Club de Golf El Prat · Stay and Play 3 noches, 2 green fees (desde)",
+        "importe": "472 € (temporada baja) / 552 € (temporada alta)",
+        "unidad": "por persona en habitación doble",
+        "temporada": "baja: ene, feb, jul, ago, dic; media: mar, jun, nov; alta: abr, may, sep, oct",
+        "fecha_dato": "sin año en la fuente; suplemento de fin de semana",
+        "fuente_url": "https://www.realclubdegolfelprat.com/en/?p=180708",
+        "fuente": "Paquetes Stay and Play de Real Club de Golf El Prat"
+      },
+      {
+        "concepto": "Real Club de Golf El Prat · Stay and Play 5 noches, 4 green fees (desde)",
+        "importe": "820 € (temporada baja) / 1.020 € (temporada alta)",
+        "unidad": "por persona en habitación doble",
+        "temporada": "baja y alta según meses indicados arriba",
+        "fecha_dato": "sin año en la fuente",
+        "fuente_url": "https://www.realclubdegolfelprat.com/en/?p=180708",
+        "fuente": "Paquetes Stay and Play de Real Club de Golf El Prat"
+      },
+      {
+        "concepto": "Real Club de Golf El Prat · Stay and Play 7 noches, 5 green fees (desde)",
+        "importe": "1.088 € (temporada baja) / 1.297 € (temporada alta)",
+        "unidad": "por persona en habitación doble",
+        "temporada": "baja y alta según meses indicados arriba",
+        "fecha_dato": "sin año en la fuente; cena 45 € por persona (30 € si se paga al reservar); bebidas 20 € por persona y día",
+        "fuente_url": "https://www.realclubdegolfelprat.com/en/?p=180708",
+        "fuente": "Paquetes Stay and Play de Real Club de Golf El Prat"
+      },
+      {
+        "concepto": "Real Club de Golf Las Brisas · Alquiler de buggy (no es green fee)",
+        "importe": "40,00 €",
+        "unidad": "por alquiler",
+        "temporada": "tarifas 2026",
+        "fecha_dato": "Rates 2026 según la web; trolley eléctrico 25,00 €, trolley manual gratis, palos 50,00 €",
+        "fuente_url": "https://www.realclubdegolflasbrisas.com/club-info/",
+        "fuente": "Club & Info de Real Club de Golf Las Brisas"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Real Club Valderrama",
+      "como": "Plataforma open.teeone.golf/en/valderrama. Contacto: greenfees@valderrama.com, +34 956 791 200.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "Forecaddie obligatorio. No se permiten vaqueros, bermudas tipo cargo ni chanclas. Prohibido hablar por el móvil. No pueden acompañar en el campo personas que no juegan. Hándicap y cancelación: no indicados en la página. Horario de visitantes según la web: de 12 a 13 h de lunes a jueves (redacción ambigua)."
+    },
+    {
+      "concepto": "Real Club de Golf Sotogrande",
+      "como": "Reserva online en eu.golfmanager.com/golfsotogrande. Teléfono +34 956 78 50 14, info@golfsotogrande.com.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "Importes, hándicap, vestimenta y cancelación: no se pudieron leer en las páginas oficiales abiertas."
+    },
+    {
+      "concepto": "Real Club de Golf El Prat",
+      "como": "Disponibilidad en open.teeone.golf/en/prat/disponibilidad. Reservas: reservations@rcgep.com, +34 937 281 000. Paquetes: +34 937 28 10 00.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "Las páginas abiertas no muestran green fee, hándicap, vestimenta ni cancelación. Existe una sección Rules & Etiquette que no se pudo abrir."
+    },
+    {
+      "concepto": "Real Club de Golf Las Brisas",
+      "como": "Reserva de salidas en open.teeone.golf/es/brisas. Contacto desde realclubdegolflasbrisas.com/contact/.",
+      "antelacion": "No indicada. Hay que presentarse al starter 10 minutos antes; los grupos de menos de cuatro jugadores pueden emparejarse.",
+      "politica": "La página Club & Info indica que los invitados solo juegan acompañados de un socio, que un socio puede llevar hasta 3 invitados en temporada media o baja y 1 en alta, que los no socios tienen un máximo de 8 juegos al año y que deben mostrar certificado de hándicap vigente. Vestimenta de golf obligatoria: no se permiten bañador, ropa de tenis o gimnasio ni vaqueros en el campo. Hombres: sin pantalón capri o cargo ni camisas sin cuello o sin mangas. Mujeres: sin camisetas de tirantes. Chanclas no permitidas. Spikes blandos obligatorios. Sin política de cancelación en la página."
+    },
+    {
+      "concepto": "Real Club de Campo Villa de Madrid",
+      "como": "Club privado. Los invitados reservan a través de un abonado, que llama a la Oficina de Golf (915502022) y facilita nombre, apellidos y licencia del invitado. Reserva online para socios por GolfManager.",
+      "antelacion": "Hasta 3 días de antelación (normativa de invitaciones, enero de 2024).",
+      "politica": "Normativa 2024: la invitación es nominal; el invitado juega en la misma partida que el abonado, máximo 3 invitados al día. Un abonado puede invitar a 15 jugadores al año y un no abonado puede ser invitado como máximo 6 veces al año. Máximo 4 partidas con invitados al día. Los green fees se pagan al reservar, a más tardar dos días antes; la reserva no pagada se elimina. No se devuelve el dinero en ningún caso."
+    },
+    {
+      "concepto": "Finca Cortesín",
+      "como": "Botón Book Now en fincacortesin.com/rates. Grupos: proshop@golfcortesin.es. Hotel: reservas@hotelcortesin.com, +34 952 937 800.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "La reserva de golf incluye según la web: buggy con GPS, bolas de práctica y acceso al driving range, trolley eléctrico o manual, bag drop, agua y fruta durante la vuelta y limpieza de palos. Green fee, hándicap, vestimenta, edad y cancelación: no aparecen en el contenido leído."
+    },
+    {
+      "concepto": "Abama Golf",
+      "como": "Reserva online desde abamagolf.com. Teléfono 922 589 623, info@abamagolf.com.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "La web enlaza un PDF de Club Rules que no se pudo leer. Importes y requisitos: no indicados en la página."
+    },
+    {
+      "concepto": "Camiral Stadium Course",
+      "como": "golf.camiral.com. Golf: +34 972 47 25 77. Grupos y peticiones especiales: +34 972 47 22 49, reservations@camiral.com.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "Importes y requisitos no visibles en las páginas abiertas."
+    },
+    {
+      "concepto": "Club de Golf Alcanada",
+      "como": "Reserva online desde golf-alcanada.com. Teléfono +34 971 54 95 60, info@golf-alcanada.com.",
+      "antelacion": "No indicada en la fuente.",
+      "politica": "El artículo oficial abierto no da importes ni requisitos. Indica que el precio varía por socio o no socio, fin de semana, 9 o 18 hoyos y salidas tardías."
+    },
+    {
+      "concepto": "Campo de Golf El Saler (Parador)",
+      "como": "No se abrió ninguna página oficial.",
+      "antelacion": "Sin datos verificados.",
+      "politica": "Sin datos verificados."
+    }
+  ],
+  "consejos": [
+    "Pide el precio por escrito al club o en su plataforma de reservas antes de cerrar el viaje.",
+    "Pregunta si el buggy, la bolas de práctica y el caddie van dentro del green fee. En Valderrama son cargos aparte.",
+    "Lleva el certificado de hándicap o la licencia federativa: Las Brisas y la normativa de Villa de Madrid piden datos del jugador.",
+    "En clubes privados, pide a un socio que gestione la invitación con tiempo: Villa de Madrid limita las invitaciones por año y por día.",
+    "Revisa la temporada de los paquetes golf y hotel: El Prat publica precios distintos para temporada baja y alta."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que un campo privado admite visitantes sin invitación.",
+    "Comparar importes de años distintos. La página de tarifas de Valderrama está etiquetada 2027 y otras fuentes no indican año.",
+    "Olvidar los cargos aparte (buggy, forecaddie, palos) al calcular el coste total.",
+    "Llegar sin certificado de hándicap o sin respetar el código de vestimenta.",
+    "Pagar tarde una invitación en Villa de Madrid: la reserva no pagada en plazo se elimina."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta jugar en Valderrama?",
+      "r": "La página de tarifas de Valderrama indica 700 € por 18 hoyos, etiquetada 2027. Buggy (70 €) y forecaddie obligatorio (70 € más propina) se cobran aparte."
+    },
+    {
+      "p": "¿Se puede jugar en el Club de Campo Villa de Madrid sin ser socio?",
+      "r": "Según la normativa de invitaciones de 2024, hay que ser invitado por un abonado. Cada no abonado puede ser invitado como máximo 6 veces al año."
+    },
+    {
+      "p": "¿Qué antelación pide Villa de Madrid para reservar con invitación?",
+      "r": "La normativa de 2024 indica que la reserva se puede hacer con 3 días de antelación, llamando a la Oficina de Golf."
+    },
+    {
+      "p": "¿Hay que presentar certificado de hándicap?",
+      "r": "Las Brisas indica que los invitados deben mostrar un certificado de hándicap vigente. Villa de Madrid pide nombre, apellidos y licencia del invitado. Los demás clubes no publican el requisito en las páginas abiertas."
+    },
+    {
+      "p": "¿Qué incluye la reserva de golf en Finca Cortesín?",
+      "r": "Su web indica buggy con GPS, bolas de práctica y driving range, trolley, bag drop, agua y fruta y limpieza de palos. El importe no se pudo leer."
+    },
+    {
+      "p": "¿Existen paquetes de golf y hotel?",
+      "r": "El Prat publica paquetes Stay and Play desde 472 € por persona (3 noches, 2 green fees, temporada baja, habitación doble). Hay suplemento de fin de semana."
+    },
+    {
+      "p": "¿Cuál es el código de vestimenta?",
+      "r": "Valderrama no admite vaqueros, bermudas tipo cargo ni chanclas. Las Brisas exige ropa de golf y spikes blandos, y no admite vaqueros en el campo ni chanclas."
+    },
+    {
+      "p": "¿Se devuelve el dinero si cancelo?",
+      "r": "Villa de Madrid indica que no se devuelve el dinero de las reservas con invitación. Los demás clubes no publican su política en las páginas abiertas."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.valderrama.com/golf-course-rates/",
+      "nombre": "Tarifas oficiales de Real Club Valderrama"
+    },
+    {
+      "url": "https://www.valderrama.com",
+      "nombre": "Real Club Valderrama, web oficial"
+    },
+    {
+      "url": "https://www.realclubdegolfelprat.com/en/?p=180708",
+      "nombre": "Stay and Play de Real Club de Golf El Prat"
+    },
+    {
+      "url": "https://www.realclubdegolfelprat.com/en/",
+      "nombre": "Real Club de Golf El Prat, web oficial"
+    },
+    {
+      "url": "https://www.realclubdegolflasbrisas.com/club-info/",
+      "nombre": "Club & Info de Real Club de Golf Las Brisas"
+    },
+    {
+      "url": "https://www.realclubdegolflasbrisas.com",
+      "nombre": "Real Club de Golf Las Brisas, web oficial"
+    },
+    {
+      "url": "https://www.golfsotogrande.com",
+      "nombre": "Real Club de Golf Sotogrande, web oficial"
+    },
+    {
+      "url": "https://fincacortesin.com/rates",
+      "nombre": "Reservas de golf de Finca Cortesín"
+    },
+    {
+      "url": "https://www.ccvm.es/sites/default/files/2024-04/Normativa%20Invitados%20de%20abonados%202024.pdf",
+      "nombre": "Normativa de invitación de no abonados, Club de Campo Villa de Madrid (enero 2024)"
+    },
+    {
+      "url": "https://www.ccvm.es",
+      "nombre": "Real Club de Campo Villa de Madrid, web oficial"
+    },
+    {
+      "url": "https://www.abamagolf.com",
+      "nombre": "Abama Golf, web oficial"
+    },
+    {
+      "url": "https://www.camiral.com/es/golf",
+      "nombre": "Camiral Golf, web oficial"
+    },
+    {
+      "url": "https://www.golf-alcanada.com/de/?p=7326",
+      "nombre": "Artículo de green fees en Mallorca, Club de Golf Alcanada (2017)"
+    }
+  ],
+  "huecos": [
+    "Green fee de visitante con importe de Abama Golf, Camiral Stadium Course, Club de Golf Alcanada, Finca Cortesín, El Prat, Las Brisas y Sotogrande: las páginas oficiales abiertas no muestran importes (se cargan dentro del sistema de reservas o no llegan en la lectura).",
+    "Finca Cortesín: la web oficial indica los servicios incluidos, pero no se pudo leer el importe del green fee ni la temporada. No se usan cifras de terceros.",
+    "El Saler (Parador de El Saler): no se pudo abrir ninguna página oficial. El dominio golfelsaler.com no resolvió y la página de paradores.es devolvió error. Sin datos verificados.",
+    "Club de Campo Villa de Madrid: no se pudo extraer con fiabilidad el green fee de no abonado de 2026, porque el PDF de tarifas 2026 tiene la tabla desordenada en la lectura. La página de tarifas de la web es de 2017 y no se usa.",
+    "Requisitos de hándicap máximo y certificado: solo constan en Las Brisas (certificado vigente para invitados). No constan en Valderrama, Sotogrande, El Prat, Camiral, Abama, Alcanada ni Finca Cortesín en las páginas abiertas.",
+    "Política de cancelación, edad mínima, uso obligatorio de buggy y antelación de reserva: no constan en las páginas abiertas, salvo lo indicado de Villa de Madrid. Valderrama exige forecaddie, no buggy.",
+    "Las Brisas: la página Club & Info mezcla normas de invitados y tarifas de alquiler 2026. No muestra green fee de visitante. Confirmar con el club si admite green fee sin socio.",
+    "Valderrama: la web etiqueta los importes como 2027 y su horario de visitantes (de 12 a 13 h de lunes a jueves) está redactado de forma ambigua. Confirmar con el club.",
+    "Hechos generales: no se pudo verificar en fuentes oficiales cómo funcionan los paquetes golf y hotel en España, qué documentos piden los clubes en general ni las diferencias entre campo público, resort y privado. No se incluyen explicaciones genéricas de memoria. Sí consta el ejemplo de El Prat.",
+    "Las webs de Real Club de Golf El Prat (golfelprat.cat), El Saler (golfelsaler.com) y Alcanada (golfalcanada.com) con esos dominios no resolvieron. Se usaron realclubdegolfelprat.com y golf-alcanada.com."
+  ],
+  "publicar": false,
+  "relacionados": {
+    "rankings": [
+      "golf"
+    ],
+    "eventos": [
+      "open-de-espana-golf",
+      "estrella-damm-catalunya-championship"
+    ],
+    "destinos": [
+      "costa-del-sol",
+      "girona",
+      "madrid"
+    ]
+  },
+  "actualizado": "2026-11-19",
+  "publicado": "2026-11-19"
+}

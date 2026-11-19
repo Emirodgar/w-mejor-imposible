@@ -1,0 +1,323 @@
+{
+  "slug": "entradas-vip-grandes-eventos",
+  "titulo": "Cómo conseguir entradas VIP y hospitality en los grandes eventos de España y cuánto cuestan",
+  "resumen": "Los organizadores piden comprar solo en su web, en su ticketing oficial o en su operador de hospitality autorizado; fuera de ahí no garantizan que la entrada sea auténtica. Solo el GP de España de F1 en Madrid (Madring) y el GP de Cataluña de MotoGP tienen ya precios 2027 publicados en su ticketing oficial; en el resto, los precios de 2027 no figuran todavía en las páginas abiertas.",
+  "pasos": [
+    {
+      "titulo": "Identifica el canal oficial de cada evento",
+      "texto": "Empieza por la web del evento y sigue sus enlaces de compra. Madring remite a Fever para las gradas y a hospitality.madring.com para hospitality. El GP de Cataluña remite a catalunyamotogp.circuitcat.com. El Mutua Madrid Open vende en su web a través de OneBox."
+    },
+    {
+      "titulo": "Decide entre grada y hospitality",
+      "texto": "La grada da asiento o zona de acceso. El hospitality añade espacio propio, comida y bebida, y servicios. En Madring, los cinco paquetes (La Terminal, La Azotea, Club 91, Ignition Club y Traction Club) incluyen entrada, acceso prioritario, comida, bebida y entretenimiento."
+    },
+    {
+      "titulo": "Mira el calendario de venta",
+      "texto": "Madring ya vende entradas 2027 desde el 21 de septiembre de 2026 (preventa para clientes de American Express, según su web). El Barcelona Open y MotoGP Jerez no tenían información de entradas 2027 en las páginas oficiales abiertas el 19 de noviembre de 2026. El Madrid Open abre taquilla en la Caja Mágica el 5 de abril de 2027."
+    },
+    {
+      "titulo": "Compara qué incluye cada importe",
+      "texto": "Comprueba si el precio es por persona, por día o por fin de semana, y si lleva IVA. Madring vende abono de tres días, sin venta por día. El hospitality del circuito de Montmeló indicaba en su folleto de 2026 que sus precios no incluían el 21 % de IVA."
+    },
+    {
+      "titulo": "Compra y guarda el justificante",
+      "texto": "Paga con tarjeta en el canal oficial. Madring hospitality acepta American Express, Visa, MasterCard y Apple Pay, con 3D Secure. Las entradas de Madring se entregan en formato digital en la app de MADRING."
+    },
+    {
+      "titulo": "Conoce las condiciones de cambio y reventa",
+      "texto": "Las compras suelen ser definitivas. Madring Hospitality indica que las ventas son finales y la reventa está prohibida; permite regalar o transferir el paquete. En Jerez 2026 no se admitían cambios ni devoluciones. El Madrid Open 2027 solo devuelve el importe si se cancela o modifica de forma sustancial una sesión o la edición."
+    },
+    {
+      "titulo": "Si el canal no es oficial, no cuentes con la entrada",
+      "texto": "El Madrid Open avisa de que solo sus canales oficiales garantizan la autenticidad. Las entradas de otras fuentes pueden no poder reimprimirse en taquilla y solo vale la primera que se presenta en el acceso. El circuito de Jerez dice que no puede ayudar con compras en reventa o agencias."
+    }
+  ],
+  "precios": {
+    "nota": "Todos los importes se copian de páginas oficiales abiertas el 19 de noviembre de 2026. Se indica la edición de cada uno. No se ha estimado ningún precio. El IVA solo consta donde se dice expresamente; si no se dice, no se sabe. Madrid Open, Barcelona Open, MotoGP Jerez y Copa del Rey no tienen precios verificados (ver huecos).",
+    "filas": [
+      {
+        "concepto": "GP de España F1 (Madring) · Recta 1A Cubierta Gold (1st Release)",
+        "importe": "989,00 €",
+        "unidad": "abono de 3 días (viernes a domingo), por entrada",
+        "temporada": "edición 2027 (10-12 septiembre)",
+        "fecha_dato": "Página de Fever consultada el 19-11-2026; la web de Madring indica que la venta 2027 está abierta y sin gastos de gestión",
+        "fuente_url": "https://feverup.com/m/708013",
+        "fuente": "Ticketing oficial del GP (Fever), enlazado desde madring.com"
+      },
+      {
+        "concepto": "GP de España F1 (Madring) · Recta 1B Cubierta Gold (1st Release)",
+        "importe": "989,00 €",
+        "unidad": "abono de 3 días (viernes a domingo), por entrada",
+        "temporada": "edición 2027 (10-12 septiembre)",
+        "fecha_dato": "Página de Fever consultada el 19-11-2026",
+        "fuente_url": "https://feverup.com/m/708013",
+        "fuente": "Ticketing oficial del GP (Fever), enlazado desde madring.com"
+      },
+      {
+        "concepto": "GP de España F1 (Madring) · Recta 1C Cubierta Gold (3rd Release)",
+        "importe": "1.275,00 €",
+        "unidad": "abono de 3 días (viernes a domingo), por entrada",
+        "temporada": "edición 2027 (10-12 septiembre)",
+        "fecha_dato": "Página de Fever consultada el 19-11-2026; el importe sube en cada fase de venta (release)",
+        "fuente_url": "https://feverup.com/m/708013",
+        "fuente": "Ticketing oficial del GP (Fever), enlazado desde madring.com"
+      },
+      {
+        "concepto": "GP de España F1 (Madring) · Paquetes hospitality (rango oficial)",
+        "importe": "de 1.300 € a 5.000 €",
+        "unidad": "según número de días y experiencia; el comunicado no indica si es por persona ni si incluye IVA",
+        "temporada": "edición 2026 (11-13 septiembre)",
+        "fecha_dato": "Comunicado de Madring de 4 de julio de 2025",
+        "fuente_url": "https://www.madring.com/en/press-releases/official-hospitality-programme",
+        "fuente": "Web oficial de Madring (comunicado del programa de hospitality)"
+      },
+      {
+        "concepto": "GP de Cataluña MotoGP (Montmeló) · La Recta Principal",
+        "importe": "desde 119 €",
+        "unidad": "entrada de 3 días",
+        "temporada": "edición 2027 (11-13 junio)",
+        "fecha_dato": "Web oficial consultada el 19-11-2026; la página muestra una oferta de lanzamiento con fechas contradictorias (28/10 a 04/11, 'finalizada')",
+        "fuente_url": "https://catalunyamotogp.circuitcat.com/",
+        "fuente": "Web oficial de entradas del Circuit de Barcelona-Catalunya"
+      },
+      {
+        "concepto": "GP de Cataluña MotoGP (Montmeló) · El Mirador",
+        "importe": "desde 79 €",
+        "unidad": "entrada de 3 días",
+        "temporada": "edición 2027 (11-13 junio)",
+        "fecha_dato": "Web oficial consultada el 19-11-2026",
+        "fuente_url": "https://catalunyamotogp.circuitcat.com/",
+        "fuente": "Web oficial de entradas del Circuit de Barcelona-Catalunya"
+      },
+      {
+        "concepto": "GP de Cataluña MotoGP (Montmeló) · L'Estadi",
+        "importe": "desde 165 €",
+        "unidad": "entrada de 3 días",
+        "temporada": "edición 2027 (11-13 junio)",
+        "fecha_dato": "Web oficial consultada el 19-11-2026",
+        "fuente_url": "https://catalunyamotogp.circuitcat.com/",
+        "fuente": "Web oficial de entradas del Circuit de Barcelona-Catalunya"
+      },
+      {
+        "concepto": "GP de Cataluña MotoGP (Montmeló) · Pelouse sin numerar",
+        "importe": "39 € (sábado) / 59 € (domingo)",
+        "unidad": "entrada de un día",
+        "temporada": "edición 2027 (11-13 junio)",
+        "fecha_dato": "Web oficial consultada el 19-11-2026",
+        "fuente_url": "https://catalunyamotogp.circuitcat.com/",
+        "fuente": "Web oficial de entradas del Circuit de Barcelona-Catalunya"
+      },
+      {
+        "concepto": "MotoGP Jerez · Hero Walk (encuentro con pilotos, requiere entrada válida)",
+        "importe": "25 € (sábado Moto2/Moto3) / 40 € (domingo MotoGP)",
+        "unidad": "por persona, no da acceso al circuito",
+        "temporada": "edición 2026 (24-26 abril)",
+        "fecha_dato": "Página oficial del circuito, edición 2026; el IVA no consta",
+        "fuente_url": "https://www.circuitodejerez.com/en/?p=38973",
+        "fuente": "Web oficial del Circuito de Jerez - Ángel Nieto"
+      },
+      {
+        "concepto": "MotoGP Jerez · Pit Lane Walk (jueves)",
+        "importe": "5 €",
+        "unidad": "por persona, aforo limitado",
+        "temporada": "edición 2026 (24-26 abril)",
+        "fecha_dato": "Página oficial del circuito, edición 2026; el IVA no consta",
+        "fuente_url": "https://www.circuitodejerez.com/en/?p=38973",
+        "fuente": "Web oficial del Circuito de Jerez - Ángel Nieto"
+      },
+      {
+        "concepto": "Longines Global Champions Tour de Madrid · entrada general",
+        "importe": "desde 10 €",
+        "unidad": "no se indica; el comunicado no da lista de categorías",
+        "temporada": "edición 2026 (15-17 mayo)",
+        "fecha_dato": "Comunicado del promotor Oxer Sport de 8 de abril de 2026",
+        "fuente_url": "https://www.oxersport.com/en/oxer-news/ya-a-la-venta-las-entradas-para-el-longines-global-champions-tour-115-csi-madrid",
+        "fuente": "Web oficial del promotor (Oxer Sport)"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "GP de España F1 (Madring), 10-12 septiembre 2027",
+      "como": "Gradas: Fever, enlazado desde madring.com (ticketsf1.madring.com). Hospitality: hospitality.madring.com, operado por MATCH Hospitality Europe, S.L.U., proveedor oficial exclusivo. Pago con tarjeta con 3D Secure o Apple Pay; pedidos de más de 6.000 € se pueden pagar en dos plazos, el último en mayo de 2027.",
+      "antelacion": "Venta 2027 abierta. La web de Madring indica preventa del 21-09-2026 solo para clientes de American Express. Según la web, no se venden entradas por día, solo abono de 3 días, con máximo de 10 entradas por persona.",
+      "politica": "Reventa con ánimo de lucro prohibida; la reventa necesita autorización del promotor y de la FOWC. Se permiten transferencias. Madring recomienda comprar en Fever o en agencias oficiales. En hospitality, las ventas son finales y la reventa está prohibida, salvo regalo a familiares o amigos."
+    },
+    {
+      "concepto": "GP de España MotoGP (Jerez), 7-9 mayo 2027",
+      "como": "Web del Circuito de Jerez (circuitodejerez.com). Los paquetes de MotoGP Premier (Rookie, Rider, Hero y hospitality Apex Club) se venden por la web oficial de MotoGP Premier, que no mostraba precios.",
+      "antelacion": "La portada del circuito dice 'información MotoGP 2027 próximamente'. En 2026 hubo venta para el club de fidelidad del 18 al 21 de diciembre de 2025, promoción navideña del 22 de diciembre al 5 de enero y venta general desde el 6 de enero de 2026.",
+      "politica": "Edición 2026: sin cambios ni devoluciones tras la compra. Compra solo en la web oficial del circuito; el circuito no puede ayudar con compras en reventa o agencias. Las entradas no son nominativas y solo entra la primera persona que presenta cada una."
+    },
+    {
+      "concepto": "GP de Cataluña MotoGP (Montmeló), 11-13 junio 2027",
+      "como": "Entradas: catalunyamotogp.circuitcat.com. Hospitality de empresa: formulario de registro en circuitcat.com/es/hospitality (contacto, Freshdesk o WhatsApp). Paquetes de MotoGP Premier (Novato, Piloto, Héroe, Apex Club) en motogppremier.motogp.com, sin precios publicados.",
+      "antelacion": "Venta 2027 abierta según la web oficial; la página muestra fechas de oferta de lanzamiento contradictorias.",
+      "politica": "Los descuentos (niños, jóvenes, mayores de 65, discapacidad) exigen documento oficial en el acceso o se deniega la entrada. No se localizó aviso oficial de reventa."
+    },
+    {
+      "concepto": "Mutua Madrid Open, 19 abril-2 mayo 2027",
+      "como": "Venta online en mutuamadridopen.com mediante OneBox. La Entrada Paseo solo se vende en taquilla durante el torneo. Categorías: Estadio Manolo Santana, Sky Seats (con Sky Lounge), Platinum Seats (zona gastronómica), Estadio 2 y Entrada Paseo.",
+      "antelacion": "La web enlaza la venta 2027, pero sin lista de precios 2027. La taquilla de la Caja Mágica abre el 5 de abril de 2027.",
+      "politica": "Solo los canales oficiales garantizan la autenticidad. No se garantiza la de entradas de otras fuentes, que pueden no poder imprimirse en taquilla. Compras definitivas; reembolso si se cancela o modifica de forma sustancial una sesión o día (no tras empezar el partido ni por fuerza mayor). Si se cancela la edición 2027, devolución en 15 días."
+    },
+    {
+      "concepto": "Barcelona Open Banc Sabadell, 10-18 abril 2027 (fechas de su web oficial)",
+      "como": "Hospitality: botón 'Sol·licitar informació' en barcelonaopenbancsabadell.com/hospitality o correo VIP de la web. Paquetes: Llotges VIP, VIP Clay, Suites, Experiència Gastronòmica y ATP No.1 Club. Se puede reservar un día o la semana completa.",
+      "antelacion": "No se pudo verificar la venta de entradas en una página oficial. La web no muestra la fecha del 1 de diciembre de 2026 que cita la prensa.",
+      "politica": "No se localizó aviso oficial de reventa."
+    },
+    {
+      "concepto": "Longines Global Champions Tour de Madrid (Real Club de Campo Villa de Madrid)",
+      "como": "Entradas 2026 en oxersport.com. Para VIP y hospitality, contacto con Oxer Sport indicado en la FAQ oficial de 2026 (no se pudo abrir).",
+      "antelacion": "La venta de 2026 se anunció el 8 de abril de 2026, para el evento del 15 al 17 de mayo. No hay fecha 2027 confirmada en las páginas abiertas.",
+      "politica": "No se localizó aviso oficial de reventa."
+    }
+  ],
+  "consejos": [
+    "Entra siempre desde la web oficial del evento y sigue sus botones de compra. No uses el primer resultado de un buscador.",
+    "Si compras para varias personas, comprueba el máximo por compra. En Madring son 10 entradas por persona.",
+    "Madring sube el precio en cada fase de venta: la Recta 1C figura a 1.275,00 € en la tercera fase frente a 989,00 € de las rectas 1A y 1B en la primera.",
+    "Para hospitality pide por escrito qué incluye, si el precio es por persona y si lleva IVA. Los precios corporativos de Montmeló 2026 se indicaban sin IVA.",
+    "Guarda el justificante y descarga las entradas antes de ir al evento; en Jerez avisan de que la cobertura puede ser mala.",
+    "Si no puedes asistir, mira si el canal oficial permite transferir o regalar. Madring Hospitality lo permite; la reventa está prohibida."
+  ],
+  "errores_comunes": [
+    "Comprar en una web de reventa o en una red social: el Madrid Open advierte de que no garantiza la autenticidad de entradas fuera de sus canales.",
+    "Dar por hechos los precios de 2027 en eventos donde solo hay precios de 2026 o ninguno.",
+    "Suponer que el precio incluye IVA sin comprobarlo.",
+    "Esperar a poder cambiar o devolver: Jerez 2026 no admitía cambios ni devoluciones y Madring Hospitality considera las ventas finales.",
+    "Olvidar que Madring no vende entradas por día: es abono de tres días.",
+    "Dar por buenas fechas de prensa sin contrastar: la web de Barcelona Open dice 10-18 abril 2027 y el encargo cita 12-18; la web del circuito de Montmeló muestra 11-13 junio y, en un banner, 16-18 julio."
+  ],
+  "faq": [
+    {
+      "p": "¿Dónde compro las entradas del GP de España de F1 en Madrid?",
+      "r": "Las gradas, en Fever, enlazado desde madring.com. El hospitality, en hospitality.madring.com, operado por MATCH Hospitality Europe, S.L.U., proveedor oficial exclusivo."
+    },
+    {
+      "p": "¿Cuánto cuestan las gradas de Madring en 2027?",
+      "r": "En la página de Fever figuran la Recta 1A y la 1B Cubierta Gold a 989,00 € y la Recta 1C Cubierta Gold a 1.275,00 €, por abono de 3 días. Esas son las únicas categorías cuyo precio se pudo leer. Fever indica que no hay gastos de gestión."
+    },
+    {
+      "p": "¿Qué incluyen los paquetes de hospitality de Madring?",
+      "r": "Según la web oficial, cada paquete incluye entrada a la carrera, acceso prioritario, toda la comida y bebida (con alcohol) y entretenimiento. Algunos incluyen grada y otros terraza privada. El aparcamiento va incluido en algunos o como extra. Los precios 2027 no figuran en las páginas abiertas."
+    },
+    {
+      "p": "¿Puedo revender mi entrada de Madring?",
+      "r": "No con ánimo de lucro. La reventa necesita autorización del promotor y de la FOWC. En hospitality, la reventa está prohibida, pero se puede regalar el paquete a familiares o amigos."
+    },
+    {
+      "p": "¿Cómo sé si un canal es oficial?",
+      "r": "Que la web oficial del evento enlace a él. Madring enlaza Fever y hospitality.madring.com; Montmeló enlaza catalunyamotogp.circuitcat.com; el Madrid Open vende en su web."
+    },
+    {
+      "p": "¿Qué pasa si compro en reventa y la entrada no es válida?",
+      "r": "El Madrid Open no garantiza la autenticidad de entradas fuera de sus canales oficiales. En esas entradas puede no ser posible reimprimirlas y solo entra la primera que se presenta en el acceso."
+    },
+    {
+      "p": "¿Se puede devolver una entrada?",
+      "r": "Depende del evento. Madrid Open 2027: no hay cambios ni devoluciones, salvo cancelación o modificación sustancial de una sesión o de la edición. Jerez 2026: sin cambios ni devoluciones. Madring Hospitality: ventas finales, con reembolso solo si lo prevén sus condiciones o la ley."
+    },
+    {
+      "p": "¿Hay entradas de un día para el GP de Cataluña?",
+      "r": "Sí, solo para Pelouse sin numerar: 39 € el sábado y 59 € el domingo en la edición 2027. El resto se vende como entrada de 3 días, desde 79 € (El Mirador), 119 € (La Recta Principal) y 165 € (L'Estadi)."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.madring.com/",
+      "nombre": "Madring, web oficial (venta 2027, canales)"
+    },
+    {
+      "url": "https://feverup.com/m/708013",
+      "nombre": "Fever, ticketing oficial del GP de España F1 2027"
+    },
+    {
+      "url": "https://ticketsf1.madring.com/en/",
+      "nombre": "Madring, página oficial de entradas (categorías, condiciones, reventa)"
+    },
+    {
+      "url": "https://hospitality.madring.com/en/faqs/",
+      "nombre": "Madring Hospitality, preguntas frecuentes (MATCH Hospitality)"
+    },
+    {
+      "url": "https://hospitality.madring.com/en/about-match-hospitality/",
+      "nombre": "MATCH Hospitality, proveedor oficial de Madring"
+    },
+    {
+      "url": "https://www.madring.com/en/press-releases/official-hospitality-programme",
+      "nombre": "Madring, comunicado del programa de hospitality"
+    },
+    {
+      "url": "https://catalunyamotogp.circuitcat.com/",
+      "nombre": "Circuit de Barcelona-Catalunya, entradas GP de Cataluña 2027"
+    },
+    {
+      "url": "https://www.circuitcat.com/es/hospitality/",
+      "nombre": "Circuit de Barcelona-Catalunya, hospitality"
+    },
+    {
+      "url": "https://www.circuitcat.com/es/",
+      "nombre": "Circuit de Barcelona-Catalunya, portada"
+    },
+    {
+      "url": "https://www.circuitodejerez.com/",
+      "nombre": "Circuito de Jerez - Ángel Nieto, portada"
+    },
+    {
+      "url": "https://www.circuitodejerez.com/en/?p=38973",
+      "nombre": "Circuito de Jerez, entradas MotoGP 2026"
+    },
+    {
+      "url": "https://motogppremier.motogp.com/2027-motogp-spain",
+      "nombre": "MotoGP Premier, paquetes Jerez 2027"
+    },
+    {
+      "url": "https://motogppremier.motogp.com/es/2027-motogp-catalonia",
+      "nombre": "MotoGP Premier, paquetes Cataluña 2027"
+    },
+    {
+      "url": "https://mutuamadridopen.com/en/tickets/",
+      "nombre": "Mutua Madrid Open, entradas"
+    },
+    {
+      "url": "https://mutuamadridopen.com/en/ticket-sale-conditions/",
+      "nombre": "Mutua Madrid Open, condiciones de venta 2027"
+    },
+    {
+      "url": "https://www.barcelonaopenbancsabadell.com/hospitality",
+      "nombre": "Barcelona Open Banc Sabadell, hospitality"
+    },
+    {
+      "url": "https://www.oxersport.com/en/oxer-news/ya-a-la-venta-las-entradas-para-el-longines-global-champions-tour-115-csi-madrid",
+      "nombre": "Oxer Sport, venta de entradas LGCT Madrid 2026"
+    }
+  ],
+  "huecos": [
+    "Precios de 2027 pendientes de publicación o no legibles: Mutua Madrid Open, MotoGP Jerez (la tabla oficial de 2026 es una imagen), Barcelona Open Banc Sabadell y paquetes de hospitality de Madring.",
+    "Madring: solo hemos podido leer tres categorías de grada (Recta 1A, 1B y 1C). El rango de hospitality de 1.300 a 5.000 € procede de un comunicado de julio de 2025 y se refiere a la edición de 2026.",
+    "Barcelona Open Banc Sabadell: la prensa cita el 1 de diciembre de 2026 como fecha de salida a la venta; su web oficial no lo confirma.",
+    "Copa del Rey MAPFRE de vela y Longines Global Champions Tour de Madrid: sin información oficial de entradas para 2027.",
+    "Aviso oficial contra la reventa: solo consta en Madring y en el Madrid Open."
+  ],
+  "relacionados": {
+    "rankings": [],
+    "eventos": [
+      "f1-gran-premio-espana-madring",
+      "motogp-jerez",
+      "motogp-cataluna",
+      "mutua-madrid-open",
+      "barcelona-open-banc-sabadell",
+      "copa-del-rey-mapfre-vela"
+    ],
+    "destinos": [
+      "madrid",
+      "barcelona",
+      "jerez-cadiz"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-19",
+  "publicado": "2026-11-19"
+}

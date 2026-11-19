@@ -1,0 +1,256 @@
+{
+  "slug": "amarres-y-yates",
+  "titulo": "Cómo reservar un amarre o alquilar un yate en España y cuánto cuesta",
+  "resumen": "Una noche de amarre para un barco de 15 m cuesta 97,00 € en Port Olímpic (sin IVA) y 330 € en Puerto Portals en temporada alta (sin IVA). Un yate de 20-25 m con tripulación en Baleares parte de 25.000 € por semana, más APA, IVA y propina. Desde el 1 de octubre de 2026, quien alquila una embarcación de recreo debe tener el título correspondiente.",
+  "pasos": [
+    {
+      "titulo": "Decide si necesitas amarre, barco o ambos",
+      "texto": "Si ya tienes barco, reserva amarre en un puerto deportivo. Si alquilas, el barco suele salir con base en un puerto concreto (por ejemplo Ibiza, Palma o Mahón) y el alquiler no incluye siempre el amarre en otros puertos."
+    },
+    {
+      "titulo": "Elige puerto y mira su tarifario oficial",
+      "texto": "Cada puerto publica una tabla por eslora y manga. Comprueba tres cosas: la temporada, si el importe lleva IVA y qué suministros incluye. Port Olímpic y Puerto Portals publican sus importes sin IVA."
+    },
+    {
+      "titulo": "Pide la reserva con antelación y por escrito",
+      "texto": "La mayoría de puertos reciben solicitudes por formulario o correo. En Puerto Sotogrande, enviar el formulario no reserva el amarre: es una solicitud. Tras confirmar, Marina Ibiza y Marina Badalona piden registro del barco, seguro y documento del propietario o patrón."
+    },
+    {
+      "titulo": "Pregunta por el depósito y la cancelación antes de pagar",
+      "texto": "La política de cancelación de la mayoría de puertos no figura en su web. Pídela por escrito antes de abonar nada, igual que el calendario de pagos."
+    },
+    {
+      "titulo": "Si alquilas un yate, cuenta con tarifa base, APA, IVA y propina",
+      "texto": "Los brokers publican un precio semanal base. Además se pagan los gastos por adelantado (APA, entre el 30 % y el 35 % de la tarifa según Bluebnc y Boatbookings), el IVA y, a criterio del cliente, la propina a la tripulación."
+    },
+    {
+      "titulo": "Comprueba la titulación si alquilas sin patrón",
+      "texto": "El Real Decreto 1188/2025 modifica el artículo 10 del Real Decreto 875/2014 con efectos desde el 1 de octubre de 2026, y su exposición de motivos recoge que en el arrendamiento «el arrendatario deberá estar en posesión del título correspondiente». Si no tienes título, alquila con patrón."
+    },
+    {
+      "titulo": "Planifica el fondeo en Baleares",
+      "texto": "Fondear sobre praderas de posidonia está prohibido con carácter general, y el Govern balear regula los campos de boyas. Pregunta al broker o al patrón qué calas de la ruta tienen boyas."
+    }
+  ],
+  "precios": {
+    "nota": "Los importes de amarre son por noche y eslora indicadas, sin IVA salvo que se diga lo contrario. Los de chárter son tarifas base por semana de anuncios y guías de brokers, sin fecha precisa salvo donde se indica; la APA, el IVA y la propina se suman al precio base. Importes copiados tal como aparecen en cada fuente.",
+    "filas": [
+      {
+        "concepto": "Port Olímpic (Barcelona) · amarre en tránsito, berth 15 x 5 m (eslora máx. 16,5 m)",
+        "importe": "97,00 €",
+        "unidad": "por día, eslora 15 m, temporada alta (1 abril a 31 octubre); IVA no incluido; incluye 9 kWh y 0,25 m³",
+        "temporada": "alta 2026",
+        "fecha_dato": "Tarifas 2026; alta del 1 de abril al 31 de octubre; IVA no incluido; electricidad extra 0,18 € por kWh, agua extra 6,00 € por m³",
+        "fuente_url": "https://portolimpic.barcelona/ca/serveis-portuaris/tarifes",
+        "fuente": "Tarifas oficiales de Port Olímpic (BSM)"
+      },
+      {
+        "concepto": "Port Olímpic (Barcelona) · amarre en tránsito, berth 25 x 6 m (eslora máx. 27,5 m)",
+        "importe": "192,20 €",
+        "unidad": "por día, eslora 25 m, temporada alta; IVA no incluido; incluye 12 kWh y 0,3 m³",
+        "temporada": "alta 2026",
+        "fecha_dato": "Tarifas 2026; alta del 1 de abril al 31 de octubre; IVA no incluido",
+        "fuente_url": "https://portolimpic.barcelona/ca/serveis-portuaris/tarifes",
+        "fuente": "Tarifas oficiales de Port Olímpic (BSM)"
+      },
+      {
+        "concepto": "Puerto Portals (Mallorca) · alquiler de amarre, 15 x 5 m",
+        "importe": "330 €",
+        "unidad": "por día, 15 x 5 m; IVA 21 % no incluido",
+        "temporada": "alta (1 junio a 15 septiembre); tarifas 2026/2027",
+        "fecha_dato": "Tarifas de alquiler de amarres 2026/2027 de la web; periodo alto del 1 de junio al 15 de septiembre; IVA 21 % no incluido",
+        "fuente_url": "https://www.puertoportals.com/amarres/",
+        "fuente": "Web oficial de Puerto Portals"
+      },
+      {
+        "concepto": "Chárter con tripulación, Ibiza/Formentera/Mallorca · Sunseeker 75 de 22,98 m (base Mallorca)",
+        "importe": "26.600 € - 39.900 €",
+        "unidad": "por semana, base; baja y alta; más gastos (30-40 %), IVA y propina",
+        "temporada": "baja y alta, fechas no definidas",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.boatbookings.com/yacht/raoul-w-sunseeker-75-yacht-luxury-crewed-motor-yacht-pid23209",
+        "fuente": "Boatbookings, ficha 'Raoul W'"
+      },
+      {
+        "concepto": "Chárter con tripulación · Esterel de 25,66 m (base Mahón)",
+        "importe": "29.400 € - 36.750 €",
+        "unidad": "por semana, base; baja y alta; más APA 30-35 % e IVA",
+        "temporada": "baja y alta, fechas no definidas",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.boatbookings.com/yacht/ciutadella-esterel-25-m-luxury-crewed-motor-yacht-pid162425",
+        "fuente": "Boatbookings, ficha 'Ciutadella'"
+      },
+      {
+        "concepto": "Chárter con tripulación, Ibiza · Maiora de 28 m (base Ibiza)",
+        "importe": "49.000 € - 59.000 €",
+        "unidad": "por semana, base; baja y alta; más gastos (30-40 %), IVA y propina",
+        "temporada": "baja y alta, fechas no definidas",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.boatbookings.com/yacht/sublime-mar-maiora-28m-luxury-crewed-motor-yacht-pid23707",
+        "fuente": "Boatbookings, ficha 'Sublime Mar'"
+      },
+      {
+        "concepto": "Baleares · rango de tarifa base por eslora, yates a motor de 20-25 m",
+        "importe": "25.000 € - 60.000 €",
+        "unidad": "por semana, base; 25-35 m: 60.000 € - 150.000 € por semana",
+        "temporada": "no indicada",
+        "fecha_dato": "Guía de Bluebnc fechada el 12 de mayo de 2026",
+        "fuente_url": "https://www.bluebnc.com/en-es/blog/true-cost-superyacht-charter-balearics-2026",
+        "fuente": "Bluebnc, 'The True Cost of Chartering a Superyacht in the Balearics (2026 Guide)'"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Puerto Portals (Mallorca)",
+      "como": "Contacto por email (reservas@puertoportals.com en el pie del PDF; info@puertoportals.com en la web) y teléfono +34 971 171 100. Botón 'Solicitar información' en https://www.puertoportals.com/amarres/",
+      "antelacion": "No indicada en la web ni en el PDF de tarifas.",
+      "politica": "No publicada. El PDF dice 'Tarifas sujetas a cambios según mercado' e IVA 21 % no incluido."
+    },
+    {
+      "concepto": "Marina Ibiza",
+      "como": "Formulario 'Reservar amarre' en https://marinaibiza.com/la-marina/localizacion-y-reservas/ y email info@marinaibiza.com; teléfono +34 971 318 040. Tras confirmar piden hoja de registro, seguro, documento del propietario o patrón, lista de tripulación y declaración de llegada.",
+      "antelacion": "No indicada.",
+      "politica": "No indicada. La web distingue temporada baja (enero-abril y octubre-diciembre), media (mayo, junio y septiembre) y alta (julio y agosto), sin dar importes. Fuente: https://marinaibiza.com/amarres/"
+    },
+    {
+      "concepto": "Puerto Sotogrande",
+      "como": "Formulario en https://puertosotogrande.es/amarres/; teléfono +34 956 790 000.",
+      "antelacion": "El equipo responde en menos de 24 horas. 'La solicitud de amarre no supone en ningún caso la reserva del mismo'.",
+      "politica": "Depósito y cancelación no publicados en la página."
+    },
+    {
+      "concepto": "Port Olímpic (Barcelona)",
+      "como": "Botón 'Llogar amarrador per dies' que lleva al formulario de contacto https://portolimpic.barcelona/ca/contacte/formulari-de-contacte; teléfono +34 93 356 10 16.",
+      "antelacion": "No indicada.",
+      "politica": "No indicada. La página de alquiler dice que las tarifas varían según el tiempo de estancia."
+    },
+    {
+      "concepto": "Marina Badalona",
+      "como": "Formulario 'Reserva d'amarradors' en https://marinabadalona.cat/lloguer-cessio-amarradors/; email port@marinabadalona.cat; teléfono +34 93 320 75 00. Tras confirmar piden registro, seguro y DNI o pasaporte. Aviso de llegada por VHF 9 o teléfono.",
+      "antelacion": "No indicada.",
+      "politica": "Cancelación no publicada."
+    }
+  ],
+  "consejos": [
+    "Compara siempre importes con la misma base: Port Olímpic y Puerto Portals publican sin IVA.",
+    "En Port Olímpic, la electricidad y el agua que exceda lo incluido se cobra aparte: 0,18 € por kWh y 6,00 € por m³.",
+    "Pide el tarifario del año en curso: Puerto Portals fija sus tarifas por temporada y las revisa según mercado.",
+    "En un chárter, pide por escrito el porcentaje de APA, el IVA aplicado y qué incluye el precio base.",
+    "Al alquilar en Baleares, pregunta qué calas de la ruta tienen campo de boyas y si hay que reservar la boya."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que enviar un formulario reserva el amarre. En Puerto Sotogrande la solicitud no es una reserva.",
+    "Comparar el precio por noche sin mirar si lleva IVA y suministros.",
+    "Contar solo la tarifa semanal de un yate de chárter y olvidar APA, IVA y propina.",
+    "Alquilar sin patrón sin título: desde el 1 de octubre de 2026 el arrendatario debe tenerlo.",
+    "Fondear sobre posidonia en Baleares, que está prohibido con carácter general."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta una noche de amarre para un barco de 15 m en temporada alta?",
+      "r": "97,00 € en Port Olímpic (sin IVA, del 1 de abril al 31 de octubre de 2026, con 9 kWh y 0,25 m³ incluidos) y 330 € en Puerto Portals (sin IVA, del 1 de junio al 15 de septiembre). Son puertos distintos, así que compara siempre con la misma base de IVA y suministros."
+    },
+    {
+      "p": "¿Cuánto cuesta un amarre para 25 m?",
+      "r": "En Port Olímpic, 192,20 € por día en temporada alta de 2026, sin IVA, para el amarre de 25 x 6 m con 12 kWh y 0,3 m³ incluidos."
+    },
+    {
+      "p": "¿Cómo se reserva un amarre en tránsito?",
+      "r": "Por formulario web o correo al puerto: Marina Ibiza, Puerto Sotogrande, Port Olímpic y Marina Badalona usan formularios, y Puerto Portals un botón de solicitud de información. Después piden documentación del barco, como registro y seguro."
+    },
+    {
+      "p": "¿Qué es la APA en un chárter con tripulación?",
+      "r": "Es un fondo prepagado para gastos como combustible, comida y amarres. Bluebnc lo sitúa en el 30-35 % de la tarifa base. Boatbookings dice que los gastos suelen calcularse en el 30-40 % de la tarifa."
+    },
+    {
+      "p": "¿Qué IVA se aplica a un chárter en España?",
+      "r": "Las fuentes consultadas no coinciden: Bluebnc (mayo de 2026) indica un 21 % para chárteres entre puertos españoles y Boatbookings da 10-15 % en una ficha. No lo hemos contrastado con una fuente tributaria oficial: confirma el tipo con el broker por escrito."
+    },
+    {
+      "p": "¿Cuánto se deja de propina a la tripulación?",
+      "r": "Boatbookings da 10-20 % de la tarifa base, a criterio del cliente. Bluebnc cita 10-15 % para un servicio excepcional y 5-10 % para uno bueno. La propina no va incluida en el precio."
+    },
+    {
+      "p": "¿Puedo alquilar un barco sin título?",
+      "r": "Desde el 1 de octubre de 2026, no. El Real Decreto 1188/2025 modifica el artículo 10 del Real Decreto 875/2014 con efectos desde esa fecha y su exposición de motivos dice que el arrendatario deberá estar en posesión del título correspondiente. Si no lo tienes, alquila con patrón."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://portolimpic.barcelona/ca/serveis-portuaris/tarifes",
+      "nombre": "Tarifas de tránsito de Port Olímpic (BSM)"
+    },
+    {
+      "url": "https://portolimpic.barcelona/ca/serveis-portuaris/lloguer-amarrador",
+      "nombre": "Alquiler de amarradores de Port Olímpic"
+    },
+    {
+      "url": "https://www.puertoportals.com/amarres/",
+      "nombre": "Amarres de Puerto Portals"
+    },
+    {
+      "url": "https://puertosotogrande.es/amarres/",
+      "nombre": "Amarres de Puerto Sotogrande"
+    },
+    {
+      "url": "https://marinaibiza.com/la-marina/localizacion-y-reservas/",
+      "nombre": "Localización y reservas de Marina Ibiza"
+    },
+    {
+      "url": "https://marinabadalona.cat/lloguer-cessio-amarradors/",
+      "nombre": "Reserva de amarradores de Marina Badalona"
+    },
+    {
+      "url": "https://www.boatbookings.com/yacht/raoul-w-sunseeker-75-yacht-luxury-crewed-motor-yacht-pid23209",
+      "nombre": "Boatbookings, Sunseeker 75 'Raoul W'"
+    },
+    {
+      "url": "https://www.boatbookings.com/yacht/ciutadella-esterel-25-m-luxury-crewed-motor-yacht-pid162425",
+      "nombre": "Boatbookings, Esterel 25 m 'Ciutadella'"
+    },
+    {
+      "url": "https://www.boatbookings.com/yacht/sublime-mar-maiora-28m-luxury-crewed-motor-yacht-pid23707",
+      "nombre": "Boatbookings, Maiora 28 m 'Sublime Mar'"
+    },
+    {
+      "url": "https://www.bluebnc.com/en-es/blog/true-cost-superyacht-charter-balearics-2026",
+      "nombre": "Bluebnc, coste de un chárter en Baleares (12 de mayo de 2026)"
+    },
+    {
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-27010",
+      "nombre": "BOE: Real Decreto 1188/2025 (entrada en vigor del cambio del artículo 10: 1 de octubre de 2026)"
+    },
+    {
+      "url": "https://www.caib.es/sites/cuidamposidonia/es/normativa_de_aplicacian_en_los_campos_de_boyas_regulados/",
+      "nombre": "Govern balear: normativa de fondeo y campos de boyas"
+    }
+  ],
+  "huecos": [
+    "Puerto Banús, Real Club Náutico de Palma, Marina Real Juan Carlos I, Empuriabrava y Mahón: no hemos podido confirmar una tarifa de tránsito vigente en fuente oficial legible.",
+    "Marina Ibiza publica sus temporadas (baja, media y alta) pero no importes. Puerto Sotogrande solo tiene tarifa de 2023-2024 en su web y no la usamos.",
+    "Antelación mínima y política de cancelación: casi ningún puerto las publica.",
+    "Chárter: fianza, calendario de pagos y condiciones de cancelación no verificados. Los precios salen de Boatbookings y de la guía de Bluebnc; no se consultaron otros brokers.",
+    "IVA del chárter: las fuentes no coinciden y no está contrastado con la Agencia Tributaria.",
+    "Chárter en Costa del Sol: sin ficha concreta con precio semanal verificado."
+  ],
+  "relacionados": {
+    "rankings": [
+      "yates-y-calas"
+    ],
+    "eventos": [
+      "palma-boat-show",
+      "superyacht-cup-palma",
+      "copa-del-rey-mapfre-vela"
+    ],
+    "destinos": [
+      "ibiza",
+      "mallorca",
+      "costa-del-sol",
+      "barcelona"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-19",
+  "publicado": "2026-11-19"
+}

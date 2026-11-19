@@ -96,6 +96,12 @@
 - [Open de España presented by Madrid](https://mejorimposible.es/eventos/open-de-espana-golf/): Torneo del DP World Tour y el más antiguo del golf español, con sede en el Club de Campo Villa de Madrid. (2027-10-07; Club de Campo Villa de Madrid)
 - [Gran Premio de la Comunitat Valenciana de MotoGP](https://mejorimposible.es/eventos/motogp-valencia/): Cita final del Mundial de MotoGP en el circuito Ricardo Tormo de Cheste, con definición del campeonato. (2027-11-26; Circuit Ricardo Tormo, Cheste)
 
+## Guías de reserva y precios (cómo reservar y cuánto cuesta, con fuente y fecha)
+- [Todas las guías](https://mejorimposible.es/guias/): índice
+- [Cómo reservar un amarre o alquilar un yate en España y cuánto cuesta](https://mejorimposible.es/guias/amarres-y-yates/): Una noche de amarre para un barco de 15 m cuesta 97,00 € en Port Olímpic (sin IVA) y 330 € en Puerto Portals en temporada alta (sin IVA). Un yate de 20-25 m con tripulación en Baleares parte de 25.000 € por semana, más APA, IVA y propina. Desde el 1 de octubre de 2026, quien alquila una embarcación de recreo debe tener el título correspondiente.
+- [Cómo conseguir entradas VIP y hospitality en los grandes eventos de España y cuánto cuestan](https://mejorimposible.es/guias/entradas-vip-grandes-eventos/): Los organizadores piden comprar solo en su web, en su ticketing oficial o en su operador de hospitality autorizado; fuera de ahí no garantizan que la entrada sea auténtica. Solo el GP de España de F1 en Madrid (Madring) y el GP de Cataluña de MotoGP tienen ya precios 2027 publicados en su ticketing oficial; en el resto, los precios de 2027 no figuran todavía en las páginas abiertas.
+- [Cómo reservar un restaurante de alta cocina en España y cuánto cuesta](https://mejorimposible.es/guias/restaurantes-alta-cocina/): Las reservas abren con ventanas muy distintas según el restaurante: 90 días en DiverXO, hasta 11 meses en El Celler de Can Roca y apertura gradual en Etxebarri. Los menús verificados van de 280 € (Enigma) a 450 € por persona (DiverXO), sin bebidas en todos los casos donde la fuente lo indica.
+
 ## Contexto
 - Sitemap: https://mejorimposible.es/sitemap.xml y https://mejorimposible.es/sitemap-portal.xml
 - Traducciones del portal: /en/, /fr/, /de/, /it/, /pt/

@@ -1,0 +1,421 @@
+{
+  "slug": "restaurantes-alta-cocina",
+  "titulo": "Cómo reservar un restaurante de alta cocina en España y cuánto cuesta",
+  "resumen": "Las reservas abren con ventanas muy distintas según el restaurante: 90 días en DiverXO, hasta 11 meses en El Celler de Can Roca y apertura gradual en Etxebarri. Los menús verificados van de 280 € (Enigma) a 450 € por persona (DiverXO), sin bebidas en todos los casos donde la fuente lo indica.",
+  "pasos": [
+    {
+      "titulo": "Elige restaurante y confirma temporada y días de servicio",
+      "texto": "Mira en la web oficial los días y horas de apertura. Etxebarri solo sirve comidas y cierra lunes, martes, agosto y del 24 de diciembre al 10 de enero. Mugaritz abre en 2026 del 1 de mayo al 25 de octubre. Arzak cierra del 1 al 25 de noviembre de 2026."
+    },
+    {
+      "titulo": "Averigua cuándo abre el calendario",
+      "texto": "DiverXO abre cada día una fecha nueva a las 00:00, con 90 días de antelación. El Celler de Can Roca abre un mes nuevo a las 00:00 del primer día de cada mes y admite hasta 11 meses de antelación. Etxebarri añade fechas de forma gradual y no fija un plazo."
+    },
+    {
+      "titulo": "Reserva por el canal oficial",
+      "texto": "Cada casa usa su sistema: SevenRooms y solicitud web en Etxebarri, formulario web en Arzak y Azurmendi, CoverManager en Quique Dacosta, reservas.mugaritz.com en Mugaritz, calendario propio en DiverXO. Algunas casas solo confirman por correo."
+    },
+    {
+      "titulo": "Prepara el pago o la garantía",
+      "texto": "Los sistemas se dividen en tres: prepago total (Etxebarri 300 €, DiverXO 450 € como entrada), anticipo parcial (Mugaritz 145 € por comensal, no reembolsable) o tarjeta de garantía sin cargo inicial (Arzak, El Celler de Can Roca)."
+    },
+    {
+      "titulo": "Avisa de alergias e intolerancias al reservar",
+      "texto": "Díselo en el formulario o en el correo de confirmación. DiverXO pide contactar antes de reservar si la alergia es grave. Etxebarri y DiverXO indican que no tienen menú vegetariano ni vegano."
+    },
+    {
+      "titulo": "Revisa la política de cancelación y reconfirma",
+      "texto": "Los plazos van de 48 horas (Arzak) a 14 días (DiverXO). El Celler de Can Roca pide reconfirmar 10 días antes y cobra 100 € por persona si se cancela dentro de ese plazo. Guarda el correo de confirmación."
+    },
+    {
+      "titulo": "Si no hay mesa, usa la lista de espera",
+      "texto": "El Celler de Can Roca tiene una lista de espera por día y avisa si hay una cancelación. DiverXO indica que se puede apuntar a la lista de espera si no hay fecha. Etxebarri te añade a lista de espera si no confirma mesa."
+    }
+  ],
+  "precios": {
+    "nota": "Importes copiados de las webs oficiales. Salvo que se indique, las bebidas no están incluidas. Se indica IVA incluido solo donde la fuente lo dice. Las fuentes no llevan fecha de publicación salvo que se indique; todas se consultaron el 2026-11-19.",
+    "filas": [
+      {
+        "concepto": "Asador Etxebarri · Menú degustación",
+        "importe": "300 €",
+        "unidad": "por persona, IVA incluido, sin bebidas",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.asadoretxebarri.com/",
+        "fuente": "Web oficial de Asador Etxebarri"
+      },
+      {
+        "concepto": "DiverXO · Menú Sólido \"La Cocina de los Cerdos Voladores\"",
+        "importe": "450 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.diverxo.com/",
+        "fuente": "Web oficial de DiverXO"
+      },
+      {
+        "concepto": "DiverXO · Entrada (ticket) del menú degustación",
+        "importe": "450 €",
+        "unidad": "por persona, IVA incluido, sin bebidas; se descuenta de la cuenta final",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.diverxo.com/es/reservar",
+        "fuente": "Web oficial de DiverXO, página de reservas"
+      },
+      {
+        "concepto": "DiverXO · Menú Líquido \"Metamorfosis\" (medio / completo)",
+        "importe": "250 € / 450 €",
+        "unidad": "por persona, solo junto al menú sólido, sin alcohol",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.diverxo.com/",
+        "fuente": "Web oficial de DiverXO"
+      },
+      {
+        "concepto": "DiverXO · Maridajes (Eruciforme)",
+        "importe": "300 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://www.diverxo.com/",
+        "fuente": "Web oficial de DiverXO"
+      },
+      {
+        "concepto": "Disfrutar · Menú Disfrutar Classic",
+        "importe": "325 €",
+        "unidad": "por persona (la fuente no detalla IVA ni bebidas)",
+        "temporada": "Precios válidos hasta el 07/08/2027",
+        "fecha_dato": "válido hasta 07/08/2027",
+        "fuente_url": "https://www.disfrutarbarcelona.com/",
+        "fuente": "Web oficial de Disfrutar"
+      },
+      {
+        "concepto": "Disfrutar · Menú Disfrutar Festival",
+        "importe": "325 €",
+        "unidad": "por persona (la fuente no detalla IVA ni bebidas)",
+        "temporada": "Precios válidos hasta el 07/08/2027",
+        "fecha_dato": "válido hasta 07/08/2027",
+        "fuente_url": "https://www.disfrutarbarcelona.com/",
+        "fuente": "Web oficial de Disfrutar"
+      },
+      {
+        "concepto": "Disfrutar · Maridaje de vinos",
+        "importe": "180 €",
+        "unidad": "por persona",
+        "temporada": "Precios válidos hasta el 07/08/2027",
+        "fecha_dato": "válido hasta 07/08/2027",
+        "fuente_url": "https://www.disfrutarbarcelona.com/",
+        "fuente": "Web oficial de Disfrutar"
+      },
+      {
+        "concepto": "Arzak · Menú degustación",
+        "importe": "315 €",
+        "unidad": "por persona, IVA 10 % incluido, bebidas aparte",
+        "temporada": "",
+        "fecha_dato": "vigente a 2026-11-19 (la página cita cierres hasta 2027)",
+        "fuente_url": "https://www.arzak.es/reserva/",
+        "fuente": "Web oficial de Arzak, página de reserva"
+      },
+      {
+        "concepto": "Arzak · Menú a la carta (aperitivo, entrante, principal y postre)",
+        "importe": "285 €",
+        "unidad": "por persona, IVA 10 % incluido, bebidas aparte",
+        "temporada": "",
+        "fecha_dato": "vigente a 2026-11-19 (la página cita cierres hasta 2027)",
+        "fuente_url": "https://www.arzak.es/reserva/",
+        "fuente": "Web oficial de Arzak, página de reserva"
+      },
+      {
+        "concepto": "Arzak · Maridaje de vinos (suma al menú degustación)",
+        "importe": "220 €",
+        "unidad": "por persona, solo para toda la mesa",
+        "temporada": "",
+        "fecha_dato": "vigente a 2026-11-19 (la página cita cierres hasta 2027)",
+        "fuente_url": "https://www.arzak.es/reserva/",
+        "fuente": "Web oficial de Arzak, página de reserva"
+      },
+      {
+        "concepto": "Azurmendi · Gran Menú",
+        "importe": "350 €",
+        "unidad": "por persona, IVA incluido, sin bebidas",
+        "temporada": "Menú de temporada, sujeto a cambios",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://azurmendi.restaurant/menus/",
+        "fuente": "Web oficial de Azurmendi"
+      },
+      {
+        "concepto": "Azurmendi · Maridaje de vinos",
+        "importe": "150 €",
+        "unidad": "por persona, IVA incluido",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://azurmendi.restaurant/menus/",
+        "fuente": "Web oficial de Azurmendi"
+      },
+      {
+        "concepto": "Mugaritz · Menú temporada 2026",
+        "importe": "319 €",
+        "unidad": "por persona, IVA incluido, sin bebidas",
+        "temporada": "Temporada 2026: 1 de mayo a 25 de octubre",
+        "fecha_dato": "temporada 2026",
+        "fuente_url": "https://www.mugaritz.com/preguntas-frecuentes/",
+        "fuente": "Web oficial de Mugaritz, preguntas frecuentes"
+      },
+      {
+        "concepto": "Quique Dacosta · Menú OCTAVO",
+        "importe": "315 €",
+        "unidad": "por persona, IVA 10 % incluido",
+        "temporada": "Disponible hasta el 20 de diciembre (2026)",
+        "fecha_dato": "hasta el 20 de diciembre",
+        "fuente_url": "https://www.quiquedacosta.es/",
+        "fuente": "Web oficial de Quique Dacosta"
+      },
+      {
+        "concepto": "Quique Dacosta · Maridaje estándar / premium",
+        "importe": "165 € / 215 €",
+        "unidad": "por persona, no incluye bebidas de bienvenida",
+        "temporada": "Disponible hasta el 20 de diciembre (2026)",
+        "fecha_dato": "hasta el 20 de diciembre",
+        "fuente_url": "https://www.quiquedacosta.es/",
+        "fuente": "Web oficial de Quique Dacosta"
+      },
+      {
+        "concepto": "Enigma · Menú degustación (20 a 25 platos)",
+        "importe": "280 €",
+        "unidad": "por persona, sin bebidas",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026 (consultada 2026-11-19; cita cierre 24-12-2026 a 18-01-2027)",
+        "fuente_url": "https://enigmaconcept.es/",
+        "fuente": "Web oficial de Enigma"
+      },
+      {
+        "concepto": "Enigma · Selección de vinos Enigma / Eureka!",
+        "importe": "160 € / 350 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 19-11-2026",
+        "fuente_url": "https://enigmaconcept.es/",
+        "fuente": "Web oficial de Enigma"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Asador Etxebarri",
+      "como": "Solicitud en https://www.asadoretxebarri.com/#reserva o calendario SevenRooms https://www.sevenrooms.com/reservations/asadoretxebarri. El formulario de contacto no acepta reservas.",
+      "antelacion": "El calendario se abre de forma gradual. La web no fija un plazo.",
+      "politica": "Prepago del total de la mesa tras la aceptación (aviso por correo en unos 7 días; sin pago se cancela). Cancelación o cambio con al menos 5 días para reembolso. Mesas de 2 a 6 personas. Solo comida."
+    },
+    {
+      "concepto": "DiverXO",
+      "como": "Calendario en https://www.diverxo.com/es/reservar; la reserva vale al recibir el correo de confirmación.",
+      "antelacion": "Fecha nueva cada día a las 00:00, con 90 días de antelación. Sirve de martes a viernes (comida y cena).",
+      "politica": "Entrada de 450 € por comensal, que se descuenta de la cuenta. Reembolso si se cancela con 14 días o más. No se cambia la fecha, pero la entrada se puede transferir. No se puede reducir el número de comensales una vez confirmado. Llaman una semana antes para confirmar."
+    },
+    {
+      "concepto": "Disfrutar",
+      "como": "Reservas por la web https://www.disfrutarbarcelona.com/. No pude abrir la página de reservas.",
+      "antelacion": "Sin verificar en fuente oficial.",
+      "politica": "Sin verificar en fuente oficial."
+    },
+    {
+      "concepto": "Arzak",
+      "como": "Formulario en https://www.arzak.es/reserva/; confirmación por correo en un máximo de 3 días. Teléfono +34 943 278 465 para reservas con menos de 72 horas.",
+      "antelacion": "La página no indica un plazo máximo.",
+      "politica": "Tarjeta de garantía, sin cargo salvo cancelación tardía o no presentación (315 € por persona). Cancelación solo por correo a reservas@arzak.es con 48 horas; no se acepta por teléfono. Hasta 20 adultos y 4 niños de 0 a 12 años en el formulario."
+    },
+    {
+      "concepto": "Azurmendi",
+      "como": "Formulario en https://www.azurmendi.restaurant/reservar/; confirmación por correo en un máximo de 48 horas. Teléfono +34 94 455 83 59 para menos de 24 horas.",
+      "antelacion": "La página no indica un plazo máximo.",
+      "politica": "Sin prepago indicado. Cancelación por correo a reservas@azurmendi.restaurant con al menos 72 horas. No se admiten menores de 10 años."
+    },
+    {
+      "concepto": "Mugaritz",
+      "como": "https://reservas.mugaritz.com/reservas-detalles/nueva-reserva (correo reservas@mugaritz.com, tel. +34 943 522 455 para cancelar).",
+      "antelacion": "La web no indica cuándo se abre el calendario. Temporada 2026: 1 de mayo a 25 de octubre, de viernes a domingo.",
+      "politica": "Anticipo de 145 € por comensal, descontable y no reembolsable. Se puede cambiar la fecha o transferir; si no se presenta nadie, se pierde. Cambios de comensales hasta 48 horas antes. Máximo 14 personas por mesa; más de 14 con depósito del 50 % del menú."
+    },
+    {
+      "concepto": "El Celler de Can Roca",
+      "como": "Solo por la web https://cellercanroca.com/ (según sus FAQ). Teléfono 972 222 157 para dudas.",
+      "antelacion": "Abre a las 00:00 del primer día de cada mes, con hasta 11 meses de antelación.",
+      "politica": "Sin prepago; tarjeta de garantía verificada en la app del banco. Cancelación gratuita hasta 10 días antes; dentro de ese plazo, 100 € por persona. Reconfirmar 10 días antes. Mesas de 2 a 12 (a criterio del restaurante)."
+    },
+    {
+      "concepto": "Quique Dacosta",
+      "como": "CoverManager: https://www.covermanager.com/reserve/module_restaurant/restaurante-quique-dacosta/spanish. Teléfono 965 784 179. Más de 8 personas o eventos, por correo.",
+      "antelacion": "La web no indica el plazo.",
+      "politica": "Cambios y anulaciones con cinco días de antelación. No hay más datos de prepago en la fuente."
+    },
+    {
+      "concepto": "Enigma",
+      "como": "Botones de reserva en https://enigmaconcept.es/ (no pude abrir la página de reservas). Contacto info@enigmaconcept.es y +34 616 696 322.",
+      "antelacion": "Sin verificar en fuente oficial.",
+      "politica": "Sin verificar en fuente oficial."
+    },
+    {
+      "concepto": "Elkano",
+      "como": "Página de reservas https://www.restauranteelkano.com/reservas/ o reservas@restauranteelkano.com; teléfono de martes a sábado de 10:00 a 17:00. La reserva vale cuando el restaurante la confirma.",
+      "antelacion": "Sin verificar.",
+      "politica": "Sin verificar."
+    },
+    {
+      "concepto": "Voro",
+      "como": "Enlace Reservar y página de condiciones en la web oficial (vororestaurant.com); teléfono 871 81 13 50 de martes a sábado de 12:00 a 17:00; correo voro@capvermell.com.",
+      "antelacion": "Sin verificar.",
+      "politica": "Sin verificar."
+    },
+    {
+      "concepto": "Aponiente",
+      "como": "Página https://www.aponiente.com/reservas/ ; correo reservas@aponiente.com; teléfono 956 851 870.",
+      "antelacion": "Sin verificar.",
+      "politica": "Sin verificar. La web enlaza unas condiciones de compra que no pude leer."
+    }
+  ],
+  "consejos": [
+    "Apunta en el calendario el momento exacto de apertura: DiverXO publica a las 00:00 una fecha con 90 días de antelación y El Celler de Can Roca abre un mes nuevo a las 00:00 del día 1.",
+    "Si no hay mesa en El Celler de Can Roca, apúntate a la lista de espera de varios días: cada día tiene la suya.",
+    "Reserva con los datos de todos los comensales cerrados. Muchas casas no dejan reducir el número de personas (DiverXO) o pierden el anticipo (Mugaritz, tras 48 horas).",
+    "Comunica las alergias al reservar, no el día de la visita. DiverXO pide contactar antes de reservar si son graves.",
+    "Comprueba la temporada: Mugaritz solo abre de mayo a octubre y Arzak cierra del 1 al 25 de noviembre de 2026.",
+    "Para el presupuesto, suma las bebidas: los importes verificados no las incluyen y los maridajes verificados van de 150 € (Azurmendi) a 300 € (DiverXO) por persona."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que el precio del menú incluye bebidas. En todas las fuentes que lo indican, no las incluye.",
+    "No leer el plazo de cancelación: va de 48 horas en Arzak a 14 días en DiverXO.",
+    "Cancelar por teléfono en Arzak: la web dice que no acepta anulaciones por teléfono.",
+    "No estar localizable la semana previa: DiverXO llama una semana antes para confirmar y El Celler de Can Roca pide reconfirmar 10 días antes.",
+    "Pedir menú vegetariano o vegano en casas que no lo ofrecen (Etxebarri y DiverXO lo indican).",
+    "Reservar con niños sin comprobar la norma de edad: Azurmendi no admite menores de 10 años."
+  ],
+  "faq": [
+    {
+      "p": "¿Con cuánta antelación se reserva DiverXO?",
+      "r": "Cada día se abre una fecha nueva a las 00:00, con 90 días de antelación. Sirve de martes a viernes."
+    },
+    {
+      "p": "¿Con cuánta antelación se reserva El Celler de Can Roca?",
+      "r": "Se admite hasta 11 meses de antelación. Cada mes nuevo se abre a las 00:00 del primer día del mes."
+    },
+    {
+      "p": "¿Hay que pagar por adelantado?",
+      "r": "Depende. Etxebarri pide el pago del total tras la aceptación, DiverXO una entrada de 450 € por persona y Mugaritz 145 € por persona no reembolsables. Arzak y El Celler de Can Roca piden solo una tarjeta de garantía."
+    },
+    {
+      "p": "¿Cuánto cuesta el menú degustación de Etxebarri?",
+      "r": "300 € por persona, IVA incluido y sin bebidas, según su web oficial. Solo sirve comidas, para mesas de 2 a 6 personas."
+    },
+    {
+      "p": "¿Qué hago si no hay mesa?",
+      "r": "El Celler de Can Roca ofrece lista de espera por día, DiverXO permite apuntarse si no hay fecha y Etxebarri añade a lista de espera si no hay mesa. Otras vías (barra, mediodía entre semana) no quedaron verificadas."
+    },
+    {
+      "p": "¿Cómo aviso de una alergia?",
+      "r": "Al reservar. Arzak y El Celler de Can Roca lo piden en el formulario o por correo o teléfono, y Mugaritz en el correo de confirmación. DiverXO pide contactar antes de reservar si la alergia es grave."
+    },
+    {
+      "p": "¿Hay código de vestimenta?",
+      "r": "Mugaritz indica que no hay. El Celler de Can Roca dice que no se exige, aunque recomienda a los hombres pantalón largo y zapato cerrado. En el resto de webs consultadas no consta."
+    },
+    {
+      "p": "¿Cuánto cuesta cancelar tarde?",
+      "r": "En Arzak, 315 € por comensal si se cancela con menos de 48 horas. En El Celler de Can Roca, 100 € por persona dentro de los 10 días previos."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.asadoretxebarri.com/",
+      "nombre": "Asador Etxebarri, web oficial"
+    },
+    {
+      "url": "https://www.diverxo.com/",
+      "nombre": "DiverXO, web oficial (menús y precios)"
+    },
+    {
+      "url": "https://www.diverxo.com/es/reservar",
+      "nombre": "DiverXO, página de reservas"
+    },
+    {
+      "url": "https://www.disfrutarbarcelona.com/",
+      "nombre": "Disfrutar, web oficial"
+    },
+    {
+      "url": "https://www.arzak.es/reserva/",
+      "nombre": "Arzak, página de reserva"
+    },
+    {
+      "url": "https://azurmendi.restaurant/menus/",
+      "nombre": "Azurmendi, menús"
+    },
+    {
+      "url": "https://www.azurmendi.restaurant/reservar/",
+      "nombre": "Azurmendi, reservas"
+    },
+    {
+      "url": "https://www.mugaritz.com/preguntas-frecuentes/",
+      "nombre": "Mugaritz, preguntas frecuentes"
+    },
+    {
+      "url": "https://reservas.mugaritz.com/reservas-detalles/nueva-reserva",
+      "nombre": "Mugaritz, sistema de reservas"
+    },
+    {
+      "url": "https://cellercanroca.com/faqs/",
+      "nombre": "El Celler de Can Roca, preguntas frecuentes"
+    },
+    {
+      "url": "https://cellercanroca.com/informacion-sobre-la-reserva-y-politica-de-cancelacion/",
+      "nombre": "El Celler de Can Roca, condiciones de reserva"
+    },
+    {
+      "url": "https://www.quiquedacosta.es/",
+      "nombre": "Quique Dacosta, web oficial"
+    },
+    {
+      "url": "https://quiquedacosta.es/reserva/",
+      "nombre": "Quique Dacosta, reserva"
+    },
+    {
+      "url": "https://enigmaconcept.es/",
+      "nombre": "Enigma, web oficial"
+    },
+    {
+      "url": "https://www.restauranteelkano.com/reservas/",
+      "nombre": "Elkano, reservas"
+    },
+    {
+      "url": "https://www.aponiente.com/",
+      "nombre": "Aponiente, web oficial"
+    },
+    {
+      "url": "https://vororestaurant.com/",
+      "nombre": "Voro, web oficial"
+    }
+  ],
+  "huecos": [
+    "Disfrutar, Enigma, Elkano, Voro, Aponiente y Skina: no hemos podido confirmar en fuente oficial su sistema de reservas, la antelación y la política de cancelación; en Elkano, Voro, Aponiente y Skina tampoco el precio del menú.",
+    "El Celler de Can Roca: el precio del menú está pendiente de confirmar.",
+    "Etxebarri, Arzak, Azurmendi y Quique Dacosta no indican en su web un plazo máximo de reserva.",
+    "Las webs no suelen fechar sus precios: todos los importes se consultaron el 19 de noviembre de 2026.",
+    "Alternativas a la mesa (barra, comida entre semana frente a cena) y requisitos de la Guía Michelin o The World's 50 Best: no figuran en fuentes oficiales, por eso no se afirman."
+  ],
+  "relacionados": {
+    "rankings": [
+      "restaurantes"
+    ],
+    "eventos": [
+      "gala-michelin-2027-huesca",
+      "madrid-fusion",
+      "san-sebastian-gastronomika"
+    ],
+    "destinos": [
+      "san-sebastian",
+      "barcelona",
+      "madrid"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-19",
+  "publicado": "2026-11-19"
+}
