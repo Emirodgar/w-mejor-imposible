@@ -15,6 +15,8 @@ permalink: porsche/el-futuro-ya-esta-aqui-con-el-nuevo-porsche-cayenne-electric
 ---
 {% include article-ld.html %}
 
+# El futuro ya está aquí con el nuevo Porsche Cayenne Electric
+
 ## ¿Cómo será el futuro de Porsche?
 
 Más tecnología, más emociones, más deportividad y más sostenibilidad. **Todo junto. Todo Porsche.**
