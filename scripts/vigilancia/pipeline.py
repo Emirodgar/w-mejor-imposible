@@ -693,6 +693,33 @@ def enriquecer(datos, tocados, informe, pool=()):
     return hechos
 
 
+# ---------------------------------------------------------------- triaje: Gemini decide qué titulares interesan
+ESQUEMA_TRIAJE = {"type": "ARRAY", "items": {"type": "INTEGER"}}
+LOTE_TRIAJE = 120
+
+REGLAS_TRIAJE = """Eres el editor de mejorimposible.es, un repositorio de planes de lujo y eventos de alto standing en España. Recibes una lista numerada de titulares de prensa y decides cuáles merece la pena leer entero para crear o enriquecer la ficha de un evento.
+
+Interesan: eventos en España, futuros o en curso (hoy es {hoy}), de alto standing o gran proyección: torneos de golf, regatas y salones náuticos, grandes premios, ferias y salones, congresos de alta cocina, galas Michelin, festivales de primer nivel, exposiciones relevantes, aperturas con fecha, galas benéficas de alto nivel, eventos de marcas de lujo, cambios de fecha, cancelaciones, carteles y venta de entradas de estos eventos.
+No interesan: crónicas y resultados de eventos ya terminados, fichajes, política, sucesos, famosos y alfombras rojas, concursos o actos locales sin proyección, ofertas, empleo, reventa, publirreportajes sin evento y noticias de fuera de España.
+Ante la duda razonable, incluye el titular: es mejor leer uno de más que perder un evento.
+
+Devuelve un array JSON con los números de los titulares que interesan (vacío si ninguno).
+
+TITULARES:
+{lista}"""
+
+
+def triaje(cand):
+    """Devuelve los índices de cand que Gemini considera de interés. Si falla, se usa el filtro por palabras clave."""
+    elegidos = set()
+    for ini in range(0, len(cand), LOTE_TRIAJE):
+        lote = cand[ini:ini + LOTE_TRIAJE]
+        lista = "\n".join("%d. %s (%s)" % (ini + k, c["titulo"][:160], c["fuente"] or c["alerta"]) for k, c in enumerate(lote))
+        out = gemini(REGLAS_TRIAJE.format(hoy=HOY.isoformat(), lista=lista), ESQUEMA_TRIAJE)
+        elegidos |= {i for i in out if isinstance(i, int) and ini <= i < ini + len(lote)}
+    return elegidos
+
+
 # ---------------------------------------------------------------- flujo principal
 def main():
     dry = "--dry" in sys.argv
@@ -718,8 +745,22 @@ def main():
         it["match"] = next((e for e in conocidos if V.coincide(it["titulo"], e)), None)
         it["evento"] = bool(V.PALABRAS_EVENTO.search(it["titulo"]))
         cand.append(it)
-    ruido = [c for c in cand if not c["match"] and not c["evento"]]
-    utiles = [c for c in cand if c["match"] or c["evento"]]
+    # Gemini decide qué titulares interesan (los que hablan de un evento ya conocido pasan siempre).
+    # Si el triaje falla o estamos en --dry, se usa el filtro por palabras clave de antes.
+    if dry:
+        interesan = {i for i, c in enumerate(cand) if c["match"] or c["evento"]}
+    else:
+        try:
+            interesan = triaje([c for c in cand if not c["match"]])
+            sin_match = [c for c in cand if not c["match"]]
+            elegidos_ids = {id(sin_match[i]) for i in interesan}
+            interesan = {i for i, c in enumerate(cand) if c["match"] or id(c) in elegidos_ids}
+            log("Triaje con Gemini: %d de %d titulares interesan" % (len(interesan), len(cand)))
+        except (Exception, SystemExit) as exc:
+            log("Triaje con Gemini no disponible (%s): se usa el filtro por palabras clave" % exc)
+            interesan = {i for i, c in enumerate(cand) if c["match"] or c["evento"]}
+    ruido = [c for i, c in enumerate(cand) if i not in interesan]
+    utiles = [c for i, c in enumerate(cand) if i in interesan]
     utiles.sort(key=lambda c: (0 if c["match"] else 1, 0 if c["directo"] and c["categoria"] == "google-alerts" else 1))
     lote = utiles[:MAX_ARTICULOS]
     log("Recogidas %d · nuevas %d · útiles %d · ruido %d · se analizan %d · fuentes caídas %d" % (len(recogidos), len(cand), len(utiles), len(ruido), len(lote), len(errores)))

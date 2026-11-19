@@ -7,8 +7,9 @@ artículo con Gemini y **crea la ficha del evento si no existe o la enriquece si
 
 1. `vigilancia.py` recoge los feeds de Google Alerts (secreto `GOOGLE_ALERTS_FEEDS`) y los feeds directos de
    `data/portal/vigilancia/alertas.json`. Las consultas de ese archivo en Google News RSS sirven para el OPML y el informe local.
-2. `pipeline.py` descarta lo ya visto (`vistos.json`), descarga cada artículo y pregunta a Gemini si habla de un evento
-   de alto standing en España. El modelo solo puede usar hechos que aparezcan en el texto.
+2. `pipeline.py` descarta lo ya visto (`vistos.json`). **Gemini hace el triaje**: una sola llamada con todos los titulares nuevos
+   decide cuáles interesan (si falla, se usa un filtro por palabras clave). Solo de esos se descarga el artículo y se pregunta a Gemini
+   si habla de un evento de alto standing en España. El modelo solo puede usar hechos que aparezcan en el texto.
 3. Se aplica con reglas deterministas:
    - **Evento nuevo** → ficha en `data/portal/eventos.json` (y página `/eventos/<id>/` en los 6 idiomas).
      Confianza `alta` solo con fuente oficial (`fuentes_oficiales.json` o la web del propio evento); si no, `media`;
