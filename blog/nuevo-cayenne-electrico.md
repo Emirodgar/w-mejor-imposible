@@ -3,7 +3,7 @@
 title: El futuro ya está aquí con el nuevo Porsche Cayenne Electric
 description: El nuevo Cayenne Electric redefine lo que significa conducir un Porsche. Tecnología, emociones, deportividad y sostenibilidad se fusionan en un modelo que marca el camino hacia el futuro.
 image:
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

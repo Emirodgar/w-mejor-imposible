@@ -2,7 +2,7 @@
 title: "Porsche Macan: guía de compra, versiones, precio y fiabilidad (2026)"
 description: "Guía del Porsche Macan en España: versiones (Macan, 4, 4S, GTS, Turbo, S), precio, fiabilidad, problemas conocidos, costes de mantenimiento y qué año o versión comprar."
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

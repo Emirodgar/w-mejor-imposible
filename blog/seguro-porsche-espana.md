@@ -2,7 +2,7 @@
 title: Seguro de un Porsche en España
 description: Qué factores determinan el precio del seguro de un Porsche en España, rangos orientativos por modelo y consejos reales para pagar menos sin perder cobertura.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

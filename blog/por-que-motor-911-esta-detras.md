@@ -2,7 +2,7 @@
 title: ¿Por qué el motor del Porsche 911 está detrás?
 description: La razón histórica y técnica de que el Porsche 911 monte el motor detrás del eje trasero, cómo afecta a su conducción y por qué la marca nunca lo ha cambiado.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

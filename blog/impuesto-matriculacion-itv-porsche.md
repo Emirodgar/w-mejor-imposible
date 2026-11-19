@@ -2,7 +2,7 @@
 title: Impuesto de matriculación e ITV de un Porsche
 description: Cómo funciona el impuesto de matriculación por emisiones de CO2 en un Porsche nuevo o importado, qué modelos se libran del tramo más alto, y qué esperar en la ITV.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

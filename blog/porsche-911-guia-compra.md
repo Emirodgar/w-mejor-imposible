@@ -2,7 +2,7 @@
 title: "Porsche 911: guía de compra por generación, fiabilidad y precios"
 description: Guía completa de compra del Porsche 911 por generación (2026) — fiabilidad, coste real de mantenimiento, precios de mercado y qué generación conviene según tu presupuesto.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

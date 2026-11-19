@@ -2,7 +2,7 @@
 title: Satisfacción de propietarios de Porsche
 description: ¿Están satisfechos los propietarios de Porsche? Analizamos los datos de J.D. Power 2025 y opiniones que revelan por qué es líder en fiabilidad y experiencia del cliente.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

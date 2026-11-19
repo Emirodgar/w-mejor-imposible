@@ -2,7 +2,7 @@
 title: "¿De dónde es Porsche? Historia, origen, dueño y curiosidades de la marca"
 description: De dónde es Porsche, quién la fundó, a qué grupo pertenece y qué significa su nombre y su logo. La historia completa de la marca, desde el primer Porsche 356 hasta hoy.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

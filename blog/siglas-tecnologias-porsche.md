@@ -2,7 +2,7 @@
 title: Siglas y tecnologías de Porsche explicadas
 description: PDK, PASM, PDCC, PCCB, PSE, PTV... qué significa cada sigla de Porsche, qué hace realmente y si merece la pena pagarla al configurar tu coche.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

@@ -3,7 +3,7 @@
 title: Porsche une fuerzas para acelerar su transformación digital
 description: Porsche refuerza su apuesta por la innovación uniendo la experiencia de Porsche Engineering y Porsche Digital para crear soluciones tecnológicas y digitales integradas.
 image:
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

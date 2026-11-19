@@ -2,7 +2,7 @@
 title: "Futuros modelos de Porsche 2026-2030: calendario de lanzamientos"
 description: Qué ha presentado Porsche, qué está confirmado y qué solo se rumorea para el 911, el 718, el Macan, el Cayenne y los nuevos modelos tras la estrategia Sportwagenschmiede '35. Con el grado de certeza de cada fecha.
 image:
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1

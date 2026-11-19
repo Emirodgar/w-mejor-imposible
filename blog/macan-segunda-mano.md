@@ -2,7 +2,7 @@
 title: "Porsche Macan de segunda mano: qué mirar, precios y versiones que compensan"
 description: Guía para comprar un Porsche Macan de segunda mano en España - precios por año, versiones y motores, averías conocidas con su coste, qué revisar antes de firmar y qué Macan elegir según tu presupuesto.
 image: 
-author: Emirodgar
+author: Emilio Rodríguez García
 lang: es_ES
 sitemap: 1
 feed: 1
