@@ -110,6 +110,12 @@
         ],
         "createdAt": "2026-11-08T18:43:27.676Z",
         "reason": "user confirmed: asked to restore the eyebrow above the H1 on the home (Solo lo mejor / Busca lo excepcional)"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-18T23:32:21.045Z",
+        "reason": "Inter es la tipografía de cuerpo del sistema visual del portal (assets/portal.css), compartida por todas las páginas; el 404 hereda la identidad del sitio"
       }
     ]
   }
