@@ -1,5 +1,81 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:7667670424933996460",
+    "url": "https://carsauce.com/reviews/2027-porsche-911-gt3-weissach-package-review",
+    "source": "CarSauce",
+    "published": "2026-11-19T20:11:59Z",
+    "headline": "Prueba del Porsche 911 GT3 con paquete Weissach: ¿merecen la pena sus opciones?",
+    "excerpt": "Analizan a fondo el 911 GT3 con su motor atmosférico de 9.000 rpm, destacando un equilibrio notable de dinámica y confort junto a opciones de precio elevado.",
+    "category": "Análisis",
+    "models": [
+      "911"
+    ],
+    "impact": "Ayuda a valorar si el paquete Weissach y los extras más costosos justifican la inversión para uso en carretera o si solo cobran sentido de cara a circuito y cotización futura.",
+    "links": [
+      "sm_911",
+      "coste_real",
+      "opiniones"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:15294897957860798203",
+    "url": "https://www.autofacil.es/prueba-porsche-911-turbo-s/",
+    "source": "Autofacil",
+    "published": "2026-11-19T20:11:38Z",
+    "headline": "A examen el Porsche 911 Turbo S: aceleración fulgurante y turbinas eléctricas",
+    "excerpt": "El 911 Turbo S registra un 0 a 100 km/h en 2,5 segundos apoyándose en la electrificación de sus turbocompresores para conseguir una respuesta instantánea.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "La llegada de componentes eléctricos a los turbocompresores anticipa mayor complejidad técnica y posibles costes adicionales de mantenimiento a largo plazo.",
+    "links": [
+      "sm_911",
+      "fallos",
+      "coste_real"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:9309024256694707493",
+    "url": "https://www.evo.co.uk/mercedes/amg-gt/19961/mercedes-amg-gt-2014-2022-review-amgs-porsche-911-rival-for-golf-gti-money",
+    "source": "evo.co.uk",
+    "published": "2026-11-19T18:15:14Z",
+    "headline": "Mercedes-AMG GT de ocasión frente al Porsche 911: el duelo de deportivos usados",
+    "excerpt": "Un repaso en profundidad analiza las virtudes y flaquezas del AMG GT original frente a la referencia del 911 en el mercado de vehículos de segunda mano.",
+    "category": "Análisis",
+    "models": [
+      "911"
+    ],
+    "impact": "Sirve para comparar la retención de valor y los costes de compra del 911 respecto a su alternativa directa alemana en el mercado de ocasión.",
+    "links": [
+      "comparativas",
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:15409698325791377467",
+    "url": "https://www.coches.net/noticias/coche-porsche-safety-car-formulae",
+    "source": "coches.net",
+    "published": "2026-11-19T17:25:04Z",
+    "headline": "El Porsche Taycan Turbo GT exhibe sus 1.034 CV en circuito",
+    "excerpt": "La variante más extrema de la berlina eléctrica acelera de 0 a 100 km/h en 2,2 segundos y asume el rol de coche de seguridad en competición.",
+    "category": "Modelos",
+    "models": [
+      "taycan"
+    ],
+    "impact": "Marca la cúspide de potencia de la gama eléctrica, un detalle relevante al considerar la rápida depreciación habitual en las versiones de altas prestaciones de la gama Taycan.",
+    "links": [
+      "sm_taycan",
+      "precios_ocasion",
+      "coste_real"
+    ],
+    "week": "2026-W47"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:6542297388939984943",
     "url": "https://www.avtomanija.com/2026/11/119888/porsche-bi-rad-zavijal-tudi-z-zrakom/",
     "source": "Avtomanija",
