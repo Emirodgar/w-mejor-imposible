@@ -56,7 +56,7 @@
         /* Portada Porsche: hereda tokens y cabecera/pie de portal.css */
         .hero-section {
             min-height: 78vh; display: flex; align-items: flex-end;
-            background-image: linear-gradient(rgba(22,20,15,.25), rgba(22,20,15,.7)), url('/img/porschefondo.png');
+            background-image: linear-gradient(rgba(22,20,15,.25), rgba(22,20,15,.7)), url('/img/porschefondo.webp');
             background-size: cover; background-position: center 60%; color: #fff;
         }
         .hero-content { max-width: 760px; padding: 0 40px 96px; margin: 0 auto 0 max(0px, calc((100vw - 1360px) / 2)); }
@@ -88,12 +88,21 @@
         }
         .segment-nav a:hover { border-color: var(--accent); }
 
-        .tool-group { margin-bottom: 72px; scroll-margin-top: 24px; }
+        .tool-group { margin-bottom: 56px; scroll-margin-top: 24px; }
         .tool-group:last-child { margin-bottom: 0; }
         .tool-group-header { margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
         .tool-group-header h3 { margin: 0 0 6px; font-family: var(--serif); font-weight: 400; font-size: 32px; line-height: 1.1; }
         .tool-group-header p { margin: 0; color: var(--muted); }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 28px; }
+        /* Tiras horizontales: cada grupo ocupa una sola fila y se desplaza de lado */
+        .tools-grid {
+            display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 300px); gap: 24px;
+            overflow-x: auto; padding-bottom: 14px; scroll-snap-type: x proximity; overscroll-behavior-x: contain;
+            scrollbar-width: thin; scrollbar-color: var(--accent-light) transparent;
+        }
+        .tools-grid > .tool-card { scroll-snap-align: start; }
+        .tools-grid:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+        .tools-grid::-webkit-scrollbar { height: 6px; }
+        .tools-grid::-webkit-scrollbar-thumb { background: var(--accent-light); border-radius: 3px; }
         .tool-card { display: flex; flex-direction: column; overflow: hidden; background: var(--card, #FBF9F5); border: 1px solid var(--line); transition: transform .3s, box-shadow .3s; }
         .tool-card:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(22,20,15,.1); color: var(--ink); }
         .tool-card .tool-card-media { overflow: hidden; }
@@ -198,12 +207,12 @@
 
             <div id="elige" class="tool-group">
                 <div class="tool-group-header">
-                    <h3>Elige tu Porsche</h3>
+                    <h3 id="h-elige">Elige tu Porsche</h3>
                     <p>Descubre qué modelo encaja contigo antes de mirar precios.</p>
                 </div>
-                <div class="tools-grid">
+                <div class="tools-grid" tabindex="0" role="region" aria-labelledby="h-elige">
                     <a href="/porsche/asistente" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/para-mi.jpg" alt="Asistente de recomendación" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/para-mi.webp" alt="Asistente de recomendación" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>¿Qué Porsche es para mí?</h3>
                             <p>Responde 5 preguntas sobre tu presupuesto y tu forma de conducir y descubre tus modelos recomendados.</p>
@@ -211,7 +220,7 @@
                         </div>
                     </a>
                     <a href="/porsche/modelos" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/fiabilidad.png" alt="Fichas técnicas por modelo" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/fiabilidad.webp" alt="Fichas técnicas por modelo" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Fichas técnicas por modelo</h3>
                             <p>Fiabilidad por generación, coste real de propiedad y precio de cada modelo, todo en una sola ficha.</p>
@@ -219,7 +228,7 @@
                         </div>
                     </a>
                     <a href="/porsche/comparador" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/sensaciones.png" alt="Comparador de Prestaciones" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/sensaciones.webp" alt="Comparador de Prestaciones" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Comparador de sensaciones</h3>
                             <p>¿Circuito, viaje o día a día? Encuentra el Porsche con la personalidad que encaja contigo.</p>
@@ -227,7 +236,7 @@
                         </div>
                     </a>
                     <a href="/porsche/comparativa-visual" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/porschefondo.png" alt="Comparador Visual de Dimensiones" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/porschefondo.webp" alt="Comparador Visual de Dimensiones" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Comparador visual de dimensiones</h3>
                             <p>Compara la silueta, las medidas y las diferencias exactas entre dos modelos, lado a lado.</p>
@@ -235,7 +244,7 @@
                         </div>
                     </a>
                     <a href="/porsche/analisis-compra" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/opciones.png" alt="Análisis de Opciones" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/opciones.webp" alt="Análisis de Opciones" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Guía de opciones</h3>
                             <p>Aprende qué extras son imprescindibles para el disfrute y el valor de reventa, y cuáles evitar.</p>
@@ -243,7 +252,7 @@
                         </div>
                     </a>
                     <a href="/porsche/comparativas" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/comparativa.jfif" alt="Comparativas frente a la competencia" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/comparativa.webp" alt="Comparativas frente a la competencia" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Porsche vs la competencia</h3>
                             <p>Macan, Cayenne, Panamera, 911 y 718 frente a sus rivales directos de Audi, BMW, Mercedes y más.</p>
@@ -255,12 +264,12 @@
 
             <div id="analiza" class="tool-group">
                 <div class="tool-group-header">
-                    <h3>Precio y coste</h3>
+                    <h3 id="h-analiza">Precio y coste</h3>
                     <p>La parte numérica: lanzamiento, reventa, financiación y coste total de propiedad.</p>
                 </div>
-                <div class="tools-grid">
+                <div class="tools-grid" tabindex="0" role="region" aria-labelledby="h-analiza">
                     <a href="/porsche/precios" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/concesionario.png" alt="Evolución de Precios de Lanzamiento" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/concesionario.webp" alt="Evolución de Precios de Lanzamiento" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Precios de lanzamiento (PVP)</h3>
                             <p>Sigue la evolución del precio oficial de cada generación y descubre cuánto ha subido cada modelo con los años.</p>
@@ -268,7 +277,7 @@
                         </div>
                     </a>
                     <a href="/porsche/precio-segunda-mano" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/depreciacion.png" alt="Análisis de Precios y Depreciación" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/depreciacion.webp" alt="Análisis de Precios y Depreciación" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Precios y depreciación</h3>
                             <p>Analiza la evolución de precios de segunda mano y descubre qué modelos son la mejor inversión.</p>
@@ -276,7 +285,7 @@
                         </div>
                     </a>
                     <a href="/porsche/coste-real" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/coste.png" alt="Coste Real de Propiedad" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/coste.webp" alt="Coste Real de Propiedad" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Coste real de propiedad</h3>
                             <p>Calcula el gasto total a 5 años: depreciación, mantenimiento, seguro y más. Sin sorpresas.</p>
@@ -284,7 +293,7 @@
                         </div>
                     </a>
                     <a href="/porsche/financiacion" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/financiacion.jpg" alt="Calculadora de financiación" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/financiacion.webp" alt="Calculadora de financiación" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Calculadora de financiación</h3>
                             <p>Simula tu cuota mensual, los intereses totales y compara financiar frente a pagar al contado.</p>
@@ -292,7 +301,7 @@
                         </div>
                     </a>
                     <a href="/porsche/comprar-renting-leasing" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/renting.jpg" alt="Comparativa comprar, renting o leasing" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/renting.webp" alt="Comparativa comprar, renting o leasing" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>¿Comprar, renting o leasing?</h3>
                             <p>Compara la propiedad, la fiscalidad y el coste total de cada opción con un simulador y tus propios números.</p>
@@ -300,7 +309,7 @@
                         </div>
                     </a>
                     <a href="/porsche/importacion-alemania" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/porschefondo.png" alt="Calculadora de importación desde Alemania" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/porschefondo.webp" alt="Calculadora de importación desde Alemania" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Importar un Porsche de Alemania</h3>
                             <p>Calcula el impuesto de matriculación según el CO2, el IVA y los trámites, y compáralo con el precio oficial en España.</p>
@@ -308,7 +317,7 @@
                         </div>
                     </a>
                     <a href="/porsche/como-vender-tu-porsche" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/para-mi.jpg" alt="Cómo y cuándo vender tu Porsche" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/para-mi.webp" alt="Cómo y cuándo vender tu Porsche" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Cómo y cuándo vender tu Porsche</h3>
                             <p>La tendencia de valor de tu modelo, qué canal de venta te da más dinero y los trámites legales en España.</p>
@@ -320,12 +329,12 @@
 
             <div id="antes-de-comprar" class="tool-group">
                 <div class="tool-group-header">
-                    <h3>Antes de comprar</h3>
+                    <h3 id="h-antes">Antes de comprar</h3>
                     <p>Fiabilidad y checklist de inspección para no llevarte sorpresas.</p>
                 </div>
-                <div class="tools-grid">
+                <div class="tools-grid" tabindex="0" role="region" aria-labelledby="h-antes">
                     <a href="/porsche/fallos" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/fiabilidad.png" alt="Análisis de Fiabilidad" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/fiabilidad.webp" alt="Análisis de Fiabilidad" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Análisis de fiabilidad</h3>
                             <p>Descubre los fallos comunes, costes de reparación y el índice de fiabilidad de cada modelo y generación.</p>
@@ -333,7 +342,7 @@
                         </div>
                     </a>
                     <a href="/porsche/checklist-inspecciones-segunda-mano" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/inspeccion.png" alt="Guía de Inspección" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/inspeccion.webp" alt="Guía de Inspección" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Guía de inspección</h3>
                             <p>Tu checklist interactiva para inspeccionar un Porsche de segunda mano como un profesional.</p>
@@ -341,7 +350,7 @@
                         </div>
                     </a>
                     <a href="/porsche/garantia-porsche-approved" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/opciones.png" alt="Garantía Porsche Approved" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/opciones.webp" alt="Garantía Porsche Approved" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Garantía Porsche Approved</h3>
                             <p>Qué cubre, hasta qué antigüedad y kilometraje, y cómo contratarla aunque el coche no venga de un concesionario oficial.</p>
@@ -353,12 +362,12 @@
 
             <div id="comunidad" class="tool-group">
                 <div class="tool-group-header">
-                    <h3>Comunidad y tendencias</h3>
+                    <h3 id="h-comunidad">Comunidad y tendencias</h3>
                     <p>Lo que se dice y se comparte sobre Porsche ahora mismo.</p>
                 </div>
-                <div class="tools-grid">
+                <div class="tools-grid" tabindex="0" role="region" aria-labelledby="h-comunidad">
                     <a href="/porsche/menciones" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/pulso.png" alt="Dashboard Social" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/pulso.webp" alt="Dashboard Social" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Pulso de la marca</h3>
                             <p>Monitoriza en tiempo real lo que se dice de Porsche en redes sociales. Sentimiento y tendencias.</p>
@@ -366,7 +375,7 @@
                         </div>
                     </a>
                     <a href="/porsche/tendencias" class="tool-card">
-                        <div class="tool-card-media"><img src="/img/tendencias.png" alt="Collage de Tendencias" loading="lazy"></div>
+                        <div class="tool-card-media"><img src="/img/tendencias.webp" alt="Collage de Tendencias" loading="lazy"></div>
                         <div class="tool-card-content">
                             <h3>Tendencias</h3>
                             <p>Una galería visual inmersiva con las mejores fotos y vídeos de Porsche en redes sociales.</p>
@@ -382,7 +391,7 @@
         <div class="container">
             <span class="eyebrow">Nuestra filosofía</span>
             <div class="philosophy-media">
-                <img src="/img/ferry.png" alt="Porsche 356 Clásico">
+                <img src="/img/ferry.webp" alt="Porsche 356 Clásico">
             </div>
             <div class="philosophy-text">
                 <blockquote>"Al principio miré a mi alrededor y no encontré el coche de mis sueños, así que decidí construirlo yo mismo."</blockquote>
