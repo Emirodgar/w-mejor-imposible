@@ -97,12 +97,57 @@ def filas(lang):
 
 # ---------------- auditoría automática ----------------
 PH = re.compile(r'\{[a-z_0-9]+\}')
-NUM = re.compile(r'\d[\d.,]*')
+# Un número con separadores de miles (punto, coma, espacio o espacio fino) y/o decimales: 1.305.003, 1 305 003, 3,5 / 3.5
+NUM = re.compile(r'\d+(?:[.,\u00a0\u202f ]\d{3}(?!\d))*(?:[.,]\d+)?')
 ES_WORDS = re.compile(r'\b(de la|de los|del|para|con|los|las|una|según|entre|desde|hasta|más)\b', re.I)
+# Números redondos escritos con letra en los idiomas publicados: «50 años» -> «fünfzig», «15 minutos» -> «une quinzaine»
+NUM_WORDS = re.compile(r'\b(twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|fifteen|dozen|vingt|trente|quarante|cinquante|soixante|cent|'
+                       r'quinz|douzaine|zwanzig|dreißig|vierzig|fünfzig|sechzig|siebzig|achtzig|neunzig|hundert|fünfzehn|vinte|trinta|quarenta|cinquenta|'
+                       r'sessenta|cem|quinzena|venti|trenta|quaranta|cinquanta|sessanta|settanta|ottanta|novanta|cento|quindic)', re.I)
+# El español también escribe números con letra o los da como ordinal o década: «cuadragésimo», «años noventa»
+ES_SPELLED = re.compile(r'\b(trece|catorce|quince|veinte|veinti\w+|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa|cien|ciento|'
+                        r'\w*gésim\w+|décimo\w*|decena|quincena|veintena|docena|década|años (?:veinte|treinta|cuarenta|cincuenta|sesenta|setenta|ochenta|noventa)|'
+                        r'finales de los|principios de los|mediados de los)', re.I)
+# Décadas y ordinales escritos con letra en la traducción: «años cincuenta» -> «anni Cinquanta», «número 25» -> «venticinquesima»
+TR_SPELLED = re.compile(r'\banni\s+(?:venti|trenta|quaranta|cinquanta|sessanta|settanta|ottanta|novanta|duemila\w*)\b|'
+                        r'\banos\s+(?:vinte|trinta|quarenta|cinquenta|sessenta|setenta|oitenta|noventa)\b|\b\w*esim[aoei]\b', re.I)
+PH_NAME = re.compile(r'\{[^{}]*\}')
 
 
 def nums(s):
-    return sorted(re.sub(r'[.,\s]', '', n) for n in NUM.findall(s))
+    return sorted(re.sub(r'[.,\u00a0\u202f ]', '', n) for n in NUM.findall(s))
+
+
+def _redondo(x):
+    return int(x) <= 100 and (int(x) % 10 == 0 or int(x) == 15)
+
+
+def cifras_distintas(es, tr):
+    """True si las cifras de la traducción no cuadran con las del español.
+    Se toleran: el formato (separadores y decimales), los números pequeños escritos con letra
+    («cuatro» -> «four», «noveno» -> «Platz 9»), los redondos escritos con letra («50» -> «fünfzig»),
+    las décadas y ordinales («finales de los ochenta» -> «late 1980s») y «24 horas» -> «rund um die Uhr»."""
+    a, b = nums(es), nums(tr)
+    if a == b:
+        return False
+    ga = {x for x in a if int(x) > 12}
+    gb = {x for x in b if int(x) > 12}
+    if NUM_WORDS.search(tr) or NUM_WORDS.search(es):
+        ga = {x for x in ga if not _redondo(x)}
+        gb = {x for x in gb if not _redondo(x)}
+    if ES_SPELLED.search(es):  # cifras que solo aparecen en la traducción (década, ordinal escrito con letra)
+        gb &= ga
+    if TR_SPELLED.search(tr):  # cifras que solo aparecen en el español (década u ordinal escrito con letra)
+        ga &= gb
+    if re.search(r'\b24\s*(horas|h)\b', es, re.I):
+        ga.discard('24')
+        gb.discard('24')
+    if ga != gb:
+        return True
+    pa = [x for x in a if int(x) <= 12]
+    pb = [x for x in b if int(x) <= 12]
+    # Números pequeños: solo se avisa si ambos lados los llevan en cifra y no coinciden
+    return bool(pa) and bool(pb) and len(pa) == len(pb) and pa != pb
 
 
 def auditar(lang, rows):
@@ -113,7 +158,7 @@ def auditar(lang, rows):
             continue
         if sorted(PH.findall(es)) != sorted(PH.findall(tr)):
             probs.append((k, es, tr, 'Los marcadores {…} no coinciden'))
-        if nums(es) != nums(tr) and not re.search(r'siglo|siècle|century|Jahrhundert|século|secolo|\d:\d\d|decim|tercer|puesto|número|n\.º', es + tr):
+        if cifras_distintas(es, tr) and not re.search(r'siglo|siècle|century|Jahrhundert|século|secolo|\d:\d\d|decim|tercer|puesto|número|n\.º', es + tr):
             probs.append((k, es, tr, 'Las cifras no coinciden'))
         if tr != tr.strip() or '  ' in tr:
             probs.append((k, es, tr, 'Espacios sobrantes'))
@@ -121,7 +166,7 @@ def auditar(lang, rows):
             probs.append((k, es, tr, 'Igual que el español y con palabras españolas: ¿sin traducir?'))
         if len(es) > 30 and not (0.45 <= len(tr) / len(es) <= 2.3):
             probs.append((k, es, tr, f'Longitud muy distinta ({len(tr)} frente a {len(es)} caracteres)'))
-        if lang != 'es' and re.search(r'\b(Llave|llaves|estrella[s]?|Aeropuerto|Compras|Hotel de)\b', tr) and lang in ('en', 'de'):
+        if lang != 'es' and re.search(r'\b(Llave|llaves|estrella[s]?|Aeropuerto|Compras|Hotel de)\b', PH_NAME.sub('', tr)) and lang in ('en', 'de'):
             probs.append((k, es, tr, 'Contiene una palabra española'))
     for term, tr_map in GLOSARIO.items():
         for k, es, tr, ctx in rows:
