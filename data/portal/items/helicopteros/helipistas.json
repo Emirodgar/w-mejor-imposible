@@ -1,0 +1,46 @@
+{
+  "id": "helicopteros/helipistas",
+  "categoria": "helicopteros",
+  "nombre": "Helipistas",
+  "lugar": "Ullastrell · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "helicóptero EC120 en un helipuerto"
+  },
+  "por_que": {
+    "es": "Compañía de helicópteros fundada en 1997 con base en el Heliport Teresa Vilà, en Ullastrell, con vuelos turísticos por Barcelona y Montserrat, helitaxi y escuela."
+  },
+  "ficha": {
+    "base": "Ullastrell (Barcelona)",
+    "aoc": "AOC ES.AOC.137"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
+    "https://www.helipistas.com/"
+  ],
+  "busqueda": "Ullastrell, Barcelona",
+  "contexto": [
+    {
+      "es": "Helipistas, S.L. tiene certificado de operador aéreo (AOC) de AESA número ES.AOC.137. Figura en el listado de AESA generado el 16 de noviembre de 2026 sin marca de suspensión, con helicópteros Eurocopter EC 120B y Robinson R44 y R44 II autorizados."
+    },
+    {
+      "es": "Según su web, la empresa se fundó en 1997, opera desde el Heliport Teresa Vilà, en Ullastrell, y cuenta con una flota de 10 helicópteros ligeros. Ofrece vuelos turísticos y personalizados por Barcelona y Montserrat, helitaxi, filmación y fotografía aéreas y escuela de pilotos."
+    },
+    {
+      "es": "Su web recuerda que fue pionera en la venta de vuelos por internet en España y que realizó en 2013 el primer tour virtual en helicóptero. Son datos de la propia empresa y no se han contrastado con una fuente independiente."
+    }
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/helicopteros/helipistas.jpg",
+    "autor": "Helipistas",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://www.helipistas.com/"
+  },
+  "coordenadas": {
+    "lat": 41.52658,
+    "lon": 1.95605
+  },
+  "geo_fuente": "Ullastrell, Vallès Occidental, Barcelona, Catalunya, 08231, España"
+}

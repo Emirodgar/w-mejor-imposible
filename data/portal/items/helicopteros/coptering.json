@@ -1,0 +1,46 @@
+{
+  "id": "helicopteros/coptering",
+  "categoria": "helicopteros",
+  "nombre": "Coptering",
+  "lugar": "Sabadell · Barcelona",
+  "zona": "cataluna",
+  "foto": {
+    "es": "helicóptero AS355 en vuelo"
+  },
+  "por_que": {
+    "es": "Operador y escuela de pilotos en el aeropuerto de Sabadell, con vuelos turísticos, transporte privado de pasajeros y experiencias para empresas."
+  },
+  "ficha": {
+    "base": "Aeropuerto de Sabadell (Barcelona)",
+    "aoc": "AOC ES.AOC.155"
+  },
+  "cerca": [],
+  "fuentes": [
+    "https://www.seguridadaerea.gob.es/sites/default/files/listado_aoc.pdf",
+    "https://coptering.com/"
+  ],
+  "busqueda": "Aeropuerto de Sabadell, Barcelona",
+  "contexto": [
+    {
+      "es": "Coptering, S.L. tiene certificado de operador aéreo (AOC) de AESA número ES.AOC.155. Figura en el listado de AESA generado el 16 de noviembre de 2026 sin marca de suspensión, con helicópteros Eurocopter/Airbus Helicopters AS355 autorizados."
+    },
+    {
+      "es": "Su web sitúa la operación en el aeropuerto de Sabadell (QSA) y presenta cuatro líneas de actividad: formación de pilotos, vuelos turísticos y transporte de pasajeros, operaciones aéreas especializadas y mantenimiento. En los vuelos turísticos ofrece tours panorámicos, transporte privado de pasajeros, experiencias gastronómicas y eventos para empresas."
+    },
+    {
+      "es": "Según su propia web, imparte más de 30 cursos certificados por AESA y dispone de dos AS355N, helicópteros AS350 B3 y un simulador de EC135 certificado por EASA. Son datos de la empresa y no se han contrastado con una fuente independiente."
+    }
+  ],
+  "foto_real": {
+    "archivo": "/img/portal/helicopteros/coptering.jpg",
+    "autor": "Coptering",
+    "licencia": "Imagen del establecimiento",
+    "origen": "propia",
+    "fuente": "https://coptering.com/"
+  },
+  "coordenadas": {
+    "lat": 41.52189,
+    "lon": 2.10378
+  },
+  "geo_fuente": "Aeròdrom de Sabadell, Carretera de Badia, Campoamor, Sant Pau de Riu-sec, Sabadell, Vallès"
+}

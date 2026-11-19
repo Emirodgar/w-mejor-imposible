@@ -6,6 +6,8 @@
   "items": [
     "helicopteros/sky-helicopteros",
     "helicopteros/world-aviation",
+    "helicopteros/coptering",
+    "helicopteros/helipistas",
     "helicopteros/bg-helicopters"
   ]
 }
