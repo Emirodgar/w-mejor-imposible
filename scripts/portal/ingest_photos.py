@@ -13,7 +13,7 @@ Cómo se usa:
      Si no se indica, el crédito es "Mejor Imposible".
   3. Ejecuta este script y luego scripts/portal/build.py.
 
-El script reduce cada foto a 1200 px de ancho, la guarda como JPEG en img/portal/<categoria>/<slug>.jpg
+El script reduce cada foto a 1200 px de ancho, la guarda como JPEG (calidad 74, progresivo) en img/portal/<categoria>/<slug>.jpg
 (sin metadatos EXIF, también sin la ubicación GPS) y apunta "foto_real" en la ficha, con origen "propia".
 Una foto propia sustituye a la de Wikimedia Commons que hubiera. Las fotos de menos de 1000 px de ancho se
 rechazan. Las originales de fotos-propias/ no se suben al repositorio.
@@ -113,7 +113,7 @@ def main():
         rel = f'/img/portal/{cat}/{slug}.jpg'
         dest = os.path.join(ROOT, *rel.strip('/').split('/'))
         os.makedirs(os.path.dirname(dest), exist_ok=True)
-        im.save(dest, 'JPEG', quality=82, optimize=True, progressive=True)
+        im.save(dest, 'JPEG', quality=74, optimize=True, progressive=True, subsampling='4:2:0')
         it['foto_real'] = {'archivo': rel, 'autor': creditos.get(it['id'], 'Mejor Imposible'),
                            'licencia': 'Propia', 'origen': 'propia'}
         with open(path, 'w', encoding='utf-8', newline='\n') as f:

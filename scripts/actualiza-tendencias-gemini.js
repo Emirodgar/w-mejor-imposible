@@ -31,8 +31,8 @@ const MONTHS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 
     'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
 const TENDENCIAS_IMAGES = [
-    'circuito.jfif', 'competicion.jfif', 'concesionario.png', 'deportivo.png',
-    'descapotable-amarillo.jfif', 'fabrica.jfif', 'interior.png', 'motor.png', 'noche.jfif',
+    'circuito.jfif', 'competicion.jfif', 'concesionario.webp', 'deportivo.webp',
+    'descapotable-amarillo.jfif', 'fabrica.jfif', 'interior.webp', 'motor.webp', 'noche.jfif',
     'viaje-911.jfif', 'viaje-taycan.jfif', 'cayenne-electrico.jfif', 'porsche-clasico.jfif',
     'racing-competicion.jfif', 'indianapolis-competicion.jpg'
 ];
@@ -48,12 +48,12 @@ const IMAGE_CATALOG = [
 const IMAGE_DESCRIPTIONS = `
 /img/tendencias/circuito.jfif — curva de circuito vista desde un coche en marcha
 /img/tendencias/competicion.jfif — 911 GT3 RS verde en pista mojada
-/img/tendencias/concesionario.png — showroom con varios Porsche
-/img/tendencias/deportivo.png — 911 GT3 plateado en puerto de montaña
+/img/tendencias/concesionario.webp — showroom con varios Porsche
+/img/tendencias/deportivo.webp — 911 GT3 plateado en puerto de montaña
 /img/tendencias/descapotable-amarillo.jfif — 718 Boxster amarillo en carretera costera
 /img/tendencias/fabrica.jfif — línea de montaje / fábrica
-/img/tendencias/interior.png — volante y cuadro de instrumentos
-/img/tendencias/motor.png — motor en un taller
+/img/tendencias/interior.webp — volante y cuadro de instrumentos
+/img/tendencias/motor.webp — motor en un taller
 /img/tendencias/noche.jfif — Panamera de noche en ciudad
 /img/tendencias/viaje-911.jfif — 911 azul en carretera de montaña
 /img/tendencias/viaje-taycan.jfif — Taycan negro en autopista al atardecer
