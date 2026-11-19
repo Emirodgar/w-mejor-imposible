@@ -1833,10 +1833,10 @@ def build_evento(x):
                        + [(n.get('fuente_url'), n.get('fuente') or ui('ev.source')) for n in news]):
         if url and url not in seen:
             seen.add(url)
-            srcs.append(f'<li><a href="{e(url)}" rel="noopener">{e(label)}</a> <span class="muted">· {e(dominio_corto(url))}</span></li>')
+            srcs.append(f'<li><a href="{e(url)}" rel="noopener">{e(label)} <span aria-hidden="true">↗</span></a><span class="muted">{e(dominio_corto(url))}</span></li>')
     guide = ''
     if x.get('destino') in dest_names:
-        guide = f'\n        <p><a href="{u("/destinos/" + x["destino"] + "/")}">{e(ui("ev.guide", n=dest_names[x["destino"]]))}</a></p>'
+        guide = f'\n        <p class="ev-actions"><a class="ev-btn" href="{u("/destinos/" + x["destino"] + "/")}">{e(ui("ev.guide", n=dest_names[x["destino"]]))} <span aria-hidden="true">→</span></a></p>'
     upd = x.get('actualizado') or x.get('creado')
     upd_html = f'<p class="muted">{e(ui("ev.page.updated", d=fmt_fecha(upd)))}</p>' if upd else ''
 
@@ -1869,7 +1869,7 @@ def build_evento(x):
         <dl class="ev-facts">{facts}
         </dl>{guide}
     </section>{about}
-    <section class="wrap prose" id="preguntas">
+    <section class="wrap prose ev-faq" id="preguntas">
         <h2>{e(ui("ev.page.faq"))}</h2>{faq_html}
     </section>
     <section class="wrap ev-month" id="novedades">
@@ -1879,9 +1879,9 @@ def build_evento(x):
     </section>
     <section class="wrap prose" id="fuentes">
         <h2>{e(ui("ev.page.sources"))}</h2>
-        <ul>{"".join(srcs)}</ul>
+        <ul class="ev-sources">{"".join(srcs)}</ul>
         {upd_html}
-        <p><a href="{u("/eventos/")}">{e(ui("ev.page.back"))}</a></p>
+        <p class="ev-actions"><a class="ev-btn ev-btn-solid" href="{u("/eventos/")}"><span aria-hidden="true">←</span> {e(ui("ev.page.back"))}</a></p>
     </section>
 </main>
 '''
