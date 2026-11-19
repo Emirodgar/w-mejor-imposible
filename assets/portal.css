@@ -317,6 +317,11 @@ h1, h2, p, ol { margin: 0; }
 .dealer h3 { margin: 0 0 8px; font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.15; }
 .dealer p { margin: 0 0 4px; font-size: 15px; }
 .dealer .muted { font-size: 13px; color: var(--muted); }
+/* Tarjetas con foto: misma proporción y botón siempre abajo, para que las filas queden simétricas */
+.dealer:has(.card-photo) { display: flex; flex-direction: column; }
+.dealer .card-photo { aspect-ratio: 3 / 2; width: 100%; margin-bottom: 14px; }
+.dealer:has(.card-photo) .muted { margin-bottom: 12px; }
+.dealer:has(.card-photo) .save { margin-top: auto; align-self: flex-start; }
 .badge { display: inline-block; margin-left: 8px; padding: 1px 10px; border: 1px solid var(--chip-line); border-radius: 999px; font-size: 11px; letter-spacing: .08em; color: var(--muted); }
 .badge.ok { border-color: var(--accent); color: var(--accent); }
 

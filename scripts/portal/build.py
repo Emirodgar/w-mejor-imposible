@@ -1363,7 +1363,7 @@ def build_dest(d):
             rk = RANK_POS.get(it['id'])
             rank = f'<span class="badge ok">{e(ui("dest.rank", n=rk[1], t=rk[2]))}</span>' if rk else ''
             spec = spec_text(cat, it['ficha'])
-            cards += (f'\n            <li class="dealer">\n                <p class="city">{e(it["lugar"])} {rank}</p>'
+            cards += (f'\n            <li class="dealer">\n                {ph_box(it, "card-photo")}\n                <p class="city">{e(it["lugar"])} {rank}</p>'
                       f'\n                <h3><a href="{item_url(it["id"])}">{e(it["nombre"])}</a></h3>'
                       f'\n                <p>{e(t(it["por_que"]))}</p>'
                       + (f'\n                <p class="muted">{e(spec)}</p>' if spec else '') + f'\n                {save_btn(it["id"])}\n            </li>')
@@ -1602,7 +1602,7 @@ def build_interes(x):
         rk = RANK_POS.get(it['id'])
         rank = f'<span class="badge ok">{e(ui("dest.rank", n=rk[1], t=rk[2]))}</span>' if rk else ''
         spec = spec_text(cat, it['ficha'])
-        cards += (f'\n            <li class="dealer">\n                <p class="city">{e(t(CATS[cat]["corto"]))} · {e(it["lugar"])} {rank}</p>'
+        cards += (f'\n            <li class="dealer">\n                {ph_box(it, "card-photo")}\n                <p class="city">{e(t(CATS[cat]["corto"]))} · {e(it["lugar"])} {rank}</p>'
                   f'\n                <h3><a href="{item_url(it["id"])}">{e(it["nombre"])}</a></h3>'
                   f'\n                <p>{e(t(it["por_que"]))}</p>'
                   + (f'\n                <p class="muted">{e(spec)}</p>' if spec else '') + f'\n                {save_btn(it["id"])}\n            </li>')
