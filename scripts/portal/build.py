@@ -1841,6 +1841,13 @@ def build_evento(x):
     upd = x.get('actualizado') or x.get('creado')
     upd_html = f'<p class="muted">{e(ui("ev.page.updated", d=fmt_fecha(upd)))}</p>' if upd else ''
 
+    # ---- guías de reserva y precios relacionadas
+    guias_ev = [g_ for g_ in cargar_guias() if g_['slug'] in x.get('guias', [])]
+    book = ''
+    if guias_ev:
+        btns = ''.join(f'<a class="ev-btn" href="{u("/guias/" + g_["slug"] + "/")}">{e(tr(g_["titulo"]))} <span aria-hidden="true">→</span></a>' for g_ in guias_ev)
+        book = f'\n    <section class="wrap prose" id="reservar">\n        <h2>{e(ui("ev.page.book"))}</h2>\n        <p>{e(tr(guias_ev[0]["resumen"]))}</p>\n        <div class="guia-rel">{btns}</div>\n    </section>'
+
     # ---- datos estructurados
     crumb = [(ui('crumb.home'), u(HOME)), (ui('ev.h1'), u('/eventos/')), (name, None)]
     loc_name = dest_names.get(x.get('destino')) or lugar
@@ -1869,7 +1876,7 @@ def build_evento(x):
         <h2>{e(ui("ev.page.facts"))}</h2>
         <dl class="ev-facts">{facts}
         </dl>{guide}
-    </section>{about}
+    </section>{about}{book}
     <section class="wrap prose ev-faq" id="preguntas">
         <h2>{e(ui("ev.page.faq"))}</h2>{faq_html}
     </section>

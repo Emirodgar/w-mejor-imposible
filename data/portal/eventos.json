@@ -29,7 +29,10 @@
       "fuente_url": "https://www.ifema.es/madrid-fusion",
       "confianza": "alta",
       "nota": "Fechas anunciadas por la organización e IFEMA; el programa de ponentes aún no se ha comprobado.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "restaurantes-alta-cocina"
+      ]
     },
     {
       "id": "carnaval-cadiz",
@@ -119,7 +122,10 @@
       "fuente_url": "https://49er.org/events/56th-trofeo-sar-princesa-sofia/",
       "confianza": "media",
       "nota": "Fechas de la ficha de la clase 49er; falta confirmar en la web oficial del trofeo.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "amarres-y-yates"
+      ]
     },
     {
       "id": "ibiza-opening-parties",
@@ -142,14 +148,35 @@
       "categoria": "deporte",
       "destino": "barcelona",
       "lugar": "Real Club de Tenis Barcelona-1899",
-      "inicio": "2027-04-12",
+      "inicio": "2027-04-10",
       "fin": "2027-04-18",
       "mes_aprox": null,
       "que_es": "Torneo ATP 500 de tenis sobre tierra batida que se juega cada abril en el Real Club de Tenis Barcelona.",
       "fuente_url": "https://www.barcelonaopenbancsabadell.com",
-      "confianza": "media",
-      "nota": "Fechas 2027 de un listado secundario (Tennis Tours) sin confirmación oficial; en 2026 fue del 13 al 19 de abril. Entradas de 2027 a la venta desde el 1 de diciembre de 2026 (Europa Press, 16-nov-2026).",
-      "publicar": true
+      "confianza": "alta",
+      "nota": "Fechas 2027 de un listado secundario (Tennis Tours) sin confirmación oficial; en 2026 fue del 13 al 19 de abril. Entradas de 2027 a la venta desde el 1 de diciembre de 2026 (Europa Press, 16-nov-2026). Fechas corregidas el 19-nov-2026: su web oficial indica «10 - 18 abril 2027» (antes figuraban 12 a 18).",
+      "publicar": true,
+      "guias": [
+        "entradas-vip-grandes-eventos"
+      ],
+      "historial": [
+        {
+          "fecha": "2026-11-19",
+          "campo": "fechas",
+          "antes": "2027-04-12 a 2027-04-18",
+          "despues": "2027-04-10 a 2027-04-18",
+          "fuente_url": "https://www.barcelonaopenbancsabadell.com/"
+        }
+      ],
+      "novedades": [
+        {
+          "fecha": "2026-11-19",
+          "texto": "La web oficial confirma las fechas de la edición 2027: del 10 al 18 de abril.",
+          "fuente_url": "https://www.barcelonaopenbancsabadell.com/",
+          "fuente": "Web oficial del Barcelona Open Banc Sabadell"
+        }
+      ],
+      "actualizado": "2026-11-19"
     },
     {
       "id": "feria-abril-sevilla",
@@ -179,7 +206,10 @@
       "fuente_url": "https://mutuamadridopen.com",
       "confianza": "alta",
       "nota": "Alguna base de datos da inicio el 20 de abril; el sitio oficial indica 19 de abril.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "entradas-vip-grandes-eventos"
+      ]
     },
     {
       "id": "palma-boat-show",
@@ -194,7 +224,10 @@
       "fuente_url": "https://www.palmainternationalboatshow.com",
       "confianza": "media",
       "nota": "Fechas de Mallorca Global Mag y de un expositor (Princess Yachts); una fuente da cierre el 2 de mayo. No verificado en la web oficial.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "amarres-y-yates"
+      ]
     },
     {
       "id": "longines-global-champions-tour-madrid",
@@ -209,7 +242,10 @@
       "fuente_url": "https://www.esmadrid.com/agenda/concurso-internacional-de-saltos-club-campo-villa-madrid",
       "confianza": "media",
       "nota": "Esmadrid lo sitúa en mayo de 2027 sin días; la edición de 2026 fue del 15 al 17 de mayo.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "entradas-vip-grandes-eventos"
+      ]
     },
     {
       "id": "estrella-damm-catalunya-championship",
@@ -239,7 +275,10 @@
       "fuente_url": "https://www.motogp.com/en/news/2026/09/25/2027-motogp-calendar-revealed/1092589",
       "confianza": "alta",
       "nota": "Carrera el 9 de mayo según el calendario oficial; el viernes de inicio se deduce del formato habitual. Calendario sujeto a cambios.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "entradas-vip-grandes-eventos"
+      ]
     },
     {
       "id": "superyacht-cup-palma",
@@ -254,7 +293,10 @@
       "fuente_url": "https://lvyachting.com/events/the-superyacht-cup-palma/",
       "confianza": "media",
       "nota": "Fechas 2027 sin anunciar; la edición de 2026 fue del 24 al 27 de junio y la de 2025 del 25 al 28.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "amarres-y-yates"
+      ]
     },
     {
       "id": "primavera-sound",
@@ -284,7 +326,10 @@
       "fuente_url": "https://www.motogp.com/en/news/2026/09/25/2027-motogp-calendar-revealed/1092589",
       "confianza": "alta",
       "nota": "Carrera el 13 de junio según el calendario oficial; el viernes de inicio se deduce del formato habitual. Calendario sujeto a cambios.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "entradas-vip-grandes-eventos"
+      ]
     },
     {
       "id": "sonar",
@@ -344,7 +389,10 @@
       "fuente_url": "https://www.mallorca.com/en/magazin/news/copa-del-rey-sailing-finale-palma",
       "confianza": "media",
       "nota": "Fechas de una única fuente periodística; sin calendario oficial del RCNP. En 2026 fue del 1 al 8 de agosto.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "amarres-y-yates"
+      ]
     },
     {
       "id": "sotogrande-gold-cup-polo",
@@ -419,7 +467,10 @@
       "fuente_url": "https://www.madring.com/en/press-releases/gran-premio-nueva-fecha",
       "confianza": "alta",
       "nota": "",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "entradas-vip-grandes-eventos"
+      ]
     },
     {
       "id": "csio-barcelona",
@@ -449,7 +500,10 @@
       "fuente_url": "https://www.sansebastiangastronomika.com",
       "confianza": "baja",
       "nota": "La edición de 2026 fue del 5 al 7 de octubre. No hay fechas de 2027 en las fuentes consultadas.",
-      "publicar": false
+      "publicar": false,
+      "guias": [
+        "restaurantes-alta-cocina"
+      ]
     },
     {
       "id": "open-de-espana-golf",
@@ -538,7 +592,10 @@
       "creado": "2026-11-19",
       "actualizado": "2026-11-19",
       "enriquecido": "2026-11-19",
-      "novedades": []
+      "novedades": [],
+      "guias": [
+        "restaurantes-alta-cocina"
+      ]
     },
     {
       "id": "retromovil-madrid-2026",
