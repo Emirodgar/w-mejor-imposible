@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06",
+  "actualizado": "2026-11-19",
   "eventos": [
     {
       "id": "madrid-horse-week",
@@ -148,7 +148,7 @@
       "que_es": "Torneo ATP 500 de tenis sobre tierra batida que se juega cada abril en el Real Club de Tenis Barcelona.",
       "fuente_url": "https://www.barcelonaopenbancsabadell.com",
       "confianza": "media",
-      "nota": "Fechas 2027 de un listado secundario (Tennis Tours) sin confirmación oficial; en 2026 fue del 13 al 19 de abril.",
+      "nota": "Fechas 2027 de un listado secundario (Tennis Tours) sin confirmación oficial; en 2026 fue del 13 al 19 de abril. Entradas de 2027 a la venta desde el 1 de diciembre de 2026 (Europa Press, 16-nov-2026).",
       "publicar": true
     },
     {
@@ -480,6 +480,212 @@
       "confianza": "alta",
       "nota": "Carrera el 28 de noviembre según el calendario oficial; el viernes de inicio se deduce del formato habitual. Calendario sujeto a cambios.",
       "publicar": true
+    },
+    {
+      "id": "gala-michelin-2027-huesca",
+      "nombre": "Gala de la Guía Michelin España 2027",
+      "categoria": "gastronomia",
+      "destino": null,
+      "lugar": "Auditorio Carlos Saura, Palacio de Congresos de Huesca",
+      "inicio": "2026-12-01",
+      "fin": "2026-12-01",
+      "mes_aprox": null,
+      "que_es": "Ceremonia en la que Michelin presenta las nuevas estrellas de España; es la primera vez que se celebra en Aragón.",
+      "fuente_url": "https://guide.michelin.com/es/es/articulo/news-and-views/huesca-sede-de-la-gala-de-la-guia-michelin-espana-2027",
+      "confianza": "alta",
+      "nota": "Michelin la anunció para el 24 de noviembre y la pospuso al 1 de diciembre por el calendario electoral (fecha confirmada en la web de Michelin; la presentadora se cita solo en prensa). Huesca no tiene guía propia en el portal.",
+      "publicar": true,
+      "resumen": "La Gala de la Guía Michelin España 2027 es la ceremonia en la que Michelin presenta la selección de la edición. Se celebra el 1 de diciembre de 2026 en el Auditorio Carlos Saura del Palacio de Congresos de Huesca.",
+      "consiste": [
+        "La gala es el acto en el que la Guía Michelin da a conocer su selección española de la edición 2027.",
+        "Es la primera vez que la ceremonia se celebra en Aragón. La ciudad elegida es Huesca.",
+        "El acto tiene lugar en el Auditorio Carlos Saura, dentro del Palacio de Congresos de Huesca.",
+        "Michelin la anunció para el 24 de noviembre de 2026 y la pospuso una semana, hasta el 1 de diciembre, por el calendario electoral.",
+        "Según la prensa, la presentadora será Anne Igartiburu."
+      ],
+      "datos": {
+        "organizador": "Guía Michelin",
+        "web_oficial": "https://guide.michelin.com/es/es"
+      },
+      "faq": [
+        {
+          "p": "¿Cuándo es la Gala de la Guía Michelin España 2027?",
+          "r": "La Gala de la Guía Michelin España 2027 se celebra el 1 de diciembre de 2026. Michelin la había anunciado para el 24 de noviembre."
+        },
+        {
+          "p": "¿Dónde se celebra la Gala Michelin 2027?",
+          "r": "En el Auditorio Carlos Saura, dentro del Palacio de Congresos de Huesca. Es la primera vez que la gala se celebra en Aragón."
+        },
+        {
+          "p": "¿Por qué se aplazó la Gala Michelin de Huesca?",
+          "r": "Michelin la pospuso una semana, del 24 de noviembre al 1 de diciembre de 2026, por el calendario electoral."
+        },
+        {
+          "p": "¿Quién presenta la Gala Michelin 2027?",
+          "r": "Según la prensa, la presentadora de la Gala Michelin de Huesca será Anne Igartiburu."
+        }
+      ],
+      "fuentes": [
+        {
+          "url": "https://www.directoalpaladar.com/viajes/elecciones-generales-obligan-a-cambiar-fecha-gala-michelin-huesca-anne-igartiburu-sera-presentadora",
+          "nombre": "Directo al Paladar"
+        },
+        {
+          "url": "https://www.elespanol.com/aragon/actualidad/20260527/oficial-huesca-sede-gala-guia-michelin-proximo-noviembre/1003744262286_0.html",
+          "nombre": "El Español"
+        }
+      ],
+      "creado": "2026-11-19",
+      "actualizado": "2026-11-19",
+      "enriquecido": "2026-11-19",
+      "novedades": []
+    },
+    {
+      "id": "retromovil-madrid-2026",
+      "nombre": "Retromóvil Madrid",
+      "categoria": "motor",
+      "destino": "madrid",
+      "lugar": "IFEMA Madrid",
+      "inicio": "2026-12-11",
+      "fin": "2026-12-13",
+      "mes_aprox": null,
+      "que_es": "Salón del automóvil clásico con la edición número 23, que dedica una exposición especial al 75.º aniversario del Pegaso Z-102 y un homenaje a Wifredo Ricart.",
+      "fuente_url": "https://www.ifema.es/retromovil-madrid",
+      "confianza": "alta",
+      "nota": "Fechas y horarios de IFEMA (viernes 10:00-20:00, sábado 10:00-21:00, domingo 10:00-15:00). La web de IFEMA no menciona ningún concurso de elegancia: no darlo por hecho.",
+      "publicar": true,
+      "resumen": "Retromóvil Madrid es el salón del automóvil clásico de IFEMA Madrid. Su 23.ª edición se celebra del 11 al 13 de diciembre de 2026 y dedica una exposición especial al 75.º aniversario del Pegaso Z-102.",
+      "consiste": [
+        "Retromóvil Madrid reúne en IFEMA Madrid a aficionados y coleccionistas de automóviles clásicos. La de 2026 es su edición número 23.",
+        "Este año homenajea al Pegaso Z-102, el deportivo español conocido como «el Ferrari español», en su 75.º aniversario.",
+        "Según Motor16, será la mayor concentración de Pegaso Z-102 vista en España. Se fabricaron unas 86 unidades entre 1951 y 1958.",
+        "También rinde homenaje a Wifredo Ricart, con fotografías inéditas, piezas originales, charlas temáticas y una experiencia de realidad virtual llamada Ricart Cars.",
+        "Los Pegaso compartirán espacio, por primera vez, con coches de Motores y Automóviles Ricart, la firma que Ricart fundó en 1926. El comisario es Michael Kempf, especialista en la restauración del Z-102.",
+        "Según Autofácil, el salón reunirá además clásicos de Porsche y SEAT."
+      ],
+      "datos": {
+        "organizador": "IFEMA Madrid",
+        "edicion": "23.ª edición (2026)",
+        "horario": "Viernes 11: de 10:00 a 20:00. Sábado 12: de 10:00 a 21:00. Domingo 13: de 10:00 a 15:00.",
+        "acceso": "Metro L8 hasta Feria de Madrid; autobuses 112, 122 y 828; en coche por la M-11, la M-40 o la A-2 (acceso sur de IFEMA).",
+        "web_oficial": "https://www.ifema.es/retromovil-madrid"
+      },
+      "faq": [
+        {
+          "p": "¿Cuándo es Retromóvil Madrid 2026?",
+          "r": "Retromóvil Madrid 2026 se celebra del 11 al 13 de diciembre de 2026 en IFEMA Madrid."
+        },
+        {
+          "p": "¿Qué horario tiene Retromóvil Madrid 2026?",
+          "r": "Abre el viernes 11 de 10:00 a 20:00, el sábado 12 de 10:00 a 21:00 y el domingo 13 de 10:00 a 15:00."
+        },
+        {
+          "p": "¿Qué se celebra en Retromóvil Madrid 2026?",
+          "r": "Retromóvil Madrid 2026 dedica una exposición especial al 75.º aniversario del Pegaso Z-102 y un homenaje a Wifredo Ricart."
+        },
+        {
+          "p": "¿Cómo se llega a Retromóvil Madrid?",
+          "r": "En metro, con la L8 hasta Feria de Madrid; en autobús, con las líneas 112, 122 y 828; y en coche, por la M-11, la M-40 o la A-2, con acceso sur a IFEMA."
+        }
+      ],
+      "fuentes": [
+        {
+          "url": "https://www.motor16.com/clasicos/retromovil-pegaso-z-102/",
+          "nombre": "Motor16"
+        },
+        {
+          "url": "https://www.autofacil.es/retromovil-madrid-2026-reunira-joyas-clasicas-de-pegaso-porsche-y-seat/",
+          "nombre": "Autofácil"
+        }
+      ],
+      "creado": "2026-11-19",
+      "actualizado": "2026-11-19",
+      "enriquecido": "2026-11-19",
+      "novedades": []
+    },
+    {
+      "id": "dan-flavin-guggenheim-bilbao",
+      "nombre": "Dan Flavin: Algo de luz, en el Guggenheim Bilbao",
+      "categoria": "cultura",
+      "destino": "bilbao",
+      "lugar": "Museo Guggenheim Bilbao",
+      "inicio": "2026-11-11",
+      "fin": "2027-04-04",
+      "mes_aprox": null,
+      "que_es": "Exposición «Dan Flavin: Algo de luz» en el Museo Guggenheim Bilbao, abierta del 11 de noviembre de 2026 al 4 de abril de 2027.",
+      "fuente_url": "https://www.guggenheim-bilbao.eus/exposiciones/dan-flavin",
+      "confianza": "alta",
+      "nota": "Fechas de la web del museo: del 11 de noviembre de 2026 al 4 de abril de 2027.",
+      "publicar": true,
+      "resumen": "«Dan Flavin: Algo de luz» es una exposición del Museo Guggenheim Bilbao dedicada al artista estadounidense Dan Flavin. Se puede visitar del 11 de noviembre de 2026 al 4 de abril de 2027.",
+      "consiste": [
+        "«Dan Flavin: Algo de luz» es una exposición del Museo Guggenheim Bilbao sobre el artista estadounidense Dan Flavin.",
+        "Se inauguró el 11 de noviembre de 2026 y puede visitarse hasta el 4 de abril de 2027."
+      ],
+      "datos": {
+        "organizador": "Museo Guggenheim Bilbao",
+        "web_oficial": "https://www.guggenheim-bilbao.eus/exposiciones/dan-flavin"
+      },
+      "faq": [
+        {
+          "p": "¿Cuándo es la exposición de Dan Flavin en el Guggenheim Bilbao?",
+          "r": "«Dan Flavin: Algo de luz» puede visitarse del 11 de noviembre de 2026 al 4 de abril de 2027."
+        },
+        {
+          "p": "¿Dónde está la exposición «Dan Flavin: Algo de luz»?",
+          "r": "En el Museo Guggenheim Bilbao, en Bilbao."
+        }
+      ],
+      "fuentes": [],
+      "creado": "2026-11-19",
+      "actualizado": "2026-11-19",
+      "enriquecido": "2026-11-19",
+      "novedades": []
+    },
+    {
+      "id": "cruilla-barcelona",
+      "nombre": "Festival Cruïlla",
+      "categoria": "musica",
+      "destino": "barcelona",
+      "lugar": "Parc del Fòrum, Barcelona",
+      "inicio": "2027-07-07",
+      "fin": "2027-07-10",
+      "mes_aprox": null,
+      "que_es": "Festival de música en el Parc del Fòrum de Barcelona; la edición de 2027 se celebra del 7 al 10 de julio.",
+      "fuente_url": "https://www.cruillabarcelona.cat/es/",
+      "confianza": "media",
+      "nota": "Fechas de la web oficial del festival; los precios de abonos varían entre agregadores y no se publican aquí. Cartel sin cerrar.",
+      "publicar": true,
+      "resumen": "Cruïlla es un festival de música que se celebra en el Parc del Fòrum de Barcelona. La edición de 2027 será del 7 al 10 de julio y ya tiene primeros nombres: Jungle, Jorge Drexler, Daniel Caesar y Kneecap.",
+      "consiste": [
+        "Cruïlla es un festival de música que se celebra cada julio en el Parc del Fòrum de Barcelona. La edición de 2026 fue del 8 al 11 de julio.",
+        "La de 2027 será del 7 al 10 de julio, según la web oficial del festival.",
+        "El 18 de noviembre de 2026 la organización anunció los primeros artistas: Jungle, Jorge Drexler, Daniel Caesar y Kneecap, según la prensa.",
+        "La web oficial anuncia un precio especial para las primeras 500 entradas."
+      ],
+      "datos": {
+        "edicion": "Edición 2027",
+        "web_oficial": "https://www.cruillabarcelona.cat/es/"
+      },
+      "faq": [
+        {
+          "p": "¿Cuándo es el Festival Cruïlla 2027?",
+          "r": "El Festival Cruïlla 2027 se celebra del 7 al 10 de julio de 2027."
+        },
+        {
+          "p": "¿Dónde se celebra el Festival Cruïlla?",
+          "r": "En el Parc del Fòrum de Barcelona."
+        },
+        {
+          "p": "¿Quién actúa en el Cruïlla 2027?",
+          "r": "Los primeros artistas anunciados, el 18 de noviembre de 2026, son Jungle, Jorge Drexler, Daniel Caesar y Kneecap."
+        }
+      ],
+      "fuentes": [],
+      "creado": "2026-11-19",
+      "actualizado": "2026-11-19",
+      "enriquecido": "2026-11-19",
+      "novedades": []
     }
   ]
 }

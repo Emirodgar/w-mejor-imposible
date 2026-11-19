@@ -476,3 +476,9 @@ table.cal tbody th { font-weight: 500; }
 @media (max-width: 720px) { .to-top { right: 16px; bottom: 16px; } }
 @media print { .to-top { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { .to-top { transition: none; } }
+
+/* Ficha de evento: datos clave */
+.ev-facts { display: grid; grid-template-columns: max-content 1fr; gap: 10px 28px; margin: 0 0 12px; }
+.ev-facts dt { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.ev-facts dd { margin: 0; font-size: 16px; }
+@media (max-width: 560px) { .ev-facts { grid-template-columns: 1fr; gap: 2px 0; } .ev-facts dd { margin-bottom: 10px; } }

@@ -1,0 +1,12 @@
+{
+  "_nota": "Dominios que cuentan como fuente oficial: con ellos (y con confianza alta del texto) una ficha pasa a 'Fechas confirmadas'. También cuenta como oficial la web del propio evento (el dominio de su fuente_url). Se amplía a mano; nunca se borra.",
+  "dominios": [
+    "ifema.es", "guide.michelin.com", "michelin.es", "motogp.com", "formula1.com", "madring.com",
+    "guggenheim-bilbao.eus", "museodelprado.es", "museothyssen.org", "museoreinasofia.es",
+    "cruillabarcelona.cat", "primaverasound.com", "sonar.es", "madcoolfestival.es",
+    "mutuamadridopen.com", "barcelonaopenbancsabadell.com", "rfegolf.es", "dpworldtour.com", "europeantour.com",
+    "copadelreyvela.com", "rcnp.es", "palmaboatshow.com", "superyachtcup.com", "salonnautico.com",
+    "madridfusion.net", "sansebastiangastronomika.com", "arco.ifema.es", "mbfwmadrid.com",
+    "sansebastianfestival.com", "fallas.com", "turismo.org", "spain.info", "visitvalencia.com", "esmadrid.com"
+  ]
+}

@@ -77,6 +77,16 @@ def llms(with_portal):
         for slug in sorted(os.listdir(os.path.join(ROOT, 'planes'))):
             if os.path.isdir(os.path.join(ROOT, 'planes', slug)):
                 out.append(f'- [Plan: {slug.replace("-", " ")}]({SITE}/planes/{slug}/)')
+    if with_portal:
+        import json
+        ev = json.load(open(os.path.join(ROOT, 'data', 'portal', 'eventos.json'), encoding='utf-8'))['eventos']
+        ev = [e for e in ev if e.get('publicar')]
+        ev.sort(key=lambda e: e.get('inicio') or (e.get('mes_aprox') or '9999-12') + '-01')
+        out += ['', '## Eventos de alto standing en España (calendario con ficha por evento)',
+                f'- [Calendario de eventos]({SITE}/eventos/): fechas, lugar y novedades de cada evento']
+        for e in ev:
+            cuando = e.get('inicio') or e.get('mes_aprox') or ''
+            out.append(f"- [{e['nombre']}]({SITE}/eventos/{e['id']}/): {e.get('resumen') or e['que_es']} ({cuando}; {e['lugar']})")
     out += ['', '## Contexto', '- Sitemap: ' + SITE + '/sitemap.xml y ' + SITE + '/sitemap-portal.xml',
             '- Traducciones del portal: /en/, /fr/, /de/, /it/, /pt/', '']
     return '\n'.join(out)

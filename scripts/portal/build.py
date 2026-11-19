@@ -1745,7 +1745,7 @@ def build_eventos():
                  if x.get('destino') in dest_names else '')
         buf += (f'\n            <article class="ev" data-cat="{x["categoria"]}" data-end="{fin_evento(x)}">'
                 f'\n                <p class="eyebrow">{e(fechas_evento(x))} {badge}</p>'
-                f'\n                <h3>{e(x["nombre"])}</h3>'
+                f'\n                <h3><a href="{u("/eventos/" + x["id"] + "/")}">{e(x["nombre"])}</a></h3>'
                 f'\n                <p class="city">{e(ui("ev.cat." + x["categoria"]))} · {e(tr(x["lugar"]))}</p>'
                 f'\n                <p>{e(tr(x["que_es"]))}</p>'
                 f'\n                <p class="muted"><a href="{e(x["fuente_url"])}" rel="noopener">{e(ui("ev.source"))}</a>{guide}</p>\n            </article>')
@@ -1773,6 +1773,125 @@ def build_eventos():
     lds = [webpage('CollectionPage', path, ui('ev.title'), ui('ev.desc')), {"@type": "ItemList", "name": ui('ev.title'), "numberOfItems": len(ld),
            "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": ev} for i, ev in enumerate(ld)]}, bc_ld(crumb)]
     write(path + 'index.html', page(path, f'{ui("ev.title")} · Mejor Imposible', ui('ev.desc'), lds, body))
+
+
+def recorta(s, n=158):
+    """Texto para meta description: corta en palabra y añade puntos suspensivos si hace falta."""
+    s = re.sub(r'\s+', ' ', s).strip()
+    if len(s) <= n:
+        return s
+    return s[:n].rsplit(' ', 1)[0].rstrip(',;:.') + '…'
+
+
+def build_evento(x):
+    """Ficha propia de un evento, escrita para que la lean personas y la citen los asistentes de IA:
+    respuesta primero, datos clave, párrafos cortos, preguntas frecuentes, novedades acumuladas y fuentes."""
+    name, lugar = x['nombre'], tr(x['lugar'])
+    when = fechas_evento(x)
+    ok = x['confianza'] == 'alta'
+    badge_txt = ui("ev.confirmed" if ok else "ev.tbc")
+    badge = f'<span class="badge{" ok" if ok else ""}">{e(badge_txt)}</span>'
+    datos = x.get('datos', {})
+    resumen = tr(x['resumen']) if x.get('resumen') else tr(x['que_es'])
+    dest_names = {d['slug']: tr(d['nombre']) for d in DESTS}
+    path = f'/eventos/{x["id"]}/'
+    page_url = SITE + u(path)
+
+    # ---- datos clave
+    rows = [('ev.f.type', e(ui('ev.cat.' + x['categoria']))), ('ev.page.when', f'<time datetime="{x["inicio"]}">{e(when)}</time>' if x.get('inicio') else e(when)), ('ev.page.where', e(lugar))]
+    for k, key in (('organizador', 'ev.f.organizer'), ('edicion', 'ev.f.edition'), ('horario', 'ev.f.schedule'), ('entradas', 'ev.f.tickets'), ('acceso', 'ev.f.access')):
+        if datos.get(k):
+            rows.append((key, e(tr(datos[k]))))
+    if datos.get('web_oficial'):
+        rows.append(('ev.f.web', f'<a href="{e(datos["web_oficial"])}" rel="noopener">{e(dominio_corto(datos["web_oficial"]))}</a>'))
+    rows.append(('ev.f.status', e(badge_txt)))
+    facts = ''.join(f'\n            <dt>{e(ui(k))}</dt><dd>{v}</dd>' for k, v in rows)
+
+    # ---- qué es y en qué consiste
+    about = ''
+    if x.get('consiste'):
+        paras = ''.join(f'\n        <p>{e(tr(p))}</p>' for p in x['consiste'])
+        about = f'\n    <section class="wrap prose" id="que-es">\n        <h2>{e(ui("ev.page.about"))}</h2>{paras}\n    </section>'
+
+    # ---- preguntas frecuentes (si la ficha aún no tiene, salen de los datos; después, del enriquecimiento)
+    qa = [] if x.get('faq') else [(ui('ev.q.when', n=name), ui('ev.a.when', n=name, f=when)), (ui('ev.q.where', n=name), ui('ev.a.where', n=name, l=lugar))]
+    qa += [(tr(f['p']), tr(f['r'])) for f in x.get('faq', [])]
+    faq_html = ''.join(f'\n        <h3>{e(q)}</h3>\n        <p>{e(a)}</p>' for q, a in qa)
+
+    # ---- novedades acumuladas
+    news = sorted(x.get('novedades', []), key=lambda n: n['fecha'], reverse=True)
+    items = ''.join(
+        f'\n            <article class="ev">\n                <p class="eyebrow"><time datetime="{n["fecha"]}">{e(fmt_fecha(n["fecha"]))}</time></p>\n                <p>{e(tr(n["texto"]))}</p>'
+        + (f'\n                <p class="muted"><a href="{e(n["fuente_url"])}" rel="noopener">{e(n.get("fuente") or ui("ev.source"))}</a></p>' if n.get('fuente_url') else '')
+        + '\n            </article>' for n in news)
+    if not items:
+        items = f'\n            <p class="muted">{e(ui("ev.page.nonews"))}</p>'
+
+    # ---- fuentes
+    srcs, seen = [], set()
+    for url, label in ([(x['fuente_url'], ui('ev.source'))] + [(f.get('url'), f.get('nombre') or ui('ev.source')) for f in x.get('fuentes', [])]
+                       + [(n.get('fuente_url'), n.get('fuente') or ui('ev.source')) for n in news]):
+        if url and url not in seen:
+            seen.add(url)
+            srcs.append(f'<li><a href="{e(url)}" rel="noopener">{e(label)}</a> <span class="muted">· {e(dominio_corto(url))}</span></li>')
+    guide = ''
+    if x.get('destino') in dest_names:
+        guide = f'\n        <p><a href="{u("/destinos/" + x["destino"] + "/")}">{e(ui("ev.guide", n=dest_names[x["destino"]]))}</a></p>'
+    upd = x.get('actualizado') or x.get('creado')
+    upd_html = f'<p class="muted">{e(ui("ev.page.updated", d=fmt_fecha(upd)))}</p>' if upd else ''
+
+    # ---- datos estructurados
+    crumb = [(ui('crumb.home'), u(HOME)), (ui('ev.h1'), u('/eventos/')), (name, None)]
+    loc_name = dest_names.get(x.get('destino')) or lugar
+    ev_ld = {"@type": "Event", "@id": page_url + '#event', "name": name, "description": resumen,
+             "location": {"@type": "Place", "name": lugar, "address": {"@type": "PostalAddress", "addressLocality": loc_name, "addressCountry": "ES"}},
+             **({"startDate": x['inicio']} if x.get('inicio') else {}), **({"endDate": x['fin']} if x.get('fin') else {}),
+             "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+             "inLanguage": "es", "url": datos.get('web_oficial') or page_url, "mainEntityOfPage": {"@id": page_url + '#webpage'},
+             "sameAs": [v for v in dict.fromkeys([datos.get('web_oficial'), x['fuente_url']]) if v]}
+    if datos.get('organizador'):
+        ev_ld["organizer"] = {"@type": "Organization", "name": datos['organizador'], **({"url": datos['web_oficial']} if datos.get('web_oficial') else {})}
+    faq_ld = {"@type": "FAQPage", "@id": page_url + '#faq', "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
+    wp = webpage('WebPage', path, ui('ev.page.title', n=name), recorta(resumen), mainEntity={"@id": page_url + '#event'}, about={"@id": page_url + '#event'},
+                 **({"dateModified": upd} if upd else {}), **({"datePublished": x['creado']} if x.get('creado') else {}))
+
+    body = f'''
+{crumbs(crumb)}
+
+<main>
+    <section class="wrap rank-hero">
+        <p class="eyebrow">{e(ui("ev.cat." + x["categoria"]))} {badge}</p>
+        <h1>{e(name)}</h1>
+        <p class="lead-text">{e(resumen)}</p>
+    </section>
+    <section class="wrap prose" id="datos">
+        <h2>{e(ui("ev.page.facts"))}</h2>
+        <dl class="ev-facts">{facts}
+        </dl>{guide}
+    </section>{about}
+    <section class="wrap prose" id="preguntas">
+        <h2>{e(ui("ev.page.faq"))}</h2>{faq_html}
+    </section>
+    <section class="wrap ev-month" id="novedades">
+        <h2>{e(ui("ev.page.news"))}</h2>
+        <div class="ev-list">{items}
+        </div>
+    </section>
+    <section class="wrap prose" id="fuentes">
+        <h2>{e(ui("ev.page.sources"))}</h2>
+        <ul>{"".join(srcs)}</ul>
+        {upd_html}
+        <p><a href="{u("/eventos/")}">{e(ui("ev.page.back"))}</a></p>
+    </section>
+</main>
+'''
+    title_full = f'{ui("ev.page.title", n=name)} · Mejor Imposible'
+    write(path + 'index.html', page(path, title_full, recorta(resumen), [wp, ev_ld, faq_ld, bc_ld(crumb)], body))
+
+
+def dominio_corto(url):
+    h = re.sub(r'^https?://(www\.)?', '', url).split('/')[0]
+    return h
 
 
 PAGE_PATHS = ([HOME] + [f'/ranking/{c}/' for c in CATS] + [f'/planes/{p["slug"]}/' for p in all_plans()]
@@ -1818,6 +1937,9 @@ if __name__ == '__main__':
         build_trip()
         build_novedades()
         build_eventos()
+        for _ev in load('eventos.json')['eventos']:
+            if _ev.get('publicar'):
+                build_evento(_ev)
         for _x in INTERESES:
             build_interes(_x)
     build_sitemap()

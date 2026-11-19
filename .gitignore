@@ -17,3 +17,9 @@ revision-traducciones/
 
 # Informe de la revisión semanal (lo genera revision_semanal.py)
 informe-revision.md
+
+# Feeds privados de Google Alerts (en GitHub van en el secreto GOOGLE_ALERTS_FEEDS)
+scripts/vigilancia/google-alerts-feeds.txt
+
+# Informes diarios de la vigilancia (se suben como artefacto del workflow)
+data/portal/vigilancia/informes/

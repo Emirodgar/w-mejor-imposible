@@ -3,6 +3,15 @@
     {
       "fecha": "2026-11-19",
       "titulo": {
+        "es": "Calendario: cuatro eventos nuevos"
+      },
+      "texto": {
+        "es": "Entran la Gala de la Guía Michelin en Huesca (1 de diciembre), Retromóvil Madrid (11-13 de diciembre), Dan Flavin en el Guggenheim Bilbao y el Festival Cruïlla de 2027. Salen del informe semanal de vigilancia y cada fecha está comprobada en la web oficial."
+      }
+    },
+    {
+      "fecha": "2026-11-19",
+      "titulo": {
         "es": "Helicópteros: dos operadores nuevos"
       },
       "texto": {
