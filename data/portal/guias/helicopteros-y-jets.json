@@ -1,0 +1,433 @@
+{
+  "slug": "helicopteros-y-jets",
+  "titulo": "Cómo reservar un helicóptero o un jet privado en España y cuánto cuesta",
+  "resumen": "Un paseo en helicóptero cerca de Barcelona va de 85 € por persona (Coptering, Tour Vallés de 8 minutos) a 580 € o más (BG Helicopters, Tour Barcelona de 25 minutos). En jet privado, las webs de brokers estiman de 8.200 a 16.400 € por trayecto de Madrid a Ibiza, según el avión; siempre son cifras orientativas sujetas a cotización.",
+  "pasos": [
+    {
+      "titulo": "Define el tipo de vuelo",
+      "texto": "Distingue entre paseo panorámico, traslado (helitaxi) y chárter a medida. Los paseos tienen ruta y duración fijas. Los traslados y el chárter se presupuestan según origen, destino y fecha."
+    },
+    {
+      "titulo": "Comprueba que el operador está autorizado",
+      "texto": "AESA publica el Listado de Certificados de Operador Aéreo (AOC) en un PDF enlazado desde su página del AOC. Busca en él la razón social del operador antes de pagar. El AOC es la aprobación que AESA concede para operar aeronaves en el ámbito autorizado."
+    },
+    {
+      "titulo": "Pide presupuesto o reserva por el canal oficial",
+      "texto": "BG Helicopters usa un botón 'Realizar Reserva' que lleva a un formulario. Coptering pide la solicitud en su web y confirma por teléfono (648 440 979). Helipistas atiende por teléfono y WhatsApp (678 073 685) de lunes a viernes de 9 a 17 h. World Aviation reserva paseos en su web y responde el formulario de contacto en menos de 24 horas. Sky Helicópteros reserva por teléfono (670 08 47 58) o formulario."
+    },
+    {
+      "titulo": "Confirma qué incluye el importe",
+      "texto": "Pregunta si el precio es por persona o por vuelo completo, si lleva IVA y si hay tasas. En los helicópteros, solo World Aviation indica 'IVA incluido' en su paseo. En los jets, LunaJets indica que sus estimaciones incluyen tripulación, combustible y tasas de aterrizaje."
+    },
+    {
+      "titulo": "Compara en jets al menos dos cotizaciones",
+      "texto": "Los brokers publican precios orientativos por trayecto para toda la aeronave y no por asiento. Pide cotización cerrada a varios y compara el mismo avión, fecha y aeropuertos. Pregunta por vuelos en vacío (empty legs), que algunas webs enlazan sin dar precios."
+    },
+    {
+      "titulo": "Revisa cancelación y meteorología antes de pagar",
+      "texto": "Coptering permite anular o cambiar la fecha con al menos 48 horas de antelación y reprograma el vuelo si la meteorología o un fallo técnico lo impiden. Los demás operadores consultados no publican condiciones de cancelación en las páginas leídas: pídelas por escrito."
+    },
+    {
+      "titulo": "Prepara la logística el día del vuelo",
+      "texto": "World Aviation pide presentarse 30 minutos antes del vuelo y fija un máximo de 110 kg por pasajero en sus paseos. En jets, la terminal de aviación general del aeropuerto (por ejemplo Jetex en Madrid-Barajas) gestiona asistencia en tierra, aduana y salas VIP."
+    }
+  ],
+  "precios": {
+    "nota": "Importes copiados de cada web oficial el 20-11-2026. En helicópteros, las webs rara vez indican si el importe lleva IVA o si es por persona o por vuelo; se anota lo que consta. En jets, las cifras son estimaciones de brokers por trayecto (aeronave completa, un sentido) o rangos por hora, no ofertas cerradas.",
+    "filas": [
+      {
+        "concepto": "BG Helicopters · Tour Barcelona (25 min, helicóptero de 3 plazas)",
+        "importe": "desde 580,00 €",
+        "unidad": "la web no indica si es por persona o por helicóptero, ni si incluye IVA",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bghelicopters.com/vuelos-turisticos-tours.html",
+        "fuente": "Web oficial de BG Helicopters"
+      },
+      {
+        "concepto": "BG Helicopters · Tour Montserrat (50 min)",
+        "importe": "desde 1.160,00 €",
+        "unidad": "la web no indica si es por persona o por helicóptero, ni si incluye IVA",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bghelicopters.com/vuelos-turisticos-tours.html",
+        "fuente": "Web oficial de BG Helicopters"
+      },
+      {
+        "concepto": "BG Helicopters · Tour Costa Brava (50 min)",
+        "importe": "desde 1.160,00 €",
+        "unidad": "la web no indica si es por persona o por helicóptero, ni si incluye IVA",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bghelicopters.com/vuelos-turisticos-tours.html",
+        "fuente": "Web oficial de BG Helicopters"
+      },
+      {
+        "concepto": "Coptering · Tour Vallés (8 min)",
+        "importe": "desde 85,00 €",
+        "unidad": "por persona (reservas de hasta 5 personas)",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://coptering.com/vive-lo-extraordinario/tours/",
+        "fuente": "Web oficial de Coptering"
+      },
+      {
+        "concepto": "Coptering · Barcelona Tour (15 min)",
+        "importe": "desde 180,00 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://coptering.com/vive-lo-extraordinario/tours/",
+        "fuente": "Web oficial de Coptering"
+      },
+      {
+        "concepto": "Coptering · Barcelona Panoramic Tour (25 min)",
+        "importe": "desde 250,00 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://coptering.com/vive-lo-extraordinario/tours/",
+        "fuente": "Web oficial de Coptering"
+      },
+      {
+        "concepto": "Coptering · Barcelona & Montserrat Tour (35 min)",
+        "importe": "desde 350,00 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://coptering.com/vive-lo-extraordinario/tours/",
+        "fuente": "Web oficial de Coptering"
+      },
+      {
+        "concepto": "Coptering · Costa Brava Tour (50 min)",
+        "importe": "desde 550,00 €",
+        "unidad": "por persona",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://coptering.com/vive-lo-extraordinario/tours/",
+        "fuente": "Web oficial de Coptering"
+      },
+      {
+        "concepto": "World Aviation · Paseo en helicóptero de 20 minutos (Costa del Sol, Sevilla y otros destinos)",
+        "importe": "235 €",
+        "unidad": "'Precio total', IVA incluido; la web no aclara si es por persona o por vuelo. Ocupación mínima de 4 personas",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://worldaviation.es/experiencias/paseos/",
+        "fuente": "Web oficial de World Aviation"
+      },
+      {
+        "concepto": "Anuncio o guía de LunaJets · Madrid-Ibiza, Cessna Citation CJ2 (6 plazas, 1 h 10 min)",
+        "importe": "8.200 €",
+        "unidad": "por trayecto, aeronave completa, un sentido; incluye tripulación, combustible y tasas de aterrizaje según la web",
+        "temporada": "",
+        "fecha_dato": "precios calculados el 12-11-2026 según la página",
+        "fuente_url": "https://www.lunajets.com/en/private-jet-charter/fly-between-madrid-and-ibiza",
+        "fuente": "Web de LunaJets (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de LunaJets · Madrid-Ibiza, Cessna Citation XLS (8 plazas)",
+        "importe": "10.000 €",
+        "unidad": "por trayecto, aeronave completa, un sentido",
+        "temporada": "",
+        "fecha_dato": "precios calculados el 12-11-2026 según la página",
+        "fuente_url": "https://www.lunajets.com/en/private-jet-charter/fly-between-madrid-and-ibiza",
+        "fuente": "Web de LunaJets (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de LunaJets · Madrid-Ibiza, Embraer Legacy 650 (13 plazas)",
+        "importe": "16.400 €",
+        "unidad": "por trayecto, aeronave completa, un sentido",
+        "temporada": "",
+        "fecha_dato": "precios calculados el 12-11-2026 según la página",
+        "fuente_url": "https://www.lunajets.com/en/private-jet-charter/fly-between-madrid-and-ibiza",
+        "fuente": "Web de LunaJets (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de LunaJets · Palma-Barcelona, Cessna Citation CJ2 (6 plazas, 45 min)",
+        "importe": "6.200 €",
+        "unidad": "por trayecto, aeronave completa, un sentido",
+        "temporada": "",
+        "fecha_dato": "estimaciones calculadas el 12-11-2026 según la página",
+        "fuente_url": "https://www.lunajets.com/en/private-jet-charter/fly-between-palma-and-barcelona",
+        "fuente": "Web de LunaJets (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de LunaJets · Palma-Barcelona, Bombardier Challenger 350 (8 plazas)",
+        "importe": "10.700 €",
+        "unidad": "por trayecto, aeronave completa, un sentido",
+        "temporada": "",
+        "fecha_dato": "estimaciones calculadas el 12-11-2026 según la página",
+        "fuente_url": "https://www.lunajets.com/en/private-jet-charter/fly-between-palma-and-barcelona",
+        "fuente": "Web de LunaJets (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Aeroaffaires · Madrid-Ibiza, Phenom 100 (4 plazas, 1 h 05 min)",
+        "importe": "9.900 €",
+        "unidad": "por trayecto, un sentido (2.475 € por pasajero según la web); la web no indica si incluye impuestos o IVA",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026 (solo '© 2026'); consultada el 20-11-2026",
+        "fuente_url": "https://aeroaffaires.com/private-jet-hire-destination/madrid-ibiza",
+        "fuente": "Web de Aeroaffaires (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Aeroaffaires · Madrid-Ibiza, Learjet 75 (8 plazas)",
+        "importe": "11.600 €",
+        "unidad": "por trayecto, un sentido (1.450 € por pasajero según la web); no indica IVA",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026 (solo '© 2026'); consultada el 20-11-2026",
+        "fuente_url": "https://aeroaffaires.com/private-jet-hire-destination/madrid-ibiza",
+        "fuente": "Web de Aeroaffaires (broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Luxaviation · Madrid-Málaga, jet ligero",
+        "importe": "6.000 € a 8.000 €",
+        "unidad": "por trayecto, un sentido, orientativo; la web no indica qué incluye ni impuestos",
+        "temporada": "Más caro en verano y en festivos principales, según la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://one.luxaviation.com/?p=7244",
+        "fuente": "Web de Luxaviation One (operador y broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Luxaviation · Málaga, jets ligeros",
+        "importe": "2.500 € a 3.500 €",
+        "unidad": "por hora de vuelo, orientativo; la web no menciona impuestos",
+        "temporada": "Sube en verano y con grandes eventos",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://one.luxaviation.com/?p=7818",
+        "fuente": "Web de Luxaviation One (operador y broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Luxaviation · Málaga, jets medianos",
+        "importe": "4.000 € a 6.500 €",
+        "unidad": "por hora de vuelo, orientativo",
+        "temporada": "Sube en verano y con grandes eventos",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://one.luxaviation.com/?p=7818",
+        "fuente": "Web de Luxaviation One (operador y broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Luxaviation · Mallorca, turbohélices y jets ligeros",
+        "importe": "2.000 € a 3.500 €",
+        "unidad": "por hora de vuelo ('market-based rather than airport-published', según la web)",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://one.luxaviation.com/es/?p=7821",
+        "fuente": "Web de Luxaviation One (operador y broker)"
+      },
+      {
+        "concepto": "Anuncio o guía de Luxaviation · Mallorca, jets pesados o de ultra largo alcance",
+        "importe": "7.000 € a 10.000 € o más",
+        "unidad": "por hora de vuelo, orientativo",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://one.luxaviation.com/es/?p=7821",
+        "fuente": "Web de Luxaviation One (operador y broker)"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "BG Helicopters",
+      "como": "Botón 'Realizar Reserva' que lleva a un formulario de contacto (https://www.bghelicopters.com/vuelos-turisticos-tours.html). La página no muestra teléfono ni email.",
+      "antelacion": "No indicada.",
+      "politica": "La web no publica condiciones de cancelación. El VIP Charter se presupuesta a medida."
+    },
+    {
+      "concepto": "Coptering (base: aeropuerto de Sabadell, QSA)",
+      "como": "Solicitud en la web y confirmación por teléfono (+34 648 440 979) o correo. Reservas de hasta 5 personas. Helitaxi con botón 'Solicita tu traslado' (https://coptering.com/vive-lo-extraordinario/tours/).",
+      "antelacion": "Sin plazo mínimo indicado para reservar. Cambios y anulaciones con al menos 48 horas de antelación.",
+      "politica": "Cancelación o cambio de fecha por el cliente con 48 horas de antelación. Si cancela Coptering por meteorología o motivos técnicos, reprograma el vuelo. La página no indica porcentajes de reembolso (https://coptering.com/politica-de-cancelacion/)."
+    },
+    {
+      "concepto": "Helipistas (base: Heliport Teresa Vilà, Ullastrell)",
+      "como": "Teléfono y WhatsApp +34 678 073 685, de lunes a viernes de 9 a 17 h, o portal barcelonahelicopters.com (https://www.helipistas.com/helitaxi-transporte-de-pasajeros/). El helitaxi se presupuesta por teléfono.",
+      "antelacion": "No indicada.",
+      "politica": "Las páginas leídas no incluyen cancelación; remiten a unas 'Condiciones Generales'."
+    },
+    {
+      "concepto": "Sky Helicópteros (base: aeródromo de Son Bonet, Marratxí, Mallorca)",
+      "como": "Teléfono 670 08 47 58 (vuelos turísticos), +34 971 79 40 40 (sede), comercial@skyhelicopteros.com o formulario de contacto (https://skyhelicopteros.com/helitours-vip-aoc/).",
+      "antelacion": "'Se ruega reserven su vuelo con unos días de antelación.'",
+      "politica": "No publica precios ni cancelación en las páginas leídas."
+    },
+    {
+      "concepto": "World Aviation (paseos y traslados ejecutivos)",
+      "como": "Paseos: formulario de reserva en la web con destino, fecha, franja (mañana o tarde) y pasajeros, hasta 4 personas, pago en carrito (https://worldaviation.es/experiencias/paseos/). Chárter VIP: formulario con origen, destino, fecha y pasajeros; responden en menos de 24 horas.",
+      "antelacion": "Sin plazo mínimo indicado. Ocupación mínima de 4 personas; las reservas de 1 a 3 plazas quedan pendientes de completar ocupación. Presentarse 30 minutos antes. Validez de la reserva: 6 meses.",
+      "politica": "La página enlaza una política de cancelación cuyo contenido no se pudo leer. Peso máximo de 110 kg por pasajero."
+    },
+    {
+      "concepto": "LunaJets (broker)",
+      "como": "Botones 'Request quotes' o 'Enquire', WhatsApp, teléfono +34 915 907 299 (Madrid) o +41 22 782 12 12, correo madrid@lunajets.com (https://www.lunajets.com/en/private-jet-charter/fly-between-madrid-and-ibiza).",
+      "antelacion": "No indicada.",
+      "politica": "Cotización fija y todo incluido, sin cargos ocultos, según la web. LunaJets actúa como broker y no opera aviones. La página no menciona depósito, empty legs ni IVA."
+    },
+    {
+      "concepto": "Aeroaffaires (broker)",
+      "como": "Formulario de presupuesto en línea, teléfono o correo (https://aeroaffaires.com/private-jet-hire-destination/madrid-ibiza). Asistencia de un consultor 24/7 hasta 2 horas antes del vuelo.",
+      "antelacion": "No indicada.",
+      "politica": "La página no detalla depósito, impuestos ni IVA y enlaza un servicio de empty legs sin dar precios."
+    },
+    {
+      "concepto": "Luxaviation One",
+      "como": "Formulario 'Presupuesto de flete' (https://one.luxaviation.com/charter-quote/). Proceso: consulta personalizada, selección de aeronave, cotización, confirmación y coordinación previa.",
+      "antelacion": "Recomienda reservar con antelación en temporada alta.",
+      "politica": "En las páginas leídas figura 'No empty legs are currently available', con lista de correo. No menciona IVA ni tasas."
+    },
+    {
+      "concepto": "Global Charter (broker)",
+      "como": "Envío de destino, fechas y número de pasajeros; el equipo responde con aeronaves y precios según disponibilidad (https://www.globalcharter.com/countries/private-jet-spain). Teléfono +44 20 7157 9525.",
+      "antelacion": "No indicada. En invierno, según la web, las tarifas son más flexibles.",
+      "politica": "La página no publica importes; remite a una página de tarifas que no se pudo leer."
+    }
+  ],
+  "consejos": [
+    "Pide siempre por escrito el importe final, la unidad (por persona o por vuelo), el IVA y las tasas.",
+    "Para grupos, un helicóptero completo suele salir mejor que el precio por persona: compara ambos con la misma ruta y duración.",
+    "Coptering anuncia 'hasta 5 personas por reserva'; BG Helicopters describe su tour de Barcelona con un helicóptero de 3 plazas. Confirma la capacidad de la aeronave concreta.",
+    "Reserva con margen de fechas: los vuelos dependen de la meteorología y Coptering reprograma los cancelados por ese motivo.",
+    "En jets, cotiza el mismo trayecto con varios brokers y compara avión, número de plazas y aeropuertos.",
+    "Busca el operador en el listado de AOC de AESA antes de pagar un anticipo.",
+    "Las webs de brokers dan cifras orientativas por trayecto. Los precios por hora varían según avión, ruta, temporada y disponibilidad."
+  ],
+  "errores_comunes": [
+    "Comparar un precio por persona con un precio por vuelo completo.",
+    "Dar por hecho que el importe incluye IVA: solo World Aviation lo indica entre los operadores de helicóptero consultados.",
+    "Tomar el precio 'a partir de' o 'desde' como importe final: las webs lo usan como mínimo.",
+    "Confundir broker y operador: LunaJets indica que no opera aviones, así que el AOC corresponde a la compañía que vuela.",
+    "Reservar un paseo para 1 a 3 personas sin saber que World Aviation exige ocupación mínima de 4 y deja esas reservas pendientes.",
+    "No pedir las condiciones de cancelación cuando la web no las publica."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta un paseo en helicóptero cerca de Barcelona?",
+      "r": "Según las webs oficiales, Coptering publica desde 85,00 € por persona (Tour Vallés, 8 min) hasta 550,00 € por persona (Costa Brava, 50 min). BG Helicopters publica el Tour Barcelona a partir de 580,00 € (25 min, helicóptero de 3 plazas). Helipistas no publica precios."
+    },
+    {
+      "p": "¿Cuánto cuesta un paseo en Málaga, Sevilla o Madrid?",
+      "r": "World Aviation muestra 235 € 'precio total', IVA incluido, para un paseo de 20 minutos. La web no aclara si es por persona o por vuelo y exige ocupación mínima de 4 personas."
+    },
+    {
+      "p": "¿Todos los operadores publican precios?",
+      "r": "No. Sky Helicópteros, Helipistas y World Aviation (en traslados y chárter) piden presupuesto por teléfono o formulario. BG Helicopters y Coptering publican precios de paseos, pero no los de traslados o chárter."
+    },
+    {
+      "p": "¿Con cuánta antelación hay que reservar?",
+      "r": "Sky Helicópteros pide reservar 'con unos días de antelación'. Coptering permite cambiar o anular hasta 48 horas antes. Los demás operadores no indican plazo."
+    },
+    {
+      "p": "¿Cuánto cuesta un jet privado de Madrid a Ibiza?",
+      "r": "LunaJets estima de 8.200 € (Citation CJ2) a 16.400 € (Legacy 650) por trayecto, y Aeroaffaires de 9.900 € a 11.600 €. Son estimaciones de brokers para un sentido y aeronave completa. Puede que el precio final cambie."
+    },
+    {
+      "p": "¿Cuánto cuesta un jet privado por hora?",
+      "r": "Luxaviation One orienta, en su web, de 2.500 € a 3.500 € por hora en jets ligeros, de 4.000 € a 6.500 € en medianos y de 7.000 € a 10.000 € o más en pesados. Es una referencia de mercado, no una tarifa publicada."
+    },
+    {
+      "p": "¿Cómo compruebo que un operador está autorizado?",
+      "r": "AESA publica el Listado de Certificados de Operador Aéreo (AOC) en su sitio web (seguridadaerea.gob.es, página del certificado de operador aéreo). Busca la razón social del operador en ese listado."
+    },
+    {
+      "p": "¿Qué terminal usa un jet privado en Madrid?",
+      "r": "Jetex indica en su web una Terminal de Aviación Ejecutiva en Adolfo Suárez Madrid-Barajas, con operaciones 24/7, aduana, inmigración y salas VIP. Hay otros operadores de aviación general; confirma cuál usa tu broker."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.bghelicopters.com/vuelos-turisticos-tours.html",
+      "nombre": "BG Helicopters · Vuelos turísticos y tours"
+    },
+    {
+      "url": "https://coptering.com/vive-lo-extraordinario/tours/",
+      "nombre": "Coptering · Tours"
+    },
+    {
+      "url": "https://coptering.com/vive-lo-extraordinario/helitaxi/",
+      "nombre": "Coptering · Helitaxi"
+    },
+    {
+      "url": "https://coptering.com/politica-de-cancelacion/",
+      "nombre": "Coptering · Política de cancelación"
+    },
+    {
+      "url": "https://www.helipistas.com/helitaxi-transporte-de-pasajeros/",
+      "nombre": "Helipistas · Helitaxi"
+    },
+    {
+      "url": "https://www.helipistas.com/vuelos-turisticos-en-helicoptero/",
+      "nombre": "Helipistas · Vuelos turísticos"
+    },
+    {
+      "url": "https://skyhelicopteros.com/helitours-vip-aoc/",
+      "nombre": "Sky Helicópteros · Helitours VIP"
+    },
+    {
+      "url": "https://worldaviation.es/experiencias/paseos/",
+      "nombre": "World Aviation · Paseos"
+    },
+    {
+      "url": "https://www.lunajets.com/en/private-jet-charter/fly-between-madrid-and-ibiza",
+      "nombre": "LunaJets · Madrid-Ibiza"
+    },
+    {
+      "url": "https://www.lunajets.com/en/private-jet-charter/fly-between-palma-and-barcelona",
+      "nombre": "LunaJets · Palma-Barcelona"
+    },
+    {
+      "url": "https://aeroaffaires.com/private-jet-hire-destination/madrid-ibiza",
+      "nombre": "Aeroaffaires · Madrid-Ibiza"
+    },
+    {
+      "url": "https://one.luxaviation.com/?p=7244",
+      "nombre": "Luxaviation One · Madrid-Málaga"
+    },
+    {
+      "url": "https://one.luxaviation.com/?p=7818",
+      "nombre": "Luxaviation One · Málaga"
+    },
+    {
+      "url": "https://one.luxaviation.com/es/?p=7821",
+      "nombre": "Luxaviation One · Mallorca"
+    },
+    {
+      "url": "https://www.globalcharter.com/countries/private-jet-spain",
+      "nombre": "Global Charter · Jet privado en España"
+    },
+    {
+      "url": "https://www.seguridadaerea.gob.es/es/ambitos/operaciones-aereas/transporte-aereo-comercial-cat/certificado-de-operador-aereo",
+      "nombre": "AESA · Certificado de operador aéreo (AOC)"
+    },
+    {
+      "url": "https://www.jetex.com/network/madrid-spain/",
+      "nombre": "Jetex · Madrid-Barajas"
+    }
+  ],
+  "huecos": [
+    "Sky Helicópteros y Helipistas no publican precios en su web; Sky tampoco cancelación ni capacidad, y Helipistas pide los presupuestos de helitaxi por teléfono.",
+    "BG Helicopters no indica si sus importes incluyen IVA ni la unidad exacta, salvo en el Tour de los Castillos, y no publica teléfono, antelación ni cancelación en la página de tours.",
+    "World Aviation no aclara si los 235 € son por persona o por vuelo; su política de cancelación enlazada no se pudo leer.",
+    "Coptering no publica precios de helitaxi ni porcentajes de reembolso.",
+    "No hemos podido consultar el listado de AOC de AESA, que es un PDF, para comprobar cada operador.",
+    "Jets: Global Charter y Gestair no publican importes. Los brokers consultados no detallan depósito ni IVA, y Luxaviation da rangos por hora distintos para jets ligeros en Málaga y Mallorca.",
+    "Terminales de aviación general: solo hemos podido confirmar Jetex en Madrid-Barajas."
+  ],
+  "relacionados": {
+    "rankings": [
+      "helicopteros"
+    ],
+    "eventos": [
+      "f1-gran-premio-espana-madring",
+      "palma-boat-show"
+    ],
+    "destinos": [
+      "barcelona",
+      "mallorca",
+      "ibiza",
+      "costa-del-sol"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}

@@ -1,0 +1,290 @@
+{
+  "slug": "spas-de-lujo",
+  "titulo": "Cómo reservar un spa de lujo en España y cuánto cuesta",
+  "resumen": "Muchos spas de hoteles de lujo en España no publican precios ni dicen si admiten a no huéspedes. De los diez revisados, solo el de Six Senses Puente Romano (Marbella) publica en su web el precio del circuito de agua para clientes externos: 90 € la hora y 180 € el medio día.",
+  "pasos": [
+    {
+      "titulo": "Comprueba si el spa admite a no huéspedes",
+      "texto": "No todos los spas de hotel lo dicen en su web. Puente Romano publica precios distintos para huéspedes y para clientes externos. La web de Rosewood Villa Magna habla de acceso exclusivo para huéspedes mayores de 18 años y de reserva previa. Si la web no lo aclara, escribe al spa antes de planificar nada."
+    },
+    {
+      "titulo": "Elige entre circuito de agua o tratamiento",
+      "texto": "Puente Romano vende el pase de zona húmeda por separado de los tratamientos. Otros spas sirven el acceso al circuito solo con un tratamiento. Pregunta qué incluye tu reserva antes de pagar."
+    },
+    {
+      "titulo": "Mira el precio en la web oficial del spa o del hotel",
+      "texto": "Puente Romano publica pases y tratamientos con importes. En los demás spas revisados no se pudo leer una tarifa en su web. Usa solo la tarifa del propio spa y pide el importe final por escrito."
+    },
+    {
+      "titulo": "Reserva por el canal que indica el spa",
+      "texto": "Puente Romano indica email y WhatsApp. Rosewood Villa Magna indica teléfono, email y reserva en línea. El St. Regis Mardavall y el Four Seasons de Formentor enlazan a un motor de reservas externo (emea.spatime.com)."
+    },
+    {
+      "titulo": "Reserva con antelación",
+      "texto": "Rosewood Villa Magna pide reserva previa para acceder al spa. El pase de medio día de Puente Romano figura como sujeto a disponibilidad. Reserva con margen, sobre todo en temporada alta."
+    },
+    {
+      "titulo": "Lee la política de cancelación y la edad mínima",
+      "texto": "Rosewood Villa Magna pide 12 horas de aviso y cobra el 100 % en cancelaciones tardías y ausencias. Pide tarjeta para confirmar. El spa del St. Regis Mardavall indica edades mínimas de 13 y 18 años según la zona. Único Spa indica 16 años."
+    },
+    {
+      "titulo": "Prepara la visita según las normas",
+      "texto": "Rosewood Villa Magna pide traje de baño en las zonas de agua, silenciar los dispositivos y llegar entre 20 y 30 minutos antes para rellenar un cuestionario de salud. Una llegada tardía acorta el tratamiento."
+    }
+  ],
+  "precios": {
+    "nota": "Solo se incluyen importes leídos en páginas HTML oficiales. Las webs no indican si el IVA está incluido. Los importes de Puente Romano son del spa de Six Senses en el resort; la página no detalla si incluyen toalla, comida o bata. El resto de spas no publica precios legibles en su web.",
+    "filas": [
+      {
+        "concepto": "Six Senses Spa Puente Romano · Pase de zona húmeda de 1 hora, cliente externo",
+        "importe": "90 €",
+        "unidad": "por persona, 1 hora",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/spa-wellness/six-senses/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · Pase de zona húmeda de 1 hora, huésped del hotel",
+        "importe": "75 €",
+        "unidad": "por persona, 1 hora",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/spa-wellness/six-senses/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · Pase de medio día (4 horas), cliente externo, sujeto a disponibilidad",
+        "importe": "180 €",
+        "unidad": "por persona, 4 horas",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/spa-wellness/six-senses/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · Pase de medio día (4 horas), huésped del hotel, sujeto a disponibilidad",
+        "importe": "150 €",
+        "unidad": "por persona, 4 horas",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/spa-wellness/six-senses/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · Signature Hammam (50 min)",
+        "importe": "desde 315 €",
+        "unidad": "por sesión",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/six-senses-spa/treatments/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · Mediterranean Breeze (80 min)",
+        "importe": "desde 315 €",
+        "unidad": "por sesión",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/six-senses-spa/treatments/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · 24K Gold Age Defying Facial (50 min)",
+        "importe": "desde 245 €",
+        "unidad": "por sesión",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/six-senses-spa/treatments/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · CBD therapy by KLORIS (50 min / 80 min)",
+        "importe": "desde 245 € (50 min) / 310 € (80 min)",
+        "unidad": "por sesión",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/six-senses-spa/treatments/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Six Senses Spa Puente Romano · Pearl Remineralizing Mask (80 min)",
+        "importe": "desde 345 €",
+        "unidad": "por sesión",
+        "temporada": "",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.puenteromano.com/six-senses-spa/treatments/",
+        "fuente": "Web oficial de Puente Romano"
+      },
+      {
+        "concepto": "Spa del Four Seasons Resort Mallorca en Formentor · Masterclass de cuidado de la piel (90 min), canjeable en productos Biologique Recherche",
+        "importe": "85 EUR",
+        "unidad": "por persona",
+        "temporada": "masterclass del 4 de abril de 2026 según la nota de prensa del hotel; fecha pasada",
+        "fecha_dato": "nota de prensa del hotel de 2026; consultada el 20-11-2026",
+        "fuente_url": "https://press.fourseasons.com/mallorca/hotel-news/2026/new-spa-treatments/",
+        "fuente": "Sala de prensa oficial de Four Seasons Mallorca"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Six Senses Spa Puente Romano (Marbella)",
+      "como": "Email reservations-marbella-spa@sixsenses.com, WhatsApp en wa.me/34650145334 o teléfono del hotel +34 952 82 09 00. Fuente: https://www.puenteromano.com/spa-wellness/six-senses/",
+      "antelacion": "No se indica. El pase de medio día figura como sujeto a disponibilidad. Horario en esa página: 11:00 a 19:30.",
+      "politica": "Admite clientes externos con tarifa propia (90 € la hora, 180 € el medio día). La web no indica política de cancelación, edad mínima ni normas."
+    },
+    {
+      "concepto": "Sense, A Rosewood Spa (Rosewood Villa Magna, Madrid)",
+      "como": "Teléfono +34 91 587 1980, email villamagna.sensespa@rosewoodhotels.com y enlace de reserva en línea en la web. Fuente: https://www.rosewoodhotels.com/en/villa-magna/wellness/spa",
+      "antelacion": "La web pide reserva previa. Hay que llegar 20 a 30 minutos antes. Horario: 9:00 a 21:00.",
+      "politica": "Cambios y cancelaciones con 12 horas de aviso. Ausencias y cancelaciones tardías se cobran al 100 %. Exige tarjeta de crédito para confirmar. La web habla de acceso exclusivo para huéspedes mayores de 18 años (https://www.rosewoodhotels.com/en/villa-magna/wellness) y no aclara el acceso de no huéspedes."
+    },
+    {
+      "concepto": "Arabella Spa (The St. Regis Mardavall Mallorca Resort)",
+      "como": "Motor de reservas emea.spatime.com, enlazado desde la página de experiencias del hotel. Teléfono del resort sin confirmar en página abierta. Fuente: https://www.marriott.com/en-us/hotels/pmixr-the-st-regis-mardavall-mallorca-resort/experiences/",
+      "antelacion": "No se indica.",
+      "politica": "La página no indica acceso de no huéspedes ni cancelación. Edades: piscina de bienestar y solárium desde 13 años con adulto; zona termal 'children of 18 years and older accompanied by an adult'. Horarios: zona termal 10:00 a 21:00; piscina 8:00 a 21:00."
+    },
+    {
+      "concepto": "Spa del Four Seasons Resort Mallorca en Formentor",
+      "como": "Reservas de tratamientos mediante la página de emea.spatime.com enlazada en la nota de prensa del hotel. Fuente: https://press.fourseasons.com/es-es/mallorca/hotel-news/2025/introducing-the-spa-and-wellness-retreat-2/",
+      "antelacion": "No se indica.",
+      "politica": "La fuente no indica acceso de no huéspedes, cancelación ni edad mínima. Horarios: tratamientos 9:00 a 20:00; instalaciones 10:00 a 20:00."
+    },
+    {
+      "concepto": "Único Spa (Finca Serena, Mallorca)",
+      "como": "Menú de tratamientos en PDF y motor de reservas externo enlazados en la web; contacto del hotel 971 18 17 58 e info@fincaserenamallorca.com. Fuente: https://www.unicohotels.com/en/finca-serena-mallorca/hotel-spa-majorca",
+      "antelacion": "No se indica.",
+      "politica": "La web indica acceso 'exclusivamente para huéspedes de 16 años en adelante' y spa solo para adultos. No aclara si admite a no huéspedes. No indica cancelación."
+    },
+    {
+      "concepto": "SHA Spain (Altea / El Albir)",
+      "como": "Reserva en línea en https://www.shawellness.com/es/reserva-online/, teléfono +34 865 614 147 y WhatsApp +34 671 522 851. Fuente: https://www.shawellness.com/es/",
+      "antelacion": "No se indica.",
+      "politica": "La web leída no indica acceso de día para no residentes, precios, cancelación ni edad mínima. La página de reserva abierta solo ofrece reservar una estancia."
+    }
+  ],
+  "consejos": [
+    "Pide por escrito qué incluye el pase: toalla, bata, comida, zona de agua y duración. Puente Romano no lo detalla en su web.",
+    "Si el spa tiene tarifa distinta para externos, como Puente Romano (90 € frente a 75 € la hora), reserva el pase como cliente externo y no esperes la tarifa de huésped.",
+    "Si reservas un tratamiento en Rosewood Villa Magna, cuenta con llegar 20 a 30 minutos antes y no llegar tarde: la cita se acorta.",
+    "Guarda la confirmación con la política de cancelación. En Rosewood Villa Magna son 12 horas de aviso y el cobro del 100 % si no se cumple.",
+    "Comprueba la edad mínima antes de ir en familia: las webs revisadas indican 13, 16 o 18 años según el spa y la zona.",
+    "Los importes de Puente Romano figuran como 'desde'. Pregunta el precio final de tu tratamiento al reservar."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que cualquier spa de hotel de lujo vende acceso de día. Varias webs no lo mencionan o hablan de acceso para huéspedes.",
+    "Confundir el pase de zona húmeda con un tratamiento. En Puente Romano son productos distintos con precios distintos.",
+    "Comparar importes sin mirar la duración. En Puente Romano el pase de 1 hora cuesta 90 € y el de 4 horas 180 € para externos.",
+    "Fiarse de precios de revendedores o webs de terceros. Pueden ser de otra época o para residentes.",
+    "Llegar justo a la hora de la cita. Rosewood Villa Magna pide llegar con 20 a 30 minutos de antelación.",
+    "Ignorar la política de cancelación. En Rosewood Villa Magna una cancelación con menos de 12 horas se cobra entera."
+  ],
+  "faq": [
+    {
+      "p": "¿Puede un no huésped usar el spa de un hotel de lujo en España?",
+      "r": "Depende del spa. Puente Romano publica tarifas para clientes externos. Rosewood Villa Magna habla de acceso exclusivo para huéspedes mayores de 18 años y exige reserva previa. En otros spas la web consultada no lo aclara y hay que preguntar."
+    },
+    {
+      "p": "¿Cuánto cuesta el circuito de agua en el Six Senses Spa de Puente Romano?",
+      "r": "Para clientes externos, 90 € por 1 hora y 180 € por 4 horas (medio día, sujeto a disponibilidad). Para huéspedes, 75 € y 150 €. La web no indica si incluye IVA."
+    },
+    {
+      "p": "¿Cuánto cuesta un tratamiento en Puente Romano?",
+      "r": "La web lista, como importes 'desde', el Signature Hammam de 50 minutos a 315 €, el 24K Gold Age Defying Facial de 50 minutos a 245 € y el Mediterranean Breeze de 80 minutos a 315 €."
+    },
+    {
+      "p": "¿Cómo se reserva el spa de Puente Romano?",
+      "r": "Por email a reservations-marbella-spa@sixsenses.com, por WhatsApp o por el teléfono del hotel +34 952 82 09 00."
+    },
+    {
+      "p": "¿Qué política de cancelación tiene Sense en el Rosewood Villa Magna?",
+      "r": "Exige 12 horas de aviso para cambios o cancelaciones. Las ausencias y las cancelaciones tardías se cobran al 100 %. Para confirmar la reserva pide una tarjeta de crédito."
+    },
+    {
+      "p": "¿Qué normas hay en el spa de Rosewood Villa Magna?",
+      "r": "Traje de baño obligatorio en las zonas de agua, ducha antes de los tratamientos, dispositivos en silencio y llegada 20 a 30 minutos antes. Facilitan albornoz, zapatillas y desechables."
+    },
+    {
+      "p": "¿Qué edad mínima piden los spas?",
+      "r": "Según sus webs: Único Spa, 16 años; Sense de Rosewood Villa Magna, 18 años; en el spa del St. Regis Mardavall, 13 años en piscina y solárium y 18 en la zona termal, siempre con adulto."
+    },
+    {
+      "p": "¿Todos los spas de lujo publican sus precios?",
+      "r": "No. De los diez spas revisados, solo Puente Romano mostró precios de acceso y tratamientos en su web. Los demás no los publican en las páginas que se pudieron leer."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.puenteromano.com/spa-wellness/six-senses/",
+      "nombre": "Puente Romano · Six Senses Spa (pases y contacto)"
+    },
+    {
+      "url": "https://www.puenteromano.com/six-senses-spa/treatments/",
+      "nombre": "Puente Romano · Tratamientos del Six Senses Spa"
+    },
+    {
+      "url": "https://www.puenteromano.com/spa-wellness/",
+      "nombre": "Puente Romano · Spa y bienestar"
+    },
+    {
+      "url": "https://www.rosewoodhotels.com/en/villa-magna/wellness/spa",
+      "nombre": "Rosewood Villa Magna · Sense, A Rosewood Spa"
+    },
+    {
+      "url": "https://www.rosewoodhotels.com/en/villa-magna/wellness",
+      "nombre": "Rosewood Villa Magna · Wellness"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/pmixr-the-st-regis-mardavall-mallorca-resort/experiences/",
+      "nombre": "The St. Regis Mardavall · Experiencias y spa"
+    },
+    {
+      "url": "https://press.fourseasons.com/mallorca/hotel-news/2026/new-spa-treatments/",
+      "nombre": "Four Seasons Mallorca · Nota de prensa de tratamientos 2026"
+    },
+    {
+      "url": "https://press.fourseasons.com/es-es/mallorca/hotel-news/2025/introducing-the-spa-and-wellness-retreat-2/",
+      "nombre": "Four Seasons Mallorca · Nota de prensa del spa 2025"
+    },
+    {
+      "url": "https://www.unicohotels.com/en/finca-serena-mallorca/hotel-spa-majorca",
+      "nombre": "Único Hotels · Único Spa de Finca Serena"
+    },
+    {
+      "url": "https://www.shawellness.com/es/",
+      "nombre": "SHA Wellness Clinic · Web oficial"
+    }
+  ],
+  "huecos": [
+    "Arabella Spa (St. Regis Mardavall): la página oficial abierta no indica acceso de no huéspedes, precios ni cancelación. Solo constan edades y horarios. El PDF de lista de precios del hotel está cifrado y no se pudo leer.",
+    "Pure Seven (7Pines Ibiza): las páginas oficiales abiertas no muestran precios, acceso de no huéspedes ni condiciones. La página de Hyatt del spa devolvió error 403 y la web 7pines-ibiza.com redirige a una página que no existe.",
+    "Sense (Rosewood Villa Magna): la web no publica precios de tratamientos ni aclara el acceso de no huéspedes, y habla de acceso exclusivo para huéspedes mayores de 18 años. El PDF de membresía no se abrió por ser PDF.",
+    "SHA Spain: la web abierta no publica acceso de día, precios de spa ni tratamientos. La página de reserva solo ofrece estancias.",
+    "Six Senses Spa Ibiza: las páginas oficiales del spa y de los retiros devolvieron error 403. No hay datos verificados de precios, acceso ni normas.",
+    "Six Senses Spa Puente Romano: la web no indica qué incluye el pase (toalla, comida), si los importes llevan IVA, ni la política de cancelación, la edad mínima y las normas.",
+    "Spa del Four Seasons Resort Mallorca en Formentor: las páginas oficiales del spa devolvieron error 403. Solo se leyeron notas de prensa del hotel, sin precios de acceso ni de tratamientos, ni acceso de no huéspedes, cancelación o edad mínima.",
+    "Spa del Mandarin Oriental Barcelona: las páginas del hotel solo cargaron el menú de navegación y no el contenido del spa. No hay datos verificados.",
+    "The Beauty Concept Spa (Mandarin Oriental Ritz Madrid): las páginas del hotel solo cargaron el menú de navegación y no el contenido del spa. No hay datos verificados.",
+    "Único Spa (Finca Serena): la web no publica precios ni indica acceso de no huéspedes ni cancelación. El menú de tratamientos está en PDF y el motor de reservas es externo. Una fuente indica 16 años de edad mínima.",
+    "Retiros y programas con precio: solo constan en las webs leídas el pase y los tratamientos de Puente Romano. No se verificó ningún retiro con precio.",
+    "La diferencia general entre day spa y spa de hotel solo para huéspedes queda respaldada solo en parte: Puente Romano publica tarifa de externos y Rosewood Villa Magna habla de acceso para huéspedes. Ninguna web revisada define ambos conceptos."
+  ],
+  "publicar": false,
+  "relacionados": {
+    "rankings": [
+      "spas"
+    ],
+    "eventos": [],
+    "destinos": [
+      "costa-del-sol",
+      "mallorca",
+      "ibiza",
+      "madrid",
+      "barcelona"
+    ]
+  },
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}
