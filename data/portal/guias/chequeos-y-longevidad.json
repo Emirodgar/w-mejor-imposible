@@ -1,0 +1,435 @@
+{
+  "slug": "chequeos-y-longevidad",
+  "titulo": "Cómo reservar un chequeo médico premium o un programa de longevidad en España y cuánto cuesta",
+  "resumen": "Los chequeos de un día que publican tarifa en su web van de 595 € (Turó Park, hombre menor de 40) a 3.385 € (Clínica Universidad de Navarra, mujer mayor de 40). Los programas con estancia publican desde 1.200 € por noche (SHA) hasta 14.850 € por persona (ZEM, 14 noches con alojamiento); varios grupos hospitalarios no publican precio.",
+  "pasos": [
+    {
+      "titulo": "Decide entre chequeo de un día y programa con estancia",
+      "texto": "Un chequeo se hace en un centro médico en unas horas o en menos de 24 h. Un programa de longevidad puede durar de 3 noches a 12 meses. Cambian el precio y la logística."
+    },
+    {
+      "titulo": "Mira qué pruebas incluye cada opción",
+      "texto": "Cada web lista sus pruebas de forma distinta. La Clínica Universidad de Navarra detalla el contenido por edad y sexo. SHA nombra algunas pruebas, pero no da la lista completa. Compara pruebas, no solo el nombre del programa."
+    },
+    {
+      "titulo": "Comprueba qué cubre el precio",
+      "texto": "En SHA el alojamiento no está en el importe del programa. En ZEM hay precio «solo programa» y «con alojamiento». En Turó Park, las especialidades y pruebas extra se presupuestan aparte. Pregunta qué queda fuera."
+    },
+    {
+      "titulo": "Pide cita por el canal que indica el centro",
+      "texto": "La Clínica Universidad de Navarra usa un formulario de contacto y teléfono. Turó Park ofrece reserva online, WhatsApp y teléfono. ZEM remite a un enlace de disponibilidad y a WhatsApp. Palasiet tiene motor de reserva online."
+    },
+    {
+      "titulo": "Lee la política de reserva antes de pagar",
+      "texto": "Varias webs enlazan la política de cancelación en un documento aparte (ZEM, SHA, Palasiet). No siempre figura en la ficha del programa. Pide las condiciones por escrito."
+    },
+    {
+      "titulo": "Pregunta cómo se entregan los resultados",
+      "texto": "Algunos centros hablan de informe final o de revisión de resultados. Confirma por escrito quién explica los resultados y si hay seguimiento. Esta guía es informativa y no sustituye la consulta con un profesional sanitario."
+    }
+  ],
+  "precios": {
+    "nota": "Solo tarifas escritas en la web oficial de cada centro, consultadas el 20-11-2026. IVA solo donde la web lo indica. Quirónsalud, Six Senses, HM, Vithas, Clínica Planas, Clínica Menorca y Buchinger Wilhelmi Marbella no muestran tarifa legible en las páginas abiertas (ver huecos).",
+    "filas": [
+      {
+        "concepto": "Clínica Universidad de Navarra – chequeo médico, mujer menor de 40 años (pruebas en menos de 24 h)",
+        "importe": "2.270 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.cun.es/chequeos-salud/chequeo-medico/precio-chequeo-medico",
+        "fuente": "Web oficial de la Clínica Universidad de Navarra"
+      },
+      {
+        "concepto": "Clínica Universidad de Navarra – chequeo médico, hombre menor de 40 años (menos de 24 h)",
+        "importe": "1.885 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.cun.es/chequeos-salud/chequeo-medico/precio-chequeo-medico",
+        "fuente": "Web oficial de la Clínica Universidad de Navarra"
+      },
+      {
+        "concepto": "Clínica Universidad de Navarra – chequeo médico, mujer mayor de 40 años (menos de 24 h)",
+        "importe": "3.385 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.cun.es/chequeos-salud/chequeo-medico/precio-chequeo-medico",
+        "fuente": "Web oficial de la Clínica Universidad de Navarra"
+      },
+      {
+        "concepto": "Clínica Universidad de Navarra – chequeo médico, hombre mayor de 40 años (menos de 24 h)",
+        "importe": "2.835 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.cun.es/chequeos-salud/chequeo-medico/precio-chequeo-medico",
+        "fuente": "Web oficial de la Clínica Universidad de Navarra"
+      },
+      {
+        "concepto": "Turó Park Medical (Barcelona) – chequeo hombre menor de 40 años (unas 3 horas)",
+        "importe": "595 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://turoparkmedical.com/chek-ups-for-men/",
+        "fuente": "Web oficial de Turó Park Medical"
+      },
+      {
+        "concepto": "Turó Park Medical – chequeo hombre mayor de 40 años (unas 3 horas)",
+        "importe": "795 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://turoparkmedical.com/chek-ups-for-men/",
+        "fuente": "Web oficial de Turó Park Medical"
+      },
+      {
+        "concepto": "Turó Park Medical – chequeo ejecutivo/corporativo para hombre",
+        "importe": "1.395 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://turoparkmedical.com/chek-ups-for-men/",
+        "fuente": "Web oficial de Turó Park Medical"
+      },
+      {
+        "concepto": "Turó Park Medical – Longevity Check-Up (evaluación única, sin seguimiento)",
+        "importe": "3.500 €",
+        "unidad": "por persona y evaluación",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://turoparkmedical.com/chek-ups-for-men/",
+        "fuente": "Web oficial de Turó Park Medical"
+      },
+      {
+        "concepto": "Turó Park Medical – chequeo para mujer (2 a 4 horas según itinerario)",
+        "importe": "desde 795 €",
+        "unidad": "por persona y chequeo",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://turoparkmedical.com/medical-services/checkups/",
+        "fuente": "Web oficial de Turó Park Medical"
+      },
+      {
+        "concepto": "Turó Park Medical – Programa de Longevidad estándar (12 meses)",
+        "importe": "5.500 €",
+        "unidad": "por persona y año (especialidades y pruebas extra se presupuestan aparte)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://turoparkmedical.com/medical-services/checkups/longevity-medicine-barcelona/",
+        "fuente": "Web oficial de Turó Park Medical"
+      },
+      {
+        "concepto": "SHA Wellness Clinic (SHA Spain) – Advanced Longevity Programme (desde 4 noches)",
+        "importe": "1.200 €",
+        "unidad": "por persona y noche; el alojamiento no está incluido en este precio",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://shawellness.com/en/advanced-longevity/",
+        "fuente": "Web oficial de SHA Wellness Clinic"
+      },
+      {
+        "concepto": "SHA – Health Optimization Check-up, pack «con programa»",
+        "importe": "1.650 €",
+        "unidad": "por persona; la estancia no está incluida en el precio del pack",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://shawellness.com/en/packs/health-optimization-check-up/",
+        "fuente": "Web oficial de SHA Wellness Clinic"
+      },
+      {
+        "concepto": "SHA – Health Optimization Check-up, pack «sin programa»",
+        "importe": "3.650 €",
+        "unidad": "por persona; la estancia no está incluida en el precio del pack",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://shawellness.com/en/packs/health-optimization-check-up/",
+        "fuente": "Web oficial de SHA Wellness Clinic"
+      },
+      {
+        "concepto": "ZEM Wellness Clinic Altea – Signature Health Check-up (5 noches)",
+        "importe": "8.200 €",
+        "unidad": "por persona; IVA incluido; alojamiento no incluido",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/signature-health-check-up/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Essential (3 noches), solo programa",
+        "importe": "desde 2.500 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-essential/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Essential (3 noches), programa con alojamiento",
+        "importe": "desde 3.325 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-essential/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Essential (7 noches), solo programa",
+        "importe": "3.300 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-essential/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Essential (7 noches), programa con alojamiento",
+        "importe": "5.225 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-essential/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Prime Longevity (7 noches), solo programa",
+        "importe": "desde 7.500 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-prime-longevity/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Prime Longevity (7 noches), programa con alojamiento",
+        "importe": "desde 9.425 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-prime-longevity/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Prime Longevity (14 noches), solo programa",
+        "importe": "11.000 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-prime-longevity/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "ZEM Altea – Prime Longevity (14 noches), programa con alojamiento",
+        "importe": "desde 14.850 €",
+        "unidad": "por persona",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://zemaltea.com/programas/zem-prime-longevity/",
+        "fuente": "Web oficial de ZEM Wellness Clinic Altea"
+      },
+      {
+        "concepto": "Palasiet Thalasso Clinic – programa Longevity (7 noches, habitación individual)",
+        "importe": "3.572 €",
+        "unidad": "por persona; alojamiento con tratamiento en habitación individual; IVA incluido",
+        "temporada": "Varía según temporada alta, media o baja (según la web)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://palasiet.com/en/programs/longevity/",
+        "fuente": "Web oficial de Palasiet"
+      },
+      {
+        "concepto": "Palasiet – programa Longevity (7 noches, habitación doble)",
+        "importe": "3.355 €",
+        "unidad": "por persona en habitación doble; IVA incluido",
+        "temporada": "Varía según temporada alta, media o baja (según la web)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://palasiet.com/en/programs/longevity/",
+        "fuente": "Web oficial de Palasiet"
+      },
+      {
+        "concepto": "Palasiet – programa Longevity (10 noches, habitación individual)",
+        "importe": "4.549 €",
+        "unidad": "por persona; IVA incluido",
+        "temporada": "Varía según temporada alta, media o baja (según la web)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://palasiet.com/en/programs/longevity/",
+        "fuente": "Web oficial de Palasiet"
+      },
+      {
+        "concepto": "Palasiet – programa Longevity (10 noches, habitación doble)",
+        "importe": "4.239 €",
+        "unidad": "por persona en habitación doble; IVA incluido",
+        "temporada": "Varía según temporada alta, media o baja (según la web)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://palasiet.com/en/programs/longevity/",
+        "fuente": "Web oficial de Palasiet"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Clínica Universidad de Navarra",
+      "como": "Formulario de contacto con sede (Madrid o Navarra) o teléfono: Navarra +34 948 255 400, Madrid +34 91 353 19 20.",
+      "antelacion": "No indicada en la web",
+      "politica": "No indicada en la web. Las pruebas las confirma el especialista de la Unidad de Chequeos según tu historial."
+    },
+    {
+      "concepto": "Turó Park Medical",
+      "como": "Reserva online, WhatsApp, formulario o teléfono +34 932 529 729.",
+      "antelacion": "No indicada en la web",
+      "politica": "No indicada en las páginas abiertas. Colonoscopias y endoscopias requieren prescripción médica, según la web."
+    },
+    {
+      "concepto": "SHA Wellness Clinic",
+      "como": "Se eligen centro y fechas en la web de SHA.",
+      "antelacion": "No indicada en la web",
+      "politica": "La web enlaza una «SHA Spain Booking Policy» aparte; su contenido no se pudo leer."
+    },
+    {
+      "concepto": "ZEM Wellness Clinic Altea",
+      "como": "Enlace «Consulte disponibilidad», WhatsApp +34 966 888 800 o info@zemaltea.com.",
+      "antelacion": "No indicada en la web",
+      "politica": "Recogida en un PDF «Política de reserva»; su texto no se pudo leer."
+    },
+    {
+      "concepto": "Palasiet Thalasso Clinic",
+      "como": "Motor de reserva online, teléfono +34 964 300 250 o reservas@palasiet.com.",
+      "antelacion": "No indicada en la web",
+      "politica": "No figura en la ficha; la web remite a «General Conditions»."
+    }
+  ],
+  "consejos": [
+    "Compara siempre la misma unidad: por persona, por noche o por programa.",
+    "En programas con estancia, suma alojamiento si el precio es «solo programa».",
+    "En el chequeo de la Clínica Universidad de Navarra, las pruebas de otras especialidades no listadas se facturan aparte, según su web.",
+    "Pide por escrito qué pruebas se hacen en el propio centro y cuáles en un hospital asociado: ZEM indica que algunas se hacen en el hospital IMED.",
+    "Si la web no publica tarifa, pide presupuesto por escrito antes de reservar."
+  ],
+  "errores_comunes": [
+    "Comparar el precio por noche de SHA (1.200 €) con el precio total de un programa de otro centro.",
+    "Dar por hecho que el alojamiento está incluido cuando el precio es «solo programa».",
+    "Fiarse de precios de terceros o agregadores en lugar de la web oficial del centro.",
+    "Reservar sin leer la política de cancelación, que suele estar en un documento aparte.",
+    "Confundir un programa de bienestar con un chequeo médico: cada web describe su contenido y no son equivalentes."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta el chequeo de la Clínica Universidad de Navarra?",
+      "r": "Según su web, 1.885 € (hombre menor de 40), 2.270 € (mujer menor de 40), 2.835 € (hombre mayor de 40) y 3.385 € (mujer mayor de 40). Fuente: web oficial de la Clínica Universidad de Navarra, consultada el 20-11-2026. La web no indica si incluye IVA."
+    },
+    {
+      "p": "¿Cuánto dura el chequeo de la Clínica Universidad de Navarra?",
+      "r": "Según su web, las pruebas diagnósticas se hacen generalmente en menos de 24 horas, en el mismo centro. Fuente: web oficial de la Clínica Universidad de Navarra."
+    },
+    {
+      "p": "¿Cuánto cuesta un chequeo en Turó Park Medical?",
+      "r": "Su web publica 595 € (hombre menor de 40), 795 € (hombre mayor de 40), 1.395 € (ejecutivo) y 3.500 € (Longevity Check-Up). El chequeo para mujer figura desde 795 €. Fuente: web oficial de Turó Park Medical."
+    },
+    {
+      "p": "¿Cuánto cuesta el programa de longevidad de SHA Wellness Clinic?",
+      "r": "La web de SHA publica 1.200 € por persona y noche para su Advanced Longevity Programme en España, desde 4 noches. El alojamiento no está incluido en ese precio. Fuente: web oficial de SHA Wellness Clinic."
+    },
+    {
+      "p": "¿Cuánto cuestan los programas de ZEM en Altea?",
+      "r": "Según su web: Essential de 3 noches desde 2.500 € por persona (solo programa), Prime Longevity de 7 noches desde 7.500 € y Signature Health Check-up de 5 noches a 8.200 €, con IVA incluido y sin alojamiento. Fuente: web oficial de ZEM Wellness Clinic Altea."
+    },
+    {
+      "p": "¿Cuánto cuesta el programa Longevity de Palasiet?",
+      "r": "La web indica 3.572 € por persona en 7 noches (individual) y 4.549 € en 10 noches, con IVA incluido y precios variables según temporada. Fuente: web oficial de Palasiet."
+    },
+    {
+      "p": "¿Publican precio los grandes grupos hospitalarios?",
+      "r": "En las páginas abiertas, HM Hospitales y Vithas no muestran tarifa de chequeo. HM ofrece financiación hasta 12 meses sin intereses y pide contacto por formulario o teléfono. Fuente: webs oficiales de HM Hospitales y Vithas."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.cun.es/chequeos-salud/chequeo-medico/precio-chequeo-medico",
+      "nombre": "Clínica Universidad de Navarra – precio del chequeo médico"
+    },
+    {
+      "url": "https://turoparkmedical.com/chek-ups-for-men/",
+      "nombre": "Turó Park Medical – chequeos para hombre"
+    },
+    {
+      "url": "https://turoparkmedical.com/medical-services/checkups/",
+      "nombre": "Turó Park Medical – chequeos"
+    },
+    {
+      "url": "https://turoparkmedical.com/medical-services/checkups/longevity-medicine-barcelona/",
+      "nombre": "Turó Park Medical – medicina de longevidad"
+    },
+    {
+      "url": "https://shawellness.com/en/advanced-longevity/",
+      "nombre": "SHA Wellness Clinic – Advanced Longevity"
+    },
+    {
+      "url": "https://shawellness.com/en/packs/health-optimization-check-up/",
+      "nombre": "SHA Wellness Clinic – Health Optimization Check-up"
+    },
+    {
+      "url": "https://zemaltea.com/signature-health-check-up/",
+      "nombre": "ZEM Wellness Clinic Altea – Signature Health Check-up"
+    },
+    {
+      "url": "https://zemaltea.com/programas/zem-essential/",
+      "nombre": "ZEM Wellness Clinic Altea – Essential"
+    },
+    {
+      "url": "https://zemaltea.com/programas/zem-prime-longevity/",
+      "nombre": "ZEM Wellness Clinic Altea – Prime Longevity"
+    },
+    {
+      "url": "https://zemaltea.com/reserva/",
+      "nombre": "ZEM Wellness Clinic Altea – reserva"
+    },
+    {
+      "url": "https://palasiet.com/en/programs/longevity/",
+      "nombre": "Palasiet – programa Longevity"
+    },
+    {
+      "url": "https://www.buchinger-wilhelmi.com/en/buchinger-wilhelmi-marbella/arrangements-packages/",
+      "nombre": "Buchinger Wilhelmi Marbella – paquetes"
+    },
+    {
+      "url": "https://www.hmhospitales.com/en/medical-check-ups/preventive-checkup/",
+      "nombre": "HM Hospitales – chequeo preventivo"
+    },
+    {
+      "url": "https://vithas.es/chequeos-medicos/",
+      "nombre": "Vithas – chequeos médicos"
+    },
+    {
+      "url": "https://www.clinicaplanas.com/medicina-regenerativa/antienvejecimiento/primera-visita",
+      "nombre": "Clínica Planas – primera visita de longevidad"
+    }
+  ],
+  "huecos": [
+    "Quirónsalud (Olympia, Marbella, Ruber Internacional): la web devolvió acceso denegado (403) y no se pudo leer ninguna tarifa.",
+    "Six Senses Ibiza (Longevity with RoseBar): la web oficial devolvió acceso denegado (403); no se confirma precio.",
+    "HM Hospitales: la página de chequeo preventivo abierta no muestra importe; solo financiación hasta 12 meses sin intereses.",
+    "Vithas: la página de chequeos abierta no muestra precios.",
+    "Clínica Planas: la página de primera visita de longevidad no indica precio ni duración; hay formulario y teléfono 932 03 28 12.",
+    "Clínica Menorca: no se encontró chequeo ni programa de longevidad con tarifa en su web.",
+    "Buchinger Wilhelmi Marbella: la web lista paquetes de 7 a 28 noches pero no publica precios (se piden por formulario). Incluye un bono de terapias de 45 € por noche.",
+    "Rixos Longevity Vitality: la web devolvió acceso denegado (403) y no se confirmó su ubicación; no se incluye.",
+    "Palasiet: la ficha muestra también un titular «Desde 2.090 €» (7 noches) que no coincide con la tabla de precios; se usa la tabla. Ubicación del centro no confirmada en la ficha.",
+    "Políticas de cancelación de SHA, ZEM y Palasiet: viven en documentos aparte que no se pudieron leer.",
+    "IVA: solo lo indican ZEM (Signature) y Palasiet; el resto no lo especifica.",
+    "Antelación mínima de reserva: no indicada en ninguna de las webs abiertas."
+  ],
+  "relacionados": {
+    "rankings": [
+      "spas"
+    ],
+    "eventos": [],
+    "destinos": [
+      "alicante",
+      "barcelona"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}
