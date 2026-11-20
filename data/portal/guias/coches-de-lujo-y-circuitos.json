@@ -1,0 +1,515 @@
+{
+  "slug": "coches-de-lujo-y-circuitos",
+  "titulo": "Cómo reservar un coche de lujo o una experiencia en circuito en España y cuánto cuesta",
+  "resumen": "Alquilar un deportivo de lujo en España cuesta, según las webs oficiales consultadas, desde 449 € al día (SUV Porsche) hasta 1.749 € al día (Ferrari 296 GTS o Lamborghini Huracán Tecnica en Rentlux), con fianza y mayores de 25 años. Una vuelta al volante de un Ferrari en circuito parte de 59 € en Formula GT y de 139 € en el Circuit de Barcelona-Catalunya; llevar tu propio coche a Cheste cuesta 70 € por sesión de 30 minutos.",
+  "pasos": [
+    {
+      "titulo": "Decide si quieres alquilar o pilotar en circuito",
+      "texto": "Alquilar se paga por días y se usa en carretera. Una experiencia en circuito se paga por vueltas o por sesión. Son productos distintos con precios muy diferentes."
+    },
+    {
+      "titulo": "Elige ciudad y modelo",
+      "texto": "Rentlux publica el mismo catálogo en las páginas de Madrid, Barcelona, Marbella, Ibiza y Mallorca. Confirma la disponibilidad en tu ciudad antes de pagar."
+    },
+    {
+      "titulo": "Comprueba los requisitos del conductor",
+      "texto": "Rentlux exige más de 25 años, carné con al menos 2 años y tarjeta bancaria. Luxury Cars Renting pide DNI o pasaporte, carné y tarjeta de crédito."
+    },
+    {
+      "titulo": "Pregunta por fianza, kilómetros y seguro",
+      "texto": "Las webs consultadas no publican el importe de la fianza ni los kilómetros incluidos. Pídelos por escrito. Jan Cars indica seguro básico y kilometraje estándar, sin cifras."
+    },
+    {
+      "titulo": "Reserva la experiencia en circuito",
+      "texto": "Formula GT vende vueltas con Ferrari, Lamborghini o Porsche en Montmeló y otros circuitos, con 12 meses para reservar. Para llevar tu coche, Ricardo Tormo vende sesiones de 30 minutos."
+    },
+    {
+      "titulo": "Confirma cancelación y meteorología",
+      "texto": "Formula GT permite desistir en 14 días naturales y puede cancelar por lluvia, niebla o viento fuerte. En Rentlux, la cancelación se consulta con el agente comercial."
+    }
+  ],
+  "precios": {
+    "nota": "Importes publicados en la web oficial de cada empresa en la fecha de consulta. Los precios de alquiler son 'desde' y por día; las webs no indican temporada, kilómetros incluidos ni importe de fianza. En Formula GT la página no muestra símbolo de moneda; es una web española. Confirma el precio final al reservar.",
+    "filas": [
+      {
+        "concepto": "Rentlux – Lamborghini Huracán Tecnica",
+        "importe": "1.749 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Ferrari 296 GTS",
+        "importe": "1.749 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Ferrari F8 Spider",
+        "importe": "1.649 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Lamborghini Urus",
+        "importe": "1.499 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Ferrari Portofino",
+        "importe": "1.249 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Bentley Continental GTC",
+        "importe": "1.199 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Mercedes G63 AMG",
+        "importe": "949 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Porsche 992 GT3",
+        "importe": "949 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux – Porsche Cayenne E-Hybrid Coupé",
+        "importe": "449 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux Barcelona – Ferrari Portofino (mismo catálogo que Madrid)",
+        "importe": "1.249 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-barcelona/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux Marbella – Ferrari Portofino (mismo catálogo que Madrid)",
+        "importe": "1.249 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-marbella/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux Ibiza – Ferrari Portofino (mismo catálogo que Madrid)",
+        "importe": "1.249 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-ibiza/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Rentlux Mallorca – Ferrari Portofino (mismo catálogo que Madrid)",
+        "importe": "1.249 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://rentlux.es/alquiler-coches-lujo-mallorca/",
+        "fuente": "Web oficial de Rentlux"
+      },
+      {
+        "concepto": "Luxury Cars Renting (Madrid) – Lamborghini Huracán Coupé",
+        "importe": "1.300 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://luxurycarsrenting.es/en-madrid/",
+        "fuente": "Web oficial de Luxury Cars Renting"
+      },
+      {
+        "concepto": "Luxury Cars Renting (Madrid) – Ferrari 458 Italia",
+        "importe": "1.050 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://luxurycarsrenting.es/en-madrid/",
+        "fuente": "Web oficial de Luxury Cars Renting"
+      },
+      {
+        "concepto": "Luxury Cars Renting (Madrid) – Ferrari 296 GTB",
+        "importe": "1.850 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://luxurycarsrenting.es/en-madrid/",
+        "fuente": "Web oficial de Luxury Cars Renting"
+      },
+      {
+        "concepto": "Luxury Cars Renting (Madrid) – Porsche 911 GT3 (991.2)",
+        "importe": "850 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://luxurycarsrenting.es/en-madrid/",
+        "fuente": "Web oficial de Luxury Cars Renting"
+      },
+      {
+        "concepto": "Luxury Cars Renting (Madrid) – Lamborghini Urus Sport",
+        "importe": "1.850 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://luxurycarsrenting.es/en-madrid/",
+        "fuente": "Web oficial de Luxury Cars Renting"
+      },
+      {
+        "concepto": "Jan Cars (Ibiza, Madrid, Barcelona) – Rolls-Royce Cullinan",
+        "importe": "2.500 €",
+        "unidad": "por día",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://jancars.com/",
+        "fuente": "Web oficial de Jan Cars"
+      },
+      {
+        "concepto": "Jan Cars – Lamborghini Huracán EVO Spyder",
+        "importe": "1.250 € (la web indica +IVA en un punto e IVA incluido en otro)",
+        "unidad": "por día",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://jancars.com/",
+        "fuente": "Web oficial de Jan Cars"
+      },
+      {
+        "concepto": "Jan Cars – Lamborghini Urus",
+        "importe": "1.000 €",
+        "unidad": "por día",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://jancars.com/",
+        "fuente": "Web oficial de Jan Cars"
+      },
+      {
+        "concepto": "Jan Cars – Mercedes-AMG G63",
+        "importe": "550 €",
+        "unidad": "por día",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://jancars.com/",
+        "fuente": "Web oficial de Jan Cars"
+      },
+      {
+        "concepto": "Beyond Cars (Madrid) – Lamborghini Huracán LP 610, Ferrari 488 GTB o McLaren 720S",
+        "importe": "1.300 €",
+        "unidad": "por día (desde)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://beyondcars.es/en/alquiler-coches-lujo-madrid/",
+        "fuente": "Web oficial de Beyond Cars"
+      },
+      {
+        "concepto": "Formula GT – Ferrari F430, 1 vuelta (circuitos de España)",
+        "importe": "59 (moneda no indicada)",
+        "unidad": "por experiencia de 1 vuelta",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-un-ferrari-en-circuito_38.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT – Ferrari 296, 1 vuelta (circuitos de España)",
+        "importe": "109 (moneda no indicada)",
+        "unidad": "por experiencia de 1 vuelta",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-un-ferrari-en-circuito_38.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT – Ferrari 458 Italia, 4 vueltas (circuitos de España)",
+        "importe": "229 (moneda no indicada)",
+        "unidad": "por experiencia de 4 vueltas",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-un-ferrari-en-circuito_38.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT en Circuit de Barcelona-Catalunya (GP 4,7 km) – Lamborghini Gallardo o Ferrari F430, 1 vuelta",
+        "importe": "139 (moneda no indicada)",
+        "unidad": "por experiencia de 1 vuelta",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-en-el-circuit-de-barcelona-catalunya-gran-premio-4-7km_112.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT en Circuit de Barcelona-Catalunya – Porsche 911 GT3, 1 vuelta",
+        "importe": "169 (moneda no indicada)",
+        "unidad": "por experiencia de 1 vuelta",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-en-el-circuit-de-barcelona-catalunya-gran-premio-4-7km_112.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT en Circuit de Barcelona-Catalunya – Lamborghini Huracán EVO o Ferrari 488, 1 vuelta",
+        "importe": "179 (moneda no indicada)",
+        "unidad": "por experiencia de 1 vuelta",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-en-el-circuit-de-barcelona-catalunya-gran-premio-4-7km_112.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT en Circuit de Barcelona-Catalunya – Ferrari 296, 1 vuelta",
+        "importe": "199 (moneda no indicada)",
+        "unidad": "por experiencia de 1 vuelta",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-en-el-circuit-de-barcelona-catalunya-gran-premio-4-7km_112.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Formula GT en Circuit de Barcelona-Catalunya – Ferrari 296, 5 vueltas",
+        "importe": "839 (moneda no indicada)",
+        "unidad": "por experiencia de 5 vueltas",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.formulagt.es/en/conducir-en-el-circuit-de-barcelona-catalunya-gran-premio-4-7km_112.html",
+        "fuente": "Web oficial de Formula GT"
+      },
+      {
+        "concepto": "Circuit Ricardo Tormo (Cheste) – tanda de coches con tu propio coche",
+        "importe": "70 €",
+        "unidad": "por sesión de 30 minutos",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.circuitricardotormo.com/en/experiences/car-track-sessions/",
+        "fuente": "Web oficial del Circuit Ricardo Tormo"
+      },
+      {
+        "concepto": "Circuit Ricardo Tormo – pack de 4 sesiones (solo compra anticipada)",
+        "importe": "250 €",
+        "unidad": "por pack de 4 sesiones de 30 minutos",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.circuitricardotormo.com/en/experiences/car-track-sessions/",
+        "fuente": "Web oficial del Circuit Ricardo Tormo"
+      },
+      {
+        "concepto": "Circuit Ricardo Tormo – seguro obligatorio",
+        "importe": "15 €",
+        "unidad": "por persona (piloto y acompañante)",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.circuitricardotormo.com/en/experiences/car-track-sessions/",
+        "fuente": "Web oficial del Circuit Ricardo Tormo"
+      },
+      {
+        "concepto": "Circuit Ricardo Tormo – alquiler de box",
+        "importe": "165 € + 100 € de fianza reembolsable",
+        "unidad": "por alquiler de box",
+        "temporada": "No indicada en la web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.circuitricardotormo.com/en/experiences/car-track-sessions/",
+        "fuente": "Web oficial del Circuit Ricardo Tormo"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Rentlux",
+      "como": "Formulario en rentlux.es por ciudad (Madrid, Barcelona, Marbella, Ibiza, Mallorca). Hay formulario de reserva urgente para entregas en menos de 3 días.",
+      "antelacion": "El periodo mínimo de reserva depende de la temporada; se consulta con el agente comercial.",
+      "politica": "Más de 25 años; carné con mínimo 2 años; tarjeta bancaria. Alquiler y fianza se pagan antes del servicio (importe de fianza no publicado). Entrega a domicilio u hotel no incluida. Cancelación: se consulta con el agente. Descuentos por varios días bajo petición."
+    },
+    {
+      "concepto": "Luxury Cars Renting (Madrid)",
+      "como": "Reserva desde su web con DNI o pasaporte, carné y tarjeta de crédito.",
+      "antelacion": "No indicada; pide hacer cambios con antelación suficiente.",
+      "politica": "Vehículos asegurados (detalle no publicado). Depósito de seguridad con tarjeta de crédito, importe no publicado. Salir de Madrid debe declararse al reservar. La edad mínima está redactada de forma confusa en su FAQ ('25 años o 23 años'); confírmala."
+    },
+    {
+      "concepto": "Jan Cars",
+      "como": "Pago del 30 % o del 100 % por tarjeta, transferencia o PayPal; la reserva se valida en 24 horas.",
+      "antelacion": "No indicada.",
+      "politica": "Seguro básico y asistencia en carretera; kilometraje estándar sin cifra. La fianza se bloquea el día de recogida y se libera tras la inspección. Chófer disponible bajo petición. Viajar fuera de España requiere consulta previa. Cancelación según antelación (sin cifras)."
+    },
+    {
+      "concepto": "Formula GT",
+      "como": "Compra online del voucher; fecha, circuito y hora se eligen en la reserva.",
+      "antelacion": "El beneficiario tiene 12 meses para reservar.",
+      "politica": "Desistimiento sin motivo en 14 días naturales desde la validación; después no hay reembolso. Cambios solo con garantía de modificación. Puede cancelarse por lluvia intensa, niebla o viento fuerte. Carné de conducir válido obligatorio."
+    },
+    {
+      "concepto": "Circuit Ricardo Tormo",
+      "como": "Compra anticipada online; las plazas sobrantes se venden en la Oficina de Carrera el mismo día.",
+      "antelacion": "El pack de 4 sesiones solo se vende en compra anticipada.",
+      "politica": "Mayores de 18 años y carné B. Casco obligatorio (integral, o abierto solo si es de motor). Alcohol 0,0. Sin ocupantes en asientos traseros. No se admiten monoplazas ni descapotables. El piloto asume los daños."
+    }
+  ],
+  "consejos": [
+    "Pide por escrito la fianza, los kilómetros incluidos y la franquicia del seguro: las webs consultadas no los publican.",
+    "Si el coche te lo llevan al hotel o a casa, pregunta el coste: en Rentlux no está incluido.",
+    "Compara el precio 'desde' con el final: Jan Cars indica +IVA en un punto de su web e IVA incluido en otro.",
+    "En circuito, mira el precio por vuelta: en Formula GT, el Ferrari 296 en Montmeló cuesta 199 por una vuelta y 839 por cinco.",
+    "Con coche propio, una tanda de 30 minutos en Cheste cuesta 70 €, más 15 € de seguro obligatorio.",
+    "Para regalar, el voucher de Formula GT dura 12 meses y solo lo puede usar la persona nombrada."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que el precio 'desde' vale para cualquier fecha: las webs no indican temporada.",
+    "Olvidar la fianza: Rentlux la exige antes del servicio, junto con el alquiler.",
+    "Presentarse sin tarjeta bancaria: Rentlux la pide como requisito.",
+    "Ir a una tanda con descapotable o monoplaza: Ricardo Tormo no los admite en sesiones generales.",
+    "Esperar reembolso pasados 14 días en Formula GT: después no se devuelve el dinero."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta alquilar un Ferrari en España?",
+      "r": "Rentlux publica el Ferrari Portofino desde 1.249 € al día y el 296 GTS desde 1.749 € al día. Luxury Cars Renting (Madrid) lista el 458 Italia desde 1.050 € y el 296 GTB desde 1.850 € al día. Son precios 'desde' de sus webs oficiales, consultados el 20-11-2026."
+    },
+    {
+      "p": "¿Qué edad mínima piden?",
+      "r": "Rentlux exige más de 25 años y carné con al menos 2 años de antigüedad, según su web oficial. Luxury Cars Renting redacta la regla de forma confusa en su FAQ, así que conviene confirmarla."
+    },
+    {
+      "p": "¿Cuánto es la fianza de un deportivo de lujo?",
+      "r": "Ninguna de las webs consultadas publica el importe. Rentlux indica que alquiler y fianza se pagan antes del servicio; Jan Cars dice que la fianza se bloquea el día de recogida y se libera tras la inspección."
+    },
+    {
+      "p": "¿Cuánto cuesta conducir un Ferrari en el Circuit de Barcelona-Catalunya?",
+      "r": "Formula GT publica una vuelta al GP de 4,7 km con Ferrari F430 por 139, con Ferrari 488 por 179 y con Ferrari 296 por 199. La página no muestra símbolo de moneda."
+    },
+    {
+      "p": "¿Puedo llevar mi propio coche a un circuito y cuánto cuesta?",
+      "r": "En el Circuit Ricardo Tormo, una sesión de 30 minutos cuesta 70 € y el pack de 4 sesiones 250 €, más 15 € de seguro obligatorio por persona. Exige ser mayor de 18 años y tener carné B."
+    },
+    {
+      "p": "¿Puedo cancelar una experiencia de conducción?",
+      "r": "Formula GT permite desistir sin motivo en 14 días naturales desde la validación del pedido. Después no hay reembolso, y la experiencia puede cancelarse por lluvia intensa, niebla o viento fuerte."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://rentlux.es/alquiler-coches-lujo-madrid/",
+      "nombre": "Rentlux – Madrid"
+    },
+    {
+      "url": "https://rentlux.es/",
+      "nombre": "Rentlux – web oficial"
+    },
+    {
+      "url": "https://rentlux.es/alquiler-coches-lujo-barcelona/",
+      "nombre": "Rentlux – Barcelona"
+    },
+    {
+      "url": "https://rentlux.es/alquiler-coches-lujo-marbella/",
+      "nombre": "Rentlux – Marbella"
+    },
+    {
+      "url": "https://rentlux.es/alquiler-coches-lujo-ibiza/",
+      "nombre": "Rentlux – Ibiza"
+    },
+    {
+      "url": "https://rentlux.es/alquiler-coches-lujo-mallorca/",
+      "nombre": "Rentlux – Mallorca"
+    },
+    {
+      "url": "https://luxurycarsrenting.es/en-madrid/",
+      "nombre": "Luxury Cars Renting – Madrid"
+    },
+    {
+      "url": "https://jancars.com/",
+      "nombre": "Jan Cars – web oficial"
+    },
+    {
+      "url": "https://beyondcars.es/en/alquiler-coches-lujo-madrid/",
+      "nombre": "Beyond Cars – Madrid"
+    },
+    {
+      "url": "https://www.formulagt.es/en/conducir-en-el-circuit-de-barcelona-catalunya-gran-premio-4-7km_112.html",
+      "nombre": "Formula GT – Circuit de Barcelona-Catalunya"
+    },
+    {
+      "url": "https://www.formulagt.es/en/conducir-un-ferrari-en-circuito_38.html",
+      "nombre": "Formula GT – conducir un Ferrari"
+    },
+    {
+      "url": "https://www.formulagt.es/general-conditions/",
+      "nombre": "Formula GT – condiciones generales"
+    },
+    {
+      "url": "https://www.circuitricardotormo.com/en/experiences/car-track-sessions/",
+      "nombre": "Circuit Ricardo Tormo – tandas de coches"
+    }
+  ],
+  "huecos": [
+    "Sixt Luxury y Hertz Dream Collection: la web de Sixt devolvió error 403 y no se halló página oficial con tarifas de Hertz Dream Collection en España.",
+    "Marbella, Mallorca e Ibiza: solo Rentlux publica tarifas oficiales y su catálogo es idéntico al de Madrid; no se confirmó disponibilidad por ciudad. Marbella Luxury Rent, Mallorca Sports Cars, GT Rentals y Starr Luxury Cars no publicaron tarifas verificables (Starr no muestra precios en su página de Ibiza).",
+    "Importe de fianza, kilómetros incluidos y franquicia del seguro: no publicados en Rentlux, Luxury Cars Renting, Jan Cars ni Beyond Cars. Beyond Cars además muestra inconsistencias en su listado.",
+    "Temporada de las tarifas de alquiler: ninguna web la indica.",
+    "Chófer o VTC premium: Blacklane (Madrid) no publica importes en euros; Transfeero y ROIG no se pudieron verificar.",
+    "Circuito de Jerez Ángel Nieto: sus páginas de tandas de coches y experiencias no muestran precios ni fechas.",
+    "Ascari Race Resort: la web oficial pide contraseña; no se pudo leer ninguna tarifa.",
+    "MADRING: no se halló página oficial con tarifas de conducción.",
+    "Circuit de Barcelona-Catalunya: las páginas de RACC Advanced Driving Center y Sport Driving Experience, y la Porsche Track Experience de Barcelona, no muestran precios.",
+    "Formula GT: la web no muestra símbolo de moneda, edad mínima, seguro ni fianza.",
+    "Circuito del Jarama: la web oficial no se pudo consultar.",
+    "Circuit de Barcelona-Catalunya: no hemos podido contrastar con la página oficial los precios de alquiler de pista (Racing Tests), por lo que no se publican."
+  ],
+  "relacionados": {
+    "rankings": [
+      "motor"
+    ],
+    "eventos": [
+      "motogp-cataluna",
+      "motogp-jerez",
+      "f1-gran-premio-espana-madring",
+      "motogp-valencia"
+    ],
+    "destinos": [
+      "madrid",
+      "barcelona",
+      "costa-del-sol",
+      "mallorca",
+      "ibiza",
+      "valencia",
+      "jerez-cadiz"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}

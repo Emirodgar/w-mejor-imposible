@@ -1,0 +1,546 @@
+{
+  "slug": "bodegas-visitas-y-catas",
+  "titulo": "Cómo reservar una visita y cata en bodegas de lujo en España y cuánto cuesta",
+  "resumen": "Una visita con cata en una bodega de primer nivel cuesta desde 22 € (Barbadillo, Sanlúcar) hasta 200 € (Emilio Moro y Abadía Retuerta), según las tarifas oficiales consultadas el 20-11-2026. Lo habitual: 25-60 € por una visita con 3-5 vinos y 85-200 € por catas largas con maridaje o menú.",
+  "pasos": [
+    {
+      "titulo": "Elige el tipo de experiencia",
+      "texto": "Decide entre visita básica (1-1,5 h, 2-5 vinos), cata con maridaje (2 h) o experiencia larga con viñedo y comida (3-5 h). La diferencia de precio es grande: 30 € frente a 200 € incluso dentro de la misma zona."
+    },
+    {
+      "titulo": "Reserva en la web oficial",
+      "texto": "Casi todas las bodegas tienen botón de reserva propio. Protos indica que todas sus visitas se reservan online. Reservar en la web oficial te da el precio vigente y la política de cancelación de la bodega."
+    },
+    {
+      "titulo": "Anticipa según el formato",
+      "texto": "Protos exige cita previa en todas sus visitas."
+    },
+    {
+      "titulo": "Comprueba qué incluye el precio",
+      "texto": "Fíjate en número de vinos, si hay maridaje o comida, duración e idioma. Emilio Moro indica IVA incluido en sus precios; la mayoría de las demás webs no lo especifica."
+    },
+    {
+      "titulo": "Confirma edad, idioma y tamaño de grupo",
+      "texto": "Las visitas 2 y 3 de Riscal y varias de Martín Códax son solo para adultos."
+    },
+    {
+      "titulo": "Revisa la cancelación antes de pagar",
+      "texto": "Abadía Retuerta cobra el 100 % si cancelas con menos de 24 horas. Protos permite cancelar sin gastos hasta 48 horas hábiles antes. Torres pide avisar con 24 horas."
+    }
+  ],
+  "precios": {
+    "nota": "Importes tal cual figuran en las webs oficiales de cada bodega, consultadas el 20-11-2026. Solo se indica IVA incluido donde la web lo dice (Emilio Moro). En Pago de Carraovejas y Torres la web no aclara si el importe es por persona. Las tarifas pueden variar por temporada.",
+    "filas": [
+      {
+        "concepto": "Marqués de Riscal – Visita 1: bodega, viñedo y 3 vinos con embutido riojano (90 min)",
+        "importe": "30 €",
+        "unidad": "por persona (adulto); 11-17 años 14 €, 3-10 años 4 €, 0-2 años gratis",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.marquesderiscal.com/visitanos",
+        "fuente": "Web oficial de Marqués de Riscal"
+      },
+      {
+        "concepto": "Marqués de Riscal – Visita Sublimme: igual que la Visita 1 más Sublimme by Riscal (90 min)",
+        "importe": "31 €",
+        "unidad": "por persona (adulto); 11-17 años 14 €, 3-10 años 4 €",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.marquesderiscal.com/visitanos",
+        "fuente": "Web oficial de Marqués de Riscal"
+      },
+      {
+        "concepto": "Marqués de Riscal – Visita 2: Finca Montico, Finca Torrea y Gran Reserva con queso y embutidos (1 h 45 min, solo mayores de 18)",
+        "importe": "45 €",
+        "unidad": "por persona",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.marquesderiscal.com/visitanos",
+        "fuente": "Web oficial de Marqués de Riscal"
+      },
+      {
+        "concepto": "Marqués de Riscal – Visita 3: Limousin, XR y Barón de Chirel con queso, embutidos y jamón ibérico (1 h 45 min, solo mayores de 18)",
+        "importe": "60 €",
+        "unidad": "por persona",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.marquesderiscal.com/visitanos",
+        "fuente": "Web oficial de Marqués de Riscal"
+      },
+      {
+        "concepto": "Pago de Carraovejas – Paisajes con Alma: 4 vinos con 4 bocados (2 h)",
+        "importe": "85 €",
+        "unidad": "importe tal cual figura; la web no indica si es por persona",
+        "temporada": "Miércoles a domingo, desde las 10:00",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.pagodecarraovejas.com/enoturismo/",
+        "fuente": "Web oficial de Pago de Carraovejas"
+      },
+      {
+        "concepto": "Pago de Carraovejas – Edición Cuesta de las Liebres: 8 vinos (2 h)",
+        "importe": "110 €",
+        "unidad": "importe tal cual figura; la web no indica si es por persona",
+        "temporada": "Viernes a martes, desde las 10:00",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.pagodecarraovejas.com/enoturismo/",
+        "fuente": "Web oficial de Pago de Carraovejas"
+      },
+      {
+        "concepto": "Pago de Carraovejas – Grandes Crus de Alma: 7 vinos con 7 bocados, no es menú degustación (3 h)",
+        "importe": "135 €",
+        "unidad": "importe tal cual figura; la web no indica si es por persona",
+        "temporada": "Miércoles a domingo, desde las 10:00",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.pagodecarraovejas.com/enoturismo/",
+        "fuente": "Web oficial de Pago de Carraovejas"
+      },
+      {
+        "concepto": "Emilio Moro (Ribera del Duero) – El vino te habla: visita y 3 vinos con aperitivo (1 h 30 min)",
+        "importe": "38 € (IVA incluido)",
+        "unidad": "importe tal cual figura por experiencia",
+        "temporada": "Abierto de lunes a domingo, 10 a 18 h",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.emiliomoro.com/visitas-y-catas-ribera-del-duero/",
+        "fuente": "Web oficial de Bodegas Emilio Moro"
+      },
+      {
+        "concepto": "Emilio Moro (Ribera del Duero) – Saborea nuestra Ribera: visita, 4 vinos y 4 tapas gourmet (2 h)",
+        "importe": "60 € (IVA incluido)",
+        "unidad": "importe tal cual figura por experiencia",
+        "temporada": "Abierto de lunes a domingo, 10 a 18 h",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.emiliomoro.com/visitas-y-catas-ribera-del-duero/",
+        "fuente": "Web oficial de Bodegas Emilio Moro"
+      },
+      {
+        "concepto": "Emilio Moro (Ribera del Duero) – In Malleolus veritas: visita, 3 vinos y aperitivo (1 h 30 min)",
+        "importe": "72 € (IVA incluido)",
+        "unidad": "importe tal cual figura por experiencia",
+        "temporada": "Abierto de lunes a domingo, 10 a 18 h",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.emiliomoro.com/visitas-y-catas-ribera-del-duero/",
+        "fuente": "Web oficial de Bodegas Emilio Moro"
+      },
+      {
+        "concepto": "Emilio Moro (Ribera del Duero) – Experiencia gastronómica: visita, 4 vinos y menú tradicional (3 h 30 min)",
+        "importe": "115 € (IVA incluido)",
+        "unidad": "importe tal cual figura por experiencia",
+        "temporada": "Abierto de lunes a domingo, 10 a 18 h",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.emiliomoro.com/visitas-y-catas-ribera-del-duero/",
+        "fuente": "Web oficial de Bodegas Emilio Moro"
+      },
+      {
+        "concepto": "Emilio Moro (Ribera del Duero) – Viaje al origen: viñedos centenarios, bodega, 7 vinos y menú especial (4 h 30 min)",
+        "importe": "200 € (IVA incluido)",
+        "unidad": "importe tal cual figura por experiencia",
+        "temporada": "Abierto de lunes a domingo, 10 a 18 h",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.emiliomoro.com/visitas-y-catas-ribera-del-duero/",
+        "fuente": "Web oficial de Bodegas Emilio Moro"
+      },
+      {
+        "concepto": "Abadía Retuerta – Visita privada con cata de Selección Especial y dos vinos Pago (1 h 30 min, español o inglés)",
+        "importe": "70 €",
+        "unidad": "por persona",
+        "temporada": "Disponible todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://abadia-retuerta.com/en/unique-experiences/around-wine/visit-abadia-retuerta/",
+        "fuente": "Web oficial de Abadía Retuerta"
+      },
+      {
+        "concepto": "Abadía Retuerta – Visita privada con vinos de la Winemaker's Collection (1 h 30 min)",
+        "importe": "90 €",
+        "unidad": "por persona",
+        "temporada": "Disponible todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://abadia-retuerta.com/en/unique-experiences/around-wine/visit-abadia-retuerta/",
+        "fuente": "Web oficial de Abadía Retuerta"
+      },
+      {
+        "concepto": "Abadía Retuerta – Inmersión enológica: aperitivo local y 7 vinos de la gama (3 h, español o inglés)",
+        "importe": "200 €",
+        "unidad": "por persona",
+        "temporada": "Disponible todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://abadia-retuerta.com/en/unique-experiences/around-wine/oenological-immersion/",
+        "fuente": "Web oficial de Abadía Retuerta"
+      },
+      {
+        "concepto": "González Byass (Tío Pepe) – Tío Pepe Experience: visita guiada y 2 vinos",
+        "importe": "26,90 €",
+        "unidad": "por adulto (duración no indicada)",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.tiopepe.com/gb-en/experiences",
+        "fuente": "Web oficial de González Byass / Tío Pepe"
+      },
+      {
+        "concepto": "González Byass (Tío Pepe) – Entre vinos y tapas: visita guiada, 4 vinos y tapas",
+        "importe": "36,50 €",
+        "unidad": "por adulto (duración no indicada)",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.tiopepe.com/gb-en/experiences",
+        "fuente": "Web oficial de González Byass / Tío Pepe"
+      },
+      {
+        "concepto": "González Byass (Tío Pepe) – Premium VORS Tour: visita guiada, Tío Pepe Fino de bota y 4 VORS",
+        "importe": "57,00 €",
+        "unidad": "por adulto (duración no indicada)",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.tiopepe.com/gb-en/experiences",
+        "fuente": "Web oficial de González Byass / Tío Pepe"
+      },
+      {
+        "concepto": "Lustau (Jerez) – Las Catedrales del Vino: bodega y 5 vinos con vermut final (60 min)",
+        "importe": "26 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.lustau.es/visitenos",
+        "fuente": "Web oficial de Bodegas Lustau"
+      },
+      {
+        "concepto": "Lustau (Jerez) – El Lenguaje de la Tiza: 5 vinos premium y 2 V.O.R.S. con vermut (75 min)",
+        "importe": "36 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.lustau.es/visitenos",
+        "fuente": "Web oficial de Bodegas Lustau"
+      },
+      {
+        "concepto": "Lustau (Jerez) – La Sacristía de Lustau: 3 vinos y cata exclusiva de V.O.R.S. (90 min)",
+        "importe": "60 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.lustau.es/visitenos",
+        "fuente": "Web oficial de Bodegas Lustau"
+      },
+      {
+        "concepto": "Barbadillo (Sanlúcar) – Visita guiada con degustación de 3 vinos (1 h 30 min)",
+        "importe": "22 €",
+        "unidad": "por adulto; mayores de 13 años 5 €; menores de 13 gratis",
+        "temporada": "Inglés a las 11:00 de martes a sábado; español en el resto; viernes nocturna a las 19:00",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.barbadillo.com/es/visitas",
+        "fuente": "Web oficial de Bodegas Barbadillo"
+      },
+      {
+        "concepto": "Barbadillo (Sanlúcar) – Visita privada con 3 vinos (1 h 30 min, mínimo 10 personas)",
+        "importe": "30 €",
+        "unidad": "por persona",
+        "temporada": "Grupos de 10 o más",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.barbadillo.com/es/visitas",
+        "fuente": "Web oficial de Bodegas Barbadillo"
+      },
+      {
+        "concepto": "Barbadillo (Sanlúcar) – Visita privada con 3 vinos y aperitivos ibéricos (2 h, mínimo 10 personas)",
+        "importe": "40 €",
+        "unidad": "por persona",
+        "temporada": "Grupos de 10 o más",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.barbadillo.com/es/visitas",
+        "fuente": "Web oficial de Bodegas Barbadillo"
+      },
+      {
+        "concepto": "Barbadillo (Sanlúcar) – Cata de iniciación con ibéricos en el Aula de Formación (2 h, mínimo 10 personas)",
+        "importe": "45 €",
+        "unidad": "por persona",
+        "temporada": "Grupos de 10 o más",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.barbadillo.com/es/visitas",
+        "fuente": "Web oficial de Bodegas Barbadillo"
+      },
+      {
+        "concepto": "Familia Torres (Pacs del Penedès) – Visita con cata de vinos",
+        "importe": "26 €",
+        "unidad": "importe tal cual figura (la web no indica por persona ni duración)",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.torres.es/visitas-maridajes",
+        "fuente": "Web oficial de Familia Torres"
+      },
+      {
+        "concepto": "Familia Torres (Pacs del Penedès) – Visita con maridaje de vinos y quesos (4 quesos artesanales)",
+        "importe": "34 €",
+        "unidad": "importe tal cual figura",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.torres.es/visitas-maridajes",
+        "fuente": "Web oficial de Familia Torres"
+      },
+      {
+        "concepto": "Familia Torres (Pacs del Penedès) – Visita con maridaje de vinos y tapas (4 tapas gourmet)",
+        "importe": "37 €",
+        "unidad": "importe tal cual figura",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.torres.es/visitas-maridajes",
+        "fuente": "Web oficial de Familia Torres"
+      },
+      {
+        "concepto": "Codorníu (Sant Sadurní d'Anoia) – Heritage Tour: tren por las bodegas, jardines, museo y 2 cavas premium (75 min)",
+        "importe": "25 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.codorniu.com/en/visits",
+        "fuente": "Web oficial de Codorníu"
+      },
+      {
+        "concepto": "Codorníu (Sant Sadurní d'Anoia) – The Iconic Tour: tren, jardines, museo y 3 cavas premium con chocolates (105 min)",
+        "importe": "30 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.codorniu.com/en/visits",
+        "fuente": "Web oficial de Codorníu"
+      },
+      {
+        "concepto": "Codorníu (Sant Sadurní d'Anoia) – Ars Collecta Tour: Celler Jaume, 3 cavas premium y 1 Paraje Calificado con aperitivo (105 min)",
+        "importe": "54 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.codorniu.com/en/visits",
+        "fuente": "Web oficial de Codorníu"
+      },
+      {
+        "concepto": "Codorníu (Sant Sadurní d'Anoia) – Iconic Tour y menú Ars Collecta en La Torre (105 min)",
+        "importe": "86,00 €",
+        "unidad": "por adulto",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.codorniu.com/en/visits",
+        "fuente": "Web oficial de Codorníu"
+      },
+      {
+        "concepto": "Martín Códax (Rías Baixas) – Martín Códax Nadal: visita y 3 vinos (90 min)",
+        "importe": "24 €",
+        "unidad": "por adulto; niño 8 €",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.martincodax.com/enoturismo/",
+        "fuente": "Web oficial de Bodegas Martín Códax"
+      },
+      {
+        "concepto": "Martín Códax (Rías Baixas) – Ondas do mar: visita solo adultos y 3 vinos (90 min)",
+        "importe": "28 €",
+        "unidad": "importe tal cual figura",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.martincodax.com/enoturismo/",
+        "fuente": "Web oficial de Bodegas Martín Códax"
+      },
+      {
+        "concepto": "Martín Códax (Rías Baixas) – Creaciones singulares: visita solo adultos y 3 vinos (120 min)",
+        "importe": "50 €",
+        "unidad": "importe tal cual figura",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.martincodax.com/enoturismo/",
+        "fuente": "Web oficial de Bodegas Martín Códax"
+      },
+      {
+        "concepto": "Martín Códax (Rías Baixas) – Mar de Fondo: recorrido, cata especial y experiencia gastronómica (solo adultos)",
+        "importe": "120 €",
+        "unidad": "importe tal cual figura (duración no indicada)",
+        "temporada": "Consultar web",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.martincodax.com/enoturismo/",
+        "fuente": "Web oficial de Bodegas Martín Códax"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Marqués de Riscal",
+      "como": "Botón «Reserva de entradas» en la web oficial o teléfono +34 945 180 888.",
+      "antelacion": "No indicada para las visitas 1-3; el combo con Valle Salado de Añana pide reserva con antelación.",
+      "politica": "No indicada en la página de visitas."
+    },
+    {
+      "concepto": "Pago de Carraovejas",
+      "como": "Botón «Reservar o regalar» en cada experiencia de la web oficial.",
+      "antelacion": "No indicada.",
+      "politica": "No indicada."
+    },
+    {
+      "concepto": "Emilio Moro",
+      "como": "Correo enoturismo@emiliomoro.com o teléfono +34 983 87 84 00 (Ribera del Duero).",
+      "antelacion": "No indicada.",
+      "politica": "Modificar o cancelar con al menos 24 horas de antelación contactando con la bodega."
+    },
+    {
+      "concepto": "Abadía Retuerta",
+      "como": "Formulario de reserva en la web oficial: se elige fecha y franja horaria (de 09:30 a 17:30).",
+      "antelacion": "No indicada; disponible todo el año.",
+      "politica": "Cancelar con menos de 24 horas supone pagar el 100 % de la experiencia."
+    },
+    {
+      "concepto": "González Byass (Tío Pepe)",
+      "como": "Reserva en tiopepe.com; el tour de cata y maridaje se solicita con formulario «Request a visit» (mínimo dos personas).",
+      "antelacion": "No indicada.",
+      "politica": "No indicada."
+    },
+    {
+      "concepto": "Lustau",
+      "como": "Botón «Reserva ahora» en la web oficial.",
+      "antelacion": "No indicada.",
+      "politica": "No indicada."
+    },
+    {
+      "concepto": "Barbadillo",
+      "como": "Correo visitas@barbadillo.com o teléfono 956 385 521; la visita al museo con copa para grupos requiere reserva previa.",
+      "antelacion": "No indicada.",
+      "politica": "No indicada."
+    },
+    {
+      "concepto": "Protos",
+      "como": "Todas las visitas se reservan online en enoturismo.bodegasprotos.com; teléfono +34 659 843 463 (lunes a viernes, 10:00 a 12:00).",
+      "antelacion": "Es imprescindible concertar cita previamente.",
+      "politica": "Cancelación o modificación sin gastos al menos 48 horas hábiles antes de la visita; fuera de plazo o sin presentarse se cobra el 100 %."
+    },
+    {
+      "concepto": "Familia Torres",
+      "como": "Reserva desde torres.es/visitas-maridajes; los day trips desde Barcelona se reservan en juliatravel.com.",
+      "antelacion": "No indicada.",
+      "politica": "Modificar o cancelar con al menos 24 horas de antelación contactando con el equipo."
+    }
+  ],
+  "consejos": [
+    "Reserva en la web oficial para ver el precio vigente: los directorios de terceros muestran importes distintos y a menudo antiguos.",
+    "Si quieres comer en la bodega, busca la experiencia con menú: Emilio Moro (115 €, IVA incluido) o Codorníu con menú Ars Collecta (86,00 €).",
+    "En Jerez, las visitas de 22-37 € permiten probar varios estilos; los V.O.R.S. suben el precio a 57-60 €.",
+    "Para grupos de 10 o más, Barbadillo ofrece visitas privadas desde 30 € por persona.",
+    "Elige idioma desde el principio: Barbadillo ofrece inglés a las 11:00 de martes a sábado.",
+    "Pregunta si el precio incluye IVA cuando la web no lo diga."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que el importe es por persona: en Pago de Carraovejas y Torres la web no lo especifica.",
+    "Llegar sin reserva: Protos exige cita previa y Abadía Retuerta trabaja con franjas horarias.",
+    "Cancelar tarde: Abadía Retuerta cobra el 100 % con menos de 24 horas y Protos con menos de 48 horas hábiles.",
+    "Reservar una visita premium con menores: las visitas 2 y 3 de Riscal son solo para mayores de 18.",
+    "Fiarse de precios antiguos de terceros: Riscal o Protos aparecen con tarifas muy distintas en directorios."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta visitar Marqués de Riscal?",
+      "r": "Según su web oficial, la Visita 1 cuesta 30 € por adulto (90 min, 3 vinos con embutido), la Visita 2, 45 € y la Visita 3, 60 € (1 h 45 min, solo mayores de 18). Consulta del 20-11-2026."
+    },
+    {
+      "p": "¿Cuánto cuesta una cata en Ribera del Duero?",
+      "r": "En Emilio Moro, de 38 € (visita y 3 vinos) a 200 € (4 h 30 min, 7 vinos y menú), IVA incluido. En Pago de Carraovejas, de 85 € a 135 €, según sus webs oficiales."
+    },
+    {
+      "p": "¿Cuánto cuesta visitar una bodega en Jerez?",
+      "r": "Barbadillo cobra 22 € por adulto; Lustau, de 26 € a 60 €; González Byass, de 26,90 € a 57,00 € por adulto. Fuentes: webs oficiales, 20-11-2026."
+    },
+    {
+      "p": "¿Se puede cancelar una visita?",
+      "r": "Depende. Protos permite cancelar sin gastos hasta 48 horas hábiles antes, Torres pide 24 horas y Abadía Retuerta cobra el 100 % si se cancela con menos de 24 horas."
+    },
+    {
+      "p": "¿Cuánto cuesta una visita en el Penedès?",
+      "r": "Torres cobra 26 € (cata), 34 € (quesos) o 37 € (tapas); Codorníu, de 25 € (Heritage Tour) a 86,00 € (Iconic Tour con menú Ars Collecta), según sus webs oficiales."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.marquesderiscal.com/visitanos",
+      "nombre": "Marqués de Riscal – Visítanos"
+    },
+    {
+      "url": "https://www.pagodecarraovejas.com/enoturismo/",
+      "nombre": "Pago de Carraovejas – Enoturismo"
+    },
+    {
+      "url": "https://www.emiliomoro.com/visitas-y-catas-ribera-del-duero/",
+      "nombre": "Emilio Moro – Visitas y catas Ribera del Duero"
+    },
+    {
+      "url": "https://abadia-retuerta.com/en/unique-experiences/around-wine/visit-abadia-retuerta/",
+      "nombre": "Abadía Retuerta – Visit Abadía Retuerta"
+    },
+    {
+      "url": "https://abadia-retuerta.com/en/unique-experiences/around-wine/oenological-immersion/",
+      "nombre": "Abadía Retuerta – Oenological Immersion"
+    },
+    {
+      "url": "https://www.tiopepe.com/gb-en/experiences",
+      "nombre": "Tío Pepe (González Byass) – Experiences"
+    },
+    {
+      "url": "https://www.tiopepe.com/gb-en/experiences/tasting-and-pairing-tour",
+      "nombre": "Tío Pepe – Tasting and Pairing Tour"
+    },
+    {
+      "url": "https://www.lustau.es/visitenos",
+      "nombre": "Bodegas Lustau – Visítenos"
+    },
+    {
+      "url": "https://www.barbadillo.com/es/visitas",
+      "nombre": "Bodegas Barbadillo – Visitas"
+    },
+    {
+      "url": "https://www.torres.es/visitas-maridajes",
+      "nombre": "Familia Torres – Visitas y maridajes"
+    },
+    {
+      "url": "https://www.torres.es/es/enoturismo",
+      "nombre": "Familia Torres – Enoturismo (idiomas y cancelación)"
+    },
+    {
+      "url": "https://www.codorniu.com/en/visits",
+      "nombre": "Codorníu – Visits"
+    },
+    {
+      "url": "https://www.martincodax.com/enoturismo/",
+      "nombre": "Bodegas Martín Códax – Enoturismo"
+    },
+    {
+      "url": "https://www.bodegasprotos.com/es/horarios/",
+      "nombre": "Bodegas Protos – Horarios y cita previa"
+    },
+    {
+      "url": "https://enoturismo.bodegasprotos.com/reserva/visitas",
+      "nombre": "Bodegas Protos – Reserva de visitas (condiciones de cancelación)"
+    }
+  ],
+  "huecos": [
+    "Vega Sicilia: la web oficial no abrió (error de certificado); sin tarifas ni condiciones.",
+    "Protos: las páginas oficiales abiertas no muestran precios de visita; solo constan cita previa y cancelación a 48 horas hábiles.",
+    "Ysios: la sección de experiencias (visits.bodegasysios.com) no mostró precios al abrirla.",
+    "Emilio Moro El Bierzo (42 € y 55 €, IVA incluido) leído pero no incluido en tabla; sin precio de Vino y pintura.",
+    "Marqués de Riscal: la web no indica cancelación ni antelación para las visitas 1-3.",
+    "Pago de Carraovejas: la web no indica si los precios son por persona, ni IVA, idiomas, cancelación ni antelación.",
+    "González Byass: los precios por adulto no llevan duración; el tour de cata y maridaje (5 vinos y 5 tapas) no muestra precio.",
+    "Lustau, Barbadillo, Codorníu y Martín Códax: sin política de cancelación visible.",
+    "Rías Baixas: solo Martín Códax publica tarifas; Pazo de Señoráns no mostró precios de visita.",
+    "IVA: solo Emilio Moro indica expresamente IVA incluido.",
+    "Algunas lecturas se hicieron con extracción automática de la página; conviene un repaso manual antes de publicar.",
+    "Vivanco y Cellers de Scala Dei quedan fuera de la tabla: no hemos podido contrastar sus importes con la página oficial."
+  ],
+  "relacionados": {
+    "rankings": [
+      "bodegas"
+    ],
+    "eventos": [
+      "vendimia-rioja-logrono"
+    ],
+    "destinos": [
+      "la-rioja",
+      "ribera-del-duero",
+      "jerez-cadiz",
+      "barcelona"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}

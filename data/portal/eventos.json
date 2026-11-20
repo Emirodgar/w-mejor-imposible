@@ -277,7 +277,8 @@
       "nota": "Carrera el 9 de mayo según el calendario oficial; el viernes de inicio se deduce del formato habitual. Calendario sujeto a cambios.",
       "publicar": true,
       "guias": [
-        "entradas-vip-grandes-eventos"
+        "entradas-vip-grandes-eventos",
+        "coches-de-lujo-y-circuitos"
       ]
     },
     {
@@ -328,7 +329,8 @@
       "nota": "Carrera el 13 de junio según el calendario oficial; el viernes de inicio se deduce del formato habitual. Calendario sujeto a cambios.",
       "publicar": true,
       "guias": [
-        "entradas-vip-grandes-eventos"
+        "entradas-vip-grandes-eventos",
+        "coches-de-lujo-y-circuitos"
       ]
     },
     {
@@ -437,7 +439,10 @@
       "fuente_url": "https://www.festivalesdeespana.com/festival/fiestas-de-san-mateo-y-vendimia-riojana-logrono",
       "confianza": "media",
       "nota": "La edición de 2026 fue del 19 al 25 de septiembre; el Ayuntamiento ha cambiado las fechas otros años. La URL es un directorio, no la web municipal.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "bodegas-visitas-y-catas"
+      ]
     },
     {
       "id": "madrid-fashion-week",
@@ -469,7 +474,8 @@
       "nota": "",
       "publicar": true,
       "guias": [
-        "entradas-vip-grandes-eventos"
+        "entradas-vip-grandes-eventos",
+        "coches-de-lujo-y-circuitos"
       ]
     },
     {
@@ -533,7 +539,10 @@
       "fuente_url": "https://www.motogp.com/en/news/2026/09/25/2027-motogp-calendar-revealed/1092589",
       "confianza": "alta",
       "nota": "Carrera el 28 de noviembre según el calendario oficial; el viernes de inicio se deduce del formato habitual. Calendario sujeto a cambios.",
-      "publicar": true
+      "publicar": true,
+      "guias": [
+        "coches-de-lujo-y-circuitos"
+      ]
     },
     {
       "id": "gala-michelin-2027-huesca",
