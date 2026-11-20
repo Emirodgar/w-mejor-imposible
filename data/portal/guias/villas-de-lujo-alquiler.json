@@ -1,0 +1,448 @@
+{
+  "slug": "villas-de-lujo-alquiler",
+  "titulo": "Cómo alquilar una villa de lujo en España y cuánto cuesta",
+  "resumen": "En las webs oficiales consultadas, las villas de lujo se anuncian desde 700 € por noche (4 dormitorios, Marbella) hasta 17.287 € por noche (28 dormitorios, Marbella) en Villanovo, y desde 16.000 € por semana en Ibiza Villas. El precio depende de fechas y estancia mínima: Villa Palo Alto (La Zagaleta) pasa de 4.500 a 5.500 € por noche y exige entre 2 y 7 noches según el periodo.",
+  "pasos": [
+    {
+      "titulo": "Elige zona y tamaño",
+      "texto": "Define isla o costa, dormitorios y presupuesto por noche. Los listados de Villanovo muestran Marbella desde 700 € por noche y Mallorca desde 192 € por noche (villa de 1 dormitorio), con grandes diferencias según zona."
+    },
+    {
+      "titulo": "Introduce fechas antes de comparar",
+      "texto": "Los rangos sin fechas son orientativos. Pon fechas exactas en el buscador: la ficha de Villa Palo Alto muestra una tarifa distinta por periodo."
+    },
+    {
+      "titulo": "Revisa la estancia mínima",
+      "texto": "La misma villa puede exigir 2 noches en octubre-diciembre de 2026 y 7 noches entre el 01/07/2027 y el 31/08/2027."
+    },
+    {
+      "titulo": "Lee depósito, pago y cancelación",
+      "texto": "En Villa Palo Alto el depósito de reserva es del 40 %, el resto vence 65 días antes y el depósito no se reembolsa. En Oliver's Travels el depósito es del 37,5 % no reembolsable."
+    },
+    {
+      "titulo": "Suma fianza y limpieza",
+      "texto": "Villa Palo Alto: fianza de 3.000 € y limpieza final obligatoria de 500 € por estancia. Ibiza Villas indica fianzas de hasta 15.000 € según la villa."
+    },
+    {
+      "titulo": "Confirma la licencia turística",
+      "texto": "Pide a la agencia el número de registro de la villa según la normativa autonómica. El registro único estatal fue anulado por el Tribunal Supremo en mayo de 2026."
+    }
+  ],
+  "precios": {
+    "nota": "Importes tal cual figuran en cada web oficial. Los listados de Villanovo e Ibiza Villas no muestran fechas concretas: son rangos de tarifa de cada villa. Solo la ficha de Villa Palo Alto detalla importe por periodo.",
+    "filas": [
+      {
+        "concepto": "Villanovo – Villa Palo Alto (5 dormitorios, La Zagaleta, Marbella)",
+        "importe": "4.500 €",
+        "unidad": "por noche",
+        "temporada": "01/10/2026–19/12/2026 y 01/02/2027–30/04/2027 (mín. 2 noches en oct–dic 2026; 5 noches en 2027)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/villa-rentals/spain/andalusia/marbella/la-zagaleta/villa-palo-alto",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Palo Alto (5 dormitorios, La Zagaleta, Marbella)",
+        "importe": "5.500 €",
+        "unidad": "por noche",
+        "temporada": "20/12/2026–08/01/2027 (mín. 3 noches) y 01/07/2027–31/08/2027 (mín. 7 noches)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/villa-rentals/spain/andalusia/marbella/la-zagaleta/villa-palo-alto",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Casa Brunaelle (4 dormitorios, Marbella)",
+        "importe": "700 € – 1.200 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/andalusia/marbella",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Ariana (5 dormitorios, Marbella)",
+        "importe": "1.950 € – 2.950 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/andalusia/marbella",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Sombrera (9 dormitorios, La Zagaleta)",
+        "importe": "4.550 € – 6.950 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/andalusia/marbella",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Maravilla (28 dormitorios, Marbella)",
+        "importe": "11.581 € – 17.287 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/andalusia/marbella",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Sonoroa (5 dormitorios, El Madroñal)",
+        "importe": "1.525 € – 2.999 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/andalusia/marbella",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Tiramar (4 dormitorios, Ibiza Oeste, Cala Tarida)",
+        "importe": "528 € – 1.082 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/ibiza",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Fountain Ibiza (6 dormitorios, Sa Carroca, Ibiza Este)",
+        "importe": "1.786 € – 7.917 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/ibiza",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Can Nino (6 dormitorios, Cap Martinet, Ibiza Sur)",
+        "importe": "5.133 € – 17.023 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/ibiza",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Amanecer (4 dormitorios, Jesús, Ibiza Sur)",
+        "importe": "7.366 € – 12.218 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/ibiza",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Todas las villas de Ibiza (118 villas)",
+        "importe": "363 € – 17.023 €",
+        "unidad": "por noche",
+        "temporada": "rango general que indica la FAQ de la web; sin fechas",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/villa-rentals/europe/spain/ibiza/",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Hei-Hei (4 dormitorios, Alcudia, Mallorca)",
+        "importe": "451 € – 2.041 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Cala (6 dormitorios, Palma, Mallorca)",
+        "importe": "1.318 € – 4.352 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Casa Ciel (6 dormitorios, Alcudia, Mallorca)",
+        "importe": "5.572 € – 10.715 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Sa Rotja (5 dormitorios, Valldemossa, Mallorca)",
+        "importe": "2.100 € – 10.000 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Sa Punta (5 dormitorios, Banyalbufar, Mallorca)",
+        "importe": "2.900 € – 10.000 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Finca Bienestar (6 dormitorios, Port d'Andratx, Mallorca)",
+        "importe": "3.214 € – 3.571 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Menorazul (4 dormitorios, Binibeca, Menorca)",
+        "importe": "633 € – 3.226 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/menorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Santa Ana (6 dormitorios, Son Saura, Menorca)",
+        "importe": "3.465 € – 6.300 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/menorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Finca Rosario (6 dormitorios, Ferreries, Menorca)",
+        "importe": "3.278 € – 5.546 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/menorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Hacienda Xini (13 dormitorios, Ferreries, Menorca)",
+        "importe": "5.760 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/balearic-islands/menorca",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Enid (8 dormitorios, Cadaqués, Costa Brava)",
+        "importe": "1.308 € – 4.332 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/catalonia/costa-brava",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Guarda (9 dormitorios, Llafranc, Costa Brava)",
+        "importe": "1.806 € – 9.090 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/catalonia/costa-brava",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Majestic & Spa (11 dormitorios, Palafrugell, Costa Brava)",
+        "importe": "4.531 € – 6.646 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/catalonia/costa-brava",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Villanovo – Villa Ciamar (4 dormitorios, Begur–Sa Riera, Costa Brava)",
+        "importe": "337 € – 814 €",
+        "unidad": "por noche",
+        "temporada": "sin fechas: el buscador de la web aparece vacío y muestra el rango de tarifas de la villa",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.villanovo.com/europe/spain/catalonia/costa-brava",
+        "fuente": "Web oficial de Villanovo"
+      },
+      {
+        "concepto": "Ibiza Villas – Villa Atlantis (14 huéspedes, dormitorios no indicados, Es Cubells)",
+        "importe": "desde 70.000 €",
+        "unidad": "por semana (\"Price per week\")",
+        "temporada": "sin fechas en la ficha del listado; la web muestra «Prices from»",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.ibizavillas.com/luxury-villas/",
+        "fuente": "Web oficial de Ibiza Villas"
+      },
+      {
+        "concepto": "Ibiza Villas – Villa Cardona (14 huéspedes, dormitorios no indicados, Ibiza Town)",
+        "importe": "desde 20.000 €",
+        "unidad": "por semana (\"Price per week\")",
+        "temporada": "sin fechas en la ficha del listado; la web muestra «Prices from»",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.ibizavillas.com/luxury-villas/",
+        "fuente": "Web oficial de Ibiza Villas"
+      },
+      {
+        "concepto": "Ibiza Villas – Casa Pura (12 huéspedes, dormitorios no indicados, Cala Jondal)",
+        "importe": "desde 16.000 €",
+        "unidad": "por semana (\"Price per week\")",
+        "temporada": "sin fechas en la ficha del listado; la web muestra «Prices from»",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.ibizavillas.com/luxury-villas/",
+        "fuente": "Web oficial de Ibiza Villas"
+      },
+      {
+        "concepto": "Ibiza Villas – Casa Juliette (12 huéspedes, dormitorios no indicados, Cala Jondal)",
+        "importe": "desde 18.000 €",
+        "unidad": "por semana (\"Price per week\")",
+        "temporada": "sin fechas en la ficha del listado; la web muestra «Prices from»",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.ibizavillas.com/luxury-villas/",
+        "fuente": "Web oficial de Ibiza Villas"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Villanovo (Villa Palo Alto, La Zagaleta)",
+      "como": "Modificaciones y cancelaciones por correo electrónico.",
+      "antelacion": "Segundo pago del 60 % con vencimiento a 65 días de la llegada.",
+      "politica": "Depósito de reserva 40 % no reembolsable. Fianza 3.000 € (tarjeta o transferencia con el último pago). Limpieza final obligatoria 500 € por estancia. Cancelar a menos de 65 días: 100 % del total. No presentación: 100 %. Tasa de cancelación 100 € y tasa por cambios 100 €. Cargo de limpieza adicional obligatorio para más de 6 personas (importe no indicado)."
+    },
+    {
+      "concepto": "Villanovo (condiciones generales)",
+      "como": "Las condiciones se publican en la ficha de cada villa; el listado de Ibiza no incluye depósito, cancelación ni estancia mínima.",
+      "antelacion": "Varía por villa.",
+      "politica": "Consultar la ficha de la villa elegida."
+    },
+    {
+      "concepto": "Oliver's Travels",
+      "como": "Condiciones generales de la web.",
+      "antelacion": "Saldo final a 12 semanas del inicio. Reserva con menos de 12 semanas: pago total.",
+      "politica": "Depósito 37,5 % no reembolsable. Reflexión de 48 horas con devolución del depósito. Reserva confirmada: no se reembolsa ningún pago y tasa administrativa de 25 £ por persona. Fianza reembolsable, aparte de los pagos de reserva. Cancelación gratuita con pago total para estancias 2027 si se avisa por escrito antes del 31/12/2026 (según la web, si la reserva cualifica)."
+    },
+    {
+      "concepto": "Ibiza Villas",
+      "como": "Cancelación por escrito firmada por quien firmó la reserva.",
+      "antelacion": "Reserva con menos de 10 semanas: pago total.",
+      "politica": "Depósito 30 % (el propietario puede exigir hasta 50 %). Cancelar con más de 6 meses: se devuelve el depósito. Entre 6 meses y 12 semanas: se pierde el depósito. 12-8 semanas: 50 %; 8-6 semanas: 60 %; 6-0 semanas: 100 %. Fianza de hasta 15.000 € según la villa, devuelta entre 15 y 30 días tras el check-out."
+    }
+  ],
+  "consejos": [
+    "Compara siempre con las mismas fechas en cada agencia.",
+    "Pregunta qué incluye la tarifa: en Villa Palo Alto van incluidos limpieza tres veces por semana, ropa de cama, suministros y seguridad; desayuno, chef o traslados son extras.",
+    "Pide por escrito la fianza y cómo se cobra (bloqueo en tarjeta o transferencia).",
+    "Mira el calendario de pagos: un saldo a 65 días o 12 semanas fija cuándo pierdes el dinero si cancelas.",
+    "Valora un seguro de cancelación: Villanovo lo lista como extra no incluido."
+  ],
+  "errores_comunes": [
+    "Tomar el rango de un listado como precio de tu fecha.",
+    "Olvidar la estancia mínima de julio y agosto (7 noches en Villa Palo Alto en 2027).",
+    "No contar la limpieza final obligatoria ni la tasa turística, que aparece como extra no incluido.",
+    "Suponer que el depósito se devuelve: en Villanovo y Oliver's Travels no es reembolsable.",
+    "Reservar sin pedir el número de registro turístico autonómico."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta una villa de lujo en Marbella?",
+      "r": "En Villanovo, de 700-1.200 € por noche (Casa Brunaelle, 4 dormitorios) a 11.581-17.287 € por noche (Villa Maravilla, 28 dormitorios). Villa Palo Alto cuesta 4.500-5.500 € por noche según fechas."
+    },
+    {
+      "p": "¿Cuánto cuesta en Ibiza?",
+      "r": "Villanovo indica 118 villas con precios de 363 € a 17.023 € por noche. Ibiza Villas anuncia villas desde 16.000 € por semana (Casa Pura)."
+    },
+    {
+      "p": "¿Qué estancia mínima piden?",
+      "r": "Villa Palo Alto: 2 noches (01/10-19/12/2026), 3 noches (20/12/2026-08/01/2027), 5 noches (resto de 2027) y 7 noches (01/07-31/08/2027), según Villanovo."
+    },
+    {
+      "p": "¿Cuánto es la fianza?",
+      "r": "3.000 € en Villa Palo Alto (Villanovo). Ibiza Villas indica hasta 15.000 € según la villa."
+    },
+    {
+      "p": "¿Puedo cancelar gratis?",
+      "r": "Villanovo (Villa Palo Alto): el depósito del 40 % nunca se reembolsa y, a menos de 65 días, se debe el 100 %. Oliver's Travels: reflexión de 48 horas y excepción 2027 hasta el 31/12/2026 si la reserva cualifica."
+    },
+    {
+      "p": "¿Es obligatorio un número de registro de alquiler turístico?",
+      "r": "El Real Decreto 1312/2024 creó un registro único estatal, pero el Tribunal Supremo lo anuló (sentencia 620/2026, según el CGPJ). Se mantienen la ventanilla única digital y la transmisión de datos de plataformas. Consulta la norma autonómica de cada destino."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.villanovo.com/europe/spain/andalusia/marbella",
+      "nombre": "Villanovo – villas en Marbella"
+    },
+    {
+      "url": "https://www.villanovo.com/europe/spain/balearic-islands/ibiza",
+      "nombre": "Villanovo – villas en Ibiza"
+    },
+    {
+      "url": "https://www.villanovo.com/villa-rentals/europe/spain/ibiza/",
+      "nombre": "Villanovo – Ibiza (FAQ y rango)"
+    },
+    {
+      "url": "https://www.villanovo.com/europe/spain/balearic-islands/mallorca",
+      "nombre": "Villanovo – villas en Mallorca"
+    },
+    {
+      "url": "https://www.villanovo.com/europe/spain/balearic-islands/menorca",
+      "nombre": "Villanovo – villas en Menorca"
+    },
+    {
+      "url": "https://www.villanovo.com/europe/spain/catalonia/costa-brava",
+      "nombre": "Villanovo – villas en Costa Brava"
+    },
+    {
+      "url": "https://www.villanovo.com/villa-rentals/spain/andalusia/marbella/la-zagaleta/villa-palo-alto",
+      "nombre": "Villanovo – Villa Palo Alto"
+    },
+    {
+      "url": "https://www.ibizavillas.com/luxury-villas/",
+      "nombre": "Ibiza Villas – villas de lujo"
+    },
+    {
+      "url": "https://www.ibizavillas.com/terms-and-conditions/",
+      "nombre": "Ibiza Villas – condiciones"
+    },
+    {
+      "url": "https://www.oliverstravels.com/terms-and-conditions",
+      "nombre": "Oliver's Travels – condiciones"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-26931",
+      "nombre": "BOE – Real Decreto 1312/2024 (versión consolidada)"
+    },
+    {
+      "url": "https://www.poderjudicial.es/cgpj/en/Judiciary/Novelties/El-Tribunal-Supremo-anula-el-Registro-Unico-de-arrendamientos-de-corta-duracion-por-considerar-que-el-Estado-carece-de-competencia-para-su-creacion",
+      "nombre": "CGPJ – Tribunal Supremo anula el Registro Único"
+    }
+  ],
+  "huecos": [
+    "Sotogrande: no se obtuvo ninguna tarifa publicada en web oficial de agencia.",
+    "Dolce Vita Ibiza, Cullen Villas, Sovereign Luxury Villas y Mallorca Villas: web no accesible o sin tarifas.",
+    "Top Villas y Villa Plus: la portada abierta no muestra precios ni condiciones.",
+    "Marbella Villas: la web abierta solo muestra villas en venta, no alquiler.",
+    "Luxury Retreats/Airbnb Luxe: no se abrió ninguna ficha con precio.",
+    "Los listados de Villanovo no indican fechas, estancia mínima ni condiciones por villa; solo Villa Palo Alto se abrió en detalle.",
+    "Normativa autonómica de alquiler turístico (Andalucía, Baleares, Cataluña): no se abrió en web oficial de gobierno.",
+    "Fecha exacta de la sentencia 620/2026: el CGPJ indica 21/05/2026; otras fuentes no oficiales citan 19/05/2026. No se resolvió.",
+    "Oliver's Travels: sus tarifas de villas no se han podido contrastar con la página oficial y no figuran en la tabla."
+  ],
+  "relacionados": {
+    "rankings": [
+      "casas-de-lujo"
+    ],
+    "eventos": [],
+    "destinos": [
+      "costa-del-sol",
+      "ibiza",
+      "mallorca",
+      "girona"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}

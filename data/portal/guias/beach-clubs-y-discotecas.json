@@ -1,0 +1,383 @@
+{
+  "slug": "beach-clubs-y-discotecas",
+  "titulo": "Cómo reservar mesa en un beach club o discoteca de lujo en España y cuánto cuesta",
+  "resumen": "Los locales que publican cifras en su web oficial muestran camas desde 120 € (Playa Padre) y 300 (Ocean Club Marbella) hasta mesas VIP con consumo mínimo de 1.000 a 24.000 € (Blue Marlin Ibiza). Ushuaïa, Hï Ibiza u Opium Barcelona gestionan las mesas por formulario o correo y no publican la tarifa.",
+  "pasos": [
+    {
+      "titulo": "Elige local, fecha y tipo de espacio",
+      "texto": "Decide entre tumbona, cama grande, mesa de restaurante o mesa VIP. Cada tipo tiene precio, consumo mínimo y condiciones distintas. En Ocean Club el mínimo extra solo se aplica viernes, sábado y domingo."
+    },
+    {
+      "titulo": "Reserva por el canal oficial",
+      "texto": "Usa la web del local, su sistema de reservas o su correo. Blue Marlin pide completar la reserva en su web o escribir a su departamento VIP. Ocean Club vende las camas en bookings.oceanclub.es. Hï Ibiza y Ushuaïa gestionan las mesas por formulario."
+    },
+    {
+      "titulo": "Pide la tarifa y el plano antes de pagar",
+      "texto": "Hï Ibiza indica que el plano de mesas y la lista de precios llegan por correo. Ushuaïa envía la tarifa tras la solicitud. Comprueba qué incluye cada importe: cama, botellas, entrada, impuestos o servicio."
+    },
+    {
+      "titulo": "Paga el depósito dentro del plazo",
+      "texto": "Blue Marlin pide el 100% del consumo mínimo de las mesas VIP en 24 horas, y el enlace de pago caduca a las 24 horas. Ocean Club exige el pago completo para garantizar la cama. Beso Beach pide una tarjeta como garantía y solo cobra si no hay aviso con 12 horas."
+    },
+    {
+      "titulo": "Revisa cancelación, hora de llegada y vestimenta",
+      "texto": "Los plazos van de 24 horas (Hï Ibiza, Ushuaïa) a 96 horas (Blue Marlin), con 72 horas en Nikki Beach Mallorca y en el aviso para crédito de Ocean Club. Blue Marlin anula reserva y depósito si se llega tarde; las mesas VIP, antes de las 19:00. Varios locales excluyen chanclas y bañador."
+    },
+    {
+      "titulo": "Lleva documento y confirmación",
+      "texto": "Ushuaïa, Hï Ibiza y Teatro Kapital exigen mayoría de edad. Hï Ibiza admite solo documento original, no copia ni foto. Blue Marlin pide el código de la confirmación en la llegada."
+    }
+  ],
+  "precios": {
+    "nota": "Solo figuran importes escritos en documentos o páginas oficiales abiertos el 20-11-2026. Ushuaïa, Hï Ibiza, Nikki Beach (Ibiza, Marbella y Mallorca), Opium Barcelona y Teatro Kapital no publican importes de mesa en las páginas consultadas. Las tarifas corresponden a la temporada indicada y pueden cambiar. Ninguna fuente indica si los importes incluyen IVA; Playa Padre señala que el 10% de servicio no está incluido.",
+    "filas": [
+      {
+        "concepto": "Blue Marlin Ibiza – tumbona individual",
+        "importe": "30 de tarifa (10 alquiler + 20 servicios) + 70 de consumo mínimo",
+        "unidad": "por persona",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bluemarlinibiza.com/wp-content/uploads/sites/2/2025/12/Blue-Marlin-Ibiza-Terms-and-Conditions-2026-ENG.pdf",
+        "fuente": "Web oficial de Blue Marlin Ibiza (términos y condiciones 2026)"
+      },
+      {
+        "concepto": "Blue Marlin Ibiza – cama grande (4 invitados)",
+        "importe": "600 (100 de alquiler + 500 de consumo mínimo)",
+        "unidad": "por cama; capacidad 4 personas; de lunes a domingo",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bluemarlinibiza.com/wp-content/uploads/sites/2/2025/12/Blue-Marlin-Ibiza-Terms-and-Conditions-2026-ENG.pdf",
+        "fuente": "Web oficial de Blue Marlin Ibiza (términos y condiciones 2026)"
+      },
+      {
+        "concepto": "Blue Marlin Ibiza – depósito restaurante, 1 a 12 comensales",
+        "importe": "50",
+        "unidad": "por persona; se descuenta de la cuenta",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bluemarlinibiza.com/wp-content/uploads/sites/2/2025/12/Blue-Marlin-Ibiza-Terms-and-Conditions-2026-ENG.pdf",
+        "fuente": "Web oficial de Blue Marlin Ibiza (términos y condiciones 2026)"
+      },
+      {
+        "concepto": "Blue Marlin Ibiza – depósito restaurante, 13 o más comensales",
+        "importe": "100",
+        "unidad": "por persona; se descuenta de la cuenta",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bluemarlinibiza.com/wp-content/uploads/sites/2/2025/12/Blue-Marlin-Ibiza-Terms-and-Conditions-2026-ENG.pdf",
+        "fuente": "Web oficial de Blue Marlin Ibiza (términos y condiciones 2026)"
+      },
+      {
+        "concepto": "Blue Marlin Ibiza – depósito mesa lounge con servicio de botellas o menú",
+        "importe": "250",
+        "unidad": "por mesa",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bluemarlinibiza.com/wp-content/uploads/sites/2/2025/12/Blue-Marlin-Ibiza-Terms-and-Conditions-2026-ENG.pdf",
+        "fuente": "Web oficial de Blue Marlin Ibiza (términos y condiciones 2026)"
+      },
+      {
+        "concepto": "Blue Marlin Ibiza – mesas VIP, consumo mínimo",
+        "importe": "de 1.000 a 24.000 € según mesa y día (domingos: de 3.000 a 24.000 €)",
+        "unidad": "por mesa",
+        "temporada": "Temporada no indicada en la página",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.bluemarlinibiza.com/faq/",
+        "fuente": "Preguntas frecuentes de la web oficial de Blue Marlin Ibiza"
+      },
+      {
+        "concepto": "Ocean Club Marbella – Small Round / Frontline Square / 3rd Line Sun Lounge",
+        "importe": "300 (incluye 1 botella)",
+        "unidad": "por cama o tumbona; 3 personas",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+        "fuente": "PDF oficial de Ocean Club Marbella (Bed Packages Summer 2026); el PDF muestra la cifra sin símbolo de moneda"
+      },
+      {
+        "concepto": "Ocean Club Marbella – 2nd Line Round",
+        "importe": "600 (incluye 2 botellas)",
+        "unidad": "por cama; 8 personas",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+        "fuente": "PDF oficial de Ocean Club Marbella (Bed Packages Summer 2026); el PDF muestra la cifra sin símbolo de moneda"
+      },
+      {
+        "concepto": "Ocean Club Marbella – Deck",
+        "importe": "600 (incluye 2 botellas)",
+        "unidad": "por cama; 8 personas",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+        "fuente": "PDF oficial de Ocean Club Marbella (Bed Packages Summer 2026); el PDF muestra la cifra sin símbolo de moneda"
+      },
+      {
+        "concepto": "Ocean Club Marbella – VIP Pool",
+        "importe": "600 + 500 de consumo mínimo viernes, sábado, domingo y eventos especiales",
+        "unidad": "por cama; 8 personas",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+        "fuente": "PDF oficial de Ocean Club Marbella (Bed Packages Summer 2026); el PDF muestra la cifra sin símbolo de moneda"
+      },
+      {
+        "concepto": "Ocean Club Marbella – VIP Deck",
+        "importe": "1.100 + 500 de consumo mínimo viernes, sábado, domingo y eventos especiales",
+        "unidad": "por cama; 8 personas",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+        "fuente": "PDF oficial de Ocean Club Marbella (Bed Packages Summer 2026); el PDF muestra la cifra sin símbolo de moneda"
+      },
+      {
+        "concepto": "Ocean Club Marbella – VIP Square Plus Sofa",
+        "importe": "1.100 + 1.000 de consumo mínimo viernes, sábado y domingo y eventos especiales",
+        "unidad": "por cama; 8 personas",
+        "temporada": "Verano 2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+        "fuente": "PDF oficial de Ocean Club Marbella (Bed Packages Summer 2026); el PDF muestra la cifra sin símbolo de moneda"
+      },
+      {
+        "concepto": "Playa Padre (Estepona) – Standard Single Bed",
+        "importe": "120 € (50 € de cama + 70 € de consumo mínimo)",
+        "unidad": "por cama individual",
+        "temporada": "Temporada no indicada; imagen subida en mayo de 2025 según su URL",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://playapadre.com/wp-content/uploads/2025/05/OUR-RATES.jpg",
+        "fuente": "Imagen de tarifas en la web oficial de Playa Padre; indica que el 10% de servicio no está incluido"
+      },
+      {
+        "concepto": "Playa Padre (Estepona) – VIP Bed",
+        "importe": "650 € (250 € de cama + 400 € de consumo mínimo)",
+        "unidad": "por cama; máximo 2 personas",
+        "temporada": "Temporada no indicada; imagen subida en mayo de 2025 según su URL",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://playapadre.com/wp-content/uploads/2025/05/OUR-RATES.jpg",
+        "fuente": "Imagen de tarifas en la web oficial de Playa Padre; indica que el 10% de servicio no está incluido"
+      },
+      {
+        "concepto": "Beso Beach Ibiza – consumo mínimo de restaurante",
+        "importe": "75 (el PDF no muestra el símbolo de moneda); servicio opcional del 10% incluido en la cuenta",
+        "unidad": "por persona",
+        "temporada": "Temporada no indicada; PDF subido en marzo de 2024 según su URL",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://besobeach.com/wp-content/uploads/2024/03/POLITICA-DE-RESERVA-FAQS-ALL.pdf",
+        "fuente": "PDF de política de reservas de la web oficial de Beso Beach"
+      },
+      {
+        "concepto": "Beso Beach Estepona – consumo mínimo de restaurante",
+        "importe": "75 (el PDF no muestra el símbolo de moneda); servicio opcional del 10% incluido en la cuenta",
+        "unidad": "por persona",
+        "temporada": "Temporada no indicada; PDF subido en marzo de 2024 según su URL",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://besobeach.com/wp-content/uploads/2024/03/POLITICA-DE-RESERVA-FAQS-ALL.pdf",
+        "fuente": "PDF de política de reservas de la web oficial de Beso Beach"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Blue Marlin Ibiza",
+      "como": "Web oficial (bluemarlinibiza.com) o correo vip@bluemarlinibiza.com para mesas VIP; sin entrada de pago.",
+      "antelacion": "Depósito en 24 horas desde la confirmación; el enlace de pago caduca a las 24 horas.",
+      "politica": "Cancelación: reembolso completo hasta 4 días (96 h) antes; con 10 camas o más y grupos de 40 o más, un mes antes. Llegada: tumbonas 11:00-14:00, camas 11:00-15:00, mesas VIP antes de las 19:00; si no, se pierde la reserva y el depósito. Vestimenta: smart casual, sin chanclas. Edad: sin mínimo formal; niños hasta las 20:00 según la web."
+    },
+    {
+      "concepto": "Ocean Club Marbella",
+      "como": "Camas online en bookings.oceanclub.es, en recepción o por transferencia; reservations@oceanclub.es.",
+      "antelacion": "Sin plazo mínimo indicado; la reserva solo está garantizada con el pago completo. Transferencia recibida 1 semana antes.",
+      "politica": "Camas no reembolsables; crédito válido en la temporada si se avisa 72 horas antes (términos web). Reserva prepagada garantizada hasta las 16:00. Vestimenta: sin disfraces, purpurina ni accesorios de despedida; la ropa deportiva puede impedir la entrada. Edad: mayores de 18 años en las fiestas de apertura y cierre."
+    },
+    {
+      "concepto": "Nikki Beach Ibiza",
+      "como": "Web oficial; política en nikkibeach.com/ibiza/reservation-door-policy.",
+      "antelacion": "Aviso por escrito con 48 horas (piscina y playa) o 24 horas (restaurante).",
+      "politica": "Piscina y playa: crédito válido en la temporada 2026 si se avisa a tiempo; sin reembolsos. Restaurante: penalización de 50 € por persona más 5% de comisión por no-show. Vestimenta: beach chic, sin sudaderas ni ropa deportiva. Edad: piscina, tumbonas y cabañas VIP solo para mayores de 18 años. Reapertura el 22-04-2027."
+    },
+    {
+      "concepto": "Nikki Beach Marbella",
+      "como": "SevenRooms, reservations.marbella@nikkibeach.com o +34 952 836 239.",
+      "antelacion": "Aviso por escrito con 24 horas.",
+      "politica": "Crédito para la temporada si se avisa a tiempo; sin crédito por no-show. Edad: política 21+ para la piscina. Vestimenta: beach chic, sin ropa deportiva. Reapertura el 25-03-2027."
+    },
+    {
+      "concepto": "Nikki Beach Mallorca",
+      "como": "SevenRooms o formulario de la web; política en nikkibeach.com/mallorca/reservation-door-policy.",
+      "antelacion": "Aviso por escrito con 72 horas.",
+      "politica": "Dentro de 72 horas o por no-show pueden cobrar el paquete de cama completo más una comisión no reembolsable del 5%. Vestimenta: beach chic. Edad: en eventos puede aplicarse 21+; menores de 18 años no entran en la piscina."
+    },
+    {
+      "concepto": "Ushuaïa Ibiza",
+      "como": "Formulario de mesas VIP en la web oficial o teléfono VIP +34 971 12 94 17.",
+      "antelacion": "No indicada.",
+      "politica": "Reembolso hasta 24 horas antes del evento; 72 horas en aperturas, cierres y eventos especiales. La mesa incluye entrada, aparcamiento, impuestos y consumición hasta el valor reservado; el crédito no es transferible. Edad: 18 años o más. Vestimenta: sin chanclas, camisetas sin mangas ni bañador."
+    },
+    {
+      "concepto": "Hï Ibiza",
+      "como": "Formulario de mesas VIP en la web oficial; tarifa y plano por correo. Línea VIP +34 971 129 418.",
+      "antelacion": "Las solicitudes del mismo día se atienden antes; se recomienda llegar antes de las 01:30.",
+      "politica": "Cambio de evento o reembolso hasta 24 horas antes; 72 horas en aperturas y cierres. Edad: 18 años o más, con documento original. Vestimenta VIP: sin chanclas, camisetas sin mangas ni bañador; los hombres, pantalón largo."
+    },
+    {
+      "concepto": "Opium Barcelona",
+      "como": "reservas@opiumbarcelona.com o +34 655 576 998; entradas en su calendario oficial.",
+      "antelacion": "No indicada.",
+      "politica": "Vestimenta: elegante, sin ropa deportiva, chanclas ni sandalias de playa; el portero puede denegar la entrada. Las páginas consultadas no indican edad, depósito ni cancelación."
+    },
+    {
+      "concepto": "Teatro Kapital (Madrid)",
+      "como": "WhatsApp +34 626 82 85 34 o teléfono 914 202 906 para mesas; entradas en ticketclub.es.",
+      "antelacion": "No indicada.",
+      "politica": "Prohibida la entrada a menores de 18 años. Vestimenta: sin bañador, ropa deportiva ni prendas sucias o inadecuadas para la categoría del local. No se permite entrar con botellas ni comida."
+    },
+    {
+      "concepto": "Beso Beach (Ibiza y Estepona)",
+      "como": "Reserva web con tarjeta como garantía.",
+      "antelacion": "Aviso de 12 horas para evitar el cobro; mesa guardada 15 minutos.",
+      "politica": "Dos turnos de comida en Formentera e Ibiza. Menores de 18 años solo en el primer turno y acompañados; segundo turno no permitido a menores de 25 años. Tumbonas reservables en la web de 11:00 a 13:30 (Ibiza y Estepona). No se reserva solo para consumiciones."
+    }
+  ],
+  "consejos": [
+    "Pide la tarifa por escrito y comprueba la temporada del documento.",
+    "Distingue el precio de la cama del consumo mínimo: son importes separados en Blue Marlin, Ocean Club y Playa Padre.",
+    "En Blue Marlin, las cuentas de restaurante y lounge no cuentan para el mínimo de la playa.",
+    "Reserva con margen en fin de semana: Ocean Club añade un mínimo extra viernes, sábado y domingo en las camas VIP.",
+    "Si viajas con niños, comprueba la edad por zona: en Nikki Beach la piscina es solo para adultos."
+  ],
+  "errores_comunes": [
+    "Llegar fuera del horario de la reserva: Blue Marlin anula reserva y depósito.",
+    "Suponer que el mínimo se paga igual en todos los locales: en Blue Marlin se descuenta de la cuenta y en Ocean Club se paga en recepción al llegar.",
+    "Cancelar fuera de plazo: los plazos varían entre 24 y 96 horas según el local.",
+    "Olvidar el documento original en un club de mayores de 18 años.",
+    "Comparar precios sin mirar la capacidad: la cama de Ocean Club es para 3 u 8 personas, la de Blue Marlin para 4 y la VIP de Playa Padre para 2."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta una cama grande en Blue Marlin Ibiza?",
+      "r": "600 por cama para 4 personas en 2026: 100 de alquiler más 500 de consumo mínimo, de lunes a domingo. Fuente: términos y condiciones 2026 de Blue Marlin Ibiza."
+    },
+    {
+      "p": "¿Qué consumo mínimo tienen las mesas VIP de Blue Marlin?",
+      "r": "Entre 1.000 y 24.000 € según mesa y día; los domingos, de 3.000 a 24.000 €. El depósito es el 100% del mínimo, en 24 horas. Fuente: preguntas frecuentes de Blue Marlin Ibiza."
+    },
+    {
+      "p": "¿Cuánto cuesta una cama en Ocean Club Marbella?",
+      "r": "De 300 (3 personas) a 1.100 (8 personas) según el tipo de cama en verano 2026, más 500 o 1.000 de mínimo en fin de semana en las camas VIP. Fuente: PDF Bed Packages 2026 de Ocean Club."
+    },
+    {
+      "p": "¿Cuánto cuesta una cama en Playa Padre?",
+      "r": "120 € la cama individual (50 € de cama más 70 € de mínimo) y 650 € la cama VIP para 2 personas (250 € más 400 € de mínimo); el 10% de servicio no está incluido. Fuente: tarifas oficiales de Playa Padre, sin temporada indicada."
+    },
+    {
+      "p": "¿Se puede cancelar una mesa VIP en Ushuaïa o Hï Ibiza?",
+      "r": "Sí, hasta 24 horas antes del evento; 72 horas en aperturas, cierres y eventos especiales. Fuente: preguntas frecuentes de Ushuaïa Ibiza y de Hï Ibiza."
+    },
+    {
+      "p": "¿Qué edad mínima exigen estos locales?",
+      "r": "Ushuaïa, Hï Ibiza y Teatro Kapital exigen 18 años. Nikki Beach Marbella aplica 21+ en la piscina y Nikki Beach Ibiza limita la piscina a mayores de 18 años. Fuente: webs oficiales de cada local."
+    },
+    {
+      "p": "¿Los importes incluyen IVA?",
+      "r": "Los documentos oficiales consultados no lo indican; Playa Padre señala que el 10% de servicio no está incluido. Confirma con el local antes de pagar."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.bluemarlinibiza.com/wp-content/uploads/sites/2/2025/12/Blue-Marlin-Ibiza-Terms-and-Conditions-2026-ENG.pdf",
+      "nombre": "Blue Marlin Ibiza – términos y condiciones 2026"
+    },
+    {
+      "url": "https://www.bluemarlinibiza.com/faq/",
+      "nombre": "Blue Marlin Ibiza – preguntas frecuentes"
+    },
+    {
+      "url": "https://oceanclub.es/app/uploads/2025/10/OC-BED-PACKAGES-2026-1-1.pdf",
+      "nombre": "Ocean Club Marbella – Bed Packages Summer 2026"
+    },
+    {
+      "url": "https://oceanclub.es/terms-conditions/",
+      "nombre": "Ocean Club Marbella – términos y condiciones"
+    },
+    {
+      "url": "https://bookings.oceanclub.es/",
+      "nombre": "Ocean Club Marbella – reservas 2026"
+    },
+    {
+      "url": "https://playapadre.com/wp-content/uploads/2025/05/OUR-RATES.jpg",
+      "nombre": "Playa Padre – tarifas"
+    },
+    {
+      "url": "https://besobeach.com/wp-content/uploads/2024/03/POLITICA-DE-RESERVA-FAQS-ALL.pdf",
+      "nombre": "Beso Beach – política de reserva y preguntas frecuentes"
+    },
+    {
+      "url": "https://nikkibeach.com/ibiza/reservation-door-policy/",
+      "nombre": "Nikki Beach Ibiza – política de reserva y puerta"
+    },
+    {
+      "url": "https://nikkibeach.com/marbella/reservation-door-policy/",
+      "nombre": "Nikki Beach Marbella – política de reserva y puerta"
+    },
+    {
+      "url": "https://nikkibeach.com/mallorca/reservation-door-policy/",
+      "nombre": "Nikki Beach Mallorca – política de reserva y puerta"
+    },
+    {
+      "url": "https://www.theushuaiaexperience.com/club/en/faq",
+      "nombre": "Ushuaïa Ibiza – preguntas frecuentes"
+    },
+    {
+      "url": "https://www.theushuaiaexperience.com/club/en/vip-tables",
+      "nombre": "Ushuaïa Ibiza – mesas VIP"
+    },
+    {
+      "url": "https://www.hiibiza.com/contact-faq",
+      "nombre": "Hï Ibiza – preguntas frecuentes y reservas VIP"
+    },
+    {
+      "url": "https://www.opiumbarcelona.com/en/dress-code-opium/",
+      "nombre": "Opium Barcelona – código de vestimenta"
+    },
+    {
+      "url": "https://www.opiumbarcelona.com/en/the-vip/",
+      "nombre": "Opium Barcelona – zona VIP"
+    },
+    {
+      "url": "https://www.teatrokapital.com/",
+      "nombre": "Teatro Kapital – web oficial"
+    }
+  ],
+  "huecos": [
+    "Ushuaïa Ibiza: la web oficial no publica importes de mesa VIP ni mínimos; la tarifa se envía por correo.",
+    "Hï Ibiza: sin importes ni mínimos publicados; tarifa y plano por correo.",
+    "Nikki Beach Ibiza, Marbella y Mallorca: las políticas oficiales no incluyen precios ni consumo mínimo; la reserva se hace en SevenRooms o por correo.",
+    "Opium Barcelona: sin precios, depósito, edad ni cancelación en las páginas abiertas; la carta VIP está en un sitio externo no abierto.",
+    "Teatro Kapital: sin precios de entrada ni de mesa en la web oficial; entradas en ticketclub.es, no abierto.",
+    "Ocean Club Marbella: el PDF de la fiesta de cierre (3-10-2026) no se pudo leer con fiabilidad y no se incluye; el PDF de camas no muestra símbolo de moneda.",
+    "Trocadero Arena (Marbella): las páginas oficiales abiertas no muestran precios; las tarifas de camas y hamacas están en menús o PDF no abiertos.",
+    "Purobeach (Palma, Illetas): no se localizó una página oficial con importes; la FAQ solo indica un mínimo por comensal sin cifra. Puro Beach Marbella/Estepona: web oficial no localizada.",
+    "Destino Ibiza, Experimental Beach, Beachouse, Sala Beach, La Cabane, Anima Beach, Tropicana, Social Club, Pacha Barcelona, Mondo Disko, Gigante y Opium Madrid: no se pudo abrir una web oficial con cifras (dominio inaccesible, en venta, error del servidor o sin precios).",
+    "Playa Padre y Beso Beach no indican la temporada; el documento de Beso Beach parece de 2024 por su URL y su cifra se muestra sin símbolo de moneda.",
+    "IVA: ninguna fuente oficial consultada lo especifica."
+  ],
+  "relacionados": {
+    "rankings": [
+      "vida-nocturna"
+    ],
+    "eventos": [
+      "ibiza-opening-parties"
+    ],
+    "destinos": [
+      "ibiza",
+      "costa-del-sol",
+      "mallorca",
+      "barcelona",
+      "madrid"
+    ]
+  },
+  "publicar": false,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}
