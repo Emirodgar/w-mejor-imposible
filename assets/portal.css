@@ -523,7 +523,7 @@ table.cal tbody th { font-weight: 500; }
 .guia-pasos h3 { margin: 0 0 4px; font-family: var(--serif); font-weight: 500; font-size: 24px; line-height: 1.25; }
 .guia-pasos p { margin: 0; }
 .guia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
-.guia-card { padding: 20px 22px; border: 1px solid var(--line); border-radius: 10px; background: #FBF9F5; }
+.guia-card { min-width: 0; overflow-wrap: anywhere; padding: 20px 22px; border: 1px solid var(--line); border-radius: 10px; background: #FBF9F5; }
 .guia-card h3 { margin: 0 0 10px; font-family: var(--serif); font-weight: 500; font-size: 24px; line-height: 1.2; }
 .guia-dl { margin: 0; }
 .guia-dl dt { margin-top: 10px; font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
