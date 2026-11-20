@@ -1,0 +1,508 @@
+{
+  "slug": "museos-visitas-privadas",
+  "titulo": "Cómo reservar una visita privada a museos y monumentos en España y cuánto cuesta",
+  "resumen": "Una visita privada a un monumento de primer nivel en España se paga casi siempre por grupo, no por persona. Según las webs oficiales consultadas el 20-11-2026, el acceso temprano parte de 40 € por persona (Reina Sofía, visita previa a Guernica) y la apertura exclusiva de los Palacios Nazaríes de la Alhambra cuesta 5.855 € más 12 € por persona.",
+  "pasos": [
+    {
+      "titulo": "Decide qué tipo de privacidad quieres",
+      "texto": "Hay tres formatos. Guía exclusivo en horario normal. Visita antes de abrir (Reina Sofía, Casa Batlló). Apertura con el monumento cerrado (Alhambra, Real Alcázar, Palacio Real). Cuanto más cerrado el recinto, más caro."
+    },
+    {
+      "titulo": "Fija tamaño de grupo y fecha",
+      "texto": "El precio depende del grupo. Alhambra permite 30 como máximo. Reina Sofía admite 25 en visita privada. Real Alcázar fija una cuota hasta 50 personas y admite 150 como máximo."
+    },
+    {
+      "titulo": "Escribe al departamento correcto",
+      "texto": "Las visitas a medida se piden por email o formulario, no en la web de venta. Alhambra: visitasespeciales.pag@juntadeandalucia.es. Reina Sofía: alquiler.espacios@museoreinasofia.es. Thyssen: eventos corporativos. Casa Batlló: privaterooms@casabatllo.cat para alquiler de espacios."
+    },
+    {
+      "titulo": "Respeta los plazos de antelación",
+      "texto": "Publicados: 72 horas en Reina Sofía (visita previa a Guernica), 15 días en Sagrada Família y Dalí, 1 mes en el Real Alcázar."
+    },
+    {
+      "titulo": "Pide presupuesto con todo desglosado",
+      "texto": "Pregunta por cuota fija, entrada por persona, guía, controladores de sala e IVA. La Alhambra indica que su precio fijo se incrementa con IVA. Reina Sofía exige guía externo y Miró exige controladores."
+    },
+    {
+      "titulo": "Paga y confirma por escrito",
+      "texto": "Algunos recintos fijan el pago por adelantado: Real Alcázar 10 días antes por transferencia, Sagrada Família 15 días antes, Dalí 15 días antes con tarjeta. Guarda por escrito horario, itinerario, nº de personas y política de cancelación."
+    }
+  ],
+  "precios": {
+    "nota": "Importes tomados de las webs oficiales de cada sitio o de su sistema oficial de venta, consultados el 20-11-2026. Cada fila indica su URL. Si la web no dice si incluye IVA, no se afirma. Lo que no aparece publicado figura en huecos.",
+    "filas": [
+      {
+        "concepto": "Alhambra y Generalife – visita exclusiva fuera de horario, Palacios Nazaríes (apertura del espacio)",
+        "importe": "5.855 €",
+        "unidad": "por apertura del espacio, máx. 30 personas; más 12 € de entrada por persona; menores de 12 gratis",
+        "temporada": "Fuera del horario público; tarifa de la orden de 17-07-2025",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.alhambra-patronato.es/visitar/prepara-tu-visita",
+        "fuente": "Web oficial del Patronato de la Alhambra y Generalife (Visita exclusiva)"
+      },
+      {
+        "concepto": "Alhambra y Generalife – visita exclusiva, Palacio del Generalife y Jardines (apertura del espacio)",
+        "importe": "4.684 €",
+        "unidad": "por apertura del espacio, máx. 30 personas; más 8 € de entrada por persona",
+        "temporada": "Fuera del horario público",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.alhambra-patronato.es/visitar/prepara-tu-visita",
+        "fuente": "Web oficial del Patronato de la Alhambra y Generalife (Visita exclusiva)"
+      },
+      {
+        "concepto": "Alhambra y Generalife – visita exclusiva, Palacios Nazaríes + Generalife y Jardines (apertura)",
+        "importe": "8.197 €",
+        "unidad": "por apertura de ambos espacios, máx. 30 personas; más 19 € de entrada por persona",
+        "temporada": "Fuera del horario público",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.alhambra-patronato.es/visitar/prepara-tu-visita",
+        "fuente": "Web oficial del Patronato de la Alhambra y Generalife (Visita exclusiva)"
+      },
+      {
+        "concepto": "Alhambra y Generalife – entrada general diurna (referencia)",
+        "importe": "22,27 €",
+        "unidad": "por persona; la web añade comisión de servicio en compras por web",
+        "temporada": "Visita diurna general",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.alhambra-patronato.es/visitar/horarios-y-tarifas",
+        "fuente": "Web oficial del Patronato de la Alhambra y Generalife"
+      },
+      {
+        "concepto": "Museo Reina Sofía – visita previa a Guernica, 9:00-10:00",
+        "importe": "40 €",
+        "unidad": "por persona, sin guía oficial; reserva mínima 400 €; máx. 30 personas; visita no exclusiva",
+        "temporada": "Viernes, sábados y domingos, antes de abrir al público",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://museoreinasofia.es/visita/visita-grupo/",
+        "fuente": "Web oficial del Museo Reina Sofía (visita en grupo)"
+      },
+      {
+        "concepto": "Museo Reina Sofía – visita en grupo con entrada general (referencia)",
+        "importe": "12 €",
+        "unidad": "por persona; grupo de 8 o más; radioguías obligatorias a 1,50 € por persona en grupos de más de 12 años con explicaciones en sala",
+        "temporada": "Horario ordinario; reserva online con 24 horas de antelación",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://museoreinasofia.es/visita/visita-grupo/",
+        "fuente": "Web oficial del Museo Reina Sofía (visita en grupo)"
+      },
+      {
+        "concepto": "Real Alcázar de Sevilla – visita nocturna o fuera de horario, cuota fija (hasta 50 personas)",
+        "importe": "800 €",
+        "unidad": "por grupo hasta 50 personas; 1.000 € de 50 a 100; 1.200 € de 100 a 200; 1.500 € más de 200; visita de máx. 1 hora; aforo máx. 150",
+        "temporada": "Fuera del horario ordinario",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://alcazarsevilla.org/prepara-la-visita/",
+        "fuente": "Web oficial del Real Alcázar de Sevilla (Prepara la visita, Tarifa Segunda)"
+      },
+      {
+        "concepto": "Real Alcázar de Sevilla – visita nocturna o fuera de horario, entrada por visitante",
+        "importe": "14,50 €",
+        "unidad": "por visitante, además de la cuota fija",
+        "temporada": "Fuera del horario ordinario",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://alcazarsevilla.org/prepara-la-visita/",
+        "fuente": "Web oficial del Real Alcázar de Sevilla"
+      },
+      {
+        "concepto": "Real Alcázar de Sevilla – entrada general (referencia)",
+        "importe": "15,50 €",
+        "unidad": "por persona",
+        "temporada": "Según la web a 20-11-2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://alcazarsevilla.org/prepara-la-visita/",
+        "fuente": "Web oficial del Real Alcázar de Sevilla"
+      },
+      {
+        "concepto": "Palacio Real de Madrid – visita especial con monumento cerrado",
+        "importe": "Mínimo 50 € por persona y 5.000 € de derecho de apertura",
+        "unidad": "precio sujeto a presupuesto previo según espacios visitados; puede variar si se combina con cesión de espacios",
+        "temporada": "Resolución de 28-09-2023 (BOE 19-10-2023)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.patrimonionacional.es/sites/default/files/documents/20230928%20Acuerdo%20de%20precios%20p%C3%BAblicos.pdf",
+        "fuente": "Acuerdo de precios públicos de Patrimonio Nacional (BOE-A-2023-21556), en la web de Patrimonio Nacional"
+      },
+      {
+        "concepto": "Palacio Real de Madrid – visita especial con monumento abierto",
+        "importe": "Mínimo 50 € por persona y 250 € por visita",
+        "unidad": "sujeto a presupuesto previo según espacios visitados",
+        "temporada": "Resolución de 28-09-2023 (BOE 19-10-2023)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.patrimonionacional.es/sites/default/files/documents/20230928%20Acuerdo%20de%20precios%20p%C3%BAblicos.pdf",
+        "fuente": "Acuerdo de precios públicos de Patrimonio Nacional (BOE-A-2023-21556)"
+      },
+      {
+        "concepto": "Palacio Real de Madrid – visita guiada con guía de Patrimonio Nacional (referencia)",
+        "importe": "26 €",
+        "unidad": "por persona (tarifa estándar); español, inglés o italiano; más 0,77 € de gastos de reserva por entrada en la web de venta",
+        "temporada": "Lunes a sábado 10-18 h en invierno",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid",
+        "fuente": "Web oficial de entradas de Patrimonio Nacional"
+      },
+      {
+        "concepto": "Casa Batlló – Morning Visit Be the First (acceso temprano, 1 h 15 min)",
+        "importe": "45 €",
+        "unidad": "por persona; solo online; incluye azotea y audioguía en 15 idiomas; niños de 0 a 12 gratis",
+        "temporada": "Entrada de 8:30 a 8:45",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.casabatllo.es/en/online-tickets/",
+        "fuente": "Web oficial de Casa Batlló"
+      },
+      {
+        "concepto": "Casa Batlló – visita nocturna A Winter Night (1 h 15 min)",
+        "importe": "Desde 39 €",
+        "unidad": "por persona; niños de 0 a 12 gratis",
+        "temporada": "Hasta el 10 de enero; entrada de 18:30 a 20:15",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.casabatllo.es/en/online-tickets/",
+        "fuente": "Web oficial de Casa Batlló"
+      },
+      {
+        "concepto": "Casa Batlló – visita general (referencia)",
+        "importe": "Desde 29 €",
+        "unidad": "por persona; audioguía en 15 idiomas",
+        "temporada": "Entrada de 9:00 a 18:15",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.casabatllo.es/en/online-tickets/",
+        "fuente": "Web oficial de Casa Batlló"
+      },
+      {
+        "concepto": "Park Güell – visita guiada privada (50 min)",
+        "importe": "40 € más entrada",
+        "unidad": "por persona; grupo de 2 a 6; catalán, español, inglés y francés; la web marca el botón como no disponible",
+        "temporada": "Reserva hasta 48 horas antes",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://parkguell.barcelona/en/planning-your-visit/guided-tours",
+        "fuente": "Web oficial del Park Güell"
+      },
+      {
+        "concepto": "Park Güell – Plus Tour con zona restringida (90 min)",
+        "importe": "29 € más entrada",
+        "unidad": "por persona; máx. 15; inglés y español",
+        "temporada": "Reserva hasta 90 días antes",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://parkguell.barcelona/en/planning-your-visit/guided-tours",
+        "fuente": "Web oficial del Park Güell"
+      },
+      {
+        "concepto": "Park Güell – visita guiada estándar (50 min)",
+        "importe": "17 € más entrada",
+        "unidad": "por persona; máx. 25",
+        "temporada": "Reserva hasta 90 días antes",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://parkguell.barcelona/en/planning-your-visit/guided-tours",
+        "fuente": "Web oficial del Park Güell"
+      },
+      {
+        "concepto": "Park Güell – entrada general (referencia)",
+        "importe": "18 €",
+        "unidad": "por persona; la web indica que los precios incluyen IVA (21%)",
+        "temporada": "Turistas de 9:30 a 17:30",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://parkguell.barcelona/en/planning-your-visit/prices-and-times",
+        "fuente": "Web oficial del Park Güell"
+      },
+      {
+        "concepto": "Sagrada Família – visita guiada para grupos (50 min)",
+        "importe": "30 €",
+        "unidad": "por persona; grupo de 10 a 30; guía de la Fundación incluido; siete idiomas según disponibilidad",
+        "temporada": "Reserva con 15 días de antelación",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sagradafamilia.org/es/visita-guiada-grupos",
+        "fuente": "Web oficial de la Sagrada Família"
+      },
+      {
+        "concepto": "Sagrada Família – entrada individual con audioguía y con visita guiada (referencia)",
+        "importe": "26 € y 30 €",
+        "unidad": "por persona; con torres 36 € y 40 €",
+        "temporada": "Tarifa base sin descuentos",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sagradafamilia.org/en/prices",
+        "fuente": "Web oficial de la Sagrada Família"
+      },
+      {
+        "concepto": "Mezquita-Catedral de Córdoba – visita nocturna El Alma de Córdoba (1 h)",
+        "importe": "25 €",
+        "unidad": "por persona; reducida 18 €; máx. 80 personas por pase; nueve idiomas",
+        "temporada": "Dos pases cada noche; noviembre y diciembre a las 20:00 y 21:00",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://mezquita-catedraldecordoba.es/en/organiza-la-visita/entradas-y-horarios/el-alma-de-cordoba/",
+        "fuente": "Web oficial de la Mezquita-Catedral de Córdoba"
+      },
+      {
+        "concepto": "Mezquita-Catedral de Córdoba – entrada general (referencia)",
+        "importe": "15 €",
+        "unidad": "por persona",
+        "temporada": "Según la web a 20-11-2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://mezquita-catedraldecordoba.es/en/organiza-la-visita/entradas-y-horarios/",
+        "fuente": "Web oficial de la Mezquita-Catedral de Córdoba"
+      },
+      {
+        "concepto": "Museo Picasso Málaga – visita guiada de grupo con educador (50 min)",
+        "importe": "70 € en español; 85 € en inglés o francés",
+        "unidad": "por grupo de hasta 20 personas, más entradas",
+        "temporada": "Con reserva por email",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.museopicassomalaga.org/es/visitas-guiadas",
+        "fuente": "Web oficial del Museo Picasso Málaga"
+      },
+      {
+        "concepto": "Museo Picasso Málaga – entrada general (referencia)",
+        "importe": "13 €",
+        "unidad": "por persona; reducida 11 €",
+        "temporada": "Según la web a 20-11-2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.museopicassomalaga.org/es/visita",
+        "fuente": "Web oficial del Museo Picasso Málaga"
+      },
+      {
+        "concepto": "Teatro-Museo Dalí (Figueres) – servicio de guía 2026 (1 h 15 min)",
+        "importe": "140 €",
+        "unidad": "por visita guiada de hasta 25 personas, más 14 € de entrada por persona de 8 años o más; sin mínimo de personas",
+        "temporada": "Reserva con 15 días de antelación; guía solo pagable con tarjeta",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.salvador-dali.org/es/educacion-y-actividades/actividad/servei-de-guia-museu-dali/",
+        "fuente": "Web oficial de la Fundació Gala-Salvador Dalí"
+      },
+      {
+        "concepto": "Teatro-Museo Dalí – entrada general (referencia)",
+        "importe": "Desde 18,50 €",
+        "unidad": "por persona; grupos de 25 o más 14 € online o 16 € en taquilla",
+        "temporada": "Según la web a 20-11-2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.salvador-dali.org/es/visita/teatro-museo-dali/",
+        "fuente": "Web oficial de la Fundació Gala-Salvador Dalí"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Alhambra y Generalife",
+      "como": "Solicitud de visita exclusiva por formulario PDF enviado a visitasespeciales.pag@juntadeandalucia.es, vía el Departamento de Visita Pública.",
+      "antelacion": "No publicada para la visita exclusiva.",
+      "politica": "No publicada. La orden de precios remite a la normativa general de devolución de precios públicos."
+    },
+    {
+      "concepto": "Museo Reina Sofía",
+      "como": "Visita previa a Guernica: reserva online. Visita privada: formulario o email a alquiler.espacios@museoreinasofia.es.",
+      "antelacion": "72 horas para la visita previa a Guernica.",
+      "politica": "No publicada."
+    },
+    {
+      "concepto": "Real Alcázar de Sevilla",
+      "como": "Solicitud al Patronato; pago por transferencia con justificante.",
+      "antelacion": "Solicitud con 1 mes; pago al menos 10 días antes.",
+      "politica": "Los grupos pagan por adelantado y no se reembolsa salvo que el Patronato no preste el servicio."
+    },
+    {
+      "concepto": "Palacio Real de Madrid",
+      "como": "Visita especial sujeta a presupuesto previo según el acuerdo de precios de Patrimonio Nacional.",
+      "antelacion": "No publicada.",
+      "politica": "No publicada."
+    },
+    {
+      "concepto": "Casa Batlló",
+      "como": "Guided Visit + Private Room: compra online. Alquiler de salas: privaterooms@casabatllo.cat.",
+      "antelacion": "No publicada.",
+      "politica": "Cancelación gratuita solo con billete Platinum (visita general y nocturna) o Gold (Magical Nights)."
+    },
+    {
+      "concepto": "Park Güell",
+      "como": "Compra online; para grupos de más de 7 personas o idiomas distintos, email a parkguell@bsmsa.cat.",
+      "antelacion": "Hasta 90 días antes; la privada hasta 48 horas antes (botón no disponible el día de consulta).",
+      "politica": "No publicada."
+    },
+    {
+      "concepto": "Sagrada Família",
+      "como": "Visita de grupo por email a reserves@ext.sagradafamilia.org.",
+      "antelacion": "Mínimo 15 días; pago 15 días antes.",
+      "politica": "No publicada en esa página."
+    },
+    {
+      "concepto": "Mezquita-Catedral de Córdoba",
+      "como": "Visita nocturna: compra en la web oficial de venta de entradas.",
+      "antelacion": "No publicada.",
+      "politica": "No publicada."
+    },
+    {
+      "concepto": "Museo Picasso Málaga",
+      "como": "Guía con educador y visita privada: email a reservas@mpicassom.org.",
+      "antelacion": "No publicada.",
+      "politica": "No publicada."
+    },
+    {
+      "concepto": "Teatro-Museo Dalí",
+      "como": "Servicio de guía: reserva a reserves@fundaciodali.org o teléfono +34 972 677 500.",
+      "antelacion": "Mínimo 15 días.",
+      "politica": "La guía es un depósito pagado con tarjeta 15 días antes; no se publica política de cancelación."
+    },
+    {
+      "concepto": "Fundación Joan Miró",
+      "como": "Contacto del área de eventos de la Fundació por email o teléfono +34 678 832 322.",
+      "antelacion": "No publicada.",
+      "politica": "No publicada."
+    }
+  ],
+  "consejos": [
+    "Pide siempre el itinerario por escrito. La Alhambra puede cambiarlo por conservación o seguridad.",
+    "Comprueba la norma de guías: Reina Sofía exige guía externo en visita privada; la Sagrada Família solo admite su guía de la Fundación en grupos.",
+    "La visita antes de abrir es la opción privada más barata en museos: Reina Sofía, 40 € por persona. En Barcelona, Casa Batlló Be the First cuesta 45 € por persona sin contratar grupo."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que el precio es por persona. En Alhambra, Real Alcázar y Dalí hay una cuota por grupo.",
+    "Olvidar la entrada. La Alhambra suma 12 € por persona a la apertura, Dalí suma 14 € y Park Güell suma la entrada a su visita guiada.",
+    "Fiarse de intermediarios como si fueran el sitio oficial. Algunos dominios con nombre de monumento son agencias; usa la web del Patronato o del museo.",
+    "Reservar tarde. El Real Alcázar exige un mes para visitas especiales.",
+    "Usar precios antiguos. La web en inglés de la Alhambra mostraba cifras de visita exclusiva distintas (3.500 €) de las vigentes en español (5.855 €)."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto cuesta una visita privada a la Alhambra fuera de horario?",
+      "r": "Según el Patronato de la Alhambra: 5.855 € por abrir los Palacios Nazaríes, 4.684 € el Generalife y Jardines, 8.197 € ambos, más 12 €, 8 € o 19 € por persona. Máximo 30 personas. El BOJA indica que se suma IVA."
+    },
+    {
+      "p": "¿Se puede ver el Guernica antes de que abra el Reina Sofía?",
+      "r": "Sí. El Museo Reina Sofía ofrece una visita previa a Guernica de 9:00 a 10:00, de viernes a domingo, a 40 € por persona sin guía, con mínimo de 400 € y máximo 30 personas. Se reserva online con 72 horas de antelación."
+    },
+    {
+      "p": "¿Se puede visitar el Real Alcázar de Sevilla fuera de horario?",
+      "r": "Sí. El Real Alcázar fija una cuota de 800 € hasta 50 personas y 14,50 € por visitante, con máximo 150 personas y visita de hasta una hora. La solicitud va con un mes de antelación y el pago 10 días antes."
+    },
+    {
+      "p": "¿Qué cuesta el guía del Teatro-Museo Dalí?",
+      "r": "Según la Fundació Gala-Salvador Dalí, 140 € por visita guiada de hasta 25 personas en 2026, más 14 € de entrada por persona de 8 años o más. Dura 1 h 15 min y se reserva con 15 días de antelación."
+    },
+    {
+      "p": "¿Hay acceso temprano a Casa Batlló sin contratar un grupo?",
+      "r": "Sí. Según su web oficial, Casa Batlló Be the First cuesta 45 € por persona, con entrada entre 8:30 y 8:45. Consulta del 20-11-2026."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://www.alhambra-patronato.es/visitar/prepara-tu-visita",
+      "nombre": "Web oficial del Patronato de la Alhambra y Generalife (Visita exclusiva)"
+    },
+    {
+      "url": "https://www.alhambra-patronato.es/wp-content/uploads/2025/07/ORDEN-PRECIOS-PUBLICOS-ALHAMBRA-BOJA25-142-00007-10352-01_00323950.pdf",
+      "nombre": "Orden de 17-07-2025 (BOJA 142), art. 11, publicada en la web del Patronato de la Alhambra"
+    },
+    {
+      "url": "https://www.alhambra-patronato.es/visitar/horarios-y-tarifas",
+      "nombre": "Web oficial del Patronato de la Alhambra y Generalife"
+    },
+    {
+      "url": "https://museoreinasofia.es/visita/visita-grupo/",
+      "nombre": "Web oficial del Museo Reina Sofía (visita en grupo)"
+    },
+    {
+      "url": "https://www.museoreinasofia.es/visita/visita-privada",
+      "nombre": "Web oficial del Museo Reina Sofía (visita privada)"
+    },
+    {
+      "url": "https://alcazarsevilla.org/prepara-la-visita/",
+      "nombre": "Web oficial del Real Alcázar de Sevilla (Prepara la visita, Tarifa Segunda)"
+    },
+    {
+      "url": "https://www.patrimonionacional.es/sites/default/files/documents/20230928%20Acuerdo%20de%20precios%20p%C3%BAblicos.pdf",
+      "nombre": "Acuerdo de precios públicos de Patrimonio Nacional (BOE-A-2023-21556), en la web de Patrimonio Nacional"
+    },
+    {
+      "url": "https://tickets.patrimonionacional.es/en/tickets/palacio-real-de-madrid",
+      "nombre": "Web oficial de entradas de Patrimonio Nacional"
+    },
+    {
+      "url": "https://www.casabatllo.es/en/online-tickets/",
+      "nombre": "Web oficial de Casa Batlló"
+    },
+    {
+      "url": "https://www.casabatllo.es/en/online-tickets/guide-visit-vip/",
+      "nombre": "Web oficial de Casa Batlló"
+    },
+    {
+      "url": "https://parkguell.barcelona/en/planning-your-visit/guided-tours",
+      "nombre": "Web oficial del Park Güell"
+    },
+    {
+      "url": "https://parkguell.barcelona/en/planning-your-visit/prices-and-times",
+      "nombre": "Web oficial del Park Güell"
+    },
+    {
+      "url": "https://sagradafamilia.org/es/visita-guiada-grupos",
+      "nombre": "Web oficial de la Sagrada Família"
+    },
+    {
+      "url": "https://sagradafamilia.org/en/prices",
+      "nombre": "Web oficial de la Sagrada Família"
+    },
+    {
+      "url": "https://mezquita-catedraldecordoba.es/en/organiza-la-visita/entradas-y-horarios/el-alma-de-cordoba/",
+      "nombre": "Web oficial de la Mezquita-Catedral de Córdoba"
+    },
+    {
+      "url": "https://mezquita-catedraldecordoba.es/en/organiza-la-visita/entradas-y-horarios/",
+      "nombre": "Web oficial de la Mezquita-Catedral de Córdoba"
+    },
+    {
+      "url": "https://www.museopicassomalaga.org/es/visitas-guiadas",
+      "nombre": "Web oficial del Museo Picasso Málaga"
+    },
+    {
+      "url": "https://www.museopicassomalaga.org/es/visita",
+      "nombre": "Web oficial del Museo Picasso Málaga"
+    },
+    {
+      "url": "https://www.salvador-dali.org/es/educacion-y-actividades/actividad/servei-de-guia-museu-dali/",
+      "nombre": "Web oficial de la Fundació Gala-Salvador Dalí"
+    },
+    {
+      "url": "https://www.salvador-dali.org/es/visita/teatro-museo-dali/",
+      "nombre": "Web oficial de la Fundació Gala-Salvador Dalí"
+    },
+    {
+      "url": "https://www.fmirobcn.org/en/visit-us/private-visits-and-venue-hire/private-visits/",
+      "nombre": "Web oficial de la Fundació Joan Miró"
+    },
+    {
+      "url": "https://www.casabatllo.es/en/visit/faqs/",
+      "nombre": "Web oficial de Casa Batlló (preguntas frecuentes)"
+    },
+    {
+      "url": "https://www.museoreinasofia.es/visita/horarios-tarifas",
+      "nombre": "Web oficial del Museo Reina Sofía (horarios y tarifas)"
+    }
+  ],
+  "huecos": [
+    "Museo del Prado: no pude abrir la web oficial (error 403 en museodelprado.es). Un resumen de buscador atribuye a su sitio 50 € por persona para visita privada de grupo de 9:00 a 10:00, con mínimo 12 personas y guía propio; no confirmado.",
+    "Museo Reina Sofía: la web no publica precio de la visita privada con el museo sin público.",
+    "Casa Batlló: no figura precio de Guided Visit + Private Room ni de los billetes de Magical Nights. Tampoco se confirma IVA.",
+    "Sagrada Família: no encontré visita privada ni fuera de horario regular en su web oficial.",
+    "Mezquita-Catedral de Córdoba: no encontré visita privada de grupo con tarifa en la web oficial. Tarifas de grupo y política de cancelación sin confirmar.",
+    "Museo Picasso Málaga: la visita guiada privada no tiene precio publicado.",
+    "Fundación Joan Miró: la visita privada no tiene precio publicado; la página de grupos no se pudo abrir.",
+    "Alhambra: la versión en inglés de su web mostraba precios de visita exclusiva distintos (3.500 €, 2.500 € y 4.500 €); se usa la versión en español, que coincide con la orden BOJA de julio de 2025.",
+    "Palacio Real: los importes de visita especial son de la resolución de septiembre de 2023; no confirmados como vigentes en 2026.",
+    "Cancelación y IVA: casi ninguna web de visitas privadas los publica; solo Alhambra (precio más IVA) y Park Güell (entrada con IVA incluido) lo dicen.",
+    "Thyssen, Guggenheim Bilbao y La Pedrera quedan fuera de la tabla: no hemos podido contrastar sus importes con la página oficial (error de certificado, PDF o datos contradictorios entre la web y el PDF).",
+    "Alhambra: la cuota por espacio adicional (1.171 €) figura solo en un PDF del BOJA que no hemos podido contrastar y no se publica."
+  ],
+  "relacionados": {
+    "rankings": [
+      "museos"
+    ],
+    "eventos": [
+      "dan-flavin-guggenheim-bilbao"
+    ],
+    "destinos": [
+      "madrid",
+      "barcelona",
+      "sevilla",
+      "bilbao",
+      "costa-del-sol",
+      "girona"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}
