@@ -23,3 +23,5 @@ scripts/vigilancia/google-alerts-feeds.txt
 
 # Informes diarios de la vigilancia (se suben como artefacto del workflow)
 data/portal/vigilancia/informes/
+
+__pycache__/
