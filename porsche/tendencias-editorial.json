@@ -1,5 +1,24 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:11827638497131334131",
+    "url": "https://www.motor16.com/las-ultimas-noticias/porsche-996-precios-guia-compra/",
+    "source": "Motor16",
+    "published": "2026-11-20T19:04:12Z",
+    "headline": "El Porsche 996 gana peso en el mercado como acceso a la saga 911",
+    "excerpt": "Históricamente relegado por ser el primer 911 con motor refrigerado por agua, el 996 mantiene precios considerablemente inferiores a los clásicos refrigerados por aire y se consolida como opción de compra.",
+    "category": "Análisis",
+    "models": [
+      "911"
+    ],
+    "impact": "Sigue siendo el punto de entrada económico a un 911 usado; la clave para el comprador está en vigilar el estado mecánico de la unidad antes de que el mercado ajuste su valor al alza.",
+    "links": [
+      "precios_ocasion",
+      "sm_911",
+      "fallos"
+    ],
+    "week": "2026-W47"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:7667670424933996460",
     "url": "https://carsauce.com/reviews/2027-porsche-911-gt3-weissach-package-review",
     "source": "CarSauce",
