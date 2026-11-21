@@ -1,0 +1,458 @@
+{
+  "slug": "tax-free-iva-compras-lujo",
+  "titulo": "Cómo recuperar el IVA de tus compras de lujo en España (tax free)",
+  "resumen": "Si resides fuera de la UE, puedes recuperar parte del IVA de compras personales en España con el sistema DIVA. Hay que pedir el documento electrónico en la tienda, sellarlo al salir de la UE en un plazo de 3 meses y cobrar en una entidad colaboradora o en la propia tienda.",
+  "pasos": [
+    {
+      "titulo": "Comprueba si cumples los requisitos",
+      "texto": "Hay que residir habitualmente fuera de la UE (o en Canarias, Ceuta o Melilla), comprar para uso personal y que los bienes no formen una expedición comercial. La compra debe constar en factura. Se acredita con pasaporte u otro documento admitido."
+    },
+    {
+      "titulo": "Pide el documento de reembolso al comprar",
+      "texto": "Avisa a la tienda antes de pagar de que quieres la devolución. El vendedor comprueba tu identidad y residencia, emite la factura y el Documento Electrónico de Reembolso (DER). Las compras enviadas directamente a domicilio nunca dan derecho a devolución."
+    },
+    {
+      "titulo": "Sal de la UE con los bienes en 3 meses",
+      "texto": "El plazo es de 3 meses desde la compra. Si el punto de salida de la UE está en otro Estado miembro, no puedes sellar en un kiosco de España: el trámite se hace allí."
+    },
+    {
+      "titulo": "Sella el DER en el kiosco DIVA",
+      "texto": "Antes de facturar la maleta, escanea el código del DER en el kiosco del aeropuerto. Lleva los bienes, las facturas y la tarjeta de embarque: sin los bienes no se sella. Tick verde: aprobado. Cruz roja: acude a la oficina de sellado o a aduana. Llega al menos 3 horas antes del vuelo."
+    },
+    {
+      "titulo": "Cobra la devolución",
+      "texto": "Tras el sellado, pide el reembolso a una entidad colaboradora autorizada por la AEAT o directamente a la tienda. La entidad descuenta su comisión según la tabla oficial. La tienda debe devolver la cuota en 15 días desde que recibe el documento visado."
+    },
+    {
+      "titulo": "Guarda el justificante",
+      "texto": "El estado del DER se puede consultar con su código CSV en la web de la Agencia Tributaria. La solicitud de reembolso puede hacerse hasta 4 años después, según Aena."
+    }
+  ],
+  "precios": {
+    "nota": "Las cifras de la Orden HAP/2652/2012 y de la Orden HAC/748/2018 son importes MÍNIMOS que debe abonar la entidad colaboradora; pueden abonar más. Las comisiones concretas de cada operador no se han podido confirmar en sus webs oficiales. Las normas cambian: verifica en la Agencia Tributaria antes de comprar.",
+    "filas": [
+      {
+        "concepto": "Quién puede pedir la devolución",
+        "importe": "Residentes fuera de la UE (y de Canarias, Ceuta y Melilla)",
+        "unidad": "condición",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/informacion-general-sobre-devolucion-iva-viajeros.html",
+        "fuente": "Agencia Tributaria, Información general sobre la devolución de IVA a viajeros"
+      },
+      {
+        "concepto": "Importe mínimo por factura",
+        "importe": "Sin mínimo (se suprimió el umbral anterior)",
+        "unidad": "desde el 5 de julio de 2018",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa/ley-6-2018-3-julio-estado__.html",
+        "fuente": "Agencia Tributaria, Novedades Ley 6/2018: reembolso «cualquiera que sea el importe de la factura»"
+      },
+      {
+        "concepto": "Plazo para salir de la UE con los bienes",
+        "importe": "3 meses",
+        "unidad": "desde la compra",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/informacion-general-sobre-devolucion-iva-viajeros.html",
+        "fuente": "Agencia Tributaria, Información general: «en el plazo de 3 meses desde tu compra»"
+      },
+      {
+        "concepto": "Plazo en el Reglamento del IVA",
+        "importe": "3 meses siguientes a la entrega",
+        "unidad": "plazo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+        "fuente": "BOE, RD 1624/1992, art. 9.2.B (texto consolidado)"
+      },
+      {
+        "concepto": "Plazo para solicitar el reembolso",
+        "importe": "4 años",
+        "unidad": "desde la compra",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/passengers/baggage-controls/customs-vat-refund/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA al viajar: máximo 4 años"
+      },
+      {
+        "concepto": "Tipo general de IVA",
+        "importe": "21 %",
+        "unidad": "tipo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/iva/calculo-iva-repercutido-clientes/tipos-impositivos-iva.html",
+        "fuente": "Agencia Tributaria, Tipos impositivos de IVA (actualizada el 13-10-2026)"
+      },
+      {
+        "concepto": "Tipos reducidos de IVA",
+        "importe": "10 % y 4 %",
+        "unidad": "tipo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/iva/calculo-iva-repercutido-clientes/tipos-impositivos-iva.html",
+        "fuente": "Agencia Tributaria, Tipos impositivos de IVA"
+      },
+      {
+        "concepto": "Devolución mínima al viajero, IVA 21 %, compra 90,16-100,00 EUR (versión 2012)",
+        "importe": "10,50 EUR",
+        "unidad": "importe fijo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo (versión original; tramo inicial modificado en 2018)"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra hasta 100 EUR (tras 2018)",
+        "importe": "10,50 %",
+        "unidad": "porcentaje",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2018-9855",
+        "fuente": "BOE, Orden HAC/748/2018 (resumen de las tablas leído; en vigor desde el 15-07-2018)"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra 100,01-125,00 EUR",
+        "importe": "13,00 EUR",
+        "unidad": "importe fijo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra 500,01-525,00 EUR",
+        "importe": "65,50 EUR",
+        "unidad": "importe fijo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra 975,01-1.000,00 EUR",
+        "importe": "128,50 EUR",
+        "unidad": "importe fijo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra 1.000,01-1.500 EUR",
+        "importe": "13,70 %",
+        "unidad": "porcentaje",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo; mismos porcentajes en Orden HAC/748/2018"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra 2.000,01-3.000 EUR",
+        "importe": "14,50 %",
+        "unidad": "porcentaje",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 21 %, compra superior a 5.000 EUR",
+        "importe": "15,70 %",
+        "unidad": "porcentaje",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo; mismo porcentaje en Orden HAC/748/2018"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 10 %",
+        "importe": "5 % hasta 220 EUR; 7 % por encima",
+        "unidad": "porcentaje",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo; igual en Orden HAC/748/2018"
+      },
+      {
+        "concepto": "Devolución mínima, IVA 4 %",
+        "importe": "2 %",
+        "unidad": "porcentaje",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+        "fuente": "BOE, Orden HAP/2652/2012, anexo"
+      },
+      {
+        "concepto": "Reembolso directo por la tienda",
+        "importe": "15 días tras presentar el documento visado",
+        "unidad": "plazo",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+        "fuente": "BOE, RD 1624/1992, art. 9.2.B: el proveedor devuelve la cuota en los quince días siguientes"
+      },
+      {
+        "concepto": "Formas de cobro vía entidad colaboradora",
+        "importe": "Efectivo, tarjeta de crédito, cheque o transferencia",
+        "unidad": "métodos",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/informacion-general-sobre-devolucion-iva-viajeros.html",
+        "fuente": "Agencia Tributaria, Información general"
+      },
+      {
+        "concepto": "Antelación recomendada en el aeropuerto",
+        "importe": "3 horas antes del vuelo (2 horas en ferry o crucero)",
+        "unidad": "recomendación",
+        "temporada": "verano: más colas (aviso 17-07-2026)",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/cumplimentacion-requisitos-obtencion-devolucion.html",
+        "fuente": "Agencia Tributaria, Cumplimentación de requisitos"
+      },
+      {
+        "concepto": "Kioscos DIVA Madrid-Barajas",
+        "importe": "T1, T2, T4 y T4 Satélite",
+        "unidad": "ubicación",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/airport-services/categories-and-terminals/vat-refund.html",
+        "fuente": "Aena, Devolución de IVA en Madrid-Barajas"
+      },
+      {
+        "concepto": "Oficina de sellado Madrid-Barajas",
+        "importe": "T1 y T4: 07:00-22:00; T4 Satélite: 24 horas",
+        "unidad": "horario",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/airport-services/categories-and-terminals/vat-refund.html",
+        "fuente": "Aena, Devolución de IVA en Madrid-Barajas"
+      },
+      {
+        "concepto": "Oficina de sellado Barcelona-El Prat",
+        "importe": "T1, planta 3, sala de facturación; 24 horas",
+        "unidad": "horario",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat/airport-services/categorias-y-terminales/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA en Barcelona-El Prat"
+      },
+      {
+        "concepto": "Kioscos DIVA Málaga-Costa del Sol",
+        "importe": "Planta 1, zona de facturación, mostradores 363-386",
+        "unidad": "ubicación",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/malaga-costa-del-sol/airport-services/categories/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA en Málaga"
+      },
+      {
+        "concepto": "Kioscos DIVA Palma de Mallorca",
+        "importe": "Planta 2, zona de facturación",
+        "unidad": "ubicación",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/palma-de-mallorca/airport-services/categories/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA en Palma"
+      },
+      {
+        "concepto": "Oficinas de devolución en Palma (Best and Fast Change)",
+        "importe": "Planta 0 equipajes 08:00-23:00; facturación y módulo A 09:00-21:00",
+        "unidad": "horario",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/palma-de-mallorca/airport-services/categories/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA en Palma"
+      },
+      {
+        "concepto": "Oficina de sellado Ibiza",
+        "importe": "Planta 0, sala de llegadas",
+        "unidad": "ubicación",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/ibiza/airport-services/categories/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA en Ibiza"
+      },
+      {
+        "concepto": "Oficina de devolución en Ibiza (Best & Fast Change)",
+        "importe": "Planta 0, terminal; lunes a domingo 08:30-21:00",
+        "unidad": "horario",
+        "temporada": "todo el año",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://www.aena.es/en/ibiza/airport-services/categories/vat-refund.html",
+        "fuente": "Aena, Devolución del IVA en Ibiza"
+      }
+    ]
+  },
+  "reservas": [
+    {
+      "concepto": "Tienda (devolución directa)",
+      "como": "Pide a la tienda que gestione el reembolso directo con el DER sellado",
+      "antelacion": "Pide el DER al pagar; sella antes de salir de la UE",
+      "politica": "La tienda devuelve la cuota repercutida en 15 días (art. 9 RD 1624/1992)."
+    },
+    {
+      "concepto": "Entidad colaboradora autorizada",
+      "como": "Pide en la tienda el formulario de la entidad y cobra tras el sellado en sus oficinas de devolución",
+      "antelacion": "Llega al aeropuerto al menos 3 horas antes del vuelo",
+      "politica": "Solo entidades autorizadas por la AEAT; descuentan comisión conforme a la tabla oficial y pueden variar el importe según el medio de pago."
+    },
+    {
+      "concepto": "Kiosco DIVA del aeropuerto",
+      "como": "Escanea el código del DER, con bienes y tarjeta de embarque",
+      "antelacion": "Antes de facturar el equipaje",
+      "politica": "El sellado es definitivo y los datos no se pueden cambiar; fechas del sello y del billete deben coincidir."
+    },
+    {
+      "concepto": "Compras en otro país de la UE con salida por España",
+      "como": "Presenta la factura en la oficina de sellado para validación manual",
+      "antelacion": "Margen amplio antes del vuelo",
+      "politica": "Los agentes comprueban que llevas los bienes y que coinciden con la factura."
+    }
+  ],
+  "consejos": [
+    "Pide el DER en la tienda antes de pagar, no después.",
+    "Lleva pasaporte, facturas, el DER y los bienes a mano para mostrarlos en el kiosco.",
+    "Llega al menos 3 horas antes del vuelo en temporada alta.",
+    "Comprueba el punto de salida de la UE: si es otro país, el sellado no se hace en España.",
+    "Compara cobrar en efectivo o en tarjeta: las entidades pueden abonar cantidades distintas según el medio.",
+    "Verifica en la web de la Agencia Tributaria si hay novedades antes de viajar."
+  ],
+  "errores_comunes": [
+    "Facturar la maleta con los bienes dentro antes de sellar el DER.",
+    "Salir de la UE sin validar: ya no se puede obtener la devolución.",
+    "Intentar sellar en un kiosco español cuando la salida de la UE es otro Estado miembro.",
+    "Pedir envío a domicilio: no da derecho a devolución.",
+    "Dejar pasar los 3 meses desde la compra.",
+    "Comprar servicios (hotel, restaurante, transporte): quedan fuera del tax free."
+  ],
+  "faq": [
+    {
+      "p": "¿Quién puede recuperar el IVA en España?",
+      "r": "Las personas residentes fuera de la UE, y los residentes en Canarias, Ceuta y Melilla. Solo para compras personales."
+    },
+    {
+      "p": "¿Hay un importe mínimo por factura?",
+      "r": "No. La Ley 6/2018 suprimió el umbral anterior con efectos desde el 5 de julio de 2018. La Agencia Tributaria indica que se reembolsa cualquiera que sea el importe de la factura."
+    },
+    {
+      "p": "¿De cuánto tiempo dispongo para salir de la UE?",
+      "r": "De 3 meses desde la compra, según la Agencia Tributaria."
+    },
+    {
+      "p": "¿Qué tipos de IVA se pueden recuperar?",
+      "r": "Los de las compras de bienes: general del 21 % y reducidos del 10 % y 4 %. La entidad colaboradora tiene tablas mínimas de devolución para cada tipo."
+    },
+    {
+      "p": "¿Qué no da derecho a devolución?",
+      "r": "Servicios en general, bienes con aspecto de envío comercial, suministros para vehículos privados como neumáticos o combustible y compras enviadas a domicilio."
+    },
+    {
+      "p": "¿Puedo cobrar en efectivo?",
+      "r": "La Agencia Tributaria indica que la entidad colaboradora puede pagar en efectivo, tarjeta, cheque o transferencia. No se ha confirmado un límite de efectivo en fuentes oficiales."
+    },
+    {
+      "p": "¿Y si compro en otro país de la UE y salgo por España?",
+      "r": "Se presenta la factura en la oficina de sellado para validación manual, y se aplican las reglas del país de compra."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/informacion-general-sobre-devolucion-iva-viajeros.html",
+      "nombre": "Agencia Tributaria: Información general sobre la devolución de IVA a viajeros"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/cumplimentacion-requisitos-obtencion-devolucion.html",
+      "nombre": "Agencia Tributaria: Cumplimentación de requisitos para la obtención de la devolución"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/novedades-diva/2026.html",
+      "nombre": "Agencia Tributaria: Novedades DIVA 2026"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/devoluciones-iva-compras-viajeros/devolucion-dinero-pagado-iva-compras.html",
+      "nombre": "Agencia Tributaria: Devolución del dinero pagado por el IVA de las compras"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/iva/novedades-iva/novedades-normativa/ley-6-2018-3-julio-estado__.html",
+      "nombre": "Agencia Tributaria: Novedades Ley 6/2018"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2025/capitulo-08-gestion-iva/devoluciones/devolucion-exportadores-regimen-viajeros/requisitos-viajeros.html",
+      "nombre": "Agencia Tributaria: Manual IVA, requisitos del régimen de viajeros"
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/iva/calculo-iva-repercutido-clientes/tipos-impositivos-iva.html",
+      "nombre": "Agencia Tributaria: Tipos impositivos de IVA"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+      "nombre": "BOE: Ley 37/1992 del IVA, art. 21"
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+      "nombre": "BOE: Reglamento del IVA (RD 1624/1992), art. 9"
+    },
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-15104",
+      "nombre": "BOE: Orden HAP/2652/2012, tablas de devolución"
+    },
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2018-9855",
+      "nombre": "BOE: Orden HAC/748/2018, modificación de las tablas"
+    },
+    {
+      "url": "https://www.aena.es/en/passengers/baggage-controls/customs-vat-refund/vat-refund.html",
+      "nombre": "Aena: Devolución del IVA al viajar"
+    },
+    {
+      "url": "https://www.aena.es/en/adolfo-suarez-madrid-barajas/airport-services/categories-and-terminals/vat-refund.html",
+      "nombre": "Aena: Devolución de IVA, Madrid-Barajas"
+    },
+    {
+      "url": "https://www.aena.es/en/josep-tarradellas-barcelona-el-prat/airport-services/categorias-y-terminales/vat-refund.html",
+      "nombre": "Aena: Devolución del IVA, Barcelona-El Prat"
+    },
+    {
+      "url": "https://www.aena.es/en/palma-de-mallorca/airport-services/categories/vat-refund.html",
+      "nombre": "Aena: Devolución del IVA, Palma"
+    },
+    {
+      "url": "https://www.aena.es/en/ibiza/airport-services/categories/vat-refund.html",
+      "nombre": "Aena: Devolución del IVA, Ibiza"
+    },
+    {
+      "url": "https://www.aena.es/en/malaga-costa-del-sol/airport-services/categories/vat-refund.html",
+      "nombre": "Aena: Devolución del IVA, Málaga-Costa del Sol"
+    }
+  ],
+  "huecos": [
+    "Comisiones concretas de Global Blue, Planet y Fexco/Innovative Retail: sus webs oficiales no se pudieron abrir con contenido (cargan por JavaScript, 404 o redirección).",
+    "Plazos de cobro por tarjeta o efectivo de cada operador: sin confirmar en web oficial abierta.",
+    "Límite de efectivo para el cobro: no figura en las páginas oficiales abiertas.",
+    "Exclusiones por tipo de bien (p. ej. joyería a medida): no hay lista de bienes en las páginas abiertas de la AEAT ni en el art. 9 del Reglamento; solo servicios, envíos comerciales, suministros de vehículos y compras a domicilio.",
+    "Texto literal del art. 21 de la Ley 37/1992 contrastado solo en parte (cuatro requisitos del apartado de viajeros); el apartado sobre importe no se localizó en el texto abierto.",
+    "Tabla del 4 % de la Orden HAC/748/2018 con texto confuso; se cita la de 2012 (2 %).",
+    "Nota informativa NI GA 04/2016 de Aduanas: PDF comprimido, no legible.",
+    "Aena Barcelona: ubicación de kioscos no cargó; Aena Málaga: sin operadores ni horarios.",
+    "Canarias, Ceuta y Melilla: solo se confirma que esas compras tributan por IGIC o IPSI y no dan IVA.",
+    "Contenido informativo, sin consejo fiscal personalizado; las normas cambian."
+  ],
+  "relacionados": {
+    "rankings": [
+      "compras-de-lujo"
+    ],
+    "eventos": [],
+    "destinos": [
+      "madrid",
+      "barcelona",
+      "mallorca",
+      "costa-del-sol",
+      "ibiza"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-20",
+  "publicado": "2026-11-20"
+}
