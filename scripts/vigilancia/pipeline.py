@@ -179,6 +179,11 @@ def gemini(prompt, schema, intentos=4):
     }).encode("utf-8")
     url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % urllib.parse.quote(MODEL)
     for n in range(intentos):
+        # el plan gratuito limita las peticiones por minuto: se espacian para no recibir 429
+        espera = PAUSA_GEMINI - (time.time() - gemini.ultima)
+        if espera > 0:
+            time.sleep(espera)
+        gemini.ultima = time.time()
         try:
             req = urllib.request.Request(url, data=cuerpo, headers={"Content-Type": "application/json", "x-goog-api-key": clave})
             with urllib.request.urlopen(req, timeout=90) as r:
@@ -189,13 +194,21 @@ def gemini(prompt, schema, intentos=4):
             if exc.code in (429, 500, 502, 503, 504) and n < intentos - 1:
                 time.sleep(5 * (n + 1) ** 2)
                 continue
-            raise
+            try:
+                detalle = exc.read().decode("utf-8", "replace")[:300].replace("\n", " ")
+            except Exception:
+                detalle = ""
+            raise RuntimeError("HTTP %s %s" % (exc.code, detalle)) from exc
         except (KeyError, IndexError, json.JSONDecodeError):
             if n < intentos - 1:
                 time.sleep(3)
                 continue
             raise
     raise RuntimeError("Gemini no respondió")
+
+
+gemini.ultima = 0.0
+PAUSA_GEMINI = float(os.environ.get("PAUSA_GEMINI", "4.5"))
 
 
 ESQUEMA_EXTRACCION = {
