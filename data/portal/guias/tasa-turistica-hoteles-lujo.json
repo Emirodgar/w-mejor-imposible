@@ -1,0 +1,132 @@
+{
+  "slug": "tasa-turistica-hoteles-lujo",
+  "titulo": "Cuánto cuesta la tasa turística en un hotel de lujo de Cataluña y Baleares",
+  "resumen": "En un hotel de 5 estrellas de Barcelona, la Generalitat fija 7,00 € de impuesto más 5,00 € de recargo municipal hasta el 31-3-2027. En el resto de Cataluña son 4,50 € y en Baleares, de 1,00 € a 4,00 € por persona y noche más 10 % de IVA, según la temporada. Datos de las webs oficiales, consultadas el 20-11-2026.",
+  "pasos": [
+    {
+      "titulo": "Identifica el destino",
+      "texto": "La tasa depende de la comunidad autónoma y, en Cataluña, también del municipio. Barcelona tiene un recargo municipal además del impuesto autonómico."
+    },
+    {
+      "titulo": "Mira la categoría del hotel",
+      "texto": "Las tarifas oficiales se fijan por categoría. Los importes de esta guía son los de hoteles de 5 estrellas y gran lujo."
+    },
+    {
+      "titulo": "Comprueba la fecha de tu estancia",
+      "texto": "Las cuotas cambian con el tiempo. En Cataluña el recargo de Barcelona sube a 6,00 € el 1-4-2027. En Baleares, la tarifa depende de si viajas en temporada alta o baja."
+    },
+    {
+      "titulo": "Calcula el importe",
+      "texto": "La tasa se aplica por persona. En Baleares, por noche. Ejemplo con la tarifa de temporada alta: 2 adultos y 4 noches suponen 2 × 4 × 4,40 € = 35,20 €."
+    },
+    {
+      "titulo": "Pregunta al hotel cómo la cobra",
+      "texto": "Confirma al reservar si la tarifa que ves incluye la tasa o se suma después, y pide el desglose en la factura."
+    }
+  ],
+  "precios": {
+    "nota": "Importes por persona, tal como figuran en las webs oficiales del Govern y la Generalitat, consultadas el 20-11-2026. Las normas y tarifas pueden cambiar: confirma siempre en la fuente oficial.",
+    "filas": [
+      {
+        "concepto": "Impuesto turístico Barcelona – hotel 5 estrellas / gran lujo (tarifa autonómica)",
+        "importe": "7,00 €",
+        "unidad": "por persona y unidad de estancia",
+        "temporada": "Del 1-4-2026 al 31-3-2027; la tabla repite 7,00 EUR hasta 2029",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://atc.gencat.cat/ca/tributs/ieet/quota-tributaria/",
+        "fuente": "Agència Tributària de Catalunya (Generalitat)"
+      },
+      {
+        "concepto": "Impuesto turístico Barcelona – recargo municipal, 5 estrellas / gran lujo",
+        "importe": "5,00 €",
+        "unidad": "por persona y unidad de estancia",
+        "temporada": "Del 1-4-2026 al 31-3-2027; EUR 6,00 del 1-4-2027 y EUR 7,00 del 1-4-2028",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://atc.gencat.cat/ca/tributs/ieet/quota-tributaria/",
+        "fuente": "Agència Tributària de Catalunya (Generalitat)"
+      },
+      {
+        "concepto": "Impuesto turístico resto de Cataluña – hotel 5 estrellas / gran lujo",
+        "importe": "4,50 €",
+        "unidad": "por persona y día o fracción",
+        "temporada": "Del 1-4-2026 al 31-3-2027; EUR 6,00 desde el 1-4-2027; algunos municipios añaden recargo desde el 1-10-2026",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://atc.gencat.cat/ca/tributs/ieet/quota-tributaria/",
+        "fuente": "Agència Tributària de Catalunya (Generalitat)"
+      },
+      {
+        "concepto": "Impuesto de turismo sostenible Baleares – hotel 5 estrellas, temporada alta",
+        "importe": "4,00 € + 10 % IVA (4,40 €)",
+        "unidad": "por persona y noche",
+        "temporada": "Del 1 de mayo al 31 de octubre",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://illessostenibles.travel/en/its-calculator",
+        "fuente": "Calculadora oficial del impuesto (Govern de les Illes Balears)"
+      },
+      {
+        "concepto": "Impuesto de turismo sostenible Baleares – hotel 5 estrellas, temporada baja",
+        "importe": "1,00 € + 10 % IVA (1,10 €)",
+        "unidad": "por persona y noche",
+        "temporada": "Del 1 de noviembre al 30 de abril",
+        "fecha_dato": "consultada el 20-11-2026",
+        "fuente_url": "https://illessostenibles.travel/en/its-calculator",
+        "fuente": "Calculadora oficial del impuesto (Govern de les Illes Balears)"
+      }
+    ]
+  },
+  "reservas": [],
+  "consejos": [
+    "Revisa si el precio de tu reserva incluye la tasa antes de comparar hoteles.",
+    "Si viajas con menores o con una estancia larga, consulta en la fuente oficial las exenciones y reducciones aplicables a tu caso."
+  ],
+  "errores_comunes": [
+    "Dar por hecho que la tasa va incluida en el precio de la habitación.",
+    "Usar una tarifa antigua: en Cataluña las cuotas suben el 1-4-2027."
+  ],
+  "faq": [
+    {
+      "p": "¿Cuánto es la tasa turística en un hotel de 5 estrellas de Barcelona?",
+      "r": "La Agència Tributària de Catalunya (Generalitat) fija 7,00 € de impuesto más 5,00 € de recargo municipal por persona hasta el 31-3-2027. El recargo sube a 6,00 € el 1-4-2027 y a 7,00 € el 1-4-2028."
+    },
+    {
+      "p": "¿Cuánto es el impuesto turístico en el resto de Cataluña?",
+      "r": "Para un hotel de 5 estrellas, la Agència Tributària de Catalunya indica 4,50 € por persona y día o fracción del 1-4-2026 al 31-3-2027, y 6,00 € desde el 1-4-2027. Algunos municipios añaden recargo desde el 1-10-2026."
+    },
+    {
+      "p": "¿Cuánto es el impuesto turístico en un cinco estrellas de Mallorca?",
+      "r": "La calculadora oficial del Govern balear indica 4,00 € por persona y noche en temporada alta (1 de mayo a 31 de octubre) más 10 % de IVA, y 1,00 € en temporada baja (1 de noviembre a 30 de abril) más 10 % de IVA."
+    },
+    {
+      "p": "¿La tasa turística es la misma en todo el país?",
+      "r": "No. La fijan las comunidades autónomas y, en algunos casos, los municipios. Esta guía recoge solo Cataluña y Baleares, que son las que hemos consultado en fuentes oficiales."
+    }
+  ],
+  "fuentes": [
+    {
+      "url": "https://atc.gencat.cat/ca/tributs/ieet/quota-tributaria/",
+      "nombre": "Agència Tributària de Catalunya – cuota, tarifas y recargos del impuesto sobre estancias"
+    },
+    {
+      "url": "https://illessostenibles.travel/en/its-calculator",
+      "nombre": "Calculadora oficial del impuesto de turismo sostenible (Govern de les Illes Balears)"
+    }
+  ],
+  "huecos": [
+    "No se han consultado Madrid, Andalucía ni el resto de comunidades; la guía no indica si cobran tasa.",
+    "No hemos contrastado exenciones, reducciones ni máximos de noches: consulta la fuente oficial.",
+    "No se detalla cómo cobra cada hotel la tasa."
+  ],
+  "relacionados": {
+    "rankings": [
+      "hoteles-de-lujo"
+    ],
+    "eventos": [],
+    "destinos": [
+      "barcelona",
+      "mallorca"
+    ]
+  },
+  "publicar": true,
+  "actualizado": "2026-11-21",
+  "publicado": "2026-11-21"
+}
