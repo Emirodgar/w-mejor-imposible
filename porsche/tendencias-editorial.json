@@ -1,5 +1,79 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:4922405613600855166",
+    "url": "https://www.autozive.cz/skoda-dnes-vydelava-vic-nez-legendarni-porsche/",
+    "source": "AutoŽivě",
+    "published": "2026-11-22T15:23:39Z",
+    "headline": "La rentabilidad global de Porsche se estrecha",
+    "excerpt": "A pesar del alto margen que genera individualmente el 911, los resultados globales de Porsche reflejan una compresión en la rentabilidad de la marca durante los últimos periodos.",
+    "category": "Análisis",
+    "models": [
+      "marca",
+      "911"
+    ],
+    "impact": "Una presión sostenida en los márgenes de la compañía suele traducirse en contención de descuentos en concesionario y revisiones periódicas al alza en los precios de catálogo.",
+    "links": [
+      "coste_real",
+      "precios_ocasion"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:16197800810976231404",
+    "url": "https://www.faz.net/aktuell/technik-motor/elektromobilitaet/porsche-macan-gts-im-test-stark-teuer-aber-ohne-v6-accg-201655974.html",
+    "source": "faz.net",
+    "published": "2026-11-22T15:00:40Z",
+    "headline": "Primeras pruebas del Porsche Macan GTS eléctrico",
+    "excerpt": "Los primeros análisis del Macan GTS eléctrico destacan su gran entrega de potencia y prestaciones, si bien señalan su precio elevado y la despedida definitiva del motor V6 de combustión.",
+    "category": "Modelos",
+    "models": [
+      "macan"
+    ],
+    "impact": "Si valoras el tacto y el sonido del V6 de gasolina, las unidades de segunda mano de la generación anterior ganan atractivo frente a la tarifa más alta del nuevo GTS eléctrico.",
+    "links": [
+      "sm_macan",
+      "comparador",
+      "coste_real"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:12772999763827156665",
+    "url": "https://www.asiaone.com/lifestyle/porsche-mission-s-previews-new-era-mid-engine-supercars-throwback-their-past",
+    "source": "asiaone.com",
+    "published": "2026-11-22T14:32:36Z",
+    "headline": "Porsche Mission S: anticipo de una nueva gama de superdeportivos de motor central",
+    "excerpt": "Porsche ha dejado ver las bases de una plataforma inédita para superdeportivos con motor central, concebida como una incorporación fija a su catálogo que convivirá junto al 911.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Abre la puerta a futuros modelos de altas prestaciones por encima de los deportivos convencionales, asegurando alternativas radicales para clientes que busquen exclusividad en pista.",
+    "links": [
+      "opiniones",
+      "comparador"
+    ],
+    "week": "2026-W47"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:4468075831188629602",
+    "url": "https://www.zr.ru/content/news/988831-ehlektrokaram-vdrug-ponadobilsya/",
+    "source": "zr.ru",
+    "published": "2026-11-22T13:17:46Z",
+    "headline": "El Porsche Taycan incorporará cambio simulado E-Shift en 2027",
+    "excerpt": "Porsche trabaja en sumar la tecnología de cambios virtuales E-Shift al Taycan 2027, con la intención de ofrecer sensaciones de marcha más interactivas en su berlina eléctrica.",
+    "category": "Lanzamientos",
+    "models": [
+      "taycan"
+    ],
+    "impact": "Quienes busquen mayor implicación mecánica al volante en un eléctrico pueden esperar a esta actualización, o aprovechar la depreciación del modelo actual en el mercado de ocasión.",
+    "links": [
+      "sm_taycan",
+      "precios_ocasion"
+    ],
+    "week": "2026-W47"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:11827638497131334131",
     "url": "https://www.motor16.com/las-ultimas-noticias/porsche-996-precios-guia-compra/",
     "source": "Motor16",
