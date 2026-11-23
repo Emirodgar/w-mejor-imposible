@@ -247,5 +247,31 @@
       }
     ],
     "updated": "2026-11-22"
+  },
+  "2026-W48": {
+    "summary": "Esta semana las novedades de Porsche combinan altas prestaciones futuras con referencias prácticas para el mercado de ocasión y el contexto financiero de la marca. En producto, destacan las cifras de potencia y carga ultrarrápida del futuro Cayenne Turbo Coupé eléctrico, junto a los indicios de una variante Touring más discreta para el 911 Turbo Cabriolet. Para quien busca acceder a la marca, la generación 996 del 911 se consolida como la alternativa más asequible siempre que se vigile el rodamiento IMS, en un momento en que los fabricantes premium afrontan ajustes de valoración por la creciente competencia.",
+    "highlights": [
+      {
+        "url": "https://www.chosun.com/english/industry-en/2026/11/24/MVYLCKR63VFVPKGO4FBKKT2OQY/",
+        "shortTitle": "Cayenne Eléctrico de 1.156 CV",
+        "note": "La variante Turbo Coupé anuncia un 0 a 100 km/h en 2,5 segundos y recarga del 10% al 80% en solo 16 minutos."
+      },
+      {
+        "url": "https://www.auto-motor-und-sport.de/neuheiten/911-turbo-touring-erwischt-porsche-macht-das-turbo-cabrio-ohne-spoiler/",
+        "shortTitle": "Posible 911 Turbo Touring descapotable",
+        "note": "Fotografiado en fase de pruebas un prototipo Turbo Cabriolet con carrocería ensanchada pero sin el tradicional alerón fijo."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-911-996-precio/",
+        "shortTitle": "Claves del 911 996 usado",
+        "note": "Se mantiene como la opción más accesible para entrar en la saga 911 desde unos 23.000 dólares, requiriendo atención al motor M96 e IMS."
+      },
+      {
+        "url": "https://www.bolsamania.com/capitalbolsa/noticias_amp/recomendaciones/bankinter-recomienda-vender-el-sector-del-automovil-y-solo-mantiene-la-compra-en-ferrari--24264098.html",
+        "shortTitle": "Ajustes de valoración financiera",
+        "note": "Analistas del sector premium señalan caídas trimestrales de cotización cercanas al 31% ante el incremento de la presión competitiva."
+      }
+    ],
+    "updated": "2026-11-23"
   }
 }

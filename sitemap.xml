@@ -543,4 +543,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://mejorimposible.es/porsche/tendencias/semana-2026-48</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

@@ -1,5 +1,80 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:14305030110385913969",
+    "url": "https://www.motor16.com/las-ultimas-noticias/porsche-911-996-precio/",
+    "source": "motor16.com",
+    "published": "2026-11-23T18:05:07Z",
+    "headline": "Claves y cotización del Porsche 911 996 como puerta de entrada a la marca",
+    "excerpt": "La generación 996 continúa posicionándose como el acceso más asequible a la gama 911 con precios desde unos 23.000 dólares, aunque su motor M96 requiere especial atención al rodamiento IMS.",
+    "category": "Guías",
+    "models": [
+      "911"
+    ],
+    "impact": "Para compradores con presupuesto contenido que busquen un 911 de segunda mano, es un modelo accesible, pero resulta imprescindible certificar documentalmente el estado del IMS para evitar averías costosas.",
+    "links": [
+      "sm_911",
+      "fallos",
+      "precios_ocasion"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:9497433056672863447",
+    "url": "https://www.bolsamania.com/capitalbolsa/noticias_amp/recomendaciones/bankinter-recomienda-vender-el-sector-del-automovil-y-solo-mantiene-la-compra-en-ferrari--24264098.html",
+    "source": "bolsamania.com",
+    "published": "2026-11-23T16:34:07Z",
+    "headline": "Los analistas señalan ajustes de valoración en Porsche y el sector premium alemán",
+    "excerpt": "Informes de mercado como el de Bankinter reflejan caídas trimestrales de alrededor del 31% para fabricantes como Porsche y Mercedes, en un escenario de creciente presión competitiva.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Un entorno de menor euforia en ventas puede traducirse indirectamente en mayores facilidades de entrega o mayor margen de negociación en concesionario tanto para nuevos como de ocasión.",
+    "links": [
+      "financiacion",
+      "renting_leasing",
+      "precios_ocasion"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:11661467261159720773",
+    "url": "https://www.auto-motor-und-sport.de/neuheiten/911-turbo-touring-erwischt-porsche-macht-das-turbo-cabrio-ohne-spoiler/",
+    "source": "auto-motor-und-sport.de",
+    "published": "2026-11-23T16:02:54Z",
+    "headline": "Pillado en pruebas un posible Porsche 911 Turbo Cabriolet en versión Touring",
+    "excerpt": "Imágenes espía muestran un prototipo con la carrocería ancha y mecánica de la familia Turbo en formato descapotable, pero prescindiendo del característico alerón fijo trasero.",
+    "category": "Lanzamientos",
+    "models": [
+      "911"
+    ],
+    "impact": "Si tienes en mente encargar un 911 Turbo descapotable y prefieres una estética más discreta sin apéndices aerodinámicos llamativos, conviene seguir de cerca la confirmación oficial de este acabado.",
+    "links": [
+      "comparador",
+      "precios_ocasion"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:7744861414211075861",
+    "url": "https://www.chosun.com/english/industry-en/2026/11/24/MVYLCKR63VFVPKGO4FBKKT2OQY/",
+    "source": "chosun.com",
+    "published": "2026-11-23T15:53:11Z",
+    "headline": "El Porsche Cayenne Turbo Coupé Eléctrico anuncia 1.156 CV y carga en 16 minutos",
+    "excerpt": "La variante eléctrica del SUV coupé promete acelerar de 0 a 100 km/h en 2,5 segundos y beneficiarse de arquitectura de 800 voltios para pasar del 10% al 80% de batería en apenas 16 minutos.",
+    "category": "Lanzamientos",
+    "models": [
+      "cayenne"
+    ],
+    "impact": "Quienes valoren la compra de un Cayenne potente deberán ponderar si el salto a la tecnología 100% eléctrica y su rápida carga compensan frente a los híbridos y de combustión actuales.",
+    "links": [
+      "sm_cayenne",
+      "comparador",
+      "coste_real"
+    ],
+    "week": "2026-W48"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:4922405613600855166",
     "url": "https://www.autozive.cz/skoda-dnes-vydelava-vic-nez-legendarni-porsche/",
     "source": "AutoŽivě",
