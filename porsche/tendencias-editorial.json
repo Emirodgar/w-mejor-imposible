@@ -1,5 +1,60 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:9877634447282699904",
+    "url": "https://noticias.autocosmos.cl/2026/11/25/porsche-lanzo-su-nueva-generacion-de-camaras-de-abordo-o-dashcam",
+    "source": "noticias.autocosmos.cl",
+    "published": "2026-11-25T20:15:20Z",
+    "headline": "Porsche estrena una nueva generación de dashcam integrada para toda su gama",
+    "excerpt": "El accesorio oficial se acopla en el parabrisas delantero bajo el retrovisor central y queda adaptado a la instalación interior de los modelos actuales.",
+    "category": "Lanzamientos",
+    "models": [
+      "marca"
+    ],
+    "impact": "Instalar una cámara oficial homologada por Porsche evita manipular el cableado con soluciones externas, reduciendo riesgos en la instalación eléctrica y protegiendo la vigencia de la garantía.",
+    "links": [
+      "garantia_approved",
+      "coste_real"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6017949457764489261",
+    "url": "https://newsroom.porsche.com/en/2026/products/porsche-911-gt3-tribute-to-911-gt1-sonderwunsch-43828.html",
+    "source": "newsroom.porsche.com",
+    "published": "2026-11-25T18:04:13Z",
+    "headline": "Porsche Sonderwunsch crea un 911 GT3 único inspirado en el legendario 911 GT1",
+    "excerpt": "Desarrollado durante año y medio en colaboración con Porsche China y Style Porsche, este encargo exclusivo rinde homenaje al mítico ganador de Le Mans.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Aunque es una pieza exclusiva fuera de la venta ordinaria, constata el peso creciente del programa Sonderwunsch y el valor de colección que alcanzan las reinterpretaciones históricas sobre base GT3.",
+    "links": [
+      "sm_911",
+      "opiniones"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:10398143389919282657",
+    "url": "https://www.carwow.es/porsche/718-boxster/noticias/8705/porsche-718-boxster-electrico-e-core-e-shift-presentacion-2027",
+    "source": "Carwow",
+    "published": "2026-11-25T15:17:26Z",
+    "headline": "Porsche desvela los primeros detalles técnicos del futuro 718 Boxster eléctrico",
+    "excerpt": "El nuevo descapotable biplaza recurrirá a la arquitectura de batería E-Core, un cambio virtual de siete velocidades y acelerará de 0 a 100 km/h en menos de 3 segundos de cara a su llegada en 2027.",
+    "category": "Lanzamientos",
+    "models": [
+      "718"
+    ],
+    "impact": "El salto al motor 100 % eléctrico cambiará por completo el planteamiento del deportivo de acceso, un movimiento que previsiblemente sostendrá el valor residual de las generaciones 718 de combustión en el mercado usado.",
+    "links": [
+      "sm_boxster",
+      "sm_cayman",
+      "precios_ocasion"
+    ],
+    "week": "2026-W48"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:14305030110385913969",
     "url": "https://www.motor16.com/las-ultimas-noticias/porsche-911-996-precio/",
     "source": "motor16.com",
