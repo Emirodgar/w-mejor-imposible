@@ -249,29 +249,29 @@
     "updated": "2026-11-22"
   },
   "2026-W48": {
-    "summary": "La electrificación de la marca perfila su hoja de ruta con los primeros detalles técnicos del futuro 718 Boxster eléctrico para 2027 y las cifras de potencia y recarga rápida del próximo Cayenne Turbo Coupé eléctrico. En la gama 911, la atención se reparte entre los ensayos de un posible Turbo Cabriolet sin alerón fijo y la vigencia del 996 como la opción más accesible en el mercado de ocasión, con la necesaria atención al IMS. Además, la gama actual suma equipamiento oficial con el lanzamiento de una dashcam integrada bajo el retrovisor central.",
+    "summary": "Los planes de electrificación de Porsche ganan definición con los primeros detalles técnicos del 718 Boxster eléctrico previsto para 2027 y las cifras de recarga del futuro Cayenne Turbo Coupé de 800 voltios. En el mercado del 911, la generación 996 se consolida como el escalón de acceso más asequible en ocasión con precauciones mecánicas clave, mientras imágenes espía anticipan una variante Turbo Cabriolet sin alerón fijo de corte Touring. El panorama se completa con proyectos exclusivos del programa Sonderwunsch y nuevas soluciones de equipamiento original como dashcams integradas.",
     "highlights": [
       {
         "url": "https://www.carwow.es/porsche/718-boxster/noticias/8705/porsche-718-boxster-electrico-e-core-e-shift-presentacion-2027",
         "shortTitle": "Futuro 718 Boxster eléctrico",
-        "note": "Llegará en 2027 con arquitectura E-Core, cambio virtual de siete marchas y una aceleración de 0 a 100 km/h en menos de 3 segundos."
+        "note": "El biplaza previsto para 2027 contará con arquitectura de batería central E-Core, cambio virtual de siete relaciones y acelerará de 0 a 100 km/h en menos de tres segundos."
       },
       {
         "url": "https://www.chosun.com/english/industry-en/2026/11/24/MVYLCKR63VFVPKGO4FBKKT2OQY/",
         "shortTitle": "Cayenne Turbo Coupé eléctrico",
-        "note": "Promete 1.156 CV, un 0 a 100 km/h en 2,5 segundos y recarga del 10% al 80% en 16 minutos con su sistema de 800 voltios."
+        "note": "Promete 1.156 CV de potencia y una recarga del 10 al 80 por ciento de su batería en 16 minutos gracias a su red de 800 voltios."
+      },
+      {
+        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-911-996-precio/",
+        "shortTitle": "Guía de compra 911 996",
+        "note": "Permanece como la vía más accesible a la gama 911 con precios desde unos 23.000 dólares, aunque requiere prestar atención al rodamiento IMS en los motores M96."
       },
       {
         "url": "https://www.auto-motor-und-sport.de/neuheiten/911-turbo-touring-erwischt-porsche-macht-das-turbo-cabrio-ohne-spoiler/",
         "shortTitle": "Posible 911 Turbo Touring",
-        "note": "Cazado en pruebas un prototipo descapotable con mecánica y vías anchas de Turbo pero prescindiendo del alerón posterior fijo."
-      },
-      {
-        "url": "https://www.motor16.com/las-ultimas-noticias/porsche-911-996-precio/",
-        "shortTitle": "Mercado del 911 996",
-        "note": "Permanece como el acceso más asequible a la saga desde unos 23.000 dólares, con la revisión preventiva del rodamiento IMS como requisito clave."
+        "note": "Avistado en pruebas un prototipo descapotable con mecánica y anchura de vías del Turbo pero prescindiendo del tradicional alerón fijo trasero."
       }
     ],
-    "updated": "2026-11-26"
+    "updated": "2026-11-27"
   }
 }

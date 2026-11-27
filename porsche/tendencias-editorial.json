@@ -1,5 +1,95 @@
 [
   {
+    "id": "tag:google.com,2013:googlealerts/feed:16822360698597872109",
+    "url": "https://www.elcarrocolombiano.com/autos-del-mundo/porsche-911-turbo-s-recibe-el-sello-de-brabus-con-mas-potencia-y-fibra-de-carbono/",
+    "source": "elcarrocolombiano.com",
+    "published": "2026-11-26T19:20:35Z",
+    "headline": "Brabus potencia el Porsche 911 Turbo S hasta los 800 CV",
+    "excerpt": "El preparador ha desvelado su paquete PowerXtra P36-800, que añade elementos de fibra de carbono y eleva el rendimiento del deportivo híbrido hasta 800 CV y 900 Nm de par.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Las preparaciones mecánicas de terceros aumentan las prestaciones, pero conviene valorar su impacto en la cobertura de garantías oficiales y en la cotización a largo plazo.",
+    "links": [
+      "coste_real",
+      "opiniones"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:6099966497594867251",
+    "url": "https://www.motor16.com/las-ultimas-noticias/porsche-911-996-guia-mercado/",
+    "source": "motor16.com",
+    "published": "2026-11-26T18:33:26Z",
+    "headline": "Porsche 911 996: las claves para adquirir el clásico refrigerado por agua",
+    "excerpt": "La generación 996 continúa posicionándose como la vía de acceso más económica a la gama 911, requiriendo prestar atención a aspectos mecánicos clave para evitar sorpresas.",
+    "category": "Guías",
+    "models": [
+      "911"
+    ],
+    "impact": "Es una de las opciones más asequibles de segunda mano, pero exige revisar a fondo el historial de mantenimiento y puntos débiles conocidos antes de comprometer el presupuesto.",
+    "links": [
+      "sm_911",
+      "fallos",
+      "precios_ocasion"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:14544385947573201240",
+    "url": "https://www.drivencarguide.co.nz/news/porsche-s-electric-718-boxster-will-debut-in-early-2027/",
+    "source": "Driven Car Guide",
+    "published": "2026-11-26T17:50:26Z",
+    "headline": "El Porsche 718 Boxster eléctrico llegará a principios de 2027",
+    "excerpt": "El futuro deportivo descapotable montará un sistema de batería de 800 voltios ubicado tras los asientos y promete acelerar de 0 a 100 km/h en menos de tres segundos.",
+    "category": "Lanzamientos",
+    "models": [
+      "718"
+    ],
+    "impact": "Quien esté pensando en comprar un 718 de combustión nuevo debe tener en cuenta el cambio de ciclo inminente, lo que podría sostener el valor residual de las versiones gasolina actuales en el mercado usado.",
+    "links": [
+      "sm_boxster",
+      "precios_ocasion"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:13813606517959449186",
+    "url": "https://www.diariomotor.com/noticia/porsche-911-tribute-to-911-gt1/",
+    "source": "diariomotor.com",
+    "published": "2026-11-26T16:32:28Z",
+    "headline": "Porsche Sonderwunsch rinde tributo al clásico 911 GT1",
+    "excerpt": "La división de personalización a medida de la firma alemana ha desarrollado un proyecto especial exclusivo inspirado en el histórico deportivo de competición.",
+    "category": "Modelos",
+    "models": [
+      "911"
+    ],
+    "impact": "Estas piezas exclusivas de fábrica suelen revalorizarse de inmediato y reflejan la creciente demanda de personalización artesanal entre los coleccionistas de la marca.",
+    "links": [
+      "precios_ocasion",
+      "sm_911"
+    ],
+    "week": "2026-W48"
+  },
+  {
+    "id": "tag:google.com,2013:googlealerts/feed:10905899647148071367",
+    "url": "https://totalcar.hu/hirek/2026/11/26/porsche-kormanylapat-aerodinamika-szabadalom/",
+    "source": "Totalcar",
+    "published": "2026-11-26T15:42:21Z",
+    "headline": "Porsche patenta una nueva aerodinámica activa para mejorar el paso por curva",
+    "excerpt": "Una reciente solicitud de patente de Porsche describe el uso de alerones y aletas desplegables diseñadas para optimizar la velocidad en curva a ritmos elevados.",
+    "category": "Análisis",
+    "models": [
+      "marca"
+    ],
+    "impact": "Anticipa las soluciones tecnológicas que la marca podría integrar en sus futuros deportivos de circuito y modelos de altas prestaciones.",
+    "links": [
+      "comparador"
+    ],
+    "week": "2026-W48"
+  },
+  {
     "id": "tag:google.com,2013:googlealerts/feed:9877634447282699904",
     "url": "https://noticias.autocosmos.cl/2026/11/25/porsche-lanzo-su-nueva-generacion-de-camaras-de-abordo-o-dashcam",
     "source": "noticias.autocosmos.cl",
